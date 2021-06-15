@@ -1,0 +1,2628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Install NX-OS software and Reference Configuration Files (RCFs)</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Install NX-OS software and Reference Configuration Files (RCFs)" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-systems/switch-cisco-9336c-shared/9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html" />
+	<meta property="og:description" content="" />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-systems/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="">
+  <meta name="keywords" content=" rcfs, nx-os, install">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/us-en/ontap-systems/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/us-en/ontap-systems/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-pagenav.css' type='text/css'>
+
+  
+
+  
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/us-en/ontap-systems/js/na-search.js'></script>
+  
+
+  
+  <script src='/us-en/ontap-systems/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/us-en/ontap-systems/js/na-utility.js'></script>
+  <script src='/us-en/ontap-systems/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/us-en/ontap-systems/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/us-en/ontap-systems/js/toc.js'></script>
+  <script src='/us-en/ontap-systems/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Product and Solutions</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Support and Training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Customer Stories</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="No results were found for {query}" data-did-you-mean="Search for {suggestion}." data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"  ></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar"><!-- Start Language Selector --><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+        <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">Home</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">Documentation</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/us-en/ontap-systems/">ONTAP&nbsp;Systems</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          Install NX-OS software and Reference Configuration Files (RCFs)
+        </li>
+      </ul>
+    </div>
+
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" >
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
+    </span>
+  </a>
+</div>
+<ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><div class="n-pdf-section">
+      <span class="n-pdf-section-title">Site</span>
+    </div>
+    <li>
+      <a target="_blank" href="/us-en/ontap-systems/pdfs/fullsite-switch-cisco-9336c-shared_sidebar/Cisco_Nexus_9336C_FX2_Shared_Switches.pdf" >
+        <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+        Cisco Nexus 9336C-FX2 Shared Switches
+      </a>
+    </li>
+
+
+
+
+    <div class="n-pdf-section">
+  <span class="n-pdf-section-title">This page</span>
+</div>
+
+<li class="active">
+  <a target="_blank" href="/us-en/ontap-systems/pdfs/pages/switch-cisco-9336c-shared/9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.pdf" >
+    <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+    Install NX-OS software and Reference Configuration Files (RCFs)
+  </a>
+</li>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+<script>
+  $("#toggleContainerPdf li.active").parents('li').toggle('display');
+  $("#toggleContainerPdf li.active").parents('span.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+  });
+</script><ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="index.html">
+        Cisco Nexus 9336C-FX2 Shared Switches
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_setup_and_configuration_guide_for_cisco_shared_switches.html">
+        Setup and configuration guide for Cisco shared switches
+      </a></li><li class="  active "><a class="na-navbar-padding" href="9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html">
+        Install NX-OS software and Reference Configuration Files (RCFs)
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_migrate_from_a_switchless_cluster_with_dat_storage_by_adding_two_new_shared_switches.html">
+        Migrate from a switchless cluster with DAT storage by adding two new shared switches
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.html">
+        Migrate from a switched configuration with DAT storage by adding two new shared switches
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_migrate_from_a_switchless_configuration_with_sat_storage_by_reusing_the_storage_switches.html">
+        Migrate from a switchless configuration with SAT storage by reusing the storage switches
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_migrate_from_a_switched_cluster_with_sat_storage_by_reusing_the_storage_switches.html">
+        Migrate from a switched cluster with SAT storage by reusing the storage switches
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_replace_a_cisco_nexus_9336c-fx2_shared_switch.html">
+        Replace a Cisco Nexus 9336C-FX2 shared switch
+      </a></li></ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      
+
+
+
+<div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Install NX-OS software and Reference Configuration Files (RCFs)</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2021-05-12 13:48:11 +0000">05/12/2021</time>
+    
+  
+
+<span>Contributors
+  <a target="_blank" href="https://github.com/netapp-aherbin">
+    <img  class="avatar avatar-small"
+          alt="netapp-aherbin"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/38955266?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+  <span>
+    <a target="_blank" href="/us-en/ontap-systems/pdfs/pages/switch-cisco-9336c-shared/9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.pdf" role="button">
+      <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>Download PDF of this page</a>
+  </span>
+
+
+</p>
+
+
+<div class="sect3">
+<h4 id="install-nx-os-software-and-rcf-on-a-cisco-nexus-9336c-fx2-cluster-switch">Install NX-OS software and RCF on a Cisco Nexus 9336C- FX2 cluster switch</h4>
+<div class="paragraph">
+<p>The Cisco NX-OS software and reference configuration file (RCF) must be installed on Cisco Nexus 9336C-FX2 cluster switches.</p>
+</div>
+<div class="sect4">
+<h5 id="before-you-begin">Before you begin</h5>
+<div class="paragraph">
+<p>The following conditions must exist before you install the NX-OS software and RCF on the cluster switch:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The cluster must be fully functioning (there should be no errors in the logs or similar issues).</p>
+</li>
+<li>
+<p>You must have checked or set your desired boot configuration in the RCF to reflect the desired boot images if you are installing only NX-OS and keeping your current RCF version.</p>
+</li>
+<li>
+<p>If you need to change the boot configuration to reflect the current boot images, you must do so before reapplying the RCF so that the correct version is instantiated on future reboots.</p>
+</li>
+<li>
+<p>You must have a console connection to the switch, required when installing the RCF.</p>
+</li>
+<li>
+<p>You must have consulted the switch compatibility table on the Cisco Ethernet switch page for the supported ONTAP, NX-OS, and RCF versions.<br>
+See <a href="https://mysupport.netapp.com/site/info/cisco-ethernet-switch">Cisco Ethernet Switches</a> for more information.</p>
+</li>
+<li>
+<p>There can be command dependencies between the command syntax in the RCF and that found in versions of NX-OS.</p>
+</li>
+<li>
+<p>You must have referred to the appropriate software and upgrade guides available on the Cisco web site for complete documentation on the Cisco switch upgrade and downgrade procedures on Cisco Nexus 9000 Series Switches.<br>
+See <a href="https://www.cisco.com/c/en/us/support/switches/nexus-9336c-fx2-switch/model.html">Cisco Nexus 9000 Series Switches</a> for more information.</p>
+</li>
+<li>
+<p>You must have the current RCF.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="initial-setup">Initial setup</h5>
+<div class="paragraph">
+<p>The examples in this procedure use two nodes. These nodes use two 100GbE cluster interconnect ports e3a and e3b, as per the A400 controller.<br>
+See the <a href="https://hwu.netapp.com">Hardware Universe</a> to verify the correct cluster ports on your platforms.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The command outputs might vary depending on different releases of ONTAP.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The examples in this procedure use the following switch and node nomenclature:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The names of the two Cisco switches are <em>cs1</em> and <em>cs2</em>.</p>
+</li>
+<li>
+<p>The node names are <em>cluster1-01</em> and <em>cluster1-02</em>.</p>
+</li>
+<li>
+<p>The cluster LIF names are <em>cluster1-01_clus1</em> and <em>cluster1-01_clus2</em> for cluster1-01 and <em>cluster1-02_clus1</em> and <em>cluster1-02_clus2</em> for cluster1-02.</p>
+</li>
+<li>
+<p>The cluster1::*&gt; prompt indicates the name of the cluster.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The procedure requires the use of both ONTAP commands and Cisco Nexus 9000 Series Switches commands; ONTAP commands are used unless otherwise indicated.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="steps">Steps</h5>
+<div class="olist arabic">
+<ol class="arabic" start="1">
+<li>
+<p><a id="step1"></a>If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message: <code>system node autosupport invoke -node * -type all -message MAINT=x h</code></p>
+<div class="paragraph">
+<p>Where x is the duration of the maintenance window in hours.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p><a id="step2"></a>Change the privilege level to advanced, entering y when prompted to continue:<br>
+<code>set -privilege advanced</code></p>
+<div class="paragraph">
+<p>The advanced prompt (*&gt;) appears.</p>
+</div>
+</li>
+<li>
+<p><a id="step3"></a>Display how many cluster interconnect interfaces are configured in each node for each cluster interconnect switch:<br>
+<code>network device-discovery show -protocol cdp</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1:: network device-discovery show -protocol cdp
+Node/       Local  Discovered
+Protocol    Port   Device (LLDP: ChassisID)  Interface         Platform
+----------- ------ ------------------------- ----------------- --------
+cluster1-02/cdp
+            e3a    cs1                       Eth1/2            N9K-C9336C
+            e3b    cs2                       Eth1/2            N9K-C9336C
+cluster1-01/cdp
+            e3a    cs1                       Eth1/1            N9K-C9336C
+            e3b    cs2                       Eth1/1            N9K-C9336C
+4 entries were displayed.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p><a id="step4"></a>Check the administrative or operational status of each cluster interface:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Display the network port attributes:<br>
+<code>network port show –ipspace Cluster</code></p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network port show -ipspace Cluster
+Node: cluster1-02
+                                                  Speed(Mbps)  Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status
+--------- ------------ ---------------- ---- ---- ------------ ------
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy
+e3b       Cluster      Cluster          up   9000  auto/100000 healthy
+
+Node: cluster1-01
+                                                  Speed(Mbps)  Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status
+--------- ------------ ---------------- ---- ---- ------------ ------
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy
+e3b       Cluster      Cluster          up   9000  auto/100000 healthy
+4 entries were displayed.</pre>
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a" start="2">
+<li>
+<p>Display information about the LIFs:<br>
+<code>network interface show - vserver Cluster</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface show -vserver Cluster
+        Logical            Status     Network            Current    Current Is
+Vserver Interface          Admin/Oper Address/Mask       Node        Port   Home
+------- ------------------ ---------- ------------------ ----------- ------ ----
+Cluster
+        cluster1-01_clus1  up/up      169.254.209.69/16  cluster1-01  e3a   true
+        cluster1-01_clus2  up/up      169.254.49.125/16  cluster1-01  e3b   true
+        cluster1-02_clus1  up/up      169.254.47.194/16  cluster1-02  e3a   true
+        cluster1-02_clus2  up/up      169.254.19.183/16  cluster1-02  e3b   true
+4 entries were displayed.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="5">
+<li>
+<p><a id="step5"></a>Ping the remote cluster LIFs:<br>
+<code>cluster ping-cluster -node node-name</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; cluster ping-cluster -node cluster1-02
+Host is cluster1-02
+Getting addresses from network interface table...
+Cluster cluster1-01_clus1 169.254.209.69 cluster1-01     e3a
+Cluster cluster1-01_clus2 169.254.49.125 cluster1-01     e3b
+Cluster cluster1-02_clus1 169.254.47.194 cluster1-02     e3a
+Cluster cluster1-02_clus2 169.254.19.183 cluster1-02     e3b
+Local = 169.254.47.194 169.254.19.183
+Remote = 169.254.209.69 169.254.49.125
+Cluster Vserver Id = 4294967293
+Ping status:
+....
+Basic connectivity succeeds on 4 path(s)
+Basic connectivity fails on 0 path(s)
+................
+Detected 9000 byte MTU on 4 path(s):
+    Local 169.254.19.183 to Remote 169.254.209.69
+    Local 169.254.19.183 to Remote 169.254.49.125
+    Local 169.254.47.194 to Remote 169.254.209.69
+    Local 169.254.47.194 to Remote 169.254.49.125
+Larger than PMTU communication succeeds on 4 path(s)
+RPC status:
+2 paths up, 0 paths down (tcp check)
+2 paths up, 0 paths down (udp check)</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="6">
+<li>
+<p><a id="step6"></a>Verify that the auto-revert command is enabled on all cluster LIFs:<br>
+<code>network interface show - vserver Cluster -fields auto-revert</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface show -vserver Cluster -fields auto-revert
+          Logical
+Vserver   Interface            Auto-revert
+--------- ––––––-------------- ------------
+Cluster
+          cluster1-01_clus1    true
+          cluster1-01_clus2    true
+          cluster1-02_clus1    true
+          cluster1-02_clus2    true
+4 entries were displayed.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="7">
+<li>
+<p><a id="step7"></a>Enable the Ethernet switch health monitor log collection feature for collecting switch-related log files, using the following commands:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>system switch ethernet log setup-password</code></p>
+</li>
+<li>
+<p><code>system switch ethernet log enable-collection</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; system switch ethernet log setup password
+Enter the switch name: &lt;return&gt;
+The switch name entered is not recognized.
+Choose from the following list:
+cs1
+cs2
+cluster1::*&gt; system switch ethernet log setup-password
+Enter the switch name: cs1
+RSA key fingerprint is e5:8b:c6:dc:e2:18:18:09:36:63:d9:63:dd:03:d9:cc
+Do you want to continue? {y|n}::[n] y
+Enter the password: &lt;enter switch password&gt;
+Enter the password again: &lt;enter switch password&gt;
+cluster1::*&gt; system switch ethernet log setup-password
+Enter the switch name: cs2
+RSA key fingerprint is 57:49:86:a1:b9:80:6a:61:9a:86:8e:3c:e3:b7:1f:b1
+Do you want to continue? {y|n}:: [n] y
+Enter the password: &lt;enter switch password&gt;
+Enter the password again: &lt;enter switch password&gt;
+cluster1::*&gt; system  switch ethernet log enable-collection
+Do you want to enable cluster log collection for all nodes in the cluster? {y|n}: [n] y
+Enabling cluster switch log collection.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If any of these commands return an error, contact NetApp support.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="install-the-nx-os-software-on-a-cisco-nexus-9336c-fx2-cluster-switch">Install the NX-OS software on a Cisco Nexus 9336C- FX2 cluster switch</h4>
+<div class="paragraph">
+<p>You can use this procedure to install the NX-OS software on the Cisco Nexus 9336C-FX2 cluster switch.</p>
+</div>
+<div class="sect4">
+<h5 id="steps-2">Steps</h5>
+<div class="olist arabic">
+<ol class="arabic" start="1">
+<li>
+<p><a id="step1"></a>Connect the cluster switch to the management network.</p>
+</li>
+<li>
+<p><a id="step2"></a>Use the <code>ping</code> command to verify connectivity to the server hosting the NX-OS software and the RCF.</p>
+<div class="paragraph">
+<p>This example verifies that the switch can reach the server at IP address <code>172.19.2.1</code>:</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# ping 172.19.2.1
+Pinging 172.19.2.1 with 0 bytes of data:
+Reply From 172.19.2.1: icmp_seq = 0. time= 5910 usec.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p><a id="step3"></a>Copy the NX-OS software and EPLD images to the Nexus 9336C-FX2 switch.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# copy sftp: bootflash: vrf management
+Enter source filename: /code/nxos.9.3.5.bin
+Enter hostname for the sftp server: 172.19.2.1
+Enter username: user1
+Outbound-ReKey for 172.19.2.1:22
+Inbound-ReKey for 172.19.2.1:22
+user1@172.19.2.1's password:
+sftp&gt; progress
+Progress meter enabled
+sftp&gt; get   /code/nxos.9.3.5.bin  /bootflash/nxos.9.3.5.bin
+/code/nxos.9.3.5.bin  100% 1261MB   9.3MB/s   02:15
+sftp&gt; exit
+Copy complete, now saving to disk (please wait)...
+Copy complete.
+cs2# copy sftp: bootflash: vrf management
+Enter source filename: /code/n9000-epld.9.3.5.img
+Enter hostname for the sftp server: 172.19.2.1
+Enter username: user1
+Outbound-ReKey for 172.19.2.1:22
+Inbound-ReKey for 172.19.2.1:22
+user1@172.19.2.1's password:
+sftp&gt; progress
+Progress meter enabled
+sftp&gt; get   /code/n9000-epld.9.3.5.img  /bootflash/n9000-epld.9.3.5.img
+/code/n9000-epld.9.3.5.img  100%  161MB   9.5MB/s   00:16
+sftp&gt; exit
+Copy complete, now saving to disk (please wait)...
+Copy complete.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p><a id="step4"></a>Verify the running version of the NX-OS software:<br>
+<code>show version</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2020, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or
+Lesser General Public License (LGPL) Version 2.0.
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+Software
+  BIOS: version 08.38
+  NXOS: version 9.3(4)
+  BIOS compile time:  05/29/2020
+  NXOS image file is: bootflash:///nxos.9.3.4.bin
+  NXOS compile time:  4/28/2020 21:00:00 [04/29/2020 02:28:31]
+Hardware
+  cisco Nexus9000 C9336C-FX2 Chassis
+  Intel(R) Xeon(R) CPU E5-2403 v2 @ 1.80GHz with 8154432 kB of memory.
+  Processor Board ID FOC20291J6K
+  Device name: cs2
+  bootflash:   53298520 kB
+Kernel uptime is 0 day(s), 0 hour(s), 3 minute(s), 42 second(s)
+Last reset at 157524 usecs after Mon Nov  2 18:32:06 2020
+  Reason: Reset Requested by CLI command reload
+  System version: 9.3(4)
+  Service:
+plugin
+  Core Plugin, Ethernet Plugin
+Active Package(s):
+
+cs2#</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="5">
+<li>
+<p><a id="step5"></a>Install the NX-OS image.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Installing the image file causes it to be loaded every time the switch is rebooted.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# install all nxos bootflash:nxos.9.3.5.bin
+Installer will perform compatibility check first. Please wait.
+Installer is forced disruptive
+Verifying image bootflash:/nxos.9.3.5.bin for boot variable "nxos".
+[####################] 100% -- SUCCESS
+Verifying image type.
+[####################] 100% -- SUCCESS
+Preparing "nxos" version info using image bootflash:/nxos.9.3.5.bin.
+[####################] 100% -- SUCCESS
+Preparing "bios" version info using image bootflash:/nxos.9.3.5.bin.
+[####################] 100% -- SUCCESS
+Performing module support checks.
+[####################] 100% -- SUCCESS
+Notifying services about system upgrade.
+[####################] 100% -- SUCCESS
+Compatibility check is done:
+Module  bootable       Impact     Install-type  Reason
+------  --------  --------------- ------------  ------
+  1       yes      disruptive         reset     default upgrade is not hitless
+Images will be upgraded according to following table:
+Module   Image    Running-Version(pri:alt                New-Version         Upg-
+                                                                             Required
+------- --------- -------------------------------------- ------------------- ------------
+  1      nxos     9.3(4)                                 9.3(5)              yes
+  1      bios     v08.37(01/28/2020):v08.23(09/23/2015)  v08.38(05/29/2020)  yes
+Switch will be reloaded for disruptive upgrade.
+Do you want to continue with the installation (y/n)?  [n] y
+Install is in progress, please wait.
+Performing runtime checks.
+[####################] 100% -- SUCCESS
+Setting boot variables.
+[####################] 100% -- SUCCESS
+Performing configuration copy.
+[####################] 100% -- SUCCESS
+Module 1: Refreshing compact flash and upgrading bios/loader/bootrom.
+Warning: please do not remove or power off the module at this time.
+[####################] 100% -- SUCCESS
+Finishing the upgrade, switch will reboot in 10 seconds.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="6">
+<li>
+<p><a id="step6"></a> Verify the new version of NX-OS software after the switch has rebooted:<br>
+<code>show version</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2020, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or
+Lesser General Public License (LGPL) Version 2.0.
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+Software
+  BIOS: version 05.33
+  NXOS: version 9.3(5)
+  BIOS compile time:  09/08/2018
+  NXOS image file is: bootflash:///nxos.9.3.5.bin
+  NXOS compile time:  11/4/2018 21:00:00 [11/05/2018 06:11:06]
+Hardware
+  cisco Nexus9000 C9336C-FX2 Chassis
+  Intel(R) Xeon(R) CPU E5-2403 v2 @ 1.80GHz with 8154432 kB of memory.
+  Processor Board ID FOC20291J6K
+  Device name: cs2
+  bootflash:   53298520 kB
+Kernel uptime is 0 day(s), 0 hour(s), 3 minute(s), 42 second(s)
+Last reset at 277524 usecs after Mon Nov  2 22:45:12 2020
+  Reason: Reset due to upgrade
+  System version: 9.3(4)
+  Service:
+plugin
+  Core Plugin, Ethernet Plugin
+Active Package(s):</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="7">
+<li>
+<p><a id="step7"></a>Upgrade the EPLD image and reboot the switch.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# show version module 1 epld
+EPLD Device                     Version
+---- -------------------------- -------
+MI   FPGA                        0x7
+IO   FPGA                        0x17
+MI   FPGA2                       0x2
+GEM  FPGA                        0x2
+GEM  FPGA                        0x2
+GEM  FPGA                        0x2
+GEM  FPGA                        0x2
+cs2# install epld bootflash:n9000-epld.9.3.5.img module 1
+Compatibility check:
+Module      Type        Upgradable  Impact      Reason
+------  -------------- ------------ ----------- -------
+     1      SUP        Yes          disruptive  Module Upgradable
+Retrieving EPLD versions.... Please wait.
+Images will be upgraded according to following table:
+Module  Type   EPLD              Running-Version   New-Version  Upg-Required
+------- ------ ----------------- ----------------- ------------ ------------
+     1  SUP    MI FPGA           0x07              0x07         No
+     1  SUP    IO FPGA           0x17              0x19         Yes
+     1  SUP    MI FPGA2          0x02              0x02         No
+The above modules require upgrade.
+The switch will be reloaded at the end of the upgrade
+Do you want to continue (y/n) ?  [n] y
+Proceeding to upgrade Modules.
+Starting Module 1 EPLD Upgrade
+Module 1 : IO FPGA [Programming] : 100.00% (     64 of      64 sectors)
+Module 1 EPLD upgrade is successful.
+Module   Type  Upgrade-Result
+-------- ----- --------------
+     1   SUP   Success
+EPLDs upgraded.
+Module 1 EPLD upgrade is successful.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="8">
+<li>
+<p><a id="step8"></a>After the switch reboot, log in again and verify that the new version of EPLD loaded successfully.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# show version module 1 epld
+EPLD Device                     Version
+---- -------------------------- --------
+MI   FPGA                        0x7
+IO   FPGA                        0x19
+MI   FPGA2                       0x2
+GEM  FPGA                        0x2
+GEM  FPGA                        0x2
+GEM  FPGA                        0x2
+GEM  FPGA                        0x2</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="install-the-rcf-on-a-cisco-nexus-9336c-fx2-cluster-switch">Install the RCF on a Cisco Nexus 9336C- FX2 cluster switch</h4>
+<div class="paragraph">
+<p>You can install the RCF after setting up the Nexus 9336C-FX2 cluster switch for the first time. You can also use this procedure to upgrade your RCF version on your cluster switch.</p>
+</div>
+<div class="sect4">
+<h5 id="about-this-task">About this task</h5>
+<div class="paragraph">
+<p>The examples in this procedure use the following switch and node nomenclature:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The names of the two Cisco switches are <code>cs1</code> and <code>cs2</code>.</p>
+</li>
+<li>
+<p>The node names are <code>cluster1-01</code>, <code>cluster1-02</code>, <code>cluster1-03</code>, and <code>cluster1-04</code>.</p>
+</li>
+<li>
+<p>The cluster LIF names are <code>cluster1-01_clus1</code>, <code>cluster1-01_clus2</code>, <code>cluster1-02_clus1</code>, <code>cluster1-02_clus2</code>, <code>cluster1-03_clus1</code>, <code>cluster1-03_clus2</code>, <code>cluster1-04_clus1</code>, and <code>cluster1-04_clus2</code>.</p>
+</li>
+<li>
+<p>The cluster1::*&gt; prompt indicates the name of the cluster.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The procedure requires the use of both ONTAP commands and Cisco Nexus 9000 Series Switches commands; ONTAP commands are used unless otherwise indicated.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="steps-3">Steps</h5>
+<div class="olist arabic">
+<ol class="arabic" start="1">
+<li>
+<p><a id="step1"></a>Display the cluster ports on each node that are connected to the cluster switches:<br>
+<code>network device-discovery show</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network device-discovery show
+Node/       Local  Discovered
+Protocol    Port   Device (LLDP: ChassisID)  Interface         Platform
+----------- ------ ------------------------- ----------------  --------
+cluster1-01/cdp
+            e3a    cs1                       Ethernet1/7       N9K-C9336C
+            e0d    cs2                       Ethernet1/7       N9K-C9336C
+cluster1-02/cdp
+            e3a    cs1                       Ethernet1/8       N9K-C9336C
+            e0d    cs2                       Ethernet1/8       N9K-C9336C
+cluster1-03/cdp
+            e3a    cs1                       Ethernet1/1/1     N9K-C9336C
+            e3b    cs2                       Ethernet1/1/1     N9K-C9336C
+cluster1-04/cdp
+            e3a    cs1                       Ethernet1/1/2     N9K-C9336C
+            e3b    cs2                       Ethernet1/1/2     N9K-C9336C
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p><a id="step2"></a>Check the administrative and operational status of each cluster port.</p>
+</li>
+<li>
+<p><a id="step3"></a>Verify that all the cluster ports are up with a healthy status:<br>
+<code>network port show –role cluster</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network port show -role cluster
+Node: cluster1-01
+                                                                       Ignore
+                                                  Speed(Mbps) Health   Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper  Status   Status
+--------- ------------ ---------------- ---- ---- ----------- -------- ------
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy false
+e0d       Cluster      Cluster          up   9000  auto/100000 healthy false
+Node: cluster1-02
+                                                                       Ignore
+                                                  Speed(Mbps) Health   Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper  Status   Status
+--------- ------------ ---------------- ---- ---- ----------- -------- ------
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy false
+e0d       Cluster      Cluster          up   9000  auto/100000 healthy false
+8 entries were displayed.
+Node: cluster1-03
+
+                                                                        Ignore
+                                                  Speed(Mbps)  Health   Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status   Status
+--------- ------------ ---------------- ---- ---- ------------ -------- ------
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy  false
+e3b       Cluster      Cluster          up   9000  auto/100000 healthy  false
+Node: cluster1-04
+                                                                        Ignore
+                                                  Speed(Mbps)  Health   Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status   Status
+--------- ------------ ---------------- ---- ---- ------------ -------- ------
+e0a       Cluster      Cluster          up   9000  auto/100000 healthy  false
+e0b       Cluster      Cluster          up   9000  auto/100000 healthy  false
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p><a id="step4"></a>Verify that all the cluster interfaces (LIFs) are on the home port:<br>
+<code>network interface show -role cluster</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface show -role cluster
+        Logical            Status     Network         Current      Current Is
+Vserver Interface          Admin/Oper Address/Mask    Node         Port    Home
+------- ------------------ ---------- --------------- ------------ ------- ----
+Cluster
+        cluster1-01_clus1  up/up     169.254.3.4/23   cluster1-01  e3a     true
+        cluster1-01_clus2  up/up     169.254.3.5/23   cluster1-01  e0d     true
+        cluster1-02_clus1  up/up     169.254.3.8/23   cluster1-02  e3a     true
+        cluster1-02_clus2  up/up     169.254.3.9/23   cluster1-02  e0d     true
+        cluster1-03_clus1  up/up     169.254.1.3/23   cluster1-03  e3a     true
+        cluster1-03_clus2  up/up     169.254.1.1/23   cluster1-03  e3b     true
+        cluster1-04_clus1  up/up     169.254.1.6/23   cluster1-04  e3a     true
+        cluster1-04_clus2  up/up     169.254.1.7/23   cluster1-04  e3b     true
+8 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="5">
+<li>
+<p><a id="step5"></a>Verify that the cluster displays information for both cluster switches:<br>
+<code>system cluster-switch show -is-monitoring-enabled-operational true</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; system cluster-switch show -is-monitoring-enabled-operational true
+Switch                      Type               Address          Model
+--------------------------- ------------------ ---------------- -----
+cs1                         cluster-network    10.233.205.90    N9K-C9336C
+     Serial Number: FOCXXXXXXGD
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
+cs2                         cluster-network    10.233.205.91    N9K-C9336C
+     Serial Number: FOCXXXXXXGS
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="6">
+<li>
+<p><a id="step6"></a>Disable auto-revert on the cluster LIFs.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface modify -vserver Cluster -lif * -auto-revert false</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="7">
+<li>
+<p><a id="step7"></a>On cluster switch cs2, shut down the ports connected to the cluster ports of the nodes.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2(config)# interface eth1/1/1-2,eth1/7-8
+cs2(config-if-range)# shutdown</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="8">
+<li>
+<p><a id="step8"></a>Verify that the cluster LIFs have migrated to the ports hosted on cluster switch cs1. This might take a few seconds:<br>
+<code>network interface show -role cluster</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface show -role cluster
+        Logical           Status     Network          Current      Current  Is
+Vserver Interface         Admin/Oper Address/Mask     Node         Port     Home
+------- ----------------- --------- ---------------- ------------- ------- ----
+Cluster
+        cluster1-01_clus1 up/up     169.254.3.4/23   cluster1-01   e3a     true
+        cluster1-01_clus2 up/up     169.254.3.5/23   cluster1-01   e3a     false
+        cluster1-02_clus1 up/up     169.254.3.8/23   cluster1-02   e3a     true
+        cluster1-02_clus2 up/up     169.254.3.9/23   cluster1-02   e3a     false
+        cluster1-03_clus1 up/up     169.254.1.3/23   cluster1-03   e3a     true
+        cluster1-03_clus2 up/up     169.254.1.1/23   cluster1-03   e3a     false
+        cluster1-04_clus1 up/up     169.254.1.6/23   cluster1-04   e3a     true
+        cluster1-04_clus2 up/up     169.254.1.7/23   cluster1-04   e3a     false
+8 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="9">
+<li>
+<p><a id="step9"></a>Verify that the cluster is healthy:<br>
+<code>cluster show</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; cluster show
+Node                 Health  Eligibility   Epsilon
+-------------------- ------- ------------  -------
+cluster1-01          true    true          false
+cluster1-02          true    true          false
+cluster1-03          true    true          true
+cluster1-04          true    true          false
+4 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="10">
+<li>
+<p><a id="step10"></a>Clean the configuration on switch cs2 and perform a basic setup.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Clean the configuration. This step requires a console connection to the switch.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# write erase
+Warning: This command will erase the startup-configuration.
+Do you wish to proceed anyway? (y/n)  [n] y
+cs2# reload
+This command will reboot the system. (y/n)?  [n] y
+cs2#</pre>
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a" start="2">
+<li>
+<p>Perform a basic setup of the switch.</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="11">
+<li>
+<p><a id="step11"></a>Copy the RCF to the bootflash of switch cs2 using one of the following transfer protocols: FTP, TFTP, SFTP, or SCP. For more information about Cisco commands, see the appropriate guide in the <a href="https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html">Cisco Nexus 9000 Series NX-OS Command Reference guides</a>.</p>
+<div class="paragraph">
+<p>This example shows TFTP being used to copy an RCF to the bootflash on switch cs2.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# copy tftp: bootflash: vrf management
+Enter source filename: Nexus_9336C_RCF_v1.6-Cluster-HA-Breakout.txt
+Enter hostname for the tftp server: 172.22.201.50
+Trying to connect to tftp server......Connection to Server Established.
+TFTP get operation was successful
+Copy complete, now saving to disk (please wait)...</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="12">
+<li>
+<p><a id="step12"></a>Apply the RCF previously downloaded to the bootflash.<br>
+For more information about Cisco commands, see the appropriate guide in the <a href="https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html">Cisco Nexus 9000 Series NX-OS Command Reference guides</a>.</p>
+<div class="paragraph">
+<p>This example shows the RCF file <code>Nexus_9336C_RCF_v1.6-Cluster-HA-Breakout.txt</code> being installed on switch cs2.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# copy Nexus_9336C_RCF_v1.6-Cluster-HA-Breakout.txt running-config echo-commands</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="13">
+<li>
+<p><a id="step13"></a>Examine the banner output from the <code>show banner motd</code> command. You must read and follow these instructions to ensure the proper configuration and operation of the switch.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# show banner motd
+***************************************************************************
+* NetApp Reference Configuration File (RCF)
+*
+* Switch   : Nexus N9K-C9336C-FX2
+* Filename : Nexus_9336C_RCF_v1.6-Cluster-HA-Breakout.txt
+* Date     : 10-23-2020
+* Version  : v1.6
+*
+* Port Usage:
+* Ports  1- 3: Breakout mode (4x10G) Intra-Cluster Ports, int e1/1/1-4,
+* e1/2/1-4, e1/3/1-4
+* Ports  4- 6: Breakout mode (4x25G) Intra-Cluster/HA Ports, int e1/4/1-4,
+* e1/5/1-4, e1/6/1-4
+* Ports  7-34: 40/100GbE Intra-Cluster/HA Ports, int e1/7-34
+* Ports 35-36: Intra-Cluster ISL Ports, int e1/35-36
+*
+* Dynamic breakout commands:
+* 10G: interface breakout module 1 port &lt;range&gt; map 10g-4x
+* 25G: interface breakout module 1 port &lt;range&gt; map 25g-4x
+*
+* Undo breakout commands and return interfaces to 40/100G configuration in
+* config mode:
+* no interface breakout module 1 port &lt;range&gt; map 10g-4x
+* no interface breakout module 1 port &lt;range&gt; map 25g-4x
+* interface Ethernet &lt;interfaces taken out of breakout mode&gt;
+* inherit port-profile 40-100G
+* priority-flow-control mode auto
+* service-policy input HA
+* exit
+*
+***************************************************************************</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="14">
+<li>
+<p><a id="step14"></a>Verify that the RCF file is the correct newer version:<br>
+<code>show running-config</code></p>
+<div class="paragraph">
+<p>When you check the output to verify you have the correct RCF, make sure that the following information is correct:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The RCF banner</p>
+</li>
+<li>
+<p>The node and port settings</p>
+</li>
+<li>
+<p>Customizations</p>
+<div class="paragraph">
+<p>The output varies according to your site configuration. Check the port settings and refer to the release notes for any changes specific to the RCF that you have installed.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>After you verify the RCF versions and switch settings are correct, copy the running-config file to the startup-config file.</p>
+<div class="paragraph">
+<p>For more information about Cisco commands, see the appropriate guide in the <a href="https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html">Cisco Nexus 9000 Series NX-OS Command Reference guides</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# copy running-config startup-config [########################################] 100% Copy complete</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="16">
+<li>
+<p><a id="step16"></a>Reboot switch cs2. You can ignore the “cluster ports down” events reported on the nodes while the switch reboots.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# reload
+This command will reboot the system. (y/n)?  [n] y</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="17">
+<li>
+<p><a id="step17"></a>Apply the same RCF and save the running configuration for a second time.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs2# copy Nexus_9336C_RCF_v1.6-Cluster-HA-Breakout.txt running-config echo-commands
+cs2# copy running-config startup-config [########################################] 100% Copy complete</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="18">
+<li>
+<p><a id="step18"></a>Verify the health of cluster ports on the cluster.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Verify that e0d ports are up and healthy across all nodes in the cluster:<br>
+<code>network port show -role cluster</code></p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network port show -role cluster
+Node: cluster1-01
+                                                                   Ignore
+                                             Speed(Mbps)  Health   Health
+Port    IPspace   Broadcast Domain Link MTU  Admin/Oper   Status   Status
+------- --------- ---------------- ---- ---- ------------ -------- ------
+e3a     Cluster   Cluster          up   9000 auto/100000  healthy  false
+e3b     Cluster   Cluster          up   9000 auto/100000  healthy  false
+
+Node: cluster1-02
+                                                                   Ignore
+                                              Speed(Mbps)  Health  Health
+Port    IPspace   Broadcast Domain Link MTU   Admin/Oper   Status  Status
+------- --------- ---------------- ---- ----- ------------ -------- ------
+e3a    Cluster   Cluster          up   9000  auto/100000  healthy  false
+e3b    Cluster   Cluster          up   9000  auto/100000  healthy  false
+
+Node: cluster1-03
+                                                                   Ignore
+                                              Speed(Mbps) Health   Health
+Port   IPspace    Broadcast Domain Link MTU   Admin/Oper  Status   Status
+------ ---------- ---------------- ---- ----- ----------- -------- ------
+e3a    Cluster    Cluster          up   9000  auto/100000 healthy  false
+e0d    Cluster    Cluster          up   9000  auto/100000 healthy  false
+
+Node: cluster1-04
+                                                                   Ignore
+                                              Speed(Mbps) Health   Health
+Port   IPspace    Broadcast Domain Link MTU   Admin/Oper  Status   Status
+------ ---------- ---------------- ---- ----- ----------- -------- ------
+e3a    Cluster      Cluster        up   9000  auto/100000 healthy  false
+e0d    Cluster      Cluster        up   9000  auto/100000 healthy  false
+8 entries were displayed.</pre>
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a" start="2">
+<li>
+<p>Verify the switch health from the cluster (this might not show switch cs2, since LIFs are not homed on e0d).</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network device-discovery show -protocol cdp
+Node/       Local  Discovered
+Protocol    Port   Device (LLDP: ChassisID)  Interface         Platform
+----------- ------ ------------------------- ----------------- --------
+cluster1-01/cdp
+            e3a    cs1                       Ethernet1/7       N9K-C9336C
+            e0d    cs2                       Ethernet1/7       N9K-C9336C
+cluster01-2/cdp
+            e3a    cs1                       Ethernet1/8       N9K-C9336C
+            e0d    cs2                       Ethernet1/8       N9K-C9336C
+cluster01-3/cdp
+            e3a    cs1                       Ethernet1/1/1     N9K-C9336C
+            e3b    cs2                       Ethernet1/1/1     N9K-C9336C
+cluster1-04/cdp
+            e3a    cs1                       Ethernet1/1/2     N9K-C9336C
+            e3b    cs2                       Ethernet1/1/2     N9K-C9336C
+cluster1::*&gt; system cluster-switch show -is-monitoring-enabled-operational true
+Switch                      Type               Address          Model
+--------------------------- ------------------ ---------------- -----
+cs1                         cluster-network    10.233.205.90    NX9-C9336C
+     Serial Number: FOCXXXXXXGD
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
+cs2                         cluster-network    10.233.205.91    NX9-C9336C
+     Serial Number: FOCXXXXXXGS
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
+2 entries were displayed.</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You might observe the following output on the cs1 switch console depending on the RCF version previously loaded on the switch.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>2020 Nov 17 16:07:18 cs1 %$ VDC-1 %$ %STP-2-UNBLOCK_CONSIST_PORT: Unblocking port port-channel1 on VLAN0092. Port consistency restored.
+2020 Nov 17 16:07:23 cs1 %$ VDC-1 %$ %STP-2-BLOCK_PVID_PEER: Blocking port-channel1 on VLAN0001. Inconsistent peer vlan.
+2020 Nov 17 16:07:23 cs1 %$ VDC-1 %$ %STP-2-BLOCK_PVID_LOCAL: Blocking port-channel1 on VLAN0092. Inconsistent local vlan.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="19">
+<li>
+<p><a id="step19"></a>On cluster switch cs1, shut down the ports connected to the cluster ports of the nodes. The following example uses the interface example output from step 1:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs1(config)# interface eth1/1/1-2,eth1/7-8
+cs1(config-if-range)# shutdown</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="20">
+<li>
+<p><a id="step20"></a>Verify that the cluster LIFs have migrated to the ports hosted on switch cs2. This might take a few seconds:<br>
+<code>network interface show -role cluster</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface show -role cluster
+        Logical            Status      Network         Current      Current Is
+Vserver Interface          Admin/Oper  Address/Mask    Node         Port    Home
+------- ------------------ ----------- --------------- ------------ ------- ----
+Cluster
+        cluster1-01_clus1  up/up       169.254.3.4/23   cluster1-01   e0d  false
+        cluster1-01_clus2  up/up       169.254.3.5/23   cluster1-01   e0d   true
+        cluster1-02_clus1  up/up       169.254.3.8/23   cluster1-02   e0d  false
+        cluster1-02_clus2  up/up       169.254.3.9/23   cluster1-02   e0d   true
+        cluster1-03_clus1  up/up       169.254.1.3/23   cluster1-03   e3b  false
+        cluster1-03_clus2  up/up       169.254.1.1/23   cluster1-03   e3b   true
+        cluster1-04_clus1  up/up       169.254.1.6/23   cluster1-04   e3b  false
+        cluster1-04_clus2  up/up       169.254.1.7/23   cluster1-04   e3b   true
+8 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="21">
+<li>
+<p><a id="step21"></a>Verify that the cluster is healthy:<br>
+<code>cluster show</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; cluster show
+Node                 Health   Eligibility   Epsilon
+-------------------- -------- ------------- -------
+cluster1-01          true     true          false
+cluster1-02          true     true          false
+cluster1-03          true     true          true
+cluster1-04          true     true          false
+4 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="22">
+<li>
+<p><a id="step22"></a>Repeat Steps 7 to 14 on switch cs1.</p>
+</li>
+<li>
+<p>Enable auto-revert on the cluster LIFs.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface modify -vserver Cluster -lif * -auto-revert True</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="24">
+<li>
+<p><a id="step24"></a>Reboot switch cs1. You do this to trigger the cluster LIFs to revert to their home ports. You can ignore the “cluster ports down” events reported on the nodes while the switch reboots.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs1# reload
+This command will reboot the system. (y/n)?  [n] y</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="25">
+<li>
+<p><a id="step25"></a>Verify that the switch ports connected to the cluster ports are up.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs1# show interface brief | grep up
+.
+.
+Eth1/1/1      1       eth  access up      none                   100G(D) --
+Eth1/1/2      1       eth  access up      none                   100G(D) --
+Eth1/7        1       eth  trunk  up      none                   100G(D) --
+Eth1/8        1       eth  trunk  up      none                   100G(D) --
+.
+.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="26">
+<li>
+<p><a id="step26"></a>Verify that the ISL between cs1 and cs2 is functional:<br>
+<code>show port-channel summary</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cs1# show port-channel summary
+Flags:  D - Down        P - Up in port-channel (members)
+        I - Individual  H - Hot-standby (LACP only)
+        s - Suspended   r - Module-removed
+        b - BFD Session Wait
+        S - Switched    R - Routed
+        U - Up (port-channel)
+        p - Up in delay-lacp mode (member)
+        M - Not in use. Min-links not met
+--------------------------------------------------------------------------------
+Group Port-       Type     Protocol  Member Ports      Channel
+--------------------------------------------------------------------------------
+1     Po1(SU)     Eth      LACP      Eth1/35(P)        Eth1/36(P)
+cs1#</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="27">
+<li>
+<p><a id="step27"></a>Verify that the cluster LIFs have reverted to their home port:<br>
+<code>network interface show -role cluster</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface show -role cluster
+        Logical            Status     Network           Current     Current Is
+Vserver Interface          Admin/Oper Address/Mask      Node        Port    Home
+------- ------------------ ---------- ----------------- ----------- ------- ----
+Cluster
+        cluster1-01_clus1  up/up      169.254.3.4/23    cluster1-01  e0d   true
+        cluster1-01_clus2  up/up      169.254.3.5/23    cluster1-01  e0d   true
+        cluster1-02_clus1  up/up      169.254.3.8/23    cluster1-02  e0d   true
+        cluster1-02_clus2  up/up      169.254.3.9/23    cluster1-02  e0d   true
+        cluster1-03_clus1  up/up      169.254.1.3/23    cluster1-03  e3b   true
+        cluster1-03_clus2  up/up      169.254.1.1/23    cluster1-03  e3b   true
+        cluster1-04_clus1  up/up      169.254.1.6/23    cluster1-04  e3b   true
+        cluster1-04_clus2  up/up      169.254.1.7/23    cluster1-04  e3b   true
+8 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="28">
+<li>
+<p><a id="step28"></a>Verify that the cluster is healthy:<br>
+<code>cluster show</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; cluster show
+Node                 Health  Eligibility   Epsilon
+-------------------- ------- ------------- -------
+cluster1-01          true    true          false
+cluster1-02          true    true          false
+cluster1-03          true    true          true
+cluster1-04          true    true          false
+4 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="29">
+<li>
+<p><a id="step29"></a>Ping the remote cluster interfaces to verify connectivity:<br>
+<code>cluster ping-cluster -node local</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; cluster ping-cluster -node local
+Host is cluster1-03
+Getting addresses from network interface table...
+Cluster cluster1-03_clus1 169.254.1.3 cluster1-03 e3a
+Cluster cluster1-03_clus2 169.254.1.1 cluster1-03 e3b
+Cluster cluster1-04_clus1 169.254.1.6 cluster1-04 e3a
+Cluster cluster1-04_clus2 169.254.1.7 cluster1-04 e3b
+Cluster cluster1-01_clus1 169.254.3.4 cluster1-01 e3a
+Cluster cluster1-01_clus2 169.254.3.5 cluster1-01 e0d
+Cluster cluster1-02_clus1 169.254.3.8 cluster1-02 e3a
+Cluster cluster1-02_clus2 169.254.3.9 cluster1-02 e0d
+Local = 169.254.1.3 169.254.1.1
+Remote = 169.254.1.6 169.254.1.7 169.254.3.4 169.254.3.5 169.254.3.8 169.254.3.9
+Cluster Vserver Id = 4294967293
+Ping status:
+............
+Basic connectivity succeeds on 12 path(s)
+Basic connectivity fails on 0 path(s)
+................................................
+Detected 9000 byte MTU on 12 path(s):
+    Local 169.254.1.3 to Remote 169.254.1.6
+    Local 169.254.1.3 to Remote 169.254.1.7
+    Local 169.254.1.3 to Remote 169.254.3.4
+    Local 169.254.1.3 to Remote 169.254.3.5
+    Local 169.254.1.3 to Remote 169.254.3.8
+    Local 169.254.1.3 to Remote 169.254.3.9
+    Local 169.254.1.1 to Remote 169.254.1.6
+    Local 169.254.1.1 to Remote 169.254.1.7
+    Local 169.254.1.1 to Remote 169.254.3.4
+    Local 169.254.1.1 to Remote 169.254.3.5
+    Local 169.254.1.1 to Remote 169.254.3.8
+    Local 169.254.1.1 to Remote 169.254.3.9
+Larger than PMTU communication succeeds on 12 path(s)
+RPC status:
+6 paths up, 0 paths down (tcp check)
+6 paths up, 0 paths down (udp check)</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="install-the-rcf-on-a-cisco-nexus-9336c-fx2-storage-switch">Install the RCF on a Cisco Nexus 9336C-FX2 storage switch</h4>
+<div class="paragraph">
+<p>The reference configuration files (RCFs) can be upgraded on Cisco Nexus 9336C-FX2 storage switches.</p>
+</div>
+<div class="sect4">
+<h5 id="before-you-begin-2">Before you begin</h5>
+<div class="paragraph">
+<p>The following conditions must exist before you upgrade the RCF on the storage switch:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The switch must be fully functioning (there should be no errors in the logs or similar issues).</p>
+</li>
+<li>
+<p>You must have checked or set your desired boot variables in the RCF to reflect the desired boot images if you are installing only NX-OS and keeping your current RCF version.</p>
+</li>
+<li>
+<p>If you need to change the boot variables to reflect the current boot images, you must do so before reapplying the RCF so that the correct version is instantiated on future reboots.</p>
+</li>
+<li>
+<p>You must have referred to the appropriate software and upgrade guides available on the Cisco web site for complete documentation on the Cisco storage upgrade and downgrade procedures. See <a href="https://www.cisco.com/c/en/us/support/switches/nexus-9336c-fx2-switch/model.html">Cisco Nexus 9000 Series Switches</a> for more information.</p>
+</li>
+<li>
+<p>The number of 100 GbE ports are defined in the reference configuration files (RCFs) available on the <a href="https://mysupport.netapp.com/site/info/cisco-ethernet-switch">Cisco Ethernet switches</a> page.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="procedure-summary">Procedure summary</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Check the health status of switches and ports (steps 1-4)</p>
+</li>
+<li>
+<p>Download the NX-OS image to Cisco switch st2 and reboot (steps 5-8)</p>
+</li>
+<li>
+<p>Copy the RCF to Cisco switch st2 (steps 9-12)</p>
+</li>
+<li>
+<p>Recheck the health status of switches and ports (steps 13-15)</p>
+</li>
+<li>
+<p>Repeat steps 1-15  for Cisco switch st1.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The command outputs might vary depending on different releases of ONTAP.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The examples in this procedure use the following switch and node nomenclature:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The names of the two storage switches are <em>st1</em> and <em>st2</em>.</p>
+</li>
+<li>
+<p>The nodes are <em>node1</em> and <em>node2</em>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The procedure requires the use of both ONTAP commands and Cisco Nexus 9000 Series Switches commands; ONTAP commands are used unless otherwise indicated.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="steps-4">Steps</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message: <code>system node autosupport invoke -node * -type all - message MAINT=xh</code></p>
+<div class="paragraph">
+<p>Where x is the duration of the maintenance window in hours.</p>
+</div>
+</li>
+<li>
+<p>Check that the storage switches are available:<br>
+<code>system switch ethernet show</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>storage::*&gt; system switch ethernet show
+Switch                    Type               Address          Model
+------------------------- ------------------ ---------------- ---------------
+st1
+                          storage-network    172.17.227.5     NX9-C9336C
+      Serial Number: FOC221206C2
+       Is Monitored: true
+             Reason: None
+   Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                     9.3(5)
+     Version Source: CDP
+st2
+                          storage-network    172.17.227.6     NX9-C9336C
+      Serial Number: FOC220443LZ
+       Is Monitored: true
+             Reason: None
+   Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                     9.3(5)
+     Version Source: CDP
+2 entries were displayed.
+storage::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p><a id="step3"></a>Verify that the node ports are healthy and operational:<br>
+<code>storage port show -port-type ENET</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>storage::*&gt; storage port show -port-type ENET
+                                   Speed                            VLAN
+Node     Port   Type    Mode       (Gb/s)     State     Status        ID
+------- ------- ------- ---------- ---------- --------- ----------- -----
+node1
+        e3a     ENET    storage    100        enabled   online         30
+        e3b     ENET    storage      0        enabled   offline        30
+        e7a     ENET    storage      0        enabled   offline        30
+        e7b     ENET    storage    100        enabled   online         30
+node2
+        e3a     ENET    storage    100        enabled   online         30
+        e3b     ENET    storage      0        enabled   offline        30
+        e7a     ENET    storage      0        enabled   offline        30
+        e7b     ENET    storage    100        enabled   online         30</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p><a id="step4"></a>Check that there are no storage switch or cabling issues with the cluster:<br>
+<code>system health alert show -instance</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>storage::*&gt; system health alert show -instance
+There are no entries matching your query.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="5">
+<li>
+<p><a id="step5"></a>Download the NX-OS image to switch st2.</p>
+</li>
+<li>
+<p>Install the system image so that the new version will be loaded the next time switch st2 is rebooted. The switch will be reboot in 10 seconds with the new image as shown in the following output:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>st2# install all nxos bootflash:nxos.9.3. 5.bin
+Installer will perform compatibility check first. Please wait.
+Installer is forced disruptive
+Verifying image bootflash:/nxos.9.3.4.bin for boot variable "nxos".
+[####################] 100% -- SUCCESS
+Verifying image type.
+[[####################] 100% -- SUCCESS
+Preparing "nxos" version info using image bootflash:/nxos.9.3.4.bin.
+[####################] 100% -- SUCCESS
+Preparing "bios" version info using image bootflash:/nxos.9.3.4.bin.
+[####################] 100% -- SUCCESS
+Performing module support checks.
+[####################] 100% -- SUCCESS
+Notifying services about system upgrade.
+[####################] 100% -- SUCCESS
+Compatibility check is done:
+Module  bootable  Impact  Install-type  Reason
+------    --------   ----- --------   ------------   ---- --
+     1        yes      disruptive         reset  default upgrade is not hitless
+Images will be upgraded according to following table:
+Module Image        Running-Version(pri:alt)               New-Version  Upg
+                                                                        Required
+------ --------  ---------------------------------------  ------------  --------
+ 1     nxos                                     9.3(3)          9.3(4)       yes
+ 1     bios      v08.37(01/28/2020):v08.23(09/23/2015)   v08.38(05/29/2020)   no
+Switch will be reloaded for disruptive upgrade.
+Do you want to continue with the installation (y/n)? [n] y
+input string too long
+Do you want to continue with the installation (y/n)? [n] y
+Install is in progress, please wait.
+Performing runtime checks.
+[####################] 100% -- SUCCESS
+Setting boot variables.
+[####################] 100% -- SUCCESS
+Performing configuration copy.
+[####################] 100% -- SUCCESS
+Module 1: Refreshing compact flash and upgrading bios/loader/bootrom.
+Warning: please do not remove or power off the module at this time.
+[####################] 100% -- SUCCESS
+Finishing the upgrade, switch will reboot in 10 seconds.
+st2#</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="7">
+<li>
+<p><a id="step7"></a>Save the configuration.</p>
+<div class="paragraph">
+<p>You are prompted to reboot the system as shown in the following example:</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>st2# copy running-config startup-config
+[########################################] 100% Copy complete.
+st2# reload
+This command will reboot the system. (y/n)? [n] y</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="8">
+<li>
+<p><a id="step8"></a>Confirm that the new NX-OS version number is on the switch.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>st2# show version
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Upgrading a Cisco Nexus 9336C Storage Switch 6
+Upgrading a Cisco Nexus 9336C storage switch
+Copyright (C) 2002-2020, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source. This software is provided "as is," and unless otherwise stated, there is no warranty, express or implied, including but not limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or
+GNU General Public License (GPL) version 3.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1 or
+Lesser General Public License (LGPL) Version 2.0.
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+.
+Software
+ BIOS: version 08.38
+ NXOS: version 9.3(5)
+ BIOS compile time: 05/29/2020
+ NXOS image file is: bootflash:///nxos.9.3. 5.bin
+ NXOS compile time: 4/28/2020 21:00:00 [04/29/2020 02:28:31]
+Hardware
+ cisco Nexus9000 C9336C Chassis (Nexus 9000 Series)
+ Intel(R) Xeon(R) CPU E5-2403 v2 @ 1.80GHz with 8154432 kB of memory.
+ Processor Board ID FOC20291J6K
+ Device name: S2
+ bootflash: 53298520 kB
+Kernel uptime is 0 day(s), 0 hour(s), 3 minute(s), 42 second(s)
+Last reset at 157524 usecs after Mon Nov 2 18:32:06 2020
+           Reason: Reset due to upgrade
+   System version: 9.3(5)
+   Service:
+plugin
+   Core Plugin, Ethernet Plugin
+   Active Package(s):
+st2#</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="9">
+<li>
+<p><a id="step9"></a>Copy the RCF on switch st2 to the switch bootflash using one of the following transfer protocols: FTP, HTTP, TFTP, SFTP, or SCP.</p>
+<div class="paragraph">
+<p>For more information about Cisco commands, see the appropriate guide in the <a href="https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html">Cisco Nexus 9000 Series NX-OS Command Reference guides</a>.</p>
+</div>
+<div class="paragraph">
+<p>The following example shows HTTP being used to copy an RCF to the bootflash on switch st2:</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>st2# copy http://172.16.10.1//cfg/Nexus_9336C_RCF_v1.6-Storage.txt bootflash: vrf management
+% Total % Received % Xferd   Average   Speed  Time   Time   Time
+Current
+   Dload     Upload  Total Spent   Left
+Speed
+ 100    3254          100     3254      0       0     8175    0 --:--:-- --:--:-- --:--:–
+8301
+Copy complete, now saving to disk (please wait)...
+Copy complete.
+st2#</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="10">
+<li>
+<p><a id="step10"></a>Apply the RCF previously downloaded to the bootflash:<br>
+<code>copy bootflash</code>.</p>
+<div class="paragraph">
+<p>The following example shows the RCF file <code>Nexus_9336C_RCF_v1.6-Storage.txt</code> being installed on switch st2:</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>st2# copy Nexus_9336C_RCF_v1.6-Storage.txt running-config echo-commands</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="11">
+<li>
+<p><a id="step11"></a>Verify that the RCF file is the correct newer version:<br>
+<code>show running-config</code></p>
+<div class="paragraph">
+<p>When you check the output to verify you have the correct RCF, make sure that the following information is correct:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The RCF banner</p>
+</li>
+<li>
+<p>The node and port settings</p>
+</li>
+<li>
+<p>Customizations</p>
+<div class="paragraph">
+<p>The output varies according to your site configuration. Check the port settings and refer to the release notes for any changes specific to the RCF that you have installed.</p>
+</div>
+<div class="paragraph">
+<p><strong>Important:</strong> In the banner output from the <code>show banner motd</code> command, you must read and follow the instructions in the *IMPORTANT NOTES *section to ensure the proper configuration and operation of the switch.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>st2# show banner motd
+******************************************************************************
+*NetApp Reference Configuration File (RCF)
+*
+*Switch : Nexus N9K-C9336C-FX2
+*Filename : Nexus_9336C_RCF_v1.6-Storage.txt
+* Date : 10-23-2020
+*Version  : v1.6
+*
+*Port Usage: Storage configuration
+*Ports 1-36: 100GbE Controller and Shelf Storage Ports
+*
+*IMPORTANT NOTES*
+*- This RCF utilizes QoS and requires TCAM re-configuration, requiring RCF
+*to be loaded twice with the Storage Switch rebooted in between.
+*
+*- Perform the following 4 steps to ensure proper RCF installation:
+*
+*(1) Apply RCF first time, expect following messages:
+*- Please save config and reload the system...
+*- Edge port type (portfast) should only be enabled on ports...
+*- TCAM region is not configured for feature QoS class IPv4 ingress...
+*
+*(2) Save running-configuration and reboot Cluster Switch
+*
+*(3) After reboot, apply same RCF second time and expect following messages:
+*- % Invalid command at '^' marker
+*- Syntax error while parsing...
+*
+*(4) Save running-configuration again
+******************************************************************************
+st2#</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="12">
+<li>
+<p><a id="step12"></a>After you verify that the software versions and switch settings are correct, copy the running-config file to the startup-config file on switch st2.</p>
+<div class="paragraph">
+<p>For more information on Cisco commands, see the appropriate guide in the <a href="https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html">Cisco Nexus 9000 Series NX-OS Command Reference guides</a>.</p>
+</div>
+<div class="paragraph">
+<p>The following example shows the <code>running-config</code> file successfully copied to the <code>startup-config</code> file:</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>st2# copy running-config startup-config
+[########################################] 100% Copy complete.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="13">
+<li>
+<p><a id="step13"></a>Recheck that the storage switches are available after the reboot:<br>
+<code>system switch ethernet show</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>storage::*&gt; system switch ethernet show
+Switch                       Type               Address          Model
+---------------------------- ------------------ ---------------- ---------------
+st1
+                            storage-network     172.17.227.5     NX9-C9336C
+     Serial Number: FOC221206C2
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
+st2
+                            storage-network      172.17.227.6    NX9-C9336C
+     Serial Number: FOC220443LZ
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
+2 entries were displayed.
+storage::*</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="14">
+<li>
+<p><a id="step14"></a>Verify that the switch ports are healthy and operational after the reboot:<br>
+<code>storage port show -port-type ENET</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>storage::*&gt; storage port show -port-type ENET
+                                   Speed                            VLAN
+Node    Port    Type    Mode       (Gb/s)      State     Status       ID
+------- ------- ------- ---------- ----------- --------- --------- -----
+node1
+        e3a     ENET    storage           100   enabled   online       30
+        e3b     ENET    storage             0   enabled   offline      30
+        e7a     ENET    storage             0   enabled   offline      30
+        e7b     ENET    storage           100   enabled   online       30
+node2
+        e3a     ENET    storage           100   enabled   online       30
+        e3b     ENET    storage             0   enabled   offline      30
+        e7a     ENET    storage             0   enabled   offline      30
+        e7b     ENET    storage           100   enabled   online       30</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="15">
+<li>
+<p><a id="step15"></a>Recheck that there is no storage switch or cabling issues with the cluster:<br>
+<code>system health alert show -instance</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>storage::*&gt; system health alert show -instance
+There are no entries matching your query.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="16">
+<li>
+<p><a id="step16"></a>Repeat this procedure for the RCF on switch st1.</p>
+</li>
+<li>
+<p>If you suppressed automatic case creation, re-enable it by invoking an AutoSupport message:<br>
+<code>system node autosupport invoke -node * -type all -message MAINT=END</code></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="install-the-rcf-on-a-cisco-nexus-9336c-fx2-shared-switch">Install the RCF on a Cisco Nexus 9336C-FX2 shared switch</h4>
+<div class="paragraph">
+<p>From ONTAP 9.9.1, you can use Cisco Nexus 9336C-FX2 switches to combine storage and cluster functionality into a shared switch scenario.</p>
+</div>
+<div class="sect4">
+<h5 id="before-you-begin-3">Before you begin</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>The cluster switches must be fully functioning (there should be no errors in the logs or similar issues).</p>
+</li>
+<li>
+<p>The storage switches must be fully functioning (there should be no errors in the logs or similar issues).</p>
+</li>
+<li>
+<p>The names of the two storage switches are <em>sh1</em> and <em>sh2</em>.</p>
+</li>
+<li>
+<p>The example used here loads the shared RCF on to the new switch.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="steps-5">Steps</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Copy the RCF on switch sh2 to the switch bootflash using one of the following transfer protocols: FTP, HTTP, TFTP, SFTP, or SCP.</p>
+<div class="paragraph">
+<p>For more information on Cisco commands, see the appropriate guide in the <a href="https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html">Cisco Nexus 9000 Series NX-OS Command Reference guides</a>.</p>
+</div>
+<div class="paragraph">
+<p>The following example shows HTTP being used to copy an RCF to the bootflash on switch sh2:</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sh2# copy http://172.16.10.1//cfg/Nexus_9336C_RCF_v1.7-Cluster-Ha-Storage.txt bootflash: vrf management
+% Total % Received % Xferd   Average   Speed  Time   Time   Time
+Current
+   Dload     Upload  Total Spent   Left
+Speed
+ 100    5143          100     5143      0       0     11300    0 --:--:-- --:--:-- --:--:–
+11300
+Copy complete, now saving to disk (please wait)...
+Copy complete.
+sh2#</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p><a id="step2"></a>Apply the RCF previously downloaded to the bootflash:<br>
+<code>copy bootflash</code>.</p>
+<div class="paragraph">
+<p>The following example shows the RCF file `Nexus_9336C_RCF_v1.7-Cluster-HA-Storage.txt `   being installed on switch sh2:</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sh2# copy Nexus_9336C_RCF_v1.7-Cluster-HA-Storage.txt running-config echo-commands</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p><a id="step3"></a>Verify that the RCF file is the correct newer version:  <code>show running-config</code></p>
+<div class="paragraph">
+<p>When you check the output to verify you have the correct RCF, make sure that the following information is correct:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The RCF banner</p>
+</li>
+<li>
+<p>The node and port settings</p>
+</li>
+<li>
+<p>Customizations</p>
+<div class="paragraph">
+<p>The output varies according to your site configuration. Check the port settings and refer to the release notes for any changes specific to the RCF that you have installed.</p>
+</div>
+<div class="paragraph">
+<p><strong>Important:</strong> In the banner output from the <code>show banner motd</code> command, you must read and follow the instructions in the *IMPORTANT NOTES *section to ensure the proper configuration and operation of the switch.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sh2# show banner motd
+******************************************************************************
+*NetApp Reference Configuration File (RCF)
+*
+*Switch : Nexus N9K-C9336C-FX2
+*Filename : Nexus_9336C_RCF_v1.7-Cluster-HA-Storage.txt
+* Date :  Jan-08-2021
+*Version  : v1.7
+*
+*Port Usage:
+*Ports  1-8: 40/100GbE Intra-Cluster/HA Ports, int e1/1-8
+*Port     9: 10GbE breakout Intra-Cluster Ports, int e1/9/1-4
+*Port    10: 25GbE breakout Intra-Cluster/HA Ports, int e1/10/1-4
+*Ports 11-22: First HA-pair Controller and Shelf Storage Ports, int e1/11-22
+*Ports 23-34: Second HA-pair Controller and Shelf Storage Ports, int e1/23-34
+*Ports 35-36: Intra-Cluster ISL Ports, int e1/35-36
+*
+* Undo breakout commands and return interfaces to 40/100G configuration in
+* config mode:
+* no interface breakout module 1 port 9 map 10g-4x
+* no interface breakout module 1 port 10 map 25g-4x
+* interface Ethernet 1/9-10
+* inherit port-profile CLUSTER_HA
+* priority-flow-control mode auto
+* service-policy type qos input HA_POLICY
+* exit
+*
+*IMPORTANT NOTES*
+* In certain conditions, N9K-C9336C-FX2 may not be able to auto-negotiate port
+* speed correctly, and port speed must be manually set, in config mode, e.g.
+* int e1/1
+* speed 40000
+* int e1/3
+* speed 100000
+*
+******************************************************************************
+sh2#</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p><a id="step4"></a>After you verify that the software versions and switch settings are correct, copy the <code>running-config</code> file to the startup-config file on switch sh2.</p>
+<div class="paragraph">
+<p>For more information on Cisco commands, see the appropriate guide in the <a href="https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html">Cisco Nexus 9000 Series NX-OS Command Reference guides</a>.</p>
+</div>
+<div class="paragraph">
+<p>The following example shows the <code>running-config</code> file successfully copied to the <code>startup-config</code> file:</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sh2# copy running-config startup-config
+[########################################] 100% Copy complete.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="5">
+<li>
+<p><a id="step5"></a>Repeat this procedure for the RCF on switch sh1.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div class="page-nav-contribute"  >
+      <div class="page-nav-contribute-title">CONTRIBUTE</div>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/switch-cisco-9336c-shared/9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.adoc" class="btn btn-default githubEditButton" role="button"><img src="/us-en/ontap-systems/images/github.png" class="github-icon" />Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Install NX-OS software and Reference Configuration Files (RCFs)](https://docs.netapp.com/us-en/ontap-systems/switch-cisco-9336c-shared/9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html)" class="btn btn-default githubEditButton" role="button"><img src="/us-en/ontap-systems/images/github.png" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Contributor's Guide</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2021 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright">Announcements</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/ontap-systems/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/ontap-systems/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/ontap-systems/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/ontap-systems/js/www-ntap.js'></script>
+  </body>
+
+  
+</html>

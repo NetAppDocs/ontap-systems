@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Migrate from a switched configuration with DAT storage by adding two new shared switches</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Migrate from a switched configuration with DAT storage by adding two new shared switches" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-systems/switch-cisco-9336c-shared/9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.html" />
+	<meta property="og:description" content="" />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-systems/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="">
+  <meta name="keywords" content=" ">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/us-en/ontap-systems/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/us-en/ontap-systems/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-pagenav.css' type='text/css'>
+
+  
+
+  
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/us-en/ontap-systems/js/na-search.js'></script>
+  
+
+  
+  <script src='/us-en/ontap-systems/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/us-en/ontap-systems/js/na-utility.js'></script>
+  <script src='/us-en/ontap-systems/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/us-en/ontap-systems/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/us-en/ontap-systems/js/toc.js'></script>
+  <script src='/us-en/ontap-systems/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Product and Solutions</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Support and Training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Customer Stories</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="No results were found for {query}" data-did-you-mean="Search for {suggestion}." data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"  ></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar"><!-- Start Language Selector --><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+        <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">Home</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">Documentation</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/us-en/ontap-systems/">ONTAP&nbsp;Systems</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          Migrate from a switched configuration with DAT storage by adding two new shared switches
+        </li>
+      </ul>
+    </div>
+
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" >
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
+    </span>
+  </a>
+</div>
+<ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><div class="n-pdf-section">
+      <span class="n-pdf-section-title">Site</span>
+    </div>
+    <li>
+      <a target="_blank" href="/us-en/ontap-systems/pdfs/fullsite-switch-cisco-9336c-shared_sidebar/Cisco_Nexus_9336C_FX2_Shared_Switches.pdf" >
+        <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+        Cisco Nexus 9336C-FX2 Shared Switches
+      </a>
+    </li>
+
+
+
+
+
+
+
+
+    <div class="n-pdf-section">
+  <span class="n-pdf-section-title">This page</span>
+</div>
+
+<li class="active">
+  <a target="_blank" href="/us-en/ontap-systems/pdfs/pages/switch-cisco-9336c-shared/9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.pdf" >
+    <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+    Migrate from a switched configuration with DAT storage by adding two new shared switches
+  </a>
+</li>
+
+
+  
+
+
+
+
+
+
+
+
+</ul>
+
+<script>
+  $("#toggleContainerPdf li.active").parents('li').toggle('display');
+  $("#toggleContainerPdf li.active").parents('span.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+  });
+</script><ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="index.html">
+        Cisco Nexus 9336C-FX2 Shared Switches
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_setup_and_configuration_guide_for_cisco_shared_switches.html">
+        Setup and configuration guide for Cisco shared switches
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html">
+        Install NX-OS software and Reference Configuration Files (RCFs)
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_migrate_from_a_switchless_cluster_with_dat_storage_by_adding_two_new_shared_switches.html">
+        Migrate from a switchless cluster with DAT storage by adding two new shared switches
+      </a></li><li class="  active "><a class="na-navbar-padding" href="9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.html">
+        Migrate from a switched configuration with DAT storage by adding two new shared switches
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_migrate_from_a_switchless_configuration_with_sat_storage_by_reusing_the_storage_switches.html">
+        Migrate from a switchless configuration with SAT storage by reusing the storage switches
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_migrate_from_a_switched_cluster_with_sat_storage_by_reusing_the_storage_switches.html">
+        Migrate from a switched cluster with SAT storage by reusing the storage switches
+      </a></li><li class=" "><a class="na-navbar-padding" href="9336c_replace_a_cisco_nexus_9336c-fx2_shared_switch.html">
+        Replace a Cisco Nexus 9336C-FX2 shared switch
+      </a></li></ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      
+
+
+
+<div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Migrate from a switched configuration with DAT storage by adding two new shared switches</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2021-05-12 13:48:11 +0000">05/12/2021</time>
+    
+  
+
+<span>Contributors
+  <a target="_blank" href="https://github.com/netapp-aherbin">
+    <img  class="avatar avatar-small"
+          alt="netapp-aherbin"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/38955266?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+  <span>
+    <a target="_blank" href="/us-en/ontap-systems/pdfs/pages/switch-cisco-9336c-shared/9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.pdf" role="button">
+      <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>Download PDF of this page</a>
+  </span>
+
+
+</p>
+
+
+<div class="sect3">
+<h4 id="migrate-from-a-switched-configuration-with-dat-storage">Migrate from a switched configuration with DAT storage</h4>
+<div class="paragraph">
+<p>You must be aware of certain configuration information, port connections,  and cabling requirements when you are replacing some older Cisco Nexus cluster switches with Cisco Nexus 9336C-FX2 shared switches.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The following switches are supported:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nexus 9336C-FX2</p>
+</li>
+<li>
+<p>Nexus 3232C</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The switches use the following ports for connections to nodes:</p>
+</li>
+<li>
+<p>Nexus 9336C-FX2:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ports 1- 3: Breakout mode (4x10G) Intra-Cluster Ports, int e1/1/1-4, e1/2/1-4, e1/3/1-4</p>
+</li>
+<li>
+<p>Ports 4- 6: Breakout mode (4x25G) Intra-Cluster/HA Ports, int e1/4/1-4, e1/5/1-4, e1/6/1-4</p>
+</li>
+<li>
+<p>Ports 7-34: 40/100GbE Intra-Cluster/HA Ports, int e1/7-34</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Nexus 3232C:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ports 1-30: 10/40/100 GbE</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The switches use the following Inter-Switch Link (ISL) ports:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ports int e1/35-36: Nexus 9336C-FX2</p>
+</li>
+<li>
+<p>Ports e1/31-32: Nexus 3232C</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The Hardware Universe contains information about supported cabling for all cluster switches.</p>
+<div class="paragraph">
+<p>See <a href="https://hwu.netapp.com">Hardware Universe</a> for more information.</p>
+</div>
+</li>
+<li>
+<p>You have configured some of the ports on Nexus 9336C-FX2 switches to run at 100 GbE.</p>
+</li>
+<li>
+<p>You have planned, migrated, and documented 100 GbE connectivity from nodes to Nexus 9336C-FX2 switches.</p>
+</li>
+<li>
+<p>The ONTAP and NX-OS versions supported in this procedure are on the Cisco Ethernet Switches page. See <a href="https://mysupport.netapp.com/site/info/cisco-ethernet-switch">Cisco Ethernet switches</a>.</p>
+</li>
+<li>
+<p>You can migrate nondisruptively other Cisco cluster switches from an ONTAP cluster to Cisco Nexus 9336C-FX2 network switches.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="before-you-begin">Before you begin</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>The existing switch network must be properly set up and functioning.</p>
+</li>
+<li>
+<p>All ports must be in the <strong>up</strong> state to ensure nondisruptive operations.</p>
+</li>
+<li>
+<p>The Nexus 9336C-FX2 switches must be configured and operating under the proper version of NX-OS installed and reference configuration file (RCF) applied.</p>
+</li>
+<li>
+<p>The existing network configuration must have the following:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A redundant and fully functional NetApp cluster using both older Cisco switches.</p>
+</li>
+<li>
+<p>Management connectivity and console access to both the older Cisco switches and the new switches.</p>
+</li>
+<li>
+<p>All cluster LIFs in the <strong>up</strong> state with the cluster LIFs are on their home ports.</p>
+</li>
+<li>
+<p>ISL ports enabled and cabled between the other Cisco switches and between the new switches.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="about-this-task">About this task</h5>
+<div class="paragraph">
+<p>The examples in this procedure use the following switch and node nomenclature:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The existing Cisco Nexus 3232C cluster switches are <em>c1</em> and <em>c2</em>.</p>
+</li>
+<li>
+<p>The new Nexus 9336C-FX2 switches are <em>sh1</em> and <em>sh2</em>.</p>
+</li>
+<li>
+<p>The nodes are <em>node1</em> and <em>node2</em>.</p>
+</li>
+<li>
+<p>The cluster LIFs are <em>node1_clus1</em> and <em>node1_clus2</em> on node 1, and <em>node2_clus1</em> and <em>node2_clus2</em> on node 2 respectively.</p>
+</li>
+<li>
+<p>Switch c2 is replaced by switch sh2 first and then switch c1 is replaced by switch sh1.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="steps">Steps</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message:<br>
+<code>system node autosupport invoke -node * -type all -message MAINT=x h</code></p>
+<div class="paragraph">
+<p>Where x is the duration of the maintenance window in hours.</p>
+</div>
+</li>
+<li>
+<p>Check the administrative and operational status of each cluster port.</p>
+</li>
+<li>
+<p>Verify that all the cluster ports are up with a healthy status:<br>
+<code>network port show –role cluster</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network port show -role cluster
+Node: node1
+                                                                   Ignore
+                                             Speed(Mbps)  Health   Health
+Port    IPspace   Broadcast Domain Link MTU  Admin/Ope    Status   Status
+------- --------- ---------------- ---- ---- ------------ -------- ------
+e3a     Cluster   Cluster          up   9000  auto/100000 healthy  false
+e3b     Cluster   Cluster          up   9000  auto/100000 healthy  false
+
+Node: node2
+                                                                   Ignore
+                                             Speed(Mbps) Health    Health
+Port    IPspace   Broadcast Domain Link MTU  Admin/Oper  Status    Status
+------- --------- ---------------- ---- ---- ----------- --------- ------
+e3a     Cluster   Cluster          up   9000  auto/100000 healthy  false
+e3b     Cluster   Cluster          up   9000  auto/100000 healthy  false
+4 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p><a id="step4"></a>Verify that all the cluster interfaces (LIFs) are on the home port:<br>
+<code>network interface show -role cluster</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface show -role cluster
+         Logical     Status     Network           Current     Current Is
+Vserver  Interface   Admin/Oper Address/Mask      Node        Port    Home
+-------  ----------- ---------- ----------------- ----------- ------- ----
+Cluster
+        node1_clus1  up/up      169.254.3.4/23    node1       e3a     true
+        node1_clus2  up/up      169.254.3.5/23    node1       e3b     true
+        node2_clus1  up/up      169.254.3.8/23    node2       e3a     true
+        node2_clus2  up/up      169.254.3.9/23    node2       e3b     true
+4 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="5">
+<li>
+<p><a id="step5"></a>Verify that the cluster displays information for both cluster switches:<br>
+<code>system cluster-switch show -is-monitoring-enabled-operational true</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; system cluster-switch show -is-monitoring-enabled-operational true
+Switch                    Type               Address          Model
+------------------------- ------------------ ---------------- ------
+sh1                       cluster-network    10.233.205.90    N9K-C9336C
+     Serial Number: FOCXXXXXXGD
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
+sh2                       cluster-network    10.233.205.91    N9K-C9336C
+     Serial Number: FOCXXXXXXGS
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="6">
+<li>
+<p><a id="step6"></a>Disable auto-revert on the cluster LIFs.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface modify -vserver Cluster -lif * -auto-revert false</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="7">
+<li>
+<p><a id="step7"></a>Shutdown the c2 switch:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>c2# configure terminal
+Enter configuration commands, one per line. End with CNTL/Z.
+c2(config)# interface ethernet &lt;int range&gt;
+c2(config)#shutdown</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="8">
+<li>
+<p><a id="step8"></a>Verify that the cluster LIFs have migrated to the ports hosted on cluster switch sh1:<br>
+<code>network interface show -role cluster</code><br>
+This might take a few seconds.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface show -role cluster
+          Logical     Status     Network         Current      Current  Is
+Vserver   Interface   Admin/Oper Address/Mask    Node         Port     Home
+--------- ----------- ---------- --------------- ------------ -------- -----
+Cluster
+          node1_clus1 up/up      169.254.3.4/23  node1        e3a      true
+          node1_clus2 up/up      169.254.3.5/23  node1        e3a      false
+          node2_clus1 up/up      169.254.3.8/23  node2        e3a      true
+          node2_clus2 up/up      169.254.3.9/23  node2        e3a      false
+4 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="9">
+<li>
+<p><a id="step9"></a>Replace switch c2 with the new switch sh2 and re-cable the new switch.</p>
+</li>
+<li>
+<p>Verify that the ports are back up on sh2. <strong>Note</strong> that the LIFs are still on switch c1.</p>
+</li>
+<li>
+<p>Shutdown the c1 switch:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>c1# configure terminal
+Enter configuration commands, one per line. End with CNTL/Z.
+c1(config)# interface ethernet &lt;int range&gt;
+c1(config)#shutdown</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="12">
+<li>
+<p><a id="step12"></a>Verify that the cluster LIFs have migrated to the ports hosted on cluster switch sh2. This might take a few seconds.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface show -role cluster
+         Logical        Status     Network         Current   Current Is
+Vserver  Interface      Admin/Oper Address/Mask    Node      Port    Home
+-------- -------------- ---------- --------------- --------- ------- ----
+Cluster
+         node1_clus1    up/up      169.254.3.4/23  node1     e3a     true
+         node1_clus2    up/up      169.254.3.5/23  node1     e3a     false
+         node2_clus1    up/up      169.254.3.8/23  node2     e3a     true
+         node2_clus2    up/up      169.254.3.9/23  node2     e3a     false
+4 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="13">
+<li>
+<p><a id="step13"></a>Replace switch c1 with the new switch sh1 and re-cable the new switch.</p>
+</li>
+<li>
+<p>Verify that the ports are back up on sh1. <strong>Note</strong> that the LIFs are still on switch c2.</p>
+</li>
+<li>
+<p>Enable auto-revert on the cluster LIFs:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; network interface modify -vserver Cluster -lif * -auto-revert True</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="16">
+<li>
+<p><a id="step16"></a>Verify that the cluster is healthy:<br>
+<code>cluster show</code></p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cluster1::*&gt; cluster show
+Node                 Health  Eligibility   Epsilon
+-------------------- ------- ------------- -------
+node1                true    true          false
+node2                true    true          false
+2 entries were displayed.
+cluster1::*&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div class="page-nav-contribute"  >
+      <div class="page-nav-contribute-title">CONTRIBUTE</div>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/switch-cisco-9336c-shared/9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.adoc" class="btn btn-default githubEditButton" role="button"><img src="/us-en/ontap-systems/images/github.png" class="github-icon" />Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Migrate from a switched configuration with DAT storage by adding two new shared switches](https://docs.netapp.com/us-en/ontap-systems/switch-cisco-9336c-shared/9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.html)" class="btn btn-default githubEditButton" role="button"><img src="/us-en/ontap-systems/images/github.png" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Contributor's Guide</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2021 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright">Announcements</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/ontap-systems/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/ontap-systems/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/ontap-systems/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/ontap-systems/js/www-ntap.js'></script>
+  </body>
+
+  
+</html>

@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Verify the node4 installation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Verify the node4 installation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-auto-app/verifying_the_node4_installation.html" />
+	<meta property="og:description" content="Verify the node4 installation" />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-systems/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="Verify the node4 installation">
+  <meta name="keywords" content=" verify, node4, installation, physical ports, node2, node, LIF, MetroCluster">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/us-en/ontap-systems/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/us-en/ontap-systems/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-pagenav.css' type='text/css'>
+
+  
+
+  
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/us-en/ontap-systems/js/na-search.js'></script>
+  
+
+  
+  <script src='/us-en/ontap-systems/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/us-en/ontap-systems/js/na-utility.js'></script>
+  <script src='/us-en/ontap-systems/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/us-en/ontap-systems/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/us-en/ontap-systems/js/toc.js'></script>
+  <script src='/us-en/ontap-systems/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Product and Solutions</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Support and Training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Customer Stories</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" data-type="widget" data-placeholder="Search Documentation" data-no-results-found="No results were found for {query}" data-did-you-mean="Search for {suggestion}." data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" data-results-found="{hitCount} results found"  ></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar"><!-- Start Language Selector --><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+        <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">Home</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">Documentation</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/us-en/ontap-systems/">ONTAP&nbsp;Systems</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          Verify the node4 installation
+        </li>
+      </ul>
+    </div>
+
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" >
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">PDFs<span>
+    </span>
+  </a>
+</div>
+<ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><div class="n-pdf-section">
+      <span class="n-pdf-section-title">Site</span>
+    </div>
+    <li>
+      <a target="_blank" href="/us-en/ontap-systems/pdfs/fullsite-upgrade-arl-auto-app_sidebar/Using__system_controller_replace__Commands_to_Upgrade_Controller_Hardware_Running_ONTAP_9_8.pdf" >
+        <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+        Using "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.8
+      </a>
+    </li>
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/ontap-systems/pdfs/upgrade-arl-auto-app_sidebar/Use_aggregate_relocation_to_upgrade_controller_hardware.pdf" >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+            Use aggregate relocation to upgrade controller hardware
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/ontap-systems/pdfs/upgrade-arl-auto-app_sidebar/Stage_1_Prepare_for_upgrade.pdf" >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+            Stage 1 Prepare for upgrade
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/ontap-systems/pdfs/upgrade-arl-auto-app_sidebar/Stage_2_Relocate_and_retiring_node1.pdf" >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+            Stage 2 Relocate and retiring node1
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/ontap-systems/pdfs/upgrade-arl-auto-app_sidebar/Stage_3_Install_and_boot_node3.pdf" >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+            Stage 3 Install and boot node3
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/ontap-systems/pdfs/upgrade-arl-auto-app_sidebar/Stage_4_Relocate_and_retiring_node2.pdf" >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+            Stage 4 Relocate and retiring node2
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/ontap-systems/pdfs/upgrade-arl-auto-app_sidebar/Stage_5_Install_and_boot_node4.pdf" >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+            Stage 5 Install and boot node4
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+    <div class="n-pdf-section">
+  <span class="n-pdf-section-title">This page</span>
+</div>
+
+<li class="active">
+  <a target="_blank" href="/us-en/ontap-systems/pdfs/pages/upgrade-arl-auto-app/verifying_the_node4_installation.pdf" >
+    <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+    Verify the node4 installation
+  </a>
+</li>
+
+
+  
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/ontap-systems/pdfs/upgrade-arl-auto-app_sidebar/Stage_6_Complete_the_upgrade.pdf" >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+            Stage 6 Complete the upgrade
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+
+    
+      <span class="subfolders" style="display:none;">
+        
+          <div class="n-pdf-section">
+            <span class="n-pdf-section-title">
+              Sections
+            </span>
+          </div>
+        
+        <li>
+          <a target="_blank" href="/us-en/ontap-systems/pdfs/upgrade-arl-auto-app_sidebar/Troubleshooting.pdf" >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>
+            Troubleshooting
+          </a>
+        </li>
+        <span>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </span>
+      </span>
+    
+
+  
+
+
+</ul>
+
+<script>
+  $("#toggleContainerPdf li.active").parents('li').toggle('display');
+  $("#toggleContainerPdf li.active").parents('span.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+  });
+</script><ul id="mysidebar" class="nav"><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Use aggregate relocation to upgrade controller hardware</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="using_aggregate_relocation_to_upgrade_controller_hardware_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="automating_the_controller_upgrade_process.html">
+        Automate the controller upgrade process
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="deciding_whether_to_use_the_aggregate_relocation_guide.html">
+        Decide whether to use the aggregate relocation guide
+      </a></li><li class=" "><a class="na-navbar-padding" href="required_tools_and_documentation.html">
+        Required tools and documentation
+      </a></li><li class=" "><a class="na-navbar-padding" href="guidelines_for_upgrading_controllers_with_arl.html">
+        Guidelines for upgrading controllers with ARL
+      </a></li><li class=" "><a class="na-navbar-padding" href="verifying_the_health_of_the_metrocluster_configuration.html">
+        Verify the health of the MetroCluster configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="checking_for_metrocluster_configuration_errors.html">
+        Check for MetroCluster configuration errors
+      </a></li><li class=" "><a class="na-navbar-padding" href="verifying_switchover,_healing,_and_switchback.html">
+        Verify switchover, healing, and switchback
+      </a></li><li class=" "><a class="na-navbar-padding" href="overview_of_the_arl_upgrade.html">
+        Overview of the ARL upgrade
+      </a></li><li class=" "><a class="na-navbar-padding" href="upgrading_the_node_pair.html">
+        Upgrade the node pair
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Stage 1 Prepare for upgrade</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="stage_1_preparing_for_upgrade_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="preparing_the_nodes_for_upgrade.html">
+        Prepare the nodes for upgrade
+      </a></li><li class=" "><a class="na-navbar-padding" href="getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html">
+        Get an IP address of an external key management server for storage encryption
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Stage 2 Relocate and retiring node1</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="stage_2_relocating_and_retiring_node1_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="relocating_non-root_aggregates_and_nas_data_lifs_owned_by_node1_to_node2.html">
+        Relocate non-root aggregates and NAS data LIFs owned by node1 to node2
+      </a></li><li class=" "><a class="na-navbar-padding" href="relocating_failed_or_vetoed_aggregates.html">
+        Relocate failed or vetoed aggregates
+      </a></li><li class=" "><a class="na-navbar-padding" href="retiring_node1.html">
+        Retire node1
+      </a></li><li class=" "><a class="na-navbar-padding" href="preparing_for_netboot.html">
+        Prepare for netboot
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Stage 3 Install and boot node3</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="stage_3_installing_and_booting_node3_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="installing_and_booting_node3.html">
+        Install and boot node3
+      </a></li><li class=" "><a class="na-navbar-padding" href="setting_the_fc_or_uta_uta2_configuration_on_node3.html">
+        Set the FC or UTA/UTA2 configuration on node3
+      </a></li><li class=" "><a class="na-navbar-padding" href="verifying_the_node3_installation.html">
+        Verify the node3 installation
+      </a></li><li class=" "><a class="na-navbar-padding" href="restoring_key-manager_configuration_on_node3.html">
+        Restore key-manager configuration on node3
+      </a></li><li class=" "><a class="na-navbar-padding" href="moving_non-root_aggregates_and_nas_data_lifs_owned_by_node1_from_node2_to_node3.html">
+        Move non-root aggregates and NAS data LIFs owned by node1 from node2 to node3
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Stage 4 Relocate and retiring node2</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="stage_4_relocating_and_retiring_node2_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="relocating_non-root_aggregates_and_nas_data_lifs_from_node2_to_node3.html">
+        Relocate non-root aggregates and NAS data LIFs from node2 to node3
+      </a></li><li class=" "><a class="na-navbar-padding" href="retiring_node2.html">
+        Retire node2
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Stage 5 Install and boot node4</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="stage_5_installing_and_booting_node4_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="installing_and_booting_node4.html">
+        Install and boot node4
+      </a></li><li class=" "><a class="na-navbar-padding" href="setting_the_fc_or_uta_uta2_configuration_on_node4.html">
+        Set the FC or UTA/UTA2 configuration on node4
+      </a></li><li class="  active "><a class="na-navbar-padding" href="verifying_the_node4_installation.html">
+        Verify the node4 installation
+      </a></li><li class=" "><a class="na-navbar-padding" href="restoring_key-manager_configuration_on_node4.html">
+        Restore key-manager configuration on node4
+      </a></li><li class=" "><a class="na-navbar-padding" href="moving_non-root_aggregates_and_nas_data_lifs_owned_by_node2_from_node3_to_node4.html">
+        Move non-root aggregates and NAS data LIFs owned by node2 from node3 to node4
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Stage 6 Complete the upgrade</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="stage_6_completing_the_upgrade_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="completing_the_upgrade_for_metrocluster_fc_configuration.html">
+        Complete the upgrade for MetroCluster FC configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="ensuring_that_the_new_controllers_are_set_up_correctly.html">
+        Ensure that the new controllers are set up correctly
+      </a></li><li class=" "><a class="na-navbar-padding" href="setting_up_storage_encryption_on_the_new_controller_module.html">
+        Set up Storage Encryption on the new controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="setting_up_netapp_volume_encryption_on_the_new_controller_module.html">
+        Set up NetApp Volume Encryption on the new controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="decommissioning_the_old_system.html">
+        Decommission the old system
+      </a></li><li class=" "><a class="na-navbar-padding" href="resuming_snapmirror_operations.html">
+        Resume SnapMirror operations
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Troubleshooting</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="troubleshooting_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="aggregate_relocation_failures.html">
+        Aggregate relocation failures
+      </a></li><li class=" "><a class="na-navbar-padding" href="checking_for_aggregate_relocation_failure.html">
+        Check for aggregate relocation failure
+      </a></li><li class=" "><a class="na-navbar-padding" href="aggregates_originally_on_node1_are_owned_by_node4_after_completion_of_the_upgrade.html">
+        Aggregates originally on node1 are owned by node4 after completion of the upgrade
+      </a></li><li class=" "><a class="na-navbar-padding" href="reboots_panics_or_power_cycles.html">
+        Reboots, panics, or power cycles
+      </a></li><li class=" "><a class="na-navbar-padding" href="issues_that_can_arise_in_multiple_stages_of_the_procedure.html">
+        Issues that can arise in multiple stages of the procedure
+      </a></li><li class=" "><a class="na-navbar-padding" href="lif_migration_failure.html">
+        LIF migration failure
+      </a></li></ul></li></ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      
+
+
+
+<div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Verify the node4 installation</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2021-05-10 22:15:09 +0000">05/10/2021</time>
+    
+  
+
+<span>Contributors
+  <a target="_blank" href="https://github.com/netapp-barbe">
+    <img  class="avatar avatar-small"
+          alt="netapp-barbe"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/55463742?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-aherbin">
+    <img  class="avatar avatar-small"
+          alt="netapp-aherbin"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/38955266?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-pcarriga">
+    <img  class="avatar avatar-small"
+          alt="netapp-pcarriga"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/77334475?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+  <span>
+    <a target="_blank" href="/us-en/ontap-systems/pdfs/pages/upgrade-arl-auto-app/verifying_the_node4_installation.pdf" role="button">
+      <img src="/us-en/ontap-systems/images/pdf.png" width="20" height="20"/>Download PDF of this page</a>
+  </span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>You must verify that the physical ports from node2 map correctly to the physical ports on node4. This will allow node4 to communicate with other nodes in the cluster and with the network after the upgrade.</p>
+</div>
+<div class="paragraph">
+<div class="title">About this task</div>
+<p>Capture information about the ports on the new nodes the <a href="https://hwu.netapp.com">Hardware Universe</a>. You will use the information later in this section.</p>
+</div>
+<div class="paragraph">
+<p>Physical port layout might vary, depending on the model of the nodes. When the new node boots up, ONTAP will try to determine which ports should host cluster LIFs in order to automatically come into quorum.</p>
+</div>
+<div class="paragraph">
+<p>If the physical ports on node2 do not map directly to the physical ports on node4, the subsequent section <a href="#restore-network-configuration-on-node4">Restore network configuration on node4</a> must be used to repair network connectivity.</p>
+</div>
+<div class="paragraph">
+<p>After you install and boot node4, you must verify that it is installed correctly. You must wait for node4 to join quorum and then resume the relocation operation.</p>
+</div>
+<div class="paragraph">
+<p>At this point in the procedure, the operation will have paused as node4 joins quorum.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Verify that node4 has joined quorum by using the following command:</p>
+<div class="paragraph">
+<p><code>cluster show -node node4 -fields health</code></p>
+</div>
+<div class="paragraph">
+<p>The output of the <code>health</code> field should be <code>true</code>.</p>
+</div>
+</li>
+<li>
+<p>Verify that node4 is part of the same cluster as node3 and that it is healthy by using the following command:</p>
+<div class="paragraph">
+<p><code>cluster show</code></p>
+</div>
+</li>
+<li>
+<p>Switch to advanced privilege mode by using the following command:</p>
+<div class="paragraph">
+<p><code>set advanced</code></p>
+</div>
+</li>
+<li>
+<p>Check the status of the controller replacement operation and verify that it is in a paused state and in the same state it was in before node2 was halted to perform the physical tasks of installing new controllers and moving cables by using the following commands:</p>
+<div class="paragraph">
+<p><code>system controller replace show</code></p>
+</div>
+<div class="paragraph">
+<p><code>system controller replace show-details</code></p>
+</div>
+</li>
+<li>
+<p>If you are working on a MetroCluster system,  verify that the replaced controller is configured correctly for the MetroCluster configuration; the MetroCluster configuration should be in a healthy state. Refer to <a href="verifying_the_health_of_the_metrocluster_configuration.html">Verify the health of the MetroCluster configuration</a>.</p>
+<div class="paragraph">
+<p>Reconfigure the intercluster LIFs on MetroCluster node node4, and check cluster peering to restore communication between the MetroCluster nodes before proceeding to Step 6.</p>
+</div>
+<div class="paragraph">
+<p>Check the MetroCluster node status by using the following command:</p>
+</div>
+<div class="paragraph">
+<p><code>metrocluster node show</code></p>
+</div>
+</li>
+<li>
+<p>Resume the controller replacement operation by using the following command.</p>
+<div class="paragraph">
+<p><code>system controller replace resume</code></p>
+</div>
+</li>
+<li>
+<p>Controller replacement will pause for intervention with the following message:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Cluster::*&gt; system controller replace show
+Node             Status                       Error-Action
+---------------- ------------------------     ------------------------------------
+Node2(now node4) Paused-for-intervention      Follow the instructions given in
+                                              Step Details
+Node2
+
+Step Details:
+--------------------------------------------
+To complete the Network Reachability task, the ONTAP network configuration must be
+manually adjusted to match the new physical network configuration of the hardware.
+This includes:
+1. Re-create the interface group, if needed, before restoring VLANs. For detailed
+commands and instructions, refer to the "Re-creating VLANs, ifgrps, and broadcast
+domains" section of the upgrade controller hardware guide for the ONTAP version
+running on the new controllers.
+2. Run the command "cluster controller-replacement network displaced-vlans show"
+to check if any VLAN is displaced.
+3. If any VLAN is displaced, run the command "cluster controller-replacement
+network displaced-vlans restore" to restore the VLAN on the desired port.
+2 entries were displayed.</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In this guide, section <em>Re-creating VLANs, ifgrps, and broadcast domains</em> has been renamed <em>Restoring network configuration on node4</em>.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>With the controller replacement in a paused state, proceed to the next section of this document to restore network configuration on the node.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="restore-network-configuration-on-node4">Restore network configuration on node4</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After you confirm that node4 is in quorum and can communicate with node3, verify that node2’s VLANs, interface groups and broadcast domains are seen on node4.  Also,  verify that all node4 network ports are configured in their correct broadcast domains.</p>
+</div>
+<div class="paragraph">
+<div class="title">About this task</div>
+<p>For more information on creating and re-creating VLANs, interface groups, and broadcast domains, see the <a href="https://docs.netapp.com/us-en/ontap/networking-app/index.html">ONTAP 9.8 Network Management</a>.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>List all the physical ports that are on upgraded node2 (referred to as node4) by using the following command:</p>
+<div class="paragraph">
+<p><code>network port show -node node4</code></p>
+</div>
+<div class="paragraph">
+<p>All physical network ports, VLAN ports and interface group ports on the node are displayed. From this output you can see any physical ports that have been moved into the <code>Cluster</code> broadcast domain by ONTAP. You can use this output to aid in deciding which ports should be used as interface group member ports, VLAN base ports or standalone physical ports for hosting LIFs.</p>
+</div>
+</li>
+<li>
+<p>List the broadcast domains on the cluster by using the following command:</p>
+<div class="paragraph">
+<p><code>broadcast-domain show</code></p>
+</div>
+</li>
+<li>
+<p>List network port reachability of all ports on node4 by using the following command:</p>
+<div class="paragraph">
+<p><code>network port reachability show</code></p>
+</div>
+<div class="paragraph">
+<p>The output from the command looks similar to the following example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>clusterA::*&gt; reachability show -node node2_node4
+  (network port reachability show)
+Node         Port       Expected Reachability       Reachability Status
+---------    --------  ---------------------------  ---------------------
+node2_node4
+             a0a        Default:Default             no-reachability
+             a0a-822    Default:822                 no-reachability
+             a0a-823    Default:823                 no-reachability
+             e0M        Default:Mgmt                ok
+             e0a        Cluster:Cluster             misconfigured-reachability
+             e0b        Cluster:Cluster             no-reachability
+             e0c        Cluster:Cluster             no-reachability
+             e0d        Cluster:Cluster             no-reachability
+             e0e        Cluster:Cluster             ok
+             e0e-822    -                           no-reachability
+             e0e-823    -                           no-reachability
+             e0f        Default:Default             no-reachability
+             e0f-822    Default:822                 no-reachability
+             e0f-823    Default:823                 no-reachability
+             e0g        Default:Default             misconfigured-reachability
+             e0h        Default:Default             ok
+             e0h-822    Default:822                 ok
+             e0h-823    Default:823                 ok
+18 entries were displayed.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the above example, node2_node4 is just booted after controller replacement. It has several ports that have no reachability and are pending a reachability scan.</p>
+</div>
+</li>
+<li>
+<p><a id="Step4"></a>Repair the reachability for each of the ports on node4 with a reachability status other than <code>ok</code>. Run the following command, first on any physical ports, then on any VLAN ports, one at a time:</p>
+<div class="paragraph">
+<p><code>network port reachability repair -node &lt;node_name&gt;  -port &lt;port_name&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>The output looks like the following example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Cluster ::&gt; reachability repair -node node2_node4 -port e0h</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Warning: Repairing port "node2_node4: e0h" may cause it to move into a different broadcast domain, which can cause LIFs to be re-homed away from the port. Are you sure you want to continue? {y|n}:</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A warning message, as shown above, is expected for ports with a reachability status that might be different from the reachability status of the broadcast domain where it is currently located.</p>
+</div>
+<div class="paragraph">
+<p>Review the connectivity of the port and answer <code>y</code> or <code>n</code> as appropriate.</p>
+</div>
+<div class="paragraph">
+<p>Verify that all physical ports have their expected reachability by using the following command:</p>
+</div>
+<div class="paragraph">
+<p><code>network port reachability show</code></p>
+</div>
+<div class="paragraph">
+<p>As the reachability repair is performed, ONTAP attempts to place the ports in the correct broadcast domains. However, if a port’s reachability cannot be determined and does not belong to any of the existing broadcast domains, ONTAP will create new broadcast domains for these ports.</p>
+</div>
+</li>
+<li>
+<p>If interface group configuration does not match the new controller physical port layout, modify it by using the following steps.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>You must first remove physical ports that should be interface group member ports from their broadcast domain membership. You can do this by using the following command:</p>
+<div class="paragraph">
+<p><code>network port broadcast-domain remove-ports -broadcast-domain &lt;broadcast_domain_name&gt; -ports &lt;node_name:port_name&gt;</code></p>
+</div>
+</li>
+<li>
+<p>Add a member port to an interface group by using the following command:</p>
+<div class="paragraph">
+<p><code>network port ifgrp add-port -node &lt;node_name&gt; - ifgrp &lt;ifgrp&gt; -port &lt;port_name&gt;</code></p>
+</div>
+</li>
+<li>
+<p>The interface group is automatically added to the broadcast domain about a minute after the first member port is added.</p>
+</li>
+<li>
+<p>Verify that the interface group was added to the appropriate broadcast domain by using the following command:</p>
+<div class="paragraph">
+<p><code>network port reachability show -node &lt;node_name&gt; -port &lt;ifgrp&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>If the interface group’s reachability status is not <code>ok</code>, assign it to the appropriate broadcast domain by using the following command:</p>
+</div>
+<div class="paragraph">
+<p><code>network port broadcast-domain add-ports -broadcast-domain &lt;broadcast_domain_name&gt; -ports &lt;node:port&gt;</code></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Assign appropriate physical ports to the <code>Cluster</code> broadcast domain by using the following steps:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Determine which ports have reachability to the <code>Cluster</code> broadcast domain by using the following command:</p>
+<div class="paragraph">
+<p><code>network port reachability show -reachable-broadcast-domains Cluster:Cluster</code></p>
+</div>
+</li>
+<li>
+<p>Repair any port with reachability to the <code>Cluster</code> broadcast domain, if its reachability status is not <code>ok</code> by using the following command:</p>
+<div class="paragraph">
+<p><code>network port reachability repair -node &lt;node_name&gt; -port &lt;port_name&gt;</code></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Move the remaining physical ports into their correct broadcast domains by using one of the following commands:</p>
+<div class="paragraph">
+<p><code>network port reachability repair -node &lt;node_name&gt; -port &lt;port_name&gt;</code></p>
+</div>
+<div class="paragraph">
+<p><code>network port broadcast-domain remove-port</code></p>
+</div>
+<div class="paragraph">
+<p><code>network port broadcast-domain add-port</code></p>
+</div>
+<div class="paragraph">
+<p>Verify that there are no unreachable or unexpected ports present. Check the reachability status for all physical ports by using the following command and examining the output to ensure the status is <code>ok</code>:</p>
+</div>
+<div class="paragraph">
+<p><code>network port reachability show -detail</code></p>
+</div>
+</li>
+<li>
+<p>Restore any VLANs that might have become displaced by using the following steps:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>List displaced VLANs by using the following command:</p>
+<div class="paragraph">
+<p><code>displaced- vlans show</code></p>
+</div>
+<div class="paragraph">
+<p>Output like the following should display:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Cluster::*&gt; displaced-vlans show
+(cluster controller-replacement network displaced-vlans show)
+            Original
+Node        Base Port     VLANs
+---------   ---------     ------------------------------------------------------
+Node1       a0a           822, 823
+            e0e           822, 823</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Restore VLANs that were displaced from their previous base ports by using the following command:</p>
+<div class="paragraph">
+<p><code>displaced- vlans restore</code></p>
+</div>
+<div class="paragraph">
+<p>The following is an example of restoring VLANs that have been displaced from interface group a0a back onto the same interface group:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Cluster::*&gt; displaced-vlans restore -node node2_node4 -port a0a -destination-port a0a</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following is an example of restoring displaced VLANs on port e0e to e0h:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Cluster::*&gt; displaced-vlans restore -node node2_node4 -port e0e -destination-port e0h</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When a VLAN restore is successful, the displaced VLANs are created on the specified destination port. The VLAN restore fails if the destination port is a member of an interface group, or if the destination port is down.</p>
+</div>
+<div class="paragraph">
+<p>Wait about one minute for newly restored VLANs to be placed into their appropriate broadcast domains.</p>
+</div>
+</li>
+<li>
+<p>Create new VLAN ports as needed for VLAN ports that are not in the <code>displaced- vlans show</code> output but should be configured on other physical ports.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Delete any empty broadcast domains after all port repairs have been completed by using the following command.</p>
+<div class="paragraph">
+<p><code>broadcast-domain delete -broadcast-domain &lt;broadcast_domain_name&gt;</code></p>
+</div>
+</li>
+<li>
+<p>Verify port reachability by using the following command:</p>
+<div class="paragraph">
+<p><code>network port reachability show</code></p>
+</div>
+<div class="paragraph">
+<p>When all ports are correctly configured and added to the correct broadcast domains, the <code>network port reachability show</code> command should report the reachability status as <code>ok</code> for all connected ports, and the status as <code>no-reachability</code> for ports with no physical connectivity. If any ports report a status other than these two, perform the reachability repair and add or remove ports from their broadcast domains as instructed in <a href="#Step4">Step 4</a>.</p>
+</div>
+</li>
+<li>
+<p>Verify that all ports have been placed into broadcast domains by using the following command:</p>
+<div class="paragraph">
+<p><code>network port show</code></p>
+</div>
+</li>
+<li>
+<p>Verify that all ports in the broadcast domains have the correct maximum transmission unit (MTU) configured by using the following command:</p>
+<div class="paragraph">
+<p><code>network port broadcast-domain show</code></p>
+</div>
+</li>
+<li>
+<p>Restore LIF home ports, specifying the Vserver(s) and LIF(s) home ports, if any, that need to be restored by using the following command:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>List any LIFs that are displaced by using the following command:</p>
+<div class="paragraph">
+<p><code>displaced-interface show</code></p>
+</div>
+</li>
+<li>
+<p>Restore LIF home ports by using the following command:</p>
+<div class="paragraph">
+<p><code>displaced-interface restore-home-node -node &lt;node_name&gt; -vserver &lt;vserver_name &gt; - lif-name &lt;LIF_name&gt;</code></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Verify that all LIFs have a home port and are administratively up by using the following command:</p>
+<div class="paragraph">
+<p><code>network interface show -fields home- port,status-admin</code></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div class="page-nav-contribute"  >
+      <div class="page-nav-contribute-title">CONTRIBUTE</div>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/upgrade-arl-auto-app/verifying_the_node4_installation.adoc" class="btn btn-default githubEditButton" role="button"><img src="/us-en/ontap-systems/images/github.png" class="github-icon" />Edit on GitHub</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Verify the node4 installation](https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-auto-app/verifying_the_node4_installation.html)" class="btn btn-default githubEditButton" role="button"><img src="/us-en/ontap-systems/images/github.png" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Contributor's Guide</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2021 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright">Announcements</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/ontap-systems/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/ontap-systems/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/ontap-systems/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/ontap-systems/js/www-ntap.js'></script>
+  </body>
+
+  
+</html>
