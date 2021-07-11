@@ -449,7 +449,7 @@ The following procedure sets node4 to boot from the root aggregate of node2:
 
 .. If necessary, bring the node2 aggregate online by using the following command:
 +
-`aggr_online root_aggr_from_<node2>`
+`aggr online <root_aggr_from_node2>`
 
 .. Prevent the node4 from booting from its original root aggregate by using the following command:
 +
@@ -457,7 +457,7 @@ The following procedure sets node4 to boot from the root aggregate of node2:
 
 .. Set the node2 root aggregate as the new root aggregate for node4 by using the following command:
 +
-`aggr options aggr_from_<node2> root`
+`aggr options <aggr_from_node2> root`
 
 .. Verify that the root aggregate of node4 is offline and the root aggregate for the disks brought over from node2 is online and set to root by using the following command:
 +
@@ -471,13 +471,13 @@ The following shows an example of the command output:
 +
 ....
 ---------------------------------------------------------------------
-Aggr State                       Status               Options
-aggr 0_nst_fas8080_15 online     raid_dp, aggr        root, nosnap=on
-                                 fast zeroed
-                                 64-bit
-aggr0 offline                    raid_dp, aggr        diskroot
-                                 fast zeroed`
-                                 64-bit
+Aggr            State     Status           Options
+aggr0_fas8080_1 online    raid_dp, aggr    root, nosnap=on
+                          fast zeroed
+                          64-bit
+aggr0           offline   raid_dp, aggr    diskroot
+                          fast zeroed`
+                          64-bit
 ---------------------------------------------------------------------
 ....
 // 11 DEC 2020, thomi, checked

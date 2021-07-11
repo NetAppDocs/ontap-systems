@@ -131,7 +131,7 @@ See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/hom
 
 .. Enter the following command:
 +
-`storage failover modify -node <node_name> - cifs- ndo-duration default|medium|low`
+`storage failover modify -node <node_name> -cifs-ndo-duration default|medium|low`
 +
 * Enter `medium` if the system will have workloads in which 50% to 75% of the operations will be 4 KB or smaller.
 * Enter `low` if the system will have workloads in which 75% to 100% of the operations will be 4 KB or smaller.
