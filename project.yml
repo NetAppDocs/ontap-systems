@@ -1,6 +1,9 @@
 settings:
   name: "ONTAP Systems"
   pdf_enabled: true
+  langs: "us-en,ja-jp,zh-cn"
+  harmony_enabled: true
+
 sidebar:
   entries:
     - title: Home
