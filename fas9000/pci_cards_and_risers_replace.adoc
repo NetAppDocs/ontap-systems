@@ -84,8 +84,8 @@ a|I/O cam latch completely unlocked
 After you replace a PCIe module, you must reboot the controller module.
 
 .Steps
-. If the node is at the LOADER prompt, boot the node, responding `y` if you see a prompt warning of a system ID mismatch and asking to override the system ID: `bye`
 . If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the `nicadmin convert` command from Maintenance mode.
+. Have the node at the LOADER prompt, make sure to boot the node using the following command: `bye`
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
