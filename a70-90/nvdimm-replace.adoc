@@ -1,12 +1,12 @@
 ---
-permalink: a800/nvdimm-replace.html
+permalink: a70-90/nvdimm-replace.html
 sidebar: sidebar
-keywords: aff a800, replace an nvdimm
+keywords: aff a70, aff a90, replace an nvdimm
 summary: "You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic."
 ---
-= Replace an NVDIMM - AFF A800
+= Replace an NVDIMM - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/800_nvdimm_replace.adoc[]
+include::../_include/a70-90_nvdimm_replace.adoc[]

@@ -1,12 +1,12 @@
 ---
-permalink: a800/rtc-battery-replace.html
+permalink: a70-90/rtc-battery-replace.html
 sidebar: sidebar
-keywords: aff a800, replace the real-time clock battery
+keywords: aff a70, aff a90, replace the real-time clock battery
 summary: "You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function."
 ---
-= Replace the real-time clock battery - AFF A800
+= Replace the real-time clock battery - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/800_rtc_battery_replace.adoc[]
+include::../_include/a70-90_rtc_battery_replace.adoc[]

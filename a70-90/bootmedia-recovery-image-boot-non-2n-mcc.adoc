@@ -1,12 +1,12 @@
 ---
-permalink: a800/bootmedia-recovery-image-boot-non-2n-mcc.html
+permalink: a70-90/bootmedia-recovery-image-boot-non-2n-mcc.html
 sidebar: sidebar
-keywords: aff a800, boot the recovery image
+keywords: aff a70, aff a90, boot the recovery image
 summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 ---
-= Boot the recovery image - AFF A800
+= Boot the recovery image - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/800_bootmedia_recovery_image_boot_non_2n_mcc.adoc[]
+include::../_include/a70-90_bootmedia_recovery_image_boot_non_2n_mcc.adoc[]

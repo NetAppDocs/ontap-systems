@@ -1,12 +1,12 @@
 ---
-permalink: a800/bootmedia-encryption-preshutdown-checks.html
+permalink: a1k/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
-keywords: aff a800, pre-shutdown checks for onboard encryption keys
+keywords: aff a1k, pre-shutdown checks for onboard encryption keys
 summary: "Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check what version of ONTAP the system is running."
 ---
-= Check onboard encryption keys - AFF A800
+= Check onboard encryption keys - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/800_bootmedia_encryption_preshutdown_checks.adoc[]
+include::../_include/a1k_bootmedia_encryption_preshutdown_checks.adoc[]

@@ -1,12 +1,12 @@
 ---
-permalink: a800/bootmedia-transfer-boot-image.html
+permalink: a70-90/bootmedia-transfer-boot-image.html
 sidebar: sidebar
-keywords: aff a800, transfer the boot image to the boot media
+keywords: aff a70, aff a90, transfer the boot image to the boot media
 summary: "The replacement boot media that you installed is without a boot image so you need to transfer a boot image using a USB flash drive."
 ---
-= Transfer the boot image to the boot media - AFF A800
+= Transfer the boot image to the boot media - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/800_bootmedia_transfer_boot_image.adoc[]
+include::../_include/a70-90_bootmedia_transfer_boot_image.adoc[]

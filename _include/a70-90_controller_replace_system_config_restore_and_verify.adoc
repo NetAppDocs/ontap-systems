@@ -1,0 +1,28 @@
+After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+
+== Step 1: Set and verify system time
+
+include::../_include/set_time_after_controller_rep.adoc[]
+
+== Step 2: Verify and set the HA state of the chassis
+
+You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
+
+. In Maintenance mode from the new controller module, verify that all components display the same `HA` state: `ha-config show`
++
+The HA state should be the same for all components.
+
+. If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
+
++
+The value for HA-state can be one of the following:
+
+*** `ha`
+*** `mcc`
+*** `mccip`
+*** `non-ha`
+
+  . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
+  . Confirm that the setting has changed: `ha-config show`
+
+

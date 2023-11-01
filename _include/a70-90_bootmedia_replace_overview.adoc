@@ -1,0 +1,4 @@
+* You must replace the failed component with a replacement FRU component you received from your provider.
+* It is important that you apply the commands in these steps on the correct controller:
+ ** The _impaired_ controller is the controller on which you are performing maintenance.
+ ** The _healthy_ controller is the HA partner of the impaired controller.

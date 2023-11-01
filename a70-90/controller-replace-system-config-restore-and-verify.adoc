@@ -1,12 +1,12 @@
 ---
-permalink: a800/controller-replace-system-config-restore-and-verify.html
+permalink: a70-90/controller-replace-system-config-restore-and-verify.html
 sidebar: sidebar
-keywords: aff a800, restore and verify the system configuration, verify and set the ha state of the controller module
+keywords: aff a70, aff a90, restore and verify the system configuration, verify and set the ha state of the controller module
 summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
 ---
-= Restore and verify the system configuration - AFF A800
+= Restore and verify the system configuration - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/800_controller_replace_system_config_restore_and_verify.adoc[]
+include::../_include/a70-90_controller_replace_system_config_restore_and_verify.adoc[]

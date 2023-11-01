@@ -1,12 +1,12 @@
 ---
-permalink: a800/chassis-replace-complete-system-restore-rma.html
+permalink: a70-90/chassis-replace-complete-system-restore-rma.html
 sidebar: sidebar
-keywords: aff a800, verify and set HA state, complete the replacement process
+keywords: aff a70, aff a90, verify and set HA state, complete the replacement process
 summary: "You must verify the HA state of the chassis and return the failed part to NetApp, as described in the RMA instructions shipped with the kit."
 ---
-= Complete the restoration and replacement process - AFF A800
+= Complete the restoration and replacement process - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/800_chassis_replace_complete_system_restore_rma.adoc[]
+include::../_include/a70-90_chassis_replace_complete_system_restore_rma.adoc[]

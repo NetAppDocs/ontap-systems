@@ -1,0 +1,113 @@
+Replacing a power supply (PSU) involves disconnecting the target PSU from the power source, unplugging the power cable, removing the old PSU and installing the replacement PSU, and then reconnecting it to the power source.
+
+The power supplies are redundant and hot-swappable.
+
+.About this task
+This procedure is written for replacing one PSU at a time.
+
+NOTE: It is a best practice to replace the PSU within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded PSU until the PSU is replaced.
+
+IMPORTANT: Do not mix PSUs with different efficiency ratings or different input types. Always replace like for like.
+
+Use the appropriate procedure for your type of PSU: AC or DC.  
+
+[role="tabbed-block"]
+====
+
+.Option 1: Replace an AC PSU
+--
+To replace an AC PSU, complete the following steps.
+
+. If you are not already grounded, properly ground yourself.
+. Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
+. Disconnect the PSU:
+ .. Open the power cable retainer, and then unplug the power cable from the PSU.
+ .. Unplug the power cable from the power source.
+. Remove the PSU by rotating the handle up, press the locking tab, and then pull PSU out of the controller module.
++
+CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
++
+image::../media/drw_a800_replace_psu.png[]
++
+[cols="1,3"]
+|===
+a|
+image:../media/legend_icon_01.svg[width=10px]
+a|
+Blue PSU locking tab
+a|
+image:../media/legend_icon_02.svg[width=10px]
+a|
+Power supply
+|===
+
+. Install the replacement PSU in the controller module:
+.. Using both hands, support and align the edges of the replacement PSU with the opening in the controller module.
+.. Gently push the PSU into the controller module until the locking tab clicks into place.
++
+The power supplies will only properly engage with the internal connector and lock in place one way.
++
+NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
+
+. Reconnect the PSU cabling:
+ .. Reconnect the power cable to the PSU and the power source.
+ .. Secure the power cable to the PSU using the power cable retainer.
+
++
+Once power is restored to the PSU, the status LED should be green.
+include::../_include/complete_rma_step.adoc[]
+--
+.Option 2: Replace a DC PSU
+--
+To replace a DC PSU, complete the following steps.
+
+. If you are not already grounded, properly ground yourself.
+. Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
+. Disconnect the PSU:
+.. Unscrew the D-SUB DC cable connector using the thumb screws on the plug.
+.. Unplug the cable from the PSU and set it aside. 
+. Remove the PSU by rotating the handle up, press the locking tab, and then pull the PSU out of the controller module.
+
++
+CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
++
+image::../media/drw_dcpsu_remove-replace-generic_IEOPS-788.svg[width=500px]
++
+[cols="1,3"]
+|===
+a|
+image:../media/legend_icon_01.svg[width=10px]
+a|
+Thumb screws
+a| 
+image:../media/legend_icon_02.svg[width=10px]
+a|
+D-SUB DC power PSU cable connector
+a|
+image:../media/legend_icon_03.svg[width=10px]
+a|
+Power supply handle
+a|
+image:../media/legend_icon_04.svg[width=10x]
+a|
+Blue PSU locking tab
+|===
+
+. Install the replacement PSU in the controller module:
+.. Using both hands, support and align the edges of the replacement PSU with the opening in the controller module.
+.. Gently push the PSU into the controller module until the locking tab clicks into place.
++
+The power supplies will only properly engage with the internal connector and lock in place one way.
++
+NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
+
+. Reconnect the D-SUB DC power cable:
+ .. Plug the power cable connector into the PSU.
+ .. Secure the power cable to the PSU with the thumbscrews.
++
+Once power is restored to the PSU, the status LED should be green.
+
+include::../_include/complete_rma_step.adoc[]
+--
+
+====

@@ -1,13 +1,13 @@
 ---
-permalink: a400/fan-swap-out.html
+permalink: a70-90/fan-swap-out.html
 sidebar: sidebar
-keywords: aff a400, aff, a400, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
+keywords: aff a70, aff a90, aff, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
 summary: To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
 ---
-= Hot-swap a fan module - AFF A400
+= Hot-swap a fan module - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
-include::../_include/400_aseries_fan_swap_out.adoc[]
+include::../_include/a70-90_aseries_fan_swap_out.adoc[]

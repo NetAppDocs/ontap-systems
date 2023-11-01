@@ -1,0 +1,92 @@
+You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+
+. From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
++
+The image is downloaded from the USB flash drive.
+
+. When prompted, either enter the name of the image or accept the default image displayed inside the brackets on your screen.
+. Restore the var file system:
++
+[options="header" cols="1,2"]
+|===
+| If your system has...| Then...
+a|
+A network connection
+a|
+
+ .. Press `y` when prompted to restore the backup configuration.
+ .. Set the healthy controller to advanced privilege level: `set -privilege advanced`
+ .. Run the restore backup command: `system node restore-backup -node local -target-address _impaired_node_IP_address_`
+ .. Return the controller to admin level: `set -privilege admin`
+ .. Press `y` when prompted to use the restored configuration.
+ .. Press `y` when prompted to reboot the controller.
+
+a|
+No network connection
+a|
+
+ .. Press `n` when prompted to restore the backup configuration.
+ .. Reboot the system when prompted by the system.
+ .. Select the *Update flash from backup config* (sync flash) option from the displayed menu.
++
+If you are prompted to continue with the update, press `*y*`.
+
+a|
+No network connection and is in a MetroCluster IP configuration
+a|
+
+ .. Press `n` when prompted to restore the backup configuration.
+ .. Reboot the system when prompted by the system.
+ .. Wait for the iSCSI storage connections to connect.
++
+You can proceed after you see the following messages:
++
+----
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
+date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
+----
+
+ .. Select the *Update flash from backup config* (sync flash) option from the displayed menu.
++
+If you are prompted to continue with the update, press `*y*`.
+
++
+|===
+
+. Ensure that the environmental variables are set as expected:
+ .. Take the controller to the LOADER prompt.
+ .. Check the environment variable settings with the `printenv` command.
+ .. If an environment variable is not set as expected, modify it with the `setenv _environment_variable_name_ _changed_value_` command.
+ .. Save your changes using the `savenv` command.
+. The next depends on your system configuration:
+ ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia-encryption-restore.adoc[Restore OKM, NSE, and NVE as needed]
+ ** If your system does not have onboard keymanager, NSE or NVE configured, complete the steps in this section.
+. From the LOADER prompt, enter the `boot_ontap` command.
++
+[options="header" cols="1,2"]
+|===
+| If you see...| Then...
+a|
+The login prompt
+a|
+Go to the next Step.
+a|
+Waiting for giveback...
+a|
+
+ .. Log into the partner controller.
+ .. Confirm the target controller is ready for giveback with the `storage failover show` command.
+
++
+|===
+
+. Connect the console cable to the partner controller.
+. Give back the controller using the `storage failover giveback -fromnode local` command
+. At the cluster prompt, check the logical interfaces with the `net int -is-home false` command.
++
+If any interfaces are listed as "false", revert those interfaces back to their home port using the `net int revert` command.
+
+. Move the console cable to the repaired controller and run the `version -v` command to check the ONTAP versions.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
