@@ -1,0 +1,80 @@
+section: a800
+title: AFF A800 systems
+entries:
+ - title: Install and setup
+   pdf-filename: AFF A800 Install and Setup
+   entries:
+    - title: Choose install and setup experience
+      url: /a800/install-setup.html
+    - title: Quick steps
+      url: /a800/install-quick-guide.html
+    - title: Video steps
+      url: /a800/install-videos.html
+    - title: Detailed steps
+      url: /a800/install-detailed-guide.html
+ - title: Maintain
+   pdf-filename: AFF A800 Maintain
+   entries:
+   - title: Overview
+     url: /a800/maintain-overview.html
+      # START boot media
+   - title: Boot media
+     pdf-filename: AFF A800 Boot Media
+     entries:
+        - title: Overview
+          url: /a800/bootmedia-replace-overview.html
+        - title: Check onboard encryption keys
+          url: /a800/bootmedia-encryption-preshutdown-checks.html
+        - title: Shut down impaired controller
+          url: /a800/bootmedia-shutdown.html
+        - title: Replace boot image
+          url: /a800/bootmedia-replace.html
+        - title: Boot recovery image
+          url: /a800/bootmedia-recovery-image-boot-non-2n-mcc.html
+        - title: Restore OKM, NSE, and NVE
+          url: /a800/bootmedia-encryption-restore.html
+        - title: Return failed part to NetApp
+          url: /a800/bootmedia-complete-rma.html
+          # END boot media
+   - title: Chassis
+     pdf-filename: AFF A800 Chassis
+     entries:
+        - title: Overview
+          url: /a800/chassis-replace-overview.html
+        - title: Shut down impaired controller
+          url: /a800/chassis-replace-shutdown.html
+        - title: Replace chassis
+          url: /a800/chassis-replace-move-hardware.html
+        - title: Complete chassis replacement
+          url: /a800/chassis-replace-complete-system-restore-rma.html
+   - title: Controller
+     pdf-filename: AFF A800 Controller Module
+     entries:
+        - title: Overview
+          url: /a800/controller-replace-overview.html
+        - title: Shut down impaired controller
+          url: /a800/controller-replace-shutdown.html
+        - title: Replace controller
+          url: /a800/controller-replace-move-hardware.html
+        - title: Restore system configuration
+          url: /a800/controller-replace-system-config-restore-and-verify.html
+        - title: Recable system
+          url: /a800/controller-replace-recable-reassign-disks.html
+        - title: Complete controller replacement
+          url: /a800/controller-replace-restore-system-rma.html
+   - title: DIMM
+     url: /a800/dimm-replace.html
+   - title: Drive
+     url: /a800/drive-replace.html
+   - title: Fan
+     url: /a800/fan-replace.html
+   - title: NVDIMM
+     url: /a800/nvdimm-replace.html
+   - title: NVDIMM battery
+     url: /a800/nvdimm-battery-replace.html
+   - title: PCIe card
+     url: /a800/pci-cards-and-risers-replace.html
+   - title: Power supply
+     url: /a800/power-supply-replace.html
+   - title: Real-time clock battery
+     url: /a800/rtc-battery-replace.html

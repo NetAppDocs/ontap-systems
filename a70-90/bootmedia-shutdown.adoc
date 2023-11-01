@@ -1,0 +1,20 @@
+---
+permalink: a800/bootmedia-shutdown.html
+sidebar: sidebar
+keywords: aff a800, shut down the controller
+summary: "After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller."
+---
+= Shut down the controller - AFF A800
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
+== Option 1: Most systems
+
+include::../_include/shutdown_bootmedia.adoc[]
+
+== Option 2: System is in a MetroCluster
+
+include::../_include/shutdown_any_mcc_supported.adoc[]

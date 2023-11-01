@@ -1,0 +1,26 @@
+---
+permalink: a800/install-setup.html
+sidebar: sidebar
+keywords: aff a800, initial configuration options
+summary: 'Install and set up your system.'
+---
+= Start here: Choose your installation and setup experience
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For most configurations (including ASA configurations), you can choose from different content formats.
+
+* link:../a800/install-quick-guide.html[Quick steps]
++
+A printable PDF of step-by-step instructions with live links to additional content.
+
+* link:../a800/install-videos.html[Video steps]
++
+Video step-by-step instructions.
+
+* link:../a800/install-detailed-guide.html[Detailed steps]
++
+Online step-by-step instructions with live links to additional content.
+
+If your system is in a MetroCluster IP configuration, see the https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html[Install MetroCluster IP Configuration^] instructions.
