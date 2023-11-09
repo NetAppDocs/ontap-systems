@@ -1,5 +1,5 @@
 ---
-permalink: asa-c400/pci-cards-and-risers-replace.html
+permalink: asa-c-400/pci-cards-and-risers-replace.html
 sidebar: sidebar
 keywords: asa c400, asa, c400, replace, pcie, mezzanine, card, disconnect, cable, sfp, qsfp, module, fail, mezzanine, shut, down, impair, controller, pcie, switch, aggregate, two-node, metrocluster, complete, replacement, process, replace a pcie or mezzanine card, shut down the impaired controller, remove the controller module, replace a pcie card, replace the mezzanine card, install the controller module, switch back aggregates in a two-node metrocluster configuration, restore the controller module to operation, complete the replacement process
 summary: To replace a PCIe or mezzanine card, you must disconnect the cables and any SFP and QSFP modules from the cards, replace the failed PCIe or mezzanine card, and then recable the cards.

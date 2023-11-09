@@ -1,12 +1,10 @@
 To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
 
 == Step 1: Remove the controller module
+:icons: font
+:imagesdir: ../media/
 
 To access components inside the controller module, you must remove the controller module from the chassis.
-
-You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
-
-video::ca74d345-e213-4390-a599-aae10019ec82[panopto, title="Animation - Remove the controller module"]
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -20,7 +18,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_A400_Remove_controller.png[]
+image::../media/drw_c400_remove_controller_IEOPS-1216.svg[width=500px]
 +
 [cols="10,90"]
 |===
@@ -30,7 +28,7 @@ Locking latches
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
-Slide controller out of chassis
+Controller moves slightly out of chassis
 |===
 
 . Slide the controller module out of the chassis.
@@ -51,12 +49,12 @@ NOTE: You must log into the NetApp Support Site to display the _Statement of Vol
 
 You can use the following animation, illustration, or the written steps to replace the boot media.
 
-video::e0825a97-c57d-47d7-b87d-aad9012efa12[panopto, title="Animation - Replace the boot media"]
+video::034f21ac-da55-4129-aaaa-b030017e5b49[panopto, title="Animation - Replace the boot media"]
 
 .Steps
 . Open the air duct:
 +
-image::../media/drw_A400_open-air-duct.png[]
+image::../media/drw_c400_open_air_duct_IEOPS-1215.svg[width=500px]
 +
 [cols="10,90"]
 |===
@@ -77,7 +75,7 @@ Rotate air duct up
  .. Slide the air duct toward the back of the controller module, and then rotate it upward to its completely open position.
 . Locate and remove the boot media from the controller module:
 +
-image::../media/drw_A400_Replace-boot_media_IEOPS-1007.svg[width=500px]
+image::../media/drw_c400_replace_boot_media_IEOPS-1217.svg[width=500px]
 +
 [cols="10,90"]
 |===
@@ -103,6 +101,8 @@ If necessary, remove the boot media and reseat it into the socket.
 . Close the air duct.
 
 == Step 3: Transfer the boot image to the boot media
+:icons: font
+:imagesdir: ../media/
 
 The replacement boot media that you installed does not have a boot image, so you need to transfer a boot image using a USB flash drive.
 

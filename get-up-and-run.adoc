@@ -15,7 +15,7 @@ If your system is in a MetroCluster configuration, go to the https://docs.netapp
 
 Use the following workflow to deploy your storage system when it is not set up in a MetroCluster configuration.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install AFF/FAS controllers
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Install controllers
 
 [role="quick-margin-para"]
 Install your AFF, ASA and FAS controllers in the rack or cabinet. Access the install and setup instructions for your platform model.
@@ -49,6 +49,30 @@ Install your AFF, ASA and FAS controllers in the rack or cabinet. Access the ins
 * https://docs.netapp.com/us-en/ontap-systems/c400/install-setup.html[AFF C400]
 
 * https://docs.netapp.com/us-en/ontap-systems/c800/install-setup.html[AFF C800]
+
+[role="quick-margin-para"]
+**ASA A-Series systems**
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/ontap-systems/asa150/install-setup.html[ASA A150]
+
+* https://docs.netapp.com/us-en/ontap-systems/asa250/install-setup.html[ASA A250]
+
+* https://docs.netapp.com/us-en/ontap-systems/asa400/install-setup.html[ASA A400]
+
+* https://docs.netapp.com/us-en/ontap-systems/asa800/install-setup.html[ASA A800]
+
+* https://docs.netapp.com/us-en/ontap-systems/asa900/install-setup.html[ASA A900]
+
+[role="quick-margin-para"]
+**ASA C-Series systems**
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/ontap-systems/asa-c250/install-setup.html[ASA C250]
+
+* https://docs.netapp.com/us-en/ontap-systems/asa-c400/install-setup.html[ASA C400]
+
+* https://docs.netapp.com/us-en/ontap-systems/asa-c800/install-setup.html[ASA C800]
 
 [role="quick-margin-para"]
 **FAS systems**

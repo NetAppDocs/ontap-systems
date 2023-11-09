@@ -9,10 +9,4 @@ summary: This section gives graphic instructions for a typical installation of y
 :imagesdir: ../media/
 
 [.lead]
-This section gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this guide if you are familiar with installing NetApp systems.
-
-Access the _Installation and Setup Instructions_ PDF poster:
-
-* English: link:../media/PDF/215-14949_2020_11_en-us_AFFA250_ISI.pdf[ASA A250 Installation and Setup Instructions^]
-* Japanese: https://library.netapp.com/ecm/ecm_download_file/ECMLP2874690[ASA A250 Systems Installation and Setup Instructions^]
-* Chinese: https://library.netapp.com/ecm/ecm_download_file/ECMLP2874693[ASA A250 Systems Installation and Setup Instructions^]
+include::../_include/isi_url_reference_250.adoc[]

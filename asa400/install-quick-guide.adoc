@@ -9,9 +9,4 @@ summary: This guide gives graphic instructions for a typical installation of you
 :imagesdir: ../media/
 
 [.lead]
-
-The ASA A400 installation procedure provides graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use these instructions if you are familiar with installing NetApp systems.
-
-Access the link:../media/PDF/215-14510_2020_09_en-us_AFFA400_ISI.pdf[ASA A400 Installation and Setup Instructions^].
-
-NOTE: The ASA A400 uses the same installation procedure as the AFF A400 system.
+include::../_include/isi_url_reference_a400.adoc[]

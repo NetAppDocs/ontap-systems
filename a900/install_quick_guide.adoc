@@ -4,13 +4,10 @@ sidebar: sidebar
 keywords: AFF A900
 summary: 'This topic gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up.'
 ---
+
 = Quick steps - AFF A900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This topic gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this content if you are familiar with installing NetApp systems.
-
-Access the _Installation and Setup Instructions_ PDF poster:
-
-link:../media/PDF/December_2022_Rev-2_AFFA900_ISI.pdf[AFF A900 Installation and Setup Instructions^]
+include::../_include/isi_url_reference_a900.adoc[]

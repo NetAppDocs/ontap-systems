@@ -1,5 +1,5 @@
 ---
-permalink: asa-c400/bootmedia-encryption-preshutdown-checks.html
+permalink: asa-c-400/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
 keywords: asa c400, asa, c400, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys
 summary: Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check what version of ONTAP the system is running.

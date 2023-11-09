@@ -9,8 +9,4 @@ summary: This guide gives graphic instructions for a typical installation of you
 :imagesdir: ../media/
 
 [.lead]
-This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this guide if you are familiar with installing NetApp systems.
-
-Access the link:../media/PDF/Oct_2023_Rev1_AFFC400_ISI.pdf[AFF C400 Installation and Setup Instructions^].
-
-//18may 2023: Updated to add text/link for the detailed guide.
+include::../_include/isi_url_reference_c400.adoc[]

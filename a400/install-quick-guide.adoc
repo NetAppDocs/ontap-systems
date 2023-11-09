@@ -4,11 +4,10 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, guide, graphic, instruction, installation, system, rack, cabling, cable, intitial, system, bring-up, guide, install, netapp, system, quick guide
 summary: This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this guide if you are familiar with installing NetApp systems.
 ---
+
 = Quick guide - AFF A400
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The installation procedure provides graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this procedure if you are familiar with installing NetApp systems.
-
-Access the link:../media/PDF/215-14510_2023_09_en-us_AFFA400_ISI.pdf[AFF A400 Installation and Setup Instructions^].
+include::../_include/isi_url_reference_a400.adoc[]

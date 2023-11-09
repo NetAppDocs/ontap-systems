@@ -124,7 +124,7 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
  *** `bootarg.init.boot_clustered`
  *** `partner-sysid`
  *** `bootarg.init.flash_optimized` for AFF C190/AFF A220 (All Flash FAS)
- *** `bootarg.init.san_optimized` for AFF A220 and All SAN Array
+ *** `bootarg.init.san_optimized` for AFF A220 and All-Flash SAN Array
  *** `bootarg.init.switchless_cluster.enable`
 .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
  *** `bootarg.storageencryption.support <value>`

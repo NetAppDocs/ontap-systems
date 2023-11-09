@@ -42,15 +42,15 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_A400_Remove_controller.png[]
+image::../media/drw_c400_remove_controller_IEOPS-1216.svg[width=500px]
 +
 [cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.png[] a|
 Locking latches  
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/legend_icon_02.png[]
 a|
 Controller moves slightly out of chassis
 |===
@@ -67,9 +67,9 @@ You need to locate the RTC battery inside the controller module, and then follow
 
 You can use the following animation, illustration, or the written steps to replace the RTC battery.
 
-video::80fe7a9b-de6f-46e0-a18b-aadb0157263d[panopto, title="Animation - Replace the RTC battery"]
+video::12ea4bc1-75e2-43e7-be91-b0310000fd34[panopto, title="Animation - Replace the RTC battery"]
 
-image::../media/drw_A400_rtc-batt.png[]
+image::../media/drw_c400_rtc_batt_IEOPS-1239.svg[width=550px]
 
 [cols="10,90"]
 |===
@@ -104,24 +104,6 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 == Step 4: Reinstall the controller module and setting time/date after RTC battery replacement
 
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
-
-You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
-
-video::0310fe80-b129-4685-8fef-ab19010e720a[panopto, title="Animation - Install the controller module"]
-
-image::../media/drw_A400_Install_controller_source.png[]
-
-[cols="10,90"]
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1] 
-a|
-Controller module
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Controller locking latches
-|===
 
 . If you have not already done so, close the air duct or controller module cover.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

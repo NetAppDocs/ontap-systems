@@ -1,5 +1,5 @@
 ---
-permalink: asa-c400/dimm-replace.html
+permalink: asa-c-400/dimm-replace.html
 sidebar: sidebar
 keywords: asa c400, asa, c400, replace, dimm, controller, module, system, register, correctable, error, correction, code, ecc, system, panic, shut, down, impair, remove, controller, module, system, module, aggregate, two-node, metrocluster, configuration, replace a dimm, shut down the impaired controller, remove the controller module, replace system dimms, install the controller module, restore the controller module to operation, switch back aggregates in a two-node metrocluster configuration
 summary: You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.

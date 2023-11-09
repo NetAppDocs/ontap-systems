@@ -32,23 +32,6 @@ include::../_include/shutdown_2n_mcc.adoc[]
 
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
-
-video::ca74d345-e213-4390-a599-aae10019ec82[panopto, title="Animation - Remove the controller module"]
-
-image::../media/drw_A400_Remove_controller.png[]
-
-[cols="10,90"]
-|===
-image:../media/legend_icon_01.png[Callout number 1]
-a|
-Locking latches
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Controller moves slightly out of chassis
-|===
-
 . If you are not already grounded, properly ground yourself.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
@@ -59,6 +42,19 @@ Leave the cables in the cable management device so that when you reinstall the c
 . Press down on both of the locking latches, and then rotate both latches downward at the same time.
 +
 The controller module moves slightly out of the chassis.
++
+image::../media/drw_c400_remove_controller_IEOPS-1216.svg[width=500px]
++
+[cols="10,90"]
+|===
+a|
+image:../media/legend_icon_01.png[] a|
+Locking latches  
+a|
+image:../media/legend_icon_02.png[]
+a|
+Controller moves slightly out of chassis
+|===
 
 . Slide the controller module out of the chassis.
 +
@@ -74,7 +70,7 @@ You can use the following animation, illustration, or the written steps to repla
 
 NOTE: The animation and illustration show empty slots for sockets without DIMMs. These empty sockets are populated with blanks.
 
-video::175c6597-449e-4dc8-8c02-aad9012f08b5[panopto, title="Animation - Replace a system DIMM"]
+video::93025369-2f61-46b1-bd51-b03100040fe6[panopto, title="Animation - Replace a system DIMM"]
 
 image::../media/drw_A400_Replace-NVDIMM-DIMM.png[]
 
@@ -120,13 +116,9 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 == Step 4: Install the controller module
 
-After you have replaced the component in the controller module, you must reinstall the controller module into the chassis, and then boot it.
+After you have replaced the component in the controller module, you must reinstall the controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
-
-video::0310fe80-b129-4685-8fef-ab19010e720a[panopto, title="Animation - Install the controller module"]
-
-image::../media/drw_A400_Install_controller_source.png[]
+image::../media/drw_c400_install_controller_IEOPS-1226.svg[width=500px]
 
 [cols="10,90"]
 |===
@@ -165,7 +157,9 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 NOTE: If your system stops at the boot menu, select the option to boot to LOADER.
 
  .. At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components.
-
+ .. Interrupt the boot process and boot to the LOADER prompt by pressing `Ctrl-C`.
++
+If your system stops at the boot menu, select the option to boot to LOADER.
 
 == Step 5: Restore the controller module to operation
 

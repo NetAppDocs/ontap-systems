@@ -1,7 +1,24 @@
-
-[cols="25h,~,~",options="header"]
+[cols="20,65,15"*,options="header"]
 |===
 | Switches| Description| Available beginning
+a|
+https://hwu.netapp.com/Switch/Index[NVIDIA IP SN2100 switch]
+a|
+The NVIDIA IP SN2100 storage switch is supported in MetroCluster IP configurations that use the A900/FAS9500 platforms.
+a|
+ONTAP 9.12.1
+a|
+https://hwu.netapp.com/Switch/Index[NVIDIA IP SN2100 switch (X190006)]
+a|
+The NVIDIA IP SN2100 storage switch is supported in MetroCluster IP configurations that use the following platforms:
+
+* FAS500f/AFF A250
+* FAS8300/AFF A400
+* FAS8700
+* FAS9000/AFF A700
+* AFF A800
+a|
+ONTAP 9.10.1P3
 a|
 https://hwu.netapp.com/Switch/Index[36-port 100 GbE Cisco switch (X190200)]
 a|

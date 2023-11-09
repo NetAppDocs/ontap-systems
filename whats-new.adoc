@@ -5,6 +5,7 @@ sidebar: sidebar
 keywords: new, features, fas, aff systems
 summary: 'Learn about the new features for AFF, ASA and FAS systems.'
 ---
+
 = What's new for AFF, ASA and FAS systems
 :icons: font
 :imagesdir: ../media/
@@ -12,20 +13,17 @@ summary: 'Learn about the new features for AFF, ASA and FAS systems.'
 [.lead]
 Learn about the new features for AFF, ASA and FAS systems.
 
-== New adapter support
-include::../_include/new-adapter.adoc[]
+== New platform support
+include::./_include/new-platform-support.adoc[]
 
 == New switch support
-include::../_include/new-switch-support.adoc[]
+include::./_include/new-switch-support.adoc[]
 
-== New platform support
-include::../_include/new-platform-support.adoc[]
+== New adapter support
+include::./_include/new-adapter.adoc[]
 
 == New shelf support
-include::../_include/new-shelf-support.adoc[]
+include::./_include/new-shelf-support.adoc[]
 
 == New hardware updates
-include::../_include/new-hardware-updates.adoc[]
-
-== New hardware upgrade enhancements
-include::../_include/new-hardware-enhancements.adoc[]
+include::./_include/new-hardware-updates.adoc[]

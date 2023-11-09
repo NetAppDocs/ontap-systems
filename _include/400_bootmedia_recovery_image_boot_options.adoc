@@ -1,6 +1,8 @@
 The procedure for booting the impaired controller from the recovery image depends on whether the system is in a two-node MetroCluster configuration.
 
 == Option 1: Most systems
+:icons: font
+:imagesdir: ../media/
 
 You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 
@@ -80,3 +82,4 @@ If any interfaces are listed as "false", revert those interfaces back to their h
 == Option 2: Controller is in a two-node MetroCluster
 
 include::../_include/2n_mcc_boot_recovery_image.adoc[]
+

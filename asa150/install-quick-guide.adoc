@@ -9,8 +9,4 @@ summary: "This guide gives graphic instructions for a typical installation of yo
 :imagesdir: ../media/
 
 [.lead]
-
-Learn how to install your system from racking and cabling, through initial system bring-up. Use link:../media/PDF/March_2023_Rev1_AFFA150_ISI.pdf[AFF A150 System Installation and Setup Instructions^] if you are familiar with installing NetApp systems.
-
-NOTE: The ASA A150 uses the same installation procedure as the AFF A150 system.
-
+include::../_include/isi_url_reference_150.adoc[]

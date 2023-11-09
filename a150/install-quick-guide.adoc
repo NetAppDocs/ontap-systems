@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, quick, guide, graphic, instructions, install, rack, cable
 summary: "This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up."
 ---
+
 = Quick guide - AFF A150
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn how to install your system from racking and cabling, through initial system bring-up. Use link:../media/PDF/March_2023_Rev1_AFFA150_ISI.pdf[AFF A150 System Installation and Setup Instructions^] if you are familiar with installing NetApp systems.
+include::../_include/isi_url_reference_150.adoc[]
 
