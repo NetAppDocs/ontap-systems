@@ -9,6 +9,10 @@ indexpage:
           url: https://www.netapp.com/data-storage/aff-a-series/
     - title: Install and setup
       links:
+        - title: AFF A1k
+          url: ../a1k/install-setup.html
+        - title: AFF A70 and A90
+          url: ../a70-90/install-setup.html
         - title: AFF A150
           url: ../a150/install-setup.html
         - title: AFF A200
@@ -25,6 +29,10 @@ indexpage:
           url: ../a900/install_setup.html
     - title: Maintain your system
       links:
+        - title: AFF A1k
+          url: ../a1k/maintain-overview.html
+        - title: AFF A70 and A90
+          url: ../a70-90/maintain-overview.html
         - title: AFF A150
           url: ../a150/maintain-overview.html
         - title: AFF A200
