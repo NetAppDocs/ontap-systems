@@ -1,0 +1,28 @@
+---
+permalink: asa-c400/controller-replace-restore-system-rma.html
+sidebar: sidebar
+keywords: asa c400, how to restore NetApp Storage Encryption, how to complete the replacement process
+summary: "To restore your system to full operation, you must restore the NetApp Storage Encryption configuration (if necessary), and install licenses for the new controller, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit. Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number or additional help with the replacement procedure."
+---
+= Complete system restoration - ASA C400
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To restore your system to full operation, you must restore the NetApp Storage Encryption configuration (if necessary), and install licenses for the new controller, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+
+== Step 1: Install licenses for the replacement controller in ONTAP
+
+include::../_include/install_licenses.adoc[]
+
+== Step 2: Verify LIFs and registering the serial number
+
+include::../_include/check_lifs_register_serial_number.adoc[]
+
+== Step 3: Switch back aggregates in a two-node MetroCluster configuration
+
+include::../_include/2n_mcc_switchback.adoc[]
+
+== Step 4: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

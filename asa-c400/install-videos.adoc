@@ -1,0 +1,20 @@
+---
+permalink: asa-c400/install-videos.html
+sidebar: sidebar
+keywords: asa c400, asa, c400, video, rack, cable, system, manager, guide, setup, initial, configuration, hardware, installation, cabling, perform, end-to-end, software, configuration, hardware installation and cabling, perform end-to-end software configuration
+summary: There are two videos; one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.
+---
+= Videos - ASA C400
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following video shows how to install and cable your new system.
+
+video::8e392453-beac-4db7-8088-aff1005e1f90[panopto, title="Animation - AFF C400 Installation and setup instructions"]
+
+NOTE: The ASA C400 uses the same installation procedure as the AFF C400 system.
+
+If you have a MetroCluster configuration, use the MetroCluster installation content.
+
+https://docs.netapp.com/us-en/ontap-metrocluster/index.html[MetroCluster Documentation^]

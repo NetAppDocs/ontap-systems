@@ -1,0 +1,32 @@
+---
+permalink: asa-c400/controller-replace-shutdown.html
+sidebar: sidebar
+keywords: asa c400, shut down the impair controller
+summary: "You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration."
+---
+= Shut down the impaired controller - ASA C400
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+
+--
+
+include::../_include/shutdown_most_frus.adoc[]
+
+--
+
+.Option 2: Controller is in a two-node MetroCluster
+
+--
+
+include::../_include/shutdown_2n_mcc.adoc[]
+
+--
+====
