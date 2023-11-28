@@ -1,5 +1,5 @@
 ---
-permalink: a70-90/pci-cards-and-risers-replace.html
+permalink: a70-90/io-module-replace.html
 sidebar: sidebar
 keywords: aff a70, aff a90, replace a pcie card
 summary: "To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards."
@@ -9,4 +9,4 @@ summary: "To replace a PCIe card, you must disconnect the cables from the cards,
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/a70-90_pci_cards_and_risers_replace.adoc[]
+include::../_include/a70-90_io_module_replace.adoc[]

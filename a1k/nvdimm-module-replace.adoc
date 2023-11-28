@@ -1,0 +1,12 @@
+---
+permalink: a1k/nvdimm-module-replace.html
+sidebar: sidebar
+keywords: aff a1k, replace an nvdimm
+summary: "You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic."
+---
+= Replace NVDIMM module - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a1k_nvdimm_module_replace.adoc[]
