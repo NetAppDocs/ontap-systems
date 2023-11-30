@@ -8,37 +8,8 @@ include::../_include/shutdown_most_frus.adoc[]
 
 == Step 2: Remove the controller module
 
-You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
+include::../_include/a1K_controller_remove_physical.adoc[]
 
-. If you are not already grounded, properly ground yourself.
-. Unplug the controller module power supplies from the source.
-. Release the power cable retainers, and then unplug the cables from the power supplies.
-. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables from the controller module, keeping track of where the cables were connected.
-+
-Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
-
-. Remove the cable management device from the controller module and set it aside.
-. Press down on both of the locking latches, and then rotate both latches downward at the same time.
-+
-The controller module moves slightly out of the chassis.
-+
-image::../media/drw_a800_pcm_remove.png[]
-+
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1]|
-Locking latch
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Locking pin
-|===
-
-. Slide the controller module out of the chassis.
-+
-Make sure that you support the bottom of the controller module as you slide it out of the chassis.
-
-. Set the controller module aside in a safe place.
 
 == Step 3: Replace the NVDIMM battery
 
@@ -73,31 +44,9 @@ NVDIMM battery pack
 +
 Make sure that the plug locks into the socket.
 
-== Step 4: Reinstall the controller module and booting the system
+== Step 4: Reinstall the controller module
 
-After you replace a FRU in the controller module, you must reinstall the controller module and reboot it.
-
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
-+
-NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
-
-. Recable the system, as needed.
-+
-If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
-
-. Plug the power cord into the power supply, reinstall the power cable locking collar, and then connect the power supply to the power source.
-. Complete the reinstallation of the controller module:
- .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
-+
-The locking latches rise when the controller module is fully seated.
-+
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-+
-The controller module begins to boot as soon as it is fully seated in the chassis.
-
- .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. If you have not already done so, reinstall the cable management device.
-
+include::../_include/a1k_controller_install_step_physical.adoc[]
 
 == Step 5: Return the failed part to NetApp
 
