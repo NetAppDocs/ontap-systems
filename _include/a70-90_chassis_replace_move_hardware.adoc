@@ -45,26 +45,6 @@ You must remove the existing chassis from the equipment rack or system cabinet b
 
 == Step 4: Install the controller modules
 
-After you install the controller modules into the new chassis, you need to boot it.
+include::../_include/a70-90_controller_install_step_physical.adoc[]
 
-For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
-
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
-+
-NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
-
-. Recable the console to the controller module, and then reconnect the management port.
-. Plug the power cables into the power supplies and reinstall the power cable retainers.
-. Complete the reinstallation of the controller module:
- .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
-+
-The locking latches rise when the controller module is fully seated.
-+
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-+
-The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
-
- .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. If you have not already done so, reinstall the cable management device.
- .. Interrupt the normal boot process by pressing `Ctrl-C`.
 . Repeat the preceding steps to install the second controller into the new chassis.
