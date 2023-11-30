@@ -1,54 +1,38 @@
-To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
+To replace a fan, remove the failed fan module and replace it with a new fan module.
 
-NOTE: You must replace the fan module within two minutes of removing it from the chassis. System airflow is disrupted and the controller module or modules shut down after two minutes to avoid overheating.
+== Step 1: Shut down the impaired controller
 
-You can use the following animation, illustration, or the written steps to hot-swap a fan module.
+include::../_include/shutdown_most_frus.adoc[]
 
-video::ae59d53d-7746-402c-bd6b-aad9012efa89[panopto, title="Animation - Replace a fan"]
+== Step 2: Remove the controller module
 
-image::../media/drw_A400_Replace_fan.png[]
+include::../_include/a70-90_controller_remove_physical.adoc[]
 
-[cols="10,90"]
+== Step 3: Replace a fan
+
+To replace a fan, remove the failed fan module and replace it with a new fan module.
+
+. Identify the fan module that you must replace by checking the console error messages or by locating the lit LED for the fan module on the motherboard.
+. Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
++
+image::../media/drw_a800_replace_fan.png[]
++
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] 
-a|
-Fan handle
+image:../media/legend_icon_01.png[Callout number 1]|
+Fan locking tabs
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
-Locking tab
-a|
-image:../media/legend_icon_03.png[Callout number 3]
-a|
-Fan 
-a|
-image:../media/legend_icon_04.png[Callout number 4]
-a|
-Status LED
+Fan module
 |===
 
-. If you are not already grounded, properly ground yourself.
-. Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
-. Identify the fan module that you must replace by checking the console error messages and looking at the Attention LED on each fan module.
-. Press down the release latch on the fan module cam handle, and then rotate the cam handle downward.
-+
-The fan module moves a little bit away from the chassis.
+. Align the edges of the replacement fan module with the opening in the controller module, and then slide the replacement fan module into the controller module until the locking latches click into place.
 
-. Pull the fan module straight out from the chassis, making sure that you support it with your free hand so that it does not swing out of the chassis.
-+
-NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
-+
-. Set the fan module aside.
-. Insert the replacement fan module into the chassis by aligning it with the opening, and then sliding it into the chassis.
-. Push firmly on the fan module cam handle so that it is seated all the way into the chassis.
-+
-The cam handle raises slightly when the fan module is completely seated.
+== Step 4: Reinstall the controller module
 
-. Swing the cam handle up to its closed position, making sure that the cam handle release latch clicks into the locked position.
-+
-The Attention LED should not be lit after the fan is seated and has spun up to operational speed.
+include::../_include/a70-90_controller_install_step_physical.adoc[]
 
-. Align the bezel with the ball studs, and then gently push the bezel onto the ball studs.
+== Step 5: Return the failed part to NetApp
 
-include::../_include/complete_rma_step.adoc[]
+include::../_include/complete_rma.adoc[]
