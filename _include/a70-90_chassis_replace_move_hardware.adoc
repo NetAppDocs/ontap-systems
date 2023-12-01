@@ -1,6 +1,6 @@
 Move the power supplies, hard drives, and controller module from the impaired chassis to the new chassis, and swap out the impaired chassis with the new chassis of the same model as the impaired chassis.
 
-== Step 1: Remove the controller modules
+== Step 1: Remove the controller module
 
 include::../_include/a70-90_controller_remove_physical.adoc[]
 
@@ -31,7 +31,7 @@ Be sure to close the cam handle slowly so that it aligns correctly with the fron
 
 . Repeat the process for the remaining drives in the system.
 
-== Step 3: Replace a chassis from within the equipment rack or system cabinet
+== Step 3: Replace chassis from within the equipment rack or system cabinet
 
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
@@ -43,7 +43,7 @@ You must remove the existing chassis from the equipment rack or system cabinet b
 . Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
 . If you have not already done so, install the bezel.
 
-== Step 4: Install the controller modules
+== Step 4: Reinstall the controller module
 
 include::../_include/a70-90_controller_install_step_physical.adoc[]
 
