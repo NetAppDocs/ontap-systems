@@ -8,8 +8,6 @@ entries:
       url: /a70-90/install-setup.html
     - title: Quick steps
       url: /a70-90/install-quick-guide.html
-    - title: Video steps
-      url: /a70-90/install-videos.html
     - title: Detailed steps
       url: /a70-90/install-detailed-guide.html
  - title: Maintain
@@ -67,13 +65,17 @@ entries:
    - title: Drive
      url: /a70-90/drive-replace.html
    - title: Fan
-     url: /a70-90/fan-replace.html
+     url: /a70-90/fan-swap-out.html
+   - title: NVDIMM module
+     url: /a70-90/nvdimm-module-replace.html
    - title: NVDIMM
      url: /a70-90/nvdimm-replace.html
    - title: NVDIMM battery
      url: /a70-90/nvdimm-battery-replace.html
-   - title: PCIe card
-     url: /a70-90/pci-cards-and-risers-replace.html
+   - title: I/O module
+     url: /a70-90/io-module-replace.html
+   - title: System management module 
+     url: /a70-90/system-management-replace.html
    - title: Power supply
      url: /a70-90/power-supply-replace.html
    - title: Real-time clock battery

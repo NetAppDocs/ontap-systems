@@ -8,8 +8,6 @@ entries:
       url: /a1k/install-setup.html
     - title: Quick steps
       url: /a1k/install-quick-guide.html
-    - title: Video steps
-      url: /a1k/install-videos.html
     - title: Detailed steps
       url: /a1k/install-detailed-guide.html
  - title: Maintain
@@ -68,12 +66,16 @@ entries:
      url: /a1k/drive-replace.html
    - title: Fan
      url: /a1k/fan-replace.html
+   - title: NVDIMM module
+     url: /a1k/nvdimm-module-replace.html
    - title: NVDIMM
      url: /a1k/nvdimm-replace.html
    - title: NVDIMM battery
      url: /a1k/nvdimm-battery-replace.html
-   - title: PCIe card
-     url: /a1k/pci-cards-and-risers-replace.html
+   - title: I/O module
+     url: /a1k/io-module-replace.html
+   - title: System management module
+     url: /a1k/system-management-replace.html
    - title: Power supply
      url: /a1k/power-supply-replace.html
    - title: Real-time clock battery

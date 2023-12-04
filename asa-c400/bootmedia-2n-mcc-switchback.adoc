@@ -1,0 +1,12 @@
+---
+permalink: asa-c400/bootmedia-2n-mcc-switchback.html
+sidebar: sidebar
+keywords: asa c400, asa, c400, fru, replacement, two-node, metrocluster, configuration, switchback, operation, operating, system, sync-source, storage,virtual, machine, svm, impair, site, serving, data, local, disk, pool, switch, aggregate, switch back aggregates in a two-node metrocluster configuration
+summary: After you have completed the FRU replacement in a two-node MetroCluster configuration, you can perform the MetroCluster switchback operation. This returns the configuration to its normal operating state, with the sync-source storage virtual machines \(SVMs\) on the formerly impaired site now active and serving data from the local disk pools.
+---
+= Switch back aggregates in a two-node MetroCluster configuration - ASA C400
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/2n_mcc_switchback.adoc[]

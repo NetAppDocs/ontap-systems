@@ -2,36 +2,7 @@ Move the power supplies, hard drives, and controller module from the impaired ch
 
 == Step 1: Remove the controller modules
 
-To replace the chassis, you must remove the controller modules from the old chassis.
-
-. If you are not already grounded, properly ground yourself.
-. Release the power cable retainers, and then unplug the cables from the power supplies.
-. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables from the controller module, keeping track of where the cables were connected.
-+
-Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
-
-. Remove the cable management device from the controller module and set it aside.
-. Press down on both of the locking latches, and then rotate both latches downward at the same time.
-+
-The controller module moves slightly out of the chassis.
-+
-image::../media/drw_a800_pcm_remove.png[]
-+
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1]|
-Locking latch
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Locking pin
-|===
-
-. Slide the controller module out of the chassis.
-+
-Make sure that you support the bottom of the controller module as you slide it out of the chassis.
-
-. Set the controller module aside in a safe place, and repeat these steps for the other controller module in the chassis.
+include::../_include/a1k_controller_remove_physical.adoc[]
 
 == Step 2: Move drives to the new chassis
 

@@ -1,35 +1,8 @@
 Move the power supplies, hard drives, and controller module from the impaired chassis to the new chassis, and swap out the impaired chassis with the new chassis of the same model as the impaired chassis.
 
-== Step 1: Remove the controller modules
+== Step 1: Remove the controller module
 
-To replace the chassis, you must remove the controller modules from the old chassis.
-
-. If you are not already grounded, properly ground yourself.
-. Release the power cable retainers, and then unplug the cables from the power supplies.
-. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables from the controller module, keeping track of where the cables were connected.
-+
-Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
-
-. Remove the cable management device from the controller module and set it aside.
-. Press down on both of the locking latches, and then rotate both latches downward at the same time.
-+
-The controller module moves slightly out of the chassis.
-+
-image::../media/drw_a800_pcm_remove.png[]
-+
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1]|
-Locking latch
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Locking pin
-|===
-
-. Slide the controller module out of the chassis.
-+
-Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+include::../_include/a70-90_controller_remove_physical.adoc[]
 
 . Set the controller module aside in a safe place, and repeat these steps for the other controller module in the chassis.
 
@@ -58,7 +31,7 @@ Be sure to close the cam handle slowly so that it aligns correctly with the fron
 
 . Repeat the process for the remaining drives in the system.
 
-== Step 3: Replace a chassis from within the equipment rack or system cabinet
+== Step 3: Replace chassis from within the equipment rack or system cabinet
 
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
@@ -70,28 +43,8 @@ You must remove the existing chassis from the equipment rack or system cabinet b
 . Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
 . If you have not already done so, install the bezel.
 
-== Step 4: Install the controller modules
+== Step 4: Reinstall the controller module
 
-After you install the controller modules into the new chassis, you need to boot it.
+include::../_include/a70-90_controller_install_step_physical.adoc[]
 
-For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
-
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
-+
-NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
-
-. Recable the console to the controller module, and then reconnect the management port.
-. Plug the power cables into the power supplies and reinstall the power cable retainers.
-. Complete the reinstallation of the controller module:
- .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
-+
-The locking latches rise when the controller module is fully seated.
-+
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-+
-The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
-
- .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. If you have not already done so, reinstall the cable management device.
- .. Interrupt the normal boot process by pressing `Ctrl-C`.
 . Repeat the preceding steps to install the second controller into the new chassis.
