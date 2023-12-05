@@ -9,25 +9,23 @@ You must replace the failed component with a replacement FRU component you recei
 include::../_include/shutdown_most_frus.adoc[]
 
 
-== Step 2: Replace the NVDIMM
+== Step 2: Replace the NVDIMM module
 
-To replace the NVDIMM, you must locate it in the controller module using the NVDIMM map label on top of the air duct, and then replace it following the specific sequence of steps.
+To replace the NVDIMM module, *you must locate it in the controller module using the NVDIMM map label on top of the air duct #does this still apply?#,* and then replace it following the specific sequence of steps.
 
-. If you are removing or moving an NVDIMM, unlock the locking latch on the riser, and then remove the applicable riser.
+. If you are moving the NVDIMM, unlock the locking latch on the module, and then remove the applicable module.
 +
-image::../media/drw_a800_nvdimm_replace.png[]
+image::../media/drw_A70-90_NVRAM12_remove_replace_IEOPS-1370.svg[]
 +
 [cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1]|
-Air duct cover
+Module latch
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
-Riser 2 and NVDIMM 11
-a|
-Riser 3 and NVDIMM 23
+NVDIMM and ejector tab
 |===
 
 . Note the orientation of the NVDIMM in the socket so that you can insert the NVDIMM in the replacement controller module in the proper orientation.
@@ -35,7 +33,8 @@ Riser 3 and NVDIMM 23
 +
 NOTE: Carefully hold the NVDIMM by the edges to avoid pressure on the components on the NVDIMM circuit board.
 
-. Remove the replacement NVDIMM from the antistatic shipping bag, hold the NVDIMM by the corners, and then align it to the slot.
+Install the replacement NVDIMM module:
+. Retrieve the NVDIMM from the removed NVDIMM module, hold the NVDIMM by the corners, and then align it to the slot of the replacement NVDIMM module.
 +
 The notch among the pins on the NVDIMM should line up with the tab in the socket.
 
@@ -47,8 +46,7 @@ The NVDIMM fits tightly in the slot, but should go in easily. If not, realign th
 NOTE: Visually inspect the NVDIMM to verify that it is evenly aligned and fully inserted into the slot.
 
 . Push carefully, but firmly, on the top edge of the NVDIMM until the ejector tabs snap into place over the notches at the ends of the NVDIMM.
-. Reinstall any risers that you removed from the controller module.
-. Close the air duct.
+. Install the replacement NVDIMM module into the controller module.
 
 == Step 4: Boot the controller module
 

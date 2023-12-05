@@ -13,7 +13,7 @@ include::../_include/shutdown_most_frus.adoc[]
 
 To replace the NVDIMM, *you must locate it in the controller module using the NVDIMM map label on top of the air duct #does this still apply?#,* and then replace it following the specific sequence of steps.
 
-. If you are removing or moving an NVDIMM, unlock the locking latch on the module, and then remove the applicable module.
+. If you are removing an NVDIMM, unlock the locking latch on the module, and then remove the applicable module.
 +
 image::../media/drw_A1K_NVRAM12_remove_replace_IEOPS-1380.svg[]
 +
