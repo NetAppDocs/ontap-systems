@@ -1,4 +1,4 @@
-You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic.
+You must move the NVDIMM into the replacement NVDIMM module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic.
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
@@ -25,7 +25,7 @@ Module latch
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
-NVDIMM and ejector tab
+Ejector tab
 |===
 
 . Note the orientation of the NVDIMM in the socket so that you can insert the NVDIMM in the replacement controller module in the proper orientation.
@@ -33,8 +33,8 @@ NVDIMM and ejector tab
 +
 NOTE: Carefully hold the NVDIMM by the edges to avoid pressure on the components on the NVDIMM circuit board.
 
-Install the replacement NVDIMM module:
-. Retrieve the NVDIMM from the removed NVDIMM module, hold the NVDIMM by the corners, and then align it to the slot of the replacement NVDIMM module.
+. Move NVDIMM ino replacement module:
+.. Retrieve the NVDIMM from the removed NVDIMM module, hold the NVDIMM by the corners, and then align it to the slot of the replacement NVDIMM module.
 +
 The notch among the pins on the NVDIMM should line up with the tab in the socket.
 
