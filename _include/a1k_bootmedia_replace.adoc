@@ -1,10 +1,6 @@
 To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
 
-== Step 1: Remove the controller module
-
-**Removed--Ping Engineering on this.**
-
-== Step 2: Replace the boot media
+== Step 1: Replace the boot media
 
 The boot media is located inside the System Management Module and is accessed by removing the module from the system.
 
@@ -43,13 +39,9 @@ The boot media rotates slightly upward.
 .. Rotate the boot media down toward the motherboard until it engages the locking button.
 . Reinstall the System Management Module and recable it.
 
-== Step 3: Transfer the boot image to the boot media
+== Step 2: Transfer the boot image to the boot media
 
 The replacement boot media that you installed is without a boot image so you need to transfer a boot image using a USB flash drive.
-
-*QUESTIONS - Is Vino an e0M-16 model where we have to do an ifconfig at the LOADER prompt like the A900, or like an e0S system where we don't have to the ifconfig at the LOADER prompt?*
-
-*Do we require an EFI folder on the USB drive?*
 
 .Before you begin
 
