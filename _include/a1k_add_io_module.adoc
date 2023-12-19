@@ -1,0 +1,169 @@
+You can add an I/O module to your system by either adding a new I/O nodule into a system with empty slots or by replacing an I/O module with a new one in a fully-populated system.
+
+.Before you begin
+
+* Check the https://hwu.netapp.com/[NetApp Hardware Universe^] to make sure that the new I/O module is compatible with your system and version of ONTAP you're running.
+
+* If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^]  and use the best one available for your I/O module.
+
+* To non-disruptively add an I/O module, you must take over the target controller, remove the slot blanking cover in the target slot or remove an existing I/O module, add the new or replacement I/O module, and then giveback the target controller.
+
+* Make sure that all other components are functioning properly.
+
+== Option 1: Add the I/O module to a system with open slots
+
+You can add an I/O module into an empty module slot in your system.
+
+== Step 1: Shut down the impaired node
+
+Shut down or take over the impaired controller using one of the following options.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+--
+
+====
+
+== Step 2: Add I/O modules
+
+. If you are not already grounded, properly ground yourself.
+. Remove the target slot blanking cover:
+ .. Depress the lettered and numbered cam latch.
+ .. Rotate the cam latch down until it is the open position.
+ .. Remove the blanking cover.
+. Install the I/O module:
+ .. Align the I/O module with the edges of the slot.
+ .. Slide the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
+ .. Push the I/O cam latch all the way up to lock the module in place.
+. If the replacement I/O module is a NIC, cable the module to the data switches.
++
+NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
+
+. Reboot the controller from the LOADER prompt: _bye_
++
+NOTE: This reinitializes the PCIe cards and other components and reboots the node.
+
+. Give back the controller from the partner controller. `storage failover giveback -ofnode target_node_name`
+. Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
+. If you are using slots 3 and/or 7 for networking, use the `storage port modify -node __<node name>__ -port __<port name>__ -mode network` command to convert the slot for networking use.
+. Repeat these steps for controller B.
+. If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adding an NS224 drive shelf^].
+
+== Option 2: Add an I/O module in a system with no open slots
+
+If your system is fully populated, you can change an I/O module in an I/O slot by removing an existing I/O module and replacing it with a different I/O module.
+
+. If you are:
++
+[options="header" cols="1,2"]
+
+|===
+| Replacing a...| Then...
+a|
+NIC I/O module with the same the same number of ports
+a|
+The LIFs will automatically migrate when its controller module is shut down.
+a|
+NIC I/O module with fewer ports
+a|
+Permanently reassign the ASAected LIFs to a different home port. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^] for information about using System Manager to permanently move the LIFs.
+a|
+NIC I/O module with a storage I/O module
+a|
+Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
+|===
+
+== Step 1: Shut down the impaired node
+
+Shut down or take over the impaired controller using one of the following options.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+--
+
+====
+
+== Step 2: Replace I/O modules
+. If you are not already grounded, properly ground yourself.
+. Unplug any cabling on the target I/O module.
+. Remove the target I/O module from the chassis:
+.. Depress the lettered and numbered cam latch.
++
+The cam latch moves away from the chassis.
+.. Rotate the cam latch down until it is in a horizontal position.
++
+The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
+.. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
++
+Make sure that you keep track of which slot the I/O module was in.
++
+video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto, title="Animation - Remove or replacing an I/O module"]
++
+image:../media/drw_a900_remove_PCIe_module.png[]
++
+[cols="10,90"]
+|===
+a|
+image::../media/legend_icon_01.svg[width=20px]
+a|
+Lettered and numbered I/O cam latch
+a|
+image:../media/legend_icon_02.svg[width=20px]
+a|
+I/O cam latch completely unlocked
+|===
+
+. Install the I/O module into the target slot:
+.. Align the I/O module with the edges of the slot.
+.. Slide the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
+.. Push the I/O cam latch all the way up to lock the module in place.
+. Repeat the remove and install steps to replace additional modules for controller A.
+. If the replacement I/O module is a NIC, cable the module or modules to the data switches.
+. Reboot the controller from the LOADER prompt:
+.. Check the version of BMC on the controller: `system service-processor show`
+.. Update the BMC firmware if needed: `system service-processor image update`
+.. Reboot the node: `bye`
++
+NOTE: This reinitializes the PCIe cards and other components and reboots the node.
++
+
+NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement ]
+
+. Give back the controller from the partner controller. `storage failover giveback -ofnode target_node_name`
+. Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
+
+. If you added:
++
+[options="header" cols="1,2"]
+|===
+| If I/O module is a...| Then...
+a|
+NIC module in slots 3 or 7,
+a|
+Use the `storage port modify -node *_<node name>__ -port *_<port name>__ -mode network` command for each port.
+a|
+Storage module
+a|
+Install and cable your NS224 shelves, as described in
+https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adding an NS224 drive shelf^].
+a|
++
+|===
+
+. Repeat these steps for controller B.
