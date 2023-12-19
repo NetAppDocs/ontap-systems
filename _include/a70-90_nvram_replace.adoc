@@ -1,0 +1,330 @@
+The NVRAM module consists of the NVRAM12 and DIMMs. You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. To replace a failed NVRAM module, you must remove it from the chassis, move the DIMMs to the replacement module, and install the replacement NVRAM module into the chassis
+
+All other components in the system must be functioning properly; if not, you must contact technical support.
+
+You must replace the failed component with a replacement FRU component you received from your provider.
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller using one of the following options.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_supported.adoc[]
+--
+
+====
+
+== Step 2: Replace the NVRAM module
+
+To replace the NVRAM module, locate it in slot 4/5 in the chassis and follow the specific sequence of steps.
+
+. If you are not already grounded, properly ground yourself.
+
+. Remove the target NVRAM module from the chassis:
+ .. Depress the lettered and numbered cam button.
++
+The cam button moves away from the chassis.
+
+ .. Rotate the cam latch down until it is in a horizontal position.
++
+The NVRAM module disengages from the chassis and moves out a few inches.
+
+ .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
++
+image::../media/drw_A70-90_NVRAM12_remove_replace_IEOPS-1370.svg[]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.png[Callout number 1]|
+Module latch
+a|
+image:../media/legend_icon_02.png[Callout number 2]
+a|
+Ejector tab
+|===
+. Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
+. Remove the DIMMs, one at a time, from the old NVRAM module and install them in the replacement NVRAM module.
+. Close the cover on the module.
+. Install the replacement NVRAM module into the chassis:
+ .. Align the module with the edges of the chassis opening in slot 6.
+ .. Gently slide the module into the slot until the lettered and numbered cam latch begins to engage with the I/O cam pin, and then push the cam latch all the way up to lock the module in place.
+
+== Step 3: Replace a NVRAM DIMM
+
+To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, open the module, and then replace the target DIMM.
+
+. If you are not already grounded, properly ground yourself.
+. Remove the target NVRAM module from the chassis:
+ .. Depress the lettered and numbered cam button.
++
+The cam button moves away from the chassis.
+
+ .. Rotate the cam latch down until it is in a horizontal position.
++
+The NVRAM module disengages from the chassis and moves out a few inches.
+
+ .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
++
+image::../media/drw_A70-90_NVRAM12_remove_replace_IEOPS-1370.svg[]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.png[Callout number 1]|
+Module latch
+a|
+image:../media/legend_icon_02.png[Callout number 2]
+a|
+Ejector tab
+|===
+
+. Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
+. Locate the DIMM to be replaced inside the NVRAM module, and then remove it by pressing down on the DIMM locking tabs and lifting the DIMM out of the socket.
++
+. Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
+. Close the cover on the module.
+. Install the NVRAM module into the chassis:
+ .. Align the module with the edges of the chassis opening in slot 6.
+ .. Gently slide the module into the slot until the lettered and numbered cam latch begins to engage with the I/O cam pin, and then push the cam latch all the way up to lock the module in place.
+
+== Step 4: Reboot the controller
+
+After you replace the FRU, you must reboot the controller module.
+
+. To boot ONTAP from the LOADER prompt, enter `bye`.
+
+== Step 5: Reassign disks
+
+You must confirm the system ID change when you boot the replacement controller and then verify that the change was implemented.
+
+CAUTION: Disk reassignment is only needed when replacing the NVRAM module and does not apply to NVRAM DIMM replacement. 
+
+.Steps
+. If the replacement controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: `halt`
+. From the LOADER prompt on the replacement controller, boot the controller and entering y if you are prompted to override the system ID due to a system ID mismatch.
+. Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: `storage failover show`
++
+In the command output, you should see a message that the system ID has changed on the impaired controller, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
++
+----
+node1:> storage failover show
+                                    Takeover
+Node              Partner           Possible     State Description
+------------      ------------      --------     -------------------------------------
+node1             node2             false        System ID changed on partner (Old:
+                                                  151759755, New: 151759706), In takeover
+node2             node1             -            Waiting for giveback (HA mailboxes)
+----
+
+. Give back the controller:
+ .. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode replacement_node_name`
++
+The replacement controller takes back its storage and completes booting.
++
+If you are prompted to override the system ID due to a system ID mismatch, you should enter `y`.
++
+NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
++
+For more information, see the https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted[Manual giveback commands^] topic to override the veto.
+
+ .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
++
+The output from the `storage failover show` command should not include the System ID changed on partner message.
+. Verify that the disks were assigned correctly: `storage disk show -ownership`
++
+The disks belonging to the replacement controller should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 151759706:
++
+----
+node1:> storage disk show -ownership
+
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
+1.0.0  aggr0_1  node1 node1  -        151759706  151759706  -       151759706 Pool0
+1.0.1  aggr0_1  node1 node1           151759706  151759706  -       151759706 Pool0
+.
+.
+.
+----
+
+. If the system is in a MetroCluster configuration, monitor the status of the controller: `metrocluster node show`
++
+The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each controller will show a configured state, with DR Mirroring enabled and a mode of normal. The `metrocluster node show -fields node-systemid` command output displays the old system ID until the MetroCluster configuration returns to a normal state.
+
+. If the controller is in a MetroCluster configuration, depending on the MetroCluster state, verify that the DR home ID field shows the original owner of the disk if the original owner is a controller on the disaster site.
++
+This is required if both of the following are true:
+
+ ** The MetroCluster configuration is in a switchover state.
+ ** The replacement controller is the current owner of the disks on the disaster site.
++
+See https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration] for more information.
+
+. If your system is in a MetroCluster configuration, verify that each controller is configured: `metrocluster node show - fields configuration-state`
++
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+
+. Verify that the expected volumes are present for each controller: `vol show -node node-name`
+. If storage encryption is enabled, you must restore functionality.
+. If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`
+ 
+
+== Step 6: Restore Storage and Volume Encryption functionality
+
+If you have storage encryption enabled, use the appropriate procedure.
+
+IMPORTANT:  This step does not apply to NVRAM DIMM replacement.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Using Onboard Key Manager
+--
+.Steps
+. Boot the node to the boot menu.
+. Select option 10, `Set onboard key management recovery secrets`.
+. Enter the passphrase for the onboard key manager you obtained from the customer.
+. At the prompt, paste the backup key data from the output of `security key-manager backup show` OR `security key-manager onboard show-backup` command.
++
+Example of backup data:
++
+
+--------------------------BEGIN BACKUP--------------------------
++
+TmV0QXBwIEtleSBCbG9iAAEAAAAEAAAAcAEAAAAAAADuD+byAAAAACEAAAAAAAAA
+QAAAAAAAAABvOlH0AAAAAMh7qDLRyH1DBz12piVdy9ATSFMT0C0TlYFss4PDjTaV
+dzRYkLd1PhQLxAWJwOIyqSr8qY1SEBgm1IWgE5DLRqkiAAAAAAAAACgAAAAAAAAA
+3WTh7gAAAAAAAAAAAAAAAAIAAAAAAAgAZJEIWvdeHr5RCAvHGclo+wAAAAAAAAAA
+IgAAAAAAAAAoAAAAAAAAAEOTcR0AAAAAAAAAAAAAAAACAAAAAAAJAGr3tJA/
+LRzUQRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAACdhTcvAAAAAJ1PXeBf
+ml4NBsSyV1B4jc4A7cvWEFY6lLG6hc6tbKLAHZuvfQ4rIbYAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+.
+.
+.
+.
+H4nPQM0nrDRYRa9SCv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA
++
+---------------------------END BACKUP---------------------------
++
+
+NOTE: The controller returns to the boot menu.
+
+. Select option 1, `Normal Boot`
+. Give back only the CFO aggregates with the `storage failover giveback -fromnode local -only-cfo-aggregates true` command.
+ ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
+ ** If the command fails because of an open CIFS session, check with the customer how to close out CIFS sessions.
++
+NOTE: Terminating CIFS can cause loss of data.
+
+ ** If the command fails because the partner "not ready", wait 5 minutes for the NVRAMs to synchronize.
+ ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate content for more information.
+. Once the giveback completes, check the failover and giveback status with the `storage failover show` and `storage failover show-giveback` commands.
++
+Only the CFO aggregates (root aggregate and CFO style data aggregates) will be shown.
+
+. Run the security key-manager onboard sync:
+ .. Run the `security key-manager onboard sync` command and then enter the passphrase when prompted.
+ .. Enter the `security key-manager key-query` command to see a detailed view of all keys stored in the onboard key manager and verify that the `Restored` column = `yes/true` for all authentication keys.
++
+NOTE: If the `Restored` column = anything other than `yes/true`, contact Customer Support.
+
+ .. Wait 10 minutes for the key to synchronize across the cluster.
+. Move the console cable to the partner controller.
+. Give back the target controller using the `storage failover giveback -fromnode local` command.
+. Check the giveback status, three minutes after it reports complete, using the `storage failover show` command.
++
+If giveback is not complete after 20 minutes, contact Customer Support.
+
+. At the clustershell prompt, enter the net int show -is-home false command to list the logical interfaces that are not on their home controller and port.
++
+If any interfaces are listed as `false`, revert those interfaces back to their home port using the net int revert command.
+
+. Move the console cable to the target controller and run the `version -v` command to check the ONTAP versions.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Reset the MSID if it was previously set and was captured at the beginning of this procedure:
+.. Assign a data authentication key to a FIPS drive or SED using the `storage encryption disk modify -disk _disk_ID_ -data-key-id _key_ID_` command. 
++
+
+NOTE: You can use the `security key-manager key query -key-type NSE-AK` command to view key IDs.
+
++
+.. Verify that the authentication keys have been assigned using the `storage encryption disk show` command.
+
+--
+.Option 2: Using External Manager
+--
+. Boot the controller to the boot menu.
+. Select option 11, `Configure node for external key management`.
+. Enter the management certificate information at the prompts.
++
+NOTE: The controller returns to the boot menu after the management certificate information is completed.
++
+. Select option 1, `Normal Boot`
+. Move the console cable to the partner controller and give back the target controller storage using the storage failover giveback -fromnode local -only-cfo-aggregates true local command.
+ ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
+ ** If the command fails because of an open CIFS sessions, check with customer how to close out CIFS sessions.
++
+NOTE: Terminating CIFS can cause loss of data.
+
+ ** If the command fails because the partner is "not ready", wait 5 minutes for the NVMEMs to synchronize.
+ ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate content for more information.
+
+. Wait 3 minutes and check the failover status with the storage failover show command.
+. At the clustershell prompt, enter the `net int show -is-home false` command to list the logical interfaces that are not on their home controller and port.
++
+If any interfaces are listed as `false`, revert those interfaces back to their home port using the `net int revert` command.
+
+. Move the console cable to the target controller and run the `version -v` command to check the ONTAP versions.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Use the `storage encryption disk show` at the clustershell prompt, to review the output.
+. Use the `security key-manager key-query` command to display the encryption and  authentication keys that are stored on the key management servers.
+ ** If the `Restored` column = `yes/true`, you are done and can proceed to complete the replacement process.
+ ** If the `Key Manager type` = `external` and the `Restored` column = anything other than `yes/true`, use the security key-manager external restore command to restore the key IDs of the authentication keys.
++
+NOTE: If the command fails, contact Customer Support.
+
+ ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the security key-manager onboard sync command to re-sync the Key Manager type.
++
+Use the `security key-manager key-query` command to verify that the `Restored` column = `yes/true` for all authentication keys.
+. Connect the console cable to the partner controller.
+. Give back the controller using the storage failover giveback -fromnode local command.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Reset the MSID if it was previously set and was captured at the beginning of this procedure:
+.. Assign a data authentication key to a FIPS drive or SED using the `storage encryption disk modify -disk _disk_ID_ -data-key-id _key_ID_` command. 
++
+
+NOTE: You can use the `security key-manager key query -key-type NSE-AK` command to view key IDs.
+
++
+.. Verify that the authentication keys have been assigned using the `storage encryption disk show` command.
+
+--
+
+====
+
+== Step 7: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
