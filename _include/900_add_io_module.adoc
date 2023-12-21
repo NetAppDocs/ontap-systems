@@ -74,7 +74,7 @@ The LIFs will automatically migrate when its controller module is shut down.
 a|
 NIC I/O module with fewer ports
 a|
-Permanently reassign the ASAected LIFs to a different home port. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^] for information about using System Manager to permanently move the LIFs.
+Permanently reassign the affected LIFs to a different home port. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^] for information about using System Manager to permanently move the LIFs.
 a|
 NIC I/O module with a storage I/O module
 a|
