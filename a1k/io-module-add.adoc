@@ -1,0 +1,12 @@
+---
+permalink: a1k/io-module-add.html
+sidebar: sidebar
+keywords: aff a1k, add I/O module
+summary: "To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards."
+---
+= Add I/O module - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a1k_add_io_module.adoc[]
