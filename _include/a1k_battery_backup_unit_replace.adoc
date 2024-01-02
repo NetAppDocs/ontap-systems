@@ -1,4 +1,4 @@
-To replace the NVRAM battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module.
+To replace the Battery Backup Unit (BBU), you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module.
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
@@ -24,11 +24,11 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 
 include::../_include/a1k_controller_remove_physical.adoc[]
 
-== Step 3: Replace the NVRAM battery
+== Step 3: Replace the BBU
 
-Remove the failed NVRAM battery from the controller module and install the replacement NVRAM battery.
+Remove the failed BBU from the controller module and install the replacement BBU.
 
-. Open the air duct cover and locate the NVRAM battery in the riser.
+. Open the air duct cover and locate the BBU.
 +
 image::../media/drw_A1K_remove_replace_NVMEMBAT_IEOPS-1379.svg[]
 +
@@ -39,7 +39,7 @@ Air duct cover
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
-NVRAM battery plug
+BBU plug
 |===
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
