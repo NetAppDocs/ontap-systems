@@ -1,0 +1,14 @@
+---
+permalink: ns224/cold-replace-shelf.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, drive, aggregate, ha, pair, serving, data, i/o, cold-replace an ns224
+summary: You can cold-replace an NS224 drive shelf.
+---
+= Cold-replace a shelf - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When replacing a drive shelf in a production system that has disks in use, you need to perform a cold shelf replacement. This is a disruptive procedure. It requires you to halt the controllers in your HA pair.
+
+Use the KB article https://kb.netapp.com/onprem/ontap/hardware/How_to_replace_a_shelf_chassis_using_a_cold_shelf_removal_procedure[How to replace a shelf chassis using a cold shelf removal procedure].

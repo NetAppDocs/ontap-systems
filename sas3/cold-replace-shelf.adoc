@@ -1,0 +1,14 @@
+---
+permalink: sas3/cold-replace-shelf.html
+sidebar: sidebar
+keywords: cold-replace, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b
+summary: You can cold-replace a disk shelf with IOM12 modules.
+---
+= Cold-replace a shelf - shelves with IOM12/IOM12B modules
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When replacing a drive shelf in a production system that has disks in use, you need to perform a cold shelf replacement. This is a disruptive procedure. It requires you to halt the controllers in your HA pair.
+
+Use the KB article https://kb.netapp.com/onprem/ontap/hardware/How_to_replace_a_shelf_chassis_using_a_cold_shelf_removal_procedure[How to replace a shelf chassis using a cold shelf removal procedure].
