@@ -73,7 +73,11 @@ entries:
    - title: NVDIMM battery
      url: /a70-90/nvdimm-battery-replace.html
    - title: I/O module
-     url: /a70-90/io-module-replace.html
+     entries:
+        - title: Add I/O module
+          url: /a70-90/io-module-add.html
+        - title: Replace I/O module
+          url: /a70-90/io-module-replace.html
    - title: System management module 
      url: /a70-90/system-management-replace.html
    - title: Power supply

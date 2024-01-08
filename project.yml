@@ -1,5 +1,4 @@
 settings:
-  search: ontap-systems
   name: "Install and maintain"
   internal:
     pdf_enabled: false
@@ -25,16 +24,13 @@ sidebar:
       - section: a1k
       - section: a70-90
       - section: a150
-      - section: a200
       - section: a250
       - section: a400
-      - section: a700
       - section: a800
       - section: a900
     - title: AFF C-Series systems
       url: /aff-cseries/index.html
       entries:
-      - section: c190
       - section: c250
       - section: c400
       - section: c800
@@ -55,21 +51,24 @@ sidebar:
     - title: FAS systems
       url: /fas/index.html
       entries:
-      - section: fas500f
       - section: fas2700
       - section: fas2800
       - section: fas8300
-      - section: fas9000
       - section: fas9500
     - title: End-of-availability systems
       url: /endofavail/index.html
       entries:
+        - section: a200
         - section: a220
         - section: a300
         - section: a320
+        - section: a700
         - section: a700s
+        - section: c190
         - section: fas2600
+        - section: fas500f
         - section: fas8200
+        - section: fas9000
         - section: other
     - title: Drive shelves
       url: /drive-shelves/index.html
