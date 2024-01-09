@@ -1,10 +1,10 @@
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+To replace the boot media, you must remove the System Management module from the back of the system, remove the impaired boot media, install the replacement boot media in the System Management module, and transfer the boot image to a USB flash drive.
 
 == Step 1: Replace the boot media
 
-The boot media is located inside the System Management Module and is accessed by removing the module from the system.
+The boot media is located inside the System Management module and is accessed by removing the module from the system.
 
-. Remove the System Management Module:
+. Remove the System Management module:
 +
 image::../media/drw_A1K_boot_media_remove_replace_IEOPS-1377.svg[]
 +
@@ -12,7 +12,7 @@ image::../media/drw_A1K_boot_media_remove_replace_IEOPS-1377.svg[]
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1] a|
-System Management Module cam latch
+System Management module cam latch
 a|
 image:../media/legend_icon_02.svg[Callout number 2]
 a|
@@ -25,11 +25,11 @@ Boot media
 |===
 
 .. If you are not already grounded, properly ground yourself.
-.. Remove any cables connected to the System Management Module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
-.. Depress the terra cotta system management cam button.
+.. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
+.. Depress the system management cam button.
 The cam button moves away from the chassis.
- .. Rotate the cam lever all the way down and remove the System Management Module from the controller module.
-.. Place the System Management Module on an anti-static mat, so that the boot media is accessible.
+ .. Rotate the cam lever all the way down and remove the System Management module from the controller module.
+.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
 . Remove the boot media from the management module:
 .. Press the blue locking button.
 The boot media rotates slightly upward.
@@ -37,7 +37,7 @@ The boot media rotates slightly upward.
 . Install the replacement boot media into the controller module:
 .. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
 .. Rotate the boot media down toward the motherboard until it engages the locking button.
-. Reinstall the System Management Module and recable it.
+. Reinstall the System Management module and recable it.
 
 == Step 2: Transfer the boot image to the boot media
 
@@ -73,16 +73,41 @@ There are two folders in the unzipped service image file:
   +
  The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
 
-  .. Remove the USB flash drive from your laptop.
- . Plug the power cable into the power supply and reinstall the power cable retainer.
- . Insert the USB flash drive into the USB slot on the controller module.
+.. Remove the USB flash drive from your laptop.
+. Insert the USB flash drive into the USB slot on the System Management module. 
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
- . Gently push the controller module all the way into the system until the controller module locking hooks begin to rise, firmly push on the locking hooks to finish seating the controller module, and then swing the locking hooks into the locked position over the pins on the controller module.
+ . Plug the power cable into the power supply and reinstall the power cable retainer.
+
 +
-The controller begins to boot as soon as it is completely installed into the chassis.
+The controller begins to boot as soon as power is reconnected to the system.
 
  . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
+
+. Set your network connection type at the LOADER prompt:
+ ** If you are configuring DHCP: `ifconfig e0a -auto`
++
+NOTE: The target port you configure is the target port you use to communicate with the impaired controller from the healthy controller during var file system restore with a network connection. You can also use the e0M port in this command.
+
+ ** If you are configuring manual connections: `ifconfig e0a -addr=filer_addr -mask=netmask -gw=gateway-dns=dns_addr-domain=dns_domain`
+  *** filer_addr is the IP address of the storage system.
+  *** netmask is the network mask of the management network that is connected to the HA partner.
+  *** gateway is the gateway for the network.
+  *** dns_addr is the IP address of a name server on your network.
+  *** dns_domain is the Domain Name System (DNS) domain name.
++
+If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL. You need only the server's host name.
+
++
+NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
+. If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
+ .. Boot to Maintenance mode: `boot_ontap maint`
+ .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t iniitator adapter_name`
+ .. Halt to return to Maintenance mode: `halt`
+
++
+The changes will be implemented when the system is booted.
+
