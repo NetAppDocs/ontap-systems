@@ -63,7 +63,6 @@ AAAAAAAA
 +
 The system boots to Waiting for giveback... prompt.
 
-. Move the console cable to the partner controller and login as "admin".
 . Confirm the target controller is ready for giveback with the `storage failover show` command.
 . Giveback only the CFO aggregates with the `storage failover giveback -fromnode local -only-cfo-aggregates true` command.
  ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
