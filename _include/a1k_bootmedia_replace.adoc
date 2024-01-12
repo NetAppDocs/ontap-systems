@@ -11,7 +11,8 @@ image::../media/drw_A1K_boot_media_remove_replace_IEOPS-1377.svg[]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.svg[Callout number 1] a|
+image:../media/legend_icon_01.svg[Callout number 1] 
+a|
 System Management module cam latch
 a|
 image:../media/legend_icon_02.svg[Callout number 2]
@@ -36,7 +37,7 @@ The boot media rotates slightly upward.
 .. Rotate the boot media up,  slide it out of the socket, and set it aside.
 . Install the replacement boot media into the controller module:
 .. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
-.. Rotate the boot media down toward the motherboard until it engages the locking button.
+.. Rotate the boot media down toward until it engages the locking button.
 . Reinstall the System Management module and recable it.
 
 == Step 2: Transfer the boot image to the boot media
@@ -50,8 +51,7 @@ The replacement boot media that you installed is without a boot image so you nee
   ** If NVE is enabled, download the image with NetApp Volume Encryption, as indicated in the download button.
   ** If NVE is not enabled, download the image without NetApp Volume Encryption, as indicated in the download button.
  * If your system is an HA pair, you must have a network connection.
- * If your system is a stand-alone system you do not need a network connection, but you must perform an additional reboot when restoring the var file system.
- 
+
 .Steps
 . Download and copy the appropriate service image from the NetApp Support Site to the USB flash drive.
 .. Download the service image to your work space on your laptop.
