@@ -9,30 +9,22 @@ indexpage:
           url: https://www.netapp.com/data-storage/fas/
     - title: Install and setup
       links:
-        - title: FAS500f
-          url: ../fas500f/install-setup.html
         - title: FAS2700
           url: ../fas2700/install-setup.html
         - title: FAS2800
           url: ../fas2800/install-setup.html
         - title: FAS8300 and FAS8700
           url: ../fas8300/install-setup.html
-        - title: FAS9000
-          url: ../fas9000/install-setup.html
         - title: FAS9500
           url: ../fas9500/install_setup.html
     - title: Maintain your system
       links:
-        - title: FAS500f
-          url: ../fas500f/maintain-overview.html
         - title: FAS2700
           url: ../fas2700/maintain-overview.html
         - title: FAS2800
           url: ../fas2800/maintain-overview.html
         - title: FAS8300 and FAS8700
           url: ../fas8300/maintain-overview.html
-        - title: FAS9000
-          url: ../fas9000/maintain-overview.html
         - title: FAS9500
           url: ../fas9500/maintain-overview.html
     - title: Supported switches
