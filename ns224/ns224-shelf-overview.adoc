@@ -1,0 +1,19 @@
+---
+permalink: ns224/ns224-shelf-overview.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, drive, aggregate, ha, pair, serving, data
+summary: NS224 shelf overview.
+---
+= Overview - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+The NetApp NS224 drive shelf is a 2U rack unit that can hold up to 24 drives. The NS224 drive shelf is compatible with 2.5" small form factor drives and supports both SAS and SATA interfaces. 
+
+Take the following actions to maintain your NS224 drive shelf. 
+
+* link:cold-replace-shelf.html[Cold-replace a shelf]
+* link:hot-remove-shelf.html[Hot-remove a shelf]
+* link:service-monitor-leds.html[Monitor shelf LEDs]
