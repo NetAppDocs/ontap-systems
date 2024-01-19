@@ -5,8 +5,8 @@ You must remove the controller module from the chassis when you replace the cont
 . Check the NVMEM LED located on the back of the system. Look for the NV icon:
 +
 image::../media/drw_A1K-70-90_NVRAM-LED_IEOPS-1463.svg[]
-+
-[cols="10,90"]
+
+[cols="5,95"]
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1] 
@@ -16,6 +16,7 @@ a|
 image:../media/legend_icon_02.svg[Callout number 1] 
 a|
 NVRAM attention LED
+
 |===
 
 +
@@ -32,7 +33,8 @@ NOTE: The green NV LED on the faceplate will start flashing when power is remove
 The controller module moves slightly out of the chassis.
 +
 image::../media/drw_A1K_PCM_remove_replace_IEOPS-1375.svg[]
-+
+
+[cols="5,95"]
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1]|

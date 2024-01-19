@@ -38,6 +38,7 @@ Move the Battery Backup unit (BBU)
 
 image::../media/drw_A1K_remove_replace_NVMEMBAT_IEOPS-1379.svg[AFF A1K BBU battery remove-replace]
 
+[cols="5,95"]
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1]|
@@ -50,6 +51,7 @@ a|
 image:../media/legend_icon_03.svg[Callout number 3]
 a|
 BBU pack
+
 |===
 
 *Attention:* The BBU control board LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
@@ -69,11 +71,13 @@ To move the DIMMs, locate and move them from the impaired controller into the re
 +
 image::../media/drw_a1k_dimms_IEOPS-1512.svg[AFF A1K DIMM remove-replace]
 
+[cols="5,95"]
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1]
 a|
 System DIMM
+
 |===
 
 . Note the orientation of the DIMM in the socket so that you can insert the DIMM in the replacement controller module in the proper orientation.
