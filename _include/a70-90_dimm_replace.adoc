@@ -5,13 +5,26 @@ All other components in the system must be functioning properly; if not, you mus
 You must replace the failed component with a replacement FRU component you received from your provider.
 
 == Step 1: Shut down the impaired controller
-
-include::../_include/recable_system_after_controller_rep.adoc[]
+ 
+Shut down or take over the impaired controller using one of the following options.
+ 
+[role="tabbed-block"]
+====
+ 
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_supported.adoc[]
+--
+ 
+====
 
 == Step 2: Remove the controller module
 
 include::../_include/a70-90_controller_remove_physical.adoc[]
-
 
 == Step 3: Replace a DIMM
 
