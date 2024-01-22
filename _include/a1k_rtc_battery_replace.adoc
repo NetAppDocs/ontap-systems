@@ -5,7 +5,21 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 
 == Step 1: Shut down the impaired controller
 
+Shut down or take over the impaired controller using one of the following options.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
 include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_supported.adoc[]
+--
+
+====
 
 == Step 2: Remove the controller module
 
@@ -17,24 +31,16 @@ include::../_include/a1k_controller_remove_physical.adoc[]
 
 == Step 3: Replace the RTC battery
 
-To replace the RTC battery, locate it inside the controller and follow the specific sequence of steps.
+To replace the RTC battery, locate the item inside the controller module and follow the specific sequence of steps.
 
-. Locate the RTC battery under Riser 2.
+. Locate the RTC battery under the air duct.
 +
-image::../media/drw_a800_rtc_battery_replace.png[]
+image::../media/drw_A1K_RTC_remove_replace_IEOPS-1381.svg[]
 +
 [cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1]|
-Air duct
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Riser 2
-a|
-image:../media/legend_icon_03.png[Callout number 3]
-a|
 RTC battery and housing
 |===
 
