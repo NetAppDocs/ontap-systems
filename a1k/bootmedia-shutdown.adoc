@@ -4,17 +4,23 @@ sidebar: sidebar
 keywords: aff a1k, shut down the controller
 summary: "After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller."
 ---
-= Shut down the controller - AFF A1K
+= Shut down the impaired controller - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
-== Option 1: Most systems
+[role="tabbed-block"]
+====
 
-include::../_include/shutdown_bootmedia.adoc[]
-
-== Option 2: System is in a MetroCluster
-
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
 include::../_include/shutdown_any_mcc_supported.adoc[]
+--
+
+====

@@ -1,148 +1,91 @@
 To replace the controller, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
 
-== Step 1: Remove the controller module
+== Step 1: Move the fans
+
+You must remove the five fan modules from the impaired controller module to the replacement controller module.
+
+. If you are not already grounded, properly ground yourself.
+. Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
+. Press the gray locking button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
++
+NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
++
+image::../media/drw_A1K_fan_remove_replace_IEOPS-1376.svg[AFF A1K fan remove/replace]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.svg[Callout number 1] 
+a|
+Gray locking button
+
+|===
+
+. Install the fan in the replacement controller module:
+.. Align the edges of the fan housing with the opening in the front of the replacement controller module.
+.. Gently slide the fan module all the way into the replacement controller module until it locks in place.
+. Repeat the preceding steps for the remaining fan modules.
+
+== Step 2: Remove the controller module
 
 include::../_include/a1k_controller_remove_physical.adoc[]
 
+== Step 3: Move the Battery Backup Unit (BBU)
 
-. **Open the controller module air duct:**
- .. Press in the locking tabs on the sides of the air duct toward the middle of the controller module.
- .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
-+
-image::../media/drw_a800_open_air_duct.png[]
-+
-[cols="1,4"]
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1]
-a|
-Air duct locking tabs
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Slide air duct towards fan modules
-a|
-image:../media/legend_icon_03.png[Callout number 3]
-a|
-Rotate air duct towards fan modules
-|===
+Move the Battery Backup unit (BBU) to the replacement controller.
 
-== Step 2: Move the power supplies
-
-You must move the power supplies from the impaired controller module to the replacement controller module when you replace a controller module.
-
-. Rotate the cam handle such that it can be used to pull power supply out of the controller module while pressing the locking tab.
+. Open the BBU air duct cover and locate the BBU.
 +
-CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
-+
-image::../media/drw_a800_replace_psu.png[]
+image::../media/drw_A1K_remove_replace_NVMEMBAT_IEOPS-1379.svg[AFF A1K BBU battery remove-replace]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
-Blue power supply locking tab
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Power supply
-|===
-
-. Move the power supply to the new controller module, and then install it.
-. Using both hands, support and align the edges of the power supply with the opening in the controller module, and then gently push the power supply into the controller module until the locking tab clicks into place.
-+
-The power supplies will only properly engage with the internal connector and lock in place one way.
-+
-NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the power supply into the system.
-
-== Step 3: Move the fans
-
-You must move the fans from the impaired controller module to the replacement module when replacing a failed controller module.
-
-. Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
-+
-image::../media/drw_a800_replace_fan.png[]
-+
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1]|
-Fan locking tabs
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Fan module
-|===
-
-. Move the fan module to the replacement controller module, and then install the fan module by aligning its edges with the opening in the controller module, and then sliding the fan module into the controller module until the locking latches click into place.
-. Repeat these steps for the remaining fan modules.
-
-== Step 4: Move the NVDIMM battery
-
-When replacing the controller module, you must move the NVRAM battery from the impaired controller module to the replacement controller module
-
-. Open the air duct cover and locate the NVDIMM battery in the riser.
-+
-image::../media/drw_a800_nvdimm_battery_replace.png[]
-+
-[cols="1,4"]
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.svg[Callout number 1]|
 Air duct riser
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/legend_icon_02.svg[Callout number 2]
 a|
-NVDIMM battery plug
+BBU plug
 a|
-image:../media/legend_icon_03.png[Callout number 3]
+image:../media/legend_icon_03.svg[Callout number 3]
 a|
-NVDIMM battery pack
+BBU pack
+
 |===
-*Attention:* The NVDIMM battery control board LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
+
+*Attention:* The BBU control board LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Grasp the battery and lift the battery out of the air duct and controller module.
 . Move the battery pack to the replacement controller module and then install it in the NVDIMM air duct:
  .. Insert the battery pack into the slot and press firmly down on the battery pack to make sure that it is locked into place.
- .. Plug the battery plug into the riser socket and make sure that the plug locks into place.
+ .. Plug the battery plug into the socket and make sure that the plug locks into place.
+ .. Close the air duct.
 
-== Step 5: Remove the PCIe risers
+== Step 4: Move system DIMMs
 
-As part of the controller replacement process, you must remove the PCIe modules from the impaired controller module. You must install them into the same location in the replacement controller module once the NVDIMMS and DIMMs have moved to the replacement controller module.
+To move the DIMMs, locate and move them from the impaired controller into the replacement controller and follow the specific sequence of steps.
 
-. Remove the PCIe riser from the controller module:
- .. Remove any SFP or QSFP modules that might be in the PCIe cards.
- .. Rotate the riser locking latch on the left side of the riser up and toward the fan modules.
+. Open the main air duct and locate the DIMMs.
 +
-The riser raises up slightly from the controller module.
-
- .. Lift the riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
-+
-image::../media/drw_a800_riser_2_3_remove.png[]
+image::../media/drw_a1k_dimms_IEOPS-1512.svg[AFF A1K DIMM remove-replace]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
-Air duct
+image:../media/legend_icon_01.svg[Callout number 1]
 a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Riser 1 (left riser), Riser 2 (middle riser), and 3 (right riser) locking latches
+System DIMM
+
 |===
-. Repeat the preceding step for the remaining risers in the impaired controller module.
-. Repeat the above steps with the empty risers in the replacement controller and put them away.
-
-== Step 6: Move system DIMMs
-
-To move the DIMMs, locate and move them from the impaired controller into the replacement controller and follow the specific sequence of steps.
 
 . Note the orientation of the DIMM in the socket so that you can insert the DIMM in the replacement controller module in the proper orientation.
 . Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
 +
 NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 
-. Locate the slot where you are installing the DIMM.
+. Locate the slot where you are installing the DIMM in the replacement controller module.
 . Insert the DIMM squarely into the slot.
 +
 The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
@@ -152,98 +95,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 . Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
 . Repeat these steps for the remaining DIMMs.
 
-== Step 7: Move the NVDIMMs
-
-To move the NVDIMMs, locate and move them from the impaired controller into the replacement controller and follow the specific sequence of steps.
-
-. Locate the NVDIMMs on your controller module.
-+
-image::../media/drw_a800_no_risers_nvdimm_move.png[]
-+
-[cols="1,4"]
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1]|
-Air duct
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-NVDIMMs
-|===
-
-. Note the orientation of the NVDIMM in the socket so that you can insert the NVDIMM in the replacement controller module in the proper orientation.
-. Eject the NVDIMM from its slot by slowly pushing apart the two NVDIMM ejector tabs on either side of the NVDIMM, and then slide the NVDIMM out of the socket and set it aside.
-+
-NOTE: Carefully hold the NVDIMM by the edges to avoid pressure on the components on the NVDIMM circuit board.
-
-. Locate the slot where you are installing the NVDIMM.
-. Insert the NVDIMM squarely into the slot.
-+
-The NVDIMM fits tightly in the slot, but should go in easily. If not, realign the NVDIMM with the slot and reinsert it.
-+
-NOTE: Visually inspect the NVDIMM to verify that it is evenly aligned and fully inserted into the slot.
-
-. Push carefully, but firmly, on the top edge of the NVDIMM until the ejector tabs snap into place over the notches at the ends of the NVDIMM.
-. Repeat the preceding steps to move the other NVDIMM.
-
-== Step 8: Move the boot media
-
-You must move the boot media device from the impaired controller and install it in the replacement controller.
-
-The boot media is located under Riser 3.
-
-. Locate the boot media:
-+
-image::../media/drw_a800_pcm_replace_only_boot_media.png[]
-+
-[cols="1,4"]
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1]|
-Air duct
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Riser 3
-a|
-image:../media/legend_icon_03.png[Callout number 3]
-a|
-Phillips #1 screwdriver
-a|
-image:../media/legend_icon_04.png[Callout number 4]
-a|
-Boot media screw
-a|
-image:../media/legend_icon_05.png[Callout number 5]
-a|
-Boot media
-|===
-
-. Remove the boot media from the controller module:
- .. Using a #1 Phillips head screwdriver, remove the screw holding down the boot media and set the screw aside in a safe place.
- .. Grasping the sides of the boot media, gently rotate the boot media up, and then pull the boot media straight out of the socket and set it aside.
-. Move the boot media to the new controller module and install it:
- .. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
- .. Rotate the boot media down toward the motherboard.
- .. Secure the boot media to the motherboard using the boot media screw.
-+
-Do not over-tighten the screw or you might damage the boot media.
-
-== Step 9: Install the PCIe risers
-
-You install the PCIe risers in the replacement controller module after moving the DIMMs, NVDIMMs, and boot media.
-
-. Install the riser into the replacement controller module:
- .. Align the lip of the riser with the underside of the controller module sheet metal.
- .. Guide the riser along the pins in the controller module, and then lower the riser into the controller module.
- .. Swing the locking latch down and click it into the locked position.
-+
-When locked, the locking latch is flush with the top of the riser and the riser sits squarely in the controller module.
-
- .. Reinsert any SFP or QSFP modules that were removed from the PCIe cards.
-. Repeat the preceding step for the remaining PCIe risers.
-
-== Step 10: Install the controller module
+== Step 5: Install the controller module
 
 include::../_include/a1k_controller_install_step_physical.adoc[]
 

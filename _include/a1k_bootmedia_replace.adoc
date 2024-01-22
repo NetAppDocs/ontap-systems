@@ -1,56 +1,46 @@
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+To replace the boot media, you must remove the System Management module from the back of the system, remove the impaired boot media, install the replacement boot media in the System Management module, and transfer the boot image to a USB flash drive.
 
-== Step 1: Remove the controller module
+== Step 1: Replace the boot media
 
-**Removed--Ping Engineering on this.**
+The boot media is located inside the System Management module and is accessed by removing the module from the system.
 
-== Step 2: Replace the boot media
-
-You locate the failed boot media in the controller module by removing Riser 3 on the controller module before you can replace the boot media.
-
-You need a Phillips head screwdriver to remove the screw that holds the boot media in place.
-
-. Locate the boot media:
+. Remove the System Management module:
 +
-image::../media/drw_a800_boot_media_replace.png[]
+image::../media/drw_A1K_boot_media_remove_replace_IEOPS-1377.svg[]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
-Air duct
+image:../media/legend_icon_01.svg[Callout number 1] 
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+System Management module cam latch
 a|
-Riser 3
+image:../media/legend_icon_02.svg[Callout number 2]
 a|
-image:../media/legend_icon_03.png[Callout number 3]
+Boot media locking button
 a|
-Phillips #1 screwdriver
+image:../media/legend_icon_03.svg[Callout number 3]
 a|
-image:../media/legend_icon_04.png[Callout number 4]
-a|
-Boot media screw
-a|
-image:../media/legend_icon_05.png[Callout number 5]
-a|Boot media
+Boot media
+
 |===
 
-. Remove the boot media from the controller module:
-.. Using a #1 Phillips head screwdriver, remove the screw holding down the boot media and set the screw aside in a safe place.
-.. Grasping the sides of the boot media, gently rotate the boot media up, and then pull the boot media straight out of the socket and set it aside.
+.. If you are not already grounded, properly ground yourself.
+.. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
+.. Depress the system management cam button.
+The cam button moves away from the chassis.
+ .. Rotate the cam lever all the way down and remove the System Management module from the controller module.
+.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
+. Remove the boot media from the management module:
+.. Press the blue locking button.
+The boot media rotates slightly upward.
+.. Rotate the boot media up,  slide it out of the socket, and set it aside.
 . Install the replacement boot media into the controller module:
 .. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
-.. Rotate the boot media down toward the motherboard.
-.. Secure the boot media to the motherboard using the boot media screw.
-+
-Do not over-tighten the screw or you might damage the boot media.
-. Reinstall the riser into the controller module.
-. Close the air duct:
-.. Rotate the air duct downward.
-.. Slide the air duct toward the risers until it clicks into place.
+.. Rotate the boot media down toward until it engages the locking button.
+. Reinstall the System Management module and recable it.
 
-== Step 3: Transfer the boot image to the boot media
+== Step 2: Transfer the boot image to the boot media
 
 The replacement boot media that you installed is without a boot image so you need to transfer a boot image using a USB flash drive.
 
@@ -61,12 +51,11 @@ The replacement boot media that you installed is without a boot image so you nee
   ** If NVE is enabled, download the image with NetApp Volume Encryption, as indicated in the download button.
   ** If NVE is not enabled, download the image without NetApp Volume Encryption, as indicated in the download button.
  * If your system is an HA pair, you must have a network connection.
- * If your system is a stand-alone system you do not need a network connection, but you must perform an additional reboot when restoring the var file system.
 
 .Steps
- . Download and copy the appropriate service image from the NetApp Support Site to the USB flash drive.
-  .. Download the service image to your work space on your laptop.
-  .. Unzip the service image.
+. Download and copy the appropriate service image from the NetApp Support Site to the USB flash drive.
+.. Download the service image to your work space on your laptop.
+.. Unzip the service image.
 +
 
 NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
@@ -84,40 +73,41 @@ There are two folders in the unzipped service image file:
   +
  The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
 
-  .. Remove the USB flash drive from your laptop.
- . If you have not already done so, close the air duct:
-  .. Swing the air duct all the way down to the controller module.
-  .. Slide the air duct toward the risers until the locking tabs click into place.
-  .. Inspect the air duct to make sure that it is properly seated and locked into place.
-+
-image::../media/drw_a800_close_air_duct.png[]
-+
-[cols="1,4"]
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1]
-a|
-Air duct
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Risers
-|===
-
- . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
- . Reinstall the cable management device and recable the system, as needed.
-+
-When recabling, remember to reinstall the media converters (SFPs or QSFPs) if they were removed.
-
- . Plug the power cable into the power supply and reinstall the power cable retainer.
- . Insert the USB flash drive into the USB slot on the controller module.
+.. Remove the USB flash drive from your laptop.
+. Insert the USB flash drive into the USB slot on the System Management module. 
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
- . Gently push the controller module all the way into the system until the controller module locking hooks begin to rise, firmly push on the locking hooks to finish seating the controller module, and then swing the locking hooks into the locked position over the pins on the controller module.
+ . Plug the power cable into the power supply and reinstall the power cable retainer.
+
 +
-The controller begins to boot as soon as it is completely installed into the chassis.
+The controller begins to boot as soon as power is reconnected to the system.
 
  . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
+
+. Set your network connection type at the LOADER prompt:
+ ** If you are configuring DHCP: `ifconfig e0a -auto`
++
+NOTE: The target port you configure is the target port you use to communicate with the impaired controller from the healthy controller during var file system restore with a network connection. You can also use the e0M port in this command.
+
+ ** If you are configuring manual connections: `ifconfig e0a -addr=filer_addr -mask=netmask -gw=gateway-dns=dns_addr-domain=dns_domain`
+  *** filer_addr is the IP address of the storage system.
+  *** netmask is the network mask of the management network that is connected to the HA partner.
+  *** gateway is the gateway for the network.
+  *** dns_addr is the IP address of a name server on your network.
+  *** dns_domain is the Domain Name System (DNS) domain name.
++
+If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL. You need only the server's host name.
+
++
+NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
+. If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
+ .. Boot to Maintenance mode: `boot_ontap maint`
+ .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t iniitator adapter_name`
+ .. Halt to return to Maintenance mode: `halt`
+
++
+The changes will be implemented when the system is booted.
+

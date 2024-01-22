@@ -1,5 +1,5 @@
 ---
-permalink: a1k/bootmedia-recovery-image-boot-non-2n-mcc.html
+permalink: a1k/bootmedia-recovery-image-boot.html
 sidebar: sidebar
 keywords: aff a1k, boot the recovery image
 summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
@@ -9,4 +9,4 @@ summary: You must boot the ONTAP image from the USB drive, restore the file syst
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/a1k_bootmedia_recovery_image_boot_non_2n_mcc.adoc[]
+include::../_include/a1k_bootmedia_recovery_image_boot.adoc[]
