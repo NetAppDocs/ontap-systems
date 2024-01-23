@@ -9,9 +9,10 @@ You must remove the five fan modules from the impaired controller module to the 
 . Press the gray locking button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
 
 +
-NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
-+
 
+NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
+
++
 image::../media/drw_A1K_fan_remove_replace_IEOPS-1376.svg[AFF A1K fan remove/replace]
 +
 [cols="1,4"]
@@ -44,7 +45,7 @@ image::../media/drw_A1K_remove_replace_NVMEMBAT_IEOPS-1379.svg[AFF A1K BBU batte
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1]|
-Air duct riser
+BBU air duct cover
 a|
 image:../media/legend_icon_02.svg[Callout number 2]
 a|
@@ -63,17 +64,17 @@ BBU pack
 +
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
-. Grasp the battery and lift the battery out of the air duct and controller module.
-. Move the battery pack to the replacement controller module and then install it in the NVDIMM air duct:
+. Grasp the battery and lift the battery out of the housing and controller module.
+. Move the battery pack to the replacement controller module and then install it in the BBU air duct:
  .. Insert the battery pack into the slot and press firmly down on the battery pack to make sure that it is locked into place.
  .. Plug the battery plug into the socket and make sure that the plug locks into place.
- .. Close the air duct.
+ .. Close the BBU air duct.
 
 == Step 4: Move system DIMMs
 
 To move the DIMMs, locate and move them from the impaired controller into the replacement controller and follow the specific sequence of steps.
 
-. Open the main air duct and locate the DIMMs.
+. Open the motherboard air duct and locate the DIMMs.
 +
 image::../media/drw_a1k_dimms_IEOPS-1512.svg[AFF A1K DIMM remove-replace]
 +
@@ -106,6 +107,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 . Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
 . Repeat these steps for the remaining DIMMs.
+Close the motherboard air duct.
 
 == Step 5: Install the controller module
 
