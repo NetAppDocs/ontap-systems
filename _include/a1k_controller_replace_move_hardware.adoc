@@ -7,9 +7,11 @@ You must remove the five fan modules from the impaired controller module to the 
 . If you are not already grounded, properly ground yourself.
 . Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
 . Press the gray locking button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
+
 +
 NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 +
+
 image::../media/drw_A1K_fan_remove_replace_IEOPS-1376.svg[AFF A1K fan remove/replace]
 +
 [cols="1,4"]
@@ -24,7 +26,7 @@ Gray locking button
 . Install the fan in the replacement controller module:
 .. Align the edges of the fan housing with the opening in the front of the replacement controller module.
 .. Gently slide the fan module all the way into the replacement controller module until it locks in place.
-. Repeat the preceding steps for the remaining fan modules.
+. Repeat the preceding steps for the remaining fan modules. 
 
 == Step 2: Remove the controller module
 
@@ -54,7 +56,11 @@ BBU pack
 
 |===
 
++
+
 *Attention:* The BBU control board LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
+
++
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Grasp the battery and lift the battery out of the air duct and controller module.
@@ -82,15 +88,21 @@ System DIMM
 
 . Note the orientation of the DIMM in the socket so that you can insert the DIMM in the replacement controller module in the proper orientation.
 . Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
+
 +
 NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
+
++
 
 . Locate the slot where you are installing the DIMM in the replacement controller module.
 . Insert the DIMM squarely into the slot.
 +
 The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
+
 +
 NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
+
++
 
 . Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
 . Repeat these steps for the remaining DIMMs.
@@ -101,5 +113,8 @@ include::../_include/a1k_controller_install_step_physical.adoc[]
 
 . Plug the system cables and transceiver modules into the controller module and reinstall the cable management device.
 . Plug the power cables into the power supplies and reinstall the power cable retainers.
+
 +
 NOTE: If your system has DC power supplies, make sure the thumbscrews on the power supply cable are tight.
+
++
