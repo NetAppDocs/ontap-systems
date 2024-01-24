@@ -2,7 +2,6 @@ To replace the controller, you must remove the impaired controller, move FRU com
 
 == Step 1: Remove the controller module
 
-
 include::../_include/a70-90_controller_remove_physical.adoc[]
 
 == Step 2: Move the power supplies
@@ -18,10 +17,11 @@ image::../media/drw_A70-90_PSU_remove_replace_IEOPS-1368.svg[PSU remove]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]
+|
 Blue power supply locking tab
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
 Power supply
 |===
@@ -44,13 +44,13 @@ image::../media/drw_A70-90_fan_remove_replace_IEOPS-1366.svg[Remove or replace f
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]
+a|
 Fan locking tabs
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
 Fan module
-
 |===
 
 . Move the fan module to the replacement controller module, and then install the fan module by aligning its edges with the opening in the controller module, and then sliding the fan module into the controller module until the locking latches click into place.
@@ -67,13 +67,13 @@ image::../media/drw_A70-90_remove_replace_NVMEMBAT_IEOPS-1369.svg[Move or replac
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]
+|
 BBU air duct
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
 BBU battery pack plug
-
 |===
 
 *Attention:* The BBU battery control board LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
@@ -98,10 +98,9 @@ image::../media/drw_70_90_dimm_IEOPS-1513.svg[A70-90 DIMM map]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]
 |
 System DIMM
-
 |===
 
 . Note the orientation of the DIMM in the socket so that you can insert the DIMM in the replacement controller module in the proper orientation.
@@ -132,15 +131,16 @@ The riser raises up slightly from the controller module.
 
  .. Lift the riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
 +
-image::../media/drw_a800_riser_2_3_remove.png[]
+image::../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]
+|
 Air duct
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
 Riser 1 (left riser), Riser 2 (middle riser), and 3 (right riser) locking latches
 |===
