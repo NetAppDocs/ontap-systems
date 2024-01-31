@@ -18,6 +18,6 @@ The date and time are given in GMT.
 
 . If necessary, set the date in GMT on the replacement node: `set date _mm/dd/yyyy_`
 . If necessary, set the time in GMT on the replacement node: `set time _hh:mm:ss_`
-. At the LOADER prompt, confirm the date and time on the _replacement_ node: `date`
+. At the LOADER prompt, confirm the date and time on the _replacement_ node: `show date`
 +
 The date and time are given in GMT.
