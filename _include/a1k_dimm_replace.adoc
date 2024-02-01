@@ -32,8 +32,6 @@ include::../_include/a1k_controller_remove_physical.adoc[]
 
 To replace the DIMMs, locate them inside the controller and follow the specific sequence of steps.
 
-NOTE: The VER2 controller has fewer DIMM sockets. There is no reduction in the number of DIMMs supported or change in the DIMM socket numbering. When moving the DIMMs to the new controller module, install the DIMMs into the same socket number/location as the impaired controller module.  See the FRU map diagram on the VER2 controller module for DIMM socket locations.
-
 . If you are not already grounded, properly ground yourself.
 . Locate the DIMMs on your controller module.
 
@@ -42,7 +40,6 @@ NOTE: The VER2 controller has fewer DIMM sockets. There is no reduction in the n
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 +
 
-+
 image::../media/drw_a1k_dimms_IEOPS-1512.svg[]
 +
 [cols="1,4"]
