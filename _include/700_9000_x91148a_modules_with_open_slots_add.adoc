@@ -3,18 +3,17 @@ You can add an X91148A module into an empty module slot in your system as either
 * Your system must be running ONTAP 9.8 and later.
 * To non-disruptively add the X91148A module, you must takeover the target controller, remove the slot blanking cover in the target slot, add the module, and then giveback the target controller.
 * There must be one or more open slots available on your system.
-* If multiple slots are available, install the module according to the slot priority matrix for the X91148A module in the Hardware Universe.
-+
-https://hwu.netapp.com[NetApp Hardware Universe]
-
+* If multiple slots are available, install the module according to the slot priority matrix for the X91148A module in the https://hwu.netapp.com[NetApp Hardware Universe^].
 * If you are adding the X91148A module as a storage module, you must install the module slots 3 and/or 7.
-* If you are adding the X91148A module as a 100GbE NIC, you can use any open slot. However, by default, slots 3 and 7 are set as storage slots. If you wish to use those slots as network slots and will not add NS224 shelves, you must modify the slots for networking use with the `storage port modify -node _node name_ -port _port name_ -mode network` command. See the Hardware Universe for other slots that can be used by the X91148A module for networking.
-+
-https://hwu.netapp.com[NetApp Hardware Universe]
-
+* If you are adding the X91148A module as a 100GbE NIC, you can use any open slot. However, by default, slots 3 and 7 are set as storage slots. If you wish to use those slots as network slots and will not add NS224 shelves, you must modify the slots for networking use with the `storage port modify -node _node name_ -port _port name_ -mode network` command. See the https://hwu.netapp.com[NetApp Hardware Universe^] for other slots that can be used by the X91148A module for networking.
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Option 1: Add an X91148A module as a NIC module in a system with open slots
+[role="tabbed-block"]
+====
+
+--
+
+.Option 1: Add an X91148A module as a NIC module
 
 To add an X91148A module as a NIC module in a system with open slots, you must follow the specific sequence of steps.
 
@@ -34,12 +33,19 @@ The console connection shows that the node drops to the LOADER prompt when the t
  .. Slide the X91148A module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
  .. Push the I/O cam latch all the way up to lock the module in place.
 . Cable the module to the data switches.
-. Reboot controller A: `boot_ontap`
+. Reboot controller A from the LOADER prompt: `bye`
++
+NOTE: This reinitializes the PCIe cards and other components and reboots the node.
+
 . Giveback the node from the partner node: `storage failover giveback -ofnode _target_node_name_`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . Repeat these steps for controller B.
 
-== Option 2: Add an X91148A module as a storage module in a system with open slots
+--
+
+.Option 2: Add an X91148A module as a storage module
+
+--
 
 To add an X91148A module as a storage module in a system with open slots, you must follow the specific sequence of steps.
 
@@ -61,8 +67,18 @@ The console connection shows that the node drops to the LOADER prompt when the t
  .. Slide the X91148A module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
  .. Push the I/O cam latch all the way up to lock the module in place.
  .. If you are installing a second X91148A module for storage, repeat this step for the module in slot 7.
-. Reboot controller A: `boot_ontap`
+. Reboot controller A:
+** If the replacement module is not the same model as the old module, reboot the BMC :
+.. From the LOADER prompt, change to advanced privilege mode: `set -privilege advanced` 
+.. Reboot the BMC: `sp reboot`
+** If the replacement module is the same as the old module, boot from the LOADER prompt: `bye`
++
+NOTE: This reinitializes the PCIe cards and other components and reboots the node.
+
 . Giveback the node from the partner node: `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . Repeat these steps for controller B.
-. Install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-add - NS224 shelves].
+. Install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-add - NS224 shelves^].
+
+--
+====
