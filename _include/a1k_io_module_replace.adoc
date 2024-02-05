@@ -31,7 +31,7 @@ To replace an I/O module, locate it within the chassis and follow the specific s
 Make sure that you label the cables so that you know where they came from.
 
 . Remove the target I/O module from the chassis:
-.. Depress the lettered and numbered cam button.
+.. Depress the cam button.
 +
 The cam button moves away from the chassis.
 
@@ -43,27 +43,21 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto, title="Animation - Remove/install I/O module"]
 
-+
-
-image:../media/drw_a900_remove_PCIe_module.png[]
+image:../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[]
 
 +
 [cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1] a|
-Lettered and numbered I/O cam latch
+I/O cam latch
 a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-I/O cam latch completely unlocked
 |===
 
 
 . Set the I/O module aside.
-. Install the replacement I/O module into the chassis by gently sliding the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin, and then push the I/O cam latch all the way up to lock the module in place.
+. Install the replacement I/O module into the chassis by gently sliding the I/O module into the slot until the I/O cam latch begins to engage with the I/O cam pin, and then push the I/O cam latch all the way up to lock the module in place.
 . Recable the I/O module, as needed.
 
 == Step 3: Reboot the controller
