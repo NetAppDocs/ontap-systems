@@ -27,18 +27,14 @@ To replace an AC PSU, complete the following steps.
 +
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_a800_replace_psu.png[]
+image::../media/drw_A1K_PSU_remove_replace_IEOPS-1378.svg[]
 +
-[cols="1,3"]
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.svg[width=10px]
+image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
 a|
 Blue PSU locking tab
-a|
-image:../media/legend_icon_02.svg[width=10px]
-a|
-Power supply
 |===
 
 . Install the replacement PSU in the controller module:
@@ -73,22 +69,22 @@ CAUTION: The PSU is short. Always use two hands to support it when removing it f
 +
 image::../media/drw_dcpsu_remove-replace-generic_IEOPS-788.svg[width=500px]
 +
-[cols="1,3"]
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.svg[width=10px]
+image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
 a|
 Thumb screws
 a| 
-image:../media/legend_icon_02.svg[width=10px]
+image:../media/legend_icon_02.svg[Callout number 2, width=30px] 
 a|
 D-SUB DC power PSU cable connector
 a|
-image:../media/legend_icon_03.svg[width=10px]
+image:../media/legend_icon_03.svg[Callout number 3, width=30px] 
 a|
 Power supply handle
 a|
-image:../media/legend_icon_04.svg[width=10x]
+image:../media/legend_icon_04.svg[Callout number 4, width=30px] 
 a|
 Blue PSU locking tab
 |===

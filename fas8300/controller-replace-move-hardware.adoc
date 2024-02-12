@@ -11,6 +11,8 @@ summary: "To replace the controller module hardware, you must remove the impaire
 [.lead]
 To replace the controller module hardware, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
 
+NOTE: The Ver2 controller module has only one caching module socket (Slot 6) in the FAS8300. FAS8700 does not have a VER2 controller module. The caching module functionality is not impacted by the socket removal.  
+
 == Step 1: Remove the controller module
 
 To access components inside the controller module, you must remove the controller module from the chassis.
@@ -122,7 +124,9 @@ If necessary, remove the boot media and reseat it into the socket.
 
 As part of the controller replacement process, you must move the PCIe risers and mezzanine card from the impaired controller module to the replacement controller module.
 
-You can use the following animations, illustrations. or the written steps to move the PCIe risers and mezzanine card from the impaired controller module to the replacement controller module.
+You can use the following animations, illustrations, the FUR map on the system, or the written steps to move the PCIe risers and mezzanine card from the impaired controller module to the replacement controller module.
+
+NOTE: You do not have to remove the PCIe cards from the risers. Transfer the risers, with the PCIe cards still installed, to the replacement controller module.  
 
 Moving PCIe riser 1 and 2 (left and middle risers):
 
@@ -159,6 +163,8 @@ The riser raises up slightly from the controller module.
 == Step 6: Move caching modules
 
 You must move the caching modules from the impaired controller modules to the replacement controller module when replacing a controller module.
+
+NOTE: The Ver2 controller module has only one caching module socket in the FAS8300. FAS8700 does not have a VER2 controller module. The caching module functionality is not impacted by the socket removal.  
 
 You can use the following animation, illustration, or the written steps to move caching modules to the new controller module.
 
