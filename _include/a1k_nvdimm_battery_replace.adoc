@@ -1,4 +1,4 @@
-To replace the NVDIMM battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module.
+To replace the NV battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module.
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
@@ -24,22 +24,22 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 
 include::../_include/a1k_controller_remove_physical.adoc[]
 
-== Step 3: Replace the NVDIMM battery
+== Step 3: Replace the NV battery
 
-Remove the failed NVDIMM battery from the controller module and install the replacement NVDIMM battery.
+Remove the failed NV battery from the controller module and install the replacement NV battery.
 
-. Open the air duct cover and locate the NVDIMM battery.
+. Open the air duct cover and locate the NV battery.
 +
 image::../media/drw_A1K_remove_replace_NVMEMBAT_IEOPS-1379.svg[]
 +
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1]|
-NVDIMM battery Air duct cover
+NV battery air duct cover
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
-NVDIMM battery plug
+NV battery plug
 |===
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
@@ -48,7 +48,7 @@ NVDIMM battery plug
 . Install the replacement battery pack into the controller:
  .. Insert the battery pack into the slot and press firmly down on the battery pack to make sure that it is locked into place.
  .. Plug the battery plug into the riser socket and make sure that the plug locks into place.
-. Close the NVRAM air cover.
+. Close the NV air duct cover.
 +
 Make sure that the plug locks into the socket.
 
