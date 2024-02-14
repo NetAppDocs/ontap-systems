@@ -1,1 +1,41 @@
-Content here: TBD  
+The System Management module is not hot-swappable and consists of:
+
+** Boot media, allowing boot media replacement without removing thr controller module.
+** BMC
+** Management switch
+
+The System Management module also contains the following ports for external management:
+
+** RJ45 Serial
+** USB Serial (Type-C)
+** USB Type-A (Boot recovery)
+** e0M RJ45 Ethernet
+
+To replace the System Management module or or the boot media, you must shut down the impaired controller.  
+
+.Before you begin
+* This procedure uses the following terminology:
+ ** The impaired controller is the controller on which you are performing maintenance.
+ ** The healthy controller is the HA partner of the impaired controller.
+ * All other system components must be working properly.
+* The partner controller must be able to take over the impaired controller.
+* You must replace the failed component with a replacement FRU component you received from your provider.
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller using one of the following options.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_supported.adoc[]
+--
+
+====
+
