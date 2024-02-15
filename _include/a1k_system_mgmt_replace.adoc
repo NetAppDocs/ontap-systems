@@ -56,8 +56,9 @@ System Management module cam latch
 .. If you are not already grounded, properly ground yourself.
 .. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 .. Depress the system management cam button.
-The cam button moves away from the chassis.
- .. Rotate the cam lever all the way down and remove the System Management module from the controller module.
+The cam lever moves away from the chassis.
+ .. Rotate the cam lever all the way down.
+ ..Loop your finger into the cam lever and pull the module straight out of the system.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
 . Remove the boot media from the management module:
 +
@@ -82,16 +83,16 @@ Boot media
 .. Press the blue locking button.
 The boot media rotates slightly upward.
 .. Rotate the boot media up,  slide it out of the socket.
-.. Install th eboot media in the replacement System Management module:
+.. Install the boot media in the replacement System Management module:
 ... Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
-... Rotate the boot media down toward until it engages the locking button.
-. Align the edges of the replacement System Management module with the opening and gently push it in until the cam handle engages and rotates upward.
+... Rotate the boot media down toward until it engages the locking button. Depress the blue locking if necessary.
+. Align the edges of the replacement System Management module with the system opening and gently push it in until the cam handle engages and brgins to rotate upward.
 . Push the module in completely and then rotate the cam handle into the locked position.
 . Recable the System Management module.
 
 == Step 3: Reboot the controller module
 
-After you replace the FRU, you must reboot the controller module.
+Reboot the controller module.
 
 . Enter `bye` at the LOADER prompt.
 . Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
