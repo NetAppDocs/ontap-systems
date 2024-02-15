@@ -41,6 +41,8 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Replace the impaired System Management module
 
+Replace the impaired system management module.
+
 . Remove the System Management module:
 +
 image::../media/drw_A70-90_sys-mgmt_replace_IEOPS-1373.svg[System Management module replace]
@@ -58,7 +60,7 @@ Boot media locking button
 a|
 image::../media/legend_icon_03.svg[Callout number 3,width=30px]
 a|
-Boot media socket
+Replacement System Management module
 |===
 
 .. If you are not already grounded, properly ground yourself.
