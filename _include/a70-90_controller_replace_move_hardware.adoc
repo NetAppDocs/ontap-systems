@@ -82,7 +82,7 @@ NV battery pack plug
 . Grasp the battery and lift the battery out of the air duct and controller module.
 . Move the battery pack to the replacement controller module and then install it in the replacement controller module:
 .. Open the NV battery air duct in the replacement controller module.
- .. Plug the battery plug into the riser socket and make sure that the plug locks into place.
+ .. Plug the battery plug into the socket and make sure that the plug locks into place.
  .. Insert the battery pack into the slot and press firmly down on the battery pack to make sure that it is locked into place.
  .. Close the NV battery air duct.
  
@@ -123,30 +123,40 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 Move the I/O modules to the replacement controller module.
 
-. Remove the PCIe riser from the controller module:
- .. Remove any SFP or QSFP modules that might be in the PCIe cards.
- .. Rotate the riser locking latch on the left side of the riser up and toward the fan modules.
-+
-The riser raises up slightly from the controller module.
+image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace and I/O module]
 
- .. Lift the riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
-+
-image::../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[]
-+
 [cols="1,4"]
 |===
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px]
 |
-Air duct
-a|
-image::../media/legend_icon_02.svg[Callout number 2,width=30px]
-a|
-Riser 1 (left riser), Riser 2 (middle riser), and 3 (right riser) locking latches
+I/O module cam lever
 |===
 
-. Repeat the preceding step for the remaining risers in the impaired controller module.
-. Repeat the above steps with the empty risers in the replacement controller and put them away.
+ . Remove any SFP or QSFP modules that might be in the PCIe cards.
+. Remove the I/O modules from the controller module:
+.. Depress the target I/O module cam button.
++
+The cam lever moves away from the chassis.
+
+.. Rotate the cam lever down until it is in a horizontal position.
++
+The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
+
+.. Remove the I/O module from the chassis by pulling on the cam lever on the side of the module face.
+.. Move the I/O module to the replacement controller module and insert it into the same slot in the replacement controller module.
+.. Gently push the I/O module into the slot until the can latch engages.
+.. Rotate the can lever upward until it locks into place.  
+. Repeat these steps to move the remaining I/O modules, except the modules in slots 6 and 7, to the replacement controller module. 
++
+NOTE: To move the I/O modules from slots 6 and 7, you must move the carrier containing these I/O modules from the impaired controller module to the replacement controller module. 
++
+. Move the carrier contaning the I/O modules in slots 6 and 7 to the replacement controller module:
+
+.. Press the button on the right-most handle on the carrier handle.
+..Slide the carrier out of the impaired controller module insert it into the replacement controller module in the same position it was in the impaired controller module.
+.. Gently push the carrier all the way into the replacement controller module until it locks into place. 
+
 
 == Step 10: Install the controller module
 
