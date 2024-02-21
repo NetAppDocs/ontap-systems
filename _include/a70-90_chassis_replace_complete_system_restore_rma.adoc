@@ -15,10 +15,7 @@ The value for HA-state can be one of the following:
 
   *** `ha`
   *** `mcc`
-  *** `mccip`
-  *** `non-ha`
-
- .. Confirm that the setting has changed: `ha-config show`
+.. Confirm that the setting has changed: `ha-config show`
 . If you have not already done so, recable the rest of your system.
 . Reinstall the bezel on the front of the system.
 

@@ -26,75 +26,28 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove the controller module
 
-To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
-
-. If you are not already grounded, properly ground yourself.
-. Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
-. Slide the terra cotta button on the cam handle downward until it unlocks.
-
-+
-video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto, title="Animation - Remove the controller"]
-
-+
-
-image::../media/drw_a900_remove_PCM.png[]
-+
-[cols="10,90"]
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1] a|
-Cam handle release button
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Cam handle
-|===
-
-. Rotate the cam handle so that it completely disengages the controller module from the chassis, and then slide the controller module out of the chassis.
-+
-Make sure that you support the bottom of the controller module as you slide it out of the chassis.
-
-. Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
-+
-image::../media/drw_a900_PCM_open.png[]
-+
-[cols="10,90"]
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1] a|
-Controller module cover locking button
-|===
+include::../_include/a1k_controller_remove_physical.adoc[]
 
 == Step 3: Replace the DIMMs
 
 To replace the DIMMs, locate them inside the controller and follow the specific sequence of steps.
 
-NOTE: The VER2 controller has fewer DIMM sockets. There is no reduction in the number of DIMMs supported or change in the DIMM socket numbering. When moving the DIMMs to the new controller module, install the DIMMs into the same socket number/location as the impaired controller module.  See the FRU map diagram on the VER2 controller module for DIMM socket locations.
-
 . If you are not already grounded, properly ground yourself.
 . Locate the DIMMs on your controller module.
-
-image::../media/drw_a900_DIMM_map.png[]
 
 . Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
 +
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 +
 
-video::db161030-298a-4ae4-b902-adf2000e2aa4[panopto, title="Animation - Replace DIMM"]
-
+image::../media/drw_a1k_dimms_IEOPS-1512.svg[]
 +
-image::../media/drw_a900_replace_PCM_dimms.png[]
-+
-[cols="10,90"]
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
-DIMM ejector tabs
+image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
 a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-DIMM
+DIMMs
 |===
 
 . Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
@@ -112,154 +65,8 @@ IMPORTANT: Visually inspect the DIMM to verify that it is evenly aligned and ful
 
 == Step 4: Install the controller
 
-After you install the components into the controller module, you must install the controller module back into the system chassis and boot the operating system.
+include::../_include/a1k_controller_install_step_physical.adoc[]
 
-For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
-
-. If you are not already grounded, properly ground yourself.
-
-. If you have not already done so, replace the cover on the controller module.
-+
-image::../media/drw_a900_PCM_open.png[]
-+
-[cols="10,90"]
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1] a|
-Controller module cover locking button
-|===
-
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
-
-+
-video::099237f3-d7f2-4749-86e2-adf2000df53c[panopto, title="Animation - Install controller"]
-
-+
-
-image::../media/drw_a900_remove_PCM.png[]
-+
-[cols="10,90"]
-|===
-a|
-image:../media/legend_icon_01.png[Callout number 1] a|
-Cam handle release button
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Cam handle
-|===
-
-+
-NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
-
-. Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
-+
-NOTE: You will connect the rest of the cables to the controller module later in this procedure.
-
-. Complete the reinstallation of the controller module:
-.. If you have not already done so, reinstall the cable management device.
-.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
-+
-The locking latches rise when the controller module is fully seated.
-+
-IMPORTANT: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-+
-
-The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
-
-.. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
-.. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
-.. Select the option to boot to Maintenance mode from the displayed menu.
-
-== Step 5: Run system-level diagnostics
-
-After installing a new DIMM, you should run diagnostics.
-
-Your system must be at the LOADER prompt to start System Level Diagnostics.
-
-All commands in the diagnostic procedures are issued from the controller where the component is being replaced.
-
-. If the controller to be serviced is not at the LOADER prompt, perform the following steps:
-.. Select the Maintenance mode option from the displayed menu.
-.. After the controller boots to Maintenance mode, halt the controller: `halt`
-+
-After you issue the command, you should wait until the system stops at the LOADER prompt.
-+
-IMPORTANT: During the boot process, you can safely respond `y` to prompts.
-
-*** If a prompt appears warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy controller remains down.
-. At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
-+
-During the boot process, you can safely respond `y` to the prompts until the Maintenance mode prompt (*>) appears.
-
-. Run diagnostics on the system memory: `sldiag device run -dev mem`
-. Verify that no hardware problems resulted from the replacement of the DIMMs: `sldiag device status -dev mem -long -state failed`
-+
-System-level diagnostics returns you to the prompt if there are no test failures, or lists the full status of failures resulting from testing the component.
-
-. Proceed based on the result of the preceding step:
-+
-
-[options="header" cols="1,2"]
-
-|===
-| If the system-level diagnostics tests...| Then...
-a|
-Were completed without any failures
-a|
-
-.. Clear the status logs: `sldiag device clearstatus`
- .. Verify that the log was cleared: `sldiag device status`
-+
-The following default response is displayed:
-+
-SLDIAG: No log messages are present.
-
-.. Exit Maintenance mode: `halt`
-+
-The controller displays the LOADER prompt.
-
-.. Boot the controller from the LOADER prompt: `bye`
-.. Return the controller to normal operation:
-+
-|===
-+
-
-[options="header" cols="1,2"]
-
-|===
-| If your controller is in...| Then...
-a|
-An HA pair
-a|
-Perform a give back: `storage failover giveback -ofnode replacement_node_name`        *Note:* If you disabled automatic giveback, re-enable it with the storage failover modify command.
-
-a|
-Resulted in some test failures
-a|
-Determine the cause of the problem:
-
-.. Exit Maintenance mode: `halt`
-+
-After you issue the command, wait until the system stops at the LOADER prompt.
-
-.. Verify that you have observed all the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
-.. Boot the controller module you are servicing, interrupting the boot by pressing `Ctrl-C` when prompted to get to the Boot menu:
-*** If you have two controller modules in the chassis, fully seat the controller module you are servicing in the chassis.
-+
-The controller module boots up when fully seated.
-
-*** If you have one controller module in the chassis, connect the power supplies, and then turn them on.
-.. Select Boot to maintenance mode from the menu.
-.. Exit Maintenance mode by entering the following command: `halt`
-+
-After you issue the command, wait until the system stops at the LOADER prompt.
-
-.. Rerun the system-level diagnostic test.
-
-+
-|===
-
-== Step 6: Return the failed part to NetApp
+== Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]

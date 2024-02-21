@@ -11,24 +11,23 @@ image::../media/drw_A70-90_boot_media_remove_replace_IEOPS-1367.svg[Boot media r
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.svg[Callout number 1] 
+image::../media/legend_icon_01.svg[Callout number 1,width=30px] 
 a|
 System Management module cam latch
 a|
-image:../media/legend_icon_02.svg[Callout number 2]
+image::../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
 Boot media locking button
 a|
-image:../media/legend_icon_03.svg[Callout number 3]
+image::../media/legend_icon_03.svg[Callout number 3,width=30px]
 a|
 Boot media
-
 |===
 
 .. If you are not already grounded, properly ground yourself.
 .. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 .. Depress the system management cam button.
-The cam button moves away from the chassis.
+The cam lever moves away from the chassis.
  .. Rotate the cam lever all the way down and remove the System Management module from the controller module.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
 . Remove the boot media from the management module:

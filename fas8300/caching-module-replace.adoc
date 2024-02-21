@@ -11,6 +11,8 @@ summary: "You must replace the caching module in the controller module when your
 [.lead]
 You must replace the caching module in the controller module when your system registers a single AutoSupport (ASUP) message that the module has gone offline; failure to do so results in performance degradation.
 
+NOTE: The Ver2 controller module has only one caching module socket in the FAS8300. FAS8700 does not have a VER2 controller module. The caching module functionality is not impacted by the socket removal.
+
 * You must replace the failed component with a replacement FRU component you received from your provider.
 
 == Step 1: Shut down the impaired controller
@@ -105,6 +107,8 @@ Make sure that you support the bottom of the controller module as you slide it o
 == Step 3: Replace a caching module
 
 To replace a caching module, referred to as the Flash Cache on the label on your controller, locate the slot inside the controller and follow the specific sequence of steps. See the FRU map on the controller module for the location of the Flash Cache.
+
+NOTE: Slot 6 is only available in FAS8300 VER2 Controller.
 
 Your storage system must meet certain criteria depending on your situation:
 
