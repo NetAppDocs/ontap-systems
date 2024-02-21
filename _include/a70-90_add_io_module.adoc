@@ -36,12 +36,12 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 . If you are not already grounded, properly ground yourself.
 . Remove the target slot blanking cover:
- .. Depress the lettered and numbered cam latch.
+ .. Depress the cam latch on the blanking cover in the target slot.
  .. Rotate the cam latch down until it is the open position.
  .. Remove the blanking cover.
 . Install the I/O module:
  .. Align the I/O module with the edges of the slot.
- .. Slide the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
+ .. Slide the I/O module into the slot until the cam latch begins to rotate a little upward.
  .. Push the I/O cam latch all the way up to lock the module in place.
 . If the replacement I/O module is a NIC, cable the module to the data switches.
 +
@@ -103,37 +103,21 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 . If you are not already grounded, properly ground yourself.
 . Unplug any cabling on the target I/O module.
 . Remove the target I/O module from the chassis:
-.. Depress the lettered and numbered cam latch.
+.. Depress the cam latch button.
 +
 The cam latch moves away from the chassis.
 .. Rotate the cam latch down until it is in a horizontal position.
 +
 The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
-.. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
+.. Remove the I/O module from the chassis by pulling on the module cam latch.
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto, title="Animation - Remove or replacing an I/O module"]
-+
-image:../media/drw_a900_remove_PCIe_module.png[]
-+
-[cols="10,90"]
-|===
-a|
-image::../media/legend_icon_01.svg[width=20px]
-a|
-Lettered and numbered I/O cam latch
-a|
-image:../media/legend_icon_02.svg[width=20px]
-a|
-I/O cam latch completely unlocked
-|===
-
 . Install the I/O module into the target slot:
 .. Align the I/O module with the edges of the slot.
 .. Slide the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
 .. Push the I/O cam latch all the way up to lock the module in place.
-. Repeat the remove and install steps to replace additional modules for controller A.
+. Repeat the remove and install steps to replace additional modules for the controller.
 . If the replacement I/O module is a NIC, cable the module or modules to the data switches.
 . Reboot the controller from the LOADER prompt:
 .. Check the version of BMC on the controller: `system service-processor show`
@@ -154,7 +138,7 @@ NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/
 |===
 | If I/O module is a...| Then...
 a|
-NIC module in slots 3 or 7,
+NIC module
 a|
 Use the `storage port modify -node *_<node name>__ -port *_<port name>__ -mode network` command for each port.
 a|
