@@ -4,9 +4,9 @@ You must remove the controller module from the chassis when you replace the cont
 
 . Check the NVMEM LED located on the back of the controller module. Look for the NV icon:
 +
-image::../media/drw_A1K-70-90_NVRAM-LED_IEOPS-1463.svg[]
+image::../media/drw_A1K-70-90_NVRAM-LED_IEOPS-1463.svg[NVRAM LED]
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
@@ -20,6 +20,8 @@ NVRAM attention LED
 
 +
 NOTE: The green NV LED on the faceplate will start flashing when power is removed from the controller if the system was in the "waiting for giveback" state, or the system was not taken over or halted properly (uncommitted data).  If the impaired controller module was not successfully taken over by the partner controller module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
+
++
 
 * If the green NV status LED begins flashing when the controller module is removed from the chassis:
 ** Confirm that the controller had a clean takeover by the partner controller module or the impaired controller shows _waiting for giveback_, the flashing LED can be ignored and you can complete removing the impaired controller from the chassis.
@@ -36,9 +38,9 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_A70-90_PCM_remove_replace_IEOPS-1365.svg[]
+image::../media/drw_A70-90_PCM_remove_replace_IEOPS-1365.svg[Controller remove]
 +
-[cols="10,90"]
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.png[[Callout number 1, width=30px]|
