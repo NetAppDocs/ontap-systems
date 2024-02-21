@@ -42,7 +42,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 . Install the I/O module:
  .. Align the I/O module with the edges of the slot.
  .. Slide the I/O module into the slot until the cam latch begins to rotate a little upward.
- .. Push the I/O cam latch all the way up to lock the module in place.
+ .. Rotate the I/O cam latch all the way up to lock the module in place.
 . If the replacement I/O module is a NIC, cable the module to the data switches.
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
@@ -115,8 +115,8 @@ Make sure that you keep track of which slot the I/O module was in.
 +
 . Install the I/O module into the target slot:
 .. Align the I/O module with the edges of the slot.
-.. Slide the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
-.. Push the I/O cam latch all the way up to lock the module in place.
+ .. Slide the I/O module into the slot until the cam latch begins to rotate a little upward.
+ .. Rotate the I/O cam latch all the way up to lock the module in place.
 . Repeat the remove and install steps to replace additional modules for the controller.
 . If the replacement I/O module is a NIC, cable the module or modules to the data switches.
 . Reboot the controller from the LOADER prompt:
