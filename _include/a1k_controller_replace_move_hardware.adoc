@@ -34,9 +34,9 @@ include::../_include/a1k_controller_remove_physical.adoc[]
 
 Move the Battery Backup unit (BBU) to the replacement controller.
 
-. Open the BBU battery air duct cover and locate the BBU battery.
+. Open the BBU air duct cover and locate the BBU.
 +
-image::../media/drw_A1K_remove_replace_NVMEMBAT_IEOPS-1379.svg[AFF A1K BBU battery battery remove-replace]
+image::../media/drw_A1K_remove_replace_NVMEMBAT_IEOPS-1379.svg[AFF A1K BBU battery remove-replace]
 +
 [cols="1,4"]
 |===
@@ -54,7 +54,7 @@ BBU pack
 
 |===
 
-*Attention:* The BBU battery control board LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
+*Attention:* The BBU control board LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Grasp the battery and lift the battery out of the air duct and controller module.
