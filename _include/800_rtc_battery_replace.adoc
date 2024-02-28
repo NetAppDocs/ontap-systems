@@ -59,11 +59,17 @@ a|
 Rotate air duct towards fan modules
 |===
 
-== Step 3: Remove the PCIe risers
+== Step 3: Replace the RTC battery
+// start tabbed area
 
-You must remove one or more PCIe risers when replacing specific hardware components in the controller module.
+[role="tabbed-block"]
+====
 
-. Remove the PCIe riser from the controller module:
+.Original controller
+--
+
+
+. Remove PCIe riser 2 (middle riser) from the controller module:
  .. Remove any SFP or QSFP modules that might be in the PCIe cards.
  .. Rotate the riser locking latch on the left side of the riser up and toward the fan modules.
 +
@@ -83,10 +89,6 @@ image:../media/legend_icon_02.png[Callout number 2]
 a|
 Riser 2 (middle riser) locking latch
 |===
-
-== Step 4: Replace the RTC battery
-
-To replace the RTC battery, locate it inside the controller and follow the specific sequence of steps.
 
 . Locate the RTC battery under Riser 2.
 +
@@ -114,11 +116,6 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 . Remove the replacement battery from the antistatic shipping bag.
 . Note the polarity of the RTC battery, and then insert it into the holder by tilting the battery at an angle and pushing down.
 . Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
-
-== Step 5: Install the PCIe risers
-
-You reinstall the PCIe risers after replacing the hardware components in the impaired controller.
-
 . Install the riser into the controller module:
  .. Align the lip of the riser with the underside of the controller module sheet metal.
  .. Guide the riser along the pins in the controller module, and then lower the riser into the controller module.
@@ -127,8 +124,41 @@ You reinstall the PCIe risers after replacing the hardware components in the imp
 When locked, the locking latch is flush with the top of the riser and the riser sits squarely in the controller module.
 
  .. Reinsert any SFP modules that were removed from the PCIe cards.
+--
 
-== Step 6: Reinstall the controller module and setting time/date after RTC battery replacement
+
+.VER2 controller 
+--
+
+. Locate the RTC battery near the DIMMs.
++
+image::../media/drw_a800_rtc_battery_replace_v2.png[]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.png[]|
+Air duct
+a|
+image:../media/legend_icon_02.png[]
+a|
+RTC battery and housing
+|===
+
+. Gently push the battery away from the holder, rotate it away from the holder, and then lift it out of the holder.
++
+NOTE: Note the polarity of the battery as you remove it from the holder. The battery is marked with a plus sign and must be positioned in the holder correctly. A plus sign near the holder tells you how the battery should be positioned.
+
+. Remove the replacement battery from the antistatic shipping bag.
+. Note the polarity of the RTC battery, and then insert it into the holder by tilting the battery at an angle and pushing down.
+. Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
+--
+
+====
+
+// end tabbed area
+
+== Step 4: Reinstall the controller module
 
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
 
@@ -164,6 +194,6 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 . Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Step 7: Return the failed part to NetApp
+== Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
