@@ -1,7 +1,5 @@
 To replace a fan module without interrupting service, you must perform a specific sequence of tasks.
 
-IMPORTANT: It is a best practice to replace the power supply within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.
-
 .Steps
 
 . If you are not already grounded, properly ground yourself.
