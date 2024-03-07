@@ -1,4 +1,4 @@
-You can add an I/O module to your system by either adding a new I/O nodule into a system with empty slots or by replacing an I/O module with a new one in a fully-populated system.
+You can add an I/O module to your system by either adding a new I/O module into a system with empty slots or by replacing an I/O module with a new one in a fully-populated system.
 
 .Before you begin
 
@@ -51,7 +51,7 @@ NOTE: Make sure that any unused I/O slots have blanks installed to prevent possi
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
 
-. Give back the controller from the partner controller. `storage failover giveback -ofnode target_node_name`
+. Give back the controller from the partner controller: `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . Repeat these steps for controller B.
 . If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adding an NS224 drive shelf^].
