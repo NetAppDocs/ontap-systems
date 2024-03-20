@@ -15,11 +15,12 @@ The image is downloaded from the USB flash drive.
 a|
 A network connection
 a|
+ On the impaired node:
 
  .. Press `y` when prompted to restore the backup configuration.
  .. Press `y` when prompted to overwrite `/etc/ssh/ssh_host_ecdsa_key`.
  .. Press `y` when prompted to confirm if the restore backup was successful.
- .. Press `Y` when prompted to  the restored configuration copy.
+ .. Press `Y` when prompted to use the restored configuration copy.
  .. Set the impaired controller to advanced privilege level: `set -privilege advanced`
  .. Run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address`
  .. Return the impaired controller to admin level: `set -privilege admin`
