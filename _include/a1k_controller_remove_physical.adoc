@@ -2,7 +2,7 @@
 
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
 
-. Check the NVMEM LED located on the back of the system. Look for the NV icon:
+. Check the NVMEM LED located on the back of the system. There is also an NVMEM LED on the front panel of the controller module. Look for the NV icon:
 +
 image::../media/drw_A1K-70-90_NVRAM-LED_IEOPS-1463.svg[NVRAM]
 +
@@ -33,7 +33,7 @@ NOTE: The green NV LED on the faceplate will start flashing when power is remove
 . If you are not already grounded, properly ground yourself.
 . Unplug the controller module power supplies from the power sources.
 . Release the power cable hook and loop strap, and then unplug the cables from the power supplies.
-. On the front of the unit, hook your fingers into the holes in the locking cams and gently, but firmly rotate both latches toward you at the same time.
+. On the front of the unit, hook your fingers into the holes in the locking cams, squeeze the tabs on the cam levers, and gently, but firmly rotate both latches toward you at the same time.
 +
 The controller module moves slightly out of the chassis.
 +
