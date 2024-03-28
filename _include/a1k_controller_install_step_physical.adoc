@@ -3,16 +3,17 @@
 After you replace a FRU in the controller module, reinstall the controller module and reboot it.
 
 . If you have not already done so, close the air duct.
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
+. Align the end of the controller module with the opening in the enclosure, and then gently push the controller module halfway into the system.
 +
-NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
+NOTE: Do not completely insert the controller module in the enclosure until instructed to do so.
+. Reconnect the PSU if it was disconnected.
 . Complete the reinstallation of the controller module:
- .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
+ .. Firmly push the controller module into the enclosure until it is fully seated.
 +
 The locking cams rotate toward the controller module is fully seated.
 +
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+NOTE: Do not use excessive force when sliding the controller module into the enclosure to avoid damaging the connectors.
 +
-The controller module begins to boot as soon as it is fully seated in the chassis.
+The controller module begins to boot as soon as it is fully seated in the enclosure.
 
  .. Rotate the locking cams to the locked position.

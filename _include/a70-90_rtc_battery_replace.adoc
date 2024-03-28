@@ -24,15 +24,13 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 
 include::../_include/a70-90_controller_remove_physical.adoc[]
  
-. Open the air duct:
- .. Press in the locking tabs on the top of the air duct in the middle of the controller module.
- .. Rotate it upward to its completely open position.
-
-
 == Step 3: Replace the RTC battery
 
-To replace the RTC battery, locate the ie, inside the controller and follow the specific sequence of steps.
+Remove failed RTC battery and install the replacement RTC battery.
 
+. Open the controller air duct on the top of the controller.
+.. Insert your fingers in the recesses at the far ends of the air duct.
+.. Lift the air duct and rotate it upward as far as it will go.
 . Locate the RTC battery under the air duct.
 +
 image::../media/drw_A70-90_RTC_bat_remove_replace_IEOPS-1371.svg[]
