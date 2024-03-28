@@ -31,8 +31,11 @@ include::../_include/a1k_controller_remove_physical.adoc[]
 
 == Step 3: Replace the RTC battery
 
-To replace the RTC battery, locate the item inside the controller module and follow the specific sequence of steps.
+Remove failed RTC battery and install the replacement RTC battery.
 
+. Open the controller air duct on the top of the controller.
+.. Insert your fingers in the recesses at the far ends of the air duct.
+.. Lift the air duct and rotate it upward as far as it will go.
 . Locate the RTC battery under the air duct.
 +
 image::../media/drw_A1K_RTC_remove_replace_IEOPS-1381.svg[]
