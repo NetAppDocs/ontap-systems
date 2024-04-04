@@ -58,6 +58,9 @@ include::../_include/a1k_controller_install_step_physical.adoc[]
 == Step 5: Reset the time and date on the controller
 
  . Check the date and time on the healthy controller with the `cluster date show` command.
+
+ NOTE: If your system stops at the boot menu, select the option for  `Reboot node` and respond `y` when prompted, then boot to LOADER by pressing `Ctrl-C`
+
  .. At the LOADER prompt on the target controller, check the time and date with the `cluster date show` command.
  .. If necessary, modify the date with the `set date mm/dd/yyyy` command.
  .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
