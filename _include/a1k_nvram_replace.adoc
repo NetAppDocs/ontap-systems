@@ -34,7 +34,7 @@ To replace the NVRAM module, locate it in slot 4/5 in the enclosure and follow t
 +
 The cam button moves away from the enclosure.
 
- .. Rotate the cam latch as far as it will go.
+ .. Rotate the cam latch down as far as it will go.
 +
  .. Remove the NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 +
@@ -55,7 +55,7 @@ DIMM locking tab
 . Remove the DIMMs, one at a time, from the impaired NVRAM module and install them in the replacement NVRAM module.
 . Install the replacement NVRAM module into the enclosure:
  .. Align the module with the edges of the enclosure opening in slot 4/5.
- .. Gently slide the module into the slot all the way, and then push the cam latch all the way up to lock the module in place.
+ .. Gently slide the module into the slot all the way, and then rotate the cam latch all the way up to lock the module in place.
 . Recable the PSU.
 . Rotate the cable management tray up to the closed position.
 
@@ -68,7 +68,7 @@ To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, an
 . Unplug the PSU.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the target NVRAM module from the enclosure:
- .. Depress the lettered and numbered cam button.
+ .. Depress the cam button on the NVRAM module.
 +
 The cam button moves away from the enclosure.
 

@@ -35,14 +35,24 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 == Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself.
-. Remove the target slot blanking cover:
- .. Depress the cam latch on the blanking cover in the target slot.
- .. Rotate the cam latch down until it is the open position.
- .. Remove the blanking cover.
+. Remove the target slot blanking module from the chassis:
++
+image::../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[Remove-replace A1K I/O module]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.png[Callout number 1]|
+Cam locking button
+
+|===
+
+ .. Depress the cam latch on the blanking module in the target slot.
+ .. Rotate the cam latch down as far as it will go.
+ .. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 . Install the I/O module:
- .. Align the I/O module with the edges of the slot.
- .. Slide the I/O module into the slot until the cam latch begins to rotate a little upward.
- .. Rotate the I/O cam latch all the way up to lock the module in place.
+ .. Align the I/O module with the edges of the enclosure slot opening.
+ .. Gently slide the module into the slot all the wayinto the enclosure, and then rotate the cam latch all the way up to lock the module in place.
 . If the replacement I/O module is a NIC, cable the module to the data switches.
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
@@ -102,20 +112,30 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 . If you are not already grounded, properly ground yourself.
 . Unplug any cabling on the target I/O module.
 . Remove the target I/O module from the chassis:
++
+image::../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[Remove-replace A1K I/O module]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.png[Callout number 1]|
+Cam locking button
+
+|===
+
 .. Depress the  cam latch button.
 +
 The cam latch moves away from the chassis.
-.. Rotate the cam latch down until it is in a horizontal position.
-+
-The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
-.. Remove the I/O module from the chassis by pulling on the module cam latch.
+.. Rotate the cam latch down as far as it will go.
+.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
+
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-. Install the I/O module into the target slot:
+. Install the I/O module into the target slot in the enclosure:
 .. Align the I/O module with the edges of the slot.
- .. Slide the I/O module into the slot until the cam latch begins to rotate a little upward.
- .. Rotate the I/O cam latch all the way up to lock the module in place.
+.. Align the module with the edges of the enclosure slot opening.
+ .. Gently slide the module into the slot all the wayinto the enclosure, and then rotate the cam latch all the way up to lock the module in place.
 . Repeat the remove and install steps to replace additional modules for the controller.
 . If the replacement I/O module is a NIC, cable the module or modules to the data switches.
 . Reboot the controller from the LOADER prompt:
