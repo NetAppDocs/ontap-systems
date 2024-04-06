@@ -35,6 +35,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 == Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself.
+. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Remove the target slot blanking module from the chassis:
 +
 image::../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[Remove-replace A1K I/O module]
@@ -56,7 +57,7 @@ Cam locking button
 . If the replacement I/O module is a NIC, cable the module to the data switches.
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
-
+. Rotate the cable management arm up to the closed position.
 . Reboot the controller from the LOADER prompt: _bye_
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
@@ -110,6 +111,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 == Step 2: Replace I/O modules
 . If you are not already grounded, properly ground yourself.
+. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Unplug any cabling on the target I/O module.
 . Remove the target I/O module from the chassis:
 +
@@ -135,9 +137,11 @@ Make sure that you keep track of which slot the I/O module was in.
 . Install the I/O module into the target slot in the enclosure:
 .. Align the I/O module with the edges of the slot.
 .. Align the module with the edges of the enclosure slot opening.
- .. Gently slide the module into the slot all the wayinto the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+ .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
 . Repeat the remove and install steps to replace additional modules for the controller.
 . If the replacement I/O module is a NIC, cable the module or modules to the data switches.
+. Rotate the cable management arm up to the closed position.
+
 . Reboot the controller from the LOADER prompt:
 .. Check the version of BMC on the controller: `system service-processor show`
 .. Update the BMC firmware if needed: `system service-processor image update`
@@ -148,7 +152,7 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement ]
 
-. Give back the controller from the partner controller. `storage failover giveback -ofnode target_node_name`
+. Give back the controller from the partner controller: `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 
 . If you added:
