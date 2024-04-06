@@ -28,21 +28,6 @@ To replace an I/O module, locate it within the chassis and follow the specific s
 . If you are not already grounded, properly ground yourself.
 . Unplug any cabling associated with the target I/O module.
 +
-Make sure that you label the cables so that you know where they came from.
-
-. Remove the target I/O module from the chassis:
-.. Depress the cam button.
-+
-The cam button moves away from the chassis.
-
-.. Rotate the cam latch as far as it will go.
-+
-The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
-
-.. Remove the I/O module by looping your finger into the can latch pulling the module out.
-+
-Make sure that you keep track of which slot the I/O module was in.
-+
 
 image:../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[AFF A1K IO card remove]
 
@@ -55,9 +40,23 @@ I/O cam latch
 a|
 |===
 
++
+Make sure that you label the cables so that you know where they came from.
+
+. Remove the target I/O module from the chassis:
+.. Depress the cam button on the target module.
++
+The cam button moves away from the chassis.
+
+.. Rotate the cam latch down as far as it will go.
+.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
++
+Make sure that you keep track of which slot the I/O module was in.
 
 . Set the I/O module aside.
-. Install the replacement I/O module into the chassis by gently sliding the I/O module into the slot until the I/O cam latch begins to engage with the I/O cam pin, and then push the I/O cam latch all the way up to lock the module in place.
+. Install the replacement I/O module into the enclosure:
+.. Align the I/O module with the edges of the enclosure slot opening.
+.. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place. 
 . Recable the I/O module, as needed.
 
 == Step 3: Reboot the controller
