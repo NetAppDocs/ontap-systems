@@ -56,7 +56,15 @@ include::../_include/a70-90_controller_install_step_physical.adoc[]
 
 == Step 5: Reset the time and date on the controller
 
+NOTE: After replacing the RTC battery, inserting controller and powering on first BIOS reset, you will see the following error messages: 
+_RTC date/time error. Reset date/time to default._
+_RTC power failure error._
+These messages are excpected and you can continue with this procedure.
+
  . Check the date and time on the healthy controller with the `cluster date show` command.
+ 
+NOTE: If your system stops at the boot menu, select the option for  `Reboot node` and respond `y` when prompted, then boot to LOADER by pressing `Ctrl-C`
+
  .. At the LOADER prompt on the target controller, check the time and date with the `cluster date show` command..
  .. If necessary, modify the date with the `set date mm/dd/yyyy` command.
  .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.

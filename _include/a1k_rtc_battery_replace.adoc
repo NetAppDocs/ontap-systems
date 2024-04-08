@@ -53,9 +53,15 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 
 == Step 4: Reinstall the controller module
 
+
 include::../_include/a1k_controller_install_step_physical.adoc[]
 
 == Step 5: Reset the time and date on the controller
+
+NOTE: After replacing the RTC battery, inserting controller and powering on first BIOS reset, you will see the following error messages: 
+_RTC date/time error. Reset date/time to default._
+_RTC power failure error._
+These messages are excpected and you can continue with this procedure.
 
  . Check the date and time on the healthy controller with the `cluster date show` command.
 
