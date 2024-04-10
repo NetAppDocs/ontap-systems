@@ -1,0 +1,108 @@
+---
+permalink: a1k/install-hardware.html
+sidebar: sidebar
+keywords: aff a1k, install hardware
+summary: Install your system in cabinet or rack.
+---
+= Install hardware into cabinet or rack - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You install a set of rails for the hardware in your cabinet or rack, and then slide the hardware onto the rails.
+
+.Before you begin
+* You have reviewed the Safety Notices document included in the box, and understand the precautions for moving and installing hardware.
+
+* You have the instructions packaged with the rail kit.
+
+* You understand that you should install hardware from the bottom of the cabinet or rack up to the top to prevent the equipment from tipping over.
+
+
+== Step 1: Register your hardware
+Registering your storage system provides support benefits.
+
+.Steps
+
+. Locate the serial number for your storage system. 
++
+You can find the number on the packing slip, in your confirmation email, or on the controller after you unpack it.
++
+image::../media/drw_ssn_label.png[Example of the system serial number showing location of the number]
++
+
+. Go to the NetApp Support Site at http://mysupport.netapp.com/[mysupport.netapp.com^].
+. Determine whether you need to register the hardware:
++
+[cols="1a,2a" options="header"]
+|===
+| If you are a...| Follow these steps...
+a|
+Existing NetApp customer
+a|
+
+ .. Sign in with your username and password.
+ .. Select *Products* > *My Products*.
+ .. Confirm that the new serial number is listed.
+ .. If it is not, follow the instructions for new NetApp customers.
+
+a|
+New NetApp customer
+a|
+
+ .. Click *Register Now*, and create an account.
+ .. Select *Products* > *Register Products*.
+ .. Enter the product serial number and requested details.
+
+After your registration is approved, you can download any required software. The approval process might take up to 24 hours.
+|===
+
+== Step 2: Install the rail kit
+You can install the SuperRail on a standard square-hole four-post rack or a standard round-hole four-post rack by using the round-to-square hole adaptor brackets.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Option 1: Install in square-hole four-post rack
+--
+image::../media/drw_superrail_square_hole_four_post_kit_re_release.png[]
+--
+
+.Option 2: Install in round-hole four-post rack
+--
+image::../media/drw_superrail_round_hole_four_post_kit_re_release.png[]
+--
+
+====
+
+// end tabbed area
+
+== Step 3: Install the hardware
+A cabinet or rack can be delivered either with storage controllers and disk shelves pre-installed or completely empty. The following instructions describe how to install the hardware in an empty cabinet or rack. You can skip this step if your cabinet or rack is pre-populated.
+
+Remember that these instructions represent one approach. Always adapt the process to meet your specific site requirements for a successful installation.
+
+.Steps
+
+. Install the storage system in the middle of the cabinet or rack.
++
+.. Position the back of the storage system onto the rails, and then support the system from the bottom and slide it into the cabinet or rack.
+
+.. Secure the storage system to the cabinet or rack using the included mounting screws.
++
+. Install the shelf.
++
+If you are installing multiple shelves, place the first drive shelf directly above the controllers. Place the second drive shelf directly under the controllers. Repeat this pattern for any additional drive shelves.
+
+.. Position the back of the shelf onto the rails, and then support the shelf from the bottom and slide it into the cabinet or rack.
+
+.. Secure the shelf to the cabinet or rack using the included mounting screws.
++
+. Attach the cable management devices to the rear of the storage system.
++
+image::../media/drw_affa800_install_cable_mgmt.png[]
+
+. Attach the bezel on the front of the storage system.
+

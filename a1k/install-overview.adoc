@@ -1,0 +1,48 @@
+---
+permalink: a1k/install-overview.html
+sidebar: sidebar
+keywords: Installation, deployment, Install, deploy, Installing, deploying
+summary: 'Follow these high-level steps to install and set up a A1K and deploy it as a node in your ONTAP system.'
+---
+= Quick start for installation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Follow these high-level steps to install and set up your A1K system and deploy it as a node in your ONTAP system.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for installation
+
+[role="quick-margin-list"]
+. link:install-prepare.html[Prepare site]
+. link:install-prepare.html#step-2-unpack-the-boxes[Unpack boxes]
+. link:install-prepare.html#step-3-obtain-additional-equipment-and-tools[Obtain additional equipment and tools]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install hardware
+
+[role="quick-margin-list"]
+. link:install-hardware.html#step-1-register-your-hardware[Register hardware]
+. link:install-hardware.html#step-2-install-the-rail-kit[Install rail kit]
+. link:install-hardware.html#step-3-install-the-hardware[Install hardware]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Cable hardware
+
+
+[role="quick-margin-list"]
+. link:cable-hardware.html#step-1-cable-controllers-to-your-network[Cable to network] 
+. link:cable-hardware.html#step-2-cable-controllers-to-drive-shelves[Cable to drive shelves]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Connect power cords and apply power
+
+
+[role="quick-margin-list"]
+. link:power-hardware.html#step-1-power-on-the-shelf-and-assign-shelf-id[Power on the shelf and set shelf IDs]
+. link:power-hardware.html#step-2-power-on-the-controllers[Power on the controllers]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Complete system setup
+
+[role="quick-margin-list"]
+. link:complete-install.html#step-1-gather-cluster-information[Gather cluster information]
+. link:complete-install.html#step-2-discover-your-cluster-network[Discover your cluster network]
+. link:complete-install.html#step-3-configure-your-cluster[Configure your cluster]

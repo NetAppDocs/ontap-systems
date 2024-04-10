@@ -1,0 +1,109 @@
+---
+permalink: a1k/install-prepare.html
+sidebar: sidebar
+keywords: aff a1k, prepare installation
+summary: Prepare to install your AFF A1K system.
+---
+= Prepare for install - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare to install your AFF A1K system.
+
+.Before you begin
+* Access link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for information about site requirements and configuration options. 
+
+* Access the link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Release Notes for your version of ONTAP^] for more information about your storage system.
+
+
+== Step 1: Prepare the site
+Make sure that the site and the cabinet or rack you plan to use meet the specifications for your storage system.
+
+.Steps
+
+. Confirm that the site meets the requirements for temperature, humidity, altitude range, airflow, heat dissipation, wiring, power, and grounding. 
++
+See https://hwu.netapp.com[NetApp Hardware Universe^] for site requirements.
+
+. Confirm that your location provides the correct voltage of AC and DC power:
++
+* 200 to 240 volts AC
+* 40 to 48 volts DC
+
++
+Check https://hwu.netapp.com[NetApp Hardware Universe^] for power requirements specific to your system configuration.
+
+. Obtain a 19-inch (48.3-cm) cabinet or rack to fit NS224 shelves of the following size (without cables).
++
+[cols="1a,1a,1a,1a" options="header"]
+|===
+| Height| Width| Depth| Maximum weight
+a|
+3.43 in.
+
+(8.7 cm)
+a|
+17.6 in.
+
+(44.7 cm)
+a|
+21.38 in.
+
+(54.3 cm)
+a|
+62.2 lb.
+
+(28.2 kg)
+
+|===
+
+. Install any required network switches at the very top of the cabinet or rack.
++
+See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation] for installation instructions and the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool] for compatibility information.
+
+
+== Step 2: Unpack the boxes
+Unpack all boxes and compare the contents to the items on the packing slip.
+
+.  Carefully open all the boxes. Lay out the contents in an organized manner.
+
+. Compare the contents you’ve unpacked with the list on the packing slip. Ensure that everything matches.
++
+. Make sure that the following hardware components and cables are in the box that you received. If there are any discrepancies, note them down for further action.
++
+|===
+| Hardware | Cables
+
+| Storage system
+| Power cords
+
+| Drive shelf
+| 100 GbE cable
+
+| Rail kit with instructions
+| 10 GbE cable
+
+| Cable management device
+| 25 GbE cable
+
+| Bezel
+| Micro-USB console cable
+|===
++
+The table identifies the types of cables you might receive. See  https://hwu.netapp.com/[Hardware Universe] for your system configured options.
+
+
+== Step 3: Obtain additional equipment and tools
+Confirm you have all of the additional equipment and tools that you need to complete the hardware installation.
+
+* Phillips #2 screwdriver 
+* Flashlight
+* ESD strap 
+* Rack space: 
+** 4U for the storage system 
+** 2U for each NS224 shelf
+* Laptop or console with a USB/serial connection.
+* Access to a Web browser to configure your storage system.
+
+

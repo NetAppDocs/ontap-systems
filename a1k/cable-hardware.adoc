@@ -1,0 +1,204 @@
+---
+permalink: a1k/cable-hardware.html
+sidebar: sidebar
+keywords: aff a1k, prepare installation
+summary: Management network ports on the controllers are connected to switches. The HA interconnect and cluster interconnect ports are cabled on both controllers.
+---
+= Cable the controllers - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable your storage system and drive shelves according to your configuration.
+
+== Step 1: Cable controllers to your network
+Cable the controllers to your network as either a two-node switchless cluster or a switched cluster.
+
+.Before you begin
+
+* Contact your network administrator for information about connecting the storage system to the switches.
+* Check the illustration arrow for the proper cable connector pull-tab orientation.
+** As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn the cable head over and try again.
+** If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
++
+image::../media/oie_cable_pull_tab_down.svg[width=200px]
+
+.About this task
+The A1K storage system has 11 slots on its back panel.
+Each slot can accommodate different cards. Certain slots are designated for specific purposes based on their priority. The priority of these slots determines which cards are installed where.
+
+The specific configuration and slot priorities depend on the system components ordered for your storage system.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Cable switchless cluster
+--
+Cable your network connections and your cluster interconnect ports for a two-node switchless cluster.
+
+.Steps
+
+. Cable the cluster interconnect ports e1a to e1a and e7a to e7a with the cluster interconnect cable.
++
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[width=100pxx]
+*Cluster interconnect cables*
++
+image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[width=500px]
++
+. Cable the Ethernet card ports to your host network. 
++
+The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for your specific system configuration.
+
+.. Cable ports e1b and e7b to your 40G/100G/200G/400G Ethernet data network switch. 
++
+*100Gb Ethernet cable*
++
+image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
++
+image::../media/drw_a1k_network_cabling1_ieops-1649.svg[width=500px]
++
+If present, cable ports e9a and e9b to your 40G/100G/200G/400G Ethernet data network switch as shown.
++
+.. Cable your 10/25Gb host network switches.
++
+*4-ports, 10/25Gb Host*
++
+image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
++
+image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
++
+For example, if you have a 10/25Gb card in slot 2 as shown, cable ports e2a through e2d to  to your 10/25Gb host network switches. If you have additional 10/25Gb cards in your system (in other slots), follow the same procedure.
+
+
+. Cable the e0M ports to the management network switches with the RJ45 cables:
++
+image::../media/oie_cable_rj45.svg[width=100px]
+*RJ45 cables*
++
+image::../media/drw_a1k_management_connection_ieops-1651.svg[width=500px]
+
+IMPORTANT: DO NOT plug in the power cords. 
+
+
+--
+.Option 2: Cable switched cluster
+--
+
+Cable your network connections and your cluster interconnect ports for a switched cluster.
+
+.Steps
+
+. On controller A and controller B, cable the cluster network ports e1a and e7a to the cluster network switch.
++
+*100Gb Ethernet cable*
++
+image::../media/oie_cable100_gbe_qsfp28.svg[width=100px]
++
+image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[width=500px]
+
+. Cable the Ethernet card ports to your host network. 
++
+The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for your specific system configuration.
+
+.. Cable ports e1b and e7b to your 40G/100G/200G/400G Ethernet data network switch. 
++
+*100Gb Ethernet cable*
++
+image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
++
+image::../media/drw_a1k_network_cabling1_ieops-1649.svg[width=500px]
++
+If present, cable ports e9a and e9b to your 40G/100G/200G/400G Ethernet data network switch as shown.
++
+.. Cable your 10/25Gb host network switches.
++
+*4-ports, 10/25Gb Host*
++
+image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
++
+image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
++
+For example, if you have a 10/25Gb card in slot 2 as shown, cable ports e2a through e2d to  to your 10/25Gb host network switches. If you have additional 10/25Gb cards in your system (in other slots), follow the same procedure.
+
+. Cable the e0M ports to the management network switches with the RJ45 cables.
++
+image::../media/oie_cable_rj45.svg[width=100px]
+*RJ45 cables*
++
+image::../media/drw_a1k_management_connection_ieops-1651.svg[width=500px]
+
+IMPORTANT: DO NOT plug in the power cords.
+
+--
+
+====
+
+== Step 2: Cable controllers to drive shelves
+You can cable your controllers to either one NS224 drive shelf or two NS224 drive shelves. 
+
+
+.Before you begin
+Check the illustration arrow for the proper cable connector pull-tab orientation.
+
+* As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn the cable head over and try again.
+* If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
+
+image::../media/oie_cable_pull_tab_down.svg[width=200px]
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Option 1: Cable to one NS224 drive shelf
+--
+Cable each controller to the NSM modules on the NS224 drive shelf.
+
+image:../media/drw_ns224_vino_i_1shelf_1card_ieops-1639.svg[]
+
+.Steps
+. Connect controller A port e11a to port e0a on NSM A on the shelf.
+. Connect controller A port e11b to port e0b on NSM B on the shelf.
+. Connect controller B port e11a to port e0a on NSM B on the shelf.
+. Connect controller B port e11b to port e0b on NSM A on the shelf.
+
+|===
+--
+
+.Option 2: Cable to two NS224 drive shelves
+--
+Cable each controller to the NSM modules on both NS224 drive shelves.
+
+image:../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[]
+
+.Steps
+
+. On shelf 1, cable the following connections:
++
+.. Connect controller A port e11a to NSM A e0a.
+
+.. Connect controller A port e11b to NSM B e0b.
+
+.. Connect controller B port e11a to NSM B e0.
+
+.. Connect controller B port e11b to NSM A e0b.
+
+. On shelf 2, cable the following connections:
++
+.. Connect controller A port e11a to NSM A e0a.
+
+.. Connect controller A port e11a to NSM B e0b.
+
+.. Connect controller B port e11b to NSM A e0b.
+
+.. Connect controller B port e11a to NSM B e0a.
+   
+|===
+--
+
+====
+
+// end tabbed area
+
+
+

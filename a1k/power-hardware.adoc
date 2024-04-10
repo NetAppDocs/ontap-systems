@@ -1,0 +1,84 @@
+---
+permalink: a1k/power-hardware.html
+sidebar: sidebar
+keywords: aff a1k, power controllers
+summary: Attach the power cables and power on the drive shelves and controllers.
+---
+= Connect power cords and apply power - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After connecting the network cables, you are ready to apply power to the drive shelf and to the controllers.
+
+== Step 1: Power on the shelf and assign shelf ID
+In ONTAP systems, each NS224 drive shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage setup, whether it’s a standalone system or part of a cluster. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you may need to adjust these IDs to maintain uniqueness across your network.
+
+.About this task
+* A valid shelf ID is 00 through 99.
+* You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
+
+.Steps
+. Power on the shelf by connecting the power cords first to the shelf, securing them in place with the power cord retainer, and then connecting the power cords to power sources on different circuits.
++
+The shelf powers on and boots automatically when plugged into the power source. 
+
+. Remove the left end cap to access the shelf ID button behind the faceplate.
++
+image::../media/shelf_id.png[width=200px]
++
+. Change the first number of the shelf ID:
+ .. Insert the straightened end of a paperclip or narrow tipped ball point pen into the small hole.
+ .. Press and hold the button until the first number on the digital display blinks, and then release the button.
++
+It can take up to 15 seconds for the number to blink. This activates the shelf ID programming mode.
++
+NOTE: If the ID takes longer than 15 seconds to blink, press and hold the button again, making sure to press it in all the way.
+
+ .. Press and release the button to advance the number until you reach the desired number from 0 to 9.
++
+Each press and release duration can be as short as one second.
++
+The first number continues to blink.
+. Change the second number of the shelf ID:
+ .. Press and hold the button until the second number on the digital display blinks.
++
+It can take up to three seconds for the number to blink.
++
+The first number on the digital display stops blinking.
+
+ .. Press and release the button to advance the number until you reach the desired number from 0 to 9.
++
+The second number continues to blink.
+. Lock in the desired number and exit the programming mode by pressing and holding the button until the second number stops blinking.
++
+It can take up to three seconds for the number to stop blinking.
++
+Both numbers on the digital display start blinking and the amber LED on the ODP illuminates after about five seconds, alerting you that the pending shelf ID has not yet taken effect.
+
+. Power-cycle the shelf to make the shelf ID take effect.
++
+.. Unplug the power cord from both power supplies on the shelf.
++
+.. Wait the appropriate amount of time.
++
+.. Plug the power cords back into the shelf power supplies to complete the power cycle.
++
+A power supply is powered on as soon as the power cord is plugged in. Its bicolored LED should illuminate green.
+
+. Replace the left end cap.
+
+
+== Step 2: Power on the controllers
+
+. Connect one end of the two power cables to each of the two power supplies in controller A and in controller B.
++
+image::../media/a1k-psu.png[]
++
+. Connect the other end of the two power cables to two different power sources on different circuits.
++
+The controllers power on and boot automatically when plugged into the power sources. The LEDs flash on and the fans start, which indicates that the controllers are powering on.
++
+The fans might be very loud when they first start up. The loud noise during start-up is normal.
+
+. Secure the power cables using the securing device on each power supply.

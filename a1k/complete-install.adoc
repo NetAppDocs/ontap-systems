@@ -1,0 +1,103 @@
+---
+permalink: a1k/complete-install.html
+sidebar: sidebar
+keywords: aff a1k, prepare installation
+summary: Complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
+---
+= Complete system setup and configuration - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+System Manager provides a simple and easy workflow for setting up a new cluster and configuring your storage.
+
+== Step 1: Gather cluster information
+Gather the information you will need to configure your cluster, such as your cluster management interface port and IP address. 
+
+Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need during the cluster setup process. If a default value is provided, you can use that value or else enter your own.
+
+== Step 2: Discover your cluster network
+Discover your cluster with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Option 1: Network discovery is enabled
+--
+If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
+
+.Steps
+. Connect your laptop to the management switch and access the network computers and devices.
+
+. Select an ONTAP icon listed to discover:
++
+image::../media/drw_autodiscovery_controler_select.png[]
+
+ .. Open File Explorer.
+ .. Click *Network* in the left pane.
+ .. Right-click and select *refresh*.
+ .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
++
+NOTE: XXXXX is the system serial number for the target node.
++
+System Manager opens.
+
+--
+
+.Option 2: Network discovery is not enabled
+--
+If network discovery is not enabled on your laptop, you must complete the configuration and setup using this task.
+
+.Steps
+. Cable and configure your laptop or console:
+ .. Set the console port on the laptop or console to 115,200 baud with N-8-1.
++
+NOTE: See your laptop or console's online help for instructions on how to configure the console port.
+
+ .. Connect the console cable to the laptop or console, and connect the console port on the controller using the console cable that came with your system.
++
+image::../media/drw_console_connect_affa800.png[]
+
+ .. Connect the laptop or console to the switch on the management subnet.
++
+image::../media/drw_client_mgmt_subnet_affa1k.svg[]
+
+ .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
+. Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
++
+The system begins to boot. Initial booting may take up to eight minutes.
+
+. Assign an initial node management IP address to one of the nodes.
++
+[options="header" cols="1,2"]
+|===
+| If the management network has DHCP...| Then...
+a|
+Configured
+a|
+Record the IP address assigned to the new controllers.
+a|
+Not configured
+a|
+
+ .. Open a console session using PuTTY, a terminal server, or the equivalent for your environment.
++
+NOTE: Check your laptop or console's online help if you do not know how to configure PuTTY.
+
+ .. Enter the management IP address when prompted by the script.
+
++
+|===
+
+--
+
+====
+
+// end tabbed area
+
+== Step 3: Configure your cluster
+Use System Manager to configure your cluster. For instructions, see https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[Configure ONTAP on a new cluster with System Manager]
+
+System Manager provides a simple and easy workflow for cluster set up and configuration including assigning a node management IP address, initializing the cluster, creating a local tier, configuring protocols and provisioning initial storage.
