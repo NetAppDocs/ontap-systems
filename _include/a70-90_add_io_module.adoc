@@ -35,6 +35,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 == Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself.
+. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
 . Remove the target slot blanking cover:
  .. Depress the cam latch on the blanking cover in the target slot.
  .. Rotate the cam latch down until it is the open position.
@@ -47,6 +48,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
 
+. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
 . Reboot the controller from the LOADER prompt: _bye_
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
@@ -100,6 +102,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 == Step 2: Replace I/O modules
 . If you are not already grounded, properly ground yourself.
+. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
 . Unplug any cabling on the target I/O module.
 . Remove the target I/O module from the chassis:
 .. Depress the cam latch button.
@@ -116,6 +119,7 @@ Make sure that you keep track of which slot the I/O module was in.
 .. Align the I/O module with the edges of the slot.
 .. Slide the I/O module into the slot until the cam latch begins to rotate a little upward.
 .. Rotate the I/O cam latch all the way up to lock the module in place.
+. Rotate the cable management arm into the locked position.
 . Repeat the remove and install steps to replace additional modules for the controller.
 . If the replacement I/O module is a NIC, cable the module or modules to the data switches.
 . Reboot the controller from the LOADER prompt:

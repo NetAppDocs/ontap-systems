@@ -45,6 +45,8 @@ Replace the impaired system management module.
 
 . Remove the System Management module:
 +
+NOTE:  Make sure NVRAM destage has completed before proceeding.
++
 image::../media/drw_A1K_sys-mgmt_remove_IEOPS-1384.svg[System Management module remove]
 +
 [cols="1,4"]
@@ -55,12 +57,16 @@ a|
 System Management module cam latch
 |===
 
-.. If you are not already grounded, properly ground yourself.
+.. If you are not already grounded, properly ground yourself.  
++
+NOTE:  Make sure NVRAM destage has completed before proceeding.
++
 .. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
-.. Depress the system management cam button.
+.. Disconnect the power cords from the PSU for the impaired controller.
+.. Depress the cam button on the System Management module.
 The cam lever moves away from the chassis.
- .. Rotate the cam lever all the way down.
- .. Loop your finger into the cam lever and pull the module straight out of the system.
+ .. Rotate the cam lever down as far as it will go.
+ .. Loop your finger into the hole on the cam lever and pull the module straight out of the system.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
 . Move the boot media to the replacement System Management module:
 +
@@ -84,18 +90,25 @@ Boot media
 
 .. Press the blue locking button.
 The boot media rotates slightly upward.
-.. Rotate the boot media up,  slide it out of the socket.
+.. Rotate the boot media up and slide it out of the socket.
 .. Install the boot media in the replacement System Management module:
 ... Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
 ... Rotate the boot media down toward until it engages the locking button. Depress the blue locking if necessary.
-. Align the edges of the replacement System Management module with the system opening and gently push it in until the cam lever engages and brgins to rotate upward.
-. Push the module in completely and then rotate the cam lever into the locked position.
+. Install the replacement System Management module into the enclosure:
+.. Align the edges of the replacement System Management module with the system opening and gently push it in until the cam lever engages and begins to rotate upward.
+.. Push the module in completely and then rotate the cam lever into the locked position.
+
+. Rotate the cable management arm up to the closed position.
 . Recable the System Management module.
 
 == Step 3: Reboot the controller module
 
 Reboot the controller module.
 
+. Plug the power cables back into the PSU. 
++
+The system will begin to reboot, typically to the LOADER prompt.
++
 . Enter `bye` at the LOADER prompt.
 . Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . Restore automatic giveback by using the `storage failover modify -node local -auto-giveback true` command.
