@@ -60,9 +60,9 @@ After your registration is approved, you can download any required software. The
 == Step 2: Install the rail kit
 The AFF A1K storage system can only be mounted in four-post racks or cabinets using one of the following rack mount kits:
 
-* SuperRail kit (universal use)
+* SuperRail kit for universal use in third-party cabinets
 * NetApp-specific rail kits:
-** Four-post thin fixed rail kit for NetApp 1280mm cabinet (Ozeki)
+** Four-post thin fixed rail kit for the NetApp 1280mm cabinet (Ozeki)
 ** Four-post thin rail kit for third-party cabinets
 
 // start tabbed area
@@ -70,7 +70,7 @@ The AFF A1K storage system can only be mounted in four-post racks or cabinets us
 [role="tabbed-block"]
 ====
 
-.Option 1: Install SuperRail kit
+.Option 1: Install the SuperRail kit
 The SuperRail kit is designed for universal use and can be installed on either a standard square-hole four-post rack or a standard round-hole four-post rack.
 It includes round-to-square hole adapter brackets for flexibility.
 
@@ -94,25 +94,36 @@ a| image::../media/drw_superrail_round_hole_four_post_kit_re_release.png[]
 
 --
 
-.Option 2: Install NetApp-specific rail kit
+.Option 2: Install a NetApp-specific rail kit
 NetApp offers specific rail kits tailored for their own cabinets.
 For the AFF A1K series, there are two relevant rail kits:
 
 * X87881A: Supports 1280mm NetApp four-post cabinet fixed rails (thin rail)
 * X5532A: Supports third-party four-post cabinets (thin rail)
 
+[%rotate, grid="none", frame="none", cols="5,9,2"]
+|===
+| *X87881A: Supports 1280mm NetApp four-post cabinet fixed rails (thin rail)*
+a| image::../media/drw_syscab_ozeki_support_rail_installation.gif[]
+If your equipment mounting flanges extend beyond the screw holes in the support rail, install cage nuts above the support rail, where needed.
+
+image::../media/drw_clip_nut_install.gif[] 
+|
+
+|===
+
+
+[%rotate, grid="none", frame="none", cols="5,9,2"]
+|===
+| *X5532A: Supports third-party four-post cabinets (thin rail)*
+a| See the rail kit instructions.
+|
+
+|===
+
 --
-. Determine how much space your equipment requires.
-+
-Calculate the amount of U space (1.75 inches per U) the equipment requires, based on the equipment height, and then determine where the equipment will be installed in the system cabinet based on available space.
 
-. Locate where you need to install the support rails, and then install them using the following illustration for reference:
-+
-image::../media/drw_syscab_ozeki_support_rail_installation.gif[]
 
-. If your equipment mounting flanges extend beyond the screw holes in the support rail, install cage nuts above the support rail, where needed.
-+
-image::../media/drw_clip_nut_install.gif[]
 --
 
 ====
