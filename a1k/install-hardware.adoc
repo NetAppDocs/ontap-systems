@@ -9,14 +9,14 @@ summary: Install your system in cabinet or rack.
 :imagesdir: ../media/
 
 [.lead]
-You install a set of rails for the hardware in your cabinet or rack, and then slide the hardware onto the rails.
+A cabinet or rack can be delivered either with storage controllers and drive shelves pre-installed or completely empty. The following instructions describe how to install the hardware in an empty cabinet or rack. You can skip this step if your cabinet or rack is pre-populated.
+
+Remember that these instructions represent one approach. Always adapt the process to meet your specific site requirements for a successful installation.
 
 .Before you begin
 * You have reviewed the Safety Notices document included in the box, and understand the precautions for moving and installing hardware.
 
-* You have the instructions packaged with the rail kit.
-
-* You understand that you should install hardware from the bottom of the cabinet or rack up to the top to prevent the equipment from tipping over.
+* Take anti-static precautions.
 
 
 == Step 1: Register your hardware
@@ -58,6 +58,7 @@ After your registration is approved, you can download any required software. The
 |===
 
 == Step 2: Install the rail kit
+If your hardware was shipped separately (not already installed in the cabinet or rack), you might need to install support rails in the cabinet or rack.
 The AFF A1K storage system can only be mounted in four-post racks or cabinets using one of the following rack mount kits:
 
 * SuperRail kit for universal use in third-party cabinets
@@ -118,7 +119,7 @@ image::../media/drw_clip_nut_install.gif[]
 [%rotate, grid="none", frame="none", cols="5,9,2"]
 |===
 | *Rail kit X5532A*
-a| See the rail kit instructions.
+a| Need instructions.
 |
 
 |===
