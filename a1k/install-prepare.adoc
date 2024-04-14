@@ -26,7 +26,7 @@ Make sure that the site and the cabinet or rack you plan to use meet the specifi
 +
 See https://hwu.netapp.com[NetApp Hardware Universe^] for site requirements.
 
-. Confirm that your location provides the correct voltage of AC and DC power:
+. Confirm that your location provides the correct voltage of AC or DC power:
 +
 * 200 to 240 volts AC
 * 40 to 48 volts DC
@@ -58,7 +58,7 @@ a|
 
 |===
 
-. Install any required network switches at the very top of the cabinet or rack.
+. Install any required network switches near the AFF A1K controllers.
 +
 See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation] for installation instructions and the https://imt.netapp.com/matrix/#welcome[NetApp Interoperability Matrix Tool] for compatibility information.
 
@@ -68,31 +68,28 @@ Unpack all boxes and compare the contents to the items on the packing slip.
 
 .  Carefully open all the boxes. Lay out the contents in an organized manner.
 
-. Compare the contents you’ve unpacked with the list on the packing slip. Ensure that everything matches.
+. Compare the contents you’ve unpacked with the list on the packing slip. Ensure that everything matches. If there are any discrepancies, note them down for further action.
 +
-. Make sure that the following hardware components and cables are in the box that you received. If there are any discrepancies, note them down for further action.
+
+The following lists the contents you might see in the box that you received. 
 +
+
+[%rotate, grid="none", frame="none", cols="12,9,4"]
 |===
-| Hardware | Cables
-
-| Storage system
-| Power cords
-
-| Drive shelf
-| 100 GbE cable
-
-| Rail kit with instructions
-| 10 GbE cable
-
-| Cable management device
-| 25 GbE cable
-
-| Bezel
-| Micro-USB console cable
+|*Hardware*
+|*Cables* |
+a|* Drive shelf 
+* Rail kit with instructions 
+* Cable management device 
+* Bezel
+a|* Power cords
+* 100 GbE cable
+* 10 GbE cable
+* 25 GbE cable
+* Management ethernet cables (RJ-45 cables)
+* 64 Gb FC optical network cable
+* USB-C serial port cable |
 |===
-+
-The table identifies the types of cables you might receive. See  https://hwu.netapp.com/[Hardware Universe] for your system configured options.
-
 
 == Step 3: Obtain additional equipment and tools
 Confirm you have all of the additional equipment and tools that you need to complete the hardware installation.
@@ -103,7 +100,7 @@ Confirm you have all of the additional equipment and tools that you need to comp
 * Rack space: 
 ** 4U for the storage system 
 ** 2U for each NS224 shelf
-* Laptop or console with a USB/serial connection.
-* Access to a Web browser to configure your storage system.
+* Laptop or console with a USB/serial connection
+* Access to a Web browser to configure your storage system
 
 
