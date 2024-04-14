@@ -24,10 +24,25 @@ Cable the controllers to your network as either a two-node switchless cluster or
 image::../media/oie_cable_pull_tab_down.svg[width=200px]
 
 .About this task
-The A1K storage system has 11 slots on its back panel.
+The AFF A1K storage system has 11 slots on its back panel.
 Each slot can accommodate different cards. Certain slots are designated for specific purposes based on their priority. The priority of these slots determines which cards are installed where.
 
-The specific configuration and slot priorities depend on the system components ordered for your storage system.
+* NVRAM12
++
+The NVRAM12 card is always installed in slot 4. It is a double-wide card and also occupies slot 5.
+
+* System management module
++
+Unlike the other 11 slots, the system management module has a unique placement.
+It is located between slot 7 and slot 8.
+
+* I/O modules
++
+You can install any available I/O module in the following slots: 1, 2, 3, and 6 through 11.
+
+Keep in mind that the specific configuration and slot priorities depend on the system components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU).
+
+
 
 [role="tabbed-block"]
 ====
