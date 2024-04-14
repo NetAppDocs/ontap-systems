@@ -58,21 +58,60 @@ After your registration is approved, you can download any required software. The
 |===
 
 == Step 2: Install the rail kit
-You can install the SuperRail on a standard square-hole four-post rack or a standard round-hole four-post rack by using the round-to-square hole adaptor brackets.
+The AFF A1K storage system can only be mounted in four-post racks or cabinets using one of the following rack mount kits:
+
+* SuperRail kit (universal use)
+* NetApp-specific rail kits:
+** Four-post thin fixed rail kit for NetApp 1280mm cabinet (Ozeki)
+** Four-post thin rail kit for third-party cabinets
 
 // start tabbed area
 
 [role="tabbed-block"]
 ====
 
-.Option 1: Install in square-hole four-post rack
+.Option 1: Install SuperRail kit
+The SuperRail kit is designed for universal use and can be installed on either a standard square-hole four-post rack or a standard round-hole four-post rack.
+It includes round-to-square hole adapter brackets for flexibility.
+
 --
-image::../media/drw_superrail_square_hole_four_post_kit_re_release.png[]
+[%rotate, grid="none", frame="none", cols="5,9,2"]
+|===
+|*Square-hole four-post rack*
+a| image::../media/drw_superrail_square_hole_four_post_kit_re_release.png[] 
+|
+
+|===
+
+
+[%rotate, grid="none", frame="none", cols="5,9,2"]
+|===
+|*Round-hole four-post rack*
+a| image::../media/drw_superrail_round_hole_four_post_kit_re_release.png[]
+|
+
+|===
+
 --
 
-.Option 2: Install in round-hole four-post rack
+.Option 2: Install NetApp-specific rail kit
+NetApp offers specific rail kits tailored for their own cabinets.
+For the AFF A1K series, there are two relevant rail kits:
+X87881A: Supports 1280mm NetApp 4-post cabinet fixed rails (thin rail).
+X5532A: Supports 3rd Party 4-post cabinets (thin rail)
+
 --
-image::../media/drw_superrail_round_hole_four_post_kit_re_release.png[]
+. Determine how much space your equipment requires.
++
+Calculate the amount of U space (1.75 inches per U) the equipment requires, based on the equipment height, and then determine where the equipment will be installed in the system cabinet based on available space.
+
+. Locate where you need to install the support rails, and then install them using the following illustration for reference:
++
+image::../media/drw_syscab_ozeki_support_rail_installation.gif[]
+
+. If your equipment mounting flanges extend beyond the screw holes in the support rail, install cage nuts above the support rail, where needed.
++
+image::../media/drw_clip_nut_install.gif[]
 --
 
 ====
@@ -104,5 +143,5 @@ If you are installing multiple shelves, place the first drive shelf directly abo
 +
 image::../media/drw_affa800_install_cable_mgmt.png[]
 
-. Attach the bezel on the front of the storage system.
+. Attach the bezel to the front of the storage system.
 
