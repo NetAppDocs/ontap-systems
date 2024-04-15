@@ -49,14 +49,14 @@ Keep in mind that the specific configuration and slot priorities depend on the s
 
 .Option 1: Cable switchless cluster
 --
-Cable your network connections and your cluster interconnect ports for a two-node switchless cluster.
+Communication between the shared cluster resources and the High Availability (HA) components are interconnected through dedicated network ports. 
 
 .Steps
 
-. Cable the cluster interconnect ports e1a to e1a and e7a to e7a with the cluster interconnect cable.
+. Cable the Cluster+HA interconnect ports e1a to e1a and e7a to e7a with the Cluster+HA interconnect cable.
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[width=100pxx]
-*Cluster interconnect cables*
+*Cluster+HA interconnect cables*
 +
 image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[width=500px]
 +
@@ -64,48 +64,49 @@ image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[width=500px]
 +
 The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for your specific system configuration.
 
-.. Cable ports e1b and e7b to your 40G/100G/200G/400G Ethernet data network switch. 
+.. Cable ports e1b and e7b to your Ethernet data network switch. 
 +
-*100Gb Ethernet cable*
+If present, cable ports e9a and e9b to your Ethernet data network switch as shown.
++
+*100GbE cable*
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
 +
 image::../media/drw_a1k_network_cabling1_ieops-1649.svg[width=500px]
+
 +
-If present, cable ports e9a and e9b to your 40G/100G/200G/400G Ethernet data network switch as shown.
+.. Cable your 10/25GbE host network switches.
 +
-.. Cable your 10/25Gb host network switches.
-+
-*4-ports, 10/25Gb Host*
+*4-ports, 10/25GbE Host*
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
 +
 image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
 +
-For example, if you have a 10/25Gb card in slot 2 as shown, cable ports e2a through e2d to  to your 10/25Gb host network switches. If you have additional 10/25Gb cards in your system (in other slots), follow the same procedure.
+For example, if you have a 10/25GbE card in slot 2 as shown, cable ports e2a through e2d to  to your 10/25GbE host network switches. If you have additional 10/25GbE cards in your system (in other slots), follow the same procedure.
 
 
-. Cable the e0M ports to the management network switches with the RJ45 cables:
+. Cable the Wrench management ports (e0M/BMC) to the management network switches with the RJ-45 cables.
 +
 image::../media/oie_cable_rj45.svg[width=100px]
-*RJ45 cables*
+*RJ-45 cables*
 +
 image::../media/drw_a1k_management_connection_ieops-1651.svg[width=500px]
 
-IMPORTANT: DO NOT plug in the power cords. 
+IMPORTANT: DO NOT plug in the power cords yet. 
 
 
 --
 .Option 2: Cable switched cluster
 --
 
-Cable your network connections and your cluster interconnect ports for a switched cluster.
+Communication between the shared cluster resources and the High Availability (HA) components are interconnected through dedicated network ports. 
 
 .Steps
 
-. On controller A and controller B, cable the cluster network ports e1a and e7a to the cluster network switch.
+. On controller A and controller B, cable the Cluster+HA network ports e1a and e7a to the cluster network switches, one port to each switch.
 +
-*100Gb Ethernet cable*
+*100GbE cable*
 +
 image::../media/oie_cable100_gbe_qsfp28.svg[width=100px]
 +
@@ -115,34 +116,37 @@ image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[width=500px]
 +
 The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for your specific system configuration.
 
-.. Cable ports e1b and e7b to your 40G/100G/200G/400G Ethernet data network switch. 
+.. Cable ports e1b and e7b to your Ethernet data network switch. 
 +
-*100Gb Ethernet cable*
+If present, cable ports e9a and e9b to your Ethernet data network switch as shown.
++
+*100GbE cable*
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
 +
 image::../media/drw_a1k_network_cabling1_ieops-1649.svg[width=500px]
+
 +
-If present, cable ports e9a and e9b to your 40G/100G/200G/400G Ethernet data network switch as shown.
+.. Cable your 10/25GbE host network switches.
 +
-.. Cable your 10/25Gb host network switches.
-+
-*4-ports, 10/25Gb Host*
+*4-ports, 10/25GbE Host*
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
 +
 image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
 +
-For example, if you have a 10/25Gb card in slot 2 as shown, cable ports e2a through e2d to  to your 10/25Gb host network switches. If you have additional 10/25Gb cards in your system (in other slots), follow the same procedure.
+For example, if you have a 10/25GbE card in slot 2 as shown, cable ports e2a through e2d to  to your 10/25GbE host network switches. If you have additional 10/25GbE cards in your system (in other slots), follow the same procedure.
 
-. Cable the e0M ports to the management network switches with the RJ45 cables.
+
+. Cable the Wrench management ports (e0M/BMC) to the management network switches with the RJ-45 cables.
 +
 image::../media/oie_cable_rj45.svg[width=100px]
-*RJ45 cables*
+*RJ-45 cables*
 +
 image::../media/drw_a1k_management_connection_ieops-1651.svg[width=500px]
 
-IMPORTANT: DO NOT plug in the power cords.
+IMPORTANT: DO NOT plug in the power cords yet. 
+
 
 --
 
