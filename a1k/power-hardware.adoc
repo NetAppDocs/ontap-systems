@@ -71,21 +71,21 @@ A power supply is powered on as soon as the power cord is plugged in. Its bicolo
 
 == Step 2: Power on the controllers
 
-. Cable and configure your laptop or console so you can monitor the boot sequence when power is applied to the controllers.
-+
- .. Set the console port on the laptop or console to 115,200 baud with N-8-1.
-+
-NOTE: See your laptop or console's online help for instructions on how to configure the console port.
+. Connect your laptop to the serial console port so you can monitor the boot sequence when power is applied to the controllers. 
 
- .. Connect the console cable to the laptop or console, and connect the console port on the controller using the console cable that came with your system.
+ .. Set the serial console port on the laptop to 115,200 baud with N-8-1.
++
+NOTE: See your laptop's online help for instructions on how to configure the serial console port.
+
+ .. Connect the console cable to the laptop, and connect the serial console port on the controller using the console cable that came with your system.
 +
 image::../media/drw_console_connect_affa800.png[]
 
- .. Connect the laptop or console to the switch on the management subnet.
+ .. Connect the laptop to the switch on the management subnet.
 +
 image::../media/drw_client_mgmt_subnet_affa1k.svg[]
 
- .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
+ .. Assign a TCP/IP address to the laptop, using one that is on the management subnet.
 +
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
