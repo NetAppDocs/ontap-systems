@@ -16,7 +16,7 @@ Remember that these instructions represent one approach. Always adapt the proces
 .Before you begin
 * Review the Safety Notices document included in the box, and understand the precautions for moving and installing hardware.
 
-* Take anti-static precautions.
+* You have the instructions packaged with the rail kit.
 
 
 == Step 1: Register your hardware
@@ -66,73 +66,7 @@ The AFF A1K storage system can only be mounted in four-post racks or cabinets us
 ** Designed for the NetApp 1280mm cabinet (Ozeki)
 ** Designed for third-party cabinets 
 
-// start tabbed area
-
-[role="tabbed-block"]
-====
-
-.Option 1: Install the SuperRail kit
-The SuperRail kit is designed for universal use and can be installed on either a standard square-hole four-post rack or a standard round-hole four-post rack.
-It includes round-to-square hole adapter brackets for flexibility.
-
---
-
-[%rotate, grid="none", frame="none", cols="5,9,2"]
-|=====
-|*Square-hole four-post rack*
-a| image::../media/drw_superrail_square_hole_four_post_kit_re_release.png[] 
-|
-
-|=====
-
-
-[%rotate, grid="none", frame="none", cols="5,9,2"]
-|=====
-|*Round-hole four-post rack*
-a| image::../media/drw_superrail_round_hole_four_post_kit_re_release.png[]
-|
-
-|=====
-
---
-
-.Option 2: Install a NetApp-specific rail kit
-NetApp provides rail kits specifically designed for their own cabinets. If you’re working with the AFF A1K series, you’ll need to select the appropriate rail kit based on the type of cabinet you’re using. Here are the options:
-
-* Four-post thin fixed rail kit (part number X87881A) for 1280mm NetApp cabinet (Ozeki)
-
-* Four-post thin rail kit (part number X5532A) for third-party cabinets
-+
-
-
-[%rotate, grid="none", frame="none", cols="5,9,2"]
-|=====
-| *Rail kit X87881A*
-a| image::../media/drw_syscab_ozeki_support_rail_installation.gif[]
-If your equipment mounting flanges extend beyond the screw holes in the support rail, install cage nuts above the support rail, where needed.
-
-image::../media/drw_clip_nut_install.gif[] 
-|
-
-|=====
-
-
-[%rotate, grid="none", frame="none", cols="5,9,2"]
-|=====
-| *Rail kit X5532A*
-a| Need instructions.
-|
-
-|=====
-
---
-
-
---
-
-====
-
-// end tabbed area
+Follow the instructions packaged with your the rail kit to install the rails in your cabinet or rack.
 
 == Step 3: Install the hardware
 If your cabinet or rack was delivered empty, use these steps to install your hardware. Skip this step if your cabinet or rack is pre-populated.
