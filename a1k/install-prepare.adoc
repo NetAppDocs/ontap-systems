@@ -34,7 +34,7 @@ See https://hwu.netapp.com[NetApp Hardware Universe^] for site requirements.
 +
 Check https://hwu.netapp.com[NetApp Hardware Universe^] for power requirements specific to your system configuration.
 
-. Obtain a 19-inch (48.3-cm) cabinet or rack to fit NS224 shelves of the following size (without cables).
+. Obtain a 19-inch (48.3-cm) cabinet or rack to fit the AFF A1K controllers (two chassis) -- ask marty/doug and the drive shelf of the following size (without cables). 
 +
 [cols="1a,1a,1a,1a" options="header"]
 |===
@@ -52,7 +52,7 @@ a|
 
 (54.3 cm)
 a|
-62.2 lb.
+66.8 lb.
 
 (28.2 kg)
 
@@ -83,11 +83,9 @@ a|* Storage system
 * Cable management device 
 * Bezel
 a|* Power cords
-* 100 GbE cable
-* 10 GbE cable
-* 25 GbE cable
-* Management ethernet cables (RJ-45 cables)
-* 64 Gb FC optical network cable
+* Ethernet cables and transceivers
+* FC optical cable
+* Management Ethernet cables (RJ-45 cables)
 * USB-C serial port cable |
 |===
 

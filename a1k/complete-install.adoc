@@ -51,11 +51,11 @@ System Manager opens.
 If network discovery is not enabled on your laptop, complete the configuration and setup using this task.
 
 .Before you begin
-Make sure your laptop or console is cabled and configured and the controllers are powered on. See link:power-hardware.html#step-2-power-on-the-controllers[Power on the controllers] for instructions.
+Make sure your laptop is connected to the serial console port and the controllers are powered on. See link:power-hardware.html#step-2-power-on-the-controllers[Power on the controllers] for instructions.
 
 .Steps
 
-Assign an initial node management IP address to one of the nodes.
+Assign an initial node management IP address to one of the nodes. 
 
 [options="header" cols="1,2"]
 |===
@@ -72,7 +72,7 @@ a|
 +
 NOTE: Check your laptop or console's online help if you do not know how to configure PuTTY.
 
- .. Enter the management IP address when prompted by the script.
+ .. Enter the management IP address when prompted by the cluster setup wizard.
 
 +
 |===
@@ -84,6 +84,6 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 // end tabbed area
 
 == Step 3: Configure your cluster
-Use System Manager to configure your cluster. For instructions, see https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[Configure ONTAP on a new cluster with System Manager]
+Use System Manager to configure your cluster. For instructions, see https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[Configure ONTAP on a new cluster with System Manager].
 
 System Manager provides a simple and easy workflow for cluster set up and configuration including assigning a node management IP address, initializing the cluster, creating a local tier, configuring protocols and provisioning initial storage.
