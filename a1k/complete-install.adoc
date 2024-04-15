@@ -48,29 +48,15 @@ System Manager opens.
 
 .Option 2: Network discovery is not enabled
 --
-If network discovery is not enabled on your laptop, you must complete the configuration and setup using this task.
+If network discovery is not enabled on your laptop, complete the configuration and setup using this task.
+
+.Before you begin
+Make sure your laptop or console is cabled and configured and the controllers are powered on. See link:power-hardware.html#step-2-power-on-the-controllers[Power on the controllers] for instructions.
 
 .Steps
-. Cable and configure your laptop or console:
- .. Set the console port on the laptop or console to 115,200 baud with N-8-1.
-+
-NOTE: See your laptop or console's online help for instructions on how to configure the console port.
 
- .. Connect the console cable to the laptop or console, and connect the console port on the controller using the console cable that came with your system.
-+
-image::../media/drw_console_connect_affa800.png[]
+Assign an initial node management IP address to one of the nodes.
 
- .. Connect the laptop or console to the switch on the management subnet.
-+
-image::../media/drw_client_mgmt_subnet_affa1k.svg[]
-
- .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
-. Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
-+
-The system begins to boot. Initial booting may take up to eight minutes.
-
-. Assign an initial node management IP address to one of the nodes.
-+
 [options="header" cols="1,2"]
 |===
 | If the management network has DHCP...| Then...
