@@ -177,9 +177,9 @@ image:../media/drw_ns224_vino_i_1shelf_1card_ieops-1639.svg[]
 
 .Steps
 . Connect controller A port e11a to port e0a on NSM A on the shelf.
-. Connect controller A port e11b to port e0b on NSM B on the shelf.
+. Connect controller A port e10b to port e0b on NSM B on the shelf.
 . Connect controller B port e11a to port e0a on NSM B on the shelf.
-. Connect controller B port e11b to port e0b on NSM A on the shelf.
+. Connect controller B port e10b to port e0b on NSM A on the shelf.
 
 |===
 --
@@ -204,13 +204,13 @@ image:../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[]
 
 . On shelf 2, cable the following connections:
 +
-.. Connect controller A port e11a to NSM A e0a.
+.. Connect controller A port e10a to NSM A e0a.
 
-.. Connect controller A port e11a to NSM B e0b.
+.. Connect controller A port e11b to NSM B e0b.
 
 .. Connect controller B port e11b to NSM A e0b.
 
-.. Connect controller B port e11a to NSM B e0a.
+.. Connect controller B port e10a to NSM B e0a.
    
 |===
 --
