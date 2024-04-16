@@ -92,11 +92,15 @@ a|
 (28.2 kg)
 
 |===
++
 
-
+The AFF A1K system weight will vary based on the specific configuration of the
+controller/mezzanine cards and the number and type of drives in the system.
++
 
 . Install any required network switches near the AFF A1K controllers.
 +
+
 See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation] for installation instructions and link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for compatibility information.
 
 
