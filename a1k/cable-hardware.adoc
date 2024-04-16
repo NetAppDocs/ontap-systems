@@ -104,7 +104,10 @@ The cluster interconnect traffic and the HA traffic share the same physical port
 
 .Steps
 
-. On controller A and controller B, cable the Cluster+HA network ports e1a and e7a to the cluster network switches, one port to each switch.
+. Make the following cabling connections:
++
+.. Cable port e1a on Controller A and port e1a on Controller B to cluster network switch A. 
+.. Cable port e7a on Controller A and port e7a on Controller b to cluster network switch B.
 +
 *100 GbE cable*
 +
