@@ -34,29 +34,66 @@ See https://hwu.netapp.com[NetApp Hardware Universe^] for site requirements.
 +
 Check https://hwu.netapp.com[NetApp Hardware Universe^] for power requirements specific to your system configuration.
 
-. Obtain a 19-inch (48.3-cm) cabinet or rack to fit the AFF A1K controllers (two chassis) -- ask marty/doug and the drive shelf of the following size (without cables). 
+. Obtain a 19-inch (48.3-cm) cabinet or rack to fit the AFF A1K storage system and the NS224 drive shelf of the following size (without cables). 
 +
-[cols="1a,1a,1a,1a" options="header"]
+[grid="none", frame="none", width="100%",cols="29%,17%,15%,15%,24%",options="header",]
 |===
-| Height| Width| Depth| Maximum weight
+| |*Height* |*Width* |*Depth* |*Maximum weight*
+|*AFF A1K system* 
+
+(_per controller_)
 a|
+3.43 in
+
+(8.7 cm)
+a|
+17.6 in
+
+(44.7 cm) 
+a|
+30.0 in
+
+(76.3 cm)
+a|
+53.3 lb
+
+(24.2 kg)
+
+| a|
+
+
+a|
+
+
+a|
+
+
+a|
+
+
+|*NS224 Drive shelf* a|
 3.43 in.
 
 (8.7 cm)
+
 a|
 17.6 in.
 
 (44.7 cm)
+
 a|
 21.38 in.
 
 (54.3 cm)
+
 a|
 66.8 lb.
 
 (28.2 kg)
 
 |===
+
+
 
 . Install any required network switches near the AFF A1K controllers.
 +
