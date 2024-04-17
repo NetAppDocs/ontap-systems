@@ -6,7 +6,7 @@ You can add an I/O module to your system by either adding a new I/O module into 
 
 * If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^]  and use the best one available for your I/O module.
 
-* To non-disruptively add an I/O module, you must take over the target controller, remove the slot blanking cover in the target slot or remove an existing I/O module, add the new or replacement I/O module, and then giveback the target controller.
+* To non-disruptively add an I/O module, you must take over the target controller, remove the slot blanking module in the target slot or remove an existing I/O module, add the new or replacement I/O module, and then giveback the target controller.
 
 * Make sure that all other components are functioning properly.
 
@@ -36,10 +36,22 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 . If you are not already grounded, properly ground yourself.
 . Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
-. Remove the target slot blanking cover:
- .. Depress the cam latch on the blanking cover in the target slot.
- .. Rotate the cam latch down until it is the open position.
- .. Remove the blanking cover.
+. Remove the target slot blanking module from the chassis:
+
++
+image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.png[Callout number 1]|
+Cam locking button
+
+|===
+
+ .. Depress the cam latch on the blanking module in the target slot.
+ .. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
+ .. Remove the blanking module.
 . Install the I/O module:
  .. Align the I/O module with the edges of the slot.
  .. Slide the I/O module into the slot until the cam latch begins to rotate a little upward.
@@ -48,7 +60,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
 
-. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
+. Rotate the cable management arm up to the closed position.
 . Reboot the controller from the LOADER prompt: _bye_
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
@@ -103,6 +115,18 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 == Step 2: Replace I/O modules
 . If you are not already grounded, properly ground yourself.
 . Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
+
++
+image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.png[Callout number 1]|
+Cam locking button
+
+|===
+
 . Unplug any cabling on the target I/O module.
 . Remove the target I/O module from the chassis:
 .. Depress the cam latch button.
