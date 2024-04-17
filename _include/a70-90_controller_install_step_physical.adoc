@@ -14,16 +14,18 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 . Recable the system, as needed.
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+. Plug the power cords into the power supplies.
++
+NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
++
 
 . Complete the reinstallation of the controller module:
  .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
 The locking latches rise when the controller module is fully seated.
 
-
++
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-
-NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
 
 
 The controller module begins to boot as soon as it is fully seated in the chassis or after it is installed and DC power is restored.
