@@ -154,7 +154,9 @@ Use the animation or the tabulated steps to complete the cabling between the con
 video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Animation - Cable a two-node switchless cluster"]
 
 .Steps
-. Cable the cluster interconnect ports e0c to e0c and e0d to e0 with the 25GbE cluster interconnect cableimage:../media/oie_cable_sfp_gbe_copper.png[]:
+. Cable the cluster interconnect ports e0c to e0c and e0d to e0d with the 25GbE cluster interconnect cables.
++
+image:../media/oie_cable_sfp_gbe_copper.png[]:
 +
 image:../media/drw_affa250_tnsc_cabling.png[]
 
@@ -186,7 +188,7 @@ video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto, title="Animation - Cable a 
 .Steps
 . Cable the cluster interconnect ports e0c and e0d to the 25 GbE cluster interconnect switches.
 +
-image:../media/drw_affa250_switched_clust_cabling.png[]
+image::../media/drw_affa250_switched_clust_cabling.png[]
 
 . Cable the wrench ports to the management network switches with the RJ45 cables.
 +
