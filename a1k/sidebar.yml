@@ -4,12 +4,18 @@ entries:
  - title: Install and setup
    pdf-filename: AFF A1K Install and Setup
    entries:
-    - title: Choose install and setup experience
-      url: /a1k/install-setup.html
-    - title: Quick steps
-      url: /a1k/install-quick-guide.html
-    - title: Detailed steps
-      url: /a1k/install-detailed-guide.html
+     - title: Install workflow
+       url: /a1k/install-overview.html
+     - title: Prepare for install
+       url: /a1k/install-prepare.html
+     - title: Install hardware
+       url: /a1k/install-hardware.html
+     - title: Cable system
+       url: /a1k/cable-hardware.html
+     - title: Power on system
+       url: /a1k/power-hardware.html
+     - title: Complete system setup
+       url: /a1k/complete-install.html
  - title: Maintain
    pdf-filename: AFF A1K Maintain
    entries:

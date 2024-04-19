@@ -1,5 +1,8 @@
 indexpage:
+  title: AFF A-Series Systems
   lead: AFF A-Series systems are designed to help organizations transform their infrastructure more quickly and fuel data-driven strategies.
+  summary: The storage system documentation lets you install, setup, and maintain your AFF A-Series system.
+  keywords: aff a-series, a150, a250, a800, a900, a400, datasheet, install, setup
   tiles:
     - title: Get started
       links:
@@ -10,7 +13,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: AFF A1k
-          url: ../a1k/install-setup.html
+          url: ../a1k/install-overview.html
         - title: AFF A70 and A90
           url: ../a70-90/install-setup.html
         - title: AFF A150
