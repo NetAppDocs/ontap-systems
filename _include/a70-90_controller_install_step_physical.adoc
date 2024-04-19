@@ -28,7 +28,7 @@ The locking latches rise when the controller module is fully seated.
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 
 
-The controller module begins to boot as soon as it is fully seated in the chassis or after it is installed and DC power is restored.
+The controller module begins to boot as soon as it is fully seated in the chassis or after it is installed and DC power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command
 
  .. Rotate the locking latches upward into the locked position.
  .. If you have not already done so, reinstall the cable management device and recable the controller.
