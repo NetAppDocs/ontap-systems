@@ -188,6 +188,6 @@ dr-group-id            cluster node           configuration-state
 . If storage encryption is enabled, you must restore functionality.
 . If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`
 
-== Step 7: Return the failed part to NetApp
+== Step 6: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
