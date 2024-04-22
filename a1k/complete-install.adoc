@@ -12,7 +12,7 @@ summary: Complete the system setup and configuration using cluster discovery wit
 After you have installed your hardware, use the ONTAP software to configure and manage your storage system.
 
 == Step 1: Gather cluster information
-Gather the information you will need to configure your cluster, such as your cluster management interface port and IP address. 
+If you have not already done so, gather the information you will need to configure your cluster, such as your cluster management interface port and IP address. 
 
 Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need during the cluster setup process. If a default value is provided, you can use that value or else enter your own.
 
