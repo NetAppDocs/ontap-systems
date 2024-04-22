@@ -9,7 +9,7 @@ summary: Complete the system setup and configuration using cluster discovery wit
 :imagesdir: ../media/
 
 [.lead]
-System Manager provides a simple and easy workflow for setting up a new cluster and configuring your storage.
+After you have installed your hardware, use the ONTAP software to configure and manage your storage system.
 
 == Step 1: Gather cluster information
 Gather the information you will need to configure your cluster, such as your cluster management interface port and IP address. 
@@ -17,7 +17,7 @@ Gather the information you will need to configure your cluster, such as your clu
 Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need during the cluster setup process. If a default value is provided, you can use that value or else enter your own.
 
 == Step 2: Discover your cluster network
-Discover your cluster with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
+Use either ONTAP System manager or ONTAP command line interface (CLI) Cluster Setup wizard to discover your cluster network. 
 
 // start tabbed area
 
@@ -48,7 +48,7 @@ System Manager opens.
 
 .Option 2: Network discovery is not enabled
 --
-If network discovery is not enabled on your laptop, complete the configuration and setup using this task.
+If network discovery is not enabled on your laptop, complete the configuration and setup using the ONTAP command line interface (CLI) Cluster Setup wizard.
 
 .Before you begin
 Make sure your laptop is connected to the serial console port and the controllers are powered on. See link:power-hardware.html#step-2-power-on-the-controllers[Power on the controllers] for instructions.
@@ -72,7 +72,11 @@ a|
 +
 NOTE: Check your laptop or console's online help if you do not know how to configure PuTTY.
 
- .. Enter the management IP address when prompted by the cluster setup wizard.
+ .. Connect to the console of the first node.
++
+The node boots, and then the Cluster Setup wizard starts on the console.
+
+.. Enter the management IP address when prompted by the Cluster Setup wizard.
 
 +
 |===
