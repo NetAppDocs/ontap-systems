@@ -9,55 +9,17 @@ summary: Install your system in cabinet or rack.
 :imagesdir: ../media/
 
 [.lead]
-A cabinet or rack can be delivered with storage controllers and drive shelves pre-installed or completely empty. The following instructions describe how to install the hardware in an empty cabinet or rack. 
+A cabinet or rack may have storage controllers and drive shelves pre-installed or completely empty. The following instructions describe how to install the hardware in an empty cabinet or rack. 
 
 Remember that these instructions represent one approach. Always adapt the process to meet your specific site requirements for a successful installation.
 
 .Before you begin
-* Review the Safety Notices document included in the box, and understand the precautions for moving and installing hardware.
+* Review the https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[Safety Notices] document, and understand the precautions for moving and installing hardware.
 
 * You have the instructions packaged with the rail kit.
 
 
-== Step 1: Register your hardware
-Registering your storage system provides support benefits.
-
-.Steps
-
-. Locate the serial number for your storage system. 
-+
-You can find the number on the packing slip, in your confirmation email, or on the controller after you unpack it.
-+
-image::../media/drw_ssn_label.png[Example of the system serial number showing location of the number]
-+
-
-. Go to the NetApp Support Site at http://mysupport.netapp.com/[mysupport.netapp.com^].
-. Determine whether you need to register the hardware:
-+
-[cols="1a,2a" options="header"]
-|===
-| If you are a...| Follow these steps...
-a|
-Existing NetApp customer
-a|
-
- .. Sign in with your username and password.
- .. Select *Products* > *My Products*.
- .. Confirm that the new serial number is listed.
- .. If it is not, follow the instructions for new NetApp customers.
-
-a|
-New NetApp customer
-a|
-
- .. Click *Register Now*, and create an account.
- .. Select *Products* > *Register Products*.
- .. Enter the product serial number and requested details.
-
-After your registration is approved, you can download any required software. The approval process might take up to 24 hours.
-|===
-
-== Step 2: Install the rail kit
+== Step 1: Install the rail kit
 If your hardware was shipped separately (not already installed in the cabinet or rack), you will need to install support rails in the cabinet or rack.
 The AFF A1K storage system can only be mounted in four-post racks or cabinets using one of the following rack mount kits:
 
@@ -66,8 +28,8 @@ The AFF A1K storage system can only be mounted in four-post racks or cabinets us
 
 Follow the instructions packaged with your the rail kit to install the rails in your cabinet or rack.
 
-== Step 3: Install the storage system and drive shelf
-If your cabinet or rack was delivered empty, use these steps to install your storage system and NS224 drive shelf. Skip this step if your cabinet or rack is pre-populated.
+== Step 2: Install the storage system and drive shelf
+If your cabinet or rack is empty, use these steps to install your storage system and drive shelf. Skip this step if your cabinet or rack is pre-populated.
 
 NOTE: A fully loaded NS224 drive shelf can weigh up to 66.78 lbs (30.29 kg) and requires two people to lift or use a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
 

@@ -12,7 +12,15 @@ summary: Prepare to install your AFF A1K system.
 Prepare to install your AFF A1K system.
 
 .Before you begin
-* Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need during the complete system setup process.  If a default value is provided, you can use that value or else enter your own.
+* Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need during the . link:complete-install.html#step-1-gather-cluster-information[complete system setup] process.  If a default value is provided, you can use that value or else enter your own.
+
+* Confirm you have all of the additional equipment and tools that you need to complete the hardware installation.
+
+** Phillips #2 screwdriver 
+** Flashlight
+** ESD strap 
+** Laptop or console with a USB/serial connection
+** Access to a Web browser to configure your storage system
 
 == Step 1: Prepare the site
 Make sure that the site and the cabinet or rack you plan to use meet the specifications for your storage system.
@@ -30,6 +38,9 @@ Check https://hwu.netapp.com[NetApp Hardware Universe^] for power requirements s
 
 . Obtain a 19-inch (48.3-cm) cabinet or rack to fit your storage system and drive shelf. See https://hwu.netapp.com[NetApp Hardware Universe^] for size requirements.
 +
+. Make sure you have adequate rack space:
+** 4U for the storage system 
+** 2U for each NS224 shelf
 
 . Install any required network switches near the storage system.
 +
@@ -66,16 +77,44 @@ a|* Power cords
 +
 Ensure that everything in the boxes matches the list on the packing slip. If there are any discrepancies, note them down for further action.
 
-== Step 3: Obtain additional equipment and tools
-Confirm you have all of the additional equipment and tools that you need to complete the hardware installation.
+== Step 3: Register your hardware
+Registering your storage system provides support benefits.
 
-* Phillips #2 screwdriver 
-* Flashlight
-* ESD strap 
-* Rack space: 
-** 4U for the storage system 
-** 2U for each NS224 shelf
-* Laptop or console with a USB/serial connection
-* Access to a Web browser to configure your storage system
+.Steps
+
+. Locate the serial number for your storage system. 
++
+You can find the number on the packing slip, in your confirmation email, or on the controller after you unpack it.
++
+image::../media/drw_ssn_label.png[Example of the system serial number showing location of the number]
++
+
+. Go to the NetApp Support Site at http://mysupport.netapp.com/[mysupport.netapp.com^].
+. Determine whether you need to register the hardware:
++
+[cols="1a,2a" options="header"]
+|===
+| If you are a...| Follow these steps...
+a|
+Existing NetApp customer
+a|
+
+ .. Sign in with your username and password.
+ .. Select *Products* > *My Products*.
+ .. Confirm that the new serial number is listed.
+ .. If it is not, follow the instructions for new NetApp customers.
+
+a|
+New NetApp customer
+a|
+
+ .. Click *Register Now*, and create an account.
+ .. Select *Products* > *Register Products*.
+ .. Enter the product serial number and requested details.
+
+After your registration is approved, you can download any required software. The approval process might take up to 24 hours.
+|===
+
+
 
 
