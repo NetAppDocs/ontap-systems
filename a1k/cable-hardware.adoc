@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a1k, prepare installation
 summary: Management network ports on the controllers are connected to switches. The HA interconnect and cluster interconnect ports are cabled on both controllers.
 ---
-= Cable the controllers - AFF A1K
+= Cable the hardware - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Cable your storage system and drive shelves according to your configuration.
+Cable your controllers and drive shelves according to your specific system configuration.
 
 .Before you begin
 Check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -158,7 +158,7 @@ IMPORTANT: DO NOT plug in the power cords yet.
 ====
 
 == Step 2: Cable controllers to drive shelves
-Cable your controllers the drive shelves. The following examples shows how to cable your controllers to one drive shelf and two drive shelves. You can connect your controllers to a maximum of four drive shelves.
+Cable your controllers the drive shelves. The following examples shows how to cable your controllers to one drive shelf and to two drive shelves. You can connect your controllers to a maximum of four drive shelves.
 
 
 // start tabbed area
