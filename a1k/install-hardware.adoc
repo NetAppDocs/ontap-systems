@@ -11,7 +11,7 @@ summary: Install your system in cabinet or rack.
 [.lead]
 A cabinet or rack may have storage controllers and drive shelves pre-installed or completely empty. The following instructions describe how to install the hardware in an empty cabinet or rack. 
 
-Remember that these instructions represent one approach. Always adapt the process to meet your specific site requirements for a successful installation.
+Always adapt the process to meet your specific site requirements for a successful installation.
 
 .Before you begin
 * Review the https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[Safety Notices] document, and understand the precautions for moving and installing hardware.
@@ -33,13 +33,19 @@ If your cabinet or rack is empty, use these steps to install your storage system
 
 NOTE: A fully loaded NS224 drive shelf can weigh up to 66.78 lbs (30.29 kg) and requires two people to lift or use a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
 
+NOTE: Airflow through the storage system and shelves enters from the front where the bezel or end caps are installed and exhausts out the rear where the ports are located.
+
 .Steps
 
-. Install the storage system in the middle of the cabinet or rack.
-+
-.. Position the back of the storage system onto the rails, and then support the system from the bottom and slide it into the cabinet or rack.
+. Remove the two controllers from the enclosure.
 
-.. Secure the storage system to the cabinet or rack using the included mounting screws.
+. Install the enclosure into the middle of the cabinet or rack.
++
+.. Position the back of the enclosure onto the rails, and then support the enclosure from the bottom and slide it into the cabinet or rack.
+
+.. Secure the enclosure to the cabinet or rack using the included mounting screws.
+
+. Insert the controllers back into the enclosure.
 +
 . Install the shelf.
 +
