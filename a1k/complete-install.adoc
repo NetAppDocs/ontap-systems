@@ -17,7 +17,7 @@ Gather the information you will need to configure your cluster, such as your clu
 Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need during the cluster setup process. If a default value is provided, you can use that value or else enter your own.
 
 == Step 2: Discover your cluster network
-Use either ONTAP System manager or ONTAP command line interface (CLI) Cluster Setup wizard to discover your cluster network. 
+The discovery process enables you to discover the topology of ONTAP cluster servers on your network.
 
 // start tabbed area
 
