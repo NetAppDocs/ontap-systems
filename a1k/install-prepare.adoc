@@ -12,10 +12,7 @@ summary: Prepare to install your AFF A1K system.
 Prepare to install your AFF A1K system.
 
 .Before you begin
-* Access link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for information about site requirements and configuration options. 
-
-* Access the link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Release Notes for your version of ONTAP^] for more information about your storage system.
-
+* Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need during the complete system setup process.  If a default value is provided, you can use that value or else enter your own.
 
 == Step 1: Prepare the site
 Make sure that the site and the cabinet or rack you plan to use meet the specifications for your storage system.
@@ -26,79 +23,15 @@ Make sure that the site and the cabinet or rack you plan to use meet the specifi
 +
 See https://hwu.netapp.com[NetApp Hardware Universe^] for site requirements.
 
-. Confirm that your location provides the correct voltage of AC or DC power:
-+
-* 200 to 240 volts AC
-* 40 to 48 volts DC
+. Confirm that your location provides the correct voltage of AC or DC power for your storage system.
 
 +
 Check https://hwu.netapp.com[NetApp Hardware Universe^] for power requirements specific to your system configuration.
 
-. Obtain a 19-inch (48.3-cm) cabinet or rack to fit the AFF A1K storage system and the NS224 drive shelf of the following size (without cables). 
-+
-[grid="none", frame="none", width="100%",cols="29%,17%,15%,15%,24%",options="header",]
-|===
-| |*Height* |*Width* |*Depth* |*Maximum weight*
-|*AFF A1K system* 
-
-(_per controller_)
-a|
-3.43 in
-
-(8.7 cm)
-a|
-17.6 in
-
-(44.7 cm) 
-a|
-30.0 in
-
-(76.3 cm)
-a|
-53.3 lb
-
-(24.2 kg)
-
-| a|
-
-
-a|
-
-
-a|
-
-
-a|
-
-
-|*NS224 Drive shelf* a|
-3.43 in.
-
-(8.7 cm)
-
-a|
-17.6 in.
-
-(44.7 cm)
-
-a|
-21.38 in.
-
-(54.3 cm)
-
-a|
-66.8 lb.
-
-(28.2 kg)
-
-|===
+. Obtain a 19-inch (48.3-cm) cabinet or rack to fit your storage system and drive shelf. See https://hwu.netapp.com[NetApp Hardware Universe^] for size requirements.
 +
 
-The AFF A1K system weight will vary based on the specific configuration of the
-controller/mezzanine cards and the number and type of drives in the system.
-+
-
-. Install any required network switches near the AFF A1K controllers.
+. Install any required network switches near the storage system.
 +
 
 See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation] for installation instructions and link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for compatibility information.
