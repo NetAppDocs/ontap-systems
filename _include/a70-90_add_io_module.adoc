@@ -35,13 +35,14 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 == Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself.
+. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
 . Disconnect power by pulling the controller module out about three inches:
 
++
 NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
-
++
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
-. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
 . Remove the target slot blanking module from the chassis:
 
 +
@@ -61,20 +62,26 @@ Cam locking button
 . Install the I/O module:
  .. Align the I/O module with the edges of the slot.
  .. Slide the I/O module into the slot until the cam latch begins to rotate a little upward.
- .. Rotate the I/O cam latch all the way up to lock the module in place.
-. If the replacement I/O module is a NIC, cable the module to the data switches.
+ . Rotate the I/O cam latch all the way up to lock the module in place.
+  .. Cable the I/O module.
++
+If the I/O module is a NIC, cable the module to the data switches.  
++
+If the I/O module is a storage module, cable it to the storage.
+
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
 
-. Rotate the cable management arm up to the closed position.
+
 . Reinstall the controller module into the chassis.
-
++
 NOTE: If you have DC power supplies, reconnect the cable blocks to the PSUs.
-
++
+. Rotate the cable management arm up to the closed position.
 . Reboot the controller from the LOADER prompt: _bye_
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
-
++
 . Give back the controller from the partner controller: `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . Repeat these steps for controller B.
@@ -124,13 +131,14 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 == Step 2: Replace I/O modules
 . If you are not already grounded, properly ground yourself.
+. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Disconnect power by pulling the controller module out about three inches:
-
++
 NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
-
++
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
-. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
+
 
 +
 image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
@@ -148,25 +156,30 @@ Cam locking button
 .. Depress the cam latch button.
 +
 The cam latch moves away from the chassis.
-.. Rotate the cam latch down until it is in a horizontal position.
-+
-The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
-.. Remove the I/O module from the chassis by pulling on the module cam latch.
+.. Rotate the cam latch down as far as it will go.
+.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
 . Install the I/O module into the target slot:
 .. Align the I/O module with the edges of the slot.
-.. Slide the I/O module into the slot until the cam latch begins to rotate a little upward.
-.. Rotate the I/O cam latch all the way up to lock the module in place.
-. Rotate the cable management arm into the locked position.
+.. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+. Cable the I/O module.
++
+If the I/O module is a NIC, cable the module to the data switches.  
++
+If the I/O module is a storage module, cable it to the storage.
+
+
 . Repeat the remove and install steps to replace additional modules for the controller.
+
 . If the replacement I/O module is a NIC, cable the module or modules to the data switches.
 . Reinstall the controller module into the chassis.
-
++
 NOTE: If you have DC power supplies, reconnect the cable blocks to the PSUs.
-
-. Reboot the controller from the LOADER prompt:
++
+. Rotate the cable management arm into the locked position.
+. Reboot the controller from the LOADER prompt:_bye_
 .. Check the version of BMC on the controller: `system service-processor show`
 .. Update the BMC firmware if needed: `system service-processor image update`
 .. Reboot the node: `bye`
