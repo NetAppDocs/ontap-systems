@@ -139,7 +139,8 @@ NOTE: If your system has DC power supplies, disconnect the power cable block fro
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
 
-
+. Unplug any cabling on the target I/O module.
+. Remove the target I/O module from the chassis:
 +
 image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
 +
@@ -151,8 +152,6 @@ Cam locking button
 
 |===
 
-. Unplug any cabling on the target I/O module.
-. Remove the target I/O module from the chassis:
 .. Depress the cam latch button.
 +
 The cam latch moves away from the chassis.
