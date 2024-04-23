@@ -1,0 +1,74 @@
+
+. Power on the shelf, if it's not already on.
++
+You connect the power cords first to the shelf, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.
+
+. Remove the left end cap to locate the small hole to the right of the LEDs.
++
+image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[width=300px]
+
++
+
+[cols="20%,80%"]
+|===
+a|
+image::../media/legend_icon_01.svg[width=20] 
+a|
+Shelf end cap
+a|
+image::../media/legend_icon_02.svg[width=20]
+a|
+Shelf faceplate 
+a|
+image::../media/legend_icon_03.svg[width=20]
+a|
+Shelf ID number
+a|
+image::../media/legend_icon_04.svg[width=20]
+a|
+Shelf ID access button
+
+|===
++
+. Change the first number of the shelf ID:
+ .. Insert the paper clip or ballpoint pen into the small hole.
+ .. Press and hold the button until the first number on the digital display blinks, and then release the button.
++
+It can take up to 15 seconds for the number to blink. This activates the shelf ID programming mode.
++
+NOTE: If the ID takes longer than 15 seconds to blink, press and hold the button again, making sure to press it in all the way.
+
+ .. Press and release the button to advance the number until you reach the desired number from 0 to 9.
++
+Each press and release duration can be as short as one second.
++
+The first number continues to blink.
+. Change the second number of the shelf ID:
+ .. Press and hold the button until the second number on the digital display blinks.
++
+It can take up to three seconds for the number to blink.
++
+The first number on the digital display stops blinking.
+
+ .. Press and release the button to advance the number until you reach the desired number from 0 to 9.
++
+The second number continues to blink.
+. Lock in the desired number and exit the programming mode by pressing and holding the button until the second number stops blinking.
++
+It can take up to three seconds for the number to stop blinking.
++
+Both numbers on the digital display start blinking and the amber LED on the ODP illuminates after about five seconds, alerting you that the pending shelf ID has not yet taken effect.
+
+. Power-cycle the shelf to make the shelf ID take effect.
++
+You must unplug the power cord from both power supplies on the shelf, wait the appropriate amount of time, and then plug them back into the shelf power supplies to complete the power cycle.
++
+A power supply is powered on as soon as the power cord is plugged in. Its bicolored LED should illuminate green.
+
+ ** If ONTAP is not yet running or you are hot-adding a shelf (that has not yet been cabled to the system), wait at least 10 seconds.
+ ** If ONTAP is running (controllers are available to serve data), and all drives in the shelf are unowned, spares, or part of offlined aggregate(s), wait at least 70 seconds.
++
+This time allows ONTAP to properly delete the old shelf address and update the copy of the new shelf address.
+
+. Replace the left end cap.
+
