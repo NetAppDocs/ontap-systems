@@ -9,27 +9,12 @@ summary: Install your system in cabinet or rack.
 :imagesdir: ../media/
 
 [.lead]
-A cabinet or rack may have storage controllers and drive shelves pre-installed or completely empty. The following instructions describe how to install the hardware in an empty cabinet or rack. 
-
-Always adapt the process to meet your specific site requirements for a successful installation.
+The following instructions describe how to install the hardware in an empty cabinet or rack. Skip this step if your cabinet or rack is pre-populated.
 
 .Before you begin
-* Review the https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[Safety Notices] document, and understand the precautions for moving and installing hardware.
+* You should review the https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[Safety Notices] document, and understand the precautions for moving and installing hardware.
 
-* You have the instructions packaged with the rail kit.
-
-
-== Step 1: Install the rail kit
-If your hardware was shipped separately (not already installed in the cabinet or rack), you will need to install support rails in the cabinet or rack.
-The AFF A1K storage system can only be mounted in four-post racks or cabinets using one of the following rack mount kits:
-
-* link:../platform-supplemental/superrail-install.html[SuperRail kit] for universal use in third-party cabinets or racks
-*  link:../platform-supplemental/42u-1280mm-install-additional-rails.html[NetApp-specific rail kit] designed for the NetApp 1280mm cabinet
-
-Follow the instructions packaged with your the rail kit to install the rails in your cabinet or rack.
-
-== Step 2: Install the storage system and drive shelf
-If your cabinet or rack is empty, use these steps to install your storage system and drive shelf. Skip this step if your cabinet or rack is pre-populated.
+* You should have the instructions packaged with the rail kit.
 
 NOTE: A fully loaded drive shelf can weigh up to 66.78 lbs (30.29 kg) and requires two people to lift or use a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
 
@@ -37,17 +22,19 @@ NOTE: Airflow through the storage system and shelves enters from the front where
 
 .Steps
 
-. Remove the two controllers from the enclosure.
+. Install and secure your system in the rack.
 
-. Install the enclosure into the middle of the cabinet or rack.
-+
-.. Position the back of the enclosure onto the rails, and then support the enclosure from the bottom and slide it into the cabinet or rack.
+.. Install the rail kit, as needed, using the instructions included with the kit.
+
+.. To reduce the weight of the platform, remove the controllers and other components from the platform enclosure before lifting it.
+
+.. Position the enclosure onto the rails, and then support the enclosure from the bottom and slide it into place.
 
 .. Secure the enclosure to the cabinet or rack using the included mounting screws.
 
-. Insert the controllers back into the enclosure.
+.. Reinsert the controllers and other components into the enclosure.
 +
-. Install the shelf.
+. Install the shelf or shelves.
 +
 
 .. Position the back of the shelf onto the rails, and then support the shelf from the bottom and slide it into the cabinet or rack.
