@@ -2,14 +2,14 @@
 permalink: a1k/install-prepare.html
 sidebar: sidebar
 keywords: aff a1k, prepare installation
-summary: Prepare to install your AFF A1K system.
+summary: Prepare to install your AFF A1K platform.
 ---
 = Prepare for install - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Prepare to install your AFF A1K system.
+Prepare to install your AFF A1K platform.
 
 .Before you begin
 * Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need when you link:complete-install.html#step-3-configure-your-cluster[configure your cluster].  If a default value is provided, you can use that value or else enter your own.
@@ -31,18 +31,18 @@ Make sure that the site and the cabinet or rack you plan to use meet the specifi
 +
 See https://hwu.netapp.com[NetApp Hardware Universe^] for site requirements.
 
-. Confirm that your location provides the correct voltage of AC or DC power for your storage system.
+. Confirm that your location provides the correct voltage of AC or DC power for your platform.
 
 +
 Check https://hwu.netapp.com[NetApp Hardware Universe^] for power requirements specific to your system configuration.
 
-. Obtain a 19-inch (48.3-cm) cabinet or rack to fit your storage system and drive shelf. See https://hwu.netapp.com[NetApp Hardware Universe^] for size requirements.
+. Obtain a 19-inch (48.3-cm) cabinet or rack to fit your platform and shelf. See https://hwu.netapp.com[NetApp Hardware Universe^] for size requirements.
 +
 . Make sure you have adequate rack space:
-** 4U for the storage system 
+** 4U for the platform 
 ** 2U for each NS224 shelf
 
-. Install any required network switches near the storage system.
+. Install any required network switches near the platform.
 +
 
 See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation] for installation instructions and link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for compatibility information.
@@ -51,7 +51,7 @@ See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch d
 == Step 2: Unpack the boxes
 Unpack all boxes and compare the contents to the items on the packing slip.
 
-.  Carefully open all the boxes. Lay out the contents in an organized manner.
+. Carefully open all the boxes. Lay out the contents in an organized manner.
 
 . Compare the contents you’ve unpacked with the list on the packing slip. 
 +
@@ -62,8 +62,8 @@ The following items are some of the contents you might see in the boxes that you
 |===
 |*Hardware*
 |*Cables* |
-a|* Storage system
-* Drive shelf 
+a|* Platform
+* shelf 
 * Rail kit with instructions 
 * Cable management device 
 * Bezel
@@ -78,11 +78,11 @@ a|* Power cords
 Ensure that everything in the boxes matches the list on the packing slip. If there are any discrepancies, note them down for further action.
 
 == Step 3: Register your hardware
-Registering your storage system provides support benefits.
+Registering your platform provides support benefits.
 
 .Steps
 
-. Locate the serial number for your storage system. 
+. Locate the serial number for your platform. 
 +
 You can find the number on the packing slip, in your confirmation email, or on the controller after you unpack it.
 +

@@ -2,9 +2,9 @@
 permalink: a1k/complete-install.html
 sidebar: sidebar
 keywords: aff a1k, prepare installation
-summary: Complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
+summary: Complete the platform setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the storage system and then connecting to the management switch.
 ---
-= Complete system setup and configuration - AFF A1K
+= Complete storage system setup and configuration - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
@@ -26,7 +26,7 @@ The discovery process enables you to discover the topology of ONTAP cluster serv
 
 .Option 1: Network discovery is enabled
 --
-If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
+If you have network discovery enabled on your laptop, you can complete platform setup and configuration using automatic cluster discovery.
 
 .Steps
 . Connect your laptop to the management switch and access the network computers and devices.
@@ -40,7 +40,7 @@ image::../media/drw_autodiscovery_controler_select.png[]
  .. Right-click and select *refresh*.
  .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
-NOTE: XXXXX is the system serial number for the target node.
+NOTE: XXXXX is the platform serial number for the target node.
 +
 System Manager opens.
 
