@@ -60,10 +60,9 @@ Cam locking button
  .. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
  .. Remove the blanking module.
 . Install the I/O module:
- .. Align the I/O module with the edges of the slot.
- .. Slide the I/O module into the slot until the cam latch begins to rotate a little upward.
- . Rotate the I/O cam latch all the way up to lock the module in place.
-  .. Cable the I/O module.
+ .. Align the I/O module with the edges of the enclosure slot opening.
+ .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+. Cable the I/O module.
 +
 If the I/O module is a NIC, cable the module to the data switches.  
 +
@@ -131,6 +130,14 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 == Step 2: Replace I/O modules
 . If you are not already grounded, properly ground yourself.
+. Disconnect power by pulling the controller module out about three inches:
+
++
+NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
++
+.. Press down on both of the locking latches, and then rotate both latches downward at the same time.
+.. Pull the controller module about 3 inches out of the chassis to disengage power.
+. Unplug any cabling on the target I/O module.
 . Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Disconnect power by pulling the controller module out about three inches:
 +
@@ -155,7 +162,7 @@ Cam locking button
 .. Depress the cam latch button.
 +
 The cam latch moves away from the chassis.
-.. Rotate the cam latch down as far as it will go.
+.. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
 .. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 +
 Make sure that you keep track of which slot the I/O module was in.
