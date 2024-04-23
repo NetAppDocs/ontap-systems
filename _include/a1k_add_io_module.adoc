@@ -35,10 +35,10 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 == Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the PSUs from the PSUs from the controller.
+. Unplug the PSUs cables from the PSUs from the controller.
 
 +
-NOTE: .NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
 +
 
 . Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
@@ -60,7 +60,7 @@ Cam locking button
 . Install the I/O module:
  .. Align the I/O module with the edges of the enclosure slot opening.
  .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
- .. Cable the I/O module.
+ . Cable the I/O module.
 +
 If the I/O module is a NIC, cable the module to the data switches.  
 +
@@ -122,7 +122,13 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 == Step 2: Replace I/O modules
 . If you are not already grounded, properly ground yourself.
-***. Remove the target I/O module:
+. Unplug the PSUs cables from the PSUs from the controller.
+
++
+NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
++
+
+. Remove the target I/O module:
  
 . Unplug any cabling on the target I/O module.
 
@@ -173,7 +179,7 @@ NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/
 +
 [options="header" cols="1,2"]
 |===
-| If I/O module is a...| Then...
+| If the I/O module is a...| Then...
 a|
 NIC module
 a|
