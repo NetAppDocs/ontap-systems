@@ -27,17 +27,8 @@ Make sure that the site and the cabinet or rack you plan to use meet the specifi
 
 .Steps
 
-. Confirm that the site meets the requirements for temperature, humidity, altitude range, airflow, heat dissipation, wiring, power, and grounding. 
-+
-See https://hwu.netapp.com[NetApp Hardware Universe^] for site requirements.
+. Confirm that your site meets the environmental and electrical requirements for your platform as shown in the https://hwu.netapp.com[NetApp Hardware Universe^].
 
-. Confirm that your location provides the correct voltage of AC or DC power for your platform.
-
-+
-Check https://hwu.netapp.com[NetApp Hardware Universe^] for power requirements specific to your system configuration.
-
-. Obtain a 19-inch (48.3-cm) cabinet or rack to fit your platform and shelf. See https://hwu.netapp.com[NetApp Hardware Universe^] for size requirements.
-+
 . Make sure you have adequate rack space:
 ** 4U for the platform 
 ** 2U for each NS224 shelf
