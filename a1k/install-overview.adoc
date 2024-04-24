@@ -26,8 +26,8 @@ Follow these high-level steps to install and set up your AFF A1K storage system 
 
 
 [role="quick-margin-list"]
-. link:cable-hardware.html#step-1-cable-controllers-to-your-network[Cable controllers to the network] 
-. link:cable-hardware.html#step-2-cable-controllers-to-drive-shelves[Cable controllers to the shelves]
+. link:install-cable.html#step-1-cable-controllers-to-your-network[Cable controllers to the network] 
+. link:install-cable.html#step-2-cable-controllers-to-drive-shelves[Cable controllers to the shelves]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Power on system
@@ -40,6 +40,6 @@ Follow these high-level steps to install and set up your AFF A1K storage system 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Complete system setup
 
 [role="quick-margin-list"]
-. link:complete-install.html#step-1-gather-cluster-information[Gather cluster information]
-. link:complete-install.html#step-2-discover-your-cluster-network[Discover your cluster network]
-. link:complete-install.html#step-3-configure-your-cluster[Configure your cluster]
+. link:install-complete.html#step-1-gather-cluster-information[Gather cluster information]
+. link:install-complete.html#step-2-discover-your-cluster-network[Discover your cluster network]
+. link:install-complete.html#step-3-configure-your-cluster[Configure your cluster]

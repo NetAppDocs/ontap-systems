@@ -1,5 +1,5 @@
 ---
-permalink: a1k/cable-hardware.html
+permalink: a1k/install-cable.html
 sidebar: sidebar
 keywords: aff a1k, prepare installation
 summary: Management network ports on the controllers are connected to switches. The HA interconnect and cluster interconnect ports are cabled on both controllers.
@@ -140,7 +140,7 @@ IMPORTANT: DO NOT plug in the power cords yet.
 ====
 
 == Step 2: Cable controllers to drive shelves
-Cable your controllers the drive shelves. The following examples shows how to cable your controllers to one drive shelf and to two drive shelves. You can connect your controllers to a maximum of four drive shelves.
+Cable your controllers to the shelf or shelves. The following examples shows how to cable your controllers to one shelf and to two shelves. You can connect your controllers to a maximum of four shelves.
 
 
 // start tabbed area
@@ -152,7 +152,9 @@ Cable your controllers the drive shelves. The following examples shows how to ca
 --
 Cable each controller to the NSM modules on the NS224 drive shelf.
 
-image:../media/drw_ns224_vino_i_1shelf_1card_ieops-1639.svg[]
+image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[]
+
+image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[]
 
 .Steps
 . Connect controller A port e11a to port e0a on NSM A on the shelf.
@@ -167,7 +169,8 @@ image:../media/drw_ns224_vino_i_1shelf_1card_ieops-1639.svg[]
 --
 Cable each controller to the NSM modules on both NS224 drive shelves.
 
-image:../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[]
+image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[]
+image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[]
 
 .Steps
 
