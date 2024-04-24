@@ -128,11 +128,8 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
 +
 
-. Remove the target I/O module:
- 
 . Unplug any cabling on the target I/O module.
-
-
+. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Remove the target I/O module from the chassis:
 +
 image::../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[Remove-replace A1K I/O module]
@@ -153,10 +150,10 @@ The cam latch moves away from the chassis.
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
+
 . Install the I/O module into the target slot in the enclosure:
 .. Align the module with the edges of the enclosure slot opening.
- .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+.. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
 . Cable the I/O module.
 . Repeat the remove and install steps to replace additional modules for the controller.
 . Reconnect the PSUs.

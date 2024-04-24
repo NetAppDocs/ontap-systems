@@ -23,15 +23,20 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 == Step 2: Replace I/O modules
 
-To replace an I/O module, locate it within the chassis and follow the specific sequence of steps.
+To replace an I/O module, locate it within the enclosure and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
-. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
-. Unplug any cabling associated with the target I/O module.
+. Unplug the PSUs cables from the PSUs from the controller.
+
++
+NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
 +
 
-image:../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[AFF A1K IO card remove]
+. Unplug any cabling on the target I/O module.
+. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
 
++
+image:../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[AFF A1K IO card remove]
 +
 [cols="10,90"]
 |===
@@ -44,21 +49,22 @@ a|
 +
 Make sure that you label the cables so that you know where they came from.
 
-. Remove the target I/O module from the chassis:
+. Remove the target I/O module from the enclosure:
 .. Depress the cam button on the target module.
 +
-The cam button moves away from the chassis.
+The cam button moves away from the enclosure.
 
-.. Rotate the cam latch down as far as it will go.
+.. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
 .. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 +
 Make sure that you keep track of which slot the I/O module was in.
 
 . Set the I/O module aside.
 . Install the replacement I/O module into the enclosure:
-.. Align the I/O module with the edges of the enclosure slot opening.
-.. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place. 
-. Recable the I/O module, as needed.
+.. Align the module with the edges of the enclosure slot opening.
+.. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+. Cable the I/O module.
+. Reconnect the PSUs.
 . Rotate the cable management arm up to the closed position.
 
 == Step 3: Reboot the controller
