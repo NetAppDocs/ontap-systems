@@ -28,9 +28,12 @@ To replace the NVRAM module, locate it in slot 4/5 in the chassis and follow the
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the power cord from the PSU.
-. Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
++
+NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
++
+. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Remove the target NVRAM module from the chassis:
- .. Depress the cam button.
+ .. Depress the cam latch button.
 +
 The cam button moves away from the chassis.
 
@@ -56,6 +59,9 @@ DIMM locking tab
  .. Align the module with the edges of the chassis opening in slot 4/5.
  .. Gently slide the module into the slot all the way, and then push the cam latch all the way up to lock the module in place.
  . Recable the PSU.
+ +
+NOTE: If your system has DC power supplies, reconnect the power cable block to the PSU.
++
  . Rotate the cable management tray up to the closed position.
 
 == Step 3: Replace a NVRAM DIMM
@@ -64,6 +70,9 @@ To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, an
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the power cord from the PSU.
++
+NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
++
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the target NVRAM module from the chassis:
  .. Depress the cam button.
@@ -95,6 +104,9 @@ DIMM locking tab
 . Install the NVRAM module into the chassis:
  .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
 . Recable the PSU.
++
+NOTE: If your system has DC power supplies, reconnect the power cable block to the PSU.
++
 . Rotate the cable management tray up to the closed position.
 
 == Step 4: Reboot the controller
