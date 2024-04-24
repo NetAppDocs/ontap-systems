@@ -35,7 +35,6 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 == Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself.
-. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
 . Disconnect power by pulling the controller module out about three inches:
 
 +
@@ -43,6 +42,7 @@ NOTE: If your system has DC power supplies, disconnect the power cable block fro
 +
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
+. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
 . Remove the target slot blanking module from the chassis:
 
 +
@@ -60,8 +60,8 @@ Cam locking button
  .. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
  .. Remove the blanking module.
 . Install the I/O module:
- .. Align the I/O module with the edges of the enclosure slot opening.
- .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+ .. Align the I/O module with the edges of the chassis slot opening.
+ .. Gently slide the module into the slot all the way into the chassis, and then rotate the cam latch all the way up to lock the module in place.
 . Cable the I/O module.
 +
 If the I/O module is a NIC, cable the module to the data switches.  
@@ -139,14 +139,6 @@ NOTE: If your system has DC power supplies, disconnect the power cable block fro
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
 . Unplug any cabling on the target I/O module.
 . Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
-. Disconnect power by pulling the controller module out about three inches:
-+
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
-+
-.. Press down on both of the locking latches, and then rotate both latches downward at the same time.
-.. Pull the controller module about 3 inches out of the chassis to disengage power.
-
-. Unplug any cabling on the target I/O module.
 . Remove the target I/O module from the chassis:
 +
 image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
@@ -163,23 +155,16 @@ Cam locking button
 +
 The cam latch moves away from the chassis.
 .. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
-.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
+.. Remove the module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
 . Install the I/O module into the target slot:
 .. Align the I/O module with the edges of the slot.
-.. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+.. Gently slide the module into the slot all the way into the chassis, and then rotate the cam latch all the way up to lock the module in place.
 . Cable the I/O module.
-+
-If the I/O module is a NIC, cable the module to the data switches.  
-+
-If the I/O module is a storage module, cable it to the storage.
-
 
 . Repeat the remove and install steps to replace additional modules for the controller.
-
-. If the replacement I/O module is a NIC, cable the module or modules to the data switches.
 . Reinstall the controller module into the chassis.
 +
 NOTE: If you have DC power supplies, reconnect the cable blocks to the PSUs.
