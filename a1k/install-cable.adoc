@@ -140,7 +140,9 @@ IMPORTANT: DO NOT plug in the power cords yet.
 ====
 
 == Step 2: Cable controllers to drive shelves
-Cable your controllers to the shelf or shelves. The following examples shows how to cable your controllers to one shelf and to two shelves. You can connect your controllers to a maximum of four shelves.
+Cable your controllers to the shelf or shelves. 
+
+The following examples show how to cable your controllers to one shelf and to two shelves. You can connect your controllers to a maximum of four shelves.
 
 
 // start tabbed area
@@ -152,15 +154,16 @@ Cable your controllers to the shelf or shelves. The following examples shows how
 --
 Cable each controller to the NSM modules on the NS224 drive shelf.
 
-image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[]
-
-image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[]
-
 .Steps
 . Connect controller A port e11a to port e0a on NSM A on the shelf.
 . Connect controller A port e10b to port e0b on NSM B on the shelf.
++
+image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[]
+
 . Connect controller B port e11a to port e0a on NSM B on the shelf.
 . Connect controller B port e10b to port e0b on NSM A on the shelf.
++
+image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[]
 
 |===
 --
@@ -169,12 +172,11 @@ image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[]
 --
 Cable each controller to the NSM modules on both NS224 drive shelves.
 
-image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[]
-image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[]
-
 .Steps
 
 . On shelf 1, cable the following connections:
++
+image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[200]
 +
 .. Connect controller A port e11a to NSM A e0a.
 
@@ -184,7 +186,10 @@ image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[]
 
 .. Connect controller B port e11b to NSM A e0b.
 
+
 . On shelf 2, cable the following connections:
++
+image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[200]
 +
 .. Connect controller A port e10a to NSM A e0a.
 
