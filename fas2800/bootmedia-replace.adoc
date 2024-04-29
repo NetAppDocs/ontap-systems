@@ -64,7 +64,7 @@ Boot media locking tab
 
 . If you are not already grounded, properly ground yourself.
 . Remove the mezzanine card using the following illustration or the FRU map on the controller module:
-.. Remove the mezzanine card bezel by sliding it straight out from thr controller module.
+.. Remove the IO Plate by sliding it straight out from thr controller module.
 .. Loosen the thumbscrews on the mezzanine card.  
 +
 
@@ -85,7 +85,7 @@ Check the boot media to make sure that it is seated squarely and completely in t
 . Reinstall the mezzanine card: 
 .. Align the socket on the motherboard with the socket on the mezzanine card, and then gently seat the card in the socket.
 .. Tighten the three thumbscrews on the mezzanine card.
-.. Reinstall the mezzanine bezel.
+.. Reinstall the IO Plate.
 . Reinstall the controller module cover and lock it into place.
 
 == Step 3: Transfer the boot image to the boot media

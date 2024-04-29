@@ -68,7 +68,7 @@ image::../media/drw_2850_replace_HIC_IEOPS-700.svg[width=500px]
 a|
 image::../media/legend_icon_01.svg[width=30px]
 a|
-Riser bezel
+IO Plate
 a|
 image::../media/legend_icon_02.svg[width=30px]
 a|
@@ -76,7 +76,7 @@ PCIe mezzanine card
 
 |===
 
-.. Remove the mezzanine card bezel by sliding it straight out from thr controller module.
+.. Remove the IO Plate by sliding it straight out from thr controller module.
 .. Loosen the thumbscrews on the mezzanine card and lift the mezzanine card straight up.  
 +
 NOTE: You can loosen the thumbscrews with your fingers or a screwdriver. If you use your fingers, you might need to rotate the NV battery up for better finger purchase on the thumbscrew next to it.
@@ -84,7 +84,7 @@ NOTE: You can loosen the thumbscrews with your fingers or a screwdriver. If you 
 . Reinstall the mezzanine card:
 .. Align the socket on the replacement mezzanine card plug with the socket on the motherboard, and then gently seat the card squarely into the socket.
 .. Tighten the three thumbscrews on the mezzanine card.
-.. Reinstall the mezzanine bezel.
+.. Reinstall the IO Plate.
 . Reinstall the controller module cover and lock it into place.
 
 == Step 4: Install the controller module

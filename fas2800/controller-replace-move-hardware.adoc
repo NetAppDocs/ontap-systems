@@ -80,7 +80,7 @@ NOTE: Do not plug the battery in yet.  You will plug it in once the rest of the 
 
 == Step 3:  Remove the mezzanine card 
 
-Remove the mezzanine bezel and PCIe mezzanine card from the impaired controller module.
+Remove the IO Plate and PCIe mezzanine card from the impaired controller module.
 
 image::../media/drw_2850_replace_HIC_IEOPS-700.svg[width=500px]
 
@@ -90,7 +90,7 @@ image::../media/drw_2850_replace_HIC_IEOPS-700.svg[width=500px]
 a|
 image::../media/legend_icon_01.svg[width=30px]
 a|
-Riser bezel
+IO Plate
 a|
 image::../media/legend_icon_02.svg[width=30px]
 a|
@@ -98,7 +98,7 @@ PCIe mezzanine card
 
 |===
 
-. Remove the mezzanine card bezel by sliding it straight out from the controller module.
+. Remove the IO Plate by sliding it straight out from the controller module.
 . Loosen the thumbscrews on the mezzanine card.  
 +
 NOTE: You can loosen the thumbscrews with your fingers or a screwdriver. 
@@ -146,7 +146,7 @@ Install the mezzanine card in the replacement controller module.
 .. Align mezzanine card with the socket on the motherboard. 
 .. Gently push down on the card to seat the card in the socket.
 .. Tighten the three thumbscrews on the mezzanine card.
-. Reinstall the mezzanine card bezel.
+. Reinstall the IO Plate.
 
 == Step 6: Move the DIMMs
 

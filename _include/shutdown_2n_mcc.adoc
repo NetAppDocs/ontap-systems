@@ -1,7 +1,6 @@
 To shut down the impaired controller, you must determine the status of the controller and, if necessary, switch over the controller so that the healthy controller continues to serve data from the impaired controller storage.
 
 .About this task
-* If you are using NetApp Storage Encryption, you must have reset the MSID using the instructions in the "Return a FIPS drive or SED to unprotected mode" section of link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html[NetApp Encryption overview with the CLI^].
 
 * You must leave the power supplies turned on at the end of this procedure to provide power to the healthy controller.
 
