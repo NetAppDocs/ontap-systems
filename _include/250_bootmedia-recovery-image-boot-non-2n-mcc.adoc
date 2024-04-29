@@ -58,7 +58,7 @@ If you are prompted to continue with the update, press `y`.
 . Ensure that the environmental variables are set as expected:
  .. Take the controller to the LOADER prompt.
  .. Check the environment variable settings with the `printenv` command.
- .. If an environment variable is not set as expected, modify it with the `setenvenvironment_variable_name changed_value` command.
+ .. If an environment variable is not set as expected, modify it with the `setenv _environment_variable_name_ _changed_value_` command.
  .. Save your changes using the `saveenv` command.
 . The next depends on your system configuration:
  ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia-encryption-restore.adoc[Restore OKM, NSE, and NVE as needed]
@@ -151,7 +151,7 @@ If you are prompted to continue with the update, press `y`.
 . Ensure that the environmental variables are set as expected:
  .. Take the controller to the LOADER prompt.
  .. Check the environment variable settings with the `printenv` command.
- .. If an environment variable is not set as expected, modify it with the `setenvenvironment_variable_name changed_value` command.
+ .. If an environment variable is not set as expected, modify it with the `set _envenvironment_variable_name_ _changed_value_` command.
  .. Save your changes using the `saveenv` command.
 . The next depends on your system configuration:
  ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia-encryption-restore.adoc[Restore OKM, NSE, and NVE as needed]

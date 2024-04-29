@@ -241,10 +241,6 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 . Verify that the expected volumes are present for each controller: `vol show -node node-name`
 . If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`
 
-== Step 6: Restore Storage and Volume Encryption functionality
-
-include::../_include/restore_storage_encryption.adoc[]
-
-== Step 7: Return the failed part to NetApp
+== Step 6: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]

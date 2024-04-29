@@ -284,10 +284,6 @@ include::../_include/2n_mcc_reassign_sysid.adoc[]
 --
 ====
 
-== Step 6: Restore Storage and Volume Encryption functionality
-
-include::../_include/restore_storage_encryption.adoc[]
-
-== Step 7: Return the failed part to NetApp
+== Step 6: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
