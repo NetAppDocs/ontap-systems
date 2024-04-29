@@ -27,17 +27,19 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 To replace the NVRAM module, locate it in slot 4/5 in the chassis and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
-
+. Unplug the power cord from the PSU.
++
+NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
++
+. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Remove the target NVRAM module from the chassis:
- .. Depress the cam button.
+ .. Depress the cam latch button.
 +
 The cam button moves away from the chassis.
 
- .. Rotate the cam latch down until it is in a horizontal position.
+ .. Rotate the cam latch as far as it will go.
 +
-The NVRAM module disengages from the chassis and moves out a few inches.
-
- .. Remove the NVRAM module from the chassis by pulling the cam handle.
+.. Remove the NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 +
 image::../media/drw_A70-90_NVRAM12_remove_replace_IEOPS-1370.svg[]
 +
@@ -53,26 +55,34 @@ DIMM locking tab
 |===
 . Set the NVRAM module on a stable surface.
 . Remove the DIMMs, one at a time, from the old NVRAM module and install them in the replacement NVRAM module.
-. Close the cover on the module.
 . Install the replacement NVRAM module into the chassis:
  .. Align the module with the edges of the chassis opening in slot 4/5.
- .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then push the cam latch all the way up to lock the module in place.
+ .. Gently slide the module into the slot all the way, and then push the cam latch all the way up to lock the module in place.
+ . Recable the PSU.
+ +
+NOTE: If your system has DC power supplies, reconnect the power cable block to the PSU.
++
+ . Rotate the cable management tray up to the closed position.
 
 == Step 3: Replace a NVRAM DIMM
 
-To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, open the module, and then replace the target DIMM.
+To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, and then replace the target DIMM.
 
 . If you are not already grounded, properly ground yourself.
+. Unplug the power cord from the PSU.
++
+NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
++
+. Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the target NVRAM module from the chassis:
  .. Depress the cam button.
 +
 The cam button moves away from the chassis.
 
- .. Rotate the cam latch down until it is in a horizontal position.
+.. Rotate the cam latch as far as it will go.
 +
-The NVRAM module disengages from the chassis and moves out a few inches.
 
- .. Remove the NVRAM module from the chassis by pulling the cam handle.
+.. Remove the NVRAM module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
 +
 image::../media/drw_A70-90_NVRAM12_remove_replace_IEOPS-1370.svg[]
 +
@@ -92,8 +102,12 @@ DIMM locking tab
 +
 . Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
 . Install the NVRAM module into the chassis:
- .. Align the module with the edges of the chassis opening in slot 6.
- .. Gently slide the module into the slot until the lettered and numbered cam latch begins to engage with the I/O cam pin, and then push the cam latch all the way up to lock the module in place.
+ .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
+. Recable the PSU.
++
+NOTE: If your system has DC power supplies, reconnect the power cable block to the PSU.
++
+. Rotate the cable management tray up to the closed position.
 
 == Step 4: Reboot the controller
 
@@ -186,6 +200,6 @@ dr-group-id            cluster node           configuration-state
 . If storage encryption is enabled, you must restore functionality.
 . If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`
 
-== Step 7: Return the failed part to NetApp
+== Step 6: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]

@@ -5,8 +5,6 @@ The power supplies are redundant and hot-swappable.
 .About this task
 This procedure is written for replacing one PSU at a time.
 
-NOTE: It is a best practice to replace the PSU within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded PSU until the PSU is replaced.
-
 IMPORTANT: Do not mix PSUs with different efficiency ratings or different input types. Always replace like for like.
 
 Use the appropriate procedure for your type of PSU: AC or DC.  
@@ -22,23 +20,19 @@ To replace an AC PSU, complete the following steps.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
 . Disconnect the PSU:
  .. Open the power cable retainer, and then unplug the power cable from the PSU.
- .. Unplug the power cable from the power source.
 . Remove the PSU by rotating the handle up, press the locking tab, and then pull PSU out of the controller module.
 +
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_a800_replace_psu.png[]
+image::../media/drw_A1K_PSU_remove_replace_IEOPS-1378.svg[A1K PSU replace]
 +
 [cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.svg[width=30px]
 a|
-Blue PSU locking tab
-a|
-image:../media/legend_icon_02.svg[width=30px]
-a|
-Power supply
+Terra cotta PSU locking tab
+
 |===
 
 . Install the replacement PSU in the controller module:
@@ -50,7 +44,7 @@ The power supplies will only properly engage with the internal connector and loc
 NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
 
 . Reconnect the PSU cabling:
- .. Reconnect the power cable to the PSU and the power source.
+ .. Reconnect the power cable to the PSU.
  .. Secure the power cable to the PSU using the power cable retainer.
 
 +

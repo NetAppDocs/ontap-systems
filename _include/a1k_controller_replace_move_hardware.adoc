@@ -1,4 +1,4 @@
-To replace the controller, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
+To replace the controller, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the enclosure, and then boot the system to Maintenance mode.
 
 == Step 1: Move the fans
 
@@ -58,15 +58,13 @@ NV battery pack
 
 +
 
-*Attention:* The NV module LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
-
-+
-
-. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
-. Grasp the battery and lift the battery out of the housing and controller module.
+. Lift the battery up to access the battery plug.
+. Squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
+. Lift the battery out of the air duct and controller module.
 . Move the battery pack to the replacement controller module and then install it in the NV battery air duct:
- .. Insert the battery pack into the slot and press firmly down on the battery pack to make sure that it is locked into place.
  .. Plug the battery plug into the socket and make sure that the plug locks into place.
+ .. Insert the battery pack into the slot and press firmly down on the battery pack to make sure that it is locked into place.
+ 
  .. Close the NV battery air duct.
 
 == Step 4: Move system DIMMs
@@ -109,10 +107,3 @@ Close the motherboard air duct.
 
 include::../_include/a1k_controller_install_step_physical.adoc[]
 
-. Plug the system cables and transceiver modules into the controller module and reinstall the cable management device.
-. Plug the power cables into the power supplies and reinstall the power cable retainers.
-
-+
-NOTE: If your system has DC power supplies, make sure the thumbscrews on the power supply cable are tight.
-
-+

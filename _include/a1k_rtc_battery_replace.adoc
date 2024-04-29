@@ -1,6 +1,6 @@
 You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.
 
-* You can use this procedure with all versions of ONTAP supported by your system
+* You can use this procedure with all versions of ONTAP supported by your system.
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
 == Step 1: Shut down the impaired controller
@@ -25,14 +25,13 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 
 include::../_include/a1k_controller_remove_physical.adoc[]
  
-. Open the air duct:
- .. Press in the locking tabs on the top of the air duct in the middle of the controller module.
- .. Rotate it upward to its completely open position.
-
 == Step 3: Replace the RTC battery
 
-To replace the RTC battery, locate the item inside the controller module and follow the specific sequence of steps.
+Remove failed RTC battery and install the replacement RTC battery.
 
+. Open the controller air duct on the top of the controller.
+.. Insert your fingers in the recesses at the far ends of the air duct.
+.. Lift the air duct and rotate it upward as far as it will go.
 . Locate the RTC battery under the air duct.
 +
 image::../media/drw_A1K_RTC_remove_replace_IEOPS-1381.svg[]
@@ -54,12 +53,21 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 
 == Step 4: Reinstall the controller module
 
+
 include::../_include/a1k_controller_install_step_physical.adoc[]
 
 == Step 5: Reset the time and date on the controller
 
- . Check the date and time on the healthy controller with the `show date` command.
- .. At the LOADER prompt on the target controller, check the time and date.
+NOTE: After replacing the RTC battery, inserting controller and powering on first BIOS reset, you will see the following error messages: 
+_RTC date/time error. Reset date/time to default._
+_RTC power failure error._
+These messages are excpected and you can continue with this procedure.
+
+ . Check the date and time on the healthy controller with the `cluster date show` command.
+
+NOTE: If your system stops at the boot menu, select the option for  `Reboot node` and respond `y` when prompted, then boot to LOADER by pressing `Ctrl-C`
+
+ .. At the LOADER prompt on the target controller, check the time and date with the `cluster date show` command.
  .. If necessary, modify the date with the `set date mm/dd/yyyy` command.
  .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
  . Confirm the date and time on the target controller.

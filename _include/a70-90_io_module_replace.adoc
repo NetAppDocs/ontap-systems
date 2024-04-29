@@ -27,47 +27,54 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 To replace an I/O module, locate it within the chassis and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
-. Unplug any cabling associated with the target I/O module.
+. Disconnect power by pulling the controller module out about three inches:
+
++
+NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
++
+.. Press down on both of the locking latches, and then rotate both latches downward at the same time.
+.. Pull the controller module about 3 inches out of the chassis to disengage power.
+. Unplug any cabling on the target I/O module.
 +
 Make sure that you label the cables so that you know where they came from.
 
-. Remove the I/O module.
-+
-.. Depress the target I/O module cam button.
-+
-The cam button moves away from the chassis.
+. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 
-.. Rotate the cam latch down until it is in a horizontal position.
-+
-The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
-
-.. Remove the I/O module from the chassis by pulling on the cam latch on the side of the module face.
-
+. Remove the I/O module from the chassis:
 
 +
-
-Make sure that you keep track of which slot the I/O module was in.
-
+image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
 +
 
-image:../media/drw_a70_90_IO_remove_replace_IEOPS-1372.svg[]
-
-+
-[cols="10,90"]
+[cols=1,4]
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1] a|
-I/O cam latch
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-I/O cam latch completely unlocked
+Cam locking button
+
 |===
 
-
+.. Depress the cam latch button.
++
+The cam latch moves away from the chassis.
+.. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
+.. Remove the module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
++
+Make sure that you keep track of which slot the I/O module was in.
++
 . Set the I/O module aside.
 . Install the replacement I/O module into the chassis by gently sliding the I/O module into the slot until the I/O cam latch begins to engage with the I/O cam pin, and then push the I/O cam latch all the way up to lock the module in place.
 . Recable the I/O module, as needed.
+. Install the I/O module into the target slot:
+.. Align the I/O module with the edges of the slot.
+.. Gently slide the module into the slot all the way into the chassis, and then rotate the cam latch all the way up to lock the module in place.
+. Cable the I/O module.
+. Repeat the remove and install steps to replace additional modules for the controller.
+. Reinstall the controller module into the chassis.
++
+NOTE: If you have DC power supplies, reconnect the cable blocks to the PSUs.
++
+. Rotate the cable management arm into the locked position.
 
 == Step 3: Reboot the controller
 
@@ -83,7 +90,6 @@ NOTE: If the new I/O module is not the same model as the failed module, you must
 +
 NOTE: This reinitializes the I/O cards and other components and reboots the node.
 
-. If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs, convert these ports to 10 GbE connections by using the nicadmin convert command from Maintenance mode. See https://docs.netapp.com/us-en/ontap/networking/convert_40gbe_nic_ports_into_multiple_10gbe_ports_for_10gbe_connectivity.html[Convert 40GbE NIC ports into multiple 10GbE ports for 10GbE connectivity^] for more information.
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
