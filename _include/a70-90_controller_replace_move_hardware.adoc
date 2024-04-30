@@ -19,7 +19,7 @@ image::../media/drw_A70-90_PSU_remove_replace_IEOPS-1368.svg[PSU remove]
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px]
 |
-Blue power supply locking tab
+Terracotta  supply locking tab
 a|
 image::../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
@@ -91,7 +91,9 @@ NV battery pack plug
 
 Move the DIMMs to the replacement controller module.
 
-. Open the motherboard air duct by pinching the tabs in the middle of the air duct and rotating it upward.
+. Open the controller air duct on the top of the controller.
+.. Insert your fingers in the recesses at the far ends of the air duct.
+.. Lift the air duct and rotate it upward as far as it will go.
 . Locate the system DIMMs on the motherboard.
 +
 image::../media/drw_70_90_dimm_IEOPS-1513.svg[A70-90 DIMM map]
@@ -134,20 +136,19 @@ image::../media/legend_icon_01.svg[Callout number 1,width=30px]
 I/O module cam lever
 |===
 
- . Remove any SFP or QSFP modules that might be in the PCIe cards.
+. Unplug any cabling on the target I/O module.
++
+Make sure that you label the cables so that you know where they came from.
+. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Remove the I/O modules from the controller module:
-.. Depress the target I/O module cam button.
+.. Depress the target I/O module cam latch button.
 +
-The cam lever moves away from the chassis.
-
-.. Rotate the cam lever down until it is in a horizontal position.
+The cam lever moves away from the controller module.
+.. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
+.. Remove the module from the controller module by hooking your finger into the cam lever opening and pulling the module out of the controller module.
 +
-The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
-
-.. Remove the I/O module from the chassis by pulling on the cam lever on the side of the module face.
-.. Move the I/O module to the replacement controller module and insert it into the same slot in the replacement controller module.
-.. Gently push the I/O module into the slot until the can latch engages.
-.. Rotate the can lever upward until it locks into place.  
+Make sure that you keep track of which slot the I/O module was in.
+.. Install the replacement I/O module into the replacement controller module by gently sliding the I/O module into the slot until the I/O cam latch begins to engage with the I/O cam pin, and then push the I/O cam latch all the way up to lock the module in place.
 . Repeat these steps to move the remaining I/O modules, except the modules in slots 6 and 7, to the replacement controller module. 
 +
 NOTE: To move the I/O modules from slots 6 and 7, you must move the carrier containing these I/O modules from the impaired controller module to the replacement controller module. 
