@@ -1,7 +1,7 @@
 To replace an I/O module, remove the target I/O module from the controller module and then install the replacement I/O module into the controller module.
 
-* You can use this procedure with all versions of ONTAP supported by your system.
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* You can use this procedure with all versions of ONTAP supported by your storage system.
+* All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
 == Step 1: Shut down the impaired controller
  
@@ -30,7 +30,7 @@ To replace an I/O module, locate it within the controller module and follow the 
 . Disconnect power by pulling the controller module out about three inches:
 
 +
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your storage system has DC power supplies, disconnect the power cable block from the PSU.
 +
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.

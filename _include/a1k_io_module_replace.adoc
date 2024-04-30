@@ -1,7 +1,7 @@
 To replace an I/O module, you must perform a specific sequence of tasks.
 
-* You can use this procedure with all versions of ONTAP supported by your system.
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* You can use this procedure with all versions of ONTAP supported by your storage system.
+* All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
 == Step 1: Shut down the impaired node
 
@@ -29,7 +29,7 @@ To replace an I/O module, locate it within the enclosure and follow the specific
 . Unplug the PSUs cables from the PSUs from the controller.
 
 +
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your storage system has DC power supplies, disconnect the power cable block from the PSU.
 +
 
 . Unplug any cabling on the target I/O module.

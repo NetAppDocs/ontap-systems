@@ -1,8 +1,8 @@
-You can add an I/O module to your system by either adding a new I/O module into a system with empty slots or by replacing an I/O module with a new one in a fully-populated system.
+You can add an I/O module to your storage system by either adding a new I/O module into a storage system with empty slots or by replacing an I/O module with a new one in a fully-populated storage system.
 
 .Before you begin
 
-* Check the https://hwu.netapp.com/[NetApp Hardware Universe^] to make sure that the new I/O module is compatible with your system and version of ONTAP you're running.
+* Check the https://hwu.netapp.com/[NetApp Hardware Universe^] to make sure that the new I/O module is compatible with your storage system and version of ONTAP you're running.
 
 * If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^]  and use the best one available for your I/O module.
 
@@ -10,9 +10,9 @@ You can add an I/O module to your system by either adding a new I/O module into 
 
 * Make sure that all other components are functioning properly.
 
-== Option 1: Add the I/O module to a system with open slots
+== Option 1: Add the I/O module to a storage system with open slots
 
-You can add an I/O module into an empty module slot in your system.
+You can add an I/O module into an open module slot in your storage system.
 
 == Step 1: Shut down the impaired node
 
@@ -38,7 +38,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 . Unplug the PSUs cables from the PSUs from the controller.
 
 +
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your storage system has DC power supplies, disconnect the power cable block from the PSU.
 +
 
 . Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
@@ -78,9 +78,9 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 . Repeat these steps for controller B.
 . If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adding an NS224 drive shelf^].
 
-== Option 2: Add an I/O module in a system with no open slots
+== Option 2: Add an I/O module in a storage system with no empty slots
 
-If your system is fully populated, you can change an I/O module in an I/O slot by removing an existing I/O module and replacing it with a different I/O module.
+If your storage system is fully populated, you can change an I/O module in an I/O slot by removing an existing I/O module and replacing it with a different I/O module.
 
 . If you are:
 +
@@ -125,7 +125,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 . Unplug the PSUs cables from the PSUs from the controller.
 
 +
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your storage system has DC power supplies, disconnect the power cable block from the PSU.
 +
 
 . Unplug any cabling on the target I/O module.
