@@ -43,9 +43,8 @@ NOTE: If your storage system has DC power supply units (PSUs), disconnect the po
 . Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
 . Remove the target slot blanking module from the chassis:
 
-
 +
-NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module
+NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
 +
 
 image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
@@ -142,7 +141,11 @@ NOTE: If your storage system has DC PSUs, disconnect the power cable block from 
 . Unplug any cabling on the target I/O module.
 . Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Remove the target I/O module from the chassis:
+
 +
+NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
++
+
 image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
 +
 [cols="1,4"]

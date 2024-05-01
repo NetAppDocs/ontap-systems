@@ -43,7 +43,7 @@ NOTE: If your storage system has DC PSUs, disconnect the power cable block from 
 . Remove the target slot blanking module from the carrier:
 
 +
-NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module
+NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
 +
 
 image::../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[Remove-replace A1K I/O module]
@@ -133,7 +133,11 @@ NOTE: If your storage system has DC PSUs, disconnect the power cable block from 
 . Unplug any cabling on the target I/O module.
 . Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Remove the target I/O module from the chassis:
+
 +
+NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
++
+
 image::../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[Remove-replace A1K I/O module]
 +
 [cols="1,4"]

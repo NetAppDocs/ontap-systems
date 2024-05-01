@@ -30,7 +30,7 @@ To replace an I/O module, locate it within the controller module and follow the 
 . Disconnect power by pulling the controller module out about three inches:
 
 +
-NOTE: If your storage system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
 +
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
@@ -43,6 +43,9 @@ Make sure that you label the cables so that you know where they came from.
 . Remove the I/O module from the controller module:
 
 +
+NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
++
+
 image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
 +
 
