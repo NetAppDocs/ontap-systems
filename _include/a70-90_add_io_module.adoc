@@ -14,7 +14,7 @@ You can add an I/O module to your storage system by either adding a new I/O modu
 
 You can add an I/O module into an empty module slot in your storage system.
 
-== Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired node
 
 Shut down or take over the impaired controller using one of the following options.
 
@@ -32,7 +32,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 ====
 
-== Step 2: Add I/O modules
+=== Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself.
 . Disconnect power by pulling the controller module out about three inches:
@@ -84,7 +84,7 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 . Give back the controller from the partner controller: `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . Repeat these steps for controller B.
-. If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adding an NS224 drive shelf^].
+. If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adds a shelf^].
 
 == Option 2: Add an I/O module in a storage system with no empty slots
 
@@ -110,7 +110,7 @@ a|
 Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
 |===
 
-== Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired node
 
 Shut down or take over the impaired controller using one of the following options.
 
@@ -128,7 +128,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 ====
 
-== Step 2: Replace I/O modules
+=== Step 2: Replace an I/O module
 . If you are not already grounded, properly ground yourself.
 . Disconnect power by pulling the controller module out about three inches:
 
@@ -196,7 +196,7 @@ a|
 Storage module
 a|
 Install and cable your NS224 shelves, as described in
-https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adding an NS224 drive shelf^].
+https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-add a shelf^].
 a|
 +
 |===

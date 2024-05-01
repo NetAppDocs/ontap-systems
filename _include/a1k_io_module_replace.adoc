@@ -1,4 +1,4 @@
-To replace an I/O module, you must perform a specific sequence of tasks.
+Use this procedure to replace a failed I/O module.
 
 * You can use this procedure with all versions of ONTAP supported by your storage system.
 * All other components in the storage system must be functioning properly; if not, you must contact technical support.
@@ -21,7 +21,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 ====
 
-== Step 2: Replace I/O modules
+== Step 2: Replace a failed I/O module
 
 To replace an I/O module, locate it within the enclosure and follow the specific sequence of steps.
 
