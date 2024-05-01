@@ -19,7 +19,7 @@ entries:
    - title: Boot media
      pdf-filename: AFF A70 and AFF A90 Boot Media
      entries:
-        - title: Overview
+        - title: Boot media replace overview
           url: /a70-90/bootmedia-replace-overview.html
         - title: Check onboard encryption keys
           url: /a70-90/bootmedia-encryption-preshutdown-checks.html
@@ -37,7 +37,7 @@ entries:
    - title: Chassis
      pdf-filename: AFF A70 and AFF A90 Chassis
      entries:
-        - title: Overview
+        - title: Chassis replace overview
           url: /a70-90/chassis-replace-overview.html
         - title: Shut down impaired controller
           url: /a70-90/chassis-replace-shutdown.html
@@ -48,7 +48,7 @@ entries:
    - title: Controller
      pdf-filename: AFF A70 and AFF A90 Controller Module
      entries:
-        - title: Overview
+        - title: Controller module replace overview
           url: /a70-90/controller-replace-overview.html
         - title: Shut down impaired controller
           url: /a70-90/controller-replace-shutdown.html
@@ -72,7 +72,7 @@ entries:
      url: /a70-90/nvdimm-battery-replace.html
    - title: I/O module
      entries:
-        - title: Add or replace an I/O module
+        - title: I/O module Add or replace overview
           url: /a70-90/io-module-overview.html
         - title: Add I/O module
           url: /a70-90/io-module-add.html
