@@ -6,13 +6,11 @@ You can add an I/O module to your storage system by either adding a new I/O modu
 
 * If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^]  and use the best one available for your I/O module.
 
-* To non-disruptively add an I/O module, you must take over the target controller, remove the slot blanking module in the target slot or remove an existing I/O module, add the new or replacement I/O module, and then giveback the target controller.
-
 * Make sure that all other components are functioning properly.
 
-== Option 1: Add the I/O module to a storage system with open slots
+== Option 1: Add the I/O module to a storage system with empty slots
 
-You can add an I/O module into an open module slot in your storage system.
+You can add an I/O module into an empty module slot in your storage system.
 
 === Step 1: Shut down the impaired node
 
@@ -35,15 +33,19 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 === Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the PSUs cables from the PSUs from the controller.
+. Unplug the power supply units (PSUs) cables from the PSUs from the controller.
 
 +
-NOTE: If your storage system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your storage system has DC PSUs, disconnect the power cable block from the PSU.
 +
 
 . Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Remove the target slot blanking module from the carrier:
+
 +
+NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module
++
+
 image::../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[Remove-replace A1K I/O module]
 +
 [cols="1,4"]
@@ -64,7 +66,7 @@ Cam locking button
 +
 If the I/O module is a NIC, cable the module to the data switches.  
 +
-If the I/O module is a storage module, cable it to the storage.
+If the I/O module is a storage module, cable it to the NS224 shelf.
 
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
@@ -122,10 +124,10 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 === Step 2: Replace an I/O module
 . If you are not already grounded, properly ground yourself.
-. Unplug the PSUs cables from the PSUs from the controller.
+. Unplug the PSU cables from the PSUs from the controller.
 
 +
-NOTE: If your storage system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your storage system has DC PSUs, disconnect the power cable block from the PSU.
 +
 
 . Unplug any cabling on the target I/O module.
