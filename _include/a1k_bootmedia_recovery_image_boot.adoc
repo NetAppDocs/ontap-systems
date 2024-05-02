@@ -64,7 +64,7 @@ If you are prompted to continue with the update, press `y`.
  .. If an environment variable is not set as expected, modify it with the  `setenv _environment_variable_name_ _changed_value_` command.
  .. Save your changes using the saveenv command.
 . The next depends on your system configuration:
- ** If your system has onboard keymanager, NSE or NVE configured, go to link:../a1k/bootmedia-encryption-restore.adoc[Post boot media replacement steps for OKM, NSE, and NVE]
+ ** If your system has onboard keymanager, NSE or NVE configured, go to link:../a1k/bootmedia-encryption-restore.adoc[Post boot media replacement steps for OKM, NSE, and NVE].
  ** If your system does not have onboard keymanager, NSE or NVE configured, complete the steps in this section.
 . From the LOADER prompt, enter the boot_ontap command.
 +
