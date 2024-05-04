@@ -1,18 +1,16 @@
 ---
 permalink: sas3/sas3-shelf-overview.html
 sidebar: sidebar
-keywords: sas3, shelves, shelf, sas3 shelves, drive, aggregate, ha, pair, serving, data
-summary: sas3 shelf overview.
+keywords: sas3, shelves, shelf, sas3 shelves, drive, aggregate, shelf maintenance
+summary: sas3 shelf maintenance overview.
 ---
-= Overview - SAS3 shelves
+= Overview of shelf maintenance - SAS3 shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
-The NetApp SAS3 drive shelf uses SAS connectors to connect to the storage system.
-
-Take the following actions to maintain your SAS3 drive shelf. 
+You can take the following actions to maintain your SAS3 shelf: 
 
 * link:cold-replace-shelf.html[Cold-replace a shelf]
 * link:hot-remove-shelf.html[Hot-remove a shelf]
