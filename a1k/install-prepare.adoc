@@ -43,10 +43,18 @@ See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch d
 Unpack all boxes and compare the contents to the items on the packing slip.
 
 . Carefully open all the boxes. Lay out the contents in an organized manner.
-
++
+image::../media/drw_affa1k_weight_caution_ieops-1698.svg[AFF A1K weight caution icon]
++
 . Compare the contents you’ve unpacked with the list on the packing slip. 
+
++
+NOTE: You can get your packing list by scaning the QR code on the side of the shipping carton.
+
 +
 The following items are some of the contents you might see in the boxes that you received. 
++
+Ensure that everything in the boxes matches the list on the packing slip. If there are any discrepancies, note them down for further action.
 +
 
 [%rotate, grid="none", frame="none", cols="12,9,4"]
@@ -54,19 +62,18 @@ The following items are some of the contents you might see in the boxes that you
 |*Hardware*
 |*Cables* |
 a|* Platform
-* shelf 
-* Rail kit with instructions 
+* Shelf 
+* Rail kits with instructions (optional)
 * Cable management device 
 * Bezel
 a|* Power cords
-* Ethernet cables and transceivers
-* FC optical cable
+* Network cables
 * Management Ethernet cables (RJ-45 cables)
-* USB-C serial port cable |
+* USB-C serial port cable
+* Storage cables (if additional storage is ordered) |
 |===
 
-+
-Ensure that everything in the boxes matches the list on the packing slip. If there are any discrepancies, note them down for further action.
+
 
 == Step 3: Register your hardware
 Registering your platform provides support benefits.
@@ -81,7 +88,7 @@ image::../media/drw_ssn_label.png[Example of the system serial number showing lo
 +
 
 . Go to the NetApp Support Site at http://mysupport.netapp.com/[mysupport.netapp.com^].
-. Determine whether you need to register the hardware:
+. Register the hardware:
 +
 [cols="1a,2a" options="header"]
 |===
@@ -91,7 +98,7 @@ Existing NetApp customer
 a|
 
  .. Sign in with your username and password.
- .. Select *Products* > *My Products*.
+ .. Select *Systems* > *My Systems*.
  .. Confirm that the new serial number is listed.
  .. If it is not, follow the instructions for new NetApp customers.
 
@@ -100,7 +107,7 @@ New NetApp customer
 a|
 
  .. Click *Register Now*, and create an account.
- .. Select *Products* > *Register Products*.
+ .. Select *Systems* > *Register Systems*.
  .. Enter the product serial number and requested details.
 
 After your registration is approved, you can download any required software. The approval process might take up to 24 hours.
