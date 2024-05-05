@@ -9,7 +9,7 @@ summary: 'Follow these high-level steps to install and set up your AFF A1K stora
 :imagesdir: ../media/
 
 [.lead]
-Follow these high-level steps to install and set up your AFF A1K storage system and deploy it as a node in your ONTAP system.
+Follow these workflow steps to install and set up your AFF A1K storage system and deploy it as a node in your ONTAP storage system.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for install
 
@@ -18,9 +18,9 @@ Follow these high-level steps to install and set up your AFF A1K storage system 
 . link:install-prepare.html#step-2-unpack-the-boxes[Unpack the boxes]
 . link:install-hardware.html#step-1-register-your-hardware[Register your hardware]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Rack hardware
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install hardware
 [role="quick-margin-list"]
-. link:install-hardware.html[Rack your hardware]
+. link:install-hardware.html[Install your hardware]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Cable hardware
 
@@ -30,14 +30,14 @@ Follow these high-level steps to install and set up your AFF A1K storage system 
 . link:install-cable.html#step-2-cable-controllers-to-drive-shelves[Cable controllers to the shelves]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Power on system
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Power on storage system
 
 
 [role="quick-margin-list"]
 . link:power-hardware.html#step-1-power-on-the-shelf-and-assign-shelf-id[Power on the shelf and set shelf IDs]
 . link:power-hardware.html#step-2-power-on-the-controllers[Power on the controllers]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Complete system setup
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Complete storage system setup
 
 [role="quick-margin-list"]
 . link:install-complete.html#step-1-gather-cluster-information[Gather cluster information]
