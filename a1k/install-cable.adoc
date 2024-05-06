@@ -2,22 +2,26 @@
 permalink: a1k/install-cable.html
 sidebar: sidebar
 keywords: aff a1k, prepare installation
-summary: Management network ports on the controllers are connected to switches. The HA interconnect and cluster interconnect ports are cabled on both controllers.
+summary: Management network ports on the controllers are connected to switches. The HA interconnect and cluster interconnect ports are cabled on both controllers. The controller modules are connected to external storage, if ordered.
 ---
 = Cable the hardware - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Cable your controllers and drive shelves according to your specific system configuration.
+Cable your controllers and shelves according to your specific storage system configuration.
 
 .Before you begin
 Check the illustration arrow for the proper cable connector pull-tab orientation.
 
+[horizontal]
+image::../media/oie_cable_pull_tab_down.svg[width=200px,opts=inline]
+image::../media/oie_cable_pull_tab_up.svg[width=200px,opts=inline]
+
+
 * As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn the cable head over and try again.
 * If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
-+
-image::../media/oie_cable_pull_tab_down.svg[width=200px]
+
 
 == Step 1: Cable controllers to your network
 Cable the controllers to your network as either a two-node switchless cluster or a switched cluster.
