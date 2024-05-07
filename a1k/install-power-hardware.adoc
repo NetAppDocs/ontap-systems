@@ -9,10 +9,10 @@ summary: Attach the power cables and power on the shelves and controllers.
 :imagesdir: ../media/
 
 [.lead]
-After connecting the network cables, you are ready to apply power to the shelf and to the controllers.
+After connecting the network and any shelf cables, you are ready to apply power to the controllers and shelves, if present in the storage system.
 
 == Step 1: Power on the shelf and assign shelf ID
-In ONTAP storage systems, each NS224 shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage setup, whether it’s a standalone platform or part of a cluster. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you may need to adjust these IDs to maintain uniqueness across your network.
+In ONTAP storage systems, each NS224 shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you may need to adjust these IDs to maintain uniqueness across your storage system.
 
 .About this task
 * A valid shelf ID is 00 through 99.
@@ -101,13 +101,12 @@ A power supply is powered on as soon as the power cord is plugged in. Its bicolo
 NOTE: See your laptop's online help for instructions on how to configure the serial console port.
 
  .. Connect the console cable to the laptop, and connect the serial console port on the controller using the console cable that came with your platform.
+ 
+.. Connect the laptop to the switch on the management subnet.
 +
-image::../media/drw_a1k_cable_console_switch_ieops-1702.svg[]
+image::../media/    _ieops-1702.svg[]
 
- .. Connect the laptop to the switch on the management subnet.
-+
-image::../media/drw_client_mgmt_subnet_affa1k.svg[]
-
+ 
  .. Assign a TCP/IP address to the laptop, using one that is on the management subnet.
 +
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
