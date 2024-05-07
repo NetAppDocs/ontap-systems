@@ -14,10 +14,7 @@ Cable your controllers and shelves according to your specific storage system con
 .Before you begin
 Check the illustration arrow for the proper cable connector pull-tab orientation.
 
-[horizontal]
-image::../media/oie_cable_pull_tab_down.svg[width=200px,opts=inline]
-image::../media/oie_cable_pull_tab_up.svg[width=200px,opts=inline]
-
+image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[]
 
 * As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn the cable head over and try again.
 * If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
@@ -31,7 +28,7 @@ Cable the controllers to your network as either a two-node switchless cluster or
 Contact your network administrator for information about connecting the storage system to the switches.
 
 .About this task
-These procedures show common configurations. Keep in mind that the specific cabling depend on the system components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU).
+These procedures show common configurations. Keep in mind that the specific cabling depend on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU).
 
 [role="tabbed-block"]
 ====
@@ -42,14 +39,14 @@ The cluster interconnect traffic and the HA traffic share the same physical port
 
 .Steps
 
-. Cable the Cluster+HA interconnect ports e1a to e1a and e7a to e7a with the Cluster+HA interconnect cable.
+. Cable the Cluster/HA interconnect ports e1a to e1a and e7a to e7a with the Cluster/HA interconnect cable.
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[width=100pxx]
-*Cluster+HA interconnect cables*
+*Cluster/HA interconnect cables*
 +
 image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[width=500px]
 +
-. Cable the Ethernet card ports to your host network. 
+. Cable the Ethernet module ports to your host network. 
 +
 The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for your specific system configuration.
 
@@ -72,7 +69,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
 +
 image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
 +
-For example, if you have a 10/25 GbE card in slot 2 as shown, cable ports e2a through e2d to  to your 10/25GbE host network switches. If you have additional 10/25 GbE cards in your system (in other slots), follow the same procedure.
+For example, if you have a 10/25 GbE module in slot 2 as shown, cable ports e2a through e2d to  to your 10/25GbE host network switches. If you have additional 10/25 GbE modules in your system (in other slots), follow the same procedure.
 
 
 . Cable the controller management (wrench) ports to the management network switches with 1000BASE-T RJ-45 cables.
@@ -96,7 +93,7 @@ The cluster interconnect traffic and the HA traffic share the same physical port
 . Make the following cabling connections:
 +
 .. Cable port e1a on Controller A and port e1a on Controller B to cluster network switch A. 
-.. Cable port e7a on Controller A and port e7a on Controller b to cluster network switch B.
+.. Cable port e7a on Controller A and port e7a on Controller B to cluster network switch B.
 +
 *100 GbE cable*
 +
@@ -104,7 +101,7 @@ image::../media/oie_cable100_gbe_qsfp28.svg[width=100px]
 +
 image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[width=500px]
 
-. Cable the Ethernet card ports to your host network. 
+. Cable the Ethernet module ports to your host network. 
 +
 The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for your specific system configuration.
 
@@ -127,7 +124,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
 +
 image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
 +
-For example, if you have a 10/25 GbE card in slot 2 as shown, cable ports e2a through e2d to  to your 10/25GbE host network switches. If you have additional 10/25 GbE cards in your system (in other slots), follow the same procedure.
+For example, if you have a 10/25 GbE module in slot 2 as shown, cable ports e2a through e2d to  to your 10/25GbE host network switches. If you have additional 10/25 GbE modules in your system (in other slots), follow the same procedure.
 
 
 . Cable the controller management (wrench) ports to the management network switches with 1000BASE-T RJ-45 cables.
@@ -143,7 +140,7 @@ IMPORTANT: DO NOT plug in the power cords yet.
 
 ====
 
-== Step 2: Cable controllers to drive shelves
+== Step 2: Cable controllers to shelves
 Cable your controllers to the shelf or shelves. 
 
 The following examples show how to cable your controllers to one shelf and to two shelves. You can connect your controllers to a maximum of four shelves.
@@ -156,7 +153,7 @@ The following examples show how to cable your controllers to one shelf and to tw
 
 .Option 1: Cable to one NS224 drive shelf
 --
-Cable each controller to the NSM modules on the NS224 drive shelf.
+Cable each controller to the NSM modules on the NS224 drive shelf. The graphics show cabling from each of the controllers: Controller A cabling in blue and Controller B cabling in yellow.
 
 .Steps
 . Connect controller A port e11a to port e0a on NSM A on the shelf.
@@ -172,16 +169,13 @@ image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[]
 |===
 --
 
-.Option 2: Cable to two NS224 drive shelves
+.Option 2: Cable to two NS224 shelves
 --
-Cable each controller to the NSM modules on both NS224 drive shelves.
+Cable each controller to the NSM modules on both NS224 shelves. The graphics show cabling from each of the controllers: Controller A cabling in blue and Controller B cabling in yellow.
 
 .Steps
 
 . On shelf 1, cable the following connections:
-+
-image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[200]
-+
 .. Connect controller A port e11a to NSM A e0a.
 
 .. Connect controller A port e11b to NSM B e0b.
@@ -189,12 +183,11 @@ image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[200]
 .. Connect controller B port e11a to NSM B e0.
 
 .. Connect controller B port e11b to NSM A e0b.
-
++
+image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[200]
++
 
 . On shelf 2, cable the following connections:
-+
-image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[200]
-+
 .. Connect controller A port e10a to NSM A e0a.
 
 .. Connect controller A port e11b to NSM B e0b.
@@ -202,7 +195,10 @@ image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[200]
 .. Connect controller B port e11b to NSM A e0b.
 
 .. Connect controller B port e10a to NSM B e0a.
-   
++
+image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[200]
++
+
 |===
 --
 
