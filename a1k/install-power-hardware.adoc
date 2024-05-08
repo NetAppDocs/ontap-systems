@@ -79,11 +79,11 @@ It can take up to three seconds for the number to stop blinking.
 +
 Both numbers on the digital display start blinking and the amber LED on the ODP illuminates after about five seconds, alerting you that the pending shelf ID has not yet taken effect.
 
-. Power-cycle the shelf to make the shelf ID take effect.
+. Power-cycle the shelf for at least 10 seconds to make the shelf ID take effect.
 +
 .. Unplug the power cord from both power supplies on the shelf.
 +
-.. Wait the appropriate amount of time.
+.. Wait 10 seconds.
 +
 .. Plug the power cords back into the shelf power supplies to complete the power cycle.
 +
