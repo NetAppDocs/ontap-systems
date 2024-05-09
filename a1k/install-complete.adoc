@@ -89,12 +89,21 @@ The node boots, and then the Cluster Setup wizard starts on the console.
 // end tabbed area
 
 == Step 3: Configure your cluster
-NetApp recommends that you use System Manager to set up new clusters.
+NetApp recommends that you use System Manager to set up new clusters and download and run Active IQ Config Advisor to check your setup.
 
-System Manager provides a simple and easy workflow for cluster set up and configuration including assigning a node management IP address, initializing the cluster, creating a local tier, configuring protocols and provisioning initial storage.
+.About this task 
 
-Use System Manager to configure your cluster. For instructions, see https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[Configure ONTAP on a new cluster with System Manager] for setup instructions.
+* System Manager provides a simple and easy workflow for cluster set up and configuration including assigning a node management IP address, initializing the cluster, creating a local tier, configuring protocols and initial provisioning of attached storage.
 
-Once setup is complete, it is recommended to download and run https://mysupport.netapp.com/site/user/registration[Active IQ Config Advisor] to verify the health of your storage system.
+* Active IQ Config Advisor is a configuration validation and health check tool for NetApp systems that can be deployed onsite for data collection and analysis. It is used to check NetApp system for correctness of hardware installation and conformance to NetApp recommended settings.
 
-You can also go to the https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[NetApp ONTAP Resources] page for information about configuring additional features in ONTAP. 
+.Steps
+
+. Run System Manager to configure your cluster.
++
+See https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[Configure ONTAP on a new cluster with System Manager] for setup instructions.
+
+. Download and run  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor] to confirm your setup.
+
+
+Once your cluster is configured and checked, you can go to the https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[NetApp ONTAP Resources] page for more information about configuring additional features in ONTAP. 
