@@ -27,10 +27,6 @@ A controller consists of a board, firmware, and software. It controls the drives
 
 You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
 
-== Drive
-
-A drive is a device that provides the physical storage media for data.
-
 == Fan
 
 The fan cools the controller.
