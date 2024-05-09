@@ -94,3 +94,7 @@ NetApp recommends that you use System Manager to set up new clusters.
 System Manager provides a simple and easy workflow for cluster set up and configuration including assigning a node management IP address, initializing the cluster, creating a local tier, configuring protocols and provisioning initial storage.
 
 Use System Manager to configure your cluster. For instructions, see https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[Configure ONTAP on a new cluster with System Manager] for setup instructions.
+
+Once setup is complete, it is recommended to download and run https://mysupport.netapp.com/site/user/registration[Active IQ Config Advisor] to verify the health of your storage system.
+
+You can also go to the https://www.netapp.com/us/documentation/ontap-and-oncommand-system-manager.aspx[NetApp ONTAP Resources] page for information about configuring additional features in ONTAP. 
