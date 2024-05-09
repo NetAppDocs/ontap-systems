@@ -2,7 +2,7 @@
 
 You must remove the controller module from the enclosure when you replace the controller module or replace a component inside the controller module.
 
-. Check the NVMEM LED located on the back of the system. There is also an NVMEM LED on the front panel of the controller module. Look for the NV icon:
+. Check the amber NVMEM status LED located on the back of the system. There is also a green NVMEM LED on the front panel of the controller module. Look for the NV icon:
 +
 image::../media/drw_A1K-70-90_NVRAM-LED_IEOPS-1463.svg[NVRAM]
 +
@@ -20,11 +20,11 @@ NVRAM attention LED
 
 +
 
-NOTE: The green NV LED on the faceplate will start flashing when power is removed from the controller if the system was in the "waiting for giveback" state, or the system was not taken over or halted properly (uncommitted data).  If the impaired controller module was not successfully taken over by the partner controller module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
+NOTE: The amber NV status LED on the faceplate of the module will start flashing when power is removed from the controller if the system was in the "waiting for giveback" state, or the system was not taken over or halted properly (uncommitted data).  If the impaired controller module was not successfully taken over by the partner controller module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
 
 +
 
-* If the green NV status LED begins flashing when the controller module is removed from the enclosure:
+* If the NV status LED begins flashing when the controller module is removed from the enclosure:
 
 ** Confirm that the controller had a clean takeover by the partner controller module or the impaired controller shows _waiting for giveback_, the flashing LED can be ignored and you can complete removing the impaired controller from the enclosure.
 

@@ -1,4 +1,4 @@
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+To replace the boot media, you must remove the System Management module from the back of the system, remove the impaired boot media, install the replacement boot media in the System Management module, and transfer the boot image to a USB flash drive.
 
 == Step 1: Replace the boot media
 
@@ -25,6 +25,13 @@ Boot media
 |===
 
 .. If you are not already grounded, properly ground yourself.
+. Disconnect power by pulling the controller module out about three inches:
+
++
+NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
++
+.. Press down on both of the locking latches, and then rotate both latches downward at the same time.
+.. Pull the controller module about 3 inches out of the chassis to disengage power.
 .. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 .. Depress the system management cam button.
 The cam lever moves away from the chassis.
@@ -32,11 +39,11 @@ The cam lever moves away from the chassis.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
 . Remove the boot media from the management module:
 .. Press the blue locking button.
-The boot media rotates slightly upward.
 .. Rotate the boot media up,  slide it out of the socket, and set it aside.
-. Install the replacement boot media into the controller module:
+. Install the replacement boot media into the System Management module:
 .. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
-.. Rotate the boot media down toward until it engages the locking button.
+.. Rotate the boot media down toward the locking button. 
+.. Push the locking button, rotate the boot media all the way down and then release the locking button.
 . Reinstall the System Management module and recable it.
 
 == Step 2: Transfer the boot image to the boot media
