@@ -9,7 +9,7 @@ summary: 'Follow these high-level steps to install and set up your AFF A1K stora
 :imagesdir: ../media/
 
 [.lead]
-Follow these workflow steps to install and set up your AFF A1K storage system and deploy it as a node in your ONTAP storage system.
+Follow these workflow steps to install, set up, and deploy your AFF A1K storage system.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for install
 
@@ -34,7 +34,7 @@ Follow these workflow steps to install and set up your AFF A1K storage system an
 
 
 [role="quick-margin-list"]
-. link:install-power-hardware.html#step-1-power-on-the-shelf-and-assign-shelf-id[Power on the shelf and set shelf IDs]
+. link:install-power-hardware.html#step-1-power-on-the-shelf-and-assign-shelf-id[Power on the shelves and set shelf IDs]
 . link:install-power-hardware.html#step-2-power-on-the-controllers[Power on the controllers]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Complete storage system setup
