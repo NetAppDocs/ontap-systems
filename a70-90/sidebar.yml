@@ -2,14 +2,20 @@ section: a70-90
 title: AFF A70 and AFF A90 systems
 entries:
  - title: Install and setup
-   pdf-filename: AFF A70 and AFF A90 Install and Setup
+   pdf-filename: AFF A1K Install and Setup
    entries:
-    - title: Choose install and setup experience
-      url: /a70-90/install-setup.html
-    - title: Quick steps
-      url: /a70-90/install-quick-guide.html
-    - title: Detailed steps
-      url: /a70-90/install-detailed-guide.html
+     - title: Install workflow
+       url: /a70-90/install-overview.html
+     - title: Prepare for install
+       url: /a70-90/install-prepare.html
+     - title: Install hardware
+       url: /a70-90/install-hardware.html
+     - title: Cable hardware
+       url: /a70-90/install-cable.html
+     - title: Power on system
+       url: /a70-90/install-power-hardware.html
+     - title: Complete system setup
+       url: /a70-90/install-complete.html
  - title: Maintain
    pdf-filename: AFF A70 and AFF A90 Maintain
    entries:

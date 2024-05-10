@@ -1,0 +1,45 @@
+---
+permalink: a70-90/install-overview.html
+sidebar: sidebar
+keywords: Installation, deployment, Install, deploy, Installing, deploying
+summary: 'Follow these high-level steps to install and set up your AFF A70 or A90 storage system and deploy it as a node in your ONTAP system.'
+---
+= Installation workflow - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Follow these workflow steps to install, set up, and deploy your AFF A1K storage system.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for install
+
+[role="quick-margin-list"]
+. link:install-prepare.html[Prepare the site]
+. link:install-prepare.html#step-2-unpack-the-boxes[Unpack the boxes]
+. link:install-hardware.html#step-1-register-your-hardware[Register your hardware]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install hardware
+[role="quick-margin-list"]
+. link:install-hardware.html[Install your hardware]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Cable hardware
+
+
+[role="quick-margin-list"]
+. link:install-cable.html#step-1-cable-controllers-to-your-network[Cable controllers to the network] 
+. link:install-cable.html#step-2-cable-controllers-to-drive-shelves[Cable controllers to the shelves]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Power on storage system
+
+
+[role="quick-margin-list"]
+. link:install-power-hardware.html#step-1-power-on-the-shelf-and-assign-shelf-id[Power on the shelves and set shelf IDs]
+. link:install-power-hardware.html#step-2-power-on-the-controllers[Power on the controllers]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Complete storage system setup
+
+[role="quick-margin-list"]
+. link:install-complete.html#step-1-gather-cluster-information[Gather cluster information]
+. link:install-complete.html#step-2-discover-your-cluster-network[Discover your cluster network]
+. link:install-complete.html#step-3-configure-your-cluster[Configure your cluster]
