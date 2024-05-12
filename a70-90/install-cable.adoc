@@ -49,7 +49,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[width=100pxx]
 *Cluster/HA interconnect cables*
 +
-image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[width=500px]
+image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[width=500px]
 +
 . Cable the Ethernet module ports to your host network. 
 +
@@ -63,7 +63,7 @@ If present, cable ports e9a and e9b to your Ethernet data network switch as show
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
 +
-image::../media/drw_a1k_network_cabling1_ieops-1649.svg[width=500px]
+image::../media/drw_70-90_network_cabling1_ieops-1654.svg[width=500px]
 
 +
 .. Cable your 10/25 GbE host network switches.
@@ -72,7 +72,7 @@ image::../media/drw_a1k_network_cabling1_ieops-1649.svg[width=500px]
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
 +
-image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
+image::../media/drw_70-90_network_cabling2_ieops-1655.svg[width=500px]
 +
 
 
@@ -81,7 +81,7 @@ image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
 image::../media/oie_cable_rj45.svg[width=100px]
 *1000BASE-T RJ-45 cables*
 +
-image::../media/drw_a1k_management_connection_ieops-1651.svg[width=500px]
+image::../media/drw_70-90_management_connection_ieops-1656.svg[width=500px]
 
 IMPORTANT: DO NOT plug in the power cords yet. 
 
@@ -107,7 +107,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 image::../media/oie_cable100_gbe_qsfp28.svg[width=100px]
 +
-image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[width=500px]
+image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[width=500px]
 
 . Cable the Ethernet module ports to your host network. 
 +
@@ -121,7 +121,7 @@ If present, cable ports e9a and e9b to your Ethernet data network switch as show
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
 +
-image::../media/drw_a1k_network_cabling1_ieops-1649.svg[width=500px]
+image::../media/drw_70-90_network_cabling1_ieops-1654.svg[width=500px]
 
 +
 .. Cable your 10/25 GbE host network switches.
@@ -130,7 +130,7 @@ image::../media/drw_a1k_network_cabling1_ieops-1649.svg[width=500px]
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
 +
-image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
+image::../media/drw_70-90_network_cabling2_ieops-1655.svg[width=500px]
 +
 
 
@@ -139,7 +139,7 @@ image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
 image::../media/oie_cable_rj45.svg[width=100px]
 *1000BASE-T RJ-45 cables*
 +
-image::../media/drw_a1k_management_connection_ieops-1651.svg[width=500px]
+image::../media/drw_70-90_management_connection_ieops-1656.svg[width=500px]
 
 IMPORTANT: DO NOT plug in the power cords yet. 
 
@@ -164,14 +164,14 @@ Cable each controller to the NSM modules on the NS224 shelf. The graphics show c
 
 .Steps
 . Connect controller A port e11a to NSM A port e0a.
-. Connect controller A port e10b to port NSM B port e0b.
+. Connect controller A port e11b to port NSM B port e0b.
 +
-image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[]
+image:../media/drw_A70-90_1shelf_cabling_A_ieops-1731.svg[]
 
 . Connect controller B port e11a to NSM B port e0a.
-. Connect controller B port e10b to NSM A port e0b.
+. Connect controller B port e11b to NSM A port e0b.
 +
-image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[]
+image:../media/drw_a70-90_1shelf_cabling_b_ieops-1732.svg[]
 
 --
 
@@ -184,25 +184,25 @@ Cable each controller to the NSM modules on both NS224 shelves. The graphics sho
 . On shelf 1, cable the following connections:
 .. Connect controller A port e11a to NSM A port e0a.
 
-.. Connect controller A port e11b to NSM B port e0b.
+.. Connect controller A port e8b to NSM B port e0b.
 
 .. Connect controller B port e11a to NSM B port e0.
 
-.. Connect controller B port e11b to NSM A port e0b.
+.. Connect controller B port e8b to NSM A port e0b.
 +
-image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[200]
+image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg[200]
 +
 
 . On shelf 2, cable the following connections:
-.. Connect controller A port e10a to NSM A port e0a.
+.. Connect controller A port e8a to NSM A port e0a.
 
 .. Connect controller A port e11b to NSM B port e0b.
 
 .. Connect controller B port e11b to NSM A port e0b.
 
-.. Connect controller B port e10a to NSM B port e0a.
+.. Connect controller B port e8a to NSM B port e0a.
 +
-image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[200]
+image:../media/drw_a70-90_2shelf_cabling_b_ieops-1734.svg[200]
 +
 
 --
