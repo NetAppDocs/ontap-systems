@@ -2,14 +2,14 @@
 permalink: a70-90/install-prepare.html
 sidebar: sidebar
 keywords: aff a70-90k, prepare installation
-summary: Prepare to install your AFF A1K platform.
+summary: Prepare to install your AFF A70-90 platform.
 ---
-= Prepare for install - AFF A1K
+= Prepare for install - AFF A70-90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Prepare to install your AFF A1K platform.
+Prepare to install your platform.
 
 .Before you begin
 * Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need when you link:complete-install.html#step-3-configure-your-cluster[configure your cluster].  If a default value is provided, you can use that value or else enter your own.
