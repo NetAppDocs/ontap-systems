@@ -2,30 +2,33 @@
 permalink: a70-90/caching-module-hot-swap-fas.html
 sidebar: sidebar
 keywords: fas70-90, FAS70-90, FAS70, FAS90, hot swap, replace, FlashCache
-summary: "The NVMe SSD FlashCache modules (FlashCache or caching modules) are located in the front of the NVRAM11 module in Slot 6 of FAS70-90 systems only. You can hot-swap the caching module of the same capacity from the same or different supported vendor."
+summary: "The NVMe SSD FlashCache modules (FlashCache or caching modules) is located  in Slot 6 of FAS70-90 systems only. You can hot-swap the caching module of the same capacity from the same or different supported vendor."
 ---
 = Hot-swap a caching module - FAS70-90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The NVMe SSD FlashCache modules (FlashCache or caching modules) are located in the front of the NVRAM11 module in Slot 6 of FAS9500 systems. You can hot-swap the caching module of the same capacity from the same or different supported vendor.
+The following instructions describe service the caching (flashcache) module on your system.
 
-NOTE: If you need to or want to cold-swap the FlashCache module, follow the procedures for replacing an I/O module.
+The caching module consists of two FRU components:
+* The drive module with the NVMe drive.
+*The caching module carrier that connects the NVMe carrier to the system.  
+
+The caching module is located  in Slot 6 of FAS70-90 systems only. You can replace the drive module of the caching module of the same capacity from the same or different supported vendor.
+
+
 
 .Before you begin
 
 Your storage system must meet certain criteria depending on your situation:
-
-* It must have the appropriate operating system for the caching module you are installing.
-* The caching module must be functioning well enough to be seen by the system.  If the caching module is not functioning since the last boot, you cannot use this procedure and must use the cold-swap procedure.
-* It must support the caching capacity.
+* You must shut down and remove power from the impaired controller. The caching components are not hot-swappable.
 * The replacement caching module must have the same capacity as the failed caching module, but can be from a different supported vendor.
 * All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. Locate the failed caching module, in slot 6, by the lit amber Attention LED on the front of the caching module.
+. Locate the failed caching module, in slot 6, by the lit amber Attention LED on the bezel of the caching module.
 . Prepare the caching module slot for replacement as follows:
 .. Record the caching module capacity, part number, and serial number on the target node: `system node run local sysconfig -av 6`
 .. In admin privilege level, prepare the target NVMe slot for removal, responding `y` when prompted whether to continue: `system controller slot module remove -node node_name -slot slot_number` The following command prepares slot 6-1 on node1 for removal, and displays a message that it is safe to remove:
