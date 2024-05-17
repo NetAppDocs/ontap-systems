@@ -72,7 +72,7 @@ For example, slot 0 with two ports is referred to as 0a and 0b. Slot 1 with four
 +
 In this document, slots and the slot ports are depicted as follows:
 +
-image::../media/slot0_rules.png[]
+image::../media/slot0_rules.png[slot and slot [port convensions]
 
 == Shelf-to-shelf connection rules
 
@@ -87,7 +87,7 @@ One cable connection is needed between disk shelves in each domain--domain A (IO
 +
 From the logical first shelf to the logical last shelf in a stack, you connect IOM port 3 to the next shelf's IOM port 1 in domain A and then domain B.
 
-image::../media/drw_shelf_to_shelf_standard.gif[]
+image::../media/drw_shelf_to_shelf_standard.gif[standard shelf-to-shelf connectivity]
 
 === Double-wide shelf-to-shelf connectivity
 
@@ -98,7 +98,7 @@ The first cable connection is cabled as standard shelf-to-shelf connectivity (us
 +
 From the logical first shelf to the logical last shelf in a stack, you connect IOM port 3 to the next shelf's IOM port 1 in domain A and then domain B. From the logical first shelf to the logical last shelf in a stack, you connect IOM port 4 to the next shelf's IOM port 2 in domain A and then domain B. (IOM ports cabled as double-wide connectivity are shown with blue.)
 
-image::../media/drw_shelf_to_shelf_double_wide.gif[]
+image::../media/drw_shelf_to_shelf_double_wide.gif[double-wide shelf-to-shelf connectivity]
 
 == Controller-to-stack connection rules
 
@@ -123,7 +123,7 @@ IOM port 2 is only used for quad-path HA and quad-path configurations.
 
 The following illustration highlights how controller ports A and C connect in a multipath HA configuration with one quad-port HBA and two stacks of disk shelves. Connections to stack 1 are shown in blue. Connections to stack 2 are shown in orange.
 
-image::../media/drw_controller_to_stack_rules_ports_a_and_c_example.gif[]
+image::../media/drw_controller_to_stack_rules_ports_a_and_c_example.gif[controller A and C port connection rules for platforms without internal storage]
 
 === Controller B and D port connection rules (for platforms without internal storage)
 
@@ -139,7 +139,7 @@ IOM port 4 is only used for quad-path HA and quad-path configurations.
 
 The following illustration highlights how controller ports B and D connect in a multipath HA configuration with one quad-port HBA and two stacks of disk shelves. Connections to stack 1 are shown in blue. Connections to stack 2 are shown in orange.
 
-image::../media/drw_controller_to_stack_rules_ports_b_and_d_example.gif[]
+image::../media/drw_controller_to_stack_rules_ports_b_and_d_example.gif[controller B and D port connection rules for platforms without internal storage]
 
 === Port pair connection rules (for platforms without internal storage)
 
@@ -164,7 +164,7 @@ For example: 1b, 2b, 3b, 1d, 2d, 3d
 
  .. Rewrite the D and B port list so that the first port in the list is moved to the end of the list.
 +
-For example: image:../media/drw_gen_sas_cable_step2.png[]
+For example: image:../media/drw_gen_sas_cable_step2.png[rewrite the D and B port list]
 +
 Offsetting the order of the slots by one balances port pairs across multiple slots (physical PCI slots and on board slots) when more than one slot of SAS ports is available; therefore, preventing a stack from being cabled to a single SAS HBA.
 
@@ -184,7 +184,7 @@ For example, if you identified six port pairs for your system and you have six s
 +
 For example, if you identified six port pairs for your system and you have three stacks to cable as multipath, you cable every other port pair in your list:
 +
-image::../media/drw_portpair_connection_rules_list_skip.gif[]
+image::../media/drw_portpair_connection_rules_list_skip.gif[option to skip port pairs]
 +
 NOTE: When you have more port pairs than you need to cable the stacks in your system, the best practice is to skip port pairs to optimize the SAS ports on your system. By optimizing SAS ports, you optimize your system's performance.
 
@@ -217,7 +217,7 @@ NOTE: If you do not connect the 0b/0b1 port to the correct domain (cross-connect
 
 The following illustration highlights internal storage port (0b/0b1) domain connectivity to an external stack of shelves:
 
-image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[width=440px]
+image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[internal storage port 0b/0b1 domain connectivity, width=440px]
 
 === Tri-path HA connectivity
 
@@ -231,7 +231,7 @@ Ports 0a and 0b1 are cabled across the two controllers when there are no externa
 
 The following shows the controller's internal connections and external cabling that achieves tri-path HA connectivity: 
 
-image::../media/drw_fas2800_concept_tpha_IEOPS-950.svg[width=440px]
+image::../media/drw_fas2800_concept_tpha_IEOPS-950.svg[tri-path HA connectivity, width=440px]
 
 The FAS2800 external SAS ports: 
 
@@ -239,7 +239,8 @@ The FAS2800 external SAS ports:
 * The 0b1 port is from the internal shelf (like the 0b ports on other platforms with an internal shelf).
 * The 0b2 port is not used. It is disabled. If a cable is connected to it, an error message is generated.
 
-image::../media/drw_sas3_ports_on_fas2800_IEOPS-946 (1).svg[width=440px]
+
+image::../media/drw-sas3-ports-on-fas2800.svg[width=440px]
 
 FAS2800 HA pair cabling examples can be found in the link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for platforms with internal storage] section.
 
