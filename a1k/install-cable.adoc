@@ -12,9 +12,9 @@ summary: Management network ports on the controllers are connected to switches. 
 Cable your controllers and shelves according to your specific storage system configuration.
 
 .Before you begin
-Check the illustration arrow for the proper cable connector pull-tab orientation.
+Check the illustration arrow in the cabling diagrams for the proper cable connector pull-tab orientation.
 
-image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[]
+image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull-tab orientation example]
 
 * As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn the cable head over and try again.
 * If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
@@ -163,15 +163,18 @@ These procedures show how to cable your controllers to one shelf and to two shel
 Cable each controller to the NSM modules on the NS224 shelf. The graphics show cabling from each of the controllers: Controller A cabling in blue and Controller B cabling in yellow.
 
 .Steps
-. Connect controller A port e11a to NSM A port e0a.
-. Connect controller A port e10b to port NSM B port e0b.
-+
-image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[]
 
-. Connect controller B port e11a to NSM B port e0a.
-. Connect controller B port e10b to NSM A port e0b.
+. On controller A, cable the following connections:
+.. Connect port e11a to NSM A port e0a.
+.. Connect port e10b to port NSM B port e0b.
 +
-image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[]
+image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[Cable controller A e11a and e11b to a single NS224 shelf AFF A1K]
+
+. On controller B, cable the following connections:
+.. Connect port e11a to NSM B port e0a.
+.. Connect port e10b to NSM A port e0b.
++
+image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[Cable controller B ports e11a and e11b to a single NS224 shelf AFF A1K]
 
 --
 
@@ -181,28 +184,28 @@ Cable each controller to the NSM modules on both NS224 shelves. The graphics sho
 
 .Steps
 
-. On shelf 1, cable the following connections:
-.. Connect controller A port e11a to NSM A port e0a.
+. On controller A, cable the following connections:
+.. Connect port e11a to shelf 1 NSM A port e0a.
 
-.. Connect controller A port e11b to NSM B port e0b.
+.. Connect port e11b to shelf 2 NSM B port e0b.
 
-.. Connect controller B port e11a to NSM B port e0.
+.. Connect controller A port e10a to shelf 2 NSM A port e0a.
 
-.. Connect controller B port e11b to NSM A port e0b.
+.. Connect port e10b to shelf 1NSM A port e0b.
 +
-image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[200]
+image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[Cabling Controllers A ports e11a, e11b, e10a, and e10b to two NS224 shelves AFF A1K]
 +
 
-. On shelf 2, cable the following connections:
-.. Connect controller A port e10a to NSM A port e0a.
+. On controller B, cable the following connections:
+.. Connect port e11a to shelf 1 NSM B port e0a.
 
-.. Connect controller A port e11b to NSM B port e0b.
+.. Connect port e11b to shelf 2 NSM A port e0b.
 
-.. Connect controller B port e11b to NSM A port e0b.
+.. Connect port e10a to NSM B port e0a.
 
-.. Connect controller B port e10a to NSM B port e0a.
+.. Connect port e10b to NSM A port e0b.
 +
-image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[200]
+image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[Cabling Controller B ports e11a, e11b, e10a, and e10b to two NS224 shelves AFF A1K]
 +
 
 --
