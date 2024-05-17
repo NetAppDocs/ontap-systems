@@ -11,13 +11,13 @@ sidebar:
     - title: ONTAP hardware systems docs
       url: "/index.html"
     - title: Release notes
-      url: /rel-notes.html
-    - title: Get started
       entries:
         - title: What's new
           url: /whats-new.html
-        - title: Get up and running
-          url: /get-up-and-run.html
+        - title: End-of-support
+          url: /eoa-hardware.html
+    - title: Get started
+      url: /get-up-and-run.html
     - title: AFF A-Series systems
       url: /aff-aseries/index.html 
       entries:   
