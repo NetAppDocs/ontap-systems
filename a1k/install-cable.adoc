@@ -46,10 +46,10 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 
 +
 
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[width=100pxx]
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable,width=100pxx]
 *Cluster/HA interconnect cables*
 +
-image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[width=500px]
+image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[Two-node switchless cluster cabling diagram AFF A1K,width=500px]
 +
 . Cable the Ethernet module ports to your host network. 
 +
@@ -61,27 +61,27 @@ If present, cable ports e9a and e9b to your Ethernet data network switch as show
 +
 *100 GbE cable*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable,width=100px]
 +
-image::../media/drw_a1k_network_cabling1_ieops-1649.svg[width=500px]
+image::../media/drw_a1k_network_cabling1_ieops-1649.svg[Cable to 100Gb Ethernet network AFF A1K,width=500px]
 
 +
-.. Cable your 10/25 GbE host network switches.
+.. Cable your 10/25 GbE host network switches.****
 +
 *4-ports, 10/25 GbE Host*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb Ethernet cable,width=100px]
 +
-image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
+image::../media/drw_a1k_network_cabling2_ieops-1650.svg[Cable to 10/25Gb Ethernet network AFF A1K,width=500px]
 +
 
 
 . Cable the controller management (wrench) ports to the management network switches with 1000BASE-T RJ-45 cables.
 +
-image::../media/oie_cable_rj45.svg[width=100px]
+image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 +
-image::../media/drw_a1k_management_connection_ieops-1651.svg[width=500px]
+image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network AFF A1K,width=500px]
 
 IMPORTANT: DO NOT plug in the power cords yet. 
 
@@ -105,9 +105,9 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 *100 GbE cable*
 +
-image::../media/oie_cable100_gbe_qsfp28.svg[width=100px]
+image::../media/oie_cable100_gbe_qsfp28.svg[100 Gb cable,width=100px]
 +
-image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[width=500px]
+image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[Cable cluster connections to cluster network,width=500px]
 
 . Cable the Ethernet module ports to your host network. 
 +
@@ -119,27 +119,27 @@ If present, cable ports e9a and e9b to your Ethernet data network switch as show
 +
 *100 GbE cable*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable,width=100px]
 +
-image::../media/drw_a1k_network_cabling1_ieops-1649.svg[width=500px]
+image::../media/drw_a1k_network_cabling1_ieops-1649.svg[Cable to 100Gb Ethernet network AFF A1K,width=500px]
 
 +
 .. Cable your 10/25 GbE host network switches.
 +
 *4-ports, 10/25 GbE Host*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb Ethernet cable,width=100px]
 +
-image::../media/drw_a1k_network_cabling2_ieops-1650.svg[width=500px]
+image::../media/drw_a1k_network_cabling2_ieops-1650.svg[Cable to 10/25Gb Ethernet network AFF A1K,width=500px]
 +
 
 
 . Cable the controller management (wrench) ports to the management network switches with 1000BASE-T RJ-45 cables.
 +
-image::../media/oie_cable_rj45.svg[width=100px]
+image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 +
-image::../media/drw_a1k_management_connection_ieops-1651.svg[width=500px]
+image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network AFF A1K,width=500px]
 
 IMPORTANT: DO NOT plug in the power cords yet. 
 
@@ -166,13 +166,13 @@ Cable each controller to the NSM modules on the NS224 shelf. The graphics show c
 
 . On controller A, cable the following connections:
 .. Connect port e11a to NSM A port e0a.
-.. Connect port e10b to port NSM B port e0b.
+.. Connect port e11b to port NSM B port e0b.
 +
-image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[Cable controller A e11a and e11b to a single NS224 shelf AFF A1K]
+image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[Controller A e11a and e11b to a single NS224 shelf AFF A1K] AFF A1K]
 
 . On controller B, cable the following connections:
 .. Connect port e11a to NSM B port e0a.
-.. Connect port e10b to NSM A port e0b.
+.. Connect port e11b to NSM A port e0b.
 +
 image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[Cable controller B ports e11a and e11b to a single NS224 shelf AFF A1K]
 
@@ -193,7 +193,7 @@ Cable each controller to the NSM modules on both NS224 shelves. The graphics sho
 
 .. Connect port e10b to shelf 1NSM A port e0b.
 +
-image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[Cabling Controllers A ports e11a, e11b, e10a, and e10b to two NS224 shelves AFF A1K]
+image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[Controller-to-shelf connections for controller A AFF A1K]
 +
 
 . On controller B, cable the following connections:
@@ -205,7 +205,7 @@ image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[Cabling Controllers A por
 
 .. Connect port e10b to NSM A port e0b.
 +
-image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[Cabling Controller B ports e11a, e11b, e10a, and e10b to two NS224 shelves AFF A1K]
+image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[Controller-to-shelf connections for controller B AFF A1K]
 +
 
 --
