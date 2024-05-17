@@ -240,7 +240,7 @@ The FAS2800 external SAS ports:
 * The 0b2 port is not used. It is disabled. If a cable is connected to it, an error message is generated.
 
 
-image::../media/drw-sas3-ports-on-fas2800.svg[width=440px]
+image::../media/drw_sas3_ports_on_fas2800_IEOPS-946.svg[FAS2800 external sas ports, width=440px]
 
 FAS2800 HA pair cabling examples can be found in the link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for platforms with internal storage] section.
 
