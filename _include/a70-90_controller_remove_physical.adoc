@@ -4,7 +4,7 @@ You must remove the controller module from the chassis when you replace the cont
 
 . Check the amber NVMEM LED located on the back of the controller module. Look for the NV icon:
 +
-image::../media/drw_A1K-70-90_NVRAM-LED_IEOPS-1463.svg[NVRAM LED]
+image::../media/drw_A1K-70-90_NVRAM-LED_IEOPS-1463.svg[NVRAM attention and status LED location graphic AFF A70-90]
 +
 [cols="1,4"]
 |===
@@ -42,15 +42,15 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_A70-90_PCM_remove_replace_IEOPS-1365.svg[Controller remove]
+image::../media/drw_A70-90_PCM_remove_replace_IEOPS-1365.svg[Controller remove graphic AFF A70-90]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[[Callout number 1, width=30px]|
+image:../media/legend_icon_01.svg[Callout number 1, width=30px]|
 Locking latch
 a|
-image:../media/legend_icon_02.png[Callout number 2, [Callout number 1, width=30px]
+image:../media/legend_icon_02.svg[Callout number 2, width=30px]
 a|
 Locking pin
 |===

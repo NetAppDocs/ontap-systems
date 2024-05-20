@@ -4,7 +4,7 @@ You must remove the controller module from the enclosure when you replace the co
 
 . Check the NVMEM status LED located on the back of the system. There is also an NVMEM LED on the front panel of the controller module. Look for the NV icon:
 +
-image::../media/drw_A1K-70-90_NVRAM-LED_IEOPS-1463.svg[NVRAM]
+image::../media/drw_A1K-70-90_NVRAM-LED_IEOPS-1463.svg[NVRAM attention and status LED location graphic AFF A1K]
 +
 [cols="1,4"]
 |===
@@ -36,7 +36,7 @@ NOTE: The NV status LED on the faceplate of the module will start flashing when 
 +
 The controller module moves slightly out of the enclosure.
 +
-image::../media/drw_A1K_PCM_remove_replace_IEOPS-1375.svg[]
+image::../media/drw_A1K_PCM_remove_replace_IEOPS-1375.svg[Controller remove graphic AFF A1K]
 +
 [cols="1,4"]
 |===
