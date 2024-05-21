@@ -29,8 +29,7 @@ You can enter the following command to monitor the progress of the savecore comm
  .. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode _replacement_node_name_`
 +
 The _replacement_ controller takes back its storage and completes booting.
-+
-If you are prompted to override the system ID due to a system ID mismatch, you should enter `y`.
+
 +
 NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +

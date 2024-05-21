@@ -38,15 +38,15 @@ The cam button moves away from the enclosure.
 +
  .. Remove the NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 +
-image::../media/drw_A1K_NVRAM12_remove_replace_IEOPS-1380.svg[Remove-replace A1K NVRAM12 module]
+image::../media/drw_A1K_NVRAM12_remove_replace_IEOPS-1380.svg[Remove the NVRAM12 module and DIMMs AFF A1K]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
 Cam locking button
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
 DIMM locking tab
 |===
@@ -75,15 +75,15 @@ The cam button moves away from the enclosure.
  .. Rotate the cam latch as far as it will go.
   .. Remove the NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 +
-image::../media/drw_A1K_NVRAM12_remove_replace_IEOPS-1380.svg[Remove-replace A1K NVRAM12 module]
+image::../media/drw_A1K_NVRAM12_remove_replace_IEOPS-1380.svg[Remove the NVRAM 12 module and DIMMs AFF A1K]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
 Cam locking button
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
 DIMM locking tab
 |===
@@ -112,7 +112,7 @@ CAUTION: Disk reassignment is only needed when replacing the NVRAM module and do
 
 .Steps
 . If the replacement controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the replacement controller, boot the controller and entering y if you are prompted to override the system ID due to a system ID mismatch.
+. From the LOADER prompt on the replacement controller, boot the controller and entering y when prompted to override the system ID due to a system ID mismatch.
 . Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: `storage failover show`
 +
 In the command output, you should see a message that the system ID has changed on the impaired controller, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.

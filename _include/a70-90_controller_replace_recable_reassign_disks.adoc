@@ -33,8 +33,6 @@ You can enter the following command to monitor the progress of the savecore comm
 +
 The _replacement_ controller takes back its storage and completes booting.
 +
-If you are prompted to override the system ID due to a system ID mismatch, you should enter `y`.
-+
 NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the High-Availability Configuration content for your version of ONTAP 9]
