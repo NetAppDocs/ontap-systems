@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, a90, prepare installation
 summary: Management network ports on the controllers are connected to switches. The HA interconnect and cluster interconnect ports are cabled on both controllers. The controller modules are connected to external storage, if ordered.
 ---
-= Cable the hardware - AFF A70-90
+= Cable the hardware - AFF A90, AFF A70
 :icons: font
 :imagesdir: ../media/
 
@@ -49,7 +49,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
 *Cluster/HA interconnect cables*
 +
-image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[Two-node switchless cluster cabling diagram AFF A70-90, width=500px]
+image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[Two-node switchless cluster cabling diagram AFF A90, AFF A70, width=500px]
 +
 . Cable the Ethernet module ports to your host network. 
 +
@@ -64,7 +64,7 @@ NOTE: For maximum system performance for cluster and HA traffic, it is a best pr
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable, width=100px]
 +
-image::../media/drw_70-90_network_cabling1_IEOPS-1654.svg[Cable to 100 Gb Ethernet network AFF A70-90,width=500px]
+image::../media/drw_70-90_network_cabling1_IEOPS-1654.svg[Cable to 100 Gb Ethernet network AFF A90, AFF A70,width=500px]
 
 +
 .. Cable your 10/25 GbE host network switches.
@@ -73,7 +73,7 @@ image::../media/drw_70-90_network_cabling1_IEOPS-1654.svg[Cable to 100 Gb Ethern
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[10/25 Gb cable,width=100px]
 +
-image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Ethernet network AFF A70-90,width=500px]
+image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Ethernet network AFF A90, AFF A70,width=500px]
 +
 
 
@@ -122,7 +122,7 @@ NOTE: For maximum system performance for cluster and HA traffic, it is a best pr
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable,width=100px]
 +
-image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100Gb Ethernet network AFF A70-90,width=500px]
+image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100Gb Ethernet network AFF A90, AFF A70,width=500px]
 
 +
 .. Cable your 10/25 GbE host network switches.
@@ -131,7 +131,7 @@ image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100Gb Etherne
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb Ethernet cable,width=100px]
 +
-image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 10/25Gb Ethernet network AFF A70-90,width=500px]
+image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 10/25Gb Ethernet network AFF A90, AFF A70,width=500px]
 +
 
 
@@ -140,7 +140,7 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 10/25Gb Ether
 image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 +
-image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network AFF A70-90,width=500px]
+image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network AFF A90, AFF A70,width=500px]
 
 IMPORTANT: DO NOT plug in the power cords yet. 
 
@@ -167,7 +167,7 @@ Cable each controller to the NSM modules on the NS224 shelf. The graphics show c
 . Connect controller A port e11a to NSM A port e0a.
 . Connect controller A port e11b to port NSM B port e0b.
 +
-image:../media/drw_A70-90_1shelf_cabling_A_ieops-1731.svg[Controller A e11a and e11b to a single NS224 shelf AFF A70-90]
+image:../media/drw_A70-90_1shelf_cabling_A_ieops-1731.svg[Controller A e11a and e11b to a single NS224 shelf AFF A90, AFF A70]
 
 . Connect controller B port e11a to NSM B port e0a.
 . Connect controller B port e11b to NSM A port e0b.

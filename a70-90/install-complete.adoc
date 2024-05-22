@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, a90, prepare installation
 summary: Complete the platform setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the storage system and then connecting to the management switch.
 ---
-= Complete storage system setup and configuration - AFF A70-90
+= Complete storage system setup and configuration - AFF A90, AFF A70
 :icons: font
 :imagesdir: ../media/
 
@@ -33,7 +33,7 @@ If you have network discovery enabled on your laptop, you can complete platform 
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.svg[How to discover your controllers with Windows File Explorer AFF A70-90]
+image::../media/drw_autodiscovery_controler_select.svg[How to discover your controllers with Windows File Explorer AFF A90, AFF A70]
 
  .. Open File Explorer.
  .. Click *Network* in the left pane.
