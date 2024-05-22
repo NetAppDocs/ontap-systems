@@ -114,9 +114,9 @@ image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[Cable cluster 
 +
 The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
 
-.. Cable ports e1b and e7b to your Ethernet data network switch. 
+.. Cable ports e9a and e9b to your Ethernet data network switch as shown.
 +
-If present, cable ports e9a and e9b to your Ethernet data network switch as shown.
+NOTE: For maximum system performance for cluster and HA traffic, it is a best practice to not use ports e1b and e7b ports for host network connections.  Use a separate host card to maximize performance.
 +
 *100 GbE cable*
 +
