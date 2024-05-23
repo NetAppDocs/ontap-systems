@@ -1,5 +1,5 @@
 section: a70-90
-title: AFF A70 and AFF A90 systems
+title: AFF A90, AFF A70 systems
 entries:
  - title: Install and setup
    pdf-filename: AFF A90, AFF A70 Install and Setup
@@ -17,13 +17,13 @@ entries:
      - title: Complete system setup
        url: /a70-90/install-complete.html
  - title: Maintain
-   pdf-filename: AFF A70 and AFF A90 Maintain
+   pdf-filename: AFF A90, AFF A70 Maintain
    entries:
    - title: Overview
      url: /a70-90/maintain-overview.html
       # START boot media
    - title: Boot media
-     pdf-filename: AFF A70 and AFF A90 Boot Media
+     pdf-filename: AFF A90, AFF A70 Boot Media
      entries:
         - title: Boot media replace overview
           url: /a70-90/bootmedia-replace-overview.html
@@ -41,7 +41,7 @@ entries:
           url: /a70-90/bootmedia-complete-rma.html
           # END boot media
    - title: Chassis
-     pdf-filename: AFF A70 and AFF A90 Chassis
+     pdf-filename: AFF A90, AFF A70 Chassis
      entries:
         - title: Chassis replace overview
           url: /a70-90/chassis-replace-overview.html
@@ -52,7 +52,7 @@ entries:
         - title: Complete chassis replacement
           url: /a70-90/chassis-replace-complete-system-restore-rma.html
    - title: Controller
-     pdf-filename: AFF A70 and AFF A90 Controller Module
+     pdf-filename: AFF A90, AFF A70 Controller Module
      entries:
         - title: Controller module replace overview
           url: /a70-90/controller-replace-overview.html
