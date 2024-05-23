@@ -51,7 +51,7 @@ System Manager opens.
 If network discovery is not enabled on your laptop, complete the configuration and setup using the ONTAP command line interface (CLI) Cluster Setup wizard.
 
 .Before you begin
-Make sure your laptop is connected to the serial console port and the controllers are powered on. See link:power-hardware.html#step-2-power-on-the-controllers[Power on the controllers] for instructions.
+Make sure your laptop is connected to the serial console port and the controllers are powered on. See link:install-power-hardware.html#step-2-power-on-the-controllers[Power on the controllers] for instructions.
 
 .Steps
 
@@ -76,7 +76,7 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 +
 The node boots, and then the Cluster Setup wizard starts on the console.
 
-.. Enter the management IP address when prompted by the Cluster Setup wizard.
+.. Enter the node's management IP address when prompted by the Cluster Setup wizard.
 
 +
 |===

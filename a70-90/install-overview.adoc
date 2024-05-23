@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Installation, deployment, Install, deploy, Installing, deploying
 summary: 'Follow these high-level steps to install and set up your AFF A70 or A90 storage system and deploy it as a node in your ONTAP system.'
 ---
-= Installation workflow - AFF A70, AFF A90
+= Install setup workflow - AFF A70, AFF A90
 :icons: font
 :imagesdir: ../media/
 
@@ -20,7 +20,7 @@ Follow these workflow steps to install, set up, and deploy your AFF A70, AFF A90
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install hardware
 [role="quick-margin-list"]
-. link:install-hardware.html[Install your hardware]
+. link:install-hardware.html[Install hardware]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Cable hardware
 
