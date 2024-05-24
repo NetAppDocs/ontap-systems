@@ -45,7 +45,7 @@ Make sure that the site and the cabinet or rack you plan to use meet the specifi
 . Confirm that your site meets the environmental and electrical requirements for your platform as shown in the https://hwu.netapp.com[NetApp Hardware Universe^].
 
 . Make sure you have adequate rack space:
-** 4U for the platform 
+** 4U for the platform chassis
 ** 2U for each NS224 shelf
 
 . Install any required network switches near the platform.
@@ -62,7 +62,7 @@ Unpack all boxes and compare the contents to the items on the packing slip.
 . Compare the contents you’ve unpacked with the list on the packing slip. 
 
 +
-NOTE: You can get your packing list by scaning the QR code on the side of the shipping carton.
+NOTE: You can get your packing list by scanning the QR code on the side of the shipping carton.
 
 +
 The following items are some of the contents you might see in the boxes. 
@@ -77,7 +77,7 @@ Ensure that everything in the boxes matches the list on the packing slip. If the
 a|* Platform
 * Shelf 
 * Rail kits with instructions (optional)
-* Cable management device 
+* Two Cable management devices 
 * Bezel
 a|* Power cords
 * Network cables
@@ -93,7 +93,7 @@ Registering your platform provides support benefits.
 
 .Steps
 
-. Locate the serial number for your platform. 
+. Locate the system serial number for your platform. 
 +
 You can find the number on the packing slip, in your confirmation email, or on the controller after you unpack it.
 +
@@ -112,7 +112,7 @@ a|
 
  .. Sign in with your username and password.
  .. Select *Systems* > *My Systems*.
- .. Confirm that the new serial number is listed.
+ .. Confirm that the new system serial number is listed.
  .. If it is not, follow the instructions for new NetApp customers.
 
 a|
@@ -121,7 +121,7 @@ a|
 
  .. Click *Register Now*, and create an account.
  .. Select *Systems* > *Register Systems*.
- .. Enter the product serial number and requested details.
+ .. Enter the system serial number and requested details.
 
 After your registration is approved, you can download any required software. The approval process might take up to 24 hours.
 |===

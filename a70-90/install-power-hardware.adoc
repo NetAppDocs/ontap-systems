@@ -9,10 +9,14 @@ summary: Attach the power cables and power on the shelves and controllers.
 :imagesdir: ../media/
 
 [.lead]
-After connecting the network and any shelf cables, you are ready to apply power to the controllers and shelves.
+After connecting the network and any shelf cables, you are ready to apply power to the controllers and any additional shelves.
+
+NOTE: External NS224 shelves are optional.
 
 == Step 1: Power on the shelf and assign shelf ID
-In ONTAP storage systems, each NS224 shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you may need to adjust these IDs to maintain uniqueness across your storage system.
+In ONTAP storage systems, each NS224 shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup. By default, shelf IDs are typically assigned as ‘00’ and ‘01’, but you may need to adjust these IDs to maintain uniqueness across your storage system.
+
+NOTE: The controller chassis shelf ID is hard-coded to '00'. Do not use shelf ID '00' for any NS224 shelves attached to the platform.
 
 .About this task
 * A valid shelf ID is 00 through 99.
