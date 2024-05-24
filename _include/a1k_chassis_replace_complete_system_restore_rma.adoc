@@ -1,0 +1,44 @@
+To complete the chassis replacement, you must complete specific tasks.
+
+== Step 1: Verify and set the HA state of the chassis
+
+You must verify the HA state of the chassis, and, if necessary, update the state to match your system configuration.
+
+. In Maintenance mode, from either controller module, display the HA state of the local controller module and chassis: `ha-config show`
++
+The HA state should be the same for all components.
+
+. If the displayed system state for the chassis does not match your system configuration:
+ .. Set the HA state for the chassis: `ha-config modify chassis _ha-state_`
++
+The value for HA-state can be one of the following:
+
+  *** ha
+  *** non-ha
+
+. Confirm that the setting has changed: `ha-config show`
+. If you have not already done so, recable the rest of your system.
+
+== Step 2: Bring up the system
+
+. If you have not done so, plug the power cables back into the PSUs.
+. Turn on the PSUs by toggling the rocker switched to *ON*, and wait for the controllers to power up completely.
+. Check the front and the back of the chassis and controllers for any fault lights after power up. 
+. Connect to the SP or BMC IP address of the nodes via SSH. This will be the same address used to shut down the nodes.
+. Perform additional health checks as described in https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP[How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP^]
+. Turn AutoSupport back on (end the maintenance window message):
+`system node autosupport invoke -node * -type all -message MAINT=end`
+
+====
+NOTE: As a best practice, you should do the following:
+
+* Resolve any https://activeiq.netapp.com/[Active IQ Wellness Alerts and Risks^] (Active IQ will take time to process post-power up AutoSupports - expect a delay in results)
+* Run https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^]
+* Check system health using https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP[How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP^]
+====
+
+
+
+== Step 3: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

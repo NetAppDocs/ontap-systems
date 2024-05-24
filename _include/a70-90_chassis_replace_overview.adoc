@@ -1,0 +1,7 @@
+To replace the chassis, you must move the bezel, controller modules, and NVMe drives from the impaired chassis to the replacement chassis, and then remove the impaired chassis from the equipment rack or system cabinet and install the replacement chassis in its place.
+
+All other components in the system must be functioning properly; if not, you must contact technical support.
+
+* You can use this procedure with all versions of ONTAP supported by your system.
+* This procedure is written with the assumption that you are moving the bezel, NVMe drives, and controller modules to the new chassis, and that the replacement chassis is a new component from NetApp.
+* This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
