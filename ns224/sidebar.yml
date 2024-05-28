@@ -5,7 +5,19 @@ entries:
     pdf-filename: NS224 Shelves Install and Cable
     entries:
     - title: Hot-add shelf
-      url: /ns224/hot-add-shelf.html
+      entries:
+        - title: Requirements
+          url: /ns224/requirements-hot-add-shelf.html
+        - title: Best practices
+          url: /ns224/best-practice-hot-add-shelf.html
+        - title: Prepare to hot-add shelf
+          url: /ns224/prepare-hot-add-shelf.html
+        - title: Install shelf for hot add
+          url: /ns224/install-hot-add-shelf.html
+        - title: Cable shelf for hot-add
+          url: /ns224/cable-hot-add-shelf.html
+        - title: Complete hot-add
+          url: /ns224/complete-hot-add-shelf.html
     - title: Change shelf ID
       url: /ns224/change-shelf-id.html
     - title: Cable shelves as switch-attached storage

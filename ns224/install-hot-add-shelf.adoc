@@ -1,0 +1,63 @@
+---
+permalink: ns224/install-hot-add-shelf.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, install, hot-add an ns224 drive shelf
+summary: You can hot-add an NS224 drive shelf after your HA pair meets certain requirements, and after the preparation tasks applicable to your HA pair are completed.
+---
+= Install a shelf for a hot-add - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Installing a new NS224 shelf involves installing the shelf into a rack or cabinet, connecting the power cords (which automatically powers on the shelf), and then setting the shelf ID.
+
+.Before you begin
+* Make sure you have reviewed the link:ns224/requirements-hot-add-shelf.html[hot-add requirements]. 
+
+* Make sure your have a paper clip with one side straightened or a narrow-tipped ballpoint pen.
++
+You use the paper clip or ballpoint pen to access the shelf ID button behind the Operator Display Panel (ODP) during the change shelf ID step.
+
+* Understand that a fully loaded NS224 shelf can weigh up to 66.78 lbs (30.29 kg) and requires two people to lift or use of a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
+
+.Steps
+
+. Install the rail-mount kit that came with your shelf by using the installation flyer that came in the kit box.
++
+NOTE: Do not flange-mount the shelf.
+
+. Install and secure the shelf onto the support brackets and rack or cabinet by using the installation flyer.
++
+
+
+. Connect the power cords to the shelf, secure them in place with the power cord retainer if they are AC power supplies, or the two thumb screws if they are DC power supplies, and then connect the power cords to different power sources for resiliency.
++
+A shelf powers up when connected to a power source; it does not have power switches. When functioning correctly, a power supply's bicolored LED illuminates green.
+
+. Set the shelf ID to a number that is unique within the HA pair:
++
+
+ .. Remove the left end cap and locate the small hole to the right of the LEDs.
+ .. Insert the end of a paper clip or similar tool into the small hole to reach the shelf ID button.
+ .. Press and hold the button (for up to 15 seconds) until the first number on the digital display blinks, and then release the button.
++
++
+If the ID takes longer than 15 seconds to blink, press and hold the button again, making sure to press it in all the way.
++
+ .. Press and release the button to advance the number until you reach the desired number from 0 to 9.
+ .. Repeat substeps 4c and 4d to set the second number of the shelf ID.
++
+It can take up to three seconds (instead of 15 seconds) for the number to blink.
+
+ .. Press and hold the button until the second number stops blinking.
++
+After about five seconds, both numbers start blinking and the amber LED on the ODP illuminates.
+
+ .. Power-cycle the shelf to make the shelf ID take effect.
++
+You must unplug both power cords from the shelf, wait 10 seconds, and then plug them back in.
++
+When power is restored to the power supplies, their bicolored LEDs illuminate green.
++
+
+See link:change-shelf-id.html[Change a shelf ID - NS224 shelves^] for more detailed instructions.

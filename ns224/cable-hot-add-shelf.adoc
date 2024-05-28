@@ -1,72 +1,17 @@
 ---
-permalink: ns224/hot-add-shelf.html
+permalink: ns224/cable-hot-add-shelf.html
 sidebar: sidebar
-keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, requirement, preparation, applicable, complete, drive, hot-add an ns224 drive shelf
-summary: You can hot-add an NS224 drive shelf after your HA pair meets certain requirements, and after the preparation tasks applicable to your HA pair are completed.
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, cable, hot-add an ns224 drive shelf
+summary: You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
 ---
-= Hot-add a shelf - NS224 shelves
+= Cable a shelf for a hot-add- NS224 shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-add an NS224 drive shelf after your HA pair meets certain requirements, and after the preparation tasks applicable to your HA pair are completed.
-
-
-== Install a shelf for a hot-add
-
-Installing a new NS224 shelf involves installing the shelf into a rack or cabinet, connecting the power cords (which automatically powers on the shelf), and then setting the shelf ID.
-
-.Before you begin
-* Make sure your have a paper clip with one side straightened or a narrow-tipped ballpoint pen.
-+
-You use the paper clip or ballpoint pen to access the shelf ID button behind the Operator Display Panel (ODP) during the change shelf ID step.
-
-.Steps
-
-. Install the rail-mount kit that came with your shelf by using the installation flyer that came in the kit box.
-+
-NOTE: Do not flange-mount the shelf.
-
-. Install and secure the shelf onto the support brackets and rack or cabinet by using the installation flyer.
-+
-NOTE: A fully loaded NS224 shelf can weigh up to 66.78 lbs (30.29 kg) and requires two people to lift or use of a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
-
-. Connect the power cords to the shelf, secure them in place with the power cord retainer if they are AC power supplies, or the two thumb screws if they are DC power supplies, and then connect the power cords to different power sources for resiliency.
-+
-A shelf powers up when connected to a power source; it does not have power switches. When functioning correctly, a power supply's bicolored LED illuminates green.
-
-. Set the shelf ID to a number that is unique within the HA pair:
-+
-More detailed instructions are available:
-+
-link:change-shelf-id.html[Change a shelf ID - NS224 shelves^]
-
- .. Remove the left end cap and locate the small hole to the right of the LEDs.
- .. Insert the end of a paper clip or similar tool into the small hole to reach the shelf ID button.
- .. Press and hold the button (for up to 15 seconds) until the first number on the digital display blinks, and then release the button.
-+
-NOTE: If the ID takes longer than 15 seconds to blink, press and hold the button again, making sure to press it in all the way.
-
- .. Press and release the button to advance the number until you reach the desired number from 0 to 9.
- .. Repeat substeps 4c and 4d to set the second number of the shelf ID.
-+
-It can take up to three seconds (instead of 15 seconds) for the number to blink.
-
- .. Press and hold the button until the second number stops blinking.
-+
-After about five seconds, both numbers start blinking and the amber LED on the ODP illuminates.
-
- .. Power-cycle the shelf to make the shelf ID take effect.
-+
-You must unplug both power cords from the shelf, wait 10 seconds, and then plug them back in.
-+
-When power is restored to the power supplies, their bicolored LEDs illuminate green.
-
-== Cable a shelf for a hot-add
-
 You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
 
-=== Considerations when cabling for a hot-add
+.Considerations when cabling for a hot-add
 
 Familiarizing yourself with proper cable connector orientation, and the location and labeling of ports on the NS224 NSM shelf modules can be helpful before cabling your hot-added shelf.
 
@@ -86,8 +31,13 @@ Each NSM100 module includes 2 x 100GbE QSFP28 ports: e0a and e0b.
 +
 image::../media/drw_ns224_back_ports.png[NS224 NSM100 module ports e0a and e0b]
 
-=== Cable a hot-add shelf for an AFF A70 or AFF A90 HA pair
+// start tabbed area
 
+[role="tabbed-block"]
+====
+
+.AFF A70 or AFF A90 HA pair
+--
 You can hot-add up to two NS224 shelves to an AFF A70 or AFF A90 HA pair when additional storage (to the internal shelf) is needed.
 
 .Before you begin
@@ -178,9 +128,10 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 Otherwise, you are done with this procedure.
 +
 <<Complete the hot-add>>
+--
 
-=== Cable a hot-add shelf for an AFF A1K HA pair
-
+.AFF A1K HA pair
+--
 You can hot-add up to three additional NS224 shelves (for a total of four shelves) to an AFF A1K HA pair.
 
 .Before you begin
@@ -264,11 +215,11 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 +
 Otherwise, you are done with this procedure.
 +
-<<Complete the hot-add>>
+<<Complete the hot-add>>--
 
+.AFF A900 HA pair
 
-=== Cable a hot-add shelf for an AFF A900 HA pair
-
+--
 When additional storage is needed, you can hot-add up to three additional NS224 drive shelves (for a total of four shelves) to an AFF A900 HA pair.
 
 .Before you begin
@@ -343,8 +294,10 @@ Otherwise, you are done with this procedure.
 +
 <<Complete the hot-add>>
 
-=== Cable a hot-add shelf for an AFF A250, AFF C250, or FAS500f HA pair
+--
 
+.AFF A250, C250, or FAS500f HA pair
+--
 When additional storage is needed, you can hot-add an NS224 drive shelf to a FAS500f or AFF A250 HA pair.
 
 .Before you begin
@@ -387,8 +340,12 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 Otherwise, you are done with this procedure.
 +
 <<Complete the hot-add>>
+--
 
-=== Cable a hot-add shelf for an AFF A700 HA pair
+.AFF A700 HA pair
+--
+
+=== Cable a hot-add shelf for an 
 
 How you cable an NS224 drive shelf in an AFF A700 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controller modules.
 
@@ -467,9 +424,10 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 Otherwise, you are done with this procedure.
 +
 <<Complete the hot-add>>
+--
 
-=== Cable a hot-add shelf for an AFF A800 or AFF C800 HA pair
-
+.AFF A800 or AFF C800 HA pair
+--
 How you cable an NS224 drive shelf in an AFF A800 or AFF C800 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controller modules.
 
 .Before you begin
@@ -550,8 +508,10 @@ Otherwise, you are done with this procedure.
 +
 <<Complete the hot-add>>
 
-=== Cable a hot-add shelf for an AFF A400 HA pair
+--
 
+.AFF A400 HA pair
+--
 How you cable an NS224 drive shelf in an AFF A400 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controller modules.
 
 .Before you begin
@@ -625,9 +585,10 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 Otherwise, you are done with this procedure.
 +
 <<Complete the hot-add>>
+--
 
-=== Cable a hot-add shelf for an AFF C400 HA pair
-
+.AFF C400 HA pair
+--
 How you cable an NS224 drive shelf in an AFF C400 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controller modules.
 
 .Before you begin
@@ -702,8 +663,10 @@ Otherwise, you are done with this procedure.
 +
 <<Complete the hot-add>>
 
-=== Cable a hot-add shelf for an AFF A320 HA pair
+--
 
+.AFF A320 HA pair
+--
 You cable a second NS224 drive shelf to an existing HA pair when additional storage is needed.
 
 .Before you begin
@@ -746,29 +709,8 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 Otherwise, you are done with this procedure.
 +
 <<Complete the hot-add>>
+--
 
-== Complete the hot-add
+====
 
-If you disabled automatic drive assignment as part of the preparation for the NS224 drive shelf hot-add, you need to manually assign drive ownership and then reenable automatic drive assignment if needed.
-
-.Before you begin
-
-You must have already cabled your shelf as instructed for your HA pair.
-
-<<Cable a drive shelf for a hot-add>>
-
-.Steps
-
-. Display all unowned drives: `storage disk show -container-type unassigned`
-+
-You can enter the command on either controller module.
-
-. Assign each drive: `storage disk assign -disk disk_name -owner owner_name`
-+
-You can enter the command on either controller module.
-+
-You can use the wild card character to assign more than one drive at once.
-
-. Reenable automatic drive assignment if needed: `storage disk option modify -node node_name -autoassign on`
-+
-You must reenable automatic drive assignment on both controller modules.
+// end tabbed area

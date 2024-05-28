@@ -1,0 +1,39 @@
+---
+permalink: ns224/requirements-hot-add-shelf.html
+sidebar: sidebar
+keywords: best practice, ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair
+summary: To hot-add an NS224 drive shelf, your HA pair must meet certain requirements.
+---
+= Best practices - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You should familiarize yourself with best practices before hot-adding an NS224 drive shelf.
+
+* If you have an ASA HA pair supporting NS224 shelves, you can use this procedure.
+
+* *Best practice:* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-adding a shelf.
++
+Having the current version of the DQP installed allows your system to recognize and use newly qualified drives. This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
++
+//30 aug 2022, BURT 1491809: correct the DQP link
+Download the https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[Disk Qualification Package^].
+
+* *Best practice:* The best practice is to run Active IQ Config Advisor before and after hot-adding a shelf.
++
+Running Active IQ Config Advisor before hot-adding a shelf provides a snap shot of the existing shelf Ethernet (ENET) connectivity, verifies NVMe shelf module (NSM) firmware versions, and allows you to verify a shelf ID already in use in the HA pair. Running Active IQ Config Advisor after hot-adding a shelf allows you to verify shelves are cabled correctly and that shelf IDs are unique within the HA pair.
++
+Download https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
+
+* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before adding a new shelf.
++
+Download https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[Disk Shelf Firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[Disk Drive Firmware^].
++
+NOTE: Do not revert firmware to a version that does not support your shelf and its components.
+
+* After you have cabled a hot-added shelf, ONTAP recognizes the shelf:
+ ** Drive ownership is assigned if automatic drive assignment is enabled.
+ ** NSM shelf firmware and drive firmware should be updated automatically, if needed.
++
+NOTE: Firmware updates can take up to 30 minutes.
