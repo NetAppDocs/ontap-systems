@@ -223,20 +223,80 @@ NOTE: Moving a cable does not require any wait time between unplugging the cable
 .Steps
 
 . Recable the existing shelf's connections across two sets of RoCE-capable ports in different slots, as applicable to your platform model.
++
 
 [options="header" cols="1,3"]
 |===
 | If you have an...| Then...
 a|
+AFF C400 HA pair and you are hot-adding a second shelf
+a|
+. Recable the first shelf across both sets of RoCE-capable ports on each controller:
+.. On controller A, move the cable from slot 4 port a (e4a) to slot 5 port b (e5b).
+.. Repeat the same cable move on controller B.
++
+[NOTE]
+====
+If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two shelf configuration.
+
+<<Cable a hot-add shelf for an AFF C400 HA pair>>
+====
++
+. Cable the second shelf if there are no more preparation procedures you need to complete.
++
+<<Cable a shelf for a hot-add>> 
++
+<<Prepare for a hot-add>>
+a| 
+AFF A800 or AFF C800 HA pair and you are hot-adding a second shelf
+a|
+. Recable the first shelf across both sets of RoCE-capable ports on each controller:
++ 
+NOTE: This procedure assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
+
+.. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
+.. Repeat the same cable move on controller B.
++
+[NOTE]
+====
+If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two shelf configuration.
+
+<<Cable a hot-add shelf for an AFF A800 or AFF C800 HA pair>>
+====
++
+. Cable the second shelf if there are no more preparation procedures you need to complete.
++
+<<Cable a shelf for a hot-add>> 
++
+<<Prepare for a hot-add>>
+a|
+AFF A400 HA pair and you are hot-adding a second shelf
+a|
+. Recable the first shelf across both sets of RoCE-capable ports on each controller:
+.. On controller A, move the cable from port e0d to slot 5 Port b (e5b).
+.. Repeat the same cable move on controller B.
++
+[NOTE]
+====
+If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two shelf configuration.
+
+<<Cable a hot-add shelf for an AFF A400 HA pair>>
+====
++
+. Cable the second shelf if there are no more preparation procedures you need to complete.
++
+<<Cable a shelf for a hot-add>> 
++
+<<Prepare for a hot-add>>
+a|
 AFF A700 HA pair and you are hot-adding a second shelf
 a|
-
 . Recable the first shelf across both sets of RoCE-capable ports on each controller:
 +
-NOTE: The substeps assume the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
+NOTE: This procedure assumes the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
 
- .. On controller A, move the cable from slot 3 port b (e3b) to slot 7 port b (e7b).
- .. Repeat the same cable move on controller B.
+.. On controller A, move the cable from slot 3 port b (e3b) to slot 7 port b (e7b).
+.. Repeat the same cable move on controller B.
 +
 [NOTE]
 ====
@@ -247,50 +307,10 @@ If needed, you can reference cabling illustrations showing an existing single sh
 +
 . Cable the second shelf if there are no more preparation procedures you need to complete.
 +
-<<Cable an NS224 shelf for a hot-add>> 
+<<Cable a shelf for a hot-add>> 
 +
 <<Prepare for a hot-add>>
-
 a|
-AFF A800 or AFF C800 HA pair
-a|
-NOTE: The substeps assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
-
-[NOTE]
-====
-If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two shelf configuration.
-
-<<Cable a hot-add shelf for an AFF A800 or AFF C800 HA pair>>
-====
-
- .. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
- .. Repeat the same cable move on controller B.
-
-a|
-AFF A400 HA pair
-a|
-[NOTE]
-====
-If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two shelf configuration.
-
-<<Cable a hot-add shelf for an AFF A400 HA pair>>
-====
-
- .. On controller A, move the cable from port e0d to slot 5 Port b (e5b).
- .. Repeat the same cable move on controller B.
-
-a|
-AFF C400 HA pair
-a|
-[NOTE]
-====
-If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two shelf configuration.
-
-<<Cable a hot-add shelf for an AFF C400 HA pair>>
-====
-
- .. On controller A, move the cable from slot 4 port a (e4a) to slot 5 port b (e5b).
- .. Repeat the same cable move on controller B.
 +
 |===
 
@@ -312,19 +332,19 @@ You must have met the system requirements.
 
 .About this task
 
-You need to manually assign drive ownership if drives in the shelf will be owned by both controller modules in the HA pair.
+If you are unsure whether you should manually assign drive ownership, or want to understand the automatic assignment of drive ownership policies for your storage system, see https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html[About automatic assignment of disk ownership^]
 
 .Steps
 
 . Verify whether automatic drive assignment is enabled: `storage disk option show`
 +
-You can enter the command on either controller module.
+You can enter the command on either node.
 +
-If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column (for each controller module).
+If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column (for each node).
 
-. If automatic drive assignment is enabled, disable it: `storage disk option modify -node node_name -autoassign off`
+. If automatic drive assignment is enabled, disable it: `storage disk option modify -node _node_name_ -autoassign off`
 +
-You must disable automatic drive assignment on both controller modules.
+You must disable automatic drive assignment on both nodes.
 
 == Install a drive shelf for a hot-add
 
