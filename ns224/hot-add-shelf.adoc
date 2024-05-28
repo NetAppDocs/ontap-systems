@@ -220,18 +220,68 @@ Before hot-adding additional shelves, depending on your platform model, you migh
 +
 NOTE: Moving a cable does not require any wait time between unplugging the cable from one port and plugging it into another port.
 
+* If you have an AFF A1K HA pair and you are hot-adding a third shelf and installing a third or forth RoCE-capable I/O module in each controller, the third shelf is cabled to only the third or third and forth I/O modules. You do not need to recable any existing shelves. 
+
 .Steps
 
 . Recable the existing shelf's connections across two sets of RoCE-capable ports in different slots, as applicable to your platform model.
 +
-
 [options="header" cols="1,3"]
 |===
 | If you have an...| Then...
 a|
+AFF A70 or AFF A90 HA pair and you are hot-adding a second shelf
+a|
+Recable the first shelf across both RoCE-capable I/O modules:
+
+NOTE: The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 11 on each controller.
+
+.. On controller A, move the cable from slot 11 port b (e11b) to
+slot 8 port b (e8b).
+.. Repeat the same cable move on controller B.
++
+[NOTE]
+====
+If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two-shelf configuration.
+
+<<Cable a hot-add shelf for an AFF A70 or AFF A90 HA pair>>
+a|
+AFF A1K HA pair and are hot-adding a second shelf
+a|
+Recable the first shelf across both RoCE-capable I/O modules:
+
+NOTE: The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 11 on each controller.
+
+.. On controller A, move the cable from slot 11 port b (e11b) to
+slot 10 port b (e10b).
+.. Repeat the same cable move on controller B.
++
+[NOTE]
+====
+If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two-shelf configuration.
+
+<<Cable a hot-add shelf for an AFF A1K HA pair>>
+a|
+AFF A1K HA pair and you are hot-adding a forth shelf
+a|
+Recable the third shelf across the R0CE-capable I/O modules in slot 9 on each controller:
+
+.. On controller A, move the cable from slot 9 port b (e9b) to
+slot 8 port b (e8b).
+.. Repeat the same cable move on controller B.
++
+[NOTE]
+====
+If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two-shelf configuration.
+
+<<Cable a hot-add shelf for an AFF A1K HA pair>>
+a|
 AFF C400 HA pair and you are hot-adding a second shelf
 a|
-. Recable the first shelf across both sets of RoCE-capable ports on each controller:
+Recable the first shelf across both sets of RoCE-capable ports on each controller:
+
 .. On controller A, move the cable from slot 4 port a (e4a) to slot 5 port b (e5b).
 .. Repeat the same cable move on controller B.
 +
@@ -240,19 +290,12 @@ a|
 If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two shelf configuration.
 
 <<Cable a hot-add shelf for an AFF C400 HA pair>>
-====
-+
-. Cable the second shelf if there are no more preparation procedures you need to complete.
-+
-<<Cable a shelf for a hot-add>> 
-+
-<<Prepare for a hot-add>>
 a| 
 AFF A800 or AFF C800 HA pair and you are hot-adding a second shelf
 a|
-. Recable the first shelf across both sets of RoCE-capable ports on each controller:
-+ 
-NOTE: This procedure assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
+Recable the first shelf across both sets of RoCE-capable ports on each controller:
+
+NOTE: The substeps assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
 
 .. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
 .. Repeat the same cable move on controller B.
@@ -263,16 +306,11 @@ If needed, you can reference cabling illustrations showing an existing single sh
 
 <<Cable a hot-add shelf for an AFF A800 or AFF C800 HA pair>>
 ====
-+
-. Cable the second shelf if there are no more preparation procedures you need to complete.
-+
-<<Cable a shelf for a hot-add>> 
-+
-<<Prepare for a hot-add>>
 a|
 AFF A400 HA pair and you are hot-adding a second shelf
 a|
-. Recable the first shelf across both sets of RoCE-capable ports on each controller:
+Recable the first shelf across both sets of RoCE-capable ports on each controller:
+
 .. On controller A, move the cable from port e0d to slot 5 Port b (e5b).
 .. Repeat the same cable move on controller B.
 +
@@ -282,18 +320,12 @@ If needed, you can reference cabling illustrations showing an existing single sh
 
 <<Cable a hot-add shelf for an AFF A400 HA pair>>
 ====
-+
-. Cable the second shelf if there are no more preparation procedures you need to complete.
-+
-<<Cable a shelf for a hot-add>> 
-+
-<<Prepare for a hot-add>>
 a|
 AFF A700 HA pair and you are hot-adding a second shelf
 a|
-. Recable the first shelf across both sets of RoCE-capable ports on each controller:
-+
-NOTE: This procedure assumes the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
+Recable the first shelf across both sets of RoCE-capable ports on each controller:
+
+NOTE: The substeps assume the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
 
 .. On controller A, move the cable from slot 3 port b (e3b) to slot 7 port b (e7b).
 .. Repeat the same cable move on controller B.
@@ -304,13 +336,6 @@ If needed, you can reference cabling illustrations showing an existing single sh
 
 <<Cable a hot-add shelf for an AFF A700 HA pair>>
 ====
-+
-. Cable the second shelf if there are no more preparation procedures you need to complete.
-+
-<<Cable a shelf for a hot-add>> 
-+
-<<Prepare for a hot-add>>
-a|
 +
 |===
 
@@ -401,13 +426,13 @@ You must unplug both power cords from the shelf, wait 10 seconds, and then plug 
 +
 When power is restored to the power supplies, their bicolored LEDs illuminate green.
 
-== Cable a drive shelf for a hot-add
+== Cable a shelf for a hot-add
 
-You cable each NS224 drive shelf you are hot-adding so that each shelf has two connections to each controller module in the HA pair. Depending on the number of shelves you are hot-adding and your platform model, you use RoCE-capable ports on board the controllers, on RoCE-capable PCIe cards, a combination of both, or on RoCE-capable I/O modules.
+You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
 
 === Considerations when cabling for a hot-add
 
-Familiarizing yourself with proper cable connector orientation, and the location and labeling of ports on the NS224 NSM drive shelf modules can be helpful before cabling your hot-added shelf.
+Familiarizing yourself with proper cable connector orientation, and the location and labeling of ports on the NS224 NSM shelf modules can be helpful before cabling your hot-added shelf.
 
 * Cables are inserted with the connector pull-tab facing up.
 +
@@ -415,12 +440,195 @@ When a cable is inserted correctly, it clicks into place.
 +
 After you connect both ends of the cable, the shelf and controller port LNK (green) LEDs illuminate. If a port LNK LED does not illuminate, reseat the cable.
 +
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cables are inserted with the connector pull-tab facing up]
 
-* You can use the following illustration to help you physically identify the shelf NSM ports, e0a and e0b:
+* You can use the following illustration to help you physically identify the shelf NSM100 ports, e0a and e0b.
 +
-image::../media/drw_ns224_back_ports.png[]
+An NS224 shelf contains two NSM100 modules. The top module goes in slot A (NSM A) and the bottom module goes in slot B (NSM B).
++
+Each NSM100 module includes 2 x 100GbE QSFP28 ports: e0a and e0b.
++
+image::../media/drw_ns224_back_ports.png[NS224 NSM100 module ports e0a and e0b]
 
+=== Cable a hot-add shelf for an AFF A70 or AFF A90 HA pair
+
+You can hot-add up to two NS224 shelves to an AFF A70 or AFF A90 HA pair when additional storage (to the internal shelf) is needed.
+
+.Before you begin
+
+* You must have met the storage system requirements.
+
+<<Requirements for a hot-add>>
+
+* You must have completed the applicable preparation procedures.
+
+<<Prepare for a hot-add>>
+
+* You must have installed the shelves, powered them on, and set the shelf IDs.
+
+<<Install a shelf for a hot-add>>
+
+.About this task
+
+* This procedure assumes that your HA pair has only internal storage (no external shelves) and that you are hot-adding up to two additional shelves and two RoCE-capable I/O modules in each controller.
+
+* This procedure addresses the following hot-add scenarios:
+** Hot-adding the first shelf to an HA pair with one RoCE-capable I/O module in each controller.
+** Hot-adding the first shelf to an HA pair with two RoCE-capable I/O modules in each controller.
+** Hot- adding the second shelf to an HA pair with two RoCE-capable I/O modules in each controller.
+
+.Steps
+
+. If you are hot-adding one shelf using one set of RoCE-capable ports (one RoCE-capable I/O module) in each controller module, and this is the only NS224 shelf in your HA pair, complete the following substeps.
++
+Otherwise, go to the next step.
++
+NOTE: This step assumes you installed the RoCE-capable I/O module in slot 11.
++
+.. Cable shelf NSM A port e0a to controller A slot 11 port a (e11a).
+.. Cable shelf NSM A port e0b to controller B slot 11 port b (e11b).
+.. Cable shelf NSM B port e0a to controller B slot 11 port a (e11a).
+.. Cable shelf NSM B port e0b to controller A slot 11 port b (e11b).
++
+The following illustration shows cabling for one hot-added shelf using one RoCE-capable I/O module in each controller module: 
++
+image::../media/drw_ns224_vino_i_1shelf_1card_ieops-1639.svg[Cabling for AFF A70 or A90 with one shelf and one IO module, width=452px]
+
+. If you are hot-adding one or two shelves using two sets of RoCE-capable ports (two RoCE-capable I/O modules) in each controller module, complete the applicable substeps.
++
+NOTE: This step assumes you installed the RoCE-capable I/O modules in slots 11 and 8.
++
+[options="header" cols="1,3"]]
+|===
+| Shelves| Cabling
+a|
+Shelf 1
+a|
+.. Cable NSM A port e0a to controller A slot 11 port a (e11a).
+.. Cable NSM A port e0b to controller B slot 8 port b (e8b).
+.. Cable NSM B port e0a to controller B slot 11 port a (e11a).
+.. Cable NSM B port e0b to controller A slot 8 port b (e8b).
+.. If you are hot-adding a second shelf, complete the "`Shelf 2`" substeps; otherwise, go to step 3.
+
+The following illustration shows cabling for one hot-added shelf
+using two RoCE-capable I/O modules in each controller module: 
+
+image::../media/drw_ns224_vino_i_1shelf_2cards_ieops-1640.svg[Cabling for AFF A70 or A90 with one shelf and two IO modules, width=452px]
+
+a|
+Shelf 2
+a|
+.. Cable NSM A port e0a to controller A slot 8 port a (e8a).
+.. Cable NSM A port e0b to controller B slot 11 port b (e11b).
+.. Cable NSM B port e0a to controller B slot 8 port a (e8a).
+.. Cable NSM B port e0b to controller A slot 11 port b (e11b).
+.. Go to step 3.
++
+The following illustration shows cabling for two hot-added shelf 
+using two RoCE-capable I/O modules in each controller module: 
++
+image::../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[Cabling for AFF A70 or A90 with two shelves and two IO modules, width=452px]
++
+|===
+
+. Verify that the hot-added shelf is cabled correctly.
++
+If any cabling errors are generated, follow the corrective actions provided.
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
+. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
++
+Otherwise, you are done with this procedure.
++
+<<Complete the hot-add>>
+
+=== Cable a hot-add shelf for an AFF A1K HA pair
+
+You can hot-add up to three additional NS224 shelves (for a total of four shelves) to an AFF A1K HA pair.
+
+.Before you begin
+
+* You must have met the storage system requirements.
+
+<<Requirements for a hot-add>>
+
+* You must have completed the applicable preparation procedures.
+
+<<Prepare for a hot-add>>
+
+* You must have installed the shelves, powered them on, and set the shelf IDs.
+
+<<Install a shelf for a hot-add>>
+
+.About this task
+
+* This procedure assumes that your HA pair has at least one existing NS224 shelf. 
+* This procedure addresses the following hot-add scenarios:
+** Hot-adding a second shelf to an HA pair with two RoCE-capable I/O modules in each controller. (You have installed a second I/O module and recabled the first shelf to both I/O modules or already had the first shelf cabled to two I/O modules. You will cable the second shelf to both I/O modules).
+** Hot-adding a third shelf to an HA pair with three RoCE-capable I/O modules in each controller. (You have installed a third I/O module and will cable the third shelf to only the third I/O module).
+** Hot-adding a third shelf to an HA pair with four RoCE-capable I/O modules in each controller. (You have installed a third and fourth I/O module and will cable the third shelf to the third and fourth I/O modules).
+** Hot-adding a fourth shelf to an HA pair with four RoCE-capable I/O modules in each controller. (You have installed a fourth I/O module and recabled the third shelf to the third and fourth I/O modules or already had the third shelf cabled to the third and fourth I/O modules. You will cable the fourth shelf to both the third and fourth I/O module).
+
+.Steps
+
+. If the NS224 shelf you are hot-adding will be the second NS224 shelf in the HA pair, complete the following substeps. 
++
+Otherwise, go to the next step.
++
+.. Cable shelf NSM A port e0a to controller A slot 10 port a (e10a).
+.. Cable shelf NSM A port e0b to controller B slot 11 port b (e11b).
+.. Cable shelf NSM B port e0a to controller B slot 10 port a (e10a).
+.. Cable shelf NSM B port e0b to controller A slot 11 port b (e11b).
++
+The following illustration highlights the cabling for the second shelf in the HA pair with two RoCE-capable I/O modules in each controller:
++
+image::../media/drw_ns224_vino_m_2shelves_2cards_ieops-1642.svg[Cabling for AFF A1K with two shelves and two IO modules, width=452px]
++
+. If the NS224 shelf you are hot-adding will be the third NS224 shelf in the HA pair with three RoCE-capable I/O modules in each controller, complete the following substeps. 
+Otherwise, go to the next step.
+.. Cable shelf NSM A port e0a to controller A slot 9 port a (e9a).
+.. Cable shelf NSM A port e0b to controller B slot 9 port b (e9b).
+.. Cable shelf NSM B port e0a to controller B slot 9 port a (e9a).
+.. Cable shelf NSM B port e0b to controller A slot 9 port b (e9b).
++
+The following illustration highlights the cabling for the third shelf in the HA pair with three RoCE-capable I/O modules in each controller:
++
+image::../media/drw_ns224_vino_m_3shelves_3cards_ieops-1643.svg[Cabling for AFF A1K with three shelves and three IO modules, width=452px]
+
+. If the NS224 shelf you are hot-adding will be the third NS224 shelf in the HA pair with four RoCE-capable I/O modules in each controller, complete the following substeps. 
+Otherwise, go to the next step.
+.. Cable shelf NSM A port e0a to controller A slot 9 port a (e9a).
+.. Cable shelf NSM A port e0b to controller B slot 8 port b (e8b).
+.. Cable shelf NSM B port e0a to controller B slot 9 port a (e9a).
+.. Cable shelf NSM B port e0b to controller A slot 8 port b (e8b).
++
+The following illustration highlights the cabling for the third shelf in the HA pair with four RoCE-capable I/O modules in each controller:
++
+image::../media/drw_ns224_vino_m_3shelves_4cards_ieops-1644.svg[Cabling for AFF A1K with three shelves and four IO modules, width=452px]
+
+. If the NS224 shelf you are hot-adding will be the fourth NS224 shelf in the HA pair with four RoCE-capable I/O modules in each controller, complete the following substeps. 
+
+.. Cable shelf NSM A port e0a to controller A slot 8 port a (e8a).
+.. Cable shelf NSM A port e0b to controller B slot 9 port b (e9b).
+.. Cable shelf NSM B port e0a to controller B slot 8 port a (e8a).
+.. Cable shelf NSM B port e0b to controller A slot 9 port b (e9b).
++
+The following illustration highlights the cabling for the fourth shelf in the HA pair with four RoCE-capable I/O modules in each controller:
++
+image::../media/drw_ns224_vino_m_4shelves_4cards_ieops-1645.svg[Cabling for AFF A1K with four shelves and four IO modules, width=452px]
+
+. Verify that the hot-added shelf is cabled correctly.
++
+If any cabling errors are generated, follow the corrective actions provided.
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
+. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
++
+Otherwise, you are done with this procedure.
++
+<<Complete the hot-add>>
 
 
 === Cable a hot-add shelf for an AFF A900 HA pair
