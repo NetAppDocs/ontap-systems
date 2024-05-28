@@ -371,9 +371,9 @@ If automatic drive assignment is enabled, the output shows `on` in the `Auto Ass
 +
 You must disable automatic drive assignment on both nodes.
 
-== Install a drive shelf for a hot-add
+== Install a shelf for a hot-add
 
-Installing a new NS224 drive shelf involves installing the shelf into a rack or cabinet, connecting the power cords (which automatically powers on the shelf), and then setting the shelf ID.
+Installing a new NS224 shelf involves installing the shelf into a rack or cabinet, connecting the power cords (which automatically powers on the shelf), and then setting the shelf ID.
 
 .Before you begin
 
@@ -523,12 +523,12 @@ a|
 .. Cable NSM B port e0a to controller B slot 8 port a (e8a).
 .. Cable NSM B port e0b to controller A slot 11 port b (e11b).
 .. Go to step 3.
-+
+
 The following illustration shows cabling for two hot-added shelf 
 using two RoCE-capable I/O modules in each controller module: 
-+
+
 image::../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[Cabling for AFF A70 or A90 with two shelves and two IO modules, width=452px]
-+
+
 |===
 
 . Verify that the hot-added shelf is cabled correctly.
