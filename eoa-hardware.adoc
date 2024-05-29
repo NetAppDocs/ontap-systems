@@ -1,0 +1,22 @@
+---
+sidebar: sidebar
+permalink: eoa-hardware.html
+sidebar: sidebar
+keywords: legacy, hardware, end-of-support
+summary: 'Learn about the the legacy hardware no longer supported.'
+---
+
+= Legacy hardware no longer supported
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following systems and switches are no longer supported as of the specified version of ONTAP.
+
+include::./_include/new-legacy-hardware-no-support.adoc[]
+
+=== Related information
+
+* https://mysupport.netapp.com/site/info/cisco-ethernet-switch[Supported Cisco Ethernet Switches]
+* https://mysupport.netapp.com/site/info/netapp-cluster-switch[Supported NetApp Ethernet Switches]
+* https://mysupport.netapp.com/info/eoa/df_eoa_category_page.html?category=Platforms[End of Availability Platforms]
