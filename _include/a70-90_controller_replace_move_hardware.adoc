@@ -12,7 +12,7 @@ Move the power supplies to the replacement controller.
 +
 CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_A70-90_PSU_remove_replace_IEOPS-1368.svg[PSU remove]
+image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[PSU remove]
 +
 [cols="1,4"]
 |===
@@ -39,7 +39,7 @@ Move the fans to the replacement controller module.
 
 . Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
 +
-image::../media/drw_A70-90_fan_remove_replace_IEOPS-1366.svg[Remove fans]
+image::../media/drw_a70-90_fan_remove_replace_ieops-1366.svg[Remove fans]
 +
 [cols="1,4"]
 |===
@@ -62,7 +62,7 @@ Move the battery backup unit to the replacement controller module.
 
 . Open the air duct cover in the middle of the controller module and locate the NV battery.
 +
-image::../media/drw_A70-90_remove_replace_NVMEMBAT_IEOPS-1369.svg[Move the NV battery]
+image::../media/drw_a70-90_remove_replace_nvmembat_ieops-1369.svg[Move the NV battery]
 +
 [cols="1,4"]
 |===
@@ -97,7 +97,7 @@ Move the DIMMs to the replacement controller module.
 . Locate the system DIMMs on the motherboard.
 
 +
-image::../media/drw_A70_90_dimm_IEOPS-1513.svg[DIMM map]
+image::../media/drw_s70_90_dimm_ieops-1513.svg[DIMM map]
 +
 [cols="1,4"]
 |===
@@ -127,7 +127,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 Move the I/O modules to the replacement controller module.
 
-image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove I/O module]
+image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove I/O module]
 
 [cols="1,4"]
 |===
@@ -154,7 +154,7 @@ Make sure that you keep track of which slot the I/O module was in.
 +
 NOTE: To move the I/O modules from slots 6 and 7, you must move the carrier containing these I/O modules from the impaired controller module to the replacement controller module. 
 +
-. Move the carrier contaning the I/O modules in slots 6 and 7 to the replacement controller module:
+. Move the carrier containing the I/O modules in slots 6 and 7 to the replacement controller module:
 
 .. Press the button on the right-most handle on the carrier handle.
 ..Slide the carrier out of the impaired controller module insert it into the replacement controller module in the same position it was in the impaired controller module.
