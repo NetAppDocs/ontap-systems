@@ -1,6 +1,10 @@
 To replace the controller, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the enclosure, and then boot the system to Maintenance mode.
 
-== Step 1: Move the fans
+== Step 1 Remove the controller module
+
+include::../_include/a1k_controller_remove_physical.adoc[]
+
+== Step 2: Move the fans
 
 You must remove the five fan modules from the impaired controller module to the replacement controller module.
 
@@ -20,17 +24,13 @@ image::../media/drw_A1K_fan_remove_replace_IEOPS-1376.svg[Fan remove AFF A1K]
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30x] 
 a|
-Gray locking button
+Black locking button
 |===
 
 . Install the fan in the replacement controller module:
 .. Align the edges of the fan housing with the opening in the front of the replacement controller module.
 .. Gently slide the fan module all the way into the replacement controller module until it locks in place.
 . Repeat the preceding steps for the remaining fan modules. 
-
-== Step 2: Remove the controller module
-
-include::../_include/a1k_controller_remove_physical.adoc[]
 
 == Step 3: Move the NV battery
 
@@ -65,7 +65,7 @@ NV battery pack
  .. Plug the battery plug into the socket and make sure that the plug locks into place.
  .. Insert the battery pack into the slot and press firmly down on the battery pack to make sure that it is locked into place.
  
- .. Close the NV battery air duct.
+ .. Close the air duct cover.
 
 == Step 4: Move system DIMMs
 
