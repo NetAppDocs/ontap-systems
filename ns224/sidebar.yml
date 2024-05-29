@@ -6,14 +6,32 @@ entries:
     entries:
     - title: Hot-add shelf
       entries:
-        - title: Requirements
+        - title: Requirements and best practices
           url: /ns224/requirements-hot-add-shelf.html
         - title: Prepare to hot-add shelf
           url: /ns224/prepare-hot-add-shelf.html
         - title: Install shelf for hot add
           url: /ns224/install-hot-add-shelf.html
         - title: Cable shelf for hot-add
-          url: /ns224/cable-hot-add-shelf.html
+          entries:
+            - title: Cabling overview
+              url: /ns224/cable-hot-add-shelf.html
+            - title: AFF A1K 
+              url: /ns224/cable-a1k-hot-add-shelf.html
+            - title: AFF A70 or AFF A90 
+              url: /ns224/cable-70-90-hot-add-shelf.html
+            - title: AFF A900 
+              url: /ns224/cable-a900-hot-add-shelf.html
+            - title: AFF A800 or AFF C800
+              url: /ns224/cable-a800-c800-hot-add-shelf.html
+            - title: AFF A700 
+              url: /ns224/cable-a700-hot-add-shelf.html
+            - title: AFF A400 or AFF C400
+              url: /ns224/cable-a400-c400-hot-add-shelf.html
+            - title: AFF A320 
+              url: /ns224/cable-a320-hot-add-shelf.html
+            - title: AFF A250, AFF C250, or FAS500f
+              url: /ns224/cable-a250-c250-fas500f-hot-add-shelf.html
         - title: Complete hot-add
           url: /ns224/complete-hot-add-shelf.html
     - title: Change shelf ID

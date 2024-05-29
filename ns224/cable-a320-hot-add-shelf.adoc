@@ -1,0 +1,45 @@
+---
+permalink: ns224/cable-a320-hot-add-shelf.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, cable, hot-add an ns224 drive shelf
+summary: You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable a shelf to the AFF A320 HA pair- NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
+
+.Before you begin
+
+* You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
+
+* You must have completed the applicable procedures in link:prepare-hot-add-shelf.html[Prepare-to hot-add a shelf]. 
+
+* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
+
+.About this task
+
+This procedure assumes that your AFF A320 HA pair has an existing NS224 shelf and that you are hot-adding a second shelf.
+
+.Steps
+
+. Cable the shelf to the controller modules.
+ .. Cable NSM A port e0a to controller A port e0e.
+ .. Cable NSM A port e0b to controller B port e0b.
+ .. Cable NSM B port e0a to controller B port e0e.
+ .. Cable NSM B port e0b to controller A port e0b.
+ +
+The following illustration shows cabling for the hot-added shelf (shelf 2):
++
+image::../media/drw_ns224_a320_2shelves_direct_attached.png[]
+
+. Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.
+
+. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then re enable automatic drive assignment, if needed.
++
+Otherwise, you are done with this procedure.
+

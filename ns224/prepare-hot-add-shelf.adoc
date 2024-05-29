@@ -187,12 +187,12 @@ If you are hot-adding a second shelf, recable the first shelf across both sets o
 
 Depending on your platform model, do one of the following:
 
-* On the A400:
+* On the AFF A400:
 +
 .. On controller A, move the cable from port e0d to slot 5 Port b (e5b).
 .. Repeat the same cable move on controller B.
 
-* On the C400:
+* On the AFF C400:
 +
 .. On controller A, move the cable from slot 4 port a (e4a) to slot 5 port b (e5b).
 .. Repeat the same cable move on controller B.
@@ -226,14 +226,11 @@ If needed, you can reference cabling illustrations showing an existing single sh
 
 ====
 // end tabbed area
-
-+
 +
 
 . Verify that the recabled shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +
 If any cabling errors are generated, follow the corrective actions provided.
-//
 
 == Disable automatic drive assignment
 

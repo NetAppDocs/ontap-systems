@@ -1,0 +1,29 @@
+---
+permalink: ns224/cable-overview-hot-add-shelf.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, cable, hot-add an ns224 drive shelf
+summary: You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
+---
+= Overview of cabling for a hot-add - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Familiarize yourself with proper cable connector orientation, and the location and labeling of ports on the NS224 NSM shelf modules.
+
+* Cables are inserted with the connector pull-tab facing up.
++
+When a cable is inserted correctly, it clicks into place.
++
+After you connect both ends of the cable, the shelf and controller port LNK (green) LEDs illuminate. If a port LNK LED does not illuminate, reseat the cable.
++
+image::../media/oie_cable_pull_tab_up.png[Cables are inserted with the connector pull-tab facing up]
+
+* You can use the following illustration to help you physically identify the shelf NSM100 ports, e0a and e0b.
++
+An NS224 shelf contains two NSM100 modules. The top module goes in slot A (NSM A) and the bottom module goes in slot B (NSM B).
++
+Each NSM100 module includes 2 x 100GbE QSFP28 ports: e0a and e0b.
++
+image::../media/drw_ns224_back_ports.png[NS224 NSM100 module ports e0a and e0b]
+
