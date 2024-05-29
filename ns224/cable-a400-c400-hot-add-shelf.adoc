@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, cable, hot-add an ns224 drive shelf
 summary: You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
 ---
-= Cable a shelf to the AFF A400 or AFF C400 ha pair - NS224 shelves
+= Cable a shelf to the AFF A400 or AFF C400 HA pair - NS224 shelves
 :icons: font
 :imagesdir: ../media/
 
@@ -138,3 +138,5 @@ If any cabling errors are generated, follow the corrective actions provided.
 +
 Otherwise, you are done with this procedure.
 
+.What's next?
+Go to link:complete-hot-add-shelf.html[Complete hot-add].
