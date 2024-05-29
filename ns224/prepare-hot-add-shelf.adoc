@@ -16,7 +16,7 @@ Complete the preparation tasks applicable to your HA pair before hot-adding an N
 If your HA pair has non-dedicated RoCE-capable Ethernet ports that you are using to hot-add an NS224 drive shelf, you must configure the ports for storage use (not networking use).
 
 .Before you begin
-* Make sure you have reviewed the link:ns224/requirements-hot-add-shelf.html[hot-add requirements]. 
+* Make sure you have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements]. 
 
 * Make sure you installed any additional RoCE-capable PCIe cards or I/O modules in each controller.
 
@@ -120,7 +120,7 @@ Before hot-adding additional shelves, depending on your platform model, you migh
 
 .Before you begin
 
-* Make sure you have reviewed the link:ns224/requirements-hot-add-shelf.html[hot-add requirements]. 
+* Make sure you have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements]. 
 
 * Make sure you installed any additional RoCE-capable PCIe cards or I/O modules in each controller.
 
@@ -134,7 +134,8 @@ Before hot-adding additional shelves, depending on your platform model, you migh
 +
 NOTE: Moving a cable does not require any wait time between unplugging the cable from one port and plugging it into another port.
 
-* If you have an AFF A1K HA pair and you are hot-adding a third shelf and installing a third or forth RoCE-capable I/O module in each controller, the third shelf is cabled to only the third or third and forth I/O modules. You do not need to recable any existing shelves. 
+* If needed, refer to the cabling illustrations in [Cable ], which shows an existing single shelf and the recabled shelf, in a two-shelf configuration.
+
 
 .Steps
 
@@ -145,24 +146,12 @@ NOTE: Moving a cable does not require any wait time between unplugging the cable
 [role="tabbed-block"]
 ====
 
-.A70 or AFF A90
---
-The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
-module in slot 11 on each controller.
-
-If you are hot-adding a second shelf, recable the first shelf across both RoCE-capable I/O modules:
-
-.. On controller A, move the cable from slot 11 port b (e11b) to
-slot 8 port b (e8b).
-.. Repeat the same cable move on controller B.
-
-If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two-shelf configuration. <<Cable a hot-add shelf for an AFF A70 or AFF A90 HA pair>>.
---
-
 .AFF A1K
 --
 The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
 module in either slot 11 (two shelf configuration) or slot 9 (four shelf configuration) on each controller.
+
+NOTE: If you have an AFF A1K HA pair and you are hot-adding a third shelf and installing a third or fourth RoCE-capable I/O module in each controller, the third shelf is cabled to only the third or fourth I/O modules. You do not need to recable any existing shelves. 
 
 Do one of the following:
 
@@ -178,7 +167,43 @@ slot 10 port b (e10b).
 slot 8 port b (e8b).
 .. Repeat the same cable move on controller B.
 
-If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two-shelf configuration. <<Cable a hot-add shelf for an AFF A1K HA pair>>.
+
+--
+
+
+.AFF A70 or AFF A90
+--
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 11 on each controller.
+
+If you are hot-adding a second shelf, recable the first shelf across both RoCE-capable I/O modules:
+
+.. On controller A, move the cable from slot 11 port b (e11b) to
+slot 8 port b (e8b).
+.. Repeat the same cable move on controller B.
+
+--
+
+.AFF A800 or AFF C800
+--
+The substeps assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
+
+If you are hot-adding a second shelf, recable the first shelf across both sets of RoCE-capable ports on each controller:
+
+.. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
+.. Repeat the same cable move on controller B.
+
+--
+
+.AFF A700
+--
+The substeps assume the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
+
+If you are hot-adding a second shelf, recable the first shelf across both sets of RoCE-capable ports on each controller:
+
+.. On controller A, move the cable from slot 3 port b (e3b) to slot 7 port b (e7b).
+.. Repeat the same cable move on controller B.
+
 --
 
 .AFF A400 or AFF C400
@@ -197,31 +222,6 @@ Depending on your platform model, do one of the following:
 .. On controller A, move the cable from slot 4 port a (e4a) to slot 5 port b (e5b).
 .. Repeat the same cable move on controller B.
 
-If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two-shelf configuration. <<Cable a hot-add shelf for an AFF A400 or Aff C400 HA pair>>.
---
-
-.AFF A800 or AFF C800
---
-The substeps assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
-
-If you are hot-adding a second shelf, recable the first shelf across both sets of RoCE-capable ports on each controller:
-
-.. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
-.. Repeat the same cable move on controller B.
-
-If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two shelf configuration. <<Cable a hot-add shelf for an AFF A800 or AFF C800 HA pair>>
---
-
-.AFF A700
---
-The substeps assume the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
-
-If you are hot-adding a second shelf, recable the first shelf across both sets of RoCE-capable ports on each controller:
-
-.. On controller A, move the cable from slot 3 port b (e3b) to slot 7 port b (e7b).
-.. Repeat the same cable move on controller B.
-
-If needed, you can reference cabling illustrations showing an existing single shelf and the recabled shelf, in a two shelf configuration. <<Cable a hot-add shelf for an AFF A700 HA pair>>
 --
 
 ====
@@ -240,7 +240,7 @@ If you are unsure whether you should manually assign drive ownership, or want to
 
 .Before you begin
 
-Make sure you have reviewed the link:ns224/requirements-hot-add-shelf.html[hot-add requirements]. 
+Make sure you have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements]. 
 
 .Steps
 
