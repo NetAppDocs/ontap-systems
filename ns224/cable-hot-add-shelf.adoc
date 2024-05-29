@@ -31,14 +31,7 @@ Each NSM100 module includes 2 x 100GbE QSFP28 ports: e0a and e0b.
 +
 image::../media/drw_ns224_back_ports.png[NS224 NSM100 module ports e0a and e0b]
 
-// start tabbed area
-
-[role="tabbed-block"]
-====
-
-.AFF A70 or AFF A90 HA pair
---
-You can hot-add up to two NS224 shelves to an AFF A70 or AFF A90 HA pair when additional storage (to the internal shelf) is needed.
+== Cable NS224 shelves to your platform model
 
 .Before you begin
 
@@ -53,6 +46,16 @@ You can hot-add up to two NS224 shelves to an AFF A70 or AFF A90 HA pair when ad
 * You must have installed the shelves, powered them on, and set the shelf IDs.
 
 <<Install a shelf for a hot-add>>
+
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.AFF A70 or AFF A90 HA pair
+--
+You can hot-add up to two NS224 shelves to an AFF A70 or AFF A90 HA pair when additional storage (to the internal shelf) is needed.
 
 .About this task
 
@@ -126,27 +129,12 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
 +
 Otherwise, you are done with this procedure.
-+
-<<Complete the hot-add>>
+
 --
 
 .AFF A1K HA pair
 --
 You can hot-add up to three additional NS224 shelves (for a total of four shelves) to an AFF A1K HA pair.
-
-.Before you begin
-
-* You must have met the storage system requirements.
-
-<<Requirements for a hot-add>>
-
-* You must have completed the applicable preparation procedures.
-
-<<Prepare for a hot-add>>
-
-* You must have installed the shelves, powered them on, and set the shelf IDs.
-
-<<Install a shelf for a hot-add>>
 
 .About this task
 
@@ -214,27 +202,12 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
 +
 Otherwise, you are done with this procedure.
-+
-<<Complete the hot-add>>--
-
-.AFF A900 HA pair
 
 --
+
+.AFF A900 HA pair
+--
 When additional storage is needed, you can hot-add up to three additional NS224 drive shelves (for a total of four shelves) to an AFF A900 HA pair.
-
-.Before you begin
-
-* You must have met the system requirements.
-+
-<<Requirements for a hot-add>>
-
-* You must have completed the applicable preparation procedures.
-+
-<<Prepare for a hot-add>>
-
-* You must have installed the shelves, powered them on, and set the shelf IDs.
-+
-<<Install a drive shelf for a hot-add>>
 
 .About this task
 * This procedure assumes that your HA pair has at least one existing NS224 shelf and that you are hot-adding up to three additional shelves.
@@ -291,28 +264,12 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
 +
 Otherwise, you are done with this procedure.
-+
-<<Complete the hot-add>>
 
 --
 
 .AFF A250, C250, or FAS500f HA pair
 --
 When additional storage is needed, you can hot-add an NS224 drive shelf to a FAS500f or AFF A250 HA pair.
-
-.Before you begin
-
-* You must have met the system requirements.
-+
-<<Requirements for a hot-add>>
-
-* You must have completed the applicable preparation procedures.
-+
-<<Prepare for a hot-add>>
-
-* You must have installed the shelves, powered them on, and set the shelf IDs.
-+
-<<Install a drive shelf for a hot-add>>
 
 .About this task
 
@@ -338,30 +295,12 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
 +
 Otherwise, you are done with this procedure.
-+
-<<Complete the hot-add>>
+
 --
 
 .AFF A700 HA pair
 --
-
-=== Cable a hot-add shelf for an 
-
 How you cable an NS224 drive shelf in an AFF A700 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controller modules.
-
-.Before you begin
-
-* You must have met the system requirements.
-+
-<<Requirements for a hot-add>>
-
-* You must have completed the applicable preparation procedures.
-+
-<<Prepare for a hot-add>>
-
-* You must have installed the shelves, powered them on, and set the shelf IDs.
-+
-<<Install a drive shelf for a hot-add>>
 
 .Steps
 
@@ -422,27 +361,13 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
 +
 Otherwise, you are done with this procedure.
-+
-<<Complete the hot-add>>
+
 --
 
 .AFF A800 or AFF C800 HA pair
 --
 How you cable an NS224 drive shelf in an AFF A800 or AFF C800 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controller modules.
 
-.Before you begin
-
-* You must have met the system requirements.
-+
-<<Requirements for a hot-add>>
-
-* You must have completed the applicable preparation procedures.
-+
-<<Prepare for a hot-add>>
-
-* You must have installed the shelves, powered them on, and set the shelf IDs.
-+
-<<Install a drive shelf for a hot-add>>
 
 .Steps
 
@@ -505,28 +430,12 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
 +
 Otherwise, you are done with this procedure.
-+
-<<Complete the hot-add>>
 
 --
 
 .AFF A400 HA pair
 --
 How you cable an NS224 drive shelf in an AFF A400 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controller modules.
-
-.Before you begin
-
-* You must have met the system requirements.
-+
-<<Requirements for a hot-add>>
-
-* You must have completed the applicable preparation procedures.
-+
-<<Prepare for a hot-add>>
-
-* You must have installed the shelves, powered them on, and set the shelf IDs.
-+
-<<Install a drive shelf for a hot-add>>
 
 .Steps
 
@@ -583,27 +492,12 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then re enable automatic drive assignment, if needed.
 +
 Otherwise, you are done with this procedure.
-+
-<<Complete the hot-add>>
+
 --
 
 .AFF C400 HA pair
 --
 How you cable an NS224 drive shelf in an AFF C400 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controller modules.
-
-.Before you begin
-
-* You must have met the system requirements.
-+
-<<Requirements for a hot-add>>
-
-* You must have completed the applicable preparation procedures.
-+
-<<Prepare for a hot-add>>
-
-* You must have installed the shelves, powered them on, and set the shelf IDs.
-+
-<<Install a drive shelf for a hot-add>>
 
 .Steps
 
@@ -660,28 +554,12 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then re enable automatic drive assignment, if needed.
 +
 Otherwise, you are done with this procedure.
-+
-<<Complete the hot-add>>
 
 --
 
 .AFF A320 HA pair
 --
 You cable a second NS224 drive shelf to an existing HA pair when additional storage is needed.
-
-.Before you begin
-
-* You must have met the system requirements.
-+
-<<Requirements for a hot-add>>
-
-* You must have completed the applicable preparation procedures.
-+
-<<Prepare for a hot-add>>
-
-* You must have installed the shelves, powered them on, and set the shelf IDs.
-+
-<<Install a drive shelf for a hot-add>>
 
 .About this task
 
@@ -707,8 +585,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then re enable automatic drive assignment, if needed.
 +
 Otherwise, you are done with this procedure.
-+
-<<Complete the hot-add>>
+
 --
 
 ====

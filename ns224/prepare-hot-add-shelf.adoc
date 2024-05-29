@@ -114,7 +114,7 @@ If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `
 +
 If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
 
-=== Recable the existing shelf’s connections
+== Recable the existing shelf’s connections
 
 Before hot-adding additional shelves, depending on your platform model, you might need to recable an existing shelf (after you have installed the additional RoCE-capable PCIe cards or I/O modules) across two sets of ports in different slots for resiliency against slot failure.
 
@@ -259,14 +259,13 @@ If any cabling errors are generated, follow the corrective actions provided.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
-=== Disable automatic drive assignment
+== Disable automatic drive assignment
 
 If you are manually assigning drive ownership for the NS224 drive shelf you are hot-adding, then you need to disable automatic drive assignment if it is enabled.
 
 .Before you begin
 
 Make sure you have reviewed the link:ns224/requirements-hot-add-shelf.html[hot-add requirements]. 
-
 
 .About this task
 
