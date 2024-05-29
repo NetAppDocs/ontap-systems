@@ -1,0 +1,33 @@
+---
+permalink: ns224/hot-add-shelf-overview.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, overview
+summary: To hot-add an NS224 drive shelf, your HA pair must meet certain requirements.
+---
+= Hot-add workflow - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+[.lead]
+Follow these workflow steps to hot-add your NS224 shelf.
+
+.Before you begin
+Review the link:requirements-hot-add-shelf.html[hot-add requirements and best practices].
+ 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:prepare-hot-add-shelf.html[Prepare to hot-add your shelf]
+[role="quick-margin-para"]
+Depending on your platform model, you might need to configure the non-dedicated RoCE-capable Ethernet ports for storage use, recable the existing shelf across two sets of ports in different slots for resiliency against slot failure, and disable automatic drive assignment if it is enabled.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:install-hot-add-shelf.html[Install your shelf]
+[role="quick-margin-para"]
+To install the shelf, install the rail kits for your shelves, and then install and secure your shelf in the cabinet or telco rack. Next, connect the power cords to power on the NS224 shelf and then assign a unique shelf ID to ensure each shelf is distinct within the setup. 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:cable-overview-hot-add-shelf.html[Cable your shelf]
+[role="quick-margin-para"]
+Cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:complete-hot-add-shelf.html[Complete hot-add]
+[role="quick-margin-para"]
+To complete setup, manually assign drive ownership and then reenable automatic drive assignment if you disabled it when you prepared for the hot-add.
