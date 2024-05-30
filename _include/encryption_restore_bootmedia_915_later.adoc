@@ -1,0 +1,55 @@
+Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager (OKM), NetApp Storage Encryption (NSE) or NetApp Volume Encryption (NVE) enabled using settings you captured at the beginning of this procedure.
+
+NOTE: If NSE or NVE are enabled along with Onboard Key Manager you must restore settings you captured at the beginning of this procedure.
+
+.Steps
+. Connect the console cable to the target controller.
+. Use the `boot_ontap` command at the LOADER prompt to boot the controller.
+. Check the console output:
++
+[%header,cols="1,3"]
+|===
+| If the console displays...| Then...
+a|
+The login prompt
+a|
+Go to Step 7.
+a|
+Waiting for giveback...
+a|
+
+ .. Log into the partner controller.
+ .. Confirm the target controller is ready for giveback with the `storage failover show` command.
+
+|===
+
+. Move the console cable to the partner controller and give back the target controller storage using the `storage failover giveback -fromnode local -only-cfo-aggregates true local` command.
+ ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
+ ** If the command fails because of an open CIFS session, check with the customer on how to close out CIFS sessions.
++
+NOTE: Terminating CIFS can cause loss of data.
+
+ ** If the command fails because the partner is "not ready", wait 5 minutes for the NVMEMs to synchronize.
+ ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate Documentation Center for more information.
+. Wait 3 minutes and check the failover status with the `storage failover show` command.
+. At the clustershell prompt, enter the `net int show -is-home false` command to list the logical interfaces that are not on their home controller and port.
++
+If any interfaces are listed as `false`, revert those interfaces back to their home port using the `net int revert -vserver Cluster -lif _nodename_` command.
+
+. Move the console cable to the target controller and run the `version -v` command to check the ONTAP versions.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Use the `storage encryption disk show` at the clustershell prompt, to review the output.
+. Use the `security key-manager key query` command to display the key IDs of the authentication keys that are stored on the key management servers.
+ ** If the `Restored` column = `yes/true`, you are done and can proceed to complete the replacement process.
+ ** If the `Key Manager type` = `external` and the `Restored` column = anything other than `yes/true`, use the `security key-manager external restore` command to restore the key IDs of the authentication keys.
++
+NOTE: If the command fails, contact Customer Support.
+
+ ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the `security key-manager onboard sync` command to re-sync the Key Manager type.
++
+Use the security key-manager key query to verify that the `Restored` column = `yes/true` for all authentication keys.
+. Connect the console cable to the partner controller.
+. Give back the controller using the `storage failover giveback -fromnode local` command.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Restore Autosupport if it was disabled by using the `system node autosupport invoke -node * -type all -message MAINT=END`
+
