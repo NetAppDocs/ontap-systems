@@ -1,0 +1,51 @@
+Move the power supplies, hard drives, and controller module from the impaired chassis to the new chassis, and swap out the impaired chassis with the new chassis of the same model as the impaired chassis.
+
+== Step 1: Remove the controller modules
+
+include::../_include/a1k_controller_remove_physical.adoc[]
+
+. Set the controller module aside in a safe place, and repeat these steps for the other controller module in the chassis.
+
+== Step 2: Move drives to the new chassis
+
+You need to move the drives from each bay opening in the old chassis to the same bay opening in the new chassis.
+
+. Gently remove the bezel from the front of the system.
+. Remove the drives:
+ .. Press the release button at the top of the carrier face below the LEDs.
+ .. Pull the cam handle to its fully open position to unseat the drive from the midplane, and then gently slide the drive out of the chassis.
++
+The drive should disengage from the chassis, allowing it to slide free of the chassis.
++
+NOTE: When removing a drive, always use two hands to support its weight.
++
+NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
+. Align the drive from the old chassis with the same bay opening in the new chassis.
+. Gently push the drive into the chassis as far as it will go.
++
+The cam handle engages and begins to rotate upward.
+
+. Firmly push the drive the rest of the way into the chassis, and then lock the cam handle by pushing it up and against the drive holder.
++
+Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It clicks when it is secure.
+
+. Repeat the process for the remaining drives in the system.
+
+== Step 3: Replace a chassis from within the equipment rack or system cabinet
+
+You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
+
+. Remove the screws from the chassis mount points.
+. With two people, slide the old chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
+. If you are not already grounded, properly ground yourself.
+. Using two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
+. Slide the chassis all the way into the equipment rack or system cabinet.
+. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
+. If you have not already done so, install the bezel.
+
+== Step 4: Install the controller modules
+
+include::../_include/a1k_controller_install_step_physical.adoc[]
+
+ .. Interrupt the normal boot process by pressing `Ctrl-C`.
+. Repeat the preceding steps to install the second controller into the new chassis.

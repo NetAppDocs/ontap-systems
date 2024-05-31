@@ -1,0 +1,102 @@
+Continue the replacement procedure by recabling the storage and confirming disk reassignment.
+
+== Step 1: Recable the system
+
+include::../_include/recable_system_after_controller_rep.adoc[]
+
+== Step 2: Reassign disks
+
+If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. You must confirm the system ID change when you boot the _replacement_ controller and then verify that the change was implemented.
+
+This procedure applies only to systems running ONTAP in an HA pair.
+
+. If the _replacement_ controller is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
+. From the LOADER prompt on the _replacement_ controller, boot the controller, entering `y` if you are prompted to override the system ID due to a system ID mismatch:``boot_ontap``
+. Wait until the `Waiting for giveback...` message is displayed on the _replacement_ controller console and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: `storage failover show`
++
+In the command output, you should see a message that the system ID has changed on the impaired controller, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
++
+----
+node1> `storage failover show`
+                                    Takeover
+Node              Partner           Possible     State Description
+------------      ------------      --------     -------------------------------------
+node1             node2             false        System ID changed on partner (Old:
+                                                  151759755, New: 151759706), In takeover
+node2             node1             -            Waiting for giveback (HA mailboxes)
+----
+
+. From the healthy controller, verify that any coredumps are saved:
+ .. Change to the advanced privilege level: `set -privilege advanced`
++
+You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
+
+ .. Save any coredumps: `system node run -node _local-node-name_ partner savecore`
+ .. Wait for the `savecore`command to complete before issuing the giveback.
++
+You can enter the following command to monitor the progress of the savecore command: `system node run -node _local-node-name_ partner savecore -s`
+
+ .. Return to the admin privilege level: `set -privilege admin`
+. If your storage system has Storage or Volume Encryption configured, you must restore Storage or Volume Encryption functionality by using one of the following procedures, depending on whether you are using onboard or external key management:
+ ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html[Restore onboard key management encryption keys^]
+ ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html[Restore external key management encryption keys^] 
+. Give back the controller:
+ .. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode _replacement_node_name_`
++
+The _replacement_ controller takes back its storage and completes booting.
++
+If you are prompted to override the system ID due to a system ID mismatch, you should enter `y`.
++
+NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
++
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the High-Availability Configuration content for your version of ONTAP 9]
+
+ .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
++
+The output from the `storage failover show` command should not include the System ID changed on partner message.
+. Verify that the disks were assigned correctly: `storage disk show -ownership`
++
+The disks belonging to the _replacement_ controller should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:
++
+----
+node1> `storage disk show -ownership`
+
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
+1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
+1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
+.
+.
+.
+----
+
+. If the system is in a MetroCluster configuration, monitor the status of the controller: `metrocluster node show`
++
+The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each controller will show a configured state, with DR Mirroring enabled and a mode of normal. The `metrocluster node show -fields node-systemid` command output displays the old system ID until the MetroCluster configuration returns to a normal state.
+
+. If the controller is in a MetroCluster configuration, depending on the MetroCluster state, verify that the DR home ID field shows the original owner of the disk if the original owner is a controller on the disaster site.
++
+This is required if both of the following are true:
+
+ ** The MetroCluster configuration is in a switchover state.
+ ** The _replacement_ controller is the current owner of the disks on the disaster site.
++
+https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration]
+
+. If your system is in a MetroCluster configuration, verify that each controller is configured: `metrocluster node show - fields configuration-state`
++
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+
+. Verify that the expected volumes are present for each controller: `vol show -node node-name`
+. If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`

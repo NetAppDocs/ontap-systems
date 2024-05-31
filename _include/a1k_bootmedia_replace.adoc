@@ -1,0 +1,120 @@
+To replace the boot media, you must remove the System Management module from the back of the system, remove the impaired boot media, install the replacement boot media in the System Management module, and transfer the boot image to a USB flash drive.
+
+== Step 1: Replace the boot media
+
+The boot media is located inside the System Management module and is accessed by removing the module from the system.
+
+. Remove the System Management module:
++
+image::../media/drw_A1K_boot_media_remove_replace_IEOPS-1377.svg[Boot media replace]
++
+[cols="1,4"]
+|===
+a|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+a|
+System Management module cam latch
+a|
+image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+a|
+Boot media locking button
+a|
+image::../media/legend_icon_03.svg[Callout number 3,width=30px]
+a|
+Boot media
+|===
+
+.. If you are not already grounded, properly ground yourself.
+.. Unplug the power supplies.
+.. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
+.. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
+.. Depress the System Management cam button.
+The cam lever moves away from the enclosure.
+ .. Rotate the cam latch down as far as it will go.
+.. Remove the System Management module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
+.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
+. Remove the boot media from the management module:
+.. Press the blue locking button.
+The boot media rotates slightly upward.
+.. Rotate the boot media up,  slide it out of the socket, and set it aside.
+. Install the replacement boot media into the controller module:
+.. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
+.. Rotate the boot media down toward until it engages the locking button.
+. Reinstall the System Management module.
+.. Align the module with the edges of the enclosure slot opening.
+ .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+. Rotate the cable management tray up to the closed position.
+.. Recable the System Management module.
+
+
+== Step 2: Transfer the boot image to the boot media
+
+The replacement boot media that you installed is without a boot image so you need to transfer a boot image using a USB flash drive.
+
+.Before you begin
+
+ * You must have a USB flash drive, formatted to FAT32, with at least 4GB capacity.
+ * A copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the Downloads section on the NetApp Support Site
+  ** If NVE is enabled, download the image with NetApp Volume Encryption, as indicated in the download button.
+  ** If NVE is not enabled, download the image without NetApp Volume Encryption, as indicated in the download button.
+ * If your system is an HA pair, you must have a network connection.
+
+.Steps
+. Download and copy the appropriate service image from the NetApp Support Site to the USB flash drive.
+.. Download the service image to your work space on your laptop.
+.. Unzip the service image.
++
+
+NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
+
++
+
+There are two folders in the unzipped service image file:
+
++
+
+   *** boot
+   *** efi
+
+  .. Copy the efi folder to the top directory on the USB flash drive.
+  +
+ The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
+
+.. Remove the USB flash drive from your laptop.
+. Insert the USB flash drive into the USB slot on the System Management module. 
++
+Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
+
+ . Plug the power cable into the power supply and reinstall the power cable retainer.
+
++
+The controller begins to boot as soon as power is reconnected to the system.
+
+ . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
++
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
+
+. Set your network connection type at the LOADER prompt:
+ ** If you are configuring DHCP: `ifconfig e0a -auto`
++
+NOTE: The target port you configure is the target port you use to communicate with the impaired controller from the healthy controller during var file system restore with a network connection. You can also use the e0M port in this command.
+
+ ** If you are configuring manual connections: `ifconfig e0a -addr=filer_addr -mask=netmask -gw=gateway-dns=dns_addr-domain=dns_domain`
+  *** filer_addr is the IP address of the storage system.
+  *** netmask is the network mask of the management network that is connected to the HA partner.
+  *** gateway is the gateway for the network.
+  *** dns_addr is the IP address of a name server on your network.
+  *** dns_domain is the Domain Name System (DNS) domain name.
++
+If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL. You need only the server's host name.
+
++
+NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
+. If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
+ .. Boot to Maintenance mode: `boot_ontap maint`
+ .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t iniitator adapter_name`
+ .. Halt to return to Maintenance mode: `halt`
+
++
+The changes will be implemented when the system is booted.
+

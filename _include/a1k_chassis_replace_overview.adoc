@@ -1,0 +1,6 @@
+To replace the chassis, you must remove the power supplies, fans, controller modules, I/O modules, DCPM modules, and USB LED module from the impaired chassis, remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis in its place, and then install the components into the replacement chassis.
+
+All other components in the system must be functioning properly; if not, you must contact technical support.
+
+* You can use this procedure with all versions of ONTAP supported by your system.
+* This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.

@@ -1,0 +1,18 @@
+You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
+
+* All drive shelves must be working properly.
+* The healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
+* If your system is in a MetroCluster configuration, you must review the section https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html[Choosing the correct recovery procedure] to determine whether you should use this procedure.
+* You must replace the failed component with a replacement FRU component you received from your provider.
+* You must be replacing a controller module with a controller module of the same model type. You cannot upgrade your system by just replacing the controller module.
+* You cannot change any drives or drive shelves as part of this procedure.
+* In this procedure, the boot device is moved from the impaired controller to the _replacement_ controller so that the _replacement_ controller will boot up in the same version of ONTAP as the old controller module.
+* It is important that you apply the commands in these steps on the correct systems:
+ ** The _impaired_ controller is the controller that is being replaced.
+ ** The _replacement_ controller is the new controller that is replacing the impaired controller.
+ ** The _healthy_ controller is the surviving controller.
+* You must always capture the controller's console output to a text file.
++
+This provides you a record of the procedure so that you can troubleshoot any issues that you might encounter during the replacement process.
+
+NOTE: Do not downgrade the BIOS version of the _replacement_ controller to match the partner controller or the old controller module.

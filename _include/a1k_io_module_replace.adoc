@@ -1,0 +1,90 @@
+To replace an I/O module, you must perform a specific sequence of tasks.
+
+* You can use this procedure with all versions of ONTAP supported by your system.
+* All other components in the system must be functioning properly; if not, you must contact technical support.
+
+== Step 1: Shut down the impaired node
+
+Shut down or take over the impaired controller using one of the following options.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+--
+
+====
+
+== Step 2: Replace I/O modules
+
+To replace an I/O module, locate it within the enclosure and follow the specific sequence of steps.
+
+. If you are not already grounded, properly ground yourself.
+. Unplug the PSUs cables from the PSUs from the controller.
+
++
+NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
++
+
+. Unplug any cabling on the target I/O module.
+. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
+
++
+image:../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[AFF A1K IO card remove]
++
+[cols="10,90"]
+|===
+a|
+image:../media/legend_icon_01.png[Callout number 1] a|
+I/O cam latch
+a|
+|===
+
++
+Make sure that you label the cables so that you know where they came from.
+
+. Remove the target I/O module from the enclosure:
+.. Depress the cam button on the target module.
++
+The cam button moves away from the enclosure.
+
+.. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
+.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
++
+Make sure that you keep track of which slot the I/O module was in.
+
+. Set the I/O module aside.
+. Install the replacement I/O module into the enclosure:
+.. Align the module with the edges of the enclosure slot opening.
+.. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+. Cable the I/O module.
+. Reconnect the PSUs.
+. Rotate the cable management arm up to the closed position.
+
+== Step 3: Reboot the controller
+
+After you replace an I/O module, you must reboot the controller module.
+
+NOTE: If the new I/O module is not the same model as the failed module, you must first reboot the BMC.
+
+.Steps
+. Reboot the BMC if the replacement module is not the same model as the old module:
+.. From the LOADER prompt, change to advanced privilege mode: `set privilege advanced`
+.. Reboot the BMC: `sp reboot`
+. From the LOADER prompt, reboot the node: `bye`
++
+NOTE: This reinitializes the I/O cards and other components and reboots the node.
++
+. Return the node to normal operation: `storage failover giveback -ofnode impaired_node_name`
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
+
+== Step 4: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
