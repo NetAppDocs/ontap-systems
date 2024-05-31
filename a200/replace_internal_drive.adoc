@@ -35,11 +35,11 @@ When replacing several disk drives, you must wait one minute between the removal
 
 .Option 1: Replace SSD
 --
-include::../_include/drive_hotswap_sas.adoc[]
+include::../_include/drive_hotswap_ssd.adoc[]
 --
 .Option 2: Replace HDD
 --
-include::../_include/drive_hotswap_sas.adoc.adoc[]
+include::../_include/drive_hotswap_hdd.adoc[]
 --
 
 ====
