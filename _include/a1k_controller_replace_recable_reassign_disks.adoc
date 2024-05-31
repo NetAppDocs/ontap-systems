@@ -36,23 +36,6 @@ NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the High-Availability Configuration content for your version of ONTAP 9]
 
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
-+
-The output from the `storage failover show` command should not include the System ID changed on partner message.
-. Verify that the disks were assigned correctly: `storage disk show -ownership`
-+
-The disks belonging to the _replacement_ controller should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:
-+
-----
-node1> `storage disk show -ownership`
-
-Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
------ ------    ----- ------ -------- -------    -------    -------  ---------  ---
-1.0.0  aggr0_1  node1 node1  -        1873775277 1873775277  -       1873775277 Pool0
-1.0.1  aggr0_1  node1 node1           1873775277 1873775277  -       1873775277 Pool0
-.
-.
-.
-----
 
 . If the system is in a MetroCluster configuration, monitor the status of the controller: `metrocluster node show`
 +
