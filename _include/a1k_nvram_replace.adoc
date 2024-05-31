@@ -1,4 +1,4 @@
-The NVRAM module consists of the NVRAM12 and DIMMs. You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. To replace a failed NVRAM module, you must remove the module from the enclosure, move the DIMMs to the replacement module, and install the replacement NVRAM module into the enclosure.
+The NVRAM module consists of the NVRAM12 hardware and field-replaceable DIMMs. You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. To replace a failed NVRAM module, you must remove the module from the enclosure, move the DIMMs to the replacement module, and install the replacement NVRAM module into the enclosure.
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
@@ -27,9 +27,9 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 To replace the NVRAM module, locate it in slot 4/5 in the enclosure and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the power cord from the PSU.
+. Unplug the power cord from both PSUs.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
-. Remove the target NVRAM module from the enclosure:
+. Remove the impaired NVRAM module from the enclosure:
  .. Depress the locking cam button.
 +
 The cam button moves away from the enclosure.
@@ -38,7 +38,7 @@ The cam button moves away from the enclosure.
 +
  .. Remove the NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 +
-image::../media/drw_s1K_nvram12_remove_replace_ieops-1380.svg[Remove the NVRAM12 module and DIMMs]
+image::../media/drw_a1K_nvram12_remove_replace_ieops-1380.svg[Remove the NVRAM12 module and DIMMs]
 +
 [cols="1,4"]
 |===
@@ -48,7 +48,7 @@ Cam locking button
 a|
 image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
-DIMM locking tab
+DIMM locking tabs
 |===
 
 . Set the NVRAM module on a stable surface.
@@ -56,7 +56,7 @@ DIMM locking tab
 . Install the replacement NVRAM module into the enclosure:
  .. Align the module with the edges of the enclosure opening in slot 4/5.
  .. Gently slide the module into the slot all the way, and then rotate the cam latch all the way up to lock the module in place.
-. Recable the PSU.
+. Recable the PSUs.
 . Rotate the cable management tray up to the closed position.
 
 
@@ -65,15 +65,9 @@ DIMM locking tab
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, and then replace the target DIMM.
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the PSU.
+. Unplug the power cord from both PSUs.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
-. Remove the target NVRAM module from the enclosure:
- .. Depress the cam button on the NVRAM module.
-+
-The cam button moves away from the enclosure.
-
- .. Rotate the cam latch as far as it will go.
-  .. Remove the NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
+. Remove the target NVRAM module from the enclosure.
 +
 image::../media/drw_a1K_nvram12_remove_replace_ieops-1380.svg[Remove the NVRAM 12 module and DIMMs]
 +
@@ -85,17 +79,21 @@ Cam locking button
 a|
 image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
-DIMM locking tab
+DIMM locking tabs
 |===
 
 . Set the NVRAM module on a stable surface.
-. Locate the DIMM to be replaced inside the NVRAM module, and then remove it by pressing down on the DIMM locking tabs and lifting the DIMM out of the socket.
+. Locate the DIMM to be replaced inside the NVRAM module.
+
 +
+NOTE: Consult the FRU map label on the side of the NVRAM module to determine the locations of DIMM slots 1 and 2.
++
+
+. Remove the DIMM by pressing down on the DIMM locking tabs and lifting the DIMM out of the socket.
+
 . Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
-. Install the NVRAM module into the enclosure:
- .. Align the module with the edges of the enclosure opening in slot 4/5.
- .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
-. Recable the PSU.
+. Install the NVRAM module into the enclosure
+. Recable the PSUs.
  . Rotate the cable management tray up to the closed position.
 
 == Step 4: Reboot the controller
