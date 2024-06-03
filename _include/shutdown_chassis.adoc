@@ -4,8 +4,8 @@ This procedure is for 2-node, non-MetroCluster configurations only. If you have 
 You need:
 
 * Local administrator credentials for ONTAP.
-* NetApp onboard key management (OKM) cluster-wide passphrase if using storage encryption.
-* SP/BMC accessability for each controller.
+* NetApp onboard key management (OKM) cluster-wide passphrase if using storage encryption or NVE/NAE.
+* BMC accessability for each controller.
 * Stop all clients/host from accessing data on the NetApp system.
 * Suspend external backup jobs.
 * Necessary tools and equipment for the replacement.
