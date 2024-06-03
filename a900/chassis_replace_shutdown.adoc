@@ -6,6 +6,8 @@ summary: "To replace the chassis, you must shutdown the controllers."
 ---
 
 == Shutdown the controllers - AFF A900
+:icons: font
+:imagesdir: ../media/
 
 [.lead]
 include::../_include/shutdown_chassis.adoc[]
