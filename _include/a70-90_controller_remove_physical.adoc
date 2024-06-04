@@ -2,6 +2,11 @@
 
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
 
+. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
++
+
 . Check the amber NVRAM LED located on the back of the controller module. Look for the NV icon:
 +
 image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
