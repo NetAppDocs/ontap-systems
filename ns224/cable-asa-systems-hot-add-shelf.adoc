@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, cable, hot-add an ns224 drive shelf
 summary: You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
 ---
-= Cable shelf to AFF systems - NS224 shelves
+= Cable shelf to ASA systems - NS224 shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
 
-.Cable shelf to AFF A1K
+.Cable shelf to ASA A1K
 [%collapsible]
 
 
@@ -21,7 +21,7 @@ include::../_include/cable-a1k-hot-add-shelf.adoc[]
 
 ====
 
-.Cable shelf to AFF A70 or AFF A90
+.Cable shelf to ASA A70 or ASA A90
 [%collapsible]
 
 
@@ -32,7 +32,7 @@ include::../_include/cable-70-90-hot-add-shelf.adoc[]
 ====
 
 
-.Cable shelf to AFF A250 or AFF C250
+.Cable shelf to ASA A250 or ASA C250
 [%collapsible]
 
 
@@ -42,7 +42,7 @@ include::../_include/cable-a250-c250-hot-add-shelf.adoc[]
 
 ====
 
-.Cable shelf to AFF A400 or AFF C400
+.Cable shelf to ASA A400 or ASA C400
 [%collapsible]
 
 ====
@@ -51,7 +51,7 @@ include::../_include/cable-a400-c400-hot-add-shelf.adoc[]
 
 ====
 
-.Cable shelf to AFF A800 or AFF C800
+.Cable shelf to ASA A800 or ASA C800
 [%collapsible]
 
 ====
@@ -61,7 +61,7 @@ include::../_include/cable-a800-c800-hot-add-shelf.adoc[]
 ====
 
 
-.Cable shelf to AFF A900
+.Cable shelf to ASA A900
 [%collapsible]
 
 ====

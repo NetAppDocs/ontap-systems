@@ -1,16 +1,3 @@
----
-permalink: ns224/cable-a700-hot-add-shelf.html
-sidebar: sidebar
-keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, cable, hot-add an ns224 drive shelf
-summary: You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
----
-= Cable a shelf to the AFF A700 HA pair - NS224 shelves
-:icons: font
-:imagesdir: ../media/
-
-[.lead]
-You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
-
 How you cable an NS224 drive shelf in an AFF A700 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controller modules.
 
 .Before you begin
