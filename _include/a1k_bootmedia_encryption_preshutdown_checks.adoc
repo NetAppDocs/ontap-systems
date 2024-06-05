@@ -15,12 +15,12 @@ The following AutoSupport message suppresses automatic case creation for two hou
 
  ** If <lno-DARE> or <1Ono-DARE> is displayed in the command output, the system does not support NVE, go to link:../a1k/bootmedia-shutdown.html[Shut down the impaired controller].
 
- ** If <lno-DARE> is not not displayed in the command output, and the system is running ONTAP 9.6 or later, continue to the next section, <<Check NVE or NSE on systems running ONTAP 9.6 and later>>.
+ ** If <lno-DARE> is not displayed in the command output, and the system is running ONTAP 9.6 or later, continue to the next section, <<Check NVE or NSE on systems running ONTAP 9.15 and later>>.  *CHECK THIS*  it wille be changing
  . Disable automatic giveback from the healthy controller: 
  storage failover modify -node local -auto-giveback false`
  or
  `storage failover modify -node local -auto-giveback-after-panic false` 
 
-== Check NVE or NSE on systems running ONTAP 9.6 and later
+== Check NVE or NSE on systems running ONTAP 9.15 and later
 
 include::../_include/encryption_check_915_later.adoc[]

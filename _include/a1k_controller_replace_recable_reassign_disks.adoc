@@ -1,27 +1,9 @@
 Continue the replacement procedure by recabling the storage and confirming disk reassignment.
 
-== Step 1: Recable the system
 
-include::../_include/recable_system_after_controller_rep.adoc[]
 
-== Step 2: Reassign disks
+== Step 1: Reassign disks - need new title
 
-This procedure applies only to systems running ONTAP in an HA pair.
-
-. If the _replacement_ controller is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the _replacement_ controller, boot the controller: `boot_ontap`
-
-. From the healthy controller, verify that any coredumps are saved:
- .. Change to the advanced privilege level: `set -privilege advanced`
-+
-You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
-
- .. Save any coredumps: `system node run -node _local-node-name_ partner savecore`
- .. Wait for the `savecore`command to complete before issuing the giveback.
-+
-You can enter the following command to monitor the progress of the savecore command: `system node run -node _local-node-name_ partner savecore -s`
-
- .. Return to the admin privilege level: `set -privilege admin`
 . If your storage system has Storage or Volume Encryption configured, you must restore Storage or Volume Encryption functionality by using one of the following procedures, depending on whether you are using onboard or external key management:
  ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html[Restore onboard key management encryption keys^]
  ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html[Restore external key management encryption keys^] 
