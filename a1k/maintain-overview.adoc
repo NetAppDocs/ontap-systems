@@ -23,19 +23,15 @@ A controller consists of a board, firmware, and software. It controls the drives
 
 A dual in-line memory module (DIMM) is a type of computer memory. They are installed to add system memory to a controller motherboard.
 
-== Drive
-
-A drive is a device that provides the physical storage media for data.
-
 == Fan
 
 A fan cools the controller.
 
-== NVRAM module
+== NVRAM
 
-The NVRAM (Non-Volatile Random Access Memory) module allows the controller to protect and save in-flight data if the system loses power. The system ID resides in the NVRAM module. When replaced, the controller assumes the new system ID from the replacement NVRAM module. 
+The NVRAM (Non-Volatile Random Access Memory) is a module that allows the controller to protect and save in-flight data if the system loses power. The system ID resides in the NVRAM module. When replaced, the controller assumes the new system ID from the replacement NVRAM module. 
 
-== NVDIMM battery
+== NV battery
 
 The NVRAM battery is responsible for providing power to the NVRAM module while data in-flight is being destaged to flash memory after a power loss.
 
@@ -43,14 +39,15 @@ The NVRAM battery is responsible for providing power to the NVRAM module while d
 
 The I/O module (Input/Output module) is a hardware component that acts as an intermediary between the controller and various devices or systems that need to exchange data with the controller. 
 
+== System Management module
+
+The System Management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).
+
 == Power supply
 
-A power supply provides a redundant power source in a controller shelf.
+A power supply provides a redundant power source in a controller.
 
 == Real-time clock battery
 
 A real time clock battery preserves system date and time information if the power is off. 
 
-== System management module
-
-The System Management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).

@@ -35,22 +35,27 @@ A drive is a device that provides the physical storage media for data.
 
 The fan cools the controller.
 
-== NVDIMM
+== NVRAM
 
-The NVDIMM (non-volatile dual in-line memory module) manages the data transfer from the volatile memory to the non-volatile storage, and maintains data integrity in the event of a power loss or system shutdown. 
+The NVRAM (Non-Volatile Random Access Memory) is a module that allows the controller to protect and save in-flight data if the system loses power. The system ID resides in the NVRAM module. When replaced, the controller assumes the new system ID from the replacement NVRAM module. 
 
-== NVDIMM battery
+== NV battery
 
-A NVDIMM battery is responsible for maintaining power to the NVDIMM module.
+The NVRAM battery is responsible for providing power to the NVRAM module while data in-flight is being destaged to flash memory after a power loss.
 
-== PCIe card
+== I/O module
 
-A PCIe (peripheral component interconnect express) card is an expansion card that plugs into the PCIe slot on the motherboard. 
+The I/O module (Input/Output module) is a hardware component that acts as an intermediary between the controller and various devices or systems that need to exchange data with the controller.
+
+== System Management module
+
+The System Management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).
 
 == Power supply
 
-A power supply provides a redundant power source in a controller shelf.
+A power supply provides a redundant power source in a controller.
 
 == Real-time clock battery
 
 A real time clock battery preserves system date and time information if the power is off. 
+
