@@ -88,10 +88,11 @@ a|
 |===
 
 . Connect the console cable to the partner controller.
-. Give back the controller using the storage failover giveback -fromnode local command.
-. At the cluster prompt, check the logical interfaces with the net int -is-home false command.
+. Give back the controller using the `storage failover giveback -fromnode local` command.
+. At the cluster prompt, check the logical interfaces with the `network interface show  -is-home false` command.
 +
-If any interfaces are listed as "false", revert those interfaces back to their home port using the net int revert command.
+If any interfaces are listed as "false", revert those interfaces back to their home port using the `network interface revert` command.
 
-. Move the console cable to the repaired Shut down or take over the impaired controller using the appropriate procedure for your configuration. and run the version -v command to check the ONTAP versions.
+. Move the console cable to the repaired controller and run the `version -v` command to check the ONTAP versions.
+
 . Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
