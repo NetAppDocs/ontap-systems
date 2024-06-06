@@ -40,7 +40,7 @@ NOTE: If your storage system has DC power supply units (PSUs), disconnect the po
 +
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
-. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
+. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 . Remove the target slot blanking module from the chassis:
 
 +
@@ -77,7 +77,7 @@ NOTE: Make sure that any unused I/O slots have blanks installed to prevent possi
 +
 NOTE: If you have DC PSUs, reconnect the cable blocks to the PSUs.
 +
-. Rotate the cable management arm up to the closed position.
+. Rotate the cable management tray up to the closed position.
 . Reboot the controller from the LOADER prompt: _bye_
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
@@ -139,7 +139,7 @@ NOTE: If your storage system has DC PSUs, disconnect the power cable block from 
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
 . Unplug any cabling on the target I/O module.
-. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
+. Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 . Remove the target I/O module from the chassis:
 
 +
@@ -174,7 +174,7 @@ Make sure that you keep track of which slot the I/O module was in.
 +
 NOTE: If you have DC PSUs, reconnect the cable blocks to the PSUs.
 +
-. Rotate the cable management arm into the locked position.
+. Rotate the cable management tray into the locked position.
 . Reboot the controller from the LOADER prompt:_bye_
 .. Check the version of BMC on the controller: `system service-processor show`
 .. Update the BMC firmware if needed: `system service-processor image update`

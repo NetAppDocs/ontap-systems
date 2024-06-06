@@ -39,7 +39,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 NOTE: If your storage system has DC PSUs, disconnect the power cable block from the PSU.
 +
 
-. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
+. Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 . Remove the target slot blanking module from the carrier:
 
 +
@@ -70,7 +70,7 @@ If the I/O module is a storage module, cable it to the NS224 shelf.
 
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
-. Rotate the cable management arm up to the closed position.
+. Rotate the cable management tray up to the closed position.
 . Reboot the controller from the LOADER prompt: _bye_
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
@@ -131,7 +131,7 @@ NOTE: If your storage system has DC PSUs, disconnect the power cable block from 
 +
 
 . Unplug any cabling on the target I/O module.
-. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
+. Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 . Remove the target I/O module from the chassis:
 
 +
@@ -163,7 +163,7 @@ Make sure that you keep track of which slot the I/O module was in.
 . Cable the I/O module.
 . Repeat the remove and install steps to replace additional modules for the controller.
 . Reconnect the PSUs.
-. Rotate the cable management arm up to the closed position.
+. Rotate the cable management tray up to the closed position.
 
 . Reboot the controller from the LOADER prompt:_bye_
 .. Check the version of BMC on the controller: `system service-processor show`
