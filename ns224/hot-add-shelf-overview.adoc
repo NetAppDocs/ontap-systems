@@ -20,7 +20,7 @@ Depending on your platform model, you might need to configure the non-dedicated 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:install-hot-add-shelf.html[Install your shelf]
 [role="quick-margin-para"]
-To install the shelf, install the rail kits for your shelves, and then install and secure your shelf in the cabinet or telco rack. Next, connect the power cords to power on the NS224 shelf and then assign a unique shelf ID to ensure each shelf is distinct within the setup. 
+To install the shelf, install the rail kit for the shelf, and then install and secure your shelf in the telco rack or cabinet. Next, connect the power cords to power on the NS224 shelf and then assign a unique shelf ID to ensure the shelf is distinct within the HA pair. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:cable-overview-hot-add-shelf.html[Cable your shelf]
 [role="quick-margin-para"]
