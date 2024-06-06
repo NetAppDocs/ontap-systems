@@ -72,6 +72,10 @@ How you cable an NS224 drive shelf to an AFF A700 HA pair depends on the number 
 
 * You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
 
+* If you are hot-adding the initial NS224 shelf (no NS224 shelf exists in your HA pair), you must install a core dump module (X9170A, NVMe 1TB SSD) in each controller to support core dumps (store core files). 
++
+See link:../fas9000/caching-module-and-core-dump-module-replace.html[Replace the caching module or add/replace a core dump module -- AFF A700 and FAS9000^].
+
 
 .Steps
 

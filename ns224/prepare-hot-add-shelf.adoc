@@ -9,7 +9,7 @@ summary: You can hot-add an NS224 drive shelf after your HA pair meets certain r
 :imagesdir: ../media/
 
 [.lead]
-Complete the preparation tasks applicable to your HA pair before hot-adding an NS224 drive shelf.
+Complete the preparation tasks applicable to your HA pair before hot-adding an NS224 shelf.
 
 == Install RoCE-capable PCIe cards or I/O modules
 If your platform model supports the use of RoCE-capable PCIe cards or I/O modules, your HA pair must have enough available RoCE-capable Ethernet ports to support the number of shelves you are hot-adding. 
@@ -28,7 +28,7 @@ See your platform model's documentation for PCIe card or I/O module installation
 
 == Configure ports for storage use
 
-If your HA pair has non-dedicated RoCE-capable Ethernet ports that you are using to hot-add an NS224 drive shelf, you must configure the ports for storage use (not networking use).
+If your HA pair has non-dedicated RoCE-capable Ethernet ports that you are using to hot-add an NS224 shelf, you must configure the ports for storage use (not networking use).
 
 .Before you begin
 * Make sure you have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements]. 
@@ -51,7 +51,7 @@ Depending on the version of ONTAP your HA pair is running you may need to reboot
 
 .Steps
 
-. Login to the cluster using SSH or the serial console port.
+. Log in to the cluster using SSH or the serial console port.
 . Enter the following command to verify if the non-dedicated ports in the HA pair are configured for storage use:
 +
 `storage port show`
@@ -268,11 +268,6 @@ If automatic drive assignment is enabled, the output shows `on` in the `Auto Ass
 . If automatic drive assignment is enabled, disable it: `storage disk option modify -node _node_name_ -autoassign off`
 +
 You must disable automatic drive assignment on both nodes.
-
-== Install core dump module for AFF A700 HA pair
-If you have an AFF A700 HA pair and you are hot-adding the initial NS224 drive shelf (no NS224 drive shelf exists in your HA pair), you must install a core dump module (X9170A, NVMe 1TB SSD) in each controller to support core dumps (store core files). 
-
-See link:../fas9000/caching-module-and-core-dump-module-replace.html[Replace the caching module or add/replace a core dump module -- AFF A700 and FAS9000^].
 
 .What's next?
 Go to link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
