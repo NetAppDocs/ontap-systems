@@ -24,8 +24,8 @@ To install the shelf, install the rail kit for the shelf, and then install and s
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:cable-overview-hot-add-shelf.html[Cable your shelf]
 [role="quick-margin-para"]
-Cable the NS224 shelf you are hot-adding so that it shelf has two connections to each controller in the HA pair.
+Cable the NS224 shelf you are hot-adding so that it has two connections to each controller in the HA pair.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:complete-hot-add-shelf.html[Complete hot-add]
 [role="quick-margin-para"]
-To complete setup, manually assign drive ownership and then reenable automatic drive assignment if you disabled it when you prepared for the hot-add.
+To complete the hot-add, manually assign drive ownership and then reenable automatic drive assignment if you disabled it when you prepared for the hot-add.

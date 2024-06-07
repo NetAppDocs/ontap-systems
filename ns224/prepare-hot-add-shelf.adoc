@@ -14,24 +14,22 @@ Complete the preparation tasks applicable to your HA pair before hot-adding an N
 == Install RoCE-capable PCIe cards or I/O modules
 If your platform model supports the use of RoCE-capable PCIe cards or I/O modules, your HA pair must have enough available RoCE-capable Ethernet ports to support the number of shelves you are hot-adding. 
 
-.Before you begin
-Make sure you identify the correct controller slots for your platform model. See https://hwu.netapp.com[NetApp Hardware Universe^]. 
-
 .Steps
 . For each shelf you are hot-adding, verify that there are two RoCE-capable ports on each controller. 
 +
 These ports can be on board the controllers, on RoCE-capable PCIe cards, a combination of both, or on RoCE-capable I/O modules, as supported by your platform model.
 +
-. If your HA pair does not have enough available RoCE-capable ports, install the additional PCIe cards or I/O modules into the correct controller slots, as supported by your platform model.  
+. If your HA pair does not have enough available RoCE-capable ports, install the additional PCIe cards or I/O modules into the correct controller slots, as supported by your platform model. 
++ 
+.. Identify the correct controller slots for your platform model. See https://hwu.netapp.com[NetApp Hardware Universe^]. 
 +
-See your platform model's documentation for PCIe card or I/O module installation instructions.
+.. See your platform model's documentation for PCIe card or I/O module installation instructions.
 
-== Configure ports for storage use
+== Configure RoCE-capable ports for storage use
 
 If your HA pair has non-dedicated RoCE-capable Ethernet ports that you are using to hot-add an NS224 shelf, you must configure the ports for storage use (not networking use).
 
 .Before you begin
-* Make sure you have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements]. 
 
 * Make sure you installed any additional RoCE-capable PCIe cards or I/O modules in each controller.
 
@@ -41,13 +39,13 @@ If your HA pair has non-dedicated RoCE-capable Ethernet ports that you are using
 
 * If you determine that the non-dedicated RoCE-capable ports in your HA pair are not configured for storage use, it is a nondisruptive procedure to configure them. 
 +
-Depending on the version of ONTAP your HA pair is running you may need to reboot the controllers:
+Depending on the version of ONTAP your HA pair is running you might need to reboot the controllers:
 +
- ** If your HA pair is running a version of ONTAP 9.6, you need to reboot the controllers, one at a time.
+** If your HA pair is running a version of ONTAP 9.6, you need to reboot the controllers, one at a time.
 +
 ** If your HA pair is running ONTAP 9.7 or later, you do not need to reboot the controllers, unless one or both controllers are in maintenance mode. This procedure assumes that neither controller is in maintenance mode.
 +
-** To change ports from storage use to networking use, enter the command, `storage port modify -node _node_name_ -port _port_name_ -mode network`.
+* To change ports from storage use to networking use, enter the command, `storage port modify -node _node_name_ -port _port_name_ -mode network`.
 
 .Steps
 
@@ -73,7 +71,7 @@ When non-dedicated ports are not configured for storage use, the command output 
 +
 Otherwise, you need to configure the ports by completing steps 4 through 7.
 +
-. Configure the non-dedicated ports for storage use, on one of the controller modules:
+. Configure the non-dedicated ports for storage use, on one of the controllers:
 +
 You must repeat the applicable command for each port you are configuring.
 +
@@ -90,13 +88,13 @@ a|
 `storage port enable -node _node_name_ -port _port_name_`
 |===
 
-. If your HA pair is running ONTAP 9.6, reboot the controller module so that the port changes take effect: `system node reboot -node _node_name_ -reason _reason_for_the_reboot_`.
+. If your HA pair is running ONTAP 9.6, reboot the controller so that the port changes take effect: `system node reboot -node _node_name_ -reason _reason_for_the_reboot_`.
 +
 Otherwise, go to the next step.
 +
 NOTE: The reboot can take up to 15 minutes.
 
-. Repeat the steps for the second controller module:
+. Repeat the steps for the second controller:
 +
 [options="header" cols="1,3"]
 |===
@@ -121,21 +119,17 @@ NOTE: The first controller must have already completed its reboot.
 +
 |===
 
-. Verify that the non-dedicated ports on both controller modules are configured for storage use: `storage port show`
-+
-You can enter the command on either controller module.
+. Verify that the non-dedicated ports on both controllers are configured for storage use: `storage port show`
 +
 If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `storage` in the `Mode` column.
 +
 If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
 
-== Recable port connections
+== Recable existing shelf connections
 
 Before hot-adding additional shelves, depending on your platform model, you might need to recable an existing shelf (after you have installed the additional RoCE-capable PCIe cards or I/O modules) across two sets of ports in different slots for resiliency against slot failure.
 
 .Before you begin
-
-* Make sure you have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements]. 
 
 * Make sure you installed any additional RoCE-capable PCIe cards or I/O modules in each controller.
 

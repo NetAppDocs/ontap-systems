@@ -9,26 +9,24 @@ summary: If you disabled automatic drive assignment as part of the preparation f
 :imagesdir: ../media/
 
 [.lead]
-If you disabled automatic drive assignment as part of the preparation for the NS224 drive shelf hot-add, you need to manually assign drive ownership and then reenable automatic drive assignment if needed.
+If you disabled automatic drive assignment as part of the preparation for the NS224 shelf hot-add, you need to manually assign drive ownership and then reenable automatic drive assignment if needed.
 
 .Before you begin
 
-You must have already cabled your shelf as instructed for your HA pair.
-
-<<Cable a drive shelf for a hot-add>>
+You must have already cabled your shelf as instructed for your HA pair. See link:cable-overview-hot-add-shelf.html[Overview of cabling for a hot-add].
 
 .Steps
 
 . Display all unowned drives: `storage disk show -container-type unassigned`
 +
-You can enter the command on either controller module.
+You can enter the command on either controller.
 
-. Assign each drive: `storage disk assign -disk disk_name -owner owner_name`
+. Assign each drive: `storage disk assign -disk _disk_name_ -owner _owner_name_`
 +
-You can enter the command on either controller module.
+You can enter the command on either controller.
 +
 You can use the wild card character to assign more than one drive at once.
 
-. Reenable automatic drive assignment if needed: `storage disk option modify -node node_name -autoassign on`
+. Reenable automatic drive assignment if needed: `storage disk option modify -node _node_name_ -autoassign on`
 +
-You must reenable automatic drive assignment on both controller modules.
+You must reenable automatic drive assignment on both controllers.
