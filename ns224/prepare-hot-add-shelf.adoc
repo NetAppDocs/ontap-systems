@@ -145,7 +145,7 @@ Before hot-adding additional shelves, depending on your platform model, you migh
 +
 NOTE: Moving a cable does not require any wait time between unplugging the cable from one port and plugging it into another port.
 
-* If needed, refer to the cabling illustrations in [Cable ], which shows an existing single shelf and the recabled shelf, in a two-shelf configuration.
+* If needed, refer to the shelf cabling illustrations for your platform model in link:cable-overview-hot-add-shelf.html[Overview of cabling for a hot-add].
 
 
 .Steps
@@ -166,14 +166,20 @@ NOTE: If you have an AFF A1K HA pair and you are hot-adding a third shelf and in
 
 Do one of the following:
 
-* If hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 10 on each controller:
-
+* If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 10 on each controller.
++
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 11 on each controller.
++
 .. On controller A, move the cable from slot 11 port b (e11b) to
 slot 10 port b (e10b).
 .. Repeat the same cable move on controller B.
 
-* If hot-adding a fourth shelf, recable the third shelf across the RoCE-capable I/O modules in slot 9 and slot 8 on each controller:
-
+* If you are hot-adding a fourth shelf, recable the third shelf across the RoCE-capable I/O modules in slot 9 and slot 8 on each controller.
++
+The substeps assume the third shelf is cabled to a RoCE-capable I/O 
+module in slot 9 on each controller.
++
 .. On controller A, move the cable from slot 9 port b (e9b) to
 slot 8 port b (e8b).
 .. Repeat the same cable move on controller B.
@@ -184,10 +190,11 @@ slot 8 port b (e8b).
 
 .AFF A70 or AFF A90
 --
+
+If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 8 on each controller.
+
 The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
 module in slot 11 on each controller.
-
-If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 8 on each controller:
 
 .. On controller A, move the cable from slot 11 port b (e11b) to
 slot 8 port b (e8b).
@@ -197,9 +204,10 @@ slot 8 port b (e8b).
 
 .AFF A800 or AFF C800
 --
-The substeps assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
 
-If you are hot-adding a second shelf, recable the first shelf across the two sets of RoCE-capable ports in slot 5 and slot 3 on each controller:
+If you are hot-adding a second shelf, recable the first shelf across the two sets of RoCE-capable ports in slot 5 and slot 3 on each controller.
+
+The substeps assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
 
 .. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
 .. Repeat the same cable move on controller B.
@@ -208,9 +216,10 @@ If you are hot-adding a second shelf, recable the first shelf across the two set
 
 .AFF A700
 --
-The substeps assume the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
 
-If you are hot-adding a second shelf, recable the first shelf across the two sets of RoCE-capable ports in slot 3 and slot 7 on each controller:
+If you are hot-adding a second shelf, recable the first shelf across the two sets of RoCE-capable ports in slot 3 and slot 7 on each controller.
+
+The substeps assume the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
 
 .. On controller A, move the cable from slot 3 port b (e3b) to slot 7 port b (e7b).
 .. Repeat the same cable move on controller B.
@@ -221,12 +230,11 @@ If you are hot-adding a second shelf, recable the first shelf across the two set
 --
 If you are hot-adding a second shelf, depending on your platform model, do one of the following:
 
-
-
-
 * On the AFF A400:
 +
 Recable the first shelf across the two sets of RoCE-capable ports, onboard e0c/e0d and in slot 5, on each controller.
++
+The substeps assume the existing shelf is cabled to RoCE-capable onboard ports e0c/e0d on each controller.
 +
 .. On controller A, move the cable from port e0d to slot 5 Port b (e5b).
 .. Repeat the same cable move on controller B.
@@ -234,6 +242,8 @@ Recable the first shelf across the two sets of RoCE-capable ports, onboard e0c/e
 * On the AFF C400:
 +
 Recable the first shelf across the two sets of RoCE-capable ports in slot 4 and slot 5, on each controller.
++
+The substeps assume the existing shelf is cabled to RoCE-capable ports in slot 4 on each controller.
 +
 .. On controller A, move the cable from slot 4 port a (e4a) to slot 5 port b (e5b).
 .. Repeat the same cable move on controller B.

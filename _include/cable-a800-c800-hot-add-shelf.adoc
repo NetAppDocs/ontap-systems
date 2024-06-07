@@ -1,4 +1,4 @@
-How you cable an NS224 drive shelf in an AFF A800 or AFF C800 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controller modules.
+How you cable an NS224 shelf in an AFF A800 or AFF C800 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controllers.
 
 .Before you begin
 
@@ -10,7 +10,7 @@ How you cable an NS224 drive shelf in an AFF A800 or AFF C800 HA pair depends on
 
 .Steps
 
-. If you are hot-adding one shelf using one set of RoCE-capable ports (one RoCE-capable PCIe card) on each controller module, and this is the only NS224 shelf in your HA pair, complete the following substeps.
+. If you are hot-adding one shelf using one set of RoCE-capable ports (one RoCE-capable PCIe card) on each controller, and this is the only NS224 shelf in your HA pair, complete the following substeps.
 +
 Otherwise, go to the next step.
 +
@@ -21,11 +21,11 @@ NOTE: This step assumes you installed the RoCE-capable PCIe card in slot 5.
  .. Cable shelf NSM B port e0a to controller B slot 5 port a (e5a).
  .. Cable shelf NSM B port e0b to controller A slot 5 port b (e5b).
 +
-The following illustration shows cabling for one hot-added shelf using one RoCE-capable PCIe card on each controller module:
+The following illustration shows cabling for one hot-added shelf using one RoCE-capable PCIe card on each controller:
 +
 image::../media/drw_ns224_a800_c800_1shelf_IEOPS-964.svg[width=452px]
 
-. If you are hot-adding one or two shelves using two sets of RoCE-capable ports (two RoCE-capable PCIe cards) on each controller module, complete the applicable substeps.
+. If you are hot-adding one or two shelves using two sets of RoCE-capable ports (two RoCE-capable PCIe cards) on each controller, complete the applicable substeps.
 +
 NOTE: This step assumes you installed the RoCE-capable PCIe cards in slot 5 and slot 3.
 +
@@ -64,9 +64,6 @@ image::../media/drw_ns224_a800_c800_2shelves_IEOPS-966.svg[width=542px]
 +
 If any cabling errors are generated, follow the corrective actions provided.
 
-. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
+. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. See link:complete-hot-add-shelf.html[Complete the hot-add].
 +
 Otherwise, you are done with this procedure.
-
-.What's next?
-Go to link:complete-hot-add-shelf.html[Complete hot-add].

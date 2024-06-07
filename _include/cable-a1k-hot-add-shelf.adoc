@@ -4,7 +4,7 @@ You can hot-add up to three additional NS224 shelves (for a total of four shelve
 
 * You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
 
-* You must have completed the applicable procedures in link:prepare-hot-add-shelf.html[Prepare-to hot-add a shelf]. 
+* You must have completed the applicable procedures in link:prepare-hot-add-shelf.html[Prepare to hot-add a shelf]. 
 
 * You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
 
@@ -70,9 +70,6 @@ image::../media/drw_ns224_vino_m_4shelves_4cards_ieops-1645.svg[Cabling for AFF 
 +
 If any cabling errors are generated, follow the corrective actions provided.
 
-. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
+. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. See link:complete-hot-add-shelf.html[Complete the hot-add].
 +
 Otherwise, you are done with this procedure.
-
-.What's next?
-Go to link:complete-hot-add-shelf.html[Complete hot-add].

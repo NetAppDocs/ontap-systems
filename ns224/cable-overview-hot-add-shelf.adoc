@@ -11,8 +11,6 @@ summary: You cable each NS224 shelf you are hot-adding so that each shelf has tw
 [.lead]
 You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
 
-For most platforms, you can hot-add up to two NS224 shelves when additional storage to the internal shelf is needed. For the A1K platform, you can hot-add up to three additional NS224 shelves (for a total of four shelves).
-
 This cabling section describes how to cable the NS224 shelf to the following systems:
 
 * link:cable-aff-systems-hot-add-shelf.html[Cable to AFF systems]
@@ -21,7 +19,7 @@ This cabling section describes how to cable the NS224 shelf to the following sys
 * link:cable-eoa-systems-hot-add-shelf.html[Cable to EOA systems]
 
 == About this task
-* Familiarize yourself with proper cable connector orientation, and the location and labeling of ports on the NS224 NSM shelf modules.
+* Familiarize yourself with proper cable connector orientation, and the location and labeling of ports on the NS224 NSM100 shelf modules.
 
 ** Cables are inserted with the connector pull-tab facing up.
 +

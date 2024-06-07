@@ -1,4 +1,4 @@
-When additional storage is needed, you can hot-add an NS224 drive shelf to an AFF A250 or AFF C250 HA pair.
+When additional storage is needed, you can hot-add a maximum of one NS224 shelf to an AFF A250 or AFF C250 HA pair.
 
 .Before you begin
 
@@ -29,9 +29,6 @@ image::../media/drw_ns224_a250_c250_f500f_1shelf_IEOPS-963.svg[width=452px]
 If any cabling errors are generated, follow the corrective actions provided.
 
 
-. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
+. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. See link:complete-hot-add-shelf.html[Complete the hot-add].
 +
 Otherwise, you are done with this procedure.
-
-.What's next?
-Go to link:complete-hot-add-shelf.html[Complete hot-add].

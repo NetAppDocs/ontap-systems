@@ -76,9 +76,6 @@ image::../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[Cabling for AFF 
 +
 If any cabling errors are generated, follow the corrective actions provided.
 
-. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
+. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. See link:complete-hot-add-shelf.html[Complete the hot-add].
 +
 Otherwise, you are done with this procedure.
-
-.What's next?
-Go to link:complete-hot-add-shelf.html[Complete hot-add].
