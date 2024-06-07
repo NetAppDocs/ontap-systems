@@ -11,6 +11,8 @@ summary: You can hot-add an NS224 drive shelf after your HA pair meets certain r
 [.lead]
 Complete the preparation tasks applicable to your HA pair before hot-adding an NS224 shelf.
 
+When you are done with the applicable preparation tasks, go to link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
+
 == Install RoCE-capable PCIe cards or I/O modules
 If your platform model supports the use of RoCE-capable PCIe cards or I/O modules, your HA pair must have enough available RoCE-capable Ethernet ports to support the number of shelves you are hot-adding. 
 
@@ -125,7 +127,7 @@ If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `
 +
 If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
 
-== Recable existing shelf connections
+== Recable existing shelves
 
 Before hot-adding additional shelves, depending on your platform model, you might need to recable an existing shelf (after you have installed the additional RoCE-capable PCIe cards or I/O modules) across two sets of ports in different slots for resiliency against slot failure.
 
@@ -160,17 +162,17 @@ NOTE: Moving a cable does not require any wait time between unplugging the cable
 The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
 module in either slot 11 (two shelf configuration) or slot 9 (four shelf configuration) on each controller.
 
-NOTE: If you have an AFF A1K HA pair and you are hot-adding a third shelf and installing a third or fourth RoCE-capable I/O module in each controller, the third shelf is cabled to only the third or fourth I/O modules. You do not need to recable any existing shelves. 
+NOTE: If you have an AFF A1K HA pair and you are hot-adding a third shelf and installing a third or fourth RoCE-capable I/O module in each controller, the third shelf is cabled to only the third or third and fourth I/O modules. You do not need to recable any existing shelves. 
 
 Do one of the following:
 
-* If hot-adding a second shelf, recable the first shelf across both RoCE-capable I/O modules:
+* If hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 10 on each controller:
 
 .. On controller A, move the cable from slot 11 port b (e11b) to
 slot 10 port b (e10b).
 .. Repeat the same cable move on controller B.
 
-* If hot-adding a fourth shelf, recable the third shelf across the R0CE-capable I/O modules in slot 9 on each controller:
+* If hot-adding a fourth shelf, recable the third shelf across the RoCE-capable I/O modules in slot 9 and slot 8 on each controller:
 
 .. On controller A, move the cable from slot 9 port b (e9b) to
 slot 8 port b (e8b).
@@ -185,7 +187,7 @@ slot 8 port b (e8b).
 The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
 module in slot 11 on each controller.
 
-If you are hot-adding a second shelf, recable the first shelf across both RoCE-capable I/O modules:
+If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 8 on each controller:
 
 .. On controller A, move the cable from slot 11 port b (e11b) to
 slot 8 port b (e8b).
@@ -197,7 +199,7 @@ slot 8 port b (e8b).
 --
 The substeps assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
 
-If you are hot-adding a second shelf, recable the first shelf across both sets of RoCE-capable ports on each controller:
+If you are hot-adding a second shelf, recable the first shelf across the two sets of RoCE-capable ports in slot 5 and slot 3 on each controller:
 
 .. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
 .. Repeat the same cable move on controller B.
@@ -208,7 +210,7 @@ If you are hot-adding a second shelf, recable the first shelf across both sets o
 --
 The substeps assume the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
 
-If you are hot-adding a second shelf, recable the first shelf across both sets of RoCE-capable ports on each controller:
+If you are hot-adding a second shelf, recable the first shelf across the two sets of RoCE-capable ports in slot 3 and slot 7 on each controller:
 
 .. On controller A, move the cable from slot 3 port b (e3b) to slot 7 port b (e7b).
 .. Repeat the same cable move on controller B.
@@ -217,16 +219,21 @@ If you are hot-adding a second shelf, recable the first shelf across both sets o
 
 .AFF A400 or AFF C400
 --
-If you are hot-adding a second shelf, recable the first shelf across both sets of RoCE-capable ports on each controller.
+If you are hot-adding a second shelf, depending on your platform model, do one of the following:
 
-Depending on your platform model, do one of the following:
+
+
 
 * On the AFF A400:
++
+Recable the first shelf across the two sets of RoCE-capable ports, onboard e0c/e0d and in slot 5, on each controller.
 +
 .. On controller A, move the cable from port e0d to slot 5 Port b (e5b).
 .. Repeat the same cable move on controller B.
 
 * On the AFF C400:
++
+Recable the first shelf across the two sets of RoCE-capable ports in slot 4 and slot 5, on each controller.
 +
 .. On controller A, move the cable from slot 4 port a (e4a) to slot 5 port b (e5b).
 .. Repeat the same cable move on controller B.
@@ -243,7 +250,7 @@ If any cabling errors are generated, follow the corrective actions provided.
 
 == Disable automatic drive assignment
 
-If you are manually assigning drive ownership for the NS224 drive shelf you are hot-adding, then you need to disable automatic drive assignment if it is enabled.
+If you are manually assigning drive ownership for the NS224 shelf you are hot-adding, then you need to disable automatic drive assignment if it is enabled.
 
 If you are unsure whether you should manually assign drive ownership, or want to understand the automatic assignment of drive ownership policies for your storage system, see https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html[About automatic assignment of disk ownership^].
 
@@ -263,6 +270,4 @@ If automatic drive assignment is enabled, the output shows `on` in the `Auto Ass
 +
 You must disable automatic drive assignment on both nodes.
 
-.What's next?
-Go to link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
 
