@@ -26,7 +26,12 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 
 To replace an I/O module, locate it within the controller module and follow the specific sequence of steps.
 
-. If you are not already grounded, properly ground yourself.
+. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
++
+. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+
 . Disconnect power by pulling the controller module out about three inches:
 
 +
