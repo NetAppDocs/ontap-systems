@@ -43,10 +43,9 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 
 Replace the impaired system management module.
 
-. Remove the System Management module:
-+
+
 image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[Replace the System Management module]
-+
+
 [cols="1,4"]
 |===
 a|
@@ -63,17 +62,19 @@ a|
 Replacement System Management module
 |===
 
-.. If you are not already grounded, properly ground yourself.
-. . Unplug the power cord from the PSU.
+. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
 
+. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+
+.. Unplug the power cord from the PSU.
 +
 NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
 +
 
 .. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
-+
-NOTE: If your system has DC power supplies, reconnect the power cable block to the PSU.
-+
+
 . Rotate the cable management tray up to the closed position.
 Remove the System Management module:
 .. Depress the system management cam button.
