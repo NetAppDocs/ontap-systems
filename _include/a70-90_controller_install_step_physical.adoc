@@ -34,6 +34,4 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 +
 The controller module boots when power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command
 
- . If you have not already done so, reinstall the cable management device and recable the controller.
 
-. Repeat these steps for the second controller.

@@ -19,7 +19,7 @@ image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[PSU remove]
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px]
 |
-Terracotta  supply locking tab
+Terracotta PSU locking tab
 a|
 image::../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
@@ -58,7 +58,7 @@ Fan module
 
 == Step 4: Move the NV battery
 
-Move the battery backup unit to the replacement controller module.
+Move the NV battery to the replacement controller module.
 
 . Open the air duct cover in the middle of the controller module and locate the NV battery.
 +
@@ -112,7 +112,7 @@ System DIMM
 +
 NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 
-. Locate the slot where you are installing the DIMM.
+. Locate the slot on the replacement controller module where you are installing the DIMM.
 . Insert the DIMM squarely into the slot.
 +
 The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
@@ -121,7 +121,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 . Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
 . Repeat these steps for the remaining DIMMs.
-. Close the motherboard air duct.
+. Close the controller air duct.
 
 == Step 6: Move the I/O modules
 
@@ -160,10 +160,73 @@ NOTE: To move the I/O modules from slots 6 and 7, you must move the carrier cont
 ..Slide the carrier out of the impaired controller module insert it into the replacement controller module in the same position it was in the impaired controller module.
 .. Gently push the carrier all the way into the replacement controller module until it locks into place. 
 
+== Step 7: Move the System Management module
 
-== Step 10: Install the controller module
+Move the System Management module to the replacement controller module.
+
+image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[Replace the System Management module]
+
+[cols="1,4"]
+|===
+a|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+a|
+System Management module cam latch
+a|
+image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+a|
+Boot media locking button
+a|
+image::../media/legend_icon_03.svg[Callout number 3,width=30px]
+a|
+Replacement System Management module
+|===
+
+. Remove the System Management module from the impaired controller module:
+.. Depress the system management cam button.
+The cam lever moves away from the chassis.
+ .. Rotate the cam lever all the way down.
+ .. Loop your finger into the cam lever and pull the module straight out of the system.
+
+ . Install the system management module into the replacement controller module in the same slot that it was in on the impaired controller module:
+.. Align the edges of the System Management module with the system opening and gently push it into the controller module.  
+.. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
+
+== Step 8: Move the NVRAM module
+
+Move the NVRAM module to the replacement controller module.
+
+image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[Remove the NVRAM12 module and DIMMs]
+
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
+Cam locking button
+a|
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]
+a|
+DIMM locking tab
+|===
+
+. Remove the NVRAM module from the impaired controller module:
+
+.. Depress the cam latch button.
++
+The cam button moves away from the chassis.
+
+ .. Rotate the cam latch as far as it will go.
++
+.. Remove the NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
+
+. Install the NVRAM module into slot 4/5 in the replacement controller module:
+
+ .. Align the module with the edges of the chassis opening in slot 4/5.
+ .. Gently slide the module into the slot all the way, and then push the cam latch all the way up to lock the module in place.
+
+
+== Step 9: Install the controller module
 
 include::../_include/a70-90_controller_install_step_physical.adoc[]
-. Plug the power cables into the power supplies and reinstall the power cable retainers.
-+
-NOTE: If your system has DC power supplies, make sure the thumbscrews on the power supply cable are tight.
+ 
+ . If you have not already done so, reinstall the cable management device and recable the controller.
