@@ -6,7 +6,7 @@ Restore the onboard key manager configuration from the ONATP boot menu.
 
 +
 
-[listing]
+[list]
 ....
 Please choose one of the following:
 
@@ -119,7 +119,8 @@ Successfully recovered keymanager secrets.
 . Select option 1 from the boot menu to continue booting into ONTAP.
 
 +
-[listing]
+[list]
+
 ....
 
 ***********************************************************************************
@@ -161,7 +162,7 @@ IMPORTANT: If the following error message is seen post option 10, please reboot 
 
 . Enter the cluster-wide passphrase for the Onboard Key Manager:
 
-[listing]
+[list]
 ....
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 

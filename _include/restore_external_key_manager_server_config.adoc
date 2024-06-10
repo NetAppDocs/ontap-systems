@@ -1,3 +1,5 @@
+Restore the external key manager configuration from the ONATP boot menu.
+
 .Before you begin
 
 You need the following information for restoring the external key manager (EKM) configuration:
@@ -14,7 +16,7 @@ You need the following information for restoring the external key manager (EKM) 
 
 +
 
-[listing] 
+[list] 
 ....
 
 (1)  Normal Boot.
@@ -36,7 +38,7 @@ Selection (1-11)? 11
 
 . When prompted confirm you have gathered the required information:
 
-.. Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} y
+.. _Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}_ y
 
 .. Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n} y
 
@@ -50,7 +52,6 @@ or
   ... Do you know the KMIP server address? {y/n} y
   ... Do you know the KMIP port? {y/n} y
 
-
 +
 
 . Supply the information for each of the prompts:
@@ -61,6 +62,10 @@ or
 .. Enter the server configuration (servers.cfg) file contents:
 
 +
+
+[list]
+
+....
 
 Example
 
@@ -97,20 +102,35 @@ Running command '/sbin/ifconfig e0M'
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
 ​​​​​​
+....
 
-The recovery process will complete:
+
+. The recovery process will complete:
+
+[list]
+
+....
 System is ready to utilize external key manager(s).
 Trying to recover keys from key servers....
 [Aug 29 21:06:28]: 0x808806100: 0: DEBUG: kmip2::main: [initOpenssl]:460: Performing initialization of OpenSSL
 Successfully recovered keymanager secrets.
 
+....
+
++
+
 . Select option 1 from the boot menu to continue booting into ONTAP.
+
++
+[list]
+
+....
+
 ***********************************************************************************
 * Select option "(1) Normal Boot." to complete the recovery process.
 *
 ***********************************************************************************
 
-[listing]
 ....
 
 (1)  Normal Boot.
