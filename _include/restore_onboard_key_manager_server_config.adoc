@@ -1,6 +1,8 @@
+.Steps
+
 . From the ONTAP boot menu select option 10:
 
-+
+
 
 [listing]
 ....
@@ -21,7 +23,7 @@ Selection (1-11)? _10_
 
 ....
 
-+
+
 . Confirm the continuation of the process.
 `This option must be used only in disaster recovery procedures. Are you sure? (y or n):` _y_
 
@@ -40,7 +42,10 @@ NOTE: While entering the passphrase the console will not show any input.
 +
 Press the enter key twice at the end of the input.
 
++
+
 ====
+
 Enter the backup data:
 
 --------------------------BEGIN BACKUP--------------------------
@@ -75,11 +80,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 ---------------------------END BACKUP---------------------------
+
 ====
+
++
 
 . The recovery process will be completed.
 
-====
+[listing]
+....
+
 Trying to recover keymanager secrets....
 Setting recovery material for the onboard key manager
 Recovery secrets set successfully
@@ -92,16 +102,23 @@ Successfully recovered keymanager secrets.
 *
 * Run the "security key-manager onboard sync" command to synchronize the key database after the node reboots.
 ***********************************************************************************
-====
+
+....
+
++
 
 . Select option 1 from the boot menu to continue booting into ONTAP.
+
++
+[listing]
+....
+
 ***********************************************************************************
 * Select option "(1) Normal Boot." to complete the recovery process.
 *
 ***********************************************************************************
 
-[listing]
-....
+
 (1)  Normal Boot.
 (2)  Boot without /etc/rc.
 (3)  Change password.
@@ -114,23 +131,27 @@ Successfully recovered keymanager secrets.
 (10) Set Onboard Key Manager recovery secrets.
 (11) Configure node for external key management.
 Selection (1-11)? 1
+
 ....
 
++
 
-IMPORTANT: If the following error message is seen post option 10, please reboot and repeat the option 10. If the issue persists post second option 10, please use the workaround in this article
+IMPORTANT: If the following error message is seen post option 10, please reboot and repeat the option 10. If the issue persists post second option 10, contact https://support.netapp.com[NetApp Support] for assistance.
 
-[Netapp04:crypto.ssal.failed:ALERT]: SSAL operation failed: SSAL Unseal operation failed. 
+`[Netapp04:crypto.ssal.failed:ALERT]: SSAL operation failed: SSAL Unseal operation failed.` 
 
 . After the node boots to WFG, then perform CFO-only giveback
 
 . Once booted only with CFO aggregate execute the security key-manager onboard sync​​​​​​​ command.
 
-====
-cluster1::> security key-manager onboard sync 
+`cluster1::> security key-manager onboard sync` 
+
+[listing]
+....
 
 Enter the cluster-wide passphrase for the Onboard Key Manager:
 
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 
-====
+....
  
