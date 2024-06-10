@@ -12,6 +12,8 @@ You need the following information for restoring the external key manager (EKM) 
 .Steps
 . Select Option 11 from the ONTAP boot menu.
 
++
+
 [listing] 
 ....
 
@@ -34,19 +36,22 @@ Selection (1-11)? 11
 
 . When prompted confirm you have gathered the required information:
 
-Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} y
+.. Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} y
 
-Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n} y
+.. Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n} y
 
-Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n} y
+.. Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n} y
 
-Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} y
+.. Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} y
 
 or
 
-Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} n
-  Do you know the KMIP server address? {y/n} y
-  Do you know the KMIP port? {y/n} y
+.. Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} n
+  ... Do you know the KMIP server address? {y/n} y
+  ... Do you know the KMIP port? {y/n} y
+
+
++
 
 . Supply the information for each of the prompts:
 
@@ -54,6 +59,8 @@ Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} n
 .. Enter the client key (client.key) file contents:
 .. Enter the KMIP server CA(s) (CA.pem) file contents:
 .. Enter the server configuration (servers.cfg) file contents:
+
++
 
 Example
 

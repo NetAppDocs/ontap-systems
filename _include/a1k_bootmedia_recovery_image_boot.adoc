@@ -55,6 +55,7 @@ Contact https://support.netapp.com[NetApp Support].
 .Option 1: Systems with no encryprion
 --
 include::../_include/shutdown_most_frus.adoc[]
+need include to boot ONTAP with option 1 - see https://docs.netapp.com/us-en/ontap/system-admin/manage-node-boot-menu-task.html?q=boot+menu+option+1
 --
 .Option 2: Systems with onboard key manager server configuration
 --
