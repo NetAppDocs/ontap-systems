@@ -6,8 +6,8 @@ Restore the onboard key manager configuration from the ONATP boot menu.
 
 +
 
-[list]
-....
+----
+
 Please choose one of the following:
 
 (1)  Normal Boot.
@@ -23,7 +23,7 @@ Please choose one of the following:
 (11) Configure node for external key management.
 Selection (1-11)? _10_
 
-....
+----
 
 +
 
@@ -47,9 +47,7 @@ Press the enter key twice at the end of the input.
 
 +
 
-[list]
-
-....
+----
 
 
 Enter the backup data:
@@ -87,7 +85,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 ---------------------------END BACKUP---------------------------
 
-....
+----
 
 +
 
@@ -95,9 +93,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 +
 
-[list]
-
-....
+----
 
 Trying to recover keymanager secrets....
 Setting recovery material for the onboard key manager
@@ -112,16 +108,15 @@ Successfully recovered keymanager secrets.
 * Run the "security key-manager onboard sync" command to synchronize the key database after the node reboots.
 ***********************************************************************************
 
-....
+----
 
 +
 
 . Select option 1 from the boot menu to continue booting into ONTAP.
 
 +
-[list]
 
-....
+----
 
 ***********************************************************************************
 * Select option "(1) Normal Boot." to complete the recovery process.
@@ -142,7 +137,7 @@ Successfully recovered keymanager secrets.
 (11) Configure node for external key management.
 Selection (1-11)? 1
 
-....
+----
 
 +
 
@@ -162,9 +157,10 @@ IMPORTANT: If the following error message is seen post option 10, please reboot 
 
 . Enter the cluster-wide passphrase for the Onboard Key Manager:
 
-[list]
-....
+
+----
+
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 
-....
+----
  
