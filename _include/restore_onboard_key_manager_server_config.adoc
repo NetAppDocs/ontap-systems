@@ -1,7 +1,9 @@
 . From the ONTAP boot menu select option 10:
 
 +
-====
+
+[listing]
+....
 Please choose one of the following:
 
 (1)  Normal Boot.
@@ -17,7 +19,8 @@ Please choose one of the following:
 (11) Configure node for external key management.
 Selection (1-11)? _10_
 
-====
+....
+
 +
 . Confirm the continuation of the process.
 `This option must be used only in disaster recovery procedures. Are you sure? (y or n):` _y_
@@ -70,6 +73,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
 ---------------------------END BACKUP---------------------------
 ====
 
@@ -96,7 +100,8 @@ Successfully recovered keymanager secrets.
 *
 ***********************************************************************************
 
-
+[listing]
+....
 (1)  Normal Boot.
 (2)  Boot without /etc/rc.
 (3)  Change password.
@@ -109,7 +114,7 @@ Successfully recovered keymanager secrets.
 (10) Set Onboard Key Manager recovery secrets.
 (11) Configure node for external key management.
 Selection (1-11)? 1
-
+....
 
 
 IMPORTANT: If the following error message is seen post option 10, please reboot and repeat the option 10. If the issue persists post second option 10, please use the workaround in this article
