@@ -11,6 +11,7 @@ The image is downloaded from the USB flash drive.
 [options="header" cols="1,2"]
 
 |===
+
 | If your system has...| Then...
 a|
 A network connection
@@ -44,4 +45,24 @@ No network connection and is in a MetroCluster IP configuration
 a|
 Contact https://support.netapp.com[NetApp Support].
 
- |===
+|===
+
+== Restore the system
+
+[role="tabbed-block"]
+====
+
+.Option 1: Systems with no encryprion
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Systems with onboard key manager server configuration
+--
+include::../_include/restore_onboard_key_manager_server_config.adoc[]
+--
+.Option 3: Systems with extrernal key manager server configuration
+--
+include::../_include/restore_external_key_manager_server_config.adoc[]
+--
+
+====
