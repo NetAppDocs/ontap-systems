@@ -47,8 +47,25 @@ NOTE: If the command fails, contact Customer Support.
  ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the `security key-manager onboard sync` command to synchronize the missing onboard keys on the repaired node.
 +
 Use the `security key-manager key query` command to verify that the `Restored` column = `yes/true` for all authentication keys.
+
+== Restore onboard or external key manager server configuration
+
+[role="tabbed-block"]
+====
+
+.Option 1: Systems with onboard key manager server configuration
+--
+include::../_include/restore_onboard_key_manager_server_config.adoc[]
+--
+.Option 2: Systems with extrernal key manager server configuration
+--
+include::../_include/restore_external_key_manager_server_config.adoc[]
+--
+
+====
+
 . Connect the console cable to the partner controller.
 . Give back the controller using the `storage failover giveback -fromnode local` command.
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
-. Restore Autosupport if it was disabled by using the `system node autosupport invoke -node * -type all -message MAINT=END`
+. Restore Autosupport if it was disabled by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 

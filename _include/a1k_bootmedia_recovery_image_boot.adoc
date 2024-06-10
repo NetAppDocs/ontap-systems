@@ -35,6 +35,15 @@ NOTE: If you see any message other than a successful restore, contact https://su
 
 .. On the impaired controller, press `y` when prompted to reboot the impaired controller and press `ctrl-c` for the Boot Menu.
 
+.. If the system does not use encyption, select _Option 1 Normal Boot._
+
+
+.. Connect the console cable to the partner controller.
+.. Give back the controller using the `storage failover giveback -fromnode local` command.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+.. Restore Autosupport if it was disabled by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+
+
 a|
 No network connection
 a|
@@ -46,24 +55,3 @@ a|
 Contact https://support.netapp.com[NetApp Support].
 
 |===
-
-== Restore the system
-
-[role="tabbed-block"]
-====
-
-.Option 1: Systems with no encryprion
---
-include::../_include/shutdown_most_frus.adoc[]
-need include to boot ONTAP with option 1 - see https://docs.netapp.com/us-en/ontap/system-admin/manage-node-boot-menu-task.html?q=boot+menu+option+1
---
-.Option 2: Systems with onboard key manager server configuration
---
-include::../_include/restore_onboard_key_manager_server_config.adoc[]
---
-.Option 3: Systems with extrernal key manager server configuration
---
-include::../_include/restore_external_key_manager_server_config.adoc[]
---
-
-====
