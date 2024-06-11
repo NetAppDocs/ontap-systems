@@ -86,7 +86,7 @@ RJ-45 (order dependent)
 a|
 Not applicable
 a|
-image:../media/oie_cable_rj45.png[]
+image:../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
 Management
 a|
@@ -100,7 +100,7 @@ X66250-15 (112-00346) 15m;
 
 X66250-30 (112-00347) 30m
 a|
-image:../media/oie_cable_fc_optical.png[]
+image:../media/oie_cable_fc_optical.png[OIE Fibre Channel optical cable]
 a|
 
 a|
@@ -116,7 +116,7 @@ Power cables
 a|
 Not applicable
 a|
-image:../media/oie_cable_power.png[]
+image:../media/oie_cable_power.png[Power cables]
 a|
 Powering up the system
 |===
@@ -162,7 +162,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -221,7 +221,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -283,7 +283,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -319,7 +319,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -353,7 +353,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 .Before you begin
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -384,7 +384,7 @@ You must cable each controller to the NSM modules on both NS224 drive shelves.
 .Before you begin
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -436,7 +436,7 @@ image::../media/dwr_laptop_to_switch_only.svg[width=400px]
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[]
+image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
  .. Click *Network* in the left pane.
@@ -480,7 +480,7 @@ image::../media/drw_console_connect_affa800.png[]
 
  .. Connect the laptop or console to the switch on the management subnet.
 +
-image::../media/drw_client_mgmt_subnet_affa800.png[]
+image::../media/drw_client_mgmt_subnet_affa800.png[Connecting laptop or console to switch on management subnet]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to power on and set shelf IDs for one or more drive shelves:

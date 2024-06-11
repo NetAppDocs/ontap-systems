@@ -73,7 +73,7 @@ To replace the DIMMs, locate them inside the controller and follow the specific 
 +
 You must perform a clean system shutdown before replacing system components to avoid losing unwritten data in the nonvolatile memory (NVMEM). The LED is located on the back of the controller module. Look for the following icon:
 +
-image::../media/drw_hw_nvram_icon.png[]
+image::../media/drw_hw_nvram_icon.png[NV LED]
 
 . If the NVMEM LED is not flashing, there is no content in the NVMEM; you can skip the following steps and proceed to the next task in this procedure.
 . Unplug the battery:

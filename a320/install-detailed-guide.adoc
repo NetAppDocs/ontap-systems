@@ -114,7 +114,7 @@ X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image:../media/oie_cable_rj45.png[]
+image:../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
 Management network
 a|
@@ -130,7 +130,7 @@ Power cables
 a|
 Not applicable
 a|
-image:../media/oie_cable_power.png[]
+image:../media/oie_cable_power.png[Power cables]
 a|
 Powering up the system
 |===
@@ -168,7 +168,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -224,7 +224,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -282,7 +282,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -311,7 +311,7 @@ You must cable each controller to the NSM modules on both NS224 drive shelves.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -357,7 +357,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[]
+image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
  .. Click network in the left pane.

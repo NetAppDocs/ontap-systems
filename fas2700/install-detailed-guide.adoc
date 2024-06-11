@@ -93,7 +93,7 @@ Part numbers X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image:../media/oie_cable_rj45.png[]
+image:../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
 Management network and Ethernet data
 a|
@@ -107,7 +107,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[]
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]
 a|
 Storage
 a|
@@ -123,7 +123,7 @@ Power cables
 a|
 Not applicable
 a|
-image:../media/oie_cable_power.png[]
+image:../media/oie_cable_power.png[Power cables]
 a|
 Powering up the system
 |===
@@ -146,7 +146,7 @@ image::../media/drw_oie_fas2700_weight_caution.png[]
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_cable_management_arm_install.png[]
+image::../media/drw_cable_management_arm_install.png[Attaching cable management devices]
 
 . Place the bezel on the front of the system.
 
@@ -162,7 +162,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -181,7 +181,7 @@ Cable the cluster interconnect ports to each other with the cluster interconnect
 
  ** e0a to e0a
  ** e0b to e0b
-image:../media/drw_c190_u_tnsc_clust_cbling.png[]
+image:../media/drw_c190_u_tnsc_clust_cbling.png[Cluster interconnect cabling]
 a|
 image:../media/oie_legend_icon_2_o.png[]
 a|
@@ -204,7 +204,7 @@ image:../media/oie_legend_icon_3_lp.png[]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
-image:../media/drw_c190_u_mgmt_cbling.png[]
+image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
 a|
 image:../media/oie_legend_icon_attn_symbol.png[]
 a|
@@ -221,7 +221,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -238,7 +238,7 @@ image:../media/oie_legend_icon_1_lg.png[]
 a|
 Cable e0a and e0b to the cluster interconnect switches with the cluster interconnect cable:
 
-image:../media/drw_c190_u_switched_clust_cbling.png[]
+image:../media/drw_c190_u_switched_clust_cbling.png[Clusterinterconnect cabling]
 a|
 image:../media/oie_legend_icon_2_o.png[]
 a|
@@ -263,7 +263,7 @@ image:../media/oie_legend_icon_3_lp.png[]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
-image:../media/drw_c190_u_mgmt_cbling.png[]
+image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
 a|
 image:../media/oie_legend_icon_attn_symbol.png[]
 a|
@@ -280,7 +280,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -305,13 +305,13 @@ image:../media/oie_legend_icon_2_o.png[]
 a|
 Use the Cat 6 RJ45 cable to cable the e0c through e0f ports to your host network:
 
-image:../media/drw_c190_e_rj45_cbling.png[]
+image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 a|
 image:../media/oie_legend_icon_3_lp.png[]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
-image:../media/drw_c190_e_mgmt_cbling.png[]
+image:../media/drw_c190_e_mgmt_cbling.png[Management port cabling]
 a|
 image:../media/oie_legend_icon_attn_symbol.png[]
 a|
@@ -328,7 +328,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -345,19 +345,19 @@ image:../media/oie_legend_icon_1_lg.png[]
 a|
 Cable e0a and e0b to the cluster interconnect switches with the cluster interconnect cable:
 
-image:../media/drw_c190_e_switched_clust_cbling.png[]
+image:../media/drw_c190_e_switched_clust_cbling.png[Cluster interconnect cabling]
 a|
 image:../media/oie_legend_icon_2_o.png[]
 a|
 Use the Cat 6 RJ45 cable to cable the e0c through e0f ports to your host network:
 
-image:../media/drw_c190_e_rj45_cbling.png[]
+image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 a|
 image:../media/oie_legend_icon_3_lp.png[]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
-image:../media/drw_c190_e_mgmt_cbling.png[]
+image:../media/drw_c190_e_mgmt_cbling.png[Management port cabling]
 a|
 image:../media/oie_legend_icon_attn_symbol.png[]
 a|
@@ -376,7 +376,7 @@ You must cable the shelf-to-shelf connections, and then cable both controllers t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 .Steps
 . Cable the HA pair with external drive shelves:
@@ -396,7 +396,7 @@ Cable the shelf-to-shelf ports.
  ** Port 3 on IOM A to port 1 on the IOM A on the shelf directly below.
  ** Port 3 on IOM B to port 1 on the IOM B on the shelf directly below.
 +
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[]     mini-SAS HD to mini-SAS HD cables
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]     mini-SAS HD to mini-SAS HD cables
 
 a|
 image:../media/oie_legend_icon_2_mb.png[]
@@ -406,7 +406,7 @@ Connect each node to IOM A in the stack.
  ** Controller 1 port 0b to IOM A port 3 on last drive shelf in the stack.
  ** Controller 2 port 0a to IOM A port 1 on the first drive shelf in the stack.
 +
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[]     mini-SAS HD to mini-SAS HD cables
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]     mini-SAS HD to mini-SAS HD cables
 
 a|
 image:../media/oie_legend_icon_3_t.png[]
@@ -415,7 +415,7 @@ Connect each node to IOM B in the stack
 
  ** Controller 1 port 0a to IOM B port 1 on first drive shelf in the stack.
  ** Controller 2 port 0b to IOM B port 3 on the last drive shelf in the stack.
- image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[]     mini-SAS HD to mini-SAS HD cables
+ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]     mini-SAS HD to mini-SAS HD cables
 
 |===
 If you have more than one drive shelf stack, see the _Installation and Cabling Guide_ for your drive shelf type.
@@ -440,7 +440,7 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto, title="Animation - Set driv
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-image::../media/drw_turn_on_power_switches_to_psus.png[]
+image::../media/drw_turn_on_power_switches_to_psus.png[Turning on power]
 +
 NOTE: Initial booting may take up to eight minutes.
 
@@ -454,7 +454,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[]
+image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
  .. Click network in the left pane.
@@ -498,7 +498,7 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto, title="Animation - Set driv
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-image::../media/drw_turn_on_power_switches_to_psus.png[]
+image::../media/drw_turn_on_power_switches_to_psus.png[Turning on power]
 +
 NOTE: Initial booting may take up to eight minutes.
 

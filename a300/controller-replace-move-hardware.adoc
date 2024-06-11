@@ -70,7 +70,7 @@ To move the NVMEM battery from the old controller module to the new controller m
  ** If your system is in an HA configuration, go to the next step.
  ** If your system is in a stand-alone configuration, cleanly shut down the controller module, and then check the NVRAM LED identified by the NV icon.
 +
-image::../media/drw_hw_nvram_icon.png[]
+image::../media/drw_hw_nvram_icon.png[NV LED]
 +
 NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
 

@@ -100,7 +100,7 @@ X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image:../media/oie_cable_rj45.png[]
+image:../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
 Management network
 a|
@@ -116,7 +116,7 @@ Power cables
 a|
 Not applicable
 a|
-image:../media/oie_cable_power.png[]
+image:../media/oie_cable_power.png[Power cables]
 a|
 Powering up the system
 |===
@@ -165,9 +165,9 @@ You must have contacted your network administrator for information about connect
 .About this task
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all onboard ports and down for expansion (NIC) cards.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -190,9 +190,9 @@ You must have contacted your network administrator for information about connect
 .About this task
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all onboard ports and down for expansion (NIC) cards.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -218,7 +218,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 .About this task
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the NS224 are up.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -236,7 +236,7 @@ You must cable each controller to the NSM modules on both NS224 drive shelves.
 .About this task
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the NS224 are up.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -272,7 +272,7 @@ image::../media/dwr_laptop_to_switch_only.svg[width=400px]
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[]
+image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
  .. Click network in the left pane.

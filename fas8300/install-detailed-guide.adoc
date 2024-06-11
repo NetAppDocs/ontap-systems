@@ -87,7 +87,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[]
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]
 a|
 mini-SAS HD to mini-SAS HD cables (order-dependent)
 a|
@@ -105,7 +105,7 @@ X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image:../media/oie_cable_rj45.png[]
+image:../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
 Management network
 a|
@@ -121,7 +121,7 @@ Power cables
 a|
 Not applicable
 a|
-image:../media/oie_cable_power.png[]
+image:../media/oie_cable_power.png[Power cables]
 a|
 Powering up the system
 |===
@@ -162,9 +162,9 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all onboard ports and down for expansion (NIC) cards.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -185,9 +185,9 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all onboard ports and down for expansion (NIC) cards.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -208,7 +208,7 @@ You must cable each controller to the IOM modules on both SAS drive shelves.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the DS224-C are down.
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -244,7 +244,7 @@ See your laptop's online help for more information.
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect your laptop to the Management switch"]
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[]
+image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
  .. Click network in the left pane.
