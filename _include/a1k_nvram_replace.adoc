@@ -1,6 +1,6 @@
 The NVRAM module consists of the NVRAM12 hardware and field-replaceable DIMMs. You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. To replace a failed NVRAM module, you must remove the module from the enclosure, move the DIMMs to the replacement module, and install the replacement NVRAM module into the enclosure.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+All other components in the system must be functioning properly; if not, you must contact https://support.netapp.com[NetApp Support].
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
@@ -92,7 +92,8 @@ NOTE: Consult the FRU map label on the side of the NVRAM module to determine the
 . Remove the DIMM by pressing down on the DIMM locking tabs and lifting the DIMM out of the socket.
 
 . Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
-. Install the NVRAM module into the enclosure
+. Install the NVRAM module into the enclosure:
+.. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
 . Recable the PSUs.
  . Rotate the cable management tray up to the closed position.
 
@@ -110,7 +111,7 @@ CAUTION: Disk reassignment is only needed when replacing the NVRAM module and do
 
 .Steps
 . If the replacement controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the replacement controller, boot the controller and entering y when prompted to override the system ID due to a system ID mismatch.
+. From the LOADER prompt on the replacement controller, boot the controller and entering _y_ when prompted to override the system ID due to a system ID mismatch.
 . Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: `storage failover show`
 +
 In the command output, you should see a message that the system ID has changed on the impaired controller, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
@@ -130,7 +131,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 +
 The replacement controller takes back its storage and completes booting.
 +
-If you are prompted to override the system ID due to a system ID mismatch, you should enter `y`.
+If you are prompted to override the system ID due to a system ID mismatch, you should enter _y_.
 +
 NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
