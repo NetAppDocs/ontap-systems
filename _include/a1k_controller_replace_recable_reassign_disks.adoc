@@ -1,21 +1,26 @@
-Continue the replacement procedure by recabling the storage and confirming disk reassignment.
+Continue the replacement procedure by recabling the storage and giving back the controller.
 
 
 
-== Step 1: Reassign disks - need new title
+== Step 1: Controller giveback
 
 . If your storage system has Storage or Volume Encryption configured, you must restore Storage or Volume Encryption functionality by using one of the following procedures, depending on whether you are using onboard or external key management:
  ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html[Restore onboard key management encryption keys^]
  ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html[Restore external key management encryption keys^] 
 . Give back the controller:
  .. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode _replacement_node_name_`
-+
-The _replacement_ controller takes back its storage and completes booting.
 
 +
-NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
+The _replacement_ controller takes back its storage and completes booting.
 +
+
+NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
+
++
+
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the High-Availability Configuration content for your version of ONTAP 9]
+
++
 
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
 
