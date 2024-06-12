@@ -46,7 +46,7 @@ The following table identifies the types of cables you might receive. If you rec
 a|
 X66211A-05 (112-00595), 0.5m
 .5+a|
-image:../media/oie_cable100_gbe_qsfp28.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 HA interconnect
 a|
@@ -172,7 +172,7 @@ video::edc42447-f721-4cbe-b080-ab0c0123a139[panopto, title="Animation - Cable a 
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_dp.png[]
+image:../media/oie_legend_icon_1_dp.png[Callout number 1]
 a|
 Cable the HA interconnect ports:
 
@@ -181,7 +181,7 @@ Cable the HA interconnect ports:
 image:../media/drw_affa800_ha_pair_cabling.png[]
 
 a|
-image:../media/oie_legend_icon_2_lg.png[]
+image:../media/oie_legend_icon_2_lg.png[Callout number 2]
 a|
 Cable the cluster interconnect ports:
 
@@ -189,11 +189,11 @@ Cable the cluster interconnect ports:
 ** e1a to e1a
 image:../media/drw_affa800_tnsc_clust_cabling.png[]
 a|
-image:../media/oie_legend_icon_3_lp.png[]
+image:../media/oie_legend_icon_3_lp.png[Step 3]
 a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[Illustration showing location of the management ports on the back of the system]
 a|
-image:../media/oie_legend_icon_attn_symbol.png[]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -231,7 +231,7 @@ video::49e48140-4c5a-4395-a7d7-ab0c0123a10e[panopto, title="Animation - Cable a 
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_dp.png[]
+image:../media/oie_legend_icon_1_dp.png[Callout number 1]
 a|
 Cable the HA interconnect ports:
 
@@ -239,19 +239,19 @@ Cable the HA interconnect ports:
 ** e1b to e1b
 image:../media/drw_affa800_ha_pair_cabling.png[]
 a|
-image:../media/oie_legend_icon_2_lg.png[]
+image:../media/oie_legend_icon_2_lg.png[Callout number 2]
 a|
 Cable the cluster interconnect ports to the 100 GbE cluster interconnect switches.
 ** e0a
 ** e1a
 image:../media/drw_affa800_switched_clust_cabling.png[]
 a|
-image:../media/oie_legend_icon_3_lp.png[]
+image:../media/oie_legend_icon_3_lp.png[Step 3]
 a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[Illustration showing location of the management ports on the back of the system]
 
 a|
-image:../media/oie_legend_icon_attn_symbol.png[]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -361,11 +361,11 @@ video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto, title="Animation - Cable th
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_mb.png[]
+image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelf:    image:../media/drw_affa800_1shelf_cabling_a.png[]
 a|
-image:../media/oie_legend_icon_2_lo.png[]
+image:../media/oie_legend_icon_2_lo.png[Callout number 2]
 a|
 Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.png[]
 |===
@@ -391,11 +391,11 @@ video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto, title="Animation - Cable th
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_mb.png[]
+image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelves:    image:../media/drw_affa800_2shelf_cabling_a.png[]
 a|
-image:../media/oie_legend_icon_2_lo.png[]
+image:../media/oie_legend_icon_2_lo.png[Callout number 2]
 a|
 Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_b.png[]
 |===

@@ -50,7 +50,7 @@ X66240A-05 (112-00595), 0.5m;
 
 X66240-2 (112-00573), 2m
 .3+a|
-image:../media/oie_cable100_gbe_qsfp28.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 Cluster interconnect network
 a|
@@ -153,13 +153,13 @@ video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Animation - Cable tw
 .Steps
 . Use the the 25GbE cluster interconnect cable to connect the cluster interconnect ports e0c to e0c and e0d to e0d.  
 +
-image:../media/oie_cable_sfp_gbe_copper.png[]:
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]:
 +
 image:../media/drw_affa250_tnsc_cabling.png[]
 
 . Cable the wrench ports to the management network switches with the RJ45 cables.
 +
-image::../media/drw_affa250_mgmt_cabling.png[]
+image::../media/drw_affa250_mgmt_cabling.png[Management port cabling]
 
 IMPORTANT:  DO NOT plug in the power cords at this point.
 --
@@ -189,7 +189,7 @@ image:../media/drw_affa250_switched_clust_cabling.png[]
 
 . Cable the wrench ports to the management network switches with the RJ45 cables.
 +
-image::../media/drw_affa250_mgmt_cabling.png[]
+image::../media/drw_affa250_mgmt_cabling.png[Management port cabling]
 
 --
 
@@ -271,11 +271,11 @@ video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto, title="Animation - Cable th
 .Steps
 . Cable controller A to the shelf.  
 +
-image:../media/drw_affa250_1shelf_cabling_a.png[]
+image:../media/drw_affa250_1shelf_cabling_a.png[Controller A cabling]
 
 . Cable controller B to the shelf.
 +
-image:../media/drw_affa250_1shelf_cabling_b.png[]
+image:../media/drw_affa250_1shelf_cabling_b.png[Controller B cabling]
 --
 
 ====

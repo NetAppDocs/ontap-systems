@@ -53,7 +53,7 @@ X6566B-3-R6, 112-00300, 3m
 
 X6566B-5-R6 , 112-00301, 5m
 a|
-image:../media/oie_cable_sfp_gbe_copper.png[]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 a|
 Network cable
 a|
@@ -65,7 +65,7 @@ X66100-1,112-00542, 1m
 
 X66100-3,112-00543, 3m
 a|
-image:../media/oie_cable100_gbe_qsfp28.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 40 GbE network
 
@@ -83,7 +83,7 @@ X66211A-2 (112-00574), 2m
 
 X66211A-5 (112-00574), 5m
 a|
-image:../media/oie_cable100_gbe_qsfp28.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 Network cable
 
@@ -234,13 +234,13 @@ NOTE: The examples use DS224C shelves. Cabling is similar with other supported S
 video::a312e09e-df56-47b3-9b5e-ab2300477f67[panopto, title="Animation - Cable SAS storage - ONTAP 9.7 and earlier"]
 
 +
-image:../media/SAS_storage_ONTAP_9.7_and_earlier.png[]
+image:../media/SAS_storage_ONTAP_9.7_and_earlier.png[SAS storage cabling for ONTAP 9.7 and earlier]
 +
  ** Cabling SAS shelves in FAS9000, AFF A700, and ASA AFF A700, ONTAP 9.8 and later:
 +
 video::61d23302-9526-4a2b-9335-ac5b0032eafd[panopto, title="Animation - Cable SAS storage - ONTAP 9.8 and later"]
 +
-image:../media/SAS_storage_ONTAP_9.8_and_later.png[]
+image:../media/SAS_storage_ONTAP_9.8_and_later.png[SAS storage cabling for ONTAP 9.8 and later]
 +
 NOTE: If you have more than one drive shelf stack, see the _Installation and Cabling Guide_ for your drive shelf type.
 +
@@ -271,7 +271,7 @@ video::6520eb01-87b3-4520-9109-ac5b0032ea4e[panopto, title="Animation - Cable a 
 +
 image::../media/drw_ns224_a700_1shelf.png[]
 +
-image::../media/single_NS224_shelf.png[]
+image::../media/single_NS224_shelf.png[Single shelf cabling]
 
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
@@ -297,7 +297,7 @@ video::34098e39-73ad-45de-9af7-ac5b0032ea9a[panopto, title="Animation - Cable tw
 +
 image::../media/drw_ns224_a700_2shelves.png[]
 +
-image::../media/two_NS224_shelves.png[]
+image::../media/two_NS224_shelves.png[Dual shelf cabling]
 
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 

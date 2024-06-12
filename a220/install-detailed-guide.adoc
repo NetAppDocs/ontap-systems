@@ -59,7 +59,7 @@ X6566B-05-R6 (112-00297), 0.5m
 
 X6566B-2-R6 (112-00299), 2m
 a|
-image:../media/oie_cable_sfp_gbe_copper.png[]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 a|
 Cluster interconnect network
 a|
@@ -71,7 +71,7 @@ or X6566B-3-R6 (112-00300), 3m
 
 X6566B-5-R6 (112-00301), 5m
 a|
-image:../media/oie_cable_sfp_gbe_copper.png[]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 a|
 Data
 a|
@@ -175,7 +175,7 @@ image::../media/drw_2700_tnsc_unified_network_cabling_animated_gif.png[]
 |===
 | Step| Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lg.png[]
+image:../media/oie_legend_icon_1_lg.png[Step 1]
 a|
 Cable the cluster interconnect ports to each other with the cluster interconnect cable:
 
@@ -183,7 +183,7 @@ Cable the cluster interconnect ports to each other with the cluster interconnect
  ** e0b to e0b
 image:../media/drw_c190_u_tnsc_clust_cbling.png[Cluster interconnect cabling]
 a|
-image:../media/oie_legend_icon_2_o.png[]
+image:../media/oie_legend_icon_2_o.png[Step 2]
 a|
 Use one of the following cable types to cable the UTA2 data ports to your host network:
 
@@ -200,13 +200,13 @@ NOTE: You can connect one port pair as CNA and one port pair as FC, or you can c
 
 image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
 a|
-image:../media/oie_legend_icon_3_lp.png[]
+image:../media/oie_legend_icon_3_lp.png[Step 3]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
 image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
 a|
-image:../media/oie_legend_icon_attn_symbol.png[]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -234,13 +234,13 @@ image::../media/drw_2700_switched_unified_network_cabling_animated_gif.png[]
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_lg.png[]
+image:../media/oie_legend_icon_1_lg.png[Step 1]
 a|
 Cable e0a and e0b to the cluster interconnect switches with the cluster interconnect cable:
 
 image:../media/drw_c190_u_switched_clust_cbling.png[Clusterinterconnect cabling]
 a|
-image:../media/oie_legend_icon_2_o.png[]
+image:../media/oie_legend_icon_2_o.png[Step 2]
 a|
 Use one of the following cable types to cable the UTA2 data ports to your host network:
 
@@ -259,13 +259,13 @@ NOTE: You can connect one port pair as CNA and one port pair as FC, or you can c
 
 image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
 a|
-image:../media/oie_legend_icon_3_lp.png[]
+image:../media/oie_legend_icon_3_lp.png[Step 3]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
 image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
 a|
-image:../media/oie_legend_icon_attn_symbol.png[]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -293,7 +293,7 @@ image::../media/drw_2700_tnsc_ethernet_network_cabling_animated_gif.png[]
 |===
 | Step| Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lg.png[]
+image:../media/oie_legend_icon_1_lg.png[Step 1]
 a|
 Cable the cluster interconnect ports to each other with the cluster interconnect cable:
 
@@ -301,19 +301,19 @@ Cable the cluster interconnect ports to each other with the cluster interconnect
  ** e0b to e0b
 image:../media/drw_c190_e_tnsc_clust_cbling.png[Illustration showing the cluster interconnections between the ports on the back of the controllers]
 a|
-image:../media/oie_legend_icon_2_o.png[]
+image:../media/oie_legend_icon_2_o.png[Step 2]
 a|
 Use the Cat 6 RJ45 cable to cable the e0c through e0f ports to your host network:
 
 image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 a|
-image:../media/oie_legend_icon_3_lp.png[]
+image:../media/oie_legend_icon_3_lp.png[Step 3]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
 image:../media/drw_c190_e_mgmt_cbling.png[Management port cabling]
 a|
-image:../media/oie_legend_icon_attn_symbol.png[]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -341,25 +341,25 @@ image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[]
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_lg.png[]
+image:../media/oie_legend_icon_1_lg.png[Step 1]
 a|
 Cable e0a and e0b to the cluster interconnect switches with the cluster interconnect cable:
 
 image:../media/drw_c190_e_switched_clust_cbling.png[Cluster interconnect cabling]
 a|
-image:../media/oie_legend_icon_2_o.png[]
+image:../media/oie_legend_icon_2_o.png[Step 2]
 a|
 Use the Cat 6 RJ45 cable to cable the e0c through e0f ports to your host network:
 
 image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 a|
-image:../media/oie_legend_icon_3_lp.png[]
+image:../media/oie_legend_icon_3_lp.png[Step 3]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
 image:../media/drw_c190_e_mgmt_cbling.png[Management port cabling]
 a|
-image:../media/oie_legend_icon_attn_symbol.png[]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -389,7 +389,7 @@ image::../media/drw_2700_ha_storage_cabling_animated_gif.png[]
 |===
 | Step| Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lo.png[]
+image:../media/oie_legend_icon_1_lo.png[Callout number 1]
 a|
 Cable the shelf-to-shelf ports.
 
@@ -409,7 +409,7 @@ Connect each node to IOM A in the stack.
 image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]     mini-SAS HD to mini-SAS HD cables
 
 a|
-image:../media/oie_legend_icon_3_t.png[]
+image:../media/oie_legend_icon_3_t.png[Step 3]
 a|
 Connect each node to IOM B in the stack
 
