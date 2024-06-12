@@ -88,7 +88,7 @@ video::94d115b2-b02a-4234-805c-aad9012f204c[panopto, title="Animation - Move the
  .. Slide the air duct toward the back of the controller module, and then rotate it upward to its completely open position.
 . Locate the NVDIMM battery in the controller module.
 
-image::../media/drw_A400_nvdimm-batt.png[]
+image::../media/drw_A400_nvdimm-batt.png[Removing the NVDIMM battery]
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module.
@@ -138,7 +138,7 @@ Moving the mezzanine card and riser 3 (right riser):
 
 video::b0c3b575-3434-4e00-a421-aad9012f2e9e[panopto, title="Animation - Move the mezzanine card and riser 3"]
 
-image::../media/drw_A400_Replace-mezz-card.png[]
+image::../media/drw_A400_Replace-mezz-card.png[Removing the mezzanine card]
 
 . Move PCIe risers one and two from the impaired controller module to the replacement controller module:
  .. Remove any SFP or QSFP modules that might be in the PCIe cards.
