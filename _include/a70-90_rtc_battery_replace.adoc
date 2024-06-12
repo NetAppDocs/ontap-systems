@@ -16,7 +16,7 @@ include::../_include/shutdown_most_frus.adoc[]
 --
 .Option 2: Controller is in a MetroCluster
 --
-include::../_include/shutdown_any_mcc_supported.adoc[]
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 --
 
 ====
