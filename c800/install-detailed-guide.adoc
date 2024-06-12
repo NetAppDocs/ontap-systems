@@ -136,12 +136,12 @@ link:../com.netapp.doc.hw-rail-superrail/home.html[Installing SuperRail into a f
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image::../media/drw_affa800_weight_caution.png[]
+image::../media/drw_affa800_weight_caution.png[Four-person lift caution]
 
 . Attach cable management devices (as shown).
 
 +
-image::../media/drw_affa800_install_cable_mgmt.png[]
+image::../media/drw_affa800_install_cable_mgmt.png[Attaching the cable management device]
 
 . Place the bezel on the front of the system.
 
@@ -183,7 +183,7 @@ Cable the HA interconnect ports:
 
 ** e0b to e0b
 ** e1b to e1b
-image:../media/drw_affa800_ha_pair_cabling.png[]
+image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 
 a|
 image:../media/oie_legend_icon_2_lg.png[Callout number 2]
@@ -192,7 +192,7 @@ Cable the cluster interconnect ports:
 
 ** e0a to e0a
 ** e1a to e1a
-image:../media/drw_affa800_tnsc_clust_cabling.png[]
+image:../media/drw_affa800_tnsc_clust_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 a|
 image:../media/oie_legend_icon_3_lp.png[Step 3]
 a|
@@ -242,14 +242,14 @@ Cable the HA interconnect ports:
 
 ** e0b to e0b
 ** e1b to e1b
-image:../media/drw_affa800_ha_pair_cabling.png[]
+image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 a|
 image:../media/oie_legend_icon_2_lg.png[Callout number 2]
 a|
 Cable the cluster interconnect ports to the 100 GbE cluster interconnect switches.
 ** e0a
 ** e1a
-image:../media/drw_affa800_switched_clust_cabling.png[]
+image:../media/drw_affa800_switched_clust_cabling.png[Cluster interconnect cabling]
 a|
 image:../media/oie_legend_icon_3_lp.png[Step 3]
 a|
@@ -368,11 +368,11 @@ video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto, title="Animation - Cable th
 a|
 image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
-Cable controller A to the shelf:    image:../media/drw_affa800_1shelf_cabling_a.png[]
+Cable controller A to the shelf:    image:../media/drw_affa800_1shelf_cabling_a.png[Cabling controllers to a single shelf]
 a|
 image:../media/oie_legend_icon_2_lo.png[Callout number 2]
 a|
-Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.png[]
+Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.png[Cabling controller B to a single shelf]
 |===
 
 To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
@@ -398,11 +398,11 @@ video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto, title="Animation - Cable th
 a|
 image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
-Cable controller A to the shelves:    image:../media/drw_affa800_2shelf_cabling_a.png[]
+Cable controller A to the shelves:    image:../media/drw_affa800_2shelf_cabling_a.png[Cabling controller A to two shelves]
 a|
 image:../media/oie_legend_icon_2_lo.png[Callout number 2]
 a|
-Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_b.png[]
+Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_b.png[Cabling controller B to two shelves]
 |===
 
 To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
@@ -476,7 +476,7 @@ NOTE: See your laptop or console's online help for how to configure the console 
 
  .. Connect the console cable to the laptop or console, and connect the console port on the controller using the console cable that came with your system.
 +
-image::../media/drw_console_connect_affa800.png[]
+image::../media/drw_console_connect_affa800.png[Connecting to the console port]
 
  .. Connect the laptop or console to the switch on the management subnet.
 +

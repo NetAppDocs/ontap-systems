@@ -63,7 +63,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 To replace a PCIe card, you must locate the failed PCIe card, remove the riser that contains the card from the controller module, replace the card, and then reinstall the PCIe riser in the controller module.
 
-image:../media/drw_A400_Replace-PCIe-cards.png[]
+image:../media/drw_A400_Replace-PCIe-cards.png[Removing the PCIe cards]
 
 [cols="10,90"]
 |===

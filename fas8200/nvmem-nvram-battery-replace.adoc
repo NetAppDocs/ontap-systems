@@ -48,7 +48,7 @@ image::../media/drw_32xx_cbl_mgmt_arm.png[Removing the cable management arms][]
 
 . Loosen the thumbscrew on the cam handle on the controller module.
 +
-image::../media/drw_8020_cam_handle_thumbscrew.png[]
+image::../media/drw_8020_cam_handle_thumbscrew.png[Loosening the thumbscrew to open the cam handle]
 +
 |===
 a|
@@ -82,7 +82,7 @@ NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you
 This typically occurs during an uncontrolled shutdown after ONTAP has successfully booted.
 . Open the CPU air duct and locate the NVMEM battery.
 +
-image::../media/drw_rxl_nvmem_battery.png[]
+image::../media/drw_rxl_nvmem_battery.png[Replacing the NVMEM battery]
 +
 |===
 a|

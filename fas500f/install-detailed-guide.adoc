@@ -116,7 +116,7 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image::../media/drw_affa250_weight_caution.png[]
+image::../media/drw_affa250_weight_caution.png[Two-person lift caution]
 
 . Identify and manage cables because this system does not have a cable management device.
 . Place the bezel on the front of the system.
@@ -158,7 +158,7 @@ image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]:
 
 ** e0c to e0c
 ** e0d to e0d
-image:../media/drw_affa250_tnsc_cabling.png[]
+image:../media/drw_affa250_tnsc_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 
 a|
 image:../media/oie_legend_icon_2_dr.png[Callout number 2]
@@ -201,7 +201,7 @@ Cable the cluster interconnect ports to the 25 GbE cluster interconnect switches
 
  ** e0c
  ** e0d
- image:../media/drw_affa250_switched_clust_cabling.png[]
+ image:../media/drw_affa250_switched_clust_cabling.png[Cluster interconnect cabling]
 
 a|
 image:../media/oie_legend_icon_2_dr.png[Callout number 2]
@@ -243,7 +243,7 @@ a|
 a|
 Cable ports 2a through 2d to the FC host switches.
 
-image::../media/drw_affa250_fc_host_cabling.png[]
+image::../media/drw_affa250_fc_host_cabling.png[Fibre Channel host cabling]
 
 a|
 2
@@ -281,7 +281,7 @@ a|
 a|
 Cable ports e4a through e4d to the 10GbE host network switches.
 
-image::../media/drw_affa250_25gbe_host_cabling.png[]
+image::../media/drw_affa250_25gbe_host_cabling.png[25 GbE cabling]
 
 a|
 2
@@ -376,7 +376,7 @@ NOTE: See your laptop or console's online help for how to configure the console 
 
  .. Connect the laptop or console to the switch on the management subnet.
 +
-image::../media/drw_console_client_mgmt_subnet_affa250.png[]
+image::../media/drw_console_client_mgmt_subnet_affa250.png[Connecting to the management subnet]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.

@@ -121,7 +121,7 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image::../media/drw_affa250_weight_caution.png[]
+image::../media/drw_affa250_weight_caution.png[Two-person lift caution]
 
 . Identify and manage cables because this system does not have a cable management device.
 . Place the bezel on the front of the system.
@@ -158,7 +158,7 @@ video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Animation - Cable a 
 +
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]:
 +
-image:../media/drw_affa250_tnsc_cabling.png[]
+image:../media/drw_affa250_tnsc_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 
 . Cable the wrench ports to the management network switches with the RJ45 cables.
 +
@@ -188,7 +188,7 @@ video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto, title="Animation - Cable a 
 .Steps
 . Cable the cluster interconnect ports e0c and e0d to the 25 GbE cluster interconnect switches.
 +
-image::../media/drw_affa250_switched_clust_cabling.png[]
+image::../media/drw_affa250_switched_clust_cabling.png[Cluster interconnect cabling]
 
 . Cable the wrench ports to the management network switches with the RJ45 cables.
 +
@@ -231,7 +231,7 @@ Perform the step on each controller module.
 .Steps 
 . Cable ports 2a through 2d to the FC host switches.
 +
-image:../media/drw_affa250_fc_host_cabling.png[]
+image:../media/drw_affa250_fc_host_cabling.png[Fibre Channel host cabling]
 --
 
 .Option 2: Cable to a 25GbE data or host network
@@ -253,7 +253,7 @@ Perform the step on each controller module.
 .Steps
 . Cable ports e4a through e4d to the 10GbE host network switches.
 +
-image:../media/drw_affa250_25gbe_host_cabling.png[]
+image:../media/drw_affa250_25gbe_host_cabling.png[25 GbE cabling]
 
 --
 

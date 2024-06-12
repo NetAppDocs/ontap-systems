@@ -60,7 +60,7 @@ You can use the following animation, illustration, or the written steps to move 
 
 video::92060115-1967-475b-b517-aad9012f130c[panopto, title="Animation - Move the power supplies"]
 
-image::../media/drw_A400_psu.png[]
+image::../media/drw_A400_psu.png[Replacing the power supply]
 
 . Remove the power supply:
  .. Rotate the cam handle so that it can be used to pull the power supply out of the chassis.
@@ -105,7 +105,7 @@ You can use the following animation, illustration, or the written steps to move 
 
 video::2a14099c-85de-4a84-867c-aad9012efac8[panopto, title="Animation - Move the boot media"]
 
-image::../media/drw_A400_Replace-boot_media.png[]
+image::../media/drw_A400_Replace-boot_media.png[Removing the boot media]
 
 . Locate and remove the boot media from the controller module:
  .. Press the blue button at the end of the boot media until the lip on the boot media clears the blue button.
@@ -132,7 +132,7 @@ Moving PCIe riser 1 and 2 (left and middle risers):
 
 video::f4ee1d4d-6029-4fe6-a063-aad9012f170b[panopto, title="Animation - Move PCI risers 1 and 2"]
 
-image::../media/drw_A400_Replace-PCIe-cards.png[]
+image::../media/drw_A400_Replace-PCIe-cards.png[Removing the PCIe cards]
 
 Moving the mezzanine card and riser 3 (right riser):
 
@@ -224,7 +224,7 @@ You can use the following animation, illustration, or the written steps to insta
 
 video::9249fdb8-1522-437d-9280-aae10007c97b[panopto, title="Animation - Install the controller module"]
 
-image::../media/drw_A400_Install_controller_source.png[]
+image::../media/drw_A400_Install_controller_source.png[Installing the controller]
 
 . If you have not already done so, close the air duct.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

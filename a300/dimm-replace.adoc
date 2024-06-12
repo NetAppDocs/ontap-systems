@@ -53,7 +53,7 @@ image::../media/drw_32xx_cbl_mgmt_arm.png[Removing the cable management arms][]
 
 . Loosen the thumbscrew on the cam handle on the controller module.
 +
-image::../media/drw_8020_cam_handle_thumbscrew.png[]
+image::../media/drw_8020_cam_handle_thumbscrew.png[Loosening the thumbscrew to open the cam handle]
 +
 |===
 a|
@@ -93,7 +93,7 @@ This typically occurs during an uncontrolled shutdown after Data ONTAP has succe
 
  .. Open the CPU air duct and locate the NVMEM battery.
 +
-image::../media/drw_rxl_nvmem_battery.png[]
+image::../media/drw_rxl_nvmem_battery.png[Replacing the NVMEM battery]
 +
 |===
 a|
@@ -119,7 +119,7 @@ The number and placement of system DIMMs depends on the model of your system.
 +
 The following illustration shows the location of system DIMMs:
 +
-image::../media/drw_rxl_dimms.png[]
+image::../media/drw_rxl_dimms.png[Replacing DIMMs]
 
 . Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
 +

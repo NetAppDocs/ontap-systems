@@ -142,7 +142,7 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image::../media/drw_oie_fas2700_weight_caution.png[]
+image::../media/drw_oie_fas2700_weight_caution.png[Two-person lift caution]
 
 . Attach cable management devices (as shown).
 +
@@ -335,7 +335,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .Steps
 . You can use the graphic or the step-by step instructions to complete the cabling between the controllers and the switches:
 +
-image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[]
+image::../media/drw_2700_switched_ethernet_network_cabling_animated_gif.png[Switched Ethernet cabling]
 +
 [options="header" cols="1,2"]
 |===
@@ -399,7 +399,7 @@ Cable the shelf-to-shelf ports.
 image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]     mini-SAS HD to mini-SAS HD cables
 
 a|
-image:../media/oie_legend_icon_2_mb.png[]
+image:../media/oie_legend_icon_2_mb.png[Step 2]
 a|
 Connect each node to IOM A in the stack.
 
@@ -484,11 +484,11 @@ NOTE: See your laptop or console's online help for how to configure the console 
 
  .. Connect the console cable to the laptop or console, and connect the console port on the controller using the console cable that came with your system.
 +
-image::../media/drw_console_connect_fas2700_affa200.png[]
+image::../media/drw_console_connect_fas2700_affa200.png[Connecting to the console port]
 
  .. Connect the laptop or console to the switch on the management subnet.
 +
-image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[]
+image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[Connecting to the management subnet]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:

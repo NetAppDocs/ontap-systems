@@ -41,7 +41,7 @@ NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you
 This typically occurs during an uncontrolled shutdown after ONTAP has successfully booted.
 . Locate the NVMEM battery in the controller module.
 +
-image::../media/drw_2600_nvmem_battery_move_animated_gif.png[]
+image::../media/drw_2600_nvmem_battery_move_animated_gif.png[Replacing the NVMEM battery]
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module.
@@ -56,7 +56,7 @@ You must locate the boot media and follow the directions to remove it from the o
 
 . Locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_2600_boot_media_repl_animated_gif.png[]
+image::../media/drw_2600_boot_media_repl_animated_gif.png[Replacing the boot media]
 
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +

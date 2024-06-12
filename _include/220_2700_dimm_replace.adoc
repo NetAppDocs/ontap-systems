@@ -52,7 +52,7 @@ image::../media/drw_hw_nvram_icon.png[NV LED]
 . If the NVMEM LED is flashing, there is data in the NVMEM and you must disconnect the battery to clear the memory:
  .. Locate the battery, press the clip on the face of the battery plug to release the lock clip from the plug socket, and then unplug the battery cable from the socket.
 +
-image::../media/drw_2600_nvmem_battery_unplug.png[]
+image::../media/drw_2600_nvmem_battery_unplug.png[Replacing the NVMEM battery]
 
  .. Confirm that the NVMEM LED is no longer lit.
  .. Reconnect the battery connector.
@@ -67,7 +67,7 @@ The number and placement of system DIMMs depends on the model of your system.
 +
 The following illustration shows the location of system DIMMs:
 +
-image::../media/drw_2600_dimm_repl_animated_gif.png[]
+image::../media/drw_2600_dimm_repl_animated_gif.png[Replacing a DIMM]
 
 . Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
 +
