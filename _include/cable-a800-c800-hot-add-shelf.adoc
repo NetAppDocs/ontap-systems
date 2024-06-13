@@ -64,6 +64,7 @@ image::../media/drw_ns224_a800_c800_2shelves_IEOPS-966.svg[width=542px]
 +
 If any cabling errors are generated, follow the corrective actions provided.
 
-. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. See link:complete-hot-add-shelf.html[Complete the hot-add].
-+
-Otherwise, you are done with this procedure.
+.What's next?
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:complete-hot-add-shelf.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.
