@@ -9,12 +9,12 @@ summary: "To restore your system to full operation, you must restore the NetApp 
 :imagesdir: ../media/
 
 [.lead]
-To restore your system to full operation, you must install licenses for the new controller, check cluster health,  and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+To restore your system to full operation, you must verify the LIfs, check cluster health,  and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
 
 == Step 1: Verify LIFs and and check cluster health
 
-include::../_include/check_lifs_cluter_health.adoc[]
+include::../_include/check_lifs_cluster_health.adoc[]
 
 == Step 2: Return the failed part to NetApp
 

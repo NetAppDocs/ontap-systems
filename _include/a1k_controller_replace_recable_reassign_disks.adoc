@@ -4,10 +4,15 @@ Continue the replacement procedure by recabling the storage and giving back the 
 
 == Step 1: Controller giveback
 
-. If your storage system has Storage or Volume Encryption configured, you must restore Storage or Volume Encryption functionality by using one of the following procedures, depending on whether you are using onboard or external key management:
- ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html[Restore onboard key management encryption keys^]
- ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html[Restore external key management encryption keys^] 
-. Give back the controller:
+. If your storage system has Encryption configured, you must restore Storage or Volume Encryption functionality use the following procedure to reboot the system:
+.. Boot to Menu and run Option 10
+.. Input the passphrase & backup up data, then do Normal boot see https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys[Restore onboard key management encryption keys]. 
+.. Perform CFO only giveback
+.. Perform Onboard Sync and verify SVM-KEK is set to true see https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/Giveback_after_MB_replacement_fails_-_operation_was_vetoed_by_keymanagerSolution[Giveback after MB replacement fails - operation was vetoed by keymanager]
+.. Giveback SFO, (no force)
+. If your system does not have Encryptio configured, complete the following procedure to reboot the system:
+.. Boot to Menu and run Option 1.
+.. Give back the controller:
  .. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode _replacement_node_name_`
 
 +

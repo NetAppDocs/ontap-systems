@@ -11,14 +11,10 @@ summary: "To restore your system to full operation, you must restore the NetApp 
 [.lead]
 To restore your system to full operation, you must restore the NetApp Storage Encryption configuration (if necessary), and install licenses for the new controller, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
-== Step 1: Install licenses for the replacement controller in ONTAP
+== Step 1: Verify LIFs and check cluster health
 
-include::../_include/install_licenses.adoc[]
+include::../_include/check_lifs_cluster_health.adoc[]
 
-== Step 2: Verify LIFs and registering the serial number
-
-include::../_include/check_lifs_register_serial_number.adoc[]
-
-== Step 3: Return the failed part to NetApp
+== Step 2: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
