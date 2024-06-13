@@ -31,7 +31,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 . Press down on both of the locking latches, and then rotate both latches downward at the same time.
 
 +
-image::../media/drw_A400_Remove_controller.png[]
+image::../media/drw_A400_Remove_controller.png[Releasing the controller module]
 +
 
 The controller module moves slightly out of the chassis.
@@ -60,7 +60,7 @@ You can use the following animation, illustration, or the written steps to move 
 
 video::92060115-1967-475b-b517-aad9012f130c[panopto, title="Animation - Move the power supplies"]
 
-image::../media/drw_A400_psu.png[]
+image::../media/drw_A400_psu.png[Replacing the power supply]
 
 . Remove the power supply:
  .. Rotate the cam handle so that it can be used to pull the power supply out of the chassis.
@@ -88,7 +88,7 @@ video::94d115b2-b02a-4234-805c-aad9012f204c[panopto, title="Animation - Move the
  .. Slide the air duct toward the back of the controller module, and then rotate it upward to its completely open position.
 . Locate the NVDIMM battery in the controller module.
 
-image::../media/drw_A400_nvdimm-batt.png[]
+image::../media/drw_A400_nvdimm-batt.png[Removing the NVDIMM battery]
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module.
@@ -105,7 +105,7 @@ You can use the following animation, illustration, or the written steps to move 
 
 video::2a14099c-85de-4a84-867c-aad9012efac8[panopto, title="Animation - Move the boot media"]
 
-image::../media/drw_A400_Replace-boot_media.png[]
+image::../media/drw_A400_Replace-boot_media.png[Removing the boot media]
 
 . Locate and remove the boot media from the controller module:
  .. Press the blue button at the end of the boot media until the lip on the boot media clears the blue button.
@@ -132,13 +132,13 @@ Moving PCIe riser 1 and 2 (left and middle risers):
 
 video::f4ee1d4d-6029-4fe6-a063-aad9012f170b[panopto, title="Animation - Move PCI risers 1 and 2"]
 
-image::../media/drw_A400_Replace-PCIe-cards.png[]
+image::../media/drw_A400_Replace-PCIe-cards.png[Removing the PCIe cards]
 
 Moving the mezzanine card and riser 3 (right riser):
 
 video::b0c3b575-3434-4e00-a421-aad9012f2e9e[panopto, title="Animation - Move the mezzanine card and riser 3"]
 
-image::../media/drw_A400_Replace-mezz-card.png[]
+image::../media/drw_A400_Replace-mezz-card.png[Removing the mezzanine card]
 
 . Move PCIe risers one and two from the impaired controller module to the replacement controller module:
  .. Remove any SFP or QSFP modules that might be in the PCIe cards.
@@ -191,7 +191,7 @@ You can use the following animation, illustration, or the written steps to move 
 
 video::717b52fa-f236-4f3d-b07d-aad9012f51a3[panopto, title="Animation - Move the DIMMs"]
 
-image::../media/drw_A400_Replace-NVDIMM-DIMM.png[]
+image::../media/drw_A400_Replace-NVDIMM-DIMM.png[Moving the DIMMs]
 
 . Locate the DIMMs on your controller module.
 . Note the orientation of the DIMM in the socket so that you can insert the DIMM in the replacement controller module in the proper orientation.
@@ -224,7 +224,7 @@ You can use the following animation, illustration, or the written steps to insta
 
 video::9249fdb8-1522-437d-9280-aae10007c97b[panopto, title="Animation - Install the controller module"]
 
-image::../media/drw_A400_Install_controller_source.png[]
+image::../media/drw_A400_Install_controller_source.png[Installing the controller]
 
 . If you have not already done so, close the air duct.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

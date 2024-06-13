@@ -49,11 +49,11 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[]
+image::../media/drw_32xx_cbl_mgmt_arm.png[Removing the cable management arms][]
 
 . Loosen the thumbscrew on the cam handle on the controller module.
 +
-image::../media/drw_8020_cam_handle_thumbscrew.png[]
+image::../media/drw_8020_cam_handle_thumbscrew.png[Loosening the thumbscrew to open the cam handle]
 +
 |===
 a|
@@ -78,7 +78,7 @@ To replace the DIMMs, locate them inside the controller and follow the specific 
 +
 You must perform a clean system shutdown before replacing system components to avoid losing unwritten data in the nonvolatile memory (NVMEM). The LED is located on the back of the controller module. Look for the following icon:
 +
-image::../media/drw_hw_nvram_icon.png[]
+image::../media/drw_hw_nvram_icon.png[NV LED]
 
 . If the NVMEM LED is not flashing, there is no content in the NVMEM; you can skip the following steps and proceed to the next task in this procedure.
 . Unplug the battery:
@@ -93,7 +93,7 @@ This typically occurs during an uncontrolled shutdown after Data ONTAP has succe
 
  .. Open the CPU air duct and locate the NVMEM battery.
 +
-image::../media/drw_rxl_nvmem_battery.png[]
+image::../media/drw_rxl_nvmem_battery.png[Replacing the NVMEM battery]
 +
 |===
 a|
@@ -119,7 +119,7 @@ The number and placement of system DIMMs depends on the model of your system.
 +
 The following illustration shows the location of system DIMMs:
 +
-image::../media/drw_rxl_dimms.png[]
+image::../media/drw_rxl_dimms.png[Replacing DIMMs]
 
 . Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
 +

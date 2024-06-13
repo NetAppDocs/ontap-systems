@@ -21,14 +21,14 @@ To access components inside the controller module, you must remove the controlle
 . Unplug the controller module power supply from the power source.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
-image::../media/drw_a320_controller_cable_unplug_animated_gif.png[]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.png[Removing the cable management device]
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 . Remove the controller module from the chassis:
 +
-image::../media/drw_a320_controller_remove_animated_gif.png[]
+image::../media/drw_a320_controller_remove_animated_gif.png[Removing the controller]
 +
 .. Insert your forefinger into the latching mechanism on either side of the controller module.
 .. Press down on the orange tab on top of the latching mechanism until it clears the latching pin on the chassis.

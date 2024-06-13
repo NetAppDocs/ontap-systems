@@ -78,11 +78,11 @@ A disk shelf has three location LEDs: one on the operator display panel and one 
 * If needed, you can refer to the Monitoring disk shelf LEDs section for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
 * The DS460C drive shelf consist of five drive drawers (drive drawer 1 at the top through drive drawer 5 at the bottom) that each contain 12 drive slots.
 +
-image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
+image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[Front view of the drive shelf]
 
 * The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf.
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
+image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[Drive numbering]
 
 .Steps
 
@@ -137,14 +137,14 @@ Orange release latch
  .. Wait 30 seconds.
  .. Use the cam handle to lift the drive from the shelf.
 +
-image::../media/92_dwg_de6600_install_or_remove_drive.gif[]
+image::../media/92_dwg_de6600_install_or_remove_drive.gif[Installing or removing a drive]
 
  .. Place the drive on an antistatic, cushioned surface away from magnetic fields.
 . Insert the replacement drive in the drawer:
  .. Raise the cam handle on the new drive to vertical.
  .. Align the two raised buttons on each side of the drive carrier with the matching gap in the drive channel on the drive drawer.
 +
-image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
+image::../media/28_dwg_e2860_de460c_drive_cru.gif[Location of raised buttons on drive]
 +
 [cols="1,3"]
 |===
@@ -156,7 +156,7 @@ Raised button on the right side of the drive carrier
  .. Lower the drive straight down, and then rotate the cam handle down until the drive snaps into place under the orange release latch.
  .. Carefully push the drive drawer back into the enclosure.
 +
-image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
+image:../media/2860_dwg_e2860_de460c_gentle_close.gif[Gently closing the drawer]
 +
 CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
 
