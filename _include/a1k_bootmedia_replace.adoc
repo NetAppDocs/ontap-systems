@@ -56,7 +56,7 @@ The replacement boot media that you installed is without an ONTAP image so you n
 
 .Before you begin
 
- * You must have a an empty USB flash drive, formatted to FAT32, with at least 4GB capacity.
+ * You must have an empty USB flash drive, formatted to FAT32, with at least 4GB capacity.
  * You must have a copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the https://support.netapp.com/downloads[Downloads] section on the NetApp Support Site
   ** If NVE is supported, download the image with NetApp Volume Encryption, as indicated in the download button.
   ** If NVE is not supported, download the image without NetApp Volume Encryption, as indicated in the download button.

@@ -2,7 +2,7 @@ Before shutting down the impaired controller, you need to verify whether the sys
 
 == Verify security-key-manager configuration
 
-. Display the key IDs of the authentication keys that are stored on the key management servers: `security-key-manager-keystore-show`. For more information, see the https://docs.netapp.com/us-en/ontap-cli/security-key-manager-keystore-show.html[security-key-manager-keystore-show MAN page^]
+. Display the key IDs of the authentication keys that are stored on the key management servers: `security key-manager keystore show`. For more information, see the https://docs.netapp.com/us-en/ontap-cli/security-key-manager-keystore-show.html[security key-manager keystore show MAN page^]
 
 +
 You may have additional key manager types.  The types are `KMIP`, `AKV`, and `GCP`. The process for confirming these types is the same as confirming `external` or `onboard` key manager types.
