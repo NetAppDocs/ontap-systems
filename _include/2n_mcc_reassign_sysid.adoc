@@ -92,7 +92,7 @@ dr-group-id            cluster node           configuration-state
  .. Confirm that the MetroCluster is configured and in normal mode: `metrocluster show`
  .. Perform a MetroCluster check: `metrocluster check run`
  .. Display the results of the MetroCluster check: `metrocluster check show`
- .. Run Config Advisor. Go to the Config Advisor page on the NetApp Support Site at http://support.netapp.com/NOW/download/tools/config_advisor/[support.netapp.com/NOW/download/tools/config_advisor/].
+ .. Run Config Advisor. Go to the Config Advisor page on the NetApp Support Site at https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor/[support.netapp.com/NOW/download/tools/config_advisor/].
 +
 After running Config Advisor, review the tool's output and follow the recommendations in the output to address any issues discovered.
 . Simulate a switchover operation:

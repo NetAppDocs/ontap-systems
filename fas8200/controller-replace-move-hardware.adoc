@@ -22,12 +22,12 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[]
+image::../media/drw_32xx_cbl_mgmt_arm.png[Removing the cable management arms][]
 
 . If you left the SFP modules in the system after removing the cables, move them to the new controller module.
 . Loosen the thumbscrew on the cam handle on the controller module.
 +
-image::../media/drw_8020_cam_handle_thumbscrew.png[]
+image::../media/drw_8020_cam_handle_thumbscrew.png[Loosening the thumbscrew to open the cam handle]
 +
 |===
 a|
@@ -49,7 +49,7 @@ You must locate the boot media and follow the directions to remove it from the o
 
 . Locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_rxl_boot_media.png[]
+image::../media/drw_rxl_boot_media.png[Removing hte boot media]
 
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +
@@ -70,7 +70,7 @@ To move the NVMEM battery from the old controller module to the new controller m
  ** If your system is in an HA configuration, go to the next step.
  ** If your system is in a stand-alone configuration, cleanly shut down the controller module, and then check the NVRAM LED identified by the NV icon.
 +
-image::../media/drw_hw_nvram_icon.png[]
+image::../media/drw_hw_nvram_icon.png[NV LED]
 +
 NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
 
@@ -80,7 +80,7 @@ NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you
 This typically occurs during an uncontrolled shutdown after ONTAP has successfully booted.
 . Open the CPU air duct and locate the NVMEM battery.
 +
-image::../media/drw_rxl_nvmem_battery.png[]
+image::../media/drw_rxl_nvmem_battery.png[Replacing the NVMEM battery]
 +
 |===
 a|
@@ -109,7 +109,7 @@ The number and placement of system DIMMs depends on the model of your system.
 +
 The following illustration shows the location of system DIMMs:
 +
-image::../media/drw_rxl_dimms.png[]
+image::../media/drw_rxl_dimms.png[Replacing DIMMs]
 
 . Locate the slot where you are installing the DIMM.
 . Make sure that the DIMM ejector tabs on the connector are in the open position, and then insert the DIMM squarely into the slot.
@@ -131,7 +131,7 @@ You must have the new controller module ready so that you can move the PCIe card
 . Loosen the thumbscrew on the controller module side panel.
 . Swing the side panel off the controller module.
 +
-image::../media/drw_rxl_pcie.png[]
+image::../media/drw_rxl_pcie.png[Removing or installing a PCIe card]
 +
 |===
 a|
