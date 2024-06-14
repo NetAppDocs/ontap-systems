@@ -1,4 +1,4 @@
-How you cable an NS224 shelf in an AFF A400 or AFF C400 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controllers.
+How you cable an NS224 shelf for a hot-add depends on whether you have an AFF A400 or AFF C400 HA pair.
 
 .Before you begin
 
@@ -8,10 +8,9 @@ How you cable an NS224 shelf in an AFF A400 or AFF C400 HA pair depends on the n
 
 * You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
 
-*Cable shelf to the AFF A400 HA pair*
+*Cable shelf to an AFF A400 HA pair*
 
-Cable hot-add shelves to an AFF A400 HA pair.
-
+For an AFF A400 HA pair, you can hot-add up to two shelves and use onboard ports e0c/e0d and ports in slot 5 as needed. 
 
 .Steps
 
@@ -68,9 +67,9 @@ If any cabling errors are generated, follow the corrective actions provided.
 +
 Otherwise, you are done with this procedure.
 
-*Cable shelf to the AFF C400 HA pair*
+*Cable shelf to an AFF C400 HA pair*
 
-Cable hot-add shelves to an AFF C400 HA pair.
+For an AFF C400 HA pair, you can hot-add up to two shelves and use ports in slot 4 and 5 as needed.
 
 .Steps
 

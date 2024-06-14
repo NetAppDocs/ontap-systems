@@ -43,9 +43,10 @@ image::../media/drw_ns224_a320_2shelves_direct_attached.png[]
 +
 If any cabling errors are generated, follow the corrective actions provided.
 
-. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then re enable automatic drive assignment, if needed. See link:complete-hot-add-shelf.html[Complete the hot-add].
-+
-Otherwise, you are done with this procedure.
+.What's next?
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:complete-hot-add-shelf.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.
 
 ====
 
@@ -125,9 +126,10 @@ image::../media/drw_ns224_a700_2shelves.png[]
 +
 If any cabling errors are generated, follow the corrective actions provided.
 
-. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. See link:complete-hot-add-shelf.html[Complete the hot-add].
-+
-Otherwise, you are done with this procedure.
+.What's next?
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:complete-hot-add-shelf.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.
 
 ====
 
@@ -137,7 +139,7 @@ Otherwise, you are done with this procedure.
 
 ====
 
-When additional storage is needed, you can hot-add an NS224 shelf to a FAS500f HA pair.
+When additional storage is needed, you can hot-add one NS224 shelf to a FAS500f HA pair.
 
 .Before you begin
 
@@ -167,8 +169,8 @@ image::../media/drw_ns224_a250_c250_f500f_1shelf_IEOPS-963.svg[width=452px]
 +
 If any cabling errors are generated, follow the corrective actions provided.
 
+.What's next?
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:complete-hot-add-shelf.html[Complete the hot-add].
 
-. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. See link:complete-hot-add-shelf.html[Complete the hot-add].
-+
-Otherwise, you are done with this procedure.
+Otherwise, you are done with the hot-add shelf procedure.
 ====
