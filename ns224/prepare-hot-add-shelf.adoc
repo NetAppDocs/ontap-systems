@@ -41,13 +41,13 @@ If your HA pair has non-dedicated RoCE-capable Ethernet ports that you are using
 
 * If you determine that the non-dedicated RoCE-capable ports in your HA pair are not configured for storage use, it is a nondisruptive procedure to configure them. 
 +
-Depending on the version of ONTAP your HA pair is running you might need to reboot the controllers:
+Depending on the version of ONTAP your HA pair is running, you might need to reboot the controllers:
 +
 ** If your HA pair is running a version of ONTAP 9.6, you need to reboot the controllers, one at a time.
 +
 ** If your HA pair is running ONTAP 9.7 or later, you do not need to reboot the controllers, unless one or both controllers are in maintenance mode. This procedure assumes that neither controller is in maintenance mode.
 +
-* To change ports from storage use to networking use, enter the command, `storage port modify -node _node_name_ -port _port_name_ -mode network`.
+* If in the future you need to change ports from storage use to networking use, enter the command, `storage port modify -node _node_name_ -port _port_name_ -mode network`.
 
 .Steps
 
@@ -123,9 +123,9 @@ NOTE: The first controller must have already completed its reboot.
 
 . Verify that the non-dedicated ports on both controllers are configured for storage use: `storage port show`
 +
-If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `storage` in the `Mode` column.
+* If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `storage` in the `Mode` column.
 +
-If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
+* If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
 
 == Recable existing shelves
 
@@ -158,12 +158,12 @@ NOTE: Moving a cable does not require any wait time between unplugging the cable
 
 .AFF A1K
 --
-The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
-module in either slot 11 (two shelf configuration) or slot 9 (four shelf configuration) on each controller.
+Do one of the following if you are hot-adding a second shelf or a fourth shelf.
 
 NOTE: If you have an AFF A1K HA pair and you are hot-adding a third shelf and installing a third or fourth RoCE-capable I/O module in each controller, the third shelf is cabled to only the third or third and fourth I/O modules. You do not need to recable any existing shelves. 
 
-Do one of the following:
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in either slot 11 (two shelf configuration) or slot 9 (four shelf configuration) on each controller.
 
 * If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 10 on each controller.
 +

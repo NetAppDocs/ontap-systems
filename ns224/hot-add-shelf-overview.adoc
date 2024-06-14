@@ -16,16 +16,16 @@ To hot-add an NS224 shelf, your HA pair must meet certain requirements. Review t
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:prepare-hot-add-shelf.html[Prepare to hot-add your shelf]
 [role="quick-margin-para"]
-Depending on your platform model, you might need to configure the non-dedicated RoCE-capable Ethernet ports for storage use, recable an existing shelf across two sets of ports in different slots for resiliency against slot failure, and disable automatic drive assignment if it is enabled.
+Depending on your platform model, you might need to install additional RoCE-capable PCIe cards or I/O modules, configure the non-dedicated RoCE-capable Ethernet ports for storage use, recable an existing shelf across two sets of ports in different slots for resiliency against slot failure, and disable automatic drive assignment if you are manually assigning drive ownership.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:install-hot-add-shelf.html[Install your shelf]
 [role="quick-margin-para"]
-To install the shelf, install the rail kit for the shelf, and then install and secure your shelf in the telco rack or cabinet. Next, connect the power cords to power on the NS224 shelf and then assign a unique shelf ID to ensure the shelf is distinct within the HA pair. 
+To install the shelf, install the rail kit for the shelf, and then install and secure your shelf in the telco rack or cabinet. Next, connect the power cords to power on the shelf and then assign a unique shelf ID to ensure the shelf is distinct within the HA pair. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:cable-overview-hot-add-shelf.html[Cable your shelf]
 [role="quick-margin-para"]
-Cable the NS224 shelf you are hot-adding so that it has two connections to each controller in the HA pair.
+Cable the shelf you are hot-adding so that it has two connections to each controller in the HA pair.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:complete-hot-add-shelf.html[Complete hot-add]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:complete-hot-add-shelf.html[Complete your hot-add]
 [role="quick-margin-para"]
-To complete the hot-add, manually assign drive ownership and then reenable automatic drive assignment if you disabled it when you prepared for the hot-add.
+If you disabled automatic drive assignment as part of the preparation for the hot-add, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
