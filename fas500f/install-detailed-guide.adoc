@@ -47,7 +47,7 @@ X66240A-05 (112-00595), 0.5m;
 
 X66240-2 (112-00573), 2m
 .3+a|
-image:../media/oie_cable100_gbe_qsfp28.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 Cluster interconnect network
 a|
@@ -69,7 +69,7 @@ RJ-45 (order dependent)
 a|
 Not applicable
 a|
-image:../media/oie_cable_rj45.png[]
+image:../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
 Management network (BMC and wrench port) and Ethernet data (e0a and e0b)
 a|
@@ -83,7 +83,7 @@ X66250-15 (112-00346) 15m;
 
 X66250-30 (112-00347) 30m
 a|
-image:../media/oie_cable_fc_optical.png[]
+image:../media/oie_cable_fc_optical.png[OIE Fibre Channel optical cable]
 a|
 
 a|
@@ -99,7 +99,7 @@ Power cables
 a|
 Not applicable
 a|
-image:../media/oie_cable_power.png[]
+image:../media/oie_cable_power.png[Power cables]
 a|
 Powering up the system
 |===
@@ -116,7 +116,7 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image::../media/drw_affa250_weight_caution.png[]
+image::../media/drw_affa250_weight_caution.png[Two-person lift caution]
 
 . Identify and manage cables because this system does not have a cable management device.
 . Place the bezel on the front of the system.
@@ -138,7 +138,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -150,24 +150,24 @@ video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Animation - Cable a 
 |===
 | Step| Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lg.png[]
+image:../media/oie_legend_icon_1_lg.png[Step 1]
 a|
 Cable the cluster interconnect ports to each other with the 25GbE cluster interconnect cable
 
-image:../media/oie_cable_sfp_gbe_copper.png[]:
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]:
 
 ** e0c to e0c
 ** e0d to e0d
-image:../media/drw_affa250_tnsc_cabling.png[]
+image:../media/drw_affa250_tnsc_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 
 a|
-image:../media/oie_legend_icon_2_dr.png[]
+image:../media/oie_legend_icon_2_dr.png[Callout number 2]
 a|
 Cable the wrench ports to the management network switches with the RJ45 cables.
 
-image::../media/drw_affa250_mgmt_cabling.png[]
+image::../media/drw_affa250_mgmt_cabling.png[Management port cabling]
 a|
-image:../media/oie_legend_icon_attn_symbol.png[]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -183,7 +183,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -195,22 +195,22 @@ video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto, title="Animation - Cable a 
 |===
 | Step| Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lg.png[]
+image:../media/oie_legend_icon_1_lg.png[Step 1]
 a|
 Cable the cluster interconnect ports to the 25 GbE cluster interconnect switches.
 
  ** e0c
  ** e0d
- image:../media/drw_affa250_switched_clust_cabling.png[]
+ image:../media/drw_affa250_switched_clust_cabling.png[Cluster interconnect cabling]
 
 a|
-image:../media/oie_legend_icon_2_dr.png[]
+image:../media/oie_legend_icon_2_dr.png[Callout number 2]
 a|
 Cable the wrench ports to the management network switches with the RJ45 cables.
 
-image::../media/drw_affa250_mgmt_cabling.png[]
+image::../media/drw_affa250_mgmt_cabling.png[Management port cabling]
 a|
-image::../media/oie_legend_icon_attn_symbol.png[]
+image::../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -230,7 +230,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -243,7 +243,7 @@ a|
 a|
 Cable ports 2a through 2d to the FC host switches.
 
-image::../media/drw_affa250_fc_host_cabling.png[]
+image::../media/drw_affa250_fc_host_cabling.png[Fibre Channel host cabling]
 
 a|
 2
@@ -269,7 +269,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -281,7 +281,7 @@ a|
 a|
 Cable ports e4a through e4d to the 10GbE host network switches.
 
-image::../media/drw_affa250_25gbe_host_cabling.png[]
+image::../media/drw_affa250_25gbe_host_cabling.png[25 GbE cabling]
 
 a|
 2
@@ -304,7 +304,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -316,13 +316,13 @@ video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto, title="Animation - Cable th
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_mb.png[]
+image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
-Cable controller A to the shelf:    image:../media/drw_affa250_1shelf_cabling_a.png[]
+Cable controller A to the shelf:    image:../media/drw_affa250_1shelf_cabling_a.png[Controller A cabling]
 a|
-image:../media/oie_legend_icon_2_lo.png[]
+image:../media/oie_legend_icon_2_lo.png[Callout number 2]
 a|
-Cable controller B to the shelf:    image:../media/drw_affa250_1shelf_cabling_b.png[]
+Cable controller B to the shelf:    image:../media/drw_affa250_1shelf_cabling_b.png[Controller B cabling]
 
 |===
 
@@ -348,7 +348,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[]
+image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
  .. Click *Network* in the left pane.
@@ -376,7 +376,7 @@ NOTE: See your laptop or console's online help for how to configure the console 
 
  .. Connect the laptop or console to the switch on the management subnet.
 +
-image::../media/drw_console_client_mgmt_subnet_affa250.png[]
+image::../media/drw_console_client_mgmt_subnet_affa250.png[Connecting to the management subnet]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
