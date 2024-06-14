@@ -147,10 +147,10 @@ NOTE: Moving a cable does not require any wait time between unplugging the cable
 
 * If needed, refer to the shelf cabling illustrations for your platform model in link:cable-overview-hot-add-shelf.html[Overview of cabling for a hot-add].
 
-
 .Steps
 
 . Recable the existing shelf's connections across two sets of RoCE-capable ports in different slots, as applicable to your platform model.
+
 // start tabbed area
 
 [role="tabbed-block"]
@@ -251,6 +251,7 @@ The substeps assume the existing shelf is cabled to RoCE-capable ports in slot 4
 
 ====
 // end tabbed area
++
 
 . Verify that the recabled shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +
