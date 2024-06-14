@@ -151,7 +151,6 @@ NOTE: Moving a cable does not require any wait time between unplugging the cable
 .Steps
 
 . Recable the existing shelf's connections across two sets of RoCE-capable ports in different slots, as applicable to your platform model.
-+
 // start tabbed area
 
 [role="tabbed-block"]
@@ -252,7 +251,6 @@ The substeps assume the existing shelf is cabled to RoCE-capable ports in slot 4
 
 ====
 // end tabbed area
-+
 
 . Verify that the recabled shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +
@@ -262,11 +260,7 @@ If any cabling errors are generated, follow the corrective actions provided.
 
 If you are manually assigning drive ownership for the NS224 shelf you are hot-adding, then you need to disable automatic drive assignment if it is enabled.
 
-If you are unsure whether you should manually assign drive ownership, or want to understand the automatic assignment of drive ownership policies for your storage system, see https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html[About automatic assignment of disk ownership^].
-
-.Before you begin
-
-Make sure you have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements]. 
+If you are unsure whether you should manually assign drive ownership, or want to understand the automatic assignment of drive ownership policies for your storage system, go to https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html[About automatic assignment of disk ownership^].
 
 .Steps
 
