@@ -48,10 +48,10 @@ image::../media/drw_c400_remove_controller_IEOPS-1216.svg[width=500px]
 [cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.png[] a|
+image:../media/legend_icon_01.png[Callout number 1] a|
 Locking latches  
 a|
-image:../media/legend_icon_02.png[]
+image:../media/legend_icon_02.png[Callout number 2]
 a|
 Controller moves slightly out of chassis
 |===
@@ -72,7 +72,7 @@ NOTE: The animation and illustration show empty slots for sockets without DIMMs.
 
 video::93025369-2f61-46b1-bd51-b03100040fe6[panopto, title="Animation - Replace a system DIMM"]
 
-image::../media/drw_A400_Replace-NVDIMM-DIMM.png[]
+image::../media/drw_A400_Replace-NVDIMM-DIMM.png[Moving the DIMMs]
 
 [cols="10,90"]
 |===

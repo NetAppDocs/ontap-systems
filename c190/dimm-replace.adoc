@@ -30,16 +30,16 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-image::../media/drw_25xx_cable_management_arm.png[]
+image::../media/drw_25xx_cable_management_arm.png[Inserting or removing the cable management arm]
 
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
 +
-image::../media/drw_2240_x_opening_cam_latch.png[]
+image::../media/drw_2240_x_opening_cam_latch.png[Opening the cam handle latch]
 
 . Turn the controller module over and place it on a flat, stable surface.
 . Open the cover by sliding in the blue tabs to release the cover, and then swing the cover up and open.
 +
-image::../media/drw_2600_opening_pcm_cover.png[]
+image::../media/drw_2600_opening_pcm_cover.png[Opening or closing the controller module]
 
 == Step 3: Replace the DIMMs
 
@@ -51,13 +51,13 @@ If you are replacing a DIMM, you need to remove it after you have unplugged the 
 +
 You must perform a clean system shutdown before replacing system components to avoid losing unwritten data in the nonvolatile memory (NVMEM). The LED is located on the back of the controller module. Look for the following icon:
 +
-image::../media/drw_hw_nvram_icon.png[]
+image::../media/drw_hw_nvram_icon.png[NV LED]
 
 . If the NVMEM LED is not flashing, there is no content in the NVMEM; you can skip the following steps and proceed to the next task in this procedure.
 . If the NVMEM LED is flashing, there is data in the NVMEM and you must disconnect the battery to clear the memory:
  .. Locate the battery, press the clip on the face of the battery plug to release the lock clip from the plug socket, and then unplug the battery cable from the socket.
 +
-image::../media/drw_2600_nvmem_battery_unplug.png[]
+image::../media/drw_2600_nvmem_battery_unplug.png[Replacing the NVMEM battery]
 
  .. Confirm that the NVMEM LED is no longer lit.
  .. Reconnect the battery connector.
@@ -72,7 +72,7 @@ The number and placement of system DIMMs depends on the model of your system.
 +
 The following illustration shows the location of system DIMMs:
 +
-image::../media/drw_2600_dimm_repl_animated_gif.png[]
+image::../media/drw_2600_dimm_repl_animated_gif.png[Replacing a DIMM]
 
 . Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
 +

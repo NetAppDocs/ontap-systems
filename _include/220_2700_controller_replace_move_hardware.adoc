@@ -11,17 +11,17 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-image::../media/drw_25xx_cable_management_arm.png[]
+image::../media/drw_25xx_cable_management_arm.png[Inserting or removing the cable management arm]
 
 . If you left the SFP modules in the system after removing the cables, move them to the new controller module.
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
 +
-image::../media/drw_2240_x_opening_cam_latch.png[]
+image::../media/drw_2240_x_opening_cam_latch.png[Opening the cam handle latch]
 
 . Turn the controller module over and place it on a flat, stable surface.
 . Open the cover by sliding in the blue tabs to release the cover, and then swing the cover up and open.
 +
-image::../media/drw_2600_opening_pcm_cover.png[]
+image::../media/drw_2600_opening_pcm_cover.png[Opening or closing the controller module]
 
 == Step 2: Move the NVMEM battery
 
@@ -31,7 +31,7 @@ To move the NVMEM battery from the old controller module to the new controller m
  ** If your system is in an HA configuration, go to the next step.
  ** If your system is in a stand-alone configuration, cleanly shut down the controller module, and then check the NVRAM LED identified by the NV icon.
 +
-image::../media/drw_hw_nvram_icon.png[]
+image::../media/drw_hw_nvram_icon.png[NV LED]
 +
 NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
 
@@ -41,7 +41,7 @@ NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you
 This typically occurs during an uncontrolled shutdown after ONTAP has successfully booted.
 . Locate the NVMEM battery in the controller module.
 +
-image::../media/drw_2600_nvmem_battery_move_animated_gif.png[]
+image::../media/drw_2600_nvmem_battery_move_animated_gif.png[Replacing the NVMEM battery]
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module.
@@ -56,7 +56,7 @@ You must locate the boot media and follow the directions to remove it from the o
 
 . Locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_2600_boot_media_repl_animated_gif.png[]
+image::../media/drw_2600_boot_media_repl_animated_gif.png[Replacing the boot media]
 
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +
@@ -85,7 +85,7 @@ The number and placement of system DIMMs depends on the model of your system.
 +
 The following illustration shows the location of system DIMMs:
 +
-image::../media/drw_2600_dimms.png[]
+image::../media/drw_2600_dimms.png[Location of system DIMMs]
 
 . Repeat these steps to remove additional DIMMs as needed.
 . Verify that the NVMEM battery is not plugged into the new controller module.
@@ -112,7 +112,7 @@ You must have the new controller module ready so that you can move the caching m
  .. Remove the heatsink.
 
 +
-image::../media/drw_2600_fcache.png[]
+image::../media/drw_2600_fcache.png[Removing a caching module]
 . Gently pull the caching module straight out of the housing.
 . Move the caching module to the new controller module, and then align the edges of the caching module with the socket housing and gently push it into the socket.
 . Verify that the caching module is seated squarely and completely in the socket.

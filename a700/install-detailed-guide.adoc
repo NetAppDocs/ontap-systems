@@ -53,7 +53,7 @@ X6566B-3-R6, 112-00300, 3m
 
 X6566B-5-R6 , 112-00301, 5m
 a|
-image:../media/oie_cable_sfp_gbe_copper.png[]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 a|
 Network cable
 a|
@@ -65,7 +65,7 @@ X66100-1,112-00542, 1m
 
 X66100-3,112-00543, 3m
 a|
-image:../media/oie_cable100_gbe_qsfp28.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 40 GbE network
 
@@ -83,7 +83,7 @@ X66211A-2 (112-00574), 2m
 
 X66211A-5 (112-00574), 5m
 a|
-image:../media/oie_cable100_gbe_qsfp28.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 Network cable
 
@@ -108,7 +108,7 @@ Part numbers X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image:../media/oie_cable_rj45.png[]
+image:../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
 Management network and Ethernet data
 a|
@@ -120,7 +120,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[]
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]
 a|
 Storage
 a|
@@ -136,7 +136,7 @@ Power cables
 a|
 Not applicable
 a|
-image:../media/oie_cable_power.png[]
+image:../media/oie_cable_power.png[Power cables]
 a|
 Powering up the system
 |===
@@ -177,7 +177,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -198,7 +198,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -220,9 +220,9 @@ You must cable the shelf-to-shelf connections, and then cable both controllers t
 
 The cables are inserted into the drive shelf with the pull-tabs facing down, while the other end of the cable is inserted into the controller storage modules with the pull-tabs up.
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 .Steps
 . Use the following animations or illustrations to cable your drive shelves to your controllers.
@@ -234,19 +234,19 @@ NOTE: The examples use DS224C shelves. Cabling is similar with other supported S
 video::a312e09e-df56-47b3-9b5e-ab2300477f67[panopto, title="Animation - Cable SAS storage - ONTAP 9.7 and earlier"]
 
 +
-image:../media/SAS_storage_ONTAP_9.7_and_earlier.png[]
+image:../media/SAS_storage_ONTAP_9.7_and_earlier.png[SAS storage cabling for ONTAP 9.7 and earlier]
 +
  ** Cabling SAS shelves in FAS9000, AFF A700, and ASA AFF A700, ONTAP 9.8 and later:
 +
 video::61d23302-9526-4a2b-9335-ac5b0032eafd[panopto, title="Animation - Cable SAS storage - ONTAP 9.8 and later"]
 +
-image:../media/SAS_storage_ONTAP_9.8_and_later.png[]
+image:../media/SAS_storage_ONTAP_9.8_and_later.png[SAS storage cabling for ONTAP 9.8 and later]
 +
 NOTE: If you have more than one drive shelf stack, see the _Installation and Cabling Guide_ for your drive shelf type.
 +
 https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html[Install and cable shelves for a new system installation - shelves with IOM12 modules]
 +
-image:../media/Cable_shelves_new_system_IOM12_shelves.png[]
+image:../media/Cable_shelves_new_system_IOM12_shelves.png[Storage system cabling with SAS shelves]
 +
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
@@ -258,9 +258,9 @@ You must cable each controller to the NSM modules on the NS224 drive shelf on an
 * The systems must have at least one X91148A module installed in slots 3 and/or 7 for each controller. The animation or illustrations show this module installed in both slots 3 and 7.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 +
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 +
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -269,9 +269,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 video::6520eb01-87b3-4520-9109-ac5b0032ea4e[panopto, title="Animation - Cable a single NS224 shelf - ONTAP 9.8 and later"]
 +
-image::../media/drw_ns224_a700_1shelf.png[]
+image::../media/drw_ns224_a700_1shelf.png[Cabling an HA pair to a single drive shelf]
 +
-image::../media/single_NS224_shelf.png[]
+image::../media/single_NS224_shelf.png[Single shelf cabling]
 
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
@@ -283,9 +283,9 @@ You must cable each controller to the NSM modules on the NS224 drive shelves on 
 * The systems must have two X91148A modules, per controller, installed in slots 3 and 7.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 +
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 +
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -295,9 +295,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 video::34098e39-73ad-45de-9af7-ac5b0032ea9a[panopto, title="Animation - Cable two NS224 shelves - ONTAP 9.8 and later"]
 
 +
-image::../media/drw_ns224_a700_2shelves.png[]
+image::../media/drw_ns224_a700_2shelves.png[Cabling an HA pair to two drive shelves]
 +
-image::../media/two_NS224_shelves.png[]
+image::../media/two_NS224_shelves.png[Dual shelf cabling]
 
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
@@ -336,7 +336,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[]
+image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
  .. Click network in the left pane.
@@ -378,7 +378,7 @@ NOTE: See your laptop or console's online help for how to configure the console 
 
  .. Connect the console cable to the laptop or console using the console cable that came with your system, and then connect the laptop to the management switch on the management subnet .
 +
-image::../media/drw_9000_cable_console_switch_controller.png[]
+image::../media/drw_9000_cable_console_switch_controller.png[Console cabling]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:
