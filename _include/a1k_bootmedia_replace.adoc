@@ -24,7 +24,7 @@ Boot media
 |===
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the PSUs cables from the PSUs from the controller.
+. Unplug the power supply cables from the PSUs from the controller.
 
 +
 NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
@@ -52,7 +52,7 @@ The cam lever moves away from the enclosure.
 
 == Step 2: Transfer the ONTAP image to the boot media
 
-The replacement boot media that you installed is without a ONTAP image so you need to transfer a ONTAP image using a USB flash drive.
+The replacement boot media that you installed is without an ONTAP image so you need to transfer an ONTAP image using a USB flash drive.
 
 .Before you begin
 
