@@ -62,7 +62,7 @@ Both sets of cabling are needed to achieve quad-pathed connectivity from each co
 +
 The following example uses port pair 1c/2d for the multipathed cabling and port pair 2c/1b for the quad-pathed cabling to stack 2.
 +
-image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[]
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Cabling worksheet for quad-path HA]
 
 . If you have a quad-path (single-controller) configuration, cross out the information for controller 2; you only need controller 1 information to cable the controller-to-stack connections.
 +
