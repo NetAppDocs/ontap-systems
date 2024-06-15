@@ -11,27 +11,6 @@ summary: You cable each NS224 shelf you are hot-adding so that each shelf has tw
 [.lead]
 You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
 
-.Cable shelf to ASA A1K
-[%collapsible]
-
-
-====
-
-include::../_include/cable-a1k-hot-add-shelf.adoc[]
-
-====
-
-.Cable shelf to ASA A70 or ASA A90
-[%collapsible]
-
-
-====
-
-include::../_include/cable-70-90-hot-add-shelf.adoc[]
-
-====
-
-
 .Cable shelf to ASA A250 or ASA C250
 [%collapsible]
 
