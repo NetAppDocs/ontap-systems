@@ -1,6 +1,6 @@
 The System Management module is not hot-swappable and consists of:
 
-** Boot media, allowing boot media replacement without removing thr controller module.
+** Boot media, allowing boot media replacement without removing the controller module.
 ** BMC
 ** Management switch
 
@@ -43,8 +43,11 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 Replace the impaired system management module.
 
-
-image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[Replace the System Management module]
+. Seat the drives in the front of the controller:
++
+NOTE:  Make sure NVRAM destage has completed before proceeding.
++
+image::../media/drw_70-90_sys-mgmt_remove_ieops-1817.svg[Replace the System Management module]
 
 [cols="1,4"]
 |===
@@ -52,14 +55,7 @@ a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px]
 a|
 System Management module cam latch
-a|
-image::../media/legend_icon_02.svg[Callout number 2,width=30px]
-a|
-Boot media locking button
-a|
-image::../media/legend_icon_03.svg[Callout number 3,width=30px]
-a|
-Replacement System Management module
+
 |===
 
 . On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
@@ -68,12 +64,30 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
 
 . Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
 
-.. Unplug the power cord from the PSU.
+. Disconnect power by pulling the controller module out about three inches:
 +
 NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
 +
 
+.. Press down on both of the locking latches, and then rotate both latches downward at the same time.
+.. Pull the controller module about 3 inches out of the chassis to disengage power.
+
+. Remove the System Management module:
+
 .. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
++
+image::../media/drw_70-90_sys-mgmt_remove_ieops-1817.svg[Replace the System Management module]
++
+[cols="1,4"]
+|===
+a|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+a|
+System Management module cam latch
+
+|===
+
++
 
 . Rotate the cable management tray up to the closed position.
 Remove the System Management module:
@@ -96,6 +110,7 @@ The boot media rotates slightly upward.
 . Recable the System Management module.
 +
 NOTE: If your system has DC power supplies, reconnect the power cable block to the PSU.
+. Reinstall the controller module into the chassis.
 +
 . Rotate the cable management tray up to the closed position.
 
