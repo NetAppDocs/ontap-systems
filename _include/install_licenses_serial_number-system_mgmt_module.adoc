@@ -1,0 +1,25 @@
+You must install new licenses for the node if the impaired node was using ONTAP features that require a standard (node-locked) license. For features with standard licenses, each node in the cluster should have its own key for the feature.
+
+.About this task
+Until you install license keys, features requiring standard licenses continue to be available to the node. However, if the node was the only node in the cluster with a license for the feature, no configuration changes to the feature are allowed. Also, using unlicensed features on the node might put you out of compliance with your license agreement, so you should install the replacement license key or keys on the for the node as soon as possible.
+
+.Before you begin
+
+The licenses keys must be in the 28-character format.
+
+You have a 90-day grace period in which to install the license keys. After the grace period, all old licenses are invalidated. After a valid license key is installed, you have 24 hours to install all of the keys before the grace period ends.
+
+.Steps
+
+. If you need new license keys, obtain replacement license keys on the https://mysupport.netapp.com/site/global/dashboard[NetApp Support Site] in the My Support section under Software licenses.
++
+NOTE: The new license keys that you require are automatically generated and sent to the email address on file. If you fail to receive the email with the license keys within 30 days, you should contact technical support.
+
+. Install each license key: `+system license add -license-code license-key, license-key...+`
+. Remove the old licenses, if desired:
+ .. Check for unused licenses: `license clean-up -unused -simulate`
+ .. If the list looks correct, remove the unused licenses: `license clean-up -unused`
+
+. Register the system serial number with NetApp Support.
+** If AutoSupport is enabled, send an AutoSupport message to register the serial number.
+** If AutoSupport is not enabled, call https://mysupport.netapp.com[NetApp Support] to register the serial number.

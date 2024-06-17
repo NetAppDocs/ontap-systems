@@ -114,7 +114,11 @@ The system will begin to reboot, typically to the LOADER prompt.
 . Restore automatic giveback by using the `storage failover modify -node local -auto-giveback true` command.
 . If an AutoSupport maintenance window was triggered, end it by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 
-== Step 4: Return the failed part to NetApp
+== Step 4: Install licenses and register serial number
+
+include::../_include/install_licenses_serial_number-system_mgmt_module.adoc[]
+
+== Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
 
