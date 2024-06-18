@@ -162,9 +162,6 @@ Do one of the following if you are hot-adding a second shelf or a fourth shelf.
 
 NOTE: If you have an AFF A1K HA pair and you are hot-adding a third shelf and installing a third or fourth RoCE-capable I/O module in each controller, the third shelf is cabled to only the third or third and fourth I/O modules. You do not need to recable any existing shelves. 
 
-The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
-module in either slot 11 (two shelf configuration) or slot 9 (four shelf configuration) on each controller.
-
 * If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 10 on each controller.
 +
 The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
