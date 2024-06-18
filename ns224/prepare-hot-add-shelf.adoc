@@ -251,8 +251,7 @@ The substeps assume the existing shelf is cabled to RoCE-capable ports in slot 4
 
 ====
 // end tabbed area
-+
-
+[start=2]
 . Verify that the recabled shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +
 If any cabling errors are generated, follow the corrective actions provided.
