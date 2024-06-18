@@ -37,7 +37,7 @@ You can hot-add a second shelf to an existing HA pair when additional storage is
  +
 The following illustration shows cabling for the hot-added shelf (shelf 2):
 +
-image::../media/drw_ns224_a320_2shelves_direct_attached.png[]
+image::../media/drw_ns224_a320_2shelves_direct_attached.png[Cabling for an AFF A320 with two NS224 shelves and three sets of onboard ports]
 
 . Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +
@@ -86,7 +86,7 @@ NOTE: This step assumes that you installed the RoCE-capable I/O module in slot 3
 +
 The following illustration shows cabling for one hot-added shelf using one RoCE-capable I/O module in each controller:
 +
-image::../media/drw_ns224_a700_1shelf.png[]
+image::../media/drw_ns224_a700_1shelf.png[Cabling for an AFF A700 with one NS224 shelf and one set of IO module ports]
 
 . If you are hot-adding one or two shelves using two sets of RoCE-capable ports (two RoCE-capable I/O modules) in each controller, complete the applicable substeps.
 +
@@ -119,7 +119,7 @@ NOTE: These substeps assume that you are beginning the cabling by cabling shelf 
 |===
 The following illustration shows cabling for the first and second hot-added shelves:
 +
-image::../media/drw_ns224_a700_2shelves.png[]
+image::../media/drw_ns224_a700_2shelves.png[Cabling for an AFF A700 with two NS224 shelves and two sets of IO module ports]
 
 
 . Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
@@ -163,7 +163,7 @@ When viewed from the rear of the platform chassis, the RoCE-capable card port on
  +
 The following illustration shows the shelf cabling when completed.
 +
-image::../media/drw_ns224_a250_c250_f500f_1shelf_IEOPS-963.svg[width=452px]
+image::../media/drw_ns224_a250_c250_f500f_1shelf_IEOPS-963.svg[Cabling for a FAS500f AFF A250 or AFF C250 with one NS224 shelf and one set of ports, width=452px]
 
 . Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +

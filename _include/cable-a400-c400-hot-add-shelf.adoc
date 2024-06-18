@@ -25,7 +25,7 @@ Otherwise, go to the next step.
 +
 The following illustration shows cabling for one hot-added shelf using one set of RoCE-capable ports on each controller:
 +
-image::../media/drw_ns224_a400_1shelf.png[]
+image::../media/drw_ns224_a400_1shelf.png[Cabling for an AFF A400 with one NS224 shelf and one set of onboard ports]
 
 . If you are hot-adding one or two shelves using two sets of RoCE-capable ports (on board and PCIe card RoCE-capable ports) on each controller, complete the following substeps.
 +
@@ -56,7 +56,7 @@ a|
 |===
 The following illustration shows cabling for two hot-added shelves:
 +
-image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[width=452px]
+image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[Cabling for an AFF A400 with two NS224 shelves and one set of onboard ports and one set of ports on PCIe cards, width=452px]
 
 . Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +
@@ -84,7 +84,7 @@ Otherwise, go to the next step.
 +
 The following illustration shows cabling for one hot-added shelf using one set of RoCE-capable ports on each controller:
 +
-image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[width=452px]
+image::../media/drw_ns224_c400_1shelf_IEOPS-985.svg[Cabling for an AFF C400 with one NS224 shelf and one set of PCIe card ports, width=452px]
 
 . If you are hot-adding one or two shelves using two sets of RoCE-capable ports on each controller, complete the following substeps.
 +
@@ -115,7 +115,7 @@ a|
 |===
 The following illustration shows cabling for two hot-added shelves:
 +
-image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[width=452px]
+image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[Cabling for an AFF C400 with two NS224 shelves and two sets of PCIe card ports, width=452px]
 
 
 . Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
