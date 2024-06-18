@@ -42,7 +42,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_A400_Remove_controller.png[]
+image::../media/drw_A400_Remove_controller.png[Releasing the controller module]
 +
 [cols="10a,90a"]
 |===
@@ -63,7 +63,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 To replace a PCIe card, you must locate the failed PCIe card, remove the riser that contains the card from the controller module, replace the card, and then reinstall the PCIe riser in the controller module.
 
-image:../media/drw_A400_Replace-PCIe-cards.png[]
+image:../media/drw_A400_Replace-PCIe-cards.png[Removing the PCIe cards]
 
 [cols="10,90"]
 |===
@@ -117,7 +117,7 @@ You can use the following animation, illustration, or the written steps to repla
 
 video::e3fd32b6-bdbb-4c53-b666-b030018a5744[panopto, title="Animation - Replace the mezzanine card"]
 
-image::../media/drw_A400_Replace-mezz-card.png[]
+image::../media/drw_A400_Replace-mezz-card.png[Removing the mezzanine card]
 
 [cols="10a,90a"]
 |===

@@ -381,7 +381,7 @@ When a cable is inserted correctly, it clicks into place.
 +
 After you connect both ends of the cable, the shelf and controller port LNK (green) LEDs illuminate. If a port LNK LED does not illuminate, reseat the cable.
 +
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 * You can use the following illustration to help you physically identify the shelf NSM ports, e0a and e0b:
 +
@@ -543,7 +543,7 @@ NOTE: This step assumes that you installed the RoCE-capable I/O module in slot 3
 +
 The following illustration shows cabling for one hot-added shelf using one RoCE-capable I/O module in each controller module:
 +
-image::../media/drw_ns224_a700_1shelf.png[]
+image::../media/drw_ns224_a700_1shelf.png[Cabling an HA pair to a single drive shelf]
 
 . If you are hot-adding one or two shelves using two sets of RoCE-capable ports (two RoCE-capable I/O modules) in each controller module, complete the applicable substeps.
 +
@@ -576,7 +576,7 @@ NOTE: These substeps assume that you are beginning the cabling by cabling shelf 
 |===
 The following illustration shows cabling for the first and second hot-added shelves:
 +
-image::../media/drw_ns224_a700_2shelves.png[]
+image::../media/drw_ns224_a700_2shelves.png[Cabling an HA pair to two drive shelves]
 
 . Verify that the hot-added shelf is cabled correctly.
 +

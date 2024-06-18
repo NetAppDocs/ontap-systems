@@ -51,7 +51,7 @@ The NVMe slot status displays `powered-off` in the screen output for the caching
 NOTE: See the https://docs.netapp.com/us-en/ontap-cli-9121/[Command man pages^] for your version of ONTAP for more details.
 . Remove the caching module:
 +
-image::../media/drw_9000_remove_flashcache.png[]
+image::../media/drw_9000_remove_flashcache.png[Replacing the caching module]
 +
 |===
 a|

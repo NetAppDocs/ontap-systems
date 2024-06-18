@@ -28,7 +28,7 @@ video::ab0ebe6b-e891-489c-aab4-ac5b015c8f01[panopto, title="Animation - Replace 
 +
 NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms).
 +
-image::../media/drw_a250_pcm_remove_install.png[]
+image::../media/drw_a250_pcm_remove_install.png[Opening the latching mechanism]
 +
 |===
 a|
@@ -43,7 +43,7 @@ Latching mechanism
 . Using both hands, grasp the controller module sides and gently pull it out of the chassis and set it on a flat, stable surface.
 . Turn the thumbscrew on the front of the controller module anti-clockwise and open the controller module cover.
 +
-image::../media/drw_a250_open_controller_module_cover.png[]
+image::../media/drw_a250_open_controller_module_cover.png[Opening the controller module cover]
 +
 |===
 a|
@@ -57,7 +57,7 @@ Controller module cover.
 
 . Lift out the air duct cover.
 +
-image::../media/drw_a250_remove_airduct_cover.png[]
+image::../media/drw_a250_remove_airduct_cover.png[Lifting out the air duct cover]
 
 == Step 2: Move the power supply
 
@@ -71,7 +71,7 @@ You must move the power supply from the impaired controller module to the replac
 CAUTION: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
 
-image::../media/drw_a250_replace_psu.png[]
+image::../media/drw_a250_replace_psu.png[Removing the power supply]
 +
 |===
 a|
@@ -96,7 +96,7 @@ You must move the fans from the impaired controller module to the replacement mo
 
 . Remove the fan module by pinching the side of the fan module, and then lifting the fan module straight out of the controller module.
 +
-image::../media/drw_a250_replace_fan.png[]
+image::../media/drw_a250_replace_fan.png[Removing the fan module]
 +
 |===
 a|
@@ -115,7 +115,7 @@ You need a #1 magnetic Phillips head screwdriver to remove the screw that holds 
 
 . Locate and move the boot media from the impaired controller module to the replacement controller module.
 +
-image::../media/drw_a250_replace_boot_media.png[]
+image::../media/drw_a250_replace_boot_media.png[Replacing the boot media]
 +
 |===
 a|
@@ -137,7 +137,7 @@ NOTE: Do not apply force when tightening the screw on the boot media; you might 
 
 To move the DIMMs, locate and move them from the impaired controller into the replacement controller and follow the specific sequence of steps.
 
-image::../media/drw_a250_dimm_replace.png[]
+image::../media/drw_a250_dimm_replace.png[Replacing the DIMMs]
 
 IMPORTANT: Install each DIMM into the same slot it occupied in the impaired controller module.
 
@@ -159,7 +159,7 @@ To move a mezzanine card, you must remove the cabling and any QSFPs and SFPs fro
 
 . Locate and move the mezzanine cards from your impaired controller module.
 +
-image::../media/drw_a250_replace_mezz_card.png[]
+image::../media/drw_a250_replace_mezz_card.png[Removing the mezzanine card]
 +
 |===
 a|
@@ -196,7 +196,7 @@ When replacing the controller module, you must move the NV battery from the impa
 
 . Locate and move the NVMEM battery from your impaired controller module to the replacement controller module.
 +
-image::../media/drw_a250_replace_nvmem_batt.png[]
+image::../media/drw_a250_replace_nvmem_batt.png[Removing the NVMEM battery]
 +
 |===
 a|
@@ -231,11 +231,11 @@ You can use the following illustration or the written steps to install the repla
 
 . If you have not already done so, install the air duct.
 +
-image::../media/drw_a250_install_airduct_cover.png[]
+image::../media/drw_a250_install_airduct_cover.png[Installing the air duct]
 
 . Close the controller module cover and tighten the thumbscrew.
 +
-image::../media/drw_a250_close_controller_module_cover.png[]
+image::../media/drw_a250_close_controller_module_cover.png[Closing the controller module cover]
 +
 |===
 a|

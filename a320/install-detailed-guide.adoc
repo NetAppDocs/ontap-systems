@@ -58,7 +58,7 @@ X66211A-2 (112-00574), 2m
 
 X66211A-5 (112-00574), 5m
 a|
-image:../media/oie_cable100_gbe_qsfp28.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 Storage, cluster interconnect/HA, and Ethernet data (order-dependent)
 a|
@@ -70,7 +70,7 @@ X66211A-3 (112-00543),3m;
 
 X66211A-5 (112-00576), 5m
 a|
-image:../media/oie_cable_sfp_gbe_copper.png[]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 a|
 Storage, cluster interconnect/HA, and Ethernet data (order-dependent)
 a|
@@ -114,7 +114,7 @@ X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image:../media/oie_cable_rj45.png[]
+image:../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
 Management network
 a|
@@ -130,7 +130,7 @@ Power cables
 a|
 Not applicable
 a|
-image:../media/oie_cable_power.png[]
+image:../media/oie_cable_power.png[Power cables]
 a|
 Powering up the system
 |===
@@ -152,7 +152,7 @@ image::../media/drw_a320_weight_label.png[]
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_a320_cable_management_arms.png[]
+image::../media/drw_a320_cable_management_arms.png[Removing or installing the cable management arms]
 
 . Place the bezel on the front of the system.
 
@@ -168,7 +168,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -180,7 +180,7 @@ image::../media/drw_a320_tnsc_network_cabling_composite_animated_gif.png[]
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_lg.png[]
+image:../media/oie_legend_icon_1_lg.png[Step 1]
 a|
 Cable the cluster/HA ports to each other with the 100 GbE (QSFP28) cable:
 
@@ -189,7 +189,7 @@ Cable the cluster/HA ports to each other with the 100 GbE (QSFP28) cable:
 image:../media/drw_a320_tnsc_cluster_ha_connection_step1a.png[]
 
 a|
-image:../media/oie_legend_icon_2_o.png[]
+image:../media/oie_legend_icon_2_o.png[Step 2]
 a|
 If you are using your onboard ports for a data network connection, connect the 100GbE or 40Gbe cables to the appropriate data network switches:
 
@@ -197,19 +197,19 @@ If you are using your onboard ports for a data network connection, connect the 1
 image:../media/drw_a320_onboard_data_connection_step2.png[]
 
 a|
-image:../media/oie_legend_icon_3_dr.png[]
+image:../media/oie_legend_icon_3_dr.png[Step 3]
 a|
 If you are using your NIC cards for Ethernet or FC connections, connect the NIC card(s) to the appropriate switches:
 
 image::../media/drw_a320_nic_connections_step3.png[]
 a|
-image:../media/oie_legend_icon_4_lp.png[]
+image:../media/oie_legend_icon_4_lp.png[Step 4]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables.
 
 image:../media/drw_a320_management_port_connection_step4.png[]
 a|
-image:../media/oie_legend_icon_attn_symbol.png[]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -224,7 +224,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -236,7 +236,7 @@ image::../media/drw_a320_switched_network_cabling_composite_animated_GIF.png[]
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_lg.png[]
+image:../media/oie_legend_icon_1_lg.png[Step 1]
 a|
 Cable the cluster/HA ports to the cluster/HA switch with the 100 GbE (QSFP28) cable:
 
@@ -245,7 +245,7 @@ Cable the cluster/HA ports to the cluster/HA switch with the 100 GbE (QSFP28) ca
 image:../media/drw_a320_switched_cluster_ha_connection_step1b.png[]
 
 a|
-image:../media/oie_legend_icon_2_o.png[]
+image:../media/oie_legend_icon_2_o.png[Step 2]
 a|
 If you are using your onboard ports for a data network connection, connect the 100GbE or 40Gbe cables to the appropriate data network switches:
 
@@ -253,19 +253,19 @@ If you are using your onboard ports for a data network connection, connect the 1
 image:../media/drw_a320_onboard_data_connection_step2.png[]
 
 a|
-image:../media/oie_legend_icon_3_dr.png[]
+image:../media/oie_legend_icon_3_dr.png[Step 3]
 a|
 If you are using your NIC cards for Ethernet or FC connections, connect the NIC card(s) to the appropriate switches:
 
 image::../media/drw_a320_nic_connections_step3.png[]
 a|
-image:../media/oie_legend_icon_4_lp.png[]
+image:../media/oie_legend_icon_4_lp.png[Step 4]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables.
 
 image:../media/drw_a320_management_port_connection_step4.png[]
 a|
-image:../media/oie_legend_icon_attn_symbol.png[]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -282,7 +282,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -294,11 +294,11 @@ image::../media/drw_a320_single_shelf_connections_animated_gif.png[]
 |===
 |Step |Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_mb.png[]
+image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelf    image:../media/drw_a320_storage_cabling_controller_a_single_shelf.png[]
 a|
-image:../media/oie_legend_icon_2_lo.png[]
+image:../media/oie_legend_icon_2_lo.png[Callout number 2]
 a|
 Cable controller B to the shelf:    image:../media/drw_a320_storage_cabling_controller_b_single_shelf.png[]
 |===
@@ -311,7 +311,7 @@ You must cable each controller to the NSM modules on both NS224 drive shelves.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -323,11 +323,11 @@ image::../media/drw_a320_2_shevles_cabling_animated_gif.png[]
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_mb.png[]
+image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelves:    image:../media/drw_a320_2_shelves_cabling_controller_a.png[]
 a|
-image:../media/oie_legend_icon_2_lo.png[]
+image:../media/oie_legend_icon_2_lo.png[Callout number 2]
 a|
 Cable controller B to the shelves:    image:../media/drw_a320_2_shelves_cabling_controller_b.png[]
 |===
@@ -357,7 +357,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[]
+image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
  .. Click network in the left pane.
