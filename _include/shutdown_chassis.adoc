@@ -4,15 +4,13 @@ This procedure is for 2-node, non-MetroCluster configurations only. If you have 
 You need:
 
 * Local administrator credentials for ONTAP.
-* NetApp onboard key management (OKM) cluster-wide passphrase if using storage encryption.
-* SP/BMC accessability for each controller.
+* NetApp onboard key management (OKM) cluster-wide passphrase if using storage encryption or NVE/NAE.
+* BMC accessability for each controller.
 * Stop all clients/host from accessing data on the NetApp system.
 * Suspend external backup jobs.
 * Necessary tools and equipment for the replacement.
 
 NOTE: If the system is a NetApp StorageGRID or ONTAP S3 used as FabricPool cloud tier, refer to the https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#[Gracefully shutdown and power up your storage system Resolution Guide] after performing this procedure.
-
-NOTE: If using FlexArray array LUNs, follow the specific vendor storage array documentation for the shutdown procedure to perform for those systems after performing this procedure.
 
 NOTE: If using SSDs, refer to https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490[SU490: (Impact: Critical) SSD Best Practices: Avoid risk of drive failure and data loss if powered off for more than two months]
 
@@ -26,7 +24,7 @@ Make note of any faults presently on the system, such as LEDs on the system comp
 .Steps
 
 . Log into the cluster through SSH or log in from any node in the cluster using a local console cable and a laptop/console.
-. Turn off AutoSupport and indicate how long you expect the system to be off line:
+. Turn off AutoSupport and indicate how long you expect the system to be offline:
 +
 `system node autosupport invoke -node * -type all -message "MAINT=8h Power Maintenance"`
 . Identify the SP/BMC address of all nodes:
@@ -42,18 +40,15 @@ If your're using a console/laptop, log into the controller using the same cluste
 NOTE: Open an SSH session to every SP/BMC connection so that you can monitor progress.
 
 +
-. Halt all nodes in the cluster: 
+. Halt the 2 nodes located in the impaired chassis: 
 +
-`system node halt -node * -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`.
+`system node halt -node <node>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
 +
 
-NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `system node halt -node * -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
+NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `system node halt -node <node>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
-. Enter *y* for each controller in the cluster when you see `_Warning: Are you sure you want to halt node "cluster name-controller number"?
+. Enter *y* for each controller in the cluster when you see `_Warning: Are you sure you want to halt node "cluster <node-name> number"?
 {y|n}:_`
 
 . Wait for each controller to halt and display the LOADER prompt.
 
-. Turn off each PSU or unplug them if there is no PSU on/off switch.
-. Unplug the power cord from each PSU.
-. Verify that all controllers in the impaired chassis are powered down.

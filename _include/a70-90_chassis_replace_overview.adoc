@@ -4,4 +4,4 @@ All other components in the system must be functioning properly; if not, you mus
 
 * You can use this procedure with all versions of ONTAP supported by your system.
 * This procedure is written with the assumption that you are moving the bezel, NVMe drives, and controller modules to the new chassis, and that the replacement chassis is a new component from NetApp.
-* This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+* *This procedure is disruptive.* For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.

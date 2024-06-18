@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, shut down the controller
 summary: "After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller."
 ---
-= Shut down the controller - AFF A70 and AFF A90
+= Shut down the controller - AFF A70, AFF A90
 :icons: font
 :imagesdir: ../media/
 
@@ -20,7 +20,7 @@ include::../_include/shutdown_most_frus.adoc[]
 --
 .Option 2: Controller is in a MetroCluster
 --
-include::../_include/shutdown_any_mcc_supported.adoc[]
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 --
 
 ====

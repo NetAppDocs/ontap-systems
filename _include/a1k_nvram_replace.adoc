@@ -1,6 +1,6 @@
-The NVRAM module consists of the NVRAM12 and DIMMs. You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. To replace a failed NVRAM module, you must remove the module from the enclosure, move the DIMMs to the replacement module, and install the replacement NVRAM module into the enclosure.
+The NVRAM module consists of the NVRAM12 hardware and field-replaceable DIMMs. You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. To replace a failed NVRAM module, you must remove the module from the enclosure, move the DIMMs to the replacement module, and install the replacement NVRAM module into the enclosure.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+All other components in the system must be functioning properly; if not, you must contact https://support.netapp.com[NetApp Support].
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
@@ -17,7 +17,7 @@ include::../_include/shutdown_most_frus.adoc[]
 --
 .Option 2: Controller is in a MetroCluster
 --
-include::../_include/shutdown_any_mcc_supported.adoc[]
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 --
 
 ====
@@ -27,9 +27,9 @@ include::../_include/shutdown_any_mcc_supported.adoc[]
 To replace the NVRAM module, locate it in slot 4/5 in the enclosure and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the power cord from the PSU.
+. Unplug the power cord from both PSUs.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
-. Remove the target NVRAM module from the enclosure:
+. Remove the impaired NVRAM module from the enclosure:
  .. Depress the locking cam button.
 +
 The cam button moves away from the enclosure.
@@ -38,17 +38,17 @@ The cam button moves away from the enclosure.
 +
  .. Remove the NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 +
-image::../media/drw_A1K_NVRAM12_remove_replace_IEOPS-1380.svg[Remove-replace A1K NVRAM12 module]
+image::../media/drw_a1k_nvram12_remove_replace_ieops-1380.svg[Remove the NVRAM12 module and DIMMs]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
 Cam locking button
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
-DIMM locking tab
+DIMM locking tabs
 |===
 
 . Set the NVRAM module on a stable surface.
@@ -56,7 +56,7 @@ DIMM locking tab
 . Install the replacement NVRAM module into the enclosure:
  .. Align the module with the edges of the enclosure opening in slot 4/5.
  .. Gently slide the module into the slot all the way, and then rotate the cam latch all the way up to lock the module in place.
-. Recable the PSU.
+. Recable the PSUs.
 . Rotate the cable management tray up to the closed position.
 
 
@@ -65,37 +65,36 @@ DIMM locking tab
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, and then replace the target DIMM.
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the PSU.
+. Unplug the power cord from both PSUs.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
-. Remove the target NVRAM module from the enclosure:
- .. Depress the cam button on the NVRAM module.
+. Remove the target NVRAM module from the enclosure.
 +
-The cam button moves away from the enclosure.
-
- .. Rotate the cam latch as far as it will go.
-  .. Remove the NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
-+
-image::../media/drw_A1K_NVRAM12_remove_replace_IEOPS-1380.svg[Remove-replace A1K NVRAM12 module]
+image::../media/drw_a1k_nvram12_remove_replace_ieops-1380.svg[Remove the NVRAM 12 module and DIMMs]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
 Cam locking button
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
-DIMM locking tab
+DIMM locking tabs
 |===
 
 . Set the NVRAM module on a stable surface.
-. Locate the DIMM to be replaced inside the NVRAM module, and then remove it by pressing down on the DIMM locking tabs and lifting the DIMM out of the socket.
+. Locate the DIMM to be replaced inside the NVRAM module.
+
 +
+NOTE: Consult the FRU map label on the side of the NVRAM module to determine the locations of DIMM slots 1 and 2.
++
+
+. Remove the DIMM by pressing down on the DIMM locking tabs and lifting the DIMM out of the socket.
+
 . Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
 . Install the NVRAM module into the enclosure:
- .. Align the module with the edges of the enclosure opening in slot 4/5.
- .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
-. Recable the PSU.
+.. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
+. Recable the PSUs.
  . Rotate the cable management tray up to the closed position.
 
 == Step 4: Reboot the controller
@@ -112,7 +111,7 @@ CAUTION: Disk reassignment is only needed when replacing the NVRAM module and do
 
 .Steps
 . If the replacement controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the replacement controller, boot the controller and entering y if you are prompted to override the system ID due to a system ID mismatch.
+. From the LOADER prompt on the replacement controller, boot the controller and entering _y_ when prompted to override the system ID due to a system ID mismatch.
 . Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: `storage failover show`
 +
 In the command output, you should see a message that the system ID has changed on the impaired controller, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
@@ -132,7 +131,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 +
 The replacement controller takes back its storage and completes booting.
 +
-If you are prompted to override the system ID due to a system ID mismatch, you should enter `y`.
+If you are prompted to override the system ID due to a system ID mismatch, you should enter _y_.
 +
 NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +

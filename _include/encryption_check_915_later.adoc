@@ -1,0 +1,43 @@
+Before shutting down the impaired controller, you need to verify whether the system has security key manager enabled or encrypted disks.
+
+== Verify security-key-manager configuration
+
+. Display the key IDs of the authentication keys that are stored on the key management servers: `security key-manager keystore show`. For more information, see the https://docs.netapp.com/us-en/ontap-cli/security-key-manager-keystore-show.html[security key-manager keystore show MAN page^]
+
++
+You may have additional key manager types.  The types are `KMIP`, `AKV`, and `GCP`. The process for confirming these types is the same as confirming `external` or `onboard` key manager types.
+
++
+
+
+ ** If the `Key Manager` type displays `external` and the `Restored` column displays `true`, it's safe to shut down the impaired controller.
+ ** If the `Key Manager` type displays `onboard` and the `Restored` column displays `true`, you need to complete some additional steps.
+ ** If the `Key Manager` type displays `external` and the `Restored` column displays anything other than `true`, you need to complete some additional steps.
+ ** If the `Key Manager` type displays `onboard` and the `Restored` column displays anything other than `true`, you need to complete some additional steps.
+
+
+. If the `Key Manager` type displays `onboard` and the `Restored` column displays `true`, manually back up the OKM information:
+ .. Enter `y` when prompted to continue: `set -priv advanced`
+ .. Enter the command to display the key management information: `security key-manager onboard show-backup`
+ .. Copy the contents of the backup information to a separate file or your log file. You'll need it in disaster scenarios where you might need to manually recover OKM.
+ 
+ .. You can safely shut down the impaired controller.
+
+ . If the `Key Manager` type displays `onboard` and the `Restored` column displays anything other than `true`:
+ .. Enter the onboard security key-manager sync command: `security key-manager onboard sync`
++
+NOTE: Enter the 32 character, alphanumeric onboard key management passphrase at the prompt. If the passphrase cannot be provided, contact NetApp Support. http://mysupport.netapp.com/[mysupport.netapp.com^]
+
+ .. Verify the `Restored` column displays `true` for all authentication keys: `security key-manager key query`
+ .. Verify that the `Key Manager` type displays `onboard`, and then manually back up the OKM information.
+  .. Enter the command to display the key management backup information: `security key-manager onboard show-backup`
+ .. Copy the contents of the backup information to a separate file or your log file. You'll need it in disaster scenarios where you might need to manually recover OKM.
+ .. You can safely shut down the controller.
+
+. If the `Key Manager` type displays `external` and the `Restored` column displays anything other than `true`:
+ .. Restore the external key management authentication keys to all nodes in the cluster: `security key-manager external restore`
++
+If the command fails, contact NetApp Suppor at http://mysupport.netapp.com/[mysupport.netapp.com^].
+
+ .. Verify that the `Restored` column displays `true` for all authentication keys: `security key-manager key query`
+ .. You can safely shut down the impaired controller.

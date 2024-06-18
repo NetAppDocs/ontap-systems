@@ -24,14 +24,14 @@ To replace an AC PSU, complete the following steps.
 +
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_A1K_PSU_remove_replace_IEOPS-1378.svg[A1K PSU replace]
+image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[Replace PSU]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.svg[width=30px]
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]
 a|
-Terra cotta PSU locking tab
+Terracotta PSU locking tab
 
 |===
 
@@ -50,8 +50,11 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 +
 Once power is restored to the PSU, the status LED should be green.
 include::../_include/complete_rma_step.adoc[]
+
 --
+
 .Option 2: Replace a DC PSU
+
 --
 To replace a DC PSU, complete the following steps.
 
@@ -65,24 +68,24 @@ To replace a DC PSU, complete the following steps.
 +
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_dcpsu_remove-replace-generic_IEOPS-788.svg[width=500px]
+image::../media/drw_dcpsu_remove-replace-generic_IEOPS-788.svg[Remove a DC PSU,width=500px]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.svg[width=30px]
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]
 a|
 Thumb screws
 a| 
-image:../media/legend_icon_02.svg[width=30px]
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
 D-SUB DC power PSU cable connector
 a|
-image:../media/legend_icon_03.svg[width=30px]
+image:../media/legend_icon_03.svg[Callout number 3,width=30px]
 a|
 Power supply handle
 a|
-image:../media/legend_icon_04.svg[width=30x]
+image:../media/legend_icon_04.svg[Callout number 4,width=30x]
 a|
 Blue PSU locking tab
 |===
@@ -103,3 +106,4 @@ Once power is restored to the PSU, the status LED should be green.
 
 include::../_include/complete_rma_step.adoc[]
 --
+====

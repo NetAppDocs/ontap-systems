@@ -16,7 +16,7 @@ include::../_include/shutdown_most_frus.adoc[]
 --
 .Option 2: Controller is in a MetroCluster
 --
-include::../_include/shutdown_any_mcc_supported.adoc[]
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 --
 
 ====
@@ -33,12 +33,12 @@ Remove failed RTC battery and install the replacement RTC battery.
 .. Lift the air duct and rotate it upward as far as it will go.
 . Locate the RTC battery under the air duct.
 +
-image::../media/drw_A70-90_RTC_bat_remove_replace_IEOPS-1371.svg[]
+image::../media/drw_a70-90_rtc_bat_remove_replace_ieops-1371.svg[Replace the RTC battery]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
 RTC battery and housing
 |===
 

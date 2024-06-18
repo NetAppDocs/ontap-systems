@@ -1,7 +1,7 @@
 ---
 permalink: a1k/maintain-overview.html
 sidebar: sidebar
-keywords: aff A800 maintenance, maintenance, repairing A800, repairing aff A800, replace aff A800 components, replace aff A800 components
+keywords: aff a1k maintenance, maintenance, repairing a1k, repairing aff a1k, replace aff a1k components, replace aff a1k components
 summary: Maintain the AFF A1K hardware
 ---
 = Maintain AFF A1K hardware
@@ -13,44 +13,41 @@ For the AFF A1K storage system, you can perform maintenance procedures on the fo
 
 == Boot media
 
-The boot media stores a primary and secondary set of boot image files that the system uses when it boots. 
-
-== Chassis
-
-The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
+The boot media stores a primary and secondary set of ONTAP image files that the system uses when it boots. 
 
 == Controller
 
-A controller consists of a board, firmware, and software. It controls the drives and implements the ONTAP functions.
+A controller consists of a board, firmware, and software. It controls the drives and runs the ONTAP operating system software.
 
 == DIMM
 
-You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
-
-== Drive
-
-A drive is a device that provides the physical storage media for data.
+A dual in-line memory module (DIMM) is a type of computer memory. They are installed to add system memory to a controller motherboard.
 
 == Fan
 
-The fan cools the controller.
+A fan cools the controller.
 
-== NVDIMM
+== NVRAM
 
-The NVDIMM (non-volatile dual in-line memory module) manages the data transfer from the volatile memory to the non-volatile storage, and maintains data integrity in the event of a power loss or system shutdown. 
+The NVRAM (Non-Volatile Random Access Memory) is a module that allows the controller to protect and save in-flight data if the system loses power. The system ID resides in the NVRAM module. When replaced, the controller assumes the new system ID from the replacement NVRAM module. 
 
-== NVDIMM battery
+== NV battery
 
-A NVDIMM battery is responsible for maintaining power to the NVDIMM module.
+The NVRAM battery is responsible for providing power to the NVRAM module while data in-flight is being destaged to flash memory after a power loss.
 
-== PCIe card
+== I/O module
 
-A PCIe (peripheral component interconnect express) card is an expansion card that plugs into the PCIe slot on the motherboard. 
+The I/O module (Input/Output module) is a hardware component that acts as an intermediary between the controller and various devices or systems that need to exchange data with the controller. 
+
+== System Management module
+
+The System Management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).
 
 == Power supply
 
-A power supply provides a redundant power source in a controller shelf.
+A power supply provides a redundant power source in a controller.
 
 == Real-time clock battery
 
 A real time clock battery preserves system date and time information if the power is off. 
+

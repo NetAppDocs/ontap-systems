@@ -1,6 +1,10 @@
 To replace the controller, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the enclosure, and then boot the system to Maintenance mode.
 
-== Step 1: Move the fans
+== Step 1 Remove the controller module
+
+include::../_include/a1k_controller_remove_physical.adoc[]
+
+== Step 2: Move the fans
 
 You must remove the five fan modules from the impaired controller module to the replacement controller module.
 
@@ -13,14 +17,14 @@ You must remove the five fan modules from the impaired controller module to the 
 NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 
 +
-image::../media/drw_A1K_fan_remove_replace_IEOPS-1376.svg[AFF A1K fan remove/replace]
+image::../media/drw_a1k_fan_remove_replace_ieops-1376.svg[Fan remove AFF A1K]
 +
 [cols="1,4"]
 |===
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30x] 
 a|
-Gray locking button
+Black locking button
 |===
 
 . Install the fan in the replacement controller module:
@@ -28,17 +32,13 @@ Gray locking button
 .. Gently slide the fan module all the way into the replacement controller module until it locks in place.
 . Repeat the preceding steps for the remaining fan modules. 
 
-== Step 2: Remove the controller module
-
-include::../_include/a1k_controller_remove_physical.adoc[]
-
 == Step 3: Move the NV battery
 
 Move the NV battery to the replacement controller.
 
 . Open the NV battery air duct cover and locate the NV battery.
 +
-image::../media/drw_A1K_remove_replace_NVMEMBAT_IEOPS-1379.svg[AFF A1K NV battery remove-replace]
+image::../media/drw_a1k_remove_replace_nvmembat_ieops-1379.svg[NV battery remove AFF A1K ]
 +
 [cols="1,4"]
 |===
@@ -65,7 +65,7 @@ NV battery pack
  .. Plug the battery plug into the socket and make sure that the plug locks into place.
  .. Insert the battery pack into the slot and press firmly down on the battery pack to make sure that it is locked into place.
  
- .. Close the NV battery air duct.
+ .. Close the air duct cover.
 
 == Step 4: Move system DIMMs
 
@@ -73,7 +73,7 @@ To move the DIMMs, locate and move them from the impaired controller into the re
 
 . Open the motherboard air duct and locate the DIMMs.
 +
-image::../media/drw_a1k_dimms_IEOPS-1512.svg[AFF A1K DIMM remove-replace]
+image::../media/drw_a1k_dimms_ieops-1512.svg[DIMM remove AFF A1K]
 +
 [cols="1,4"]
 |===

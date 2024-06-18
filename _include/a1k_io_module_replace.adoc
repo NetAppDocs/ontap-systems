@@ -1,7 +1,7 @@
-To replace an I/O module, you must perform a specific sequence of tasks.
+Use this procedure to replace a failed I/O module.
 
-* You can use this procedure with all versions of ONTAP supported by your system.
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* You can use this procedure with all versions of ONTAP supported by your storage system.
+* All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
 == Step 1: Shut down the impaired node
 
@@ -21,7 +21,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 ====
 
-== Step 2: Replace I/O modules
+== Step 2: Replace a failed I/O module
 
 To replace an I/O module, locate it within the enclosure and follow the specific sequence of steps.
 
@@ -29,19 +29,23 @@ To replace an I/O module, locate it within the enclosure and follow the specific
 . Unplug the PSUs cables from the PSUs from the controller.
 
 +
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
 +
 
 . Unplug any cabling on the target I/O module.
-. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
+. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
+
 
 +
-image:../media/drw_A1K_IO_remove_replace_IEOPS-1382.svg[AFF A1K IO card remove]
+NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
++
+
+image:../media/drw_a1k_io_remove_replace_ieops-1382.svg[Remove I/O module]
 +
 [cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px] a|
 I/O cam latch
 a|
 |===
@@ -65,7 +69,7 @@ Make sure that you keep track of which slot the I/O module was in.
 .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
 . Cable the I/O module.
 . Reconnect the PSUs.
-. Rotate the cable management arm up to the closed position.
+. Rotate the cable management tray up to the closed position.
 
 == Step 3: Reboot the controller
 

@@ -1,6 +1,6 @@
 The System Management module is not hot-swappable and consists of:
 
-** Boot media, allowing boot media replacement without removing thr controller module.
+** Boot media, allowing boot media replacement without removing the controller module.
 ** BMC
 ** Management switch
 
@@ -34,7 +34,7 @@ include::../_include/shutdown_most_frus.adoc[]
 --
 .Option 2: Controller is in a MetroCluster
 --
-include::../_include/shutdown_any_mcc_supported.adoc[]
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 --
 
 ====
@@ -47,7 +47,7 @@ Replace the impaired system management module.
 +
 NOTE:  Make sure NVRAM destage has completed before proceeding.
 +
-image::../media/drw_A1K_sys-mgmt_remove_IEOPS-1384.svg[System Management module remove]
+image::../media/drw_a1k_sys-mgmt_remove_ieops-1384.svg[Replace the System Management module]
 +
 [cols="1,4"]
 |===
@@ -70,7 +70,7 @@ The cam lever moves away from the chassis.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
 . Move the boot media to the replacement System Management module:
 +
-image::../media/drw_A1K_boot_media_remove_replace_IEOPS-1377.svg[Boot media replace]
+image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[Boot media replace]
 +
 [cols="1,4"]
 |===
@@ -114,7 +114,11 @@ The system will begin to reboot, typically to the LOADER prompt.
 . Restore automatic giveback by using the `storage failover modify -node local -auto-giveback true` command.
 . If an AutoSupport maintenance window was triggered, end it by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 
-== Step 4: Return the failed part to NetApp
+== Step 4: Install licenses and register serial number
+
+include::../_include/install_licenses_serial_number-system_mgmt_module.adoc[]
+
+== Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
 

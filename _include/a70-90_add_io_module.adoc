@@ -1,20 +1,18 @@
-You can add an I/O module to your system by either adding a new I/O module into a system with empty slots or by replacing an I/O module with a new one in a fully-populated system.
+You can add an I/O module to your storage system by either adding a new I/O module into a storage system with empty slots or by replacing an I/O module with a new one in a fully-populated storage system.
 
 .Before you begin
 
-* Check the https://hwu.netapp.com/[NetApp Hardware Universe^] to make sure that the new I/O module is compatible with your system and version of ONTAP you're running.
+* Check the https://hwu.netapp.com/[NetApp Hardware Universe^] to make sure that the new I/O module is compatible with your storage system and version of ONTAP you're running.
 
 * If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^]  and use the best one available for your I/O module.
 
-* To non-disruptively add an I/O module, you must take over the target controller, remove the slot blanking module in the target slot or remove an existing I/O module, add the new or replacement I/O module, and then giveback the target controller.
-
 * Make sure that all other components are functioning properly.
 
-== Option 1: Add the I/O module to a system with open slots
+== Option 1: Add the I/O module to a storage system with empty slots
 
-You can add an I/O module into an empty module slot in your system.
+You can add an I/O module into an empty module slot in your storage system.
 
-== Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired node
 
 Shut down or take over the impaired controller using one of the following options.
 
@@ -32,21 +30,24 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 ====
 
-== Step 2: Add I/O modules
+=== Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself.
 . Disconnect power by pulling the controller module out about three inches:
 
 +
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your storage system has DC power supply units (PSUs), disconnect the power cable block from the PSU.
 +
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
-. Rotate the cable management arm down by pulling the buttons on both sides on the inside of the cable management arm and then rotate the arm down.
+. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 . Remove the target slot blanking module from the chassis:
 
 +
-image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
+NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
++
+
+image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove an I/O module]
 +
 [cols="1,4"]
 |===
@@ -66,7 +67,7 @@ Cam locking button
 +
 If the I/O module is a NIC, cable the module to the data switches.  
 +
-If the I/O module is a storage module, cable it to the storage.
+If the I/O module is a storage module, cable it to the NS224 shelf.
 
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
@@ -74,9 +75,9 @@ NOTE: Make sure that any unused I/O slots have blanks installed to prevent possi
 
 . Reinstall the controller module into the chassis.
 +
-NOTE: If you have DC power supplies, reconnect the cable blocks to the PSUs.
+NOTE: If you have DC PSUs, reconnect the cable blocks to the PSUs.
 +
-. Rotate the cable management arm up to the closed position.
+. Rotate the cable management tray up to the closed position.
 . Reboot the controller from the LOADER prompt: _bye_
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
@@ -84,11 +85,11 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 . Give back the controller from the partner controller: `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . Repeat these steps for controller B.
-. If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adding an NS224 drive shelf^].
+. If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adds a shelf^].
 
-== Option 2: Add an I/O module in a system with no open slots
+== Option 2: Add an I/O module in a storage system with no empty slots
 
-If your system is fully populated, you can change an I/O module in an I/O slot by removing an existing I/O module and replacing it with a different I/O module.
+If your storage system is fully populated, you can change an I/O module in an I/O slot by removing an existing I/O module and replacing it with a different I/O module.
 
 . If you are:
 +
@@ -110,7 +111,7 @@ a|
 Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
 |===
 
-== Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired node
 
 Shut down or take over the impaired controller using one of the following options.
 
@@ -128,20 +129,30 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 ====
 
-== Step 2: Replace I/O modules
-. If you are not already grounded, properly ground yourself.
+=== Step 2: Replace an I/O module
+. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
++
+. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+
+
 . Disconnect power by pulling the controller module out about three inches:
 
 +
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
+NOTE: If your storage system has DC PSUs, disconnect the power cable block from the PSU.
 +
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
 . Unplug any cabling on the target I/O module.
-. Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
+. Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 . Remove the target I/O module from the chassis:
+
 +
-image::../media/drw_A70_90_IO_remove_replace_IEOPS-1532.svg[Remove-replace A70-90 I/O module]
+NOTE: This following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
++
+
+image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove an I/O module]
 +
 [cols="1,4"]
 |===
@@ -167,9 +178,9 @@ Make sure that you keep track of which slot the I/O module was in.
 . Repeat the remove and install steps to replace additional modules for the controller.
 . Reinstall the controller module into the chassis.
 +
-NOTE: If you have DC power supplies, reconnect the cable blocks to the PSUs.
+NOTE: If you have DC PSUs, reconnect the cable blocks to the PSUs.
 +
-. Rotate the cable management arm into the locked position.
+. Rotate the cable management tray into the locked position.
 . Reboot the controller from the LOADER prompt:_bye_
 .. Check the version of BMC on the controller: `system service-processor show`
 .. Update the BMC firmware if needed: `system service-processor image update`
@@ -196,7 +207,7 @@ a|
 Storage module
 a|
 Install and cable your NS224 shelves, as described in
-https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adding an NS224 drive shelf^].
+https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-add a shelf^].
 a|
 +
 |===
