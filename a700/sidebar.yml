@@ -38,10 +38,6 @@ entries:
         - title: Return failed part to NetApp
           url: /a700/bootmedia-complete-rma.html
           # END boot media
-      - title: Caching module
-        url: /a700/caching-module-and-core-dump-module-replace.html
-      - title: Caching module (hot-swap)
-        url: /a700/caching-module-hot-swap.html
       - title: Chassis
         pdf-filename: AFF A700 Chassis
         entries:
@@ -77,6 +73,7 @@ entries:
       - title: Fan
         url: /a700/fan-swap-out.html
       - title: I/O module
+        pdf-filename: AFF A700 I/O module
         url: /a700/pci-cards-and-risers-replace.html
       - title: LED USB module
         url: /a700/led-module-replace.html

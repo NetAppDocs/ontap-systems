@@ -30,17 +30,15 @@ You can use the following animations, illustration, or the written steps to remo
 
 video::ca74d345-e213-4390-a599-aae10019ec82[panopto, title="Animation - Remove the controller module"]
 
-image::../media/drw_A400_Remove_controller.png[]
+image::../media/drw_A400_Remove_controller.png[Releasing the controller module]
 
-[cols="10,90"]
+[cols="10a,90a"]
 |===
-image:../media/legend_icon_01.png[Callout number 1]
-a|
-Locking latches
-a|
-image:../media/legend_icon_02.png[Callout number 2]
-a|
-Controller moves slightly out of chassis
+| image:../media/legend_icon_01.png[Callout number 1]
+| Locking latches
+
+| image:../media/legend_icon_02.png[Callout number 2]
+| Controller moves slightly out of chassis
 |===
 
 . If you are not already grounded, properly ground yourself.
@@ -75,7 +73,7 @@ NOTE: The animation shows empty slots for sockets without DIMMs. These empty soc
 
 video::2d407c98-e925-4099-a222-afcf01683d4d[panopto, title="Animation - Replace the NVDIMM"]
 
-image::../media/drw_A400_Replace-NVDIMM-DIMM.png[]
+image::../media/drw_A400_Replace-NVDIMM-DIMM.png[Moving the DIMMs]
 
 [cols="10,90"]
 |===

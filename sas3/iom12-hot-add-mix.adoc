@@ -219,7 +219,7 @@ CAUTION: It is recommended that you use a mechanized lift or four people using t
 +
 Your DS460C shipment was packaged with four detachable lift handles (two for each side). To use the lift handles, you install them by inserting the tabs of the handles into the slots in the side of the shelf and pushing up until they click into place. Then, as you slide the disk shelf onto the rails, you detach one set of handles at a time using the thumb latch. The following illustration shows how to attach a lift handle.
 +
-image::../media/drw_ds460c_handles.gif[]
+image::../media/drw_ds460c_handles.gif[Installing the lift handles]
 
 . Reinstall any power supplies and IOMs you removed prior to installing your disk shelf into the rack.
 . If you are installing a DS460C disk shelf, install the drives into the drive drawers; otherwise, go to the next step.
@@ -241,19 +241,19 @@ NOTE: *Risk of equipment malfunction:* To allow for proper air flow and prevent 
 
 The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf.
 
-image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
+image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[Drive numbering]
 
 .. Open the top drawer of the shelf.
 .. Remove a drive from its ESD bag.
 .. Raise the cam handle on the drive to vertical.
 .. Align the two raised buttons on each side of the drive carrier with the matching gap in the drive channel on the drive drawer.
 +
-image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
+image::../media/28_dwg_e2860_de460c_drive_cru.gif[Location of raised buttons on drive]
 +
 [cols="10,90"]
 |===
-image:../media/legend_icon_01.png[Callout number 1]|
-Raised button on the right side of the drive carrier
+| image:../media/legend_icon_01.png[Callout number 1]
+| Raised button on the right side of the drive carrier
 |===
 
 .. Lower the drive straight down, and then rotate the cam handle down until the drive snaps into place under the orange release latch.
@@ -266,7 +266,7 @@ You must be sure that slots 0, 3, 6, and 9 in each drawer contain drives.
 +
 |===
 a|
-image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
+image:../media/2860_dwg_e2860_de460c_gentle_close.gif[Gently closing the drawer]
 a|
 CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
 |===

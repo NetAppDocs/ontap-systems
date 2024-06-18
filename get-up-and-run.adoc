@@ -6,7 +6,7 @@ summary: To get up and running with AFF, ASA and FAS systems, you install hardwa
 ---
 = Get up and running with AFF, ASA and FAS storage systems
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 To get up and running with AFF, ASA and FAS systems, you install hardware components, cable your hardware, and configure your storage in ONTAP.
@@ -85,7 +85,7 @@ Install your platform and shelves in the cabinet or rack. Access the install and
 
 * https://docs.netapp.com/us-en/ontap-systems/asa800/install-setup.html[ASA A800]
 
-* https://docs.netapp.com/us-en/ontap-systems/asa900/install-setup.html[ASA A900]
+* https://docs.netapp.com/us-en/ontap-systems/asa900/install_setup.html[ASA A900]
 
 [role="quick-margin-para"]
 **ASA C-Series systems**
