@@ -1,4 +1,6 @@
-The System Management module is not hot-swappable and consists of:
+The System Management module, located at the back of the controller in slot 8,  contains onboard components for system management, as well as ports for external management. The target controller must be shut down to replace an impaired System Management module or replace the boot media.
+
+The System Management module has the following onboard components:
 
 ** Boot media, allowing boot media replacement without removing the controller module.
 ** BMC
