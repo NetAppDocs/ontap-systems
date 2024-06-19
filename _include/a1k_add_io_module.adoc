@@ -8,7 +8,7 @@ You can add an I/O module to your storage system by either adding a new I/O modu
 
 * Make sure that all other components are functioning properly.
 
-== Option 1: Add the I/O module to a storage system with empty slots
+== Option 1: Add an I/O module to a storage system with empty slots
 
 You can add an I/O module into an empty module slot in your storage system.
 
@@ -25,7 +25,7 @@ include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 --
 .Option 2: Controller is in a MetroCluster
 --
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 --
 
 ====
@@ -82,7 +82,7 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 
 == Option 2: Add an I/O module in a storage system with no empty slots
 
-If your storage system is fully populated, you can change an I/O module in an I/O slot by removing an existing I/O module and replacing it with a different I/O module.
+You can change an I/O module in an I/O slot in a fully-populated system by removing an existing I/O module and replacing it with a different I/O module.
 
 . If you are:
 +
