@@ -37,37 +37,36 @@ Waiting for giveback...
 a|
 
  .. Log into the partner controller.
- .. Confirm the target controller is ready for giveback with the `storage failover show` command.
+ .. Confirm the target controller is ready for giveback with the _storage failover show_ command.
 
 |===
 
-. Move the console cable to the partner controller and give back the target controller storage using the `storage failover giveback -fromnode local -only-cfo-aggregates true local` command.
+. Move the console cable to the partner controller and give back the target controller storage using the _storage failover giveback -fromnode local -only-cfo-aggregates true_ command.
  
  ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
  
  ** If the command fails because the partner is "not ready", wait 5 minutes for the HA subsystem to synchronize between the partners.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate Documentation Center for more information.
-. Wait 3 minutes and check the failover status with the `storage failover show` command.
-. At the clustershell prompt, enter the `network interface show -is-home false` command to list the logical interfaces that are not on their home controller and port.
+. Wait 3 minutes and check the failover status with the _storage failover show_ command.
+. At the clustershell prompt, enter the _network interface show -is-home false_ command to list the logical interfaces that are not on their home controller and port.
 +
-If any interfaces are listed as `false`, revert those interfaces back to their home port using the `net int revert -vserver Cluster -lif _nodename_` command.
+If any interfaces are listed as `false`, revert those interfaces back to their home port using the _net int revert -vserver Cluster -lif _nodename_ command.
 
-. Move the console cable to the target controller and run the `version -v` command to check the ONTAP versions.
+. Move the console cable to the target controller and run the _version -v_ command to check the ONTAP versions.
 
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 . Use the `storage encryption disk show` to review the output.
-. Use the `security key-manager key query` command to display the key IDs of the authentication keys that are stored on the key management servers.
+. Use the _security key-manager key query_ command to display the key IDs of the authentication keys that are stored on the key management servers.
  ** If the `Restored` column = `yes/true`, you are done and can proceed to complete the replacement process.
- ** If the `Key Manager type` = `external` and the `Restored` column = anything other than `yes/true`, use the `security key-manager external restore` command to restore the key IDs of the authentication keys.
+ ** If the `Key Manager type` = `external` and the `Restored` column = anything other than `yes/true`, use the _security key-manager external restore_ command to restore the key IDs of the authentication keys.
 +
 NOTE: If the command fails, contact Customer Support.
 
- ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the `security key-manager onboard sync` command to synchronize the missing onboard keys on the repaired node.
+ ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the _security key-manager onboard sync_ command to synchronize the missing onboard keys on the repaired node.
 +
-Use the `security key-manager key query` command to verify that the `Restored` column = `yes/true` for all authentication keys.
+Use the _security key-manager key query_ command to verify that the `Restored` column = `yes/true` for all authentication keys.
 
 . Connect the console cable to the partner controller.
 . Give back the controller using the `storage failover giveback -fromnode local` command.
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
-. Restore Autosupport if it was disabled by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
+. Restore Autosupport if it was disabled by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
 
