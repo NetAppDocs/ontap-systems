@@ -151,11 +151,11 @@ Selection (1-11)? 1
 
 ----
 
-. Confirm that the controller's console displays 'Waiting for giveback...(Press Ctrl-C to abort wait)'
+. Confirm that the controller's console displays `Waiting for giveback...(Press Ctrl-C to abort wait)`
 
-. from the partner node, giveback the partner controller: _storage failover giveback -fromnode local -only-cfo-aggregates true_
+. From the partner node, giveback the partner controller: _storage failover giveback -fromnode local -only-cfo-aggregates true_
 
-. Once booted only with CFO aggregate run the _security key-manager onboard sync​​​​​​​_ command: `cluster1::> security key-manager onboard sync` 
+. Once booted only with CFO aggregate run the _security key-manager onboard sync​​​​​​​_ command: 
 
 
 . Enter the cluster-wide passphrase for the Onboard Key Manager:
