@@ -45,22 +45,11 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 Replace the impaired system management module.
 
-. Seat the drives in the front of the controller:
+. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.
 +
 NOTE:  Make sure NVRAM destage has completed before proceeding.
 +
-image::../media/drw_70-90_sys-mgmt_remove_ieops-1817.svg[Replace the System Management module]
-+
-[cols="1,4"]
-|===
-a|
-image::../media/legend_icon_01.svg[Callout number 1,width=30px]
-a|
-System Management module cam latch
 
-|===
-
-. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
 
