@@ -2,6 +2,8 @@ Before shutting down the impaired controller, you need to verify whether the sys
 
 == Verify security key-manager configuration
 
+.Steps
+
 . Determe if Key Manager is active with the _security key-manager keystore show_ command. For more information, see the https://docs.netapp.com/us-en/ontap-cli/security-key-manager-keystore-show.html[security key-manager keystore show MAN page^]
 
 +
