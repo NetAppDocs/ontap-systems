@@ -89,7 +89,9 @@ The cam lever moves away from the chassis.
  .. Rotate the cam lever all the way down.
  .. Loop your finger into the cam lever and pull the module straight out of the system.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
-. Move the boot media to the replacement System Management module:+
+. Move the boot media to the replacement System Management module:
+
++
 image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[Boot media replace]
 +
 [cols="1,4"]
@@ -130,8 +132,8 @@ NOTE: If your system has DC power supplies, reconnect the power cable block to t
 
 Reboot the controller module.
 
-. Enter `bye` at the LOADER prompt.
-. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. Enter _bye_ at the LOADER prompt.
+. Return the controller to normal operation by giving back its storage: _storage failover giveback -ofnode _impaired_node_name__
 . Restore automatic giveback by using the `storage failover modify -node local -auto-giveback true` command.
 . If an AutoSupport maintenance window was triggered, end it by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 
