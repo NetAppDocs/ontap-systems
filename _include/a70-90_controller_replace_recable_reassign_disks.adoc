@@ -10,7 +10,7 @@ include::../_include/recable_system_after_controller_rep.adoc[]
 .. Boot to Menu and run Option 10
 .. Input the passphrase & backup up data, then do Normal boot see https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys[Restore onboard key management encryption keys]. 
 .. Perform CFO only giveback
-.. Perform Onboard Sync and verify SVM-KEK is set to true see https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/Giveback_after_MB_replacement_fails_-_operation_was_vetoed_by_keymanagerSolution[Giveback after MB replacement fails - operation was vetoed by keymanager]
+.. Perform Onboard Sync and verify SVM-KEK is set to true see https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Onboard_keymanager_sync_fails_after_motherboard_replacement[Giveback after MB replacement fails - operation was vetoed by keymanager]
 .. Giveback SFO, (no force)
 . If your system does not have Encryptio configured, complete the following procedure to reboot the system:
 .. Boot to Menu and run Option 1.
