@@ -54,3 +54,7 @@ A power supply provides a redundant power source in a controller shelf.
 == Real-time clock battery
 
 A real time clock battery preserves system date and time information if the power is off. 
+
+== System Management module
+
+The System Management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).
