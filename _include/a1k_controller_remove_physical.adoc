@@ -19,7 +19,7 @@ NVRAM attention LED
 |===
 
 +
-NOTE: The NV status LED on the faceplate of the module will start flashing when power is removed from the controller if the system was in the "waiting for giveback" state, or the system was not taken over or halted properly (uncommitted data).  If the impaired controller module was not successfully taken over by the partner controller module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
+NOTE: The NV status LED on the faceplate of the module will start flashing when power is removed from the controller if the system was in the "waiting for giveback" state, or the system was not taken over or halted properly (uncommitted data).  If the impaired controller module was not successfully taken over by the partner controller module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].
 
 +
 
