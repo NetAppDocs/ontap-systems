@@ -75,8 +75,8 @@ NOTE: Make sure that any unused I/O slots have blanks installed to prevent possi
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
 +
-. Give back the controller from the partner controller: `storage failover giveback -ofnode target_node_name`
-. Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
+. Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
+. Enable automatic giveback if it was disabled: _storage failover modify -node local -auto-giveback true_
 . Repeat these steps for controller B.
 . If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-add a shelf^].
 
@@ -166,17 +166,17 @@ Make sure that you keep track of which slot the I/O module was in.
 . Rotate the cable management tray up to the closed position.
 
 . Reboot the controller from the LOADER prompt:_bye_
-.. Check the version of BMC on the controller: `system service-processor show`
-.. Update the BMC firmware if needed: `system service-processor image update`
-.. Reboot the node: `bye`
+.. Check the version of BMC on the controller: _system service-processor show_
+.. Update the BMC firmware if needed: _system service-processor image update_
+.. Reboot the node: _bye_
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
 +
 
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement ]
 
-. Give back the controller from the partner controller: `storage failover giveback -ofnode target_node_name`
-. Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
+. Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
+. Enable automatic giveback if it was disabled: _storage failover modify -node local -auto-giveback true_
 
 . If you added:
 +

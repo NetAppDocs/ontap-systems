@@ -59,21 +59,21 @@ include::../_include/a1k_controller_install_step_physical.adoc[]
 == Step 5: Reset the time and date on the controller
 
 NOTE: After replacing the RTC battery, inserting controller and powering on first BIOS reset, you will see the following error messages: 
-_RTC date/time error. Reset date/time to default._
-_RTC power failure error._
+`RTC date/time error. Reset date/time to default`
+`RTC power failure error`
 These messages are excpected and you can continue with this procedure.
 
- . Check the date and time on the healthy controller with the `cluster date show` command.
+ . Check the date and time on the healthy controller with the _cluster date show_ command.
 
-NOTE: If your system stops at the boot menu, select the option for  `Reboot node` and respond `y` when prompted, then boot to LOADER by pressing `Ctrl-C`
+NOTE: If your system stops at the boot menu, select the option for  `Reboot node` and respond _y_ when prompted, then boot to LOADER by pressing _Ctrl-C_
 
  .. At the LOADER prompt on the target controller, check the time and date with the `cluster date show` command.
  .. If necessary, modify the date with the `set date mm/dd/yyyy` command.
  .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
  . Confirm the date and time on the target controller.
-. At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the controller reboot.
-. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
-. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
+. At the LOADER prompt, enter _bye_ to reinitialize the PCIe cards and other components and let the controller reboot.
+. Return the controller to normal operation by giving back its storage: _storage failover giveback -ofnode _impaired_node_name__
+. If automatic giveback was disabled, reenable it: _storage failover modify -node local -auto-giveback true_
 
 == Step 6: Return the failed part to NetApp
 

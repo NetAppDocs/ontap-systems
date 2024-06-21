@@ -16,6 +16,8 @@ Use the appropriate procedure for your type of PSU: AC or DC.
 --
 To replace an AC PSU, complete the following steps.
 
+.Steps
+
 . If you are not already grounded, properly ground yourself.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
 . Disconnect the PSU:
@@ -57,6 +59,8 @@ include::../_include/complete_rma_step.adoc[]
 
 --
 To replace a DC PSU, complete the following steps.
+
+.Steps
 
 . If you are not already grounded, properly ground yourself.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
