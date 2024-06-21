@@ -63,6 +63,8 @@ NOTE: If your system has DC power supplies, disconnect the power cable block fro
 .. Press down on both of the locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
 
+. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
+
 . Remove the System Management module:
 
 .. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
@@ -80,14 +82,33 @@ System Management module cam latch
 
 +
 
-. Rotate the cable management tray up to the closed position.
-Remove the System Management module:
+
+. Remove the System Management module:
 .. Depress the system management cam button.
 The cam lever moves away from the chassis.
  .. Rotate the cam lever all the way down.
  .. Loop your finger into the cam lever and pull the module straight out of the system.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
-. Move the boot media to the replacement System Management module:
+. Move the boot media to the replacement System Management module:+
+image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[Boot media replace]
++
+[cols="1,4"]
+|===
+a|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+a|
+System Management module cam latch
+a|
+image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+a|
+Boot media locking button
+a|
+image::../media/legend_icon_03.svg[Callout number 3,width=30px]
+a|
+Boot media
+|===
+
+
 .. Press the blue locking button.
 The boot media rotates slightly upward.
 .. Rotate the boot media up,  slide it out of the socket.
@@ -95,7 +116,7 @@ The boot media rotates slightly upward.
 ... Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
 ... Rotate the boot media down toward until it engages the locking button. Depress the blue locking if necessary.
 . Install the system management module:
-.. Align the edges of the System Management module with the system opening and gently push it into the controller module.  
+.. Align the edges of the replacement System Management module with the system opening and gently push it into the controller module.  
 .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
 
 . Recable the System Management module.
