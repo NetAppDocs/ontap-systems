@@ -5,16 +5,9 @@ The power supplies are redundant and hot-swappable.
 .About this task
 This procedure is written for replacing one PSU at a time.
 
-IMPORTANT: Do not mix PSUs with different efficiency ratings or different input types. Always replace like for like.
+IMPORTANT: Do not mix PSUs with different efficiency ratings. Always replace like for like.
 
-Use the appropriate procedure for your type of PSU: AC or DC.  
-
-[role="tabbed-block"]
-====
-
-.Option 1: Replace an AC PSU
---
-To replace an AC PSU, complete the following steps.
+.Steps
 
 . If you are not already grounded, properly ground yourself.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
@@ -48,62 +41,3 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 +
 Once power is restored to the PSU, the status LED should be green.
 include::../_include/complete_rma_step.adoc[]
-
---
-
-.Option 2: Replace a DC PSU
-
---
-To replace a DC PSU, complete the following steps.
-
-. If you are not already grounded, properly ground yourself.
-. Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
-. Disconnect the PSU:
-.. Unscrew the D-SUB DC cable connector using the thumb screws on the plug.
-.. Unplug the cable from the PSU and set it aside. 
-. Remove the PSU by rotating the handle up, press the locking tab, and then pull the PSU out of the controller module.
-
-+
-CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
-+
-image::../media/drw_dcpsu_remove-replace-generic_IEOPS-788.svg[Remove a DC PSU,width=500px]
-+
-[cols="1,4"]
-|===
-a|
-image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
-a|
-Thumb screws
-a| 
-image:../media/legend_icon_02.svg[Callout number 2, width=30px] 
-a|
-D-SUB DC power PSU cable connector
-a|
-image:../media/legend_icon_03.svg[Callout number 3, width=30px] 
-a|
-Power supply handle
-a|
-image:../media/legend_icon_04.svg[Callout number 4, width=30px] 
-a|
-Blue PSU locking tab
-|===
-
-. Install the replacement PSU in the controller module:
-.. Using both hands, support and align the edges of the replacement PSU with the opening in the controller module.
-.. Gently push the PSU into the controller module until the locking tab clicks into place.
-+
-The power supplies will only properly engage with the internal connector and lock in place one way.
-+
-NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
-
-. Reconnect the D-SUB DC power cable:
- .. Plug the power cable connector into the PSU.
- .. Secure the power cable to the PSU with the thumbscrews.
-+
-Once power is restored to the PSU, the status LED should be green.
-
-
-
-include::../_include/complete_rma_step.adoc[]
---
-====

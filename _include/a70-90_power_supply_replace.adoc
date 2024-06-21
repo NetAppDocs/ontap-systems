@@ -16,6 +16,8 @@ Use the appropriate procedure for your type of PSU: AC or DC.
 --
 To replace an AC PSU, complete the following steps.
 
+.Steps
+
 . If you are not already grounded, properly ground yourself.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
 . Disconnect the PSU:
@@ -25,8 +27,10 @@ To replace an AC PSU, complete the following steps.
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
 image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[Replace PSU]
+
 +
-[cols="1,4"]
+[cols="10,90"]
+
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1,width=30px]
@@ -58,6 +62,8 @@ include::../_include/complete_rma_step.adoc[]
 --
 To replace a DC PSU, complete the following steps.
 
+.Steps
+
 . If you are not already grounded, properly ground yourself.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
 . Disconnect the PSU:
@@ -69,8 +75,10 @@ To replace a DC PSU, complete the following steps.
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
 image::../media/drw_dcpsu_remove-replace-generic_IEOPS-788.svg[Remove a DC PSU,width=500px]
+
 +
-[cols="1,4"]
+[cols="10,90"]
+
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1,width=30px]

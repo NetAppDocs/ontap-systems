@@ -71,17 +71,8 @@ The replacement boot media that you installed is without an ONTAP image so you n
 NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
 
 +
-
-There are two folders in the unzipped service image file:
-
-+
-
-   *** boot
-   *** efi
-
-  .. Copy the efi folder to the top directory (root) on the USB flash drive.
-  +
- The USB flash drive should have the efi folder and the appropriate ONTAP image of what the impaired controller is running.
+ 
+The USB flash drive should have the appropriate ONTAP image of what the impaired controller is running.
 
 .. Remove the USB flash drive from your laptop.
 . Insert the USB flash drive into the USB slot on the System Management module. 

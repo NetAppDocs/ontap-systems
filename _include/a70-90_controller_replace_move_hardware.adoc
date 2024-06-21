@@ -13,8 +13,9 @@ Move the power supplies to the replacement controller.
 CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
 image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[PSU remove]
+
 +
-[cols="1,4"]
+[cols="10,90"]
 |===
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px]
@@ -41,7 +42,8 @@ Move the fans modules to the replacement controller module.
 +
 image::../media/drw_a70-90_fan_remove_replace_ieops-1366.svg[Remove fans]
 +
-[cols="1,4"]
+[cols="10,90"]
+
 |===
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px]
@@ -64,7 +66,8 @@ Move the NV battery to the replacement controller module.
 +
 image::../media/drw_a70-90_remove_replace_nvmembat_ieops-1369.svg[Move the NV battery]
 +
-[cols="1,4"]
+[cols="10,90"]
+
 |===
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px]
@@ -75,6 +78,8 @@ image::../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
 NV battery pack plug
 |===
+
++
 
 *Attention:* The NV module LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
 
@@ -99,7 +104,8 @@ Move the DIMMs to the replacement controller module.
 +
 image::../media/drw_a70_90_dimm_ieops-1513.svg[DIMM map]
 +
-[cols="1,4"]
+[cols="10,90"]
+
 |===
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px]
@@ -129,7 +135,8 @@ Move the I/O modules to the replacement controller module.
 
 image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove I/O module]
 
-[cols="1,4"]
+[cols="10,90"]
+
 |===
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px]
@@ -166,7 +173,8 @@ Move the System Management module to the replacement controller module.
 
 image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[Replace the System Management module]
 
-[cols="1,4"]
+[cols="10,90"]
+
 |===
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px]
@@ -198,7 +206,8 @@ Move the NVRAM module to the replacement controller module.
 
 image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[Remove the NVRAM12 module and DIMMs]
 
-[cols="1,4"]
+[cols="10,90"]
+
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
