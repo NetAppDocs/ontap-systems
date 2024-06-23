@@ -8,13 +8,10 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
 +
 
 . Check the amber NVRAM status LED located in slot 4/5 on the back of the controller module. Look for the NV icon:
-
 +
 image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
 +
-
-[cols="10,90"]
-
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
@@ -24,7 +21,6 @@ a|
 image:../media/legend_icon_02.svg[Callout number 1, width=30px] 
 a|
 NVRAM attention LED
-
 |===
 
 +
@@ -55,7 +51,7 @@ The controller module moves slightly out of the chassis.
 +
 image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[Controller remove graphic]
 +
-[cols="10,90"]
+[cols="1,4"]
 
 |===
 a|
