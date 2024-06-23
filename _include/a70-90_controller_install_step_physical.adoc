@@ -32,6 +32,6 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
 
 +
-The controller module boots when power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command
+The controller module boots when power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
 
 
