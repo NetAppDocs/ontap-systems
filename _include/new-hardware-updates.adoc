@@ -4,6 +4,12 @@
 |===
 | Functionality| Description and where to learn more| Available beginning
 a|
+Multi-Cluster Interconnect switch
+a|
+Multi-Cluster configurations allow multiple clusters to share the same cluster switch, provided through two new Reference Configuration Files for 4x4 and 2x8 node configurations.
+a|
+ONTAP 9.14.1
+a|
 Expanded platform support for NS224 drive shelves
 a|
 The following platforms support NS224 drive shelves:
@@ -26,4 +32,5 @@ ONTAP 9.7P4
 ONTAP 9.6P9
 
 ONTAP 9.5P14
+
 |===
