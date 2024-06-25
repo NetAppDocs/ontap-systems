@@ -56,7 +56,7 @@ X66211A-2 (112-00574), 2m
 
 X66211A-5 (112-00574), 5m
 a|
-image:../media/oie_cable100_gbe_qsfp28.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 Storage, cluster interconnect/HA, and Ethernet data (order-dependent)
 a|
@@ -66,7 +66,7 @@ X66240-2 (112-00598), 2m
 
 X66240-5 (112-00639), 5m
 a|
-image:../media/oie_cable_sfp_gbe_copper.png[]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 a|
 GbE network connection (order-dependent)
 a|
@@ -78,7 +78,7 @@ X66250-5 (112-00344), 5m
 
 X66250-15 (112-00346), 15m
 a|
-image:../media/oie_cable_sfp_gbe_copper.png[]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 []
 a|
 FC network connection
@@ -93,7 +93,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[]
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]
 a|
 mini-SAS HD to mini-SAS HD cables (order-dependent)
 a|
@@ -111,7 +111,7 @@ X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image:../media/oie_cable_rj45.png[]
+image:../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
 Management network
 a|
@@ -127,7 +127,7 @@ Power cables
 a|
 Not applicable
 a|
-image:../media/oie_cable_power.png[]
+image:../media/oie_cable_power.png[Power cables]
 a|
 Powering up the system
 |===
@@ -145,11 +145,11 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image::../media/drw_katana_lifting_restriction_icon.png[]
+image::../media/drw_katana_lifting_restriction_icon.png[Two-person lift caution]
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_a320_cable_management_arms.png[]
+image::../media/drw_a320_cable_management_arms.png[Removing or installing the cable management arms]
 
 . Place the bezel on the front of the system.
 
@@ -169,9 +169,9 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all onboard ports and down for expansion (NIC) cards.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -192,9 +192,9 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all onboard ports and down for expansion (NIC) cards.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -217,7 +217,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the NS224 are up.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -226,7 +226,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 video::48d68897-c91d-47dc-b4b0-ab1b0066808a[panopto, title="Animation - Cable the controllers to one NS224 drive shelf"]
 +
-image::../media/drw_a400_one_ns224_shelves.png[]
+image::../media/drw_a400_one_ns224_shelves.png[Cabling the controller modules to a single drive shelf]
 
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
@@ -236,7 +236,7 @@ You must cable each controller to the NSM modules on both NS224 drive shelves.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the NS224 are up.
 
-image::../media/oie_cable_pull_tab_up.png[]
+image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -255,7 +255,7 @@ You must cable each controller to the IOM modules on both SAS drive shelves.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the DS224-C are down.
 
-image::../media/oie_cable_pull_tab_down.png[]
+image::../media/oie_cable_pull_tab_down.png[Cable connector with pull-tab on bottom]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -293,7 +293,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[]
+image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
  .. Click network in the left pane.

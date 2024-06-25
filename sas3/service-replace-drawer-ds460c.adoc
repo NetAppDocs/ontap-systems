@@ -40,11 +40,11 @@ The IOM12 FW upgrade can be done before or after replacing a drive drawer. This 
 +
 The DCM drive drawers look like the following:
 +
-image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
+image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[Front view of the drive shelf]
 +
 The DCM2 drive drawers are distinguished by a blue stripe and "DCM2" label:
 +
-image::../media/dcm2.png[]
+image::../media/dcm2.png[DCM2 drive drawers]
 
 == Prepare to replace a drive drawer
 
@@ -120,7 +120,7 @@ Each drive drawer has left and right cable chains. The metal ends on the cable c
 +
 The figure shows the handle for the fan module extended and released from the orange tab on the left.
 +
-image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[]
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[Extended fan module handle]
 +
 [cols="10,90"]
 |===
@@ -134,7 +134,7 @@ Fan module handle
 +
 The figure shows the right side of the drive shelf with the fan module removed. With the fan module removed, you can see the five cable chains and the vertical and horizontal connectors for each drawer. The callouts for drive drawer 1 are provided.
 +
-image::../media/2860_dwg_full_back_view_chain_connectors.gif[]
+image::../media/2860_dwg_full_back_view_chain_connectors.gif[View of the five cable chains and the vertical and horizontal connectors for each drawer]
 +
 [cols="10,90"]
 |===
@@ -156,7 +156,7 @@ The top cable chain is attached to drive drawer 1. The bottom cable chain is att
 . Follow these steps to disconnect any of the right cable chains from its corresponding vertical bracket.
  .. Using a flashlight, locate the orange ring on the end of the cable chain that is connected to the vertical bracket in the enclosure.
 +
-image::../media/2860_dwg_vertical_ring_for_chain.gif[]
+image::../media/2860_dwg_vertical_ring_for_chain.gif[Orange ring on the end of the cable chain]
 +
 [cols="10,90"]
 |===
@@ -172,7 +172,7 @@ Orange ring on the vertical bracket
 +
 The figure shows the horizontal connector on the right and the cable chain disconnected and partially pulled out on the left side.
 +
-image::../media/2860_dwg_horiz_ring_for_chain.gif[]
+image::../media/2860_dwg_horiz_ring_for_chain.gif[Cable chain and orange ring]
 +
 [cols="10,90"]
 |===
@@ -215,12 +215,12 @@ After removing the right and left cable chains, you can remove the drive drawer 
 . Remove the drives from the drive drawer:
  .. Gently pull back the orange release latch that is visible on the center front of each drive. The following image shows the orange release latch for each of the drives.
 +
-image::../media/28_dwg_e2860_drive_latches_top_view.gif[]
+image::../media/28_dwg_e2860_drive_latches_top_view.gif[Drive release latches]
 
  .. Raise the drive handle to vertical.
  .. Use the handle to lift the drive from the drive drawer.
 +
-image::../media/92_dwg_de6600_install_or_remove_drive.gif[]
+image::../media/92_dwg_de6600_install_or_remove_drive.gif[Installing or removing a drive]
 
  .. Place the drive on a flat, static-free surface and away from magnetic devices.
 +
@@ -228,7 +228,7 @@ NOTE: *Possible loss of data access:* Magnetic fields can destroy all data on th
 . Follow these steps to remove the drive drawer:
  .. Locate the plastic release lever on each side of the drive drawer.
 +
-image::../media/92_pht_de6600_drive_drawer_release_lever.gif[]
+image::../media/92_pht_de6600_drive_drawer_release_lever.gif[Drawer release lever]
 +
 [cols="10,90"]
 |===
@@ -257,7 +257,7 @@ Installing a drive drawer into a drive shelf entails sliding the drawer into the
 +
 The lock-out tumbler assembly is a safety feature that prevents you from being able to open more than one drive drawer at one time.
 +
-image::../media/92_pht_de6600_lock_out_tumbler_detail.gif[]
+image::../media/92_pht_de6600_lock_out_tumbler_detail.gif[Location of the lock-out tumbler and drawer guide]
 +
 [cols="10,90"]
 |===
@@ -290,7 +290,7 @@ NOTE: *Risk of equipment damage:* Stop pushing the drive drawer if you feel exce
 +
 The figure shows the right side view of a drive, showing the location of the raised buttons.
 +
-image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
+image::../media/28_dwg_e2860_de460c_drive_cru.gif[Location of raised buttons on drive]
 +
 [cols="10,90"]
 |===
@@ -305,7 +305,7 @@ If you have a partially populated shelf, meaning that the drawer in which you ar
 +
 NOTE: *Risk of equipment malfunction:* To allow for proper air flow and prevent overheating, always install the first four drives into the front slots (0, 3, 6, and 9).
 +
-image::../media/92_dwg_de6600_install_or_remove_drive.gif[]
+image::../media/92_dwg_de6600_install_or_remove_drive.gif[Installing or removing a drive]
 
  .. Repeat these substeps to reinstall all of the drives.
 . Slide the drawer back into the drive shelf by pushing it from the center and closing both levers.
@@ -323,7 +323,7 @@ The final step in installing a drive drawer is attaching the replacement left an
 * You have replaced the drive drawer and all of the drives.
 * You have two replacement cable chains, marked as LEFT and RIGHT (on the horizontal connector next to the drive drawer).
 
-image::../media/28_dwg_e2860_de460c_cable_chain_left.gif[]
+image::../media/28_dwg_e2860_de460c_cable_chain_left.gif[Left-hand replacement cable chain]
 
 [cols="4*",options="header"]
 |===
@@ -344,7 +344,7 @@ Horizontal
 a|
 Drive drawer
 |===
-image:../media/28_dwg_e2860_de460c_cable_chain_right.gif[]
+image:../media/28_dwg_e2860_de460c_cable_chain_right.gif[Right-hand replacement cable chain]
 
 [cols="4*",options="header"]
 |===
@@ -375,7 +375,7 @@ Midplane
 +
 The figure shows the guide rail on the left side for the second drive drawer in the enclosure.
 +
-image::../media/2860_dwg_guide_rail.gif[]
+image::../media/2860_dwg_guide_rail.gif[Guide rail]
 +
 [cols="10,90"]
 |===

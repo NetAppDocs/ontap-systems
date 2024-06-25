@@ -1,0 +1,176 @@
+---
+permalink: ns224/cable-eoa-systems-hot-add-shelf.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, cable, hot-add an ns224 drive shelf
+summary: You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable shelf to end-of-availability systems - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
+
+.Cable shelf to AFF A320
+[%collapsible]
+
+
+====
+
+You can hot-add a second shelf to an existing HA pair when additional storage is needed.
+
+.Before you begin
+
+* You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
+
+* You must have completed the applicable procedures in link:prepare-hot-add-shelf.html[Prepare-to hot-add a shelf]. 
+
+* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
+
+.Steps
+
+. Cable the shelf to the controllers.
+ .. Cable NSM A port e0a to controller A port e0e.
+ .. Cable NSM A port e0b to controller B port e0b.
+ .. Cable NSM B port e0a to controller B port e0e.
+ .. Cable NSM B port e0b to controller A port e0b.
+ +
+The following illustration shows cabling for the hot-added shelf (shelf 2):
++
+image::../media/drw_ns224_a320_2shelves_direct_attached.png[Cabling for an AFF A320 with two NS224 shelves and three sets of onboard ports]
+
+. Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.
+
+.What's next?
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:complete-hot-add-shelf.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.
+
+====
+
+.Cable shelf to AFF A700
+[%collapsible]
+
+
+====
+
+How you cable an NS224 shelf to an AFF A700 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controllers.
+
+.Before you begin
+
+* You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
+
+* You must have completed the applicable procedures in link:prepare-hot-add-shelf.html[Prepare-to hot-add a shelf]. 
+
+* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
+
+* If you are hot-adding the initial NS224 shelf (no NS224 shelf exists in your HA pair), you must install a core dump module (X9170A, NVMe 1TB SSD) in each controller to support core dumps (store core files). 
++
+See link:../fas9000/caching-module-and-core-dump-module-replace.html[Replace the caching module or add/replace a core dump module -- AFF A700 and FAS9000^].
+
+
+.Steps
+
+. If you are hot-adding one shelf using one set of RoCE-capable ports (one RoCE capable I/O module) on each controller, and this is the only NS224 shelf in your HA pair, complete the following substeps.
++
+Otherwise, go to the next step.
++
+NOTE: This step assumes that you installed the RoCE-capable I/O module in slot 3, instead of slot 7, on each controller.
+
+ .. Cable shelf NSM A port e0a to controller A slot 3 port a.
+ .. Cable shelf NSM A port e0b to controller B slot 3 port b.
+ .. Cable shelf NSM B port e0a to controller B slot 3 port a.
+ .. Cable shelf NSM B port e0b to controller A slot 3 port b.
++
+The following illustration shows cabling for one hot-added shelf using one RoCE-capable I/O module in each controller:
++
+image::../media/drw_ns224_a700_1shelf.png[Cabling for an AFF A700 with one NS224 shelf and one set of IO module ports]
+
+. If you are hot-adding one or two shelves using two sets of RoCE-capable ports (two RoCE-capable I/O modules) in each controller, complete the applicable substeps.
++
+[options="header" cols="1,3"]]
+|===
+| Shelves| Cabling
+a|
+Shelf 1
+a|
+NOTE: These substeps assume that you are beginning the cabling by cabling shelf port e0a to the RoCE-capable I/O module in slot 3, instead of slot 7.
+
+ .. Cable NSM A port e0a to controller A slot 3 port a.
+ .. Cable NSM A port e0b to controller B slot 7 port b.
+ .. Cable NSM B port e0a to controller B slot 3 port a.
+ .. Cable NSM B port e0b to controller A slot 7 port b.
+ .. If you are hot-adding a second shelf, complete the "`Shelf 2`" substeps; otherwise, go to step 3.
+
+a|
+Shelf 2
+a|
+NOTE: These substeps assume that you are beginning the cabling by cabling shelf port e0a to the RoCE-capable I/O module in slot 7, instead of slot 3 (which correlates with the cabling substeps for shelf 1).
+
+ .. Cable NSM A port e0a to controller A slot 7 port a.
+ .. Cable NSM A port e0b to controller B slot 3 port b.
+ .. Cable NSM B port e0a to controller B slot 7 port a.
+ .. Cable NSM B port e0b to controller A slot 3 port b.
+ .. Go to step 3.
+
++
+|===
+The following illustration shows cabling for the first and second hot-added shelves:
++
+image::../media/drw_ns224_a700_2shelves.png[Cabling for an AFF A700 with two NS224 shelves and two sets of IO module ports]
+
+
+. Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.
+
+.What's next?
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:complete-hot-add-shelf.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.
+
+====
+
+.Cable shelf to FAS500f
+[%collapsible]
+
+
+====
+
+When additional storage is needed, you can hot-add one NS224 shelf to a FAS500f HA pair.
+
+.Before you begin
+
+* You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
+
+* You must have completed the applicable procedures in link:prepare-hot-add-shelf.html[Prepare-to hot-add a shelf]. 
+
+* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
+
+.About this task
+
+When viewed from the rear of the platform chassis, the RoCE-capable card port on the left is port "a" (e1a) and the port on the right is port "b" (e1b).
+
+.Steps
+
+. Cable the shelf connections:
+ .. Cable shelf NSM A port e0a to controller A slot 1 port a (e1a).
+ .. Cable shelf NSM A port e0b to controller B slot 1 port b (e1b).
+ .. Cable shelf NSM B port e0a to controller B slot 1 port a (e1a).
+ .. Cable shelf NSM B port e0b to controller A slot 1 port b (e1b).
+ +
+The following illustration shows the shelf cabling when completed.
++
+image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[Cabling for a FAS500f AFF A250 or AFF C250 with one NS224 shelf and one set of ports]
+
+. Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.
+
+.What's next?
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:complete-hot-add-shelf.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.
+====

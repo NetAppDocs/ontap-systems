@@ -52,7 +52,8 @@ image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[Remove the NVRA
 
 |===
 a|
-image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]
+a|
 Cam locking button
 a|
 image:../media/legend_icon_02.svg[Callout number 2,width=30px]
@@ -135,13 +136,13 @@ After you replace the FRU, you must reboot the controller module.
 
 == Step 5: Reassign disks
 
-You must confirm the system ID change when you boot the replacement controller and then verify that the change was implemented.
+You must confirm the system ID change when you boot the controller and then verify that the change was implemented.
 
 CAUTION: Disk reassignment is only needed when replacing the NVRAM module and does not apply to NVRAM DIMM replacement. 
 
 .Steps
-. If the replacement controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: _halt_
-. From the LOADER prompt on the replacement controller, boot the controller and entering _y_ when prompted to override the system ID due to a system ID mismatch.
+. If the controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: _halt_
+. From the LOADER prompt on the controller, boot the controller and entering _y_ when prompted to override the system ID due to a system ID mismatch.
 . Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: _storage failover show_
 +
 In the command output, you should see a message that the system ID has changed on the impaired controller, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
@@ -159,7 +160,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 . Give back the controller:
  .. From the healthy controller, give back the replaced controller's storage: _storage failover giveback -ofnode replacement_node_name_
 +
-The replacement controller takes back its storage and completes booting.
+The controller takes back its storage and completes booting.
 +
 If you are prompted to override the system ID due to a system ID mismatch, you should enter _y_.
 +
@@ -172,7 +173,7 @@ For more information, see the https://docs.netapp.com/us-en/ontap/high-availabil
 The output from the `storage failover show` command should not include the System ID changed on partner message.
 . Verify that the disks were assigned correctly: `storage disk show -ownership`
 +
-The disks belonging to the replacement controller should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 151759706:
+The disks belonging to the controller should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 151759706:
 +
 ----
 node1:> storage disk show -ownership
@@ -195,7 +196,7 @@ The MetroCluster configuration takes a few minutes after the replacement to retu
 This is required if both of the following are true:
 
  ** The MetroCluster configuration is in a switchover state.
- ** The replacement controller is the current owner of the disks on the disaster site.
+ ** The controller is the current owner of the disks on the disaster site.
 +
 See https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration] for more information.
 
