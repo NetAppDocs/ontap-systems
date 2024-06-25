@@ -89,8 +89,12 @@ NOTE: If you have DC PSUs, reconnect the cable blocks to the PSUs.
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
 +
 . Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
-. Enable automatic giveback if it was disabled: _storage failover modify -node local -auto-giveback true_
 . Repeat these steps for controller B.
+
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+
+. Restore Autosupport if it was disabled by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+
 . If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adds a shelf^].
 
 == Option 2: Add an I/O module in a storage system with no empty slots
