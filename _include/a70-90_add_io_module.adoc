@@ -12,9 +12,9 @@ You can add an I/O module to your storage system by either adding a new I/O modu
 
 You can add an I/O module into an empty module slot in your storage system.
 
-=== Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired controller module
 
-Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the impaired controller module using one of the following options.
 
 [role="tabbed-block"]
 ====
@@ -67,8 +67,8 @@ Cam locking button
  .. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
  .. Remove the blanking module.
 . Install the I/O module:
- .. Align the I/O module with the edges of the chassis slot opening.
- .. Gently slide the module into the slot all the way into the chassis, and then rotate the cam latch all the way up to lock the module in place.
+ .. Align the I/O module with the edges of the controller module slot opening.
+ .. Gently slide the module all the way into the into the slot, and then rotate the cam latch all the way up to lock the module in place.
 . Cable the I/O module.
 +
 If the I/O module is a NIC, cable the module to the data switches.  
@@ -117,9 +117,9 @@ a|
 Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
 |===
 
-=== Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired controller module
 
-Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the impaired controller module using one of the following options.
 
 [role="tabbed-block"]
 ====
@@ -183,13 +183,13 @@ Make sure that you keep track of which slot the I/O module was in.
 .. Gently slide the module into the slot all the way into the chassis, and then rotate the cam latch all the way up to lock the module in place.
 . Cable the I/O module.
 
-. Repeat the remove and install steps to replace additional modules for the controller.
+. Repeat the remove and install steps to replace additional modules for the controller module.
 . Reinstall the controller module into the chassis.
 +
 NOTE: If you have DC PSUs, reconnect the cable blocks to the PSUs.
 +
 . Rotate the cable management tray into the locked position.
-. Reboot the controller from the LOADER prompt:_bye_
+. Reboot the controller module from the LOADER prompt:_bye_
 .. Check the version of BMC on the controller: _system service-processor show_
 .. Update the BMC firmware if needed: _system service-processor image update_
 .. Reboot the node: _bye_
@@ -199,7 +199,7 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement]
 
-. Give back the controller from the partner controller. _storage failover giveback -ofnode target_node_name_
+. Give back the controller module from the partner controller module. _storage failover giveback -ofnode target_node_name_
 . Enable automatic giveback if it was disabled: _storage failover modify -node local -auto-giveback true_
 
 . If you added:
