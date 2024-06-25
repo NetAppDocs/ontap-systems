@@ -12,3 +12,8 @@ NOTE: Do not use excessive force when sliding the controller module into the enc
 +
 The controller module begins to boot as soon as it is fully seated in the enclosure.
 
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+
+. Restore Autosupport if it was disabled by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+
+
