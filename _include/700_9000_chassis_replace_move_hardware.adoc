@@ -15,12 +15,14 @@ Removing the power supplies when replacing a chassis involves turning off, disco
 +
 CAUTION: When removing a power supply, always use two hands to support its weight.
 +
-image::../media/drw_9000_remove_install_psu_module.gif[]
+image::../media/drw_9000_remove_install_psu_module.gif[Remove power supply unit (PSU)]
 +
+
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Locking button
 |===
 
@@ -37,12 +39,14 @@ To remove the fan modules when replacing the chassis, you must perform a specifi
 +
 CAUTION: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 +
-image::../media/drw_9000_remove_install_fan.png[]
+image::../media/drw_9000_remove_install_fan.png[Remove fans]
 +
+
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Orange release button
 |===
 
@@ -58,8 +62,9 @@ To replace the chassis, you must remove the controller module or modules from th
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
 +
-image::../media/drw_9000_remove_pcm.png[Removing the controller module]
+image::../media/drw_9000_remove_pcm.png[Remove the controller module]
 +
+
 [cols="1,3"]
 |===
 a|
@@ -100,12 +105,14 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-image::../media/drw_9000_remove_pcie_module.png[Removing a PCIe module]
+image::../media/drw_9000_remove_pcie_module.png[Remove a PCIe module]
 +
+
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Lettered and numbered I/O cam latch
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -125,10 +132,12 @@ You must remove the de-stage controller power modules from the old chassis in pr
 +
 image::../media/drw_9000_remove_nv_battery.png[]
 +
+
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 DCPM module orange locking button
 |===
 
