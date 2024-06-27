@@ -59,7 +59,7 @@ Depending on your disk shelf model, the operator display panel looks different; 
 
 The following illustration is of a DS224C disk shelf operator display panel with the end cap on:
 
-image::../media/drw_opd.gif[]
+image::../media/drw_opd.gif[End cap operator display]
 
 == IOM12/IOM12B module LEDs
 
@@ -107,11 +107,11 @@ The location LED on the operator display panel and both IOM12/IOM12B modules ill
 |===
 The following illustration is for an IOM12 module:
 
-image::../media/drw_iom12.gif[]
+image::../media/drw_iom12.gif[IOM12 module]
 
 The IOM12B modules are distinguished by a blue stripe and an "IOM12B" label:
 
-image::../media/iom12b.png[]
+image::../media/iom12b.png[IOM12B module]
 
 == Power supply LEDs
 
@@ -155,11 +155,11 @@ The following illustration is for a power supply used in a DS460C disk shelf.
 
 The two LED icons act as the labels and LEDs, meaning the icons themselves illuminate--there are no adjacent LEDs.
 
-image::../media/28_dwg_e2860_de460c_psu.gif[]
+image::../media/28_dwg_e2860_de460c_psu.gif[LED icons]
 
 The following illustration is for a power supply used in a DS224C or DS212C disk shelf:
 
-image::../media/drw_powersupply_913w_vsd.gif[]
+image::../media/drw_powersupply_913w_vsd.gif[LED icons]
 
 == Fan LEDs on DS460C disk shelves
 
@@ -225,19 +225,19 @@ The following illustration is for a disk drive used in a DS224C disk shelf.
 
 DS224C disk shelves use 2.5-inch disk drives arranged vertically in the disk shelf.
 
-image::../media/drw_diskdrive_ds224c.gif[]
+image::../media/drw_diskdrive_ds224c.gif[Drive carrier vertical arrangement]
 
 The following illustration is for a disk drive used in a DS212C disk shelf.
 
 DS212C disk shelves use 3.5-inch disk drives or 2.5-inch disk drives in carriers arranged horizontally in the disk shelf.
 
-image::../media/drw_diskdrive_ds212c.gif[]
+image::../media/drw_diskdrive_ds212c.gif[Drive carrier horizontal arrangement]
 
 === Disk drive LEDs for DS460C disk shelves
 
 The following illustration and table describes the drive activity LEDs on the drive drawer and their operational states:
 
-image::../media/2860_dwg_drive_drawer_leds.gif[]
+image::../media/2860_dwg_drive_drawer_leds.gif[Drive activity LEDs]
 
 [cols="4*",options="header"]
 |===
@@ -277,7 +277,7 @@ The power is turned off.
 |===
 When the drive drawer is open, an attention LED can be seen in front of each drive.
 
-image::../media/2860_dwg_amber_on_drive.gif[]
+image::../media/2860_dwg_amber_on_drive.gif[Drive attention LED]
 [cols="10,90"]
 |===
 a|
