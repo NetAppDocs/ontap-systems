@@ -36,5 +36,5 @@ The controller module boots when power is restored. If it boots to the LOADER pr
 
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
-. Restore Autosupport if it was disabled by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 

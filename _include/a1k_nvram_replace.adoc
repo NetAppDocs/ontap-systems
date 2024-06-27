@@ -188,7 +188,7 @@ dr-group-id            cluster node           configuration-state
 . If storage encryption is enabled, you must restore functionality.
 . If you disabled automatic takeover on reboot, enable it from the healthy controller: _storage failover modify -node replacement-node-name -onreboot true_
  
-. Restore Autosupport if it was disabled by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 
 == Step 6: Return the failed part to NetApp
 
