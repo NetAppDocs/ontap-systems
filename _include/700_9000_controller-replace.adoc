@@ -9,8 +9,9 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
 
-image::../media/drw_9000_remove_pcm.png[Removing the controller module]
+image::../media/drw_9000_remove_pcm.png[Remove the controller module]
 
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1]
@@ -28,8 +29,11 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
-image::../media/drw_9000_pcm_open.png[Opening or closing the controller module]
+image::../media/drw_9000_pcm_open.png[Open or close the controller module]
 +
+
+
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1]
@@ -44,8 +48,10 @@ You must locate the boot media and follow the directions to remove it from the o
 .Steps
 . Lift the black air duct at the back of the controller module and then locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_9000_remove_boot_dev.gif[]
+image::../media/drw_9000_remove_boot_dev.gif[Remove the boot device]
 +
+
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1]
@@ -80,8 +86,10 @@ To move the DIMMs, locate and move them from the old controller into the replace
 +
 NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 +
-image::../media/drw_9000_replace_pcm_dimms.png[]
+image::../media/drw_9000_replace_pcm_dimms.png[Remove the controller DIMMs]
 +
+
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1]

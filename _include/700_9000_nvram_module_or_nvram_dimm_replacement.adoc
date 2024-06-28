@@ -4,7 +4,7 @@ To replace a failed NVRAM module, you must remove it from the chassis, remove th
 
 Because the system ID is derived from the NVRAM module, if replacing the module, disks belonging to the system are reassigned to the new system ID.
 
-*Before you begin*
+.Before you begin
 
 * All disk shelves must be working properly.
 * If your system is in an HA pair, the partner node must be able to take over the node associated with the NVRAM module that is being replaced.
@@ -42,11 +42,14 @@ To replace the NVRAM module, locate it in slot 6 in the chassis and follow the s
 . If you are not already grounded, properly ground yourself.
 . Move the FlashCache module from the old NVRAM module to the new NVRAM module:
 +
-image::../media/drw_9000_remove_flashcache.png[Replacing the caching module]
+image::../media/drw_9000_remove_flashcache.png[Replacie the caching module]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.png[Callout number 1] 
+a|
 Orange release button (gray on empty FlashCache modules)
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -73,11 +76,14 @@ The NVRAM module disengages from the chassis and moves out a few inches.
 
  .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
-image::../media/drw_9000_move_remove_nvram_module.png[]
+image::../media/drw_9000_move_remove_nvram_module.png[Remove the NVRAM module]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.png[Callout number 1] 
+a|
 Lettered and numbered I/O cam latch
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -86,11 +92,14 @@ I/O latch completely unlocked
 |===
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 +
-image::../media/drw_9000_remove_nvram_module_contents.png[]
+image::../media/drw_9000_remove_nvram_module_contents.png[Remove the NVRAM module contents]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.png[Callout number 1] 
+a|
 Cover locking button
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -121,11 +130,14 @@ The NVRAM module disengages from the chassis and moves out a few inches.
 
  .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
-image::../media/drw_9000_move_remove_nvram_module.png[]
+image::../media/drw_9000_move_remove_nvram_module.png[Remove the NVRAM module]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.png[Callout number 1] 
+a|
 Lettered and numbered I/O cam latch
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -134,11 +146,14 @@ I/O latch completely unlocked
 |===
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 +
-image::../media/drw_9000_remove_nvram_module_contents.png[]
+image::../media/drw_9000_remove_nvram_module_contents.png[Remove the NVRAM module contents]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.png[Callout number 1] 
+a|
 Cover locking button
 a|
 image:../media/legend_icon_02.png[Callout number 2]
