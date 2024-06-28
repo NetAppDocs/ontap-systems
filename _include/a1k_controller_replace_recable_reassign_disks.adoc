@@ -1,16 +1,14 @@
 Continue the replacement procedure by giving back the controller.
 
+== Step 1: Give back the controller
 
-
-== Step 1: Controller giveback
-
-. If your storage system has Encryption configured, you must restore Storage or Volume Encryption functionality use the following procedure to reboot the system:
+. If your storage system has Encryption configured, you must restore Storage or Volume Encryption functionality using the following procedure to reboot the system:
 .. Boot to Menu and run Option 10
 .. Input the passphrase & backup up data, then do Normal boot see https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys[Restore onboard key management encryption keys]. 
 .. Perform CFO only giveback
 .. Perform Onboard Sync and verify SVM-KEK is set to true see https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Onboard_keymanager_sync_fails_after_motherboard_replacement[Giveback after MB replacement fails - operation was vetoed by keymanager]
 .. Giveback SFO, (no force)
-. If your system does not have Encryptio configured, complete the following procedure to reboot the system:
+. If your system does not have Encryption configured, complete the following procedure to reboot the system:
 .. Boot to Menu and run Option 1.
 .. Give back the controller:
  .. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode _replacement_node_name_`
@@ -59,3 +57,5 @@ dr-group-id            cluster node           configuration-state
 
 . Verify that the expected volumes are present for each controller: `vol show -node node-name`
 . If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.

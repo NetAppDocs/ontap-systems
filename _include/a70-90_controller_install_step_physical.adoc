@@ -34,4 +34,7 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 +
 The controller module boots when power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
 
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 

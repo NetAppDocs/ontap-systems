@@ -36,10 +36,10 @@ The general behavior of the NVRAM status LED on the impaired controller module i
 * The NVRAM status LED flashes when the controller module is removed from the chassis and could mean the controller module is not taken over or halted properly (uncommitted data). Confirm that the controller module has been cleanly takeover by the partner controller module or the impaired controller module shows `waiting for giveback`. Then, the flashing LED can be ignored (and the controller module can be removed from the chassis).
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the controller module power supply cables from the controller module power supplies.
+. Unplug the controller module power supply cables from the controller module power supplies (PSU).
 
 +
-NOTE: If your system has DC power, disconnect the power block from the PSU. 
+NOTE: If your system has DC power, disconnect the power block from the PSUs. 
 +
 
 . Unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected.
@@ -54,10 +54,10 @@ The controller module moves slightly out of the chassis.
 image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[Controller remove graphic]
 +
 [cols="1,4"]
-
 |===
 a|
-image:../media/legend_icon_01.svg[Callout number 1, width=30px]|
+image:../media/legend_icon_01.svg[Callout number 1, width=30px]
+|a
 Locking latch
 a|
 image:../media/legend_icon_02.svg[Callout number 2, width=30px]

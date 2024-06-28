@@ -53,8 +53,7 @@ NOTE: This following illustration shows removing a horizontal and vertical I/O m
 
 image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove I/O module]
 +
-
-[cols=1,4]
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.svg[Callout number 1,width=30px] 
@@ -72,13 +71,15 @@ The cam latch moves away from the controller module.
 Make sure that you keep track of which slot the I/O module was in.
 +
 . Set the I/O module aside.
-. Install the replacement I/O module into the controller module by gently sliding the I/O module into the slot until the I/O cam latch begins to engage with the I/O cam pin, and then push the I/O cam latch all the way up to lock the module in place.
-. Recable the I/O module, as needed.
-. Install the I/O module into the target slot:
+
+. Install the replacement I/O module into the target slot:
 .. Align the I/O module with the edges of the slot.
 .. Gently slide the module into the slot all the way into the controller module, and then rotate the cam latch all the way up to lock the module in place.
+
 . Cable the I/O module.
+
 . Repeat the remove and install steps to replace additional modules for the controller.
+
 . Reinstall the controller module into the chassis.
 +
 NOTE: If you have DC power supplies, reconnect the cable blocks to the PSUs.

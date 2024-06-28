@@ -215,4 +215,4 @@ Use the security key-manager key query to verify that the `Restored` column = `y
 . Connect the console cable to the partner controller.
 . Give back the controller using the `storage failover giveback -fromnode local` command.
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
-. Restore Autosupport if it was disabled by using the `system node autosupport invoke -node * -type all -message MAINT=END`
+. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END`
