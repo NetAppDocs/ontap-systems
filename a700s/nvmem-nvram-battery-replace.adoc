@@ -34,9 +34,12 @@ The controller module moves slightly out of the chassis.
 +
 image::../media/drw_a700s_pcm_remove.png[Releasing the controller module]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.png[Callout number 1] 
+a|
 Locking latch
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -57,11 +60,14 @@ To replace the NVRAM battery, you must remove the failed NVRAM battery from the 
 . If you are not already grounded, properly ground yourself.
 . Locate the NVRAM battery on the left side of the riser module, Riser 1.
 +
-image::../media/drw_a700s_nvme_battery_replace.png[]
+image::../media/drw_a700s_nvme_battery_replace.png[Replace the NVRAM battery]
 +
+[cols="1,4"]
+
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.png[Callout number 1] 
+a|
 NVRAM battery plug
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -87,15 +93,19 @@ After you replace a component within the controller module, you must reinstall t
 +
 image::../media/drw_a700s_close_air_duct.png[Closing the air duct]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.png[Callout number 1] 
+a|
 Locking tabs
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
 Slide plunger
 |===
+
 +
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
