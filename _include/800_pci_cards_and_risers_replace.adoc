@@ -23,12 +23,14 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a800_pcm_remove.png[Releasing the controller module]
+image::../media/drw_a800_pcm_remove.png[Release the controller module]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Locking latch
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -44,12 +46,14 @@ Make sure that you support the bottom of the controller module as you slide it o
  .. Press in the locking tabs on the sides of the air duct toward the middle of the controller module.
  .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
 +
-image::../media/drw_a800_open_air_duct.png[Opening the air duct]
+image::../media/drw_a800_open_air_duct.png[Open the air duct]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Air duct locking tabs
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -76,12 +80,14 @@ The riser raises up slightly from the controller module.
 
  .. Lift the riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
 +
-image::../media/drw_a800_pcie_1_replace.png[]
+image::../media/drw_a800_pcie_1_replace.png[Replace PCI card in riser 1]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Air duct
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -96,6 +102,7 @@ image:../media/legend_icon_04.png[Callout number 4]
 a|
 Riser 1 (left riser) with 100GbE PCIe card in slot 1.
 |===
+
 . Remove the PCIe card from Riser 1:
  .. Turn the riser so that you can access the PCIe card.
  .. Press the locking bracket on the side of the PCIe riser, and then rotate it to the open position.
@@ -108,12 +115,14 @@ The riser raises up slightly from the controller module.
 
  .. Lift the riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
 +
-image::../media/drw_a800_pcie_2_5_replace.gif[]
+image::../media/drw_a800_pcie_2_5_replace.gif[Replace PCI cards 2 through 5 in middle and right risers]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Air duct
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -132,6 +141,7 @@ image:../media/legend_icon_05.png[Callout number 5]
 a|
 PCIe cards in riser 2 or 3
 |===
+
 . Remove the PCIe card from the riser:
  .. Turn the riser so that you can access the PCIe cards.
  .. Press the locking bracket on the side of the PCIe riser, and then rotate it to the open position.
@@ -162,12 +172,14 @@ After you replace a component within the controller module, you must reinstall t
  .. Slide the air duct toward the risers until the locking tabs click into place.
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
 +
-image::../media/drw_a800_close_air_duct.png[Closing the air duct]
+image::../media/drw_a800_close_air_duct.png[Close the air duct]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Locking tabs
 a|
 image:../media/legend_icon_02.png[Callout number 2]
