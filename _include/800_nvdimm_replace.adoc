@@ -24,11 +24,14 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a800_pcm_remove.png[Releasing the controller module]
+image::../media/drw_a800_pcm_remove.png[Release the controller module]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Locking latch
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -52,7 +55,8 @@ image::../media/drw_a800_open_air_duct.png[Opening the air duct]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Air duct locking tabs
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -70,12 +74,14 @@ To replace the NVDIMM, you must locate it in the controller module using the NVD
 
 . If you are removing or moving an NVDIMM, unlock the locking latch on the riser, and then remove the applicable riser.
 +
-image::../media/drw_a800_nvdimm_replace.png[]
+image::../media/drw_a800_nvdimm_replace.png[Replace an NVDIMM]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Air duct cover
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -114,12 +120,14 @@ After you replace a FRU in the controller module, you must reinstall the control
  .. Slide the air duct toward the risers until the locking tabs click into place.
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
 +
-image::../media/drw_a700s_close_air_duct.png[Closing the air duct]
+image::../media/drw_a700s_close_air_duct.png[Close the air duct]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Locking tabs
 a|
 image:../media/legend_icon_02.png[Callout number 2]
