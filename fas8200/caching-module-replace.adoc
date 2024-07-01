@@ -54,15 +54,18 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[Removing the cable management arms][]
+image::../media/drw_32xx_cbl_mgmt_arm.png[Removing the cable management arms]
 
 . Loosen the thumbscrew on the cam handle on the controller module.
 +
 image::../media/drw_8020_cam_handle_thumbscrew.png[Loosening the thumbscrew to open the cam handle]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Thumbscrew
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -90,7 +93,7 @@ Your storage system must meet certain criteria depending on your situation:
 +
 The storage system comes with two slots available for the caching module and only one slot is occupied, by default.
 +
-image::../media/drw_rxl_fcache.png[]
+image::../media/drw_rxl_fcache.png[Caching module remove or replace]
 . If you are adding a caching module, go to the next step; if you are replacing the caching module, gently pull it straight out of the housing.
 . Align the edges of the caching module with the socket in the housing, and then gently push it into the socket.
 . Verify that the caching module is seated squarely and completely in the socket.

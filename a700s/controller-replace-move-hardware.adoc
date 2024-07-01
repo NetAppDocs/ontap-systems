@@ -26,12 +26,14 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a700s_pcm_remove.png[Releasing the controller module]
+image::../media/drw_a700s_pcm_remove.png[Release the controller module]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Locking latch
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -47,12 +49,14 @@ Make sure that you support the bottom of the controller module as you slide it o
  .. Press in the locking tabs on the sides of the air duct toward the middle of the controller module.
  .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
 +
-image::../media/drw_a700s_open_air_duct.png[Opoen the air duct]
+image::../media/drw_a700s_open_air_duct.png[Open the air duct]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Air duct locking tabs
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -75,12 +79,14 @@ The NVRAM riser raises up slightly from the controller module.
 
  .. Lift the NVRAM riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser straight up out of the controller module, and then place it on a stable, flat surface so that you can access the NVRAM card.
 +
-image::../media/drw_a700s_nvme_replace.png[]
+image::../media/drw_a700s_nvme_replace.png[Replace the NVRAM card]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Air duct
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -99,6 +105,7 @@ image:../media/legend_icon_05.png[Callout number 5]
 a|
 NVRAM card
 |===
+
 . Remove the NVRAM card from the riser module:
  .. Turn the riser module so that you can access the NVRAM card.
  .. Unplug the NVRAM battery cable that is attached to the NVRAM card.
@@ -128,12 +135,14 @@ The PCIe riser raises up slightly from the controller module.
 
  .. Lift the PCIe riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
 +
-image::../media/drw_a700s_pcie_replace.png[]
+image::../media/drw_a700s_pcie_replace.png[Replace a PCIe card]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Air duct
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -148,6 +157,7 @@ image:../media/legend_icon_04.png[Callout number 4]
 a|
 Riser 2 (middle riser) and PCI cards in riser slots 2 and 3.
 |===
+
 . Remove the PCIe card from the riser:
  .. Turn the riser so that you can access the PCIe card.
  .. Press the locking bracket on the side of the PCIe riser, and then rotate it to the open position.
@@ -173,14 +183,15 @@ The boot media are located under Riser 2, the middle PCIe riser module. This PCI
  .. If needed, remove Riser 2, the middle PCIe module, by unlocking the locking latch and then removing the riser from the controller module.
 
 +
-image::../media/drw_a700s_boot_media_replace.png[]
+image::../media/drw_a700s_boot_media_replace.png[Replace the boot media]
 
 +
 
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Air duct
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -195,6 +206,7 @@ image:../media/legend_icon_04.png[Callout number 4]
 a|
 Boot media
 |===
+
 . Remove the boot media from the controller module:
  .. Using a #1 Phillips head screwdriver, remove the screw holding down the boot media and set the screw aside in a safe place.
  .. Grasping the sides of the boot media, gently rotate the boot media up, and then pull the boot media straight out of the socket and set it aside.
@@ -214,12 +226,14 @@ You must move the fans from the impaired controller module to the replacement mo
 
 . Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
 +
-image::../media/drw_a700s_replace_fan.png[]
+image::../media/drw_a700s_replace_fan.png[Replace a fan]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Fan locking tabs
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -236,12 +250,14 @@ To move the DIMMs, locate and move them from the impaired controller into the re
 
 . Locate the DIMMs on your controller module.
 +
-image::../media/drw_a700s_dimm_replace.png[]
+image::../media/drw_a700s_dimm_replace.png[Replace a DIMM]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Air duct
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -291,12 +307,14 @@ When replacing the controller module, you must move the NVRAM battery from the i
 
 . Locate the NVRAM battery on the left side of the riser module, Riser 1.
 +
-image::../media/drw_a700s_nvme_battery_replace.png[]
+image::../media/drw_a700s_nvme_battery_replace.png[Replace the NVRAM battery]
 +
+
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 NVRAM battery plug
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -335,11 +353,14 @@ You must move the power supply and power supply blank from the impaired controll
 +
 CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_a700s_replace_psu.gif[]
+image::../media/drw_a700s_replace_psu.gif[Replace a PSU]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Blue power supply locking tab
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -371,15 +392,18 @@ image::../media/drw_a700s_close_air_duct.png[Closing the air duct]
 
 +
 
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Locking tabs
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
 Slide plunger
 |===
+
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
