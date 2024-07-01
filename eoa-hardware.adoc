@@ -14,10 +14,16 @@ summary: 'Learn about the the legacy hardware no longer supported.'
 The following systems and switches are no longer supported as of the specified version of ONTAP.
 
 
-== AFF and FAS systems
+
+=== AFF and FAS systems
 [cols="2*",options="header"]
 |===
 | System| Support discontinued from...
+a|
+* AFF A320
+* AFF A700s
+a|
+ONTAP 9.15.1
 a|
 * AFF A200
 * FAS2650
@@ -32,7 +38,7 @@ a|
 ONTAP 9.9.1
 |===
 
-== Switches
+=== Switches
 
 [cols="2*",options="header"]
 |===

@@ -1,0 +1,19 @@
+// Install the controller module - A1K (modular)
+
+Reinstall the controller module and boot it.
+
+. If you have not already done so, close the air duct.
+. Align the end of the controller module with the opening in the enclosure, and slide the controller module into the chassis with the levers rotated away from the front of the system.
+
+. Once the controller module stops you from sliding it farther, rotate the cam handles inward until they latch back under the fans
+
++
+NOTE: Do not use excessive force when sliding the controller module into the enclosure to avoid damaging the connectors.
++
+The controller module begins to boot as soon as it is fully seated in the enclosure.
+
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+
+

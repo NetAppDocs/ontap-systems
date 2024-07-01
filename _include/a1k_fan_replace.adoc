@@ -1,0 +1,38 @@
+To replace a fan module without interrupting service, you must perform a specific sequence of tasks.
+
+.Steps
+
+. If you are not already grounded, properly ground yourself.
+. Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
+. Identify the fan module that you must replace by checking the console error messages and looking at the Attention LED on each fan module.
++
+Facing the controller module, fan modules are numbered 1 through 5, from left to right. 
++
+
+NOTE: There is a single LED for each fan. It is green when the fan is functioning correctly and amber when not.
+ 
+. Press the black button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
++
+IMPORTANT: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
+
++
+
+image::../media/drw_a1k_fan_remove_replace_ieops-1376.svg[Fan replace]
++
+
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
+a|
+Black release button
+|===
+
+. Set the fan module aside.
+. Align the edges of the replacement fan module with the opening in the chassis, and then slide it into the chassis until it snaps into place.
++
+When inserted into a live system, the amber Attention LED turns off once the fan is recognized by that system.
+
+. Align the bezel with the ball studs, and then gently push the bezel onto the ball studs.
+
+include::../_include/complete_rma_step.adoc[]

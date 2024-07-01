@@ -1,0 +1,61 @@
+---
+permalink: a70-90/maintain-overview.html
+sidebar: sidebar
+keywords: aff a70 aff a90 maintenance, maintenance, repairing aff a70 aff a90, repairing a70 aff a90, replace a70 aff a90 components
+summary: Maintain the AFF A70, AFF A90 hardware
+---
+= Maintain AFF A70, AFF A90 hardware
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For the AFF A70, AFF A90 storage systems, you can perform maintenance procedures on the following components.
+
+== Boot media
+
+The boot media stores a primary and secondary set of boot image files that the system uses when it boots. 
+
+== Chassis
+
+The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
+
+== Controller
+
+A controller consists of a board, firmware, and software. It controls the drives and implements the ONTAP functions.
+
+== DIMM
+
+You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
+
+== Drive
+
+A drive is a device that provides the physical storage media for data.
+
+== Fan
+
+The fan cools the controller.
+
+== NVRAM
+
+The NVRAM (Non-Volatile Random Access Memory) is a module that allows the controller to protect and save in-flight data if the system loses power. The system ID resides in the NVRAM module. When replaced, the controller assumes the new system ID from the replacement NVRAM module. 
+
+== NV battery
+
+The NVRAM battery is responsible for providing power to the NVRAM module while data in-flight is being destaged to flash memory after a power loss.
+
+== I/O module
+
+The I/O module (Input/Output module) is a hardware component that acts as an intermediary between the controller and various devices or systems that need to exchange data with the controller.
+
+== Power supply
+
+A power supply provides a redundant power source in a controller.
+
+== Real-time clock battery
+
+A real time clock battery preserves system date and time information if the power is off. 
+
+== System Management module
+
+The System Management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).
+

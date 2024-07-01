@@ -1,0 +1,97 @@
+---
+permalink: a1k/install-complete.html
+sidebar: sidebar
+keywords: aff a1k, prepare installation
+summary: Complete the platform setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the storage system and then connecting to the management switch.
+---
+= Complete storage system setup and configuration - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you have installed your hardware, use the ONTAP software to configure and manage your storage system.
+
+== Step 1: Gather cluster information
+If you have not already done so, gather the information you will need to configure your cluster, such as your cluster management interface port and IP address. 
+
+Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need during the cluster setup process. If a default value is provided, you can use that value or else enter your own.
+
+== Step 2: Discover your cluster network
+The discovery process enables you to discover your storage system controllers on the network.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Option 1: Network discovery is enabled
+--
+If you have network discovery enabled on your laptop, you can complete platform setup and configuration using automatic cluster discovery.
+
+.Steps
+. Connect your laptop to the management switch and access the network computers and devices.
+
+. Select an ONTAP icon listed to discover:
++
+image::../media/drw_autodiscovery_controler_select.svg[How to discover your controllers with Windows File Explorer]
+
+ .. Open File Explorer.
+ .. Click *Network* in the left pane.
+ .. Right-click and select *refresh*.
+ .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
++
+NOTE: XXXXX is the platform serial number for the target node.
++
+System Manager opens.
+
+--
+
+.Option 2: Network discovery is not enabled
+--
+If network discovery is not enabled on your laptop, complete the configuration and setup using the ONTAP command line interface (CLI) Cluster Setup wizard.
+
+.Before you begin
+Make sure your laptop is connected to the serial console port and the controllers are powered on. See link:install-power-hardware.html#step-2-power-on-the-controllers[Power on the controllers] for instructions.
+
+.Steps
+
+Assign an initial node management IP address to one of the nodes. 
+
+[options="header" cols="1,2"]
+|===
+| If the management network has DHCP...| Then...
+a|
+Configured
+a|
+Record the IP address assigned to the new controllers.
+a|
+Not configured
+a|
+
+ .. Open a console session using PuTTY, a terminal server, or the equivalent for your environment.
++
+NOTE: Check your laptop or console's online help if you do not know how to configure PuTTY.
+
+ .. Connect to the console of the first node.
++
+The node boots, and then the Cluster Setup wizard starts on the console.
+
+.. Enter the node's management IP address when prompted by the Cluster Setup wizard.
+
++
+|===
+
+--
+
+====
+
+// end tabbed area
+
+== Step 3: Configure your cluster
+NetApp recommends that you use System Manager to set up new clusters. See https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[Configure ONTAP on a new cluster with System Manager] for setup instructions.
+
+System Manager provides a simple and easy workflow for cluster set up and configuration including assigning a node management IP address, initializing the cluster, creating a local tier, configuring protocols and initial provisioning of attached storage.
+ 
+
+
+NOTE: After your cluster is initialized, download and run  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor] to confirm your setup.
