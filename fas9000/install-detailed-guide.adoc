@@ -155,13 +155,13 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image::../media/drw_9000_lifting_icon.png[]
+image::../media/drw_9000_lifting_icon.png[Lifting weight caution label]
 
 NOTE: The label on the left indicates an empty chassis, while the label on the right indicates a fully-populated system.
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_9000_cable_management_arms.png[]
+image::../media/drw_9000_cable_management_arms.png[Attach the cable management arms]
 
 . Place the bezel on the front of the system.
 
@@ -186,7 +186,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto, title="Animation - Cable a two-node switchless cluster"]
 
-image::../media/drw_9000_TNSC_composite_cabling.png[]
+image::../media/drw_9000_TNSC_composite_cabling.png[Two-node switchless cluster composite cabling diagram]
 
 . Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
@@ -207,7 +207,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto, title="Animation - Switched cluster cabling"]
 
-image:../media/drw_9000_switched_cluster_cabling.png[]
+image:../media/drw_9000_switched_cluster_cabling.png[Switched cluster composite cabling diagram]
 
 . Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 

@@ -47,8 +47,9 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a700s_pcm_remove.png[Releasing the controller module]
+image::../media/drw_a700s_pcm_remove.png[Release the controller module]
 +
+
 [cols="1,4"]
 |===
 a|
@@ -68,8 +69,9 @@ Make sure that you support the bottom of the controller module as you slide it o
  .. Press in the locking tabs on the sides of the air duct toward the middle of the controller module.
  .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
 +
-image::../media/drw_a700s_open_air_duct.png[Opoen the air duct]
+image::../media/drw_a700s_open_air_duct.png[Open the air duct]
 +
+
 [cols="1,4"]
 |===
 a|
@@ -98,8 +100,9 @@ The NVRAM riser raises up slightly from the controller module.
 
  .. Lift the NVRAM riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser straight up out of the controller module, and then place it on a stable, flat surface so that you can access the NVRAM card.
 +
-image::../media/drw_a700s_nvme_replace.png[]
+image::../media/drw_a700s_nvme_replace.png[Replace the NVRAM card]
 +
+
 [cols="1,4"]
 |===
 a|
@@ -123,6 +126,7 @@ image:../media/legend_icon_05.png[Callout number 5]
 a|
 NVRAM card
 |===
+
 . Remove the NVRAM card from the riser module:
  .. Turn the riser module so that you can access the NVRAM card.
  .. Unplug the NVRAM battery cable that is attached to the NVRAM card.
