@@ -68,9 +68,9 @@ X6536-R6 (112-00090), 5m
 
 X6554-R6(112-00189), 15m
 a|
-image:../media/oie_sfp_optical.png[]
+image:../media/oie_sfp_optical.png[Optical network cable SFP]
 
-image::../media/oie_cable_fiber_lc_connector.png[]
+image::../media/oie_cable_fiber_lc_connector.png[Fibre channel Network LC cable]
 a|
 SFP + FC host network
 a|
@@ -173,11 +173,11 @@ Refer to the following cabling illustrations when cabling between the controller
 [horizontal]
 UTA2 data network configurations:: 
 +
-image::../media/drw_c190_tnsc_unified_network_cabling_animated_gif.png[]
+image::../media/drw_c190_tnsc_unified_network_cabling_animated_gif.png[Two-node switchless cluster unified network cabling animation]
 
 Ethernet network configurations:: 
 +
-image::../media/drw_c190_tnsc_ethernet_network_cabling_animated_gif.png[]
+image::../media/drw_c190_tnsc_ethernet_network_cabling_animated_gif.png[Two-node switchless cluster Eternet network cabling animation]
 
 Perform the following steps on each controller module.
 
@@ -230,11 +230,11 @@ Refer to the following cabling illustrations when cabling between the controller
 [horizontal]
 Unified network configurations::
 +
-image::../media/drw_c190_switched_unified_network_cabling_animated_gif.png[]
+image::../media/drw_c190_switched_unified_network_cabling_animated_gif.png[Switched cluster unified network cabling animation]
 
 Ethernet network configurations::
 +
-image::../media/drw_c190_switched_ethernet_network_cabling_animated.png[]
+image::../media/drw_c190_switched_ethernet_network_cabling_animated.png[Switched cluster Ethernet network cabling animation]
 
 
 Perform the following steps on each controller module.
