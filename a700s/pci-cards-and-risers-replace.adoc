@@ -35,9 +35,12 @@ The controller module moves slightly out of the chassis.
 +
 image::../media/drw_a700s_pcm_remove.png[Releasing the controller module]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] a|
+image:../media/legend_icon_01.png[Callout number 1] 
+a|
 Locking latch
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -55,7 +58,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 +
 
-image::../media/drw_a700s_open_air_duct.png[Opoen the air duct]
+image::../media/drw_a700s_open_air_duct.png[Open the air duct]
 
 +
 
@@ -88,8 +91,9 @@ The PCIe riser raises up slightly from the controller module.
 
  .. Lift the PCIe riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
 +
-image::../media/drw_a700s_pcie_replace.png[]
+image::../media/drw_a700s_pcie_replace.png[Replace a PCIe card]
 +
+
 [cols="1,3"]
 |===
 a|
@@ -109,6 +113,7 @@ image:../media/legend_icon_04.png[Callout number 4]
 a|
 Riser 2 (middle riser) and PCI cards in riser slots 2 and 3.
 |===
+
 . Remove the PCIe card from the riser:
  .. Turn the riser so that you can access the PCIe card.
  .. Press the locking bracket on the side of the PCIe riser, and then rotate it to the open position.
@@ -140,6 +145,7 @@ After you replace a component within the controller module, you must reinstall t
 +
 image::../media/drw_a700s_close_air_duct.png[Closing the air duct]
 +
+
 [cols="1,3"]
 |===
 a|
@@ -151,6 +157,7 @@ image:../media/legend_icon_02.png[Callout number 2]
 a|
 Slide plunger
 |===
+
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
