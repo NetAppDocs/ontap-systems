@@ -22,16 +22,19 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-image::../media/drw_32xx_cbl_mgmt_arm.png[Removing the cable management arms][]
+image::../media/drw_32xx_cbl_mgmt_arm.png[Removing the cable management arms]
 
 . If you left the SFP modules in the system after removing the cables, move them to the new controller module.
 . Loosen the thumbscrew on the cam handle on the controller module.
 +
 image::../media/drw_8020_cam_handle_thumbscrew.png[Loosening the thumbscrew to open the cam handle]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Thumbscrew
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -82,9 +85,12 @@ This typically occurs during an uncontrolled shutdown after ONTAP has successful
 +
 image::../media/drw_rxl_nvmem_battery.png[Replacing the NVMEM battery]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
+image:../media/legend_icon_01.png[Callout number 1]
+a|
 Battery lock tab
 a|
 image:../media/legend_icon_02.png[Callout number 2]
@@ -133,6 +139,8 @@ You must have the new controller module ready so that you can move the PCIe card
 +
 image::../media/drw_rxl_pcie.png[Removing or installing a PCIe card]
 +
+
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1]
@@ -166,7 +174,7 @@ You must move the caching modules from the impaired controller modules to the re
 +
 The storage system comes with two slots available for the caching module and only one slot is occupied, by default.
 +
-image::../media/drw_rxl_fcache.png[]
+image::../media/drw_rxl_fcache.png[Remove and replac the caching module]
 +
 
 . Move the caching module to the new controller module, and then align the edges of the caching module with the socket housing and gently push it into the socket.
@@ -194,6 +202,7 @@ NOTE: You will connect the rest of the cables to the controller module later in 
 
 . Complete the reinstallation of the controller module:
 +
+
 [options="header" cols="1,2"]
 |===
 | If your system is in...| Then perform these steps...
