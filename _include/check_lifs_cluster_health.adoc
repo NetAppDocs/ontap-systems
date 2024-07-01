@@ -1,0 +1,11 @@
+Before returning the _replacement_ node to service, you should verify that the LIFs are on their home ports, check the cluster health, and reset automatic giveback.
+
+.Steps
+ 
+. Verify that the logical interfaces are reporting to their home server and ports: `network interface show -is-home false`
++
+If any LIFs are listed as false, revert them to their home ports: `network interface revert -vserver * -lif *`
+
+. Check the health of your cluster. See the https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP[How to perform a cluster health check with a script in ONTAP^] KB article for more information.
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`

@@ -1,0 +1,40 @@
+// Install the controller module - AFF A70 and AFF A90 (integrated)
+
+
+Reinstall the controller module and reboot it.
+
+. Ensure the air duct is completely closed by rotating it down as far as it will go.
++
+It must lie flush against the controller module sheet metal.
++
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
++
+NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
+
+. Recable the system, as needed.
+
++
+If you removed the transceivers (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+. Complete the reinstallation of the controller module:
+ .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
++
+The locking latches rise when the controller module is fully seated.
+
++
+NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+
+
+.. Rotate the locking latches upward into the locked position.
+
+. Plug the power cords into the power supplies.
+
++
+NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
+
++
+The controller module boots when power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
+
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+

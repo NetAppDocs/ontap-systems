@@ -30,7 +30,7 @@ This allows the system to recognize that a drive was removed.
 . Insert the replacement drive:
  .. With the cam handle in the open position, use both hands to insert the replacement drive.
  .. Push until the drive stops.
- .. Close the cam handle so that the drive is fully seated into the mid plane and the handle clicks into place.
+ .. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
 +
 Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
 . Verify that the drive's activity (green) LED is illuminated.
@@ -43,7 +43,7 @@ When the drive's activity LED is solid, it means that the drive has power. When 
 +
 You can enter the command on either controller module.
 
- .. Assign each drive: `storage disk assign -disk disk_name -owner owner_name`
+ .. Assign each drive: `storage disk assign -disk disk_name -owner node_name`
 +
 You can enter the command on either controller module.
 +
