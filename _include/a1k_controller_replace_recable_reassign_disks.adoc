@@ -1,0 +1,61 @@
+Continue the replacement procedure by giving back the controller.
+
+== Step 1: Give back the controller
+
+. If your storage system has Encryption configured, you must restore Storage or Volume Encryption functionality using the following procedure to reboot the system:
+.. Boot to Menu and run Option 10
+.. Input the passphrase & backup up data, then do Normal boot see https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys[Restore onboard key management encryption keys]. 
+.. Perform CFO only giveback
+.. Perform Onboard Sync and verify SVM-KEK is set to true see https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Onboard_keymanager_sync_fails_after_motherboard_replacement[Giveback after MB replacement fails - operation was vetoed by keymanager]
+.. Giveback SFO, (no force)
+. If your system does not have Encryption configured, complete the following procedure to reboot the system:
+.. Boot to Menu and run Option 1.
+.. Give back the controller:
+ .. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode _replacement_node_name_`
+
++
+The _replacement_ controller takes back its storage and completes booting.
++
+
+NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
+
++
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the High-Availability Configuration content for your version of ONTAP 9]
+
++
+
+ .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
+
+. If the system is in a MetroCluster configuration, monitor the status of the controller: `metrocluster node show`
++
+The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each controller will show a configured state, with DR Mirroring enabled and a mode of normal. The `metrocluster node show -fields node-systemid` command output displays the old system ID until the MetroCluster configuration returns to a normal state.
+
+. If the controller is in a MetroCluster configuration, depending on the MetroCluster state, verify that the DR home ID field shows the original owner of the disk if the original owner is a controller on the disaster site.
++
+This is required if both of the following are true:
+
+ ** The MetroCluster configuration is in a switchover state.
+ ** The _replacement_ controller is the current owner of the disks on the disaster site.
++
+https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration]
+
+. If your system is in a MetroCluster configuration, verify that each controller is configured: `metrocluster node show - fields configuration-state`
++
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+
+. Verify that the expected volumes are present for each controller: `vol show -node node-name`
+. If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.

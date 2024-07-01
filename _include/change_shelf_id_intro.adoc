@@ -1,0 +1,19 @@
+.Before you begin
+
+* If ONTAP is up and running (controller modules are available to serve data), you must have verified that all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
++
+You can verify the state of the drives by using the `storage disk show -shelf _shelf_number_` command. Output in the `Container Type` column should display `spare` or `broken` if it is a failed drive. Additionally, the `Container Name` and `Owner` columns should have a dash.
+
+* You need a paper clip with one side straightened or a narrow-tipped ballpoint pen.
++
+You use the paper clip or ballpoint pen to access the shelf ID button through the small hole, to the right of the LEDs, in the Operator Display Panel (ODP).
+
+.About this task
+
+* A valid shelf ID is 00 through 99.
+* Shelf IDs must be unique within an HA pair.
+* You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) in order for the shelf ID to take effect.
++
+The amount of time you wait before plugging the power cords back in depends on the state of ONTAP, as described later in this procedure.
++
+NOTE: NS224 shelves do not have power switches on the power supplies.

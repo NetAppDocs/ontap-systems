@@ -1,0 +1,12 @@
+---
+permalink: a1k/bootmedia-recovery-image-boot.html
+sidebar: sidebar
+keywords: aff a1k, boot the recovery image
+summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+---
+= Boot the recovery image - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a1k_bootmedia_recovery_image_boot.adoc[]
