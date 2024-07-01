@@ -1,0 +1,50 @@
+// Remove the controller module - A1K (modular)
+
+You must remove the controller module from the enclosure when you replace the controller module or replace a component inside the controller module.
+
+. Check the NVRAM status LED located in slot 4/5 of the system. There is also an NVRAM LED on the front panel of the controller module. Look for the NV icon:
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
+a|
+NVRAM status LED
+a|
+image:../media/legend_icon_02.svg[Callout number 1, width=30px] 
+a|
+NVRAM attention LED
+|===
+
++
+NOTE: If the NVRAM status LED is flashing, it could mean the controller module was not taken over or halted properly (uncommitted data). If the impaired controller module was not successfully taken over by the partner controller module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
++
+
+The general behavior of the NVRAM status LED on the impaired controller module is as follows: 
+
+* The NVRAM status LED flashes when power is removed from the controller module and the controller module is in the "waiting for giveback" state, or the controller module is not taken over or halted properly (uncommitted data). 
+
+* The NVRAM status LED flashes when the controller module is removed from the enclosure and could mean the controller module is not taken over or halted properly (uncommitted data). Confirm that the controller module has been cleanly takeover by the partner controller module or the impaired controller module shows `waiting for giveback`. Then, the flashing LED can be ignored (and the controller can be removed from the enclosure).
+
+. If you are not already grounded, properly ground yourself.
+
+. On the front of the unit, hook your fingers into the holes in the locking cams, squeeze the tabs on the cam levers, and gently, but firmly rotate both latches toward you at the same time.
++
+The controller module moves slightly out of the enclosure.
++
+image::../media/drw_a1k_pcm_remove_replace_ieops-1375.svg[Controller remove graphic]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.svg[Callout number 1, width=30px]
+|a
+Locking cam latches
+|===
+
+. Slide the controller module out of the enclosure and place it on a flat, stable surface.
++
+Make sure that you support the bottom of the controller module as you slide it out of the enclosure.

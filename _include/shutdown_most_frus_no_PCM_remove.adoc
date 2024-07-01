@@ -4,9 +4,9 @@ To shut down the impaired controller, you must determine the status of the contr
 If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum[Synchronize a node with the cluster^].
 
 .Steps
-. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
+. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message command: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 +
-The following AutoSupport message suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
+The following AutoSupport command suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
 . Disable automatic giveback from the console of the healthy controller: `storage failover modify –node local -auto-giveback false`
 . Take the impaired controller to the LOADER prompt:
@@ -25,7 +25,7 @@ Press Ctrl-C, and then respond `y` when prompted.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired controller from the healthy controller: `storage failover takeover -ofnode _impaired_node_name_`
+Halt or take over the impaired controller from the healthy controller: `storage failover takeover -ofnode _impaired_node_name_`
 
 When the impaired controller shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 

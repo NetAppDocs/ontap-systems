@@ -23,6 +23,6 @@ How you replace the disk depends on how the disk drive is being used. If SED aut
 
 .About this task
 
-Drive firmware is automatically updated (nondisruptively) on new drives that have non current firmware versions.
+Drive firmware is automatically updated (nondisruptively) on new drives that have non-current firmware versions.
 
-When replacing several disk drives, you must wait one minute between the removal of each failed disk drive and the insertion of the replacement disk drive to allow the storage system to recognize the existence of each new disk.
+When replacing several disk drives, you must wait 70 seconds between the removal of each failed disk drive and the insertion of the replacement disk drive to allow the storage system to recognize the existence of each new disk.
