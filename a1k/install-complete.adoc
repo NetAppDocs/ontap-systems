@@ -35,15 +35,17 @@ If you have network discovery enabled on your laptop, you can complete platform 
 +
 image::../media/drw_autodiscovery_controler_select.svg[How to discover your controllers with Windows File Explorer]
 
- .. Open File Explorer.
- .. Click *Network* in the left pane.
- .. Right-click and select *refresh*.
- .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
++
+ 1. Open File Explorer.
+ 2. Click *Network* in the left pane and right-click and select *refresh*.
+ 3. Double-click either ONTAP icon and accept any certificates displayed on your screen.
+
 +
 NOTE: XXXXX is the platform serial number for the target node.
+
 +
 System Manager opens.
-
++
 --
 
 .Option 2: Network discovery is not enabled
