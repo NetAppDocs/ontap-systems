@@ -148,17 +148,17 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image::../media/drw_9500_lifting_icon.svg[width=340px]
+image::../media/drw_9500_lifting_icon.svg[width=340px,Weight lifting caution label]
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_9500_cable_management_arms.svg[width=340px]
+image::../media/drw_9500_cable_management_arms.svg[width=340px,Install cable management arm]
 
 . Place the bezel on the front of the system.
 
 The following diagram shows a representation of what a typical system looks like and where the major components are located at the rear of the system:
 
-image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[width=500px]
+image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[width=500px,Typical cluster configuration]
 
 == Step 3: Cable controllers to your network
 
@@ -178,7 +178,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[width=200px,cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -186,7 +186,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 video::37419c37-f56f-48e5-8e6c-afa600095444[panopto, title="Animation - Cable a two-node switchless cluster"]
 +
-image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[width=500px]
+image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[width=500px,Two-node switchless network cabling]
 +
 
 [options="header" col="20%,80%"]

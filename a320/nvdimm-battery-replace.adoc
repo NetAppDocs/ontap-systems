@@ -32,7 +32,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 . Remove the controller module from the chassis:
 +
-image::../media/drw_a320_controller_remove_animated_gif.png[Removing the controller]
+image::../media/drw_a320_controller_remove_animated_gif.png[Remove the controller]
 +
  .. Insert your forefinger into the latching mechanism on either side of the controller module.
  .. Press down on the orange tab on top of the latching mechanism until it clears the latching pin on the chassis.
@@ -46,7 +46,7 @@ The latching mechanism hook should be nearly vertical and should be clear of the
 
 To replace the NVDIMM battery, you must remove the failed battery from the controller module and install the replacement battery into the controller module.
 
-image::../media/drw_a320_nvbat_move_animated_gif.png[]
+image::../media/drw_a320_nvbat_move_animated_gif.png[Replace the NV Battery]
 
 . Open the air duct and locate the NVDIMM battery.
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
@@ -62,7 +62,7 @@ After you have replaced the component in the controller module, you must reinsta
 . If you have not already done so, close the air duct at the rear of the controller module and reinstall the cover over the PCIe cards.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-image::../media/drw_a320_controller_install_animated_gif.png[Installing the controller]
+image::../media/drw_a320_controller_install_animated_gif.png[Install the controller]
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 

@@ -34,11 +34,11 @@ If you have network discovery enabled on your laptop, you can complete platform 
 . Select an ONTAP icon listed to discover:
 +
 image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[How to discover your controllers with Windows File Explorer]
++
 
- .. Open File Explorer.
- .. Click *Network* in the left pane.
- .. Right-click and select *refresh*.
- .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
+.. Open File Explorer.
+.. Click *Network* in the left pane and right-click and select *refresh*.
+..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the platform serial number for the target node.
 +
