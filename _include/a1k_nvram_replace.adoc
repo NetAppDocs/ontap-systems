@@ -111,7 +111,7 @@ CAUTION: Disk reassignment is only needed when replacing the NVRAM module and do
 
 .Steps
 . If the controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: _halt_
-. From the LOADER prompt on the controller, boot the controller and entering _y_ when prompted to override the system ID due to a system ID mismatch.
+. From the LOADER prompt on the controller, boot the controller and enter _y_ when prompted to override the system ID due to a system ID mismatch.
 . Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: _storage failover show_
 +
 In the command output, you should see a message that the system ID has changed on the impaired controller, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
