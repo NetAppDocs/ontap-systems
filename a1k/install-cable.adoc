@@ -28,7 +28,7 @@ Cable the controllers to your network as either a two-node switchless cluster or
 Contact your network administrator for information about connecting the storage system to the switches.
 
 .About this task
-These procedures show common configurations. Keep in mind that the specific cabling depend on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+These procedures show common configurations. Keep in mind that the specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 [role="tabbed-block"]
 ====
@@ -46,8 +46,13 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 
 +
 
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable,width=100pxx]
+.. Cable port e1a on Controller A to port e1A on Controller B.
+..  Cable port e7a on Controller A to port e1A on Controller B.
++
 *Cluster/HA interconnect cables*
+
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable,width=100pxx]
+
 +
 image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[Two-node switchless cluster cabling diagram,width=500px]
 +
@@ -83,7 +88,7 @@ image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
 +
 image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network,width=500px]
 
-IMPORTANT: DO NOT plug in the power cords yet. 
+IMPORTANT: Do not plug in the power cords yet. 
 
 
 --
@@ -141,7 +146,7 @@ image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
 +
 image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network,width=500px]
 
-IMPORTANT: DO NOT plug in the power cords yet. 
+IMPORTANT: Do not plug in the power cords yet. 
 
 --
 
