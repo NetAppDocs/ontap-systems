@@ -64,7 +64,7 @@ To move the NVDIMM battery from the impaired controller module to the replacemen
 
 You can use the following illustration or the written steps to move the NVDIMM battery from the impaired controller module to the replacement controller module.
 
-image::../media/drw_a320_nvbat_move_animated_gif.png[]
+image::../media/drw_a320_nvbat_move_animated_gif.png[Move the NV battery]
 
 . Locate the NVDIMM battery in the controller module.
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
@@ -80,7 +80,7 @@ You must locate the boot media, and then follow the directions to remove it from
 
 You can use the following illustration or the written steps to move the boot media from the impaired controller module to the replacement controller module.
 
-image::../media/drw_a320_boot_media_move_animated_gif.png[]
+image::../media/drw_a320_boot_media_move_animated_gif.png[Move the boot media]
 
 . Open the air duct and locate the boot media using the following illustration or the FRU map on the controller module:
 . Locate and remove the boot media from the controller module:
@@ -104,11 +104,11 @@ You must have the new controller module ready so that you can move the DIMMs dir
 
 You can use the following illustrations or the written steps to move the DIMMs from the impaired controller module to the replacement controller module.
 
-image::../media/drw_a320_dimm_move_animated_gif.png[]
+image::../media/drw_a320_dimm_move_animated_gif.png[Move a DIMM animation]
 
 . Locate the DIMMs on your controller module.
 +
-image::../media/drw_a320_dimm_map.png[]
+image::../media/drw_a320_dimm_map.png[DIMM map]
 +
 |===
 a|
@@ -154,7 +154,7 @@ You must move the PCIe risers, with the PCIe cards installed in them, from the i
 
 You can use the following illustration or the written steps to move the PCIe risers from the impaired controller module to the replacement controller module.
 
-image::../media/drw_a320_pci_riser_move_animated_gif.png[]
+image::../media/drw_a320_pci_riser_move_animated_gif.png[Move the PCI riser]
 
 . Remove the cover over the PCIe risers by unscrewing the blue thumbscrew on the cover, slide the cover toward you, rotate the cover upward, lift it off the controller module, and then set it aside.
 . Remove the empty risers from the replacement controller module.
