@@ -26,14 +26,14 @@ To access components inside the controller module, you must remove the controlle
 . Unplug the controller module power supply from the power source.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
-image::../media/drw_a320_controller_cable_unplug_animated_gif.png[Removing the cable management device]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.png[Remove the cable management device]
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 . Remove the controller module from the chassis:
 +
-image::../media/drw_a320_controller_remove_animated_gif.png[Removing the controller]
+image::../media/drw_a320_controller_remove_animated_gif.png[Remove the controller]
 +
  .. Insert your forefinger into the latching mechanism on either side of the controller module.
  .. Press down on the orange tab on top of the latching mechanism until it clears the latching pin on the chassis.
@@ -47,7 +47,7 @@ The latching mechanism hook should be nearly vertical and should be clear of the
 
 You must remove the PCIe riser containing the failed PCIe card from the controller module, remove the failed PCIe card from the riser, install the replacement PCIe card in the riser, and then reinstall the riser into the controller module.
 
-image::../media/drw_a320_pci_card_replace_animated_gif.png[]
+image::../media/drw_a320_pci_card_replace_animated_gif.png[Replace a PCI card]
 
 . Remove the cover over the PCIe risers by unscrewing the blue thumbscrew on the cover, slide the cover toward you, rotate the cover upward, lift it off the controller module, and then set it aside.
 . Remove the riser with the failed PCIe card:
@@ -73,7 +73,7 @@ After you have replaced the component in the controller module, you must reinsta
 . If you have not already done so, close the air duct at the rear of the controller module and reinstall the cover over the PCIe cards.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-image::../media/drw_a320_controller_install_animated_gif.png[Installing the controller]
+image::../media/drw_a320_controller_install_animated_gif.png[Install the controller]
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 

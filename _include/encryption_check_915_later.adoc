@@ -4,7 +4,7 @@ Before shutting down the impaired controller, you need to verify whether the sys
 
 .Steps
 
-. Determe if Key Manager is active with the _security key-manager keystore show_ command. For more information, see the https://docs.netapp.com/us-en/ontap-cli/security-key-manager-keystore-show.html[security key-manager keystore show MAN page^]
+. Determine if Key Manager is active with the _security key-manager keystore show_ command. For more information, see the https://docs.netapp.com/us-en/ontap-cli/security-key-manager-keystore-show.html[security key-manager keystore show MAN page^]
 
 +
 NOTE: You may have additional key manager types.  The types are `KMIP`, `AKV`, and `GCP`. The process for confirming these types is the same as confirming `external` or `onboard` key manager types.

@@ -82,7 +82,7 @@ X66250-5 (112-00328), 5m
 
 X66250-30 (112-00331), 30m
 a|
-image:../media/oie_cable_etherned_mpo.png[]
+image:../media/oie_cable_etherned_mpo.png[Ethernet cable - MPO]
 a|
 Ethernet cable (order dependent)
 a|
@@ -148,11 +148,11 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image::../media/drw_a320_weight_label.png[]
+image::../media/drw_a320_weight_label.png[System lift weight caution]  
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_a320_cable_management_arms.png[Removing or installing the cable management arms]
+image::../media/drw_a320_cable_management_arms.png[Remove or install the cable management arms]
 
 . Place the bezel on the front of the system.
 
@@ -174,8 +174,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . You can used the illustration or the step-by step instructions to complete the cabling between the controllers and to the switches:
 +
-image::../media/drw_a320_tnsc_network_cabling_composite_animated_gif.png[]
+image::../media/drw_a320_tnsc_network_cabling_composite_animated_gif.png[Two-node switchless cluster cabling composite]
 +
+
 [options="header" cols="1,2"]
 |===
 | Step| Perform on each controller module
@@ -186,7 +187,7 @@ Cable the cluster/HA ports to each other with the 100 GbE (QSFP28) cable:
 
 ** e0a to e0a
 ** e0d to e0d
-image:../media/drw_a320_tnsc_cluster_ha_connection_step1a.png[]
+image:../media/drw_a320_tnsc_cluster_ha_connection_step1a.png[Two-node switchless cluster connect the cluster-HA connections]
 
 a|
 image:../media/oie_legend_icon_2_o.png[Step 2]
@@ -194,20 +195,20 @@ a|
 If you are using your onboard ports for a data network connection, connect the 100GbE or 40Gbe cables to the appropriate data network switches:
 
 ** e0g and e0h
-image:../media/drw_a320_onboard_data_connection_step2.png[]
+image:../media/drw_a320_onboard_data_connection_step2.png[Connect onboard data network connections]
 
 a|
 image:../media/oie_legend_icon_3_dr.png[Step 3]
 a|
 If you are using your NIC cards for Ethernet or FC connections, connect the NIC card(s) to the appropriate switches:
 
-image::../media/drw_a320_nic_connections_step3.png[]
+image::../media/drw_a320_nic_connections_step3.png[Two-node switchless cluster connect the NICs]
 a|
 image:../media/oie_legend_icon_4_lp.png[Step 4]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables.
 
-image:../media/drw_a320_management_port_connection_step4.png[]
+image:../media/drw_a320_management_port_connection_step4.png[Connect the Management port]
 a|
 image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
@@ -230,8 +231,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . You can used the illustration or the step-by step instructions to complete the cabling between the controllers and to the switches:
 +
-image::../media/drw_a320_switched_network_cabling_composite_animated_GIF.png[]
+image::../media/drw_a320_switched_network_cabling_composite_animated_GIF.png[Switched cluster cabling composite]
 +
+
 [options="header" cols="1,3"]
 |===
 | Step| Perform on each controller module
@@ -242,7 +244,7 @@ Cable the cluster/HA ports to the cluster/HA switch with the 100 GbE (QSFP28) ca
 
 ** e0a on both controllers to the cluster/HA switch
 ** e0d on both controllers to the cluster/HA switch
-image:../media/drw_a320_switched_cluster_ha_connection_step1b.png[]
+image:../media/drw_a320_switched_cluster_ha_connection_step1b.png[Switched cluster cluster-HA connections]
 
 a|
 image:../media/oie_legend_icon_2_o.png[Step 2]
@@ -250,20 +252,20 @@ a|
 If you are using your onboard ports for a data network connection, connect the 100GbE or 40Gbe cables to the appropriate data network switches:
 
  ** e0g and e0h
-image:../media/drw_a320_onboard_data_connection_step2.png[]
+image:../media/drw_a320_onboard_data_connection_step2.png[Switched cluster onboard network connections]
 
 a|
 image:../media/oie_legend_icon_3_dr.png[Step 3]
 a|
 If you are using your NIC cards for Ethernet or FC connections, connect the NIC card(s) to the appropriate switches:
 
-image::../media/drw_a320_nic_connections_step3.png[]
+image::../media/drw_a320_nic_connections_step3.png[Switched cluster network connections]
 a|
 image:../media/oie_legend_icon_4_lp.png[Step 4]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables.
 
-image:../media/drw_a320_management_port_connection_step4.png[]
+image:../media/drw_a320_management_port_connection_step4.png[Switched cluster managment network connections]
 a|
 image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
@@ -288,19 +290,20 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . You can use the illustration or the step-by-step instructions to cable your controllers to a single shelf.
 +
-image::../media/drw_a320_single_shelf_connections_animated_gif.png[]
+image::../media/drw_a320_single_shelf_connections_animated_gif.png[Single drive shelf cabling composite]
 +
+
 [options="header" cols="1,3"]
 |===
 |Step |Perform on each controller module
 a|
 image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
-Cable controller A to the shelf    image:../media/drw_a320_storage_cabling_controller_a_single_shelf.png[]
+Cable controller A to the shelf    image:../media/drw_a320_storage_cabling_controller_a_single_shelf.png[Cable controller A to the shelf]
 a|
 image:../media/oie_legend_icon_2_lo.png[Callout number 2]
 a|
-Cable controller B to the shelf:    image:../media/drw_a320_storage_cabling_controller_b_single_shelf.png[]
+Cable controller B to the shelf:    image:../media/drw_a320_storage_cabling_controller_b_single_shelf.png[Connect controller B to a single shelf]
 |===
 
 . To complete setting up your system, see <<Complete system setup and configuration>>
@@ -317,19 +320,20 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . You can use the following illustration or the written steps to cable your controllers to two drive shelves.
 +
-image::../media/drw_a320_2_shevles_cabling_animated_gif.png[]
+image::../media/drw_a320_2_shevles_cabling_animated_gif.png[Cable two shelves animation]
 +
+
 [options="header" cols="1-3"]
 |===
 | Step| Perform on each controller module
 a|
 image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
-Cable controller A to the shelves:    image:../media/drw_a320_2_shelves_cabling_controller_a.png[]
+Cable controller A to the shelves:    image:../media/drw_a320_2_shelves_cabling_controller_a.png[Cable two shelves to Controller A]
 a|
 image:../media/oie_legend_icon_2_lo.png[Callout number 2]
 a|
-Cable controller B to the shelves:    image:../media/drw_a320_2_shelves_cabling_controller_b.png[]
+Cable controller B to the shelves:    image:../media/drw_a320_2_shelves_cabling_controller_b.png[Cable teo shelces to Controller b]
 |===
 
 . To complete setting up your system, see <<Complete system setup and configuration>>
@@ -359,7 +363,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 +
 image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
- .. Open File Explorer.
+ .. Open File Explorer .
  .. Click network in the left pane.
  .. Right click and select refresh.
  .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
@@ -386,7 +390,7 @@ NOTE: See your laptop or console's online help for how to configure the console 
 
  .. Connect the console cable to the laptop or console using the console cable that came with your system, and then connect the laptop to the management switch on the management subnet.
 +
-image::../media/drw_a320_laptop_to_switch_and_controller.png[]
+image::../media/drw_a320_laptop_to_switch_and_controller.png[Cable laptop to the management subnet switch]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:
