@@ -1,0 +1,12 @@
+---
+permalink: a1k/nvram-replace.html
+sidebar: sidebar
+keywords: aff a1k, replace an nvdimm
+summary: 'The NVRAM module consists of the NVRAM12 and DIMMs and up to two NVMe SSD Flash Cache modules (FlashCache or caching modules) per NVRAM module.'
+---
+= Replace NVRAM - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a1k_nvram_replace.adoc[]
