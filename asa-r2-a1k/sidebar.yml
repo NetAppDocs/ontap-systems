@@ -1,66 +1,62 @@
 section: asa-r2-a1k
 title: ASA r2 A1K systems
+pdf-filename: ASA r2 A1K Maintain
 entries:
- - title: Install and setup
-   url: /asa-r2-a1k/install-setup.html
- - title: Maintain
-   pdf-filename: ASA r2 A1K Maintain
-   entries:
-   - title: Overview
-     url: /asa-r2-a1k/maintain-overview.html
-      # START boot media
-   - title: Boot media
-     pdf-filename: ASA r2 A1K Boot Media
-     entries:
-        - title: Boot media replace overview
-          url: /asa-r2-a1k/bootmedia-replace-overview.html
-        - title: Check onboard encryption keys
-          url: /asa-r2-a1k/bootmedia-encryption-preshutdown-checks.html
-        - title: Shut down impaired controller
-          url: /asa-r2-a1k/bootmedia-shutdown.html
-        - title: Replace boot media
-          url: /asa-r2-a1k/bootmedia-replace.html
-        - title: Boot recovery image
-          url: /asa-r2-a1k/bootmedia-recovery-image-boot.html
-        - title: Encryption restore
-          url: /asa-r2-a1k/bootmedia-encryption-restore.html
-        - title: Return failed part to NetApp
-          url: /asa-r2-a1k/bootmedia-complete-rma.html
-          # END boot media
-   - title: Controller
-     pdf-filename: ASA r2 A1K Controller Module
-     entries:
-        - title: Controller module replace overview
-          url: /asa-r2-a1k/controller-replace-overview.html
-        - title: Shut down impaired controller
-          url: /asa-r2-a1k/controller-replace-shutdown.html
-        - title: Replace controller
-          url: /asa-r2-a1k/controller-replace-move-hardware.html
-        - title: Restore system configuration
-          url: /asa-r2-a1k/controller-replace-system-config-restore-and-verify.html
-        - title: Give back the controller
-          url: /asa-r2-a1k/controller-replace-recable-reassign-disks.html
-        - title: Complete controller replacement
-          url: /asa-r2-a1k/controller-replace-restore-system-rma.html
-   - title: DIMM
-     url: /asa-r2-a1k/dimm-replace.html
-   - title: Fan
-     url: /asa-r2-a1k/fan-replace.html
-   - title: NVRAM
-     url: /asa-r2-a1k/nvram-replace.html
-   - title: NV Battery
-     url: /asa-r2-a1k/nvdimm-battery-replace.html
-   - title: I/O module
-     entries:
-        - title: I/O module add or replace overview
-          url: /asa-r2-a1k/io-module-overview.html
-        - title: Add an I/O module
-          url: /asa-r2-a1k/io-module-add.html
-        - title: Replace an I/O module
-          url: /asa-r2-a1k/io-module-replace.html
-   - title: Power supply
-     url: /asa-r2-a1k/power-supply-replace.html
-   - title: Real-time clock battery
-     url: /asa-r2-a1k/rtc-battery-replace.html
-   - title: System Management module
-     url: /asa-r2-a1k/system-management-replace.html
+  - title: Overview
+    url: /asa-r2-a1k/maintain-overview.html
+    # START boot media
+  - title: Boot media
+    pdf-filename: ASA r2 A1K Boot Media
+    entries:
+      - title: Boot media replace overview
+        url: /asa-r2-a1k/bootmedia-replace-overview.html
+      - title: Check onboard encryption keys
+        url: /asa-r2-a1k/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
+        url: /asa-r2-a1k/bootmedia-shutdown.html
+      - title: Replace boot media
+        url: /asa-r2-a1k/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /asa-r2-a1k/bootmedia-recovery-image-boot.html
+      - title: Encryption restore
+        url: /asa-r2-a1k/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /asa-r2-a1k/bootmedia-complete-rma.html
+        # END boot media
+  - title: Controller
+    pdf-filename: ASA r2 A1K Controller Module
+    entries:
+      - title: Controller module replace overview
+        url: /asa-r2-a1k/controller-replace-overview.html
+      - title: Shut down impaired controller
+        url: /asa-r2-a1k/controller-replace-shutdown.html
+      - title: Replace controller
+        url: /asa-r2-a1k/controller-replace-move-hardware.html
+      - title: Restore system configuration
+        url: /asa-r2-a1k/controller-replace-system-config-restore-and-verify.html
+      - title: Give back the controller
+        url: /asa-r2-a1k/controller-replace-recable-reassign-disks.html
+      - title: Complete controller replacement
+        url: /asa-r2-a1k/controller-replace-restore-system-rma.html
+  - title: DIMM
+    url: /asa-r2-a1k/dimm-replace.html
+  - title: Fan
+    url: /asa-r2-a1k/fan-replace.html
+  - title: NVRAM
+    url: /asa-r2-a1k/nvram-replace.html
+  - title: NV Battery
+    url: /asa-r2-a1k/nvdimm-battery-replace.html
+  - title: I/O module
+    entries:
+      - title: I/O module add or replace overview
+        url: /asa-r2-a1k/io-module-overview.html
+      - title: Add an I/O module
+        url: /asa-r2-a1k/io-module-add.html
+      - title: Replace an I/O module
+        url: /asa-r2-a1k/io-module-replace.html
+  - title: Power supply
+    url: /asa-r2-a1k/power-supply-replace.html
+  - title: Real-time clock battery
+    url: /asa-r2-a1k/rtc-battery-replace.html
+  - title: System Management module
+    url: /asa-r2-a1k/system-management-replace.html

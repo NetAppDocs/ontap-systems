@@ -2,14 +2,14 @@
 permalink: get-up-and-run.html
 sidebar: sidebar
 keywords:
-summary: To get up and running with AFF, ASA and FAS systems, you install hardware components, cable your hardware, and configure your storage in ONTAP.
+summary: To get up and running with ONTAP hardware systems, you install hardware components, cable your hardware, and configure your storage in ONTAP.
 ---
-= Get up and running with AFF, ASA and FAS storage systems
+= Get up and running with ONTAP hardware systems
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-To get up and running with AFF, ASA and FAS systems, you install hardware components, cable your hardware, and configure your storage in ONTAP.
+To get up and running with ONTAP hardware systems, you install hardware components, cable your hardware, and configure your storage in ONTAP.
 
 If your system is in a MetroCluster configuration, go to the https://docs.netapp.com/us-en/ontap-metrocluster/index.html[MetroCluster doc site] and follow the install instructions applicable to your MetroCluster configuration type.
 

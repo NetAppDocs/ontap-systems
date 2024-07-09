@@ -1,79 +1,75 @@
 section: asa-r2-a70-90
 title: ASA r2 A70 and A90 systems
+pdf-filename: ASA r2 A70, ASA r2 A90 Maintain
 entries:
- - title: Install and setup
-   url: /asa-r2-70-90/install-setup.html
- - title: Maintain
-   pdf-filename: ASA r2 A70, ASA r2 A90 Maintain
-   entries:
-   - title: Overview
-     url: /asa-r2-70-90/maintain-overview.html
-      # START boot media
-   - title: Boot media
-     pdf-filename: ASA r2 A70, ASA r2 A90 Boot Media
-     entries:
-        - title: Boot media replace overview
-          url: /asa-r2-70-90/bootmedia-replace-overview.html
-        - title: Check onboard encryption keys
-          url: /asa-r2-70-90/bootmedia-encryption-preshutdown-checks.html
-        - title: Shut down impaired controller
-          url: /asa-r2-70-90/bootmedia-shutdown.html
-        - title: Replace boot media
-          url: /asa-r2-70-90/bootmedia-replace.html
-        - title: Boot recovery image
-          url: /asa-r2-70-90/bootmedia-recovery-image-boot.html
-        - title: Encryption restore
-          url: /asa-r2-70-90/bootmedia-encryption-restore.html
-        - title: Return failed part to NetApp
-          url: /asa-r2-70-90/bootmedia-complete-rma.html
-          # END boot media
-   - title: Chassis
-     pdf-filename: ASA r2 A70, ASA r2 A90 Chassis
-     entries:
-        - title: Chassis replace overview
-          url: /asa-r2-70-90/chassis-replace-overview.html
-        - title: Shut down impaired controller
-          url: /asa-r2-70-90/chassis-replace-shutdown.html
-        - title: Replace chassis
-          url: /asa-r2-70-90/chassis-replace-move-hardware.html
-        - title: Complete chassis replacement
-          url: /asa-r2-70-90/chassis-replace-complete-system-restore-rma.html
-   - title: Controller
-     pdf-filename: ASA r2 A70, ASA r2 A90 Controller Module
-     entries:
-        - title: Controller module replace overview
-          url: /asa-r2-70-90/controller-replace-overview.html
-        - title: Shut down impaired controller
-          url: /asa-r2-70-90/controller-replace-shutdown.html
-        - title: Replace controller
-          url: /asa-r2-70-90/controller-replace-move-hardware.html
-        - title: Restore system configuration
-          url: /asa-r2-70-90/controller-replace-system-config-restore-and-verify.html
-        - title: Recable system
-          url: /asa-r2-70-90/controller-replace-recable-reassign-disks.html
-        - title: Complete controller replacement
-          url: /asa-r2-70-90/controller-replace-restore-system-rma.html
-   - title: DIMM
-     url: /asa-r2-70-90/dimm-replace.html
-   - title: Drive
-     url: /asa-r2-70-90/drive-replace.html
-   - title: Fan
-     url: /asa-r2-70-90/fan-swap-out.html
-   - title: NVRAM
-     url: /asa-r2-70-90/nvram-replace.html
-   - title: NV Battery
-     url: /asa-r2-70-90/nvdimm-battery-replace.html
-   - title: I/O module
-     entries:
-        - title: I/O module add or replace overview
-          url: /asa-r2-70-90/io-module-overview.html
-        - title: Add an I/O module
-          url: /asa-r2-70-90/io-module-add.html
-        - title: Replace an I/O module
-          url: /asa-r2-70-90/io-module-replace.html
-   - title: Power supply
-     url: /asa-r2-70-90/power-supply-replace.html
-   - title: Real-time clock battery
-     url: /asa-r2-70-90/rtc-battery-replace.html
-   - title: System Management module 
-     url: /asa-r2-70-90/system-management-replace.html
+  - title: Overview
+    url: /asa-r2-70-90/maintain-overview.html
+    # START boot media
+  - title: Boot media
+    pdf-filename: ASA r2 A70, ASA r2 A90 Boot Media
+    entries:
+      - title: Boot media replace overview
+        url: /asa-r2-70-90/bootmedia-replace-overview.html
+      - title: Check onboard encryption keys
+        url: /asa-r2-70-90/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
+        url: /asa-r2-70-90/bootmedia-shutdown.html
+      - title: Replace boot media
+        url: /asa-r2-70-90/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /asa-r2-70-90/bootmedia-recovery-image-boot.html
+      - title: Encryption restore
+        url: /asa-r2-70-90/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /asa-r2-70-90/bootmedia-complete-rma.html
+        # END boot media
+  - title: Chassis
+    pdf-filename: ASA r2 A70, ASA r2 A90 Chassis
+    entries:
+      - title: Chassis replace overview
+        url: /asa-r2-70-90/chassis-replace-overview.html
+      - title: Shut down impaired controller
+        url: /asa-r2-70-90/chassis-replace-shutdown.html
+      - title: Replace chassis
+        url: /asa-r2-70-90/chassis-replace-move-hardware.html
+      - title: Complete chassis replacement
+        url: /asa-r2-70-90/chassis-replace-complete-system-restore-rma.html
+  - title: Controller
+    pdf-filename: ASA r2 A70, ASA r2 A90 Controller Module
+    entries:
+      - title: Controller module replace overview
+        url: /asa-r2-70-90/controller-replace-overview.html
+      - title: Shut down impaired controller
+        url: /asa-r2-70-90/controller-replace-shutdown.html
+      - title: Replace controller
+        url: /asa-r2-70-90/controller-replace-move-hardware.html
+      - title: Restore system configuration
+        url: /asa-r2-70-90/controller-replace-system-config-restore-and-verify.html
+      - title: Recable system
+        url: /asa-r2-70-90/controller-replace-recable-reassign-disks.html
+      - title: Complete controller replacement
+        url: /asa-r2-70-90/controller-replace-restore-system-rma.html
+  - title: DIMM
+    url: /asa-r2-70-90/dimm-replace.html
+  - title: Drive
+    url: /asa-r2-70-90/drive-replace.html
+  - title: Fan
+    url: /asa-r2-70-90/fan-swap-out.html
+  - title: NVRAM
+    url: /asa-r2-70-90/nvram-replace.html
+  - title: NV Battery
+    url: /asa-r2-70-90/nvdimm-battery-replace.html
+  - title: I/O module
+    entries:
+      - title: I/O module add or replace overview
+        url: /asa-r2-70-90/io-module-overview.html
+      - title: Add an I/O module
+        url: /asa-r2-70-90/io-module-add.html
+      - title: Replace an I/O module
+        url: /asa-r2-70-90/io-module-replace.html
+  - title: Power supply
+    url: /asa-r2-70-90/power-supply-replace.html
+  - title: Real-time clock battery
+    url: /asa-r2-70-90/rtc-battery-replace.html
+  - title: System Management module 
+    url: /asa-r2-70-90/system-management-replace.html
