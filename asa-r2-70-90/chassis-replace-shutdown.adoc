@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-70-90/chassis-replace-shutdown.html
+sidebar: sidebar
+keywords: asa r2 a70, asa r2 a90, shutdown the controllers
+summary: "To replace the chassis, you must shutdown the controllers."
+---
+= Shut down the controllers - ASA r2 A70 and A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/shutdown_chassis.adoc[]

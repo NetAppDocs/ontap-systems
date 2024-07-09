@@ -1,0 +1,13 @@
+---
+permalink: asa-r2-a1k/nvdimm-battery-replace.html
+sidebar: sidebar
+keywords: asa r2 a1k, replace the nv battery, NV battery
+summary: "To replace the NV battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module."
+
+---
+= Replace the NV Battery - ASA r2 A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a1k_nvdimm_battery_replace.adoc[]
