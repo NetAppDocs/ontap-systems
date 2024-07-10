@@ -8,8 +8,10 @@ entries:
   - title: Boot media
     pdf-filename: ASA r2 A70, ASA r2 A90 Boot Media
     entries:
-      - title: Boot media replace overview
+      - title: Boot media replace workflow
         url: /asa-r2-70-90/bootmedia-replace-overview.html
+      - title: Requirements
+        url: /asa-r2-70-90/bootmedia-replace-requirements.html
       - title: Check onboard encryption keys
         url: /asa-r2-70-90/bootmedia-encryption-preshutdown-checks.html
       - title: Shut down impaired controller
