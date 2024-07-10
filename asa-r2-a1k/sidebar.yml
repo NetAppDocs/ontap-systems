@@ -1,15 +1,15 @@
 section: asa-r2-a1k
 title: ASA A1K systems
-pdf-filename: ASA r2 A1K Maintain
+pdf-filename: ASA A1K Maintain
 entries:
-  - title: Overview
+  - title: Maintenance overview
     url: /asa-r2-a1k/maintain-overview.html
     # START boot media
   - title: Boot media
     pdf-filename: ASA A1K Boot Media
     entries:
-      - title: Boot media replace overview
-        url: /asa-r2-a1k/bootmedia-replace-overview.html
+      - title: Boot media replace workflow
+        url: /asa-r2-a1k/bootmedia-replace-workflow.html
       - title: Requirements
         url:  /asa-r2-a1k/bootmedia-replace-requirements.html
       - title: Check onboard encryption keys
@@ -52,9 +52,9 @@ entries:
     entries:
       - title: I/O module add or replace overview
         url: /asa-r2-a1k/io-module-overview.html
-      - title: Add an I/O module
+      - title: Add I/O module
         url: /asa-r2-a1k/io-module-add.html
-      - title: Replace an I/O module
+      - title: Replace I/O module
         url: /asa-r2-a1k/io-module-replace.html
   - title: Power supply
     url: /asa-r2-a1k/power-supply-replace.html
