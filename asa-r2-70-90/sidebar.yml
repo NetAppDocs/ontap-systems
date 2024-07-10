@@ -1,12 +1,12 @@
 section: asa-r2-a70-90
-title: ASA r2 - A70 and A90 systems
-pdf-filename: ASA r2 A70, ASA r2 A90 Maintain
+title: ASA A70 and ASA A90 systems
+pdf-filename: ASA A70, ASA A90 Maintain
 entries:
   - title: Overview
     url: /asa-r2-70-90/maintain-overview.html
     # START boot media
   - title: Boot media
-    pdf-filename: ASA r2 A70, ASA r2 A90 Boot Media
+    pdf-filename: ASA A70, ASA A90 Boot Media
     entries:
       - title: Boot media replace workflow
         url: /asa-r2-70-90/bootmedia-replace-overview.html
@@ -26,7 +26,7 @@ entries:
         url: /asa-r2-70-90/bootmedia-complete-rma.html
         # END boot media
   - title: Chassis
-    pdf-filename: ASA r2 A70, ASA r2 A90 Chassis
+    pdf-filename: ASA A70, ASA A90 Chassis
     entries:
       - title: Chassis replace overview
         url: /asa-r2-70-90/chassis-replace-overview.html
@@ -37,7 +37,7 @@ entries:
       - title: Complete chassis replacement
         url: /asa-r2-70-90/chassis-replace-complete-system-restore-rma.html
   - title: Controller
-    pdf-filename: ASA r2 A70, ASA r2 A90 Controller Module
+    pdf-filename: ASA A70, ASA A90 Controller Module
     entries:
       - title: Controller module replace overview
         url: /asa-r2-70-90/controller-replace-overview.html
