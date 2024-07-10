@@ -2,60 +2,70 @@
 permalink: asa-r2-70-90/maintain-overview.html
 sidebar: sidebar
 keywords: asa r2 a70 asa r2 a90 maintenance, maintenance, repairing asa r2 a70 asa r2 a90, repairing a70 asa r2 a90, replace a70 asa r2 a90 components
-summary: Maintain the AFF A70, AFF A90 hardware
+summary: Maintain the ASA r2 A70, ASA r2 A90 hardware
 ---
-= Maintain ASA r2 A70 and A90 hardware
+= Maintain ASA r2 A70 and ASA r2 A90 hardware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+You might need to perform maintenance procedures on your hardware. Procedures specific to maintaining your ASA r2 A70 and A90 system components are in this section.
+
+The procedures in this section assume that the ASA r2 A70 and A90 systems have already been deployed as a storage node in the ONTAP environment.
+
+== Hardware maintenance procedures
 For the ASA r2 A70 and A90 storage systems, you can perform maintenance procedures on the following components.
 
-== Boot media
+[%rotate, grid="none", frame="none", cols="25,65"]
 
-The boot media stores a primary and secondary set of boot image files that the system uses when it boots. 
+|===
 
-== Chassis
+a| link:bootmedia-replace-overview.html[Boot media]
 
-The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
+a| The boot media stores a primary and secondary set of ONTAP image files that the system uses when it boots.
 
-== Controller
+a| link:chassis-replace-overview.html[Chassis]
 
-A controller consists of a board, firmware, and software. It controls the drives and implements the ONTAP functions.
+a| The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
 
-== DIMM
+a| link:controller-replace-overview.html[Controller]
 
-You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
+a| A controller consists of a board, firmware, and software. It controls the drives and runs the ONTAP operating system software.
 
-== Drive
+a| link:dimm-replace.html[DIMM]
 
-A drive is a device that provides the physical storage media for data.
+a| A dual in-line memory module (DIMM) is a type of computer memory. They are installed to add system memory to a controller motherboard.
 
-== Fan
+a| link:drive-replace.html[Drive]
 
-The fan cools the controller.
+a| A drive is a device that provides the physical storage needed for data.
 
-== NVRAM
+a| link:fan-replace.html[Fan]
 
-The NVRAM (Non-Volatile Random Access Memory) is a module that allows the controller to protect and save in-flight data if the system loses power. The system ID resides in the NVRAM module. When replaced, the controller assumes the new system ID from the replacement NVRAM module. 
+a| A fan cools the controller.
 
-== NV battery
+a| link:nvram-replace.html[NVRAM]
 
-The NVRAM battery is responsible for providing power to the NVRAM module while data in-flight is being destaged to flash memory after a power loss.
+a| The NVRAM (Non-Volatile Random Access Memory) is a module that allows the controller to protect and save in-flight data if the system loses power. The system ID resides in the NVRAM module. When replaced, the controller assumes the new system ID from the replacement NVRAM module.
 
-== I/O module
+a| link:nvdimm-battery-replace.html[NV battery]
 
-The I/O module (Input/Output module) is a hardware component that acts as an intermediary between the controller and various devices or systems that need to exchange data with the controller.
+a| The NV battery is responsible for providing power to the NVRAM module while data in-flight is being destaged to flash memory after a power loss.
 
-== Power supply
+a| link:io-module-overview.html[I/O module]
 
-A power supply provides a redundant power source in a controller.
+a| The I/O module (Input/Output module) is a hardware component that acts as an intermediary between the controller and various devices or systems that need to exchange data with the controller.
 
-== Real-time clock battery
+a| link:power-supply-replace.html[Power supply]
 
-A real time clock battery preserves system date and time information if the power is off. 
+a| A power supply provides a redundant power source in a controller.
 
-== System Management module
+a| link:rtc-battery-replace.html[Real-time clock battery]
 
-The System Management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).
+a| A real-time clock battery preserves system date and time information if the power is off.
 
+a| link:system-management-replace.html[System Management module]
+
+a| The System Management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).
+
+|===

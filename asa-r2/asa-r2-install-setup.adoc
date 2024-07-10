@@ -9,17 +9,21 @@ summary: 'Install and set up your system.'
 :imagesdir: ../media/
 
 [.lead]
-Go to the *ASA r2 systems on ONTAP 9* documentation to learn how to install and use an ASA r2 system.
+Go to the *ASA r2 systems on ONTAP 9* documentation to learn how to install and use your ASA r2 system.
 
 The *ASA r2 systems on ONTAP 9* documentation includes information such as:
 
 * Installation and setup instructions
 
-* Administration instructions for configuring your system, including ????.
+* Administration instructions for configuring your system, such as provisioning SAN storage, cloning data, and re-sizing local storage.
 
-* Instructions for provisioning storage to enable SAN (SCSI and NVMe) hosts to read and write data to specified storage units (LUNs and NVMe namespaces). 
+* Instructions for managing your system, including managing client access, securing your data, and protecting your data. 
 
-* Monitoring and troubleshooting instructions, including information about alerts, audit messages, and system logs.
+* Monitoring and troubleshooting instructions, including information about alerts, cluster events, and system logs.
 
-Instructions for maintaining ASA r2 systems are included in this ONTAP hardware systems documentation.
+Specific maintenance procedures for each type of ASA r2 system are in the system maintenance sections:
+
+* link:../asa-r2-a1k/maintain-overview.html[ASA r2 A1K system]
+* link:../asa-r2-70-90/maintain-overview.html[ASA r2 A70 and A90 systems]
+
 
