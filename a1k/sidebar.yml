@@ -25,36 +25,40 @@ entries:
    - title: Boot media
      pdf-filename: AFF A1K Boot Media
      entries:
-        - title: Boot media replace overview
-          url: /a1k/bootmedia-replace-overview.html
+        - title: Boot media replace workflow
+          url: /asa-r2-a1k/bootmedia-replace-workflow.html
+        - title: Requirements and considerations
+          url:  /asa-r2-a1k/bootmedia-replace-requirements.html
         - title: Check onboard encryption keys
-          url: /a1k/bootmedia-encryption-preshutdown-checks.html
+          url: /asa-r2-a1k/bootmedia-encryption-preshutdown-checks.html
         - title: Shut down impaired controller
-          url: /a1k/bootmedia-shutdown.html
+          url: /asa-r2-a1k/bootmedia-shutdown.html
         - title: Replace boot media
-          url: /a1k/bootmedia-replace.html
+          url: /asa-r2-a1k/bootmedia-replace.html
         - title: Boot recovery image
-          url: /a1k/bootmedia-recovery-image-boot.html
-        - title: Encryption restore
-          url: /a1k/bootmedia-encryption-restore.html
+          url: /asa-r2-a1k/bootmedia-recovery-image-boot.html
+        - title: Restore encryption
+          url: /asa-r2-a1k/bootmedia-encryption-restore.html
         - title: Return failed part to NetApp
-          url: /a1k/bootmedia-complete-rma.html
+          url: /asa-r2-a1k/bootmedia-complete-rma.html
           # END boot media
    - title: Controller
      pdf-filename: AFF A1K Controller Module
      entries:
-        - title: Controller module replace overview
-          url: /a1k/controller-replace-overview.html
+        - title: Controller replace workflow
+          url: /asa-r2-a1k/controller-replace-workflow.html
+        - title: Requirements and considerations
+          url:  /asa-r2-a1k/controller-replace-requirements.html
         - title: Shut down impaired controller
-          url: /a1k/controller-replace-shutdown.html
+          url: /asa-r2-a1k/controller-replace-shutdown.html
         - title: Replace controller
-          url: /a1k/controller-replace-move-hardware.html
+          url: /asa-r2-a1k/controller-replace-move-hardware.html
         - title: Restore system configuration
-          url: /a1k/controller-replace-system-config-restore-and-verify.html
+          url: /asa-r2-a1k/controller-replace-system-config-restore-and-verify.html
         - title: Give back the controller
-          url: /a1k/controller-replace-recable-reassign-disks.html
+          url: /asa-r2-a1k/controller-replace-recable-reassign-disks.html
         - title: Complete controller replacement
-          url: /a1k/controller-replace-restore-system-rma.html
+          url: /asa-r2-a1k/controller-replace-restore-system-rma.html
    - title: DIMM
      url: /a1k/dimm-replace.html
    - title: Fan
@@ -65,11 +69,11 @@ entries:
      url: /a1k/nvdimm-battery-replace.html
    - title: I/O module
      entries:
-        - title: I/O module add or replace overview
+        - title: I/O module overview
           url: /a1k/io-module-overview.html
-        - title: Add an I/O module
+        - title: Add I/O module
           url: /a1k/io-module-add.html
-        - title: Replace an I/O module
+        - title: Replace I/O module
           url: /a1k/io-module-replace.html
    - title: Power supply
      url: /a1k/power-supply-replace.html
