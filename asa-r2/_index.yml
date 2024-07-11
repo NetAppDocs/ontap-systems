@@ -10,18 +10,12 @@ indexpage:
           url: https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf
         - title: ASA r2 platform overview
           url: https://www.netapp.com/data-storage/aff-a-series/
-    - title: Install and setup ASA r2 systems
+    - title: Install and maintain ASA r2 systems
       links:
-        - title: Prepare for install
+        - title: Install and setup ASA r2 systems
           url: ../.html
-        - title: Install hardware
-          url: ../p.html
-        - title: Cable hardware
-          url: ../.html
-        - title: Power on system
-          url: ../.html
-        - title: Initialize the cluster
-          url: ../.html
+        - title: Maintain ASA r2 systems
+          url: ../asa-r2-landing-maintain/index.html
     - title: Use and manage ASA r2 systems
       links:
         - title: TBB
