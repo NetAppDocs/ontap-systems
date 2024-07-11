@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a1k, replace the controller
 summary: You must replace the failed component with a replacement FRU component you received from your provider.
 ---
-= Controller replacement workflow - ASA A1K
+= Controller replacement workflow - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,7 @@ summary: You must replace the failed component with a replacement FRU component 
 Follow these workflow steps to replace your controller module.
 
 .Before you begin
-To replace the controller module, you must meet certain requirements. Review the link:controller-replace-requirements.html[Controller replacement requirements].
+To replace the controller module, you must meet certain requirements. Review the link:controller-replace-requirements.html[controller replacement requirements and considerations].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-shutdown.html[Shut down the impaired controller]
 [role="quick-margin-para"]
