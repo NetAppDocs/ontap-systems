@@ -1,0 +1,35 @@
+---
+permalink: a70-90/controller-replace-workflow.html
+sidebar: sidebar
+keywords: aff a70, a90, replace the controller workflow
+summary: You must replace the failed component with a replacement FRU component you received from your provider.
+---
+= Controller replacement workflow - AFF A70, AFF A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Follow these workflow steps to replace your controller module.
+
+.Before you begin
+To replace the controller module, you must meet certain requirements. Review the link:controller-replace-requirements.html[controller replacement requirements and considerations].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-shutdown.html[Shut down the impaired controller]
+[role="quick-margin-para"]
+Shut down or take over the impaired controller so that the healthy controller continues to serve data from the impaired controller storage. 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:controller-replace.html[Replace the controller]
+[role="quick-margin-para"]
+Replacing the controller includes removing the impaired controller, moving the FRU components to the replacement controller module, and then installing the replacement controller module in the enclosure.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration ]
+[role="quick-margin-para"]
+Verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-recable-reassign-disks.html[Recable and give back the controller]
+[role="quick-margin-para"]
+Recable the controller and transfer the ownership of storage resources back to the replacement controller. 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:controller-replace-restore-system-rma.html[Complete system restoration]
+[role="quick-margin-para"]
+Verify the LIfs, check cluster health, and return the failed part to NetApp.
