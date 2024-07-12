@@ -1,6 +1,6 @@
-Continue the replacement procedure by giving back the controller.
+Transfer the ownership of storage resources back to the replacement controller.
 
-== Step 1: Give back the controller
+.Steps
 
 . If your storage system has Encryption configured, you must restore Storage or Volume Encryption functionality using the following procedure to reboot the system:
 .. Boot to Menu and run Option 10

@@ -356,9 +356,9 @@ For shelves, you insert a SAS cable connector with the pull tab oriented down (o
 +
 This illustration is specific to a stack with multipath HA connectivity; however, the cabling concept can be applied to stacks with multipath, tri-path HA, single-path HA, single-path connectivity, and stretch MetroCluster configurations.
 +
-image::../media/drw_sas2_sas3_mixed_stack.png[]
+image::../media/drw_sas2_sas3_mixed_stack.png[Multipath mixed stack cabling]
 
-* You can reference the following illustration for cabling IOM12/IOM12B shelves to an IOM6 shelf stack in a bridge-attached MetroCluster configuration. image:../media/hot_adding_iom12_shelves_to_iom6_stack_in_bridge_attached_config.png[]
+* You can reference the following illustration for cabling IOM12/IOM12B shelves to an IOM6 shelf stack in a bridge-attached MetroCluster configuration. image:../media/hot_adding_iom12_shelves_to_iom6_stack_in_bridge_attached_config.png[Mixed stack cabling in bridge-attached configuration]
 
 .Steps
 
