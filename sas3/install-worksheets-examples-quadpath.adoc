@@ -15,17 +15,17 @@ You can use the completed controller-to-stack cabling worksheet and cabling exam
 * If needed, you can refer to link:install-cabling-worksheets-how-to-read-quadpath.html[How to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity].
 * The cabling example shows controller-to-stack cables as solid or dashed to distinguish controller A and C port connections from controller B and D port connections.
 +
-image::../media/drw_controller_to_stack_cable_type_key.gif[]
+image::../media/drw_controller_to_stack_cable_type_key.gif[Cable type key for controller to stack cabling]
 
 * Cables in the cabling examples and their corresponding port pairs in the worksheets are color-coded to distinguish connectivity to each stack in the HA pair.
 +
-image::../media/drw_controller_to_stack_cable_color_key_non2600.gif[]
+image::../media/drw_controller_to_stack_cable_color_key_non2600.gif[Color key for cabling worksheets]
 
 * The cabling example visually distinguishes the two sets of multipathed cabling needed to achieve quad-pathed connectivity for each controller to each stack in an HA pair or single-controller configuration.
 +
 The first set of multipathed cabling is referred to as "`multipathed`". The second set of multipathed cabling is referred to as "`quad-pathed`". The second set of cabling is referred to as "`quad-pathed`" because completing this set of cabling gives you the quad-pathed connectivity.
 +
-image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[]
+image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[Color key for quad-pathed connectivity]
 
 * The worksheet example shows port pairs designated for multipathed cabling or quad-pathed cabling to the applicable stack.
 +
@@ -37,4 +37,4 @@ The following worksheet and cabling example uses port pairs 1a/2b (multipathed) 
 
 image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Cabling worksheet for quad-path HA]
 
-image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[]
+image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Quuad-path HA with two quad-port SAS HBAs and two multi-shelf stacks]
