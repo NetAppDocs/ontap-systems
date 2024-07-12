@@ -1,4 +1,6 @@
-To replace the chassis, you must move the bezel, controller modules, and NVMe drives from the impaired chassis to the replacement chassis, and then remove the impaired chassis from the equipment rack or system cabinet and install the replacement chassis in its place.
+The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
+
+Before replacing the chassis, make sure to review the following requirements.
 
 * Make sure all other components in the system are functioning properly; if not, contact technical support.
 * You can use the chassis replacement procedure with all versions of ONTAP supported by your system.
