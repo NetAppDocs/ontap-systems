@@ -9,9 +9,9 @@ summary: 'Install and set up your system.'
 :imagesdir: ../media/
 
 [.lead]
-Go to the *ASA r2 systems on ONTAP 9* documentation to learn how to install and use your ASA r2 system.
+Go to the https://docs.netapp.com/us-en/asa-r2[ASA r2 systems on ONTAP 9] documentation to learn how to install, use, and manage your ASA r2 system.
 
-The *ASA r2 systems on ONTAP 9* documentation includes information such as:
+The https://docs.netapp.com/us-en/asa-r2[ASA r2 systems on ONTAP 9] documentation includes information such as:
 
 * Installation and setup instructions
 
@@ -21,9 +21,7 @@ The *ASA r2 systems on ONTAP 9* documentation includes information such as:
 
 * Monitoring and troubleshooting instructions, including information about alerts, cluster events, and system logs.
 
-Specific maintenance procedures for each type of ASA r2 system are in the system maintenance sections:
+Specific maintenance procedures for each type of ASA r2 system are in the link:../asa-r2-landing-maintain/index.html[ASA r2 system maintenance section].
 
-* link:../asa-r2-a1k/maintain-overview.html[ASA r2 A1K system]
-* link:../asa-r2-70-90/maintain-overview.html[ASA r2 A70 and A90 systems]
 
 
