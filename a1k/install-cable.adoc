@@ -43,16 +43,13 @@ Cable your switchless cluster connections.
 
 +
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
-
 +
-
 .. Cable port e1a on Controller A to port e1A on Controller B.
 ..  Cable port e7a on Controller A to port e1A on Controller B.
 +
 *Cluster/HA interconnect cables*
-
++
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable,width=100pxx]
-
 +
 image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[Two-node switchless cluster cabling diagram,width=500px]
 +

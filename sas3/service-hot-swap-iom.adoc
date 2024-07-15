@@ -24,11 +24,11 @@ NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. T
 +
 The IOM12 modules are distinguished by an "IOM12" label:
 +
-image::../media/drw_iom12.gif[]
+image::../media/drw_iom12.gif[Front of IOM12]
 +
 The IOM12B modules are distinguished by a blue stripe and an "IOM12B" label:
 +
-image::../media/iom12b.png[]
+image::../media/iom12b.png[Front of IOM12B]
 
 * For multipathed (multipath HA or multipath), tri-path HA, and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap a shelf IOM (nondisruptively replace a shelf IOM in a system that is powered on and serving data--I/O is in progress).
 * For FAS2600 series and FAS2700 series single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.
@@ -97,9 +97,9 @@ Make note of the shelf IOM ports each cable is connected to.
 
 . Press the orange latch on the shelf IOM cam handle until it releases, and then open the cam handle fully to release the shelf IOM from the mid plane.
 +
-image::../media/drw_iom_latch.png[]
+image::../media/drw_iom_latch.png[Release latch for cam handle]
 +
-image::../media/drw_iom_open.png[]
+image::../media/drw_iom_open.png[Cam handle in open position]
 
 . Use the cam handle to slide the shelf IOM out of the disk shelf.
 +
