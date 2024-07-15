@@ -12,7 +12,7 @@ indexpage:
           url: https://www.netapp.com/data-storage/aff-a-series/
     - title: Install and maintain ASA r2 systems
       links:
-        - title: Install and setup ASA r2 systems
+        - title: Install ASA r2 systems
           url: ../.html
         - title: Maintain ASA r2 systems
           url: ../asa-r2-landing-maintain/index.html
@@ -23,6 +23,14 @@ indexpage:
         - title: TBD
           url: ../.html
         - title: TBD
+          url: ../.html
+    - title: Install ASA r2 systems
+      links:
+        - title: Install workflow
+          url: ../html
+        - title: Initialize cluster
+          url: ../.html
+        - title: Set up data access
           url: ../.html
     - title: Maintain ASA r2 systems
       links:
