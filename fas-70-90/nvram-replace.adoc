@@ -1,0 +1,12 @@
+---
+permalink: fas-70-90/nvram-replace.html
+sidebar: sidebar
+keywords: fas70, fas90, replace an nvdimm
+summary: 'The NVRAM module consists of the NVRAM12 and DIMMs and up to two NVMe SSD Flash Cache modules (FlashCache or caching modules) per NVRAM module.'
+---
+= Replace NVRAM - FAS70 and FAS90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a70-90_nvram_replace.adoc[]
