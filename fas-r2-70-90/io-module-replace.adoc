@@ -1,0 +1,12 @@
+---
+permalink: fas-r2-70-90/io-module-replace.html
+sidebar: sidebar
+keywords: fas70, fas90, replace i/o module
+summary: "To replace an i/o module, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards."
+---
+= Replace I/O module - FAS70 and FAS90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a70-90_io_module_replace.adoc[]

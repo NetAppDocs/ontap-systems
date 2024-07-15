@@ -1,0 +1,13 @@
+---
+permalink: fas-r2-70-90/fan-swap-out.html
+sidebar: sidebar
+keywords: fas70, fas90, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
+summary: To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
+---
+= Replace a fan module - FAS70 and FAS90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+include::../_include/a70-90_fan_swap_out.adoc[]
