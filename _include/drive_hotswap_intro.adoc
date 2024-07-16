@@ -27,7 +27,3 @@ How you replace the drive depends on how the drive is being used. If SED authent
 * Drive firmware is automatically updated (nondisruptively) on new drives that have non current firmware versions.
 
 * When replacing a drive, you must wait one minute between the removal of the failed drive and the insertion of the replacement drive to allow the storage system to recognize the existence of the new drive.
-
-.Procedure
-
-Replace the failed drive by selecting the option appropriate to the drives that your platform supports.
