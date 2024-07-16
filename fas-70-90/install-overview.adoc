@@ -1,0 +1,32 @@
+---
+permalink: fas-70-90/install-overview.html
+sidebar: sidebar
+keywords: Installation, deployment, Install, deploy, Installing, deploying, a1k
+summary: 'Follow these high-level steps to install and set up your FAS70 and FAS90 storage system and deploy it as a node in your ONTAP system.'
+---
+= Install setup workflow - FAS70 and FAS90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Follow these workflow steps to install, set up, and deploy your FAS70 and FAS90 storage system.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-prepare.html[Prepare for install]
+[role="quick-margin-para"]
+To prepare for install, you need to get the site ready, check the environmental and electrical requirements and ensure there's enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:install-hardware.html[Install hardware]
+[role="quick-margin-para"]
+To install hardware, install the rail kits for your platform and shelves, and then install and secure your platform in the cabinet or telco rack. Next, slide the shelves onto the rails. Finally, attach cable management devices to the rear of the platform for organized cable routing.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:install-cable.html[Cable hardware]
+[role="quick-margin-para"]
+To cable hardware, first cable the controllers to your network and then cable the controllers to your shelves.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:install-power-hardware.html[Power on storage system]
+[role="quick-margin-para"]
+To power on your system, first power on each NS224 shelf and assign a unique shelf ID to ensure each shelf is distinct within the setup. Then, power on the controllers. Finally, use the provided securing device to secure the power cables on each power supply.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:install-complete.html[Complete storage system setup]
+[role="quick-margin-para"]
+To complete system setup, access the web-based interface, System Manager, by pointing a browser to the controller's IP address. A setup wizard helps you get started with cluster configuration. As an alternative, you can also use the command line interface (CLI).
