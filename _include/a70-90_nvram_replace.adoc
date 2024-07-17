@@ -74,6 +74,10 @@ The locking latches rise when the controller module is fully seated.
 +
 .. Rotate the locking latches upward into the locked position.
 
++ 
+NOTE: The controller reboots as soon as it is fully seated in the chassis.
++
+
  . Rotate the cable management tray up to the closed position.
 
 == Step 3: Replace a NVRAM DIMM
@@ -135,15 +139,14 @@ The locking latches rise when the controller module is fully seated.
 +
 .. Rotate the locking latches upward into the locked position.
 
++ 
+NOTE: The controller reboots as soon as it is fully seated in the chassis.
++
+
 . Rotate the cable management tray up to the closed position.
 
-== Step 4: Reboot the controller
 
-After you replace the FRU, you must reboot the controller module.
-
-. To boot ONTAP from the LOADER prompt, enter _bye_.
-
-== Step 5: Reassign disks
+== Step 4: Reassign disks
 
 You must confirm the system ID change when you boot the controller and then verify that the change was implemented.
 
@@ -231,6 +234,6 @@ dr-group-id            cluster node           configuration-state
 . If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 
 
-== Step 6: Return the failed part to NetApp
+== Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
