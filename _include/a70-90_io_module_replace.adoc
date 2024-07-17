@@ -26,20 +26,11 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 To replace an I/O module, locate it within the controller module and follow the specific sequence of steps.
 
-. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
-+
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
-+
-. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
-
-. Disconnect power to the controller module by pulling the controller module out about three inches:
-
-.. Press down on both of the controller module locking latches, and then rotate both latches downward at the same time.
-.. Pull the controller module about 3 inches out of the chassis to disengage power.
+. If you are not already grounded, properly ground yourself. 
 
 . Unplug any cabling on the target I/O module.
 +
-Make sure that you label the cables so that you know where they came from.
+Make sure to label the cables so that you know where they came from.
 
 . Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 
@@ -78,13 +69,6 @@ Make sure that you keep track of which slot the I/O module was in.
 
 . Repeat the remove and install steps to replace additional modules for the controller.
 
-. Reconnect power to the controller module:
-.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
-+
-The locking latches rise when the controller module is fully seated.
-+
-.. Rotate the locking latches upward into the locked position.
-+
 . Rotate the cable management tray into the locked position.
 
 == Step 3: Reboot the controller
