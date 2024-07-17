@@ -33,7 +33,7 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
 .. Press down on both of the controller module locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
 
-.. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module.
+.. Remove any cables connected to the System Management module. Make sure to label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module.
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down. 
 .. Depress the system management cam button.
 The cam lever moves away from the chassis.
@@ -76,7 +76,7 @@ NOTE: If you are extracting the contents using Windows, do not use WinZip to ext
 The USB flash drive should have the appropriate ONTAP image of what the impaired controller is running.
 
 .. Remove the USB flash drive from your laptop.
-. Insert the USB flash drive into the USB slot on the System Management module. 
+. Insert the USB flash drive into the USB-A port on the System Management module. 
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
