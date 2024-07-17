@@ -32,10 +32,11 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
 +
 . Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
 
-. Unplug the power cord from both PSUs.
-+
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
-+
+. Disconnect power to the controller module by pulling the controller module out about three inches:
+
+.. Press down on both of the controller module locking latches, and then rotate both latches downward at the same time.
+.. Pull the controller module about 3 inches out of the chassis to disengage power.
+
 . Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 . Remove the target NVRAM module from the chassis:
  .. Depress the cam latch button.
@@ -66,11 +67,12 @@ DIMM locking tabs
 . Install the replacement NVRAM module into the chassis:
  .. Align the module with the edges of the chassis opening in slot 4/5.
  .. Gently slide the module into the slot all the way, and then push the cam latch all the way up to lock the module in place.
- . Recable the PSU.
-
+. Reconnect power to the controller module:
+.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
-NOTE: If your system has DC power supplies, reconnect the power cable block to the PSU.
+The locking latches rise when the controller module is fully seated.
 +
+.. Rotate the locking latches upward into the locked position.
 
  . Rotate the cable management tray up to the closed position.
 
@@ -78,11 +80,17 @@ NOTE: If your system has DC power supplies, reconnect the power cable block to t
 
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, and then replace the target DIMM.
 
-. If you are not already grounded, properly ground yourself.
-. Unplug the power cord from both PSUs.
+. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
 +
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
 +
+. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+
+. Disconnect power to the controller module by pulling the controller module out about three inches:
+
+.. Press down on both of the controller module locking latches, and then rotate both latches downward at the same time.
+.. Pull the controller module about 3 inches out of the chassis to disengage power.
+
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the target NVRAM module from the chassis:
  .. Depress the cam button.
@@ -120,11 +128,12 @@ NOTE: Consult the FRU map label on the side of the NVRAM module to determine the
 . Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
 . Install the NVRAM module into the chassis:
  .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
-. Recable the PSU.
-
+. Reconnect power to the controller module:
+.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
-NOTE: If your system has DC power supplies, reconnect the power cable block to the PSU.
+The locking latches rise when the controller module is fully seated.
 +
+.. Rotate the locking latches upward into the locked position.
 
 . Rotate the cable management tray up to the closed position.
 
