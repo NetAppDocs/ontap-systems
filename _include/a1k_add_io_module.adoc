@@ -33,11 +33,6 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 === Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the power supply units (PSUs) cables from the PSUs from the controller.
-
-+
-NOTE: If your storage system has DC PSUs, disconnect the power cable block from the PSU.
-+
 
 . Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 . Remove the target slot blanking module from the carrier:
@@ -129,11 +124,6 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 === Step 2: Replace an I/O module
 . If you are not already grounded, properly ground yourself.
-. Unplug the PSU cables from the PSUs from the controller.
-
-+
-NOTE: If your storage system has DC PSUs, disconnect the power cable block from the PSU.
-+
 
 . Unplug any cabling on the target I/O module.
 . Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
@@ -167,7 +157,6 @@ Make sure that you keep track of which slot the I/O module was in.
 .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
 . Cable the I/O module.
 . Repeat the remove and install steps to replace additional modules for the controller.
-. Reconnect the PSUs.
 . Rotate the cable management tray up to the closed position.
 
 . Reboot the controller from the LOADER prompt:_bye_
