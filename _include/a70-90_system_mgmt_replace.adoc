@@ -55,13 +55,11 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
 
 . Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
 
-. Disconnect power by pulling the controller module out about three inches:
-+
-NOTE: If your system has DC power supplies, disconnect the power cable block from the PSU.
-+
+. Disconnect power to the controller module by pulling the controller module out about three inches:
 
-.. Press down on both of the locking latches, and then rotate both latches downward at the same time.
+.. Press down on both of the controller module locking latches, and then rotate both latches downward at the same time.
 .. Pull the controller module about 3 inches out of the chassis to disengage power.
+
 
 . Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 
@@ -126,10 +124,14 @@ The boot media rotates slightly upward.
 .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
 
 . Recable the System Management module.
+
+. Reconnect power to the controller module:
+.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
-NOTE: If your system has DC power supplies, reconnect the power cable block to the PSU.
-. Reinstall the controller module into the chassis.
+The locking latches rise when the controller module is fully seated.
 +
+.. Rotate the locking latches upward into the locked position.
+
 . Rotate the cable management tray up to the closed position.
 
 == Step 3: Reboot the controller module
