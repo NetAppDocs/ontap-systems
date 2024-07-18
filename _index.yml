@@ -14,14 +14,10 @@ indexpage:
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: Storage platforms
       links:
-        - title: AFF A-Series systems
-          url: /aff-aseries/index.html
-        - title: AFF C-Series systems
-          url: /aff-cseries/index.html
-        - title: ASA A-Series systems
-          url: /allsan-a-series/index.html
-        - title: ASA C-Series systems
-          url: /allsan-c-series/index.html
+        - title: AFF systems
+          url: /aff-landing/index.html
+        - title: ASA systems
+          url: /allsan-landing/index.html
         - title: ASA r2 systems
           url: /asa-r2/index.html
         - title: FAS systems
