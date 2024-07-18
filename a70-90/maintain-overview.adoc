@@ -14,7 +14,7 @@ You might need to perform maintenance procedures on your hardware. Procedures sp
 The procedures in this section assume that the AFF A70 and AFF A90 systems have already been deployed as a storage node in the ONTAP environment.
 
 == System components
-For the ASA A70 and ASA A90 storage systems, you can perform maintenance procedures on the following components.
+For the AFF A70 and AFF A90 storage systems, you can perform maintenance procedures on the following components.
 
 [%rotate, grid="none", frame="none", cols="25,65"]
 
@@ -40,7 +40,7 @@ a| link:drive-replace.html[Drive]
 
 a| A drive is a device that provides the physical storage needed for data.
 
-a| link:fan-replace.html[Fan]
+a| link:fan-swap-out.html[Fan]
 
 a| A fan cools the controller.
 
