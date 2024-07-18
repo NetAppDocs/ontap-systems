@@ -11,3 +11,5 @@ summary: "The boot media stores a primary and secondary set of system (boot imag
 [.lead]
 
 include::../_include/700_9000_bootmedia_replace_overview.adoc[]
+
+If you need to replace the secondary boot media while the primary boot media is installed and healthy, contact NetApp Support and mention the https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/How_to_replace_the_secondary_boot_device_of_an_a700s[How to replace the secondary boot device of an AFF A700s^] KB article.
