@@ -32,19 +32,8 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 === Step 2: Add I/O modules
 
-. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.
-+
-NOTE:  Make sure NVRAM destage has completed before proceeding.
-+
+. If you are not already grounded, properly ground yourself. 
 
-+
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
-
-. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
-
-. Disconnect power by pulling the controller module out about three inches:
-.. Press down on both of the locking latches, and then rotate both latches downward at the same time.
-.. Pull the controller module about 3 inches out of the chassis to disengage power.
 . Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 . Remove the target slot blanking module from the chassis:
 
@@ -78,11 +67,6 @@ If the I/O module is a storage module, cable it to the NS224 shelf.
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
 
-
-. Reinstall the controller module into the chassis.
-+
-NOTE: If you have DC PSUs, reconnect the cable blocks to the PSUs.
-+
 . Rotate the cable management tray up to the closed position.
 . Reboot the controller from the LOADER prompt: _bye_
 +
@@ -142,20 +126,8 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 === Step 2: Replace an I/O module
 To replace an I/O module, locate it within the controller module and follow the specific sequence of steps.
 
-. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
-+
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
-+
-. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+. If you are not already grounded, properly ground yourself. 
 
-
-. Disconnect power by pulling the controller module out about three inches:
-
-+
-NOTE: If your storage system has DC power supplies, disconnect the power cable block from the PSU.
-+
-.. Press down on both of the locking latches, and then rotate both latches downward at the same time.
-.. Pull the controller module about 3 inches out of the chassis to disengage power.
 . Unplug any cabling on the target I/O module.
 . Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 . Remove the target I/O module from the chassis:
@@ -188,10 +160,7 @@ Make sure that you keep track of which slot the I/O module was in.
 . Cable the I/O module.
 
 . Repeat the remove and install steps to replace additional modules for the controller module.
-. Reinstall the controller module into the chassis.
-+
-NOTE: If you have DC PSUs, reconnect the cable blocks to the PSUs.
-+
+
 . Rotate the cable management tray into the locked position.
 . Reboot the controller module from the LOADER prompt:_bye_
 .. Check the version of BMC on the controller: _system service-processor show_
