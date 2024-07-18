@@ -1,5 +1,3 @@
-Cable your controllers and shelves according to your specific storage system configuration.
-
 .Before you begin
 Check the illustration arrow in the cabling diagrams for the proper cable connector pull-tab orientation.
 
@@ -10,19 +8,19 @@ image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull-tab orien
 
 
 == Step 1: Cable controllers to your network
-Cable the controllers to your network as either a two-node switchless cluster or a switched cluster.
+Cable the controllers to your network as a two-node switchless cluster.
 
 .Before you begin
 
-Contact your network administrator for information about connecting the storage system to the switches.
+Contact your network administrator for information about connecting your storage system to the switches.
 
 .About this task
-These procedures show common configurations. Keep in mind that the specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+These procedures show common configurations. The specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 [role="tabbed-block"]
 ====
 
-.Option 1: Cable switchless cluster
+.ASA A1K system
 --
 Cable your switchless cluster connections.
 
@@ -78,28 +76,28 @@ IMPORTANT: Do not plug in the power cords yet.
 
 
 --
-.Option 2: Cable switched cluster
+.ASA 70 and ASA 90 systems
 --
-Cable your switched cluster connections.
+Cable your switchless cluster connections.
 
 .Steps
 
-. Make the following cabling connections:
+. Cable the Cluster/HA interconnect ports e1a to e1a and e7a to e7a with the Cluster/HA interconnect cable.
 
 +
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
 
++
+.. Cable port e1a on Controller A to port e1A on Controller B.
+..  Cable port e7a on Controller A to port e1A on Controller B.
++
+*Cluster/HA interconnect cables*
++
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
 
 +
-.. Cable port e1a on Controller A and port e1a on Controller B to cluster network switch A. 
-.. Cable port e7a on Controller A and port e7a on Controller B to cluster network switch B.
+image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[Two-node switchless cluster cabling diagram, width=500px]
 +
-*100 GbE cable*
-+
-image::../media/oie_cable100_gbe_qsfp28.svg[100 Gb cable,width=100px]
-+
-image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[Cable cluster connections to cluster network,width=500px]
-
 . Cable the Ethernet module ports to your host network. 
 +
 The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
@@ -107,32 +105,34 @@ The following are some typical host network cabling examples. See  link:https://
 .. Cable ports e9a and e9b to your Ethernet data network switch as shown.
 +
 NOTE: For maximum system performance for cluster and HA traffic, it is a best practice to not use ports e1b and e7b ports for host network connections.  Use a separate host card to maximize performance.
+
 +
 *100 GbE cable*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable, width=100px]
 +
-image::../media/drw_a1k_network_cabling1_ieops-1649.svg[Cable to 100Gb Ethernet network,width=500px]
+image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100 Gb Ethernet network,width=500px]
 
 +
 .. Cable your 10/25 GbE host network switches.
 +
 *4-ports, 10/25 GbE Host*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb Ethernet cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.svg[10/25 Gb cable,width=100px]
 +
-image::../media/drw_a1k_network_cabling2_ieops-1650.svg[Cable to 10/25Gb Ethernet network,width=500px]
+image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Ethernet network,width=500px]
 +
 
 
 . Cable the controller management (wrench) ports to the management network switches with 1000BASE-T RJ-45 cables.
 +
-image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
+image::../media/oie_cable_rj45.svg[RJ45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 +
-image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network,width=500px]
+image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
 
 IMPORTANT: Do not plug in the power cords yet. 
+
 
 --
 
@@ -204,6 +204,5 @@ image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[Controller-to-shelf conne
 ====
 
 // end tabbed area
-
 
 
