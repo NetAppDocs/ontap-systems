@@ -8,15 +8,15 @@ When a drive fails, the platform logs a warning message to the system console in
 
 * Follow best practice and install the current version of the Disk Qualification Package (DQP) before replacing a drive.
 
-* Identify the failed disk drive by running the `storage disk show -broken` command from the system console.
+* Identify the failed drive by running the `storage disk show -broken` command from the system console.
 +
 The failed drive appears in the list of failed drives. If it does not, you should wait, and then run the command again.
 +
-NOTE: Depending on the drive type and capacity, it can take up to several hours for the drive to appear in the list of failed drives.
+NOTE: Depending on the type and capacity, it can take up to several hours for the drive to appear in the list of failed drives.
 
 * Determine whether SED authentication is enabled.
 +
-How you replace the disk depends on how the disk drive is being used. If SED authentication is enabled, you must use the SED replacement instructions in the https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]. These Instructions describe additional steps you must perform before and after replacing an SED.
+How you replace the drive depends on how the drive is being used. If SED authentication is enabled, you must use the SED replacement instructions in the https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]. These Instructions describe additional steps you must perform before and after replacing an SED.
 
 * Make sure the replacement drive is supported by your platform. See the https://hwu.netapp.com[NetApp Hardware Universe].
 
@@ -24,10 +24,6 @@ How you replace the disk depends on how the disk drive is being used. If SED aut
 
 .About this task
 
-Drive firmware is automatically updated (nondisruptively) on new drives that have non current firmware versions.
+* Drive firmware is automatically updated (nondisruptively) on new drives that have non current firmware versions.
 
-When replacing several disk drives, you must wait one minute between the removal of each failed disk drive and the insertion of the replacement disk drive to allow the storage system to recognize the existence of each new disk.
-
-.Procedure
-
-Replace the failed drive by selecting the option appropriate to the drives that your platform supports.
+* When replacing a drive, you must wait one minute between the removal of the failed drive and the insertion of the replacement drive to allow the storage system to recognize the existence of the new drive.

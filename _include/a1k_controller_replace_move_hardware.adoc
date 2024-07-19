@@ -1,6 +1,6 @@
 To replace the controller, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the enclosure, and then boot the system to Maintenance mode.
 
-== Step 1 Remove the controller module
+== Step 1: Remove the controller module
 
 include::../_include/a1k_controller_remove_physical.adoc[]
 
