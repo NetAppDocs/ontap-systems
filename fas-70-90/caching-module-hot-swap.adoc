@@ -1,17 +1,17 @@
 ---
-permalink: a700/caching-module-hot-swap.html
+permalink: fas-70-90/caching-module-hot-swap.html
 sidebar: sidebar
 keywords: fas70, fas90, hot swap, replace, FlashCache
-summary: "The NVMe SSD FlashCache modules (FlashCache or caching modules) are located in the front of the NVRAM10 module in Slot 6 of FAS9000 systems only. Beginning with ONTAP 9.4, you can hot-swap the caching module of the same capacity from the same or different supported vendor."
+summary: "The NVMe SSD FlashCache modules (FlashCache or caching modules) are located in the front of the NVRAM10 module in Slot 6-1 and/or 6-2 of FAS70 or FAS90 systems only. You can hot-swap the caching module of the same capacity from the same or different supported vendor."
 ---
-summary: "The NVMe SSD FlashCache modules (FlashCache or caching modules) are located in the front of the NVRAM11 module in Slot 6 of FAS9500 systems only. You can hot-swap the caching module of the same capacity from the same or different supported vendor."
+summary: "The NVMe SSD FlashCache modules (FlashCache or caching modules) are located in Slot 6-1 and/or 6-2 of FAS70 or FAS90 systems only. You can hot-swap the caching module of the same capacity from the same or different supported vendor."
 ---
-= Hot-swap a caching module - FAS9500
+= Hot-swap a caching module - FAS70, FAS90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The NVMe SSD FlashCache modules (FlashCache or caching modules) are located in the front of the NVRAM11 module in Slot 6 of FAS9500 systems. You can hot-swap the caching module of the same capacity from the same or different supported vendor.
+The NVMe SSD FlashCache modules (FlashCache or caching modules) are located in Slot 6-1 and/or 6-2 of FAS70 or FAS90 systems only. You can hot-swap the caching module of the same capacity from the same or different supported vendor.
 
 NOTE: If you need to or want to cold-swap the FlashCache module, follow the procedures for replacing an I/O module.
 
@@ -51,33 +51,20 @@ NOTE: See the https://docs.netapp.com/us-en/ontap-cli-9121/[Command man pages^] 
 
 +
 
-image::../media/drw_9500_remove_flashcache.svg[width=340]
+image::../media/drw_fas79-90_caching_module_remove_IEOPS-1772.svg[Remove the caching module]
 
 +
-[cols="20%,80%"]
-|===
-a|
-image::../media/legend_icon_01.svg[width=20]
-a|
-Terra cotta release button.
-a|
-image::../media/legend_icon_02.svg[width=20]
-a|
-Caching module cam handle.
-
-|===
 
 .. Press the terra cotta release button on the front of the caching module.
-+
-NOTE: Do not use the numbered and lettered I/O cam latch to eject the caching module. The numbered and lettered I/O cam latch ejects the entire NVRAM11 module and not the caching module.
 
-.. Rotate the cam handle until the caching module begins to slide out of the NVRAM11 module.
-.. Gently pull the cam handle straight toward you to remove the caching module from the NVRAM11 module.
+
+.. Rotate the cam handle as far as it will go.
+.. Gently pull the cam handle straight toward you to remove the caching module from the controller module.
 +
-Be sure to support the caching module as you remove it from the NVRAM11 module.
+Be sure to support the caching module as you remove it from the controller module.
 
 . Install the caching module:
- .. Align the edges of the caching module with the opening in the NVRAM11 module.
+ .. Align the edges of the caching module with the opening in the controller module.
  .. Gently push the caching module into the bay until the cam handle engages.
  .. Rotate the cam handle until it locks into place.
 . Bring the replacement caching module online by using the `system controller slot module insert` command as follows:
