@@ -12,7 +12,7 @@ summary: Prepare to install your AFF A70, AFF A90 platform.
 Prepare to install your platform.
 
 .Before you begin
-* Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need when you configure your cluster.  If a default value is provided, you can use that value or else enter your own.
+Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need when you configure your cluster.  If a default value is provided, you can use that value or enter your own.
 
 == Step 1: Prepare the site
 Make sure that the site and the cabinet or rack you plan to use meet the specifications for your storage system.
