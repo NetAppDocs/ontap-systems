@@ -13,7 +13,6 @@ The image is downloaded from the USB flash drive.
 [options="header" cols="1,2"]
 
 |===
-
 | If your system has...| Then...
 a|
 A network connection
@@ -21,20 +20,28 @@ a|
 .. On the impaired controller, press _Y_ when you see `Do you want to restore the backup configuration now?` 
 
 .. On the impaired controller, press _Y_ when prompted to overwrite `/etc/ssh/ssh_host_ecdsa_key`. 
-
++
+*NOTE:* Prompt not shown in ONTAP 9.16.1
++
 .. On the healthy partner controller, set the impaired controller to advanced privilege level: _set -privilege advanced_.
 
 .. On the healthy partner controller, run the restore backup command: _system node restore-backup -node local -target-address impaired_node_IP_address_.
 
 +
-NOTE: If you see any message other than a successful restore, contact https://support.netapp.com[NetApp Support].
+*NOTE:*  If you see any message other than a successful restore, contact https://support.netapp.com[NetApp Support].
 
 .. On the healthy partner controller, return the impaired controller to admin level: _set -privilege admin_.
-
++
+*NOTE:* This step not required in ONTAP 9.16.1 and later.
++
 .. On the impaired controller, press _y_ when you see `Was the restore backup procedure successful?`.
-
++
+*NOTE:* This step not required in ONTAP 9.16.1 and later.
++
 .. On the impaired controller, press _y_ when you see `...would you like to use this restored copy now?`. 
-
++
+*NOTE:* This step not required in ONTAP 9.16.1 and later.
++
 .. On the impaired controller, press _y_ when prompted to reboot the impaired controller and press _ctrl-c_ for the Boot Menu.
 
 .. If the system does not use encyption, select _Option 1 Normal Boot._, otherwise go to link:bootmedia-encryption-restore.html[Restore key managers].
