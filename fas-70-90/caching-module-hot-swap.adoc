@@ -13,8 +13,8 @@ The NVMe SSD FlashCache module (FlashCache or caching module) contains one or tw
 
 You can perform either of the following procedures depending on what needs to be replaced: the entire caching module or just a FlashCache drive carrier.
 
-* Replace the FlashCache module
-* Replace the FlashCache drive carrier
+* Replace the <<Replace the FlashCache module>>
+* Replace the <<Replace a FlashCache drive carrier>>
 
 == Replace the FlashCache module
 The FlashCache module is located in slot 6 and houses the two FlashCache drive carriers. You cannot hot-swap the FlashCache module. 

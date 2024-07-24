@@ -36,11 +36,11 @@ a|
 +
 .. On the impaired controller, press _y_ when you see `Was the restore backup procedure successful?`.
 +
-*NOTE:* This step not required in 9.16.1
+*NOTE:* This step not required in ONTAP 9.16.1 and later.
 +
 .. On the impaired controller, press _y_ when you see `...would you like to use this restored copy now?`. 
 +
-*NOTE:* This step not required in 9.16.1
+*NOTE:* This step not required in ONTAP 9.16.1 and later.
 +
 .. On the impaired controller, press _y_ when prompted to reboot the impaired controller and press _ctrl-c_ for the Boot Menu.
 
