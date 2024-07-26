@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-a1k/controller-replace-move-hardware.html
+sidebar: sidebar
+keywords: asa r2 a1k, move the controller module hardware
+summary: "To replace a controller module, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
+---
+= Replace the controller module hardware - ASA A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a1k_controller_replace_move_hardware.adoc[]

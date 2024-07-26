@@ -1,0 +1,83 @@
+section: fas-70-90
+title: FAS70 and FAS90 systems
+entries:
+ - title: Install and setup
+   pdf-filename: FAS70 and FAS90 Install and Setup
+   entries:
+     - title: Install workflow
+       url: /fas-70-90/install-overview.html
+     - title: Prepare for installation
+       url: /fas-70-90/install-prepare.html
+     - title: Install the hardware
+       url: /fas-70-90/install-hardware.html
+     - title: Cable hardware
+       url: /fas-70-90/install-cable.html
+     - title: Power on system
+       url: /fas-70-90/install-power-hardware.html
+     - title: Complete system setup
+       url: /fas-70-90/install-complete.html
+ - title: Maintain
+   pdf-filename: FAS70 and FAS90 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /fas-70-90/maintain-overview.html
+      # START boot media
+   - title: Boot media
+     pdf-filename: FAS70 and FAS90 Boot Media
+     entries:
+        - title: Boot media replace workflow
+          url: /fas-70-90/bootmedia-replace-workflow.html
+        - title: Requirements and considerations
+          url:  /fas-70-90/bootmedia-replace-requirements.html
+        - title: Check onboard encryption keys
+          url: /fas-70-90/bootmedia-encryption-preshutdown-checks.html
+        - title: Shut down impaired controller
+          url: /fas-70-90/bootmedia-shutdown.html
+        - title: Replace boot media
+          url: /fas-70-90/bootmedia-replace.html
+        - title: Boot recovery image
+          url: /fas-70-90/bootmedia-recovery-image-boot.html
+        - title: Restore encryption
+          url: /fas-70-90/bootmedia-encryption-restore.html
+        - title: Return failed part to NetApp
+          url: /fas-70-90/bootmedia-complete-rma.html
+          # END boot media
+   - title: Controller
+     pdf-filename: FAS70 and FAS90 Controller Module
+     entries:
+        - title: Controller replace workflow
+          url: /fas-70-90/controller-replace-workflow.html
+        - title: Requirements and considerations
+          url:  /fas-70-90/controller-replace-requirements.html
+        - title: Shut down impaired controller
+          url: /fas-70-90/controller-replace-shutdown.html
+        - title: Replace controller
+          url: /fas-70-90/controller-replace-move-hardware.html
+        - title: Restore system configuration
+          url: /fas-70-90/controller-replace-system-config-restore-and-verify.html
+        - title: Give back the controller
+          url: /fas-70-90/controller-replace-recable-reassign-disks.html
+        - title: Complete controller replacement
+          url: /fas-70-90/controller-replace-restore-system-rma.html
+   - title: DIMM
+     url: /fas-70-90/dimm-replace.html
+   - title: Fan
+     url: /fas-70-90/fan-replace.html
+   - title: NVRAM
+     url: /fas-70-90/nvram-replace.html
+   - title: NV Battery
+     url: /fas-70-90/nvdimm-battery-replace.html
+   - title: I/O module
+     entries:
+        - title: I/O module overview
+          url: /fas-70-90/io-module-overview.html
+        - title: Add I/O module
+          url: /fas-70-90/io-module-add.html
+        - title: Replace I/O module
+          url: /fas-70-90/io-module-replace.html
+   - title: Power supply
+     url: /fas-70-90/power-supply-replace.html
+   - title: Real-time clock battery
+     url: /fas-70-90/rtc-battery-replace.html
+   - title: System Management module
+     url: /fas-70-90/system-management-replace.html

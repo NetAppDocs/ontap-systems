@@ -1,0 +1,95 @@
+== Step 1: Prepare the site
+Make sure that the site and the cabinet or rack you plan to use meet the specifications for your storage system.
+
+.Steps
+
+. Confirm that your site meets the environmental and electrical requirements for your platform as shown in the https://hwu.netapp.com[NetApp Hardware Universe^].
+
+. Make sure you have adequate rack space:
+** 4U in an HA configuration for the platform 
+** 2U for each NS224 shelf
+
+. Install any required network switches near the platform.
++
+
+See the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation] for installation instructions and link:https://hwu.netapp.com[NetApp Hardware Universe^] for compatibility information.
+
+
+== Step 2: Unpack the boxes
+Unpack all boxes and compare the contents to the items on the packing slip.
+
+.Steps
+
+. Carefully open all the boxes and lay out the contents in an organized manner.
+
+. Compare the contents you’ve unpacked with the list on the packing slip. 
+
++
+NOTE: You can get your packing list by scanning the QR code on the side of the shipping carton.
+
++
+The following items are some of the contents you might see in the boxes. 
++
+Ensure that everything in the boxes matches the list on the packing slip. If there are any discrepancies, note them down for further action.
++
+
+[%rotate, grid="none", frame="none", cols="12,9,4"]
+|===
+|*Hardware*
+|*Cables* |
+a|* Platform
+* Shelf 
+* Rail kits with instructions (optional)
+* Cable management device 
+* Bezel
+a|* Power cords
+* Network cables
+* Management Ethernet cables (RJ-45 cables)
+* USB-C serial port cable
+* Storage cables (if additional storage is ordered) |
+|===
+
+
+
+== Step 3: Register your hardware
+Registering your platform provides support benefits.
+
+.Steps
+
+. Locate the system serial number for your platform. 
++
+You can find the number on the packing slip, in your confirmation email, or on the controller's System Management module after you unpack it.
++
+image::../media/drw_ssn_label.svg[Example of the system serial number showing location of the number,width=200]
++
+
+. Go to the http://mysupport.netapp.com/[NetApp Support Site^].
+. Register the hardware:
++
+
+[role="tabbed-block"]
+====
+
+.Option 1: Existing NetApp customer
+--
+.Steps
+. Sign in with your username and password.
+. Select *Systems* > *My Systems*.
+. Confirm that the new system serial number is listed.
+
+NOTE:  If the new system serial number isn't listed, follow the instructions for new NetApp customers.
+
+--
+.Option 2: New NetApp customer
+--
+. Click *Register Now*, and create an account.
+. Select *Systems* > *Register Systems*.
+. Enter the product system serial number and requested details.
+
+After your registration is approved, you can download any required software. The approval process might take up to 24 hours.
+
+--
+
+====
+
+

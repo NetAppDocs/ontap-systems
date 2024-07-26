@@ -1,0 +1,63 @@
+---
+permalink: fas-70-90/maintain-overview.html
+sidebar: sidebar
+keywords: fas70, fas90 maintenance, maintenance, repairing a1k, repairing fas70, fas90, replace fas70, fas90 components, replace fas70, fas90 components
+summary: Maintain the FAS70 and FAS90 hardware
+---
+= Maintain FAS70 and FAS90 hardware
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You might need to perform maintenance procedures on your hardware. Procedures specific to maintaining your FAS70 and FAS90 system components are in this section.
+
+The procedures in this section assume that the FAS70 and FAS90 system has already been deployed as a storage node in the ONTAP environment.
+
+== System components
+For the FAS70 and FAS90 storage system, you can perform maintenance procedures on the following components.
+
+[%rotate, grid="none", frame="none", cols="25,65"]
+
+|===
+
+a| link:bootmedia-replace-workflow.html[Boot media]
+
+a| The boot media stores a primary and secondary set of ONTAP image files that the system uses when it boots.
+
+a| link:controller-replace-workflow.html[Controller]
+
+a| A controller consists of a board, firmware, and software. It controls the drives and runs the ONTAP operating system software.
+
+a| link:dimm-replace.html[DIMM]
+
+a| A dual in-line memory module (DIMM) is a type of computer memory. They are installed to add system memory to a controller motherboard.
+
+a| link:fan-replace.html[Fan]
+
+a| A fan cools the controller.
+
+a| link:nvram-replace.html[NVRAM]
+
+a| The NVRAM (Non-Volatile Random Access Memory) is a module that allows the controller to protect and save in-flight data if the system loses power. The system ID resides in the NVRAM module. When replaced, the controller assumes the new system ID from the replacement NVRAM module.
+
+a| link:nvdimm-battery-replace.html[NV battery]
+
+a| The NV battery is responsible for providing power to the NVRAM module while data in-flight is being destaged to flash memory after a power loss.
+
+a| link:io-module-overview.html[I/O module]
+
+a| The I/O module (Input/Output module) is a hardware component that acts as an intermediary between the controller and various devices or systems that need to exchange data with the controller.
+
+a| link:power-supply-replace.html[Power supply]
+
+a| A power supply provides a redundant power source in a controller.
+
+a| link:rtc-battery-replace.html[Real-time clock battery]
+
+a| A real-time clock battery preserves system date and time information if the power is off.
+
+a| link:system-management-replace.html[System management module]
+
+a| The System management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).
+
+|===
