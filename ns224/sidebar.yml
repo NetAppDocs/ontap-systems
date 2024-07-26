@@ -1,35 +1,32 @@
 section: ns224
 title: NS224 shelves
 entries:
-  - title: Install and cable
-    pdf-filename: NS224 Shelves Install and Cable
+  - title: Hot-add shelf
     entries:
-    - title: Hot-add shelf
-      entries:
-        - title: Hot-add workflow
-          url: /ns224/hot-add-shelf-overview.html
-        - title: Requirements and best practices
-          url: /ns224/requirements-hot-add-shelf.html
-        - title: Prepare for hot-add
-          url: /ns224/prepare-hot-add-shelf.html
-        - title: Install shelf for hot add
-          url: /ns224/install-hot-add-shelf.html
-        - title: Cable shelf for hot-add
-          entries:
-            - title: Cabling overview
-              url: /ns224/cable-overview-hot-add-shelf.html
-            - title: AFF systems 
-              url: /ns224/cable-aff-systems-hot-add-shelf.html
-            - title: ASA systems 
-              url: /ns224/cable-asa-systems-hot-add-shelf.html
-            - title: End-of-availability systems 
-              url: /ns224/cable-eoa-systems-hot-add-shelf.html
-        - title: Complete hot-add
-          url: /ns224/complete-hot-add-shelf.html
-    - title: Change shelf ID
-      url: /ns224/change-shelf-id.html
-    - title: Cable shelves as switch-attached storage
-      url: /ns224/cable-as-switch-attached.html
+      - title: Hot-add workflow
+        url: /ns224/hot-add-shelf-overview.html
+      - title: Requirements and best practices
+        url: /ns224/requirements-hot-add-shelf.html
+      - title: Prepare for hot-add
+        url: /ns224/prepare-hot-add-shelf.html
+      - title: Install shelf for hot add
+        url: /ns224/install-hot-add-shelf.html
+      - title: Cable shelf for hot-add
+        entries:
+          - title: Cabling overview
+            url: /ns224/cable-overview-hot-add-shelf.html
+          - title: AFF systems 
+            url: /ns224/cable-aff-systems-hot-add-shelf.html
+          - title: ASA systems 
+            url: /ns224/cable-asa-systems-hot-add-shelf.html
+          - title: End-of-availability systems 
+            url: /ns224/cable-eoa-systems-hot-add-shelf.html
+      - title: Complete hot-add
+        url: /ns224/complete-hot-add-shelf.html
+  - title: Change shelf ID
+    url: /ns224/change-shelf-id.html
+  - title: Cable shelves as switch-attached storage
+    url: /ns224/cable-as-switch-attached.html
   - title: Maintain
     pdf-filename: NS224 shelf maintain
     entries:
