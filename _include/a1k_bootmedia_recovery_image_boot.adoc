@@ -42,7 +42,7 @@ a|
 
 .. Give back the controller using the _storage failover giveback -fromnode local_ command.
 
-. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
+.. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
 
 .. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
 
@@ -66,11 +66,12 @@ After restore procedure is successful, this message will be seen on the console 
 
 .. Give back the controller using the _storage failover giveback -fromnode local_ command.
 
-. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
+.. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
+
 .. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
 
-
 a|
+
 No network connection
 a|
 Contact https://support.netapp.com[NetApp Support].
