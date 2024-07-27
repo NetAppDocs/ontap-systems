@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: asa-r2/cable-hardware.html
+keywords: asa r2, aff a1k, aff a70, aff a90, aff c80, asa a1k, asa a70, asa a90, asa c80, cable controllers
+summary: Learn how to attach the ASA r2 controller cables to your network and cable the controllers to the shelves. 
+---
+= Cable the hardware for ASA r2
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable the ASA r2 hardware by first cabling  the controllers to your network and then cabling the controllers to your shelves.
+
+include::../_include/install_cable.adoc[]
+
+.What's next
+Go to link:power-on-hardware.html[Power on the ASA r2 storage system].
+

@@ -164,6 +164,10 @@ These procedures show how to cable your controllers to one shelf and to two shel
 --
 Cable each controller to the NSM modules on the NS224 shelf. The graphics show cabling from each of the controllers: Controller A cabling in blue and Controller B cabling in yellow.
 
+*100 GbE QSFP28 copper cables*
+
+image::../media/oie_cable100_gbe_qsfp28.svg[100 GbE QSFP28 copper cable,width=100px]
+
 .Steps
 
 . On controller A, cable the following connections:
@@ -183,6 +187,11 @@ image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[Cable controller B ports 
 .Option 2: Cable to two NS224 shelves
 --
 Cable each controller to the NSM modules on both NS224 shelves. The graphics show cabling from each of the controllers: Controller A cabling in blue and Controller B cabling in yellow.
+
+*100 GbE QSFP28 copper cables*
+
+image::../media/oie_cable100_gbe_qsfp28.svg[100 GbE QSFP28 copper cable,width=100px]
+
 
 .Steps
 

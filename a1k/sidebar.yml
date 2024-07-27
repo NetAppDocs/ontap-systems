@@ -6,6 +6,8 @@ entries:
    entries:
      - title: Install workflow
        url: /a1k/install-overview.html
+     - title: Requirements and considerations
+       url: /a1k/install-requirements.html
      - title: Prepare for installation
        url: /a1k/install-prepare.html
      - title: Install the hardware
@@ -55,7 +57,7 @@ entries:
           url: /a1k/controller-replace-move-hardware.html
         - title: Restore system configuration
           url: /a1k/controller-replace-system-config-restore-and-verify.html
-        - title: Give back the controller
+        - title: Give back controller
           url: /a1k/controller-replace-recable-reassign-disks.html
         - title: Complete controller replacement
           url: /a1k/controller-replace-restore-system-rma.html

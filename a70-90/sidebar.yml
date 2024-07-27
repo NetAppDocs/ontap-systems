@@ -6,6 +6,8 @@ entries:
    entries:
      - title: Install workflow
        url: /a70-90/install-overview.html
+     - title: Requirements and considerations
+       url: /a70-90/install-requirements.html
      - title: Prepare for installation
        url: /a70-90/install-prepare.html
      - title: Install hardware
@@ -49,7 +51,7 @@ entries:
           url: /a70-90/chassis-replace-workflow.html
         - title: Requirements and considerations
           url: /a70-90/chassis-replace-requirements.html
-        - title: Shut down impaired controller
+        - title: Shut down controllers
           url: /a70-90/chassis-replace-shutdown.html
         - title: Replace chassis
           url: /a70-90/chassis-replace-move-hardware.html
@@ -68,7 +70,7 @@ entries:
           url: /a70-90/controller-replace-move-hardware.html
         - title: Restore system configuration
           url: /a70-90/controller-replace-system-config-restore-and-verify.html
-        - title: Recable system
+        - title: Recable and give back controller
           url: /a70-90/controller-replace-recable-reassign-disks.html
         - title: Complete controller replacement
           url: /a70-90/controller-replace-restore-system-rma.html

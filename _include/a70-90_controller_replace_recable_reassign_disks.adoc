@@ -1,10 +1,11 @@
-Continue the replacement procedure by recabling the storage, network connections and giving back the controller.
+Recable the storage and network connections, and then give back the controller.
 
-== Step 1: Recable the system
+== Step 1: Recable the controller
 
 include::../_include/recable_system_after_controller_rep.adoc[]
 
 == Step 2: Give back the controller
+Transfer the ownership of storage resources back to the replacement controller.
 
 . If your storage system has Encryption configured, you must restore Storage or Volume Encryption functionality using the following procedure to reboot the system:
 .. Boot to Menu and run Option 10
