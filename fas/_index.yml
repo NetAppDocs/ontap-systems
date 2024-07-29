@@ -12,6 +12,8 @@ indexpage:
           url: https://www.netapp.com/data-storage/fas/
     - title: Install and setup
       links:
+        - title: FAS70 and FAS90
+          url: ../fas-70-90/install-overview.html
         - title: FAS2700
           url: ../fas2700/install-setup.html
         - title: FAS2800
@@ -22,6 +24,8 @@ indexpage:
           url: ../fas9500/install_setup.html
     - title: Maintain your system
       links:
+        - title: FAS70 and FAS90
+          url: ../fas-70-90/maintain-overview.html
         - title: FAS2700
           url: ../fas2700/maintain-overview.html
         - title: FAS2800
