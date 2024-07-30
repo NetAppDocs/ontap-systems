@@ -2,22 +2,25 @@
 permalink: fas-70-90/caching-module-hot-swap.html
 sidebar: sidebar
 keywords: fas70, fas90, hot swap, replace, FlashCache module, FlashCache drive carrier
-summary: The NVMe SSD FlashCache module (FlashCache or caching module) contains one or two FlashCache drive carriers with a single SSD caching drive integrated into the carrier. 
+summary: The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD caching drive integrated into each caching module. 
 ---
-= Replace the caching module or FlashCache drive carrier - FAS70 and FAS90
+= Replace the FlashCache module carrier - FAS70 and FAS90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The NVMe SSD FlashCache module (FlashCache or caching module) contains one or two FlashCache drive carriers with a single SSD FlashCache drive integrated into each FlashCache drive carrier. 
+The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD FlashCache drive integrated into each FlashCache drive carrier. 
 
 You can perform either of the following procedures depending on what needs to be replaced: the entire caching module or just a FlashCache drive carrier.
 
 * Replace the <<Replace the FlashCache module>>
 * Replace the <<Replace a FlashCache drive carrier>>
 
-== Replace the FlashCache module
-The FlashCache module is located in slot 6 and houses the two FlashCache drive carriers. You cannot hot-swap the FlashCache module. 
+[role-"tabbed-block"]
+
+
+.Option 1: Replace the FlashCache module carrier
+The FlashCache module carrier is located in slot 6 and houses up to FlashCache modules. You cannot hot-swap the FlashCache module carrier 
 
 .Before you begin
 
@@ -30,20 +33,30 @@ Shut down or take over the impaired controller using one of the following option
 
 [role="tabbed-block"]
 ====
-
+ 
 .Option 1: Most systems
+[%collapsible]
+=====
 --
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 --
+ 
+=====
+// End snippet
+ 
 .Option 2: MetroCluster configuration
+[%collapsible]
+=====
 --
 include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 --
-
+=====
+// End snippet
+ 
 ====
 
+=== Step 2: Replace the FlashCache module carrier
 
-=== Step 2: Replace the caching module
 Perform the following steps to replace the caching module.
 
 .Steps
@@ -85,9 +98,9 @@ NOTE: This reinitializes the I/O cards and other components and reboots the node
 === Step 4: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
-
-
-== Replace a FlashCache drive carrier
+--
+.Option 2: Replace a FlashCache module
+--
 The FlashCache drive carriers are located in slot 6-1 or in slot 6-2 or in both slot 6-1 and slot 6-2. 
 
 You can hot-swap the individual FlashCache drive carriers with drives of the same capacity from the same vendor or from a different supported vendor.
@@ -164,4 +177,6 @@ Make sure that command output reports status for the as `powered-on` and ready f
 NOTE: If you replace the caching module with a caching module from a different vendor, the new vendor name is displayed in the command output.
 
 include::../_include/complete_rma_step.adoc[]
+--
 
+====
