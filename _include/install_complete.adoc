@@ -84,5 +84,5 @@ NetApp recommends that you use System Manager to set up new clusters. See https:
 System Manager provides a simple and easy workflow for cluster set up and configuration including assigning a node management IP address, initializing the cluster, creating a local tier, configuring protocols and initial provisioning of attached storage.
  
 
-
-NOTE: After your cluster is initialized, download and run  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor] to confirm your setup.
+.What's next?
+After your cluster is initialized, download and run  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor] to confirm your setup.
