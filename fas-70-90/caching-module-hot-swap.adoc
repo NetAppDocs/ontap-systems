@@ -14,23 +14,19 @@ The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (c
 You can perform either of the following procedures depending on what needs to be replaced: the entire caching module or just a FlashCache drive carrier.
 
 * <<Replace the FlashCache module carrier>>
-* <<Replace a FlashCache drive carrier>>
+* <<Replace the FlashCache drive carrier>>
 
-// start tabbed area
 
-[role="tabbed-block"]
-====
+== Replace the FlashCache module carrier
 
-.Replace the FlashCache module carrier
---
-The FlashCache module carrier is located in slot 6 and houses up to FlashCache modules. You cannot hot-swap the FlashCache module carrier.
+The FlashCache module carrier is located in slot 6 and houses up to two FlashCache modules. You cannot hot-swap the FlashCache module carrier.
 
 .Before you begin
 
 * Ensure your storage system has the appropriate operating system for the replacement caching module.
 * Confirm all other components are functioning properly; if not, you must contact technical support.
 
-.Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired node
 
 Shut down or take over the impaired controller using one of the following options.
 
@@ -58,7 +54,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 // End snippet
  
 
-.Step 2: Replace the FlashCache module carrier
+=== Step 2: Replace the FlashCache module carrier
 
 Perform the following steps to replace the caching module.
 
@@ -84,7 +80,7 @@ image::../media/drw_fas70-90_caching_module_remove_IEOPS-1772.svg[Remove the cac
 .. Align the module with the edges of the enclosure slot opening.
 .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
 
-.Step 3: Reboot the controller
+=== Step 3: Reboot the controller
 
 After you replace the FlashCache module, you must reboot the controller module.
 
@@ -98,13 +94,12 @@ NOTE: This reinitializes the I/O cards and other components and reboots the node
 
 . If automatic giveback was disabled, reenable it: _storage failover modify -node local -auto-giveback true_
 
-.Step 4: Return the failed part to NetApp
+=== Step 4: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
---
 
-.Replace a FlashCache drive carrier
---
+
+== Replace the FlashCache drive carrier
 The FlashCache drive carriers are located in slot 6-1 or in slot 6-2 or in both slot 6-1 and slot 6-2. 
 
 You can hot-swap the individual FlashCache drive carriers with drives of the same capacity from the same vendor or from a different supported vendor.
@@ -181,14 +176,3 @@ Make sure that command output reports status for the as `powered-on` and ready f
 NOTE: If you replace the caching module with a caching module from a different vendor, the new vendor name is displayed in the command output.
 
 include::../_include/complete_rma_step.adoc[]
---
-
-====
-
-// end tabbed area
-
-
-
-
-
-
