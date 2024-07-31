@@ -13,13 +13,14 @@ The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (c
 
 You can perform either of the following procedures depending on what needs to be replaced: the entire caching module or just a FlashCache drive carrier.
 
-* <<Replace the FlashCache module carrier>>
-* <<Replace the FlashCache drive carrier>>
+* Replace the <<Replace the FlashCache module>>
+* Replace the <<Replace a FlashCache drive carrier>>
+
+[role-"tabbed-block"]
 
 
-== Replace the FlashCache module carrier
-
-The FlashCache module carrier is located in slot 6 and houses up to two FlashCache modules. You cannot hot-swap the FlashCache module carrier.
+.Option 1: Replace the FlashCache module carrier
+The FlashCache module carrier is located in slot 6 and houses up to FlashCache modules. You cannot hot-swap the FlashCache module carrier 
 
 .Before you begin
 
@@ -30,10 +31,12 @@ The FlashCache module carrier is located in slot 6 and houses up to two FlashCac
 
 Shut down or take over the impaired controller using one of the following options.
 
+[role="tabbed-block"]
+====
+ 
 .Option 1: Most systems
 [%collapsible]
 =====
-
 --
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 --
@@ -44,29 +47,49 @@ include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 .Option 2: MetroCluster configuration
 [%collapsible]
 =====
-
 --
 include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 --
-
 =====
-
 // End snippet
  
+====
 
 === Step 2: Replace the FlashCache module carrier
 
-Perform the following steps to replace the caching module.
+Perform the following steps to replace the FlashCache module carrier.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. Locate the failed caching module, in slot 6, by the lit amber Attention LED on the front of the caching module.
+. Locate the failed FlashCache module carrier, in slot 6, by the lit amber Attention LED on the front of the caching module.
 
 +
 
-image::../media/drw_remove_caching_module_carrier_ieops-1772.svg[Remove the caching module]
+image::../media/drw_remove_caching_module_carrier_ieops-1772.svg[Remove the caching module carrier]
 
 +
+[cols="1,4"]
+
+|===
+a|
+image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
+a|
+FlashCache module carrier cam handle
+a|
+image:../media/legend_icon_02.svg[Callout number 2, width=30px]
+a|
+Caching module fault LED
+a|
+image:../media/legend_icon_03.svg[Callout number 3, width=30px]
+a|
+Caching module slot number
+a|
+image:../media/legend_icon_04.svg[Callout number 4, width=30px]
+a|
+FlashCache module carrier
+
+|===
+
 . Remove the failed FlashCache module:
 .. Pinch the blue tab at the bottom of the FlashCache module
 .. Rotate the tab away from the FlashCache module. 
@@ -97,9 +120,9 @@ NOTE: This reinitializes the I/O cards and other components and reboots the node
 === Step 4: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
-
-
-== Replace the FlashCache drive carrier
+--
+.Option 2: Replace a FlashCache module
+--
 The FlashCache drive carriers are located in slot 6-1 or in slot 6-2 or in both slot 6-1 and slot 6-2. 
 
 You can hot-swap the individual FlashCache drive carriers with drives of the same capacity from the same vendor or from a different supported vendor.
@@ -138,7 +161,7 @@ NOTE: See the https://docs.netapp.com/us-en/ontap-cli-9121/[Command man pages^] 
 
 +
 
-image::../media/drw_fas70-90_flashcache_drive_carrier_remove-ieops-1773.svg[Remove the FlashCache drive carrier]
+image::../media/drw_fas70-90_caching_module_remove_ieops-1773.svg[Remove the caching module]
 
 +
 
@@ -176,3 +199,6 @@ Make sure that command output reports status for the as `powered-on` and ready f
 NOTE: If you replace the caching module with a caching module from a different vendor, the new vendor name is displayed in the command output.
 
 include::../_include/complete_rma_step.adoc[]
+--
+
+====
