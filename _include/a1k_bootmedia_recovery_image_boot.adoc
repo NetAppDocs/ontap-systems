@@ -13,9 +13,9 @@ The image is downloaded from the USB flash drive.
 [options="header" cols="1,2"]
 
 |===
-| If your system has...| Then...
+| If your system is running...| Then...
 a|
-A network connection and is running ONTAP 9.16.0 or earlier
+ONTAP 9.16.0 or earlier
 a|
 .. On the impaired controller, press _Y_ when you see `Do you want to restore the backup configuration now?` 
 
@@ -45,9 +45,12 @@ a|
 .. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
 
 .. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
++
+*NOTE:* If the process fails, contact https://support.netapp.com[NetApp Support].
++
 
 a|
-A network connection and is running ONTAP 9.16.1 or later
+ONTAP 9.16.1 or later
 a|
 
 .. Press _y_ when prompted to restore the backup configuration. 
@@ -69,16 +72,8 @@ After restore procedure is successful, this message will be seen on the console 
 .. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
 
 .. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
-
-a|
-
-No network connection
-a|
-Contact https://support.netapp.com[NetApp Support].
-
-a|
-No network connection and is in a MetroCluster IP configuration
-a|
-Contact https://support.netapp.com[NetApp Support].
++
+*NOTE:* If the process fails, contact https://support.netapp.com[NetApp Support].
++
 
 |===
