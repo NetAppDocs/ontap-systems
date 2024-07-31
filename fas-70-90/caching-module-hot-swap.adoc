@@ -164,6 +164,20 @@ NOTE: See the https://docs.netapp.com/us-en/ontap-cli-9121/[Command man pages^] 
 image::../media/drw_fas70-90_caching_module_remove_ieops-1773.svg[Remove the caching module]
 
 +
++
+[cols="1,4"]
+
+|===
+a|
+image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
+a|
+FlashCache module carrier cam handle
+a|
+image:../media/legend_icon_02.svg[Callout number 2, width=30px]
+a|
+Caching module fault LED
+
+|===
 
 .. Press the terra cotta release button on the front of the caching module.
 
