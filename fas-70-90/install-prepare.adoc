@@ -12,9 +12,7 @@ summary: Prepare to install your FAS70 and FAS90 platform.
 Prepare to install your FAS70 and FAS90 platform.
 
 .Before you begin
-* Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need when you link:complete-install.html#step-3-configure-your-cluster[configure your cluster].  If a default value is provided, you can use that value or else enter your own.
-
-* Airflow through the storage system enters from the front where the bezel or end caps are installed and exhausts out the rear where the ports are located.
+Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need when you link:complete-install.html#step-3-configure-your-cluster[configure your cluster].  If a default value is provided, you can use that value or else enter your own.
 
 == Step 1: Prepare the site
 Make sure that the site and the cabinet or rack you plan to use meet the specifications for your storage system.
