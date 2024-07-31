@@ -9,7 +9,10 @@ summary: 'Follow these high-level steps to install and set up your FAS70 and FAS
 :imagesdir: ../media/
 
 [.lead]
-Follow these workflow steps to install, set up, and deploy your FAS70 and FAS90 storage system.
+Get started with the install and setup workflow for the FAS70 or the FAS90 storage system and deploy it as a node in your ONTAP environment.
+
+.Before you begin
+Before installing your FAS70 or FAS90 system, make sure to review the link:install-requirements.html[installation requirements and considerations].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-prepare.html[Prepare for install]
 [role="quick-margin-para"]

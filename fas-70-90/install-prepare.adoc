@@ -14,29 +14,7 @@ Prepare to install your FAS70 and FAS90 platform.
 .Before you begin
 * Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need when you link:complete-install.html#step-3-configure-your-cluster[configure your cluster].  If a default value is provided, you can use that value or else enter your own.
 
-* Confirm you have all of the additional equipment and tools that you need to complete the hardware installation.
-
-** Phillips #2 screwdriver 
-** Flashlight
-** ESD strap 
-** A paperclip or narrow tipped ball point pen for setting NS224 shelf IDs
-** Laptop or console with a USB/serial connection
-** Access to a Web browser to configure your storage system
-* You should be aware of the safety concerns associated with the weight of the platform.
-+
-A fully loaded FAS70 or FAS90 platform can weigh up to 62.83 lbs (28.5 kg) and requires two people to lift or use a hydraulic lift.
-+
-image::../media/drw_a1k_weight_caution_ieops-1698.svg[FAS70 and FAS90 lifting caution icon]
-
-* You should be aware of the safety concerns associated with the weight of the shelf.
-+
-A fully loaded shelf can weigh up to 66.78 lbs (30.29 kg) and requires two people to lift or use a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
-+
-image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 lifting caution]
-
 * Airflow through the storage system enters from the front where the bezel or end caps are installed and exhausts out the rear where the ports are located.
-
-
 
 == Step 1: Prepare the site
 Make sure that the site and the cabinet or rack you plan to use meet the specifications for your storage system.
@@ -101,7 +79,7 @@ You can find the number on the packing slip, in your confirmation email, or on t
 image::../media/drw_ssn_label.svg[Example of the system serial number showing location of the number,width=200]
 +
 
-. Go to the NetApp Support Site at http://mysupport.netapp.com/[mysupport.netapp.com^].
+. Go to the http://mysupport.netapp.com/[NetApp Support Site^].
 . Register the hardware:
 +
 
