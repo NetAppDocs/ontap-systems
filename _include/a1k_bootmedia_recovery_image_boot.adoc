@@ -53,13 +53,13 @@ a|
 ONTAP 9.16.1 or later
 a|
 
-.. Press _y_ when prompted to restore the backup configuration. 
+.. On the impaired controller, press _y_ when prompted to restore the backup configuration. 
 +
 After restore procedure is successful, this message will be seen on the console - `syncflash_partner: Restore from partner complete`.
 
-.. Press _y_ when prompted to confirm if the restore backup was successful.
-.. Press _y_ when prompted to use the restored configuration.
-.. Press _y_ when prompted to reboot the node.
+.. On the impaired controller, press _y_ when prompted to confirm if the restore backup was successful.
+.. On the impaired controller, press _y_ when prompted to use the restored configuration.
+.. On the impaired controller, press _y_ when prompted to reboot the node.
 
 .. On the impaired controller, press _y_ when prompted to reboot the impaired controller and press _ctrl-c_ for the Boot Menu.
 

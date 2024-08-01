@@ -9,12 +9,12 @@ summary: The NVMe SSD FlashCache module carrier contains one or two FlashCache m
 :imagesdir: ../media/
 
 [.lead]
-The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD FlashCache drive integrated into each FlashCache drive carrier. 
+The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD FlashCache drive integrated into each caching module. 
 
-You can perform either of the following procedures depending on what needs to be replaced: the entire caching module or just a FlashCache drive carrier.
+You can perform either of the following procedures depending on what needs to be replaced: the entire Flashcache module carrier or a caching module.
 
-* Replace the <<Replace the FlashCache module>>
-* Replace the <<Replace a FlashCache drive carrier>>
+* Replace the <<Replace the FlashCache module carrier>>
+* Replace the <<Replace a caching module>>
 
 [role-"tabbed-block"]
 
@@ -24,7 +24,7 @@ The FlashCache module carrier is located in slot 6 and houses up to FlashCache m
 
 .Before you begin
 
-* Ensure your storage system has the appropriate operating system for the replacement caching module.
+* Ensure your storage system has the appropriate operating system for the replacement FlashCache module carrier.
 * Confirm all other components are functioning properly; if not, you must contact technical support.
 
 === Step 1: Shut down the impaired node
@@ -61,7 +61,7 @@ Perform the following steps to replace the FlashCache module carrier.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. Locate the failed FlashCache module carrier, in slot 6, by the lit amber Attention LED on the front of the caching module.
+. Locate the failed FlashCache module carrier, in slot 6, by the lit amber Attention LED on the front of the FlashCache module carrier.
 
 +
 
@@ -90,22 +90,22 @@ FlashCache module carrier
 
 |===
 
-. Remove the failed FlashCache module:
-.. Pinch the blue tab at the bottom of the FlashCache module
-.. Rotate the tab away from the FlashCache module. 
-. Pull the FlashCache module out of the controller module and set it on an antistatic mat.
-. Move the FlashCache drive carriers to the replacement FlashCache module:
-.. Pinch the Terra Cotta tab at the top of the FlashCache drive carrier and rotate the cam handle away from the FlashCache drive carrier.
-.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
-.. Install the FlashCache drive carrier into the same slot in the replacement FlashCache module and rotate the cam handle to the closed position on the FlashCache drive carrier to lock it in place.
-. Repeat these steps if there is a second FlashCache drive module
-. Install the replacement Caching module into the system:
+. Remove the failed FlashCache module carrier
+.. Pinch the blue tab at the bottom of the FlashCache module carrier.
+.. Rotate the tab away from the module. 
+. Pull the FlashCache module carrier out of the controller module and set it on an antistatic mat.
+. Move the caching modules to the replacement FlashCache module carrier:
+.. Pinch the Terra Cotta tab at the top of the caching module and rotate the cam handle away from the caching module.
+.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the FlashCache module carrier.
+.. Install the caching module into the same slot in the replacement FlashCache module carrier and rotate the cam handle to the closed position on the caching module to lock it in place.
+. Repeat these steps if there is a second caching module.
+. Install the replacement FlashCache module carrier into the system:
 .. Align the module with the edges of the enclosure slot opening.
 .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
 
 === Step 3: Reboot the controller
 
-After you replace the FlashCache module, you must reboot the controller module.
+After you replace the FlashCache module carrier, you must reboot the controller module.
 
 .Steps
 
@@ -121,39 +121,39 @@ NOTE: This reinitializes the I/O cards and other components and reboots the node
 
 include::../_include/complete_rma.adoc[]
 --
-.Option 2: Replace a FlashCache module
+.Option 2: Replace a caching module
 --
-The FlashCache drive carriers are located in slot 6-1 or in slot 6-2 or in both slot 6-1 and slot 6-2. 
+.Before you begin
 
-You can hot-swap the individual FlashCache drive carriers with drives of the same capacity from the same vendor or from a different supported vendor.
+The FlashCache modules (caching modules) are located in slot 6-1 or in slot 6-2 or in both slot 6-1 and slot 6-2. 
+
+You can hot-swap the individual caching modules with caching modules of the same capacity from the same vendor or from a different supported vendor.
 
 .Before you begin
-* Ensure the replacement FlashCache drive carrier has the same capacity as the failed one, from the same vendor or from a different supported vendor.
+* Ensure the replacement caching module has the same capacity as the failed one, from the same vendor or from a different supported vendor.
 * Confirm all other components are functioning properly; if not, you must contact technical support.
-
-.About this task
-The drives in the carrier are not field replaceable units (FRU). You must replace the entire FlashCache drive carrier. 
+* The drives in the caching modules are not field replaceable units (FRU). You must replace the entire caching module. 
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. Locate the failed FlashCache drive carrier, in slot 6, by the lit amber Attention LED on the front of the FlashCache drive carrier.
+. Locate the failed caching module, in slot 6, by the lit amber Attention LED on the front of the caching module.
 
 . Prepare the caching module slot for replacement as follows:
-.. Record the caching module capacity, part number, and serial number on the target node: `system node run local sysconfig -av 6`
-.. In admin privilege level, prepare the target NVMe slot for removal, responding `y` when prompted whether to continue: `system controller slot module remove -node node_name -slot slot_number` The following command prepares slot 6-1 on node1 for removal, and displays a message that it is safe to remove:
+.. Record the caching module capacity, part number, and serial number on the target node: _system node run local sysconfig -av 6_
+.. In admin privilege level, prepare the target caching module slot for removal, responding `y` when prompted whether to continue: _system controller slot module remove -node node_name -slot slot_number_ The following command prepares slot 6-1 on node1 for removal, and displays a message that it is safe to remove:
 +
 ----
 ::> system controller slot module remove -node node1 -slot 6-1
 
 Warning: SSD module in slot 6-1 of the node node1 will be powered off for removal.
-Do you want to continue? (y|n): `y`
+Do you want to continue? (y|n): _y
 
 The module has been successfully removed from service and powered off. It can now be safely removed.
 ----
 
-.. Display the slot status with the `system controller slot module show` command.
+.. Display the slot status with the _system controller slot module show_ command.
 +
-The NVMe slot status displays `powered-off` in the screen output for the caching module that needs replacing.
+The caching module slot status displays `powered-off` in the screen output for the caching module that needs replacing.
 
 +
 NOTE: See the https://docs.netapp.com/us-en/ontap-cli-9121/[Command man pages^] for your version of ONTAP for more details.
@@ -182,7 +182,7 @@ Caching module fault LED
 .. Press the terra cotta release button on the front of the caching module.
 
 
-.. Rotate the cam handle as far as it will go.
+.. Rotate the cam handle as far as it will go.********
 .. Gently pull the cam handle straight toward you to remove the caching module from the controller module.
 +
 Be sure to support the caching module as you remove it from the controller module.
