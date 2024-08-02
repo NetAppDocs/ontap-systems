@@ -9,7 +9,7 @@ summary: The NVMe SSD FlashCache module carrier contains one or two FlashCache m
 :imagesdir: ../media/
 
 [.lead]
-The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD FlashCache drive integrated into each caching module. 
+The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD FlashCache drive integrated into each caching module. The FAS70 supports 2TB caching modules and FAS90 supports 4TB caching modules. You cannot mix caching modules of different capacity in the FlashCache module carrier.
 
 You can perform either of the following procedures depending on what needs to be replaced: the entire Flashcache module carrier or a caching module.
 
@@ -40,7 +40,8 @@ include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 [%collapsible]
 =====
 include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
-====
+
+
 // End snippet
 =====
 === Step 2: Replace the FlashCache module carrier
@@ -78,7 +79,8 @@ FlashCache module carrier fault LED
 
 |===
 
-. Remove the failed FlashCache module carrier
+. Remove the failed FlashCache module carrier:
+.. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 .. Pinch the blue tab at the bottom of the FlashCache module carrier.
 .. Rotate the tab away from the module. 
 . Pull the FlashCache module carrier out of the controller module and set it on an antistatic mat.
@@ -90,6 +92,8 @@ FlashCache module carrier fault LED
 . Install the replacement FlashCache module carrier into the system:
 .. Align the module with the edges of the enclosure slot opening.
 .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+.. Rotate the cable management tray up to the closed position.
+
 
 === Step 3: Reboot the controller
 
@@ -135,12 +139,11 @@ You can hot-swap the individual caching modules with caching modules of the same
 ::> system controller slot module remove -node node1 -slot 6-1
 
 Warning: SSD module in slot 6-1 of the node node1 will be powered off for removal.
-Do you want to continue? (y|n): _y
-
+Do you want to continue? (y|n): _y_
 The module has been successfully removed from service and powered off. It can now be safely removed.
 ----
 
-.. Display the slot status with the _system controller slot module show_ command.
+.. Display the slot status with the `system controller slot module show` command.
 +
 The caching module slot status displays `powered-off` in the screen output for the caching module that needs replacing.
 
@@ -167,10 +170,11 @@ Caching module fault LED
 
 |===
 
+.. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 .. Press the terra cotta release button on the front of the caching module.
 
 
-.. Rotate the cam handle as far as it will go.********
+.. Rotate the cam handle as far as it will go.
 .. Gently pull the cam handle straight toward you to remove the caching module from the controller module.
 +
 Be sure to support the caching module as you remove it from the controller module.
@@ -179,6 +183,8 @@ Be sure to support the caching module as you remove it from the controller modul
  .. Align the edges of the caching module with the opening in the controller module.
  .. Gently push the caching module into the bay until the cam handle engages.
  .. Rotate the cam handle until it locks into place.
+ .. Rotate the cable management tray up to the closed position.
+
 . Bring the replacement caching module online by using the `system controller slot module insert` command as follows:
 +
 The following command prepares slot 6-1 on node1 for power-on, and displays a message that it is powered on:
