@@ -38,7 +38,7 @@ a| A fan cools the controller.
 
 a| link:caching-module-hot-swap.html[FlashCache]
 
-a| The FlashCache or caching module acts as a data buffer between the system I/O modules to the CPU or from the CPU to the drives. It acts as a buffer for faster I/O processes until the data can be processed by the system.  
+a| Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It's effective for random read-intensive workloads, including databases, email, and file services.  
 
 a| link:nvram-replace.html[NVRAM]
 
