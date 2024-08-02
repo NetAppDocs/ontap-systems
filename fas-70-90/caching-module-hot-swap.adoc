@@ -16,10 +16,7 @@ You can perform either of the following procedures depending on what needs to be
 * Replace the <<Replace the FlashCache module carrier>>
 * Replace the <<Replace a caching module>>
 
-[role-"tabbed-block"]
-
-
-.Option 1: Replace the FlashCache module carrier
+== Replace the FlashCache module carrier
 The FlashCache module carrier is located in slot 6 and houses up to FlashCache modules. You cannot hot-swap the FlashCache module carrier 
 
 .Before you begin
@@ -31,30 +28,21 @@ The FlashCache module carrier is located in slot 6 and houses up to FlashCache m
 
 Shut down or take over the impaired controller using one of the following options.
 
-[role="tabbed-block"]
-====
  
-.Option 1: Most systems
+.Option 1 Most systems
 [%collapsible]
-=====
---
+====
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
---
- 
-=====
+====
 // End snippet
  
-.Option 2: MetroCluster configuration
+.Option 2 MetroCluster configuration
 [%collapsible]
 =====
---
 include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
---
-=====
-// End snippet
- 
 ====
-
+// End snippet
+=====
 === Step 2: Replace the FlashCache module carrier
 
 Perform the following steps to replace the FlashCache module carrier.
@@ -120,9 +108,9 @@ NOTE: This reinitializes the I/O cards and other components and reboots the node
 === Step 4: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
---
-.Option 2: Replace a caching module
---
+
+== Replace a caching module
+
 .Before you begin
 
 The FlashCache modules (caching modules) are located in slot 6-1 or in slot 6-2 or in both slot 6-1 and slot 6-2. 
@@ -135,6 +123,7 @@ You can hot-swap the individual caching modules with caching modules of the same
 * The drives in the caching modules are not field replaceable units (FRU). You must replace the entire caching module. 
 
 .Steps
+
 . If you are not already grounded, properly ground yourself.
 . Locate the failed caching module, in slot 6, by the lit amber Attention LED on the front of the caching module.
 
@@ -163,7 +152,6 @@ NOTE: See the https://docs.netapp.com/us-en/ontap-cli-9121/[Command man pages^] 
 
 image::../media/drw_fas70-90_caching_module_remove_ieops-1773.svg[Remove the caching module]
 
-+
 +
 [cols="1,4"]
 
@@ -213,6 +201,3 @@ Make sure that command output reports status for the as `powered-on` and ready f
 NOTE: If you replace the caching module with a caching module from a different vendor, the new vendor name is displayed in the command output.
 
 include::../_include/complete_rma_step.adoc[]
---
-
-====
