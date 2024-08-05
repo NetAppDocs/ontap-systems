@@ -1,10 +1,10 @@
 ---
 permalink: fas-70-90/caching-module-hot-swap.html
 sidebar: sidebar
-keywords: fas70, fas90, hot swap, replace, FlashCache module, FlashCache drive carrier
-summary: The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD caching drive integrated into each caching module. 
+keywords: fas70, fas90, hot swap, replace, FlashCache module carrier, caching module, FlashCache
+summary: The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD caching drive integrated into each caching module. The caching modules can be hot-swapped, but the FlashCache module carrier is not hot-swappable. 
 ---
-= Replace the FlashCache module carrier - FAS70 and FAS90
+= Replace the FlashCache module carrier or a caching module - FAS70 and FAS90
 :icons: font
 :imagesdir: ../media/
 
@@ -161,7 +161,7 @@ image::../media/drw_fas70-90_caching_module_remove_ieops-1773.svg[Remove the cac
 a|
 image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
 a|
-FlashCache module carrier cam handle
+Caching module cam handle
 a|
 image:../media/legend_icon_02.svg[Callout number 2, width=30px]
 a|
@@ -171,14 +171,12 @@ Caching module fault LED
 
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 .. Press the terra cotta release button on the front of the caching module.
-
-
 .. Rotate the cam handle as far as it will go.
-.. Gently pull the cam handle straight toward you to remove the caching module from the controller module.
+.. Remove the caching module module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the FlashCache module carrier.
 +
-Be sure to support the caching module as you remove it from the controller module.
+Be sure to support the caching module as you remove it from the FlashCache module carrier.
 
-. Install the caching module:
+. Install the replacement caching module:
  .. Align the edges of the caching module with the opening in the controller module.
  .. Gently push the caching module into the bay until the cam handle engages.
  .. Rotate the cam handle until it locks into place.
