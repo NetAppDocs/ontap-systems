@@ -6,6 +6,8 @@ entries:
    entries:
      - title: Install workflow
        url: /fas-70-90/install-overview.html
+     - title: Requirements and considerations
+       url: /fas-70-90/install-requirements.html
      - title: Prepare for installation
        url: /fas-70-90/install-prepare.html
      - title: Install the hardware
@@ -63,6 +65,8 @@ entries:
      url: /fas-70-90/dimm-replace.html
    - title: Fan
      url: /fas-70-90/fan-replace.html
+   - title: FlashCache module
+     url: /fas-70-90/caching-module-hot-swap.html 
    - title: NVRAM
      url: /fas-70-90/nvram-replace.html
    - title: NV Battery
