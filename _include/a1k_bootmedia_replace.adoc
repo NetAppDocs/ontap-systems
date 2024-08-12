@@ -1,4 +1,4 @@
-To replace the boot media, you must remove the System Management module from the back of the system, remove the impaired boot media, install the replacement boot media in the System Management module, and transfer the ONTAP image from a USB flash drive to the replacement boot media.
+To replace the boot media, you must remove the System Management module from the back of the system, remove the impaired boot media, install the replacement boot media in the System Management module, and transfer the ONTAP image to the replacement boot media.
 
 == Step 1: Replace the boot media
 
@@ -52,7 +52,18 @@ The cam lever moves away from the enclosure.
 
 == Step 2: Transfer the ONTAP image to the boot media
 
-The replacement boot media that you installed is without an ONTAP image so you need to transfer an ONTAP image using a USB flash drive.
+Depending on the version of ONTAP your storage system is running, you can:
+
+* Transfer the ONTAP image using a USB flashdrive on storage systems running ONTAP 9.16.0 and later.
+* Transfer the ONTAP image from the cluster partner node on storage systems running ONTAP 9.16.1 and later.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Using a USB flashdrive
+--
+
+The replacement boot media that you installed is without an ONTAP image, You can transfer the ONTAP image to the replacement boot media by downloading the appropriate ONTAP service image from the https://mysupport.netapp.com/[NetApp Support Site] to a USB flash drive and then to the replacement boot media.
 
 .Before you begin
 
@@ -100,5 +111,11 @@ NOTE: The target port you configure is the target port you use to communicate wi
   
 +
 NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
+
+--
+.Option2: Using the cluster partner node (9.16.1 and later)
+--
+
+Beginning with 9.16.1, you can use the partner node to transfer the ONTAP boot image to the replacement boot media.
 
 
