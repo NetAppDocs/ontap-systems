@@ -33,7 +33,7 @@ These procedures show common configurations. Keep in mind that the specific cabl
 [role="tabbed-block"]
 ====
 
-.Option 1: Connect your storage controllers to a switchless ONTAP cluster
+.Option 1: Connect the storage controllers to a switchless ONTAP cluster
 --
 Connect your storage controllers to each other to create the ONTAP cluster connections, and then connect the Ethernet ports on each controller to your host network.
 
@@ -89,7 +89,7 @@ IMPORTANT: Do not plug in the power cords yet.
 
 
 --
-.Option 2: Connect your storage controllers to a switched ONTAP cluster
+.Option 2: Connect the storage controllers to a switched ONTAP cluster
 --
 Connect your storage controllers to the cluster network switches to create the ONTAP cluster connections, and then connect the Ethernet ports on each controller to your host network.
 
@@ -158,7 +158,7 @@ The following cabling procedures show how to connect your controllers to one she
 [role="tabbed-block"]
 ====
 
-.Option 1: Connect your controllers to one NS224 storage shelf
+.Option 1: Connect to one NS224 storage shelf
 --
 Connect each controller to the NSM modules on the NS224 shelf. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
 
@@ -178,7 +178,7 @@ image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[Cable controller B ports 
 
 --
 
-.Option 2: Cable to two NS224 shelves
+.Option 2: Connect to two NS224 storage shelves
 --
 Connect each controller to the NSM modules on both NS224 shelves. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
 
