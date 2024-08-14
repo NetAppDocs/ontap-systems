@@ -29,7 +29,7 @@ A configuration with two quad-port SAS HBAs and two stacks of disk shelves with 
 * If needed, you can refer to the link:install-cabling-rules.html[SAS cabling rules and concepts] for information about supported configurations, the controller slot numbering convention, shelf-to-shelf connectivity, and controller-to-shelf connectivity (including use of port pairs).
 * If needed, after you complete the worksheet, you can refer to link:install-cabling-worksheets-how-to-read-multipath.html[How to read a worksheet to cable controller-to-stack connections for multipathed connectivity]
 
-image::../media/drw_worksheet_mpha_template.gif[]
+image::../media/drw_worksheet_mpha_template.gif[MPHA controller to stack cabling worksheet template]
 
 .Steps
 
@@ -51,7 +51,7 @@ When all port pairs are being used to cable the stacks in your system, circle po
 +
 For example, in a multipath HA configuration with eight SAS ports and four stacks, port pair 1a/2b is cabled to stack 1, port pair 2a/1d is cabled to stack 2, port pair 1c/2d is cabled to stack3, and port pair 2c/1b is cabled to stack 4.
 +
-image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[]
+image::../media/drw_worksheet_mpha_slots_1_and_2_two_4porthbas_two_stacks.gif[Multipath HA cabling worksheet filled out]
 +
 When not all port pairs are needed to cable the stacks in your system, skip port pairs (use every other port pair).
 +
@@ -59,12 +59,12 @@ For example, in a multipath HA configuration with eight SAS ports and two stacks
 +
 NOTE: When you have more port pairs than you need to cable the stacks in your system, the best practice is to skip port pairs to optimize the SAS ports on your system. By optimizing SAS ports, you optimize your system's performance.
 +
-image::../media/drw_worksheet_mpha_skipped_template.gif[]
+image::../media/drw_worksheet_mpha_skipped_template.gif[Multipath HA cabling worksheet showing skipped port pairs]
 +
 You can use your completed worksheet to cable your system.
 
 . If you have a single-controller (multipath) configuration, cross out the information for controller 2.
 +
-image::../media/drw_worksheet_mp_template.gif[]
+image::../media/drw_worksheet_mp_template.gif[Multipathed cabling worksheet filled out]
 +
 You can use your completed worksheet to cable your system.
