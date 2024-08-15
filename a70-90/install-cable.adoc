@@ -33,7 +33,7 @@ These procedures show common configurations. Keep in mind that the specific cabl
 [role="tabbed-block"]
 ====
 
-.Option 1: Connect the storage controllers to a switchless ONTAP cluster
+.Option 1: Connect the controllers to a switchless ONTAP cluster
 --
 Connect your storage controllers to each other to create the ONTAP cluster connections, and then connect the Ethernet ports on each controller to your host network.
 
@@ -93,7 +93,7 @@ IMPORTANT: Do not plug in the power cords yet.
 
 
 --
-.Option 2: Connect the storage controllers to a switched ONTAP cluster
+.Option 2: Connect the controllers to a switched ONTAP cluster
 --
 Connect your storage controllers to the cluster network switches to create the ONTAP cluster connections, and then connect the Ethernet ports on each controller to your host network.
 
@@ -153,7 +153,7 @@ IMPORTANT: Do not plug in the power cords yet.
 
 ====
 
-== Step 2: Connect your storage controllers to the storage shelves
+== Step 2: Connect the storage controllers to the storage shelves
 The following cabling procedures show how to connect your controllers to one shelf and to two shelves. You can directly connect up to four shelves to your controllers.
 
 
