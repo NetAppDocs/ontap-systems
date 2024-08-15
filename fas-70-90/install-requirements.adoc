@@ -9,30 +9,35 @@ summary: Review the equipment needed and the lifting precautions for your platfo
 :imagesdir: ../media/
 
 [.lead]
-Before installing your storage system, review the equipment needed and the lifting precautions for your platform and shelves. 
+Review the equipment needed and the lifting precautions for your FAS70 or FAS90 storage system and storage shelves. 
 
 == Equipment needed for install
-Confirm you have the following equipment and tools needed to install and setup your system.
+To install your FAS70 or FAS90 storage system, you need the following equipment and tools. 
 
-** Phillips #2 screwdriver 
-** Flashlight
-** ESD strap 
-** A paperclip or narrow tipped ball point pen for setting NS224 shelf IDs
-** Laptop or console with a USB/serial connection
 ** Access to a Web browser to configure your storage system
+** Electrostatic discharge (ESD) strap 
+** Flashlight
+** Laptop or console with a USB/serial connection
+** Paperclip or narrow tipped ball point pen for setting NS224 storage shelf IDs
+** Phillips #2 screwdriver 
 
 == Lifting precautions 
-You should be aware of the safety concerns associated with the weight of the platform and shelves.
+FAS70 and FAS90 storage systems and NS224 storage shelves are heavy. Exercise caution when lifting and moving these items.
 
-=== FAS70 and FAS90 platform weight
-A fully loaded FAS70 or FAS90 platform can weigh up to 62.83 lbs (28.5 kg) and requires two people to lift or use a hydraulic lift.
+=== FAS70 and FAS90 storage systems
+A FAS70 or FAS90 storage system can weigh up to 62.83 lbs (28.5 kg). To lift the system, use two people or a hydraulic lift.
 
 image::../media/drw_a1k_weight_caution_ieops-1698.svg[FAS70 and FAS90 lifting caution icon]
 
-
-=== Shelf weight
-A fully loaded shelf can weigh up to 66.78 lbs (30.29 kg) and requires two people to lift or use a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
+=== NS224 shelf
+An NS224 storage shelf can weigh up to 66.78 lbs (30.29 kg). To lift the storage shelf, use two people or a hydraulic lift. Keep all components in the storage shelf (both front and rear) to prevent unbalancing the shelf weight.
 
 image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 lifting caution]
 
+.Related information
+
+*  https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[Safety information and regulatory notices^]
+
+.What's next?
+After you've reviewed the installation requirements and considerations, you link:install-prepare.html[prepare to install your FAS70 or FAS90 storage system].
 

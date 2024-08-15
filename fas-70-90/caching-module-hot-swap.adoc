@@ -9,12 +9,14 @@ summary: The NVMe SSD FlashCache module carrier contains one or two FlashCache m
 :imagesdir: ../media/
 
 [.lead]
-The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD FlashCache drive integrated into each caching module. The FAS70 supports 2TB caching modules and FAS90 supports 4TB caching modules. You cannot mix caching modules of different capacity in the FlashCache module carrier.
+The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD FlashCache drive integrated into each caching module. 
+
+The FAS70 supports 2TB caching modules and FAS90 supports 4TB caching modules. You cannot mix caching modules of different capacity in the FlashCache module carrier.
 
 You can perform either of the following procedures depending on what needs to be replaced: the entire Flashcache module carrier or a caching module.
 
-* Replace the <<Replace the FlashCache module carrier>>
-* Replace the <<Replace a caching module>>
+* <<Replace the FlashCache module carrier>>
+* <<Replace the caching module>>
 
 == Replace the FlashCache module carrier
 The FlashCache module carrier is located in slot 6 and houses up to FlashCache modules. You cannot hot-swap the FlashCache module carrier 
@@ -112,7 +114,7 @@ NOTE: This reinitializes the I/O cards and other components and reboots the node
 
 include::../_include/complete_rma.adoc[]
 
-== Replace a caching module
+== Replace the caching module
 
 .Before you begin
 

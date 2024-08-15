@@ -1,9 +1,9 @@
-After you have installed your hardware, use the ONTAP software to configure and manage your storage system.
+After you’ve turned on your storage system, you are ready to discover you cluster network and set up an ONTAP cluster.
 
 == Step 1: Gather cluster information
 If you have not already done so, gather the information you will need to configure your cluster, such as your cluster management interface port and IP address. 
 
-Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet] to record the values that you need during the cluster setup process. If a default value is provided, you can use that value or else enter your own.
+Use the https://docs.netapp.com/us-en/ontap/software_setup/index.html[cluster setup worksheet^] to record the values that you need during the cluster setup process. If a default value is provided, you can use that value or else enter your own.
 
 == Step 2: Discover your cluster network
 The discovery process enables you to discover your storage system controllers on the network.
@@ -42,7 +42,7 @@ System Manager opens.
 If network discovery is not enabled on your laptop, complete the configuration and setup using the ONTAP command line interface (CLI) Cluster Setup wizard.
 
 .Before you begin
-Make sure your laptop is connected to the serial console port and the controllers are powered on. See link:install-power-hardware.html#step-2-power-on-the-controllers[Power on the controllers] for instructions.
+Make sure your laptop is connected to the serial console port and the controllers are powered on. See link:install-power-hardware.html#step-2-power-on-the-controllers[power on the storage system] for instructions.
 
 .Steps
 
@@ -79,10 +79,10 @@ The node boots, and then the Cluster Setup wizard starts on the console.
 // end tabbed area
 
 == Step 3: Configure your cluster
-NetApp recommends that you use System Manager to set up new clusters. See https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[Configure ONTAP on a new cluster with System Manager] for setup instructions.
+NetApp recommends that you use System Manager to set up new clusters. See https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[Configure ONTAP on a new cluster with System Manager^] for setup instructions.
 
 System Manager provides a simple and easy workflow for cluster set up and configuration including assigning a node management IP address, initializing the cluster, creating a local tier, configuring protocols and initial provisioning of attached storage.
  
 
 .What's next?
-After your cluster is initialized, download and run  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor] to confirm your setup.
+After your cluster is initialized, download and run  https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^] to confirm your setup.
