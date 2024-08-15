@@ -240,45 +240,7 @@ image:../media/drw_fas70-90_twoshelf_ds460c_cabling_controller1_ieops-1918.svg[C
 
 +
 image:../media/drw_fas70-90_twoshelf_ds460c_cabling_controller2_ieops-1919.svg[Cable controller B ports e10a, e10c and e11b and e11d to two DS460C shelves]
-+
 
---
-.Option 4: Cable to four DS460C shelves
---
-
-Cable each controller to the IOM modules on the DS460C shelves. The graphics show cabling from each of the controllers: Controller A cabling in blue and Controller B cabling in yellow. 
-
-The graphic also shows shelf-to-shelf interconnect cabling in turquoise.
-
-.Steps
-. On controller A, cable the following connections:
-.. Connect port e10a to stack 1, shelf 1 IOM A port 1.
-
-.. Connect port e10c to stack 2, shelf 1 IOM A port 1
-
-.. Connect port e11b to stack 1, shelf 1 IOM B port 3.
-
-.. Connect port e11d to stack 2, shelf 2 IOM B port 3.
-
-.. Connect the stack 1 shelf-to-shelf connection by connecting shelf 1 IOM A port 3 to shelf 2 IOM A port 1.
-
-+
-image:../media/drw_fas70-90_fourshelf_ds460c_cabling_controller1_ieops-1920.svg[]
-+
-
-. On controller B, cable the following connections:
-.. Connect port e10a to stack 1, shelf 1 IOM B port 1.
-
-.. Connect port e10c to stack 2, shelf 2 IOM B port 1.
-
-.. Connect port e11b to stack 1, shelf 2 IOM B port 3.
-
-.. Connect port e11d to stack 2, shelf 2 IOM A port 3.
-
-.. Connect the stack 2 shelf-to-shelf connection by connecting shelf 1 IOM A port 3 to shelf 2 IOM A port 1.
-+
-image:../media/drw_fas70-90_fourshelf_ds460c_cabling_controller2_ieops-1921.svg[]
-+
 --
 
 ====
