@@ -32,4 +32,4 @@ Before you power on the controllers, power on each NS224 shelf and assign a uniq
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:install-complete.html[Complete storage system setup]
 [role="quick-margin-para"]
-To complete system setup, access ONTAP System Manager, by pointing a browser to the controller’s IP address. A setup wizard helps you complete cluster configuration for your AFF A1K storage system. As an alternative, you can also use the command line interface (CLI).
+To complete system setup, access ONTAP System Manager, by pointing a browser to the controller’s IP address. A setup wizard helps you complete cluster configuration for your AFF A70 or AFF A90 storage system.
