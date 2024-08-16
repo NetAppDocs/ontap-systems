@@ -159,9 +159,9 @@ You repeat the recabling for path B (IOM B).
 +
 You can infer the recabling if you are removing the logical first disk shelf in a stack or if your stack has multipath connectivity.
 +
-image::../media/drw_hotremove_end.gif[]
+image::../media/drw_hotremove_end.gif[Hot remove a shelf from the end of a stack]
 +
-image::../media/drw_hotremove_middle.gif[]
+image::../media/drw_hotremove_middle.gif[Hot remove a shelf from the middle of a stack]
 . Verify that you bypassed the disk shelves you are removing and reestablished the path A (IOM A) stack connections correctly: `storage disk show -port`
 +
 For HA pair configurations, you run this command from the clustershell of either controller. It might take up to a minute for the system to complete discovery.

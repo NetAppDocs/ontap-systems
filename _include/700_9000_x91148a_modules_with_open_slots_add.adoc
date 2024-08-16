@@ -78,7 +78,7 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 . Giveback the node from the partner node: `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . Repeat these steps for controller B.
-. Install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-add - NS224 shelves^].
+. Install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
 
 --
 ====
