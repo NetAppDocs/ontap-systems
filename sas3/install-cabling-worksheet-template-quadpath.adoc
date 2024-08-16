@@ -32,7 +32,7 @@ Each port pair designated for multipathed cabling is encircled by an oval that i
 * If needed, you can refer to link:install-cabling-rules.html[SAS cabling rules and concepts] for information about the controller slot numbering convention, shelf-to-shelf connectivity, and controller-to-shelf connectivity (including the use of port pairs).
 * If needed, after you complete the worksheet, you can refer to link:install-cabling-worksheets-how-to-read-quadpath.html[How to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity].
 
-image::../media/drw_worksheet_quad_pathed_template_nau.gif[]
+image::../media/drw_worksheet_quad_pathed_template_nau.gif[Quad path cabling worksheet template]
 
 .Steps
 
@@ -54,7 +54,7 @@ Both sets of cabling are needed to achieve quad-pathed connectivity from each co
 +
 The following example uses port pair 1a/2b for the multipathed cabling and port pair 2a/1d for the quad-pathed cabling to stack 1.
 +
-image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_set1_circled_nau.gif[]
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_set1_circled_nau.gif[Quad path HA cabling worksheet showing the port pairs connected to stack 1]
 
 . Identify the two sets of port pairs to connect to stack 2 by drawing an oval around the first set of port pairs and a rectangle around the second set of port pairs.
 +
@@ -62,10 +62,10 @@ Both sets of cabling are needed to achieve quad-pathed connectivity from each co
 +
 The following example uses port pair 1c/2d for the multipathed cabling and port pair 2c/1b for the quad-pathed cabling to stack 2.
 +
-image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Cabling worksheet for quad-path HA]
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Quad path HA cabling worksheet showing the port pairs connected to stack 2]
 
 . If you have a quad-path (single-controller) configuration, cross out the information for controller 2; you only need controller 1 information to cable the controller-to-stack connections.
 +
 The following example shows that the information for controller 2 is crossed out.
 +
-image::../media/drw_worksheet_qp_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[]
+image::../media/drw_worksheet_qp_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Quad path single controller cabling worksheet showing the port pairs connected to stack 1 and 2]

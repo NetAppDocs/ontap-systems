@@ -25,7 +25,7 @@ image::../media/drw_controller_to_stack_cable_color_key_non2600.gif[Color key fo
 +
 The first set of multipathed cabling is referred to as "`multipathed`". The second set of multipathed cabling is referred to as "`quad-pathed`". The second set of cabling is referred to as "`quad-pathed`" because completing this set of cabling gives you the quad-pathed connectivity.
 +
-image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[Color key for quad-pathed connectivity]
+image::../media/drw_controller_to_stack_quad_pathed_connectivity_key.gif[Color key for quad pathed connectivity]
 
 * The worksheet example shows port pairs designated for multipathed cabling or quad-pathed cabling to the applicable stack.
 +
@@ -35,6 +35,6 @@ Each port pair designated for multipathed cabling is encircled by an oval that i
 
 The following worksheet and cabling example uses port pairs 1a/2b (multipathed) and 2a/1d (quad-pathed) for stack 1, and port pairs 1c/2d (multipathed) and 2c/1b (quad-pathed) for stack2.
 
-image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Cabling worksheet for quad-path HA]
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Cabling worksheet for quad path HA]
 
-image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Quuad-path HA with two quad-port SAS HBAs and two multi-shelf stacks]
+image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Quad path HA with two quad port SAS HBAs and two multi shelf stacks]

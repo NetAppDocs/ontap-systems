@@ -29,13 +29,13 @@ The LEDs on the drive shelf front operator display panel (ODP) indicate whether 
 
 The following illustration and table describes the three LEDs on the ODP:
 
-image::../media/drw_ns224_odp_leds_IEOPS-1262.svg[width=100px]
+image::../media/drw_ns224_odp_leds_IEOPS-1262.svg[Operator display panel LEDs, width=100px]
 
 [cols="1,2,1,5" options="header"]
 |===
 | LED icon| LED name & color| State| Description
 a|
-image::../media/drw_sas_power_icon.svg[width=20px]
+image::../media/drw_sas_power_icon.svg[Operator display panel power LED, width=20px]
 a|
 Power (Green)
 a|
@@ -43,7 +43,7 @@ On
 a|
 One or more power supplies are supplying power to the drive shelf.
 a|
-image::../media/drw_sas_fault_icon.svg[width=5px]
+image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
 a|
 Attention (Amber)
 a|
@@ -56,7 +56,7 @@ Check event messages to determine corrective action to take.
 +
 Power cycle the drive shelf for the shelf ID to take affect.
 a|
-image::../media/drw_sas3_location_icon.svg[width=20px]
+image::../media/drw_sas3_location_icon.svg[Operator display panel location LED, width=20px]
 a|
 Location (Blue)
 a|
@@ -71,7 +71,7 @@ The LEDs on an NSM module indicate whether the module is functioning normally, w
 
 The following illustration and tables describe NSM module LEDs associated with the function of a module and the function of each NVMe port on a module.
 
-image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[width=550px]
+image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[NS224 NSM100 module LEDs, width=550px]
 
 [cols="1,1,2,4" options="header"]
 |===
@@ -79,7 +79,7 @@ image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[width=550px]
 a|
 image:../media/legend_icon_01.png[Callout number 1] 
 a|
-image::../media/drw_sas3_location_icon.svg[width=20px]
+image::../media/drw_sas3_location_icon.svg[Operator display panel location LED, width=20px]
 a|
 Blue
 a|
@@ -87,7 +87,7 @@ NSM module: Location
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
-image::../media/drw_sas_fault_icon.svg[width=5px]
+image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
 a|
 Amber
 a|
@@ -103,7 +103,7 @@ NVMe port/link: status
 a|
 image:../media/legend_icon_04.png[Callout number 4] 
 a|
-image::../media/drw_sas_fault_icon.svg[width=5px]
+image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
 a|
 Amber
 a|
@@ -177,7 +177,7 @@ The LEDs on an AC or DC power supply (PSU) indicate whether the PSU is functioni
 
 The following illustration and tables describe the LED on a PSU. (The illustration is an AC PSU; however, the LED location is the same on the DC PSU):
 
-image::../media/drw_ns224_psu_leds_IEOPS-1261.svg[width=400px]
+image::../media/drw_ns224_psu_leds_IEOPS-1261.svg[Power supply power activity LED, width=400px]
 
 [cols="1,4" options="header"]
 |===
@@ -242,7 +242,7 @@ The LEDs on an NVMe drive indicates whether it is functioning normally or there 
 
 The following illustration and tables describe the two LEDs on an NVMe drive:
 
-image::../media/drw_ns224_drive_leds_IEOPS-1263.svg[width=120px]
+image::../media/drw_ns224_drive_leds_IEOPS-1263.svg[NVMe drive attention and power LEDs, width=120px]
 
 [cols="1,2,2" options="header"]
 |===

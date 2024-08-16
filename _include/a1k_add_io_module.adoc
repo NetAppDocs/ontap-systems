@@ -78,7 +78,7 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 
-. If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-add a shelf^].
+. If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
 
 == Option 2: Add an I/O module in a storage system with no empty slots
 
@@ -185,7 +185,7 @@ a|
 Storage module
 a|
 Install and cable your NS224 shelves, as described in
-https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-add a shelf^].
+https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
 a|
 +
 |===

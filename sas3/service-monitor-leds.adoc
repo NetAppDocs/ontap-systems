@@ -21,7 +21,7 @@ The following table describes the three LEDs on the operator display panel used 
 |===
 | LED icon| LED name| State| Description
 a|
-image::../media/drw_sas_power_icon.svg[width=20px]
+image::../media/drw_sas_power_icon.svg[Power icon, width=20px]
 a|
 Power
 a|
@@ -29,7 +29,7 @@ Solid green
 a|
 One or more power supplies are supplying power to the disk shelf.
 .2+|
-image:../media/drw_sas_fault_icon.svg[width=5px]
+image:../media/drw_sas_fault_icon.svg[Attention icon, width=5px]
 .2+|
 Attention
 a|
@@ -45,7 +45,7 @@ The shelf ID is in a pending state.
 
 Power cycle the disk shelf for the shelf ID to take affect.
 a|
-image::../media/drw_sas3_location_icon.svg[width=20px]
+image::../media/drw_sas3_location_icon.svg[Location icon, width=20px]
 a|
 Location
 a|
@@ -73,7 +73,7 @@ The IOM12/IOM12B module is used in DS460C, DS224C, and DS212C disk shelves.
 |===
 | LED icon| LED name| State| Description
 a|
-image::../media/drw_sas_fault_icon.svg[width=5px]
+image::../media/drw_sas_fault_icon.svg[Attention icon, width=5px]
 a|
 Attention
 a|
@@ -94,7 +94,7 @@ Solid green
 a|
 One or more of the four SAS lanes established a link (with either an adapter or another disk shelf).
 a|
-image::../media/drw_sas3_location_icon.svg[width=20px]
+image::../media/drw_sas3_location_icon.svg[Location icon, width=20px]
 a|
 Location
 a|
@@ -123,7 +123,7 @@ The following table describes the two LEDs on power supplies used in DS460C, DS2
 |===
 | LED icon| LED name| State| Description
 .2+|
-image:../media/drw_sas_power_icon.svg[width=20px]
+image:../media/drw_sas_power_icon.svg[Power icon, width=20px]
 .2+|
 Power
 a|
@@ -138,7 +138,7 @@ The power supply failed, the AC switch is turned off, the AC power cord is not p
 Check event messages to determine corrective action to take.
 
 a|
-image::../media/drw_sas_fault_icon.svg[width=5px]
+image::../media/drw_sas_fault_icon.svg[Attention icon, width=5px]
 a|
 Attention
 a|
@@ -155,11 +155,11 @@ The following illustration is for a power supply used in a DS460C disk shelf.
 
 The two LED icons act as the labels and LEDs, meaning the icons themselves illuminate--there are no adjacent LEDs.
 
-image::../media/28_dwg_e2860_de460c_psu.gif[LED icons]
+image::../media/28_dwg_e2860_de460c_psu.gif[Power supply LEDs]
 
 The following illustration is for a power supply used in a DS224C or DS212C disk shelf:
 
-image::../media/drw_powersupply_913w_vsd.gif[LED icons]
+image::../media/drw_powersupply_913w_vsd.gif[power supply LEDs]
 
 == Fan LEDs on DS460C disk shelves
 
@@ -182,7 +182,7 @@ An error occurred with the function of the fan.
 Check event messages to determine corrective action to take.
 
 |===
-image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[Location of Attention LED]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[Fan attention LED]
 
 == Disk drive LEDs
 
@@ -225,13 +225,13 @@ The following illustration is for a disk drive used in a DS224C disk shelf.
 
 DS224C disk shelves use 2.5-inch disk drives arranged vertically in the disk shelf.
 
-image::../media/drw_diskdrive_ds224c.gif[Drive carrier vertical arrangement]
+image::../media/drw_diskdrive_ds224c.gif[Vertical drive carrier LEDs]
 
 The following illustration is for a disk drive used in a DS212C disk shelf.
 
 DS212C disk shelves use 3.5-inch disk drives or 2.5-inch disk drives in carriers arranged horizontally in the disk shelf.
 
-image::../media/drw_diskdrive_ds212c.gif[Drive carrier horizontal arrangement]
+image::../media/drw_diskdrive_ds212c.gif[Horizontal drive carrier LEDs]
 
 === Disk drive LEDs for DS460C disk shelves
 
