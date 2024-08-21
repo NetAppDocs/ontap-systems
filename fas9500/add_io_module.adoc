@@ -62,7 +62,7 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . If you are using slots 3 and/or 7 for networking, use the `storage port modify -node __<node name>__ -port __<port name>__ -mode network` command to convert the slot for networking use.
 . Repeat these steps for controller B.
-. If you installed a storage I/O module, install and cable your SAS shelves, as described in https://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html[Hot-adding a SAS shelf^].
+. If you installed a storage I/O module, install and cable your SAS shelves, as described in link:../sas3/install-hot-add-shelf.html[Hot-adding a SAS shelf].
 
 == Option 2: Add an I/O module in a system with no open slots
 
@@ -170,8 +170,7 @@ Use the `storage port modify -node *_<node name>__ -port *_<port name>__ -mode n
 a|
 Storage module
 a|
-Install and cable your SAS shelves, as described in
-https://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html[Hot-adding a SAS shelf^].
+Install and cable your SAS shelves, as described in link:../sas3/install-hot-add-shelf.html[Hot-adding a SAS shelf].
 a|
 
 |===
