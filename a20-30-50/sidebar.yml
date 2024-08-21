@@ -6,6 +6,8 @@ entries:
    entries:
      - title: Install workflow
        url: /a20-30-50/install-overview.html
+     - title: Requirements and considerations
+       url: /a20-30-50/install-requirements.html
      - title: Prepare for installation
        url: /a20-30-50/install-prepare.html
      - title: Install hardware
@@ -33,8 +35,12 @@ entries:
           url: /a20-30-50/bootmedia-encryption-preshutdown-checks.html
         - title: Shut down impaired controller
           url: /a20-30-50/bootmedia-shutdown.html
+        - title: Remove controller
+          url: /a20-30-50/bootmedia-controller-remove.html
         - title: Replace boot media
           url: /a20-30-50/bootmedia-replace.html
+        - title: Reinstall controller
+          url: /a20-30-50/bootmedia-controller-reinstall.html
         - title: Boot recovery image
           url: /a20-30-50/bootmedia-recovery-image-boot.html
         - title: Restore encryption
