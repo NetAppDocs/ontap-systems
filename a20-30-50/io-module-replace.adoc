@@ -1,0 +1,12 @@
+---
+permalink: a20-30-50/io-module-replace.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, replace a pcie card
+summary: "To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards."
+---
+= Replace I/O module - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a70-90_io_module_replace.adoc[]

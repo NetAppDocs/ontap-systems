@@ -1,0 +1,13 @@
+---
+permalink: a20-30-50/drive-replace.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, replace the drives
+summary: You must replace a drive when the platform logs a warning message to the system console indicating that a drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
+
+---
+= Replace SSD Drive - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/g_replace_drive.adoc[]
