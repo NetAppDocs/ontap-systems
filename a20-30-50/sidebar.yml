@@ -53,6 +53,14 @@ entries:
      entries:
         - title: Chassis replace workflow
           url: /a20-30-50/chassis-replace-workflow.html
+        - title: Requirements and considerations
+          url: /a20-30-50/chassis-replace-requirements.html
+        - title: Shut down controllers
+          url: /a20-30-50/chassis-replace-shutdown.html
+        - title: Replace chassis
+          url: /a20-30-50/chassis-replace-move-hardware.html
+        - title: Complete chassis replacement
+          url: /a20-30-50/chassis-replace-complete-system-restore-rma.html
    - title: Controller
      pdf-filename: AFF A20, AFF A30, and AFF A50 Controller Module
      entries:
