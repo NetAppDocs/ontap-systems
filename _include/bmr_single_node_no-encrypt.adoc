@@ -1,0 +1,24 @@
+You can restore the ONTAP image (boot media recovery) from the partner node using the `boot_recovery partner` with ASA r2 platforms running ONTAP 9.16.0 and later. 
+
+
+== Single node boot media replacement
+
+. Check which version of LOADER is on your system with the 
+. From the LOADER prompt, use the _boot_recovery partner_ command.
+
++
+If online key manager (OKM) is configured, you wil see the following displayed:
+
+====
+key manager is configured.
+Entering Bootmenu Option 10...
+ 
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+====
+
+Enter _y_ to start the OKM recovery process.
++
+
+== Boot media replacement on systems with OKM
+
+== Boot media replacement on systems with EKM
