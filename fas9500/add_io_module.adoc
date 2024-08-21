@@ -164,15 +164,13 @@ NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/
 |===
 | If I/O module is a...| Then...
 a|
-NIC module in slots 3 or 7,
+NIC module in slots 3 or 7
 a|
 Use the `storage port modify -node *_<node name>__ -port *_<port name>__ -mode network` command for each port.
 a|
 Storage module
 a|
 Install and cable your SAS shelves, as described in link:../sas3/install-hot-add-shelf.html[Hot-adding a SAS shelf].
-a|
-
 |===
 
 . Repeat these steps for controller B.

@@ -160,10 +160,7 @@ Use the `storage port modify -node *_<node name>__ -port *_<port name>__ -mode n
 a|
 Storage module
 a|
-Install and cable your NS224 shelves, as described in
-link:../ns224/hot-add-shelf-overview.html[Hot-add workflow].
-a|
-+
+Install and cable your NS224 shelves, as described in link:../ns224/hot-add-shelf-overview.html[Hot-add workflow].
 |===
 
 . Repeat these steps for controller B.
