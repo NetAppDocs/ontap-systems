@@ -31,7 +31,7 @@ You need to provide the following at your site:
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
-image::../media/drw_ssn_label.svg[width=170px]
+image::../media/drw_ssn_label.svg[Example of the system serial number showing location of the number]
 
 . Inventory and make a note of the number and types of cables you received.
 +
@@ -159,7 +159,7 @@ image::../media/drw_9500_cable_management_arms.svg[]
 
 The following diagram shows a representation of what a typical system looks like and where the major components are located at the rear of the system:
 
-image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[width=500px]
+image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[Typical cluster configuration]
 
 == Step 3: Cable controllers to your network
 
@@ -179,7 +179,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -187,7 +187,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 video::37419c37-f56f-48e5-8e6c-afa600095444[panopto, title="Animation - Cable a two-node switchless cluster"]
 +
-image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[width=500px]
+image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[Two-node switchless network cabling]
 +
 
 [options="header" col="20%,80%"]
@@ -265,7 +265,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
@@ -359,7 +359,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 image::../media/oie_cable_pull_tab_down.svg[width=200px]
 
@@ -407,7 +407,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelves.
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 image::../media/oie_cable_pull_tab_down.svg[width=200px]
 

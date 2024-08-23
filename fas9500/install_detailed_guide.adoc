@@ -30,7 +30,7 @@ You need to provide the following at your site:
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
-image::../media/drw_ssn_label.svg[width=170px]
+image::../media/drw_ssn_label.svg[Example of the system serial number showing location of the number]
 
 . Inventory and make a note of the number and types of cables you received.
 +
@@ -186,7 +186,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
@@ -272,7 +272,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
@@ -363,7 +363,7 @@ NOTE: For more SAS cabling information and worksheets, see https://docs.netapp.c
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 image::../media/oie_cable_pull_tab_down.svg[width=200px]
 
