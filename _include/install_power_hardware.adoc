@@ -93,12 +93,36 @@ NOTE: See your laptop's online help for instructions on how to configure the ser
  .. Connect the console cable to the laptop, and connect the serial console port on the controller using the console cable that came with your platform.
  
 .. Connect the laptop to the switch on the management subnet.
-+
-image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[Console connections]
 
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.A1K storage system
+--
+image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[Console connections]
+--
+
+.A70 or A90 storage system
+--
+image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[Console connections]
+--
+
+.A20 or A30 or A50 storage system
+--
+image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[Console connections]
+--
+
+====
+
+// end tabbed area
+[start=3]
  
  .. Assign a TCP/IP address to the laptop, using one that is on the management subnet.
-+
+ 
+[start=4]
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
 image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[Generic power connection diagram]
