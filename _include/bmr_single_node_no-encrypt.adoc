@@ -28,7 +28,7 @@ ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kern
 Autoboot of PRIMARY image failed. Device not found (-6)
 LOADER-A>
 
------
+----
 
 If you see this message, you must restore the ONTAP image
 
@@ -51,8 +51,4 @@ This option must be used only in disaster recovery procedures. Are you sure? (y 
 ====
 
 Enter _y_ to start the OKM recovery process.
-+
 
-== Boot media replacement on systems with OKM
-
-== Boot media replacement on systems with EKM
