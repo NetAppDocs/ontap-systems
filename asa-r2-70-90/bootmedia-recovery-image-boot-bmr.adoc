@@ -2,9 +2,9 @@
 permalink: asa-r2-70-90/bootmedia-recovery-image-boot-bmr.html
 sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, boot the recovery image
-summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+summary: You can restore image on the boot media from the partner controller through the automated boot recovery process.  
 ---
-= Boot the recovery image - ASA A70 and ASA A90
+= Automated boot recovery  - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
