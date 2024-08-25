@@ -1,0 +1,55 @@
+To replace a fan, remove the failed fan module and replace it with a new fan module.
+
+== Step 1: Shut down the impaired controller
+ 
+Shut down or take over the impaired controller using one of the following options.
+ 
+[role="tabbed-block"]
+====
+ 
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
+ 
+====
+
+== Step 2: Remove the controller module
+
+include::../_include/a70-90_controller_remove_physical.adoc[]
+
+== Step 3: Replace fan
+
+To replace a fan, remove the failed fan module and replace it with a new fan module.
+
+. Identify the fan module that you must replace by checking the console error messages.
+. Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
++
+image::../media/drw_a70-90_fan_remove_replace_ieops-1366.svg[Fan replace]
+
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
+Fan locking tabs
+a|
+image:../media/legend_icon_02.svg[Callout number 2,width=30px]|
+Fan module
+|===
+
++
+
+. Align the edges of the replacement fan module with the opening in the controller module, and then slide the replacement fan module into the controller module until the locking latches click into place.
+
+== Step 4: Reinstall the controller module
+
+include::../_include/a70-90_controller_install_step_physical.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
