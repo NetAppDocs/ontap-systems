@@ -355,11 +355,11 @@ image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[width=200px]
 
 Cable either DS212C or DS224C drive shelves to your controllers.
 
-NOTE: For more SAS cabling information and worksheets, see https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules^]
+NOTE: For more SAS cabling information and worksheets, see link:../sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules]
 
 .Before you begin
 
-* Complete the SAS cabling worksheet for your system.  See https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules^].
+* Complete the SAS cabling worksheet for your system.  See link:../sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules].
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 

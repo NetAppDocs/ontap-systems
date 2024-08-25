@@ -471,13 +471,13 @@ If you have network discovery enabled on your laptop, you can complete system se
 
 . Use the following animation or drawing  to set one or more drive shelf IDs:
 +
-The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves]  for detailed instructions.
+The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see link:../ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves] for detailed instructions.
 +
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set NVMe drive shelf IDs"]
 
 +
 
-image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[width=500px]
+image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[width=500px]
 +
 
 [cols="20%,80%"]
@@ -573,13 +573,13 @@ image::../media/drw_A900_cable_console_switch_controller_IEOPS-953.svg[width=500
 . Use the following animation to set one or more drive shelf IDs:
 +
 
-The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves]  for detailed instructions.
+The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see link:../ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves] for detailed instructions.
 +
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set NVMe drive shelf IDs"]
 
 +
 
-image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[width=500px]
+image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[width=500px]
 +
 
 [cols="20%,80%"]
