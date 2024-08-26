@@ -1,8 +1,6 @@
 You can restore the ONTAP image (boot media recovery) from the partner node using the `boot_recovery -partner` command with ASA r2 platforms running ONTAP 9.16.0 and later. 
 
 
-== Single node boot media replacement
-
 .Before you begin
 
 When you boot a node and the boot media on that node is corrupted, you'll see the following messages and the boot process with stop at the LOADER prompt:
@@ -36,7 +34,6 @@ If you see this message, you must restore the ONTAP image
 +
 The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks.  
 
-+
 .. If Onboard Key Manager (OKM) is configured, you wil see the following displayed:
 +
 
@@ -46,20 +43,19 @@ Entering Bootmenu Option 10...
  
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ====
-+
+
 
 ... Go to OKM topic and complete the recovery process.*
 
 .. If External Key Manager (EKM) is configured, you wil see the following displayed:
-+
 
++
 ====
 Error when fetching key manager config from partner 169.254.139.209: 28
 Has key manager been configured on this system? {y|n}
 
 ====
 
-+
 
 ... Go to EKM topic and complete the recovery process.*****
 
@@ -81,9 +77,9 @@ varfs_backup_restore: Rebooting to load the new varfs
 .
 
 ====
-+
+
 BMR is complete when you see the following:
-+
+
 
 ====
 

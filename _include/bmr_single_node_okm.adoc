@@ -1,8 +1,6 @@
 You can restore the ONTAP image (boot media recovery) from the partner node using the `boot_recovery partner` with ASA r2 platforms running ONTAP 9.16.0 and later. 
 
 
-== Boot media replacement on systems with OKM
-
 .Before you begin
 
 When you boot a node and the boot media on that node is corrupted, you'll see the following messages and the boot process with stop at the LOADER prompt:

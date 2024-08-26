@@ -16,6 +16,7 @@ You can restore image on the boot media from the partner controller using the au
 ====
 
 .Option 1: Single node automated boot media recovery with no encryption
+
 --
 include::../_include/bmr_single_node_no-encrypt.adoc[]
 --
