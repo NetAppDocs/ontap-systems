@@ -9,10 +9,11 @@ summary: 'Follow these high-level steps to install and set up your AFF A1K stora
 :imagesdir: ../media/
 
 [.lead]
-To install and set up your AFF A1K system, you review installation requirements, prepare your site, install and cable the hardware components, power on the system, and configure the ONTAP cluster.
+To install and configure your AFF A1K system, you review the hardware requirements, prepare your site, install and cable the hardware components, power on the system, and set up your ONTAP cluster.
 
-.Before you begin
-Before installing your AFF A1K storage system, review the link:install-requirements.html[installation requirements and considerations].
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Review the hardware requirements]
+[role="quick-margin-para"]
+Review the hardware requirements to install your A1K storage system.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-prepare.html[Prepare to install the AFF A1K storage system]
 [role="quick-margin-para"]
@@ -30,6 +31,6 @@ To cable the hardware, first connect the storage controllers to your network and
 [role="quick-margin-para"]
 Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:install-complete.html[Complete storage system setup]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:install-complete.html[Complete the storage system setup]
 [role="quick-margin-para"]
 To complete system setup, access ONTAP System Manager, by pointing a browser to the controller’s IP address. A setup wizard helps you complete cluster configuration for your AFF A1K storage system.
