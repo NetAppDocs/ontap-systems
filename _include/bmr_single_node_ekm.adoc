@@ -22,34 +22,34 @@ Autoboot of PRIMARY image failed. Device not found (-6)
 LOADER-A>
 ....
 
-If you see this message, you must restore the ONTAP image
+If you see this message, you must restore the ONTAP image.
 
 .Steps
 
 . From the LOADER prompt, enter the _boot_recovery -partner_ command.
 +
-The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks.  
+The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks and installation of the boot recovery files.  
 
 +
-.. If External Key Manager (EKM) is configured, you wil see the following displayed:
+.. If External Key Manager (EKM) is configured, you will see the following displayed:
 +
 
 ....
 Error when fetching key manager config from partner 169.254.139.209: 28
 Has key manager been configured on this system? {y|n}
-
 ....
 
-. Enter _y_ at the prompt.
-+
-You will see the following message:
-+
+.. Enter _y_ if a key manager has been configured.
 
++ 
 ....
 key manager is configured.
 Entering Bootmenu Option 11...
-
 ....
+
++
+Bootmenu Option 11 will prompt the user for all of the EKM configuration information so that the configuration files can be rebuilt.
+
 
 . Enter the EKM confiuration at each prompt.
 +
