@@ -30,7 +30,7 @@ You need to provide the following at your site:
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
-image::../media/drw_ssn_label.svg[width=170px,System serial number label]
+image::../media/drw_ssn_label.svg[Example of the system serial number showing location of the number]
 
 . Inventory and make a note of the number and types of cables you received.
 +
@@ -148,17 +148,17 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image::../media/drw_9500_lifting_icon.svg[width=340px,Weight lifting caution label]
+image::../media/drw_9500_lifting_icon.svg[Weight lifting caution label]
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_9500_cable_management_arms.svg[width=340px,Install cable management arm]
+image::../media/drw_9500_cable_management_arms.svg[Install cable management arm]
 
 . Place the bezel on the front of the system.
 
 The following diagram shows a representation of what a typical system looks like and where the major components are located at the rear of the system:
 
-image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[width=500px,Typical cluster configuration]
+image::../media/drw_a900_controller_in _chassis_ID_IEOPS-856.svg[Typical cluster configuration]
 
 == Step 3: Cable controllers to your network
 
@@ -178,7 +178,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px,cable pull tab direction]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -186,7 +186,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 video::37419c37-f56f-48e5-8e6c-afa600095444[panopto, title="Animation - Cable a two-node switchless cluster"]
 +
-image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[width=500px,Two-node switchless network cabling]
+image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[Two-node switchless network cabling]
 +
 
 [options="header" col="20%,80%"]
@@ -264,7 +264,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
@@ -358,7 +358,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf on an
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 image::../media/oie_cable_pull_tab_down.svg[width=200px]
 
@@ -406,7 +406,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelves.
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 image::../media/oie_cable_pull_tab_down.svg[width=200px]
 
@@ -470,13 +470,13 @@ If you have network discovery enabled on your laptop, you can complete system se
 
 . Use the following animation or drawing  to set one or more drive shelf IDs:
 +
-The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves]  for detailed instructions.
+The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see link:../ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves] for detailed instructions.
 +
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set NVMe drive shelf IDs"]
 
 +
 
-image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[width=500px]
+image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[width=500px]
 
 +
 
@@ -573,13 +573,13 @@ image::../media/drw_A900_cable_console_switch_controller_IEOPS-953.svg[width=500
 . Use the following animation to set one or more drive shelf IDs:
 +
 
-The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see https://docs.netapp.com/us-en/ontap-systems/ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves]  for detailed instructions.
+The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see link:../ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves]  for detailed instructions.
 +
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set NVMe drive shelf IDs"]
 
 +
 
-image::../media/drw_a900_oie_change_ns224_shelf ID_IEOPS-836.svg[width=500px]
+image::../media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[width=500px]
 +
 
 [cols="20%,80%"]
