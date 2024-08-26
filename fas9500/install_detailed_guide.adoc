@@ -30,7 +30,7 @@ You need to provide the following at your site:
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
-image::../media/drw_ssn_label.svg[width=170px]
+image::../media/drw_ssn_label.svg[Example of the system serial number showing location of the number]
 
 . Inventory and make a note of the number and types of cables you received.
 +
@@ -160,11 +160,11 @@ NOTE: You need to be aware of the safety concerns associated with the weight of 
 +
 The label on the left indicates an empty chassis, while the label on the right indicates a fully-populated system.
 +
-image::../media/drw_9500_lifting_icon.svg[width=340px]
+image::../media/drw_9500_lifting_icon.svg[]
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_9500_cable_management_arms.svg[width=340px]
+image::../media/drw_9500_cable_management_arms.svg[]
 
 . Place the bezel on the front of the system.
 
@@ -186,7 +186,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
@@ -272,7 +272,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
@@ -355,15 +355,15 @@ image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[width=200px]
 
 Cable either DS212C or DS224C drive shelves to your controllers.
 
-NOTE: For more SAS cabling information and worksheets, see https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules^]
+NOTE: For more SAS cabling information and worksheets, see link:../sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules]
 
 .Before you begin
 
-* Complete the SAS cabling worksheet for your system.  See https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules^].
+* Complete the SAS cabling worksheet for your system.  See link:../sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules].
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
-image::../media/oie_cable_pull_tab_up.svg[width=200px]
+image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
 image::../media/oie_cable_pull_tab_down.svg[width=200px]
 
