@@ -32,58 +32,65 @@ If you see this message, you must restore the ONTAP image
 
 . From the LOADER prompt, enter the _boot_recovery -partner_ command.
 +
-The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks.  
+The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks.   
 
-.. If Onboard Key Manager (OKM) is configured, you wil see the following displayed:
+. Monitor the process as LOADER configures the local cluster ports and executes netboot through http://<remoteIPfrompartner>:65530/recoverydisk/image.tgz
++
+Once netboot is running, `Starting BMR ...` is displayed on the screen and the process completes the installation process.
+
+.. If Key Manager is not configured, you will see the following message:
++
+....
+key manager is not configured. Exiting.
+....
+
+
+.. If you see the following message, Onboard Key Manager (OKM) is configured. Go to OKM topic and complete the recovery process:
 +
 
-====
+....
+
 key manager is configured.
 Entering Bootmenu Option 10...
  
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
-====
 
-
-... Go to OKM topic and complete the recovery process.*
-
-.. If External Key Manager (EKM) is configured, you wil see the following displayed:
+....
 
 +
-====
+
+
+
+
+.. If you see the following message, External Key Manager (EKM) is configured. Go to the EKM topic and complete the recovery process:
+
++
+
+....
 Error when fetching key manager config from partner 169.254.139.209: 28
 Has key manager been configured on this system? {y|n}
 
-====
+....
 
-
-... Go to EKM topic and complete the recovery process.*****
-
-. Monitor the process as LOADER configures the local cluster ports and executes netboot through http://<remoteIPfrompartner>:65530/recoverydisk/image.tgz
 +
-Once netboot is running, `Starting BMR ...` is displayed on the screen.
+
 
 . Monitor the BMR process as it executes restore backup config, env file, mdb, and rdb from the partner.
 
-. Monitor the _varfs_backup_restore_ output.
-
 +
-====
+
+. The node reboots and BMR is complete when you see the following:
+
+
+....
+
 varfs_backup_restore: update checksum for varfs.tgz
 varfs_backup_restore: restore using /cfcard/x86_64/freebsd/oldvarfs.tgz
 varfs_backup_restore: attempting to restore /var/kmip to the boot device
 varfs_backup_restore: failed to restore /var/kmip to the boot device
 varfs_backup_restore: Rebooting to load the new varfs
 .
-
-====
-
-BMR is complete when you see the following:
-
-
-====
-
 Terminated
 varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
 
-====
+....
