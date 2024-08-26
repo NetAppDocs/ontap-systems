@@ -5,7 +5,7 @@ You can restore the ONTAP image (boot media recovery) from the partner node usin
 
 When you boot a node and the boot media on that node is corrupted, you'll see the following messages and the boot process with stop at the LOADER prompt:
 
-----
+....
 
 Can't find primary boot device u0a.0
 Can't find backup boot device u0a.1
@@ -24,7 +24,7 @@ ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kern
 Autoboot of PRIMARY image failed. Device not found (-6)
 LOADER-A>
 
-----
+....
 
 If you see this message, you must restore the ONTAP image
 
@@ -38,21 +38,21 @@ The screen will displays the message `Starting boot media recovery (BMR) process
 .. If Onboard Key Manager (OKM) is configured, you wil see the following displayed:
 +
 
-====
+....
 key manager is configured.
 Entering Bootmenu Option 10...
  
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
-====
+....
 +
 
 . Enter _y_ at the prompt. 
 
 . Enter the passphrase for onboard key manager when you see `Enter the passphrase for onboard key management:`
 
-. Enter the pass phrase for onboard key manager when prompted to confirm the passphrase.
+. Enter the pass phrase for onboard key manager again when prompted to confirm the passphrase.
 
-. Enter the backup data when prompted. You can retreive the backup data from the partner node using the `security key-manager onboard show-backup` command.
+. Enter the backup data when prompted. You can retrieve the backup data from the partner node using the `security key-manager onboard show-backup` command.
 +
 You will see the following when the recovery process is complete:
 +

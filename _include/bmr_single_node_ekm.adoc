@@ -2,7 +2,7 @@ You can restore the ONTAP image (boot media recovery) from the partner node usin
 
 When you boot a node and the boot media on that node is corrupted, you'll see the following messages and the boot process with stop at the LOADER prompt:
 
-----
+....
 
 Can't find primary boot device u0a.0
 Can't find backup boot device u0a.1
@@ -20,7 +20,7 @@ ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kern
  
 Autoboot of PRIMARY image failed. Device not found (-6)
 LOADER-A>
-----
+....
 
 If you see this message, you must restore the ONTAP image
 
@@ -33,22 +33,23 @@ The screen will displays the message `Starting boot media recovery (BMR) process
 +
 .. If External Key Manager (EKM) is configured, you wil see the following displayed:
 +
-----
+
+....
 Error when fetching key manager config from partner 169.254.139.209: 28
 Has key manager been configured on this system? {y|n}
 
-----
+....
 
 . Enter _y_ at the prompt.
 +
 You will see the following message:
 +
 
-----
+....
 key manager is configured.
 Entering Bootmenu Option 11...
 
-----
+....
 
 . Enter the EKM confiuration at each prompt.
 +
@@ -65,7 +66,31 @@ Entering Bootmenu Option 11...
 Verify the `x-NETAPP-ClusterName: <cluster name>` for the Cluster UUID and `x-NETAPP-KeyUsage: "MROOT-AK"` for the Keystore UUID attributes to ensure you have the correct keys.
 
 . Monitor the retrieve and restore of Mroot-AK into the ONTAP node.
-.. If the process cannot restore the key, you will see the following and need to run the `boot_recovery -partner` command and repeat the EKM restore procedure.
-.. if the key is restored properly, the recovery process continues and reboots the node.
+.. If the process cannot restore the key, you will see the following: 
++
+
+....
+ERROR: kmip_init: halting this system with encrypted mroot...
+WARNING: kmip_init: authentication keys might not be available.
+********************************************************
+*                 A T T E N T I O N                    *
+*                                                      *
+*       System cannot connect to key managers.         *
+*                                                      *
+********************************************************
+ERROR: kmip_init: halting this system with encrypted mroot...
+.
+Terminated
+ 
+Uptime: 11m32s
+System halting...
+ 
+LOADER-B>
+
+....
+
+.. Run the `boot_recovery -partner` command and repeat the EKM restore procedure.
+
+. If the key is restored properly, the recovery process continues and reboots the node.
 
 
