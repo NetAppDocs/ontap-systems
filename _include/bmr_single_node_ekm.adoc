@@ -21,3 +21,51 @@ ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kern
 Autoboot of PRIMARY image failed. Device not found (-6)
 LOADER-A>
 ----
+
+If you see this message, you must restore the ONTAP image
+
+.Steps
+
+. From the LOADER prompt, enter the _boot_recovery -partner_ command.
++
+The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks.  
+
++
+.. If External Key Manager (EKM) is configured, you wil see the following displayed:
++
+----
+Error when fetching key manager config from partner 169.254.139.209: 28
+Has key manager been configured on this system? {y|n}
+
+----
+
+. Enter _y_ at the prompt.
++
+You will see the following message:
++
+
+----
+key manager is configured.
+Entering Bootmenu Option 11...
+
+----
+
+. Enter the EKM confiuration at each prompt.
++
+*NOTE:* Most of this information was entered when EKM was originally enabled. You should enter the same information that was entered during initial EKM configuration. 
++
+
+. Check that the `Keystore UUID` and `Cluster UUID` are correct. 
+.. On the partner node retrieve the Cluster UUID with the  `cluster identity show` command.
+.. On the partner node retrieve the Keystore UUID with the `vserver show -type admin` command and the `key-manager keystore show -vserver <nodename>` command.
+.. Enter the values for Keystore UUID and Cluster UUID when prompted.
++
+*NOTE:* If the partner node is not available, the Keystore UUID and Cluster UUID can be obtained from the Mroot-AK key located on the configured key server.
++
+Verify the `x-NETAPP-ClusterName: <cluster name>` for the Cluster UUID and `x-NETAPP-KeyUsage: "MROOT-AK"` for the Keystore UUID attributes to ensure you have the correct keys.
+
+. Monitor the retrieve and restore of Mroot-AK into the ONTAP node.
+.. If the process cannot restore the key, you will see the following and need to run the `boot_recovery -partner` command and repeat the EKM restore procedure.
+.. if the key is restored properly, the recovery process continues and reboots the node.
+
+
