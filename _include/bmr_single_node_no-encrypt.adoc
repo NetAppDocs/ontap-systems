@@ -45,7 +45,7 @@ key manager is not configured. Exiting.
 ....
 
 
-.. If you see the following message, Onboard Key Manager (OKM) is configured. Go to OKM topic and complete the recovery process:
+.. If you see the following message, Onboard Key Manager (OKM) is configured:
 +
 
 ....
@@ -58,7 +58,8 @@ This option must be used only in disaster recovery procedures. Are you sure? (y 
 ....
 
 +
-
+Go to 
+<<OKM_restore_steps,OKM recovery process>> to complete the recovery process.
 
 
 
