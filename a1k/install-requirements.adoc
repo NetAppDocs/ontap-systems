@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: a1k/install-requirements.html
+keywords: a1k, install, setup, cautions
+summary: Review the equipment needed and the lifting precautions for your platform and shelves.
+---
+= Hardware requirements - AFF A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Review the equipment needed and the lifting precautions for your AFF A1K storage system and storage shelves.
+
+== Equipment needed for install
+To install your AFF A1K storage system, you need the following equipment and tools. 
+
+** Access to a Web browser to configure your storage system
+** Electrostatic discharge (ESD) strap 
+** Flashlight
+** Laptop or console with a USB/serial connection
+** Paperclip or narrow tipped ball point pen for setting NS224 storage shelf IDs
+** Phillips #2 screwdriver 
+
+== Lifting precautions 
+AFF A1K storage systems and NS224 storage shelves are heavy. Exercise caution when lifting and moving these items.
+
+=== AFF A1K storage system
+An AFF A1K storage system can weigh up to 62.83 lbs (28.5 kg). To lift the system, use two people or a hydraulic lift.
+
+image::../media/drw_a1k_weight_caution_ieops-1698.svg[AFF A1K lifting caution icon]
+
+=== NS224 shelf
+An NS224 storage shelf can weigh up to 66.78 lbs (30.29 kg). To lift the storage shelf, use two people or a hydraulic lift. Keep all components in the storage shelf (both front and rear) to prevent unbalancing the shelf weight.
+
+image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 lifting caution]
+
+.Related information
+
+*  https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[Safety information and regulatory notices^]
+
+.What's next?
+After you've reviewed the hardware requirements, you link:install-prepare.html[prepare to install your AFF A1K storage system].
+

@@ -1,0 +1,55 @@
+indexpage:
+  title: Maintain ASA r2 systems
+  lead: You might need to perform maintenance procedures on your hardware. Procedures specific to maintaining your ASA r2 system components are in this section.
+  summary: Learn how maintain your ASA r2 systems.
+  keywords: maintain asa a1k, a70, a90
+  tiles:
+    - title: ASA A1K
+      links:
+        - title: Boot media
+          url: ../asa-r2-a1k/bootmedia-replace-workflow.html
+        - title: Controller
+          url: ../asa-r2-a1k/controller-replace-workflow.html
+        - title: DIMM
+          url: ../asa-r2-a1k/dimm-replace.html
+        - title: Fan
+          url: ../asa-r2-a1k/fan-replace.html
+        - title: NVRAM
+          url: ../asa-r2-a1k/nvram-replace.html
+        - title: NV Battery
+          url: ../asa-r2-a1k/nvdimm-battery-replace.html
+        - title: I/O module
+          url: ../asa-r2-a1k/io-module-overview.html
+        - title: Power supply
+          url: ../asa-r2-a1k/power-supply-replace.html
+        - title: Real-time clock battery
+          url: ../asa-r2-a1k/rtc-battery-replace.html
+        - title: System Management module
+          url: ../asa-r2-a1k/system-management-replace.html
+    - title: ASA A70 and ASA A90
+      links:
+        - title: Boot media
+          url: ../asa-r2-70-90/bootmedia-replace-workflow.html
+        - title: Chassis
+          url: ../asa-r2-70-90/chassis-replace-workflow.html
+        - title: Controller
+          url: ../asa-r2-70-90/controller-replace-workflow.html
+        - title: DIMM
+          url: ../asa-r2-70-90/dimm-replace.html
+        - title: Drive
+          url: ../asa-r2-70-90/drive-replace.html
+        - title: Fan
+          url: ../asa-r2-70-90/fan-swap-out.html
+        - title: NVRAM
+          url: ../asa-r2-70-90/nvram-replace.html
+        - title: NV Battery
+          url: ../asa-r2-70-90/nvdimm-battery-replace.html
+        - title: I/O module
+          url: ../asa-r2-70-90/io-module-overview.html
+        - title: Power supply
+          url: ../asa-r2-70-90/power-supply-replace.html
+        - title: Real-time clock battery
+          url: ../asa-r2-70-90/rtc-battery-replace.html
+        - title: System Management module 
+          url: ../asa-r2-70-90/system-management-replace.html
+      

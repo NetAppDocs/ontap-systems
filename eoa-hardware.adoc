@@ -35,7 +35,20 @@ a|
 ONTAP 9.9.1
 |===
 
-== Switches
+=== Shelf modules
+
+[cols="2*",options="header"]
+|===
+| Shelf module| Support discontinued from...
+a|
+IOM 6 module|
+ONTAP 9.16.0
+a|
+
+
+|===
+
+=== Switches
 
 [cols="2*",options="header"]
 |===

@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-70-90/bootmedia-replace.html
+sidebar: sidebar
+keywords: asa r2 a70, asa r2 a90, replace the boot media
+summary: You locate the failed boot media in the controller module by removing Riser 3 on the controller module before you can replace the boot media.
+---
+= Replace the boot media - ASA A70 and ASA A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a70-90_bootmedia_replace.adoc[]
