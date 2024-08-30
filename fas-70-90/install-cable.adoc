@@ -206,7 +206,7 @@ image::../media/oie_cable100_gbe_qsfp28.svg[100 GbE QSFP28 copper cable,width=10
 .. Connect port e10b to shelf 1 NSM A port e0b.
 
 +
-image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[Cable controller A ports e11a, e11b, e10a and e10bto two NS224 shelves]
+image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[Cable controller A ports e11a e11b e10a and e10b to two NS224 shelves]
 +
 
 . On controller B, connect the following ports:
@@ -219,7 +219,7 @@ image:../media/drw_a1k_2shelf_cabling_a_ieops-1705.svg[Cable controller A ports 
 .. Connect port e10b to shelf 1 NSM A port e0b.
 
 +
-image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[Cable controller B ports e11a, e11b, e10a and e10b to two NS224 shelves ]
+image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[Cable controller B ports e11a e11b e10a and e10b to two NS224 shelves ]
 +
 
 --
@@ -242,7 +242,7 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[mini-SAS HD cable,width
 .. Connect port e11d to shelf 2 IOM B port 3.
 
 +
-image:../media/drw_fas70-90_twoshelf_ds460c_cabling_controller1_ieops-1918.svg[Cable controller A ports e10a, e10c and e11b and e11d to two DS460C shelves]
+image:../media/drw_fas70-90_twoshelf_ds460c_cabling_controller1_ieops-1918.svg[Cable controller A ports e10a e10c and e11b and e11d to two DS460C shelves]
 +
 
 . On controller B, cable the following connections:
@@ -255,7 +255,7 @@ image:../media/drw_fas70-90_twoshelf_ds460c_cabling_controller1_ieops-1918.svg[C
 .. Connect port e11d to shelf 2 IOM A port 3.
 
 +
-image:../media/drw_fas70-90_twoshelf_ds460c_cabling_controller2_ieops-1919.svg[Cable controller B ports e10a, e10c and e11b and e11d to two DS460C shelves]
+image:../media/drw_fas70-90_twoshelf_ds460c_cabling_controller2_ieops-1919.svg[Cable controller B ports e10a e10c and e11b and e11d to two DS460C shelves]
 
 --
 
