@@ -14,9 +14,9 @@ To install and set up your FAS70 or FAS90 system, you review installation requir
 .Before you begin
 Before installing your FAS70 or FAS90 system, review the link:install-requirements.html[installation requirements and considerations].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-prepare.html[Requirements and considerations for FAS70 and FAS90 systems]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Requirements and considerations for FAS70 and FAS90 systems]
 [role="quick-margin-para"]
-To prepare for install, you need to review the equipment and tools needed to install your storage system and storage shelves and review lifting and safety precautions for your FAS70 or FAS90 storage system and storage shelves.
+To prepare for install, you need to review the equipment and tools needed to install your storage system and storage shelves and review lifting and safety precautions for your storage system and storage shelves.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:install-prepare.html[Prepare to install the FAS70 or FAS90 storage system]
 [role="quick-margin-para"]
@@ -32,8 +32,8 @@ To cable the hardware, first connect the storage controllers to your network and
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:install-power-hardware.html[Power on the FAS70 or FAS90 storage system]
 [role="quick-margin-para"]
-Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
+Before you power on the controllers, power on each shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:install-complete.html[Complete storage system setup]
 [role="quick-margin-para"]
-To complete system setup, access the web-based interface, System Manager, by To complete system setup, access ONTAP System Manager, by pointing a browser to the controller’s IP address. A setup wizard helps you complete cluster configuration for your FAS70 or FAS90 storage system.
+To complete system setup, access the web-based interface, System Manager, by To complete system setup, access ONTAP System Manager, by pointing a browser to the controller’s IP address. A setup wizard helps you complete cluster configuration for your storage system.
