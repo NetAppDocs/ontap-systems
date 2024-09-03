@@ -5,7 +5,7 @@ To install your storage system, ensure that the site and the cabinet or rack tha
 
 . Use https://hwu.netapp.com[NetApp Hardware Universe^] to confirm that your site meets the environmental and electrical requirements for your storage system.
 
-. Make sure you have adequate rack space for your storage system and storage shelves:
+. Make sure you have adequate rack space for your platform chassis and storage shelves:
 +
 
 // start tabbed area
@@ -27,8 +27,8 @@ To install your storage system, ensure that the site and the cabinet or rack tha
 
 .A20 or A30 or A50 storage system
 --
-** 2U in an HA configuration for the storage system 
-** 2U for each NS224 storage shelf
+** 2U for the platform chassis
+** 2U for each NS224 shelf
 --
 
 ====
@@ -67,21 +67,21 @@ Ensure that everything in the boxes matches the list on the packing slip. If the
 |*Hardware*
 |*Cables* |
 a|* Bezel
-* Cable management device (only applicable for specific storage systems)
+* Cable management device (only applicable for specific platform models)
 * Storage system
 * Rail kits with instructions (optional)
 * Storage shelf 
 a|* Management Ethernet cables (RJ-45 cables)
 * Network cables
 * Power cords
-* Storage cables (if you ordered additional storage) 
+* Storage cables (if you ordered additional shelves) 
 * USB-C serial port cable |
 |===
 
 
 
 == Step 3: Register your storage system
-After you've ensured that your site meets the requirements for your storage system specifications, and you've verified that you have all the parts you ordered, you should register your system.
+After you've ensured that your site meets the requirements for your storage system specifications, and you've verified that you have all the parts you ordered, you should register your storage system.
 
 .Steps
 
@@ -104,9 +104,9 @@ image::../media/drw_ssn_label.svg[Example of the system serial number showing lo
 .Steps
 . Sign in with your username and password.
 . Select *Systems* > *My Systems*.
-. Confirm that the new system serial number is listed.
+. Confirm that the new storage system serial number is listed.
 
-NOTE:  If the new system serial number isn't listed, follow the instructions for new NetApp customers.
+NOTE:  If the new storage system serial number isn't listed, follow the instructions for new NetApp customers.
 
 --
 .Option 2: New NetApp customer

@@ -1,9 +1,16 @@
 == Step 1: Power on the shelf and assign shelf ID
-Each NS224 shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you may need to adjust these IDs to maintain uniqueness across your storage system.
+NS224 shelf IDs are preset to unique IDs within an HA pair; however, you can change the shelf IDs if needed.
 
 .About this task
 * A valid shelf ID is 00 through 99.
-* You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
+
+* Platforms with an internal shelf have the shelf ID hard-coded to "00".
++
+NOTE: Do not use shelf ID "00" for any external NS224 shelves.
+
+* Shelf IDs within an HA pair must be unique, meaning you should not duplicate shelf IDs.
+
+* After changing a shelf ID, you must power cycle the shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
 
 .Steps
 . Power on the shelf by connecting the power cords first to the shelf, securing them in place with the power cord retainer, and then connecting the power cords to power sources on different circuits.
@@ -80,11 +87,11 @@ A power supply is powered on as soon as the power cord is plugged in. Its bicolo
 
 
 == Step 2: Power on the controllers
-After you've turned on your storage shelves and assigned them unique IDs, turn on the power to the storage controllers.
+After you've powered on your shelves and assigned them unique IDs, turn on the power to the controllers.
 
 .Steps
 
-. Connect your laptop to the serial console port. This will allow you to monitor the boot sequence when the controllers are turned on.
+. Connect your laptop to the serial console port. This allows you to monitor the boot sequence when the controllers are powered on.
 
  .. Set the serial console port on the laptop to 115,200 baud with N-8-1.
 +
