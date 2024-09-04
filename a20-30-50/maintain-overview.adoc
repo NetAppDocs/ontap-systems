@@ -44,10 +44,6 @@ a| link:fan-replace.html[Fan]
 
 a| A fan cools the controller.
 
-a| link:caching-module-replace.html[FlashCache module]
-
-a| The Flash Cache module speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services.
-
 a| link:io-module-overview.html[I/O module]
 
 a| The I/O module (Input/Output module) is a hardware component that acts as an intermediary between the controller and various devices or systems that need to exchange data with the controller.

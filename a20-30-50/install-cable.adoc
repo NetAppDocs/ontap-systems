@@ -84,7 +84,7 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Etherne
 image::../media/oie_cable_rj45.svg[RJ45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 +
-image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
+image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your management network,width=500px]
 
 IMPORTANT: Do not plug in the power cords yet. 
 
@@ -111,7 +111,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 image::../media/oie_cable100_gbe_qsfp28.svg[100 Gb cable,width=100px]
 +
-image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[Cable cluster connections to cluster network,width=500px]
+image::../media/drw_isi_g_2p_100gbe_switched_cluster_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
 
 . Connect the Ethernet module ports to your host network. 
 +
@@ -143,7 +143,7 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 10/25Gb Ether
 image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 +
-image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
+image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your management network,width=500px]
 
 IMPORTANT: Do not plug in the power cords yet. 
 
