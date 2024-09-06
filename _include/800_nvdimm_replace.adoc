@@ -74,7 +74,7 @@ To replace the NVDIMM, you must locate it in the controller module using the NVD
 
 . If you are removing or moving an NVDIMM, unlock the locking latch on the riser, and then remove the applicable riser.
 +
-image::../media/drw_a800_nvdimm_replace.png[Replace an NVDIMM]
+image::../media/drw_A800_nvdimm_replace_ieops-1953.svg[Replace an NVDIMM]
 +
 
 [cols="1,4"]
@@ -86,7 +86,12 @@ Air duct cover
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
-Riser 2 and NVDIMM 11
+Riser 2 
+a|
+image:../media/legend_icon_03.png[Callout number 3]
+a|
+NVDIMM in slots 11 and 23
+
 |===
 
 . Note the orientation of the NVDIMM in the socket so that you can insert the NVDIMM in the replacement controller module in the proper orientation.
