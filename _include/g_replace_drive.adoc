@@ -56,19 +56,16 @@ Do not revert firmware to a version that does not support your shelf and its com
 +
 NOTE: Drive firmware checks occur every two minutes.
 
-* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
+* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
-If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
+A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
 * When you unpack the replacement drive, save all packing materials for use when you return the failed drive.
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
-* The following animation provides an overview of the physical removal and insertion portions of the drive hot-swap procedure.
-+
-video::733011a7-e03a-41b0-8723-aa840133bf25[Animation, Hot-swapping a drive in an NS224 shelf"]
 .Steps
 
 . If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment if it is enabled.

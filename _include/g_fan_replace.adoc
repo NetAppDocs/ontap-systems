@@ -1,5 +1,12 @@
 To replace a fan, remove the failed fan module and replace it with a new fan module.
 
+.About this task
+* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
 == Step 1: Shut down the impaired controller
  
 Shut down or take over the impaired controller using one of the following options.

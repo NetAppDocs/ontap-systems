@@ -3,11 +3,17 @@ Replacing a power supply (PSU) involves disconnecting the target PSU from the po
 The power supplies are redundant and hot-swappable.
 
 .About this task
-This procedure is written for replacing one PSU at a time.
+* This procedure is written for replacing one PSU at a time.
 
-IMPORTANT: Do not mix PSUs with different efficiency ratings or different input types. Always replace like for like.
+* IMPORTANT: Do not mix PSUs with different efficiency ratings or different input types. Always replace like for like.
 
-Use the appropriate procedure for your type of PSU: AC or DC.  
+* Use the appropriate procedure for your type of PSU: AC or DC.  
+
+* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
 [role="tabbed-block"]
 ====

@@ -1,8 +1,14 @@
 The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
 
-Before replacing the chassis, make sure to review the following requirements.
+Before replacing the chassis, make sure to review the following requirements and considerations.
 
 * Make sure all other components in the system are functioning properly; if not, contact technical support.
 * You can use the chassis replacement procedure with all versions of ONTAP supported by your system.
 * The chassis replacement procedure is written with the assumption that you are moving the bezel, NVMe drives, and controller modules to the new chassis, and that the replacement chassis is a new component from NetApp.
 * *The chassis replacement procedure is disruptive.* For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+
+* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.

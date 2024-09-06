@@ -1,7 +1,15 @@
 You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.
 
+.Before you begin
+All other components in the system must be functioning properly; if not, you must contact technical support.
+
+.About this task
 * You can use this procedure with all versions of ONTAP supported by your system.
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
 == Step 1: Shut down the impaired controller
 
