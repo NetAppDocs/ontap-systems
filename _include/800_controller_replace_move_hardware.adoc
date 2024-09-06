@@ -300,7 +300,7 @@ After all of the components have been moved from the impaired controller module 
  .. Slide the air duct toward the risers until the locking tabs click into place.
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
 +
-image::../media/drw_a700s_close_air_duct.png[Close the air duct]
+image::../media/drw_a800_close_air_duct.png[Close the air duct]
 +
 
 [cols="1,4"]
@@ -314,6 +314,7 @@ image:../media/legend_icon_02.png[Callout number 2]
 a|
 Slide plunger
 |===
+
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
@@ -329,12 +330,13 @@ The locking latches rise when the controller module is fully seated.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
-The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. Interrupt the normal boot process by pressing `Ctrl-C`.
-
+ 
 . Plug the system cables and transceiver modules into the controller module and reinstall the cable management device.
 . Plug the power cables into the power supplies and reinstall the power cable retainers.
++
+The controller module begins to boot as soon as it is connected to power. Be prepared to interrupt the boot process.
+
 +
 NOTE: If your system has DC power supplies, make sure the thumbscrews on the power supply cable are tight.
