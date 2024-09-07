@@ -4,22 +4,12 @@ Use this procedure to replace a failed I/O module.
 * All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
 == Step 1: Shut down the impaired controller
+ 
+Shut down or take over the impaired controller.
+ 
 
-Shut down or take over the impaired controller using one of the following options.
+include::../_include/shutdown_most_frus.adoc[]
 
-[role="tabbed-block"]
-====
-
-.Option 1: Most systems
---
-include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
---
-
-====
 
 == Step 2: Replace a failed I/O module
 
