@@ -14,21 +14,11 @@ You can add an I/O module into an empty module slot in your storage system.
 
 === Step 1: Shut down the impaired controller module
 
-Shut down or take over the impaired controller module using one of the following options.
+Shut down or take over the impaired controller module.
 
-[role="tabbed-block"]
-====
 
-.Option 1: Most systems
---
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
---
 
-====
 
 === Step 2: Add I/O modules
 
