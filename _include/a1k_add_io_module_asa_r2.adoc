@@ -96,21 +96,10 @@ Use System Manager to permanently migrate the LIFs to different home ports, as d
 
 === Step 1: Shut down the impaired node
 
-Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the impaired controller.
 
-[role="tabbed-block"]
-====
 
-.Option 1: Most systems
---
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
---
-
-====
 
 === Step 2: Replace an I/O module
 . If you are not already grounded, properly ground yourself.
