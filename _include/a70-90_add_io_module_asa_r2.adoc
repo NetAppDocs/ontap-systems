@@ -8,11 +8,17 @@ You can add an I/O module to your storage system by either adding a new I/O modu
 
 * Make sure that all other components are functioning properly.
 
-== Option 1: Add an I/O module to a storage system with empty slots
+[role="tabbed-block"]
+====
+
+--
+
+.Option 1: Add an I/O module to a storage system with empty slots
 
 You can add an I/O module into an empty module slot in your storage system.
 
-=== Step 1: Shut down the impaired controller module
+.Steps
+.Step 1: Shut down the impaired controller module
 
 Shut down or take over the impaired controller module.
 
@@ -20,7 +26,7 @@ Shut down or take over the impaired controller module.
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
 
-=== Step 2: Add I/O modules
+.Step 2: Add I/O modules
 
 . If you are not already grounded, properly ground yourself. 
 
@@ -71,15 +77,20 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 
 . If you installed a storage I/O module, install and cable your NS224 shelves, as described in link:../ns224/hot-add-shelf-overview.html[Hot-add workflow].
 
-== Option 2: Add an I/O module in a storage system with no empty slots
+--
 
+.Option 2: Add an I/O module in a storage system with no empty slots
+
+--
 You can change an I/O module in an I/O slot in a fully-populated system by removing an existing I/O module and replacing it with a different I/O module.
 
-. If you are:
-+
+
+If you are:
+
 [options="header" cols="1,2"]
 
 |===
+
 | Replacing a...| Then...
 a|
 NIC I/O module with the same the same number of ports
@@ -93,16 +104,20 @@ a|
 NIC I/O module with a storage I/O module
 a|
 Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
+
 |===
 
-=== Step 1: Shut down the impaired controller module
+
+.Steps
+.Step 1: Shut down the impaired controller module
 
 Shut down or take over the impaired controller.
 
 
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
-=== Step 2: Replace an I/O module
+.Step 2: Replace an I/O module
+
 To replace an I/O module, locate it within the controller module and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself. 
@@ -170,3 +185,5 @@ a|
 |===
 
 . Repeat these steps for controller B.
+
+--
