@@ -12,9 +12,9 @@ You can add an I/O module to your storage system by either adding a new I/O modu
 
 You can add an I/O module into an empty module slot in your storage system.
 
-=== Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired controller module
 
-Shut down or take over the impaired controller.
+Shut down or take over the impaired controller module.
 
 
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
@@ -94,9 +94,9 @@ a|
 Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
 |===
 
-=== Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired controller module
 
-Shut down or take over the impaired controller.
+Shut down or take over the impaired controller module.
 
 
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
