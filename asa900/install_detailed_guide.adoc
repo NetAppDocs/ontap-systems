@@ -149,17 +149,17 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-image:drw_9500_lifting_icon.svg[]
+image::../media/drw_9500_lifting_icon.svg[Weight lifting caution label]
 
 . Attach cable management devices (as shown).
 +
-image:drw_9500_cable_management_arms.svg[]
+image::../media/drw_9500_cable_management_arms.svg[Lifting handles and cable management device]
 
 . Place the bezel on the front of the system.
 
 The following diagram shows a representation of what a typical system looks like and where the major components are located at the rear of the system:
 
-image:drw_a900_controller_in _chassis_ID_IEOPS-856.svg[Typical cluster configuration]
+image::../media/drw_a900_controller_in_chassis_ID_IEOPS-856.svg[Typical cluster configuration]
 
 == Step 3: Cable controllers to your network
 
