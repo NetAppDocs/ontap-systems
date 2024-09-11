@@ -57,7 +57,7 @@ image::../media/drw_isi_g_switchless_2p_100gbe_cabling_ieops-1925.svg[Two-node s
 +
 . Cable the Ethernet ports to your host network. 
 +
-The following graphics show common host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
+The following graphics show common host network cabling examples. If needed, see  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
 
 .. Cable ports e9a and e9b on each controller to the Ethernet data network switch.
 
