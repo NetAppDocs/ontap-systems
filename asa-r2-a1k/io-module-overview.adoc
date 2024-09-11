@@ -1,0 +1,21 @@
+---
+permalink: asa-r2-a1k/io-module-overview.html
+sidebar: sidebar
+keywords: asa r2 a1k, replace io module
+summary: "You must replace the failed component with a replacement field replacable unit (FRU) component you received from your provider."
+---
+= Overview of add and replace I/O module - ASA A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a1k_io_module_overview.adoc[]
+
+
+* link:io-module-add.html[Add an I/O module]
++
+Adding additional modules can improve redundancy, helping to ensure that the system remains operational even if one module fails.
+
+* link:io-module-replace.html[Replace an I/O module]
++
+Replacing a failing I/O module can restore the system to its optimal operating state. 

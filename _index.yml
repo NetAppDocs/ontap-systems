@@ -1,5 +1,5 @@
 indexpage:
-  title: ONTAP Hardware Systems Documentation
+  title: ONTAP hardware systems documentation
   lead: NetApp's ONTAP hardware storage systems provide leading-edge, enterprise-class, scale-out all flash or hybrid storage with the industry's most advanced data management. Use the docs on this site to install, expand, upgrade and maintain your systems.
   summary: NetApp's AFF, ASA and FAS storage systems provide leading-edge, enterprise-class, scale-out all flash or hybrid storage with the industry's most advanced data management. Use the docs on this site to install, expand, upgrade and maintain your AFF, ASA and FAS systems along with its storage shelves, and cluster switches.
   keywords: aff, fas, asa 
@@ -14,14 +14,12 @@ indexpage:
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: Storage platforms
       links:
-        - title: AFF A-Series systems
-          url: /aff-aseries/index.html
-        - title: AFF C-Series systems
-          url: /aff-cseries/index.html
-        - title: ASA A-Series systems
-          url: /allsan-a-series/index.html
-        - title: ASA C-Series systems
-          url: /allsan-c-series/index.html
+        - title: AFF systems
+          url: /aff-landing/index.html
+        - title: ASA systems
+          url: /allsan-landing/index.html
+        - title: ASA r2 systems
+          url: /asa-r2/index.html
         - title: FAS systems
           url: /fas/index.html
         - title: End-of-availability systems

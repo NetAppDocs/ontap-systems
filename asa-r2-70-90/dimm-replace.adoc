@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-70-90/dimm-replace.html
+sidebar: sidebar
+keywords: asa r2 a70, asa r2 a90, replace a dimm
+summary: "You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic."
+---
+= Replace a DIMM - ASA A70 and ASA A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a70-90_dimm_replace.adoc[]

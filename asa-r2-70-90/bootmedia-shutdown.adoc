@@ -1,0 +1,26 @@
+---
+permalink: asa-r2-70-90/bootmedia-shutdown.html
+sidebar: sidebar
+keywords: asa r2 a70, asa r2 a90, shut down the controller
+summary: "After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller."
+---
+= Shut down the controller - ASA A70 and ASA A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
+
+====
