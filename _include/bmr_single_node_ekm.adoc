@@ -66,7 +66,7 @@ Bootmenu Option 11 will prompt the user for all of the EKM configuration informa
 Verify the `x-NETAPP-ClusterName: <cluster name>` for the Cluster UUID and `x-NETAPP-KeyUsage: "MROOT-AK"` for the Keystore UUID attributes to ensure you have the correct keys.
 
 . Monitor the retrieve and restore of Mroot-AK into the ONTAP node.
-.. If the process cannot restore the key, you will see the following: 
+. If the process cannot restore the key, you will see the following message and need to configure e0M from the menu system shell: 
 +
 
 ....
@@ -89,7 +89,31 @@ LOADER-B>
 
 ....
 
-.. Run the `boot_recovery -partner` command and repeat the EKM restore procedure.
+
+.. Run the `boot_recovery -partner` command on recoverery node.
+.. When prompted to perform (y or n) option for EKM, select _n_ for all. 
++
+After selecting _n_ option for the 8 prompts, the system will stop at boot menu.
++
+
+.. Collect of the /cfcard/kmip/servers.cfg file from another cluster node, or, the following information:
+
+* The KMIP server address.
+* The KMIP port.
+* The Keystore UUID.
+* A copy of the /cfcard/kmip/certs/client.crt file from another cluster node, or, the client certificate.
+* A copy of the /cfcard/kmip/certs/client.key file from another cluster node, or, the client key.
+* A copy of the /cfcard/kmip/certs/CA.pem file from another cluster node, or, the KMIP server CA(s).
+.. Enter systemshell from bootmenu by entering _systemshell_ at the prompt.
+.. Configure network from the systemshell menu for e0M, netmask and gateway
+.. Exit from menu systemshell.  You will see the boot menu.
+.. Select `11` option to continue EKM.
+.. Answer `y` to the following questions:
+
+* Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} 
+* Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n} 
+* Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n} 
+* Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} 
 
 . If the key is restored properly, the recovery process continues and reboots the node.
 

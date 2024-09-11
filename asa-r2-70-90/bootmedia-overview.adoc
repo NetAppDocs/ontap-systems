@@ -9,11 +9,11 @@ summary: Learn about the automated method and the manual method for replacing th
 
 [.lead]
 
-You can replace a failed boot media manually by using USB module for the boot image or through the automated boot media replace (BMR) option.
+You can replace a failed boot media manually by using USB module for the boot image or through the automated boot media recovery (BMR) option.
 
-* link:bootmedia-replace-requirements-bmr.html[Automated boot media replacement]
+* link:bootmedia-replace-requirements-bmr.html[Automated boot media recovery]
 +
-Automated boot media replace uses the boot image from the partned node and automatically runs the appropriate boot menu option to install the boot image to the replacement boot media.
+Automated boot media recovery uses the boot image from the partned node and automatically runs the appropriate boot menu option to install the boot image to the replacement boot media.
 
 * link:bootmedia-replace-requirements.html[Manual boot media replace]
 +
