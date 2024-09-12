@@ -48,40 +48,40 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
 
 +
-image::../media/drw_isi_g_switchless_2p_100gbe_cabling_ieops-1925.svg[Two-node switchless cluster cabling diagram, width=500px]
+image::../media/drw_isi_g_switchless_2p_100gbe_cabling_ieops-1925.svg[Two-node switchless cluster cabling diagram]
 
 +
 .. Cable controller A port e3a to controller B port e3a.
 .. Cable controller A port e3b to controller B port e3b.
 
 +
-. Cable the Ethernet ports to your host network. 
+. Cable the host network connections. 
 +
-The following graphics show common host network cabling examples. If needed, see  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
+The following graphics show examples of optional host network cabling. If needed, see  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
 
-.. Cable ports e9a and e9b on each controller to the Ethernet data network switch.
-
+.. Option 1: Cable the 10/25 GbE host network switches.(or, Cable to a 25GbE host network.) Cable ports e2a, e2b, e2c and e2d on each controller to the Ethernet host network switches.
 +
-*100 GbE cable*
-+
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable, width=100px]
-+
-image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100 Gb Ethernet network,width=500px]
-
-+
-.. Cable the 10/25 GbE host network switches.
-+
-*4-ports, 10/25 GbE Host*
+*10/25 GbE cables*
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[10/25 Gb cable,width=100px]
 +
-image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Ethernet network,width=500px]
+image::../media/drw_isi_g_4p_25gbe_optional_cabling_ieops-1923.svg[Cable to 10/25gbe ethernet host network switches]
+
++
+.. Option 2: Cable the FC host network switches.Cable ports e1a, e1b, e1c and e1d on each controller to the FC host network switches.
++
+*64 Gb FC cables*
++
+image::../media/oie_cable_sfp_gbe_copper.svg[64 Gb fc cable,width=100px]
++
+image::../media/drw_isi_g_4p_64gb_fc_optional_cabling_ieops-1924.svg[Cable to 64Gb fc host network switches]
 +
 
-. Cable the controller management (wrench) ports to the management network switches.
+. Cable the management (wrench) ports on each controller to the management network switches.
++
+*1000BASE-T RJ-45 cables*
 +
 image::../media/oie_cable_rj45.svg[RJ45 cables,width=100px]
-*1000BASE-T RJ-45 cables*
 +
 image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your management network,width=500px]
 

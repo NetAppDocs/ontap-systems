@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a20 aff a30 aff a50 maintenance, maintenance, repairing a20 aff a30 aff a50, replace a20 aff a30 aff a50 components
 summary: Maintain the AFF A20, AFF A30, and AFF A50 hardware
 ---
-= Maintain AFF A20, AFF A30, and AFF A50 hardware
+= Overview of hardware maintenance -  AFF A20, AFF A30, and AFF A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You might need to perform maintenance procedures on your hardware. Procedures specific to maintaining your AFF A20, AFF A30, and AFF A50 system components are in this section.
 
-The procedures in this section assume that the AFF A20, AFF A30, or AFF A50 systems have already been deployed as storage nodes in the ONTAP environment.
+The procedures in this section assume that the AFF A20, AFF A30, or AFF A50 storage systems have already been deployed as storage nodes in the ONTAP environment.
 
 == System components
 For the AFF A20, AFF A30, and AFF A50 storage systems, you can perform maintenance procedures on the following components.
@@ -60,7 +60,4 @@ a| A power supply provides a redundant power source in a controller.
 a| link:rtc-battery-replace.html[Real-time clock battery]
 
 a| A real-time clock battery preserves system date and time information if the power is off.
-
-a| link:system-management-replace.html[System Management module]
-
 |===
