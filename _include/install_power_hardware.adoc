@@ -13,11 +13,11 @@ NOTE: Do not use shelf ID "00" for any external NS224 shelves.
 * After changing a shelf ID, you must power cycle the shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
 
 .Steps
-. Power on the shelf by connecting the power cords first to the shelf, securing them in place with the power cord retainer, and then connecting the power cords to power sources on different circuits.
+. Power on the shelf by cabling the power cords first to the shelf, securing them in place with the power cord retainer, and then cabling the power cords to power sources on different circuits.
 +
 The shelf powers on and boots automatically when plugged into the power source. 
 
-. Remove the left end cap to access the shelf ID button behind the faceplate.
+. Remove the shelf's left end cap to access the shelf ID button behind the faceplate.
 +
 image::../media/drw_a900_oie_change_ns224_shelf_id_ieops-836.svg[Change NS224 shelf ID,width=300px]
 
@@ -87,19 +87,19 @@ A power supply is powered on as soon as the power cord is plugged in. Its bicolo
 
 
 == Step 2: Power on the controllers
-After you've powered on your shelves and assigned them unique IDs, turn on the power to the controllers.
+After you've powered on your shelves and assigned them unique IDs, power on the controllers.
 
 .Steps
 
-. Connect your laptop to the serial console port. This allows you to monitor the boot sequence when the controllers are powered on.
+. Cable your laptop to the serial console port. This allows you to monitor the boot sequence when the controllers are powered on.
 
  .. Set the serial console port on the laptop to 115,200 baud with N-8-1.
 +
 NOTE: See your laptop's online help for instructions on how to configure the serial console port.
 
- .. Connect the console cable to the laptop, and connect the serial console port on the controller using the console cable that came with your platform.
+ .. Cable the laptop to the controller A serial console port using the console cable that came with your platform.
  
-.. Connect the laptop to the switch on the management subnet.
+.. Cable the laptop to the switch on the management subnet.
 
 
 // start tabbed area
@@ -130,7 +130,7 @@ image::../media/drw_g_isi_console_serial_port_cabling_ieops-1882.svg[Console con
  .. Assign a TCP/IP address to the laptop, using one that is on the management subnet.
 
 [start=2]
-. Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
+. Plug the power cords into the controller power supplies, and then cable them to power sources on different circuits.
 +
 // start tabbed area
 
@@ -165,4 +165,4 @@ image::../media/drw_psu_layout_1_ieops-1886.svg[A20 or A30 or A50 storage system
 
 [start=3]
 
-. Secure the power cables using the securing device on each power supply.
+. Secure the power cords using the securing device on each power supply.
