@@ -91,24 +91,24 @@ LOADER-B>
 
 
 .. Run the `boot_recovery -partner` command on recoverery node.
-.. When prompted to perform (y or n) option for EKM, select _n_ for all. 
+.. When prompted to perform (y or n) the options for EKM, select _n_ for all. 
 +
 After selecting _n_ option for the 8 prompts, the system will stop at boot menu.
 +
 
-.. Collect of the /cfcard/kmip/servers.cfg file from another cluster node, or, the following information:
+.. Collect the /cfcard/kmip/servers.cfg file information from another cluster node. You will collect the following information:
 
 * The KMIP server address.
 * The KMIP port.
 * The Keystore UUID.
-* A copy of the /cfcard/kmip/certs/client.crt file from another cluster node, or, the client certificate.
-* A copy of the /cfcard/kmip/certs/client.key file from another cluster node, or, the client key.
-* A copy of the /cfcard/kmip/certs/CA.pem file from another cluster node, or, the KMIP server CA(s).
+* A copy of the client certificate from the /cfcard/kmip/certs/client.crt file.
+* A copy of the client key from the /cfcard/kmip/certs/client.key file.
+* A copy of the KMIP server CA(s) from the /cfcard/kmip/certs/CA.pem file.
 .. Enter systemshell from bootmenu by entering _systemshell_ at the prompt.
-.. Configure network from the systemshell menu for e0M, netmask and gateway
-.. Exit from menu systemshell.  You will see the boot menu.
-.. Select `11` option to continue EKM.
-.. Answer `y` to the following questions:
+.. Configure network from the systemshell menu for e0M, netmask and gateway.
+.. Exit from menu systemshell with the _exit_ command.
+.. You will see the boot menu. Select option `11` to continue EKM restore.
+.. Answer `y` to the following questions and enter the required information you previously collected when prompted:
 
 * Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} 
 * Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n} 
