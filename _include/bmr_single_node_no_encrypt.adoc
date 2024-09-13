@@ -34,7 +34,7 @@ If you see this message, you must restore the ONTAP image
 +
 The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks.   
 
-. Monitor the process as LOADER configures the local cluster ports and executes netboot through `\http://_remote_partner_IP_:65530/recoverydisk/image.tgz`.
+. Monitor the process as LOADER configures the local cluster ports and executes netboot through  `\ http://_remote_partner_IP_:65530/recoverydisk/image.tgz`.
 +
 Once netboot is running, `Starting BMR ...` is displayed on the screen and the process completes the installation process.
 
