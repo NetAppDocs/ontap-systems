@@ -27,12 +27,16 @@ To replace an AC PSU, complete the following steps.
 . If you are not already grounded, properly ground yourself.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
 . Disconnect the PSU:
- .. Open the power cable retainer, and then unplug the power cable from the PSU.
-. Remove the PSU by rotating the handle up, press the locking tab, and then pull PSU out of the controller module.
+ .. Open the power cable retainer.
+ .. Unplug the power cable from the PSU.
+. Remove the PSU:
+.. Rotate the handle up.
+.. Press the blue locking tab to release the PSU.
+.. Pull the PSU out of the controller.
 +
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[Replace PSU]
+image::../media/drw_g_t_psu_replace_ieops-1899.svg[Replace AC PSU]
 
 +
 [cols="1,4"]
@@ -40,16 +44,16 @@ image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[Replace PSU]
 a|
 image:../media/legend_icon_01.svg[Callout number 1,width=30px]
 a|
-Terracotta PSU locking tab
+Terracotta PSU locking tab...
 |===
 
-. Install the replacement PSU in the controller module:
-.. Using both hands, support and align the edges of the replacement PSU with the opening in the controller module.
-.. Gently push the PSU into the controller module until the locking tab clicks into place.
+. Install the replacement PSU:
+.. Using both hands, support and align the edges of the PSU with the opening in the controller.
+.. Gently push the PSU into the controller until the locking tab clicks into place.
 +
 The power supplies will only properly engage with the internal connector and lock in place one way.
 +
-NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
+NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the controller.
 
 . Reconnect the PSU cabling:
  .. Reconnect the power cable to the PSU.
@@ -102,13 +106,13 @@ a|
 Blue PSU locking tab
 |===
 
-. Install the replacement PSU in the controller module:
-.. Using both hands, support and align the edges of the replacement PSU with the opening in the controller module.
-.. Gently push the PSU into the controller module until the locking tab clicks into place.
+. Install the replacement PSU:
+.. Using both hands, support and align the edges of the PSU with the opening in the controller.
+.. Gently push the PSU into the controller until the locking tab clicks into place.
 +
 The power supplies will only properly engage with the internal connector and lock in place one way.
 +
-NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
+NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the controller.
 
 . Reconnect the D-SUB DC power cable:
  .. Plug the power cable connector into the PSU.
