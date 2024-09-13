@@ -33,14 +33,14 @@ NOTE: Depending on the drive type and capacity, it can take up to several hours 
 
 .About this task
 
-* *Best practice:* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a drive.
+* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a drive.
 +
 Having the current version of the DQP installed allows your system to recognize and use newly qualified drives. This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
 +
 //30 aug 2022, BURT 1491809: correct the DQP link
 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[NetApp Downloads: Disk Qualification Package^]
 
-* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
+* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
 +
