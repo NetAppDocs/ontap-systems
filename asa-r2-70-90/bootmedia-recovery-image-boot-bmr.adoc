@@ -16,15 +16,15 @@ You can restore image on the boot media from the partner controller using the au
 
 .Option 1: Single node automated boot media recovery with no encryption
 --
-include::../_include/bmr_single_node_no_encrypt.adoc[]
+include::../_include/bmr_single_node_no_encrypt.adoc[Boot recovery single node with no encryption]
 --
 .Option 2: Single node automated boot media recovery with Onboard Key Manager present
 --
-include::../_include/bmr_single_node_okm.adoc[]
+include::../_include/bmr_single_node_okm.adoc[Boot recovery single node with OKM]
 --
 .Option 3: Single node automated boot media recovery with External Key Manager present
 --
-include::../_include/bmr_single_node_ekm.adoc[]
+include::../_include/bmr_single_node_ekm.adoc[Boot recovery single node with EKM]
 --
 
 ====
