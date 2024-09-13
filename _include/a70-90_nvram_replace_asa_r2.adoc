@@ -136,9 +136,9 @@ NOTE: The controller reboots as soon as it is fully seated in the chassis.
 . Rotate the cable management tray up to the closed position.
 
 
-== Step 4: Reassign disks
+== Step 4: Verify controller state
 
-You must confirm the replaced controller connected to the disk pool when you boot the controller.
+You must confirm the controller state of the controllers connected to the disk pool when you boot the controller.
 
 
 .Steps
