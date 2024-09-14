@@ -88,10 +88,7 @@ When a drive fails, the system logs a warning message to the system console indi
 +
 NOTE: The activity (green) LED on a failed drive can be illuminated (solid), which indicates that the drive has power, but should not be blinking, which indicates I/O activity. A failed drive has no I/O activity.
 
-. Remove the failed drive:
-
-.. Press the release button on the drive face to open the cam handle.
-.. Slide the drive out of the shelf using the cam handle and supporting the drive with your other hand.
+. Remove the failed drive: 
 +
 image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove NVMe drive]
 +
@@ -100,21 +97,21 @@ image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove NVMe drive]
 a|
 image::../media/legend_icon_01.svg[Callout number 1,width=30px] 
 a|
-Push button to release the drive cam handle...
+Press the release button on the drive face to open the cam handle.
 a|
 image::../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
-Pull the cam handle into the open position...
+Rotate the cam handle downward to disengage the drive from the midplane.
 a|
 image::../media/legend_icon_03.svg[Callout number 3,width=30px]
 a|
-Slide the drive out of the chassis...
+Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand. 
 |===
 +
 . Wait a minimum of 70 seconds before inserting the replacement drive.
 
 . Insert the replacement drive:
-.. With the cam handle in the open position, use both hands to insert the replacement drive.
+.. With the cam handle in the open position, use both hands to insert the drive.
 .. Push until the drive stops.
 .. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
 +
@@ -124,20 +121,20 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 When the drive's activity LED is solid, it means that the drive has power. When the drive's activity LED is blinking, it means that the drive has power and I/O is in progress. If the drive firmware is automatically updating, the LED blinks.
 
 . If you are replacing another drive, repeat steps 3 through step 7.
-. If you disabled automatic drive assignment in step 1, then, manually assign drive ownership, and then reenable automatic drive assignment if needed:
+. If you disabled automatic drive assignment in step 1, manually assign drive ownership, and then reenable automatic drive assignment if needed:
 .. Display all unowned drives: `storage disk show -container-type unassigned`
 +
-You can enter the command on either controller module.
+You can enter the command on either controller.
 
 .. Assign each drive: `storage disk assign -disk disk_name -owner owner_name`
 +
-You can enter the command on either controller module.
+You can enter the command on either controller.
 +
 You can use the wildcard character to assign more than one drive at once.
 
 .. Reenable automatic drive assignment if needed: `storage disk option modify -node node_name -autoassign on`
 +
-You must reenable automatic drive assignment on both controller modules.
+You must reenable automatic drive assignment on both controllers.
 
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +
