@@ -33,6 +33,8 @@ NOTE: Depending on the drive type and capacity, it can take up to several hours 
 
 .About this task
 
+* When replacing a failed drive, you must wait 70 seconds between the removal of the drive and the insertion of the replacement drive to allow the storage system to recognize that a drive was removed.
+
 * The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a drive.
 +
 Having the current version of the DQP installed allows your system to recognize and use newly qualified drives. This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
@@ -60,10 +62,6 @@ NOTE: Drive firmware checks occur every two minutes.
 A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
-
-* When you unpack the replacement drive, save all packing materials for use when you return the failed drive.
-+
-If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
 .Steps
 
@@ -114,8 +112,6 @@ Slide the drive out of the chassis...
 |===
 +
 . Wait a minimum of 70 seconds before inserting the replacement drive.
-+
-This allows the system to recognize that a drive was removed.
 
 . Insert the replacement drive:
 .. With the cam handle in the open position, use both hands to insert the replacement drive.
