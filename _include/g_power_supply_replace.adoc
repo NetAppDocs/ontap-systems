@@ -74,7 +74,9 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 
 . Rotate the handle down, so it is out of the way of normal operations.
 
-. Reconnect the power cable to the PSU and secure the power cable with the power cable retainer. (OR format below...)
+. Reconnect the power cable to the PSU and secure the power cable with the power cable retainer. 
++
+Once power is restored to the PSU, the status LED should be green.(OR format below...)
 
 . Reconnect power to the PSU:
 .. Reconnect the power cable to the PSU.
@@ -82,6 +84,7 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 
 +
 Once power is restored to the PSU, the status LED should be green.
+
 include::../_include/complete_rma_step.adoc[]
 
 --
