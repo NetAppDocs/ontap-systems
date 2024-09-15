@@ -28,8 +28,14 @@ To replace an AC PSU, complete the following steps.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
 .  Disconnect the power cord from the PSU by opening the power cord retainer, and then unplug the power cord from the PSU.
 +
+NOTE: PSUs do not have a power switch. (OR format below...)
++
+. Disconnect the power to the PSU:
++
 NOTE: PSUs do not have a power switch.
 +
+.. Open the power cord retainer.
+.. Unplug the power cord from the PSU.
 . Remove the PSU:
 .. Make sure the controller handle is in the upright position to allow you access to the PSU.
 .. Rotate the PSU handle up, to its horizontal position, and then grasp it.
