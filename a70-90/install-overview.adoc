@@ -11,7 +11,6 @@ summary: 'Follow these high-level steps to install and set up your AFF A70 or A9
 [.lead]
 To install and configure your AFF A70 or AFF A90 system, you review the hardware requirements, prepare your site, install and cable the hardware components, power on the system, and set up your ONTAP cluster.
 
-<<<<<<< HEAD
 .Before you begin
 Before installing your system, familiarize yourself with the system requirements, workflow, and processes outlined in this Overview.
 
@@ -20,13 +19,9 @@ Before installing your system, familiarize yourself with the system requirements
 To prepare for install, you need to review the equipment and tools needed to install your storage system and storage shelves and review lifting and safety precautions for your storage system and storage shelves.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:install-prepare.html[Prepare for install the AFF A70 or AFF A90 storage system]
-=======
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Review the installation requirements for the AFF A70 or AFF A90 storage system]
->>>>>>> 86db396c8074ccd5ced2d530d9026ded5f7d012d
 [role="quick-margin-para"]
 Review the hardware requirements to install your AFF A70 or AFF A90 storage system.
 
-<<<<<<< HEAD
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:install-hardware.html[Install the hardware for the AFF A70 or AFF A90 storage system]
 [role="quick-margin-para"]
 To install the hardware, install the rail kits for your storage system and shelves, and then install and secure your storage system in the cabinet or telco rack. Next, slide the shelves onto the rails. Finally, attach cable management devices to the rear of the storage system for organized cable routing.
@@ -40,24 +35,5 @@ To cable the hardware, first connect the storage controllers to your network and
 Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:install-complete.html[Complete storage system setup]
-=======
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[One]link:install-prepare.html[Prepare to install the AFF A70 or AFF A90 storage system]
-[role="quick-margin-para"]
-To prepare to install your storage system, you need to get the site ready, check the environmental and electrical requirements, and ensure there’s enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Two]link:install-hardware.html[Install the hardware for the AFF A70 or AFF A90 storage system]
-[role="quick-margin-para"]
-To install the hardware, install the rail kits for your storage system and shelves, and then install and secure your storage system in the cabinet or telco rack. Next, slide the shelves onto the rails. Finally, attach cable management devices to the rear of the storage system for organized cable routing.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Three]link:install-cable.html[Cable the hardware for the AFF A70 or AFF A90 storage system]
-[role="quick-margin-para"]
-To cable the hardware, first connect the storage controllers to your network and then connect the controllers to your storage shelves.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Four]link:install-power-hardware.html[Power on the AFF A70 or AFF A90 storage system]
-[role="quick-margin-para"]
-Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Five]link:install-complete.html[Complete the storage system setup]
->>>>>>> 86db396c8074ccd5ced2d530d9026ded5f7d012d
 [role="quick-margin-para"]
 To complete system setup, access ONTAP System Manager, by pointing a browser to the controller’s IP address. A setup wizard helps you complete cluster configuration for your AFF A70 or AFF A90 storage system.
