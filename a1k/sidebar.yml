@@ -6,7 +6,7 @@ entries:
    entries:
      - title: Install workflow
        url: /a1k/install-overview.html
-     - title: Requirements and considerations
+     - title:  Review requirements 
        url: /a1k/install-requirements.html
      - title: Prepare to install
        url: /a1k/install-prepare.html
@@ -70,6 +70,7 @@ entries:
    - title: NV Battery
      url: /a1k/nvdimm-battery-replace.html
    - title: I/O module
+     pdf-filename: A1K I/O module
      entries:
         - title: I/O module overview
           url: /a1k/io-module-overview.html
