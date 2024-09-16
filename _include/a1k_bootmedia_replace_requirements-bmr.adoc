@@ -1,10 +1,7 @@
 Before replacing the boot media, make sure to review the following requirements.
 
-* You must have a USB flash drive, formatted to FAT32, with the appropriate amount of storage to hold the `image_xxx.tgz`.
-
-* You must copy the `image_xxx.tgz` file to the USB flash drive for later use in this procedure.
-
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * It is important that you apply the commands in these steps on the correct controller:
  ** The _impaired_ controller is the controller on which you are performing maintenance.
  ** The _healthy_ controller is the HA partner of the impaired controller.
+ * There must be no faulty cluster ports on the impaired controller.
