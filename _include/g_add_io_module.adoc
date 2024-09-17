@@ -9,7 +9,12 @@ You can add I/O modules to your storage system by either adding them to availabl
 * Make sure that all other components are functioning properly.
 
 .About this task
-When adding I/O modules, you add the same module type in each controller. This procedure has you add them one at a time by repeating steps.
+* When adding I/O modules, you add the same module type in each controller. This procedure has you add them one at a time by repeating steps.
+* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
 == Option 1: Add I/O modules to a storage system with available slots
 
