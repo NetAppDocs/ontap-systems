@@ -39,6 +39,8 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 . On the controller A, remove the I/O blanking module from the target slot.
 +
+Unused I/O slots should have blanking module installed to prevent possible thermal issues.
++
 image::../media/drw_g_io_blanking_module_replace_ieops-1901.svg[Remove an I/O blanking module]
 +
 [cols="1,4"]
@@ -50,7 +52,7 @@ Turn the thumbscrew counterclockwise to loosen.
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
-Pull the I/O blanking module out of the controller using the handle on the left and the thumbscrew.
+Pull the I/O blanking module out of the controller using the tab on the left and the thumbscrew.
 
 |===
 
@@ -63,9 +65,6 @@ Pull the I/O blanking module out of the controller using the handle on the left 
 If the I/O module is a NIC, cable the module to the data switches.  
 +
 If the I/O module is a storage module, cable it to the NS224 shelf.
-
-+
-NOTE: Make sure that any unused I/O slots have blanking module installed to prevent possible thermal issues.
 
 . Reboot the controller from the LOADER prompt: _bye_
 +
@@ -168,11 +167,11 @@ NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/
 . Give back the controller from the partner controller. _storage failover giveback -ofnode target_node_name_
 . Enable automatic giveback if it was disabled: _storage failover modify -node local -auto-giveback true_
 
-. If you added:
+. The next step depends on what type of I/O module you added:
 +
 [options="header" cols="1,2"]
 |===
-| If I/O module is a...| Then...
+| If the I/O module is a...| Then...
 a|
 NIC module
 a|
