@@ -20,8 +20,6 @@ To replace the NVRAM module, locate it in slot 4/5 in the enclosure and follow t
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the impaired NVRAM module from the enclosure:
  .. Depress the locking cam button.
-+
-The cam button moves away from the enclosure.
 
  .. Rotate the cam latch down as far as it will go.
 +
@@ -92,33 +90,39 @@ After you replace the FRU, you must reboot the controller module.
 
 . To boot ONTAP from the LOADER prompt, enter _bye_.
 
-== Step 5: Reassign disks
+== Step 5: Verify controller state
 
-You must confirm the system ID change when you boot the controller and then verify that the change was implemented.
+You must confirm the controller state of the controllers connected to the disk pool when you boot the controller.
 
-CAUTION: Disk reassignment is only needed when replacing the NVRAM module and does not apply to NVRAM DIMM replacement. 
 
 .Steps
 . If the controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: _halt_
 . From the LOADER prompt on the controller, boot the controller and enter _y_ when prompted to override the system ID due to a system ID mismatch.
-. Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: _storage failover show_
+. Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify the system state: _storage failover show_
 +
-In the command output, you should see a message that the system ID has changed on the impaired controller, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
+In the command output, you should see a message indicates the state of the controllers.
 +
+
 ----
-node1:> storage failover show
-                                    Takeover
-Node              Partner           Possible     State Description
-------------      ------------      --------     -------------------------------------
-node1             node2             false        System ID changed on partner (Old:
-                                                  151759755, New: 151759706), In takeover
-node2             node1             -            Waiting for giveback (HA mailboxes)
+
+                              Takeover
+Node           Partner        Possible State Description
+-------------- -------------- -------- -------------------------------------
+<nodename>
+               <nodename>-   true     Connected to <nodename>-P2-3-178.
+               P2-3-178                Waiting for cluster applications to
+                                       come online on the local node.
+AFF-A90-NBC-P2-3-178
+               <nodename>-   true     Connected to <nodename>-P2-3-177,
+               P2-3-177                Partial giveback
+2 entries were displayed.
+
 ----
 
 . Give back the controller:
  .. From the healthy controller, give back the replaced controller's storage: _storage failover giveback -ofnode replacement_node_name_
 +
-The controller takes back its storage and completes booting.
+The controller connects back its storage pool and completes booting.
 +
 If you are prompted to override the system ID due to a system ID mismatch, you should enter _y_.
 +
@@ -127,58 +131,25 @@ NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 For more information, see the https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted[Manual giveback commands^] topic to override the veto.
 
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: _storage failover show_
+
+. Verify that the disks that the disk pools are as expected: `storage disk show -ownership`
 +
-The output from the `storage failover show` command should not include the System ID changed on partner message.
-. Verify that the disks were assigned correctly: `storage disk show -ownership`
-+
-The disks belonging to the controller should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 151759706:
-+
+
 ----
 node1:> storage disk show -ownership
 
-Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
------ ------    ----- ------ -------- -------    -------    -------  ---------  ---
-1.0.0  aggr0_1  node1 node1  -        151759706  151759706  -       151759706 Pool0
-1.0.1  aggr0_1  node1 node1           151759706  151759706  -       151759706 Pool0
-.
-.
-.
+Disk     Aggregate  Home Owner    DR Home      Home ID       Owner ID    DR Home ID  Reserver Pool
+-------- --------- ------------- ------------- ------------- ----------- ----------- ----------- ----------- ------
+1.0.0 pod_NVME_SSD_1
+
+0 0 - 0 Pool0
+1.0.1 pod_NVME_SSD_1
+0 0 - 0 Pool0
+1.0.2 pod_NVME_SSD_1
+0 0 - 0 Pool0
 ----
 
-. If the system is in a MetroCluster configuration, monitor the status of the controller: _metrocluster node show_
-+
-The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each controller will show a configured state, with DR Mirroring enabled and a mode of normal. The `metrocluster node show -fields node-systemid` command output displays the impaired system ID until the MetroCluster configuration returns to a normal state.
 
-. If the controller is in a MetroCluster configuration, depending on the MetroCluster state, verify that the DR home ID field shows the original owner of the disk if the original owner is a controller on the disaster site.
-+
-This is required if both of the following are true:
-
- ** The MetroCluster configuration is in a switchover state.
- ** The controller is the current owner of the disks on the disaster site.
-+
-See https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration] for more information.
-
-. If your system is in a MetroCluster configuration, verify that each controller is configured: _metrocluster node show - fields configuration-state_
-+
-----
-node1_siteA::> metrocluster node show -fields configuration-state
-
-dr-group-id            cluster node           configuration-state
------------            ---------------------- -------------- -------------------
-1 node1_siteA          node1mcc-001           configured
-1 node1_siteA          node1mcc-002           configured
-1 node1_siteB          node1mcc-003           configured
-1 node1_siteB          node1mcc-004           configured
-
-4 entries were displayed.
-----
-
-. Verify that the expected volumes are present for each controller: `vol show -node node-name`
-. If storage encryption is enabled, you must restore functionality.
-. If you disabled automatic takeover on reboot, enable it from the healthy controller: _storage failover modify -node replacement-node-name -onreboot true_
- 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
-
-== Step 6: Return the failed part to NetApp
+== Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
