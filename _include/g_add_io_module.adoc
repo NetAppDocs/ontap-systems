@@ -1,4 +1,4 @@
-You can add an I/O module to your storage system by either adding a new I/O module into a storage system with empty slots or by replacing an I/O module with a new one in a fully-populated storage system.
+You can add I/O modules to your storage system by either adding them to available slots or by replacing I/O modules with new ones in a fully-populated storage system.
 
 .Before you begin
 
@@ -8,13 +8,16 @@ You can add an I/O module to your storage system by either adding a new I/O modu
 
 * Make sure that all other components are functioning properly.
 
-== Option 1: Add an I/O module to a storage system with empty slots
+.About this task
+When adding I/O modules, you add the same module type in each controller. This procedure has you add them one at a time by repeating steps.
 
-You can add an I/O module into an empty slot in a controller.
+== Option 1: Add I/O modules to a storage system with available slots
 
-=== Step 1: Shut down the impaired controller
+You can add an I/O module into an available slot in each controller.
 
-Shut down or take over the impaired controller using one of the following options.
+=== Step 1: Shut down the target controller
+
+Shut down or take over the target controller using one of the following options.
 
 [role="tabbed-block"]
 ====
@@ -30,33 +33,31 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 ====
 
-=== Step 2: Add I/O modules
+=== Step 2: Add I/O modules to available slots
 
 . If you are not already grounded, properly ground yourself. 
 
-. Remove the target slot blanking module from the controller OR IS it controllers - one at a time???:
-
+. On the controller A, remove the I/O blanking module from the target slot.
 +
-NOTE: The following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
-+
-
-image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove an I/O module]
+image::../media/drw_g_io_blanking_module_replace_ieops-1901.svg[Remove an I/O blanking module]
 +
 [cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.png[Callout number 1]
 a|
-Cam locking button
+Turn the thumbscrew counterclockwise to loosen.
+a|
+image:../media/legend_icon_02.png[Callout number 2]
+a|
+Pull the I/O blanking module out of the controller using the handle on the left and the thumbscrew.
 
 |===
 
- .. Depress the cam latch on the blanking module in the target slot.
- .. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
- .. Remove the blanking module.
 . Install the I/O module:
- .. Align the I/O module with the edges of the controller module slot opening.
- .. Gently slide the module all the way into the into the slot, and then rotate the cam latch all the way up to lock the module in place.
+ .. Align the I/O module with the edges of the controller slot opening.
+ .. Gently slide the I/O module all the way into the into the slot.
+ .. Turn the thumbscrew clockwise to tighten.
 . Cable the I/O module.
 +
 If the I/O module is a NIC, cable the module to the data switches.  
@@ -64,11 +65,11 @@ If the I/O module is a NIC, cable the module to the data switches.
 If the I/O module is a storage module, cable it to the NS224 shelf.
 
 +
-NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
+NOTE: Make sure that any unused I/O slots have blanking module installed to prevent possible thermal issues.
 
 . Reboot the controller from the LOADER prompt: _bye_
 +
-NOTE: This reinitializes the I/O modules and other components and reboots the node.
+NOTE: This reinitializes the I/O modules, other components, and reboots the node.
 +
 . Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
 . Repeat these steps for controller B.
@@ -79,9 +80,9 @@ NOTE: This reinitializes the I/O modules and other components and reboots the no
 
 . If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
 
-== Option 2: Add an I/O module in a storage system with no empty slots
+== Option 2: Add I/O modules in a storage system with no available slots
 
-You can change an I/O module in an I/O slot in a fully-populated storage system by removing an existing I/O module and replacing it with a different I/O module.
+You can add I/O modules to a fully-populated storage system by removing existing I/O modules and replacing them with different I/O modules.
 
 . If you are:
 +
@@ -103,9 +104,9 @@ a|
 Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
 |===
 
-=== Step 1: Shut down the impaired controller
+=== Step 1: Shut down the target controller
 
-Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the target controller using one of the following options.
 
 [role="tabbed-block"]
 ====
@@ -121,49 +122,45 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 ====
 
-=== Step 2: Replace an I/O module
-To replace an I/O module, locate it within the controller and follow the specific sequence of steps.
+=== Step 2: Add I/O modules to unavailable slots
 
 . If you are not already grounded, properly ground yourself. 
 
-. Unplug any cabling on the target I/O module.
+. On the controller A, unplug any cabling on the target I/O module.
+
 . Remove the target I/O module from the controller:
 
 +
-NOTE: The following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
-+
-
-image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove an I/O module]
+image::../media/drw_g_io_module_replace_ieops-1900.svg[Remove an I/O module]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]|
-Cam locking button
+image:../media/legend_icon_01.png[Callout number 1]
+a|
+Turn the I/O module thumbscrew counterclockwise to loosen.
+a|
+image:../media/legend_icon_02.png[Callout number 2]
+a|
+Pull the I/O module out of the controller using the port label tab on the left and the thumbscrew.
 
 |===
 
-.. Depress the cam latch button.
-+
-The cam latch moves away from the chassis.
-.. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
-.. Remove the module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
-+
-Make sure that you keep track of which slot the I/O module was in.
 +
 . Install the I/O module into the target slot:
 .. Align the I/O module with the edges of the slot.
-.. Gently slide the module into the slot all the way into the controller, and then rotate the cam latch all the way up to lock the module in place.
+.. Gently slide the module into the slot all the way into the controller.
+.. Turn the thumbscrew clockwise to tighten.
 . Cable the I/O module.
 
-. Repeat the remove and install steps to replace additional I/O modules for the controller.
+. Repeat the remove and install steps to replace any additional I/O modules for the controller.
 
 . Reboot the controller from the LOADER prompt:_bye_
 .. Check the version of BMC on the controller: _system service-processor show_
 .. Update the BMC firmware if needed: _system service-processor image update_
 .. Reboot the node: _bye_
 +
-NOTE: This reinitializes the I/O modules and other components and reboots the node.
+NOTE: This reinitializes the I/O modules, other components, and reboots the node.
 +
 
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement]
