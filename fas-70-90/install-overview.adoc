@@ -11,22 +11,19 @@ summary: 'Follow these high-level steps to install and set up your FAS70 and FAS
 [.lead]
 To install and configure your FAS70 or FAS90 system, you review the hardware requirements, prepare your site, install and cable the hardware components, power on the system, and set up your ONTAP cluster.
 
-.Before you begin
-Before installing your system, familiarize yourself with the system requirements, workflow, and processes outlined in this Overview.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Requirements and considerations for FAS70 and FAS90 systems]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Review installation requirements]
 [role="quick-margin-para"]
-To prepare for install, you need to review the equipment and tools needed to install your storage system and storage shelves and review lifting and safety precautions for your storage system and storage shelves.
+Review the equipment and tools needed to install your storage system and storage shelves and review the lifting and safety precautions.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:install-prepare.html[Prepare to install the FAS70 or FAS90 storage system]
 [role="quick-margin-para"]
-Review the hardware requirements to install your FAS70 or FAS90 storage system.
+To prepare to install your system, you need to get the site ready, check the environmental and electrical requirements, and ensure there's enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:install-hardware.html[Install the hardware for the FAS70 or FAS90 storage system]
 [role="quick-margin-para"]
 To install the hardware, install the rail kits for your storage system and shelves, and then install and secure your storage system in the cabinet or telco rack. Next, slide the shelves onto the rails. Finally, attach cable management devices to the rear of the storage system for organized cable routing.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:install-cable.html[Cable the hardware for the FAS70 or FAS90 storage system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:install-cable.html[Cable the controllers and storage shelves for the FAS70 or FAS90 storage system]
 [role="quick-margin-para"]
 To cable the hardware, first connect the storage controllers to your network and then connect the controllers to your storage shelves.
 
@@ -36,4 +33,4 @@ Before you power on the controllers, power on each shelf and assign a unique she
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:install-complete.html[Complete storage system setup]
 [role="quick-margin-para"]
-To complete system setup, access the web-based interface, System Manager, by To complete system setup, access ONTAP System Manager, by pointing a browser to the controller’s IP address. A setup wizard helps you complete cluster configuration for your storage system.
+To complete system setup, access ONTAP System Manager by pointing a browser to the controller’s IP address. A setup wizard helps you complete cluster configuration for your storage system.
