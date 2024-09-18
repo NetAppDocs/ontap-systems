@@ -7,7 +7,7 @@ You must replace a DIMM in the controller when your storage system registers an 
 * You must replace the failed component with a replacement FRU component you received from your provider.
 
 .About this task
-* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
+If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
 A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
@@ -15,7 +15,7 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 == Step 1: Shut down the impaired controller
  
-Shut down or take over the impaired controller using one of the following options.
+// Shut down or take over the impaired controller using one of the following options.
  
 // [role="tabbed-block"]
 // ====
@@ -33,7 +33,7 @@ include::../_include/shutdown_most_frus.adoc[]
 
 == Step 2: Remove the controller
 
-include::../_include/a70-90_controller_remove_physical.adoc[]
+include::../_include/g_controller_remove.adoc[]
 
 == Step 3: Replace a DIMM
 
@@ -72,7 +72,7 @@ a|
 DIMM: Lift up to remove.
 |===
 
-.  Install the replacement DIMM:
+. Install the replacement DIMM:
 
 .. Remove the replacement DIMM from its antistatic shipping bag.
 
@@ -91,7 +91,7 @@ When inserted correctly, the DIMM should go in easily but fit tightly in the slo
 
 == Step 4: Reinstall the controller
 
-include::../_include/a70-90_controller_install_step_physical.adoc[]
+include::../_include/g_controller_reinstall.adoc[]
 
 == Step 5: Return the failed part to NetApp
 
