@@ -105,7 +105,7 @@ Install your storage system and storage shelves in the cabinet or rack. Access t
 Cable the controllers to your network and then cable the controllers to your shelves.  The install and setup instructions for your platform model include instructions for cabling the controller ports to your network and to your switches.
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]  Complete ONTAP configuration
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]  Set up your ONTAP cluster
 
 [role="quick-margin-para"]
 After you have installed and set up your controllers and switches, you must complete configuring your storage in ONTAP. Access the following instructions according to your deployment configuration.

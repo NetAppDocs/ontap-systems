@@ -12,9 +12,9 @@ You can add an I/O module to your storage system by either adding a new I/O modu
 
 You can add an I/O module into an empty module slot in your storage system.
 
-=== Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired controller module
 
-Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the impaired controller module.
 
 [role="tabbed-block"]
 ====
@@ -25,7 +25,7 @@ include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 --
 .Option 2: Controller is in a MetroCluster
 --
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 --
 
 ====
@@ -52,7 +52,7 @@ Cam locking button
 |===
 
  .. Depress the cam latch on the blanking module in the target slot.
- .. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
+ .. Rotate the cam latch away from the module as far as it will go.
  .. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 . Install the I/O module:
  .. Align the I/O module with the edges of the enclosure slot opening.
@@ -104,9 +104,9 @@ a|
 Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
 |===
 
-=== Step 1: Shut down the impaired node
+=== Step 1: Shut down the impaired controller module
 
-Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the impaired controller module.
 
 [role="tabbed-block"]
 ====
@@ -144,9 +144,8 @@ Cam locking button
 |===
 
 .. Depress the  cam latch button.
-+
-The cam latch moves away from the chassis.
-.. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
+
+.. Rotate the cam latch away from the module as far as it will go.
 .. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 +
 Make sure that you keep track of which slot the I/O module was in.

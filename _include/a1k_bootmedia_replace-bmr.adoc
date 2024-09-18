@@ -1,0 +1,50 @@
+To replace the boot media, you must remove the System Management module from the back of the system, remove the impaired boot media, install the replacement boot media in the System Management module.
+
+.Steps
+
+The boot media is located inside the System Management module and is accessed by removing the module from the system.
+
+
+image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[Boot media replace graphic]
+
+[cols="1,4"]
+|===
+a|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+a|
+System Management module cam latch
+a|
+image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+a|
+Boot media locking button
+a|
+image::../media/legend_icon_03.svg[Callout number 3,width=30px]
+a|
+Boot media
+|===
+
+. If you are not already grounded, properly ground yourself.
+. Unplug the power supply cables from the PSUs from the controller.
+
++
+NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
++
+.. Remove any cables connected to the System Management module. Make sure that you label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
+.. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
+.. Depress the System Management cam button.
+The cam lever moves away from the enclosure.
+ .. Rotate the cam latch down as far as it will go.
+.. Remove the System Management module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
+.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
+. Remove the boot media from the management module:
+.. Press the blue locking button.
+.. Rotate the boot media up,  slide it out of the socket, and set it aside.
+. Install the replacement boot media into the System Management module:
+.. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
+.. Rotate the boot media down toward the locking button. 
+.. Push the locking button, rotate the boot media all the way down and then release the locking button.
+. Reinstall the System Management module.
+.. Align the module with the edges of the enclosure slot opening.
+ .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
+. Rotate the cable management tray up to the closed position.
+.. Recable the System Management module.
