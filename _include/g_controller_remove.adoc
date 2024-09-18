@@ -2,21 +2,93 @@ After you complete the shutdown procedure for the impaired controller, you can r
 
 .Before you begin
 
-All other components in the storage system must be functioning properly; if not, you must contact technical support.???
+All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
+.Steps
+. On the impaired controller, check the NVRAM status LED to make sure the NV LED is off.
++
+[NOTE] 
+====
+If the NVRAM status LED is flashing (amber), it could mean the impaired controller was not taken over or halted properly (uncommitted data).
 
-== Step 2: Remove the controller
+If the impaired controller was not successfully taken over by the partner controller, contact NetApp Support before continuing with this procedure.
 
-include::../_include/a70-90_controller_remove_physical.adoc[]
-// Need Jackie to make g_controller_remove_physical and replace above link.
+Do not attempt to remove power from the impaired controller or remove the impaired controller from the chassis.
+====
 
-== Step 4: Reinstall the controller module
++
+The NVRAM status LED is located next to the NV icon on the controller:
++
+image::../media/drw_g_nvram_led_ieops-1839.svg[NVRAM attention and status LED location]
++
+[cols="1,4"]
 
-include::../_include/a70-90_controller_install_step_physical.adoc[]
-// Need Jackie to make g_controller_remove_physical and replace above link.
+|===
+a|
+image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
+a|
+NV status icon and LED on the controller
 
-== Step 5: Return the failed part to NetApp
+|===
++
+The general behavior of the NVRAM status LED on the impaired controller is as follows:
++
+* The NVRAM status LED flashes when power is removed from the controller and the storage system is in the waiting for giveback state, or the controller is not taken over or halted properly (uncommitted data).
+* The NVRAM status LED flashes when the controller is removed from the chassis and could mean the controller is not taken over or halted properly (uncommitted data). You must confirm the controller had a clean takeover by the partner controller or the impaired controller shows waiting for giveback (Make in courier font and highlighted in gray). Then, the flashing LED can be ignored (and the controller can be removed from the chassis).
 
-include::../_include/complete_rma.adoc[]
+. If you are not already grounded, properly ground yourself.
+
+. Disconnect the power on the impaired controller.
+
+* If you have AC power supplies, unplug the power cable from the power supply.
+
+* If you have DC power supplies, unplug the power block from the power supply.
+
+. Unplug all cables from the impaired controller.
++
+Keeping track of where the cables were connected.
++
+
+. Remove the impaired controller:
+
+.. On both ends of the controller, push the vertical terra cotta colored locking tabs outward to release the handles.
++
+The handles come to rest horizontally to the vertical tabs.
++
+
+..  Pull the handles towards you to unseat the controller from the midplane of the chassis.
++
+As you pull, the handles extend out from the chassis and then you feel some resistance, keep pulling.
++
+.. Slide the controller out of the chassis and place it on a flat, stable surface. 
++
+Make sure that you support the bottom of the controller as you slide it out of the chassis.
++
+.. You can rotate the handles upright (but not in the locked position) to move them out of the way, if needed.
++
+The following illustration shows the operation of the controller handles (from the left side of the controller) when removing a controller:
++
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[controller handle operation to remove a controller]
++
+[cols="1,4"]
+
+|===
+a|
+image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
+a|
+Press the locking tabs to release handles to the open (horizontal) position.
+a|
+image:../media/legend_icon_02.svg[Callout number 2, width=30px] 
+a|
+Pull handles to unseat the controller from the midplane and slide out the controller.
+a|
+image:../media/legend_icon_03.svg[Callout number 3, width=30px] 
+a|
+Rotate handles upright (but not in the locked position) to move them out of the way.
+
+|===
++
+
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover all the way to its resting position.
 
 
