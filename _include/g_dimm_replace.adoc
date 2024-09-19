@@ -4,7 +4,7 @@ You must replace a DIMM in the controller when your storage system registers an 
 
 * All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
-* You must replace the failed component with a replacement FRU component you received from your provider.
+* You must replace the failed FRU component with a replacement FRU component you received from your provider.
 
 .About this task
 If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
@@ -37,7 +37,7 @@ include::../_include/g_controller_remove.adoc[]
 
 == Step 3: Replace a DIMM
 
-To replace the DIMMs, locate them inside the controller and follow the specific sequence of steps.
+To replace a DIMM, locate the faulty DIMM inside the controller and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
 . Locate the DIMMs on your controller and identify the faulty DIMM.
