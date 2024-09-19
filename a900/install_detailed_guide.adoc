@@ -51,7 +51,7 @@ X66240A-2 (112-00598), 2m
 
 X66240A-5 (112-00600), 5m
 a|
-image:oie_cable_sfp_gbe_copper.svg[width=85px]
+image:oie_cable_sfp_gbe_copper.svg
 a|
 Network cable
 a|
@@ -63,7 +63,7 @@ X66250-5 (112-00344), 5m
 
 X66250-15 (112-00346), 15m
 a|
-image:oie_cable_sfp_gbe_copper.svg[width=85px]
+image:oie_cable_sfp_gbe_copper.svg
 a|
 FC optical network cable
 a|
@@ -75,7 +75,7 @@ X66100-3 (112-00543), 3m
 
 X66100-5 (112-00544), 5m
 a|
-image:oie_cable100_gbe_qsfp28.svg[width=85px]
+image:oie_cable100_gbe_qsfp28.svg
 a|
 Ethernet data, cluster
 network
@@ -88,7 +88,7 @@ X66211B-2 (112-00574), 2m
 
 X66211B-5 (112-00576), 5m
 a|
-image:oie_cable100_gbe_qsfp28.svg[width=85px]
+image:oie_cable100_gbe_qsfp28.svg
 a|
 Network,
 
@@ -116,7 +116,7 @@ Part numbers X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image:oie_cable_rj45.svg[width=85px]
+image:oie_cable_rj45.svg
 a|
 Management network and Ethernet data
 a|
@@ -194,23 +194,23 @@ image:drw_a900_tnsc_network_cabling_IEOPS-933.svg[Two-node switchless network ca
 |===
 |Step|Perform on each controller
 a|
-image:oie_legend_icon_1_lg.svg[width=30px]
+image:oie_legend_icon_1_lg.svg
 a|
 Cable cluster interconnect ports:
 
 ** Slot A4 and B4 (e4a)
 ** Slot A8 and B8 (e8a)
 
-image:oie_cable100_gbe_qsfp28.svg[width=85px]
+image:oie_cable100_gbe_qsfp28.svg
 a|
-image:oie_legend_icon_2_lp.svg[width=30px]
+image:oie_legend_icon_2_lp.svg
 a|
 Cable controller management (wrench) ports.
 
-image:oie_cable_rj45.svg[width=85px]
+image:oie_cable_rj45.svg
 
 a|
-image:oie_legend_icon_3_o.svg[width=30px]
+image:oie_legend_icon_3_o.svg
 a|
 Cable 25 GbE network switches:
 
@@ -218,7 +218,7 @@ Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 25 GbE network switches.
 
-image:oie_cable_sfp_gbe_copper.svg[width=85px]
+image:oie_cable_sfp_gbe_copper.svg
 
 
 40GbE host network switches:
@@ -227,9 +227,9 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image:oie_cable100_gbe_qsfp28.svg[width=85px]
+image:oie_cable100_gbe_qsfp28.svg
 a|
-image:oie_legend_icon_4_dr.svg[width=30px]
+image:oie_legend_icon_4_dr.svg
 a|
 Cable 32 Gb FC connections:
 
@@ -238,7 +238,7 @@ Cable ports in slot A5 and B5 (5a,
 (7a, 7b, 7c, and 7d) to the
 32 Gb FC network switches.
 
-image:oie_cable_sfp_gbe_copper.svg[width=85px]
+image:oie_cable_sfp_gbe_copper.svg
 a|
 * Strap the cables to the cable
 management arms (not shown).
@@ -282,7 +282,7 @@ image:drw_a900_switched_network_cabling_IEOPS-934.svg[width=500px]
 
 |Step|Perform on each controller
 a|
-image:oie_legend_icon_1_lg.svg[width=30px]
+image:oie_legend_icon_1_lg.svg
 a|
 Cable cluster
 interconnect a ports:
@@ -291,15 +291,15 @@ interconnect a ports:
 ** Slot A8 and B8 (e8a) to the
 cluster network switch.
 
-image:oie_cable100_gbe_qsfp28.svg[width=85px]
+image:oie_cable100_gbe_qsfp28.svg
 a|
-image:oie_legend_icon_2_lp.svg[width=30px]
+image:oie_legend_icon_2_lp.svg
 a|
 Cable controller management (wrench) ports.
 
-image:oie_cable_rj45.svg[width=85px]
+image:oie_cable_rj45.svg
 a|
-image:oie_legend_icon_3_o.svg[width=30px]
+image:oie_legend_icon_3_o.svg
 a|
 Cable 25GbE network switches:
 
@@ -307,7 +307,7 @@ Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 25 GbE network switches.
 
-image:oie_cable_sfp_gbe_copper.svg[width=85px]
+image:oie_cable_sfp_gbe_copper.svg
 
 
 40GbE host network switches:
@@ -316,9 +316,9 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image:oie_cable100_gbe_qsfp28.svg[width=85px]
+image:oie_cable100_gbe_qsfp28.svg
 a|
-image:oie_legend_icon_4_dr.svg[width=30px]
+image:oie_legend_icon_4_dr.svg
 a|
 Cable 32 Gb FC connections:
 
@@ -327,7 +327,7 @@ Cable ports in slot A5 and B5 (5a,
 (7a, 7b, 7c, and 7d) to the
 32 Gb FC network switches.
 
-image:oie_cable_sfp_gbe_copper.svg[width=85px]
+image:oie_cable_sfp_gbe_copper.svg
 a|
 * Strap the cables to the cable
 management arms (not shown).
