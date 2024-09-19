@@ -1,4 +1,4 @@
-Replacing a power supply (PSU) involves disconnecting the target PSU from the power source, unplugging the power cable, removing the old PSU and installing the replacement PSU, and then reconnecting it to the power source.
+Replacing a power supply (PSU) involves disconnecting the faulty PSU from the power source, unplugging the power cable, removing the faulty PSU and installing the replacement PSU, and then reconnecting it to the power source.
 
 The power supplies are redundant and hot-swappable.
 
@@ -25,25 +25,15 @@ To replace an AC PSU, complete the following steps.
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-. Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
+. Identify the faulty PSU based on console error messages or through the red Fault LED on the PSU.
+
 .  Disconnect the power cable from the PSU by opening the power cable retainer, and then unplug the power cable from the PSU.
-+
-NOTE: PSUs do not have a power switch. (OR format below...)
-+
-. Disconnect power to the PSU:
 +
 NOTE: PSUs do not have a power switch.
 +
-.. Open the power cable retainer on the PSU.
-.. Unplug the power cable from the PSU.
-
 . Remove the PSU:
-.. Make sure the controller handle is in the upright position to allow you access to the PSU.
-.. Rotate the PSU handle up, to its horizontal position, and then grasp it.
-.. With your thumb, press the blue tab to release the PSU from the controller.
-.. Pull the PSU out of the controller while using your other hand to support its weight.
 +
-CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller so that it does not suddenly swing free from the controller and injure you.
+Make sure the left side controller handle is in the upright position to allow you access to the PSU.
 +
 image::../media/drw_g_t_psu_replace_ieops-1899.svg[Replace AC PSU]
 
@@ -62,6 +52,8 @@ a|
 image::../media/legend_icon_03.svg[Callout number 3,width=30px]
 a|
 Pull the PSU out of the controller while using your other hand to support its weight. 
+
+CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller so that it does not suddenly swing free from the controller and injure you.
 |===
 +
 . Install the replacement PSU:
@@ -75,13 +67,6 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 .. Rotate the handle down, so it is out of the way of normal operations.
 
 . Reconnect the power cable to the PSU and secure the power cable with the power cable retainer. 
-+
-Once power is restored to the PSU, the status LED should be green.(OR format below...)
-
-. Reconnect power to the PSU:
-.. Reconnect the power cable to the PSU.
-.. Secure the power cable to the PSU using the power cable retainer.
-
 +
 Once power is restored to the PSU, the status LED should be green.
 
@@ -97,14 +82,23 @@ To replace a DC PSU, complete the following steps.
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-. Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
+. Identify the faulty PSU based on console error messages or through the red Fault LED on the PSU.
 . Disconnect the PSU:
-.. Unscrew the D-SUB DC cable connector using the thumb screws on the plug.
-.. Unplug the cable from the PSU and set it aside. 
-. Remove the PSU by rotating the handle up, press the locking tab, and then pull the PSU out of the controller module.
-
+.. Unscrew the two thumb screws on the D-SUB DC power cable connector.
 +
-CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
+The illustration and table in step 4 shows the two thumb screws (item #1) and the D-SUB DC power cable connector (item #2).
++
+.. Unplug the cable from the PSU and set it aside. 
+
+. Remove the PSU:
+
+.. Rotate the handle up, to its horizontal position, and then grasp it.
+
+.. With your thumb, press the blue tab to release the locking mechanism.
+
+.. Pull the PSU out of the controller while using your other hand to support its weight.
++
+NOTE: The PSU is short. Always use two hands to support it when removing it from the controller so that it does not swing free from the controller and injure you.
 +
 image::../media/drw_dcpsu_remove-replace-generic_IEOPS-788.svg[Remove a DC PSU,width=500px]
 
@@ -130,19 +124,22 @@ a|
 Blue PSU locking tab
 |===
 
-. Install the replacement PSU:
+. Insert the replacement PSU:
 .. Using both hands, support and align the edges of the PSU with the opening in the controller.
-.. Gently push the PSU into the controller until the locking tab clicks into place.
+.. Gently slide the PSU into the controller until the locking tab clicks into place.
 +
-The power supplies will only properly engage with the internal connector and lock in place one way.
+A PSU must properly engage with the internal connector and locking mechanism. Repeat this step if you feel the PSU is not properly seated.
 +
 NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the controller.
++
+.. Rotate the handle down, so it is out of the way of normal operations.
 
 . Reconnect the D-SUB DC power cable:
- .. Plug the power cable connector into the PSU.
- .. Secure the power cable to the PSU with the thumbscrews.
 +
-Once power is restored to the PSU, the status LED should be green.
+Once power is restored to the power supply, the status LED should be green.
++
+.. Plug the D-SUB DC power cable connector into the PSU.
+.. Tighten the two thumb screws to secure the D-SUB DC power cable connector to the PSU.
 
 include::../_include/complete_rma_step.adoc[]
 --
