@@ -45,8 +45,8 @@ Connect your storage controllers to each other to create the ONTAP cluster conne
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
 
 +
-.. Connect port e1a on Controller A to port e1A on Controller B.
-.. Connect port e7a on Controller A to port e1A on Controller B.
+.. Connect port e1a on Controller A to port e1a on Controller B.
+.. Connect port e7a on Controller A to port e7a on Controller B.
 +
 *Cluster/HA interconnect cables*
 +
