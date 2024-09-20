@@ -20,7 +20,7 @@ Shut down the controllers so you can perform maintenance on the chassis.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:chassis-replace-move-hardware.html[Replace the chassis]
 [role="quick-margin-para"]
-Replacing the chassis includes moving the power supplies, hard drives, and controller module from the impaired chassis to the new chassis, and swapping out the impaired chassis with the new chassis of the same model as the impaired chassis.
+Replacing the chassis includes moving the power supplies, drives, and controllers from the impaired chassis to a new chassis of the same model, and swapping out the impaired chassis with the new chassis.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:chassis-replace-complete-system-restore-rma.html[Complete chassis replacement]
 [role="quick-margin-para"]
