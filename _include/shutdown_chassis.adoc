@@ -1,4 +1,4 @@
-This procedure is for 2-node, non-MetroCluster configurations only. If you have a system with more than two nodes, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster[How to perform a graceful shutdown and power up of one HA pair in a 4-node cluster^]. 
+This procedure is for 2-node, non-MetroCluster configurations only. If you have a system with more than two nodes, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster[How to perform a graceful shutdown and power up of one HA pair in a 4-node cluster^].
 
 .Before you begin
 You need:
@@ -6,25 +6,25 @@ You need:
 * Local administrator credentials for ONTAP.
 * NetApp onboard key management (OKM) cluster-wide passphrase if using storage encryption or NVE/NAE.
 * BMC accessability for each controller.
-* Stop all clients/host from accessing data on the NetApp system.
+* Stop all clients/host from accessing data on the NetApp storage system.
 * Suspend external backup jobs.
 * Necessary tools and equipment for the replacement.
 
-NOTE: If the system is a NetApp StorageGRID or ONTAP S3 used as FabricPool cloud tier, refer to the https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#[Gracefully shutdown and power up your storage system Resolution Guide] after performing this procedure.
+NOTE: If the storage system is a NetApp StorageGRID or ONTAP S3 used as FabricPool cloud tier, refer to the https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#[Gracefully shutdown and power up your storage system Resolution Guide] after performing this procedure.
 
 NOTE: If using SSDs, refer to https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490[SU490: (Impact: Critical) SSD Best Practices: Avoid risk of drive failure and data loss if powered off for more than two months]
 
 As a best practice before shutdown, you should:
 
 * Perform additional https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP[system health checks].
-* Upgrade ONTAP to a recommended release for the system.
+* Upgrade ONTAP to a recommended release for the storage system.
 * Resolve any https://activeiq.netapp.com/[Active IQ Wellness Alerts and Risks].
-Make note of any faults presently on the system, such as LEDs on the system components.
+Make note of any faults presently on the storage system, such as LEDs on the system components.
 
 .Steps
 
 . Log into the cluster through SSH or log in from any node in the cluster using a local console cable and a laptop/console.
-. Turn off AutoSupport and indicate how long you expect the system to be offline:
+. Turn off AutoSupport and indicate how long you expect the storage system to be offline:
 +
 `system node autosupport invoke -node * -type all -message "MAINT=8h Power Maintenance"`
 . Identify the SP/BMC address of all nodes:
