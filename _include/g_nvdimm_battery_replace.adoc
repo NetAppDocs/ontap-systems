@@ -1,72 +1,86 @@
-To replace the NV battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module.
+To replace the NV battery, you must remove the controller, remove the battery, replace the battery, and then reinstall the controller.
 
 .Before you begin
-All other components in the system must be functioning properly; if not, you must contact technical support.
+All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
 .About this task
-* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
-+
+If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
+
 A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
-+
+
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
 == Step 1: Shut down the impaired controller
 
-Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the impaired controller.
 
-[role="tabbed-block"]
-====
+// Shut down or take over the impaired controller using one of the following options.
 
-.Option 1: Most systems
---
+// [role="tabbed-block"]
+// ====
+
+// .Option 1: Most systems
+// --
 include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
---
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+// --
 
-====
+// ====
 
-== Step 2: Remove the controller module
+== Step 2: Remove the controller
 
-include::../_include/a70-90_controller_remove_physical.adoc[]
+include::../_include/g_controller_remove.adoc[]
 
 == Step 3: Replace the NV battery
 
-Remove the failed NV battery from the controller module and install the replacement NV battery.
+Remove the failed NV battery from the controller and install the replacement NV battery.
 
-. Open the air duct cover and locate the NV battery.
+. If you are not already grounded, properly ground yourself.
+
+. Locate the NV battery.
+
+. Remove the NV battery:
 +
-image::../media/drw_a70-90_remove_replace_nvmembat_ieops-1369.svg[Replace the NV battery]
+image::../media/drw_g_nv_battery_replace_ieops-1864.svg[Replace the NV battery]
 +
 [cols="1,4"]
 
 |===
 a|
-image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
-NV battery air duct cover
+image:../media/legend_icon_01.svg[Callout number 1,width=30px]
+a|
+NV battery: Lift up and out of its holder
 a|
 image:../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
-NV battery plug
+Wiring harness and its retainer: Remove wiring harness from its retainer
+a|
+image:../media/legend_icon_03.svg[Callout number 3,width=30px]
+a|
+Connector and its release tab: 
+
+a. Push in top of tab and hold.
+
+b. Pull connector up and out of socket
 |===
 
-. Lift the battery up to access the battery plug.
-. Squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
-. Lift the battery out of the air duct and controller module, and then set it aside.
-. Remove the replacement battery from its package.
-. Install the replacement battery pack into the controller:
- .. Plug the battery plug into the riser socket and make sure that the plug locks into place.
- .. Insert the battery pack into the slot and press firmly down on the battery pack to make sure that it is locked into place.
- 
-. Close the NV air duct cover.
+. Install the replacement battery:
+..  Remove the replacement battery from its package.
+.. Plug the wiring connector into its socket.
 +
-Make sure that the plug locks into the socket.
+You might need to slightly rock the connector lengthwise until it is fully seated.
++
+.. Route the wiring along the side of the power supply, into its retainer, and then through the channel in front of the NV battery holder.
+.. Place the NV battery into the holder.
++
+The NV battery should sit flush to the holder floor.
 
 == Step 4: Reinstall the controller module
 
-include::../_include/a70-90_controller_install_step_physical.adoc[]
+include::../_include/g_controller_reinstall.adoc[]
 
 == Step 5: Return the failed part to NetApp
 
