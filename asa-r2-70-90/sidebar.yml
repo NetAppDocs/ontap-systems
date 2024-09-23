@@ -14,13 +14,13 @@ entries:
         entries:
           - title: Boot media replace workflow
             url: /asa-r2-70-90/bootmedia-replace-workflow-bmr.html
-          - title: Requirements and considerations
+          - title: Review requirements
             url: /asa-r2-70-90/bootmedia-replace-requirements-bmr.html
           - title: Shut down impaired controller
             url: /asa-r2-70-90/bootmedia-shutdown-asa-r2.html
           - title: Replace boot media
             url: /asa-r2-70-90/bootmedia-replace-bmr.html
-          - title: Automated boot recovery
+          - title: Restore image on boot media
             url: /asa-r2-70-90/bootmedia-recovery-image-boot-bmr.html
           - title: Return failed part to NetApp
             url: /asa-r2-70-90/bootmedia-complete-rma.html
@@ -28,7 +28,7 @@ entries:
         entries:
           - title: Boot media replace workflow
             url: /asa-r2-70-90/bootmedia-replace-workflow.html
-          - title: Requirements and considerations
+          - title: Review requirements
             url: /asa-r2-70-90/bootmedia-replace-requirements.html
           - title: Check onboard encryption keys
             url: /asa-r2-70-90/bootmedia-encryption-preshutdown-checks.html
@@ -48,7 +48,7 @@ entries:
     entries:
       - title: Chassis replace workflow
         url: /asa-r2-70-90/chassis-replace-workflow.html
-      - title: Requirements and considerations
+      - title: Review requirements
         url: /asa-r2-70-90/chassis-replace-requirements.html
       - title: Shut down controllers
         url: /asa-r2-70-90/chassis-replace-shutdown.html
@@ -61,7 +61,7 @@ entries:
     entries:
       - title: Controller replace workflow
         url: /asa-r2-70-90/controller-replace-workflow.html
-      - title: Requirements and considerations
+      - title: Review requirements
         url: /asa-r2-70-90/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /asa-r2-70-90/controller-replace-shutdown-asa-r2.html
