@@ -210,7 +210,7 @@ Cable controller management (wrench) ports.
 image::../media/oie_cable_rj45.svg
 
 a|
-image::../media/goie_legend_icon_3_o.svg
+image::../media/oie_legend_icon_3_o.svg
 a|
 Cable 25 GbE network switches:
 
@@ -376,16 +376,16 @@ image:drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[width=500px]
 |===
 |Step|Perform on each controller
 a|
-image:oie_legend_icon_1_mb.svg[width=30px]
+image:oie_legend_icon_1_mb.svg[Callout number one]
 a|
 ** Connect controller A port e2a to port e0a on NSM A on the shelf.
 ** Connect controller A port e10b to port e0b on NSM B on the shelf.
 
-image:oie_cable100_gbe_qsfp28.svg[width=50px]
+image:oie_cable100_gbe_qsfp28.svg[100 Gbe QSFP connector]
 
 100 GbE cable
 a|
-image:oie_legend_icon_2_lo.svg[width=30px]
+image:oie_legend_icon_2_lo.svg[Callout number two]
 a|
 ** Connect controller B port e2a to port e0a on NSM B on the shelf.
 ** Connect controller B port e10b to port e0b on NSM A on the shelf.
@@ -476,7 +476,7 @@ video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set NVMe
 
 +
 
-image:drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[width=500px]
+image::/media/drw_a900_oie_change_ns224_shelf_ID_IEOPS-836.svg[width=500px]
 
 +
 
