@@ -2,8 +2,8 @@
 sidebar: sidebar
 permalink: whats-new.html
 sidebar: sidebar
-keywords: new, features,aff, asa,  fas, legacy, end-of-support
-summary: 'Learn about the new features for AFF, ASA and FAS systems and the legacy hardware no longer supported.'
+keywords: new, features, asa r2, aff, asa, fas, legacy, end-of-support
+summary: 'Learn about the new features for ONTAP hardware systems.'
 ---
 
 = What's new for ONTAP hardware systems
@@ -15,17 +15,17 @@ Learn about the new features for ONTAP hardware systems.
 
 For details about known issues, limitations, and upgrade cautions in ONTAP 9 releases, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP 9 Release Notes]. You must sign in with your NetApp account or create an account to access the Release Notes.
 
-== New platform support
+== Platform support
 include::./_include/new-platform-support.adoc[]
 
-== New switch support
+== Switch support
 include::./_include/new-switch-support.adoc[]
 
-== New adapter support
+== Adapter support
 include::./_include/new-adapter.adoc[]
 
-== New shelf support
+== Shelf support
 include::./_include/new-shelf-support.adoc[]
 
-== New hardware updates
+== Hardware updates
 include::./_include/new-hardware-updates.adoc[]
