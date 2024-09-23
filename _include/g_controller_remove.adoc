@@ -4,7 +4,7 @@ You must remove the controller from the chassis when you replace the controller 
 
 .Before you begin
 
-All other components in the storage system must be functioning properly; if not, you must contact technical support.
+All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .Steps
 . On the impaired controller, check the NVRAM status LED to make sure the NV LED is off.
@@ -13,7 +13,7 @@ All other components in the storage system must be functioning properly; if not,
 ====
 If the NVRAM status LED is flashing (amber), it could mean the impaired controller was not taken over or halted properly (uncommitted data).
 
-If the impaired controller was not successfully taken over by the partner controller, contact NetApp Support before continuing with this procedure.
+If the impaired controller was not successfully taken over by the partner controller, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 Do not attempt to remove power from the impaired controller or remove the impaired controller from the chassis.
 ====
