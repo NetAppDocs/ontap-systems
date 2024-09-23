@@ -11,20 +11,22 @@ summary: You can restore image on the boot media from the partner controller thr
 [.lead]
 You can restore image on the boot media from the partner controller using the automated boot recovery process.
 
+Select the single node automated recovery option that matches your configuration.
+
 [role="tabbed-block"]
 ====
 
-.Option 1: Single node automated boot media recovery with no encryption
+.Option 1: Recovery with no encryption
 --
-include::../_include/bmr_single_node_no_encrypt.adoc[Boot recovery single node with no encryption]
+include::../_include/bmr_single_node_no_encrypt.adoc[]
 --
-.Option 2: Single node automated boot media recovery with Onboard Key Manager present
+.Option 2: Recovery with Onboard Key Manager present
 --
-include::../_include/bmr_single_node_okm.adoc[Boot recovery single node with OKM]
+include::../_include/bmr_single_node_okm.adoc[]
 --
-.Option 3: Single node automated boot media recovery with External Key Manager present
+.Option 3: Recovery with External Key Manager present
 --
-include::../_include/bmr_single_node_ekm.adoc[Boot recovery single node with EKM]
+include::../_include/bmr_single_node_ekm.adoc[]
 --
 
 ====
