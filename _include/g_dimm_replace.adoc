@@ -2,7 +2,7 @@ You must replace a DIMM in the controller when your storage system registers an 
 
 .Before you begin
 
-* All other components in the storage system must be functioning properly; if not, you must contact technical support.
+* All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 * You must replace the failed FRU component with a replacement FRU component you received from your provider.
 
@@ -65,11 +65,11 @@ DIMM slot numbering and positions.
 a|
 image::../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
-DIMM ejector tabs: push apart to eject DIMM.
+Push apart the DIMM ejector tabs to eject the DIMM.
 a|
 image::../media/legend_icon_03.svg[Callout number 3,width=30px]
 a|
-DIMM: Lift up to remove.
+Lift up DIMM to remove.
 |===
 
 . Install the replacement DIMM:

@@ -42,7 +42,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 . If you are not already grounded, properly ground yourself. 
 
-. On the controller A, remove the I/O blanking module from the target slot.
+. On controller A, remove the I/O blanking module from the target slot.
 +
 Unused I/O slots should have blanking module installed to prevent possible thermal issues.
 +
@@ -53,7 +53,7 @@ image::../media/drw_g_io_blanking_module_replace_ieops-1901.svg[Remove an I/O bl
 a|
 image:../media/legend_icon_01.png[Callout number 1]
 a|
-Turn the thumbscrew counterclockwise to loosen.
+On the I/O module, turn the thumbscrew counterclockwise to loosen.
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
@@ -95,7 +95,7 @@ You can add I/O modules to a fully-populated storage system by removing existing
 |===
 | Replacing a...| Then...
 a|
-NIC I/O module with the same the same number of ports
+NIC I/O module with the same number of ports
 a|
 The LIFs will automatically migrate when its controller is shut down.
 a|
@@ -130,7 +130,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 . If you are not already grounded, properly ground yourself. 
 
-. On the controller A, unplug any cabling on the target I/O module.
+. On controller A, unplug any cabling on the target I/O module.
 
 . Remove the target I/O module from the controller:
 

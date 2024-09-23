@@ -1,4 +1,4 @@
-To replace a fan, remove the failed fan and replace it with a new fan.
+To replace a fan, you must remove the controller, remove the faulty fan, install the replacement fan, and then reinstall the controller.
 
 .About this task
 If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
@@ -45,11 +45,11 @@ image::../media/drw_g_fan_replace_ieops-1903.svg[Fan replace]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px]|
 Hold both sides of the fan at the blue touch points.
 a|
-image:../media/legend_icon_02.svg[Callout number 2,width=30px]|
-Pull the fan straight up and out its slot.
+image::../media/legend_icon_02.svg[Callout number 2,width=30px]|
+Pull the fan straight up and out its socket.
 |===
 
 +
