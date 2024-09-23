@@ -1,7 +1,7 @@
 To replace the NV battery, you must remove the controller, remove the faulty battery, install the replacement battery, and then reinstall the controller.
 
 .Before you begin
-All other components in the storage system must be functioning properly; if not, you must contact technical support.
+All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
 If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
