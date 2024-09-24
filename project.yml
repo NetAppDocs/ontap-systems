@@ -3,7 +3,7 @@ settings:
   internal:
     pdf_enabled: false
   prod:
-    pdf_enabled: true
+    pdf_enabled: false
     harmony_enabled: true
   rss_page: "whats-new.html"
 sidebar:
