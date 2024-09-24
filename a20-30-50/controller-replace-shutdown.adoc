@@ -9,18 +9,20 @@ summary: "To shut down the impaired controller, you must determine the status of
 :imagesdir: ../media/
 
 [.lead]
-Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+Shut down or take over the impaired controller.
 
-[role="tabbed-block"]
-====
+// Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
-.Option 1: Most systems
---
+// [role="tabbed-block"]
+// ====
+
+// .Option 1: Most systems
+// --
 include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
---
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+// --
 
-====
+// ====

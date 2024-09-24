@@ -9,10 +9,10 @@ summary: You must replace the failed component with a replacement FRU component 
 :imagesdir: ../media/
 
 [.lead]
-Follow these workflow steps to replace your controller module.
+Follow these workflow steps to replace your faulty controller.
 
 .Before you begin
-To replace the controller module, you must meet certain requirements. Review the link:controller-replace-requirements.html[controller replacement requirements and considerations].
+To replace the controller, you must meet certain requirements. Review the link:controller-replace-requirements.html[controller replacement requirements and considerations].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-replace-shutdown.html[Shut down the impaired controller]
 [role="quick-margin-para"]
@@ -20,7 +20,7 @@ Shut down or take over the impaired controller so that the healthy controller co
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:controller-replace-move-hardware.html[Replace the controller]
 [role="quick-margin-para"]
-Replacing the controller includes removing the impaired controller, moving the FRU components to the replacement controller module, and then installing the replacement controller module in the enclosure.
+Replacing the controller includes removing the impaired controller, moving the FRU components to the replacement controller, and then installing the replacement controller in the enclosure.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration ]
 [role="quick-margin-para"]
@@ -28,7 +28,7 @@ Verify the low-level system configuration of the replacement controller and reco
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-recable-reassign-disks.html[Recable and give back the controller]
 [role="quick-margin-para"]
-Recable the controller and transfer the ownership of storage resources back to the replacement controller. 
+Recable the replacement controller and transfer the ownership of storage resources to the replacement controller. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:controller-replace-restore-system-rma.html[Complete controller replacement]
 [role="quick-margin-para"]
