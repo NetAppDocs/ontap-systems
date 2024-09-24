@@ -1,0 +1,96 @@
+You can restore the ONTAP image (boot media recovery) from the partner node using the `boot_recovery -partner` command with ASA r2 platforms running ONTAP 9.16.0 and later. 
+
+
+.Before you begin
+
+When you boot a node and the boot media on that node is corrupted, you'll see the following messages and the boot process with stop at the LOADER prompt:
+
+----
+
+Can't find primary boot device u0a.0
+Can't find backup boot device u0a.1
+ACPI RSDP Found at 0x777fe014
+ 
+ 
+Starting AUTOBOOT press Ctrl-C to abort...
+Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+ 
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
+ 
+ 
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
+ 
+ 
+Autoboot of PRIMARY image failed. Device not found (-6)
+LOADER-A>
+
+----
+
+If you see this message, you must restore the ONTAP image
+
+.Steps
+
+. From the LOADER prompt, enter the _boot_recovery -partner_ command.
++
+The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks.   
+
+. Monitor the process as LOADER configures the local cluster ports and executes netboot through `\http://<remote-partner-IP>:65530/recoverydisk/image.tgz`.
++
+Once netboot is running, `Starting BMR ...` is displayed on the screen and the process completes the installation process.
+
+.. If Key Manager is not configured, you will see the following message:
++
+....
+key manager is not configured. Exiting.
+....
+
+
+.. If you see the following message, Onboard Key Manager (OKM) is configured:
++
+
+....
+
+key manager is configured.
+Entering Bootmenu Option 10...
+ 
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+
+....
+
++
+Go to  to complete the recovery process.
+
+
+
+.. If you see the following message, External Key Manager (EKM) is configured. Go to the EKM topic and complete the recovery process:
+
++
+
+....
+Error when fetching key manager config from partner 169.254.139.209: 28
+Has key manager been configured on this system? {y|n}
+
+....
+
++
+
+
+. Monitor the BMR process as it executes restore backup config, env file, mdb, and rdb from the partner.
+
++
+
+. The node reboots and BMR is complete when you see the following:
+
+
+....
+
+varfs_backup_restore: update checksum for varfs.tgz
+varfs_backup_restore: restore using /cfcard/x86_64/freebsd/oldvarfs.tgz
+varfs_backup_restore: attempting to restore /var/kmip to the boot device
+varfs_backup_restore: failed to restore /var/kmip to the boot device
+varfs_backup_restore: Rebooting to load the new varfs
+.
+Terminated
+varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
+
+....

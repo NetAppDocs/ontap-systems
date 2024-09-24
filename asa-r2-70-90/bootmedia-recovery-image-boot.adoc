@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-70-90/bootmedia-recovery-image-boot.html
+sidebar: sidebar
+keywords: asa r2 a70, asa r2 a90, boot the recovery image
+summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+---
+= Boot the recovery image - ASA A70 and ASA A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a70-90_bootmedia_recovery_image_boot.adoc[]
