@@ -1,5 +1,5 @@
 indexpage:
-  title: FAS Systems
+  title: FAS systems
   lead: FAS storage systems help you build a storage infrastructure that is simple, smart, and trusted.
   summary: The storage system documentation lets you install, setup, and maintain your system.
   keywords: fas2700, fas9500, fas2800, fas8300, fas8700, storage, systems, datasheet
@@ -12,6 +12,8 @@ indexpage:
           url: https://www.netapp.com/data-storage/fas/
     - title: Install and setup
       links:
+        - title: FAS70 and FAS90
+          url: ../fas-70-90/install-overview.html
         - title: FAS2700
           url: ../fas2700/install-setup.html
         - title: FAS2800
@@ -22,6 +24,8 @@ indexpage:
           url: ../fas9500/install_setup.html
     - title: Maintain your system
       links:
+        - title: FAS70 and FAS90
+          url: ../fas-70-90/maintain-overview.html
         - title: FAS2700
           url: ../fas2700/maintain-overview.html
         - title: FAS2800

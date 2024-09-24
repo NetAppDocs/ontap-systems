@@ -1,0 +1,86 @@
+You can restore the ONTAP image (boot media recovery) from the partner node using the `boot_recovery -partner` with ASA r2 platforms running ONTAP 9.16.0 and later. 
+
+
+.Before you begin
+
+When you boot a node and the boot media on that node is corrupted, you'll see the following messages and the boot process with stop at the LOADER prompt:
+
+....
+
+Can't find primary boot device u0a.0
+Can't find backup boot device u0a.1
+ACPI RSDP Found at 0x777fe014
+ 
+ 
+Starting AUTOBOOT press Ctrl-C to abort...
+Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+ 
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
+ 
+ 
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
+ 
+ 
+Autoboot of PRIMARY image failed. Device not found (-6)
+LOADER-A>
+
+....
+
+If you see this message, you must restore the ONTAP image
+
+.Steps
+
+. From the LOADER prompt, enter the _boot_recovery -partner_ command.
++
+The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks and installation of the boot recovery files.  
+
++
+.. If Onboard Key Manager (OKM) is configured, you wil see the following displayed:
++
+
+....
+key manager is configured.
+Entering Bootmenu Option 10...
+ 
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+....
++
+
+. Enter _y_ at the prompt. 
+
+. Enter the passphrase for onboard key manager when you see `Enter the passphrase for onboard key management:`
+
+. Enter the pass phrase for onboard key manager again when prompted to confirm the passphrase.
++
+....
+Enter the passphrase for onboard key management:
+Enter the passphrase again to confirm:
+Enter the backup data:
+TmV0QXBwIEtleSBCbG9iAAECAAAEAAAAcAEAAAAAAAA3yR6UAAAAACEAAAAAAAAA
+QAAAAAAAAACJz1u2AAAAAPX84XY5AU0p4Jcb9t8wiwOZoqyJPJ4L6/j5FHJ9yj/w
+RVDO1sZB1E4HO79/zYc82nBwtiHaSPWCbkCrMWuQQDsiAAAAAAAAACgAAAAAAAAA
+3WTh7gAAAAAAAAAAAAAAAAIAAAAAAAgAZJEIWvdeHr5RCAvHGclo+wAAAAAAAAAA
+IgAAAAAAAAAoAAAAAAAAAEOTcR0AAAAAAAAAAAAAAAACAAAAAAAJAGr3tJA/LRzU
+QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
+.
+.
+.
+.
+....
+
++
+You will see the following when the recovery process is complete:
++
+
+....
+Trying to recover keymanager secrets.... 
+Setting recovery material for the onboard key manager 
+Recovery secrets set successfully
+Trying to delete any existing km_onboard.wkeydb file.
+ 
+Successfully recovered keymanager secrets.
+....
+
+. Monitor the BMR process as it executes restore backup config, env file, mdb, and rdb from the partner.
++
+When the restore is complete, the node reboots to complete the process.

@@ -1,0 +1,44 @@
+indexpage:
+  title: ASA r2 systems
+  lead: The new NetApp ASA r2 systems (ASA A1K, ASA A70, and ASA A90) deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers.
+  summary: The ASA r2 storage system documentation lets you install, setup, and maintain your ASA r2 system.
+  keywords: asa r2, asa a1k, asa a70, asa a90, install, setup, maintain
+  tiles:
+    - title: Get started
+      links:
+        - title: Learn about ASA r2 storage systems
+          url: https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html
+        - title: ASA datasheet 
+          url: https://www.netapp.com/data-storage/all-flash-san-storage-array/
+
+    - title: Install and maintain ASA r2 systems
+      links:
+        - title: Install ASA r2 systems
+          url: https://docs.netapp.com/us-en/asa-r2/install-setup/install-setup-workflow.html
+        - title: Maintain ASA r2 systems
+          url: ../asa-r2-landing-maintain/index.html
+    - title: Manage data on ASA r2 systems
+      links:
+        - title: Provision SAN storage
+          url: https://docs.netapp.com/us-en/asa-r2/manage-data/provision-san-storage.html
+        - title: Clone data
+          url: https://docs.netapp.com/us-en/asa-r2/manage-data/data-cloning.html
+        - title: Modify storage units
+          url: https://docs.netapp.com/us-en/asa-r2/manage-data/modify-storage-units.html
+    - title: Protect and secure data on ASA r2 systems 
+      links: 
+        - title: Create snapshots
+          url: https://docs.netapp.com/us-en/asa-r2/data-protection/create-snapshots.html         
+        - title: Set up snapshot replication
+          url: https://docs.netapp.com/us-en/asa-r2/data-protection/snapshot-replication.html  
+        - title: Encrypt data at rest
+          url: https://docs.netapp.com/us-en/asa-r2/secure-data/encrypt-data-at-rest.html 
+    - title: More ASA r2 resources
+      links:
+        - title: ONTAP command reference
+          url: https://docs.netapp.com/us-en/ontap-cli/
+        - title: ONTAP REST API reference
+          url: https://docs.netapp.com/us-en/ontap-restapi/index.html  
+        - title: ONTAP EMS reference
+          url: https://docs.netapp.com/us-en/ontap-ems/index.html 
+    
