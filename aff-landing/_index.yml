@@ -1,0 +1,74 @@
+indexpage:
+  title: AFF systems
+  lead: AFF A-Series and C-Series systems are designed to help organizations transform their infrastructure more quickly and fuel data-driven strategies.
+  summary: The AFF systems documentation describes how to install, setup, and maintain your AFF A-Series and C-Series systems.
+  keywords: aff a-series, a150, a250, a800, a900, a400, datasheet, install, setup
+  tiles:
+    - title: Get started
+      links:
+        - title: AFF A-Series datasheet
+          url: https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf
+        - title: AFF A-Series platform overview
+          url: https://www.netapp.com/data-storage/aff-a-series/
+        - title: AFF C-Series datasheet
+          url: https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf
+        - title: AFF C-Series platform overview
+          url: https://www.netapp.com/data-storage/aff-c-series/
+    - title: Install and setup A-Series systems
+      links:
+        - title: AFF A1K
+          url: ../a1k/install-overview.html
+        - title: AFF A70 and A90
+          url: ../a70-90/install-overview.html
+        - title: AFF A150
+          url: ../a150/install-setup.html
+        - title: AFF A250
+          url: ../a250/install-setup.html
+        - title: AFF A400
+          url: ../a400/install-setup.html
+        - title: AFF A800
+          url: ../a800/install-setup.html
+        - title: AFF A900
+          url: ../a900/install_setup.html
+    - title: Install and setup C-Series systems
+      links:
+        - title: AFF C250
+          url: ../c250/install-setup.html
+        - title: AFF C400
+          url: ../c400/install-setup.html
+        - title: AFF C800
+          url: ../c800/install-setup.html
+    - title: Maintain A-Series systems
+      links:
+        - title: AFF A1K
+          url: ../a1k/maintain-overview.html
+        - title: AFF A70 and A90
+          url: ../a70-90/maintain-overview.html
+        - title: AFF A150
+          url: ../a150/maintain-overview.html
+        - title: AFF A250
+          url: ../a250/maintain-overview.html
+        - title: AFF A400
+          url: ../a400/maintain-overview.html
+        - title: AFF A800
+          url: ../a800/maintain-overview.html
+        - title: AFF A900
+          url: ../a900/maintain-overview.html
+    - title: Maintain C-Series systems
+      links:
+        - title: AFF C250
+          url: ../c250/maintain-overview.html
+        - title: AFF C400
+          url: ../c400/maintain-overview.html
+        - title: AFF C800
+          url: ../c800/maintain-overview.html
+    - title: Supported switches
+      links:
+        - title: Broadcom-supported BES-53248
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-new-switch-overview.html
+        - title: Cisco 9336C-FX2
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/configure-switch-overview-9336c-cluster.html
+        - title: Cisco 9336-FX2 in shared configurations
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/configure-switch-overview-9336c-shared.html
+        - title: NVIDIA SN2100
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/configure-overview-sn2100-cluster.html
