@@ -4,9 +4,9 @@ You can add I/O modules to your storage system by either adding them to availabl
 
 * Check the https://hwu.netapp.com/[NetApp Hardware Universe^] to make sure that the new I/O module is compatible with your storage system and version of ONTAP you're running.
 
-* If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^]  and use the best one available for your I/O module.
+* If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^] and use the best one available for your I/O module.
 
-* Make sure that all other components are functioning properly.
+* All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
 * When adding I/O modules, you add the same module type in each controller. This procedure has you add them one at a time by repeating steps.
@@ -22,21 +22,23 @@ You can add an I/O module into an available slot in each controller.
 
 === Step 1: Shut down the target controller
 
-Shut down or take over the target controller using one of the following options.
+Shut down or take over the target controller.
 
-[role="tabbed-block"]
-====
+// Shut down or take over the target controller using one of the following options.
 
-.Option 1: Most systems
---
+// [role="tabbed-block"]
+// ====
+
+// .Option 1: Most systems
+// --
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
---
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+// --
 
-====
+// ====
 
 === Step 2: Add I/O modules to available slots
 
@@ -110,21 +112,23 @@ Use System Manager to permanently migrate the LIFs to different home ports, as d
 
 === Step 1: Shut down the target controller
 
-Shut down or take over the target controller using one of the following options.
+Shut down or take over the target controller.
 
-[role="tabbed-block"]
-====
+// Shut down or take over the target controller using one of the following options.
 
-.Option 1: Most systems
---
+// [role="tabbed-block"]
+// ====
+
+// .Option 1: Most systems
+// --
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
---
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+// --
 
-====
+// ====
 
 === Step 2: Add I/O modules to unavailable slots
 
