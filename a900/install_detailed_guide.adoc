@@ -220,7 +220,7 @@ Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 25 GbE network switches.
 
-image:oie_cable_sfp_gbe_copper.svg[GBe copper SFP]
+image::../media/oie_cable_sfp_gbe_copper.svg[GBe copper SFP]
 
 40GbE host network switches:
 
@@ -241,11 +241,13 @@ Cable ports in slot A5 and B5 (5a,
 
 image:../media/oie_cable_sfp_gbe_copper.svg[Gbe copper SFP]
 a|
+image::../media/oie_legend_icon_5_lp.png[Callout icon five]
+a|
 * Strap the cables to the cable
 management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
-a|
+
 image:../media/oie_cable_power.svg[Power cable]
 
 image:../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power connections]
