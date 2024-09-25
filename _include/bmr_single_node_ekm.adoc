@@ -1,0 +1,120 @@
+You can restore the ONTAP image (boot media recovery) from the partner node using the `boot_recovery -partner` with ASA r2 platforms running ONTAP 9.16.0 and later. 
+
+When you boot a node and the boot media on that node is corrupted, you'll see the following messages and the boot process with stop at the LOADER prompt:
+
+....
+
+Can't find primary boot device u0a.0
+Can't find backup boot device u0a.1
+ACPI RSDP Found at 0x777fe014
+ 
+ 
+Starting AUTOBOOT press Ctrl-C to abort...
+Could not load fat://boot0/X86_64/freebsd/image1/kernel:Device not found
+ 
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0,fat)
+ 
+ 
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0,fat)
+ 
+ 
+Autoboot of PRIMARY image failed. Device not found (-6)
+LOADER-A>
+....
+
+If you see this message, you must restore the ONTAP image.
+
+.Steps
+
+. From the LOADER prompt, enter the _boot_recovery -partner_ command.
++
+The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks and installation of the boot recovery files.  
+
++
+.. If External Key Manager (EKM) is configured, you will see the following displayed:
++
+
+....
+Error when fetching key manager config from partner 169.254.139.209: 28
+Has key manager been configured on this system? {y|n}
+....
+
+.. Enter _y_ if a key manager has been configured.
+
++ 
+....
+key manager is configured.
+Entering Bootmenu Option 11...
+....
+
++
+Bootmenu Option 11 will prompt the user for all of the EKM configuration information so that the configuration files can be rebuilt.
+
+
+. Enter the EKM confiuration at each prompt.
++
+*NOTE:* Most of this information was entered when EKM was originally enabled. You should enter the same information that was entered during initial EKM configuration. 
++
+
+. Check that the `Keystore UUID` and `Cluster UUID` are correct. 
+.. On the partner node retrieve the Cluster UUID with the  `cluster identity show` command.
+.. On the partner node retrieve the Keystore UUID with the `vserver show -type admin` command and the `key-manager keystore show -vserver <nodename>` command.
+.. Enter the values for Keystore UUID and Cluster UUID when prompted.
++
+*NOTE:* If the partner node is not available, the Keystore UUID and Cluster UUID can be obtained from the Mroot-AK key located on the configured key server.
++
+Verify the `x-NETAPP-ClusterName: <cluster name>` for the Cluster UUID and `x-NETAPP-KeyUsage: "MROOT-AK"` for the Keystore UUID attributes to ensure you have the correct keys.
+
+. Monitor the retrieve and restore of Mroot-AK into the ONTAP node.
+. If the process cannot restore the key, you will see the following message and need to configure e0M from the menu system shell: 
++
+
+....
+ERROR: kmip_init: halting this system with encrypted mroot...
+WARNING: kmip_init: authentication keys might not be available.
+********************************************************
+*                 A T T E N T I O N                    *
+*                                                      *
+*       System cannot connect to key managers.         *
+*                                                      *
+********************************************************
+ERROR: kmip_init: halting this system with encrypted mroot...
+.
+Terminated
+ 
+Uptime: 11m32s
+System halting...
+ 
+LOADER-B>
+
+....
+
+
+.. Run the `boot_recovery -partner` command on recoverery node.
+.. When prompted to perform (y or n) the options for EKM, select _n_ for all. 
++
+After selecting _n_ option for the 8 prompts, the system will stop at boot menu.
++
+
+.. Collect the /cfcard/kmip/servers.cfg file information from another cluster node. You will collect the following information:
+
+* The KMIP server address.
+* The KMIP port.
+* The Keystore UUID.
+* A copy of the client certificate from the /cfcard/kmip/certs/client.crt file.
+* A copy of the client key from the /cfcard/kmip/certs/client.key file.
+* A copy of the KMIP server CA(s) from the /cfcard/kmip/certs/CA.pem file.
+.. Enter systemshell from bootmenu by entering _systemshell_ at the prompt.
+.. Configure network from the systemshell menu for e0M, netmask and gateway.
+.. Exit from menu systemshell with the _exit_ command.
+.. You will see the boot menu. Select option `11` to continue EKM restore.
+.. Answer `y` to the following questions and enter the required information you previously collected when prompted:
+
+* Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} 
+* Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n} 
+* Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n} 
+* Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} 
+
+. If the key is restored properly, the recovery process continues and reboots the node.
+
+

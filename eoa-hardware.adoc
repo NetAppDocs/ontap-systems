@@ -10,9 +10,9 @@ summary: 'Learn about the the legacy hardware no longer supported.'
 :imagesdir: ./media/
 
 [.lead]
-The following systems and switches are no longer supported as of the specified version of ONTAP.
+The following systems, shelves, and switches are no longer supported as of the specified version of ONTAP.
 
-== AFF and FAS systems
+== ONTAP hardware systems
 [cols="2*",options="header"]
 |===
 | System| Support discontinued from...
@@ -33,6 +33,19 @@ a|
 * FAS2520, FAS2552, FAS2554
 a|
 ONTAP 9.9.1
+|===
+
+== Shelf modules
+
+[cols="2*",options="header"]
+|===
+| Shelf module| Support discontinued from...
+a|
+IOM 6 module|
+ONTAP 9.16.1
+a|
+
+
 |===
 
 == Switches

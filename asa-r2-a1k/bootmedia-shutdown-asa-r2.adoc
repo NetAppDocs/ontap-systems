@@ -1,0 +1,15 @@
+---
+permalink: asa-r2-a1k/bootmedia-shutdown-asa-r2.html
+sidebar: sidebar
+keywords: asa r2 a1k, shut down the controller
+summary: "After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller."
+---
+= Shut down the impaired controller - ASA A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller.
+
+
+include::../_include/shutdown_most_frus.adoc[]

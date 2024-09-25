@@ -1,0 +1,140 @@
+The System Management module, located at the back of the controller in slot 8,  contains onboard components for system management, as well as ports for external management. The target controller must be shut down to replace an impaired System Management module or replace the boot media.
+
+The System Management module has the following onboard components:
+
+** Boot media, allowing boot media replacement without removing the controller module.
+** BMC
+** Management switch
+
+The System Management module also contains the following ports for external management:
+
+** RJ45 Serial
+** USB Serial (Type-C)
+** USB Type-A (Boot recovery)
+** e0M RJ45 Ethernet
+
+To replace the System Management module or or the boot media, you must shut down the impaired controller.  
+
+.Before you begin
+* This procedure uses the following terminology:
+ ** The impaired controller is the controller on which you are performing maintenance.
+ ** The healthy controller is the HA partner of the impaired controller.
+ * All other system components must be working properly.
+* The partner controller must be able to take over the impaired controller.
+* You must replace the failed component with a replacement FRU component you received from your provider.
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller.
+
+include::../_include/shutdown_most_frus.adoc[]
+
+== Step 2: Replace the impaired System Management module
+
+Replace the impaired system management module.
+
+. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.
++
+NOTE:  Make sure NVRAM destage has completed before proceeding.
++
+
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
+
+. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+
+. Disconnect power to the controller module by pulling the controller module out about three inches:
+
+.. Press down on both of the controller module locking latches, and then rotate both latches downward at the same time.
+.. Pull the controller module about 3 inches out of the chassis to disengage power.
+
+
+. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
+
+. Remove the System Management module:
+
+.. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
++
+image::../media/drw_70-90_sys-mgmt_remove_ieops-1817.svg[Replace the System Management module]
+
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+a|
+System Management module cam latch
+
+|===
+
++
+
+
+. Remove the System Management module:
+.. Depress the system management cam button.
+The cam lever moves away from the chassis.
+ .. Rotate the cam lever all the way down.
+ .. Loop your finger into the cam lever and pull the module straight out of the system.
+.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
+. Move the boot media to the replacement System Management module:
+
++
+image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[Boot media replace]
+
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+a|
+System Management module cam latch
+a|
+image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+a|
+Boot media locking button
+a|
+image::../media/legend_icon_03.svg[Callout number 3,width=30px]
+a|
+Boot media
+|===
+
+
+.. Press the blue locking button.
+The boot media rotates slightly upward.
+.. Rotate the boot media up,  slide it out of the socket.
+.. Install the boot media in the replacement System Management module:
+... Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
+... Rotate the boot media down toward until it engages the locking button. Depress the blue locking if necessary.
+. Install the system management module:
+.. Align the edges of the replacement System Management module with the system opening and gently push it into the controller module.  
+.. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
+
+. Recable the System Management module.
+
+. Reconnect power to the controller module:
+.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
++
+The locking latches rise when the controller module is fully seated.
++
+.. Rotate the locking latches upward into the locked position.
+
+. Rotate the cable management tray up to the closed position.
+
+== Step 3: Reboot the controller module
+
+Reboot the controller module.
+
+. Enter _bye_ at the LOADER prompt.
+. Return the controller to normal operation by giving back its storage: _storage failover giveback -ofnode _impaired_node_name__
+. Restore automatic giveback by using the `storage failover modify -node local -auto-giveback true` command.
+. If an AutoSupport maintenance window was triggered, end it by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+
+== Step 4: Install licenses and register serial number
+
+include::../_include/install_licenses_serial_number-system_mgmt_module.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

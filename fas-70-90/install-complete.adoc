@@ -1,0 +1,13 @@
+---
+permalink: fas-70-90/install-complete.html
+sidebar: sidebar
+keywords: fas70, fas90, prepare installation
+summary: Complete the platform setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the storage system and then connecting to the management switch.
+---
+= Complete storage system setup and configuration - FAS70 and FAS90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+include::../_include/install_complete.adoc[]
