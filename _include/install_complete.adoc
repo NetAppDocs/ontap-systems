@@ -15,7 +15,7 @@ The discovery process enables you to discover your storage system controllers on
 
 .Option 1: Network discovery is enabled
 --
-If you have network discovery enabled on your laptop, you can complete platform setup and configuration using automatic cluster discovery.
+If you have network discovery enabled on your laptop, you can complete setup and configuration using automatic cluster discovery.
 
 .Steps
 . Connect your laptop to the management switch and access the network computers and devices.
@@ -30,7 +30,7 @@ image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[How to discove
 ..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 
 +
-NOTE: XXXXX is the platform serial number for the target node.
+NOTE: XXXXX is the storage system serial number for the target node.
 
 +
 System Manager opens.
