@@ -191,7 +191,7 @@ video::37419c37-f56f-48e5-8e6c-afa600095444[panopto, title="Animation - Cable a 
 image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[Two-node switchless network cabling]
 +
 
-[options="header" col="20%,80%"]
+[options="header", cols="1,4"]
 
 |===
 |Step|Perform on each controller
@@ -243,8 +243,7 @@ image:../media/oie_cable_sfp_gbe_copper.svg[Gbe copper SFP]
 a|
 image::../media/oie_legend_icon_5_lp.png[Callout icon five]
 a|
-* Strap the cables to the cable
-management arms (not shown).
+* Strap the cables to the cable management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
 
@@ -279,7 +278,7 @@ image:../media/drw_a900_switched_network_cabling_IEOPS-934.svg[Switched network 
 
 +
 
-[options="header" col="20%,80%"]
+[options="header" cols="20%,80%"]
 
 |===
 
@@ -294,7 +293,7 @@ interconnect a ports:
 ** Slot A8 and B8 (e8a) to the
 cluster network switch.
 
-image:../media/oie_cable100_gbe_qsfp28.svg[100 Gbe cable connector]
+image:../media/oie_cable100_gbe_qsfp28.svg[100 Gbe cable]
 a|
 image:../media/oie_legend_icon_2_lo.svg[Callout icon two]
 a|
@@ -318,7 +317,7 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable100_gbe_qsfp28.svg[Gbe copper SFP]
+image::../media/oie_cable100_gbe_qsfp28.svg[100 Gbe cable]
 a|
 image::../media/oie_legend_icon_4_dr.svg[Callout icon four]
 a|
@@ -333,8 +332,7 @@ image::../media/oie_cable_sfp_gbe_copper.svg[Gbe copper SFP]
 a|
 image::../media/oie_legend_icon_5_lp.png[Callout icon five]
 a|
-* Strap the cables to the cable
-management arms (not shown).
+* Strap the cables to the cable management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
 
@@ -375,7 +373,7 @@ video::8d8b45cd-bd8f-4fab-a4fa-afa5017e7b72[panopto, title="Animation - Cable a 
 image::../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[width=500px]
 +
 
-[options="header" col="20%,80%"]
+[options="header" cols="20%,80%"]
 
 |===
 |Step|Perform on each controller
@@ -426,7 +424,7 @@ image::../media/drw_a900_NS224_line_art_two shelf_cabling_IEOPS-1147.svg[width=5
 image::../media/drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg[Cabling two NS224 shelves]
 +
 
-[options="header" col="10%,90%"]
+[options="header" cols="10%,90%"]
 
 |===
 |Step|Perform on each controller
@@ -571,7 +569,7 @@ NOTE: See your laptop or console's online help for how to configure the console 
 
  .. Connect the console cable to the laptop or console using the console cable that came with your system, and then connect the laptop to the management switch on the management subnet.
 +
-image::../media/drw_A900_cable_console_switch_controller_IEOPS-953.svg[Consol cable connection]
+image::../media/drw_A900_cable_console_switch_controller_IEOPS-953.svg[Console cable connection]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:
