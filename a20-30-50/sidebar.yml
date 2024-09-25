@@ -1,0 +1,102 @@
+section: a20-30-50
+title: AFF A20, AFF A30, and AFF A50 systems
+entries:
+ - title: Install and setup
+   pdf-filename: AFF A20, AFF A30, and AFF A50 Install and Setup
+   entries:
+     - title: Install workflow
+       url: /a20-30-50/install-overview.html
+     - title: Requirements and considerations
+       url: /a20-30-50/install-requirements.html
+     - title: Prepare for installation
+       url: /a20-30-50/install-prepare.html
+     - title: Install hardware
+       url: /a20-30-50/install-hardware.html
+     - title: Cable hardware
+       url: /a20-30-50/install-cable.html
+     - title: Power on system
+       url: /a20-30-50/install-power-hardware.html
+     - title: Complete system setup
+       url: /a20-30-50/install-complete.html
+ - title: Maintain
+   pdf-filename: AFF A20, AFF A30, and AFF A50 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /a20-30-50/maintain-overview.html
+      # START boot media
+   - title: Boot media
+     pdf-filename: AFF A20, AFF A30, and AFF A50 Boot Media
+     entries:
+        - title: Boot media replace workflow
+          url: /a20-30-50/bootmedia-replace-workflow.html
+        - title: Requirements and considerations
+          url: /a20-30-50/bootmedia-replace-requirements.html
+        - title: Check onboard encryption keys
+          url: /a20-30-50/bootmedia-encryption-preshutdown-checks.html
+        - title: Shut down impaired controller
+          url: /a20-30-50/bootmedia-shutdown.html
+        - title: Remove controller
+          url: /a20-30-50/bootmedia-controller-remove.html
+        - title: Replace boot media
+          url: /a20-30-50/bootmedia-replace.html
+        - title: Reinstall controller
+          url: /a20-30-50/bootmedia-controller-reinstall.html
+        - title: Boot recovery image
+          url: /a20-30-50/bootmedia-recovery-image-boot.html
+        - title: Restore encryption
+          url: /a20-30-50/bootmedia-encryption-restore.html
+        - title: Return failed part to NetApp
+          url: /a20-30-50/bootmedia-complete-rma.html
+          # END boot media
+   - title: Chassis
+     pdf-filename: AFF A20, AFF A30, and AFF A50 Chassis
+     entries:
+        - title: Chassis replace workflow
+          url: /a20-30-50/chassis-replace-workflow.html
+        - title: Requirements and considerations
+          url: /a20-30-50/chassis-replace-requirements.html
+        - title: Shut down controllers
+          url: /a20-30-50/chassis-replace-shutdown.html
+        - title: Replace chassis
+          url: /a20-30-50/chassis-replace-move-hardware.html
+        - title: Complete chassis replacement
+          url: /a20-30-50/chassis-replace-complete-system-restore-rma.html
+   - title: Controller
+     pdf-filename: AFF A20, AFF A30, and AFF A50 Controller Module
+     entries:
+        - title: Controller replace workflow
+          url: /a20-30-50/controller-replace-workflow.html
+        - title: Requirements and considerations
+          url: /a20-30-50/controller-replace-requirements.html
+        - title: Shut down impaired controller
+          url: /a20-30-50/controller-replace-shutdown.html
+        - title: Replace controller
+          url: /a20-30-50/controller-replace-move-hardware.html
+        - title: Restore system configuration
+          url: /a20-30-50/controller-replace-system-config-restore-and-verify.html
+        - title: Recable and give back controller
+          url: /a20-30-50/controller-replace-recable-reassign-disks.html
+        - title: Complete controller replacement
+          url: /a20-30-50/controller-replace-restore-system-rma.html
+   - title: DIMM
+     url: /a20-30-50/dimm-replace.html
+   - title: Drive
+     url: /a20-30-50/drive-replace.html
+   - title: Fan
+     url: /a20-30-50/fan-replace.html
+   - title: FlashCache module
+     url: /a20-30-50/caching-module-replace.html
+   - title: I/O module
+     entries:
+        - title: I/O module overview
+          url: /a20-30-50/io-module-overview.html
+        - title: Add I/O module
+          url: /a20-30-50/io-module-add.html
+        - title: Replace I/O module
+          url: /a20-30-50/io-module-replace.html
+   - title: NV Battery
+     url: /a20-30-50/nvdimm-battery-replace.html
+   - title: Power supply
+     url: /a20-30-50/power-supply-replace.html
+   - title: Real-time clock battery
+     url: /a20-30-50/rtc-battery-replace.html

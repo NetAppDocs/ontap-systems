@@ -1,0 +1,19 @@
+---
+permalink: a20-30-50/install-hardware.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, install hardware, telco rack
+summary: Install your storage system in cabinet or telco rack.
+---
+= Install the hardware - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you prepare to install your AFF A20, AFF A30, or AFF A50 storage system, install the hardware for the system. First, install the rail kits. Then install and secure your platform in a cabinet or telco rack.
+
+Skip this step if your cabinet is pre-populated.
+
+include::../_include/install_hardware.adoc[]
+
+.What's next?
+After you’ve installed the hardware for your AFF A20, AFF A30, or AFF A50 storage system, you link:install-cable.html[cable the hardware for your AFF A20, AFF A30, or AFF A50 storage system].

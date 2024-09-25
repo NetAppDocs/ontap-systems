@@ -1,0 +1,12 @@
+---
+permalink: a20-30-50/bootmedia-recovery-image-boot.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, boot the recovery image
+summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+---
+= Boot the recovery image - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a70-90_bootmedia_recovery_image_boot.adoc[]

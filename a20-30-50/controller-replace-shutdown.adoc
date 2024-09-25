@@ -1,0 +1,26 @@
+---
+permalink: a20-30-50/controller-replace-shutdown.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, shut down the impaired controller
+summary: "To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage."
+---
+= Shut down the impaired controller - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
+
+====

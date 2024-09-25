@@ -1,0 +1,20 @@
+---
+permalink: a20-30-50/controller-replace-restore-system-rma.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, how to restore NetApp Storage Encryption, how to complete the replacement process
+summary: "To restore your system to full operation, you must verify the LIfs, check cluster health,  and return the failed part to NetApp."
+---
+= Complete controller replacement - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To restore your system to full operation, you must verify the LIfs, check cluster health, and return the failed part to NetApp.
+
+== Step 1: Verify LIFs and check cluster health
+
+include::../_include/check_lifs_cluster_health.adoc[]
+
+== Step 2: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
