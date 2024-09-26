@@ -9,6 +9,7 @@ summary: You must boot the ONTAP image from the USB drive, restore the file syst
 :imagesdir: ../media/
 
 [.lead]
+
 You can restore the ONTAP image (boot media recovery) from the partner node using the `boot_recovery -partner` with ASA r2 systems running ONTAP 9.16.0 and later.
 
 .Before you begin
