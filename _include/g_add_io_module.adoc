@@ -75,7 +75,7 @@ If the I/O module is a storage module, cable it to the NS224 shelf.
 
 . Reboot the controller from the LOADER prompt: _bye_
 +
-NOTE: This reinitializes the I/O modules, other components, and reboots the node.
+This reinitializes the I/O modules, other components, and reboots the node.
 +
 . Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
 . Repeat these steps for controller B.
@@ -161,7 +161,7 @@ Pull the I/O module out of the controller using the port label tab on the left a
 .. Turn the thumbscrew clockwise to tighten.
 . Cable the I/O module.
 
-. Repeat the remove and install steps to replace any additional I/O modules for the controller.
+. Repeat the remove and install steps to add any additional I/O modules in the controller.
 
 . Reboot the controller and check the BMC firmware version:
 .. From the LOADER prompt, reboot the controller:_bye_

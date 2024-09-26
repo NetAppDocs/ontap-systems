@@ -1,4 +1,5 @@
-Use this procedure to replace a failed I/O module with the same type of I/O module....But Step 3 says you can replace with a different module....
+Use this procedure to replace a failed I/O module. 
+// with the same type of I/O module. should be added because a FRU procedure is like-for-like...But Step 3 says you can replace with a different module. But isn;t this use case covered in I/O add when the slot is unavailable? 
 
 .Before you begin
 All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
@@ -79,7 +80,9 @@ Pull the I/O module out of the controller using the port label tab on the left a
 
 After you replace an I/O module, you must reboot the controller.
 
-NOTE: If the new I/O module is not the same model as the failed module, you must first reboot the BMC.??? BUT this is a FRU replacement, that means like-for like!!!!
+NOTE: If the new I/O module is not the same model as the failed module, you must first reboot the BMC.
+
+// Doesn't make sense that this procedure addresses this use case because this is a like-for-like FRU procedure.
 
 .Steps
 . If the replacement I/O module is not the same type as the old module, reboot the BMC:
