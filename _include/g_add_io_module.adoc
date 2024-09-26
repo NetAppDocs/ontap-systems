@@ -163,17 +163,17 @@ Pull the I/O module out of the controller using the port label tab on the left a
 
 . Repeat the remove and install steps to replace any additional I/O modules for the controller.
 
-. Reboot the controller from the LOADER prompt:_bye_
+. Reboot the controller and check the BMC firmware version:
+.. From the LOADER prompt, reboot the controller:_bye_
 .. Check the version of BMC on the controller: _system service-processor show_
 .. Update the BMC firmware if needed: _system service-processor image update_
-.. Reboot the node: _bye_
+.. Reboot the controller: _bye_
 +
-NOTE: This reinitializes the I/O modules, other components, and reboots the node.
+This reinitializes the I/O modules, other components, and reboots the node.
 +
-
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement]
 
-. Give back the controller from the partner controller. _storage failover giveback -ofnode target_node_name_
+. Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
 . Enable automatic giveback if it was disabled: _storage failover modify -node local -auto-giveback true_
 
 . The next step depends on what type of I/O module you added:
