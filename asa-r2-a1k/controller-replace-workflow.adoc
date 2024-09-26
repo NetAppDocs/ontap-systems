@@ -12,7 +12,7 @@ summary: You must replace the failed component with a replacement FRU component 
 Follow these workflow steps to replace your controller module.
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-replace-requirements.html[Review controller replacement requirements].
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-replace-requirements.html[Review controller replacement requirements]
 [role="quick-margin-para"]
 To replace the controller module, you must meet certain requirements. 
 
@@ -24,7 +24,7 @@ Shut down or take over the impaired controller so that the healthy controller co
 [role="quick-margin-para"]
 Replacing the controller includes removing the impaired controller, moving the FRU components to the replacement controller module, and then installing the replacement controller module in the enclosure.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration ]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration]
 [role="quick-margin-para"]
 Verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
 
