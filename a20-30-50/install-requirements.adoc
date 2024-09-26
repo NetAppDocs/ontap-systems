@@ -10,14 +10,14 @@ summary: Review the equipment needed and the lifting precautions for your platfo
 
 [.lead]
 Review your storage system's requirements and considerations, including the lifting precautions.
+
 :a20-30-50:
  
 include::../_include/install_requirements_fragment_conditional.adoc[]
  
 :a20-30-50!:
 
-
-== Additional platform considerations
+== Additional considerations
 * If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
 A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
