@@ -13,7 +13,11 @@ After you prepare to install your AFF A20, AFF A30, or AFF A50 storage system, i
 
 Skip this step if your storage system came in a cabinet.
 
-include::../_include/install_hardware.adoc[]
+:a20-30-50:
+ 
+include::../_include/install_hardware_fragment_conditional.adoc[]
+ 
+:a20-30-50!:
 
 .What's next?
 After you’ve installed the hardware for your storage system, you link:install-cable.html[cable the hardware].

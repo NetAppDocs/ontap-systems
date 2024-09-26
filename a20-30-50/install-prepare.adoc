@@ -11,7 +11,11 @@ summary: Prepare to install your AFF A20, AFF A30, and AFF A50 platform.
 [.lead]
 Prepare to install your AFF A20, AFF A30, or AFF A50 storage system by getting the site ready, unpacking the boxes and comparing the contents of the boxes to the packing slip, and registering the storage system to access support benefits.
 
-include::../_include/install_prepare.adoc[]
+:a20-30-50:
+ 
+include::../_include/install_prepare_fragment_conditional.adoc[]
+ 
+:a20-30-50!:
 
 .What's next?
 After you’ve prepared for installation of your storage system, you link:install-hardware.html[install the hardware for your storage system].

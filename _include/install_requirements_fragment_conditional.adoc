@@ -40,15 +40,18 @@ An A1K storage system can weigh up to 62.83 lbs (28.5 kg). To lift the storage s
 
 image::../media/drw_a1k_weight_caution_ieops-1698.svg[AFF A1K lifting caution icon]
 endif::a1k[]
+
 // next two bullets applies only to a20-30-50
 ifdef::a70-90[]
 An A70 or A90 storage system can weigh up to 151.68 lbs (68.8 kg). To lift the storage system, use four people or a hydraulic lift.
+
 image::../media/drw_a70-90_weight_icon_ieops-1730.svg[AFF A90, AFF A70 weight caution icon]
 
 endif::a70-90[]
 // next two bullets applies only to a20-30-50
 ifdef::a20-30-50[]
 An A20, A30, or an A50 storage system can weigh up to 61.5 lbs (27.9 kg). To lift the storage system, use two people or a hydraulic lift.
+
 image::../media/drw_g_lifting_weight_ieops-1831.svg[AFF A20, A30, or an A50 weight caution icon]
 endif::a20-30-50[]
 
