@@ -83,7 +83,7 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Etherne
 
 . Use the 1000BASE-T RJ-45 cables to connect the controller management (wrench) ports to the management network switches.
 +
-image::../media/oie_cable_rj45.svg[RJ45 cables,width=100px]
+image::../media/oie_cable_rj45.svg[RJ45 cables]
 *1000BASE-T RJ-45 cables*
 +
 image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
@@ -111,7 +111,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 *100 GbE cable*
 +
-image::../media/oie_cable100_gbe_qsfp28.svg[100 Gb cable,width=100px]
+image::../media/oie_cable100_gbe_qsfp28.svg[100 Gb cable]
 +
 image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[Cable cluster connections to cluster network,width=500px]
 
@@ -142,7 +142,7 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 10/25Gb Ether
 
 . Connect the controller management (wrench) ports to the management network switches with 1000BASE-T RJ-45 cables.
 +
-image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
+image::../media/oie_cable_rj45.svg[RJ-45 cables]
 *1000BASE-T RJ-45 cables*
 +
 image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
