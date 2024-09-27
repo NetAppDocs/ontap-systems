@@ -51,7 +51,7 @@ X66240A-2 (112-00598), 2m
 
 X66240A-5 (112-00600), 5m
 a|
-image::../media/oie_cable_sfp_gbe_copper.svg
+image::../media/oie_cable_sfp_gbe_copper.png
 a|
 Network cable
 a|
@@ -63,7 +63,7 @@ X66250-5 (112-00344), 5m
 
 X66250-15 (112-00346), 15m
 a|
-image::../media/oie_cable_sfp_gbe_copper.svg
+image::../media/oie_cable_sfp_gbe_copper.png
 a|
 FC optical network cable
 a|
@@ -75,7 +75,7 @@ X66100-3 (112-00543), 3m
 
 X66100-5 (112-00544), 5m
 a|
-image::../media/oie_cable100_gbe_qsfp28.svg
+image::../media/oie_cable100_gbe_qsfp28.png
 a|
 Ethernet data, cluster
 network
@@ -88,7 +88,7 @@ X66211B-2 (112-00574), 2m
 
 X66211B-5 (112-00576), 5m
 a|
-image::../media/oie_cable100_gbe_qsfp28.svg
+image::../media/oie_cable100_gbe_qsfp28.png
 a|
 Network,
 
@@ -104,7 +104,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-image::../media/oie_cable_fiber_lc_connector.svg[width=85px]
+image::../media/oie_cable_fiber_lc_connector.png[width=85px]
 a|
 FC optical network
 a|
@@ -114,7 +114,7 @@ Part numbers X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image::../media/oie_cable_rj45.svg
+image::../media/oie_cable_rj45.png
 a|
 Management network and Ethernet data
 a|
@@ -134,7 +134,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-image::../media/oie_cable_micro_usb.svg[width=85px]
+image::../media/oie_cable_micro_usb.pngMicro USB connector]
 a|
 Console connection during software setup on non-Windows or Mac laptop/console
 a|
@@ -142,7 +142,7 @@ Power cables
 a|
 Not applicable
 a|
-image::../media/oie_cable_power.svg[width=85px]
+image::../media/oie_cable_power.png[Power cables]
 a|
 Powering up the system
 |===
@@ -202,23 +202,23 @@ image::../media/drw_9500_tnsc_network_cabling.svg[align="center",width=500px]
 |===
 | Step| Perform on each controller
 a|
-image::../media/square_icon_1_green.png
+image::../media/icon_square_1_green.png
 a|
 Cable cluster interconnect ports:
 
 ** Slot A4 and B4 (e4a)
 ** Slot A8 and B8 (e8a)
 
-image::../media/oie_cable100_gbe_qsfp28.svg
+image::../media/oie_cable100_gbe_qsfp28.png
 a|
-image::../media/square_icon_2_yellow.png
+image::../media/icon_square_2_yellow.png
 a|
 Cable controller management (wrench) ports.
 
-image::../media/oie_cable_rj45.svg
+image::../media/oie_cable_rj45.png
 
 a|
-image::../media/square_icon_3_orange.png
+image::../media/icon_square_3_orange.png
 a|
 Cable 32 Gb FC network switches:
 
@@ -226,7 +226,7 @@ Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 32 Gb FC network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.svg
+image::../media/oie_cable_sfp_gbe_copper.png
 
 
 40GbE host network switches:
@@ -235,9 +235,9 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable100_gbe_qsfp28.svg
+image::../media/oie_cable100_gbe_qsfp28.png
 a|
-image::../media/square_icon_4_red.png
+image::../media/icon_square_4_red.png
 a|
 Cable 25 GbE connections:
 
@@ -246,14 +246,14 @@ Cable ports in slot A5 and B5 (5a,
 (7a, 7b, 7c, and 7d) to the
 25 GbE network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.svg
+image::../media/oie_cable_sfp_gbe_copper.png
 a|
 * Strap the cables to the cable
 management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
 a|
-image::../media/oie_cable_power.svg[width=85px]
+image::../media/oie_cable_power.png[Power cables]
 
 image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power sources]
 
@@ -290,7 +290,7 @@ image::../media/drw_9500_switched_network_cabling.svg[align="center",width=500px
 
 | Step|Perform on each controller
 a|
-image::../media/square_icon_1_green.png
+image::../media/icon_square_1_green.png
 a|
 Cable cluster
 interconnect a ports:
@@ -299,15 +299,15 @@ interconnect a ports:
 ** Slot A8 and B8 (e8a) to the
 cluster network switch.
 
-image::../media/oie_cable100_gbe_qsfp28.svg
+image::../media/oie_cable100_gbe_qsfp28.png
 a|
-image::../media/square_icon_2_yellow.png
+image::../media/icon_square_2_yellow.png
 a|
 Cable controller management (wrench) ports.
 
-image::../media/oie_cable_rj45.svg
+image::../media/oie_cable_rj45.png
 a|
-image::../media/square_icon_3_orange.png
+image::../media/icon_square_3_orange.png
 a|
 Cable 32 Gb FC network switches:
 
@@ -315,7 +315,7 @@ Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 32 Gb FC network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.svg
+image::../media/oie_cable_sfp_gbe_copper.png
 
 
 40GbE host network switches:
@@ -324,9 +324,9 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable100_gbe_qsfp28.svg
+image::../media/oie_cable100_gbe_qsfp28.png
 a|
-image::../media/square_icon_4_red.png
+image::../media/icon_square_4_red.png
 a|
 Cable 25 GbE connections:
 
@@ -335,14 +335,14 @@ Cable ports in slot A5 and B5 (5a,
 (7a, 7b, 7c, and 7d) to the
 25 GbE network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.svg
+image::../media/oie_cable_sfp_gbe_copper.png
 a|
 * Strap the cables to the cable
 management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
 a|
-image::../media/oie_cable_power.svg[width=85px]
+image::../media/oie_cable_power.png[Power cables]
 
 image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power sources]
 
@@ -389,7 +389,7 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[width=85px]
 
 mini-SAS cable
 a|
-image::../media/square_icon_2_yellow.png[width=30px]
+image::../media/icon_square_2_yellow.png[width=30px]
 a|
 Connect drive shelf stack two to the controllers, using the graphic for reference.
 
