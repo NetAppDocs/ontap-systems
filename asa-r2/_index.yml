@@ -32,13 +32,5 @@ indexpage:
         - title: Set up snapshot replication
           url: https://docs.netapp.com/us-en/asa-r2/data-protection/snapshot-replication.html  
         - title: Encrypt data at rest
-          url: https://docs.netapp.com/us-en/asa-r2/secure-data/encrypt-data-at-rest.html 
-    - title: More ASA r2 resources
-      links:
-        - title: ONTAP command reference
-          url: https://docs.netapp.com/us-en/ontap-cli/
-        - title: ONTAP REST API reference
-          url: https://docs.netapp.com/us-en/ontap-restapi/index.html  
-        - title: ONTAP EMS reference
-          url: https://docs.netapp.com/us-en/ontap-ems/index.html 
+          url: https://docs.netapp.com/us-en/asa-r2/secure-data/encrypt-data-at-rest.html
     
