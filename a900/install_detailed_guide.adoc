@@ -196,7 +196,7 @@ image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[Two-node switchless 
 |===
 |Step|Perform on each controller
 a|
-image::../media/oie_legend_icon_1_lg.svg[Callout icon one]
+image::../media/oie_legend_icon_1_lg.png[Callout icon one]
 a|
 Cable cluster interconnect ports:
 
@@ -205,14 +205,14 @@ Cable cluster interconnect ports:
 
 image::../media/oie_cable100_gbe_qsfp28.svg[100 Gb connector]
 a|
-image::../media/oie_legend_icon_2_lp.svg[Callout icon two]
+image::../media/oie_legend_icon_2_lp.png[Callout icon two]
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.svg[RJ-45 cable connector]
 
 a|
-image::../media/oie_legend_icon_3_o.svg[Callout icon three]
+image::../media/oie_legend_icon_3_o.png[Callout icon three]
 a|
 Cable 25 GbE network switches:
 
@@ -230,7 +230,7 @@ the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.svg[100 GBe cable connector]
 a|
-image:../media/oie_legend_icon_4_dr.svg[Callout icon four]
+image:../media/oie_legend_icon_4_dr.png[Callout icon four]
 a|
 Cable 32 Gb FC connections:xxx
 
@@ -284,7 +284,7 @@ image:../media/drw_a900_switched_network_cabling_IEOPS-934.svg[Switched network 
 
 |Step|Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lg.svg[Callout icon one]
+image:../media/oie_legend_icon_1_lg.png[Callout icon one]
 a|
 Cable cluster
 interconnect a ports:
@@ -295,13 +295,13 @@ cluster network switch.
 
 image:../media/oie_cable100_gbe_qsfp28.svg[100 Gbe cable]
 a|
-image:../media/oie_legend_icon_2_lo.svg[Callout icon two]
+image:../media/oie_legend_icon_2_lo.png[Callout icon two]
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.svg[RJ45 cables]
 a|
-image::../media/oie_legend_icon_3_o.svg[Callout icon three]
+image::../media/oie_legend_icon_3_o.png[Callout icon three]
 a|
 Cable 25GbE network switches:
 
@@ -319,7 +319,7 @@ the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.svg[100 Gbe cable]
 a|
-image::../media/oie_legend_icon_4_dr.svg[Callout icon four]
+image::../media/oie_legend_icon_4_dr.png[Callout icon four]
 a|
 Cable 32 Gb FC connections:
 
@@ -336,9 +336,9 @@ a|
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
 
-image::../media/oie_cable_power.svg[width=85px]
+image::../media/oie_cable_power.svg[Power cable]
 
-image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[width=200px]
+image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power connections]
 
 |===
 
@@ -370,7 +370,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 video::8d8b45cd-bd8f-4fab-a4fa-afa5017e7b72[panopto, title="Animation - Cable a single NS224 shelf"]
 +
-image::../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[width=500px]
+image::../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[Single shelf cabling]
 +
 
 [options="header" cols="20%,80%"]
@@ -378,7 +378,7 @@ image::../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[width=500px]
 |===
 |Step|Perform on each controller
 a|
-image::../media/oie_legend_icon_1_mb.svg[Callout number one]
+image::../media/oie_legend_icon_1_mb.png[Callout number one]
 a|
 ** Connect controller A port e2a to port e0a on NSM A on the shelf.
 ** Connect controller A port e10b to port e0b on NSM B on the shelf.
@@ -387,7 +387,7 @@ image::../media/oie_cable100_gbe_qsfp28.svg[100 Gbe QSFP connector]
 
 100 GbE cable
 a|
-image::../media/oie_legend_icon_2_lo.svg[Callout number two]
+image::../media/oie_legend_icon_2_lo.png[Callout number two]
 a|
 ** Connect controller B port e2a to port e0a on NSM B on the shelf.
 ** Connect controller B port e10b to port e0b on NSM A on the shelf.
@@ -410,7 +410,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelves.
 
 image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
 
-image::../media/oie_cable_pull_tab_down.svg[width=200px]
+image::../media/oie_cable_pull_tab_down.svg[Cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -419,7 +419,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 video::ec143c32-9e4b-47e5-893e-afa5017da6b4[panopto, title="Animation - Cable two NS224 shelves"]
 +
-image::../media/drw_a900_NS224_line_art_two shelf_cabling_IEOPS-1147.svg[width=500px]
+image::../media/drw_a900_NS224_line_art_two shelf_cabling_IEOPS-1147.svg[Two shelf cabling]
 +
 image::../media/drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg[Cabling two NS224 shelves]
 +
@@ -430,7 +430,7 @@ image::../media/drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg[Cabling two NS224
 |Step|Perform on each controller
 a|
 
-image::../media/oie_legend_icon_1_mb.svg[Callout icon one]
+image::../media/oie_legend_icon_1_mb.png[Callout icon one]
 a|
 ** Connect controller A port e2a to NSM A e0a on shelf 1.
 ** Connect controller A port e10b to NSM B e0b on shelf 1.
@@ -441,7 +441,7 @@ image::../media/oie_cable100_gbe_qsfp28.svg[Gbe copper SFP]
 
 100 GbE cable
 a|
-image::../media/oie_legend_icon_2_lo.svg[Callout icon two]
+image::../media/oie_legend_icon_2_lo.png[Callout icon two]
 a|
 ** Connect controller B port e2a to NSM B e0a on shelf 1.
 ** Connect controller B port e10b to NSM A e0b on shelf 1.
@@ -521,13 +521,12 @@ See your laptop's online help for more information.
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect your laptop to the Management switch"]
 
 +
-image::../media/dwr_laptop_to_switch_only.svg[width=500px]
+image::../media/dwr_laptop_to_switch_only.svg[Laptop to switch connection]
 +
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.svg[width=500px]
-
+image::../media/drw_autodiscovery_controler_select.svg[Autodiscovery]
  .. Open File Explorer.
  .. Click network in the left pane.
  .. Right click and select refresh.
