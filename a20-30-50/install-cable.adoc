@@ -12,11 +12,12 @@ summary: Management network ports on the controllers are connected to switches. 
 After you install your AFF A20, AFF A30, or AFF A50 storage system hardware, cable the controllers to the network and shelves.
 
 .About this task
-The cabling graphics have arrow icons showing the proper orientation of the cable connector pull-tab when inserting a connector into a port.
-
+* The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
++
+As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
++
 image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab orientation example]
 
-* As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 * If cabling to an optical switch, insert the small form-factor pluggable (SFP) transceiver into the controller port before the switch port.
 
 
@@ -35,7 +36,7 @@ These procedures show common configurations. Keep in mind that the specific cabl
 
 .Option 1: Cable the controllers to a switchless ONTAP cluster
 --
-Cable the controllers to each other to create the ONTAP cluster connections, and then cable the Ethernet ports on each controller to your host network.
+Cable the controllers to each other to create the ONTAP cluster connections, and then cable the host network connections.
 
 .Steps
 
@@ -43,32 +44,32 @@ Cable the controllers to each other to create the ONTAP cluster connections, and
 +
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
 +
+.. Cable controller A port e4a to controller B port e4a.
+.. Cable controller A port e4b to controller B port e4b.
++
 *Cluster/HA interconnect cables*
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
-
 +
 image::../media/drw_isi_g_switchless_2p_100gbe_cabling_ieops-1925.svg[Two-node switchless cluster cabling diagram]
 
-+
-.. Cable controller A port e3a to controller B port e3a.
-.. Cable controller A port e3b to controller B port e3b.
-
-+
 . Cable the host network connections. 
 +
-The following graphics show examples of optional host network cabling. If needed, see  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
+The following substeps are examples of optional host network cabling. If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
 
-.. Option 1: Cable the 10/25 GbE host network switches.(or, Cable to a 25GbE host network.) Cable ports e2a, e2b, e2c and e2d on each controller to the Ethernet host network switches.
+.. Optional: Cable to 10/25GbE host network switches.
++
+Cable ports e2a, e2b, e2c and e2d on each controller to the Ethernet host network switches.
 +
 *10/25 GbE cables*
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[10/25 Gb cable,width=100px]
 +
 image::../media/drw_isi_g_4p_25gbe_optional_cabling_ieops-1923.svg[Cable to 10/25gbe ethernet host network switches]
-
 +
-.. Option 2: Cable the FC host network switches.Cable ports e1a, e1b, e1c and e1d on each controller to the FC host network switches.
+.. Optional: Cable to FC host network switches.
++
+Cable ports e1a, e1b, e1c and e1d on each controller to the FC host network switches.
 +
 *64 Gb FC cables*
 +

@@ -75,7 +75,7 @@ If the I/O module is a storage module, cable it to the NS224 shelf.
 
 . Reboot the controller from the LOADER prompt: _bye_
 +
-This reinitializes the I/O modules, other components, and reboots the node.
+This reinitializes the PCIe devices, other components, and reboots the node.
 +
 . Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
 . Repeat these steps for controller B.
