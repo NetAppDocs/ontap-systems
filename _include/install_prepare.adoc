@@ -6,7 +6,7 @@ To install your storage system, ensure that the site and the cabinet or rack tha
 . Use https://hwu.netapp.com[NetApp Hardware Universe^] to confirm that your site meets the environmental and electrical requirements for your storage system.
 
 . Make sure you have adequate rack space:
-** 4U in an HA configuration for the platform 
+** 4U in an HA configuration for the storage system 
 ** 2U for each NS224 storage shelf
 
 +
@@ -43,7 +43,7 @@ Ensure that everything in the boxes matches the list on the packing slip. If the
 |*Cables* |
 a|* Bezel
 * Cable management device 
-* Platform
+* Storage system
 * Rail kits with instructions (optional)
 * Storage shelf 
 a|* Management Ethernet cables (RJ-45 cables)

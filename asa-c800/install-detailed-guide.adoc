@@ -21,6 +21,8 @@ You need to have access to the link:https://hwu.netapp.com[NetApp Hardware Unive
 You need to provide the following at your site:
 
 * Rack space for the storage system
+** 4U in an HA configuration for the platform 
+** 2U for each NS224 storage shelf
 * Phillips #2 screwdriver
 * Additional networking cables to connect your system to your network switch and laptop or console with a Web browser
 
