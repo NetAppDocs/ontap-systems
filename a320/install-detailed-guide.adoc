@@ -181,7 +181,7 @@ image::../media/drw_a320_tnsc_network_cabling_composite_animated_gif.png[Two-nod
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_lg.png[Step 1]
+image:../media/square_icon_1_green.png[Step 1]
 a|
 Cable the cluster/HA ports to each other with the 100 GbE (QSFP28) cable:
 
@@ -190,7 +190,7 @@ Cable the cluster/HA ports to each other with the 100 GbE (QSFP28) cable:
 image:../media/drw_a320_tnsc_cluster_ha_connection_step1a.png[Two-node switchless cluster connect the cluster-HA connections]
 
 a|
-image:../media/oie_legend_icon_2_o.png[Step 2]
+image:../media/square_icon_2_yellow.png[Step 2]
 a|
 If you are using your onboard ports for a data network connection, connect the 100GbE or 40Gbe cables to the appropriate data network switches:
 
@@ -198,13 +198,13 @@ If you are using your onboard ports for a data network connection, connect the 1
 image:../media/drw_a320_onboard_data_connection_step2.png[Connect onboard data network connections]
 
 a|
-image:../media/oie_legend_icon_3_dr.png[Step 3]
+image:../media/square_icon_3_orange.png[Step 3]
 a|
 If you are using your NIC cards for Ethernet or FC connections, connect the NIC card(s) to the appropriate switches:
 
 image::../media/drw_a320_nic_connections_step3.png[Two-node switchless cluster connect the NICs]
 a|
-image:../media/oie_legend_icon_4_lp.png[Step 4]
+image:../media/square_icon_4_red.png[Step 4]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables.
 
@@ -238,7 +238,7 @@ image::../media/drw_a320_switched_network_cabling_composite_animated_GIF.png[Swi
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_lg.png[Step 1]
+image:../media/square_icon_1_green.png[Step 1]
 a|
 Cable the cluster/HA ports to the cluster/HA switch with the 100 GbE (QSFP28) cable:
 
@@ -247,7 +247,7 @@ Cable the cluster/HA ports to the cluster/HA switch with the 100 GbE (QSFP28) ca
 image:../media/drw_a320_switched_cluster_ha_connection_step1b.png[Switched cluster cluster-HA connections]
 
 a|
-image:../media/oie_legend_icon_2_o.png[Step 2]
+image:../media/square_icon_2_yellow.png[Step 2]
 a|
 If you are using your onboard ports for a data network connection, connect the 100GbE or 40Gbe cables to the appropriate data network switches:
 
@@ -255,13 +255,13 @@ If you are using your onboard ports for a data network connection, connect the 1
 image:../media/drw_a320_onboard_data_connection_step2.png[Switched cluster onboard network connections]
 
 a|
-image:../media/oie_legend_icon_3_dr.png[Step 3]
+image:../media/square_icon_3_orange.png[Step 3]
 a|
 If you are using your NIC cards for Ethernet or FC connections, connect the NIC card(s) to the appropriate switches:
 
 image::../media/drw_a320_nic_connections_step3.png[Switched cluster network connections]
 a|
-image:../media/oie_legend_icon_4_lp.png[Step 4]
+image:../media/square_icon_4_red.png[Step 4]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables.
 
@@ -301,7 +301,7 @@ image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelf    image:../media/drw_a320_storage_cabling_controller_a_single_shelf.png[Cable controller A to the shelf]
 a|
-image:../media/oie_legend_icon_2_lo.png[Callout number 2]
+image:../media/square_icon_2_yellow.png[Callout number 2]
 a|
 Cable controller B to the shelf:    image:../media/drw_a320_storage_cabling_controller_b_single_shelf.png[Connect controller B to a single shelf]
 |===
@@ -331,7 +331,7 @@ image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelves:    image:../media/drw_a320_2_shelves_cabling_controller_a.png[Cable two shelves to Controller A]
 a|
-image:../media/oie_legend_icon_2_lo.png[Callout number 2]
+image:../media/square_icon_2_yellow.png[Callout number 2]
 a|
 Cable controller B to the shelves:    image:../media/drw_a320_2_shelves_cabling_controller_b.png[Cable teo shelces to Controller b]
 |===

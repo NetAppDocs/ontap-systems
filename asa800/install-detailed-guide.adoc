@@ -181,7 +181,7 @@ Cable the HA interconnect ports:
 image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 
 a|
-image:../media/oie_legend_icon_2_lg.png[Callout number 2]
+image:../media/square_icon_2_yellow.png[Callout number 2]
 a|
 Cable the cluster interconnect ports:
 
@@ -189,7 +189,7 @@ Cable the cluster interconnect ports:
 ** e1a to e1a
 image:../media/drw_affa800_tnsc_clust_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 a|
-image:../media/oie_legend_icon_3_lp.png[Step 3]
+image:../media/square_icon_3_orange.png[Step 3]
 a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[Illustration showing location of the management ports on the back of the system]
 a|
@@ -239,14 +239,14 @@ Cable the HA interconnect ports:
 ** e1b to e1b
 image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 a|
-image:../media/oie_legend_icon_2_lg.png[Callout number 2]
+image:../media/square_icon_2_yellow.png[Callout number 2]
 a|
 Cable the cluster interconnect ports to the 100 GbE cluster interconnect switches.
 ** e0a
 ** e1a
 image:../media/drw_affa800_switched_clust_cabling.png[Cluster interconnect cabling]
 a|
-image:../media/oie_legend_icon_3_lp.png[Step 3]
+image:../media/square_icon_3_orange.png[Step 3]
 a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[Illustration showing location of the management ports on the back of the system]
 
@@ -365,7 +365,7 @@ image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelf:    image:../media/drw_affa800_1shelf_cabling_a.png[Cabling controllers to a single shelf]
 a|
-image:../media/oie_legend_icon_2_lo.png[Callout number 2]
+image:../media/square_icon_2_yellow.png[Callout number 2]
 a|
 Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.png[Cabling controller B to a single shelf]
 |===
@@ -395,7 +395,7 @@ image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelves:    image:../media/drw_affa800_2shelf_cabling_a.png[Cabling controller A to two shelves]
 a|
-image:../media/oie_legend_icon_2_lo.png[Callout number 2]
+image:../media/square_icon_2_yellow.png[Callout number 2]
 a|
 Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_b.png[Cabling controller B to two shelves]
 |===

@@ -150,7 +150,7 @@ video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Animation - Cable a 
 |===
 | Step| Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lg.png[Step 1]
+image:../media/square_icon_1_green.png[Step 1]
 a|
 Cable the cluster interconnect ports to each other with the 25GbE cluster interconnect cable
 
@@ -161,7 +161,7 @@ image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]:
 image:../media/drw_affa250_tnsc_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 
 a|
-image:../media/oie_legend_icon_2_dr.png[Callout number 2]
+image:../media/square_icon_2_yellow.png[Callout number 2]
 a|
 Cable the wrench ports to the management network switches with the RJ45 cables.
 
@@ -195,7 +195,7 @@ video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto, title="Animation - Cable a 
 |===
 | Step| Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lg.png[Step 1]
+image:../media/square_icon_1_green.png[Step 1]
 a|
 Cable the cluster interconnect ports to the 25 GbE cluster interconnect switches.
 
@@ -204,7 +204,7 @@ Cable the cluster interconnect ports to the 25 GbE cluster interconnect switches
  image:../media/drw_affa250_switched_clust_cabling.png[Cluster interconnect cabling]
 
 a|
-image:../media/oie_legend_icon_2_dr.png[Callout number 2]
+image:../media/square_icon_2_yellow.png[Callout number 2]
 a|
 Cable the wrench ports to the management network switches with the RJ45 cables.
 
@@ -320,7 +320,7 @@ image:../media/oie_legend_icon_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelf:    image:../media/drw_affa250_1shelf_cabling_a.png[Controller A cabling]
 a|
-image:../media/oie_legend_icon_2_lo.png[Callout number 2]
+image:../media/square_icon_2_yellow.png[Callout number 2]
 a|
 Cable controller B to the shelf:    image:../media/drw_affa250_1shelf_cabling_b.png[Controller B cabling]
 

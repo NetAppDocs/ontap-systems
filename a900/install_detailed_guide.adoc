@@ -196,7 +196,7 @@ image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[Two-node switchless 
 |===
 |Step|Perform on each controller
 a|
-image::../media/oie_legend_icon_1_lg.png[Callout icon one]
+image::../media/square_icon_1_green.png[Callout icon one]
 a|
 Cable cluster interconnect ports:
 
@@ -205,14 +205,14 @@ Cable cluster interconnect ports:
 
 image::../media/oie_cable100_gbe_qsfp28.svg[100 Gb connector]
 a|
-image::../media/oie_legend_icon_2_lp.png[Callout icon two]
+image::../media/square_icon_2_yellow.png[Callout icon two]
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.svg[RJ-45 cable connector]
 
 a|
-image::../media/oie_legend_icon_3_o.png[Callout icon three]
+image::../media/square_icon_3_orange.png[Callout icon three]
 a|
 Cable 25 GbE network switches:
 
@@ -230,7 +230,7 @@ the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.svg[100 GBe cable connector]
 a|
-image:../media/oie_legend_icon_4_dr.png[Callout icon four]
+image:../media/square_icon_4_red.png[Callout icon four]
 a|
 Cable 32 Gb FC connections:xxx
 
@@ -241,7 +241,7 @@ Cable ports in slot A5 and B5 (5a,
 
 image:../media/oie_cable_sfp_gbe_copper.svg[Gbe copper SFP]
 a|
-image::../media/oie_legend_icon_5_lp.png[Callout icon five]
+image::../media/square_icon_4_red.png[Callout icon five]
 a|
 * Strap the cables to the cable management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
@@ -284,7 +284,7 @@ image:../media/drw_a900_switched_network_cabling_IEOPS-934.svg[Switched network 
 
 |Step|Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lg.png[Callout icon one]
+image:../media/square_icon_1_green.png[Callout icon one]
 a|
 Cable cluster
 interconnect a ports:
@@ -295,13 +295,13 @@ cluster network switch.
 
 image:../media/oie_cable100_gbe_qsfp28.svg[100 Gbe cable]
 a|
-image:../media/oie_legend_icon_2_lo.png[Callout icon two]
+image:../media/square_icon_2_yellow.png[Callout icon two]
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.svg[RJ45 cables]
 a|
-image::../media/oie_legend_icon_3_o.png[Callout icon three]
+image::../media/square_icon_3_orange.png[Callout icon three]
 a|
 Cable 25GbE network switches:
 
@@ -319,7 +319,7 @@ the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.svg[100 Gbe cable]
 a|
-image::../media/oie_legend_icon_4_dr.png[Callout icon four]
+image::../media/square_icon_4_red.png[Callout icon four]
 a|
 Cable 32 Gb FC connections:
 
@@ -330,7 +330,7 @@ Cable ports in slot A5 and B5 (5a,
 
 image::../media/oie_cable_sfp_gbe_copper.svg[Gbe copper SFP]
 a|
-image::../media/oie_legend_icon_5_lp.png[Callout icon five]
+image::../media/square_icon_4_red.png[Callout icon five]
 a|
 * Strap the cables to the cable management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
@@ -387,7 +387,7 @@ image::../media/oie_cable100_gbe_qsfp28.svg[100 Gbe QSFP connector]
 
 100 GbE cable
 a|
-image::../media/oie_legend_icon_2_lo.png[Callout number two]
+image::../media/square_icon_2_yellow.png[Callout number two]
 a|
 ** Connect controller B port e2a to port e0a on NSM B on the shelf.
 ** Connect controller B port e10b to port e0b on NSM A on the shelf.
@@ -441,7 +441,7 @@ image::../media/oie_cable100_gbe_qsfp28.svg[Gbe copper SFP]
 
 100 GbE cable
 a|
-image::../media/oie_legend_icon_2_lo.png[Callout icon two]
+image::../media/square_icon_2_yellow.png[Callout icon two]
 a|
 ** Connect controller B port e2a to NSM B e0a on shelf 1.
 ** Connect controller B port e10b to NSM A e0b on shelf 1.

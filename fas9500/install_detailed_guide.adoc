@@ -202,7 +202,7 @@ image::../media/drw_9500_tnsc_network_cabling.svg[align="center",width=500px]
 |===
 | Step| Perform on each controller
 a|
-image::../media/oie_legend_icon_1_lg.svg
+image::../media/square_icon_1_green.png
 a|
 Cable cluster interconnect ports:
 
@@ -211,14 +211,14 @@ Cable cluster interconnect ports:
 
 image::../media/oie_cable100_gbe_qsfp28.svg
 a|
-image::../media/oie_legend_icon_2_lp.svg
+image::../media/square_icon_2_yellow.png
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.svg
 
 a|
-image::../media/oie_legend_icon_3_o.svg
+image::../media/square_icon_3_orange.png
 a|
 Cable 32 Gb FC network switches:
 
@@ -237,7 +237,7 @@ the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.svg
 a|
-image::../media/oie_legend_icon_4_dr.svg
+image::../media/square_icon_4_red.png
 a|
 Cable 25 GbE connections:
 
@@ -290,7 +290,7 @@ image::../media/drw_9500_switched_network_cabling.svg[align="center",width=500px
 
 | Step|Perform on each controller
 a|
-image::../media/oie_legend_icon_1_lg.svg
+image::../media/square_icon_1_green.png
 a|
 Cable cluster
 interconnect a ports:
@@ -301,13 +301,13 @@ cluster network switch.
 
 image::../media/oie_cable100_gbe_qsfp28.svg
 a|
-image::../media/oie_legend_icon_2_lp.svg
+image::../media/square_icon_2_yellow.png
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.svg
 a|
-image::../media/oie_legend_icon_3_o.svg
+image::../media/square_icon_3_orange.png
 a|
 Cable 32 Gb FC network switches:
 
@@ -326,7 +326,7 @@ the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.svg
 a|
-image::../media/oie_legend_icon_4_dr.svg
+image::../media/square_icon_4_red.png
 a|
 Cable 25 GbE connections:
 
@@ -389,7 +389,7 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[width=85px]
 
 mini-SAS cable
 a|
-image::../media/oie_legend_icon_2_t.svg[width=30px]
+image::../media/square_icon_2_yellow.png[width=30px]
 a|
 Connect drive shelf stack two to the controllers, using the graphic for reference.
 
