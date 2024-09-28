@@ -1,14 +1,14 @@
 == Step 1: Power on the shelf and assign shelf ID
-NS224 shelf IDs are preset to unique IDs within an HA pair; however, you can change the shelf IDs if needed.
+NS224 shelf IDs are preset to unique IDs within a storage system; however, you can change the shelf IDs if needed.
 
 .About this task
 * A valid shelf ID is 00 through 99.
 
-* Platforms with an internal shelf have the shelf ID hard-coded to "00".
+* Storage systems with an internal shelf have the shelf ID hard-coded to "00".
 +
 NOTE: Do not use shelf ID "00" for any external NS224 shelves.
 
-* Shelf IDs within an HA pair must be unique, meaning you should not duplicate shelf IDs.
+* Shelf IDs within a storage system must be unique, meaning you should not duplicate shelf IDs.
 
 * After changing a shelf ID, you must power cycle the shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
 
