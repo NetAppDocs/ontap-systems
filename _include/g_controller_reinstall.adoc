@@ -1,7 +1,7 @@
 // Install the controller module - AFF A20, A30, and AFF A50
 
 
-After you replace the faulty FRU component, reinstall the controller into the chassis and reboot it.
+Reinstall the controller into the chassis and reboot it.
 
 . Close the controller cover and turn the thumbscrew clockwise until tightened.
 
@@ -46,11 +46,11 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 +
 .. Rotate the controller handles upward to the closed position and lock in place with the tabs.
 
-. Reconnect the power cable to the power supply on the impaired controller.
-
-* If you have AC power supplies, reconnect the power cable to the power supply.
-
-* If you have DC power supplies, reconnect the power block to the power supply.
+. Reconnect the power cord to the power supply on the impaired controller.
++
+If you have AC power supplies, reconnect the power cable to the power supply.
++
+If you have DC power supplies, reconnect the power block to the power supply.
 +
 [NOTE]
 ====

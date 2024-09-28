@@ -4,9 +4,9 @@ To replace the NV battery, you must remove the controller, remove the faulty bat
 All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
-If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 
-A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
@@ -66,7 +66,7 @@ b. Pull the connector up and out of the socket.
 |===
 
 . Install the replacement battery:
-..  Remove the replacement battery from its package.
+.. Remove the replacement battery from its package.
 .. Plug the wiring connector into its socket.
 +
 You might need to slightly rock the connector lengthwise until it is fully seated.

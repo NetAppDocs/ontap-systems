@@ -10,9 +10,9 @@ You can add I/O modules to your storage system by either adding them to availabl
 
 .About this task
 * When adding I/O modules, you add the same module type in each controller. This procedure has you add them one at a time by repeating steps.
-* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
-A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
@@ -63,7 +63,7 @@ Pull the I/O blanking module out of the controller using the tab on the left and
 
 |===
 
-. Install the I/O module:
+. Install the new I/O module:
  .. Align the I/O module with the edges of the controller slot opening.
  .. Gently slide the I/O module all the way into the into the slot.
  .. Turn the thumbscrew clockwise to tighten.
@@ -155,7 +155,7 @@ Pull the I/O module out of the controller using the port label tab on the left a
 |===
 
 +
-. Install the I/O module into the target slot:
+. Install the new I/O module into the target slot:
 .. Align the I/O module with the edges of the slot.
 .. Gently slide the module into the slot all the way into the controller.
 .. Turn the thumbscrew clockwise to tighten.
@@ -169,7 +169,7 @@ Pull the I/O module out of the controller using the port label tab on the left a
 .. Update the BMC firmware if needed: _system service-processor image update_
 .. Reboot the controller: _bye_
 +
-This reinitializes the I/O modules, other components, and reboots the node.
+This reinitializes the PCIe devices, other components, and reboots the node.
 +
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement]
 

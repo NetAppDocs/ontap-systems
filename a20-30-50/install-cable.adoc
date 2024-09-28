@@ -93,7 +93,7 @@ IMPORTANT: Do not plug in the power cords yet.
 --
 .Option 2: Cable the controllers to a switched ONTAP cluster
 --
-Cable the controllers to the cluster network switches to create the ONTAP cluster connections, and then cable the controllers to your host network.
+Cable the controllers to the cluster network switches to create the ONTAP cluster connections, and then cable the host network connections.
 
 .Steps
 
@@ -158,24 +158,24 @@ This procedure shows how to cable the controllers to one NS224 shelf.
 For the maximum number of shelves supported for your storage system, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 .About this task
-* You cable each controller to each NSM module on the NS224 shelf.
-* The graphics show controller A cabling in blue and controller B cabling in yellow.
+* You cable each controller to each NSM module on the NS224 shelf using the following cable type:
++
+*100 GbE QSFP28 copper cables*
++
+image::../media/oie_cable100_gbe_qsfp28.svg[100 GbE QSFP28 copper cable,width=100px]
+* The graphics show controller A cabling in blue and controller B cabling in yellow. 
 
 .Steps
 
-*100 GbE QSFP28 copper cables*
-
-image::../media/oie_cable100_gbe_qsfp28.svg[100 GbE QSFP28 copper cable,width=100px]
-
 . Cable controller A to the shelf:
-.. Cable controller A port e3a to NSM A port e0a.
-.. Cable controller A port e3b to NSM B port e0b.
+.. Cable controller A port e3a to NSM A port e1a.
+.. Cable controller A port e3b to NSM B port e1b.
 +
 image:../media/drw_isi_g_1_ns224_controller_a_cabling_ieops-1945.svg[Controller A ports e3a and e3b cabled to one NS224 shelf]
 
 . Cable controller B to the shelf:
-.. Cable controller B port e3a to NSM B port e0a.
-.. Cable controller B port e3b to NSM A port e0b.
+.. Cable controller B port e3a to NSM B port e1a.
+.. Cable controller B port e3b to NSM A port e1b.
 +
 image:../media/drw_isi_g_1_ns224_controller_b_cabling_ieops-1946.svg[Controller B ports e3a and e3b cabled to one NS224 shelf]
 

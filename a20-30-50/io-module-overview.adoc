@@ -14,7 +14,7 @@ include::../_include/g_io_module_overview.adoc[]
 
 * link:io-module-add.html[Add an I/O module]
 +
-Adding additional modules can improve redundancy, helping to ensure that the storage system remains operational even if one module fails.
+Adding additional I/O modules can improve redundancy, helping to ensure that the storage system remains operational even if one I/O module fails.
 
 * link:io-module-replace.html[Replace an I/O module]
 +

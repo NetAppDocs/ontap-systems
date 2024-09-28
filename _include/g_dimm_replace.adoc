@@ -7,9 +7,9 @@ You must replace a DIMM in the controller when your storage system registers an 
 * You must replace the failed FRU component with a replacement FRU component you received from your provider.
 
 .About this task
-If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 
-A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
@@ -46,12 +46,6 @@ To replace a DIMM, locate the faulty DIMM inside the controller and follow the s
 NOTE: Consult either the https://hwu.netapp.com[Netapp Hardware Universe] or the FRU map on the cover of the controller for exact DIMM locations. 
 +
 . Remove the faulty DIMM:
-.. Note the orientation of the DIMM in the slot so that you can insert the replacement DIMM using the same orientation.
-.. Eject the faulty DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on both ends of the DIMM slot, and then lift the DIMM out of the slot.
-+
-IMPORTANT: Carefully hold the DIMM by the corners or edges to avoid pressure on the DIMM circuit board components.
-+
-The ejector tabs remain in the open position.
 +
 image::../media/drw_g_dimm_ieops-1873.svg[DIMM replace]
 
@@ -65,11 +59,14 @@ DIMM slot numbering and positions.
 a|
 image::../media/legend_icon_02.svg[Callout number 2,width=30px]
 a|
-Push apart the DIMM ejector tabs to eject the DIMM.
+Eject the faulty DIMM by slowly pushing apart the two DIMM ejector tabs on both ends of the DIMM slot.
+
+IMPORTANT: Carefully hold the DIMM by the corners or edges to avoid pressure on the DIMM circuit board components.
 a|
 image::../media/legend_icon_03.svg[Callout number 3,width=30px]
 a|
-Lift up DIMM to remove.
+Lift the DIMM up and out of the slot.
+The ejector tabs remain in the open position.
 |===
 
 . Install the replacement DIMM:

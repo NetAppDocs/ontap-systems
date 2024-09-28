@@ -2,7 +2,7 @@ You must review the requirements and considerations for the controller replaceme
 
 == Requirements
 
-* All drive shelves must be working properly.
+* All shelves must be working properly.
 * The healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
 // * If your system is in a MetroCluster configuration, you must review the section https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html[Choosing the correct recovery procedure] to determine whether you should use this procedure.
 * You must replace the failed component with a replacement FRU component you received from your provider.
@@ -17,9 +17,9 @@ You must review the requirements and considerations for the controller replaceme
 This provides you a record of the procedure so that you can troubleshoot any issues that you might encounter during the replacement process.
 
 == Considerations
-* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
-A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 

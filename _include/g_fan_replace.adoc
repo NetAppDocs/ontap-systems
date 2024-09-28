@@ -1,9 +1,9 @@
 To replace a fan, you must remove the controller, remove the faulty fan, install the replacement fan, and then reinstall the controller.
 
 .About this task
-If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 
-A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
@@ -37,7 +37,7 @@ To replace a fan, remove the failed fan and replace it with a new fan.
 
 . Identify the fan that you must replace by checking the console error messages.
 
-. Remove the failed fan by firmly grasping the sides at the blue touch points, and then lift it vertically to disconnect it from its socket.
+. Remove the failed fan:
 +
 image::../media/drw_g_fan_replace_ieops-1903.svg[Fan replace]
 

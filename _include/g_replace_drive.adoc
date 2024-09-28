@@ -2,7 +2,7 @@ You can replace a failed drive SSD drive nondisruptively while I/O is in progres
 
 .Before you begin
 
-* The drive that you are installing must be supported by your platform.
+* The drive that you are installing must be supported by your storage system.
 +
 https://hwu.netapp.com[NetApp Hardware Universe^]
 
@@ -46,9 +46,9 @@ Do not revert firmware to a version that does not support your shelf and its com
 +
 NOTE: Drive firmware checks occur every two minutes.
 
-* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
-A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
@@ -56,19 +56,17 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 . If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment if it is enabled.
 +
-NOTE: You need to manually assign drive ownership if drives in the shelf are owned by both controller modules in the HA pair.
-+
 NOTE: You manually assign drive ownership and then reenable automatic drive assignment later in this procedure.
 
- .. Verify whether automatic drive assignment is enabled: `storage disk option show`
+.. Verify whether automatic drive assignment is enabled: `storage disk option show`
 +
-You can enter the command on either controller module.
+You can enter the command on either controller.
 +
-If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column (for each controller module).
+If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column (for each controller).
 
 .. If automatic drive assignment is enabled, disable it: `storage disk option modify -node node_name -autoassign off`
 +
-You must disable automatic drive assignment on both controller modules.
+You must disable automatic drive assignment on both controllers.
 
 . Properly ground yourself.
 . Physically identify the failed drive.

@@ -4,10 +4,10 @@ You replace the real-time clock (RTC) battery in the controller so that your sto
 All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
-* You can use this procedure with all versions of ONTAP supported by your system.
-* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
+* You can use this procedure with all versions of ONTAP supported by your storage system.
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
-A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
@@ -84,7 +84,7 @@ These messages are excpected and you can continue with this procedure.
 +
 NOTE: If your storage system stops at the boot menu, select the option for  `Reboot node` and respond _y_ when prompted, then boot to LOADER by pressing _Ctrl-C_.
 +
-. On the target controller, at the LOADER prompt, check the time and date with the `cluster date show` command.
+. On the impaired controller, at the LOADER prompt, check the time and date with the `cluster date show` command.
 
 .. If necessary, modify the date with the `set date _mm/dd/yyyy_` command.
 
