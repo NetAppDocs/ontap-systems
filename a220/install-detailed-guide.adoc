@@ -198,13 +198,13 @@ An FC host
 
 NOTE: You can connect one port pair as CNA and one port pair as FC, or you can connect both port pairs as CNA or both port pairs as FC.
 
-image:../media/drw_c190_u_fc_10gbe_cabling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cabling.png[Data port connections]
 a|
 image:../media/icon_square_3_purple.png[Step 3]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
-image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
+image:../media/drw_c190_u_mgmt_cabling.png[Management port cabling]
 a|
 image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
@@ -257,13 +257,13 @@ A 10GbE
 
 NOTE: You can connect one port pair as CNA and one port pair as FC, or you can connect both port pairs as CNA or both port pairs as FC.
 
-image:../media/drw_c190_u_fc_10gbe_cabling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cabling.png[Data port connections]
 a|
 image:../media/icon_square_3_purple.png[Step 3]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
-image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
+image:../media/drw_c190_u_mgmt_cabling.png[Management port cabling]
 a|
 image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
@@ -299,7 +299,7 @@ Cable the cluster interconnect ports to each other with the cluster interconnect
 
  ** e0a to e0a
  ** e0b to e0b
-image:../media/drw_c190_e_tnsc_clust_cbling.png[Illustration showing the cluster interconnections between the ports on the back of the controllers]
+image:../media/drw_c190_e_tnsc_clust_cbling.png[Cluster interconnections between the ports on the back of the controllers]
 a|
 image:../media/icon_square_2_yellow.png[Step 2]
 a|
@@ -347,13 +347,13 @@ Cable e0a and e0b to the cluster interconnect switches with the cluster intercon
 
 image:../media/drw_c190_e_switched_clust_cbling.png[Cluster interconnect cabling]
 a|
-image:../media/icon_square_2_yellow.png[Step 2]
+image:../media/icon_square_2_orange.png[Step 2]
 a|
 Use the Cat 6 RJ45 cable to cable the e0c through e0f ports to your host network:
 
 image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 a|
-image:../media/icon_square_3_orange.png[Step 3]
+image:../media/icon_square_3_purple.png[Step 3]
 a|
 Cable the e0M ports to the management network switches with the RJ45 cables:
 
@@ -409,7 +409,7 @@ Connect each node to IOM A in the stack.
 image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]     mini-SAS HD to mini-SAS HD cables
 
 a|
-image:../media/icon_square_3_orange.png[Step 3]
+image:../media/icon_square_3_teal.png[Step 3]
 a|
 Connect each node to IOM B in the stack
 

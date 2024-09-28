@@ -199,7 +199,7 @@ Use one of the following cable types to cable the UTA2 data ports to your host n
 * For an FC host, use 0c and 0d *or* 0e and 0f.
 * For an 10GbE system, use e0c and e0d *or* e0e and e0f. 
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cbling.png[Data port connections]
 +
 You can connect one port pair as CNA and one port pair as FC, or you can connect both port pairs as CNA or both port pairs as FC.
 
@@ -257,7 +257,7 @@ Use one of the following cable types to cable the UTA2 data ports to your host n
 * For an FC host, use 0c and 0d **or** 0e and 0f.
 * For an 10GbE system, use e0c and e0d **or** e0e and e0f.
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cbling.png[Data port connections]
 +
 You can connect one port pair as CNA and one port pair as FC, or you can connect both port pairs as CNA or both port pairs as FC.
 Ethernet network configurations::

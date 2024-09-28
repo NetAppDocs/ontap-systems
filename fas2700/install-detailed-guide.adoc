@@ -198,7 +198,7 @@ An FC host
 
 NOTE: You can connect one port pair as CNA and one port pair as FC, or you can connect both port pairs as CNA or both port pairs as FC.
 
-image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cbling.png[Data port connections]
 a|
 image:../media/icon_square_3_orange.png[Step 3]
 a|
@@ -257,7 +257,7 @@ A 10GbE
 
 NOTE: You can connect one port pair as CNA and one port pair as FC, or you can connect both port pairs as CNA or both port pairs as FC.
 
-image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cbling.png[Data port connections]
 a|
 image:../media/icon_square_3_orange.png[Step 3]
 a|
@@ -299,7 +299,7 @@ Cable the cluster interconnect ports to each other with the cluster interconnect
 
  ** e0a to e0a
  ** e0b to e0b
-image:../media/drw_c190_e_tnsc_clust_cbling.png[Illustration showing the cluster interconnections between the ports on the back of the controllers]
+image:../media/drw_c190_e_tnsc_clust_cbling.png[Cluster interconnections between the ports on the back of the controllers]
 a|
 image:../media/icon_square_2_yellow.png[Step 2]
 a|
