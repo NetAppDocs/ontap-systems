@@ -4,7 +4,7 @@ NS224 shelf IDs are preset to unique IDs within a storage system; however, you c
 .About this task
 * A valid shelf ID is 00 through 99.
 
-* Storage systems with an internal shelf have the shelf ID hard-coded to "00".
+* Storage systems with an internal shelf have the shelf ID hard coded to "00".
 +
 NOTE: Do not use shelf ID "00" for any external NS224 shelves.
 
