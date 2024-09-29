@@ -17,7 +17,7 @@ You must review the requirements and considerations for the controller replaceme
 This provides you a record of the procedure so that you can troubleshoot any issues that you might encounter during the replacement process.
 
 == Considerations
-* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
 A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
