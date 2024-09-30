@@ -77,7 +77,7 @@ image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[NS224 NSM100 module LEDs, widt
 |===
 | Call out| LED icon| Color| Description
 a|
-image:../media/legend_icon_01.png[Callout number 1] 
+image:../media/icon_round_01.png[Callout number 1] 
 a|
 image::../media/drw_sas3_location_icon.svg[Operator display panel location LED, width=20px]
 a|
@@ -85,7 +85,7 @@ Blue
 a|
 NSM module: Location
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_02.png[Callout number 2]
 a|
 image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
 a|
@@ -93,7 +93,7 @@ Amber
 a|
 NSM module: Attention
 a|
-image:../media/legend_icon_03.png[Callout number 3] 
+image:../media/icon_round_03.png[Callout number 3] 
 a|
 LNK
 a|
@@ -101,7 +101,7 @@ Green
 a|
 NVMe port/link: status
 a|
-image:../media/legend_icon_04.png[Callout number 4] 
+image:../media/icon_round_04.png[Callout number 4] 
 a|
 image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
 a|
@@ -183,7 +183,7 @@ image::../media/drw_ns224_psu_leds_IEOPS-1261.svg[Power supply power activity LE
 |===
 | Call out| Description
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_01.png[Callout number 1]
 a|
 The bi-color LED indicates power/activity when green and a fault when amber.
 |===
@@ -248,13 +248,13 @@ image::../media/drw_ns224_drive_leds_IEOPS-1263.svg[NVMe drive attention and pow
 |===
 | Call out| LED name| Color
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_01.png[Callout number 1]
 a|
 Attention
 a|
 Amber
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_02.png[Callout number 2]
 a|
 Power/activity
 a|

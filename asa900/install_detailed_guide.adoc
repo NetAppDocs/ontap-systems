@@ -304,7 +304,7 @@ Cable controller management (wrench) ports.
 
 image:../media/oie_cable_rj45.png[RJ-45 cables]
 a|
-image:../media/icon_square_3_orange.png[Callout icon three]
+image:../media/icon_square_3_orange.png[Callout icon 3]
 a|
 Cable 25GbE network switches:
 
@@ -323,7 +323,7 @@ the host switch.
 
 image:../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 a|
-image:../media/icon_square_4_red.png[Callout icon four]
+image:../media/icon_square_4_red.png[Callout icon 4]
 a|
 Cable 32 Gb FC connections:
 
@@ -385,7 +385,7 @@ image:../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[width=500px]
 |===
 |Step|Perform on each controller
 a|
-image:../media/oie_legend_icon_1_mb.svg[Callout icon 1]
+image:../media/oie_icon_round_1_mb.svg[Callout icon 1]
 a|
 ** Connect controller A port e2a to port e0a on NSM A on the shelf.
 ** Connect controller A port e10b to port e0b on NSM B on the shelf.
@@ -437,7 +437,7 @@ image:../media/drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg[width=500px]
 |Step|Perform on each controller
 a|
 
-image:../media/oie_legend_icon_1_mb.svg[Callout icon 1]
+image:../media/oie_icon_round_1_mb.svg[Callout icon 1]
 a|
 ** Connect controller A port e2a to NSM A e0a on shelf 1.
 ** Connect controller A port e10b to NSM B e0b on shelf 1.
@@ -491,19 +491,19 @@ image:../media/drw_a900_oie_change_ns224_shelf_ID_ieops-836.svg[Change shelf ID]
 [cols="20%,80%"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout icon one] 
+image:../media/icon_round_01.png[Callout icon 1] 
 a|
 Shelf end cap
 a|
-image:../media/legend_icon_02.png[Callout number 2] 
+image:../media/icon_round_02.png[Callout number 2] 
 a|
 Shelf faceplate 
 a|
-image:../media/legend_icon_03.png[Callout number 3] 
+image:../media/icon_round_03.png[Callout number 3] 
 a|
 Shelf ID LED
 a|
-image:../media/legend_icon_04.svg[width=20]
+image:../media/icon_round_04.svg[width=20]
 a|
 Shelf ID setting button
 
@@ -593,19 +593,19 @@ image:../media/drw_a900_oie_change_ns224_shelf_ID_ieops-836.svg[Change shelf ID]
 [cols="1,5"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout icon one] 
+image:../media/icon_round_01.png[Callout icon 1] 
 a|
 Shelf end cap
 a|
-image:../media/legend_icon_02.png[Callout icon two] 
+image:../media/icon_round_02.png[Callout icon 2] 
 a|
 Shelf faceplate 
 a|
-image:../media/legend_icon_03.png[Callout icon three] 
+image:../media/icon_round_03.png[Callout icon 3] 
 a|
 Shelf ID LED
 a|
-image:../media/legend_icon_04.png[Callout icon four] 
+image:../media/icon_round_04.png[Callout icon 4] 
 a|
 Shelf ID setting button
 
@@ -615,7 +615,7 @@ Shelf ID setting button
 +
 video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto, title="Animation - Turn on the power to the controllers"]
 +
-image:[Callout icon one] drw_a900_power-on_IEOPS-941.svg[width=500px]
+image:[Callout icon 1] drw_a900_power-on_IEOPS-941.svg[width=500px]
 +
 
 NOTE: Initial booting may take up to eight minutes.

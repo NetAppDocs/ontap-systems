@@ -130,7 +130,7 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 .Steps
 . Install the rail kits, as needed.
 +
-link:../com.netapp.doc.hw-rail-superrail/home.html[Installing SuperRail into a four-post rack^]
+link:/platform-supplemental/superrail-install.html[SuperRail kit installation instructions^]
 
 . Install and secure your system using the instructions included with the rail kit.
 +
@@ -177,7 +177,7 @@ video::edc42447-f721-4cbe-b080-ab0c0123a139[panopto, title="Animation - Cable a 
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_dp.png[Callout number 1]
+image:../media/oie_icon_round_1_dp.png[Callout number 1]
 a|
 Cable the HA interconnect ports:
 
@@ -198,7 +198,7 @@ image:../media/icon_square_3_orange.png[Step 3]
 a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[Illustration showing location of the management ports on the back of the system]
 a|
-image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
+image:../media/oie_icon_round_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -236,7 +236,7 @@ video::49e48140-4c5a-4395-a7d7-ab0c0123a10e[panopto, title="Animation - Cable a 
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_dp.png[Callout number 1]
+image:../media/oie_icon_round_1_dp.png[Callout number 1]
 a|
 Cable the HA interconnect ports:
 
@@ -256,7 +256,7 @@ a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[Illustration showing location of the management ports on the back of the system]
 
 a|
-image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
+image:../media/oie_icon_round_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -366,7 +366,7 @@ video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto, title="Animation - Cable th
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_mb.png[Callout number 1]
+image:../media/oie_icon_round_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelf:    image:../media/drw_affa800_1shelf_cabling_a.png[Cabling controllers to a single shelf]
 a|
@@ -396,7 +396,7 @@ video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto, title="Animation - Cable th
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_mb.png[Callout number 1]
+image:../media/oie_icon_round_1_mb.png[Callout number 1]
 a|
 Cable controller A to the shelves:    image:../media/drw_affa800_2shelf_cabling_a.png[Cabling controller A to two shelves]
 a|

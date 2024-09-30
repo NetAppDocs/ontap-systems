@@ -196,7 +196,7 @@ image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[Two-node switchless 
 |===
 |Step|Perform on each controller
 a|
-image::../media/icon_square_1_green.png[Callout icon one]
+image::../media/icon_square_1_green.png[Callout icon 1]
 a|
 Cable cluster interconnect ports:
 
@@ -205,14 +205,14 @@ Cable cluster interconnect ports:
 
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb connector]
 a|
-image::../media/icon_square_2_purple.png[Callout icon two]
+image::../media/icon_square_2_purple.png[Callout icon 2]
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.png[RJ-45 cable connector]
 
 a|
-image::../media/icon_square_3_orange.png[Callout icon three]
+image::../media/icon_square_3_orange.png[Callout icon 3]
 a|
 Cable 25 GbE network switches:
 
@@ -230,7 +230,7 @@ the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.png[100 GBe cable connector]
 a|
-image:../media/icon_square_4_red.png[Callout icon four]
+image:../media/icon_square_4_red.png[Callout icon 4]
 a|
 Cable 32 Gb FC connections:xxx
 
@@ -284,7 +284,7 @@ image:../media/drw_a900_switched_network_cabling_IEOPS-934.svg[Switched network 
 
 |Step|Perform on each controller
 a|
-image:../media/icon_square_1_green.png[Callout icon one]
+image:../media/icon_square_1_green.png[Callout icon 1]
 a|
 Cable cluster
 interconnect a ports:
@@ -295,13 +295,13 @@ cluster network switch.
 
 image:../media/oie_cable100_gbe_qsfp28.png[100 Gbe cable]
 a|
-image:../media/icon_square_2_purple.png[Callout icon two]
+image:../media/icon_square_2_purple.png[Callout icon 2]
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.png[RJ45 cables]
 a|
-image::../media/icon_square_3_orange.png[Callout icon three]
+image::../media/icon_square_3_orange.png[Callout icon 3]
 a|
 Cable 25GbE network switches:
 
@@ -319,7 +319,7 @@ the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe cable]
 a|
-image::../media/icon_square_4_red.png[Callout icon four]
+image::../media/icon_square_4_red.png[Callout icon 4]
 a|
 Cable 32 Gb FC connections:
 
@@ -378,7 +378,7 @@ image::../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[Single shelf cabl
 |===
 |Step|Perform on each controller
 a|
-image::../media/oie_legend_icon_1_mb.png[Callout number one]
+image::../media/oie_icon_round_1_mb.png[Callout number one]
 a|
 ** Connect controller A port e2a to port e0a on NSM A on the shelf.
 ** Connect controller A port e10b to port e0b on NSM B on the shelf.
@@ -430,7 +430,7 @@ image::../media/drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg[Cabling two NS224
 |Step|Perform on each controller
 a|
 
-image::../media/oie_legend_icon_1_mb.png[Callout icon one]
+image::../media/oie_icon_round_1_mb.png[Callout icon 1]
 a|
 ** Connect controller A port e2a to NSM A e0a on shelf 1.
 ** Connect controller A port e10b to NSM B e0b on shelf 1.
@@ -441,7 +441,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[Gbe copper SFP]
 
 100 GbE cable
 a|
-image::../media/icon_square_2_yellow.png[Callout icon two]
+image::../media/icon_square_2_yellow.png[Callout icon 2]
 a|
 ** Connect controller B port e2a to NSM B e0a on shelf 1.
 ** Connect controller B port e10b to NSM A e0b on shelf 1.
@@ -485,19 +485,19 @@ image::../media/drw_a900_oie_change_ns224_shelf_ID_ieops-836.svg[Changing shelf 
 [cols="20%,80%"]
 |===
 a|
-image::../media/legend_icon_01.png[Callout icon one]
+image::../media/icon_round_01.png[Callout icon 1]
 a|
 Shelf end cap
 a|
-image::../media/legend_icon_02.png[Callout icon two]
+image::../media/icon_round_02.png[Callout icon 2]
 a|
 Shelf faceplate 
 a|
-image::../media/legend_icon_03.png[Callout icon three]
+image::../media/icon_round_03.png[Callout icon 3]
 a|
 Shelf ID LED
 a|
-image::../media/legend_icon_04.png[Callout icon four]
+image::../media/icon_round_04.png[Callout icon 4]
 a|
 Shelf ID setting button
 
@@ -586,19 +586,19 @@ image::../media/drw_a900_oie_change_ns224_shelf_ID_ieops-836.svg[Change shelf ID
 [cols="20%,80%"]
 |===
 a|
-image::../media/legend_icon_01.png[Callout icon one]
+image::../media/icon_round_01.png[Callout icon 1]
 a|
 Shelf end cap
 a|
-image::../media/legend_icon_02.png[Callout icon two]
+image::../media/icon_round_02.png[Callout icon 2]
 a|
 Shelf faceplate 
 a|
-image::../media/legend_icon_03.png[Callout icon three]
+image::../media/icon_round_03.png[Callout icon 3]
 a|
 Shelf ID LED
 a|
-image::../media/legend_icon_04.png[Callout icon four]
+image::../media/icon_round_04.png[Callout icon 4]
 a|
 Shelf ID setting button
 
@@ -661,3 +661,4 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 --
 
 ====
+// 2024-09-30 ontap-systems-internal/issues/902
