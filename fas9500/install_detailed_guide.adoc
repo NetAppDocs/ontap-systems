@@ -30,7 +30,7 @@ You need to provide the following at your site:
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
-image::../media/drw_ssn_label.svg[Example of the system serial number showing location of the number]
+image::../media/drw_ssn_label.svg[Example of system serial number]
 
 . Inventory and make a note of the number and types of cables you received.
 +
@@ -51,7 +51,7 @@ X66240A-2 (112-00598), 2m
 
 X66240A-5 (112-00600), 5m
 a|
-image::../media/oie_cable_sfp_gbe_copper.svg[width=85px]
+image::../media/oie_cable_sfp_gbe_copper.svg
 a|
 Network cable
 a|
@@ -63,7 +63,7 @@ X66250-5 (112-00344), 5m
 
 X66250-15 (112-00346), 15m
 a|
-image::../media/oie_cable_sfp_gbe_copper.svg[width=85px]
+image::../media/oie_cable_sfp_gbe_copper.svg
 a|
 FC optical network cable
 a|
@@ -75,7 +75,7 @@ X66100-3 (112-00543), 3m
 
 X66100-5 (112-00544), 5m
 a|
-image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
+image::../media/oie_cable100_gbe_qsfp28.svg
 a|
 Ethernet data, cluster
 network
@@ -88,7 +88,7 @@ X66211B-2 (112-00574), 2m
 
 X66211B-5 (112-00576), 5m
 a|
-image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
+image::../media/oie_cable100_gbe_qsfp28.svg
 a|
 Network,
 
@@ -114,7 +114,7 @@ Part numbers X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image::../media/oie_cable_rj45.svg[width=85px]
+image::../media/oie_cable_rj45.svg
 a|
 Management network and Ethernet data
 a|
@@ -197,28 +197,28 @@ video::da08295f-ba8c-4de7-88c3-ae7c0170408d[panopto, title="Animation - Two-node
 image::../media/drw_9500_tnsc_network_cabling.svg[align="center",width=500px]
 +
 
-[options="header" col="20%,80%"]
+[options="header" cols="20%,80%"]
 
 |===
 | Step| Perform on each controller
 a|
-image::../media/oie_legend_icon_1_lg.svg[width=30px]
+image::../media/oie_legend_icon_1_lg.svg
 a|
 Cable cluster interconnect ports:
 
 ** Slot A4 and B4 (e4a)
 ** Slot A8 and B8 (e8a)
 
-image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
+image::../media/oie_cable100_gbe_qsfp28.svg
 a|
-image::../media/oie_legend_icon_2_lp.svg[width=30px]
+image::../media/oie_legend_icon_2_lp.svg
 a|
 Cable controller management (wrench) ports.
 
-image::../media/oie_cable_rj45.svg[width=85px]
+image::../media/oie_cable_rj45.svg
 
 a|
-image::../media/oie_legend_icon_3_o.svg[width=30px]
+image::../media/oie_legend_icon_3_o.svg
 a|
 Cable 32 Gb FC network switches:
 
@@ -226,7 +226,7 @@ Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 32 Gb FC network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.svg[width=85px]
+image::../media/oie_cable_sfp_gbe_copper.svg
 
 
 40GbE host network switches:
@@ -235,9 +235,9 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
+image::../media/oie_cable100_gbe_qsfp28.svg
 a|
-image::../media/oie_legend_icon_4_dr.svg[width=30px]
+image::../media/oie_legend_icon_4_dr.svg
 a|
 Cable 25 GbE connections:
 
@@ -246,7 +246,7 @@ Cable ports in slot A5 and B5 (5a,
 (7a, 7b, 7c, and 7d) to the
 25 GbE network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.svg[width=85px]
+image::../media/oie_cable_sfp_gbe_copper.svg
 a|
 * Strap the cables to the cable
 management arms (not shown).
@@ -255,7 +255,7 @@ PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide 
 a|
 image::../media/oie_cable_power.svg[width=85px]
 
-image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[width=200px]
+image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power sources]
 
 |===
 
@@ -284,13 +284,13 @@ image::../media/drw_9500_switched_network_cabling.svg[align="center",width=500px
 
 +
 
-[options="header" col="20%,80%"]
+[options="header" cols="20%,80%"]
 
 |===
 
 | Step|Perform on each controller
 a|
-image::../media/oie_legend_icon_1_lg.svg[width=30px]
+image::../media/oie_legend_icon_1_lg.svg
 a|
 Cable cluster
 interconnect a ports:
@@ -299,15 +299,15 @@ interconnect a ports:
 ** Slot A8 and B8 (e8a) to the
 cluster network switch.
 
-image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
+image::../media/oie_cable100_gbe_qsfp28.svg
 a|
-image::../media/oie_legend_icon_2_lp.svg[width=30px]
+image::../media/oie_legend_icon_2_lp.svg
 a|
 Cable controller management (wrench) ports.
 
-image::../media/oie_cable_rj45.svg[width=85px]
+image::../media/oie_cable_rj45.svg
 a|
-image::../media/oie_legend_icon_3_o.svg[width=30px]
+image::../media/oie_legend_icon_3_o.svg
 a|
 Cable 32 Gb FC network switches:
 
@@ -315,7 +315,7 @@ Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 32 Gb FC network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.svg[width=85px]
+image::../media/oie_cable_sfp_gbe_copper.svg
 
 
 40GbE host network switches:
@@ -324,9 +324,9 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
+image::../media/oie_cable100_gbe_qsfp28.svg
 a|
-image::../media/oie_legend_icon_4_dr.svg[width=30px]
+image::../media/oie_legend_icon_4_dr.svg
 a|
 Cable 25 GbE connections:
 
@@ -335,7 +335,7 @@ Cable ports in slot A5 and B5 (5a,
 (7a, 7b, 7c, and 7d) to the
 25 GbE network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.svg[width=85px]
+image::../media/oie_cable_sfp_gbe_copper.svg
 a|
 * Strap the cables to the cable
 management arms (not shown).
@@ -344,7 +344,7 @@ PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide 
 a|
 image::../media/oie_cable_power.svg[width=85px]
 
-image::../media/drw_a900fas9500_power_source_icon_IEOPS-1142.svg[width=200px]
+image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power sources]
 
 |===
 
@@ -421,7 +421,7 @@ image::../media/drw_power-on_set_shelf_ID_set.svg[width=500px]
 [cols="20%,80%"]
 |===
 a|
-image::../media/legend_icon_01.svg[width=20]
+image::../media/legend_icon_01.png[Callout icon one]
 a|
 Remove the end cap.
 a|
@@ -530,7 +530,7 @@ image::../media/drw_power-on_set_shelf_ID_set.svg[width=500px]
 [cols="20%,80%"]
 |===
 a|
-image::../media/legend_icon_01.svg[width=20]
+image::../media/legend_icon_01.png[Callout icon one]
 a|
 Remove the end cap.
 a|

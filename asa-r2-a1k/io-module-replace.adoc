@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-a1k/io-module-replace.html
+sidebar: sidebar
+keywords: asa r2 a1k, replace a pcie card
+summary: "To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards."
+---
+= Replace I/O module - ASA A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/a1k_io_module_replace_asa_r2.adoc[]

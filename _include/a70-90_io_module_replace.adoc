@@ -4,23 +4,22 @@ Use this procedure to replace a failed I/O module.
 * All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
 == Step 1: Shut down the impaired controller
- 
+
 Shut down or take over the impaired controller using one of the following options.
- 
+
 [role="tabbed-block"]
 ====
- 
+
 .Option 1: Most systems
 --
-include::../_include/shutdown_most_frus.adoc[]
+include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 --
 .Option 2: Controller is in a MetroCluster
 --
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 --
- 
-====
 
+====
 
 == Step 2: Replace a failed I/O module
 
@@ -44,17 +43,14 @@ image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove I/O module]
 +
 [cols="1,4"]
 |===
-a|
-image:../media/legend_icon_01.svg[Callout number 1,width=30px] 
+image:../media/legend_icon_01.png[Callout number 1]  
 a|
 Cam locking button
 
 |===
 
 .. Depress the cam latch button.
-+
-The cam latch moves away from the controller module.
-.. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
+.. Rotate the cam latch do away from the module as far as it will go.
 .. Remove the module from the controller module by hooking your finger into the cam lever opening and pulling the module out of the controller module.
 +
 Make sure that you keep track of which slot the I/O module was in.
