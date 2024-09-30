@@ -1,4 +1,4 @@
-Move the power supplies, drives, controllers, and bezel from the impaired chassis to the new chassis (of the same model), and then replace the chassis within the equipment rack or system cabinet.
+Move the drives, controllers, and bezel from the impaired chassis to the new chassis (of the same model), and then replace the chassis within the equipment rack or system cabinet.
 
 == Step 1: Remove the controller
 
@@ -10,12 +10,11 @@ include::../_include/g_controller_remove.adoc[]
 
 You need to move the drives from each bay opening in the old chassis to the same bay openings in the new chassis.
 
-. Gently remove the bezel from the front of the platform.
+. Gently remove the bezel from the front of the storage system.
 . Remove the drives:
- .. Press the release button at the top of the drive carrier face below the LEDs.
- .. Pull the cam handle to its fully open position to unseat the drive from the midplane, and then gently slide the drive out of the chassis.
-+
-The drive should disengage from the chassis, allowing it to slide free of the chassis.
+.. Press the release button on the drive face to open the cam handle.
+.. Rotate the cam handle downward to disengage the drive from the midplane.
+.. Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand.
 +
 NOTE: When removing a drive, always use two hands to support its weight.
 +
@@ -44,7 +43,7 @@ The cam handle engages and begins to rotate upward.
 Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It clicks when it is secure.
 
 .. Repeat the process for the remaining drives in the system.
-. If you have not already done so, install the bezel.
+. Install the bezel.
 
 == Step 4: Reinstall the controllers
 
