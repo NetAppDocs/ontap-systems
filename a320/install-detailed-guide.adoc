@@ -210,7 +210,7 @@ Cable the e0M ports to the management network switches with the RJ45 cables.
 
 image:../media/drw_a320_management_port_connection_step4.png[Connect the Management port]
 a|
-image:../media/oie_icon_round_attn_symbol.png[Attention symbol]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -267,7 +267,7 @@ Cable the e0M ports to the management network switches with the RJ45 cables.
 
 image:../media/drw_a320_management_port_connection_step4.png[Switched cluster managment network connections]
 a|
-image:../media/oie_icon_round_attn_symbol.png[Attention symbol]
+image:../media/oie_legend_icon_attn_symbol.png[Attention symbol]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -297,7 +297,7 @@ image::../media/drw_a320_single_shelf_connections_animated_gif.png[Single drive 
 |===
 |Step |Perform on each controller module
 a|
-image:../media/oie_icon_round_1_mb.png[Callout number 1]
+image:../media/icon_square_1_blue.png[Callout number 1]
 a|
 Cable controller A to the shelf    image:../media/drw_a320_storage_cabling_controller_a_single_shelf.png[Cable controller A to the shelf]
 a|
@@ -327,7 +327,7 @@ image::../media/drw_a320_2_shevles_cabling_animated_gif.png[Cable two shelves an
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_icon_round_1_mb.png[Callout number 1]
+image:../media/icon_square_1_blue.png[Callout number 1]
 a|
 Cable controller A to the shelves:    image:../media/drw_a320_2_shelves_cabling_controller_a.png[Cable two shelves to Controller A]
 a|
