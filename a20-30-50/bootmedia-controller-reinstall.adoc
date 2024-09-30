@@ -9,4 +9,7 @@ summary: "You must replace the controller module when your system registers an i
 :imagesdir: ../media/
 
 [.lead]
+
+Reinstall the controller into the chassis and reboot it.
+
 include::../_include/g_controller_reinstall.adoc[]
