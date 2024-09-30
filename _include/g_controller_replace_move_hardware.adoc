@@ -170,6 +170,8 @@ NOTE: To move the I/O modules from slots 6 and 7, you must move the carrier cont
 
 == Step 9: Install the controller
 
+Reinstall the controller into the chassis and reboot it.
+
 include::../_include/g_controller_reinstall.adoc[]
  
 
