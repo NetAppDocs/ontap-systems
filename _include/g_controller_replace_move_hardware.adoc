@@ -1,8 +1,8 @@
-To replace the controller, you must remove the impaired controller, move FRU components from the impaired controller module to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
+To replace the controller, you must remove the impaired controller, move FRU components from the impaired controller to the replacement controller, install the replacement controller in the chassis, and then boot the system to Maintenance mode.
 
-== Step 1: Remove the controller module
+== Step 1: Remove the controller
 
-include::../_include/a70-90_controller_remove_physical.adoc[]
+include::../_include/g_controller_remove.adoc[]
 
 == Step 2: Move the power supplies
 
@@ -36,7 +36,7 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 
 == Step 3: Move the fans
 
-Move the fans modules to the replacement controller module.
+Move the fans to the replacement controller.
 
 . Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
 +
@@ -60,7 +60,7 @@ Fan module
 
 == Step 4: Move the NV battery
 
-Move the NV battery to the replacement controller module.
+Move the NV battery to the replacement controller.
 
 . Open the air duct cover in the middle of the controller module and locate the NV battery.
 +
@@ -94,7 +94,7 @@ NV battery pack plug
  
 == Step 5: Move system DIMMs
 
-Move the DIMMs to the replacement controller module.
+Move the DIMMs to the replacement controller.
 
 . Open the controller air duct on the top of the controller.
 .. Insert your fingers in the recesses at the far ends of the air duct.
@@ -131,7 +131,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 == Step 6: Move the I/O modules
 
-Move the I/O modules to the replacement controller module.
+Move the I/O modules to the replacement controller.
 
 image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove I/O module]
 
@@ -167,75 +167,11 @@ NOTE: To move the I/O modules from slots 6 and 7, you must move the carrier cont
 ..Slide the carrier out of the impaired controller module insert it into the replacement controller module in the same position it was in the impaired controller module.
 .. Gently push the carrier all the way into the replacement controller module until it locks into place. 
 
-== Step 7: Move the System Management module
 
-Move the System Management module to the replacement controller module.
+== Step 9: Install the controller
 
-image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[Replace the System Management module]
+Reinstall the controller into the chassis and reboot it.
 
-[cols="1,4"]
-
-|===
-a|
-image::../media/legend_icon_01.svg[Callout number 1,width=30px]
-a|
-System Management module cam latch
-a|
-image::../media/legend_icon_02.svg[Callout number 2,width=30px]
-a|
-Boot media locking button
-a|
-image::../media/legend_icon_03.svg[Callout number 3,width=30px]
-a|
-Replacement System Management module
-|===
-
-. Remove the System Management module from the impaired controller module:
-.. Depress the system management cam button.
-The cam lever moves away from the chassis.
- .. Rotate the cam lever all the way down.
- .. Loop your finger into the cam lever and pull the module straight out of the system.
-
- . Install the system management module into the replacement controller module in the same slot that it was in on the impaired controller module:
-.. Align the edges of the System Management module with the system opening and gently push it into the controller module.  
-.. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
-
-== Step 8: Move the NVRAM module
-
-Move the NVRAM module to the replacement controller module.
-
-image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[Remove the NVRAM12 module and DIMMs]
-
-[cols="1,4"]
-
-|===
-a|
-image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
-Cam locking button
-a|
-image:../media/legend_icon_02.svg[Callout number 2,width=30px]
-a|
-DIMM locking tab
-|===
-
-. Remove the NVRAM module from the impaired controller module:
-
-.. Depress the cam latch button.
-+
-The cam button moves away from the chassis.
-
- .. Rotate the cam latch as far as it will go.
-+
-.. Remove the NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
-
-. Install the NVRAM module into slot 4/5 in the replacement controller module:
-
- .. Align the module with the edges of the chassis opening in slot 4/5.
- .. Gently slide the module into the slot all the way, and then push the cam latch all the way up to lock the module in place.
-
-
-== Step 9: Install the controller module
-
-include::../_include/a70-90_controller_install_step_physical.adoc[]
+include::../_include/g_controller_reinstall.adoc[]
  
- . If you have not already done so, reinstall the cable management device and recable the controller.
+

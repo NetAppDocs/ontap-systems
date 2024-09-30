@@ -1,38 +1,63 @@
 // Install the controller module - AFF A20, A30, and AFF A50
 
 
-Reinstall the controller module and reboot it.
+.About this task
 
-. Ensure the air duct is completely closed by rotating it down as far as it will go.
+The following illustration shows the operation of the controller handles (from the left side of a controller) when reinstalling the controller, and can be used as a reference for the rest of the controller reinstallation steps.
+
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[controller handle operation to install a controller]
+
+[cols="1,4"]
+
+|===
+a|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px] 
+a|
+If you rotated the controller handles upright (but not in the locked position) to move them out of the way while you serviced the controller, rotate them down to the horizontal position. 
+a|
+image::../media/legend_icon_02.svg[Callout number 2,width=30px] 
+a|
+Push the handles to reinsert the controller into the chassis halfway and then, when instructed, push until the controller is fully seated.
+a|
+image::../media/legend_icon_03.svg[Callout number 3,width=30px] 
+a|
+Rotate the handles to the upright position and lock in place with the locking tabs.
+
+|===
+
+.Steps
+
+. Close the controller cover and turn the thumbscrew clockwise until tightened.
+
+. Insert the controller halfway into the chassis.
 +
-It must lie flush against the controller module sheet metal.
+Align the rear of the controller with the opening in the chassis, and then gently push the controller using the handles.
 +
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
+NOTE: Do not completely insert the controller in the chassis until instructed to do so.
 +
-NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 
-. Recable the system, as needed.
+. Recable the controller, as needed.
 
+. Fully seat the controller in the chassis:
+
+.. Firmly push on the handles until the controller meets the midplane and is fully seated.
 +
-If you removed the transceivers (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
-. Complete the reinstallation of the controller module:
- .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
+NOTE: Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
 +
-The locking latches rise when the controller module is fully seated.
+.. Rotate the controller handles upward to the closed position and lock in place with the tabs.
 
+. Reconnect the power cord to the power supply on the impaired controller.
 +
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-
-
-.. Rotate the locking latches upward into the locked position.
-
-. Plug the power cords into the power supplies.
-
+If you have AC power supplies, reconnect the power cord to the power supply.
 +
-NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
-
+If you have DC power supplies, reconnect the power block to the power supply.
 +
-The controller module boots when power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
+[NOTE]
+====
+The controller boots when power is restored. 
+
+If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
+====
 
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 

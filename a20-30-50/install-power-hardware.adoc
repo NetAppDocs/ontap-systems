@@ -9,9 +9,13 @@ summary: Attach the power cables and power on the shelves and controllers.
 :imagesdir: ../media/
 
 [.lead]
-After you install the rack hardware for your AFF A20, AFF A30, or AFF A50 storage system and install the cables for the controllers and storage shelves, you should power on your storage shelves and controllers. 
+After you cable the controllers to the network and shelves in your AFF A20, AFF A30, or AFF A50 storage system, you power on your shelves and controllers. 
 
-include::../_include/install_power_hardware.adoc[]
+:a20-30-50:
+ 
+include::../_include/install_power_hardware_fragment_conditional.adoc[]
+ 
+:a20-30-50!:
 
 .What's next?
-After you've turned on your AFF A20, AFF A30, or AFF A50 storage system, you link:install-complete.html[complete system setup].
+After you've powered on your storage system, you link:install-complete.html[complete system setup].

@@ -1,85 +1,85 @@
-You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
+You must remove the controller from the chassis when you replace the controller or replace a component inside the controller.
+
+// After you complete the shutdown procedure for the impaired controller, you can remove the controller from the chassis to access the failed FRU component.
 
 .Before you begin
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
-You must replace the failed component with a replacement FRU component you received from your provider.
-
-== Step 1: Shut down the impaired controller
- 
-Shut down or take over the impaired controller using one of the following options.
- 
-[role="tabbed-block"]
+.Steps
+. On the impaired controller, check the NVRAM status LED to make sure the NV LED is off.
++
+[NOTE] 
 ====
- 
-.Option 1: Most systems
---
-include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
---
- 
+If the NVRAM status LED is flashing (amber), it could mean the impaired controller was not taken over or halted properly (uncommitted data).
+
+If the impaired controller was not successfully taken over by the partner controller, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+Do not attempt to remove power from the impaired controller or remove the impaired controller from the chassis.
 ====
 
-== Step 2: Remove the controller module
-
-include::../_include/a70-90_controller_remove_physical.adoc[]
-
-== Step 3: Replace a DIMM
-
-To replace the DIMMs, locate them inside the controller and follow the specific sequence of steps.
-
-. If you are not already grounded, properly ground yourself.
-. Open the controller air duct on the top of the controller.
-.. Insert your fingers in the recesses at the far ends of the air duct.
-.. Lift the air duct and rotate it upward as far as it will go.
-. Locate the DIMMs on your controller module and identify the target DIMM.
-
 +
-NOTE: Consult either the https://hwu.netapp.com[Netapp Hardware Universe] or the FRU map on your controller module for exact DIMM locations for the AFF A70 or AFF A90. 
-
+The NVRAM status LED is located next to the NV icon on the controller.
 +
-
-. Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
-+
-IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
-+
-
-image::../media/drw_a70_90_dimm_ieops-1513.svg[DIMM replace]
-
+image::../media/drw_g_nvram_led_ieops-1839.svg[NVRAM attention and status LED location]
 +
 [cols="1,4"]
+
 |===
 a|
-image:../media/legend_icon_01.svg[Callout number 1, width=30px]
+image::../media/legend_icon_01.svg[Callout number 1,width=30px] 
 a|
-DIMM and DIMM ejector tabs
+NV icon and status LED on the controller
+
 |===
-
-
-. Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
 +
-The notch among the pins on the DIMM should line up with the tab in the socket.
-
-. Make sure that the DIMM ejector tabs on the connector are in the open position, and then insert the DIMM squarely into the slot.
+The general behavior of the NVRAM status LED on the impaired controller is as follows:
 +
-The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
+* The NVRAM status LED flashes when power is removed from the controller and the storage system is in the waiting for giveback state, or the controller is not taken over or halted properly (uncommitted data).
+* The NVRAM status LED flashes when the controller is removed from the chassis and could mean the controller is not taken over or halted properly (uncommitted data). You must confirm the controller had a clean takeover by the partner controller or the impaired controller shows waiting for giveback (Make in courier font and highlighted in gray). Then, the flashing LED can be ignored (and the controller can be removed from the chassis).
+
+. If you are not already grounded, properly ground yourself.
+
+. Disconnect the power on the impaired controller.
 +
-IMPORTANT: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
+If you have AC power supplies, unplug the power cord from the power supply.
++
+If you have DC power supplies, unplug the power block from the power supply.
 
-. Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
-. Close the controller air duct.
+. Unplug all cables from the impaired controller.
++
+Keep track of where the cables were connected.
++
 
+. Remove the impaired controller:
++
+The following illustration shows the operation of the controller handles (from the left side of the controller) when removing a controller:
++
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[controller handle operation to remove a controller]
++
+[cols="1,4"]
 
-== Step 4: Reinstall the controller module
+|===
+a|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px] 
+a|
+On both ends of the controller, push the vertical locking tabs outward to release the handles.
+a|
+image::../media/legend_icon_02.svg[Callout number 2,width=30px] 
+a|
+* Pull the handles towards you to unseat the controller from the midplane.
++
+As you pull, the handles extend out from the controller and then you feel some resistance, keep pulling.
++
+* Slide the controller out of the chassis while supporting the bottom of the controller, and place it on a flat, stable surface. 
+a|
+image::../media/legend_icon_03.svg[Callout number 3,width=30px] 
+a|
+Rotate the handles upright (but not in the locked position) to move them out of the way.
 
-include::../_include/a70-90_controller_install_step_physical.adoc[]
+|===
++
 
-== Step 5: Return the failed part to NetApp
-
-include::../_include/complete_rma.adoc[]
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
 

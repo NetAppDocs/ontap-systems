@@ -9,19 +9,20 @@ summary: Management network ports on the controllers are connected to switches. 
 :imagesdir: ../media/
 
 [.lead]
-After you install the rack hardware for your AFF A20, AFF A30, or AFF A50 storage system, install the network cables for the controllers, and connect the cables between the controllers and storage shelves.
+After you install your AFF A20, AFF A30, or AFF A50 storage system hardware, cable the controllers to the network and shelves.
 
-.Before you begin
-Check the illustration arrow in the cabling diagrams for the proper cable connector pull-tab orientation.
-
+.About this task
+* The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
++
+As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
++
 image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab orientation example]
 
-* As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn the cable head over and try again.
-* If connecting to an optical switch, insert the small form-factor pluggable (SFP) transceiver into the controller port before cabling to the port.
+* If cabling to an optical switch, insert the small form-factor pluggable (SFP) transceiver into the controller port before the switch port.
 
 
-== Step 1: Connect the storage controllers to your network
-Connect the storage controllers to your host network.
+== Step 1: Cable the controllers to your network
+Cable the controllers to your host network.
 
 .Before you begin
 
@@ -33,119 +34,117 @@ These procedures show common configurations. Keep in mind that the specific cabl
 [role="tabbed-block"]
 ====
 
-.Option 1: Connect the controllers to a switchless ONTAP cluster
+.Option 1: Cable the controllers to a switchless ONTAP cluster
 --
-Connect your storage controllers to each other to create the ONTAP cluster connections, and then connect the Ethernet ports on each controller to your host network.
+Cable the controllers to each other to create the ONTAP cluster connections, and then cable the host network connections.
 
 .Steps
 
-. Use the the Cluster/HA interconnect cable to connect to connect ports e1a to e1a and ports e7a to e7a. 
-
+. Cable the Cluster/HA interconnect connections: 
 +
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
-
 +
-.. Connect port e1a on Controller A to port e1A on Controller B.
-.. Connect port e7a on Controller A to port e1A on Controller B.
+.. Cable controller A port e4a to controller B port e4a.
+.. Cable controller A port e4b to controller B port e4b.
 +
 *Cluster/HA interconnect cables*
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
++
+image::../media/drw_isi_g_switchless_2p_100gbe_cabling_ieops-1925.svg[Two-node switchless cluster cabling diagram]
 
+. Cable the host network connections. 
 +
-image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[Two-node switchless cluster cabling diagram, width=500px]
-+
-. Connect the Ethernet module ports to your host network. 
-+
-The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
+The following substeps are examples of optional host network cabling. If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
 
-.. Connect ports e9a and e9b to your Ethernet data network switch as shown.
+.. Optional: Cable to 10/25GbE host network switches.
 +
-NOTE: For maximum system performance for cluster and HA traffic, do not use ports e1b and e7b ports for host network connections.  Use a separate host card to maximize performance.
-
+Cable ports e2a, e2b, e2c and e2d on each controller to the Ethernet host network switches.
 +
-*100 GbE cable*
-+
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable, width=100px]
-+
-image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100 Gb Ethernet network,width=500px]
-
-+
-.. Connect your 10/25 GbE host network switches.
-+
-*4-ports, 10/25 GbE Host*
+*10/25 GbE cables*
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[10/25 Gb cable,width=100px]
 +
-image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Ethernet network,width=500px]
+image::../media/drw_isi_g_4p_25gbe_optional_cabling_ieops-1923.svg[Cable to 10/25gbe ethernet host network switches]
++
+.. Optional: Cable to FC host network switches.
++
+Cable ports e1a, e1b, e1c and e1d on each controller to the FC host network switches.
++
+*64 Gb FC cables*
++
+image::../media/oie_cable_sfp_gbe_copper.svg[64 Gb fc cable,width=100px]
++
+image::../media/drw_isi_g_4p_64gb_fc_optional_cabling_ieops-1924.svg[Cable to 64Gb fc host network switches]
 +
 
-
-. Use the 1000BASE-T RJ-45 cables to connect the controller management (wrench) ports to the management network switches.
+. Cable the management (wrench) ports on each controller to the management network switches.
 +
-image::../media/oie_cable_rj45.svg[RJ45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 +
-image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
+image::../media/oie_cable_rj45.svg[RJ45 cables,width=100px]
++
+image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your management network,width=500px]
 
 IMPORTANT: Do not plug in the power cords yet. 
 
 
 
 --
-.Option 2: Connect the controllers to a switched ONTAP cluster
+.Option 2: Cable the controllers to a switched ONTAP cluster
 --
-Connect your storage controllers to the cluster network switches to create the ONTAP cluster connections, and then connect the Ethernet ports on each controller to your host network.
+Cable the controllers to the cluster network switches to create the ONTAP cluster connections, and then cable the host network connections.
 
 .Steps
 
-. Make the following cabling connections:
+. Cable the controllers to the cluster network switches:
 
 +
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
 
 
 +
-.. Connect port e1a on Controller A and port e1a on Controller B to cluster network switch A. 
-.. Connect port e7a on Controller A and port e7a on Controller B to cluster network switch B.
+.. Cable Controller A port e3a and Controller B port e3a to cluster network switch A. 
+.. Cable Controller A port e3b and Controller B port e3b to cluster network switch B.
 +
 *100 GbE cable*
 +
 image::../media/oie_cable100_gbe_qsfp28.svg[100 Gb cable,width=100px]
 +
-image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[Cable cluster connections to cluster network,width=500px]
+image::../media/drw_isi_g_2p_100gbe_switched_cluster_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
 
-. Connect the Ethernet module ports to your host network. 
+. Cable the host network connections.  
 +
-The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
+The following substeps are examples of optional host network cabling. If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
 
-.. Connect ports e9a and e9b to your Ethernet data network switch as shown.
+.. Optional: Cable to 10/25GbE host network switches.
 +
-NOTE: For maximum system performance for cluster and HA traffic, do not use ports e1b and e7b ports for host network connections.  Use a separate host card to maximize performance.
+Cable ports e2a, e2b, e2c and e2d on each controller to the Ethernet host network switches.
 +
-*100 GbE cable*
+*10/25 GbE cables*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.svg[10/25 Gb cable,width=100px]
 +
-image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100Gb Ethernet network,width=500px]
+image::../media/drw_isi_g_4p_25gbe_optional_cabling_ieops-1923.svg[Cable to 10/25gbe ethernet host network switches]
++
+.. Optional: Cable to FC host network switches.
++
+Cable ports e1a, e1b, e1c and e1d on each controller to the FC host network switches.
++
+*64 Gb FC cables*
++
+image::../media/oie_cable_sfp_gbe_copper.svg[64 Gb fc cable,width=100px]
++
+image::../media/drw_isi_g_4p_64gb_fc_optional_cabling_ieops-1924.svg[Cable to 64Gb fc host network switches]
++
 
+. Cable the management (wrench) ports on each controller to the management network switches.
 +
-.. Connect your 10/25 GbE host network switches.
-+
-*4-ports, 10/25 GbE Host*
-+
-image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb Ethernet cable,width=100px]
-+
-image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 10/25Gb Ethernet network,width=500px]
-+
-
-
-. Connect the controller management (wrench) ports to the management network switches with 1000BASE-T RJ-45 cables.
-+
-image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 +
-image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
+image::../media/oie_cable_rj45.svg[RJ45 cables,width=100px]
++
+image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your management network,width=500px]
 
 IMPORTANT: Do not plug in the power cords yet. 
 
@@ -153,78 +152,35 @@ IMPORTANT: Do not plug in the power cords yet.
 
 ====
 
-== Step 2: Connect the storage controllers to the storage shelves
-The following cabling procedures show how to connect your controllers to one shelf and to two shelves. You can directly connect up to four shelves to your controllers.
+== Step 2: Cable the controllers to the shelves
+This procedure shows how to cable the controllers to one NS224 shelf.
 
+For the maximum number of shelves supported for your storage system, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-// start tabbed area
-
-[role="tabbed-block"]
-====
-
-.Option 1: Connect to one NS224 storage shelf
---
-Connect each controller to the NSM modules on the NS224 shelf. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
-
-*100 GbE QSFP28 copper cables*
-
-image::../media/oie_cable100_gbe_qsfp28.svg[100 GbE QSFP28 copper cable,width=100px]
-
-.Steps
-. Connect controller A port e11a to NSM A port e0a.
-. Connect controller A port e11b to port NSM B port e0b.
+.About this task
+* You cable each controller to each NSM module on the NS224 shelf using the following cable type:
 +
-image:../media/drw_a70-90_1shelf_cabling_a_ieops-1731.svg[Controller A e11a and e11b to a single NS224 shelf]
-
-. Connect controller B port e11a to NSM B port e0a.
-. Connect controller B port e11b to NSM A port e0b.
-+
-image:../media/drw_a70-90_1shelf_cabling_b_ieops-1732.svg[Controller B e11a and e11b to a single NS224 shelf]
-
---
-
-.Option 2: Connect to two NS224 storage shelves
---
-Connect each controller to the NSM modules on both NS224 shelves. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
-
 *100 GbE QSFP28 copper cables*
-
++
 image::../media/oie_cable100_gbe_qsfp28.svg[100 GbE QSFP28 copper cable,width=100px]
+* The graphics show controller A cabling in blue and controller B cabling in yellow. 
 
 .Steps
 
-. On on controller A, connect the following ports:
-.. Connect port e11a to shelf 1, NSM A port e0a.
-
-.. Connect port e11b to shelf 2, NSM B port e0b.
-
-.. Connect port e8a to shelf 2, NSM A port e0a.
-
-.. Connect port e8b to shelf 1, NSM B port e0b.
+. Cable controller A to the shelf:
+.. Cable controller A port e3a to NSM A port e1a.
+.. Cable controller A port e3b to NSM B port e1b.
 +
-image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg[Controller-to-shelf connections for controller A]
+image:../media/drw_isi_g_1_ns224_controller_a_cabling_ieops-1945.svg[Controller A ports e3a and e3b cabled to one NS224 shelf]
+
+. Cable controller B to the shelf:
+.. Cable controller B port e3a to NSM B port e1a.
+.. Cable controller B port e3b to NSM A port e1b.
 +
-
-. On controller B, connect the following ports:
-.. Connect port e11a to shelf 1, NSM B port e0a.
-
-.. Connect  port e11b to shelf 2, NSM A port e0b.
-
-.. Connect port e8a to shelf 2, NSM B port e0a.
-
-.. Connect port e8b to shelf 1, NSM A port e0b.
-+
-image:../media/drw_a70-90_2shelf_cabling_b_ieops-1734.svg[Controller-to-shelf connections for controller B]
-+
-
---
-
-====
-
-// end tabbed area
+image:../media/drw_isi_g_1_ns224_controller_b_cabling_ieops-1946.svg[Controller B ports e3a and e3b cabled to one NS224 shelf]
 
 .What's next?
 
-After you’ve cabled the hardware for your AFF A20, AFF A30, or AFF A50 storage system system, you link:install-power-hardware.html[power on the AFF A20, AFF A30, or AFF A50 storage system].
+After you’ve cabled the hardware for your storage system system, you link:install-power-hardware.html[power on the storage system].
 
 

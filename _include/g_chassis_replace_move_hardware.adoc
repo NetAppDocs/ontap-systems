@@ -1,53 +1,59 @@
-Move the power supplies, hard drives, and controller module from the impaired chassis to the new chassis, and swap out the impaired chassis with the new chassis of the same model as the impaired chassis.
+Move the drives, controllers, and bezel from the impaired chassis to the replacement chassis (of the same model), and then replace the impaired chassis within the equipment rack or system cabinet.
 
-== Step 1: Remove the controller module
+== Step 1: Remove the controller
 
-include::../_include/a70-90_controller_remove_physical.adoc[]
+include::../_include/g_controller_remove.adoc[]
 
-. Repeat these steps for the other controller module in the chassis.
+. Repeat these steps for the other controller in the chassis.
 
-== Step 2: Move drives to the new chassis
+== Step 2: Remove the drives from the faulty chassis
 
-You need to move the drives from each bay opening in the old chassis to the same bay opening in the new chassis.
+You need to remove all of the drives from the impaired chassis so that later in the procedure you can install them in the replacement chassis.
 
-. Gently remove the bezel from the front of the system.
+. Gently remove the bezel from the front of the storage system.
 . Remove the drives:
- .. Press the release button at the top of the carrier face below the LEDs.
- .. Pull the cam handle to its fully open position to unseat the drive from the midplane, and then gently slide the drive out of the chassis.
 +
-The drive should disengage from the chassis, allowing it to slide free of the chassis.
+NOTE: Keep track of what drive bay each drive was removed from because they must be installed in the same drive bays in the replacement chassis.
+
+.. Press the release button on the drive face to open the cam handle.
+.. Rotate the cam handle downward to disengage the drive from the midplane.
+.. Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand.
 +
 NOTE: When removing a drive, always use two hands to support its weight.
 +
 NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
 
-. Keep track of what drive bay each drive was from and set the drives aside on a static-free cart or table.
+. Set the drives aside on a static-free cart or table.
 
 
 == Step 3: Replace chassis from within the equipment rack or system cabinet
 
-You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
+You remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis, install the drives, and then install the bezel.
 
-. Remove the screws from the chassis mount points.
-. With two people, slide the old chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
+. Remove the screws from the impaired chassis mount points.
+. With two people, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
 . Using two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
 . Slide the chassis all the way into the equipment rack or system cabinet.
-. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
-. Install the drives from the old chassis into the replacement chassis:
-.. Align the drive from the old chassis with the same bay opening in the new chassis.
-. Gently push the drive into the chassis as far as it will go.
+. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
+. Install the drives you removed from the impaired chassis into the replacement chassis:
 +
-The cam handle engages and begins to rotate upward.
+NOTE: The drives must be installed in the same drive bays in the replacement chassis.
 
-.. Firmly push the drive the rest of the way into the chassis, and then lock the cam handle by pushing it up and against the drive carrier.
+.. With the cam handle in the open position, use both hands to insert the drive.
+
+.. Gently push until the drive stops.
+
+.. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
 +
-Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It clicks when it is secure.
+Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
++
+.. Repeat the process for the remaining drives.
+. Install the bezel.
 
-.. Repeat the process for the remaining drives in the system.
-. If you have not already done so, install the bezel.
+== Step 4: Reinstall the controllers
 
-== Step 4: Reinstall the controller modules
+Reinstall the controllers into the chassis and reboot it.
 
-include::../_include/a70-90_controller_install_step_physical.adoc[]
+include::../_include/g_controller_reinstall.adoc[]
 
-. Repeat the preceding steps to install the second controller into the new chassis.
+. Repeat the preceding steps to install the second controller into the replacement chassis.

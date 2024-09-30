@@ -9,11 +9,24 @@ summary: Review the equipment needed and the lifting precautions for your platfo
 :imagesdir: ../media/
 
 [.lead]
-Review the equipment needed and the lifting precautions for your storage system and storage shelves.
+Review your storage system's requirements and considerations.
 
-include::../_include/install_requirements.adoc[]
+:a20-30-50:
+ 
+include::../_include/install_requirements_fragment_conditional.adoc[]
+ 
+:a20-30-50!:
+
+== Additional considerations
+* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
+* If needed, you can turn off the platform bezel's LED logo illumination. (The bezel LED logo is illuminated by default.) On either controller, enter `system controller bezel-led modify -node _local_ -state _off_`. To turn the bezel light on, enter the same commend but use the value `_on_`.
 
 .What's next?
-After you've reviewed the installation requirements and considerations, you link:install-prepare.html[prepare to install your AFF A20, AFF A30, or AFF A50 storage system].
+After you've reviewed the installation requirements and considerations for your storage system, you link:install-prepare.html[prepare for installation].
 
 

@@ -1,82 +1,97 @@
-You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
+You must replace a DIMM in the controller when your storage system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
 
 .Before you begin
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+* All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
-You must replace the failed component with a replacement FRU component you received from your provider.
+* You must replace the failed FRU component with a replacement FRU component you received from your provider.
+
+.About this task
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
 == Step 1: Shut down the impaired controller
  
-Shut down or take over the impaired controller using one of the following options.
+// Shut down or take over the impaired controller using one of the following options.
  
-[role="tabbed-block"]
-====
+// [role="tabbed-block"]
+// ====
  
-.Option 1: Most systems
---
+// .Option 1: Most systems
+// --
 include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
---
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+// --
  
-====
+// ====
 
-== Step 2: Remove the controller module
+== Step 2: Remove the controller
 
-include::../_include/a70-90_controller_remove_physical.adoc[]
+include::../_include/g_controller_remove.adoc[]
 
 == Step 3: Replace a DIMM
 
-To replace the DIMMs, locate them inside the controller and follow the specific sequence of steps.
+To replace a DIMM, locate the faulty DIMM inside the controller and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
-. Open the controller air duct on the top of the controller.
-.. Insert your fingers in the recesses at the far ends of the air duct.
-.. Lift the air duct and rotate it upward as far as it will go.
-. Locate the DIMMs on your controller module and identify the target DIMM.
+. Locate the DIMMs on your controller and identify the faulty DIMM.
 
 +
-NOTE: Consult either the https://hwu.netapp.com[Netapp Hardware Universe] or the FRU map on your controller module for exact DIMM locations for the AFF A70 or AFF A90. 
-
+NOTE: Consult either the https://hwu.netapp.com[Netapp Hardware Universe] or the FRU map on the cover of the controller for exact DIMM locations. 
 +
-
-. Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
+. Remove the faulty DIMM:
 +
-IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
-+
-
-image::../media/drw_a70_90_dimm_ieops-1513.svg[DIMM replace]
+image::../media/drw_g_dimm_ieops-1873.svg[DIMM replace]
 
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.svg[Callout number 1, width=30px]
+image::../media/legend_icon_01.svg[Callout number 1,width=30px]
 a|
-DIMM and DIMM ejector tabs
+DIMM slot numbering and positions.
+a|
+image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+a|
+Eject the faulty DIMM by slowly pushing apart the two DIMM ejector tabs on both ends of the DIMM slot.
+
+IMPORTANT: Carefully hold the DIMM by the corners or edges to avoid pressure on the DIMM circuit board components.
+a|
+image::../media/legend_icon_03.svg[Callout number 3,width=30px]
+a|
+Lift the DIMM up and out of the slot.
+
+The ejector tabs remain in the open position.
 |===
 
+. Install the replacement DIMM:
 
-. Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
+.. Remove the replacement DIMM from its antistatic shipping bag.
+
+.. Make sure that the DIMM ejector tabs on the connector are in the open position.
+
+.. Hold the DIMM by the corners, and then insert the DIMM squarely into the slot.
 +
-The notch among the pins on the DIMM should line up with the tab in the socket.
-
-. Make sure that the DIMM ejector tabs on the connector are in the open position, and then insert the DIMM squarely into the slot.
+The notch on the bottom of the DIMM, among the pins, should line up with the tab in the slot.
 +
-The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
-+
-IMPORTANT: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
+When inserted correctly, the DIMM should go in easily but fit tightly in the slot. If not, reinsert the DIMM.
 
-. Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
-. Close the controller air duct.
+.. Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
+
+.. Push down carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at both ends of the DIMM.
 
 
-== Step 4: Reinstall the controller module
+== Step 4: Reinstall the controller
 
-include::../_include/a70-90_controller_install_step_physical.adoc[]
+Reinstall the controller into the chassis and reboot it.
+
+include::../_include/g_controller_reinstall.adoc[]
 
 == Step 5: Return the failed part to NetApp
 

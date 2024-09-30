@@ -4,34 +4,34 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, Installation, deployment, Install, deploy, Installing, deploying
 summary: 'Follow these high-level steps to install and set up your AFF A70 or A90 storage system and deploy it as an HA pair in your ONTAP system.'
 ---
-= Installation and configuration workflow - AFF A20, AFF A30, and AFF A50
+= Installation and setup workflow - AFF A20, AFF A30, and AFF A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To install and set up your AFF A20, AFF A30, or AFF A50 system, you review installation requirements, prepare your site, install and cable the hardware components, power on the system, and set up the ONTAP cluster.
+To install and set up your AFF A20, AFF A30, or AFF A50 storage system, you must review the installation requirements and considerations, prepare your site, install and cable the hardware components, power on the system, and set up the ONTAP cluster.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Review the installation requirements and considerations]
 [role="quick-margin-para"]
-Before installing your AFF A20, AFF A30, or AFF A50 storage system, review the installation requirements and considerations.
+Before installing your storage system, your storage system must meet the installation requirements and you must review the installation considerations.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[One]link:install-prepare.html[Prepare to install the AFF A20, AFF A30, or AFF A50 storage system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[One]link:install-prepare.html[Prepare for installation]
 [role="quick-margin-para"]
 To prepare for install, you need to get the site ready, check the environmental and electrical requirements, and ensure there’s enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Two]link:install-hardware.html[Install the hardware for the AFF A20, AFF A30, or AFF A50 storage system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Two]link:install-hardware.html[Install the hardware]
 [role="quick-margin-para"]
-To install the hardware, install the rail kits for your storage system and shelves, and then install and secure your storage system in the cabinet or telco rack. Next, slide the shelves onto the rails. Finally, attach cable management devices to the rear of the storage system for organized cable routing.
+To install the hardware, install the rail kits for your platform and shelves, and then install and secure your platform and shelves in the cabinet or telco rack.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Three]link:install-cable.html[Cable the hardware for the AFF A20, AFF A30, or AFF A50 storage system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Three]link:install-cable.html[Cable the hardware]
 [role="quick-margin-para"]
-To cable the hardware, first connect the storage controllers to your network and then connect the controllers to your storage shelves.
+To cable the hardware, connect the controllers to your network and then to your shelves.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Four]link:install-power-hardware.html[Power on the AFF A20, AFF A30, or AFF A50 storage system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Four]link:install-power-hardware.html[Power on the storage system]
 [role="quick-margin-para"]
-Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
+To power on your storage system, power on each shelf and assign a unique shelf ID as needed, and then power on the controllers.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Five]link:install-complete.html[Complete storage system setup]
 [role="quick-margin-para"]
-To complete system setup, access ONTAP System Manager, by pointing a browser to the controller’s IP address. A setup wizard helps you complete cluster configuration for your AFF A20, AFF A30, or AFF A50 storage system.
+To complete the setup of your storage system, access ONTAP System Manager by pointing a browser to the controller’s IP address. A setup wizard helps you complete cluster configuration for your storage system.

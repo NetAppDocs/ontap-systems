@@ -1,19 +1,8 @@
----
-permalink: ns224/service-replace-drive.html
-sidebar: sidebar
-keywords: ns224, shelves, shelf, ns224 shelves, fail, replace, drive, nondisruptive, i/o, hot-swap, hot-swap a drive
-summary: You can replace a failed drive nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
----
-= Hot-swap a drive - NS224 shelves
-:icons: font
-:imagesdir: ../media/
-
-[.lead]
-You can replace a failed drive nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
+You can replace a failed drive SSD drive nondisruptively while I/O is in progress.
 
 .Before you begin
 
-* The drive that you are installing must be supported by the NS224 shelf.
+* The drive that you are installing must be supported by your storage system.
 +
 https://hwu.netapp.com[NetApp Hardware Universe^]
 
@@ -23,7 +12,8 @@ Instructions in the ONTAP documentation describe additional steps you must perfo
 +
 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI^]
 
-* All other components in the system must be functioning properly; if not, contact technical support.
+* All other components in the storage system must be functioning properly; if not, contact technical support.
+
 * Verify that the drive you are removing is failed.
 +
 You can verify that the drive is failed by running the `storage disk show -broken` command. The failed drive appears in the list of failed drives. If it does not, you should wait, and then run the command again.
@@ -32,14 +22,16 @@ NOTE: Depending on the drive type and capacity, it can take up to several hours 
 
 .About this task
 
-* *Best practice:* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a drive.
+* When replacing a failed drive, you must wait 70 seconds between the removal of the drive and the insertion of the replacement drive to allow the storage system to recognize that a drive was removed.
+
+* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a drive.
 +
 Having the current version of the DQP installed allows your system to recognize and use newly qualified drives. This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
 +
 //30 aug 2022, BURT 1491809: correct the DQP link
 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[NetApp Downloads: Disk Qualification Package^]
 
-* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
+* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
 +
@@ -48,44 +40,33 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp 
 [NOTE]
 ====
 Do not revert firmware to a version that does not support your shelf and its components.
-
-
 ====
 
 * Drive firmware is automatically updated (nondisruptively) on new drives that have non-current firmware versions.
 +
 NOTE: Drive firmware checks occur every two minutes.
 
-* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
-If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
-* When you unpack the replacement drive, save all packing materials for use when you return the failed drive.
-+
-If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
-
-* The following animation provides an overview of the physical removal and insertion portions of the drive hot-swap procedure.
-+
-video::733011a7-e03a-41b0-8723-aa840133bf25[Animation, Hot-swapping a drive in an NS224 shelf"]
 .Steps
 
 . If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment if it is enabled.
 +
-NOTE: You need to manually assign drive ownership if drives in the shelf are owned by both controller modules in the HA pair.
-+
 NOTE: You manually assign drive ownership and then reenable automatic drive assignment later in this procedure.
 
- .. Verify whether automatic drive assignment is enabled: `storage disk option show`
+.. Verify whether automatic drive assignment is enabled: `storage disk option show`
 +
-You can enter the command on either controller module.
+You can enter the command on either controller.
 +
-If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column (for each controller module).
+If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column (for each controller).
 
- .. If automatic drive assignment is enabled, disable it: `storage disk option modify -node node_name -autoassign off`
+.. If automatic drive assignment is enabled, disable it: `storage disk option modify -node node_name -autoassign off`
 +
-You must disable automatic drive assignment on both controller modules.
+You must disable automatic drive assignment on both controllers.
 
 . Properly ground yourself.
 . Physically identify the failed drive.
@@ -94,17 +75,32 @@ When a drive fails, the system logs a warning message to the system console indi
 +
 NOTE: The activity (green) LED on a failed drive can be illuminated (solid), which indicates that the drive has power, but should not be blinking, which indicates I/O activity. A failed drive has no I/O activity.
 
-. Remove the failed drive:
- .. Press the release button on the drive face to open the cam handle.
- .. Slide the drive out of the shelf using the cam handle and supporting the drive with your other hand.
-. Wait a minimum of 70 seconds before inserting the replacement drive.
+. Remove the failed drive: 
 +
-This allows the system to recognize that a drive was removed.
+image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove NVMe drive]
++
+[cols="1,4"]
+|===
+a|
+image::../media/legend_icon_01.svg[Callout number 1,width=30px] 
+a|
+Press the release button on the drive face to open the cam handle.
+a|
+image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+a|
+Rotate the cam handle downward to disengage the drive from the midplane.
+a|
+image::../media/legend_icon_03.svg[Callout number 3,width=30px]
+a|
+Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand. 
+|===
++
+. Wait a minimum of 70 seconds before inserting the replacement drive.
 
 . Insert the replacement drive:
- .. With the cam handle in the open position, use both hands to insert the replacement drive.
- .. Push until the drive stops.
- .. Close the cam handle so that the drive is fully seated into the mid plane and the handle clicks into place.
+.. With the cam handle in the open position, use both hands to insert the drive.
+.. Push until the drive stops.
+.. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
 +
 Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
 . Verify that the drive's activity (green) LED is illuminated.
@@ -113,16 +109,20 @@ When the drive's activity LED is solid, it means that the drive has power. When 
 
 . If you are replacing another drive, repeat steps 3 through step 7.
 . If you disabled automatic drive assignment in step 1, manually assign drive ownership, and then reenable automatic drive assignment if needed:
- .. Display all unowned drives: `storage disk show -container-type unassigned`
+.. Display all unowned drives: `storage disk show -container-type unassigned`
 +
-You can enter the command on either controller module.
+You can enter the command on either controller.
 
- .. Assign each drive: `storage disk assign -disk disk_name -owner owner_name`
+.. Assign each drive: `storage disk assign -disk disk_name -owner owner_name`
 +
-You can enter the command on either controller module.
+You can enter the command on either controller.
 +
 You can use the wildcard character to assign more than one drive at once.
 
- .. Reenable automatic drive assignment if needed: `storage disk option modify -node node_name -autoassign on`
+.. Reenable automatic drive assignment if needed: `storage disk option modify -node node_name -autoassign on`
 +
-You must reenable automatic drive assignment on both controller modules.
+You must reenable automatic drive assignment on both controllers.
+
+. Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
++
+Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number or additional help with the replacement procedure.
