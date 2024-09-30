@@ -6,12 +6,15 @@ include::../_include/g_controller_remove.adoc[]
 
 . Repeat these steps for the other controller in the chassis.
 
-== Step 2: Move drives to the new chassis
+== Step 2: Remove the drives from the faulty chassis
 
-You need to move the drives from each bay opening in the old chassis to the same bay openings in the new chassis.
+You need to remove all of the drives from the faulty chassis so that later in the procedure you can install them in the replacement chassis.
 
 . Gently remove the bezel from the front of the storage system.
 . Remove the drives:
++
+NOTE: Keep track of what drive bay each drive was removed from because they must be installed in the same drive bays in the replacement chassis.
+
 .. Press the release button on the drive face to open the cam handle.
 .. Rotate the cam handle downward to disengage the drive from the midplane.
 .. Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand.
@@ -20,29 +23,31 @@ NOTE: When removing a drive, always use two hands to support its weight.
 +
 NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
 
-. Keep track of what drive bay each drive was from and set the drives aside on a static-free cart or table.
+. Set the drives aside on a static-free cart or table.
 
 
 == Step 3: Replace chassis from within the equipment rack or system cabinet
 
-You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
+You must remove the faulty chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
-. Remove the screws from the chassis mount points.
-. With two people, slide the old chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
+. Remove the screws from the faulty chassis mount points.
+. With two people, slide the faulty chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
 . Using two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
 . Slide the chassis all the way into the equipment rack or system cabinet.
-. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
-. Install the drives from the old chassis into the replacement chassis:
-.. Align the drive from the old chassis with the same bay opening in the new chassis.
-. Gently push the drive into the chassis as far as it will go.
+. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the faulty chassis.
+. Install the drives you removed from the faulty chassis into the replacement chassis:
 +
-The cam handle engages and begins to rotate upward.
+NOTE: The drives must be installed in the same drive bays in the replacement chassis.
 
-.. Firmly push the drive the rest of the way into the chassis, and then lock the cam handle by pushing it up and against the drive carrier.
+.. With the cam handle in the open position, use both hands to insert the drive.
+
+.. Gently push until the drive stops.
+
+.. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
 +
-Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It clicks when it is secure.
-
-.. Repeat the process for the remaining drives in the system.
+Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
++
+.. Repeat the process for the remaining drives.
 . Install the bezel.
 
 == Step 4: Reinstall the controllers
