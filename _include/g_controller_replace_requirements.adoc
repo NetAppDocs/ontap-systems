@@ -8,16 +8,17 @@ You must review the requirements and considerations for the controller replaceme
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * You must replace a controller with a controller of the same model type. You cannot upgrade your system by just replacing the controller.
 * You cannot change any drives or shelves as part of this procedure.
-* It is important that you apply the commands in these steps on the correct systems:
- ** The _impaired_ controller is the controller that is being replaced.
- ** The _replacement_ controller is the new controller that is replacing the impaired controller.
- ** The _healthy_ controller is the surviving controller.
 * You must always capture the controller's console output to a text log file.
 +
 This provides you a record of the procedure so that you can troubleshoot any issues that you might encounter during the replacement process.
 
 == Considerations
-If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+* It is important that you apply the commands in this procedure to the correct controller:
+** The _impaired_ controller is the controller that is being replaced.
+** The _replacement_ controller is the new controller that is replacing the impaired controller.
+** The _healthy_ controller is the surviving controller.
+
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
 A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
