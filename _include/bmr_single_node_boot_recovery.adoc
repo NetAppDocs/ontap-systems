@@ -25,6 +25,8 @@ When you encounter these boot error messages, you need to restore the ONTAP imag
 
 If their is no encryption on your boot media, use the following procedure to restore the ONTAP image from the partner node.
 
+.Steps
+
 . From the LOADER prompt, enter the _boot_recovery -partner_ command.
 +
 The screen will displays the message `Starting boot media recovery (BMR) process press Ctrl-C to abort...` and begins initial checks.   
