@@ -113,6 +113,8 @@ The NV battery should sit flush to the holder floor.
 
 Move the DIMMs to the replacement controller.
 
+If you have DIMM blanks, you do not need to move them, the replacement controller should some with them installed.
+
 . Remove one of the DIMMs from the impaired controller:
 +
 image::../media/drw_g_dimm_ieops-1873.svg[DIMM replace]
@@ -157,8 +159,9 @@ When inserted correctly, the DIMM should go in easily but fit tightly in the slo
 
 == Step 6: Move the I/O modules
 
-Move the I/O modules to the replacement controller.
-. Unplug any cabling on one of the I/O modules.
+Move the I/O modules and any I/O blanking modules to the replacement controller.
+
+. Unplug cabling from one of the I/O modules.
 +
 Make sure to label the cables so that you know where they came from.
 
@@ -189,7 +192,7 @@ Pull the I/O module out of the controller using the port label tab on the left a
 
 .. Turn the thumbscrew clockwise to tighten.
 
-. Repeat these steps to move the remaining I/O modules to the replacement controller. 
+. Repeat these steps to move the remaining I/O modules and any I/O blanking modules to the replacement controller. 
 
 
 == Step 9: Install the controller
