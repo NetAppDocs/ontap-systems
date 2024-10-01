@@ -1,0 +1,14 @@
+---
+permalink: a20-30-50/bootmedia-shutdown-asa-r2.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, shut down the controller
+summary: "You need to complete the shutdown of the impaired controller."
+---
+= Shut down the controller - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller.
+
+include::../_include/shutdown_most_frus.adoc[]
