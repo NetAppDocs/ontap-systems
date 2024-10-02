@@ -1,5 +1,5 @@
 == Step 1: Power on the shelf and assign shelf ID
-Each NS224 shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you might need to adjust these IDs to maintain uniqueness across your storage system.
+Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you might need to adjust these IDs to maintain uniqueness across your storage system.
 
 .About this task
 * A valid shelf ID is 00 through 99.
