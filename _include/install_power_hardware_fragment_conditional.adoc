@@ -39,7 +39,10 @@ Shelf ID button
 . Change the first number of the shelf ID:
  .. Insert the straightened end of a paperclip or narrow tipped ball point pen into the small hole to press the shelf ID button.
 +
+// next note applies only to FAS70-90
+ifdef::fas70-90[]
 NOTE: On DS series shelves, the shelf ID button is accessible directly at the bottom of the shelf ear.
+endif::fas70-90[]
 
 .. Press and hold the shelf ID button until the first number on the digital display blinks, and then release the button.
 +
