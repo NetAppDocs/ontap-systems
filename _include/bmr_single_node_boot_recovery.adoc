@@ -136,25 +136,25 @@ You'll be prompted for the EKM settings that were initially used during setup.
 +
 
 .. Verify that the attributes for the Cluster UUID and the Keystore UUID are correct. 
-... On the partner node, retrieve the Cluster UUID using the following command.
+* On the partner node, retrieve the Cluster UUID using the following command.
 +
- `cluster identity show` command.
-
-... On the partner node, retrieve the Keystore UUID using the following commands.
-+
-----
- vserver show -type admin
- key-manager keystore show -vserver <nodename>
-----
+`cluster identity show`
 +
 
-... If the partner node is unavailable, use the Mroot-AK key to retrieve the UUID:
+* On the partner node, retrieve the Keystore UUID using the following commands.
 +
-* For the Cluster UUID, enter the following command: 
+`vserver show -type admin`
++
+`key-manager keystore show -vserver <nodename>`
++
+
+* If the partner node is unavailable, use the Mroot-AK key to retrieve the UUID:
++
+** For the Cluster UUID, enter the following command: 
 +
 `x-NETAPP-ClusterName: <cluster name>` 
 +
-* For the Keystore UUID, enter the following command:
+** For the Keystore UUID, enter the following command:
 +
 `x-NETAPP-KeyUsage: MROOT-AK` 
 
