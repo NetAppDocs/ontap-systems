@@ -48,8 +48,9 @@ When netboot is running, the `Starting BMR` message displays.
 
 . Depending on the encryption method, select the option that matches your single-node configuration:
 +
-// start tabbed area
 
+// start tabbed area
++
 [role="tabbed-block"]
 ====
 
@@ -74,12 +75,10 @@ varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
 
 ....
 
-
 --
 
 .Onboard Key Manager (OKM)
 --
-
 If Onboard Key Manager (OKM) is detected, the system displays the following prompt.  
 ....
 key manager is configured.
@@ -189,7 +188,7 @@ You'll be prompted for the EKM settings that were initially used during setup.
 +
 .Show example of key recovery error and warning messages
 [%collapsible]
-
++
 =====
 ....
 
@@ -209,9 +208,10 @@ System halting...
 
 LOADER-B>
 ....
-
-
 =====
+--
+
+====
 
 // end tabbed area
 
