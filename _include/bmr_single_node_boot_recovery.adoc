@@ -194,22 +194,22 @@ You'll be prompted for the EKM settings that were initially used during setup.
 ....
 
 ERROR: kmip_init: halting this system with encrypted mroot...
-+
+
 WARNING: kmip_init: authentication keys might not be available.
-+                                                   
+                                                 
 System cannot connect to key managers.        
-+
+
 ERROR: kmip_init: halting this system with encrypted mroot...
-+
+
 Terminated
-+
+
 Uptime: 11m32s
-+
+
 System halting...
-+
+
 LOADER-B>
 ....
-+
+
 
 =====
 
