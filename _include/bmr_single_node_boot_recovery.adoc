@@ -90,9 +90,28 @@ This option must be used only in disaster recovery procedures. Are you sure? (y 
 
 .. From the Bootmenu Option prompt, enter `Y` to confirm you want to use the bootmedia recovery option.
 
-.. Enter the passphrase for onboard key manager when prompted.
+.. Enter the passphrase for onboard key manager when prompted, and enter the passphrase again to confirm.
++
+.Show example of passphrase prompts
+[%collapsible]
 
-.. Enter the passphrase again when prompted.
+=====
+....
+Enter the passphrase for onboard key management:
+Enter the passphrase again to confirm:
+Enter the backup data:
+TmV0QXBwIEtleSBCbG9iAAECAAAEAAAAcAEAAAAAAAA3yR6UAAAAACEAAAAAAAAA
+QAAAAAAAAACJz1u2AAAAAPX84XY5AU0p4Jcb9t8wiwOZoqyJPJ4L6/j5FHJ9yj/w
+RVDO1sZB1E4HO79/zYc82nBwtiHaSPWCbkCrMWuQQDsiAAAAAAAAACgAAAAAAAAA
+3WTh7gAAAAAAAAAAAAAAAAIAAAAAAAgAZJEIWvdeHr5RCAvHGclo+wAAAAAAAAAA
+IgAAAAAAAAAoAAAAAAAAAEOTcR0AAAAAAAAAAAAAAAACAAAAAAAJAGr3tJA/LRzU
+QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
+.
+.
+.
+.
+....
+=====
 
 +
 .. Continue to monitor the recovery process as it restores the backup config, env file, mdb, and rdb from the partner node.
@@ -162,13 +181,40 @@ You'll be prompted for the EKM settings that were initially used during setup.
 +
 
 
-.. If the key is restored properly, the recovery process continues and reboots the node.
+.. Depending on whether the key is successfully restored, take one of the following actions:
++
+* If the key is successfully restored, the recovery process continues and reboots the node. Proceed to step 4.
++
+* If the key is not successfully restored, the system will halt and display error and warning messages. Rerun the recovery process.
++
+.Show example of key recovery error and warning messages
+[%collapsible]
 
+=====
+....
 
-====
+ERROR: kmip_init: halting this system with encrypted mroot...
++
+WARNING: kmip_init: authentication keys might not be available.
++                                                   
+System cannot connect to key managers.        
++
+ERROR: kmip_init: halting this system with encrypted mroot...
++
+Terminated
++
+Uptime: 11m32s
++
+System halting...
++
+LOADER-B>
+....
++
+
+=====
 
 // end tabbed area
 
 [start=4]
 
-. Once the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
+. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
