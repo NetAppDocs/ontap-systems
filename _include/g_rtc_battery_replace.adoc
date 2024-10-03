@@ -80,7 +80,7 @@ include::../_include/g_controller_reinstall.adoc[]
 NOTE: After replacing the RTC battery, inserting the controller and powering on first BIOS reset, you will see the following error messages: 
 `RTC date/time error. Reset date/time to default`
 `RTC power failure error`
-These messages are excpected and you can continue with this procedure.
+These messages are expected and you can continue with this procedure.
 
 . On the healthy controller, check the date and time with the `cluster date show` command.
 +
