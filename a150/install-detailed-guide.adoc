@@ -82,7 +82,7 @@ X6536-R6 (112-00090), 5m
 
 X6554-R6(112-00189), 15m
 a|
-image:../media/oie_cable_fiber_lc_connector.png[Illustration showing an fiber optic LC connector]
+image:../media/oie_cable_fiber_lc_connector.png[LC fiber connector]
 a|
 FC host network
 a|
@@ -114,7 +114,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-image:../media/oie_cable_micro_usb.png[Illustration showing a micro USB connector]
+image:../media/oie_cable_micro_usb.png[Micro USB connector]
 a|
 Console connection during software setup on non-Windows or Mac laptop/console
 a|
@@ -158,15 +158,15 @@ The following table identifies the cable type with the call out number and cable
 |===
 | Cabling|Connection type
 a|
-image::../media/oie_legend_icon_1_lg.svgwidth=40px]
+image::../media/icon_square_1_green.png[Callout number 1]
 a|
 Cluster interconnect
 a|
-image::../media/oie_legend_icon_2_o.svg[width=40px]
+image::../media/icon_square_2_yellow.png[Callout number 2]
 a|
 Controllers to host data network switches
 a|
-image::../media/oie_legend_icon_3_lp.svg[width=40px]
+image::../media/icon_square_3_orange.png[Callout number 3]
 a|
 Controllers to management network switch
 |=== 
@@ -202,7 +202,7 @@ Use one of the following cable types to cable the UTA2 data ports to your host n
 * For an FC host, use 0c and 0d *or* 0e and 0f.
 * For an 10GbE system, use e0c and e0d *or* e0e and e0f. 
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cabling.png[Data port connections]
 +
 You can connect one port pair as CNA and one port pair as FC, or you can connect both port pairs as CNA or both port pairs as FC.
 
@@ -214,7 +214,7 @@ image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 +
 . Cable the e0M ports to the management network switches with the RJ45 cables.
 +
-image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
+image:../media/drw_c190_u_mgmt_cabling.png[Management port cabling]
 
 IMPORTANT:  DO NOT plug in the power cords at this point.
 
@@ -245,7 +245,7 @@ Use one of the following cable types to cable the UTA2 data ports to your host n
 * For an FC host, use 0c and 0d **or** 0e and 0f.
 * For an 10GbE system, use e0c and e0d **or** e0e and e0f.
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cabling.png[Data port connections]
 +
 You can connect one port pair as CNA and one port pair as FC, or you can connect both port pairs as CNA or both port pairs as FC.
 Ethernet network configurations::
@@ -255,7 +255,7 @@ image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 +
 . Cable the e0M ports to the management network switches with the RJ45 cables.  
 +
-image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
+image:../media/drw_c190_u_mgmt_cabling.png[Management port cabling]
 
 IMPORTANT: DO NOT plug in the power cords at this point.
 
