@@ -88,7 +88,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-image:../media/oie_cable_micro_usb.png[Illustration showing a micro USB connector]
+image:../media/oie_cable_micro_usb.png[Micro USB connector]
 a|
 Console connection during software setup on non-Windows or Mac laptop/console
 a|
@@ -131,15 +131,15 @@ The following table identifies the cable type with the call out number and cable
 |===
 | Cabling|Connection type
 a|
-image::../media/oie_legend_icon_1_lg.svg[width=40px]
+image::../media/icon_square_1_green.png[width=40px]
 a|
 Cluster interconnect
 a|
-image::../media/oie_legend_icon_2_o.svg[width=40px]
+image::../media/icon_square_2_yellow.png[Callout number 2]
 a|
 Controllers to host data network switches
 a|
-image::../media/oie_legend_icon_3_lp.svg[width=40px]
+image::../media/icon_square_3_orange.png[Callout number 3]
 a|
 Controllers to management network switch
 |===
@@ -190,7 +190,7 @@ image:../media/drw_c190_u_tnsc_clust_cbling.png[Cluster interconnect cabling]
 UTA2 data network configurations:: 
 Use one of the following cable types to cable the e0c/0c and e0d/0d or e0e/0e and e0f/0f data ports to your host network. 
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cabling.png[Data port connections]
 +
 Ethernet network configurations::
 Use the Cat 6 RJ45 cable to cable the e0c through e0f ports to your host network. 
@@ -200,7 +200,7 @@ image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 +
 . Cable the e0M ports to the management network switches with the RJ45 cables.
 +
-image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
+image:../media/drw_c190_u_mgmt_cabling.png[Management port cabling]
 
 IMPORTANT:  DO NOT plug in the power cords at this point.
 
@@ -247,7 +247,7 @@ image:../media/drw_c190_u_switched_clust_cbling.png[Clusterinterconnect cabling]
 UTA2 data network configurations::
 Use one of the following cable types to cable the e0c/0c and e0d/0d or e0e/0e and e0f/0f data ports to your host network.
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cabling.png[Data port connections]
 +
 Ethernet network configurations::
 Use the Cat 6 RJ45 cable to cable the e0c through e0f ports to your host network.
@@ -256,7 +256,7 @@ image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 +
 . Cable the e0M ports to the management network switches with the RJ45 cables.  
 +
-image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
+image:../media/drw_c190_u_mgmt_cabling.png[Management port cabling]
 
 IMPORTANT: DO NOT plug in the power cords at this point.
 
