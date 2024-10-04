@@ -66,7 +66,7 @@ NOTE: For maximum system performance for cluster and HA traffic, do not use port
 +
 *100 GbE cable*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable, width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[100Gb Ethernet cable, width=100px]
 +
 image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100 Gb Ethernet network,width=500px]
 
@@ -75,7 +75,7 @@ image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100 Gb Ethern
 +
 *4-ports, 10/25 GbE Host*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[10/25 Gb cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[10/25 Gb cable,width=100px]
 +
 image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Ethernet network,width=500px]
 +
@@ -83,7 +83,7 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Etherne
 
 . Use the 1000BASE-T RJ-45 cables to connect the controller management (wrench) ports to the management network switches.
 +
-image::../media/oie_cable_rj45.svg[RJ45 cables]
+image::../media/oie_cable_rj45.png[RJ45 cables]
 *1000BASE-T RJ-45 cables*
 +
 image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
@@ -111,7 +111,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 *100 GbE cable*
 +
-image::../media/oie_cable100_gbe_qsfp28.svg[100 Gb cable]
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
 image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[Cable cluster connections to cluster network,width=500px]
 
@@ -125,7 +125,7 @@ NOTE: For maximum system performance for cluster and HA traffic, do not use port
 +
 *100 GbE cable*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[100Gb Ethernet cable,width=100px]
 +
 image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100Gb Ethernet network,width=500px]
 
@@ -134,7 +134,7 @@ image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100Gb Etherne
 +
 *4-ports, 10/25 GbE Host*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb Ethernet cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[10/25Gb Ethernet cable,width=100px]
 +
 image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 10/25Gb Ethernet network,width=500px]
 +
@@ -142,7 +142,7 @@ image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 10/25Gb Ether
 
 . Connect the controller management (wrench) ports to the management network switches with 1000BASE-T RJ-45 cables.
 +
-image::../media/oie_cable_rj45.svg[RJ-45 cables]
+image::../media/oie_cable_rj45.png[RJ-45 cables]
 *1000BASE-T RJ-45 cables*
 +
 image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
@@ -168,7 +168,7 @@ Connect each controller to the NSM modules on the NS224 shelf. The graphics show
 
 *100 GbE QSFP28 copper cables*
 
-image::../media/oie_cable100_gbe_qsfp28.svg[100 GbE QSFP28 copper cable,width=100px]
+image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable,width=100px]
 
 .Steps
 . Connect controller A port e11a to NSM A port e0a.
@@ -189,7 +189,7 @@ Connect each controller to the NSM modules on both NS224 shelves. The graphics s
 
 *100 GbE QSFP28 copper cables*
 
-image::../media/oie_cable100_gbe_qsfp28.svg[100 GbE QSFP28 copper cable,width=100px]
+image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable,width=100px]
 
 .Steps
 
