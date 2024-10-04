@@ -9,7 +9,7 @@ summary: 'Follow these high-level steps to install and set up your AFF A70 or A9
 :imagesdir: ../media/
 
 [.lead]
-To install and set up your AFF A20, AFF A30, or AFF A50 storage system, you must review the installation requirements and considerations, prepare your site, install and cable the hardware components, power on the system, and set up the ONTAP cluster.
+To install and set up your AFF A20, AFF A30, or AFF A50 storage system, you must review the installation requirements and considerations, prepare your site, install and cable the hardware components, power on the storage system, and set up the ONTAP cluster.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Review the installation requirements and considerations]
@@ -22,7 +22,7 @@ To prepare for install, you need to get the site ready, check the environmental 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Two]link:install-hardware.html[Install the hardware]
 [role="quick-margin-para"]
-To install the hardware, install the rail kits for your platform and shelves, and then install and secure your platform and shelves in the cabinet or telco rack.
+To install the hardware, install the rail kits for your storage system and shelves, and then install and secure your storage system and shelves in the cabinet or telco rack.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Three]link:install-cable.html[Cable the hardware]
 [role="quick-margin-para"]

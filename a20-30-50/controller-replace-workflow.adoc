@@ -20,7 +20,7 @@ Shut down or take over the impaired controller so that the healthy controller co
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:controller-replace-move-hardware.html[Replace the controller]
 [role="quick-margin-para"]
-Replacing the controller includes removing the impaired controller, moving the FRU components to the replacement controller, and then installing the replacement controller in the enclosure.
+Replacing the controller includes removing the impaired controller, moving the FRU components to the replacement controller, and then installing the replacement controller in the chassis.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration ]
 [role="quick-margin-para"]

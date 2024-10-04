@@ -1,5 +1,5 @@
 == Step 1: Power on the shelf and assign shelf ID
-Each NS224 shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you might need to adjust these IDs to maintain uniqueness across your storage system.
+Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you might need to adjust these IDs to maintain uniqueness across your storage system.
 
 .About this task
 * A valid shelf ID is 00 through 99.
@@ -12,8 +12,7 @@ The shelf powers on and boots automatically when plugged into the power source.
 
 . Remove the left end cap to access the shelf ID button behind the faceplate.
 +
-image::../media/drw_a900_oie_change_ns224_shelf_id_ieops-836.svg[Change NS224 shelf ID,width=300px]
-
+image::../media/drw_a900_oie_change_ns224_shelf_id_ieops-836.svg[Change ns224 shelf id,width=300px]
 +
 
 [cols="20%,80%"]
@@ -40,7 +39,10 @@ Shelf ID button
 . Change the first number of the shelf ID:
  .. Insert the straightened end of a paperclip or narrow tipped ball point pen into the small hole to press the shelf ID button.
 +
+// next note applies only to FAS70-90
+ifdef::fas70-90[]
 NOTE: On DS series shelves, the shelf ID button is accessible directly at the bottom of the shelf ear.
+endif::fas70-90[]
 
 .. Press and hold the shelf ID button until the first number on the digital display blinks, and then release the button.
 +

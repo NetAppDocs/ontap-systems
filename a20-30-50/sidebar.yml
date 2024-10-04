@@ -6,9 +6,9 @@ entries:
    entries:
      - title: Install workflow
        url: /a20-30-50/install-overview.html
-     - title: Requirements and considerations
+     - title: Review requirements
        url: /a20-30-50/install-requirements.html
-     - title: Prepare for installation
+     - title: Prepare to install
        url: /a20-30-50/install-prepare.html
      - title: Install hardware
        url: /a20-30-50/install-hardware.html
@@ -47,7 +47,7 @@ entries:
           entries:
             - title: Boot media replace workflow
               url: /a20-30-50/bootmedia-replace-workflow.html
-            - title: Requirements and considerations
+            - title: Review requirements
               url: /a20-30-50/bootmedia-replace-requirements.html
             - title: Check onboard encryption keys
               url: /a20-30-50/bootmedia-encryption-preshutdown-checks.html
@@ -71,7 +71,7 @@ entries:
      entries:
         - title: Chassis replace workflow
           url: /a20-30-50/chassis-replace-workflow.html
-        - title: Requirements and considerations
+        - title: Review requirements
           url: /a20-30-50/chassis-replace-requirements.html
         - title: Shut down controllers
           url: /a20-30-50/chassis-replace-shutdown.html
@@ -84,7 +84,7 @@ entries:
      entries:
         - title: Controller replace workflow
           url: /a20-30-50/controller-replace-workflow.html
-        - title: Requirements and considerations
+        - title: Review requirements
           url: /a20-30-50/controller-replace-requirements.html
         - title: Shut down impaired controller
           url: /a20-30-50/controller-replace-shutdown.html

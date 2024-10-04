@@ -104,8 +104,8 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 
 
 +
-.. Cable Controller A port e3a and Controller B port e3a to cluster network switch A. 
-.. Cable Controller A port e3b and Controller B port e3b to cluster network switch B.
+.. Cable Controller A port e4a and Controller B port e4a to cluster network switch A. 
+.. Cable Controller A port e4b and Controller B port e4b to cluster network switch B.
 +
 *100 GbE cable*
 +
@@ -181,6 +181,6 @@ image:../media/drw_isi_g_1_ns224_controller_b_cabling_ieops-1946.svg[Controller 
 
 .What's next?
 
-After you’ve cabled the hardware for your storage system system, you link:install-power-hardware.html[power on the storage system].
+After you’ve cabled the hardware for your storage system, you link:install-power-hardware.html[power on the storage system].
 
 
