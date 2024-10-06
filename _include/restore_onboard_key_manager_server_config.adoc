@@ -12,10 +12,10 @@ You need the following information while restoring the OKM configuration:
 
 .Steps
 
-. From the ONTAP boot menu select option 10:
+. From the ONTAP boot menu select the appropriate option:
+* For ONTAP 9.8 and later, select option 10:
 
 +
-
 ----
 
 Please choose one of the following:
@@ -35,7 +35,31 @@ Selection (1-11)? 10
 
 ----
 
+* For ONTAP 9.7 and earlier, enter the hidden option `recover_onboard_keymanager`:
+
 +
+[%collapsible]
+====
+
+----
+
+Please choose one of the following:
+
+(1)  Normal Boot.
+(2)  Boot without /etc/rc.
+(3)  Change password.
+(4)  Clean configuration and initialize all disks.
+(5)  Maintenance mode boot.
+(6)  Update flash from backup config.
+(7)  Install new software first.
+(8)  Reboot node.
+(9)  Configure Advanced Drive Partitioning.
+Selection (1-19)? recover_onboard_keymanager
+
+----
+
+====
+
 
 . Confirm the continuation of the process.
 `This option must be used only in disaster recovery procedures. Are you sure? (y or n):` _y_
@@ -170,7 +194,8 @@ All offline encrypted volumes will be brought online and the corresponding volum
 
 ----
 
-
++
+NOTE: If the sync is successful the cluster prompt is returned with no additional messages.  If the sync fails an error message appears before returning to the cluster prompt.  Do not continue until the the error is corrected and the sync runs successfully.
 
 . Ensure that all keys are synced:
  _security key-manager key query -restored false_
