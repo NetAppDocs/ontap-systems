@@ -1,5 +1,4 @@
 
-
 == Step 1: Check if your version of ONTAP supports encryption
 
 Before you shut down the impaired controller, you must check whether your ONTAP version supports NetApp Volume Encryption (NVE) or if the system is running Onboard Key Manager (OKM) or External Key Manager (EKM). This information is crucial for downloading the correct ONTAP image.
@@ -50,10 +49,13 @@ If OKM is enabled, `_onboardM_` is listed in the command output.
 // end tabbed area
 
 [start=2]
-. Based on whether OKM or EKM is enabled on your system, select one of the following options: 
-+
-// start tabbed area
 
+. Based on whether OKM or EKM is enabled on your system, select one of the following options: 
+
++
+
+// start tabbed area
++
 [role="tabbed-block"]
 ====
 
@@ -83,7 +85,7 @@ If all the authentication keys are `true`, you can safely shut down the impaired
 `_security key-manager key query_`
 
 .. Depending on the output, take one of the following actions: 
-* If the restored column displays 'true', manually back up the OKM information.
+*  If the the `Restored` column displays `true`, manually back up the OKM information.
 
 ... Go to advanced mode by entering _set -priv advanced_ and enter _y_ when prompted.
 ... Enter the command to display the key management information: 
@@ -92,7 +94,8 @@ _security key-manager onboard show-backup_.
  ... Copy the contents of the backup information to a separate file or your log file. You'll need it in disaster scenarios where you might need to manually recover OKM.
  ... You can safely shut down the impaired controller.
 
-* If the restored column does not display 'true', do the following:
+*  If the the `Restored` column does not display
+ `true`, do the following:
 ... Enter the onboard security key-manager sync command:
  _security key-manager onboard sync_
 +
@@ -109,3 +112,6 @@ _security key-manager onboard show-backup_.
 
 // end tabbed area
 
+.What's next?
+
+Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
