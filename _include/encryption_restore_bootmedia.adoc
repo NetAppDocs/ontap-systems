@@ -1,4 +1,4 @@
-Restore encryption Restore encryption on the replacement boot media.
+Restore encryption on the replacement boot media.
 
 == Step 1: Restore key manager
 
@@ -12,15 +12,21 @@ NOTE: If NSE or NVE are enabled along with Onboard or external Key Manager you m
 . Select one of the following options to restore the onboard key manager configuration from the ONATP boot menu. 
 
 [role="tabbed-block"]
+
 ====
 
 .Option 1: Systems with onboard key manager server configuration
+
 --
+
 include::../_include/restore_onboard_key_manager_server_config.adoc[]
+
 --
 .Option 2: Systems with external key manager server configuration
 --
+
 include::../_include/restore_external_key_manager_server_config.adoc[]
+
 --
 
 ====
