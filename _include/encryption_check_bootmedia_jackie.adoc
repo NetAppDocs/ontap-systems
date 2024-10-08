@@ -60,12 +60,20 @@ If OKM is enabled, `_onboardM_` is listed in the command output.
 
 [start=2]
 
-. Enter the following query command to display the key information for your key manager:
+. Enter the following query command to display the status of the authentication keys in your key manager:
 +
 `security key-manager key query`
 
-. Based on whether OKM or EKM is enabled on your system, select one of the following options: 
+. Check the output for the value in the `Restored` column for your key manager. 
++
+This column indicates whether the authentication keys for your key manager (either EKM or OKM) have been successfully restored.
++
+* If the value in the Restored column is true, the keys are properly restored, and it is safe to proceed with the controller shutdown.
++
+* If the value is anything other than true, the keys have not been restored, and you'll need to take additional steps (restoring or syncing keys) depending on whether you're using EKM or OKM.
 
+
+. Depending on whether you're using EKM or OKM, select one of the following options and follow the appropriate steps depending on the output value displayed in the `Restored` column.
 +
 
 // start tabbed area
@@ -75,7 +83,7 @@ If OKM is enabled, `_onboardM_` is listed in the command output.
 
 .EKM
 --
-Depending on the output value displayed in the `Restored` column, take one of the following actions:
+Depending on the output value displayed in the `Restored` column, follow the appropriate steps.
 
 [cols="1a,2a" options="header"]
 |===
@@ -108,7 +116,7 @@ If all the authentication keys are `true`, you can safely shut down the impaired
 .OKM
 --
 
-Depending on the output value displayed in the `Restored` column, take one of the following actions:
+Depending on the output value displayed in the `Restored` column, follow the appropriate steps.
 
 [cols="1a,2a" options="header"]
 |===
