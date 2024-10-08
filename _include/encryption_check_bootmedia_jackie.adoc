@@ -1,8 +1,5 @@
 Before shutting down the impaired controller, check if your version of ONTAP supports NetApp Volume Encryption (NVE) and if your key management system is properly configured. 
 
-Ensuring encryption support allows you to download the correct ONTAP image. Checking the key manager ensures you can safely shut down controllers without risking data security.
-
-
 == Step 1: Check if your version of ONTAP supports encryption
 
 Check whether your ONTAP version supports NetApp Volume Encryption (NVE). This information is crucial for downloading the correct ONTAP image.
@@ -13,7 +10,7 @@ Check whether your ONTAP version supports NetApp Volume Encryption (NVE). This i
 +
 If the output includes `1Ono-DARE`, NVE is not supported on your cluster version.
 
-. Depending on whether NVE is supported on your system , take one of the following actions:
+. Depending on whether NVE is supported on your system, take one of the following actions:
 * If NVE is supported, download the ONTAP image with NetApp Volume Encryption.
 * If NVE is not supported, download the ONTAP image *without* NetApp Volume Encryption.
 
@@ -47,13 +44,13 @@ Determine if OKM is enabled on your system by running one of the following comma
 +
 `security key-manager keystore show` 
 +
-If OKM is enabled, `_OKM_` is listed in the command output.
+If OKM is enabled, `OKM` is listed in the command output.
 
 * For ONTAP 9.13.1 or earlier, enter the following command:
 +
 `security key-manager show-key-store` 
 +
-If OKM is enabled, `_onboardM_` is listed in the command output.
+If OKM is enabled, `onboardM` is listed in the command output.
 |===
 
 +
@@ -126,10 +123,10 @@ a|
 a|
 Manually back up the OKM information.
 
-.. Go to the advanced mode by entering `_set -priv advanced_` and then enter _Y_ when prompted.
+.. Go to the advanced mode by entering `set -priv advanced` and then enter `Y` when prompted.
 .. Enter the following command to display the key management information: 
 +
-`_security key-manager onboard show-backup_`
+`security key-manager onboard show-backup`
 
  .. Copy the contents of the backup information to a separate file or your log file. 
 
@@ -145,7 +142,7 @@ a|
 
 .. Enter the onboard security key-manager sync command:
 +
-`_security key-manager onboard sync_`
+`security key-manager onboard sync`
 +
 .. Enter the 32 character, alphanumeric onboard key management passphrase when prompted. 
 +
@@ -159,7 +156,7 @@ If the passphrase cannot be provided, contact http://mysupport.netapp.com/[NetAp
 
 .. Enter the command to display the key management backup information:
 +
-`_security key-manager onboard show-backup_`
+`security key-manager onboard show-backup`
 
 .. Copy the contents of the backup information to a separate file or your log file. 
 +
