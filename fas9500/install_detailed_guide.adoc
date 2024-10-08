@@ -8,7 +8,7 @@ summary: 'This a gives detailed step-by-step instructions for installing a typic
 :icons: font
 :imagesdir: ../media/
 
-[.lead]
+[.lead] 
 This article gives detailed step-by-step instructions for installing a typical NetApp system. Use this article if you want more detailed installation instructions.
 
 == Step 1: Prepare for installation
@@ -51,7 +51,7 @@ X66240A-2 (112-00598), 2m
 
 X66240A-5 (112-00600), 5m
 a|
-image::../media/oie_cable_sfp_gbe_copper.png
+image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
 a|
 Network cable
 a|
@@ -63,7 +63,7 @@ X66250-5 (112-00344), 5m
 
 X66250-15 (112-00346), 15m
 a|
-image::../media/oie_cable_sfp_gbe_copper.png
+image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
 a|
 FC optical network cable
 a|
@@ -75,7 +75,7 @@ X66100-3 (112-00543), 3m
 
 X66100-5 (112-00544), 5m
 a|
-image::../media/oie_cable100_gbe_qsfp28.png
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 a|
 Ethernet data, cluster
 network
@@ -88,7 +88,7 @@ X66211B-2 (112-00574), 2m
 
 X66211B-5 (112-00576), 5m
 a|
-image::../media/oie_cable100_gbe_qsfp28.png
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 a|
 Network,
 
@@ -114,7 +114,7 @@ Part numbers X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image::../media/oie_cable_rj45.png
+image::../media/oie_cable_rj45.png[RJ-45 connector]
 a|
 Management network and Ethernet data
 a|
@@ -186,7 +186,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
+image::../media/oie_cable_pull_tab_up.svg[Cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
@@ -209,16 +209,16 @@ Cable cluster interconnect ports:
 ** Slot A4 and B4 (e4a)
 ** Slot A8 and B8 (e8a)
 
-image::../media/oie_cable100_gbe_qsfp28.png
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 a|
-image::../media/icon_square_2_yellow.png
+image::../media/icon_square_2_yellow.png[Callout icon 2]
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.png
 
 a|
-image::../media/icon_square_3_orange.png
+image::../media/icon_square_3_orange.png[Callout icon 3]
 a|
 Cable 32 Gb FC network switches:
 
@@ -226,7 +226,7 @@ Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 32 Gb FC network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.png
+image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
 
 
 40GbE host network switches:
@@ -235,7 +235,7 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable100_gbe_qsfp28.png
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 a|
 image::../media/icon_square_4_red.png
 a|
@@ -246,7 +246,7 @@ Cable ports in slot A5 and B5 (5a,
 (7a, 7b, 7c, and 7d) to the
 25 GbE network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.png
+image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
 a|
 * Strap the cables to the cable
 management arms (not shown).
@@ -272,7 +272,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
+image::../media/oie_cable_pull_tab_up.svg[Cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
@@ -290,7 +290,7 @@ image::../media/drw_9500_switched_network_cabling.svg[align="center",width=500px
 
 | Step|Perform on each controller
 a|
-image::../media/icon_square_1_green.png
+image::../media/icon_square_1_green.png[Callout number 1]
 a|
 Cable cluster
 interconnect a ports:
@@ -299,15 +299,15 @@ interconnect a ports:
 ** Slot A8 and B8 (e8a) to the
 cluster network switch.
 
-image::../media/oie_cable100_gbe_qsfp28.png
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 a|
-image::../media/icon_square_2_yellow.png
+image::../media/icon_square_2_yellow.png[Callout icon 2]
 a|
 Cable controller management (wrench) ports.
 
-image::../media/oie_cable_rj45.png
+image::../media/oie_cable_rj45.png[RJ-45 connector]
 a|
-image::../media/icon_square_3_orange.png
+image::../media/icon_square_3_orange.png[Callout icon 3]
 a|
 Cable 32 Gb FC network switches:
 
@@ -315,7 +315,7 @@ Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 32 Gb FC network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.png
+image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
 
 
 40GbE host network switches:
@@ -324,9 +324,9 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable100_gbe_qsfp28.png
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 a|
-image::../media/icon_square_4_red.png
+image::../media/icon_square_4_red.png[Callout icon 4]
 a|
 Cable 25 GbE connections:
 
@@ -363,9 +363,9 @@ NOTE: For more SAS cabling information and worksheets, see link:../sas3/overview
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
-image::../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
+image::../media/oie_cable_pull_tab_up.svg[Cable pull tab direction]
 
-image::../media/oie_cable_pull_tab_down.svg[width=200px]
+image::../media/oie_cable_pull_tab_down.pngCable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
