@@ -133,16 +133,16 @@ Cable ports e1a, e1b, e1c and e1d on each controller to the FC host network swit
 +
 *64 Gb FC cables*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[64 Gb fc cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.svg[64 gb fc cable,width=100px]
 +
-image::../media/drw_isi_g_4p_64gb_fc_optional_cabling_ieops-1924.svg[Cable to 64Gb fc host network switches]
+image::../media/drw_isi_g_4p_64gb_fc_optional_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
 +
 
 . Cable the management (wrench) ports on each controller to the management network switches.
 +
 *1000BASE-T RJ-45 cables*
 +
-image::../media/oie_cable_rj45.svg[RJ45 cables,width=100px]
+image::../media/oie_cable_rj45.svg[rj45 cables,width=100px]
 +
 image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your management network,width=500px]
 
@@ -158,7 +158,7 @@ This procedure shows how to cable the controllers to one NS224 shelf.
 For the maximum number of shelves supported for your storage system, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 .About this task
-* You cable each controller to each NSM module on the NS224 shelf using the following cable type:
+* You cable each controller to each NSM100B module on the NS224 shelf using the following cable type:
 +
 *100 GbE QSFP28 copper cables*
 +
