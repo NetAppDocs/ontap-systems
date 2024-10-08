@@ -1,3 +1,7 @@
+Before shutting down the impaired controller, check if your version of ONTAP supports NetApp Volume Encryption (NVE) and if your key management system is properly configured. 
+
+Ensuring encryption support allows you to download the correct ONTAP image. Checking the key manager ensures you can safely shut down controllers without risking data security.
+
 
 == Step 1: Check if your version of ONTAP supports encryption
 
