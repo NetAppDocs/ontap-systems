@@ -37,7 +37,7 @@ Selection (1-11)? 10
 
 * For ONTAP 9.7 and earlier, enter the hidden option `recover_onboard_keymanager` command.
 
-
++
 ....
 
 Please choose one of the following:
@@ -55,7 +55,7 @@ Selection (1-19)? recover_onboard_keymanager
 
 ....
 
-
++
 
 . Confirm the continuation of the process.
 `This option must be used only in disaster recovery procedures. Are you sure? (y or n): `y`

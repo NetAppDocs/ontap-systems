@@ -30,7 +30,7 @@ a|
 
 Determine if EKM is enabled on your system by running the following command:
 
-`security key-manager show-key-store`
+`security key-manager show key store`
 
 If EKM is enabled, `external` is listed in the output.
 
@@ -50,7 +50,7 @@ If OKM is enabled, `OKM` is listed in the command output.
 +
 `security key-manager show-key-store` 
 +
-If OKM is enabled, `onboardM` is listed in the command output.
+If OKM is enabled, `onboard` is listed in the command output.
 |===
 
 +
