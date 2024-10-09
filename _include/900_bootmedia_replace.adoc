@@ -94,11 +94,11 @@ You can install the system image to the replacement boot media using a USB flash
 
 .Before you begin
 * You must have a USB flash drive, formatted to FAT32, with at least 4GB capacity.
-* A copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the Downloads section on the NetApp Support Site. Use the `version -v` command to display if your version of ONTAP supports NVE.  If the command output displays `<10no- DARE>`, your version of ONTAP does not support NVE.
+* Download a copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the Downloads section on the NetApp Support Site. Use the `version -v` command to display if your version of ONTAP supports NVE.  If the command output displays `<10no- DARE>`, your version of ONTAP does not support NVE.
  ** If NVE is supported by your version of ONTAP, download the image with NetApp Volume Encryption, as indicated in the download button.   
  ** If NVE is not supported, download the image without NetApp Volume Encryption, as indicated in the download button.
  
-* If your system is a stand-alone system you do not need a network connection, but you must perform an additional reboot when restoring the var file system.
+ * If your system is a stand-alone system you do not need a network connection, but you must perform an additional reboot when restoring the var file system.
 
 .Steps
 

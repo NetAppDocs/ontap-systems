@@ -2,7 +2,7 @@ To shut down the impaired controller, you must determine the status of the contr
 
 * If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum[Synchronize a node with the cluster^].
 
-* If you have a MetroCluster configuration, you must have confirmed that the MetroCluster Configuration State is configured and that the nodes are in an enabled and normal state (`metrocluster node show`).
+* You must have confirmed that the MetroCluster Configuration State is configured and that the nodes are in an enabled and normal state (`metrocluster node show`).
 
 .Steps
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
@@ -18,7 +18,7 @@ The following AutoSupport message suppresses automatic case creation for two hou
 a|
 The LOADER prompt
 a|
-Go to the next step.
+Go to the next section.
 a|
 Waiting for giveback...
 a|
