@@ -15,7 +15,7 @@ Follow these workflow steps to replace your boot media.
 [role="quick-margin-para"]
 To replace the boot media, you must meet certain requirements.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-shutdown-asa-r2.html[Shut down the impaired controller]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-shutdown-bmr.html[Shut down the impaired controller]
 [role="quick-margin-para"]
 Shut down or take over the impaired controller so that the healthy controller continues to serve data from the impaired controller storage. 
 
@@ -27,7 +27,7 @@ Remove the failed boot media from the System Management module and install the r
 [role="quick-margin-para"]
 Restore the ONTAP image from the partner controller.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:bootmedia-complete-rma.html[Return the failed part to NetApp]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:bootmedia-complete-rma-bmr.html[Return the failed part to NetApp]
 [role="quick-margin-para"]
 Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
