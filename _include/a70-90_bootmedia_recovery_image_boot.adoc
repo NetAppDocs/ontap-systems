@@ -2,7 +2,7 @@ You must boot the ONTAP image from the USB drive, restore the file system, and v
 
 .Steps
 
-. From the LOADER prompt, boot the recovery image from the USB flash drive: _boot_recovery_
+. From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
 +
 The image is downloaded from the USB flash drive.
 

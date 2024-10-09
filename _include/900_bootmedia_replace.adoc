@@ -1,4 +1,4 @@
-You must remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.
+You must unplug the controller module, remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.
 
 == Step 1: Remove the controller module
 :icons: font
@@ -101,6 +101,19 @@ You can install the system image to the replacement boot media using a USB flash
  * If your system is a stand-alone system you do not need a network connection, but you must perform an additional reboot when restoring the var file system.
 
 .Steps
+
+. If you have not done so, download and copy the appropriate service image from the https://mysupport.netapp.com/[NetApp Support Site] to the USB flash drive.
+.. Download the service image from the Downloads link on the page, to your work space on your laptop.
+.. Unzip the service image.
++
+
+NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
+
++
+ 
+The USB flash drive should have the appropriate ONTAP image of what the impaired controller is running.
+
++
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 . Recable the controller module, as needed.

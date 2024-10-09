@@ -11,89 +11,67 @@ The image is downloaded from the USB flash drive.
 [options="header" cols="1,2"]
 
 |===
-| If your system has...| Then...
+| If your system is running...| Then...
+ 
 a|
-A network connection
+ONTAP 9.16.0 or earlier
 a|
+.. On the impaired controller, press _Y_ when you see `Do you want to restore the backup configuration now?` 
 
- .. Press `y` when prompted to restore the backup configuration.
- .. Press `y` when prompted to overwrite `/etc/ssh/ssh_host_ecdsa_key`.
- .. Press `y` when prompted to confirm if the restore backup was successful.
- .. Press `Y` when prompted to  the restored configuration copy.
- .. Set the impaired controller to advanced privilege level: `set -privilege advanced`
- .. Run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address`
- .. Return the impaired controller to admin level: `set -privilege admin`
- .. Press `y` when prompted to use the restored configuration.
- .. Press `y` when prompted to reboot the impaired controller.
+.. On the impaired controller, press _Y_ when prompted to overwrite `/etc/ssh/ssh_host_ecdsa_key`. 
 
-a|
-No network connection
-a|
+.. On the healthy partner controller, set the impaired controller to advanced privilege level: `set -privilege admin`.
 
- .. Press `n` when prompted to restore the backup configuration.
- .. Reboot the system when prompted by the system.
- .. Select the *Update flash from backup config* (sync flash) option from the displayed menu.
-+
-If you are prompted to continue with the update, press `y`.
-
-a|
-No network connection and is in a MetroCluster IP configuration
-a|
-
- .. Press `n` when prompted to restore the backup configuration.
- .. Reboot the system when prompted by the system.
- .. Wait for the iSCSI storage connections to connect.
-+
-You can proceed after you see the following messages:
-+
-----
-date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
-date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
-date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_auxiliary, address: ip-address).
-date-and-time [node-name:iscsi.session.stateChanged:notice]: iSCSI session state is changed to Connected for the target iSCSI-target (type: dr_partner, address: ip-address).
-----
-
- .. Select the *Update flash from backup config* (sync flash) option from the displayed menu.
-+
-If you are prompted to continue with the update, press `y`.
+.. On the healthy partner controller, run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address`.
 
 +
+*NOTE:*  If you see any message other than a successful restore, contact https://support.netapp.com[NetApp Support].
+
+.. On the healthy partner controller, return the impaired controller to admin level: `set -privilege admin`.
+
+.. On the impaired controller, press _y_ when you see `Was the restore backup procedure successful?`.
+
+.. On the impaired controller, press _y_ when you see `...would you like to use this restored copy now?`. 
+
+.. On the impaired controller, press _y_ when prompted to reboot the impaired controller and press _ctrl-c_ for the Boot Menu.
+
+.. If the system does not use encyption, select _Option 1 Normal Boot._, otherwise go to link:bootmedia-encryption-restore.html[Restore key managers].
+
+.. Connect the console cable to the partner controller.
+
+.. Give back the controller using the _storage failover giveback -fromnode local_ command.
+
+.. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
+
+.. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
++
+*NOTE:* If the process fails, contact https://support.netapp.com[NetApp Support].
++
+// 
+a|
+// ONTAP 9.16.1 or later
+// a| 
+// .. On the impaired controller, press _y_ when prompted to restore the backup configuration. 
+// +
+// After restore procedure is successful, this message will be seen on the console - `syncflash_partner: Restore from partner complete`.
+// 
+// .. On the impaired controller, press _y_ when prompted to confirm if the restore backup was successful.
+// .. On the impaired controller, press _y_ when prompted to use the restored configuration.
+// .. On the impaired controller, press _y_ when prompted to reboot the node.
+
+// .. On the impaired controller, press _y_ when prompted to reboot the impaired controller and press _ctrl-c_ for the Boot Menu.
+
+// .. If the system does not use encyption, select _Option 1 Normal Boot._, otherwise go to link:bootmedia-encryption-restore.html[Restore key managers].
+
+// .. Connect the console cable to the partner controller.
+
+// .. Give back the controller using the _storage failover giveback -fromnode local_ command.
+
+// .. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
+
+// .. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
+// +
+// *NOTE:* If the process fails, contact https://support.netapp.com[NetApp Support].
+// +
 |===
 
-. Ensure that the environmental variables are set as expected:
- .. Take the impaired controller to the LOADER prompt.
- .. Check the environment variable settings with the printenv command.
- .. If an environment variable is not set as expected, modify it with the `setenv _environment_variable_name_ _changed_value_` command.
- .. Save your changes using the saveenv command.
-. The next depends on your system configuration:
- ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia_encryption_restore.adoc[Post boot media replacement steps for OKM, NSE, and NVE]
- ** If your system does not have onboard keymanager, NSE or NVE configured, complete the steps in this section.
-. From the LOADER prompt, enter the boot_ontap command.
-+
-
-[options="header" cols="1,2"]
-
-|===
-| If you see...| Then...
-a|
-The login prompt
-a|
-Go to the next Step.
-a|
-Waiting for giveback...
-a|
-
- .. Log into the partner controller.
- .. Confirm the target is ready for giveback with the `storage failover show` command.
-
-+
-|===
-
-. Connect the console cable to the partner controller.
-. Give back the controller using the storage failover giveback -fromnode local command.
-. At the cluster prompt, check the logical interfaces with the net int -is-home false command.
-+
-If any interfaces are listed as "false", revert those interfaces back to their home port using the net int revert command.
-
-. Move the console cable to the repaired Shut down or take over the impaired controller using the appropriate procedure for your configuration. and run the version -v command to check the ONTAP versions.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
