@@ -24,12 +24,12 @@ a|
 
 .. On the healthy partner controller, set the impaired controller to advanced privilege level: _set -privilege advanced_.
 
-.. On the healthy partner controller, run the restore backup command: _system node restore-backup -node local -target-address impaired_node_IP_address_.
+.. On the healthy partner controller, run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address` .
 
 +
 *NOTE:*  If you see any message other than a successful restore, contact https://support.netapp.com[NetApp Support].
 
-.. On the healthy partner controller, return the impaired controller to admin level: _set -privilege admin_.
+.. On the healthy partner controller, return the impaired controller to admin level: `set -privilege admin`.
 
 .. On the impaired controller, press _y_ when you see `Was the restore backup procedure successful?`.
 

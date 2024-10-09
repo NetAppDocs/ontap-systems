@@ -15,7 +15,7 @@ Follow these workflow steps to replace your boot media.
 [role="quick-margin-para"]
 Review the requirements for replacing the boot media.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-encryption-preshutdown-checks.html[Check onboard encryption keys]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-encryption-preshutdown-checks.html[Check encryption key support and status]
 [role="quick-margin-para"]
 Verify whether the system has security key manager enabled or encrypted disks.
 
@@ -25,11 +25,11 @@ Shut down or take over the impaired controller so that the healthy controller co
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia-replace.html[Replace the boot media]
 [role="quick-margin-para"]
-Remove the failed boot media from the System Management module and install the replacement boot media, and then transfer an ONTAP image using a USB flash drive to the replacement boot media.
+Remove the failed boot media from the System Management module and install the replacement boot media, and then transfer an ONTAP image using a USB flash drive.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:bootmedia-recovery-image-boot.html[Boot the recovery image]
 [role="quick-margin-para"]
-Boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables..
+Boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:bootmedia-encryption-restore.html[Restore encryption]
 [role="quick-margin-para"]
