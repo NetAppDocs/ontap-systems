@@ -1,12 +1,10 @@
 section: asa-r2-a1k-maintain
 title: ASA A1K systems
-pdf-filename: ASA A1K Maintain
 entries:
   - title: Maintenance overview
     url: /asa-r2-a1k/maintain-overview.html
   # START boot media
   - title: Boot media
-    pdf-filename: ASA A1K Boot Media
     entries:
       - title: Boot media overview
         url: /asa-r2-a1k/bootmedia-overview.html
@@ -44,7 +42,6 @@ entries:
             url: /asa-r2-a1k/bootmedia-complete-rma.html
     # END boot media
   - title: Controller
-    pdf-filename: ASA A1K Controller Module
     entries:
       - title: Controller replace workflow
         url: /asa-r2-a1k/controller-replace-workflow.html
