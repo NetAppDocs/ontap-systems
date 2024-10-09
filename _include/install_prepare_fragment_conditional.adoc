@@ -20,13 +20,13 @@ To install your storage system, ensure that the site and the cabinet or rack tha
 
 . Use https://hwu.netapp.com[NetApp Hardware Universe^] to confirm that your site meets the environmental and electrical requirements for your storage system.
 
-. Make sure you have adequate rack space for your storage system and shelves:
+. Make sure you have adequate cabinet or rack space for your storage system, shelves, and any switches:
 +
-// next two bullets applies to A1K and A70-90
-ifdef::a1k-a70-90[]
+// next two bullets applies to A1K, A70-90 and FAS70-90
+ifdef::a1k-a70-90-fas70-90[]
 ** 4U in an HA configuration
 ** 2U for each NS224 storage shelf
-endif::a1k-a70-90[]
+endif::a1k-a70-90-fas70-90[]
 // next two bullets applies only to a20-30-50
 ifdef::a20-30-50[]
 ** 2U in an HA configuration
@@ -76,7 +76,7 @@ a|* Management Ethernet cables (RJ-45 cables)
 * Network cables
 * Power cords
 * Storage cables (if you ordered additional storage) 
-* USB-C serial port cable |
+* USB-C serial console cable |
 |===
 
 
