@@ -15,7 +15,7 @@ Follow these workflow steps to replace your boot media.
 [role="quick-margin-para"]
 To replace the boot media, you must meet certain requirements.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[two]link:bootmedia-encryption-preshutdown-checks.html[Check onboard encryption keys]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[two]link:bootmedia-encryption-preshutdown-checks.html[Check encryption key support and status]
 [role="quick-margin-para"]
 Verify whether the system has security key manager enabled or encrypted disks.
 
