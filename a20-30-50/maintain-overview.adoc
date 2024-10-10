@@ -50,7 +50,7 @@ a| The I/O module (Input/Output module) is a hardware component that acts as an 
 
 a| link:nvdimm-battery-replace.html[NV battery]
 
-a| The NV battery is responsible for providing power to the NVRAM module while data in-flight is being destaged to flash memory after a power loss.
+a| The NV battery is responsible for providing power to the NVMEM module while data in-flight is being destaged to flash memory after a power loss.
 
 
 a| link:power-supply-replace.html[Power supply]
