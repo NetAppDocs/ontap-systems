@@ -5,43 +5,43 @@ entries:
   - title: Maintenance overview
     url: /asa-r2-a1k/maintain-overview.html
   # START boot media
-  - title: Boot media
+  - title: Boot media - automated recovery
     pdf-filename: ASA A1K Boot Media
     entries:
       - title: Boot media overview
+        url: /asa-r2-a1k/bootmedia-overview-bmr.html
+      - title: Boot media replace workflow
+        url: /asa-r2-a1k/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /asa-r2-a1k/bootmedia-replace-requirements-bmr.html
+      - title: Shut down impaired controller
+        url: /asa-r2-a1k/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /asa-r2-a1k/bootmedia-replace-bmr.html
+      - title: Restore image on boot media
+        url: /asa-r2-a1k/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /asa-r2-a1k/bootmedia-complete-rma-bmr.html
+  - title: Boot media - manual recovery
+    entries:
+      - title: Boot media overview
         url: /asa-r2-a1k/bootmedia-overview.html
-      - title: Automated method
-        entries:
-          - title: Boot media replace workflow
-            url: /asa-r2-a1k/bootmedia-replace-workflow-bmr.html
-          - title: Review requirements
-            url: /asa-r2-a1k/bootmedia-replace-requirements-bmr.html
-          - title: Shut down impaired controller
-            url: /asa-r2-a1k/bootmedia-shutdown-bmr.html
-          - title: Replace boot media
-            url: /asa-r2-a1k/bootmedia-replace-bmr.html
-          - title: Restore image on boot media
-            url: /asa-r2-a1k/bootmedia-recovery-image-boot-bmr.html
-          - title: Return failed part to NetApp
-            url: /asa-r2-a1k/bootmedia-complete-rma-bmr.html
-      - title: Manual method
-        entries:
-          - title: Boot media replace workflow
-            url: /asa-r2-a1k/bootmedia-replace-workflow.html
-          - title: Review requirements
-            url: /asa-r2-a1k/bootmedia-replace-requirements.html
-          - title: Check encryption keys
-            url: /asa-r2-a1k/bootmedia-encryption-preshutdown-checks.html
-          - title: Shut down impaired controller
-            url: /asa-r2-a1k/bootmedia-shutdown.html
-          - title: Replace boot media
-            url: /asa-r2-a1k/bootmedia-replace.html
-          - title: Boot recovery image
-            url: /asa-r2-a1k/bootmedia-recovery-image-boot.html
-          - title: Restore encryption
-            url: /asa-r2-a1k/bootmedia-encryption-restore.html
-          - title: Return failed part to NetApp
-            url: /asa-r2-a1k/bootmedia-complete-rma.html
+      - title: Boot media replace workflow
+        url: /asa-r2-a1k/bootmedia-replace-workflow.html
+      - title: Review requirements
+        url: /asa-r2-a1k/bootmedia-replace-requirements.html
+      - title: Check encryption keys
+        url: /asa-r2-a1k/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
+        url: /asa-r2-a1k/bootmedia-shutdown.html
+      - title: Replace boot media
+        url: /asa-r2-a1k/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /asa-r2-a1k/bootmedia-recovery-image-boot.html
+      - title: Restore encryption
+        url: /asa-r2-a1k/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /asa-r2-a1k/bootmedia-complete-rma.html
     # END boot media
   - title: Controller
     pdf-filename: ASA A1K Controller
