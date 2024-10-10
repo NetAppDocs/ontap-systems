@@ -20,11 +20,11 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 You can add an I/O module into an available slot in each controller.
 
-=== Step 1: Shut down the target controller
+=== Step 1: Shut down the impaired controller
 
-Shut down or take over the target controller.
+Shut down or take over the impaired controller.
 
-// Shut down or take over the target controller using one of the following options.
+// Shut down or take over the impaired controller using one of the following options.
 
 // [role="tabbed-block"]
 // ====
@@ -44,7 +44,7 @@ include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
 . If you are not already grounded, properly ground yourself. 
 
-. On controller A, remove the I/O blanking module from the target slot.
+. On the impaired controller, remove the I/O blanking module from the target slot.
 +
 Unused I/O slots should have blanking module installed to prevent possible thermal issues.
 +
@@ -55,7 +55,7 @@ image::../media/drw_g_io_blanking_module_replace_ieops-1901.svg[Remove an I/O bl
 a|
 image:../media/legend_icon_01.png[Callout number 1]
 a|
-On the I/O module, turn the thumbscrew counterclockwise to loosen.
+On the I/O blanking module, turn the thumbscrew counterclockwise to loosen.
 a|
 image:../media/legend_icon_02.png[Callout number 2]
 a|
@@ -64,21 +64,24 @@ Pull the I/O blanking module out of the controller using the tab on the left and
 |===
 
 . Install the new I/O module:
- .. Align the I/O module with the edges of the controller slot opening.
- .. Gently slide the I/O module all the way into the into the slot.
- .. Turn the thumbscrew clockwise to tighten.
+.. Align the I/O module with the edges of the controller slot opening.
+.. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
++
+You can use the tab on the left and the thumbscrew to push in the I/O Module.
++
+.. Turn the thumbscrew clockwise to tighten.
 . Cable the I/O module.
 +
 If the I/O module is a NIC, cable the module to the data switches.  
 +
 If the I/O module is a storage module, cable it to the NS224 shelf.
 
-. Reboot the controller from the LOADER prompt: _bye_
+. Reboot the impaired controller from the LOADER prompt: _bye_
 +
 This reinitializes the PCIe devices, other components, and reboots the node.
 +
-. Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
-. Repeat these steps for controller B.
+. Give back the impaired controller from the partner controller: _storage failover giveback -ofnode target_node_name_
+. Repeat these steps for the other controller.
 
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
@@ -134,7 +137,7 @@ include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
 . If you are not already grounded, properly ground yourself. 
 
-. On controller A, unplug any cabling on the target I/O module.
+. On the impaired controller, unplug any cabling on the target I/O module.
 
 . Remove the target I/O module from the controller:
 
@@ -157,9 +160,12 @@ Pull the I/O module out of the controller using the port label tab on the left a
 +
 . Install the new I/O module into the target slot:
 .. Align the I/O module with the edges of the slot.
-.. Gently slide the module into the slot all the way into the controller.
+.. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
++
+You can use the tab on the left and the thumbscrew to push in the I/O Module.
++
 .. Turn the thumbscrew clockwise to tighten.
-. Cable the I/O module.
+. Cable the I/O module to the designated devices.
 
 . Repeat the remove and install steps to add any additional I/O modules in the controller.
 
@@ -194,4 +200,4 @@ a|
 +
 |===
 
-. Repeat these steps for controller B.
+. Repeat these steps for the other controller.
