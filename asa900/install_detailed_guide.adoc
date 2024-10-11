@@ -179,7 +179,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image:../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
+image:../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -204,7 +204,7 @@ Cable cluster interconnect ports:
 
 image:../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 a|
-image:../media/icon_square_2_yellow.png[Callout number 2]
+image:../media/icon_square_2_purple.png[Callout number 2]
 a|
 Cable controller management (wrench) ports.
 
@@ -242,7 +242,7 @@ Cable ports in slot A5 and B5 (5a,
 image:../media/oie_cable_sfp_gbe_copper.png[Gbe copper SFP]
 
 a|
-image:../media/icon_square_4_red.png[Callout icon five]
+image:../media/icon_square_5_grey.png[Callout icon five]
 
 a|
 * Strap the cables to the cable
@@ -269,7 +269,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image:../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
+image:../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
@@ -287,7 +287,7 @@ image:../media/drw_a900_switched_network_cabling_IEOPS-934.svg[width=500px]
 
 |Step|Perform on each controller
 a|
-image:../media/icon_square_1_green.png[
+image:../media/icon_square_1_green.png[Callout number 1]
 a|
 Cable cluster
 interconnect a ports:
@@ -335,7 +335,7 @@ Cable ports in slot A5 and B5 (5a,
 image:../media/oie_cable_sfp_gbe_copper.png[Gbe copper SFP]
 
 a|
-image:../media/icon_square_4_red.png[Callout icon five]
+image:../media/icon_square_5_grey.png[Callout icon five]
 
 a|
 * Strap the cables to the cable
@@ -367,9 +367,9 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
-image:../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
+image:../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 
-image:../media/oie_cable_pull_tab_down.svg[width=200px]
+image:../media/oie_cable_pull_tab_down.png[Pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -415,9 +415,9 @@ You must cable each controller to the NSM modules on the NS224 drive shelves.
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
-image:../media/oie_cable_pull_tab_up.svg[cable pull tab direction]
+image:../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 
-image:../media/oie_cable_pull_tab_down.svg[width=200px]
+image:../media/oie_cable_pull_tab_down.png[Pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -444,18 +444,18 @@ a|
 ** Connect controller A port e2b to NSM B e0b on shelf 2.
 ** Connect controller A port e10a to NSM A e0a on shelf 2.
 
-image:../media/oie_cable100_gbe_qsfp28.png[width=50px]
+image:../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 
 100 GbE cable
 a|
-image:../media/icon_square_2_yellow.png[width=30px]
+image:../media/icon_square_2_yellow.png[Callout icon 2]
 a|
 ** Connect controller B port e2a to NSM B e0a on shelf 1.
 ** Connect controller B port e10b to NSM A e0b on shelf 1.
 ** Connect controller B port e2b to NSM A e0b on shelf 2.
 ** Connect controller B port e10a to NSM B e0a on shelf 2.
 
-image:../media/oie_cable100_gbe_qsfp28.png[width=50px]
+image:../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 
 100 GbE cable
 

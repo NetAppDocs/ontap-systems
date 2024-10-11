@@ -162,7 +162,7 @@ image::../media/icon_square_1_green.png[Callout number 3]]
 a|
 Cluster interconnect
 a|
-image::../media/icon_square_2_yellow.png[Callout number 2]
+image::../media/icon_square_2_purple.png[Callout number 2]
 a|
 Management network switch
 a|
@@ -181,7 +181,7 @@ Host network switches
 ** As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn the cable head over and try again.
 ** If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
 
-image::../media/oie_cable_pull_tab_down.svg[width=320px]
+image::../media/oie_cable_pull_tab_down.png[Pull tab direction]
 
 
 [role="tabbed-block"]
@@ -327,15 +327,15 @@ NOTE: The example uses DS224C. Cabling is similar with other supported drive she
 |===
 | Cabling|Connection type
 a|
-image::../media/icon_square_1_blue.png[width=40px]
+image::../media/icon_square_1_yellow.png[Callout icon 1]
 a|
 Shelf-to-shelf cabling
 a|
-image::../media/icon_square_2_yellow.png[width=40px]
+image::../media/icon_square_2_blue.png[Callout icon 2]
 a|
 Controller A to the drive shelves
 a|
-image::../media/icon_square_3_orange.png[width=40px]
+image::../media/icon_square_3_tourquoise.png[Callout icon 3]
 a|
 Controller B to the drive shelves
 
@@ -344,7 +344,7 @@ Controller B to the drive shelves
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.svg[width=320px]
+image::../media/oie_cable_pull_tab_down.png[Pull tab direction]
 
 .About this task
 
