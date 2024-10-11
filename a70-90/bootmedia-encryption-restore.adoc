@@ -9,6 +9,6 @@ summary: Once environment variables are checked, you must complete steps specifi
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media.
+Restore encryption on the node.
 
-include::../_include/encryption_restore_bootmedia_915_later.adoc[]
+include::../_include/encryption_restore_bootmedia.adoc[]

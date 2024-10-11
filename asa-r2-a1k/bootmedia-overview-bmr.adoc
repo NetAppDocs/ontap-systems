@@ -1,0 +1,14 @@
+---
+permalink: asa-r2-a1k/bootmedia-overview-bmr.html
+sidebar: sidebar
+keywords: asa r2 a1k, overview, the boot media
+summary: Learn about the automated method for replacing the boot media.
+---
+= Overview of automated boot media recovery - ASA A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can replace a failed boot media through the automated boot media replace (BMR) option.
+
+Automated boot media replace uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
