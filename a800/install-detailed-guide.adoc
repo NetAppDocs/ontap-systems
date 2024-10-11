@@ -183,7 +183,7 @@ Cable the HA interconnect ports:
 image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 
 a|
-image:../media/icon_square_2_yellow.png[Callout number 2]
+image:../media/icon_square_2_green.png[Callout number 2]
 a|
 Cable the cluster interconnect ports:
 
@@ -191,7 +191,7 @@ Cable the cluster interconnect ports:
 ** e1a to e1a
 image:../media/drw_affa800_tnsc_clust_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 a|
-image:../media/icon_square_3_orange.png[Step 3]
+image:../media/icon_square_3_purple.png[Step 3]
 a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[Illustration showing location of the management ports on the back of the system]
 a|

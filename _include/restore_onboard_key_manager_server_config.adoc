@@ -12,11 +12,11 @@ You need the following information while restoring the OKM configuration:
 
 .Steps
 
-. From the ONTAP boot menu select option 10:
+. From the ONTAP boot menu select the appropriate option:
+* For ONTAP 9.8 and later, select option 10:
 
 +
-
-----
+....
 
 Please choose one of the following:
 
@@ -33,12 +33,32 @@ Please choose one of the following:
 (11) Configure node for external key management.
 Selection (1-11)? 10
 
-----
+....
+
+* For ONTAP 9.7 and earlier, enter the hidden option `recover_onboard_keymanager` command.
+
++
+....
+
+Please choose one of the following:
+
+(1)  Normal Boot.
+(2)  Boot without /etc/rc.
+(3)  Change password.
+(4)  Clean configuration and initialize all disks.
+(5)  Maintenance mode boot.
+(6)  Update flash from backup config.
+(7)  Install new software first.
+(8)  Reboot node.
+(9)  Configure Advanced Drive Partitioning.
+Selection (1-19)? recover_onboard_keymanager
+
+....
 
 +
 
 . Confirm the continuation of the process.
-`This option must be used only in disaster recovery procedures. Are you sure? (y or n):` _y_
+`This option must be used only in disaster recovery procedures. Are you sure? (y or n): `y`
 
 . Enter the cluster-wide passphrase twice.  
 
@@ -57,7 +77,7 @@ Press the enter key twice at the end of the input.
 
 +
 
-----
+....
 
 
 Enter the backup data:
@@ -95,7 +115,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 ---------------------------END BACKUP---------------------------
 
-----
+....
 
 +
 
@@ -103,7 +123,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 +
 
-----
+....
 
 Trying to recover keymanager secrets....
 Setting recovery material for the onboard key manager
@@ -118,7 +138,7 @@ Successfully recovered keymanager secrets.
 * Run the "security key-manager onboard sync" command to synchronize the key database after the node reboots.
 ***********************************************************************************
 
-----
+....
 
 +
 WARNING: Do not proceed if the displayed output is anything other than `Successfully recovered keymanager secrets`. 
@@ -128,7 +148,7 @@ Perform troubleshooting to correct the error.
 
 +
 
-----
+....
 
 ***********************************************************************************
 * Select option "(1) Normal Boot." to complete the recovery process.
@@ -149,31 +169,31 @@ Perform troubleshooting to correct the error.
 (11) Configure node for external key management.
 Selection (1-11)? 1
 
-----
+....
 
 . Confirm that the controller's console displays `Waiting for giveback...(Press Ctrl-C to abort wait)`
 
-. From the partner node, giveback the partner controller: _storage failover giveback -fromnode local -only-cfo-aggregates true_
+. From the partner node, giveback the partner controller: `storage failover giveback -fromnode local -only-cfo-aggregates true`.
 
-. Once booted only with CFO aggregate run the _security key-manager onboard sync​​​​​​​_ command: 
+. Once booted only with CFO aggregate run the _security key-manager onboard sync​​​​​​​_ command. 
 
 
-. Enter the cluster-wide passphrase for the Onboard Key Manager:
+. Enter the cluster-wide passphrase for the Onboard Key Manager.
 
 +
 
-----
+....
 
 Enter the cluster-wide passphrase for the Onboard Key Manager:
 
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 
-----
+....
 
++
+NOTE: If the sync is successful the cluster prompt is returned with no additional messages.  If the sync fails an error message appears before returning to the cluster prompt.  Do not continue until the the error is corrected and the sync runs successfully.
 
-
-. Ensure that all keys are synced:
- _security key-manager key query -restored false_
+. Ensure that all keys are synced: `security key-manager key query -restored false`.
 
 +
 
@@ -185,5 +205,4 @@ NOTE: No results should appear when filtering for false in the restored paramete
 
 +
 
-. Giveback of the node from the partner:
-_storage failover giveback -fromnode local_ 
+. Giveback of the node from the partner: `storage failover giveback -fromnode local`
