@@ -16,13 +16,17 @@ The procedures in this section assume that the A1K system has already been deplo
 == System components
 For the ASA A1K storage system, you can perform maintenance procedures on the following components.
 
-[%rotate, grid="none", frame="none", cols="25,65"]
+[%rotate, grid="none", frame="none", cols="30,70"]
 
 |===
 
-a| link:bootmedia-overview.html[Boot media]
+a| link:bootmedia-overview.html[Boot media - manual recovery]
 
-a| The boot media stores a primary and secondary set of ONTAP image files that the system uses when it boots.
+link:bootmedia-overview-bmr.html[Boot media - automated recovery]
+
+a| You can replace a failed boot media manually by using USB module for the boot image.
+
+Automated boot media replace uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
 
 a| link:controller-replace-workflow.html[Controller]
 
