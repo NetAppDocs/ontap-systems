@@ -1,4 +1,4 @@
-Restore the onboard key manager configuration from the ONATP boot menu.
+Restore the onboard key manager configuration from the ONTAP boot menu.
 
 .Before you begin
 
@@ -175,7 +175,7 @@ Selection (1-11)? 1
 
 . From the partner node, giveback the partner controller: `storage failover giveback -fromnode local -only-cfo-aggregates true`.
 
-. Once booted only with CFO aggregate run the _security key-manager onboard sync​​​​​​​_ command. 
+. Once booted only with CFO aggregate run the `security key-manager onboard sync` command. 
 
 
 . Enter the cluster-wide passphrase for the Onboard Key Manager.

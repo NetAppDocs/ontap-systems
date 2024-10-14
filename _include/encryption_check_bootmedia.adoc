@@ -1,6 +1,6 @@
 Before shutting down the impaired controller, check if your version of ONTAP supports NetApp Volume Encryption (NVE) and if your key management system is properly configured. 
 
-== Step 1: Check if your version of ONTAP supports encryption
+== Step 1: Check if your version of ONTAP supports NetApp Volume Encryption
 
 Check whether your ONTAP version supports NetApp Volume Encryption (NVE). This information is crucial for downloading the correct ONTAP image.
 
@@ -70,50 +70,9 @@ This column indicates whether the authentication keys for your key manager (eith
 * If the value is anything other than true, the keys have not been restored, and you'll need to take additional steps (restoring or syncing keys) depending on whether you're using EKM or OKM.
 
 
-. Depending on whether you're using EKM or OKM, select one of the following options and follow the appropriate steps depending on the output value displayed in the `Restored` column.
+. Follow the appropriate steps depending on the output value displayed in the `Restored` column.
 +
 
-// start tabbed area
-+
-[role="tabbed-block"]
-====
-
-.EKM
---
-Depending on the output value displayed in the `Restored` column, follow the appropriate steps.
-
-[cols="1a,2a" options="header"]
-|===
-| Output value in `Restored` column | Follow these steps...
-a|
-`true`
-a|
-You can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
-
-a|
-Anything other than `true`
-a|
-
-.. Restore the external key management authentication keys to all nodes in the cluster using the following command:
-+
-`security key-manager external restore`
-+
-If the command fails, contact http://mysupport.netapp.com/[NetApp Support^].
-+
-.. Verify that the `Restored` column displays `true` for all authentication keys by entering the  `_security key-manager key query_` command.
-+
-If all the authentication keys are `true`, you can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
-
-|===
-
-
---
-
-
-.OKM
---
-
-Depending on the output value displayed in the `Restored` column, follow the appropriate steps.
 
 [cols="1a,2a" options="header"]
 |===
@@ -123,7 +82,7 @@ a|
 a|
 Manually back up the OKM information.
 
-.. Go to the advanced mode by entering `set -priv advanced` and then enter `Y` when prompted.
+.. Go to the advanced mode by entering `set -privilege advanced` and then enter `Y` when prompted.
 .. Enter the following command to display the key management information: 
 +
 `security key-manager onboard show-backup`
@@ -167,7 +126,5 @@ You'll need it in disaster scenarios where you might need to manually recover OK
 |===
 
 
---
-====
 
 // end tabbed area
