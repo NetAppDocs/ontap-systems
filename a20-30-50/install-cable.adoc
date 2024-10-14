@@ -69,9 +69,9 @@ image::../media/drw_isi_g_4p_25gbe_optional_cabling_ieops-1923.svg[Cable to 10/2
 +
 .. Optional: Cable to FC host network switches.
 +
-Cable ports e1a, e1b, e1c and e1d on each controller to the FC host network switches.
+Cable ports 1a, 1b, 1c and 1d on each controller to the FC host network switches.
 +
-*64 Gb FC cables*
+*64 Gb/s FC cables*
 +
 image::../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 +
@@ -129,9 +129,9 @@ image::../media/drw_isi_g_4p_25gbe_optional_cabling_ieops-1923.svg[Cable to 10/2
 +
 .. Optional: Cable to FC host network switches.
 +
-Cable ports e1a, e1b, e1c and e1d on each controller to the FC host network switches.
+Cable ports 1a, 1b, 1c and 1d on each controller to the FC host network switches.
 +
-*64 Gb FC cables*
+*64 Gb/s FC cables*
 +
 image::../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 +
@@ -155,10 +155,10 @@ IMPORTANT: Do not plug in the power cords yet.
 == Step 2: Cable the controllers to the shelves
 This procedure shows how to cable the controllers to one NS224 shelf.
 
-For the maximum number of shelves supported for your storage system, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+For the maximum number of shelves supported for your storage system and for all of your cabling options, such as optical and switch-attached, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 .About this task
-* You cable each controller to each NSM100B module on the NS224 shelf using the following cable type:
+* You cable each controller to each NSM100B module on the NS224 shelf using the storage cables that came with your storage system, which could be the following cable type:
 +
 *100 GbE QSFP28 copper cables*
 +
