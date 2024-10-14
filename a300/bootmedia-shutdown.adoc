@@ -1,0 +1,28 @@
+---
+permalink: a300/bootmedia-shutdown.html
+sidebar: sidebar
+keywords: aff a300, shut down the impaired controller
+summary: "You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration."
+---
+= Shut down the impaired controller - AFF A300
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
+== Option 1: Most configurations
+
+include::../_include/shutdown_bootmedia.adoc[]
+
+== Option 2: Controller is in a MetroCluster configuration
+
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
+
+include::../_include/shutdown_any_mcc_supported.adoc[]
+
+== Option 3: Controller is in a two-node MetroCluster
+
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
+
+include::../_include/shutdown_2n_mcc.adoc[]

@@ -6,7 +6,7 @@ You must remove the controller module from the chassis when you replace the cont
 
 . On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px,Seat disk drives]
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
 +
 . Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
 . Unplug the controller module power supplies from the source.
@@ -26,11 +26,11 @@ image::../media/drw_a800_pcm_remove.png[Release the controller module]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Locking latch
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Locking pin
 |===
@@ -50,15 +50,15 @@ image::../media/drw_a800_open_air_duct.png[Open the air duct]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Air duct locking tabs
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Slide air duct towards fan modules
 a|
-image:../media/legend_icon_03.png[Callout number 3]
+image:../media/icon_round_3.png[Callout number 3]
 a|
 Rotate air duct towards fan modules
 |===
@@ -71,17 +71,17 @@ You must move the power supplies from the impaired controller module to the repl
 +
 CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_a800_replace_psu.png[Remove or replace a power supply]
+image::../media/drw_a800_replace_psu.svg[Remove or replace a power supply]
 +
 
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Blue power supply locking tab
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Power supply
 |===
@@ -103,11 +103,11 @@ image::../media/drw_a800_replace_fan.png[Remove the fan]
 +
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Fan locking tabs
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Fan module
 |===
@@ -127,15 +127,15 @@ image::../media/drw_a800_nvdimm_battery_replace.png[Replace the NVDIMM battery]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Air duct riser
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 NVDIMM battery plug
 a|
-image:../media/legend_icon_03.png[Callout number 3]
+image:../media/icon_round_3.png[Callout number 3]
 a|
 NVDIMM battery pack
 |===
@@ -165,11 +165,11 @@ image::../media/drw_a800_riser_2_3_remove.png[Remove risers 2 and 3]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Air duct
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Riser 1 (left riser), Riser 2 (middle riser), and 3 (right riser) locking latches
 |===
@@ -202,17 +202,17 @@ To move the NVDIMMs, locate and move them from the impaired controller into the 
 
 . Locate the NVDIMMs on your controller module.
 +
-image::../media/drw_a800_no_risers_nvdimm_move.png[Move NVDIMMs]
+image::../media/drw_a800_no_risers_nvdimm_move.svg[Move NVDIMMs]
 +
 
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Air duct
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 NVDIMMs
 |===
@@ -246,23 +246,23 @@ image::../media/drw_a800_pcm_replace_only_boot_media.png[Remove the boot media]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Air duct
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Riser 3
 a|
-image:../media/legend_icon_03.png[Callout number 3]
+image:../media/icon_round_3.png[Callout number 3]
 a|
 Phillips #1 screwdriver
 a|
-image:../media/legend_icon_04.png[Callout number 4]
+image:../media/icon_round_4.png[Callout number 4]
 a|
 Boot media screw
 a|
-image:../media/legend_icon_05.png[Callout number 5]
+image:../media/icon_round_5.png[Callout number 5]
 a|
 Boot media
 |===
@@ -300,20 +300,21 @@ After all of the components have been moved from the impaired controller module 
  .. Slide the air duct toward the risers until the locking tabs click into place.
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
 +
-image::../media/drw_a700s_close_air_duct.png[Close the air duct]
+image::../media/drw_a800_close_air_duct.png[Close the air duct]
 +
 
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Locking tabs
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Slide plunger
 |===
+
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
@@ -329,12 +330,13 @@ The locking latches rise when the controller module is fully seated.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
-The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. Interrupt the normal boot process by pressing `Ctrl-C`.
-
+ 
 . Plug the system cables and transceiver modules into the controller module and reinstall the cable management device.
 . Plug the power cables into the power supplies and reinstall the power cable retainers.
++
+The controller module begins to boot as soon as it is connected to power. Be prepared to interrupt the boot process.
+
 +
 NOTE: If your system has DC power supplies, make sure the thumbscrews on the power supply cable are tight.

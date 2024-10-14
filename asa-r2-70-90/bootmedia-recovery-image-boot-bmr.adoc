@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-70-90/bootmedia-recovery-image-boot-bmr.html
+sidebar: sidebar
+keywords: asa r2 a70, asa r2 a90, boot the recovery image
+summary: You can restore image on the boot media from the partner controller through the automated boot recovery process.  
+---
+= Automated boot recovery  - ASA A70 and ASA A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/bmr_single_node_boot_recovery.adoc[]

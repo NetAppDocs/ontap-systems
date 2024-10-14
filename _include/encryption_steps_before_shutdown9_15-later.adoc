@@ -13,8 +13,8 @@ The following AutoSupport message suppresses automatic case creation for two hou
 
 . Check the version of ONTAP the system is running on the impaired controller if up, or on the partner controller if the impaired controller is down, using the `version -v` command:
 
- ** If <lno-DARE> or <1Ono-DARE> is displayed in the command output, the system does not support NVE, proceed to https://docs.netapp.com/us-en/ontap-systems/fas2800/bootmedia-impaired-controller-shutdown.html[Shut down the impaired controller].
- ** If <lno-DARE> is not not displayed in the command output, and the system is running ONTAP 9.6 or later, continue to the next section, <<Check NVE or NSE on systems running ONTAP 9.6 and later>>.
+ ** If <lno-DARE> or <1Ono-DARE> is displayed in the command output, the system does not support NVE, proceed to link:../fas2800/bootmedia-impaired-controller-shutdown.html[Shut down the impaired controller].
+ ** If <lno-DARE> is not displayed in the command output, and the system is running ONTAP 9.6 or later, continue to the next section, link:../fas2800/bootmedia-encryption-preshutdown-checks.html#check-nve-or-nse-on-systems-running-ontap-9-6-and-later[Check NVE or NSE on systems running ONTAP 9.6 and later].
  . Disable automatic giveback from the healthy controller: 
 
  `storage failover modify -node local -auto-giveback false`

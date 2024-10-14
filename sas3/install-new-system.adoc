@@ -152,8 +152,10 @@ image::../media/28_dwg_e2860_de460c_drive_cru.gif[Location of raised buttons on 
 +
 [cols="10,90"]
 |===
-| image:../media/legend_icon_01.png[Callout number 1]|
-| Raised button on the right side of the drive carrier
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+Raised button on the right side of the drive carrier
 |===
 +
 .. Lower the drive straight down, and then rotate the cam handle down until the drive snaps into place under the orange release latch.
@@ -170,9 +172,9 @@ CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the dr
 |===
 
 +
- .. Close the drive drawer by pushing both levers towards the center.
- .. Repeat these steps for each drawer in the disk shelf.
- .. Attach the front bezel.
+.. Close the drive drawer by pushing both levers towards the center.
+.. Repeat these steps for each drawer in the disk shelf.
+.. Attach the front bezel.
 +
 . If you are adding multiple disk shelves, repeat this procedure for each disk shelf you are installing.
 
@@ -204,17 +206,17 @@ You are cabling a multipath HA, tri-path HA, multipath, single-path HA, or singl
 a|
 Cable the shelf-to-shelf connections as "`standard`" connectivity (using IOM ports 3 and 1):
 
- .. Beginning with the logical first shelf in the stack, connect IOM A port 3 to the next shelf's IOM A port 1 until each IOM A in the stack is connected.
- .. Repeat substep a for IOM B.
- .. Repeat substeps a and b for each stack.
+.. Beginning with the logical first shelf in the stack, connect IOM A port 3 to the next shelf's IOM A port 1 until each IOM A in the stack is connected.
+.. Repeat substep a for IOM B.
+.. Repeat substeps a and b for each stack.
 
 a|
 You are cabling a quad-path HA or quad-path configuration
 a|
 Cable the shelf-to-shelf connections as "`double-wide`" connectivity:    You cable the standard connectivity using IOM ports 3 and 1 and then the double-wide connectivity using IOM ports 4 and 2.
 
- .. Beginning with the logical first shelf in the stack, connect IOM A port 3 to the next shelf's IOM A port 1 until each IOM A in the stack is connected.
- .. Beginning with the logical first shelf in the stack, connect IOM A port 4 to the next shelf's IOM A port 2 until each IOM A in the stack is connected.
+.. Beginning with the logical first shelf in the stack, connect IOM A port 3 to the next shelf's IOM A port 1 until each IOM A in the stack is connected.
+.. Beginning with the logical first shelf in the stack, connect IOM A port 4 to the next shelf's IOM A port 2 until each IOM A in the stack is connected.
  .. Repeat substeps a and b for IOM B.
  .. Repeat substeps a through c for each stack.
 
@@ -231,7 +233,7 @@ link:install-cabling-worksheets-examples-multipath.html[Controller-to-stack cabl
 +
 link:install-worksheets-examples-quadpath.html[Controller-to-stack cabling worksheet and cabling example for a quad-path HA configuration with two quad-port SAS HBAs]
 
- .. The next step depends on whether a completed worksheet exists for your configuration:
+.. The next step depends on whether a completed worksheet exists for your configuration:
 +
 [cols="2*",options='header']
 |===
@@ -260,8 +262,8 @@ link:install-cabling-worksheets-how-to-read-multipath.html[How to read a workshe
 link:install-cabling-worksheets-how-to-read-quadpath.html[How to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity]
 
 . Connect the power supplies for each disk shelf:
- .. Connect the power cords first to the disk shelves, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.
- .. Turn on the power supplies for each disk shelf and wait for the disk drives to spin up.
+.. Connect the power cords first to the disk shelves, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.
+.. Turn on the power supplies for each disk shelf and wait for the disk drives to spin up.
 . Set the shelf IDs and complete system setup:
 +
 You must set shelf IDs so they are unique within the HA pair or single-controller configuration, including the internal disk shelf in applicable systems.
@@ -273,13 +275,13 @@ a|
 You are manually setting shelf IDs
 a|
 
- .. Access the shelf ID button behind the left end cap.
- .. Change the shelf ID to a unique ID (00 through 99).
- .. Power-cycle the disk shelf to make the shelf ID take effect.
+.. Access the shelf ID button behind the left end cap.
+.. Change the shelf ID to a unique ID (00 through 99).
+.. Power-cycle the disk shelf to make the shelf ID take effect.
 +
 Wait at least 10 seconds before turning the power back on to complete the power cycle. The shelf ID blinks and the operator display panel amber LED blinks until you power cycle the disk shelf.
 
- .. Power on the controllers and complete system setup and configuration as instructed by the installation and setup instructions for your platform model.
+.. Power on the controllers and complete system setup and configuration as instructed by the installation and setup instructions for your platform model.
 
 a|
 You are automatically assigning all shelf IDs in your HA pair or single-controller configuration
@@ -290,32 +292,32 @@ Shelf IDs are assigned in sequential order from 00-99. For systems with an inter
 ====
 a|
 
- .. Power on the controllers.
- .. As the controllers start booting, press `Ctrl-C` to abort the AUTOBOOT process when you see the message `Starting AUTOBOOT press Ctrl-C to abort`.
+.. Power on the controllers.
+.. As the controllers start booting, press `Ctrl-C` to abort the AUTOBOOT process when you see the message `Starting AUTOBOOT press Ctrl-C to abort`.
 +
 NOTE: If you miss the prompt and the controllers boot to ONTAP, halt both controllers, and then boot both controllers to the boot menu by entering `boot_ontap menu` at their LOADER prompt.
 
- .. Boot one controller to Maintenance mode:``boot_ontap menu``
+.. Boot one controller to Maintenance mode:``boot_ontap menu``
 +
 You only need to assign shelf IDs on one controller.
 
- .. From the boot menu, select option 5 for Maintenance mode.
- .. Automatically assign shelf IDs: `sasadmin expander_set_shelf_id -a`
- .. Exit Maintenance mode:``halt``
- .. Bring up the system by entering the following command at the LOADER prompt of both controllers:``boot_ontap``
+.. From the boot menu, select option 5 for Maintenance mode.
+.. Automatically assign shelf IDs: `sasadmin expander_set_shelf_id -a`
+.. Exit Maintenance mode:``halt``
+.. Bring up the system by entering the following command at the LOADER prompt of both controllers:``boot_ontap``
 +
 Shelf IDs appear in disk shelf digital display windows.
 +
 NOTE: Before you boot the system, best practice is to take this opportunity to verify cabling is correct and a root aggregate is present..
 
- .. Complete system setup and configuration as instructed by the installation and setup instructions for your platform model.
+.. Complete system setup and configuration as instructed by the installation and setup instructions for your platform model.
 
 +
 |===
 
 . If as part of system set up and configuration, you did not enable disk ownership automatic assignment, manually assign disk ownership; otherwise, go to the next step:
- .. Display all unowned disks:``storage disk show -container-type unassigned``
- .. Assign each disk:``storage disk assign -disk _disk_name_ -owner _owner_name_``
+.. Display all unowned disks:``storage disk show -container-type unassigned``
+.. Assign each disk:``storage disk assign -disk _disk_name_ -owner _owner_name_``
 +
 You can use the wildcard character to assign more than one disk at once.
 . Download and run Config Advisor as instructed by the installation and setup instructions for your platform model to verify SAS connections are cabled correctly and there are no duplicate shelf IDs within the system.

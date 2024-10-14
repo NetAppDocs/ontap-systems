@@ -42,11 +42,11 @@ image::../media/drw_9000_remove_pcie_module.png[Removing a PCIe module]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] 
+image:../media/icon_round_1.png[Callout number 1] 
 a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 I/O cam latch completely unlocked
 |===
@@ -104,11 +104,11 @@ image::../media/drw_9000_remove_pcie_module.png[Removing a PCIe module]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1] 
+image:../media/icon_round_1.png[Callout number 1] 
 a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 I/O cam latch completely unlocked
 |===
@@ -126,7 +126,7 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 . Giveback the node from the partner node: `storage failover giveback -ofnode _target_node_name_`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . Repeat these steps for controller B.
-. Install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adding an NS224 drive shelf^].
+. Install and cable your NS224 shelves, as described in link:../ns224/hot-add-shelf-overview.html[Hot-add workflow].
 
 --
 ====

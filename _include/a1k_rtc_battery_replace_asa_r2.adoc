@@ -1,0 +1,69 @@
+You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.
+
+* You can use this procedure with all versions of ONTAP supported by your system.
+* All other components in the system must be functioning properly; if not, you must contact technical support.
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller.
+
+include::../_include/shutdown_most_frus.adoc[]
+
+== Step 2: Remove the controller module
+
+include::../_include/a1k_controller_remove_physical.adoc[]
+ 
+== Step 3: Replace the RTC battery
+
+Remove failed RTC battery and install the replacement RTC battery.
+
+. Open the controller air duct on the top of the controller.
+.. Insert your fingers in the recesses at the far ends of the air duct.
+.. Lift the air duct and rotate it upward as far as it will go.
+. Locate the RTC battery under the air duct.
++
+image::../media/drw_a1k_rtc_remove_replace_ieops-1381.svg[Replace the RTC battery]
++
+[cols="1,4"]
+
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1]|
+RTC battery and housing
+|===
+
+. Gently push the battery away from the holder, rotate it away from the holder, and then lift it out of the holder.
++
+NOTE: Note the polarity of the battery as you remove it from the holder. The battery is marked with a plus sign and must be positioned in the holder correctly. A plus sign near the holder tells you how the battery should be positioned.
+
+. Remove the replacement battery from the antistatic shipping bag.
+. Note the polarity of the RTC battery, and then insert it into the holder by tilting the battery at an angle and pushing down.
+. Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
+
+== Step 4: Reinstall the controller module
+
+
+include::../_include/a1k_controller_install_step_physical.adoc[]
+
+== Step 5: Reset the time and date on the controller
+
+NOTE: After replacing the RTC battery, inserting controller and powering on first BIOS reset, you will see the following error messages: 
+`RTC date/time error. Reset date/time to default`
+`RTC power failure error`
+These messages are excpected and you can continue with this procedure.
+
+ . Check the date and time on the healthy controller with the _cluster date show_ command.
+
+NOTE: If your system stops at the boot menu, select the option for  `Reboot node` and respond _y_ when prompted, then boot to LOADER by pressing _Ctrl-C_
+
+ .. At the LOADER prompt on the target controller, check the time and date with the `cluster date show` command.
+ .. If necessary, modify the date with the `set date mm/dd/yyyy` command.
+ .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
+ . Confirm the date and time on the target controller.
+. At the LOADER prompt, enter _bye_ to reinitialize the PCIe cards and other components and let the controller reboot.
+. Return the controller to normal operation by giving back its storage: _storage failover giveback -ofnode _impaired_node_name__
+. If automatic giveback was disabled, reenable it: _storage failover modify -node local -auto-giveback true_
+
+== Step 6: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

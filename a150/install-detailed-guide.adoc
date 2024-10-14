@@ -13,6 +13,9 @@ This section gives detailed step-by-step instructions for installing an AFF A150
 
 If you have a MetroCluster configuration, use the https://docs.netapp.com/us-en/ontap-metrocluster/index.html[MetroCluster documentation^].
 
+*Warning:* If your system is being installed with ONTAP 9.13.1P8 - 9.13.1P11, ONTAP 9.14.1P1 - 9.14.1P7 or ONTAP 9.15.1 - 9.15.1P2 and your system contains 10 or more internal solid-state drives, you must take additional steps to prepare the system for installation. See issue  https://mysupport.netapp.com/site/bugs-online/product/ONTAP/JiraNgage/CONTAP-285173[CONTAP-285173 - ADP does not leave a spare root partition on an AFF A150 with 10 or more internal drives^].
+
+
 == Step 1: Prepare for installation
 
 To install your AFF A150 system, you create an account on the NetApp Support Site, register your system, and obtain your license keys. You also need to inventory the appropriate number and type of cables for your system and collect specific network information.
@@ -31,7 +34,7 @@ To install your AFF A150 system, you create an account on the NetApp Support Sit
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
-image::../media/drw_ssn_label.png[Example of the system serial number showing location of the number]
+image::../media/drw_ssn_label.png[Example of system serial number]
 +
 . Set up your account:
  .. Log in to your existing account or create an account.
@@ -79,7 +82,7 @@ X6536-R6 (112-00090), 5m
 
 X6554-R6(112-00189), 15m
 a|
-image:../media/oie_cable_fiber_lc_connector.png[Illustration showing an fiber optic LC connector]
+image:../media/oie_cable_fiber_lc_connector.png[LC fiber connector]
 a|
 FC host network
 a|
@@ -111,7 +114,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-image:../media/oie_cable_micro_usb.png[Illustration showing a micro USB connector]
+image:../media/oie_cable_micro_usb.png[Micro USB connector]
 a|
 Console connection during software setup on non-Windows or Mac laptop/console
 a|
@@ -155,20 +158,17 @@ The following table identifies the cable type with the call out number and cable
 |===
 | Cabling|Connection type
 a|
-image::../media/oie_legend_icon_1_lg.svg[width=40px]
+image::../media/icon_square_1_green.png[Callout number 1]
 a|
 Cluster interconnect
 a|
-image::../media/oie_legend_icon_2_o.svg[width=40px]
+image::../media/icon_square_2_yellow.png[Callout number 2]
 a|
 Controllers to host data network switches
 a|
-image::../media/oie_legend_icon_3_lp.svg[width=40px]
+image::../media/icon_square_3_purple.png[Callout number 3]
 a|
 Controllers to management network switch
-a|
-image::../media/oie_legend_icon_attn_symbol.svg[width=40px]
-
 |=== 
 
 // start tabbed area
@@ -202,7 +202,7 @@ Use one of the following cable types to cable the UTA2 data ports to your host n
 * For an FC host, use 0c and 0d *or* 0e and 0f.
 * For an 10GbE system, use e0c and e0d *or* e0e and e0f. 
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cabling.png[Data port connections]
 +
 You can connect one port pair as CNA and one port pair as FC, or you can connect both port pairs as CNA or both port pairs as FC.
 
@@ -214,7 +214,7 @@ image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 +
 . Cable the e0M ports to the management network switches with the RJ45 cables.
 +
-image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
+image:../media/drw_c190_u_mgmt_cabling.png[Management port cabling]
 
 IMPORTANT:  DO NOT plug in the power cords at this point.
 
@@ -245,7 +245,7 @@ Use one of the following cable types to cable the UTA2 data ports to your host n
 * For an FC host, use 0c and 0d **or** 0e and 0f.
 * For an 10GbE system, use e0c and e0d **or** e0e and e0f.
 +
-image:../media/drw_c190_u_fc_10gbe_cbling.png[Illustration showing the data port connections as described in the surrounding text]
+image:../media/drw_c190_u_fc_10gbe_cabling.png[Data port connections]
 +
 You can connect one port pair as CNA and one port pair as FC, or you can connect both port pairs as CNA or both port pairs as FC.
 Ethernet network configurations::
@@ -255,7 +255,7 @@ image:../media/drw_c190_e_rj45_cbling.png[Host network cabling]
 +
 . Cable the e0M ports to the management network switches with the RJ45 cables.  
 +
-image:../media/drw_c190_u_mgmt_cbling.png[Management port cabling]
+image:../media/drw_c190_u_mgmt_cabling.png[Management port cabling]
 
 IMPORTANT: DO NOT plug in the power cords at this point.
 
@@ -302,7 +302,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS con
  ** Controller 2 port 0b to IOM B port 3 on the last drive shelf in the stack.
  image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]     mini-SAS HD to mini-SAS HD cables
 
-If you have more than one drive shelf stack, see link:../com.netapp.doc.hw-ds-sas3-icg/home.html[Installing and cabling] for your drive shelf type.
+For additional cabling information, see link:../sas3/install-new-system.html[Install and cable shelves for a new system installation - shelves with IOM12/IOM12B modules].
 
 == Step 5: Complete system setup
 

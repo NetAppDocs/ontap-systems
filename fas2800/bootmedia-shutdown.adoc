@@ -1,0 +1,14 @@
+---
+permalink: fas2800/bootmedia-shutdown.html
+sidebar: sidebar
+keywords: fas2800, shut, down, impaired, controller, take, over
+summary: 'You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.'
+---
+= Shut down the impaired controller - FAS2800
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down or take over the impaired controller.
+
+include::../_include/shutdown_bootmedia.adoc[]

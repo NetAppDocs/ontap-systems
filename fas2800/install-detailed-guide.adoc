@@ -36,7 +36,7 @@ IMPORTANT: Customers with specific power requirements must check https://hwu.net
 .. Gather information about your storage system by completing the https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[setup worksheet^ (need the URL to the worksheet)].
 .. Record the storage system serial number from the controllers.
 +
-image::../media/drw_ssn_label.svg[width=220px]
+image::../media/drw_ssn_label.svg[Example of system serial number]
 
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the https://hwu.netapp.com[NetApp Hardware Universe] to locate the cable and identify its use.
 
@@ -52,7 +52,7 @@ X6566B-05-R6, .5,
 X6566B-2-R6, 2m
 
 a|
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 a|
 Network cable
 a|
@@ -78,7 +78,7 @@ X66250-5, 5m
 
 X66250-15, 15m
 a|
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 a|
 FC network
 a|
@@ -88,7 +88,7 @@ X6561-R6
 
 X6562-R6
 a|
-image::../media/oie_cable_rj45.svg[width=100px]
+image::../media/oie_cable_rj45.png[RJ-45 cables]
 a|
 Management network and Ethernet data
 a|
@@ -108,7 +108,7 @@ USB-C console cable
 a|
 No part number label
 a|
-image::../media/oie_cable_micro_usb.svg[width=100px]
+image::../media/oie_cable_micro_usb.png[Micro USB connector]
 a|
 Console connection during software setup on non-Windows or Mac laptop/console
 a|
@@ -116,7 +116,7 @@ Power cables
 a|
 No part number label
 a|
-image::../media/oie_cable_power.svg[width=100px]
+image::../media/oie_cable_power.png[width=100px]
 a|
 Powering up the storage system
 a|
@@ -124,7 +124,7 @@ Optional FC cable
 a|
 Optional FC cable
 a|
-image::../media/oie_cable_fiber_lc_connector.svg[width=100px]
+image::../media/oie_cable_fiber_lc_connector.png[LC fiber connector]
 a|
 Additional FC network cable
 
@@ -158,15 +158,15 @@ The following table identifies the cable type with the call out number and cable
 |===
 | Cabling|Connection type
 a|
-image::../media/oie_legend_icon_1_lg.svg[width=40px]
+image::../media/icon_square_1_green.png[Callout number 3]]
 a|
 Cluster interconnect
 a|
-image::../media/oie_legend_icon_2_lp.svg[width=40px]
+image::../media/icon_square_2_purple.png[Callout number 2]
 a|
 Management network switch
 a|
-image::../media/oie_legend_icon_3_o.svg[width=40px]
+image::../media/icon_square_3_orange.png[Callout number 3]
 a|
 Host network switches
 
@@ -181,7 +181,7 @@ Host network switches
 ** As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn the cable head over and try again.
 ** If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
 
-image::../media/oie_cable_pull_tab_down.svg[width=320px]
+image::../media/oie_cable_pull_tab_down.png[Pull tab direction]
 
 
 [role="tabbed-block"]
@@ -208,7 +208,7 @@ image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[width=100pxx]
 image::../media/drw_2800_tnsc_cluster_cabling_IEOPS-892.svg[width=500px]
 . Cable the e0M ports to the management network switches with the RJ45 cables:
 +
-image::../media/oie_cable_rj45.svg[width=100px]
+image::../media/oie_cable_rj45.png[RJ-45 cables]
 *RJ45 cables*
 +
 image::../media/drw_2800_management_connection_IEOPS-1077.svg[width=500px]
@@ -220,32 +220,32 @@ image::../media/drw_2800_network_cabling_IEOPS-894.svg[width=500px]
 .. If you have a 4-port Ethernet data network, cable ports e1a through e1d to your Ethernet data network. 
 ** 4-ports, 10/25Gb Ethernet, SFP28 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px] 
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector] 
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[width=100px]
 +
 
 ** 4-ports, 10GBASE-T, RJ45 
 +
-image::../media/oie_cable_rj45.svg[width=100px]
+image::../media/oie_cable_rj45.png[RJ-45 cables]
 +
 
 .. If you have a 4-port Fiber Channel data network, cable ports 1a through 1d for your FC network.
 ** 4-ports, 32Gb Fiber Channel, SFP+ (target only) 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
 ** 4-ports, 32Gb Fiber Channel, SFP+ (initiator/target) 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
 .. If you have a 2+2 card (2 ports with Ethernet connections and 2 ports with Fiber Channel connections), cable ports e1a and e1b to your FC data network and ports e1c and e1d to your Ethernet data network.
 +
 ** 2-ports, 10/25Gb Ethernet (SFP28) + 2-ports 32Gb FC (SFP+) 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 
 IMPORTANT: DO NOT plug in the power cords. 
 
@@ -270,7 +270,7 @@ image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[width=100pxx]
 image::../media/drw_2800_switched_cluster_cabling_IEOPS-893.svg[width=500px]
 . Cable the e0M ports to the management network switches with the RJ45 cables:
 +
-image::../media/oie_cable_rj45.svg[width=100px]
+image::../media/oie_cable_rj45.png[RJ-45 cables]
 +
 image::../media/drw_2800_management_connection_IEOPS-1077.svg[width=500px]
 +
@@ -281,32 +281,32 @@ image::../media/drw_2800_network_cabling_IEOPS-894.svg[width=500px]
 .. If you have a 4-port Ethernet data network, cable ports e1a through e1d to your Ethernet data network. 
 ** 4-ports, 10/25Gb Ethernet, SFP28 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px] 
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector] 
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[width=100px]
 +
 
 ** 4-ports, 10GBASE-T, RJ45 
 +
-image::../media/oie_cable_rj45.svg[width=100px]
+image::../media/oie_cable_rj45.png[RJ-45 cables]
 +
 
 .. If you have a 4-port Fiber Channel data network, cable ports 1a through 1d for your FC network.
 ** 4-ports, 32Gb Fiber Channel, SFP+ (target only) 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
 ** 4-ports, 32Gb Fiber Channel, SFP+ (initiator/target) 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
 .. If you have a 2+2 card (2 ports with Ethernet connections and 2 ports with Fiber Channel connections), cable ports e1a and e1b to your FC data network and ports e1c and e1d to your Ethernet data network.
 +
 ** 2-ports, 10/25Gb Ethernet (SFP28) + 2-ports 32Gb FC (SFP+) 
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 
 IMPORTANT: DO NOT plug in the power cords. 
 
@@ -320,22 +320,22 @@ Cable your controllers to external storage.
 
 The following table identifies the cable type with the call out number and cable color in the illustrations for cabling your drive shelves to your storage system.
 
-NOTE: The example uses DS224C. Cabling is similar with other supported drive shelves. See https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html[Install and cable shelves for a new system installation - shelves with IOM12/IOM12B modules^] for more information.
+NOTE: The example uses DS224C. Cabling is similar with other supported drive shelves. See link:../sas3/install-new-system.html[Install and cable shelves for a new system installation - shelves with IOM12/IOM12B modules] for more information.
 
 
 [options="header" cols="20%,80%"]
 |===
 | Cabling|Connection type
 a|
-image::../media/oie_legend_icon_1_lo.svg[width=40px]
+image::../media/icon_square_1_yellow.png[Callout icon 1]
 a|
 Shelf-to-shelf cabling
 a|
-image::../media/oie_legend_icon_2_mb.svg[width=40px]
+image::../media/icon_square_2_blue.png[Callout icon 2]
 a|
 Controller A to the drive shelves
 a|
-image::../media/oie_legend_icon_3_t.svg[width=40px]
+image::../media/icon_square_3_tourquoise.png[Callout icon 3]
 a|
 Controller B to the drive shelves
 
@@ -344,13 +344,13 @@ Controller B to the drive shelves
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.svg[width=320px]
+image::../media/oie_cable_pull_tab_down.png[Pull tab direction]
 
 .About this task
 
 Use the animation or the step-by step instructions to complete the cabling between the controllers and to the drive shelves.
 
-IMPORTANT: Do not use port 0b2 on a FAS2800. This SAS port is not used by ONTAP and is always disabled. See https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html[Install a shelf in a new storage system^] for more information.
+IMPORTANT: Do not use port 0b2 on a FAS2800. This SAS port is not used by ONTAP and is always disabled. See link:../sas3/install-new-system.html[Install a shelf in a new storage system^] for more information.
 
 video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto, title="Animation - Drive shelf cabling"]
 

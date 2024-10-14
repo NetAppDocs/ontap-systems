@@ -1,0 +1,66 @@
+indexpage:
+  title: ASA systems
+  lead: ASA A-Series and C-Series models provide a full range of performance and capacity to meet your needs.
+  summary: The storage system documentation lets you install, setup, and maintain your ASA A-Series system.
+  keywords: asa, a-series, asa a150, asa a250, asa a400, asa a800, asa a900, datasheet
+  tiles:
+    - title: Get started
+      links:
+        - title: ASA software configuration
+          url: https://docs.netapp.com/us-en/ontap/task_asa_software_configuration.html
+        - title: ASA datasheet
+          url: https://www.netapp.com/data-storage/san-storage-area-network/
+        - title: ASA solution brief
+          url: https://www.netapp.com/pdf.html?item=/media/19466-SB-4081.pdf
+        - title: ASA technical report
+          url: https://www.netapp.com/pdf.html?item=/media/85671-tr-4968.pdf
+    - title: Install and setup A-Series systems
+      links:
+        - title: ASA A150
+          url: ../asa150/install-setup.html
+        - title: ASA A250
+          url: ../asa250/install-setup.html
+        - title: ASA A400
+          url: ../asa400/install-setup.html
+        - title: ASA A800
+          url: ../asa800/install-setup.html
+        - title: ASA A900
+          url: ../asa900/install_setup.html
+    - title: Install and setup C-Series systems
+      links:
+        - title: ASA C250
+          url: ../asa-c250/install-setup.html
+        - title: ASA C400
+          url: ../asa-c400/install-setup.html
+        - title: ASA C800
+          url: ../asa-c800/install-setup.html
+    - title: Maintain A-Series systems
+      links:
+        - title: ASA A150
+          url: ../asa150/maintain-overview.html
+        - title: ASA A250
+          url: ../asa250/maintain-overview.html
+        - title: ASA A400
+          url: ../asa400/maintain-overview.html
+        - title: ASA A800
+          url: ../asa800/maintain-overview.html
+        - title: ASA A900
+          url: ../asa900/maintain-overview.html
+    - title: Maintain C-Series systems
+      links:
+        - title: ASA C250
+          url: ../asa-c250/maintain-overview.html
+        - title: ASA C400
+          url: ../asa-c400/maintain-overview.html
+        - title: ASA C800
+          url: ../asa-c800/maintain-overview.html
+    - title: Supported switches
+      links:
+        - title: Broadcom-supported BES-53248
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-new-switch-overview.html
+        - title: Cisco 9336C-FX2
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/configure-switch-overview-9336c-cluster.html
+        - title: Cisco 9336-FX2 in shared configurations
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/configure-switch-overview-9336c-shared.html
+        - title: NVIDIA SN2100
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/configure-overview-sn2100-cluster.html

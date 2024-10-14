@@ -1,0 +1,220 @@
+Restore the ONTAP image from the partner node when the boot media is corrupted.
+
+.About this task
+If a node's boot media is corrupted, the boot process will halt at the LOADER prompt and display boot error messages.
+
+When you encounter these boot error messages, you need to restore the ONTAP image from the partner node.
+
+.Show example of boot error messages
+[%collapsible]
+
+====
+....
+Can't find primary boot device u0a.0 
+Can't find backup boot device u0a.1 
+ACPI RSDP Found at 0x777fe014 
+
+Starting AUTOBOOT press Ctrl-C to abort... 
+Could not load fat://boot0/X86_64/freebsd/image1/kernel: Device not found
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0, fat) 
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0, fat) 
+
+Autoboot of PRIMARY image failed. Device not found (-6) 
+LOADER-A>
+....
+
+====
+
+
+
+
+.Steps
+
+. From the LOADER prompt, enter the command:
++
+`boot_recovery -partner`
++
+The screen displays the following message:
++
+`Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
+
++
+
+. Monitor the boot media recovery process as LOADER configures the local cluster ports and executes `netboot` from the partner node.
++
+When netboot is running, the `Starting BMR` message displays.
++
+
+. Depending on the encryption method, select the option that matches your single-node configuration:
++
+
+// start tabbed area
++
+[role="tabbed-block"]
+====
+
+.No Encryption 
+--
+If no encryption is detected, the boot media recovery process continues without requiring key management.
+
+Continue to monitor the recovery process as it restores the backup config, env file, mdb, and rdb from the partner node.
+
+When the recovery process is complete, the node will reboot. The following messages indicate a successful recovery:
+
+....
+
+varfs_backup_restore: update checksum for varfs.tgz
+varfs_backup_restore: restore using /cfcard/x86_64/freebsd/oldvarfs.tgz
+varfs_backup_restore: attempting to restore /var/kmip to the boot device
+varfs_backup_restore: failed to restore /var/kmip to the boot device
+varfs_backup_restore: Rebooting to load the new varfs
+.
+Terminated
+varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
+
+....
+
+--
+
+.Onboard Key Manager (OKM)
+--
+If Onboard Key Manager (OKM) is detected, the system displays the following prompt.  
+....
+key manager is configured.
+Entering Bootmenu Option 10...
+ 
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+....
+
+.. From the Bootmenu Option prompt, enter `Y` to confirm you want to use the bootmedia recovery option.
+
+.. Enter the passphrase for onboard key manager when prompted, and enter the passphrase again to confirm.
++
+.Show example of passphrase prompts
+[%collapsible]
+
+=====
+....
+Enter the passphrase for onboard key management:
+Enter the passphrase again to confirm:
+Enter the backup data:
+TmV0QXBwIEtleSBCbG9iAAECAAAEAAAAcAEAAAAAAAA3yR6UAAAAACEAAAAAAAAA
+QAAAAAAAAACJz1u2AAAAAPX84XY5AU0p4Jcb9t8wiwOZoqyJPJ4L6/j5FHJ9yj/w
+RVDO1sZB1E4HO79/zYc82nBwtiHaSPWCbkCrMWuQQDsiAAAAAAAAACgAAAAAAAAA
+3WTh7gAAAAAAAAAAAAAAAAIAAAAAAAgAZJEIWvdeHr5RCAvHGclo+wAAAAAAAAAA
+IgAAAAAAAAAoAAAAAAAAAEOTcR0AAAAAAAAAAAAAAAACAAAAAAAJAGr3tJA/LRzU
+QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
+.
+.
+.
+.
+....
+=====
+
++
+.. Continue to monitor the recovery process as it restores the backup config, env file, mdb, and rdb from the partner node.
++
+When the recovery process is complete, the node will reboot. The following messages indicate a successful recovery:
++
+
+....
+Trying to recover keymanager secrets.... 
+Setting recovery material for the onboard key manager 
+Recovery secrets set successfully
+Trying to delete any existing km_onboard.wkeydb file.
+ 
+Successfully recovered keymanager secrets.
+....
+
+--
+
+.External Key Manager (EKM)
+--
+
+If EKM is configured, the system displays the following prompt.
+
+....
+Error when fetching key manager config from partner <IP>: 28
+
+Has key manager been configured on this system? {y|n}
+....
+
+.. Enter `Y` if EKM has been configured.
++
+....
+key manager is configured.
+Entering Bootmenu Option 11...
+....
+
++
+You'll be prompted for the EKM settings that were initially used during setup.
+
+.. Enter each EKM configuration setting when prompted. 
++
+
+.. Verify that the attributes for the Cluster UUID and the Keystore UUID are correct. 
+* On the partner node, retrieve the Cluster UUID using the following command.
++
+`cluster identity show`
++
+
+* On the partner node, retrieve the Keystore UUID using the following commands.
++
+`vserver show -type admin`
++
+`key-manager keystore show -vserver <nodename>`
++
+
+* If the partner node is unavailable, use the Mroot-AK key to retrieve the UUID:
++
+** For the Cluster UUID, enter the following command: 
++
+`x-NETAPP-ClusterName: <cluster name>` 
++
+** For the Keystore UUID, enter the following command:
++
+`x-NETAPP-KeyUsage: MROOT-AK` 
+
+.. Enter the values for Keystore UUID and Cluster UUID when prompted.
++
+
+
+.. Depending on whether the key is successfully restored, take one of the following actions:
++
+* If the key is successfully restored, the recovery process continues and reboots the node. Proceed to step 4.
++
+* If the key is not successfully restored, the system will halt and display error and warning messages. Rerun the recovery process.
++
+.Show example of key recovery error and warning messages
+[%collapsible]
++
+=====
+....
+
+ERROR: kmip_init: halting this system with encrypted mroot...
+
+WARNING: kmip_init: authentication keys might not be available.
+                                                 
+System cannot connect to key managers.        
+
+ERROR: kmip_init: halting this system with encrypted mroot...
+
+Terminated
+
+Uptime: 11m32s
+
+System halting...
+
+LOADER-B>
+....
+=====
+--
+
+====
+
+// end tabbed area
+
+[start=4]
+
+. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.

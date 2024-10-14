@@ -30,11 +30,11 @@ image::../media/drw_a800_pcm_remove.png[Release the controller module]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Locking latch
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Locking pin
 |===
@@ -55,15 +55,15 @@ image::../media/drw_a800_open_air_duct.png[Opening the air duct]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Air duct locking tabs
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Slide air duct towards fan modules
 a|
-image:../media/legend_icon_03.png[Callout number 3]
+image:../media/icon_round_3.png[Callout number 3]
 a|
 Rotate air duct towards fan modules
 |===
@@ -74,21 +74,24 @@ To replace the NVDIMM, you must locate it in the controller module using the NVD
 
 . If you are removing or moving an NVDIMM, unlock the locking latch on the riser, and then remove the applicable riser.
 +
-image::../media/drw_a800_nvdimm_replace.png[Replace an NVDIMM]
+image::../media/drw_A800_nvdimm_replace_ieops-1953.svg[Replace an NVDIMM]
 +
 
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Air duct cover
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
-Riser 2 and NVDIMM 11
+Riser 2 
 a|
-Riser 3 and NVDIMM 23
+image:../media/icon_round_3.png[Callout number 3]
+a|
+NVDIMM in slots 11 and 23
+
 |===
 
 . Note the orientation of the NVDIMM in the socket so that you can insert the NVDIMM in the replacement controller module in the proper orientation.
@@ -126,11 +129,11 @@ image::../media/drw_a700s_close_air_duct.png[Close the air duct]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Locking tabs
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Slide plunger
 |===

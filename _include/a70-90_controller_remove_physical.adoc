@@ -4,7 +4,7 @@ You must remove the controller module from the chassis when you replace the cont
 
 . On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
 +
 
 . Check the amber NVRAM that status LED located in slot 4/5 on the back of the impaired controller module is off. Look for the NV icon.
@@ -16,11 +16,11 @@ image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and statu
 
 |===
 a|
-image:../media/legend_icon_01.svg[Callout number 1, width=30px] 
+image:../media/icon_round_1.png[Callout number 1] 
 a|
 NVRAM status LED
 a|
-image:../media/legend_icon_02.svg[Callout number 1, width=30px] 
+image:../media/icon_round_2.png[Callout number 2] 
 a|
 NVRAM attention LED
 |===
@@ -56,11 +56,11 @@ image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[Controller remove g
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.svg[Callout number 1, width=30px]
+image:../media/icon_round_1.png[Callout number 1] 
 |a
 Locking latch
 a|
-image:../media/legend_icon_02.svg[Callout number 2, width=30px]
+image:../media/icon_round_2.png[Callout number 2] 
 a|
 Locking pin
 |===

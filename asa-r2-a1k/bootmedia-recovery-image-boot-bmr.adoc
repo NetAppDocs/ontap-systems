@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-a1k/bootmedia-recovery-image-boot-bmr.html
+sidebar: sidebar
+keywords: asa r2 a1k, boot the recovery image
+summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+---
+= Automated boot recovery - ASA A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/bmr_single_node_boot_recovery.adoc[]

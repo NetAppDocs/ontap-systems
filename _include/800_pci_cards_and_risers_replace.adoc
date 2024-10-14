@@ -29,11 +29,11 @@ image::../media/drw_a800_pcm_remove.png[Release the controller module]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Locking latch
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Locking pin
 |===
@@ -52,15 +52,15 @@ image::../media/drw_a800_open_air_duct.png[Open the air duct]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Air duct locking tabs
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Slide air duct towards fan modules
 a|
-image:../media/legend_icon_03.png[Callout number 3]
+image:../media/icon_round_3.png[Callout number 3]
 a|
 Rotate air duct towards fan modules
 |===
@@ -86,19 +86,19 @@ image::../media/drw_a800_pcie_1_replace.png[Replace PCI card in riser 1]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Air duct
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Riser locking latch
 a|
-image:../media/legend_icon_03.png[Callout number 3]
+image:../media/icon_round_3.png[Callout number 3]
 a|
 Card locking bracket
 a|
-image:../media/legend_icon_04.png[Callout number 4]
+image:../media/icon_round_4.png[Callout number 4]
 a|
 Riser 1 (left riser) with 100GbE PCIe card in slot 1.
 |===
@@ -121,23 +121,23 @@ image::../media/drw_a800_pcie_2_5_replace.gif[Replace PCI cards 2 through 5 in m
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Air duct
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Riser 2 (middle riser) or 3 (right riser) locking latch
 a|
-image:../media/legend_icon_03.png[Callout number 3]
+image:../media/icon_round_3.png[Callout number 3]
 a|
 Card locking bracket
 a|
-image:../media/legend_icon_04.png[Callout number 4]
+image:../media/icon_round_4.png[Callout number 4]
 a|
 Side panel on riser 2 or 3
 a|
-image:../media/legend_icon_05.png[Callout number 5]
+image:../media/icon_round_5.png[Callout number 5]
 a|
 PCIe cards in riser 2 or 3
 |===
@@ -178,20 +178,23 @@ image::../media/drw_a800_close_air_duct.png[Close the air duct]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.png[Callout number 1]
+image:../media/icon_round_1.png[Callout number 1]
 a|
 Locking tabs
 a|
-image:../media/legend_icon_02.png[Callout number 2]
+image:../media/icon_round_2.png[Callout number 2]
 a|
 Slide plunger
 |===
+
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 
-. Recable the system, as needed.
-. Plug the power cables into the power supplies and reinstall the power cable retainers.
+. Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
++
+NOTE: You will connect the rest of the cables to the controller module later in this procedure.
+
 . Complete the reinstallation of the controller module:
  .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
@@ -199,10 +202,17 @@ The locking latches rise when the controller module is fully seated.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
-The controller module begins to boot as soon as it is fully seated in the chassis.
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. If you have not already done so, reinstall the cable management device.
+ 
+. Plug the system cables and transceiver modules into the controller module and reinstall the cable management device.
+. Plug the power cables into the power supplies and reinstall the power cable retainers.
++
+The controller module begins to boot as soon as it is connected to power. Be prepared to interrupt the boot process.
+
++
+NOTE: If your system has DC power supplies, make sure the thumbscrews on the power supply cable are tight.
+
 . Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 

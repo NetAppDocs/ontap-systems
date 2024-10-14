@@ -1,4 +1,4 @@
-To replace the boot media, you must remove the System Management module from the back of the system, remove the impaired boot media, install the replacement boot media in the System Management module, and transfer the ONTAP image from a USB flash drive to the replacement boot media.
+You must unplug the controller module, remove the System Management module from the back of the system, remove the impaired boot media, and install the replacement boot media in the System Management module.
 
 == Step 1: Replace the boot media
 
@@ -10,15 +10,15 @@ image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[Boot media repl
 [cols="1,4"]
 |===
 a|
-image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+image::../media/icon_round_1.png[Callout number 1]
 a|
 System Management module cam latch
 a|
-image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+image::../media/icon_round_2.png[Callout number 2]
 a|
 Boot media locking button
 a|
-image::../media/legend_icon_03.svg[Callout number 3,width=30px]
+image::../media/icon_round_3.png[Callout number 3]
 a|
 Boot media
 |===
@@ -32,8 +32,7 @@ NOTE: If your storage system has DC power supplies, disconnect the power cable b
 .. Remove any cables connected to the System Management module. Make sure that you label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 .. Depress the System Management cam button.
-The cam lever moves away from the enclosure.
- .. Rotate the cam latch down as far as it will go.
+.. Rotate the cam latch down as far as it will go.
 .. Remove the System Management module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
 . Remove the boot media from the management module:
@@ -52,14 +51,15 @@ The cam lever moves away from the enclosure.
 
 == Step 2: Transfer the ONTAP image to the boot media
 
-The replacement boot media that you installed is without an ONTAP image so you need to transfer an ONTAP image using a USB flash drive.
+The replacement boot media that you installed is without an ONTAP image. You can transfer the ONTAP image to the replacement boot media by downloading the appropriate ONTAP service image from the https://mysupport.netapp.com/[NetApp Support Site] to a USB flash drive and then to the replacement boot media.
 
 .Before you begin
 
  * You must have an empty USB flash drive, formatted to FAT32, with at least 4GB capacity.
- * You must have a copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the https://support.netapp.com/downloads[Downloads] section on the NetApp Support Site
-  ** If NVE is supported, download the image with NetApp Volume Encryption, as indicated in the download button.
-  ** If NVE is not supported, download the image without NetApp Volume Encryption, as indicated in the download button.
+ * Download a copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the Downloads section on the NetApp Support Site. Use the `version -v` command to display if your version of ONTAP supports NVE.  If the command output displays `<10no- DARE>`, your version of ONTAP does not support NVE.
+ ** If NVE is supported by your version of ONTAP, download the image with NetApp Volume Encryption, as indicated in the download button.   
+ ** If NVE is not supported, download the image without NetApp Volume Encryption, as indicated in the download button.
+
  * If your system is an HA pair, you must have a network connection between the node management ports of the controllers (typically the e0M interfaces).
 
 .Steps
@@ -73,6 +73,8 @@ NOTE: If you are extracting the contents using Windows, do not use WinZip to ext
 +
  
 The USB flash drive should have the appropriate ONTAP image of what the impaired controller is running.
+
++
 
 .. Remove the USB flash drive from your laptop.
 . Insert the USB flash drive into the USB slot on the System Management module. 
@@ -100,5 +102,4 @@ NOTE: The target port you configure is the target port you use to communicate wi
   
 +
 NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
-
-
++

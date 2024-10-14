@@ -1,0 +1,23 @@
+---
+permalink: a220/bootmedia-shutdown.html
+sidebar: sidebar
+keywords: fas2700, aff a220, shut, down, impaired, controller, take, over
+summary: 'You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.'
+---
+= Shut down the impaired controller - AFF A220
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
+== Option 1: Most configurations
+
+include::../_include/shutdown_bootmedia.adoc[]
+
+== Option 2: Controller is in a MetroCluster
+
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller.
+
+include::../_include/shutdown_any_mcc_supported.adoc[]

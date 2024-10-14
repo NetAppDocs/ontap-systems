@@ -18,11 +18,11 @@ image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[PSU remove]
 [cols="1,4"]
 |===
 a|
-image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+image::../media/icon_round_1.png[Callout number 1]
 |
 Terracotta PSU locking tab
 a|
-image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+image::../media/icon_round_2.png[Callout number 2]
 a|
 Power supply
 |===
@@ -46,11 +46,11 @@ image::../media/drw_a70-90_fan_remove_replace_ieops-1366.svg[Remove fans]
 
 |===
 a|
-image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+image::../media/icon_round_1.png[Callout number 1]
 a|
 Fan locking tabs
 a|
-image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+image::../media/icon_round_2.png[Callout number 2]
 a|
 Fan module
 |===
@@ -70,11 +70,11 @@ image::../media/drw_a70-90_remove_replace_nvmembat_ieops-1369.svg[Move the NV ba
 
 |===
 a|
-image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+image::../media/icon_round_1.png[Callout number 1]
 |
 NV battery air duct
 a|
-image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+image::../media/icon_round_2.png[Callout number 2]
 a|
 NV battery pack plug
 |===
@@ -108,7 +108,7 @@ image::../media/drw_a70_90_dimm_ieops-1513.svg[DIMM map]
 
 |===
 a|
-image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+image::../media/icon_round_1.png[Callout number 1]
 |
 System DIMM
 |===
@@ -139,7 +139,7 @@ image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove I/O module]
 
 |===
 a|
-image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+image::../media/icon_round_1.png[Callout number 1]
 |
 I/O module cam lever
 |===
@@ -150,8 +150,6 @@ Make sure that you label the cables so that you know where they came from.
 . Rotate the cable management arm down by pulling the buttons on the inside of the cable management arm and rotating it down.
 . Remove the I/O modules from the controller module:
 .. Depress the target I/O module cam latch button.
-+
-The cam lever moves away from the controller module.
 .. Rotate the cam latch down as far as it will go. For horizontal modules, rotate the cam away from the module as far as it will go.
 .. Remove the module from the controller module by hooking your finger into the cam lever opening and pulling the module out of the controller module.
 +
@@ -177,23 +175,22 @@ image::../media/drw_a70-90_sys-mgmt_replace_ieops-1373.svg[Replace the System Ma
 
 |===
 a|
-image::../media/legend_icon_01.svg[Callout number 1,width=30px]
+image::../media/icon_round_1.png[Callout number 1]
 a|
 System Management module cam latch
 a|
-image::../media/legend_icon_02.svg[Callout number 2,width=30px]
+image::../media/icon_round_2.png[Callout number 2]
 a|
 Boot media locking button
 a|
-image::../media/legend_icon_03.svg[Callout number 3,width=30px]
+image::../media/icon_round_3.png[Callout number 3]
 a|
 Replacement System Management module
 |===
 
 . Remove the System Management module from the impaired controller module:
 .. Depress the system management cam button.
-The cam lever moves away from the chassis.
- .. Rotate the cam lever all the way down.
+.. Rotate the cam lever all the way down.
  .. Loop your finger into the cam lever and pull the module straight out of the system.
 
  . Install the system management module into the replacement controller module in the same slot that it was in on the impaired controller module:
@@ -209,11 +206,10 @@ image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[Remove the NVRA
 [cols="1,4"]
 
 |===
-a|
-image:../media/legend_icon_01.svg[Callout number 1,width=30px]|
+image:../media/icon_round_1.png[Callout number 1] |
 Cam locking button
 a|
-image:../media/legend_icon_02.svg[Callout number 2,width=30px]
+image:../media/icon_round_2.png[Callout number 2] 
 a|
 DIMM locking tab
 |===

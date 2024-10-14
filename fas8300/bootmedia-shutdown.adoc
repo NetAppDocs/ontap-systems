@@ -1,0 +1,26 @@
+---
+permalink: fas8300/bootmedia-shutdown.html
+sidebar: sidebar
+keywords: fas8300, fas8300, shut, down, take, over, impair, controller, procedure, storage, system, hardware, configuration, shut down the impaired controller
+summary: You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+---
+= Shut down the impaired controller - AFF FAS8300 and FAS8700
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+== Option 1: Most systems
+
+include::../_include/shutdown_bootmedia.adoc[]
+
+== Option 2: Controller is in a MetroCluster
+
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller.
+
+include::../_include/shutdown_any_mcc_supported.adoc[]
+
+== Option 3: Controller is in a two-node Metrocluster
+
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller.
+
+include::../_include/shutdown_2n_mcc.adoc[]

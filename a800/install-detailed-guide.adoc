@@ -21,13 +21,15 @@ You need to have access to the link:https://hwu.netapp.com[NetApp Hardware Unive
 You need to provide the following at your site:
 
 * Rack space for the storage system
+** 4U in an HA configuration for the platform 
+** 2U for each NS224 storage shelf
 * Phillips #2 screwdriver
 * Additional networking cables to connect your system to your network switch and laptop or console with a Web browser
 
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
-image::../media/drw_ssn_label.png[Example of the system serial number showing location of the number]
+image::../media/drw_ssn_label.png[Example of system serial number]
 
 .Steps
 . Set up your account:
@@ -104,7 +106,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-image:../media/oie_cable_micro_usb.png[Illustration showing a micro USB connector]
+image:../media/oie_cable_micro_usb.png[Micro USB connector]
 a|
 Console connection during software setup
 a|
@@ -126,7 +128,7 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 .Steps
 . Install the rail kits, as needed.
 +
-https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html[Installing SuperRail into a four-post rack^]
+link:../platform-supplemental/superrail-install.html[Installing SuperRail into a four-post rack]
 
 . Install and secure your system using the instructions included with the rail kit.
 +
@@ -172,7 +174,7 @@ video::edc42447-f721-4cbe-b080-ab0c0123a139[panopto, title="Animation - Cable a 
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_dp.png[Callout number 1]
+image:../media/icon_square_1_blue.png[Callout number 1]
 a|
 Cable the HA interconnect ports:
 
@@ -181,7 +183,7 @@ Cable the HA interconnect ports:
 image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 
 a|
-image:../media/oie_legend_icon_2_lg.png[Callout number 2]
+image:../media/icon_square_2_green.png[Callout number 2]
 a|
 Cable the cluster interconnect ports:
 
@@ -189,7 +191,7 @@ Cable the cluster interconnect ports:
 ** e1a to e1a
 image:../media/drw_affa800_tnsc_clust_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 a|
-image:../media/oie_legend_icon_3_lp.png[Step 3]
+image:../media/icon_square_3_purple.png[Step 3]
 a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[Illustration showing location of the management ports on the back of the system]
 a|
@@ -231,7 +233,7 @@ video::49e48140-4c5a-4395-a7d7-ab0c0123a10e[panopto, title="Animation - Cable a 
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_dp.png[Callout number 1]
+image:../media/icon_square_1_blue.png[Callout number 1]
 a|
 Cable the HA interconnect ports:
 
@@ -239,14 +241,14 @@ Cable the HA interconnect ports:
 ** e1b to e1b
 image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 a|
-image:../media/oie_legend_icon_2_lg.png[Callout number 2]
+image:../media/icon_square_2_yellow.png[Callout number 2]
 a|
 Cable the cluster interconnect ports to the 100 GbE cluster interconnect switches.
 ** e0a
 ** e1a
 image:../media/drw_affa800_switched_clust_cabling.png[Cluster interconnect cabling]
 a|
-image:../media/oie_legend_icon_3_lp.png[Step 3]
+image:../media/icon_square_3_orange.png[Step 3]
 a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[Illustration showing location of the management ports on the back of the system]
 
@@ -361,11 +363,11 @@ video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto, title="Animation - Cable th
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_mb.png[Callout number 1]
+image:../media/icon_square_1_blue.png[Callout number 1]
 a|
 Cable controller A to the shelf:    image:../media/drw_affa800_1shelf_cabling_a.png[Cabling controllers to a single shelf]
 a|
-image:../media/oie_legend_icon_2_lo.png[Callout number 2]
+image:../media/icon_square_2_yellow.png[Callout number 2]
 a|
 Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.png[Cabling controller B to a single shelf]
 |===
@@ -391,11 +393,11 @@ video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto, title="Animation - Cable th
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_mb.png[Callout number 1]
+image:../media/icon_square_1_blue.png[Callout number 1]
 a|
 Cable controller A to the shelves:    image:../media/drw_affa800_2shelf_cabling_a.png[Cabling controller A to two shelves]
 a|
-image:../media/oie_legend_icon_2_lo.png[Callout number 2]
+image:../media/icon_square_2_yellow.png[Callout number 2]
 a|
 Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_b.png[Cabling controller B to two shelves]
 |===

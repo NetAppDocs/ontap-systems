@@ -5,17 +5,14 @@ sidebar: sidebar
 keywords: legacy, hardware, end-of-support
 summary: 'Learn about the the legacy hardware no longer supported.'
 ---
-
 = Legacy hardware no longer supported
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-The following systems and switches are no longer supported as of the specified version of ONTAP.
+The following systems, shelves, and switches are no longer supported as of the specified version of ONTAP.
 
-
-
-=== AFF and FAS systems
+== ONTAP hardware systems
 [cols="2*",options="header"]
 |===
 | System| Support discontinued from...
@@ -38,7 +35,20 @@ a|
 ONTAP 9.9.1
 |===
 
-=== Switches
+== Shelf modules
+
+[cols="2*",options="header"]
+|===
+| Shelf module| Support discontinued from...
+a|
+IOM 6 module|
+ONTAP 9.16.1
+a|
+
+
+|===
+
+== Switches
 
 [cols="2*",options="header"]
 |===
@@ -53,7 +63,6 @@ Cluster switches
 * Cisco 5596T
 a|
 ONTAP 9.11.1
-
 |===
 
 == Related information

@@ -4,9 +4,9 @@ sidebar: sidebar
 keywords: aff a70, aff a90, pre-shutdown checks for onboard encryption keys
 summary: "Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check what version of ONTAP the system is running."
 ---
-= Check onboard encryption keys - AFF A70, AFF A90
+= Check encryption key support and status - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/a70-90_bootmedia_encryption_preshutdown_checks.adoc[]
+include::../_include/encryption_check_bootmedia.adoc[]

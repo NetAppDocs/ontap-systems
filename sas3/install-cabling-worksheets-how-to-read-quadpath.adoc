@@ -20,9 +20,9 @@ The configuration used in this example is a quad-path HA configuration with two 
 * If you have a single-controller configuration, skip substeps b and d for cabling to a second controller.
 * If needed, you can refer to link:install-cabling-rules.html[SAS cabling rules and concepts] for information about the controller slot numbering convention, shelf-to-shelf connectivity, and controller-to-shelf connectivity (including the use of port pairs).
 
-image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Cabling worksheet for quad-path HA]
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Cabling worksheet for quad pathed connectivity]
 
-image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[]
+image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[Cabling example for quad pathed connectivity]
 
 .Steps
 

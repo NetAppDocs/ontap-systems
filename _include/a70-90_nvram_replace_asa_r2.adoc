@@ -1,0 +1,201 @@
+The NVRAM module consists of the NVRAM12 hardware and field-replaceable DIMMs. You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. To replace a failed NVRAM module, you must remove the module from the chassis, move the DIMMs to the replacement module, and install the replacement NVRAM module into the chassis.
+
+All other components in the system must be functioning properly; if not, you must contact https://support.netapp.com[NetApp Support].
+
+You must replace the failed component with a replacement FRU component you received from your provider.
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller.
+
+
+include::../_include/shutdown_most_frus.adoc[]
+
+
+== Step 2: Replace the NVRAM module
+
+To replace the NVRAM module, locate it in slot 4/5 in the chassis and follow the specific sequence of steps.
+
+. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
++
+. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+
+. Disconnect power to the controller module by pulling the controller module out about three inches:
+
+.. Press down on both of the controller module locking latches, and then rotate both latches downward at the same time.
+.. Pull the controller module about 3 inches out of the chassis to disengage power.
+
+. Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
+. Remove the target NVRAM module from the chassis:
+ .. Depress the cam latch button.
++
+The cam button moves away from the chassis.
+
+ .. Rotate the cam latch as far as it will go.
++
+.. Remove the impaired NVRAM module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
++
+image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[Remove the NVRAM12 module and DIMMs]
++
+[cols="1,4"]
+
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+Cam locking button
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+DIMM locking tabs
+|===
+
+. Set the NVRAM module on a stable surface.
+. Remove the DIMMs, one at a time, from the impaired NVRAM module and install them in the replacement NVRAM module.
+. Install the replacement NVRAM module into the chassis:
+ .. Align the module with the edges of the chassis opening in slot 4/5.
+ .. Gently slide the module into the slot all the way, and then push the cam latch all the way up to lock the module in place.
+. Reconnect power to the controller module:
+.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
++
+The locking latches rise when the controller module is fully seated.
++
+.. Rotate the locking latches upward into the locked position.
+
++ 
+NOTE: The controller reboots as soon as it is fully seated in the chassis.
++
+
+ . Rotate the cable management tray up to the closed position.
+
+== Step 3: Replace a NVRAM DIMM
+
+To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, and then replace the target DIMM.
+
+. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
++
+. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+
+. Disconnect power to the controller module by pulling the controller module out about three inches:
+
+.. Press down on both of the controller module locking latches, and then rotate both latches downward at the same time.
+.. Pull the controller module about 3 inches out of the chassis to disengage power.
+
+. Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
+. Remove the target NVRAM module from the chassis:
+ .. Depress the cam button.
++
+The cam button moves away from the chassis.
+
+.. Rotate the cam latch as far as it will go.
++
+
+.. Remove the NVRAM module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
++
+image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[Remove the NVRAM12 module and DIMMs]
++
+[cols="1,4"]
+
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1]|
+Cam locking button
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+DIMM locking tabs
+|===
+
+. Set the NVRAM module on a stable surface.
+. Locate the DIMM to be replaced inside the NVRAM module.
+
++
+NOTE: Consult the FRU map label on the side of the NVRAM module to determine the locations of DIMM slots 1 and 2.
++
+
+ . Remove the DIMM by pressing down on the DIMM locking tabs and lifting the DIMM out of the socket.
+
+. Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
+. Install the NVRAM module into the chassis:
+ .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
+. Reconnect power to the controller module:
+.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
++
+The locking latches rise when the controller module is fully seated.
++
+.. Rotate the locking latches upward into the locked position.
+
++ 
+NOTE: The controller reboots as soon as it is fully seated in the chassis.
++
+
+. Rotate the cable management tray up to the closed position.
+
+
+== Step 4: Verify controller state
+
+You must confirm the controller state of the controllers connected to the disk pool when you boot the controller.
+
+
+.Steps
+. If the controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: _halt_
+. From the LOADER prompt on the controller, boot the controller and enter _y_ when prompted to override the system ID due to a system ID mismatch.
+. Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify the system state: _storage failover show_
++
+In the command output, you should see a message indicates the state of the controllers.
++
+
+----
+
+                              Takeover
+Node           Partner        Possible State Description
+-------------- -------------- -------- -------------------------------------
+<nodename>
+               <nodename>-   true     Connected to <nodename>-P2-3-178.
+               P2-3-178                Waiting for cluster applications to
+                                       come online on the local node.
+AFF-A90-NBC-P2-3-178
+               <nodename>-   true     Connected to <nodename>-P2-3-177,
+               P2-3-177                Partial giveback
+2 entries were displayed.
+
+----
+
+. Give back the controller:
+ .. From the healthy controller, give back the replaced controller's storage: _storage failover giveback -ofnode replacement_node_name_
++
+The controller connects back its storage pool and completes booting.
++
+If you are prompted to override the system ID due to a system ID mismatch, you should enter _y_.
++
+NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
++
+For more information, see the https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted[Manual giveback commands^] topic to override the veto.
+
+ .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: _storage failover show_
+
+. Verify that the disks that the disk pools are as expected: `storage disk show -ownership`
++
+
+----
+node1:> storage disk show -ownership
+
+Disk     Aggregate  Home Owner    DR Home      Home ID       Owner ID    DR Home ID  Reserver Pool
+-------- --------- ------------- ------------- ------------- ----------- ----------- ----------- ----------- ------
+1.0.0 pod_NVME_SSD_1
+
+0 0 - 0 Pool0
+1.0.1 pod_NVME_SSD_1
+0 0 - 0 Pool0
+1.0.2 pod_NVME_SSD_1
+0 0 - 0 Pool0
+----
+
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
