@@ -38,7 +38,7 @@ Shelf ID button
 |===
 +
 . Change the first number of the shelf ID:
- .. Insert the straightened end of a paperclip or narrow tipped ball point pen into the small hole to press the shelf ID button.
+.. Insert the straightened end of a paperclip or narrow tipped ball point pen into the small hole to press the shelf ID button.
 +
 // next note applies only to FAS70-90
 ifdef::fas70-90[]
@@ -51,19 +51,19 @@ It can take up to 15 seconds for the number to blink. This activates the shelf I
 +
 NOTE: If the ID takes longer than 15 seconds to blink, press and hold the shelf ID button again, making sure to press it in all the way.
 
- .. Press and release the shelf ID button to advance the number until you reach the desired number from 0 to 9.
+.. Press and release the shelf ID button to advance the number until you reach the desired number from 0 to 9.
 +
 Each press and release duration can be as short as one second.
 +
 The first number continues to blink.
 . Change the second number of the shelf ID:
- .. Press and hold the button until the second number on the digital display blinks.
+.. Press and hold the button until the second number on the digital display blinks.
 +
 It can take up to three seconds for the number to blink.
 +
 The first number on the digital display stops blinking.
 
- .. Press and release the shelf ID button to advance the number until you reach the desired number from 0 to 9.
+.. Press and release the shelf ID button to advance the number until you reach the desired number from 0 to 9.
 +
 The second number continues to blink.
 . Lock in the desired number and exit the programming mode by pressing and holding the shelf ID button until the second number stops blinking.
@@ -92,11 +92,11 @@ After you've turned on your shelves and assigned them unique IDs, turn on the po
 
 . Connect your laptop to the serial console port. This will allow you to monitor the boot sequence when the controllers are turned on.
 
- .. Set the serial console port on the laptop to 115,200 baud with N-8-1.
+.. Set the serial console port on the laptop to 115,200 baud with N-8-1.
 +
 NOTE: See your laptop's online help for instructions on how to configure the serial console port.
 
- .. Connect the console cable to the laptop, and connect the serial console port on the controller using the console cable that came with your storage system.
+.. Connect the console cable to the laptop, and connect the serial console port on the controller using the console cable that came with your storage system.
  
 .. Connect the laptop to the switch on the management subnet.
 +

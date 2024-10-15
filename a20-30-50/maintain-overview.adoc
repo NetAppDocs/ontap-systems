@@ -42,7 +42,7 @@ a| A drive is a device that provides the physical storage needed for data.
 
 a| link:fan-replace.html[Fan]
 
-a| A fan cools the controller.
+a| A fan cools the controller and drives.
 
 a| link:io-module-overview.html[I/O module]
 
@@ -50,7 +50,7 @@ a| The I/O module (Input/Output module) is a hardware component that acts as an 
 
 a| link:nvdimm-battery-replace.html[NV battery]
 
-a| The NV battery is responsible for providing power to the NVRAM module while data in-flight is being destaged to flash memory after a power loss.
+a| The non-volatile memory (NV) battery is responsible for providing power to the NVMEM components while data in-flight is being destaged to flash memory after a power loss.
 
 
 a| link:power-supply-replace.html[Power supply]

@@ -121,6 +121,7 @@ image::../media/drw_g_dimm_ieops-1873.svg[DIMM replace]
 
 +
 [cols="1,4"]
+
 |===
 a|
 image::../media/icon_round_1.png[Callout number 1]
@@ -173,6 +174,7 @@ image::../media/drw_g_io_module_replace_ieops-1900.svg[Remove I/O module]
 +
 [cols="1,4"]
 |===
+
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
@@ -188,8 +190,10 @@ Pull the I/O module out of the controller using the port label tab on the left a
 
 .. Align the I/O module with the edges of the slot.
 
-.. Gently slide the I/O module into the slot.
-
+.. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
++
+You can use the tab on the left and the thumbscrew to push in the I/O Module.
++
 .. Turn the thumbscrew clockwise to tighten.
 
 . Repeat these steps to move the remaining I/O modules and any I/O blanking modules to the replacement controller. 
