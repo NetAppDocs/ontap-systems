@@ -37,27 +37,28 @@ NOTE: Do not completely insert the controller in the chassis until instructed to
 +
 
 . Recable the controller, as needed.
-
++
+// book end for comment in: If you are using fiber optic cables and you removed the transceivers (QSFPs or SFPs), reinstall them.
++
+NOTE: Make sure that the console cable is connected to the controller because the controller begins to boot as soon as it is completely seated in the chassis and you want to catch and log the boot sequence.
++
 . Fully seat the controller in the chassis:
 
 .. Firmly push on the handles until the controller meets the midplane and is fully seated.
 +
 NOTE: Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
 +
-.. Rotate the controller handles upward to the closed position and lock in place with the tabs.
-
+NOTE: The controller boots when fully seated in the chassis. It gets its power from the partner controller.
++
+.. If the controller boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
+.. Rotate the controller handles up and lock in place with the tabs.
++
 . Reconnect the power cord to the power supply on the impaired controller.
 +
 If you have AC power supplies, reconnect the power cord to the power supply.
 +
 If you have DC power supplies, reconnect the power block to the power supply.
 +
-[NOTE]
-====
-The controller boots when power is restored. 
-
-If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
-====
 
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
