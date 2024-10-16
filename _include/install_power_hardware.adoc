@@ -1,8 +1,8 @@
 == Step 1: Power on the shelf and assign shelf ID
-Each NS224 shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you may need to adjust these IDs to maintain uniqueness across your storage system.
+Each NS224 shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup. By default, shelf IDs are assigned as ‘00’ and ‘01’, but you may need to adjust these IDs to maintain uniqueness across your storage system. If your system has onboard storage, that storage is identified as shelf ID 00.
 
 .About this task
-* A valid shelf ID is 00 through 99.
+* A valid shelf ID is 00 through 99, or 01 through 99 if the system has onboard storage. 
 * You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
 
 .Steps
@@ -60,7 +60,7 @@ It can take up to three seconds for the number to blink.
 +
 The first number on the digital display stops blinking.
 
- .. Press and release the shelf ID button to advance the number until you reach the desired number from 0 to 9.
+ .. Press and release the shelf ID button to advance the number until you reach the desired number from 0 to 9, or 1 to 9 if the system has onboard storage.
 +
 The second number continues to blink.
 . Lock in the desired number and exit the programming mode by pressing and holding the shelf ID button until the second number stops blinking.
