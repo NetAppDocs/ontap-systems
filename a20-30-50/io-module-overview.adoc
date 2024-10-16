@@ -1,0 +1,21 @@
+---
+permalink: a20-30-50/io-module-overview.html
+sidebar: sidebar
+keywords: AFF A90, AFF A70, replace io module
+summary: "You must replace the failed component with a replacement field replacable unit (FRU) component you received from your provider."
+---
+= Overview of add and replace I/O module - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/g_io_module_overview.adoc[]
+
+
+* link:io-module-add.html[Add an I/O module]
++
+Adding additional I/O modules can improve redundancy, helping to ensure that the storage system remains operational even if one I/O module fails.
+
+* link:io-module-replace.html[Replace an I/O module]
++
+Replacing a failing I/O module can restore the storage system to its optimal operating state. 

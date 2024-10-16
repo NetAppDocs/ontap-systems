@@ -1,0 +1,90 @@
+To replace the NV battery, you must remove the controller, remove the faulty battery, install the replacement battery, and then reinstall the controller.
+
+.Before you begin
+All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+.About this task
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller.
+
+// Shut down or take over the impaired controller using one of the following options.
+
+// [role="tabbed-block"]
+// ====
+
+// .Option 1: Most systems
+// --
+include::../_include/shutdown_most_frus.adoc[]
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+// --
+
+// ====
+
+== Step 2: Remove the controller
+
+include::../_include/g_controller_remove.adoc[]
+
+== Step 3: Replace the NV battery
+
+Remove the failed NV battery from the controller and install the replacement NV battery.
+
+. If you are not already grounded, properly ground yourself.
+
+. Locate the NV battery.
+
+. Remove the NV battery:
++
+image::../media/drw_g_nv_battery_replace_ieops-1864.svg[Replace the NV battery]
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Lift the NV battery up and out of its holder.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Remove the wiring harness from its retainer.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a| 
+a. Push in and hold the tab on the connector.
+
+b. Pull the connector up and out of the socket.
++
+As you pull up, gently rock the connector from end to end (lengthwise) to unseat it.
+
+|===
+
+. Install the replacement NV battery:
+.. Remove the replacement battery from its package.
+.. Plug the wiring connector into its socket.
++
+You might need to slightly rock the connector lengthwise until it is fully seated.
++
+.. Route the wiring along the side of the power supply, into its retainer, and then through the channel in front of the NV battery holder.
+.. Place the NV battery into the holder.
++
+The NV battery should sit flush to the holder floor.
+
+== Step 4: Reinstall the controller
+
+Reinstall the controller into the chassis and reboot it.
+
+include::../_include/g_controller_reinstall.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

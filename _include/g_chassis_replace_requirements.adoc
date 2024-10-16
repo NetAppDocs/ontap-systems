@@ -1,0 +1,22 @@
+Before replacing the chassis, make sure to review the following requirements and considerations.
+
+== Requirements
+
+* The replacement chassis must be a new component from NetApp and it must be the same model as the impaired chassis.
+
+* All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+
+== Considerations
+
+* *The chassis replacement procedure is disruptive.* For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+
+* You can use the chassis replacement procedure with all versions of ONTAP supported by your system.
+
+* The chassis replacement procedure is written with the assumption that you are moving the bezel, drives, and controllers to the new chassis.
+
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.

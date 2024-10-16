@@ -1,0 +1,59 @@
+Move the drives, controllers, and bezel from the impaired chassis to the replacement chassis (of the same model), and then replace the impaired chassis within the equipment rack or system cabinet.
+
+== Step 1: Remove the controller
+
+include::../_include/g_controller_remove.adoc[]
+
+. Repeat these steps for the other controller in the chassis.
+
+== Step 2: Remove the drives from the faulty chassis
+
+You need to remove all of the drives from the impaired chassis so that later in the procedure you can install them in the replacement chassis.
+
+. Gently remove the bezel from the front of the storage system.
+. Remove the drives:
++
+NOTE: Keep track of what drive bay each drive was removed from because they must be installed in the same drive bays in the replacement chassis.
+
+.. Press the release button on the drive face to open the cam handle.
+.. Rotate the cam handle downward to disengage the drive from the midplane.
+.. Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand.
++
+NOTE: When removing a drive, always use two hands to support its weight.
++
+NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
+
+. Set the drives aside on a static-free cart or table.
+
+
+== Step 3: Replace chassis from within the equipment rack or system cabinet
+
+You remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis, install the drives, and then install the bezel.
+
+. Remove the screws from the impaired chassis mount points.
+. With two people, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
+. Using two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
+. Slide the chassis all the way into the equipment rack or system cabinet.
+. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
+. Install the drives you removed from the impaired chassis into the replacement chassis:
++
+NOTE: The drives must be installed in the same drive bays in the replacement chassis.
+
+.. With the cam handle in the open position, use both hands to insert the drive.
+
+.. Gently push until the drive stops.
+
+.. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
++
+Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
++
+.. Repeat the process for the remaining drives.
+. Install the bezel.
+
+== Step 4: Reinstall the controllers
+
+Reinstall the controllers into the chassis and reboot it.
+
+include::../_include/g_controller_reinstall.adoc[]
+
+. Repeat the preceding steps to install the second controller into the replacement chassis.

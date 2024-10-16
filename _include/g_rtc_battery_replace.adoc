@@ -1,0 +1,102 @@
+You replace the real-time clock (RTC) battery in the controller so that your storage system's services and applications that depend on accurate time synchronization continue to function.
+
+.Before you begin
+All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+.About this task
+* You can use this procedure with all versions of ONTAP supported by your storage system.
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller.
+
+// Shut down or take over the impaired controller using one of the following options.
+
+// [role="tabbed-block"]
+// ====
+
+// .Option 1: Most systems
+// --
+include::../_include/shutdown_most_frus.adoc[]
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+// --
+
+// ====
+== Step 2: Remove the controller
+
+include::../_include/g_controller_remove.adoc[]
+ 
+== Step 3: Replace the RTC battery
+
+Remove the failed RTC battery and install the replacement RTC battery.
+
+. Locate the RTC battery.
+
+. Remove the RTC battery:
++
+image::../media/drw_g_rtc_battery_replace_ieops-1902.svg[Replace the RTC battery]
+
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Gently rotate the RTC battery at an angle away from its holder.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Lift the RTC battery out of its holder.
+
+|===
+
+. Install the replacement RTC battery:
+
+.. Remove the replacement battery from the antistatic shipping bag.
+
+.. Position the battery so that the plus sign on the battery faces out to correspond with the plus sign on the motherboard.
+
+.. Insert the battery into the holder at an angle, and then push it into an upright position so it is fully seated in the holder.
+
+.. Visually inspect the battery to make sure that it is completely seated in its holder and that the polarity is correct.
+
+== Step 4: Reinstall the controller
+
+Reinstall the controller into the chassis and reboot it.
+
+include::../_include/g_controller_reinstall.adoc[]
+
+== Step 5: Reset the time and date on the controller
+
+NOTE: After replacing the RTC battery, inserting the controller and powering on first BIOS reset, you will see the following error messages: 
+`RTC date/time error. Reset date/time to default`
+`RTC power failure error`
+These messages are expected and you can continue with this procedure.
+
+. On the healthy controller, check the date and time with the `cluster date show` command.
++
+NOTE: If your storage system stops at the boot menu, select the option for  `Reboot node` and respond _y_ when prompted, then boot to LOADER by pressing _Ctrl-C_.
++
+. On the impaired controller, at the LOADER prompt, check the time and date with the `cluster date show` command.
+
+.. If necessary, modify the date with the `set date _mm/dd/yyyy_` command.
+
+.. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
+
+.. Confirm the date and time.
+. At the LOADER prompt, enter _bye_ to reinitialize the I/O modules, other components, and let the controller reboot.
+. Return the controller to normal operation by giving back its storage: _storage failover giveback -ofnode _impaired_node_name__
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
+
+== Step 6: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

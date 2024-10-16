@@ -1,0 +1,87 @@
+You must remove the controller from the chassis when you replace the controller or replace a component inside the controller.
+
+// After you complete the shutdown procedure for the impaired controller, you can remove the controller from the chassis to access the failed FRU component.
+
+.Before you begin
+
+All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+.Steps
+. On the impaired controller, check the NV status LED to make sure the NV LED is off.
++
+[NOTE] 
+====
+If the NV status LED is flashing (green), it could mean the impaired controller was not taken over or halted properly (uncommitted data).
+
+// Mike says: Green and flashes when destage is in progress.
+
+If the impaired controller was not successfully taken over by the partner controller, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+Do not attempt to remove power from the impaired controller or remove the impaired controller from the chassis.
+====
+
++
+The NV status LED is located next to the NV icon on the controller.
++
+image::../media/drw_g_nvram_led_ieops-1839.svg[NVRAM attention and status LED location]
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+NV icon and status LED on the controller
+
+|===
++
+The general behavior of the NV status LED on the impaired controller is as follows:
++
+* The NV status LED flashes when power is removed from the controller and the storage system is in the waiting for giveback state, or the controller is not taken over or halted properly (uncommitted data).
+* The NV status LED flashes when the controller is removed from the chassis and could mean the controller is not taken over or halted properly (uncommitted data). You must confirm the controller had a clean takeover by the partner controller or the impaired controller shows waiting for giveback (Make in courier font and highlighted in gray). Then, the flashing LED can be ignored (and the controller can be removed from the chassis).
+
+. If you are not already grounded, properly ground yourself.
+
+. Disconnect the power on the impaired controller.
++
+If you have AC power supplies, unplug the power cord from the power supply.
++
+If you have DC power supplies, unplug the power block from the power supply.
+
+. Unplug all cables from the impaired controller.
++
+Keep track of where the cables were connected.
++
+
+. Remove the impaired controller:
++
+The following illustration shows the operation of the controller handles (from the left side of the controller) when removing a controller:
++
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[controller handle operation to remove a controller]
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+On both ends of the controller, push the vertical locking tabs outward to release the handles.
+a|
+image::../media/icon_round_2.png[Callout number 2] 
+a|
+* Pull the handles towards you to unseat the controller from the midplane.
++
+As you pull, the handles extend out from the controller and then you feel some resistance, keep pulling.
++
+* Slide the controller out of the chassis while supporting the bottom of the controller, and place it on a flat, stable surface. 
+a|
+image::../media/icon_round_3.png[Callout number 3] 
+a|
+Rotate the handles upright (next to the tabs) to move them out of the way.
+
+|===
++
+
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+
+

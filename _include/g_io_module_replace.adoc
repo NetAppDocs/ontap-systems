@@ -1,0 +1,101 @@
+Use this procedure to replace a failed I/O module. 
+// with the same type of I/O module. should be added because a FRU procedure is like-for-like...But Step 3 says you can replace with a different module. But isn;t this use case covered in I/O add when the slot is unavailable? 
+
+.Before you begin
+All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+.About this task
+* You can use this procedure with all versions of ONTAP supported by your storage system.
+
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
+
+== Step 1: Shut down the impaired controller
+ 
+Shut down or take over the impaired controller.
+
+// Shut down or take over the impaired controller using one of the following options.
+ 
+// [role="tabbed-block"]
+// ====
+ 
+// .Option 1: Most systems
+// --
+include::../_include/shutdown_most_frus.adoc[]
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+// --
+ 
+// ====
+
+
+== Step 2: Replace a failed I/O module
+
+To replace a failed I/O module, locate it in the controller and follow the specific sequence of steps.
+
+. If you are not already grounded, properly ground yourself. 
+
+. Unplug cabling from the failed I/O module.
++
+Make sure to label the cables so that you know where they came from.
+
+. Remove the failed I/O module from the controller:
++
+
+image::../media/drw_g_io_module_replace_ieops-1900.svg[Remove I/O module]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Turn the I/O module thumbscrew counterclockwise to loosen.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Pull the I/O module out of the controller using the port label tab on the left and the thumbscrew.
+
+|===
+
+. Install the replacement I/O module into the target slot:
+
+.. Align the I/O module with the edges of the slot.
+
+.. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
++
+You can use the tab on the left and the thumbscrew to push in the I/O Module.
++
+.. Turn the thumbscrew clockwise to tighten.
+
+. Cable the I/O module.
+
+
+== Step 3: Reboot the controller
+
+After you replace an I/O module, you must reboot the controller.
+
+NOTE: If the new I/O module is not the same type as the failed module, you must first reboot the BMC.
+
+.Steps
+. If the replacement I/O module is not the same type as the old module, reboot the BMC:
+.. From the LOADER prompt, change to advanced privilege mode: _set privilege advanced_
+.. Reboot the BMC: _sp reboot_
+. Reboot the node from the LOADER prompt: _bye_
++
+NOTE: This reinitializes the PCIe devices, other components, and reboots the node.
++
+. Exit Maintenance mode after completing the conversion.
+
+. Return the node to normal operation: _storage failover giveback -ofnode impaired_node_name_
+
+. If automatic giveback was disabled, reenable it: _storage failover modify -node local -auto-giveback true_
+
+== Step 4: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
