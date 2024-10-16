@@ -4,12 +4,12 @@ Restore the external key manager configuration from the ONATP boot menu.
 
 You need the following information for restoring the external key manager (EKM) configuration:
 
-** A copy of the /cfcard/kmip/servers.cfg file from another cluster node, or, the following information:
+** A copy of the /cfcard/kmip/servers.cfg file from another cluster node or the following information:
 *** The KMIP server address.
 *** The KMIP port.
-*** A copy of the /cfcard/kmip/certs/client.crt file from another cluster node, or, the client certificate.
-*** A copy of the /cfcard/kmip/certs/client.key file from another cluster node, or, the client key.
-*** A copy of the /cfcard/kmip/certs/CA.pem file from another cluster node, or, the KMIP server CA(s).
+*** A copy of the /cfcard/kmip/certs/client.crt file from another cluster node or the client certificate.
+*** A copy of the /cfcard/kmip/certs/client.key file from another cluster node or the client key.
+*** A copy of the /cfcard/kmip/certs/CA.pem file from another cluster node or the KMIP server CA(s).
 
 .Steps
 . Select Option 11 from the ONTAP boot menu.
@@ -37,31 +37,38 @@ Selection (1-11)? 11
 
 . When prompted confirm you have gathered the required information:
 
-.. `Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}` _y_
-
-.. `Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}` _y_
-
-.. `Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}` _y_
-
-.. `Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` _y_
-
-+
-You may also these prompts instead:
-
 +
 
-.. `Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` _n_
-  ... `Do you know the KMIP server address? {y/n}` _y_
-  ... `Do you know the KMIP Port? {y/n}` _y_
+`Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}` 
++
+`Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}` 
++
+`Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}` 
++
+`Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` 
+
++
+You may see these prompts instead:
+
++
+`Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` 
++
+`Do you know the KMIP server address? {y/n}` 
++
+`Do you know the KMIP Port? {y/n}` 
 
 +
 
 . Supply the information for each of these prompts:
 
-.. _Enter the client certificate (client.crt) file contents:_
-.. _Enter the client key (client.key) file contents:_
-.. _Enter the KMIP server CA(s) (CA.pem) file contents:_
-.. _Enter the server configuration (servers.cfg) file contents:_
++
+`Enter the client certificate (client.crt) file contents:`
++
+`Enter the client key (client.key) file contents:` 
++
+`Enter the KMIP server CA(s) (CA.pem) file contents:`
++ 
+`Enter the server configuration (servers.cfg) file contents:` 
 
 +
 
@@ -122,6 +129,7 @@ Successfully recovered keymanager secrets.
 
 . Select option 1 from the boot menu to continue booting into ONTAP.
 
++
 ....
 
 ***********************************************************************************
@@ -144,4 +152,10 @@ Successfully recovered keymanager secrets.
 Selection (1-11)? 1
 
 ....
- 
+
++
+
+. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
+
+. If AutoSupport is enabled, restore automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
+

@@ -58,7 +58,7 @@ Selection (1-19)? recover_onboard_keymanager
 +
 
 . Confirm the continuation of the process.
-`This option must be used only in disaster recovery procedures. Are you sure? (y or n): `y`
+`This option must be used only in disaster recovery procedures. Are you sure? (y or n):`
 
 . Enter the cluster-wide passphrase twice.  
 
@@ -175,7 +175,7 @@ Selection (1-11)? 1
 
 . From the partner node, giveback the partner controller: `storage failover giveback -fromnode local -only-cfo-aggregates true`.
 
-. Once booted only with CFO aggregate run the `security key-manager onboard sync` command. 
+. Once booted with only CFO aggregate run the `security key-manager onboard sync` command. 
 
 
 . Enter the cluster-wide passphrase for the Onboard Key Manager.
@@ -206,3 +206,8 @@ NOTE: No results should appear when filtering for false in the restored paramete
 +
 
 . Giveback of the node from the partner: `storage failover giveback -fromnode local`
+
+. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
+
+. If AutoSupport is enabled, restore automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
+
