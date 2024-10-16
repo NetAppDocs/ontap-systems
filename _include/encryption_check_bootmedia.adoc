@@ -15,7 +15,7 @@ If the output includes `1Ono-DARE`, NVE is not supported on your cluster version
 * If NVE is not supported, download the ONTAP image *without* NetApp Volume Encryption.
 
 == Step 2: Determine if it is safe to shut down the controller
-To safely shut down a controller, first identify whether the Onboard Key Manager (OKM) or the External Key Manager (EKM) is active. Then, verify the key manager in use, display the appropriate key information, and take action based on the status of the authentication keys.
+To safely shut down a controller, first identify whether the External Key Manager (EKM) or the Onboard Key Manager (OKM) is active. Then, verify the key manager in use, display the appropriate key information, and take action based on the status of the authentication keys.
 
 
 . Determine which key manager is enabled on your system:
@@ -23,56 +23,109 @@ To safely shut down a controller, first identify whether the Onboard Key Manager
 
 [cols="1a,2a" options="header"]
 |===
-| Key Manager type| Follow these steps...
+| ONTAP version| Run this command
 a|
-External Key Manager (EKM)
-a|
-
-Determine if EKM is enabled on your system by running the following command:
-
-`security key-manager show key store`
-
-If EKM is enabled, `external` is listed in the output.
-
-a|
-Onboard Key Manager (OKM)
+ONTAP 9.14.1 or later
 a|
 
-Determine if OKM is enabled on your system by running one of the following commands based on the version of ONTAP the node is running.
-
-* For ONTAP 9.14.1 or later, enter the following command:
-+
 `security key-manager keystore show` 
-+
-If OKM is enabled, `OKM` is listed in the command output.
 
-* For ONTAP 9.13.1 or earlier, enter the following command:
-+
+* If EKM is enabled, `EKM` is listed in the command output.
+* If OKM is enabled, `OKM` is listed in the command output.
+* If no key manager is enabled, `No key manager keystores configured` is listed in the command output.
+
+a|
+ONTAP 9.13.1 or earlier
+a|
+
 `security key-manager show-key-store` 
-+
-If OKM is enabled, `onboard` is listed in the command output.
+
+* If EKM is enabled, `external` is listed in the command output.
+* If OKM is enabled, `onboard` is listed in the command output.
+* If no key manager is enabled, `No key managers configured` is listed in the command output.
 |===
 
 +
 
 [start=2]
 
-. Enter the following query command to display the status of the authentication keys in your key manager:
+. Depending on whether a key manger is configured on your system, select one of the following options.
 +
+
+// start tabbed area
++
+[role="tabbed-block"]
+====
+
+.No key manager configured
+--
+You can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
+--
+
+.External or Onboard key manager configured
+--
+.. Enter the following query command to display the status of the authentication keys in your key manager.
++
+
 `security key-manager key query`
 
-. Check the output for the value in the `Restored` column for your key manager. 
+.. Check the output for the value in the `Restored` column for your key manager. 
 +
+
 This column indicates whether the authentication keys for your key manager (either EKM or OKM) have been successfully restored.
+
+--
+
+====
+
+// end tabbed area
+
+[start=3]
+
+. Depending on whether you're system is using the External Key Manager or Onboard Key Manager, select one of the following options.
 +
-* If the value in the Restored column is true, the keys are properly restored, and it is safe to proceed with the controller shutdown.
+
+// start tabbed area
 +
-* If the value is anything other than true, the keys have not been restored, and you'll need to take additional steps (restoring or syncing keys) depending on whether you're using EKM or OKM.
+[role="tabbed-block"]
+====
+
+.External Key Manager
+--
+Depending on the output value displayed in the `Restored` column, follow the appropriate steps.
+
+[cols="1a,2a" options="header"]
+|===
+| Output value in `Restored` column | Follow these steps...
+a|
+`true`
+a|
+You can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
+
+a|
+Anything other than `true`
+a|
+
+.. Restore the external key management authentication keys to all nodes in the cluster using the following command:
++
+`security key-manager external restore`
++
+If the command fails, contact http://mysupport.netapp.com/[NetApp Support^].
++
+.. Verify that the `Restored` column displays `true` for all authentication keys by entering the  `security key-manager key query` command.
++
+If all the authentication keys are `true`, you can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
+
+|===
 
 
-. Follow the appropriate steps depending on the output value displayed in the `Restored` column.
-+
+--
 
+
+.Onboard Key Manager
+--
+
+Depending on the output value displayed in the `Restored` column, follow the appropriate steps.
 
 [cols="1a,2a" options="header"]
 |===
@@ -82,7 +135,7 @@ a|
 a|
 Manually back up the OKM information.
 
-.. Go to the advanced mode by entering `set -privilege advanced` and then enter `Y` when prompted.
+.. Go to the advanced mode by entering `set -priv advanced` and then enter `Y` when prompted.
 .. Enter the following command to display the key management information: 
 +
 `security key-manager onboard show-backup`
@@ -126,5 +179,7 @@ You'll need it in disaster scenarios where you might need to manually recover OK
 |===
 
 
+--
+====
 
 // end tabbed area
