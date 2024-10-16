@@ -207,7 +207,7 @@ NOTE: No results should appear when filtering for false in the restored paramete
 
 . Giveback of the node from the partner: `storage failover giveback -fromnode local`
 
-. Restore automatic giveback if you disabled it by using the _storage failover modify -node local -auto-giveback true_ command.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
-. If AutoSupport is enabled, restore automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
+. If AutoSupport is enabled, restore automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 
