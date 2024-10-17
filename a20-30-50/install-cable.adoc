@@ -46,7 +46,7 @@ Cable the controllers to each other to create the ONTAP cluster connections.
 
 Add example
 
-Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 are unused and available for front-end connectivity, if needed.
+Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 are unused and available for front-end (host) connectivity, if needed.
 
 =====
 
@@ -65,7 +65,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable controller A port e4a to controller B port e4a.
 .. Cable controller A port e4b to controller B port e4b.
 +
-*Cluster/HA interconnect cables* or 100 GbE cable 
+*Cluster/HA interconnect cables*
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
 +
@@ -122,7 +122,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable Controller A port e4a and Controller B port e4a to cluster network switch A. 
 .. Cable Controller A port e4b and Controller B port e4b to cluster network switch B.
 +
-*100 GbE cable* or Cluster/HA interconnect cables
+*Cluster/HA cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable,width=100px]
 +
@@ -147,6 +147,9 @@ Add example
 
 == Step 2: Host network cabling
 Cable the controllers to your host network.
+
+.About this task
+If you have a storage system configured with two 2-port 100GbE I/O modules (in slots 2 and 4) for the cluster/HA connections, this step does not apply??? Or are they using the left over "b" ports??? Are hots network connections "front-end" connections, that's what Andris said they're used for.
 
 . Cable the host network connections.  
 +
