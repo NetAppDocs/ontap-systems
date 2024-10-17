@@ -25,7 +25,7 @@ Restore the Onboard Key Manager (OKM) configuration from the ONTAP boot menu.
 
 . Connect the console cable to the target controller.
 
-. From the ONTAP boot menu select the appropriate option:
+. From the ONTAP boot menu select the appropriate option from the boot menu.
 +
 [cols="1a,2a" options="header"]
 |===
@@ -223,17 +223,17 @@ Selection (1-11)? 1
 ....
 ====
 
-. Confirm that the controller's console displays the following:
+. Confirm that the controller's console displays the following message.
 +
 `Waiting for giveback...(Press Ctrl-C to abort wait)`
 
-. From the partner node, giveback the partner controller: 
+. From the partner node, giveback the partner controller by entering the following command.
 +
 `storage failover giveback -fromnode local -only-cfo-aggregates true`.
 
-. After booting with only CFO aggregate, run the following command:
+. After booting with only the CFO aggregate, run the following command.
 +
-`security key-manager onboard sync` command. 
+`security key-manager onboard sync` 
 
 
 . Enter the cluster-wide passphrase for the Onboard Key Manager.
@@ -253,7 +253,7 @@ All offline encrypted volumes will be brought online and the corresponding volum
 +
 NOTE: If the sync is successful the cluster prompt is returned with no additional messages.  If the sync fails an error message appears before returning to the cluster prompt.  Do not continue until the the error is corrected and the sync runs successfully.
 
-. Ensure that all keys are synced: 
+. Ensure that all keys are synced by entering the following command.  
 +
 `security key-manager key query -restored false`.
 
@@ -267,15 +267,15 @@ NOTE: No results should appear when filtering for false in the restored paramete
 
 +
 
-. Giveback the node from the partner: 
+. Giveback the node from the partner by entering the following command. 
 +
 `storage failover giveback -fromnode local`
 
-. Restore automatic giveback, if you disabled it, by entering the following command:
+. Restore automatic giveback, if you disabled it, by entering the following command.
 +
 `storage failover modify -node local -auto-giveback true`
 
-. If AutoSupport is enabled, restore automatic case creation by entering  the following command:
+. If AutoSupport is enabled, restore automatic case creation by entering  the following command.
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
@@ -287,20 +287,20 @@ Restore the External Key Manager configuration from the ONTAP boot menu.
 
 .Before you begin
 
-You need the following information for restoring the External Key Manager (EKM) configuration:
+You need the following information for restoring the External Key Manager (EKM) configuration.
 
 ** A copy of the /cfcard/kmip/servers.cfg file from another cluster node or the following information:
 *** The KMIP server address.
 *** The KMIP port.
-*** A copy of the /cfcard/kmip/certs/client.crt file from another cluster node or the client certificate.
-*** A copy of the /cfcard/kmip/certs/client.key file from another cluster node or the client key.
-*** A copy of the /cfcard/kmip/certs/CA.pem file from another cluster node or the KMIP server CA(s).
+** A copy of the `/cfcard/kmip/certs/client.crt` file from another cluster node or the client certificate.
+** A copy of the `/cfcard/kmip/certs/client.key` file from another cluster node or the client key.
+** A copy of the `/cfcard/kmip/certs/CA.pem` file from another cluster node or the KMIP server CA(s).
 
 .Steps
 
 . Connect the console cable to the target controller.
 
-. Select Option 11 from the ONTAP boot menu.
+. Select option 11 from the ONTAP boot menu.
 
 +
 
@@ -460,11 +460,11 @@ Selection (1-11)? 1
 +
 
 
-. Restore automatic giveback, if you disabled it, by entering the following command:
+. Restore automatic giveback, if you disabled it, by entering the following command.
 +
 `storage failover modify -node local -auto-giveback true`
 
-. If AutoSupport is enabled, restore automatic case creation by entering  the following command:
+. If AutoSupport is enabled, restore automatic case creation by entering  the following command.
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
