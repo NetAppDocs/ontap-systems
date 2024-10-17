@@ -363,6 +363,7 @@ Enter the server configuration (servers.cfg) file contents:
 .Show example
 [%collapsible]
 ====
+
 ....
 Enter the client certificate (client.crt) file contents:
 -----BEGIN CERTIFICATE-----
@@ -395,9 +396,7 @@ Running command '/sbin/ifconfig e0M'
 ..
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
-​​​​....
-
-
+....
 ====
 
 +
