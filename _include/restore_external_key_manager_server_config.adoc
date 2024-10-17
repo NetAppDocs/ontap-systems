@@ -1,21 +1,27 @@
-Restore the external key manager configuration from the ONATP boot menu.
+Restore the External Key Manager configuration from the ONATP boot menu.
 
 .Before you begin
 
 You need the following information for restoring the external key manager (EKM) configuration:
 
-** A copy of the /cfcard/kmip/servers.cfg file from another cluster node, or, the following information:
+** A copy of the /cfcard/kmip/servers.cfg file from another cluster node or the following information:
 *** The KMIP server address.
 *** The KMIP port.
-*** A copy of the /cfcard/kmip/certs/client.crt file from another cluster node, or, the client certificate.
-*** A copy of the /cfcard/kmip/certs/client.key file from another cluster node, or, the client key.
-*** A copy of the /cfcard/kmip/certs/CA.pem file from another cluster node, or, the KMIP server CA(s).
+*** A copy of the /cfcard/kmip/certs/client.crt file from another cluster node or the client certificate.
+*** A copy of the /cfcard/kmip/certs/client.key file from another cluster node or the client key.
+*** A copy of the /cfcard/kmip/certs/CA.pem file from another cluster node or the KMIP server CA(s).
 
 .Steps
+
+. Connect the console cable to the target controller.
+
 . Select Option 11 from the ONTAP boot menu.
 
 +
- 
+
+.Show example boot menu
+[%collapsible]
+====
 ....
 
 (1)  Normal Boot.
@@ -30,45 +36,60 @@ You need the following information for restoring the external key manager (EKM) 
 (10) Set Onboard Key Manager recovery secrets.
 (11) Configure node for external key management.
 Selection (1-11)? 11
-
 ....
 
-+
-
-. When prompted confirm you have gathered the required information:
-
-.. `Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n}` _y_
-
-.. `Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}` _y_
-
-.. `Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}` _y_
-
-.. `Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` _y_
-
-+
-You may also these prompts instead:
+====
 
 +
 
-.. `Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}` _n_
-  ... `Do you know the KMIP server address? {y/n}` _y_
-  ... `Do you know the KMIP Port? {y/n}` _y_
+. When prompted, confirm you have gathered the required information.
 
 +
 
-. Supply the information for each of these prompts:
-
-.. _Enter the client certificate (client.crt) file contents:_
-.. _Enter the client key (client.key) file contents:_
-.. _Enter the KMIP server CA(s) (CA.pem) file contents:_
-.. _Enter the server configuration (servers.cfg) file contents:_
-
-+
-
+.Show example prompt
+[%collapsible]
+====
 ....
+Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} 
+Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}
+Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}
+Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
+....
+====
 
-Example
++
 
+.You may see these prompts instead
+[%collapsible]
+====
+....
+Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
+Do you know the KMIP server address? {y/n}
+Do you know the KMIP Port? {y/n}
+....
+====
++
+
+. When prompted, enter the client and server information.
+
++
+
+.Show prompt
+[%collapsible]
+====
+....
+Enter the client certificate (client.crt) file contents:
+Enter the client key (client.key) file contents:
+Enter the KMIP server CA(s) (CA.pem) file contents:
+Enter the server configuration (servers.cfg) file contents:
+....
+====
+
++
+.Show example
+[%collapsible]
+====
+....
 Enter the client certificate (client.crt) file contents:
 -----BEGIN CERTIFICATE-----
 MIIDvjCCAqagAwIBAgICN3gwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAlVT
@@ -101,13 +122,18 @@ Running command '/sbin/ifconfig e0M'
 ..
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
-​​​​​​
-....
+​​​​....
 
 
-. The recovery process will complete:
+====
+
+. The recovery process completes.
+
 
 +
+.Show example prompt
+[%collapsible]
+====
 ....
 
 
@@ -122,6 +148,7 @@ Successfully recovered keymanager secrets.
 
 . Select option 1 from the boot menu to continue booting into ONTAP.
 
++
 ....
 
 ***********************************************************************************
@@ -144,4 +171,16 @@ Successfully recovered keymanager secrets.
 Selection (1-11)? 1
 
 ....
- 
+====
++
+
+
+. Restore automatic giveback, if you disabled it, by entering the following command:
++
+`storage failover modify -node local -auto-giveback true` command.
+
+. If AutoSupport is enabled, restore automatic case creation by entering  the following command:
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+
