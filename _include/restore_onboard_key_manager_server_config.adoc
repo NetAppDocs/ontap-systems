@@ -264,7 +264,9 @@ NOTE: No results should appear when filtering for false in the restored paramete
 
 . Restore automatic giveback, if you disabled it, by entering the following command:
 +
-`storage failover modify -node local -auto-giveback true` command.
+`storage failover modify -node local -auto-giveback true`
 
-. If AutoSupport is enabled, restore automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. If AutoSupport is enabled, restore automatic case creation by entering  the following command:
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
 
