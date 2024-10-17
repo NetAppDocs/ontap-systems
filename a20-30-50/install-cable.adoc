@@ -89,6 +89,22 @@ Add example
 --
 Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
 
+.AFF A50 or A30 with two cards
+[%collapsible]
+
+
+=====
+
+Add example
+
+=====
+
+.AFF A50 or A30 with 1 card
+[%collapsible]
+
+
+=====
+
 .Steps
 
 . Cable the controllers to the cluster network switches:
@@ -103,6 +119,19 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable,width=100px]
 +
 image::../media/drw_isi_g_2p_100gbe_switched_cluster_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
+
+=====
+
+
+.AFF A20
+[%collapsible]
+
+=====
+
+Add example
+
+=====
+
 
 --
 
