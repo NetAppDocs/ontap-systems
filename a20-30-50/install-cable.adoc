@@ -65,7 +65,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable controller A port e4a to controller B port e4a.
 .. Cable controller A port e4b to controller B port e4b.
 +
-*Cluster/HA interconnect cables*
+*Cluster/HA interconnect cables* or 100 GbE cable 
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
 +
@@ -122,7 +122,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable Controller A port e4a and Controller B port e4a to cluster network switch A. 
 .. Cable Controller A port e4b and Controller B port e4b to cluster network switch B.
 +
-*100 GbE cable*
+*100 GbE cable* or Cluster/HA interconnect cables
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable,width=100px]
 +
