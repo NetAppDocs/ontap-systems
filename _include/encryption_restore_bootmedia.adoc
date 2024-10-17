@@ -386,8 +386,7 @@ Fp8=
 
 Enter the client key (client.key) file contents:
 -----BEGIN RSA PRIVATE KEY-----
-MIIEpQIBAAKCAQEAoU1eajEG6QC2h2Zih0jEaGVtQUexNeoCFwKPoMSePmjDNtrU
-MSB1SlX3VgCuElHk57XPdq6xSbYlbkIb4bAgLztHEmUDOkGmXYAkblQ=
+<key_value>
 -----END RSA PRIVATE KEY-----
 
 Enter the KMIP server CA(s) (CA.pem) file contents:
