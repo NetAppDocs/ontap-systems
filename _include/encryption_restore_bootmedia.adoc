@@ -344,17 +344,6 @@ Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
 
 +
 
-.You may see these prompts instead
-[%collapsible]
-====
-....
-Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
-Do you know the KMIP server address? {y/n}
-Do you know the KMIP Port? {y/n}
-....
-====
-+
-
 . When prompted, enter the client and server information.
 
 +
@@ -411,28 +400,29 @@ kmip_init: cmd: ReleaseExtraBSDPort e0M
 
 ====
 
-. The recovery process completes.
++
+After you enter the client and server information, the recovery process completes.
 
++
+.Show example
+[%collapsible]
+====
+....
+System is ready to utilize external key manager(s).
+Trying to recover keys from key servers....
+[Aug 29 21:06:28]: 0x808806100: 0: DEBUG: kmip2::main: [initOpenssl]:460: Performing initialization of OpenSSL
+Successfully recovered keymanager secrets.
+....
+====
+
++
+
+. Select option 1 from the boot menu to continue booting into ONTAP.
 
 +
 .Show example prompt
 [%collapsible]
 ====
-....
-
-
-System is ready to utilize external key manager(s).
-Trying to recover keys from key servers....
-[Aug 29 21:06:28]: 0x808806100: 0: DEBUG: kmip2::main: [initOpenssl]:460: Performing initialization of OpenSSL
-Successfully recovered keymanager secrets.
-
-....
-
-
-
-. Select option 1 from the boot menu to continue booting into ONTAP.
-
-+
 ....
 
 ***********************************************************************************
