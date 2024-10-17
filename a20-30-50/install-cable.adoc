@@ -11,6 +11,10 @@ summary: Management network ports on the controllers are connected to switches. 
 [.lead]
 After you install your AFF A20, AFF A30, or AFF A50 storage system hardware, cable the controllers to the network and shelves.
 
+.Before you begin
+
+Contact your network administrator for information about connecting the storage system to your network switches.
+
 .About this task
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
@@ -21,12 +25,8 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 * If cabling to an optical switch, cable the controller port before the switch port.
 
 
-== Step 1: Cable the controllers to your network
-Cable the controllers to your host network.
-
-.Before you begin
-
-Contact your network administrator for information about connecting the storage system to the switches.
+== Step 1: Cluster/HA cabling
+Cable the controllers to your ONTAP cluster.
 
 .About this task
 These procedures show common configurations. Keep in mind that the specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
@@ -37,6 +37,22 @@ These procedures show common configurations. Keep in mind that the specific cabl
 .Switchless cluster cabling
 --
 Cable the controllers to each other to create the ONTAP cluster connections.
+
+.AFF A50 or A30 with two cards
+[%collapsible]
+
+
+=====
+
+Add example
+
+=====
+
+.AFF A50 or A30 with 1 card
+[%collapsible]
+
+
+=====
 
 .Steps
 
@@ -52,6 +68,21 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
 +
 image::../media/drw_isi_g_switchless_2p_100gbe_cabling_ieops-1925.svg[Two-node switchless cluster cabling diagram]
+
+=====
+
+
+.AFF A20
+[%collapsible]
+
+
+=====
+
+Add example
+
+=====
+
+
 
 --
 .Switched cluster cabling
@@ -119,7 +150,7 @@ image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your manageme
 IMPORTANT: Do not plug in the power cords yet. 
 
 
-== Step 4: Cable the controllers to the shelves
+== Step 4: Shelf cabling
 Cable the controllers to one NS224 shelf.
 
 For the maximum number of shelves supported for your storage system and for all of your cabling options, such as optical and switch-attached, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
