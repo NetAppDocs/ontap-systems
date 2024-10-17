@@ -2,8 +2,10 @@
 Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup.
 
 .About this task
-* A valid shelf ID is 01 through 99. For external shelves, you should number your first external shelf as 01 and your second external shelf as 02.
-* Internal shelves are hard-coded to shelf ID 00.
+* A valid shelf ID is 01 through 99. 
++
+If you have internal shelves (storage), which are integrated within the controllers, they are assigned a fixed shelf ID of 00.
+
 * You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
 
 .Steps
