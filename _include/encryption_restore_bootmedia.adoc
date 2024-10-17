@@ -1,8 +1,6 @@
 
 You must complete steps specific to systems that have Onboard Key Manager (OKM), NetApp Storage Encryption (NSE) or NetApp Volume Encryption (NVE) enabled using the settings that you captured at the beginning of the boot media replace procedure.
 
-If NSE or NVE are enabled along with Onboard or external Key Manager you must restore settings you captured at the beginning of this procedure.
-
 
 Depending on which a key manger is configured on your system, select one of the following options to restore it from the boot menu.
 
@@ -174,8 +172,6 @@ The recovery process completes.
 ====
 ....
 
-Enter the backup data:
-
 Trying to recover keymanager secrets....
 Setting recovery material for the onboard key manager
 Recovery secrets set successfully
@@ -287,7 +283,7 @@ NOTE: No results should appear when filtering for false in the restored paramete
 
 == Option 2: Restore the External Key Manager configuration
 
-Restore the External Key Manager configuration from the ONATP boot menu.
+Restore the External Key Manager configuration from the ONTAP boot menu.
 
 .Before you begin
 
@@ -466,7 +462,7 @@ Selection (1-11)? 1
 
 . Restore automatic giveback, if you disabled it, by entering the following command:
 +
-`storage failover modify -node local -auto-giveback true` command.
+`storage failover modify -node local -auto-giveback true`
 
 . If AutoSupport is enabled, restore automatic case creation by entering  the following command:
 +
