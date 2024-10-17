@@ -1,21 +1,33 @@
-Restore the onboard key manager configuration from the ONTAP boot menu.
+Restore the Onboard Key Manager (OKM) configuration from the ONTAP boot menu.
 
 .Before you begin
 
-You need the following information while restoring the OKM configuration:
+* Make sure you have following information while restoring the OKM configuration:
 
-* Cluster-wide passphrase entered https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html[while enabling onboard key management].
+** Cluster-wide passphrase entered https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html[while enabling onboard key management].
 
-* https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html[Backup information for the Onboard Key Manager].
+** https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html[Backup information for the Onboard Key Manager].
 
 * Perform the https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_verify_onboard_key_management_backup_and_cluster-wide_passphrase[How to verify onboard key management backup and cluster-wide passphrase] procedure before proceeding.
 
 .Steps
 
-. From the ONTAP boot menu select the appropriate option:
-* For ONTAP 9.8 and later, select option 10:
+. Connect the console cable to the target controller.
 
+. From the ONTAP boot menu select the appropriate option:
 +
+[cols="1a,2a" options="header"]
+|===
+| ONTAP version| Select this option
+a|
+ONTAP 9.8 or later
+a|
+Select option 10.
+
+// Start snippet: collapsible block
+.Show example boot menu
+[%collapsible]
+====
 ....
 
 Please choose one of the following:
@@ -34,10 +46,19 @@ Please choose one of the following:
 Selection (1-11)? 10
 
 ....
+====
+// End snippet
 
-* For ONTAP 9.7 and earlier, enter the hidden option `recover_onboard_keymanager` command.
 
-+
+a|
+ONTAP 9.7 and earlier
+a|
+Select the hidden option `recover_onboard_keymanager`
+
+// Start snippet: collapsible block
+.Show example boot menu
+[%collapsible]
+====
 ....
 
 Please choose one of the following:
@@ -54,32 +75,44 @@ Please choose one of the following:
 Selection (1-19)? recover_onboard_keymanager
 
 ....
+====
+// End snippet
+
+|===
 
 +
+. Confirm that you want to continue the recovery process.
++
 
-. Confirm the continuation of the process.
+.Show example prompt
+[%collapsible]
+====
 `This option must be used only in disaster recovery procedures. Are you sure? (y or n):`
+====
 
-. Enter the cluster-wide passphrase twice.  
 
+. Enter the cluster-wide passphrase twice. 
 +
-NOTE: While entering the passphrase the console will not show any input. 
+While entering the passphrase the console will not show any input. 
 +
-
-+
+.Show example prompt
+[%collapsible]
+====
 `Enter the passphrase for onboard key management:`
-+
+
 `Enter the passphrase again to confirm:`
-
-. Enter the backup information.  Paste the entire content from the BEGIN BACKUP line through the END BACKUP line.
-+
-Press the enter key twice at the end of the input.
-
+====
+// End snippet
 +
 
+. Enter the backup information.  
+.. Paste the entire content from the BEGIN BACKUP line through the END BACKUP line.
++
+
+.Show example prompt
+[%collapsible]
+====
 ....
-
-
 Enter the backup data:
 
 --------------------------BEGIN BACKUP--------------------------
@@ -116,14 +149,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 ---------------------------END BACKUP---------------------------
 
 ....
+====
+// End snippet
+.. Press the enter key twice at the end of the input.
++
+The recovery process completes.
 
 +
-
-. The recovery process will be completed.
-
-+
-
+.Show example prompt
+[%collapsible]
+====
 ....
+
+Enter the backup data:
 
 Trying to recover keymanager secrets....
 Setting recovery material for the onboard key manager
@@ -139,6 +177,8 @@ Successfully recovered keymanager secrets.
 ***********************************************************************************
 
 ....
+====
+// End snippet
 
 +
 WARNING: Do not proceed if the displayed output is anything other than `Successfully recovered keymanager secrets`. 
@@ -147,7 +187,9 @@ Perform troubleshooting to correct the error.
 . Select option 1 from the boot menu to continue booting into ONTAP.
 
 +
-
+.Show example prompt
+[%collapsible]
+====
 ....
 
 ***********************************************************************************
@@ -170,18 +212,27 @@ Perform troubleshooting to correct the error.
 Selection (1-11)? 1
 
 ....
+====
 
-. Confirm that the controller's console displays `Waiting for giveback...(Press Ctrl-C to abort wait)`
+. Confirm that the controller's console displays the following:
++
+`Waiting for giveback...(Press Ctrl-C to abort wait)`
 
-. From the partner node, giveback the partner controller: `storage failover giveback -fromnode local -only-cfo-aggregates true`.
+. From the partner node, giveback the partner controller: 
++
+`storage failover giveback -fromnode local -only-cfo-aggregates true`.
 
-. Once booted with only CFO aggregate run the `security key-manager onboard sync` command. 
+. After booting with only CFO aggregate, run the following command:
++
+`security key-manager onboard sync` command. 
 
 
 . Enter the cluster-wide passphrase for the Onboard Key Manager.
 
 +
-
+.Show example prompt
+[%collapsible]
+====
 ....
 
 Enter the cluster-wide passphrase for the Onboard Key Manager:
@@ -189,11 +240,13 @@ Enter the cluster-wide passphrase for the Onboard Key Manager:
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 
 ....
-
+====
 +
 NOTE: If the sync is successful the cluster prompt is returned with no additional messages.  If the sync fails an error message appears before returning to the cluster prompt.  Do not continue until the the error is corrected and the sync runs successfully.
 
-. Ensure that all keys are synced: `security key-manager key query -restored false`.
+. Ensure that all keys are synced: 
++
+`security key-manager key query -restored false`.
 
 +
 
@@ -205,9 +258,13 @@ NOTE: No results should appear when filtering for false in the restored paramete
 
 +
 
-. Giveback of the node from the partner: `storage failover giveback -fromnode local`
+. Giveback the node from the partner: 
++
+`storage failover giveback -fromnode local`
 
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Restore automatic giveback, if you disabled it, by entering the following command:
++
+`storage failover modify -node local -auto-giveback true` command.
 
 . If AutoSupport is enabled, restore automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 

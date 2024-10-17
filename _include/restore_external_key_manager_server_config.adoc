@@ -1,4 +1,4 @@
-Restore the external key manager configuration from the ONATP boot menu.
+Restore the External Key Manager configuration from the ONATP boot menu.
 
 .Before you begin
 
@@ -12,6 +12,9 @@ You need the following information for restoring the external key manager (EKM) 
 *** A copy of the /cfcard/kmip/certs/CA.pem file from another cluster node or the KMIP server CA(s).
 
 .Steps
+
+. Connect the console cable to the target controller.
+
 . Select Option 11 from the ONTAP boot menu.
 
 +

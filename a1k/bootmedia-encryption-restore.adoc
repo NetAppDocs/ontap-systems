@@ -11,4 +11,15 @@ summary: Once environment variables are checked, you must complete steps specifi
 [.lead]
 Restore encryption on the node.
 
-include::../_include/encryption_restore_bootmedia.adoc[]
+Depending on which a key manger is configured on your system, select one of the following options to restore it from the boot menu.
+
+* link:[Option 1: Restore Onboard Key Manager configuration]
+* link:[Option 2: Restore External Key Manager configuration]
+
+== Option 1: Restore Onboard Key Manager configuration
+
+include::../_include/restore_onboard_key_manager_server_config.adoc[]
+
+== Option 2: Restore External Key Manager configuration
+
+include::../_include/restore_external_key_manager_server_config.adoc[]
