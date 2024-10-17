@@ -22,7 +22,7 @@ As you insert the connector, you should feel it click into place; if you do not 
 +
 image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direction]
 
-* If cabling to an optical switch, cable the controller port before the switch port.
+* If cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
 
 
 == Step 1: Cluster/HA cabling
@@ -38,7 +38,7 @@ These procedures show common configurations. Keep in mind that the specific cabl
 --
 Cable the controllers to each other to create the ONTAP cluster connections.
 
-.AFF A50 or A30 with two cards
+.AFF A50 or A30 with two 2-port 100GbE I/O modules
 [%collapsible]
 
 
@@ -46,9 +46,11 @@ Cable the controllers to each other to create the ONTAP cluster connections.
 
 Add example
 
+Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 are unused and available for front-end connectivity, if needed.
+
 =====
 
-.AFF A50 or A30 with 1 card
+.AFF A50 or A30 with one 2-port 100GbE I/O module
 [%collapsible]
 
 
@@ -72,13 +74,17 @@ image::../media/drw_isi_g_switchless_2p_100gbe_cabling_ieops-1925.svg[Two-node s
 =====
 
 
-.AFF A20
+.AFF A20 with one 2-port 10/25GbE I/O module
 [%collapsible]
 
 
 =====
 
 Add example
++
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
+// Connector used in Bandit, use it here?
++
 
 =====
 
@@ -89,7 +95,7 @@ Add example
 --
 Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
 
-.AFF A50 or A30 with two cards
+.AFF A50 or A30 with with two 2-port 100GbE I/O modules
 [%collapsible]
 
 
@@ -97,9 +103,11 @@ Cable the controllers to the cluster network switches to create the ONTAP cluste
 
 Add example
 
+Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 are unused and available for front-end connectivity, if needed.
+
 =====
 
-.AFF A50 or A30 with 1 card
+.AFF A50 or A30 with one 2-port 100GbE I/O module
 [%collapsible]
 
 
@@ -123,7 +131,7 @@ image::../media/drw_isi_g_2p_100gbe_switched_cluster_cabling_ieops-1926.svg[Cabl
 =====
 
 
-.AFF A20
+.AFF A20 with one 2-port 10/25GbE I/O module
 [%collapsible]
 
 =====
