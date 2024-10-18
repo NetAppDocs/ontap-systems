@@ -179,7 +179,7 @@ This reinitializes the PCIe devices, other components, and reboots the node.
 +
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement]
 
-. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _target_node_name_`.
+. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`.
 // This is used in internal FRU docs: Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
 . Restore automatic giveback from the console of the healthy controller if you disabled it: `storage failover modify -node local -auto-giveback true`.
