@@ -1,4 +1,4 @@
-You must replace a DIMM in the controller when your storage system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
+You must replace a DIMM in the controller when your storage system encounters errors such as, excessive CECC (Correctable Error Correction Codes) errors that are based on Health Monitor alerts or uncorrectable ECC errors, typically caused by a single DIMM failure preventing the storage system from booting ONTAP. 
 
 .Before you begin
 
