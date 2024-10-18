@@ -1,4 +1,4 @@
-You can replace a failed SSD drive nondisruptively while I/O is in progress.
+You can replace a failed drive nondisruptively while I/O is in progress.
 
 .Before you begin
 
@@ -6,7 +6,7 @@ You can replace a failed SSD drive nondisruptively while I/O is in progress.
 +
 https://hwu.netapp.com[NetApp Hardware Universe^]
 
-* If SED authentication is enabled, you must use the SED replacement instructions in the ONTAP documentation.
+* If self-encrypting drive (SED) authentication is enabled, you must use the SED replacement instructions in the ONTAP documentation.
 +
 Instructions in the ONTAP documentation describe additional steps you must perform before and after replacing an SED.
 +

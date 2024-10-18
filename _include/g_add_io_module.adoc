@@ -70,24 +70,22 @@ Pull the I/O blanking module out of the controller using the tab on the left and
 You can use the tab on the left and the thumbscrew to push in the I/O Module.
 +
 .. Turn the thumbscrew clockwise to tighten.
-. Cable the I/O module.
+. Cable the I/O module to the designated devices.
 +
-If the I/O module is a NIC, cable the module to the data switches.  
+If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
 +
-If the I/O module is a storage module, cable it to the NS224 shelf.
-
 . Reboot the impaired controller from the LOADER prompt: _bye_
 +
 This reinitializes the PCIe devices, other components, and reboots the node.
 +
-. Give back the impaired controller from the partner controller: _storage failover giveback -ofnode target_node_name_
+. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _target_node_name_`
+
 . Repeat these steps for the other controller.
 
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Restore automatic giveback from the console of the healthy controller if you disabled it: `storage failover modify -node local -auto-giveback true`
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 
-. If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
 
 == Option 2: Add I/O modules in a storage system with no available slots
 
@@ -179,8 +177,9 @@ This reinitializes the PCIe devices, other components, and reboots the node.
 +
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement]
 
-. Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
-. Enable automatic giveback if it was disabled: _storage failover modify -node local -auto-giveback true_
+. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _target_node_name_`
+
+. Restore automatic giveback from the console of the healthy controller if you disabled it: `storage failover modify -node local -auto-giveback true`
 
 . The next step depends on what type of I/O module you added:
 +
