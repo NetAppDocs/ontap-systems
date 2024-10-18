@@ -101,7 +101,7 @@ After you replace the FRU, you must reboot the controller module.
 
 . To boot ONTAP from the LOADER prompt, enter _bye_.
 
-. Return the impaired controller to normal operation by giving back its storage: storage failover giveback -ofnode _impaired_node_name_.
+. Return the impaired controller to normal operation by giving back its storage: `_storage failover giveback -ofnode _impaired_node_name_`.
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true` .
 
@@ -190,9 +190,9 @@ dr-group-id            cluster node           configuration-state
 
 . Verify that the expected volumes are present for each controller: `vol show -node node-name`
 
-. Return the impaired controller to normal operation by giving back its storage: storage failover giveback -ofnode _impaired_node_name_.
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
-. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true` .
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 

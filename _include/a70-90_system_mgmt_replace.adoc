@@ -139,9 +139,9 @@ The locking latches rise when the controller module is fully seated.
 Reboot the controller module.
 
 . Enter _bye_ at the LOADER prompt.
-. Return the impaired controller to normal operation by giving back its storage: storage failover giveback -ofnode _impaired_node_name_.
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
-. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true` .
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
