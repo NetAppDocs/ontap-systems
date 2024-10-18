@@ -139,6 +139,8 @@ There are two folders in the unzipped service image file:
 
  .. Copy the `efi` folder to the top directory on the USB flash drive.
 +
+NOTE: If the service image has no efi folder, see link:https://kb.netapp.com/onprem/ontap/hardware/EFI_folder_missing_from_Service_Image_download_file_used_for_boot_device_recovery_for_FAS_and_AFF_models[EFI folder missing from Service Image download file used for boot device recovery for FAS and AFF models^ ].
++
 The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
 
  .. Remove the USB flash drive from your laptop.
