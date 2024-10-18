@@ -9,6 +9,8 @@ The licenses keys must be in the 28-character format.
 
 You have a 90-day grace period in which to install the license keys. After the grace period, all old licenses are invalidated. After a valid license key is installed, you have 24 hours to install all of the keys before the grace period ends.
 
+NOTE: If your system was initially running ONTAP 9.10.1 or later, use the procedure documented in  link:https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system#Internal_Notes[Post Motherboard Replacement Process to update Licensing on a AFF/FAS system^]. If you are unsure of the initial ONTAP release for your system, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for more information. 
+
 .Steps
 
 . If you need new license keys, obtain replacement license keys on the https://mysupport.netapp.com/site/global/dashboard[NetApp Support Site] in the My Support section under Software licenses.
