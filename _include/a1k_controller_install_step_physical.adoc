@@ -12,8 +12,9 @@ NOTE: Do not use excessive force when sliding the controller module into the enc
 +
 The controller module begins to boot as soon as it is fully seated in the enclosure.
 
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Return the impaired controller to normal operation by giving back its storage: storage failover giveback -ofnode _impaired_node_name_.
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true` .
 
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 

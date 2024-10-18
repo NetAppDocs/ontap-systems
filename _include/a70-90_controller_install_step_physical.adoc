@@ -39,8 +39,9 @@ NOTE: If the controller boots to the LOADER prompt, reboot it with the `boot_ont
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
 
 
+. Return the impaired controller to normal operation by giving back its storage: storage failover giveback -ofnode _impaired_node_name_.
 
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true` .
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
