@@ -86,16 +86,16 @@ These messages are expected and you can continue with this procedure.
 +
 NOTE: If your storage system stops at the boot menu, select the option for  `Reboot node` and respond _y_ when prompted, then boot to LOADER by pressing _Ctrl-C_.
 +
-. On the impaired controller, at the LOADER prompt, check the time and date with the `cluster date show` command.
+. On the impaired controller, at the LOADER prompt, check the time and date: `cluster date show`
 
-.. If necessary, modify the date with the `set date _mm/dd/yyyy_` command.
+.. If necessary, modify the date: `set date _mm/dd/yyyy_`
 
-.. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
+.. If necessary, set the time, in GMT: `set time hh:mm:ss`
 
 .. Confirm the date and time.
-. At the LOADER prompt, enter _bye_ to reinitialize the I/O modules, other components, and let the controller reboot.
-. Return the controller to normal operation by giving back its storage: _storage failover giveback -ofnode _impaired_node_name__
-. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
+. At the LOADER prompt, enter `bye` to reinitialize the I/O modules, other components, and let the controller reboot.
+. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback _true_`
 
 == Step 6: Return the failed part to NetApp
 

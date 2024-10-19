@@ -13,8 +13,8 @@ The HA state should be the same for all components.
 +
 The value for HA-state can be one of the following:
 
-*** `ha`
-// *** `mcc` (not supported in ASA)
+*** _ha_
+// *** _mcc_ (not supported in ASA)
 .. Confirm that the setting has changed: `ha-config show`
 . If you have not already done so, recable the rest of your storage system.
 

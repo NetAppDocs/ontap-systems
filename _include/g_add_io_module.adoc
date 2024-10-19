@@ -75,18 +75,18 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 +
 If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
 +
-. Reboot the impaired controller from the LOADER prompt: _bye_
+. Reboot the impaired controller from the LOADER prompt: `bye`
 +
 This reinitializes the PCIe devices, other components, and reboots the node.
 +
-. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`.
+. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`
 // This is used in internal FRU docs: Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
 . Repeat these steps for the other controller.
 
-. Restore automatic giveback from the console of the healthy controller if you disabled it: `storage failover modify -node local -auto-giveback true`.
+. Restore automatic giveback from the console of the healthy controller if you disabled it: `storage failover modify -node local -auto-giveback _true_`
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 == Option 2: Add I/O modules in a storage system with no available slots
@@ -170,19 +170,19 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 . Repeat the remove and install steps to add any additional I/O modules in the controller.
 
 . Reboot the controller and check the BMC firmware version:
-.. From the LOADER prompt, reboot the controller:_bye_
-.. Check the version of BMC on the controller: _system service-processor show_
-.. Update the BMC firmware if needed: _system service-processor image update_
-.. Reboot the controller: _bye_
+.. From the LOADER prompt, reboot the controller:`bye`
+.. Check the version of BMC on the controller: `system service-processor show`
+.. Update the BMC firmware if needed: `system service-processor image update`
+.. Reboot the controller: `bye`
 +
 This reinitializes the PCIe devices, other components, and reboots the node.
 +
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement]
 
-. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`.
+. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`
 // This is used in internal FRU docs: Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
-. Restore automatic giveback from the console of the healthy controller if you disabled it: `storage failover modify -node local -auto-giveback true`.
+. Restore automatic giveback from the console of the healthy controller if you disabled it: `storage failover modify -node local -auto-giveback _true_`
 
 . The next step depends on what type of I/O module you added:
 +
@@ -192,7 +192,7 @@ NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/
 a|
 NIC module
 a|
-Use the `storage port modify -node *_<node name>__ -port *_<port name>__ -mode network` command for each port.
+Use the `storage port modify -node *_<node name>_ -port *_<port name>_ -mode network` command for each port.
 a|
 Storage module
 a|

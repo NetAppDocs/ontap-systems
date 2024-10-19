@@ -60,5 +60,5 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 // 4 entries were displayed.
 // ----
 
-. Verify that the expected volumes are present for each controller: `vol show -node node-name`
-. If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`
+. Verify that the expected volumes are present for each controller: `vol show -node _node-name_`
+. If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot _true_`
