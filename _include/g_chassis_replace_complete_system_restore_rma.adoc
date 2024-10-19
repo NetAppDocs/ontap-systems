@@ -11,10 +11,11 @@ The HA state should be the same for all components.
 . If the displayed system state for the chassis does not match your storage system configuration:
 .. Set the HA state for the chassis: `ha-config modify chassis _HA-state_`
 +
-The value for HA-state can be one of the following:
-
-*** _ha_
+The value for HA-state should be _ha_.
+// The value for HA-state can be one of the following:
+// *** _ha_
 // *** _mcc_ (not supported in ASA)
+
 .. Confirm that the setting has changed: `ha-config show`
 . If you have not already done so, recable the rest of your storage system.
 

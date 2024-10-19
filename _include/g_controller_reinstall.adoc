@@ -61,7 +61,7 @@ If you have DC power supplies, reconnect the power block to the power supply.
 +
 . Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 
-. Restore automatic giveback if you disabled it: `storage failover modify -node local -auto-giveback _true_`
+. If you disabled automatic giveback, restore it: `storage failover modify -node * -auto-giveback _true_`
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
+. If AutoSupport is enabled, restore (unsuppress) automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 
