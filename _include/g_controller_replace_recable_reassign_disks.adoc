@@ -16,20 +16,14 @@ Transfer the ownership of storage resources back to the replacement controller.
 . If your storage system does not have Encryption configured, complete the following procedure to reboot the storage system:
 .. Boot to Menu and run Option 1.
 .. Give back the controller:
- .. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode _replacement_node_name_`
-
+.. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode _replacement_node_name_`
 +
 The _replacement_ controller takes back its storage and completes booting.
 +
-
 NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
-
 +
-
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the High-Availability Configuration content for your version of ONTAP 9]
-
 +
-
 .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
 
 // . If the system is in a MetroCluster configuration, monitor the status of the controller: `metrocluster node show`
@@ -61,4 +55,6 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 // ----
 
 . Verify that the expected volumes are present for each controller: `vol show -node _node-name_`
+
 . If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot _true_`
+

@@ -88,7 +88,7 @@ NOTE: This reinitializes the PCIe devices, other components, and reboots the nod
 
 . Return the node to normal operation: `storage failover giveback -ofnode _impaired_node_name_`
 
-. If automatic giveback was disabled, reenable it: `storage failover modify -node * -auto-giveback _true_`
+. Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
 
 == Step 4: Return the failed part to NetApp
 
