@@ -1,6 +1,6 @@
 You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 
-. From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
+. From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery <image_name>`
 +
 The image is downloaded from the USB flash drive.
 
@@ -20,7 +20,7 @@ a|
 
 .. On the impaired controller, press _Y_ when prompted to overwrite `/etc/ssh/ssh_host_ecdsa_key`. 
 
-.. On the healthy partner controller, set the impaired controller to advanced privilege level: `set -privilege admin`.
+.. On the healthy partner controller, set the impaired controller to advanced privilege level: `set -privilege advanced`.
 
 .. On the healthy partner controller, run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address`.
 
