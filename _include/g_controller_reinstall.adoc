@@ -55,9 +55,25 @@ NOTE: The controller boots when fully seated in the chassis. It gets its power f
 +
 . Reconnect the power cord to the power supply on the impaired controller.
 +
-If you have AC power supplies, reconnect the power cord to the power supply.
+Once power is restored to the PSU, the status LED should be green.
 +
-If you have DC power supplies, reconnect the power block to the power supply.
+[options="header" cols="1,2"]
+
+|===
+| If you are moving a...| Then...
+a|
+AC PSU
+a|
+. Plug the power cord into the PSU.
+. Secure the power cord with the power cord retainer.
+a|
+DC PSU
+a|
+. Plug the D-SUB DC power cord connector into the PSU.
+. Tighten the two thumb screws to secure the D-SUB DC power cord connector to the PSU.
+
+|===
+
 +
 . Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 

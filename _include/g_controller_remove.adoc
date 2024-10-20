@@ -42,17 +42,36 @@ The general behavior of the NV status LED on the impaired controller is as follo
 
 . If you are not already grounded, properly ground yourself.
 
-. Disconnect the power on the impaired controller.
+. Disconnect the power on the impaired controller:
 +
-If you have AC power supplies, unplug the power cord from the power supply.
+NOTE: PSUs do not have a power switch.
 +
-If you have DC power supplies, unplug the power block from the power supply.
+.If you are moving an AC PSU
+[%collapsible]
 
+====
+. Open the power cord retainer.
+. Unplug the power cord from the PSU and set it aside.
+====
++
+.If you are moving an DC PSU
+[%collapsible]
+
+====
+. Unplug the power block from the power supply.
+. Disconnect the PSU:
+.. Unscrew the two thumb screws on the D-SUB DC power cord connector.
++
+The illustration and table in step 4 shows the two thumb screws (item #1) and the D-SUB DC power cord connector (item #2).
++
+.. Unplug the cord from the PSU and set it aside.
+====
+
++
 . Unplug all cables from the impaired controller.
 // book end for comment in g_controllerreinstall: Unplug all cables from the impaired controller and transceivers (QSFPs or SFPs) if needed.
 +
 Keep track of where the cables were connected.
-+
 
 . Remove the impaired controller:
 +
@@ -79,9 +98,7 @@ a|
 image::../media/icon_round_3.png[Callout number 3] 
 a|
 Rotate the handles upright (next to the tabs) to move them out of the way.
-
 |===
-+
 
 . Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
