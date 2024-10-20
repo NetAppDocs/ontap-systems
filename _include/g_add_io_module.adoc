@@ -68,7 +68,7 @@ Pull the I/O blanking module out of the controller using the tab on the left and
 .. Align the I/O module with the edges of the controller slot opening.
 .. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
 +
-You can use the tab on the left and the thumbscrew to push in the I/O Module.
+You can use the tab on the left and the thumbscrew to push in the I/O module.
 +
 .. Turn the thumbscrew clockwise to tighten.
 . Cable the I/O module to the designated devices.
@@ -82,7 +82,7 @@ This reinitializes the PCIe devices, other components, and reboots the node.
 . Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`
 // This is used in internal FRU docs: Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
-. Repeat these steps for the other controller.
+. Repeat these steps to add an I/O module to the other controller.
 
 . Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
 
@@ -102,7 +102,7 @@ You can add I/O modules to a fully-populated storage system by removing existing
 a|
 NIC I/O module with the same number of ports
 a|
-The LIFs will automatically migrate when its controller is shut down.
+The LIFs automatically migrate when its controller is shut down.
 a|
 NIC I/O module with fewer ports
 a|
@@ -166,18 +166,20 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 +
 .. Turn the thumbscrew clockwise to tighten.
 . Cable the I/O module to the designated devices.
++
+If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
++
+. Repeat the I/O module remove and install steps to add any additional I/O modules in the controller.
 
-. Repeat the remove and install steps to add any additional I/O modules in the controller.
-
-. Reboot the controller and check the BMC firmware version:
-.. From the LOADER prompt, reboot the controller:`bye`
+. Reboot the impaired controller and check the BMC firmware version:
+.. From the LOADER prompt, reboot the controller: `bye`
 .. Check the version of BMC on the controller: `system service-processor show`
 .. Update the BMC firmware if needed: `system service-processor image update`
 .. Reboot the controller: `bye`
 +
 This reinitializes the PCIe devices, other components, and reboots the node.
 +
-NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement]
+NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement].
 
 . Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`
 +
@@ -185,22 +187,7 @@ NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/
 +
 . Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
 
-. The next step depends on what type of I/O module you added:
+. If you installed a NIC module, specify the usage mode for each port as _network_: `storage port modify -node *_<node name>_ -port *_<port name>_ -mode network`
 +
-[options="header" cols="1,2"]
-|===
-| If the I/O module is a...| Then...
-a|
-NIC module
-a|
-Use the `storage port modify -node *_<node name>_ -port *_<port name>_ -mode network` command for each port.
-a|
-Storage module
-a|
-Install and cable your NS224 shelves, as described in
-https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
-a|
-+
-|===
 
 . Repeat these steps for the other controller.
