@@ -187,7 +187,8 @@ NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/
 +
 . Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
 
+. If AutoSupport is enabled, restore (unsuppress) automatic case creation: system node autosupport invoke -node * -type all -message MAINT=END
+
 . If you installed a NIC module, specify the usage mode for each port as _network_: `storage port modify -node *_<node name>_ -port *_<port name>_ -mode network`
-+
 
 . Repeat these steps for the other controller.
