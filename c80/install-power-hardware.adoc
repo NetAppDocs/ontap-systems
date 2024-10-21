@@ -1,0 +1,17 @@
+---
+permalink: c80/install-power-hardware.html
+sidebar: sidebar
+keywords: aff a70, a90, power controllers
+summary: Attach the power cables and power on the shelves and controllers.
+---
+= Power on the storage system - AFF C80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you install the rack hardware for your AFF A70 or AFF A90 storage system and install the cables for the controllers and storage shelves, you should power on your storage shelves and controllers. 
+
+include::../_include/install_power_hardware.adoc[]
+
+.What's next?
+After you've turned on your AFF A70 or AFF A90 storage system, you link:install-complete.html[complete system setup].
