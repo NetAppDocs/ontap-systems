@@ -36,7 +36,7 @@ NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNBelow
 
 ====
 
-. Cable the controllers to your ONTAP cluster.
+. Cable the controllers to your ONTAP switchless or switched cluster.
 
 
 
@@ -144,7 +144,7 @@ image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 --
 Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
 
-.AFF A50 or A30 with with two 2-port 100GbE I/O modules
+.AFF A50 or A30 with two 2-port 100GbE I/O modules
 [%collapsible]
 
 
@@ -195,7 +195,7 @@ Add example
 ====
 
 == Step 2: Cable the host network connections
-Cable the controllers to your host network. Host connectivity is 40/100 GbE. This procedure differs depending on your configuration.
+Cable the controllers to your host network. This procedure differs depending on your storage system model and I/O module configuration. Host connectivity is 40/100 GbE.???
 
 .AFF A30 or A50 with two 2-port 100GbE I/O modules
 [%collapsible]
@@ -238,17 +238,17 @@ image::../media/drw_isi_g_4p_64gb_fc_optional_cabling_ieops-1924.svg[Cable to 64
 
 ====
 
-.AFF A20 with one 2-port 100GbE I/O module
+.AFF A20 with one 2-port 100GbE module
 
 ====
 
-Add text
+add text
 
 ====
 
 
 == Step 3: Cable the management network connections
-Cable the controllers to your management network. This procedure is the same for all of the configurations.
+Cable the controllers to your management network.
 
 . Cable the management (wrench) ports on each controller to the management network switches.
 +
@@ -262,7 +262,7 @@ IMPORTANT: Do not plug in the power cords yet.
 
 
 == Step 4: Cable the shelf connections
-This procedure show you how to cable the controllers to one NS224 shelf. This procedure is the same for all of the configurations.
+This procedure show you how to cable the controllers to one NS224 shelf.
 
 .About this task
 
