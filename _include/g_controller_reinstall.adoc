@@ -53,14 +53,14 @@ NOTE: The controller boots when fully seated in the chassis. It gets its power f
 .. If the controller boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
 .. Rotate the controller handles up and lock in place with the tabs.
 +
-. Reconnect the power cord to the power supply on the impaired controller.
+. Reconnect the power cord to the PSU on the replacement controller.
 +
 Once power is restored to the PSU, the status LED should be green.
 +
 [options="header" cols="1,2"]
 
 |===
-| If you are moving a...| Then...
+| If you are reconnecting a...| Then...
 a|
 AC PSU
 a|
