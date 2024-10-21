@@ -16,6 +16,8 @@ After you install your AFF A20, AFF A30, or AFF A50 storage system hardware, cab
 Contact your network administrator for information about connecting the storage system to your network switches.
 
 .About this task
+* The cluster/HA and host network cabling procedures show common configurations. Keep in mind that the specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
 As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
@@ -24,12 +26,59 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 * If cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
 
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNBelow
 
-== Step 1: Cluster/HA cabling
-Cable the controllers to your ONTAP cluster.
+== Step 1: Cable controllers to the network
 
-.About this task
-These procedures show common configurations. Keep in mind that the specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+
+.AFF A30 or A50 with two 2-port 100GbE I/O modules
+[%collapsible]
+
+====
+
+. Cable the controllers to your ONTAP cluster.
+
+
+
+Add tabbed options
+
+. Cable the host network connections.
+
+Add tabbed orange and red options here.
+
+. Cable the management network connections.
+
+Add content here
+
+====
+
+.AFF A30 or A50 with one 2-port 100GbE I/O module
+[%collapsible]
+
+====
+
+Add text
+
+====
+
+.AFF A20 with one 2-port 100GbE I/O module
+
+====
+
+Add text...
+
+====
+
+
+== Step 2: Cable controllers to the shelves
+
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN ABove
+
+
+
+== Step 1: Cable the cluster/HA connections
+Cable the controllers to your ONTAP cluster. This procedure differs depending on your storage system model and I/O module configuration.
+
 
 [role="tabbed-block"]
 ====
@@ -145,8 +194,22 @@ Add example
 
 ====
 
-== Step 2: Host network cabling
-Cable the controllers to your host network. Host connectivity is 40/100 GbE.
+== Step 2: Cable the host network connections
+Cable the controllers to your host network. Host connectivity is 40/100 GbE. This procedure differs depending on your configuration.
+
+.AFF A30 or A50 with two 2-port 100GbE I/O modules
+[%collapsible]
+
+====
+
+Text
+
+====
+
+.AFF A30 or A50 with one 2-port 100GbE I/O module
+[%collapsible]
+
+====
 
 . Cable the host network connections.  
 +
@@ -173,8 +236,19 @@ image::../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 image::../media/drw_isi_g_4p_64gb_fc_optional_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
 
 
-== Step 3: Management network cabling
-Cable the controllers to your management network.
+====
+
+.AFF A20 with one 2-port 100GbE I/O module
+
+====
+
+Add text
+
+====
+
+
+== Step 3: Cable the management network connections
+Cable the controllers to your management network. This procedure is the same for all of the configurations.
 
 . Cable the management (wrench) ports on each controller to the management network switches.
 +
@@ -187,12 +261,13 @@ image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your manageme
 IMPORTANT: Do not plug in the power cords yet. 
 
 
-== Step 4: Shelf cabling
-Cable the controllers to one NS224 shelf.
-
-For the maximum number of shelves supported for your storage system and for all of your cabling options, such as optical and switch-attached, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+== Step 4: Cable the shelf connections
+This procedure show you how to cable the controllers to one NS224 shelf. This procedure is the same for all of the configurations.
 
 .About this task
+
+* For the maximum number of shelves supported for your storage system and for all of your cabling options, such as optical and switch-attached, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+
 * You cable each controller to each NSM100B module on the NS224 shelf using the storage cables that came with your storage system, which could be the following cable type:
 +
 *100 GbE QSFP28 copper cables*
