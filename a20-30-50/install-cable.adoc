@@ -26,55 +26,6 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 * If cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
 
-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNBelow
-
-== Step 1: Cable controllers to the network
-
-
-.AFF A30 or A50 with two 2-port 100GbE I/O modules
-[%collapsible]
-
-====
-
-. Cable the controllers to your ONTAP switchless or switched cluster.
-
-
-
-Add tabbed options
-
-. Cable the host network connections.
-
-Add tabbed orange and red options here.
-
-. Cable the management network connections.
-
-Add content here
-
-====
-
-.AFF A30 or A50 with one 2-port 100GbE I/O module
-[%collapsible]
-
-====
-
-Add text
-
-====
-
-.AFF A20 with one 2-port 100GbE I/O module
-
-====
-
-Add text...
-
-====
-
-
-== Step 2: Cable controllers to the shelves
-
-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN ABove
-
-
 
 == Step 1: Cable the cluster/HA connections
 Cable the controllers to your ONTAP cluster. This procedure differs depending on your storage system model and I/O module configuration.
