@@ -88,17 +88,17 @@ A power supply is powered on as soon as the power cord is plugged in. Its bicolo
 
 
 == Step 2: Power on the controllers
-After you've turned on your shelves and assigned them unique IDs, turn on the power to the storage controllers.
+After you've powered on your shelves and assigned them unique IDs, power on the storage controllers.
 
 .Steps
 
-. Connect your laptop to the serial console port. This will allow you to monitor the boot sequence when the controllers are turned on.
+. Connect your laptop to the serial console port. This will allow you to monitor the boot sequence when the controllers are powered on.
 
 .. Set the serial console port on the laptop to 115,200 baud with N-8-1.
 +
 NOTE: See your laptop's online help for instructions on how to configure the serial console port.
 
-.. Connect the console cable to the laptop, and connect the serial console port on the controller using the console cable that came with your storage system.
+.. Using the console cable provided with your storage system, connect one end of the console cable to your laptop and the other end to the serial console port on controller A.
  
 .. Connect the laptop to the switch on the management subnet.
 +
