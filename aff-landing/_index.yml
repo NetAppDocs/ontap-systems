@@ -32,6 +32,8 @@ indexpage:
           url: ../a900/install_setup.html
     - title: Install and setup C-Series systems
       links:
+        - title: AFF C80
+          url: ../c80/install-overview.html
         - title: AFF C250
           url: ../c250/install-setup.html
         - title: AFF C400
@@ -56,6 +58,8 @@ indexpage:
           url: ../a900/maintain-overview.html
     - title: Maintain C-Series systems
       links:
+        - title: AFF C80
+          url: ../c80/maintain-overview.html
         - title: AFF C250
           url: ../c250/maintain-overview.html
         - title: AFF C400
