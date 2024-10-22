@@ -6,7 +6,7 @@ include::../_include/g_controller_remove.adoc[]
 
 . Repeat these steps for the other controller in the chassis.
 
-== Step 2: Remove the drives from the faulty chassis
+== Step 2: Remove the drives from the impaired chassis
 
 You need to remove all of the drives from the impaired chassis so that later in the procedure you can install them in the replacement chassis.
 
@@ -31,10 +31,15 @@ NOTE: Drives are fragile. Handle them as little as possible to prevent damage to
 You remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis, install the drives, and then install the bezel.
 
 . Remove the screws from the impaired chassis mount points.
-. With two people, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
-. Using two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
-. Slide the chassis all the way into the equipment rack or system cabinet.
-. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
++
+Set the screws aside to use later in this procedure.
+
+. Using two people, remove the impaired chassis from the equipment rack or system cabinet by sliding it off the rails, and then set it aside.
+
+. Using two people, install the replacement chassis into the equipment rack or system cabinet by sliding it onto the rails.
+
+. Secure the front of the chassis to the equipment rack or system cabinet using the screws you removed from the impaired chassis.
+
 . Install the drives you removed from the impaired chassis into the replacement chassis:
 +
 NOTE: The drives must be installed in the same drive bays in the replacement chassis.
