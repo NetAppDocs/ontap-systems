@@ -9,5 +9,4 @@ summary: "Prior to shutting down the impaired controller and checking the status
 :imagesdir: ../media/
 
 [.lead]
-
-include::../_include/800_bootmedia_encryption_preshutdown_checks.adoc[]
+include::../_include/encryption_check_bootmedia.adoc[]
