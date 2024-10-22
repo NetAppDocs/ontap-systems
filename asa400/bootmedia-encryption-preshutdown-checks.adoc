@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a400, asa, a400, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys
 summary: Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check what version of ONTAP the system is running.
 ---
-= Check onboard encryption - ASA A400
+= Check encryption key support and status - ASA A400
 :icons: font
 :imagesdir: ../media/
 
