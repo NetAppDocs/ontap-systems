@@ -69,6 +69,5 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
 
 +
-The controller module begins to boot as soon as it is fully seated in the chassis or after it is installed and DC
-power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
+The controller module begins to boot as soon as it is fully seated in the chassis or after it is installed and power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
 
