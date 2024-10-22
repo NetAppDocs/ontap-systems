@@ -46,7 +46,7 @@ Pull the PSU out of the controller while using your other hand to support its we
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller so that it does not suddenly swing free from the controller and injure you.
 |===
 +
-. Install the PSU into the replacement controller:
+. Insert the PSU into the replacement controller:
 .. Using both hands, support and align the edges of the PSU with the opening in the controller.
 .. Gently push the PSU into the controller until the locking tab clicks into place.
 +
@@ -143,7 +143,7 @@ Move the NV battery to the replacement controller.
 
 . Remove the NV battery from the impaired controller:
 +
-*Attention:* The NV module LED blinks while destaging contents to the flash memory when you halt the storage system. After the destage is complete, the LED turns off.
+*Attention:* The NV LED blinks while destaging contents to the flash memory when you halt the storage system. After the destage is complete, the LED turns off.
 +
 image::../media/drw_g_nv_battery_replace_ieops-1864.svg[Replace the NV battery]
 +
@@ -153,7 +153,7 @@ image::../media/drw_g_nv_battery_replace_ieops-1864.svg[Replace the NV battery]
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-Lift the NV battery up and out of its holder.
+Lift the NV battery up and out of its compartment.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
@@ -169,12 +169,12 @@ b. Pull the connector up and out of the socket.
 . Install the NV battery into the replacement controller:
 .. Plug the wiring connector into its socket.
 +
-You might need to slightly rock the connector lengthwise until it is fully seated.
+You might need to slightly rock the connector from end to end (lengthwise) until it is fully seated.
 +
-.. Route the wiring along the side of the power supply, into its retainer, and then through the channel in front of the NV battery holder.
-.. Place the NV battery into the holder.
+.. Route the wiring along the side of the power supply, into its retainer, and then through the channel in front of the NV battery compartment.
+.. Place the NV battery into the compartment.
 +
-The NV battery should sit flush to the holder floor.
+The NV battery should sit flush in its compartment.
  
 == Step 5: Move system DIMMs
 
@@ -194,11 +194,13 @@ a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
 DIMM slot numbering and positions.
+
+NOTE: depending on your storage system configuration you will have two or four DIMMs.
 a|
 image::../media/icon_round_2.png[Callout number 1]
 a|
 * Note the orientation of the DIMM in the socket so that you can insert the DIMM in the replacement controller in the proper orientation.
-* Eject the faulty DIMM by slowly pushing apart the two DIMM ejector tabs on both ends of the DIMM slot.
+* Eject the DIMM by slowly pushing apart the two DIMM ejector tabs on both ends of the DIMM slot.
 
 IMPORTANT: Carefully hold the DIMM by the corners or edges to avoid pressure on the DIMM circuit board components.
 a|
