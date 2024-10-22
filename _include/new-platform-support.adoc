@@ -69,17 +69,9 @@ ONTAP 9.12.1P1
 
 ONTAP 9.13.1 GA and later ONTAP releases
 
-[NOTE]
-====
-These platforms are not supported with ONTAP 9.13.1 RC1.
-====
 a|
 https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A150]
 
-[NOTE]
-====
-Do not attempt to install or boot your AFF A150 storage system with an unsupported version of ONTAP. If you attempt to install or boot your system with an unsupported version of ONTAP, ONTAP will allow it (ONTAP will not block the attempt). The consequence is that your AFF A150 storage system will come up as a FAS2750 storage system.
-====
 
 a|
 ONTAP 9.13.1 and later ONTAP releases
