@@ -9,7 +9,7 @@ summary: Management network ports on the controllers are connected to switches. 
 :imagesdir: ../media/
 
 [.lead]
-After you install the rack hardware for your AFF C80storage system, install the network cables for the controllers, and connect the cables between the controllers and storage shelves.
+After you install the rack hardware for your AFF C80 storage system, install the network cables for the controllers, and connect the cables between the controllers and storage shelves.
 
 .Before you begin
 Check the illustration arrow in the cabling diagrams for the proper cable connector pull-tab orientation.
@@ -225,6 +225,6 @@ image:../media/drw_a70-90_2shelf_cabling_b_ieops-1734.svg[Controller-to-shelf co
 
 .What's next?
 
-After you’ve cabled the hardware for your AFF C80system, you link:install-power-hardware.html[power on the AFF C80storage system].
+After you’ve cabled the hardware for your AFF C80 system, you link:install-power-hardware.html[power on the AFF C80 storage system].
 
 
