@@ -2,6 +2,8 @@ Move the drives, controllers, and bezel from the impaired chassis to the replace
 
 == Step 1: Remove the controller
 
+This procedure has you remove one controller at a time.
+
 include::../_include/g_controller_remove.adoc[]
 
 . Repeat these steps for the other controller in the chassis.
@@ -38,7 +40,7 @@ Set the screws aside to use later in this procedure.
 
 . Using two people, install the replacement chassis into the equipment rack or system cabinet by sliding it onto the rails.
 
-. Secure the front of the chassis to the equipment rack or system cabinet using the screws you removed from the impaired chassis.
+. Secure the front of the replacement chassis to the equipment rack or system cabinet using the screws you removed from the impaired chassis.
 
 . Install the drives you removed from the impaired chassis into the replacement chassis:
 +
