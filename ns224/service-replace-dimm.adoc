@@ -51,6 +51,12 @@ If you need the RMA number or additional help with the replacement procedure, co
 +
 video::eef28b10-ed93-4aa7-bfce-aa86002f20a2[Animation, Replace a DIMM in an NS224 shelf"]
 
+[role="tabbed-block"]
+====
+
+.NSM100 modules
+--
+
 .Steps
 
 . Properly ground yourself.
@@ -135,3 +141,93 @@ The NSM module attention LEDs turn off after the NSM module reboots and no longe
 If any cabling errors are generated, follow the corrective actions provided.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
+--
+
+.NSM100B modules
+--
+
+.Steps
+
+. Properly ground yourself.
+. Disconnect the cabling from the NSM module that contains the FRU that you are replacing:
+ .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
++
+Power supplies do not have a power switch.
+
+ .. Disconnect the storage cabling from the NSM module ports.
++
+Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM module, later in this procedure.
+. Remove the NSM module from the shelf:
++
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove controller.]
+.. On both ends of the NSM module, push the vertical locking tabs outward to release the handles.
++
+The handles come to rest horizontally to the vertical tabs.
+.. Pull the handles towards you to unseat the NSM module from the midplane of the shelf.
++
+As you pull, the handles extend out from the shelf. When you feel some resistance, keep pulling.
+.. Slide the NSM module out of the shelf and place it on a flat, stable surface. 
++
+Make sure that you support the bottom of the NSM module as you slide it out of the shelf.
+
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+
++
+The FRU label on the NSM module cover shows the location of the four DIMMs, two on either side of the heat sink, in the center of the NSM module.
+
+. Physically identify the faulty DIMM.
++
+When a DIMM is faulty, the system logs a warning message to the system console indicating which DIMM is faulty.
+//05Oct2022, Racer5: removed text describing location of onboard attention LED.
+
+. Replace the faulty DIMM:
++
+image::../media/drw_t_dimm_ieops-1978.svg[Remove controller.]
+
+ .. Note the orientation of the DIMM in the slot so that you can insert the replacement DIMM using the same orientation.
+ .. Eject the DIMM from its slot by slowly pushing apart the ejector tabs at both ends of the DIMM slot, and then lift the DIMM out of the slot.
++
+NOTE: Carefully hold the DIMM by the corners or edges to avoid pressure on the DIMM circuit board components.
++
+The ejector tabs remain in the open position.
+
+ .. Remove the replacement DIMM from its antistatic shipping bag.
+ .. Hold the DIMM by the corners, and then insert the DIMM squarely into a slot.
++
+The notch on the bottom of the DIMM, among the pins, should line up with the tab in the slot.
++
+When inserted correctly, the DIMM should go in easily but fit tightly in the slot. If not, reinsert the DIMM.
+
+ .. Push down carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at both ends of the DIMM.
+. Close the NSM module cover, and then tighten the thumb screw.
+. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
+. Insert the NSM module into the shelf.
+.. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
+.. Rotate the NSM module handles up and lock in place with the tabs.
++
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the RTC battery]
++
+The NSM module should be fully inserted into the shelf and flush with the edges of the shelf.
+. Reconnect the cabling to the NSM module:
+ .. Reconnect the storage cabling to the same two NSM module ports.
++
+Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
+
+ .. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer if it is an AC power supply, or tighten the two thumb screws if it is a DC power supply.
++
+When functioning correctly, a power supply's bicolored LED illuminates green.
++
+Additionally, both NSM module port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
+. Verify that the attention (amber) LEDs on the NSM module containing the failed DIMM and the shelf operator display panel are no longer illuminated.
++
+The NSM module attention LEDs turn off after the NSM module reboots and no longer detects a DIMM issue. This can take three to five minutes.
+
+. Verify that the NSM module is cabled correctly, by running Active IQ Config Advisor.
++
+If any cabling errors are generated, follow the corrective actions provided.
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
+--
+====
