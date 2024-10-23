@@ -1,0 +1,15 @@
+---
+permalink: a20-30-50/bootmedia-overview-bmr.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, overview, automatic recovery, boot media
+summary: Learn about the automated method and the manual method for replacing the boot media.
+---
+= Overview of automated boot media recovery - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+You can replace a failed boot media through the automated boot media recovery (BMR) option.
+
+Automated boot media recovery uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.. 

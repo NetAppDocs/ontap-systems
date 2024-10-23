@@ -23,49 +23,45 @@ entries:
    entries:
    - title: Maintenance overview
      url: /a20-30-50/maintain-overview.html
-      # START boot media
-   - title: Boot media
-     pdf-filename: AFF A20, AFF A30, and AFF A50 Boot Media
+# START boot media
+   - title: Boot media - automated recovery
+     pdf-filename: ASA A70 and ASA A90 Boot Media
      entries:
-        - title: Boot media overview
-          url: /a20-30-50/bootmedia-overview.html
-        - title: Automated method
-          entries:
-            - title: Boot media replace workflow
-              url: /a20-30-50/bootmedia-replace-workflow-bmr.html
-            - title: Review requirements
-              url: /a20-30-50/bootmedia-replace-requirements-bmr.html
-            - title: Shut down impaired controller
-              url: /a20-30-50/bootmedia-shutdown-bmr.html
-            - title: Replace boot media
-              url: /a20-30-50/bootmedia-replace-bmr.html
-            - title: Restore image on boot media
-              url: /a20-30-50/bootmedia-recovery-image-boot-bmr.html
-            - title: Return failed part to NetApp
-              url: /a20-30-50/bootmedia-complete-rma-bmr.html
-        - title: Manual method
-          entries:
-            - title: Boot media replace workflow
-              url: /a20-30-50/bootmedia-replace-workflow.html
-            - title: Review requirements
-              url: /a20-30-50/bootmedia-replace-requirements.html
-            - title: Check onboard encryption keys
-              url: /a20-30-50/bootmedia-encryption-preshutdown-checks.html
-            - title: Shut down impaired controller
-              url: /a20-30-50/bootmedia-shutdown.html
-            - title: Remove controller
-              url: /a20-30-50/bootmedia-controller-remove.html
-            - title: Replace boot media
-              url: /a20-30-50/bootmedia-replace.html
-            - title: Reinstall controller
-              url: /a20-30-50/bootmedia-controller-reinstall.html
-            - title: Boot recovery image
-              url: /a20-30-50/bootmedia-recovery-image-boot.html
-            - title: Restore encryption
-              url: /a20-30-50/bootmedia-encryption-restore.html
-            - title: Return failed part to NetApp
-              url: /a20-30-50/bootmedia-complete-rma.html
-          # END boot media
+      - title: Boot media overview
+        url: /a20-30-50/bootmedia-overview-bmr.html
+      - title: Boot media replace workflow
+        url: /a20-30-50/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /a20-30-50/bootmedia-replace-requirements-bmr.html
+      - title: Shut down impaired controller
+        url: /a20-30-50/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /a20-30-50/bootmedia-replace-bmr.html
+      - title: Restore image on boot media
+        url: /a20-30-50/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /a20-30-50/bootmedia-complete-rma-bmr.html
+   - title: Boot media - manual recovery
+     entries:
+      - title: Boot media overview
+        url: /a20-30-50/bootmedia-overview.html
+      - title: Boot media replace workflow
+        url: /a20-30-50/bootmedia-replace-workflow.html
+      - title: Review requirements
+        url: /a20-30-50/bootmedia-replace-requirements.html
+      - title: Check encryption keys
+        url: /a20-30-50/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
+        url: /a20-30-50/bootmedia-shutdown.html
+      - title: Replace boot media
+        url: /a20-30-50/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /a20-30-50/bootmedia-recovery-image-boot.html
+      - title: Restore encryption
+        url: /a20-30-50/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /a20-30-50/bootmedia-complete-rma.html
+    # END boot media
    - title: Chassis
      pdf-filename: AFF A20, AFF A30, and AFF A50 Chassis
      entries:
