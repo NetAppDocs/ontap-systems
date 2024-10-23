@@ -2,8 +2,6 @@ Move the drives, controllers, and bezel from the impaired chassis to the replace
 
 == Step 1: Remove the controller
 
-This procedure has you remove one controller at a time.
-
 include::../_include/g_controller_remove.adoc[]
 
 . Repeat these steps for the other controller in the chassis.
