@@ -50,7 +50,7 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 +
 NOTE: The controller boots when fully seated in the chassis. It gets its power from the partner controller.
 +
-.. If the controller boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
+.. If the controller boots to the LOADER prompt, reboot the controller: `boot_ontap`
 .. Rotate the controller handles up and lock in place with the tabs.
 +
 . Reconnect the power cord to the PSU on the replacement controller.

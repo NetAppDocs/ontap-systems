@@ -26,7 +26,7 @@ NOTE: Drives are fragile. Handle them as little as possible to prevent damage to
 . Set the drives aside on a static-free cart or table.
 
 
-== Step 3: Replace chassis from within the equipment rack or system cabinet
+== Step 3: Replace the chassis from within the equipment rack or system cabinet
 
 You remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis, install the drives, and then install the bezel.
 
@@ -55,10 +55,71 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 .. Repeat the process for the remaining drives.
 . Install the bezel.
 
-== Step 4: Reinstall the controllers
+== Step 4: Install the controllers
 
-Reinstall the controllers into the chassis and reboot it.
+Install the controllers into the replacement chassis and reboot them.
 
-include::../_include/g_controller_reinstall.adoc[]
+.About this task
 
-. Repeat the preceding steps to install the second controller into the replacement chassis.
+The following illustration shows the operation of the controller handles (from the left side of a controller) when installing a controller, and can be used as a reference for the rest of the controller installation steps.
+
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[controller handle operation to install a controller]
+
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+If you rotated the controller handles upright (next to the tabs) to move them out of the way, rotate them down to the horizontal position. 
+a|
+image::../media/icon_round_2.png[Callout number 2] 
+a|
+Push the handles to reinsert the controller into the chassis and push until the controller is fully seated.
+a|
+image::../media/icon_round_3.png[Callout number 3] 
+a|
+Rotate the handles to the upright position and lock in place with the locking tabs.
+
+|===
+
+. Insert one of the controllers into the chassis:
+.. Align the back of the controller with the opening in the chassis.
+.. Firmly push on the handles until the controller meets the midplane and is fully seated in the chassis.
++
+NOTE: Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
++
+.. Rotate the controller handles up and lock in place with the tabs.
+
+. Recable the controller, as needed.
+
+. Repeat these steps to install the second controller into the chassis.
+
+. Reconnect the power cords to the power supplies (PSU) on the controllers.
++
+NOTE: Once power is restored to a PSU, the status LED should be green.
++
+NOTE: The controllers begin to boot as soon as the power is restored. 
++
+[options="header" cols="1,2"]
+
+|===
+| If you are reconnecting a...| Then...
+a|
+AC PSU
+a|
+. Plug the power cord into the PSU.
+. Secure the power cord with the power cord retainer.
+a|
+DC PSU
+a|
+. Plug the D-SUB DC power cord connector into the PSU.
+. Tighten the two thumb screws to secure the D-SUB DC power cord connector to the PSU.
+
+|===
+
++
+
+. If controllers boot to the LOADER prompt, reboot the controllers: `boot_ontap`
+
+. Turn AutoSupport back on: `system node autosupport invoke -node * -type all -message MAINT=END`
