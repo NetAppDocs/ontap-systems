@@ -14,6 +14,8 @@ sidebar:
       entries:
         - title: What's new
           url: /whats-new.html
+        - title: Supported hardware
+          url: /supported-platforms.html
         - title: End-of-support
           url: /eoa-hardware.html
     - title: Get started
@@ -35,6 +37,7 @@ sidebar:
       - title: C-Series systems
         url: /aff-cseries/index.html
         entries:
+        - section: c80
         - section: c250
         - section: c400
         - section: c800

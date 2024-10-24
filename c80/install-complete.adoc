@@ -1,0 +1,13 @@
+---
+permalink: c80/install-complete.html
+sidebar: sidebar
+keywords: aff c80, prepare installation
+summary: Complete the storage system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the storage system and then connecting to the management switch.
+---
+= Complete storage system setup and configuration - AFF C80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+include::../_include/install_complete.adoc[]

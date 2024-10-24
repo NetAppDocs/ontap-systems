@@ -1,0 +1,120 @@
+section: c80
+title: AFF C80 systems
+entries:
+ - title: Install and setup
+   pdf-filename: C80 Install and Setup
+   entries:
+     - title: Install workflow
+       url: /c80/install-overview.html
+     - title:  Review requirements 
+       url: /c80/install-requirements.html
+     - title: Prepare to install
+       url: /c80/install-prepare.html
+     - title: Install hardware
+       url: /c80/install-hardware.html
+     - title: Cable hardware
+       url: /c80/install-cable.html
+     - title: Power on system
+       url: /c80/install-power-hardware.html
+     - title: Complete system setup
+       url: /c80/install-complete.html
+ - title: Maintain
+   pdf-filename: C80 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /c80/maintain-overview.html
+   # START boot media
+   - title: Boot media - automated recovery
+     pdf-filename: C80 Boot Media Automated Recovery
+     entries:
+        - title: Boot media overview
+          url: /asa-r2-70-90/bootmedia-overview-bmr.html
+        - title: Boot media replace workflow
+          url: /asa-r2-70-90/bootmedia-replace-workflow-bmr.html
+        - title: Review requirements
+          url: /asa-r2-70-90/bootmedia-replace-requirements-bmr.html
+        - title: Shut down impaired controller
+          url: /asa-r2-70-90/bootmedia-shutdown-bmr.html
+        - title: Replace boot media
+          url: /asa-r2-70-90/bootmedia-replace-bmr.html
+        - title: Restore image on boot media
+          url: /asa-r2-70-90/bootmedia-recovery-image-boot-bmr.html
+        - title: Return failed part to NetApp
+          url: /asa-r2-70-90/bootmedia-complete-rma-bmr.html
+   - title: Boot media - manual recovery
+     pdf-filename: C80 Boot Media Manual Recovery
+     entries:
+        - title: Boot media overview
+          url: /asa-r2-70-90/bootmedia-overview.html
+        - title: Boot media replace workflow
+          url: /asa-r2-70-90/bootmedia-replace-workflow.html
+        - title: Review requirements
+          url: /asa-r2-70-90/bootmedia-replace-requirements.html
+        - title: Check encryption keys
+          url: /asa-r2-70-90/bootmedia-encryption-preshutdown-checks.html
+        - title: Shut down impaired controller
+          url: /asa-r2-70-90/bootmedia-shutdown.html
+        - title: Replace boot media
+          url: /asa-r2-70-90/bootmedia-replace.html
+        - title: Boot recovery image
+          url: /asa-r2-70-90/bootmedia-recovery-image-boot.html
+        - title: Restore encryption
+          url: /asa-r2-70-90/bootmedia-encryption-restore.html
+        - title: Return failed part to NetApp
+          url: /asa-r2-70-90/bootmedia-complete-rma.html
+    # END boot media
+   - title: Chassis
+     pdf-filename: C80 Chassis
+     entries:
+        - title: Chassis replace workflow
+          url: /c80/chassis-replace-workflow.html
+        - title: Review requirements
+          url: /c80/chassis-replace-requirements.html
+        - title: Shut down controllers
+          url: /c80/chassis-replace-shutdown.html
+        - title: Replace chassis
+          url: /c80/chassis-replace-move-hardware.html
+        - title: Complete chassis replacement
+          url: /c80/chassis-replace-complete-system-restore-rma.html
+   - title: Controller
+     pdf-filename: C80 Controller Module
+     entries:
+        - title: Controller replace workflow
+          url: /c80/controller-replace-workflow.html
+        - title: Review requirements
+          url: /c80/controller-replace-requirements.html
+        - title: Shut down impaired controller
+          url: /c80/controller-replace-shutdown.html
+        - title: Replace controller
+          url: /c80/controller-replace-move-hardware.html
+        - title: Restore system configuration
+          url: /c80/controller-replace-system-config-restore-and-verify.html
+        - title: Recable and give back controller
+          url: /c80/controller-replace-recable-reassign-disks.html
+        - title: Complete controller replacement
+          url: /c80/controller-replace-restore-system-rma.html
+   - title: DIMM
+     url: /c80/dimm-replace.html
+   - title: Drive
+     url: /c80/drive-replace.html
+   - title: Fan
+     url: /c80/fan-swap-out.html
+   - title: NVRAM
+     url: /c80/nvram-replace.html
+   - title: NV Battery
+     url: /c80/nvdimm-battery-replace.html
+   - title: I/O module
+     pdf-filename: C80 I/O module
+     entries:
+        - title: I/O module overview
+          url: /c80/io-module-overview.html
+        - title: Add I/O module
+          url: /c80/io-module-add.html
+        - title: Replace I/O module
+          url: /c80/io-module-replace.html
+   - title: Power supply
+     url: /c80/power-supply-replace.html
+   - title: Real-time clock battery
+     url: /c80/rtc-battery-replace.html
+   - title: System Management module 
+     url: /c80/system-management-replace.html

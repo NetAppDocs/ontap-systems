@@ -71,7 +71,7 @@ ifdef::a1k-a70-90[]
 endif::a1k-a70-90[]
 * Storage system
 * Rail kits with instructions (optional)
-* Storage shelf 
+* Storage shelf (if you ordered additional storage) 
 a|* Management Ethernet cables (RJ-45 cables)
 * Network cables
 * Power cords
@@ -86,9 +86,18 @@ After you've ensured that your site meets the requirements for your storage syst
 
 .Steps
 
-. Locate the serial number for your storage system. 
+. Locate the System Serial Numbers (SSN) for every controller being installed. You can find the serial numbers in the following locations:
 +
-You can find the number on the packing slip, in your confirmation email, or on the controller's System Management module after you unpack it.
+. You can find the serial numbers in the following locations:
+- On the packing slip
+- In your confirmation email
+ifdef::a1k-a70-90[]
+- On each controller's System Management module
+endif::a1k-a70-90[]
+
+ifdef::a20-30-50[]
+- On each controller
+endif::a20-30-50[]
 +
 image::../media/drw_ssn_label.svg[Example of the system serial number showing location of the number,width=200]
 +
@@ -105,7 +114,7 @@ a|
 
  .. Sign in with your username and password.
  .. Select *Systems* > *My Systems*.
- .. Confirm that the new serial number is listed.
+ .. Confirm that the new serial numbers are listed.
  .. If it is not, follow the instructions for new NetApp customers.
 
 a|
@@ -114,7 +123,7 @@ a|
 
  .. Click *Register Now*, and create an account.
  .. Select *Systems* > *Register Systems*.
- .. Enter the storage system's serial number and requested details.
+ .. Enter the storage system's serial numbers and requested details.
 
 After your registration is approved, you can download any required software. The approval process might take up to 24 hours.
 |===

@@ -20,9 +20,10 @@
 
 * Understand that the airflow through the storage system enters from the front where the bezel or end caps are installed and exhausts out the rear where the ports are located.
 
+
 .Steps
 
-. Install the rail kits for your storage system and shelves, as needed, using the instructions included with the kits.
+. Install the rail kits for your storage system and shelves as needed, using the instructions included with the kits.
 
 . Install and secure your storage system in the cabinet or telco rack:
 
@@ -31,7 +32,16 @@
 .. Secure the storage system to the cabinet or telco rack using the included mounting screws.
 
 +
-. Install the shelf:
+. Attach the bezel to the front of the storage system.
++
+ifdef::a1k-a70-90[]
+. Attach the cable management devices to the rear of the storage system.
++
+image::../media/drw_affa1k_install_cable_mgmt_ieops-1697.svg[Install cable management device]
+endif::a1k-a70-90[]
+
+
+. Install and secure the shelf as needed. 
 +
 
 .. Position the back of the shelf onto the rails, and then support the shelf from the bottom and slide it into the cabinet or telco rack.
@@ -40,11 +50,3 @@ If you are installing multiple shelves, place the first shelf directly above the
 
 .. Secure the shelf to the cabinet or telco rack using the included mounting screws.
 +
-ifdef::a1k-a70-90[]
-. Attach the cable management devices to the rear of the storage system.
-+
-image::../media/drw_affa1k_install_cable_mgmt_ieops-1697.svg[Install cable management device]
-endif::a1k-a70-90[]
-
-. Attach the bezel to the front of the storage system.
-
