@@ -1,0 +1,12 @@
+---
+permalink: c80/bootmedia-recovery-image-boot-bmr.html
+sidebar: sidebar
+keywords: c80, boot the recovery image
+summary: You can restore image on the boot media from the partner controller through the automated boot recovery process.  
+---
+= Automated boot recovery  - C80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/bmr_single_node_boot_recovery.adoc[]
