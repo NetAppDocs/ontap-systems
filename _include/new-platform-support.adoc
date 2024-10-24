@@ -1,134 +1,99 @@
-[cols="2*",options="header"]
-|===
-| Platforms | Available beginning
-a| 
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A20]
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A30]
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A50]
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf[AFF C30]
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf[AFF C60]
-a|
-ONTAP 9.16.1
 
+== Platforms and Availability
 
+* AFF A20, AFF A30, AFF A50, AFF C30, AFF C60
+** Available beginning: ONTAP 9.16.1
+** link:https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A20]
+** link:https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A30]
+** link:https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A50]
+** link:https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf[AFF C30]
+** link:https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf[AFF C60]
 
-a| https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[ASA r2 systems]
+* ASA r2 systems (ASA A1K, ASA A70, ASA A90)
+** Available beginning: ONTAP 9.16.0
+** link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[ASA r2 systems]
 
-* ASA A1K
-* ASA A70
-* ASA A90
-a|
-ONTAP 9.16.0
-a| https://www.netapp.com/data-storage/fas/[FAS70 and FAS90]
-a|
-ONTAP 9.15.1
-a|
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A1K]
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A70]
-* https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[ AFF A90]
-a|
-ONTAP 9.15.1
-a|
-https://www.netapp.com/data-storage/all-flash-san-storage-array/[ASA C250]
-a|
-ONTAP 9.13.1P1
-a|
-https://www.netapp.com/data-storage/all-flash-san-storage-array/[ASA C400]
-a|
-ONTAP 9.13.1P1
-a|
-https://www.netapp.com/data-storage/all-flash-san-storage-array/[ASA C800]
-a|
-ONTAP 9.13.1P1
-a|
-https://hwu.netapp.com/ProductSpecs/Index[FAS2820]
-a|
-ONTAP 9.13.1
-a|
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf[ASA A150]
-a|
-ONTAP 9.13.1
-a|
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf[ASA A250]
-a|
-ONTAP 9.13.1
-a|
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf[ASA A400]
-a|
-ONTAP 9.13.1
-a|
-https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf[ASA A900]
-a|
-ONTAP 9.13.1
-a|
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf[AFF C250]
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf[AFF C400]
-* https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf[AFF C800]
-a|
-ONTAP 9.12.1P1
+* FAS70 and FAS90
+** Available beginning: ONTAP 9.15.1
+** link:https://www.netapp.com/data-storage/fas/[FAS70 and FAS90]
 
-ONTAP 9.13.1 GA and later ONTAP releases
+* AFF A1K, AFF A70, AFF A90
+** Available beginning: ONTAP 9.15.1
+** link:https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A1K]
+** link:https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A70]
+** link:https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A90]
 
-a|
-https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A150]
+* ASA C250, ASA C400, ASA C800
+** Available beginning: ONTAP 9.13.1P1
+** link:https://www.netapp.com/data-storage/all-flash-san-storage-array/[ASA C250]
+** link:https://www.netapp.com/data-storage/all-flash-san-storage-array/[ASA C400]
+** link:https://www.netapp.com/data-storage/all-flash-san-storage-array/[ASA C800]
 
+* FAS2820
+** Available beginning: ONTAP 9.13.1
+** link:https://hwu.netapp.com/ProductSpecs/Index[FAS2820]
 
-a|
-ONTAP 9.13.1 and later ONTAP releases
+* ASA A150, ASA A250, ASA A400, ASA A900
+** Available beginning: ONTAP 9.13.1
+** link:https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf[ASA A150]
+** link:https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf[ASA A250]
+** link:https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf[ASA A400]
+** link:https://www.netapp.com/pdf.html?item=/media/85736-DS-4254-NetApp-ASA.pdf[ASA A900]
 
-ONTAP 9.12.1P1
+* AFF C250, AFF C400, AFF C800
+** Available beginning: ONTAP 9.12.1P1, ONTAP 9.13.1 GA and later ONTAP releases
+** link:https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf[AFF C250]
+** link:https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf[AFF C400]
+** link:https://www.netapp.com/media/81583-da-4240-aff-c-series.pdf[AFF C800]
 
-ONTAP 9.11.1P8
+* AFF A150
+** Available beginning: ONTAP 9.13.1 and later ONTAP releases, ONTAP 9.12.1P1, ONTAP 9.11.1P8, ONTAP 9.10.1P12
+** link:https://www.netapp.com/pdf.html?item=/media/7828-DS-3582-AFF-A-Series.pdf[AFF A150]
 
-ONTAP 9.10.1P12
-a|
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[FAS9500]
-a|
-ONTAP 9.11.1
+* FAS9500
+** Available beginning: ONTAP 9.11.1, ONTAP 9.10.1P3
+** link:https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[FAS9500]
 
-ONTAP 9.10.1P3
-a|
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF A900]
-a|
-ONTAP 9.10.1
-a|
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF A250/AFF ASA A250]
-a|
-ONTAP 9.8
-a|
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[FAS500f]
-a|
-ONTAP 9.8
-a|
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF ASA A800]
-a|
-ONTAP 9.8
-a|
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[FAS8300]
-a|
-ONTAP 9.7
-a|
-https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[FAS8700]
-a|
-ONTAP 9.7
-a|
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF A400]
-a|
-ONTAP 9.7
-a|
-https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf[AFF ASA A220]
-a|
-ONTAP 9.7
-a|
-https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF ASA A700]
-a|
-ONTAP 9.7
-a|
-https://www.netapp.com/pdf.html?item=/media/7623-ds-3989.pdf[AFF C190^]
-a|
-ONTAP 9.6
-a|
-https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf[AFF A320]
-a|
-ONTAP 9.6
-|===
+* AFF A900
+** Available beginning: ONTAP 9.10.1
+** link:https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF A900]
+
+* AFF A250/AFF ASA A250
+** Available beginning: ONTAP 9.8
+** link:https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF A250/AFF ASA A250]
+
+* FAS500f
+** Available beginning: ONTAP 9.8
+** link:https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[FAS500f]
+
+* AFF ASA A800
+** Available beginning: ONTAP 9.8
+** link:https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF ASA A800]
+
+* FAS8300
+** Available beginning: ONTAP 9.7
+** link:https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[FAS8300]
+
+* FAS8700
+** Available beginning: ONTAP 9.7
+** link:https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[FAS8700]
+
+* AFF A400
+** Available beginning: ONTAP 9.7
+** link:https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF A400]
+
+* AFF ASA A220
+** Available beginning: ONTAP 9.7
+** link:https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf[AFF ASA A220]
+
+* AFF ASA A700
+** Available beginning: ONTAP 9.7
+** link:https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF ASA A700]
+
+* AFF C190
+** Available beginning: ONTAP 9.6
+** link:https://www.netapp.com/pdf.html?item=/media/7623-ds-3989.pdf[AFF C190]
+
+* AFF A320
+** Available beginning: ONTAP 9.6
+** link:https://www.netapp.com/pdf.html?item=/media/17190-na-382.pdf[AFF A320]
