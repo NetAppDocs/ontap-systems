@@ -4,17 +4,9 @@ sidebar: sidebar
 keywords: fas8300, fas8300, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys
 summary: Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check what version of ONTAP the system is running.
 ---
-= Check onboard encryption keys - AFF fas8300 and FAS8700
+= Check encryption key support and status - AFF fas8300 and FAS8700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/encryption_steps_before_shutdown.adoc[]
-
- ** If <lno-DARE> is not displayed in the command output, and the system is running ONTAP 9.6 or later, go to the next section.
-
-. If the impaired controller is part of an HA configuration, disable automatic giveback from the healthy controller: `storage failover modify -node local -auto-giveback false` or `storage failover modify -node local -auto-giveback-after-panic false`
-
-== Check NVE or NSE on systems running ONTAP 9.6 and later
-
-include::../_include/encryption_check_96_later.adoc[]
+include::../_include/encryption_check_bootmedia.adoc[]
