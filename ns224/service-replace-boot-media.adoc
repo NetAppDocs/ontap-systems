@@ -9,7 +9,7 @@ summary: When the boot media fails on an NS224 drive shelf in an HA pair that is
 :imagesdir: ../media/
 
 [.lead]
-When the boot media fails on an NS224 drive shelf in an HA pair that is running ONTAP 9.7 or later, or the shelf is running NVMe shelf module (NSM) firmware version 0111 or later, you can replace the boot media. Replacing the boot media can be done nondisruptively, while the drive shelf is powered on, and I/O is in progress.
+You can replace a failed boot media in an NS224 shelf. Replacing the boot media can be done nondisruptively, while the drive shelf is powered on, and I/O is in progress.
 
 .Before you begin
 
@@ -156,6 +156,8 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 
 --
 
+You can use the following steps to replace the failed boot media.
+
 .Steps
 
 
@@ -169,6 +171,7 @@ Power supplies do not have a power switch.
 +
 Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM module, later in this procedure.
 
+. Remove the NSM module:
 +
 image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove controller.]
 .. On both ends of the NSM module, push the vertical locking tabs outward to release the handles.
@@ -181,23 +184,26 @@ As you pull, the handles extend out from the shelf. When you feel some resistanc
 +
 Make sure that you support the bottom of the NSM module as you slide it out of the shelf.
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen it, and then open the cover.
 
 . Physically locate the failed boot media.
 
 . Remove the boot media:
++
+image::../media/drw_t_boot_media_replace_ieops-1977.svg[Remove boot media.]
 .. Press the blue locking button.
 .. Rotate the boot media up, slide it out of the socket, and set it aside.
 . Install the replacement boot media:
 .. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
 .. Rotate the boot media down toward the locking button.
-.. Push the locking button, rotate the boot media all the way down and then release the locking button.
+.. Push the locking button, rotate the boot media all the way down, and then release the locking button.
 
 . Close the NSM module cover, and then tighten the thumb screw.
-. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
+. Insert the NSM module into the shelf:
 +
 image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the controller.]
-. Insert the NSM module into the shelf.
+
+.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
 .. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
 .. Rotate the NSM module handles up and lock in place with the tabs.
 

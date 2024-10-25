@@ -180,12 +180,12 @@ The FRU label on the NSM module cover shows the location of the four DIMMs, two 
 
 . Physically identify the faulty DIMM.
 +
-When a DIMM is faulty, the system logs a warning message to the system console indicating which DIMM is faulty.
+When a DIMM is faulty, the system logs a warning message to the system console indicating which DIMM needs to be replaced.
 //05Oct2022, Racer5: removed text describing location of onboard attention LED.
 
 . Replace the faulty DIMM:
 +
-image::../media/drw_t_dimm_ieops-1978.svg[Remove controller.]
+image::../media/drw_t_dimm_ieops-1978.svg[Remove DIMMs.]
 
  .. Note the orientation of the DIMM in the slot so that you can insert the replacement DIMM using the same orientation.
  .. Eject the DIMM from its slot by slowly pushing apart the ejector tabs at both ends of the DIMM slot, and then lift the DIMM out of the slot.
@@ -203,12 +203,12 @@ When inserted correctly, the DIMM should go in easily but fit tightly in the slo
 
  .. Push down carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at both ends of the DIMM.
 . Close the NSM module cover, and then tighten the thumb screw.
-. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
 . Insert the NSM module into the shelf.
++
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace controller.]
+.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
 .. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
 .. Rotate the NSM module handles up and lock in place with the tabs.
-+
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the RTC battery]
 +
 The NSM module should be fully inserted into the shelf and flush with the edges of the shelf.
 . Reconnect the cabling to the NSM module:

@@ -91,7 +91,7 @@ Power supplies do not have a power switch.
  .. Disconnect the storage cabling (from the shelf to the controllers).
 . Physically remove the shelf from the rack or cabinet.
 +
-NOTE: A fully loaded NS224 shelf can weigh up to 66.78 lbs (30.29 kg) and requires two people to lift or use of a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
+NOTE: A fully loaded NS224 shelf can weigh up to 66.78 lbs (30.29 kg) with NSM100 modules or 56.8 lbs (25.8 kg) and requires two people to lift or use of a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
 +
 NOTE: If your system was shipped in a cabinet, you must first unscrew the two Phillips screws securing the shelf to the rear uprights. The screws are located on the inside shelf walls of the bottom NSM module. You should remove both NSM modules to access the screws.
 
@@ -103,9 +103,7 @@ Otherwise, go to the next step.
 +
 You run the command on both controller modules.
 
-. You have the option of reconfiguring the non-dedicated RoCE capable ports for networking use, by completing the following substeps.
-+
-Otherwise, you are done with this procedure.
+. You have the option of reconfiguring the non-dedicated RoCE capable ports for networking use, by completing the following substeps. Otherwise, you are done with this procedure.
 
  .. Verify the names of the non-dedicated ports, currently configured for storage use: `storage port show`
 +

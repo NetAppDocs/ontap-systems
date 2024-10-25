@@ -21,7 +21,10 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 
 .About this task
 
-* Replacing the NSM module involves moving the DIMMs, fans and power supply from the impaired NSM module to the replacement NSM module.
+* Replacing the NSM module involves moving the following:
+
+** *NSM100 modules*: DIMMs, fans and power supply from the impaired NSM module to the replacement NSM module.
+** *NSM100B modules*: Fans, I/O module, and power supply from the impaired NSM module to the replacement NSM module.
 +
 You do not move the real-time clock (RTC) battery or boot media. They come preinstalled in the replacement NSM module.
 
@@ -233,16 +236,14 @@ You can use the tab on the left and the thumbscrew to push in the I/O module.
  .. Gently push the power supply into the NSM module until the locking mechanism clicks into place.
 +
 NOTE: Do not use excessive force or you might damage the internal connector.
-
  .. Rotate the handle down, so it is out of the way of normal operations.
+
 . Insert the replacement NSM module into the shelf:
- 
-.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
 +
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the RTC battery]
-.. Insert the NSM module into the shelf.
-... Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
-... Rotate the NSM module handles up and lock in place with the tabs.
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace controller.]
+.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
+.. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
+.. Rotate the NSM module handles up and lock in place with the tabs.
 
 . Reconnect the cabling to the NSM module:
  .. Reconnect the storage cabling to the same two NSM module ports.
