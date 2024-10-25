@@ -13,7 +13,7 @@ When the boot media fails on an NS224 drive shelf in an HA pair that is running 
 
 .Before you begin
 
-* Your HA pair must already be running ONTAP 9.7 or later, which has the minimum supported version of NSM firmware, or your HA pair must already be running a version of ONTAP 9.6 with NSM firmware version 0111 or later.
+* *NS224 with NSM100 modules only*: Your HA pair must already be running ONTAP 9.7 or later, which has the minimum supported version of NSM firmware, or your HA pair must already be running a version of ONTAP 9.6 with NSM firmware version 0111 or later.
 +
 You can enter the `storage shelf show -module` command at the console of either controller to verify the version of NSM firmware on your shelf.
 +
@@ -53,11 +53,20 @@ A shelf has three location LEDs: one on the operator display panel and one on ea
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
-* You can use the following animation or the written steps to replace the boot media.
-+
+
+[role="tabbed-block"]
+====
+
+.NSM100 modules
+--
+
+You can use the following animation or the written steps to replace the boot media.
+
 video::20ed85f9-1f80-4e0e-9219-ab4600070d8a[Animation, Replace the NS224 shelf boot media]
 
 .Steps
+
+
 
 . Make sure that both NSM modules in the shelf are running the same version of firmware: version 0200 or later.
 . Properly ground yourself.
@@ -140,3 +149,79 @@ If the fault LEDs remain on, the boot media might not be seated correctly or the
 If any cabling errors are generated, follow the corrective actions provided.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
+--
+
+.NSM100B modules
+
+--
+
+.Steps
+
+
+. Properly ground yourself.
+. Disconnect the cabling from the NSM module that contains the FRU that you are replacing:
+ .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
++
+Power supplies do not have a power switch.
+
+ .. Disconnect the storage cabling from the NSM module ports.
++
+Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM module, later in this procedure.
+
++
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove controller.]
+.. On both ends of the NSM module, push the vertical locking tabs outward to release the handles.
++
+The handles come to rest horizontally to the vertical tabs.
+.. Pull the handles towards you to unseat the NSM module from the midplane of the shelf.
++
+As you pull, the handles extend out from the shelf. When you feel some resistance, keep pulling.
+.. Slide the NSM module out of the shelf and place it on a flat, stable surface. 
++
+Make sure that you support the bottom of the NSM module as you slide it out of the shelf.
+
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+
+. Physically locate the failed boot media.
+
+. Remove the boot media:
+.. Press the blue locking button.
+.. Rotate the boot media up, slide it out of the socket, and set it aside.
+. Install the replacement boot media:
+.. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
+.. Rotate the boot media down toward the locking button.
+.. Push the locking button, rotate the boot media all the way down and then release the locking button.
+
+. Close the NSM module cover, and then tighten the thumb screw.
+. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
++
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the controller.]
+. Insert the NSM module into the shelf.
+.. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
+.. Rotate the NSM module handles up and lock in place with the tabs.
+
+. Reconnect the cabling to the NSM module:
+ .. Reconnect the storage cabling to the same two NSM module ports.
++
+Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
+
+ .. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer if it is an AC power supply, or tighten the two thumb screws if it is a DC power supply.
++
+When functioning correctly, a power supply's bicolored LED illuminates green.
++
+Additionally, both NSM module port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
+. Verify that the attention (amber) LEDs on the NSM module containing the failed boot media and the shelf operator display panel are no longer illuminated.
++
+It can take between 5 to 10 minutes for the attention LEDs to turn off. This is the amount of time it takes the NSM module to reboot and the boot media image copy to complete.
++
+If the fault LEDs remain on, the boot media might not be seated correctly or there might be another issue and you should contact technical support for assistance.
+
+. Verify that the NSM module is cabled correctly, by running Active IQ Config Advisor.
++
+If any cabling errors are generated, follow the corrective actions provided.
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
+--
+====

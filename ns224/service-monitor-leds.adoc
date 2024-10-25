@@ -71,6 +71,14 @@ The LEDs on an NSM module indicate whether the module is functioning normally, w
 
 The following illustration and tables describe NSM module LEDs associated with the function of a module and the function of each NVMe port on a module.
 
+
+
+[role="tabbed-block"]
+====
+
+.NSM100 modules
+--
+
 image::../media/drw_ns224_nsm_leds_IEOPS-1270.svg[NS224 NSM100 module LEDs, width=550px]
 
 [cols="1,1,2,4" options="header"]
@@ -109,6 +117,65 @@ Amber
 a|
 NVMe port/link: attention
 |===
+
+--
+
+.NSM100B modules
+--
+
+image::../media/drw_ns224_nsmb_leds_IEOPS-2004.svg[NS224 NSM100B module LEDs, width=550px]
+
+[cols="1,1,2,4" options="header"]
+|===
+| Call out| LED icon| Color| Description
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+LNK
+a|
+Green
+a|
+NVMe port/link: status
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
+a|
+Amber
+a|
+NVMe port/link: attention
+
+a|
+image:../media/icon_round_3.png[Callout number 3] 
+a|
+image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
+a|
+Amber
+a|
+I/O module: status
+a|
+image:../media/icon_round_4.png[Callout number 4] 
+a|
+image::../media/drw_sas3_location_icon.svg[Operator display panel location LED, width=20px]
+a|
+Blue
+a|
+NSM module: Location
+
+a|
+image:../media/icon_round_5.png[Callout number 5] 
+a|
+image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
+a|
+Amber
+a|
+NSM module: Attention
+
+|===
+
+
+--
+====
 
 [cols="2,1,1,1" options="header"]
 |===

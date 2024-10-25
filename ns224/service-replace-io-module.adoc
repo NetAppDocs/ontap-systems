@@ -1,19 +1,19 @@
 ---
 permalink: ns224/service-replace-rtc-battery.html
 sidebar: sidebar
-keywords: ns224, shelves, shelf, ns224 shelves, replace, fail, real-time, clock, rtc, battery, nondisruptive, power, i/o, replace the real-time clock battery
+keywords: ns224, shelves, shelf, ns224 shelves, replace, fail,  nondisruptive, power, i/o
 summary: You can replace a failed real-time clock \(RTC\) battery nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
 ---
-= Replace the real-time clock battery - NS224 shelves
+= Replace the I/O module - NS224 shelves with NSM100B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can replace a failed real-time clock (RTC) battery nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
+You can replace a failed I/O module nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress. This procedure only applies to NS224 shelves with NSM100B modules.
 
 .Before you begin
 
-* The shelf's partner NSM module must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the NSM module with the failed FRU (target NSM module).
+* The shelf's partner NSM module must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the failed NSM module.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
@@ -21,12 +21,13 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 
 .About this task
 
+* Replacing the NSM module involves moving the DIMMs, fans and power supply from the impaired NSM module to the replacement NSM module.
++
+You do not move the real-time clock (RTC) battery or boot media. They come preinstalled in the replacement NSM module.
+
 * Allow at least 70 seconds between removal and installation of the NVMe shelf module (NSM).
 +
 This allows enough time for ONTAP to process the NSM removal event.
-
-* After you replace the RTC battery, reinstall the NSM module, and the module boots, the real-time clock time is updated by ONTAP.
-//05oct2022, Racer5/supercap: added bullet per Andris. No additional steps to set the clock since the ONTAP SES layer will sync its RTC with the shelf module/expander
 
 * *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
 +
@@ -40,60 +41,19 @@ Do not revert firmware to a version that does not support your shelf and its com
 
 
 ====
+* Shelf (NSM) firmware is automatically updated (nondisruptively) on a new NSM module that has a non-current firmware version.
++
+NSM module firmware checks occur every 10 minutes. An NSM module firmware update can take up to 30 minutes.
+
 * If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
 If you do not know the `shelf_name` of the affected shelf, run the `storage shelf show` command.
 +
 A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
 
-* When you unpack the replacement RTC battery, save all packing materials for use when you return the failed RTC battery.
+* When you unpack the replacement NSM module, save all packing materials for use when you return the failed NSM module.
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
-
-* For NSM100 modules, you can use the following animation or the written steps to replace an RTC battery.
-+
-video::df7a12f4-8554-4448-a3df-aa86002f2de8[Animation, Replace an RTC battery in an NS224 shelf"]
-
-== Remove the NSM module
-
-[role="tabbed-block"]
-====
-
-.NSM100
-
---
-
-.Steps
-
-. Properly ground yourself.
-. Disconnect the cabling from the NSM module that contains the FRU that you are replacing:
- .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
-+
-Power supplies do not have a power switch.
-
- .. Disconnect the storage cabling from the NSM module ports.
-+
-Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM module, later in this procedure.
-. Remove the NSM module from the shelf:
- .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM module.
-+
-NOTE: If you are removing the bottom NSM module, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
-
- .. With your thumbs, press down and hold the orange tabs on top of the latching mechanisms.
-+
-The latching mechanisms raise, clearing the latching pins on the shelf.
-
- .. Gently pull until the NSM module is about one third of the way out of the shelf, grasp the NSM module sides with both hands to support its weight, and then place it on a flat stable surface.
-+
-When you begin pulling, the latching mechanism arms extend from the NSM module and lock in their fully extended position.
-. Loosen the NSM module cover thumb screw and open the cover.
-+
-The FRU label on the NSM module cover shows the location of the RTC battery, near the front of the NSM module and to the right of the power supply.
---
-
-.NSM100B
-
---
 
 .Steps
 
@@ -120,118 +80,32 @@ As you pull, the handles extend out from the shelf. When you feel some resistanc
 +
 Make sure that you support the bottom of the NSM module as you slide it out of the shelf.
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
-
---
-====
-
-
-
-== Replace the RTC battery
-
-[role="tabbed-block"]
-====
-.NSM100
---
-
-.Steps
-
-. Physically identify the failed RTC battery.
-//05Oct2022, Racer5: removed text describing location of onboard attention LED.
-
-. Replace the RTC battery:
- .. Remove the battery by gently pushing it away from the holder until it is at an inclined angle (tilted away from the holder), and then lift it out of the holder.
- .. Insert the replacement battery into the holder at an inclined angle (tilted away from the holder), push it into an upright position, and then press it firmly into the connector until it is fully seated.
+. Remove the failed I/O module from the controller:
 +
-NOTE: The positive side of the battery, marked with a plus sign, is oriented outward (away from the holder), corresponding to the plus sign marked on the NSM module board.
+
+image::../media/drw_t_io_module_replace_ieops-1980.svg[Replace the I/O module.]
+
+.. Turn the I/O module thumbscrew counterclockwise to loosen.
+.. Pull the I/O module out of the controller using the port label tab on the left and the thumbscrew.
 
 
---
+. Install the replacement I/O module into the target slot:
 
-.NSM100B
---
+.. Align the I/O module with the edges of the slot.
 
-.Steps
-
-. Open the controller air duct on the top of the controller.
-.. Insert your fingers in the recesses at the far ends of the air duct.
-.. Lift the air duct and rotate it upward as far as it will go.
-. Locate the RTC battery under the air duct and remove it.
+.. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
 +
-image::../media/drw_t_rtc_battery_replace_ieops-1981.svg[Replace the RTC battery]
-
-
-. Gently push the battery away from the holder, rotate it away from the holder, and then lift it out of the holder.
-. Remove the replacement battery from the antistatic shipping bag.
-. Note the polarity of the RTC battery, and then insert it into the holder by tilting the battery at an angle and pushing down.
+You can use the tab on the left and the thumbscrew to push in the I/O Module.
 +
-NOTE: You must ensure that the plus sign on the battery corresponds to the plus sign on the motherboard.
-. Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
+.. Turn the thumbscrew clockwise to tighten.
 
---
-====
 
-== Reinsert the NSM module
-
-[role="tabbed-block"]
-====
-
-.NSM100
---
-
-.Steps
-
-. Close the NSM module cover, and then tighten the thumb screw.
-. Make sure that the latching mechanism arms are locked in the fully extended position.
-. Using both hands, gently slide the NSM module into the shelf until the weight of the NSM module is fully supported by the shelf.
-. Push the NSM module into the shelf until it stops (about half an inch from the back of the shelf).
-+
-You can place your thumbs on the orange tabs on the front of each finger loop (of the latching mechanism arms) to push in the NSM module.
-
-. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM module.
-+
-NOTE: If you are inserting the bottom NSM module, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
-
-. With your thumbs, press down and hold the orange tabs on top of the latching mechanisms.
-. Gently push forward to get the latches over the stop.
-. Release your thumbs from the tops of the latching mechanisms, and then continue pushing until the latching mechanisms snap into place.
-+
-The NSM module should be fully inserted into the shelf and flush with the edges of the shelf.
-. Reconnect the cabling to the NSM module:
-.. Reconnect the storage cabling to the same two NSM module ports.
-+
-Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
-
-.. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer if it is an AC power supply, or tighten the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
-+
-When functioning correctly, a power supply's bicolored LED illuminates green.
-+
-Additionally, both NSM module port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
-. Verify that the attention (amber) LEDs on the NSM module containing the failed RTC battery and the shelf operator display panel are no longer illuminated
-+
-The NSM module attention LEDs turn off after the NSM module reboots and no longer detects an RTC battery issue. This can take three to five minutes.
-
-. Verify that the NSM module is cabled correctly, by running Active IQ Config Advisor.
-+
-If any cabling errors are generated, follow the corrective actions provided.
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
-
---
-
-.NSM100B
-
---
-
-.Steps
-
-. Close the NSM module cover and turn the thumbscrew clockwise until tightened.
 . If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
 . Insert the NSM module into the shelf.
 .. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
 .. Rotate the NSM module handles up and lock in place with the tabs.
 +
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the RTC battery]
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace controller.]
 
 . Recable the NSM module.
 .. Reconnect the storage cabling to the same two NSM module ports.
@@ -254,6 +128,3 @@ If any cabling errors are generated, follow the corrective actions provided.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
-
---
-====

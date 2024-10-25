@@ -47,16 +47,17 @@ A shelf has three location LEDs: one on the operator display panel and one on ea
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
-* You can use the following animation to assist in replacing a fan in an NS224 with NSM100 modules.
-+
-video::29635ff8-ae86-4a48-ab2a-aa86002f3b66[Animation, Replace a fan in an NS224 shelf"]
+
 
 
 [role="tabbed-block"]
 ====
 
-.NSM100
+.NSM100 modules
 --
+You can use the following animation to assist in replacing a fan in an NS224 with NSM100 modules.
+
+video::29635ff8-ae86-4a48-ab2a-aa86002f3b66[Animation, Replace a fan in an NS224 shelf"]
 
 .Steps
 
@@ -131,7 +132,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 
 --
 
-.NSM100B
+.NSM100B modules
 --
 
 .Steps
@@ -174,11 +175,11 @@ image::../media/drw_t_fan_replace_ieops-1979.svg[Remove failed fan.]
  .. Insert the replacement fan by aligning it within the guides, and then push down until the fan connector is fully seated in the socket.
 . Close the NSM module cover, and then tighten the thumb screw.
 . If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
++
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the controller.]
 . Insert the NSM module into the shelf.
 .. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
 .. Rotate the NSM module handles up and lock in place with the tabs.
-+
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the RTC battery]
 
 . Reconnect the cabling to the NSM module:
  .. Reconnect the storage cabling to the same two NSM module ports.
