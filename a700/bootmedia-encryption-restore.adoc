@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a700, fas9000, post, boot, media, replacement, steps, okm, nse, nve
 summary: "Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager (OKM), NetApp Storage Encryption (NSE) or NetApp Volume Encryption (NVE) enabled."
 ---
-= Restore OKM, NSE, and NVE as needed - AFF A700 and FAS9000
+= Restore encryption - AFF A700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Restore encryption on the replacement boot media.
 
 include::../_include/encryption_restore_bootmedia.adoc[]
