@@ -61,7 +61,7 @@ Perform the following steps to replace the FlashCache module carrier.
 . If you are not already grounded, properly ground yourself.
 . Locate the failed FlashCache module carrier, in slot 6, by the lit amber Attention LED on the front of the FlashCache module carrier.
 +
-image::../media/drw_fas70-90_remove_caching_module_carrier_ieops-1772.svg[Remove the FlashCache module carrier]
+// Add image of cashing module image::../media/drw_fas70-90_remove_caching_module_carrier_ieops-1772.svg[Remove the FlashCache module carrier]
 
 
 +
@@ -161,7 +161,7 @@ NOTE: See the https://docs.netapp.com/us-en/ontap-cli-9121/[Command man pages^] 
 
 +
 
-image::../media/drw_fas70-90_caching_module_remove_ieops-1773.svg[Remove the caching module]
+// Add image of caching module  image::../media/drw_fas70-90_caching_module_remove_ieops-1773.svg[Remove the caching module]
 
 +
 [cols="1,4"]
