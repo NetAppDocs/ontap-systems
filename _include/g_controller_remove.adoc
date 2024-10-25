@@ -46,22 +46,22 @@ The general behavior of the NV status LED on the impaired controller is as follo
 +
 NOTE: PSUs do not have a power switch.
 +
-.If you are moving an AC PSU
-[%collapsible]
+[options="header" cols="1,2"]
 
-====
+|===
+| If you are disconnecting a...| Then...
+a|
+AC PSU
+a|
 . Open the power cord retainer.
 . Unplug the power cord from the PSU and set it aside.
-====
-+
-.If you are moving an DC PSU
-[%collapsible]
-
-====
+a|
+DC PSU
+a|
 . Unscrew the two thumb screws on the D-SUB DC power cord connector.
-+
 . Unplug the power cord from the PSU and set it aside.
-====
+
+|===
 
 +
 . Unplug all cables from the impaired controller.
