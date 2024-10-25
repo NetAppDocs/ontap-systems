@@ -1,0 +1,17 @@
+---
+permalink: c80/drive-replace.html
+sidebar: sidebar
+keywords: c80, replace the drives
+summary: You must replace a drive when the storage system logs a warning message to the system console indicating that a drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
+
+---
+= Replace SSD Drive - AFF C80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/drive_hotswap_ssd_intro.adoc[]
+
+
+include::../_include/drive_hotswap_ssd_asa_r2.adoc[]
+

@@ -2,8 +2,10 @@
 Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup.
 
 .About this task
-* A valid shelf ID is 01 through 99. For external shelves, you should number your first external shelf as 01 and your second external shelf as 02.
-* Internal shelves are hard-coded to shelf ID 00.
+* A valid shelf ID is 01 through 99. 
++
+If you have internal shelves (storage), which are integrated within the controllers, they are assigned a fixed shelf ID of 00.
+
 * You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
 
 .Steps
@@ -86,17 +88,17 @@ A power supply is powered on as soon as the power cord is plugged in. Its bicolo
 
 
 == Step 2: Power on the controllers
-After you've turned on your shelves and assigned them unique IDs, turn on the power to the storage controllers.
+After you've powered on your shelves and assigned them unique IDs, power on the storage controllers.
 
 .Steps
 
-. Connect your laptop to the serial console port. This will allow you to monitor the boot sequence when the controllers are turned on.
+. Connect your laptop to the serial console port. This will allow you to monitor the boot sequence when the controllers are powered on.
 
 .. Set the serial console port on the laptop to 115,200 baud with N-8-1.
 +
 NOTE: See your laptop's online help for instructions on how to configure the serial console port.
 
-.. Connect the console cable to the laptop, and connect the serial console port on the controller using the console cable that came with your storage system.
+.. Using the console cable provided with your storage system, connect one end of the console cable to your laptop and the other end to the serial console port on controller A.
  
 .. Connect the laptop to the switch on the management subnet.
 +
