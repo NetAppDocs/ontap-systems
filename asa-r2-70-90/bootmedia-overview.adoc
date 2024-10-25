@@ -10,6 +10,6 @@ summary: Learn about the manual method for replacing the boot media.
 
 [.lead]
 
-You can replace a failed boot media manually by using USB module for the boot image.
+You can replace a failed boot media manually by using a USB module for the boot image.
 
 Manual boot media replace uses the traditional method of downloading the ONTAP image from the NetApp support site, transferring the image to a USB drive, downloading it to the target replacement boot media, and manually walking through the boot menu options to install the ONTAP image on the replacement boot media. 
