@@ -22,7 +22,7 @@ entries:
       entries:
       - title: Overview
         url: /fas8300/bootmedia-replace-overview.html
-      - title: Check onboard encryption keys
+      - title: Check encryption keys
         url: /fas8300/bootmedia-encryption-preshutdown-checks.html
       - title: Shut down impaired controller
         url: /fas8300/bootmedia-shutdown.html
@@ -32,7 +32,7 @@ entries:
         url: /fas8300/bootmedia-recovery-image-boot-options.html
       - title: Switch back MetroCluster config
         url: /fas8300/bootmedia-2n-mcc-switchback.html
-      - title: Restore OKM, NSE, and NVE
+      - title: Restore encryption
         url: /fas8300/bootmedia-encryption-restore.html
       - title: Return failed part to NetApp
         url: /fas8300/bootmedia-complete-rma.html

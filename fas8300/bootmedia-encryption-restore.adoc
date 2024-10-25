@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: fas8300, fas8300, environment, variable, complete, system, onboard, key, manager, okm, storage, volume, netapp, encryption, post, boot, media, replacement, post boot media replacement stpes for okm nse and nve
 summary: 'Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager \(OKM\), NetApp Storage Encryption \(NSE\) or NetApp Volume Encryption \(NVE\) enabled.'
 ---
-= Restore OKM, NSE, and NVE as needed - AFF fas8300 and FAS8700
+= Restore encryption - AFF fas8300 and FAS8700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/encryption_restore_96_later.adoc[]
+Restore encryption on the replacement boot media.
+
+include::../_include/encryption_restore_bootmedia.adoc[]

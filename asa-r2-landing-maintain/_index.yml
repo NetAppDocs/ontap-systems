@@ -6,7 +6,9 @@ indexpage:
   tiles:
     - title: ASA A1K
       links:
-        - title: Boot media
+        - title: Boot media - automated recovery
+          url: ../asa-r2-a1k/bootmedia-overview-bmr.html
+        - title: Boot media - manual recovery
           url: ../asa-r2-a1k/bootmedia-overview.html
         - title: Controller
           url: ../asa-r2-a1k/controller-replace-workflow.html
@@ -28,7 +30,9 @@ indexpage:
           url: ../asa-r2-a1k/system-management-replace.html
     - title: ASA A70 and ASA A90
       links:
-        - title: Boot media
+        - title: Boot media - automated recovery
+          url: ../asa-r2-70-90/bootmedia-overview-bmr.html
+        - title: Boot media - manual recovery
           url: ../asa-r2-70-90/bootmedia-overview.html
         - title: Chassis
           url: ../asa-r2-70-90/chassis-replace-workflow.html
