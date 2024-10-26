@@ -9,7 +9,7 @@ summary: You can restore image on the boot media from the partner controller thr
 :imagesdir: ../media/
 
 [.lead]
-You can restore the ONTAP image (boot media recovery) from the partner node using the `boot_recovery -partner` with ASA r2 systems running ONTAP 9.16.0 and later.
+You can restore the ONTAP image (boot media recovery) from the partner node using the `boot_recovery -partner` with ASA r2 systems running ONTAP 9.16.1 and later.
 
 .Before you begin
 
