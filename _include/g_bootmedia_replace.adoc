@@ -7,53 +7,31 @@ A storage system has three location LEDs: one on the operator display panel and 
 
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
-== Step 1: Shut down the impaired controller
- 
-Shut down or take over the impaired controller.
-
-// Shut down or take over the impaired controller using one of the following options.
- 
-// [role="tabbed-block"]
-// ====
- 
-// .Option 1: Most systems
-// --
-include::../_include/shutdown_most_frus.adoc[]
-// --
-// .Option 2: Controller is in a MetroCluster
-// --
-// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
-// --
- 
-// ====
-
-== Step 2: Remove the controller
+== Step 1: Remove the controller
 
 include::../_include/g_controller_remove.adoc[]
+
+. Place the controller on an anti-static mat.
 
 . Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
 
-== Step 3: Replace the boot media
+== Step 2: Replace the boot media
 
 To replace the boot media, locate it inside the controller and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself. 
 
-. Place the controller on an anti-static mat, so that the boot media is accessible.?????
-
-. Locate the boot media.
-
 . Remove the boot media:
 +
 image::../media/drw_g_boot_media_replace_ieops-1872.svg[Boot media replace graphic]
-
++
 [cols="1,4"]
 |===
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-Boot media
+Boot media location
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
@@ -67,13 +45,13 @@ image::../media/icon_round_4.png[Callout number 4]
 a|
 Gently pull the left end of the boot media out of its socket.
 |===
-
++
 . Install the replacement boot media:
 .. Remove the boot media from its package.
-.. Slide the socket (left) end of the boot media into its socket.
-.. At the opposite (right) end of the boot media, press down and hold the blue tab (in the open position), gently push down on that end of the boot media so it touches the motherboard, and then release the tab to lock the boot media into place.
+.. Slide the socket end of the boot media into its socket.
+.. At the opposite end of the boot media, press down and hold the blue tab (in the open position), gently push down on that end of the boot media until it touches the motherboard, and then release the tab to lock the boot media into place.
 
-== Step 4: Reinstall the controller module
+== Step 3: Reinstall the controller
 
 Reinstall the controller into the chassis and reboot it.
 
@@ -81,7 +59,7 @@ include::../_include/g_controller_reinstall.adoc[]
 
 
 
-== Step 5: Transfer the boot image to the boot media
+== Step 4: Transfer the boot image to the boot media
 
 The replacement boot media that you installed is without an ONTAP image so you need to transfer an ONTAP image using a USB flash drive.
 
