@@ -1,10 +1,51 @@
 To replace the boot media, you must remove the impaired controller, remove the boot media, install the replacement boot media, and transfer the boot image to a USB flash drive.
 
-== Step 1: Replace the boot media
+.About this task
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 
-To replace the boot media, locate it inside the controller and follow the specific sequence of steps. BLAH!
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
+== Step 1: Shut down the impaired controller
+ 
+Shut down or take over the impaired controller.
+
+// Shut down or take over the impaired controller using one of the following options.
+ 
+// [role="tabbed-block"]
+// ====
+ 
+// .Option 1: Most systems
+// --
+include::../_include/shutdown_most_frus.adoc[]
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+// --
+ 
+// ====
+
+== Step 2: Remove the controller
+
+include::../_include/g_controller_remove.adoc[]
+
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
 
+== Step 3: Replace the boot media
+
+To replace the boot media, locate it inside the controller and follow the specific sequence of steps.
+
+. If you are not already grounded, properly ground yourself. 
+
+. Place the controller on an anti-static mat, so that the boot media is accessible.?????
+
+. Locate the boot media.
+
+. Remove the boot media:
++
 image::../media/drw_g_boot_media_replace_ieops-1872.svg[Boot media replace graphic]
 
 [cols="1,4"]
@@ -12,42 +53,35 @@ image::../media/drw_g_boot_media_replace_ieops-1872.svg[Boot media replace graph
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-System Management module cam latch
+Boot media
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-Boot media locking button
+Press down on the blue tab to release the right end of the boot media.
 a|
 image::../media/icon_round_3.png[Callout number 3]
 a|
-Boot media
+Lift the right end of the boot media up at a slight angle to get a good grip along the sides of the boot media.
+a|
+image::../media/icon_round_4.png[Callout number 4]
+a|
+Gently pull the left end of the boot media out of its socket.
 |===
 
-. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
-+
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[width=400px]
-+
-. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
-
-. Disconnect power to the controller by pulling the controller out of the chassis about three inches:
-.. Press down on both of the controller locking latches, and then rotate both latches downward at the same time.
-.. Pull out the controller about 3 inches from the chassis to disengage power.
-
-.. Remove any cables connected to the controller. Make sure to label where the cables were connected, so that you can connect them to the correct ports when you reinstall the controller.
-.. Place the controller on an anti-static mat, so that the boot media is accessible?
-. Remove the boot media:
-.. Press the blue locking button.
-.. Rotate the boot media up,  slide it out of the socket, and set it aside.
 . Install the replacement boot media:
-.. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
-.. Rotate the boot media down toward the locking button. 
-.. Push the locking button, rotate the boot media all the way down and then release the locking button.
-. Reinstall the controller: 
-.. Rotate the cable management tray up to the closed position.
-.. Recable the controller.
+.. Remove the boot media from its package.
+.. Slide the socket (left) end of the boot media into its socket.
+.. At the opposite (right) end of the boot media, press down and hold the blue tab (in the open position), gently push down on that end of the boot media so it touches the motherboard, and then release the tab to lock the boot media into place.
+
+== Step 4: Reinstall the controller module
+
+Reinstall the controller into the chassis and reboot it.
+
+include::../_include/g_controller_reinstall.adoc[]
 
 
-== Step 2: Transfer the boot image to the boot media
+
+== Step 5: Transfer the boot image to the boot media
 
 The replacement boot media that you installed is without an ONTAP image so you need to transfer an ONTAP image using a USB flash drive.
 
@@ -76,7 +110,7 @@ The USB flash drive should have the appropriate ONTAP image of what the impaired
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
-. Reconnect power to the controller:
+. Reconnect power to the controller: !!!!!!!
 .. Firmly push the controller into the chassis until it meets the midplane and is fully seated.
 +
 The locking latches rise when the controller is fully seated?
