@@ -53,10 +53,46 @@ Gently pull the left end of the boot media out of its socket.
 
 == Step 3: Reinstall the controller
 
-Reinstall the controller into the chassis and reboot it.
+Reinstall the controller into the chassis, but do not reboot it.
 
-include::../_include/g_controller_reinstall.adoc[]
+.About this task
 
+The following illustration shows the operation of the controller handles (from the left side of a controller) when reinstalling the controller, and can be used as a reference for the rest of the controller reinstallation steps.
+
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[controller handle operation to install a controller]
+
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+If you rotated the controller handles upright (next to the tabs) to move them out of the way while you serviced the controller, rotate them down to the horizontal position. 
+a|
+image::../media/icon_round_2.png[Callout number 2] 
+a|
+Push the handles to reinsert the controller into the chassis halfway and then, when instructed, push until the controller is fully seated.
+a|
+image::../media/icon_round_3.png[Callout number 3] 
+a|
+Rotate the handles to the upright position and lock in place with the locking tabs.
+
+|===
+
+.Steps
+
+. Close the controller cover and turn the thumbscrew clockwise until tightened.
+
+. Insert the controller halfway into the chassis.
++
+Align the rear of the controller with the opening in the chassis, and then gently push the controller using the handles.
++
+NOTE: Do not completely insert the controller in the chassis until instructed to do so later in the boot media replacement workflow.
++
+
+. Recable the controller, as needed; however, do not plug in the power cord to the PSU at this time.
++
+NOTE: Make sure that the console cable is connected to the controller because you want to catch and log the boot sequence later in the boot media replacement procedure when you fully seat the controller in the chassis and it begins to boot.
 
 
 == Step 4: Transfer the boot image to the boot media
@@ -78,9 +114,8 @@ The replacement boot media that you installed is without an ONTAP image so you n
 +
 
 NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
-
 +
- 
+
 The USB flash drive should have the appropriate ONTAP image of what the impaired controller is running.
 
 .. Remove the USB flash drive from your laptop.
@@ -88,28 +123,50 @@ The USB flash drive should have the appropriate ONTAP image of what the impaired
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
-. Reconnect power to the controller: !!!!!!!
-.. Firmly push the controller into the chassis until it meets the midplane and is fully seated.
+. Fully seat the impaired controller in the chassis:
+.. Firmly push on the handles until the controller meets the midplane and is fully seated.
 +
-The locking latches rise when the controller is fully seated?
+NOTE: Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
 +
-.. Rotate the locking latches upward into the locked position.
+NOTE: The controller boots when fully seated in the chassis. It gets its power from the partner controller.
 +
-The controller begins to boot as soon as power is reconnected.
+.. Rotate the controller handles up and lock in place with the tabs.
 
- . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
+. Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
 
 . Set your network connection type at the LOADER prompt:
- ** If you are configuring DHCP: `ifconfig e0M -auto`
+** If you are configuring DHCP: `ifconfig e0M -auto`
 +
 NOTE: The target port you configure is the target port you use to communicate with the impaired controller from the healthy controller during var file system restore with a network connection. You can also use the e0M port in this command.
 
- ** If you are configuring manual connections: `ifconfig e0M -addr=filer_addr -mask=netmask -gw=gateway`
-  *** filer_addr is the IP address of the storage system.
-  *** netmask is the network mask of the management network that is connected to the HA partner.
-  *** gateway is the gateway for the network.
+** If you are configuring manual connections: `ifconfig e0M -addr=filer_addr -mask=netmask -gw=gateway`
+*** filer_addr is the IP address of the storage system.
+*** netmask is the network mask of the management network that is connected to the HA partner.
+*** gateway is the gateway for the network.
   
 +
 NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
+
++
+. Reconnect the power cord to the PSU on the impaired controller.
++
+Once power is restored to the PSU, the status LED should be green.
++
+[options="header" cols="1,2"]
+
+|===
+| If you are reconnecting a...| Then...
+a|
+AC PSU
+a|
+. Plug the power cord into the PSU.
+. Secure the power cord with the power cord retainer.
+a|
+DC PSU
+a|
+. Plug the D-SUB DC power cord connector into the PSU.
+. Tighten the two thumb screws to secure the D-SUB DC power cord connector to the PSU.
+
+|===
