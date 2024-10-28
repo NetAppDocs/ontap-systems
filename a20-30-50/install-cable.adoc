@@ -38,7 +38,7 @@ Cable the controllers to your ONTAP cluster. This procedure differs depending on
 --
 Cable the controllers to each other to create the ONTAP cluster connections.
 
-.AFF A50 or A30 with two 2-port 100GbE I/O modules
+.AFF A30 or A50 with two 2-port 100GbE I/O modules
 [%collapsible]
 
 
@@ -50,7 +50,7 @@ Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 ar
 
 =====
 
-.AFF A50 or A30 with one 2-port 100GbE I/O module
+.AFF A30 or A50 with one 2-port 100GbE I/O module
 [%collapsible]
 
 
@@ -95,7 +95,7 @@ image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 --
 Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
 
-.AFF A50 or A30 with two 2-port 100GbE I/O modules
+.AFF A30 or A50 with two 2-port 100GbE I/O modules
 [%collapsible]
 
 
@@ -107,7 +107,7 @@ Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 ar
 
 =====
 
-.AFF A50 or A30 with one 2-port 100GbE I/O module
+.AFF A30 or A50 with one 2-port 100GbE I/O module
 [%collapsible]
 
 
