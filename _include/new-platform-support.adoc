@@ -6,31 +6,31 @@
 
 .AFF systems
 --
-AFF A-Series and C-Series models are a robust scale-out platform built for virtualized environments and can be deployed as an independent system or a high-performance tier in a NetApp ONTAP configuration. link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about the AFF systems].
+AFF A-Series and C-Series models are a robust scale-out platform built for virtualized environments and can be deployed as an independent system or a high-performance tier in a NetApp ONTAP configuration. link:https:://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about the AFF systems].
 
 .AFF A20, AFF A30, AFF A50
-* Available beginning: ONTAP 9.16.1
+Available beginning with ONTAP 9.16.1
 
 .AFF C30, AFF C60
-* Available beginning: ONTAP 9.16.1
+Available beginning with ONTAP 9.16.1
 
 .AFF A1K, AFF A70, and AFF A90
-* Available beginning: ONTAP 9.15.1
+Available beginning with ONTAP 9.15.1
 
 .AFF A150
-* Available beginning: ONTAP 9.13.1, ONTAP 9.12.1P1, ONTAP 9.11.1P8, ONTAP 9.10.1P12
+Available beginning with ONTAP 9.13.1, ONTAP 9.12.1P1, ONTAP 9.11.1P8, ONTAP 9.10.1P12
 
 .AFF A900
-* Available beginning: ONTAP 9.10.1
+Available beginning with ONTAP 9.10.1
 
 .AFF A250 and AFF A800
-* Available beginning: ONTAP 9.8
+Available beginning with ONTAP 9.8
 
 .AFF A400
-* Available beginning: ONTAP 9.7
+Available beginning with ONTAP 9.7
 
 .AFF C250, AFF C400, AFF C800
-* Available beginning: ONTAP 9.12.1P1, ONTAP 9.13.1 GA
+Available beginning with ONTAP 9.12.1P1, ONTAP 9.13.1 GA
 
 
 --
@@ -38,68 +38,46 @@ AFF A-Series and C-Series models are a robust scale-out platform built for virtu
 
 .ASA r2 systems
 --
-ASA r2 systems deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers. link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about the ASA r2 systems].
+ASA r2 systems deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers. link:https:://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about the ASA r2 systems].
 
 .ASA A1K, ASA A70, ASA A90
-* Available beginning: ONTAP 9.16.0
+Available beginning with ONTAP 9.16.0
 
 
 --
 
 .ASA systems
 --
-ASA A-Series and C-Series models deliver a simplified and dedicated SAN experience that provides continuous data availability for enterprise mission critical databases and other SAN workloads using FCP or iSCSI protocol. link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about the ASA systems].
+ASA A-Series and C-Series models deliver a simplified and dedicated SAN experience that provides continuous data availability for enterprise mission critical databases and other SAN workloads using FCP or iSCSI protocol. link:https:://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about the ASA systems].
 
 .ASA A150, ASA A250, ASA A400, ASA A900
-* Available beginning: ONTAP 9.13.1
+Available beginning with ONTAP 9.13.1
 
 .ASA C250, C400, C800
-* Available beginning: ONTAP 9.13.1P1
+Available beginning with ONTAP 9.13.1P1
 
 
 --
 
 .FAS systems
 --
-FAS systems deliver efficient and secure secondary storage - the ultimate solution for tiering, backup, and disaster recovery. link:https://www.netapp.com/data-storage/fas/[Learn more about FAS systems].
+FAS systems deliver efficient and secure secondary storage - the ultimate solution for tiering, backup, and disaster recovery. link:https:://www.netapp.com/data-storage/fas/[Learn more about FAS systems].
 
 .FAS70 and FAS90
-* Available beginning: ONTAP 9.15.1
+Available beginning with ONTAP 9.15.1
 
 .FAS9500
-* Available beginning: ONTAP 9.11.1, ONTAP 9.10.1P3
+Available beginning with ONTAP 9.11.1, ONTAP 9.10.1P3
 
 .FAS8300 and FAS700
-* Available beginning: ONTAP 9.7
+Available beginning with ONTAP 9.7
 
 .FAS2820
-* Available beginning: ONTAP 9.13.1
+Available beginning with ONTAP 9.13.1
 
 .FAS2700
-* Available beginning: ONTAP 9.13.1
+Available beginning with ONTAP 9.13.1
 
---
-
-.EOA systems
---
-link:https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[Get the datasheet for FAS systems].
-
-.AFF A700
-* Available beginning: ONTAP 9.7
-
-
-.AFF A220
-* Available beginning: ONTAP 9.7
-
-.AFF A320
-* Available beginning: ONTAP 9.6
-
-
-.AFF C190
-* Available beginning: ONTAP 9.6
-
-.FAS500f
-* Available beginning: ONTAP 9.8
 --
 ====
 
