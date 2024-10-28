@@ -6,24 +6,26 @@
 
 .AFF systems
 --
+AFF A-Series and C-Series models are a robust scale-out platform built for virtualized environments and can be deployed as an independent system or a high-performance tier in a NetApp ONTAP configuration. link:https:://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about the AFF systems].
+
 [horizontal]
 AFF A20, A30, A50:: 
 Available beginning with ONTAP 9.16.1
 
-AFF C30, C60:: Available beginning: ONTAP 9.16.1
+AFF C30, C60:: Available beginning with ONTAP 9.16.1
 
-AFF A1K, A70, A90:: Available beginning: ONTAP 9.15.1
+AFF A1K, A70, A90:: Available beginning with ONTAP 9.15.1
 
-AFF A150:: Available beginning: ONTAP 9.13.1 and later ONTAP releases, ONTAP 9.12.1P1, ONTAP 9.11.1P8, ONTAP 9.10.1P12
+AFF A150:: Available beginning with ONTAP 9.13.1 
 
 AFF C250, C400, C800:: 
-Available beginning with ONTAP 9.12.1P1, ONTAP 9.13.1 GA and later ONTAP releases
+Available beginning with ONTAP 9.12.1P1
 
 AFF A900:: Available beginning with ONTAP 9.10.1
 
 AFF A250:: Available beginning with ONTAP 9.8
 
-AFF A800:: Available beginning: ONTAP 9.8
+AFF A800:: Available beginning with ONTAP 9.8
 
 AFF A400:: Available beginning with ONTAP 9.7
 
@@ -32,10 +34,10 @@ AFF A400:: Available beginning with ONTAP 9.7
 
 .ASA r2 systems
 --
-link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Get the datasheet for ASA r2 systems].
+ASA r2 systems deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers. link:https:://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about the ASA r2 systems].
 
-.ASA A1K, ASA A70, ASA A90
-* Available beginning: ONTAP 9.16.0
+[horizontal]
+ASA A1K, ASA A70, ASA A90:: Available beginning with ONTAP 9.16.0
 
 
 --
@@ -44,55 +46,33 @@ link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Get the dat
 --
 link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Get the datasheet for ASA systems].
 
-.ASA C250, C400, C800
-* Available beginning: ONTAP 9.13.1P1
+[horizontal]
+.ASA C250, C400, C800::
+Available beginning with ONTAP 9.13.1P1
 
-.ASA A150, ASA A250, ASA A400, ASA A900
-* Available beginning: ONTAP 9.13.1
+.ASA A150, ASA A250, ASA A400, ASA A900::
+Available beginning with ONTAP 9.13.1
 --
 
 .FAS systems
 --
-link:https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[Get the datasheet for FAS systems].
 
-.FAS70 and FAS90
-* Available beginning: ONTAP 9.15.1
+[horizontal]
 
-.FAS2820
-* Available beginning: ONTAP 9.13.1
+FAS70 and FAS90::
+Available beginning with ONTAP 9.15.1
 
-.FAS9500
-* Available beginning: ONTAP 9.11.1, ONTAP 9.10.1P3
+FAS2820::
+Available beginning with ONTAP 9.13.1
 
-.FAS500f
-* Available beginning: ONTAP 9.8
+FAS9500::
+Available beginning with ONTAP 9.11.1, ONTAP 9.10.1P3
 
-.FAS8300
-* Available beginning: ONTAP 9.7
+FAS8300::
+Available beginning with ONTAP 9.7
 
-.FAS8700
-* Available beginning: ONTAP 9.7
-
---
-
-.EOA systems
---
-link:https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf[Get the datasheet for FAS systems].
-
-.AFF A700
-* Available beginning: ONTAP 9.7
-
-
-.AFF A220
-* Available beginning: ONTAP 9.7
-
-.AFF A320
-* Available beginning: ONTAP 9.6
-
-
-.AFF C190
-* Available beginning: ONTAP 9.6
-
+FAS8700::
+Available beginning with ONTAP 9.7
 
 --
 ====
