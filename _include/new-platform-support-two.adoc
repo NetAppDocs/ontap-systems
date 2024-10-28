@@ -6,44 +6,31 @@
 
 .AFF systems
 --
-link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Get the datasheet for AFF systems].
+[horizontal]
+AFF A20, A30, A50:: Available beginning with ONTAP 9.16.1
 
-.AFF A20, AFF A30, AFF A50
-* Available beginning: ONTAP 9.16.1
+AFF C30, C60:: Available beginning: ONTAP 9.16.1
 
-.AFF C30, AFF C60
-* Available beginning: ONTAP 9.16.1
+AFF A1K, A70, A90:: Available beginning: ONTAP 9.15.1
 
-.AFF A1K, AFF A70, and AFF A90
-* Available beginning: ONTAP 9.15.1
+AFF A150:: Available beginning: ONTAP 9.13.1 and later ONTAP releases, ONTAP 9.12.1P1, ONTAP 9.11.1P8, ONTAP 9.10.1P12
 
-.AFF A150
-* Available beginning: ONTAP 9.13.1 and later ONTAP releases, ONTAP 9.12.1P1, ONTAP 9.11.1P8, ONTAP 9.10.1P12
+AFF C250, AFF C400, AFF C800:: Available beginning with ONTAP 9.12.1P1, ONTAP 9.13.1 GA and later ONTAP releases
 
-.AFF C250, AFF C400, AFF C800
-* Available beginning: ONTAP 9.12.1P1, ONTAP 9.13.1 GA and later ONTAP releases
+AFF A900:: Available beginning with ONTAP 9.10.1
 
-.AFF A900
-* Available beginning: ONTAP 9.10.1
+AFF A250:: Available beginning with ONTAP 9.8
 
-.AFF A250
-* Available beginning: ONTAP 9.8
+AFF A800:: Available beginning: ONTAP 9.8
 
-
-.AFF A800
-* Available beginning: ONTAP 9.8
-
-
-.AFF A400
-* Available beginning: ONTAP 9.7
-
+AFF A400:: Available beginning with ONTAP 9.7
 
 --
 
 
 .ASA r2 systems
 --
-link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Get the datasheet for ASA systems].
+link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Get the datasheet for ASA r2 systems].
 
 .ASA A1K, ASA A70, ASA A90
 * Available beginning: ONTAP 9.16.0
