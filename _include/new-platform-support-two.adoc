@@ -73,6 +73,21 @@ ONTAP 9.13.1::
 * ASA A900 
 --
 
+.ASA AFF systems
+--
+ASA AFF  models deliver a simplified and dedicated SAN experience that provides continuous data availability for enterprise mission critical databases and other SAN workloads using FCP or iSCSI protocol. link:https:://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about the ASA systems].
+
+[horizontal]
+
+ONTAP 9.8::
+* ASA AFF A250
+* ASA AFF A800
+
+ONTAP 9.7::
+* ASA AFF A400
+
+--
+
 .FAS systems
 --
 FAS systems deliver efficient and secure secondary storage - the ultimate solution for tiering, backup, and disaster recovery. link:https:://www.netapp.com/data-storage/fas/[Learn more about FAS systems].
@@ -85,11 +100,15 @@ ONTAP 9.15.1::
 
 ONTAP 9.13.1:: 
 * FAS2820
-* FAS2700
 
-ONTAP 9.11.1:: FAS9500
+ONTAP 9.11.1:: 
+* FAS9500
+
+ONTAP 9.10.1P3:: 
+* FAS9500
 
 ONTAP 9.7::
+* FAS2750
 * FAS8300
 * FAS8700
 
