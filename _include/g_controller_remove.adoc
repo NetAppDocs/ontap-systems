@@ -5,13 +5,14 @@ You must remove the controller from the chassis when you replace the controller 
 All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
-The general behavior of the NV status LED on the impaired controller is as follows:
+* You remove one controller at a time by repeating this procedure.
+* The general behavior of the NV status LED on the impaired controller is as follows:
 
-* The NV status LED flashes when power is removed from the impaired controller and the storage system is in the waiting for giveback state, or the controller is not taken over or halted properly because destaging of outstanding/uncommitted data is in progress.
+** The NV status LED flashes when power is removed from the impaired controller and the storage system is in the waiting for giveback state, or the controller is not taken over or halted properly because destaging of outstanding/uncommitted data is in progress.
 +
 You must confirm the controller had a clean takeover by the partner controller or the impaired controller shows `waiting for giveback`. Then, the flashing LED can be ignored (and the controller can be removed from the chassis).
 
-* The NV LED is off when destaging of the outstanding/uncommitted data to persistent flash (a partition on th boot media) has completed. Then it is safe to continue with this procedure.
+** The NV LED is off when destaging of the outstanding/uncommitted data to persistent flash (a partition on th boot media) has completed. Then it is safe to continue with this procedure.
 
 .Steps
 . On the impaired controller, make sure the NV status LED is off.

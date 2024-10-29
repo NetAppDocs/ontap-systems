@@ -53,7 +53,7 @@ Gently pull the left end of the boot media out of its socket.
 
 == Step 3: Reinstall the controller
 
-Reinstall the controller into the chassis, but do not reboot it.
+Reinstall the controller into the chassis, but do not reboot it. ??????
 
 .About this task
 
@@ -93,4 +93,37 @@ NOTE: Do not completely insert the controller in the chassis until instructed to
 . Reconnect the cables to the controller; however, do not plug in the power cord to the power supply (PSU) at this time.
 +
 NOTE: Make sure that the console cable is connected to the controller because you want to catch and log the boot sequence later in the boot media replacement procedure when you fully seat the controller in the chassis and it begins to boot.
+
++
+. Fully seat the controller in the chassis:
+
+.. Firmly push on the handles until the controller meets the midplane and is fully seated.
++
+Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
++
+NOTE: The controller boots when fully seated in the chassis. It gets its power from the partner controller.
++
+.. If the controller boots to the LOADER prompt, reboot the controller: `boot_ontap`
+.. Rotate the controller handles up and lock in place with the tabs.
++
+. Reconnect the power cord to the PSU on the impaired controller.
++
+Once power is restored to the PSU, the status LED should be green.
++
+[options="header" cols="1,2"]
+
+|===
+| If you are reconnecting a...| Then...
+a|
+AC PSU
+a|
+. Plug the power cord into the PSU.
+. Secure the power cord with the power cord retainer.
+a|
+DC PSU
+a|
+. Plug the D-SUB DC power cord connector into the PSU.
+. Tighten the two thumb screws to secure the D-SUB DC power cord connector to the PSU.
+
+|===
 
