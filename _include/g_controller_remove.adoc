@@ -12,7 +12,15 @@ All other components in the storage system must be functioning properly; if not,
 +
 You must confirm the controller had a clean takeover by the partner controller or the impaired controller shows `waiting for giveback`. Then, the flashing LED can be ignored (and the controller can be removed from the chassis).
 
-** The NV LED is off when destaging of the outstanding/uncommitted data to persistent flash (a partition on th boot media) has completed. Then it is safe to continue with this procedure.
+** The NV LED is off when destaging of the outstanding/uncommitted data to persistent flash (a partition on the boot media) has completed. Then it is safe to continue with this procedure.
+
+* I think I wants something like this: 
+
+You need to make sure the controller had a clean takeover by the partner controller or the impaired controller shows waiting for giveback, before removing the controller. 
+
+Ideally, you want the NV LED off, which indicates destaging is complete and it's safe to remove the impaired controller.
+
+A common reason why a controller would not be ready for removal would be because destaging was in progress, which is indicated by a flashing NV LED. However, it could also mean that the impaired controller was not taken over or halted properly...
 
 .Steps
 . On the impaired controller, make sure the NV status LED is off.
