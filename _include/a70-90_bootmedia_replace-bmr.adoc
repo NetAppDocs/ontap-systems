@@ -60,7 +60,3 @@ The locking latches rise when the controller module is fully seated.
 The controller begins to boot as soon as it is seated and power is restored.
 
  . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
-+
-. Halt the controller at the LOADER prompt.
-
-
