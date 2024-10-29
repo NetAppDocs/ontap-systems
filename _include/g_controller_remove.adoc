@@ -6,9 +6,9 @@ All other components in the storage system must be functioning properly; if not,
 
 .About this task
 The general behavior of the NV status LED on the impaired controller is as follows:
-+
-* The NV status LED flashes when power is removed from the impaired controller and the storage system is in the waiting for giveback state, or the controller is not taken over or halted properly because destaging of outstanding/uncommitted data is in progress.
 
+* The NV status LED flashes when power is removed from the impaired controller and the storage system is in the waiting for giveback state, or the controller is not taken over or halted properly because destaging of outstanding/uncommitted data is in progress.
++
 You must confirm the controller had a clean takeover by the partner controller or the impaired controller shows `waiting for giveback`. Then, the flashing LED can be ignored (and the controller can be removed from the chassis).
 
 * The NV LED is off when destaging of the outstanding/uncommitted data to persistent flash (a partition on th boot media) has completed. Then it is safe to continue with this procedure.
