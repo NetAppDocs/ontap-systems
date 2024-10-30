@@ -185,12 +185,12 @@ image::../media/drw_ns224_psu_leds_IEOPS-1261.svg[Power supply power activity LE
 a|
 image:../media/icon_round_1.png[Callout number 1]
 a|
-The bi-color LED indicates power/activity when green and a fault when amber.
+The bi-color LED indicates power/activity when green and a fault when red.
 |===
 
 [cols="2,1,1" options="header"]
 |===
-| Status| Power/activity (Green)| Attention (Amber)
+| Status| Power/activity (Green)| Attention (Red)
 a|
 No AC/DC power to the enclosure
 a|
