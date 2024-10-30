@@ -50,4 +50,13 @@ The cam lever moves away from the chassis.
 .. Rotate the cable management tray up to the closed position.
 .. Recable the System Management module.
 
+. Reinstall the controller and reconnect power to the controller module:
+.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
++
+The locking latches rise when the controller module is fully seated.
++
+.. Rotate the locking latches upward into the locked position.
++
+The controller begins to boot as soon as it is seated and power is restored.
 
+ . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
