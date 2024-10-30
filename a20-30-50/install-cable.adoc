@@ -38,15 +38,30 @@ Cable the controllers to your ONTAP cluster. This procedure differs depending on
 --
 Cable the controllers to each other to create the ONTAP cluster connections.
 
+
 .AFF A30 or A50 with two 2-port 100GbE I/O modules
 [%collapsible]
 
 
 =====
+The I/O module ports in slot 2 and 4 are 40/100GbE ports.???? Does this apply only to 30-50, if yes leave the 2 notes where the are, but if applies to all 3, then move it yo new paragraph below section lead text.????
 
-Add example
+.Steps
 
-Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 are unused and available for front-end (host) connectivity, if needed.
+. Cable the Cluster/HA interconnect connections: 
++
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
++
+.. Cable controller A port e2a to controller B port e2a.
+.. Cable controller A port e4a to controller B port e4a.
++
+NOTE: Ports e2b and e4b on the I/O modules in slots 2 and 4 are unused and available for front-end (host network) connectivity, if needed.
++
+*Cluster/HA interconnect cables*
++
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
++
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[Two-node switchless cluster cabling diagram using two 100gbe io modules]
 
 =====
 
@@ -55,6 +70,7 @@ Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 ar
 
 
 =====
+The I/O module ports in slot 2 and 4 are 40/100GbE ports.????
 
 .Steps
 
@@ -69,7 +85,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
 +
-image::../media/drw_isi_g_switchless_2p_100gbe_cabling_ieops-1925.svg[Two-node switchless cluster cabling diagram]
+image::../media/drw_isi_g_switchless_2p_100gbe_cabling_ieops-1925.svg[Two-node switchless cluster cabling diagram using one 100gbe io module]
 
 =====
 
