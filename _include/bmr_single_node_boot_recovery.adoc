@@ -218,3 +218,15 @@ LOADER-B>
 [start=4]
 
 . When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
+
+. Return the impaired controller to normal operation by giving back its storage:
++
+`storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: 
++
+`storage failover modify -node local -auto-giveback true`.
+
+. If AutoSupport is enabled, restore automatic case creation: 
++
+`system node autosupport invoke -node * -type all -message MAINT=END`.
