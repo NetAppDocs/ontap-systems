@@ -81,9 +81,6 @@ NOTE: If the new I/O module is not the same model as the failed module, you must
 +
 NOTE: This reinitializes the I/O cards and other components and reboots the node.
 
-+
-NOTE: Be sure to exit Maintenance mode after completing the conversion.
-
 . Return the node to normal operation: _storage failover giveback -ofnode impaired_node_name_
 
 . If automatic giveback was disabled, reenable it: _storage failover modify -node local -auto-giveback true_
