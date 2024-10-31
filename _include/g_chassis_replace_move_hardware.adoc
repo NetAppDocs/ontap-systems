@@ -40,20 +40,6 @@ Set the screws aside to use later in this procedure.
 
 . Secure the front of the replacement chassis to the equipment rack or system cabinet using the screws you removed from the impaired chassis.
 
-. Install the drives you removed from the impaired chassis into the replacement chassis:
-+
-NOTE: The drives must be installed in the same drive bays in the replacement chassis.
-
-.. With the cam handle in the open position, use both hands to insert the drive.
-
-.. Gently push until the drive stops.
-
-.. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
-+
-Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
-+
-.. Repeat the process for the remaining drives.
-. Install the bezel.
 
 == Step 4: Install the controllers
 
@@ -91,9 +77,24 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 +
 .. Rotate the controller handles up and lock in place with the tabs.
 
-. Recable the controller, as needed.
+. Recable the controller, as needed, except for the power cords.
 
 . Repeat these steps to install the second controller into the chassis.
+
+. Install the drives you removed from the impaired chassis into the replacement chassis:
++
+NOTE: The drives must be installed in the same drive bays in the replacement chassis.
+
+.. With the cam handle in the open position, use both hands to insert the drive.
+
+.. Gently push until the drive stops.
+
+.. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
++
+Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
++
+.. Repeat the process for the remaining drives.
+. Install the bezel.
 
 . Reconnect the power cords to the power supplies (PSU) on the controllers.
 +
@@ -123,3 +124,4 @@ a|
 . If controllers boot to the LOADER prompt, reboot the controllers: `boot_ontap`
 
 . Turn AutoSupport back on: `system node autosupport invoke -node * -type all -message MAINT=END`
+
