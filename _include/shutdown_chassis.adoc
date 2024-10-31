@@ -32,7 +32,7 @@ Make note of any faults presently on the system, such as LEDs on the system comp
 . Exit the cluster shell: `exit`
 . Log into SP/BMC over SSH using the IP address of any of the nodes listed in the output from the previous step. 
 +
-If your're using a console/laptop, log into the controller using the same cluster administrator credentials.
+If you are using a console/laptop, log into the controller using the same cluster administrator credentials.
 +
 
 NOTE: Open an SSH session to every SP/BMC connection so that you can monitor progress.
