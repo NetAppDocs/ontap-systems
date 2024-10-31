@@ -85,7 +85,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
 +
-image::../media/drw_isi_g_switchless_2p_100gbe_cabling_ieops-1925.svg[Two-node switchless cluster cabling diagram using one 100gbe io module]
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[Two-node switchless cluster cabling diagram using one 100gbe io module]
 
 =====
 
@@ -190,7 +190,7 @@ Cable ports e2a, e2b, e2c and e2d on each controller to the Ethernet host networ
 +
 image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable,width=100px]
 +
-image::../media/drw_isi_g_4p_25gbe_optional_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
+image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
 +
 .. Optional: Cable to FC host network switches.
 +
@@ -200,7 +200,7 @@ Cable ports 1a, 1b, 1c and 1d on each controller to the FC host network switches
 +
 image::../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 +
-image::../media/drw_isi_g_4p_64gb_fc_optional_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
+image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
 
 
 ====
