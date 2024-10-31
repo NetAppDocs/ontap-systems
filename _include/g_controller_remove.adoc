@@ -5,7 +5,7 @@ You must remove the controller from the chassis when you replace the controller 
 All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .Steps
-. On the impaired controller, make sure the NV status LED is off.
+. On the impaired controller, make sure the NV LED is off.
 +
 When the NV LED is off, destaging is complete and it is safe to remove the impaired controller.
 +
@@ -13,9 +13,9 @@ When the NV LED is off, destaging is complete and it is safe to remove the impai
 +
 NOTE: If the NV LED is flashing (green), destage is in progress. You must wait for the NV LED to turn off. However, if the flashing continues for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 +
-The NV status LED is located next to the NV icon on the controller.
+The NV LED is located next to the NV icon on the controller.
 +
-image::../media/drw_g_nvram_led_ieops-1839.svg[NVRAM attention and status LED location]
+image::../media/drw_g_nvram_led_ieops-1839.svg[NV status LED location]
 
 [cols="1,4"]
 
@@ -23,7 +23,7 @@ image::../media/drw_g_nvram_led_ieops-1839.svg[NVRAM attention and status LED lo
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-NV icon and status LED on the controller
+NV icon and LED on the controller
 
 |===
 
@@ -32,7 +32,7 @@ NV icon and status LED on the controller
 
 . Disconnect the power on the impaired controller:
 +
-NOTE: PSUs do not have a power switch.
+NOTE: Power supplies (PSUs) do not have a power switch.
 +
 [options="header" cols="1,2"]
 

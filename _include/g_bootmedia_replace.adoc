@@ -1,12 +1,5 @@
 To replace the boot media, you must remove the impaired controller, remove the boot media, install the replacement boot media, and transfer the boot image to a USB flash drive.
 
-.About this task
-If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
-
-A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
-
-You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
-
 == Step 1: Remove the controller
 
 include::../_include/g_controller_remove.adoc[]
@@ -150,7 +143,7 @@ NOTE: The target port you configure is the target port you use to communicate wi
 NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
 
 +
-. Reconnect the power cord to the PSU on the impaired controller.
+. Reconnect the power cord to the power supply (PSU) on the impaired controller.
 +
 Once power is restored to the PSU, the status LED should be green.
 +
