@@ -6,7 +6,7 @@ entries:
     url: /asa-r2-a1k/maintain-overview.html
   # START boot media
   - title: Boot media - automated recovery
-    pdf-filename: ASA A1K Boot Media
+    pdf-filename: ASA A1K Boot Media Automated
     entries:
       - title: Boot media overview
         url: /asa-r2-a1k/bootmedia-overview-bmr.html
@@ -23,6 +23,7 @@ entries:
       - title: Return failed part to NetApp
         url: /asa-r2-a1k/bootmedia-complete-rma-bmr.html
   - title: Boot media - manual recovery
+    pdf-filename: ASA A1K Boot Media Manual
     entries:
       - title: Boot media overview
         url: /asa-r2-a1k/bootmedia-overview.html
@@ -69,7 +70,7 @@ entries:
   - title: NV Battery
     url: /asa-r2-a1k/nvdimm-battery-replace.html
   - title: I/O module
-    pdf-filename: ASA A1K I/O Module
+    pdf-filename: ASA A1K IO Module
     entries:
       - title: I/O module overview
         url: /asa-r2-a1k/io-module-overview.html
