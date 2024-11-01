@@ -49,8 +49,3 @@ NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `s
 {y|n}:_`
 
 . Wait for each controller to halt and display the LOADER prompt.
-
-.What's next?
-* If the system is a NetApp StorageGRID or ONTAP S3 used as FabricPool cloud tier, refer to the https://kb.netapp.com/onprem/ontap/hardware/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage#[Gracefully shutdown and power up your storage system Resolution Guide] after performing this shutdown procedure.
-
-* If using SSDs, refer to https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU490[SU490: (Impact: Critical) SSD Best Practices: Avoid risk of drive failure and data loss if powered off for more than two months] after performing this shutdown procedure.
