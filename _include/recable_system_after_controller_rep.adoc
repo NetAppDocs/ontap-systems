@@ -1,7 +1,6 @@
 Verify the controller module's storage and network connections.
 
 .Steps
-. Recable the the controller module to storage and network conntections.
 . Verify that the cabling is correct by using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor].
 .. Download and install Config Advisor.
 .. Enter the information for the target system, and then click Collect Data.
