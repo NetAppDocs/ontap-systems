@@ -75,6 +75,8 @@ varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
 
 ....
 
+NOTE: If your system is running ONTAP 9.16.1 or later, you will not see the `varfs_backup_restore: attempting to restore /var/kmip to the boot device` and `varfs_backup_restore: failed to restore /var/kmip to the boot device`
+messages.
 --
 
 .Onboard Key Manager (OKM)
