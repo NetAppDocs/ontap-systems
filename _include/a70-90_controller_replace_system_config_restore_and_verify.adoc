@@ -1,14 +1,23 @@
 Verify the low-level system configuration of the replacement controller and reconfigure the system settings as necessary.
 
-== Step 1: Set and verify system time
-
-include::../_include/set_time_after_controller_rep.adoc[]
-
-== Step 2: Verify and set the HA state of the chassis
+== Step 1: Verify ha config settings
 
 You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
 
-. In Maintenance mode from the new controller module, verify that all components display the same `HA` state: `ha-config show`
+. Boot to maintenance mode: `boot_ontap maint` 
+
+.. Enter `y` when you see _Continue with boot?_.
++
+If you see the _System ID mismatch_ warning message, enter `y`.
+
+. Enter `sysconfig -v` and capture the display contents.
+
++
+NOTE: if you see _PERSONALITY MISMATCH_ contact customer support.
+
+. From the `sysconfig -v`output, compare the adapter card information with the cards and locations in the replacement controller.
+
+. Verify that all components display the same `HA` state: `ha-config show`
 +
 The HA state should be the same for all components.
 
@@ -23,6 +32,14 @@ The value for HA-state can be one of the following:
 *** `non-ha` (not supported)
 
   . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
-  . Confirm that the setting has changed: `ha-config show`
+. Confirm that the setting has changed: `ha-config show`
+
+== Step 2: Verify disk list
+
+. Verify that the adapter lists the paths to all disks with the `storage show disk -p`.
++
+If you see any issues, check cabling and reseat cables.
+
+. Exit Maintenance mode: `halt`.
 
 

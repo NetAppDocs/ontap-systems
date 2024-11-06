@@ -1,0 +1,47 @@
+// Install the controller module - AFF A70 and AFF A90 (integrated) - FOR CONTROLLER REPLACE
+
+
+Reinstall the controller module and reboot it.
+
+. Ensure the air duct is completely closed by rotating it down as far as it will go.
++
+It must lie flush against the controller module sheet metal.
+
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
++
+NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
+
+. Reinstall the cable management arm, if removed, but do not reconnect any cables to the replacement controller.
+
+. Plug the console cable into the console port of the replacement controller module and reconnect it to the laptop so that so that it receives console messages when it reboots. The replacement controller receives power from the healthy controller and begins to reboot as soon as it is seated completely in the chassis. 
+
+. Complete the reinstallation of the controller module:
+ .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
++
+The locking latches rise when the controller module is fully seated.
+
++
+NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+
+.. Rotate the locking latches upward into the locked position.
+
++
+NOTE: The controller boots to the LOADER prompt.
+
+. From the LOADER prompt, enter `show date` to display the date and time on the replacement controller.  Date and time are in GMT.
+
++
+NOTE: Time displayd is local time not always GMT and is displayed in 24hr mode.
+
+. Set the current time in GMT with the `set time hh:mm:ss` command.  You can get the current GMT from the partner node the `date -u`command.
+
+. Recable the storage system, as needed.
+
++
+If you removed the transceivers (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+
+. Plug the power cords into the power supplies.
+
++
+NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
+
