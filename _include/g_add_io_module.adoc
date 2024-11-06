@@ -89,7 +89,7 @@ This reinitializes the PCIe devices, other components, and reboots the node.
 . If AutoSupport is enabled, restore (unsuppress) automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 
 
-== Option 2: Add I/O modules in a storage system with no available slots
+== Option 2: Add I/O modules in a storage system with unavailable slots
 
 You can add I/O modules to a fully-populated storage system by removing existing I/O modules and replacing them with different I/O modules.
 
@@ -171,15 +171,9 @@ If you installed a storage I/O module, install and cable your NS224 shelves, as 
 +
 . Repeat the I/O module remove and install steps to add any additional I/O modules in the controller.
 
-. Reboot the impaired controller and check the BMC firmware version:
-.. From the LOADER prompt, reboot the controller: `bye`
-.. Check the version of BMC on the controller: `system service-processor show`
-.. Update the BMC firmware if needed: `system service-processor image update`
-.. Reboot the controller: `bye`
+. Reboot the impaired controller: `bye`
 +
 This reinitializes the PCIe devices, other components, and reboots the node.
-+
-NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement].
 
 . Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`
 +
