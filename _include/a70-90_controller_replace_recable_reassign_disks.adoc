@@ -11,7 +11,7 @@ Transfer the ownership of storage resources back to the replacement controller.
 
 .No encryption
 --
-. From the LOADER prompt, ebter `boot_ontap`.
+. From the LOADER prompt, enter `boot_ontap`.
 
 . Press <enter> when console messages stop.
 * If you see the _login_ prompt, go to the next step at the end of this section.
@@ -22,10 +22,10 @@ Transfer the ownership of storage resources back to the replacement controller.
 --
 . From the LOADER prompt, enter `boot_ontap maint`.
 . Check the TMP firmware version with the `sysconfig -v` command.
-* If version is less than 5.63, contact NetApp support.
+* If version is less than 5.63, contact https://support.netapp.com[NetApp Support].
 * If the version is more than 5.63, exit to the LOADER prompt: `halt`.
 . Boot to the ONTAP  menu from the LOADER prompt `boot_ontap menu` and select option 10.
-. Enter the OKM passphrase. You can get this passphrase from the customer, or contact NetApp support.
+. Enter the OKM passphrase. You can get this passphrase from the customer, or contact https://support.netapp.com[NetApp Support].
 +
 NOTE: You will be prompted twice for the passphrase.
 
@@ -34,9 +34,9 @@ NOTE: You will be prompted twice for the passphrase.
 . Press <enter> when _Waiting for giveback_ is displayed.
 . Move the console cable to the partner node and login as `admin`.
 . Ensure any core dumps on the repaired node are saved by going to advanced mode" `set -privilege advanced` and then `run local partner savecore`.
-. Retuen to admin lever: `set privilege admin`.
+. Return to admin lever: `set privilege admin`.
 . Give back only the CFO aggregates (the root aggregate): `storage failover giveback -fromnode local -only-cfo-aggregates true`
-* If you encounter errors, contact NetApp support.
+* If you encounter errors, contact https://support.netapp.com[NetApp Support].
 . Wait 5 minutes after the giveback report completes, and check failover status and giveback status: `storage failover show` and `storage failover show-giveback`.
 . Move the console cable to the replacement node and enter `security key-manager onboard sync`
 +
@@ -44,7 +44,7 @@ NOTE: You will be prompted for the cluster-wide passphrase of OKM for the cluste
 
 . Check status of the keys with the following command: `security key-manager key query -key-type svm-KEK`. 
 +
-If the _Restored_ column shows anything but _true_, contact NetApp support. 
+If the _Restored_ column shows anything but _true_, contact https://support.netapp.com[NetApp Support]. 
 
 --
 
@@ -70,7 +70,7 @@ Do you know the KMIP server address? {y/n}
 +
 Do you know the KMIP port? {y/n} 
 +
-NOTE: Contact NetApp Support if you have issues.
+NOTE: Contact https://support.netapp.com[NetApp Support] if you have issues.
 
 . Supply the information for:
 * The client certificate (client.crt) file contents.
