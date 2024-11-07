@@ -1,61 +1,96 @@
-Transfer the ownership of storage resources back to the replacement controller.
+Verify the storage and network connections, and then give back the controller.
 
-.Steps
+== Give back the controller
+Reset encryption if enabled and return the controller to normal operation.
 
-. If your storage system has Encryption configured, you must restore Storage or Volume Encryption functionality using the following procedure to reboot the system:
-.. Boot to Menu and run Option 10
-.. Input the passphrase & backup up data, then do Normal boot see https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Restore_onboard_key_management_encryption_keys[Restore onboard key management encryption keys]. 
-.. Perform CFO only giveback
-.. Perform Onboard Sync and verify SVM-KEK is set to true see https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/Onboard_keymanager_sync_fails_after_motherboard_replacement[Giveback after MB replacement fails - operation was vetoed by keymanager]
-.. Giveback SFO, (no force)
-. If your system does not have Encryption configured, complete the following procedure to reboot the system:
-.. Boot to Menu and run Option 1.
-.. Give back the controller:
- .. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode _replacement_node_name_`
+// start tabbed block area
 
+[role="tabbed-block"]
+====
+
+.No encryption
+--
+. From the LOADER prompt, enter `boot_ontap`.
+
+. Press <enter> when console messages stop.
+* If you see the _login_ prompt, go to the next step at the end of this section.
+* If you see _Waiting for giveback_, press the <enter> key, log into the partner node, and then go to the next step at the end of this section. 
+--
+
+.Onboard encryption (OKM)
+--
+. From the LOADER prompt, enter `boot_ontap maint`.
+. Check the TMP firmware version with the `sysconfig -v` command.
+* If version is less than 5.63, contact https://support.netapp.com[NetApp Support].
+* If the version is more than 5.63, exit to the LOADER prompt: `halt`.
+. Boot to the ONTAP  menu from the LOADER prompt `boot_ontap menu` and select option 10.
+. Enter the OKM passphrase. You can get this passphrase from the customer, or contact https://support.netapp.com[NetApp Support].
 +
-The _replacement_ controller takes back its storage and completes booting.
+NOTE: You will be prompted twice for the passphrase.
+
+. Enter the backup key data when prompted.
+. At the boot menu, enter option `1` for normal boot.
+. Press <enter> when _Waiting for giveback_ is displayed.
+. Move the console cable to the partner node and login as `admin`.
+. Ensure any core dumps on the repaired node are saved by going to advanced mode" `set -privilege advanced` and then `run local partner savecore`.
+. Return to admin lever: `set privilege admin`.
+. Give back only the CFO aggregates (the root aggregate): `storage failover giveback -fromnode local -only-cfo-aggregates true`
+* If you encounter errors, contact https://support.netapp.com[NetApp Support].
+. Wait 5 minutes after the giveback report completes, and check failover status and giveback status: `storage failover show` and `storage failover show-giveback`.
+. Move the console cable to the replacement node and enter `security key-manager onboard sync`
++
+NOTE: You will be prompted for the cluster-wide passphrase of OKM for the cluster.
+
+. Check status of the keys with the following command: `security key-manager key query -key-type svm-KEK`. 
++
+If the _Restored_ column shows anything but _true_, contact https://support.netapp.com[NetApp Support]. 
+
+--
+
+.External key manager (EKM))
+
+--
+. If the root volume is encrypted with External Key Manager and the console cable is connected to the replacement node, enter `boot_ontap menu` and select option `11`.
+
+. Answer `y` or `n`  to the following questions:
++
+Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} 
++
+Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n} 
++
+Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n} 
 +
 
-NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
-
+OR
 +
-
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the High-Availability Configuration content for your version of ONTAP 9]
-
+Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} 
 +
-
- .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
-
-. If the system is in a MetroCluster configuration, monitor the status of the controller: `metrocluster node show`
+Do you know the KMIP server address? {y/n} 
 +
-The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each controller will show a configured state, with DR Mirroring enabled and a mode of normal. The `metrocluster node show -fields node-systemid` command output displays the old system ID until the MetroCluster configuration returns to a normal state.
-
-. If the controller is in a MetroCluster configuration, depending on the MetroCluster state, verify that the DR home ID field shows the original owner of the disk if the original owner is a controller on the disaster site.
+Do you know the KMIP port? {y/n} 
 +
-This is required if both of the following are true:
+NOTE: Contact https://support.netapp.com[NetApp Support] if you have issues.
 
- ** The MetroCluster configuration is in a switchover state.
- ** The _replacement_ controller is the current owner of the disks on the disaster site.
-+
-https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration]
+. Supply the information for:
+* The client certificate (client.crt) file contents.
+* The client key (client.key) file contents.
+* The KMIP server CA(s) (CA.pem) file contents.
+* The IP address for the KMIP server.
+* The port for the KMIP server.
 
-. If your system is in a MetroCluster configuration, verify that each controller is configured: `metrocluster node show - fields configuration-state`
-+
-----
-node1_siteA::> metrocluster node show -fields configuration-state
+. Once the system processes, you will see the Boot Menu. Select '1' for normal boot.
 
-dr-group-id            cluster node           configuration-state
------------            ---------------------- -------------- -------------------
-1 node1_siteA          node1mcc-001           configured
-1 node1_siteA          node1mcc-002           configured
-1 node1_siteB          node1mcc-003           configured
-1 node1_siteB          node1mcc-004           configured
+. Check the takeover status: `storage failover show`.
 
-4 entries were displayed.
-----
+. Ensure any core dumps on the repaired node are saved by going to advanced mode" `set -privilege advanced` and then `run local partner savecore`.
+--
 
-. Verify that the expected volumes are present for each controller: `vol show -node node-name`
-. If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`
+====
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+// end tabbed block area
+
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.

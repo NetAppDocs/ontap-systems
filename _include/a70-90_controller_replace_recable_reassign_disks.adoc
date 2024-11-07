@@ -1,10 +1,9 @@
 Verify the storage and network connections, and then give back the controller.
 
-
 == Give back the controller
-Transfer the ownership of storage resources back to the replacement controller.
+Reset encryption if enabled and return the controller to normal operation.
 
-// start tabbed area
+// start tabbed block area
 
 [role="tabbed-block"]
 ====
@@ -88,7 +87,7 @@ NOTE: Contact https://support.netapp.com[NetApp Support] if you have issues.
 
 ====
 
-// end tabbed area
+// end tabbed block area
 
 . Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
