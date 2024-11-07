@@ -1,6 +1,6 @@
 After completing the hardware replacement, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
 
-== Step 1: Verify ha config settings
+== Step 1: Verify HA config settings
 
 You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
 
@@ -15,7 +15,7 @@ If you see the _System ID mismatch_ warning message, enter `y`.
 +
 NOTE: if you see _PERSONALITY MISMATCH_ contact customer support.
 
-. From the `sysconfig -v`output, compare the adapter card information with the cards and locations in the replacement controller.
+. From the `sysconfig -v` output, compare the adapter card information with the cards and locations in the replacement controller.
 
 . Verify that all components display the same `HA` state: `ha-config show`
 +
