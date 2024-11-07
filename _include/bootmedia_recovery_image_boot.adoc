@@ -8,70 +8,64 @@ The image is downloaded from the USB flash drive.
 
 . When prompted, either enter the name of the image or accept the default image displayed inside the brackets on your screen.
 . Restore the var file system:
-+
 
-// Begin version tabbed block
++
 
 [role="tabbed-block"]
 ====
 
 .Option 1: ONTAP 9.16.0 or earlier
 --
-. On the impaired controller, press `Y` when you see `Do you want to restore the backup configuration now?` 
 
-. On the impaired controller, press `Y` when prompted to overwrite _/etc/ssh/ssh_host_ecdsa_key_. 
+.. On the impaired controller, press `Y` when you see `Do you want to restore the backup configuration now?` 
 
-. On the healthy partner controller, set the impaired controller to advanced privilege level: `set -privilege advanced`.
+.. On the impaired controller, press `Y` when prompted to overwrite _/etc/ssh/ssh_host_ecdsa_key_. 
 
-. On the healthy partner controller, run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address` .
+.. On the healthy partner controller, set the impaired controller to advanced privilege level: `set -privilege advanced`.
+
+.. On the healthy partner controller, run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address` .
 
 +
 *NOTE:*  If you see any message other than a successful restore, contact https://support.netapp.com[NetApp Support].
 
-. On the healthy partner controller, return the impaired controller to admin level: `set -privilege admin`.
+.. On the healthy partner controller, return the impaired controller to admin level: `set -privilege admin`.
 
-. On the impaired controller, press `Y` when you see `Was the restore backup procedure successful?`.
+.. On the impaired controller, press `Y` when you see `Was the restore backup procedure successful?`.
 
-. On the impaired controller, press `Y` when you see `...would you like to use this restored copy now?`. 
+.. On the impaired controller, press `Y` when you see `...would you like to use this restored copy now?`. 
 
-. On the impaired controller, press `Y` when prompted to reboot the impaired controller and press `ctrl-c` for the Boot Menu.
+.. On the impaired controller, press `Y` when prompted to reboot the impaired controller and press `ctrl-c` for the Boot Menu.
 
-. If the system does not use encyption, select _Option 1 Normal Boot._, otherwise go to link:bootmedia-encryption-restore.html[Restore key managers].
-
-. Connect the console cable to the partner controller.
-
-. Give back the controller using the `storage failover giveback -fromnode local` command.
-
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
-
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
-+
-*NOTE:* If the process fails, contact https://support.netapp.com[NetApp Support].
-+
+.. If the system does not use encyption, select _Option 1 Normal Boot._, otherwise go to link:bootmedia-encryption-restore.html[Restore key managers].
 --
+
 .Option 2: ONTAP 9.16.1 or later
 
-. On the impaired controller, press `Y` when prompted to restore the backup configuration. 
+--
+
+.. On the impaired controller, press `Y` when prompted to restore the backup configuration. 
 +
 After restore procedure is successful, this message will be seen on the console - `syncflash_partner: Restore from partner complete`.
 
-. On the impaired controller, press `Y` when prompted to confirm if the restore backup was successful.
-. On the impaired controller, press `Y` when prompted to use the restored configuration.
-. On the impaired controller, press `Y` when prompted to reboot the node.
+.. On the impaired controller, press `Y` when prompted to confirm if the restore backup was successful.
+.. On the impaired controller, press `Y` when prompted to use the restored configuration.
+.. On the impaired controller, press `Y` when prompted to reboot the node.
 
-. On the impaired controller, press `Y` when prompted to reboot the impaired controller and press `ctrl-c` for the Boot Menu.
+.. On the impaired controller, press `Y` when prompted to reboot the impaired controller and press `ctrl-c` for the Boot Menu.
 
-. If the system does not use encyption, select _Option 1 Normal Boot._, otherwise go to link:bootmedia-encryption-restore.html[Restore key managers].
+.. If the system does not use encyption, select _Option 1 Normal Boot._, otherwise go to link:bootmedia-encryption-restore.html[Restore key managers].
 
-. Connect the console cable to the partner controller.
+--
 
-. Give back the controller using the `storage failover giveback -fromnode local` command.
+====
 
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+[start=4]
+.  Connect the console cable to the partner controller.
+
+.  Give back the controller using the `storage failover giveback -fromnode local` command.
+
+.  Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 +
 *NOTE:* If the process fails, contact https://support.netapp.com[NetApp Support].
---
-
-====
