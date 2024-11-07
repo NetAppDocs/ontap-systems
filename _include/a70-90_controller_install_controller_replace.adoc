@@ -31,7 +31,7 @@ NOTE: The controller boots to the LOADER prompt.
 . From the LOADER prompt, enter `show date` to display the date and time on the replacement controller.  Date and time are in GMT.
 
 +
-NOTE: Time displayd is local time not always GMT and is displayed in 24hr mode.
+NOTE: Time displayed is local time not always GMT and is displayed in 24hr mode.
 
 . Set the current time in GMT with the `set time hh:mm:ss` command.  You can get the current GMT from the partner node the `date -u`command.
 
