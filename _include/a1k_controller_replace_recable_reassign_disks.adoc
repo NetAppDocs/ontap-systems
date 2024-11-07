@@ -15,6 +15,11 @@ Reset encryption if enabled and return the controller to normal operation.
 . Press <enter> when console messages stop.
 * If you see the _login_ prompt, go to the next step at the end of this section.
 * If you see _Waiting for giveback_, press the <enter> key, log into the partner node, and then go to the next step at the end of this section. 
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 --
 
 .Onboard encryption (OKM)
@@ -44,6 +49,11 @@ NOTE: You will be prompted for the cluster-wide passphrase of OKM for the cluste
 . Check status of the keys with the following command: `security key-manager key query -key-type svm-KEK`. 
 +
 If the _Restored_ column shows anything but _true_, contact https://support.netapp.com[NetApp Support]. 
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
 --
 
@@ -83,14 +93,13 @@ NOTE: Contact https://support.netapp.com[NetApp Support] if you have issues.
 . Check the takeover status: `storage failover show`.
 
 . Ensure any core dumps on the repaired node are saved by going to advanced mode" `set -privilege advanced` and then `run local partner savecore`.
---
-
-====
-
-// end tabbed block area
-
 . Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
+--
+
+====
+
+// end tabbed block area
