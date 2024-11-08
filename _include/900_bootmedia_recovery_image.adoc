@@ -46,9 +46,9 @@ a|
 .. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the _system node autosupport invoke -node * -type all -message MAINT=END_ command.
 +
 *NOTE:* If the process fails, contact https://support.netapp.com[NetApp Support].
-+
+//+
 // 
-a|
+// a|
 // ONTAP 9.16.1 or later
 // a| 
 // .. On the impaired controller, press _y_ when prompted to restore the backup configuration. 

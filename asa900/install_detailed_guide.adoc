@@ -240,20 +240,14 @@ Cable ports in slot A5 and B5 (5a,
 32 Gb FC network switches.
 
 image:../media/oie_cable_sfp_gbe_copper.png[Gbe copper SFP]
-
 a|
-image:../media/icon_square_5_grey.png[Callout icon five]
-
+image::../media/icon_square_5_grey.png[Callout icon five]
 a|
-* Strap the cables to the cable
-management arms (not shown).
+* Strap the cables to the cable management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
-a|
-image:../media/oie_cable_power.png[Power cables]
 
-image:../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power sources]
-
+image:../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power connections]
 |===
 
 --
