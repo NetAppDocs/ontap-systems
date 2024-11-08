@@ -22,31 +22,31 @@ image::../media/drw_fas2600_controller_to_stack_cable_type_key_IEOPS-947.svg[Cab
 +
 image::../media/drw_fas2600_cable_color_key.png[Cable color key for platforms with onboard storage]
 
-== FAS2800 platform in a multipath HA configuration with no external shelves
+== FAS2820 platform in a multipath HA configuration with no external shelves
 
 The following example shows that no cabling is needed to acheive multipath HA connectivity:
 
-image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[FAS2800 multipath HA with no external shelves,width=500px]
+image::../media/drw_fas2800_noshelf_mpha_IEOPS-954.svg[FAS2820 multipath HA with no external shelves,width=500px]
 
-== FAS2800 platform in a tri-path HA configuration with no external shelves
+== FAS2820 platform in a tri-path HA configuration with no external shelves
 
 The following cabling example shows required cabling between the two controllers to achieve tri-path connectivity:
 
 image::../media/drw_fas2800_noshelf_tpha_IEOPS-955.svg[Fas2800 Tri path HA cabling example with no external shelves, width=500px]
 
-== FAS2800 platform in a tri-path HA configuration with one multi-shelf stack
+== FAS2820 platform in a tri-path HA configuration with one multi-shelf stack
 
 The following worksheet and cabling example uses port pair 0a/0b1:
 
-image::../media/drw_fas2800_worksheet_IEOPS-948.svg[FAS2800 tri path HA cabling worksheet showing port pairs for stack 1, width=530px]
+image::../media/drw_fas2800_worksheet_IEOPS-948.svg[FAS2820 tri path HA cabling worksheet showing port pairs for stack 1, width=530px]
 
-image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[FAS2800 tri path HA cabling example to one stack, width=520px]
+image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[FAS2820 tri path HA cabling example to one stack, width=520px]
 
 == Platforms with internal storage in a multipath HA configuration with one multi-shelf stack
 
 The following worksheet and cabling example uses port pair 0a/0b:
 
-NOTE: This section does not apply to FAS2800 or FAS25XX systems.
+NOTE: This section does not apply to FAS2820 or FAS25XX systems.
 
 image::../media/drw_fas2600_mpha_worksheet_IEOPS-1255.svg[Multipath HA cabling worksheet for platforms with internal storage and one stack, width=500px]
 

@@ -66,8 +66,6 @@ When the recovery process is complete, the node will reboot. The following messa
 
 varfs_backup_restore: update checksum for varfs.tgz
 varfs_backup_restore: restore using /cfcard/x86_64/freebsd/oldvarfs.tgz
-varfs_backup_restore: attempting to restore /var/kmip to the boot device
-varfs_backup_restore: failed to restore /var/kmip to the boot device
 varfs_backup_restore: Rebooting to load the new varfs
 .
 Terminated

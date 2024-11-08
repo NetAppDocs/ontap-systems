@@ -1,0 +1,29 @@
+// Install the controller module - A1K (modular) - FOR CONTROLLER REPLACE
+
+Reinstall the controller module and boot it.
+
+. Ensure the air duct is completely closed by rotating it down as far as it will go.
++
+It must lie flush against the controller module sheet metal.
+
+. Align the end of the controller module with the opening in the enclosure, and slide the controller module into the chassis with the levers rotated away from the front of the system.
+
+. Once the controller module stops you from sliding it farther, rotate the cam handles inward until they latch back under the fans
+
++
+NOTE: Do not use excessive force when sliding the controller module into the enclosure to avoid damaging the connectors.
++
+NOTE: The controller boots to the LOADER prompt as soon as it is fully seated.
+
+
+. From the LOADER prompt, enter `show date` to display the date and time on the replacement controller.  Date and time are in GMT.
+
++
+NOTE: Time displayed is local time not always GMT and is displayed in 24hr mode.
+
+. Set the current time in GMT with the `set time hh:mm:ss` command.  You can get the current GMT from the partner node the `date -u`command.
+
+. Recable the storage system, as needed.
+
++
+If you removed the transceivers (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
