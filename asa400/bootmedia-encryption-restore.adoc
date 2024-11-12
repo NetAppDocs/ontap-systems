@@ -9,5 +9,6 @@ summary: 'Once environment variables are checked, you must complete steps specif
 :imagesdir: ../media/
 
 [.lead]
+Restore encryption on the replacement boot media.
 
-include::../_include/encryption_restore_96_later.adoc[]
+include::../_include/encryption_restore_bootmedia.adoc[]

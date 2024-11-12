@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords:
 summary: 'Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager \(OKM\), NetApp Storage Encryption \(NSE\) or NetApp Volume Encryption \(NVE\) enabled.'
 ---
-= Post boot media replacement steps for OKM, NSE, and NVE - ASA A900
+= Restore encryption - ASA A900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Restore encryption on the replacement boot media.
 
-include::../_include/900_bootmedia_encryption_restore.adoc[]
+include::../_include/encryption_restore_bootmedia.adoc[]

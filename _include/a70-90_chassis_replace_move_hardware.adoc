@@ -48,6 +48,26 @@ Be sure to close the cam handle slowly so that it aligns correctly with the fron
 
 == Step 4: Reinstall the controller modules
 
-include::../_include/a70-90_controller_install_step_physical.adoc[]
+Reinstall the controller modules into the chassis and reboot them.
+
+. If you opened the air duct, close air duct by rotating it down as far as it will go.
++
+It should lie flush against the controller module sheet metal.
+
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller all the way into the chassis.
+
+.. Rotate the locking latches upward into the locked position.
+.. If you have not already done so, reinstall the cable management device and recable the controller.
++
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
 . Repeat the preceding steps to install the second controller into the new chassis.
+
+. Plug the power cords into the power supplies.
+
++
+NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
+
++
+The controller module begins to boot as soon as it is installed and power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command. 
+

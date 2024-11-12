@@ -52,6 +52,7 @@ image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[Remove the NVRA
 [cols="1,4"]
 
 |===
+a|
 image:../media/icon_round_1.png[Callout number 1] 
 a|
 Cam locking button
@@ -78,6 +79,12 @@ NOTE: The controller reboots as soon as it is fully seated in the chassis.
 +
 
  . Rotate the cable management tray up to the closed position.
+
+ . Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true` .
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
 == Step 3: Replace a NVRAM DIMM
 
@@ -110,6 +117,7 @@ image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[Remove the NVRA
 [cols="1,4"]
 
 |===
+a|
 image:../media/icon_round_1.png[Callout number 1] |
 Cam locking button
 a|
@@ -142,6 +150,12 @@ NOTE: The controller reboots as soon as it is fully seated in the chassis.
 +
 
 . Rotate the cable management tray up to the closed position.
+
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
 
 == Step 4: Reassign disks
@@ -227,10 +241,12 @@ dr-group-id            cluster node           configuration-state
 
 . Verify that the expected volumes are present for each controller: `vol show -node node-name`
 . If storage encryption is enabled, you must restore functionality.
-. If you disabled automatic takeover on reboot, enable it from the healthy controller: _storage failover modify -node replacement-node-name -onreboot true_
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
 == Step 5: Return the failed part to NetApp
 

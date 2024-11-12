@@ -57,11 +57,7 @@ Cam locking button
 . Install the I/O module:
  .. Align the I/O module with the edges of the enclosure slot opening.
  .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
- . Cable the I/O module.
-+
-If the I/O module is a NIC, cable the module to the data switches.  
-+
-If the I/O module is a storage module, cable it to the NS224 shelf.
+ . Cable the I/O module to the designated device.
 
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
@@ -74,7 +70,7 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 
 . Repeat these steps for controller B.
 
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. From the healthy node, restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 
@@ -154,7 +150,7 @@ Make sure that you keep track of which slot the I/O module was in.
 . Install the I/O module into the target slot in the enclosure:
 .. Align the module with the edges of the enclosure slot opening.
 .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
-. Cable the I/O module.
+. Cable the I/O module to the designated device.
 . Repeat the remove and install steps to replace additional modules for the controller.
 . Rotate the cable management tray up to the closed position.
 

@@ -23,7 +23,7 @@ entries:
      entries:
         - title: Overview
           url: /asa-c800/bootmedia-replace-overview.html
-        - title: Check onboard encryption keys
+        - title: Check encryption keys
           url: /asa-c800/bootmedia-encryption-preshutdown-checks.html
         - title: Shut down impaired controller
           url: /asa-c800/bootmedia-shutdown.html
@@ -31,7 +31,7 @@ entries:
           url: /asa-c800/bootmedia-replace.html
         - title: Boot recovery image
           url: /asa-c800/bootmedia-recovery-image-boot-non-2n-mcc.html
-        - title: Restore OKM, NSE, and NVE
+        - title: Restore encryption
           url: /asa-c800/bootmedia-encryption-restore.html
         - title: Return failed part to NetApp
           url: /asa-c800/bootmedia-complete-rma.html

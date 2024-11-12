@@ -1,10 +1,10 @@
-You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
+You must replace a DIMM in the controller when your storage system encounters errors such as, excessive CECC (Correctable Error Correction Codes) errors that are based on Health Monitor alerts or uncorrectable ECC errors, typically caused by a single DIMM failure preventing the storage system from booting ONTAP.
 
 .Before you begin
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
-You must replace the failed component with a replacement FRU component you received from your provider.
+You must replace the failed component with a replacement FRU component you received from NetApp.
 
 == Step 1: Shut down the impaired controller
  

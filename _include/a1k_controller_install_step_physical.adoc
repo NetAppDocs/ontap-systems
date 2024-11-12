@@ -2,7 +2,10 @@
 
 Reinstall the controller module and boot it.
 
-. If you have not already done so, close the air duct.
+. Ensure the air duct is completely closed by rotating it down as far as it will go.
++
+It must lie flush against the controller module sheet metal.
+
 . Align the end of the controller module with the opening in the enclosure, and slide the controller module into the chassis with the levers rotated away from the front of the system.
 
 . Once the controller module stops you from sliding it farther, rotate the cam handles inward until they latch back under the fans
@@ -12,8 +15,9 @@ NOTE: Do not use excessive force when sliding the controller module into the enc
 +
 The controller module begins to boot as soon as it is fully seated in the enclosure.
 
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
 
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 

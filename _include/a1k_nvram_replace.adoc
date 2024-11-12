@@ -42,6 +42,7 @@ image::../media/drw_a1k_nvram12_remove_replace_ieops-1380.svg[Remove the NVRAM12
 +
 [cols="1,4"]
 |===
+a|
 image:../media/icon_round_1.png[Callout number 1] |
 Cam locking button
 a|
@@ -72,6 +73,7 @@ image::../media/drw_a1k_nvram12_remove_replace_ieops-1380.svg[Remove the NVRAM 1
 +
 [cols="1,4"]
 |===
+a|
 image:../media/icon_round_1.png[Callout number 1] |
 Cam locking button
 a|
@@ -100,6 +102,12 @@ NOTE: Consult the FRU map label on the side of the NVRAM module to determine the
 After you replace the FRU, you must reboot the controller module.
 
 . To boot ONTAP from the LOADER prompt, enter _bye_.
+
+. Return the impaired controller to normal operation by giving back its storage: `_storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true` .
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
 == Step 5: Reassign disks
 
@@ -183,10 +191,12 @@ dr-group-id            cluster node           configuration-state
 ----
 
 . Verify that the expected volumes are present for each controller: `vol show -node node-name`
-. If storage encryption is enabled, you must restore functionality.
-. If you disabled automatic takeover on reboot, enable it from the healthy controller: _storage failover modify -node replacement-node-name -onreboot true_
- 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
 == Step 6: Return the failed part to NetApp
 

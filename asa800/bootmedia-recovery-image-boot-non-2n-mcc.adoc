@@ -10,4 +10,4 @@ summary: You must boot the ONTAP image from the USB drive, restore the file syst
 
 [.lead]
 
-include::../_include/800_bootmedia_encryption_preshutdown_checks.adoc[]
+include::../_include/800_bootmedia_recovery_image_boot_non_2n_mcc.adoc[]

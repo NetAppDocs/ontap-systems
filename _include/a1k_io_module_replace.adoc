@@ -38,6 +38,7 @@ image:../media/drw_a1k_io_remove_replace_ieops-1382.svg[Remove I/O module]
 +
 [cols="1,4"]
 |===
+a|
 image:../media/icon_round_1.png[Callout number 1] 
 a|
 I/O cam latch
@@ -72,7 +73,7 @@ NOTE: If the new I/O module is not the same model as the failed module, you must
 .. Reboot the BMC: _sp reboot_
 . From the LOADER prompt, reboot the node: _bye_
 +
-NOTE: This reinitializes the I/O cards and other components and reboots the node.
+This reinitializes the I/O cards and other components and reboots the node.
 +
 . Return the node to normal operation: _storage failover giveback -ofnode impaired_node_name_
 

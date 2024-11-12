@@ -82,7 +82,7 @@ This column indicates whether the authentication keys for your key manager (eith
 
 [start=3]
 
-. Depending on whether you're system is using the External Key Manager or Onboard Key Manager, select one of the following options.
+. Depending on whether your system is using the External Key Manager or Onboard Key Manager, select one of the following options.
 +
 
 // start tabbed area
@@ -101,11 +101,9 @@ a|
 `true`
 a|
 You can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
-
 a|
 Anything other than `true`
 a|
-
 .. Restore the external key management authentication keys to all nodes in the cluster using the following command:
 +
 `security key-manager external restore`
@@ -115,7 +113,6 @@ If the command fails, contact http://mysupport.netapp.com/[NetApp Support^].
 .. Verify that the `Restored` column displays `true` for all authentication keys by entering the  `security key-manager key query` command.
 +
 If all the authentication keys are `true`, you can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
-
 |===
 
 
@@ -175,9 +172,7 @@ If the passphrase cannot be provided, contact http://mysupport.netapp.com/[NetAp
 You'll need it in disaster scenarios where you might need to manually recover OKM.
 
 .. You can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
-
 |===
-
 
 --
 ====

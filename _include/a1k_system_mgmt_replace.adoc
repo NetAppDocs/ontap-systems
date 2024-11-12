@@ -117,9 +117,12 @@ Reboot the controller module.
 The system will begin to reboot, typically to the LOADER prompt.
 +
 . Enter _bye_ at the LOADER prompt.
-. Return the controller to normal operation by giving back its storage: _storage failover giveback -ofnode _impaired_node_name__
-. Restore automatic giveback by using the `storage failover modify -node local -auto-giveback true` command.
-. If an AutoSupport maintenance window was triggered, end it by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
 == Step 4: Install licenses and register serial number
 

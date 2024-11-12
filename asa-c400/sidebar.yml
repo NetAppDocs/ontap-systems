@@ -22,7 +22,7 @@ entries:
       entries:
       - title: Overview
         url: /asa-c400/bootmedia-replace-overview.html
-      - title: Check onboard encryption keys
+      - title: Check encryption keys
         url: /asa-c400/bootmedia-encryption-preshutdown-checks.html
       - title: Shut down impaired controller
         url: /asa-c400/bootmedia-shutdown.html
@@ -32,7 +32,7 @@ entries:
         url: /asa-c400/bootmedia-recovery-image-boot-options.html
       - title: Switch back MetroCluster config
         url: /asa-c400/bootmedia-2n-mcc-switchback.html
-      - title: Restore OKM, NSE, and NVE
+      - title: Restore encryption
         url: /asa-c400/bootmedia-encryption-restore.html
       - title: Return failed part to NetApp
         url: /asa-c400/bootmedia-complete-rma.html
