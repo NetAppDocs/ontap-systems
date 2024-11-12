@@ -60,7 +60,7 @@ NOTE: Drive firmware checks occur every two minutes.
 +
 If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
+A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
 
 * When you unpack the replacement drive, save all packing materials for use when you return the failed drive.
 +

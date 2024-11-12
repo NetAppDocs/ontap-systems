@@ -13,7 +13,7 @@ You can replace a failed ethernet I/O module nondisruptively in an NS224 drive s
 
 .Before you begin
 
-* The shelf's partner NSM module must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the failed NSM module.
+* The shelf's partner NSM must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the failed NSM.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
@@ -37,52 +37,52 @@ Do not revert firmware to a version that does not support your shelf and its com
 
 
 ====
-* Shelf (NSM) firmware is automatically updated (nondisruptively) on a new NSM module that has a non-current firmware version.
+* Shelf (NSM) firmware is automatically updated (nondisruptively) on a new NSM that has a non-current firmware version.
 +
-NSM module firmware checks occur every 10 minutes. An NSM module firmware update can take up to 30 minutes.
+NSM firmware checks occur every 10 minutes. An NSM firmware update can take up to 30 minutes.
 
 * If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
 If you do not know the `shelf_name` of the affected shelf, run the `storage shelf show` command.
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
+A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
 
-* When you unpack the replacement NSM module, save all packing materials for use when you return the failed NSM module.
+* When you unpack the replacement NSM, save all packing materials for use when you return the failed NSM.
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
 .Steps
 
 . Properly ground yourself.
-. Disconnect the cabling from the NSM module that contains the FRU that you are replacing:
+. Disconnect the cabling from the NSM that contains the FRU that you are replacing:
  .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
 +
 Power supplies do not have a power switch.
 
- .. Disconnect the storage cabling from the NSM module ports.
+ .. Disconnect the storage cabling from the NSM ports.
 +
-Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM module, later in this procedure.
+Make a note of the NSM ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM, later in this procedure.
 
-. Remove the NSM module from the shelf:
+. Remove the NSM from the shelf:
 +
-image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM module.]
-.. On both ends of the NSM module, push the vertical locking tabs outward to release the handles.
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM.]
+.. On both ends of the NSM, push the vertical locking tabs outward to release the handles.
 +
 The handles come to rest horizontally to the vertical tabs.
-.. Pull the handles towards you to unseat the NSM module from the midplane of the shelf.
+.. Pull the handles towards you to unseat the NSM from the midplane of the shelf.
 +
 As you pull, the handles extend out from the shelf. When you feel some resistance, keep pulling.
-.. Slide the NSM module out of the shelf and place it on a flat, stable surface. 
+.. Slide the NSM out of the shelf and place it on a flat, stable surface. 
 +
-Make sure that you support the bottom of the NSM module as you slide it out of the shelf.
+Make sure that you support the bottom of the NSM as you slide it out of the shelf.
 
-. Remove the failed I/O module from the NSM module:
+. Remove the failed I/O module from the NSM:
 +
 
 image::../media/drw_t_io_module_replace_ieops-1980.svg[Replace the I/O module.]
 
 .. Turn the I/O module thumbscrew counterclockwise to loosen.
-.. Pull the I/O module out of the NSM module using the port label tab on the left and the thumbscrew.
+.. Pull the I/O module out of the NSM using the port label tab on the left and the thumbscrew.
 
 
 . Install the replacement I/O module into the target slot:
@@ -95,16 +95,16 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 +
 .. Turn the thumbscrew clockwise to tighten.
 
-. Insert the NSM module into the shelf.
+. Insert the NSM into the shelf.
 +
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace NSM module.]
-.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
-.. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
-.. Rotate the NSM module handles up and lock in place with the tabs.
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace NSM.]
+.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM, rotate them down to the horizontal position.
+.. Align the rear of the NSM with the opening in the shelf, and then gently push the NSM using the handles until it is fully seated.
+.. Rotate the NSM handles up and lock in place with the tabs.
 
 
-. Recable the NSM module.
-.. Reconnect the storage cabling to the same two NSM module ports.
+. Recable the NSM.
+.. Reconnect the storage cabling to the same two NSM ports.
 +
 Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
 
@@ -112,13 +112,13 @@ Cables are inserted with the connector pull-tab facing up. When a cable is inser
 +
 When functioning correctly, a power supply's bicolored LED illuminates green.
 +
-Additionally, both NSM module port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
+Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
 
-. Verify that the attention (amber) LEDs on the NSM module containing the failed I/O module and the shelf operator display panel are no longer illuminated
+. Verify that the attention (amber) LEDs on the NSM containing the failed I/O module and the shelf operator display panel are no longer illuminated
 +
-The NSM module attention LEDs turn off after the NSM module reboots and no longer detects an I/O module issue. This can take three to five minutes.
+The NSM attention LEDs turn off after the NSM reboots and no longer detects an I/O module issue. This can take three to five minutes.
 
-. Verify that the NSM module is cabled correctly, by running Active IQ Config Advisor.
+. Verify that the NSM is cabled correctly, by running Active IQ Config Advisor.
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +

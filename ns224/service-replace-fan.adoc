@@ -13,7 +13,7 @@ You can replace a failed fan module nondisruptively in an NS224 drive shelf that
 
 .Before you begin
 
-* The shelf's partner NSM module must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the NSM module with the failed FRU (target NSM module).
+* The shelf's partner NSM must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM).
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
@@ -41,7 +41,7 @@ Do not revert firmware to a version that does not support your shelf and its com
 +
 If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
+A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
 
 * When you unpack the replacement fan, save all packing materials for use when you return the failed fan.
 +
@@ -62,29 +62,29 @@ video::29635ff8-ae86-4a48-ab2a-aa86002f3b66[panopto, title="Replace a fan in an 
 .Steps
 
 . Properly ground yourself.
-. Disconnect the cabling from the NSM module that contains the FRU that you are replacing:
+. Disconnect the cabling from the NSM that contains the FRU that you are replacing:
  .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
 +
 Power supplies do not have a power switch.
 
- .. Disconnect the storage cabling from the NSM module ports.
+ .. Disconnect the storage cabling from the NSM ports.
 +
-Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM module later in this procedure.
-. Remove the NSM module from the shelf:
- .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM module.
+Make a note of the NSM ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM later in this procedure.
+. Remove the NSM from the shelf:
+ .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM.
 +
-NOTE: If you are removing the bottom NSM module, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
+NOTE: If you are removing the bottom NSM, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
 
  .. With your thumbs, press down and hold the orange tabs on top of the latching mechanisms.
 +
 The latching mechanisms raise, clearing the latching pins on the shelf.
 
- .. Gently pull until the NSM module is about one third of the way out of the shelf, grasp the NSM module sides with both hands to support its weight, and then place it on a flat stable surface.
+ .. Gently pull until the NSM is about one third of the way out of the shelf, grasp the NSM sides with both hands to support its weight, and then place it on a flat stable surface.
 +
-When you begin pulling, the latching mechanism arms extend from the NSM module and lock in their fully extended position.
-. Loosen the NSM module cover thumb screw and open the cover.
+When you begin pulling, the latching mechanism arms extend from the NSM and lock in their fully extended position.
+. Loosen the NSM cover thumb screw and open the cover.
 +
-NOTE: The FRU label on the NSM module cover shows the location of the five fans, along the rear wall of the NSM module.
+NOTE: The FRU label on the NSM cover shows the location of the five fans, along the rear wall of the NSM.
 
 . Physically identify the failed fan.
 +
@@ -93,25 +93,25 @@ When a fan fails, the system logs a warning message to the system console indica
 . Replace the failed fan:
  .. Remove the failed fan by firmly grasping the sides, where the blue touch points are located, and then lift it vertically to disconnect it from the socket.
  .. Insert the replacement fan by aligning it within the guides, and then push down until the fan module connector is fully seated in the socket.
-. Close the NSM module cover, and then tighten the thumb screw.
-. Reinsert the NSM module into the shelf:
+. Close the NSM cover, and then tighten the thumb screw.
+. Reinsert the NSM into the shelf:
  .. Make sure that the latching mechanism arms are locked in the fully extended position.
- .. Using both hands, gently slide the NSM module into the shelf until the weight of the NSM module is fully supported by the shelf.
- .. Push the NSM module into the shelf until it stops (about half an inch from the back of the shelf).
+ .. Using both hands, gently slide the NSM into the shelf until the weight of the NSM is fully supported by the shelf.
+ .. Push the NSM into the shelf until it stops (about half an inch from the back of the shelf).
 +
-You can place your thumbs on the orange tabs on the front of each finger loop (of the latching mechanism arms) to push in the NSM module.
+You can place your thumbs on the orange tabs on the front of each finger loop (of the latching mechanism arms) to push in the NSM.
 
- .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM module.
+ .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM.
 +
-NOTE: If you are inserting the bottom NSM module, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
+NOTE: If you are inserting the bottom NSM, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
 
  .. With your thumbs, press down and hold the orange tabs on top of the latching mechanisms.
  .. Gently push forward to get the latches over the stop.
  .. Release your thumbs from the tops of the latching mechanisms, and then continue pushing until the latching mechanisms snap into place.
 +
-The NSM module should be fully inserted into the shelf and flush with the edges of the shelf.
-. Reconnect the cabling to the NSM module:
- .. Reconnect the storage cabling to the same two NSM module ports.
+The NSM should be fully inserted into the shelf and flush with the edges of the shelf.
+. Reconnect the cabling to the NSM:
+ .. Reconnect the storage cabling to the same two NSM ports.
 +
 Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
 
@@ -119,12 +119,12 @@ Cables are inserted with the connector pull-tab facing up. When a cable is inser
 +
 When functioning correctly, a power supply's bicolored LED illuminates green.
 +
-Additionally, both NSM module port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
-. Verify that the attention (amber) LEDs on the NSM module containing the failed fan and the shelf operator display panel are no longer illuminated.
+Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
+. Verify that the attention (amber) LEDs on the NSM containing the failed fan and the shelf operator display panel are no longer illuminated.
 +
-The NSM module attention LEDs turn off after the NSM module reboots and no longer detects a fan issue. This can take three to five minutes.
+The NSM attention LEDs turn off after the NSM reboots and no longer detects a fan issue. This can take three to five minutes.
 
-. Verify that the NSM module is cabled correctly, by running Active IQ Config Advisor.
+. Verify that the NSM is cabled correctly, by running Active IQ Config Advisor.
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +
@@ -138,31 +138,31 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 .Steps
 
 . Properly ground yourself.
-. Disconnect the cabling from the NSM module that contains the FRU that you are replacing:
+. Disconnect the cabling from the NSM that contains the FRU that you are replacing:
  .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
 +
 Power supplies do not have a power switch.
 
- .. Disconnect the storage cabling from the NSM module ports.
+ .. Disconnect the storage cabling from the NSM ports.
 +
-Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM module later in this procedure.
+Make a note of the NSM ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM later in this procedure.
 
-. Remove the NSM module from the shelf:
+. Remove the NSM from the shelf:
 +
-image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM module.]
-.. On both ends of the NSM module, push the vertical locking tabs outward to release the handles.
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM.]
+.. On both ends of the NSM, push the vertical locking tabs outward to release the handles.
 +
 The handles come to rest horizontally to the vertical tabs.
-.. Pull the handles towards you to unseat the NSM module from the midplane of the shelf.
+.. Pull the handles towards you to unseat the NSM from the midplane of the shelf.
 +
 As you pull, the handles extend out from the shelf. When you feel some resistance, keep pulling.
-.. Slide the NSM module out of the shelf and place it on a flat, stable surface. 
+.. Slide the NSM out of the shelf and place it on a flat, stable surface. 
 +
-Make sure that you support the bottom of the NSM module as you slide it out of the shelf.
+Make sure that you support the bottom of the NSM as you slide it out of the shelf.
 
-. Open the NSM module cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+. Open the NSM cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 +
-NOTE: The FRU label on the NSM module cover shows the location of the five fans, along the rear wall of the NSM module.
+NOTE: The FRU label on the NSM cover shows the location of the five fans, along the rear wall of the NSM.
 
 . Physically identify the failed fan.
 +
@@ -173,16 +173,16 @@ When a fan fails, the system logs a warning message to the system console indica
 image::../media/drw_t_fan_replace_ieops-1979.svg[Remove failed fan.]
  .. Remove the failed fan by firmly grasping the sides where the blue touch points are located, and then pull it straight up out of its socket.
  .. Insert the replacement fan by aligning it within the guides, and then push down until the fan connector is fully seated in the socket.
-. Close the NSM module cover, and then tighten the thumb screw.
-. Insert the NSM module into the shelf.
+. Close the NSM cover, and then tighten the thumb screw.
+. Insert the NSM into the shelf.
 +
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the NSM module.]
-.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
-.. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
-.. Rotate the NSM module handles up and lock in place with the tabs.
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the NSM.]
+.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM, rotate them down to the horizontal position.
+.. Align the rear of the NSM with the opening in the shelf, and then gently push the NSM using the handles until it is fully seated.
+.. Rotate the NSM handles up and lock in place with the tabs.
 
-. Reconnect the cabling to the NSM module:
- .. Reconnect the storage cabling to the same two NSM module ports.
+. Reconnect the cabling to the NSM:
+ .. Reconnect the storage cabling to the same two NSM ports.
 +
 Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
 
@@ -190,12 +190,12 @@ Cables are inserted with the connector pull-tab facing up. When a cable is inser
 +
 When functioning correctly, a power supply's bicolored LED illuminates green.
 +
-Additionally, both NSM module port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
-. Verify that the attention (amber) LEDs on the NSM module containing the failed fan and the shelf operator display panel are no longer illuminated.
+Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
+. Verify that the attention (amber) LEDs on the NSM containing the failed fan and the shelf operator display panel are no longer illuminated.
 +
-The NSM module attention LEDs turn off after the NSM module reboots and no longer detects a fan issue. This can take three to five minutes.
+The NSM attention LEDs turn off after the NSM reboots and no longer detects a fan issue. This can take three to five minutes.
 
-. Verify that the NSM module is cabled correctly, by running Active IQ Config Advisor.
+. Verify that the NSM is cabled correctly, by running Active IQ Config Advisor.
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +

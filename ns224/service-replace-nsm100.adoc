@@ -1,10 +1,10 @@
 ---
 permalink: ns224/service-replace-nsm100.html
 sidebar: sidebar
-keywords: ns224, shelves, shelf, ns224 shelves, replace, impair, nvme, module, nsm, nondisruptive, drive, i/o, nsm, replace an nsm module
+keywords: ns224, shelves, shelf, ns224 shelves, replace, impair, nvme, module, nsm, nondisruptive, drive, i/o, nsm, replace an NSM
 summary: You can replace an impaired NVMe shelf module \(NSM\) nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
 ---
-= Replace an NSM module - NS224 shelves
+= Replace an NSM - NS224 shelves
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,7 @@ You can replace an impaired NVMe shelf module (NSM) nondisruptively in an NS224 
 
 .Before you begin
 
-* The shelf's partner NSM module must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the failed NSM module.
+* The shelf's partner NSM must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the failed NSM.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
@@ -21,12 +21,12 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 
 .About this task
 
-* Replacing the NSM module involves moving the following:
+* Replacing the NSM involves moving the following:
 
-** *NSM100 modules*: DIMMs, fans and power supply from the impaired NSM module to the replacement NSM module.
-** *NSM100B modules*: Fans, I/O module, and power supply from the impaired NSM module to the replacement NSM module.
+** *NSM100 modules*: DIMMs, fans and power supply from the impaired NSM to the replacement NSM.
+** *NSM100B modules*: Fans, I/O module, and power supply from the impaired NSM to the replacement NSM.
 +
-You do not move the real-time clock (RTC) battery or boot media. They come preinstalled in the replacement NSM module.
+You do not move the real-time clock (RTC) battery or boot media. They come preinstalled in the replacement NSM.
 
 * Allow at least 70 seconds between removal and installation of the NVMe shelf module (NSM).
 +
@@ -44,17 +44,17 @@ Do not revert firmware to a version that does not support your shelf and its com
 
 
 ====
-* Shelf (NSM) firmware is automatically updated (nondisruptively) on a new NSM module that has a non-current firmware version.
+* Shelf (NSM) firmware is automatically updated (nondisruptively) on a new NSM that has a non-current firmware version.
 +
-NSM module firmware checks occur every 10 minutes. An NSM module firmware update can take up to 30 minutes.
+NSM firmware checks occur every 10 minutes. An NSM firmware update can take up to 30 minutes.
 
 * If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
 If you do not know the `shelf_name` of the affected shelf, run the `storage shelf show` command.
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
+A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
 
-* When you unpack the replacement NSM module, save all packing materials for use when you return the failed NSM module.
+* When you unpack the replacement NSM, save all packing materials for use when you return the failed NSM.
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
@@ -65,50 +65,50 @@ If you need the RMA number or additional help with the replacement procedure, co
 
 .NSM100 modules
 --
-You can use the following animation or the written steps to replace an NSM module.
+You can use the following animation or the written steps to replace an NSM.
 
-video::f57693b3-b164-4014-a827-aa86002f4b34[panopto, title="Replace an NSM module in an NS224 shelf"]
+video::f57693b3-b164-4014-a827-aa86002f4b34[panopto, title="Replace an NSM in an NS224 shelf"]
 
 .Steps
 
 . Properly ground yourself.
-. Physically identify the impaired NSM module.
+. Physically identify the impaired NSM.
 +
 The system logs a warning message to the system console indicating which module is impaired. Additionally, the attention (amber) LED on the drive shelf operator display panel and the impaired module illuminate.
 
-. Disconnect the cabling from the impaired NSM module:
+. Disconnect the cabling from the impaired NSM:
  .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumbs screws if it is a DC power supply, and then unplug the power cord from the power supply.
 +
 Power supplies do not have a power switch.
 
- .. Disconnect the storage cabling from the NSM module ports.
+ .. Disconnect the storage cabling from the NSM ports.
 +
-Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports on the replacement NSM module, later in this procedure.
-. Remove the NSM module from the shelf:
- .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM module.
+Make a note of the NSM ports that each cable is connected to. You reconnect the cables to the same ports on the replacement NSM, later in this procedure.
+. Remove the NSM from the shelf:
+ .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM.
 +
-NOTE: If you are removing the bottom NSM module, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
+NOTE: If you are removing the bottom NSM, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
 
  .. With your thumbs, press down and hold the orange tabs on top of the latching mechanisms.
 +
 The latching mechanisms raise, clearing the latching pins on the shelf.
 
- .. Gently pull until the NSM module is about one third of the way out of the shelf, grasp the NSM module sides with both hands to support its weight, and then place it on a flat stable surface.
+ .. Gently pull until the NSM is about one third of the way out of the shelf, grasp the NSM sides with both hands to support its weight, and then place it on a flat stable surface.
 +
-When you begin pulling, the latching mechanism arms extend from the NSM module and lock in their fully extended position.
-. Unpack the replacement NSM module, and set it on a level surface near the impaired NSM module.
-. Open the cover of the impaired NSM module and the replacement NSM module by loosening the thumbscrew on each cover.
+When you begin pulling, the latching mechanism arms extend from the NSM and lock in their fully extended position.
+. Unpack the replacement NSM, and set it on a level surface near the impaired NSM.
+. Open the cover of the impaired NSM and the replacement NSM by loosening the thumbscrew on each cover.
 +
-NOTE: The FRU label on the NSM module cover shows the location of the DIMMs and fans.
+NOTE: The FRU label on the NSM cover shows the location of the DIMMs and fans.
 
-. Move the DIMMs from the impaired NSM module to the replacement NSM module:
- .. Note the orientation of the DIMMs in the slots so that you can insert the DIMMs into the replacement NSM module using the same orientation.
+. Move the DIMMs from the impaired NSM to the replacement NSM:
+ .. Note the orientation of the DIMMs in the slots so that you can insert the DIMMs into the replacement NSM using the same orientation.
  .. Eject a DIMM from its slot by slowly pushing apart the ejector tabs at both ends of the DIMM slot, and then lift the DIMM out of the slot.
 +
 NOTE: Carefully hold the DIMM by the corners or edges to avoid pressure on the DIMM circuit board components.
 The ejector tabs remain in the open position.
 
- .. Hold the DIMM by the corners, and then insert the DIMM squarely into a slot on the replacement NSM module.
+ .. Hold the DIMM by the corners, and then insert the DIMM squarely into a slot on the replacement NSM.
 +
 The notch on the bottom of the DIMM, among the pins, should line up with the tab in the slot.
 +
@@ -116,42 +116,42 @@ When inserted correctly, the DIMM should go in easily but fit tightly in the slo
 
  .. Push down carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at both ends of the DIMM.
  .. Repeat substeps 7a through 7d for the remaining DIMMs.
-. Move the fans from the impaired NSM module to the replacement NSM module:
+. Move the fans from the impaired NSM to the replacement NSM:
  .. Firmly grasp a fan from the sides, where the blue touch points are located, and then lift it vertically to disconnect it from the socket.
 +
 You might need to gently rock the fan back and forth to disconnect it before lifting it out.
 
- .. Align the fan with the guides in the replacement NSM module, and then push down until the fan module connector is fully seated in the socket.
+ .. Align the fan with the guides in the replacement NSM, and then push down until the fan module connector is fully seated in the socket.
  .. Repeat substeps 8a and 8b for the remaining fans.
-. Close the cover of each NSM module, and then tighten each thumbscrew.
-. Move the power supply from the impaired NSM module to the replacement NSM module:
+. Close the cover of each NSM, and then tighten each thumbscrew.
+. Move the power supply from the impaired NSM to the replacement NSM:
  .. Rotate the handle up, to its horizontal position, and then grasp it.
  .. With your thumb, press the blue tab to release the locking mechanism.
- .. Pull the power supply out of the NSM module while using your other hand to support its weight.
- .. Using both hands, support and align the edges of the power supply with the opening in the replacement NSM module.
- .. Gently push the power supply into the NSM module until the locking mechanism clicks into place.
+ .. Pull the power supply out of the NSM while using your other hand to support its weight.
+ .. Using both hands, support and align the edges of the power supply with the opening in the replacement NSM.
+ .. Gently push the power supply into the NSM until the locking mechanism clicks into place.
 +
 NOTE: Do not use excessive force or you might damage the internal connector.
 
  .. Rotate the handle down, so it is out of the way of normal operations.
-. Insert the replacement NSM module into the shelf:
+. Insert the replacement NSM into the shelf:
  .. Make sure that the latching mechanism arms are locked in the fully extended position.
- .. Using both hands, gently slide the NSM module into the shelf until the weight of the NSM module is fully supported by the shelf.
- .. Push the NSM module into the shelf until it stops (about half an inch from the back of the shelf).
+ .. Using both hands, gently slide the NSM into the shelf until the weight of the NSM is fully supported by the shelf.
+ .. Push the NSM into the shelf until it stops (about half an inch from the back of the shelf).
 +
-You can place your thumbs on the orange tabs on the front of each finger loop (of the latching mechanism arms) to push in the NSM module.
+You can place your thumbs on the orange tabs on the front of each finger loop (of the latching mechanism arms) to push in the NSM.
 
- .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM module.
+ .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM.
 +
-NOTE: If you are inserting the bottom NSM module, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
+NOTE: If you are inserting the bottom NSM, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
 
  .. With your thumbs, press down and hold the orange tabs on top of the latching mechanisms.
  .. Gently push forward to get the latches over the stop.
  .. Release your thumbs from the tops of the latching mechanisms, and then continue pushing until the latching mechanisms snap into place.
 +
-The NSM module should be fully inserted into the shelf and flush with the edges of the shelf.
-. Reconnect the cabling to the NSM module:
- .. Reconnect the storage cabling to the same two NSM module ports.
+The NSM should be fully inserted into the shelf and flush with the edges of the shelf.
+. Reconnect the cabling to the NSM:
+ .. Reconnect the storage cabling to the same two NSM ports.
 +
 Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
 
@@ -159,17 +159,17 @@ Cables are inserted with the connector pull-tab facing up. When a cable is inser
 +
 When functioning correctly, a power supply's bicolored LED illuminates green.
 +
-Additionally, both NSM module port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
+Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
 . Verify that the attention (amber) LED on the shelf operator display panel is no longer illuminated.
 +
-The operator display panel attention LED turns off after the NSM module reboots. This can take three to five minutes.
+The operator display panel attention LED turns off after the NSM reboots. This can take three to five minutes.
 
-. Verify that the NSM module is cabled correctly, by running Active IQ Config Advisor.
+. Verify that the NSM is cabled correctly, by running Active IQ Config Advisor.
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
-. Make sure that both NSM modules in the shelf are running the same version of firmware: version 0200 or later.
+. Make sure that both NSMs in the shelf are running the same version of firmware: version 0200 or later.
 
 --
 
@@ -179,74 +179,74 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 .Steps
 
 . Properly ground yourself.
-. Physically identify the impaired NSM module.
+. Physically identify the impaired NSM.
 +
 The system logs a warning message to the system console indicating which module is impaired. Additionally, the attention (amber) LED on the drive shelf operator display panel and the impaired module illuminate.
 
-. Disconnect the cabling from the impaired NSM module:
+. Disconnect the cabling from the impaired NSM:
  .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumbs screws if it is a DC power supply, and then unplug the power cord from the power supply.
 +
 Power supplies do not have a power switch.
 
- .. Disconnect the storage cabling from the NSM module ports.
+ .. Disconnect the storage cabling from the NSM ports.
 +
-Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports on the replacement NSM module, later in this procedure.
-. Remove the NSM module from the shelf:
+Make a note of the NSM ports that each cable is connected to. You reconnect the cables to the same ports on the replacement NSM, later in this procedure.
+. Remove the NSM from the shelf:
 +
-image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM module.]
-.. On both ends of the NSM module, push the vertical locking tabs outward to release the handles.
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM.]
+.. On both ends of the NSM, push the vertical locking tabs outward to release the handles.
 +
 The handles come to rest horizontally to the vertical tabs.
-.. Pull the handles towards you to unseat the NSM module from the midplane of the shelf.
+.. Pull the handles towards you to unseat the NSM from the midplane of the shelf.
 +
 As you pull, the handles extend out from the shelf. When you feel some resistance, keep pulling.
-.. Slide the NSM module out of the shelf and place it on a flat, stable surface. 
+.. Slide the NSM out of the shelf and place it on a flat, stable surface. 
 +
-Make sure that you support the bottom of the NSM module as you slide it out of the shelf.
+Make sure that you support the bottom of the NSM as you slide it out of the shelf.
 
 
-. Unpack the replacement NSM module, and set it on a level surface near the impaired NSM module.
-. Open the cover of the impaired NSM module and the replacement NSM module by loosening the thumbscrew on each cover.
+. Unpack the replacement NSM, and set it on a level surface near the impaired NSM.
+. Open the cover of the impaired NSM and the replacement NSM by loosening the thumbscrew on each cover.
 
 
-. Move the fans from the impaired NSM module to the replacement NSM module:
+. Move the fans from the impaired NSM to the replacement NSM:
 +
 image::../media/drw_t_fan_replace_ieops-1979.svg[Remove failed fan.]
  .. Remove a fan by firmly grasping the sides where the blue touch points are located, and then pull it straight up out of its socket.
- .. Insert the fan in the replacement NSM module by aligning it within the guides, and then pushing down until the fan connector is fully seated in the socket.
+ .. Insert the fan in the replacement NSM by aligning it within the guides, and then pushing down until the fan connector is fully seated in the socket.
  .. Repeat these steps for the remaining fans.
 
-. Move the I/O module from the impaired NSM module to the replacement NSM module.
+. Move the I/O module from the impaired NSM to the replacement NSM.
 +
 image::../media/drw_t_io_module_replace_ieops-1980.svg[Replace the I/O module.]
 .. Turn the I/O module thumbscrew counterclockwise to loosen.
-.. Pull the I/O module out of the NSM module using the port label tab on the left and the thumbscrew.
-.. Align the I/O module with the edges of the slot in the replacement NSM module.
+.. Pull the I/O module out of the NSM using the port label tab on the left and the thumbscrew.
+.. Align the I/O module with the edges of the slot in the replacement NSM.
 .. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
 +
 You can use the tab on the left and the thumbscrew to push in the I/O module.
 
-. Close the cover of each NSM module, and then tighten each thumbscrew.
+. Close the cover of each NSM, and then tighten each thumbscrew.
 
-. Move the power supply from the impaired NSM module to the replacement NSM module:
+. Move the power supply from the impaired NSM to the replacement NSM:
  .. Rotate the handle up, to its horizontal position, and then grasp it.
  .. With your thumb, press the blue tab to release the locking mechanism.
- .. Pull the power supply out of the NSM module while using your other hand to support its weight.
- .. Using both hands, support and align the edges of the power supply with the opening in the replacement NSM module.
- .. Gently push the power supply into the NSM module until the locking mechanism clicks into place.
+ .. Pull the power supply out of the NSM while using your other hand to support its weight.
+ .. Using both hands, support and align the edges of the power supply with the opening in the replacement NSM.
+ .. Gently push the power supply into the NSM until the locking mechanism clicks into place.
 +
 NOTE: Do not use excessive force or you might damage the internal connector.
  .. Rotate the handle down, so it is out of the way of normal operations.
 
-. Insert the replacement NSM module into the shelf:
+. Insert the replacement NSM into the shelf:
 +
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace NSM module.]
-.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
-.. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
-.. Rotate the NSM module handles up and lock in place with the tabs.
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace NSM.]
+.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM, rotate them down to the horizontal position.
+.. Align the rear of the NSM with the opening in the shelf, and then gently push the NSM using the handles until it is fully seated.
+.. Rotate the NSM handles up and lock in place with the tabs.
 
-. Reconnect the cabling to the NSM module:
- .. Reconnect the storage cabling to the same two NSM module ports.
+. Reconnect the cabling to the NSM:
+ .. Reconnect the storage cabling to the same two NSM ports.
 +
 Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
 
@@ -254,17 +254,17 @@ Cables are inserted with the connector pull-tab facing up. When a cable is inser
 +
 When functioning correctly, a power supply's bicolored LED illuminates green.
 +
-Additionally, both NSM module port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
+Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
 . Verify that the attention (amber) LED on the shelf operator display panel is no longer illuminated.
 +
-The operator display panel attention LED turns off after the NSM module reboots. This can take three to five minutes.
+The operator display panel attention LED turns off after the NSM reboots. This can take three to five minutes.
 
-. Verify that the NSM module is cabled correctly, by running Active IQ Config Advisor.
+. Verify that the NSM is cabled correctly, by running Active IQ Config Advisor.
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
-. Make sure that both NSM modules in the shelf are running the same version of firmware: version 0200 or later.
+. Make sure that both NSMs in the shelf are running the same version of firmware: version 0200 or later.
 
 --
 ====

@@ -1,7 +1,7 @@
 ---
 permalink: ns224/service-monitor-leds.html
 sidebar: sidebar
-keywords: monitor, health, drive, shelf, location, status, condition, led, component, operator, display, panel, nsm, power, supply, drive, monitor drive shelf leds, operator display panel leds, nsm module leds, power supply leds, drive leds
+keywords: monitor, health, drive, shelf, location, status, condition, led, component, operator, display, panel, nsm, power, supply, drive, monitor drive shelf leds, operator display panel leds, nsm leds, power supply leds, drive leds
 summary: You can monitor the health of your drive shelf by understanding the location and status conditions of the LEDs on your drive shelf components.
 ---
 = Monitor drive shelf LEDs - NS224 shelves
@@ -11,7 +11,7 @@ summary: You can monitor the health of your drive shelf by understanding the loc
 [.lead]
 You can monitor the health of your drive shelf by understanding the location and status conditions of the LEDs on your drive shelf components.
 
-* The location (blue) LEDs, on a shelf's operator display panel (ODP) and both NSM modules, can be activated to aid in physically locating the shelf that needs servicing: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
+* The location (blue) LEDs, on a shelf's operator display panel (ODP) and both NSMs, can be activated to aid in physically locating the shelf that needs servicing: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
 If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
 +
@@ -65,11 +65,11 @@ a|
 The system administrator activated this LED function.
 |===
 
-== NSM module LEDs
+== NSM LEDs
 
-The LEDs on an NSM module indicate whether the module is functioning normally, whether it is ready for I/O traffic, and whether there are any problems with the hardware.
+The LEDs on an NSM indicate whether the module is functioning normally, whether it is ready for I/O traffic, and whether there are any problems with the hardware.
 
-The following illustration and tables describe NSM module LEDs associated with the function of a module and the function of each NVMe port on a module.
+The following illustration and tables describe NSM LEDs associated with the function of a module and the function of each NVMe port on a module.
 
 
 
@@ -91,7 +91,7 @@ image::../media/drw_sas3_location_icon.svg[Operator display panel location LED, 
 a|
 Blue
 a|
-NSM module: Location
+NSM: Location
 a|
 image:../media/icon_round_2.png[Callout number 2]
 a|
@@ -99,7 +99,7 @@ image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, wid
 a|
 Amber
 a|
-NSM module: Attention
+NSM: Attention
 a|
 image:../media/icon_round_3.png[Callout number 3] 
 a|
@@ -160,7 +160,7 @@ image::../media/drw_sas3_location_icon.svg[Operator display panel location LED, 
 a|
 Blue
 a|
-NSM module: Location
+NSM: Location
 
 a|
 image:../media/icon_round_5.png[Callout number 5] 
@@ -169,7 +169,7 @@ image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, wid
 a|
 Amber
 a|
-NSM module: Attention
+NSM: Attention
 
 |===
 
