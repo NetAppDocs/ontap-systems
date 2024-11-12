@@ -145,12 +145,9 @@ Make sure that you keep track of which slot the I/O module was in.
 . Repeat the remove and install steps to replace additional modules for the controller module.
 
 . Rotate the cable management tray into the locked position.
-. Reboot the controller module from the LOADER prompt:_bye_
-.. Check the version of BMC on the controller: _system service-processor show_
-.. Update the BMC firmware if needed: _system service-processor image update_
-.. Reboot the node: _bye_
-+
-NOTE: This reinitializes the PCIe cards and other components and reboots the node.
+. Reboot the controller module from the LOADER prompt: `bye` 
+ 
++ This reinitializes the PCIe cards and other components and reboots the node.
 +
 
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement]
