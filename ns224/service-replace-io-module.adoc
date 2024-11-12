@@ -2,14 +2,14 @@
 permalink: ns224/service-replace-io-module.html
 sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, replace, fail,  nondisruptive, power, i/o
-summary: You can replace a failed real-time clock \(RTC\) battery nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
+summary: You can replace a failed ethernet I/O module nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
 ---
 = Replace the I/O module - NS224 shelves with NSM100B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can replace a failed I/O module nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress. This procedure only applies to NS224 shelves with NSM100B modules.
+You can replace a failed ethernet I/O module nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress. This procedure only applies to NS224 shelves with NSM100B modules.
 
 .Before you begin
 
@@ -65,7 +65,7 @@ Make a note of the NSM module ports that each cable is connected to. You reconne
 
 . Remove the NSM module from the shelf:
 +
-image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove controller.]
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM module.]
 .. On both ends of the NSM module, push the vertical locking tabs outward to release the handles.
 +
 The handles come to rest horizontally to the vertical tabs.
@@ -76,13 +76,13 @@ As you pull, the handles extend out from the shelf. When you feel some resistanc
 +
 Make sure that you support the bottom of the NSM module as you slide it out of the shelf.
 
-. Remove the failed I/O module from the controller:
+. Remove the failed I/O module from the NSM module:
 +
 
 image::../media/drw_t_io_module_replace_ieops-1980.svg[Replace the I/O module.]
 
 .. Turn the I/O module thumbscrew counterclockwise to loosen.
-.. Pull the I/O module out of the controller using the port label tab on the left and the thumbscrew.
+.. Pull the I/O module out of the NSM module using the port label tab on the left and the thumbscrew.
 
 
 . Install the replacement I/O module into the target slot:
@@ -97,7 +97,7 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 
 . Insert the NSM module into the shelf.
 +
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace controller.]
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace NSM module.]
 .. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
 .. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
 .. Rotate the NSM module handles up and lock in place with the tabs.
@@ -114,9 +114,9 @@ When functioning correctly, a power supply's bicolored LED illuminates green.
 +
 Additionally, both NSM module port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
 
-. Verify that the attention (amber) LEDs on the NSM module containing the failed RTC battery and the shelf operator display panel are no longer illuminated
+. Verify that the attention (amber) LEDs on the NSM module containing the failed I/O module and the shelf operator display panel are no longer illuminated
 +
-The NSM module attention LEDs turn off after the NSM module reboots and no longer detects an RTC battery issue. This can take three to five minutes.
+The NSM module attention LEDs turn off after the NSM module reboots and no longer detects an I/O module issue. This can take three to five minutes.
 
 . Verify that the NSM module is cabled correctly, by running Active IQ Config Advisor.
 +

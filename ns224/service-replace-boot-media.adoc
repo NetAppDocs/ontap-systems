@@ -13,17 +13,17 @@ You can replace a failed boot media in an NS224 shelf. Replacing the boot media 
 
 .Before you begin
 
-* *NS224 with NSM100 modules only*: Your HA pair must already be running ONTAP 9.7 or later, which has the minimum supported version of NSM firmware, or your HA pair must already be running a version of ONTAP 9.6 with NSM firmware version 0111 or later.
+* *NS224 with NSM100 modules only*: Your HA pair must already be running ONTAP 9.7 or later, which has the minimum supported version of NSM firmware.
 +
 You can enter the `storage shelf show -module` command at the console of either controller to verify the version of NSM firmware on your shelf.
 +
 [NOTE]
 ====
-If your shelf is not running NSM firmware version 0111 or later, you cannot replace the boot media, you must replace the NSM module.
+If your shelf is not running NSM firmware version 0111 or later, you cannot replace the boot media, you must replace the NSM.
 
 link:service-replace-nsm100.html[Replace an NSM module - NS224 shelves^]
 ====
-* You need a Phillips #1 screwdriver.
+* *NS224 with NSM100 modules only*: You need a Phillips #1 screwdriver.
 +
 The screw used to secure the boot media to the board requires a Phillips #1 screwdriver; using a different type of screwdriver could strip the screw.
 

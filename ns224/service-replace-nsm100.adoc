@@ -193,7 +193,7 @@ Power supplies do not have a power switch.
 Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports on the replacement NSM module, later in this procedure.
 . Remove the NSM module from the shelf:
 +
-image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove controller.]
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM module.]
 .. On both ends of the NSM module, push the vertical locking tabs outward to release the handles.
 +
 The handles come to rest horizontally to the vertical tabs.
@@ -220,7 +220,7 @@ image::../media/drw_t_fan_replace_ieops-1979.svg[Remove failed fan.]
 +
 image::../media/drw_t_io_module_replace_ieops-1980.svg[Replace the I/O module.]
 .. Turn the I/O module thumbscrew counterclockwise to loosen.
-.. Pull the I/O module out of the controller using the port label tab on the left and the thumbscrew.
+.. Pull the I/O module out of the NSM module using the port label tab on the left and the thumbscrew.
 .. Align the I/O module with the edges of the slot in the replacement NSM module.
 .. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
 +
@@ -240,7 +240,7 @@ NOTE: Do not use excessive force or you might damage the internal connector.
 
 . Insert the replacement NSM module into the shelf:
 +
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace controller.]
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace NSM module.]
 .. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
 .. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
 .. Rotate the NSM module handles up and lock in place with the tabs.

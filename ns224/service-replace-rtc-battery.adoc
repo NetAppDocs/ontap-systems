@@ -154,7 +154,7 @@ Make a note of the NSM module ports that each cable is connected to. You reconne
 
 . Remove the NSM module from the shelf:
 +
-image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove controller.]
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM module.]
 .. On both ends of the NSM module, push the vertical locking tabs outward to release the handles.
 +
 The handles come to rest horizontally to the vertical tabs.
@@ -165,17 +165,30 @@ As you pull, the handles extend out from the shelf. When you feel some resistanc
 +
 Make sure that you support the bottom of the NSM module as you slide it out of the shelf.
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+. Open the module cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
-. Open the controller air duct on the top of the controller.
+. Open the module air duct on the top of the NSM module.
 .. Insert your fingers in the recesses at the far ends of the air duct.
 .. Lift the air duct and rotate it upward as far as it will go.
 . Locate the RTC battery under the air duct and replace it.
+.. Remove the failed battery:
 +
-image::../media/drw_t_rtc_battery_replace_ieops-1981.svg[Replace the RTC battery]
+image::../media/drw_t_rtc_battery_replace_ieops-1981.svg[Replace the RTC battery.]
++
+[cols="1,4"]
 
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Gently rotate the RTC battery at an angle away from its holder.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Lift the RTC battery out of its holder.
 
-.. Gently push the battery away from the holder, rotate it away from the holder, and then lift it out of the holder.
+|===
+
 .. Remove the replacement battery from the antistatic shipping bag.
 .. Note the polarity of the RTC battery, and then insert it into the holder by tilting the battery at an angle and pushing down.
 +
@@ -185,7 +198,7 @@ NOTE: You must ensure that the plus sign on the battery corresponds to the plus 
 . Close the NSM module cover and turn the thumbscrew clockwise until tightened.
 . Insert the NSM module into the shelf.
 +
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the RTC battery]
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace the NSM module.]
 .. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
 .. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
 .. Rotate the NSM module handles up and lock in place with the tabs.

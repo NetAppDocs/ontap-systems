@@ -17,13 +17,13 @@ You can replace a faulty DIMM nondisruptively in an NS224 drive shelf that is po
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
-* All other components in the system, including the other three DIMMs, must be functioning properly.
+* All other components in the system, including the other three DIMMs in the NSM100 module and one DIMM in the NSM100B module, must be functioning properly.
 
 .About this task
 
 * Allow at least 70 seconds between removal and installation of the NVMe shelf module (NSM).
 +
-This allows enough time for ONTAP to process the NSM removal event.
+This allows enough time for ONTAP to process NSM removal event.
 
 * *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
 +
@@ -162,7 +162,7 @@ Power supplies do not have a power switch.
 Make a note of the NSM module ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM module, later in this procedure.
 . Remove the NSM module from the shelf:
 +
-image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove controller.]
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM module.]
 .. On both ends of the NSM module, push the vertical locking tabs outward to release the handles.
 +
 The handles come to rest horizontally to the vertical tabs.
@@ -173,10 +173,10 @@ As you pull, the handles extend out from the shelf. When you feel some resistanc
 +
 Make sure that you support the bottom of the NSM module as you slide it out of the shelf.
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+. Open the NSM module cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
 +
-The FRU label on the NSM module cover shows the location of the four DIMMs, two on either side of the heat sink, in the center of the NSM module.
+The FRU label on the NSM module cover shows the location of the DIMMs and DIMM blanks in the center of the NSM module.
 
 . Physically identify the faulty DIMM.
 +
@@ -205,7 +205,7 @@ When inserted correctly, the DIMM should go in easily but fit tightly in the slo
 . Close the NSM module cover, and then tighten the thumb screw.
 . Insert the NSM module into the shelf.
 +
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace controller.]
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace NSM module.]
 .. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM module, rotate them down to the horizontal position.
 .. Align the rear of the NSM module with the opening in the shelf, and then gently push the NSM module using the handles until it is fully seated.
 .. Rotate the NSM module handles up and lock in place with the tabs.
