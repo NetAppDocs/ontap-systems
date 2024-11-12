@@ -1,5 +1,5 @@
 ---
-permalink: asa900/bootmedia_recovery_image.html
+permalink: asa900/bootmedia_recovery_image_boot.html
 sidebar: sidebar
 keywords:
 summary: 'The procedure for booting the impaired controller from the recovery image depends on whether the system is in a two-node MetroCluster configuration.'
@@ -10,4 +10,4 @@ summary: 'The procedure for booting the impaired controller from the recovery im
 
 [.lead]
 
-include::../_include/900_bootmedia_recovery_image.adoc[]
+include::../_include/bootmedia_recovery_image_boot.adoc[]
