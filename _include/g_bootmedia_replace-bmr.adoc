@@ -1,53 +1,122 @@
-To replace the boot media, you must remove the System Management module from the back of the system, remove the impaired boot media, and install the replacement boot media in the System Management module.
+To replace the boot media, you must remove the impaired controller, remove the impaired boot media, and install the replacement boot media in the impaired controller.
 
-.Steps
+== Step 1: Remove the controller
 
-The boot media is located inside the System Management module and is accessed by removing the module from the system.
+include::../_include/g_controller_remove.adoc[]
+
+. Place the controller on an anti-static mat.
+
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
 
-image::../media/drw_a70-90_boot_media_remove_replace_ieops-1367.svg[Boot media replace graphic]
+== Step 2: Replace the boot media
 
+To replace the boot media, locate it inside the controller and follow the specific sequence of steps.
+
+. If you are not already grounded, properly ground yourself. 
+
+. Remove the boot media:
++
+image::../media/drw_g_boot_media_replace_ieops-1872.svg[Boot media replace graphic]
++
 [cols="1,4"]
 |===
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-System Management module cam latch
+Boot media location
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-Boot media locking button
+Press down on the blue tab to release the right end of the boot media.
 a|
 image::../media/icon_round_3.png[Callout number 3]
 a|
-Boot media
+Lift the right end of the boot media up at a slight angle to get a good grip along the sides of the boot media.
+a|
+image::../media/icon_round_4.png[Callout number 4]
+a|
+Gently pull the left end of the boot media out of its socket.
+|===
++
+. Install the replacement boot media:
+.. Remove the boot media from its package.
+.. Slide the socket end of the boot media into its socket.
+.. At the opposite end of the boot media, press down and hold the blue tab (in the open position), gently push down on that end of the boot media until it touches the motherboard, and then release the tab to lock the boot media into place.
+
+== Step 3: Reinstall the controller
+
+Reinstall the controller into the chassis and reboot it.
+
+.About this task
+
+The following illustration shows the operation of the controller handles (from the left side of a controller) when reinstalling the controller, and can be used as a reference for the rest of the controller reinstallation steps.
+
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[controller handle operation to install a controller]
+
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+If you rotated the controller handles upright (next to the tabs) to move them out of the way while you serviced the controller, rotate them down to the horizontal position. 
+a|
+image::../media/icon_round_2.png[Callout number 2] 
+a|
+Push the handles to reinsert the controller into the chassis halfway and then, when instructed, push until the controller is fully seated.
+a|
+image::../media/icon_round_3.png[Callout number 3] 
+a|
+Rotate the handles to the upright position and lock in place with the locking tabs.
+
 |===
 
-. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
+.Steps
+
+. Close the controller cover and turn the thumbscrew clockwise until tightened.
+
+. Insert the controller halfway into the chassis.
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives in chassis,width=400px]
+Align the rear of the controller with the opening in the chassis, and then gently push the controller using the handles.
 +
-. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+NOTE: Do not completely insert the controller in the chassis until instructed to do so later in this procedure.
++
 
-. Disconnect power to the controller module by pulling the controller module out about three inches:
-.. Press down on both of the controller module locking latches, and then rotate both latches downward at the same time.
-.. Pull the controller module about 3 inches out of the chassis to disengage power.
+. Reconnect the cables to the controller; however, do not plug in the power cord to the power supply (PSU) at this time.
++
+NOTE: Make sure that the console cable is connected to the controller because you want to catch and log the boot sequence later in the boot media replacement procedure when you fully seat the controller in the chassis and it begins to boot.
 
-.. Remove any cables connected to the System Management module. Make sure to label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module.
-.. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down. 
-.. Depress the system management cam button.
-The cam lever moves away from the chassis.
- .. Rotate the cam lever all the way down and remove the System Management module from the controller module.
-.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
-. Remove the boot media from the management module:
-.. Press the blue locking button.
-.. Rotate the boot media up,  slide it out of the socket, and set it aside.
-. Install the replacement boot media into the System Management module:
-.. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
-.. Rotate the boot media down toward the locking button. 
-.. Push the locking button, rotate the boot media all the way down and then release the locking button.
-. Reinstall the System Management module: 
-.. Rotate the cable management tray up to the closed position.
-.. Recable the System Management module.
++
+. Fully seat the controller in the chassis:
 
+.. Firmly push on the handles until the controller meets the midplane and is fully seated.
++
+Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
++
+NOTE: The controller boots when fully seated in the chassis. It gets its power from the partner controller.
++
+.. If the controller boots to the LOADER prompt, reboot the controller: `boot_ontap`
+.. Rotate the controller handles up and lock in place with the tabs.
++
+. Reconnect the power cord to the PSU on the impaired controller.
++
+Once power is restored to the PSU, the status LED should be green.
++
+[options="header" cols="1,2"]
+
+|===
+| If you are reconnecting a...| Then...
+a|
+AC PSU
+a|
+. Plug the power cord into the PSU.
+. Secure the power cord with the power cord retainer.
+a|
+DC PSU
+a|
+. Plug the D-SUB DC power cord connector into the PSU.
+. Tighten the two thumb screws to secure the D-SUB DC power cord connector to the PSU.
+
+|===
 

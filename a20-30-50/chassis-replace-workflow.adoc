@@ -9,19 +9,20 @@ summary: You must replace the failed component with a replacement FRU component 
 :imagesdir: ../media/
 
 [.lead]
-Follow these workflow steps to replace your chassis. The chassis is the physical enclosure housing all the controller components such as the controllers/CPU units, power supplies, and I/O.
+Follow these workflow steps to replace your chassis.
 
-.Before you begin
-To replace the chassis, you must meet certain requirements. Review the link:controller-replace-requirements.html[chassis replacement requirements and considerations].
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:chassis-replace-requirements.html[Review the chassis replace requirements]
+[role="quick-margin-para"]
+To replace the chassis, you must meet certain requirements.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:chassis-replace-shutdown.html[Shut down the controllers]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:chassis-replace-shutdown.html[Shut down the controllers]
 [role="quick-margin-para"]
 Shut down the controllers so you can perform maintenance on the chassis.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:chassis-replace-move-hardware.html[Replace the chassis]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:chassis-replace-move-hardware.html[Replace the chassis]
 [role="quick-margin-para"]
-Replacing the chassis includes moving the bezel, drives, and controllers from the impaired chassis to a new chassis of the same model, and swapping out the impaired chassis with the new chassis.
+Replacing the chassis includes moving the power supplies, hard drives, and controller module from the impaired chassis to the new chassis, and swapping out the impaired chassis with the new chassis of the same model as the impaired chassis.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:chassis-replace-complete-system-restore-rma.html[Complete chassis replacement]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:chassis-replace-complete-system-restore-rma.html[Complete chassis replacement]
 [role="quick-margin-para"]
 Verify the HA state of the chassis and return the failed part to NetApp.

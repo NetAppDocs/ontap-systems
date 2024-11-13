@@ -10,6 +10,7 @@ You can add I/O modules to your storage system by either adding them to availabl
 
 .About this task
 * When adding I/O modules, you add the same module type in each controller. This procedure has you add them one at a time by repeating steps.
+* The controller in which you are adding an I/O module is referred to as the _impaired_ controller.
 * If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
 A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
@@ -67,29 +68,28 @@ Pull the I/O blanking module out of the controller using the tab on the left and
 .. Align the I/O module with the edges of the controller slot opening.
 .. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
 +
-You can use the tab on the left and the thumbscrew to push in the I/O Module.
+You can use the tab on the left and the thumbscrew to push in the I/O module.
 +
 .. Turn the thumbscrew clockwise to tighten.
-. Cable the I/O module.
+. Cable the I/O module to the designated devices.
 +
-If the I/O module is a NIC, cable the module to the data switches.  
+If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
 +
-If the I/O module is a storage module, cable it to the NS224 shelf.
-
-. Reboot the impaired controller from the LOADER prompt: _bye_
+. Reboot the impaired controller from the LOADER prompt: `bye`
 +
 This reinitializes the PCIe devices, other components, and reboots the node.
 +
-. Give back the impaired controller from the partner controller: _storage failover giveback -ofnode target_node_name_
-. Repeat these steps for the other controller.
+. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`
+// This is used in internal FRU docs: Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
-. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Repeat these steps to add an I/O module to the other controller.
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
 
-. If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
+. If AutoSupport is enabled, restore (unsuppress) automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 
-== Option 2: Add I/O modules in a storage system with no available slots
+
+== Option 2: Add I/O modules in a storage system with unavailable slots
 
 You can add I/O modules to a fully-populated storage system by removing existing I/O modules and replacing them with different I/O modules.
 
@@ -102,22 +102,22 @@ You can add I/O modules to a fully-populated storage system by removing existing
 a|
 NIC I/O module with the same number of ports
 a|
-The LIFs will automatically migrate when its controller is shut down.
+The LIFs automatically migrate when its controller is shut down.
 a|
 NIC I/O module with fewer ports
 a|
-Permanently reassign the ASAected LIFs to a different home port. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^] for information about using System Manager to permanently move the LIFs.
+Permanently reassign the affected LIFs to a different home port. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^] for information about using System Manager to permanently move the LIFs.
 a|
 NIC I/O module with a storage I/O module
 a|
 Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
 |===
 
-=== Step 1: Shut down the target controller
+=== Step 1: Shut down the impaired controller
 
-Shut down or take over the target controller.
+Shut down or take over the impaired controller.
 
-// Shut down or take over the target controller using one of the following options.
+// Shut down or take over the impaired controller using one of the following options.
 
 // [role="tabbed-block"]
 // ====
@@ -166,38 +166,23 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 +
 .. Turn the thumbscrew clockwise to tighten.
 . Cable the I/O module to the designated devices.
++
+If you installed a storage I/O module, install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
++
+. Repeat the I/O module remove and install steps to add any additional I/O modules in the controller.
 
-. Repeat the remove and install steps to add any additional I/O modules in the controller.
-
-. Reboot the controller and check the BMC firmware version:
-.. From the LOADER prompt, reboot the controller:_bye_
-.. Check the version of BMC on the controller: _system service-processor show_
-.. Update the BMC firmware if needed: _system service-processor image update_
-.. Reboot the controller: _bye_
+. Reboot the impaired controller: `bye`
 +
 This reinitializes the PCIe devices, other components, and reboots the node.
-+
-NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement]
 
-. Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
-. Enable automatic giveback if it was disabled: _storage failover modify -node local -auto-giveback true_
+. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`
++
+// This is used in internal FRU docs: Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
++
+. Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
 
-. The next step depends on what type of I/O module you added:
-+
-[options="header" cols="1,2"]
-|===
-| If the I/O module is a...| Then...
-a|
-NIC module
-a|
-Use the `storage port modify -node *_<node name>__ -port *_<port name>__ -mode network` command for each port.
-a|
-Storage module
-a|
-Install and cable your NS224 shelves, as described in
-https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf-overview.html[Hot-add workflow^].
-a|
-+
-|===
+. If AutoSupport is enabled, restore (unsuppress) automatic case creation: system node autosupport invoke -node * -type all -message MAINT=END
+
+. If you installed a NIC module, specify the usage mode for each port as _network_: `storage port modify -node *_<node name>_ -port *_<port name>_ -mode network`
 
 . Repeat these steps for the other controller.

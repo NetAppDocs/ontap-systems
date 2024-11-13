@@ -7,11 +7,14 @@ Before replacing the boot media, make sure to review the following requirements 
 * You must copy the `image_xxx.tgz` file to the USB flash drive for later use in this procedure.
 
 * You must replace the failed component with a replacement FRU component you received from your provider.
-* It is important that you apply the commands in these steps on the correct controller:
- ** The _impaired_ controller is the controller on which you are performing maintenance.
- ** The _healthy_ controller is the HA partner of the impaired controller.
+
 
 == Considerations
+
+* It is important that you apply the commands in these steps on the correct controller:
+** The _impaired_ controller is the controller on which you are performing maintenance.
+** The _healthy_ controller is the HA partner of the impaired controller.
+
 * If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
 A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 

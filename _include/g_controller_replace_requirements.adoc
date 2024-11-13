@@ -5,7 +5,6 @@ You must review the requirements and considerations for the controller replaceme
 * All shelves must be working properly.
 * The healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
 // * If your system is in a MetroCluster configuration, you must review the section https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html[Choosing the correct recovery procedure] to determine whether you should use this procedure.
-* You must replace the failed component with a replacement FRU component you received from your provider.
 * You must replace a controller with a controller of the same model type. You cannot upgrade your system by just replacing the controller.
 * You cannot change any drives or shelves as part of this procedure.
 * You must always capture the controller's console output to a text log file.
