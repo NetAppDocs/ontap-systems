@@ -34,6 +34,8 @@ include::../_include/shutdown_most_frus.adoc[]
 
 include::../_include/g_controller_remove.adoc[]
 
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+
 == Step 3: Replace the NV battery
 
 Remove the failed NV battery from the controller and install the replacement NV battery.
@@ -52,7 +54,7 @@ image::../media/drw_g_nv_battery_replace_ieops-1864.svg[Replace the NV battery]
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-Lift the NV battery up and out of its holder.
+Lift the NV battery up and out of its compartment.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
@@ -72,12 +74,12 @@ As you pull up, gently rock the connector from end to end (lengthwise) to unseat
 .. Remove the replacement battery from its package.
 .. Plug the wiring connector into its socket.
 +
-You might need to slightly rock the connector lengthwise until it is fully seated.
+You might need to gently rock the connector from end to end (lengthwise) until it is fully seated.
 +
-.. Route the wiring along the side of the power supply, into its retainer, and then through the channel in front of the NV battery holder.
-.. Place the NV battery into the holder.
+.. Route the wiring along the side of the power supply, into its retainer, and then through the channel in front of the NV battery compartment.
+.. Place the NV battery into its compartment.
 +
-The NV battery should sit flush to the holder floor.
+The NV battery should sit flush in its compartment.
 
 == Step 4: Reinstall the controller
 

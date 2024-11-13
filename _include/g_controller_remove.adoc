@@ -1,57 +1,61 @@
 You must remove the controller from the chassis when you replace the controller or replace a component inside the controller.
 
-// After you complete the shutdown procedure for the impaired controller, you can remove the controller from the chassis to access the failed FRU component.
-
 .Before you begin
 
 All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .Steps
-. On the impaired controller, check the NV status LED to make sure the NV LED is off.
+. On the impaired controller, make sure the NV LED is off.
 +
-[NOTE] 
-====
-If the NV status LED is flashing (green), it could mean the impaired controller was not taken over or halted properly (uncommitted data).
-
-// Mike says: Green and flashes when destage is in progress.
-
-If the impaired controller was not successfully taken over by the partner controller, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
-
-Do not attempt to remove power from the impaired controller or remove the impaired controller from the chassis.
-====
-
+When the NV LED is off, destaging is complete and it is safe to remove the impaired controller.
 +
-The NV status LED is located next to the NV icon on the controller.
+// The NV LED is off when destaging of the outstanding/uncommitted data to persistent flash (a partition on the boot media) has completed. Then it is safe to continue with this procedure.
 +
-image::../media/drw_g_nvram_led_ieops-1839.svg[NVRAM attention and status LED location]
+NOTE: If the NV LED is flashing (green), destage is in progress. You must wait for the NV LED to turn off. However, if the flashing continues for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 +
+The NV LED is located next to the NV icon on the controller.
++
+image::../media/drw_g_nvmem_led_ieops-1839.svg[NV status LED location]
+
 [cols="1,4"]
 
 |===
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-NV icon and status LED on the controller
+NV icon and LED on the controller
 
 |===
-+
-The general behavior of the NV status LED on the impaired controller is as follows:
-+
-* The NV status LED flashes when power is removed from the controller and the storage system is in the waiting for giveback state, or the controller is not taken over or halted properly (uncommitted data).
-* The NV status LED flashes when the controller is removed from the chassis and could mean the controller is not taken over or halted properly (uncommitted data). You must confirm the controller had a clean takeover by the partner controller or the impaired controller shows waiting for giveback (Make in courier font and highlighted in gray). Then, the flashing LED can be ignored (and the controller can be removed from the chassis).
 
+[start=2]
 . If you are not already grounded, properly ground yourself.
 
-. Disconnect the power on the impaired controller.
+. Disconnect the power on the impaired controller:
 +
-If you have AC power supplies, unplug the power cord from the power supply.
+NOTE: Power supplies (PSUs) do not have a power switch.
 +
-If you have DC power supplies, unplug the power block from the power supply.
+[options="header" cols="1,2"]
 
+|===
+| If you are disconnecting a...| Then...
+a|
+AC PSU
+a|
+. Open the power cord retainer.
+. Unplug the power cord from the PSU and set it aside.
+a|
+DC PSU
+a|
+. Unscrew the two thumb screws on the D-SUB DC power cord connector.
+. Unplug the power cord from the PSU and set it aside.
+
+|===
+
++
 . Unplug all cables from the impaired controller.
+// book end for comment in g_controllerreinstall: Unplug all cables from the impaired controller and transceivers (QSFPs or SFPs) if needed.
 +
 Keep track of where the cables were connected.
-+
 
 . Remove the impaired controller:
 +
@@ -78,10 +82,7 @@ a|
 image::../media/icon_round_3.png[Callout number 3] 
 a|
 Rotate the handles upright (next to the tabs) to move them out of the way.
-
 |===
-+
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
 
