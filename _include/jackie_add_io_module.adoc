@@ -153,23 +153,21 @@ This reinitializes the PCIe cards and other components and reboots the node.
 
 NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1494308[BURT 1494308 - Environment shutdown might be triggered during I/O module replacement ]
 
-. Give back the controller from the partner controller:`storage failover giveback -ofnode target_node_name` 
-. Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
-
-. If you added:
+. Give back the controller from the partner controller:
 +
-[options="header" cols="1,2"]
-|===
-| If the I/O module is a...| Then...
-a|
-NIC module
-a|
-Use the `storage port modify -node *_<node name>__ -port *_<port name>__ -mode network` command for each port.
-a|
-Storage module
-a|
-Install and cable your NS224 shelves, as described in link:../ns224/hot-add-shelf-overview.html[Hot-add workflow].
-|===
+`storage failover giveback -ofnode target_node_name` 
+
+. Enable automatic giveback if it was disabled: 
++
+`storage failover modify -node local -auto-giveback true`
+
+. Do one of the following:
++
+* If you migrated a NIC I/O module to a new NIC I/O module, use the following network command for each port:
++
+`storage port modify -node *_<node name>__ -port *_<port name>__ -mode network`
+
+* If you migrated a NIC I/O module to a storage I/O module, install and cable your NS224 shelves, as described in link:../ns224/hot-add-shelf-overview.html[Hot-add workflow].
 
 . Repeat these steps for controller B.
 --
