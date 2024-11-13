@@ -30,11 +30,29 @@ image::../media/oie_cable_pull_tab_up.png[Cables are inserted with the connector
 
 ** You can use the following illustration to help you physically identify the shelf NSM100 ports, e0a and e0b.
 +
-An NS224 shelf contains two NSM100 modules. The top module goes in slot A (NSM A) and the bottom module goes in slot B (NSM B).
-+
-Each NSM100 module includes 2 x 100GbE QSFP28 ports: e0a and e0b.
+[role="tabbed-block"]
+====
+
+.NSM100 modules
+--
+* An NS224 shelf contains two NSM100 modules. The top module goes in slot A (NSM A) and the bottom module goes in slot B (NSM B).
+
+* Each NSM100 module includes 2 x 100GbE QSFP28 ports: e0a and e0b.
 +
 image::../media/drw_ns224_back_ports.png[Location of the NS224 NSM100 module ports e0a and e0b]
+
+--
+
+.NSM100B modules
+--
+* An NS224 shelf contains two NSM100B modules. The top module goes in slot A (NSM A) and the bottom module goes in slot B (NSM B).
+
+* Each NSM100B module includes 2 x 100GbE CX6/DX ports: e1a and e1b.
++
+*Image will be inserted when complete.*
+
+--
+====
 
 * After you have cabled a hot-added shelf, ONTAP recognizes the shelf:
 
