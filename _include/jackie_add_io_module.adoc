@@ -38,6 +38,8 @@ If the storage system has no empty slots, replace an existing I/O module with th
 
 .Add I/O module
 --
+Add a new I/O module into a storage system with empty slots
+
 .Steps
 . If you are not already grounded, properly ground yourself.
 
@@ -89,14 +91,14 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 --
 You can change an I/O module in an I/O slot in a fully-populated system by removing an existing I/O module and replacing it with a different I/O module.
 
+.About this task
+Make sure you understand the following:
 
-**If you are replacing a…​**
+- **Replacing a NIC I/O module with the same number of ports:** The LIFs will automatically migrate when its controller module is shut down.
 
-- **NIC I/O module with the same number of ports:** The LIFs will automatically migrate when its controller module is shut down.
+- **Replacing a NIC I/O module with fewer ports:** Permanently reassign the selected LIFs to a different home port. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^] for more information.
 
-- **NIC I/O module with fewer ports:** Permanently reassign the selected LIFs to a different home port. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^] for more information.
-
-- **NIC I/O module with a storage I/O module:** Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
+- **Replacing a NIC I/O module with a storage I/O module:** Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
 
 .Steps
 . If you are not already grounded, properly ground yourself.
