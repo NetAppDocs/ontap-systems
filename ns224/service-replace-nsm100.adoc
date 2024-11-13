@@ -191,18 +191,9 @@ Power supplies do not have a power switch.
  .. Disconnect the storage cabling from the NSM ports.
 +
 Make a note of the NSM ports that each cable is connected to. You reconnect the cables to the same ports on the replacement NSM, later in this procedure.
-. Remove the NSM from the shelf:
-+
-image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[Remove NSM.]
-.. On both ends of the NSM, push the vertical locking tabs outward to release the handles.
-+
-The handles come to rest horizontally to the vertical tabs.
-.. Pull the handles towards you to unseat the NSM from the midplane of the shelf.
-+
-As you pull, the handles extend out from the shelf. When you feel some resistance, keep pulling.
-.. Slide the NSM out of the shelf and place it on a flat, stable surface. 
-+
-Make sure that you support the bottom of the NSM as you slide it out of the shelf.
+
+
+include::../_include/t_module_remove.adoc[]
 
 
 . Unpack the replacement NSM, and set it on a level surface near the impaired NSM.
@@ -238,12 +229,7 @@ You can use the tab on the left and the thumbscrew to push in the I/O module.
 NOTE: Do not use excessive force or you might damage the internal connector.
  .. Rotate the handle down, so it is out of the way of normal operations.
 
-. Insert the replacement NSM into the shelf:
-+
-image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[Replace NSM.]
-.. If you rotated the handles upright (but not in the locked position) to move them out of the way while you serviced the NSM, rotate them down to the horizontal position.
-.. Align the rear of the NSM with the opening in the shelf, and then gently push the NSM using the handles until it is fully seated.
-.. Rotate the NSM handles up and lock in place with the tabs.
+include::../_include/t_module_reinstall.adoc[]
 
 . Reconnect the cabling to the NSM:
  .. Reconnect the storage cabling to the same two NSM ports.
