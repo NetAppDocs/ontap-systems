@@ -9,15 +9,14 @@ summary: You can replace a failed fan nondisruptively in an NS224 drive shelf th
 :imagesdir: ../media/
 
 [.lead]
-You can replace a failed fan module nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
+If one or both of the fans in your fan module fail, you can replace your fan module. This procedure can be completed nondisruptively in an NS224 drive shelf that is powered on with I/O in progress.
 
 .Before you begin
 
-* The shelf's partner NSM must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM).
+The shelf's partner NSM must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM).
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
-* All other components in the system, including the other four fans, must be functioning properly.
 
 .About this task
 
@@ -26,7 +25,8 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 This allows enough time for ONTAP to process the NSM removal event.
 
 * *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
-+
+
+** To update your 
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
@@ -160,8 +160,23 @@ When a fan fails, the system logs a warning message to the system console indica
 . Replace the failed fan:
 +
 image::../media/drw_t_fan_replace_ieops-1979.svg[Remove failed fan.]
- .. Remove the failed fan by firmly grasping the sides where the blue touch points are located, and then pull it straight up out of its socket.
- .. Insert the replacement fan by aligning it within the guides, and then push down until the fan connector is fully seated in the socket.
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+
+Remove the failed fan by firmly grasping the sides where the blue touch points are located, and then pull it straight up out of its socket.
+
+a|
+image::../media/icon_round_1.png[Callout number 2]
+a|
+
+Insert the replacement fan by aligning it within the guides, and then push down until the fan connector is fully seated in the socket.
+
+|===
+
 . Close the NSM cover, and then tighten the thumb screw.
 
 include::../_include/t_module_reinstall.adoc[]
