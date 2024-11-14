@@ -80,10 +80,11 @@ entries:
     - title: I/O module
       pdf-filename: AFF A900 I/O module
       entries:
-        - title: Replace I/O module
-          url: /a900/pci_cards_and_risers_replace.html
         - title: Add I/O module
           url: /a900/add_io_module.html
+        - title: Replace I/O module
+          url: /a900/pci_cards_and_risers_replace.html
+
       # END I/O module
   # START LED USB
     - title: LED USB
