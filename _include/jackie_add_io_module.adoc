@@ -28,7 +28,8 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 ====
 
 == Step 2: Add new I/O module
-If the storage system has empty slots, add the I/O modules. If the storage system has no empty slots, replace an existing I/O module with a different one. 
+If the storage system has empty slots, install the new I/O module into one of the available slots. If all slots are occupied, remove an existing I/O module to make space and then install the new one.
+
 
 // start tabbed area
 
@@ -108,19 +109,6 @@ Use System Manager to permanently migrate the LIFs to different home ports, as d
 . Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 . Remove the target I/O module from the chassis:
 
-+
-NOTE: The following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
-+
-
-image::../media/drw_a1k_io_remove_replace_ieops-1382.svg[Remove AFF A1K I/O module]
-+
-[cols="1,4"]
-|===
-a|
-image:../media/icon_round_1.png[Callout number 1]|
-Cam locking button
-
-|===
 
 .. Depress the  cam latch button.
 
