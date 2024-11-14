@@ -37,6 +37,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 ====
 
 == Step 2: Add the new I/O modules
+If the storage system has empty slots, install the new I/O module into one of the available slots. If all slots are occupied, remove an existing I/O module to make space and then install the new one.
 
 // start tabbed area
 
