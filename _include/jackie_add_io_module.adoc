@@ -1,4 +1,5 @@
-You can add an I/O module to your storage system when there are empty slots available or when all slots are fully populated.
+
+If the storage system has empty slots, install the new I/O module into one of the available slots. If all slots are occupied, remove an existing I/O module to make space and then install the new one.
 
 .Before you begin
 
@@ -7,28 +8,6 @@ You can add an I/O module to your storage system when there are empty slots avai
 * If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^]  and use the best one available for your I/O module.
 
 * Make sure that all other components are functioning properly.
-.
-
-== Step 1: Shut down the impaired controller module
-
-Shut down or take over the impaired controller module.
-
-[role="tabbed-block"]
-====
-
-.Option 1: Most systems
---
-include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
---
-.Option 2: MetroCluster configuration
---
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
---
-
-====
-
-== Step 2: Add new I/O module
-If the storage system has empty slots, install the new I/O module into one of the available slots. If all slots are occupied, remove an existing I/O module to make space and then install the new one.
 
 
 // start tabbed area
