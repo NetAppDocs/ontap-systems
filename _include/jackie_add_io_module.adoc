@@ -1,4 +1,4 @@
-You can add an I/O module to your storage system by adding a new I/O module into a storage system with empty slots or by migrating an I/O module to a new one in a fully-populated storage system.
+You can add an I/O module to your storage system when there are empty slots available or when all slots are fully populated.
 
 .Before you begin
 
@@ -27,37 +27,23 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 ====
 
-== Step 2: Add or migrate the I/O module
-If the storage system has empty slots, add the I/O modules. If the storage system has no empty slots, migrate an existing I/O module to a new one. 
+== Step 2: Add new I/O module
+If the storage system has empty slots, add the I/O modules. If the storage system has no empty slots, replace an existing I/O module with a different one. 
 
 // start tabbed area
 
 [role="tabbed-block"]
 ====
 
-.Add new I/O module (empty slots)
+.Add I/O module to an empty slot
 --
-Add a new I/O module into a storage system with empty slots.
+You can add a new I/O module into a storage system with available empty slots.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
 
 . Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 . Remove the target slot blanking module from the carrier:
-
-+
-NOTE: The following illustration shows removing a horizontal and vertical I/O module. Typically, you will only remove one I/O module.
-+
-
-image::../media/drw_a1k_io_remove_replace_ieops-1382.svg[Remove a AFF A1K I/O module]
-+
-[cols="1,4"]
-|===
-a|
-image:../media/icon_round_1.png[Callout number 1]|
-Cam locking button
-
-|===
 
  .. Depress the cam latch on the blanking module in the target slot.
  .. Rotate the cam latch away from the module as far as it will go.
@@ -74,41 +60,47 @@ NOTE: Make sure that any unused I/O slots have blanks installed to prevent possi
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
 +
-. Give back the controller from the partner controller: _storage failover giveback -ofnode target_node_name_
+. Give back the controller from the partner controller: 
++
+`storage failover giveback -ofnode target_node_name`
 
 . Repeat these steps for controller B.
 
-. From the healthy node, restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. From the healthy node, restore automatic giveback if you disabled it by using the following command:
++
+`storage failover modify -node local -auto-giveback true` 
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
-
-. If you installed a storage I/O module, install and cable your NS224 shelves, as described in link:../ns224/hot-add-shelf-overview.html[Hot-add workflow].
+. If AutoSupport is enabled, restore automatic case creation by using the following command:
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
 
 --
 
-.Migrate I/O module (pre-populated slots)
+.Add I/O module to a fully-populated system
 --
-You can migrate an I/O module in an I/O slot in a fully-populated system by removing an existing I/O module and replacing it with a different I/O module.
+You can add an I/O module to a fully-populated system by removing an existing I/O module and installing a new one in its place.
 
 .About this task
-Make sure you understand the following migration scenarios:
+Make sure you understand the following scenarios for adding a new I/O module to a fully-populated system:
 
-**Migrate from NIC to NIC**
-
-- Migrating a NIC I/O module with the same number of ports
-+
+[options="header" cols="1,2"]
+|===
+| Scenario| Action required
+a|
+NIC to NIC (same number of ports)
+a|
 The LIFs will automatically migrate when its controller module is shut down.
-
-- Migrating a NIC I/O module with fewer ports or more
-+
+a|
+NIC to NIC (different number of ports)	
+a|
 Permanently reassign the selected LIFs to a different home port. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^] for more information.
-
-**Migrate NIC to storage**
-
-- Migrating a NIC I/O module to a storage I/O module
-+
+a|
+NIC to storage I/O module
+a|
 Use System Manager to permanently migrate the LIFs to different home ports, as described in https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF^].
 
+|===
+ 
 .Steps
 . If you are not already grounded, properly ground yourself.
 
@@ -163,11 +155,11 @@ NOTE: If you encounter an issue during reboot, see https://mysupport.netapp.com/
 
 . Do one of the following:
 +
-* If you migrated a NIC I/O module to a new NIC I/O module, use the following network command for each port:
+* If you removed a NIC I/O module and installed a new NIC I/O module, use the following network command for each port:
 +
 `storage port modify -node *_<node name>__ -port *_<port name>__ -mode network`
 
-* If you migrated a NIC I/O module to a storage I/O module, install and cable your NS224 shelves, as described in link:../ns224/hot-add-shelf-overview.html[Hot-add workflow].
+* If you removed a NIC I/O module and installed a storage I/O module, install and cable your NS224 shelves, as described in link:../ns224/hot-add-shelf-overview.html[Hot-add workflow].
 
 . Repeat these steps for controller B.
 --
