@@ -1,0 +1,12 @@
+---
+permalink: fas2800/bootmedia-recovery-image-boot.html
+sidebar: sidebar
+keywords: fas2800, boot, recovery, image, restore, file, system, environmental, varible
+summary: "You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables."
+---
+= Boot the recovery image - FAS2820
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/bootmedia_recovery_image_boot.adoc[]
