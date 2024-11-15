@@ -1,0 +1,20 @@
+There are several key tasks that must be completed prior to replacing the chassis.
+
+Before replacing the chassis, make sure to review the following requirements.
+
+* Make sure all other components in the system are functioning properly; if not, contact technical support.
+* You can use the chassis replacement procedure with all versions of ONTAP supported by your system.
+* The chassis replacement procedure is written with the assumption that you are moving the bezel, NVMe drives, and controller modules to the new chassis, and that the replacement chassis is a new component from NetApp.
+* *The chassis replacement procedure is disruptive.* For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+
+== Step 1:  Review requirements
+
+. Review the requirements in 
+link:chassis-replace-requirements.html[Review the chassis replace requirements]
+
+== Step 2: Run Config Advisor
+
+== Step 3: Turn on console, session logs, and location LED
+
+== Step 4: Label the cables and ground yourself
+
