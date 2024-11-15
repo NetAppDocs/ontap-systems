@@ -9,4 +9,14 @@ summary: "To replace a PCIe card, you must disconnect the cables from the cards,
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/a1k_add_io_module_asa_r2.adoc[]
+You can add an I/O module to your ASA A1K storage system when there are empty slots available or when all slots are fully populated.
+
+== Step 1: Shut down the impaired controller module
+
+Shut down or take over the impaired controller module.
+
+include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+
+== Step 2: Add the new I/O module
+
+include::../_include/add_io_module_cam.adoc[]
