@@ -9,4 +9,27 @@ summary: "To replace an I/O module, you must disconnect the cables from the modu
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/a70-90_add_io_module.adoc[]
+You can add an I/O module to your AFF A70 and AFF A90 storage system when there are empty slots available or when all slots are fully populated.
+
+== Step 1: Shut down the impaired controller module
+
+Shut down or take over the impaired controller module.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+--
+.Option 2: MetroCluster configuration
+--
+include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+--
+
+====
+
+
+== Step 2: Add the new I/O module
+
+include::../_include/add_io_module_cam.adoc[]

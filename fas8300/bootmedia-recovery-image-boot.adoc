@@ -1,0 +1,12 @@
+---
+permalink: fas8300/bootmedia-recovery-image-boot.html
+sidebar: sidebar
+keywords: fas8300, fas8300, procedure, boot, impair, controller, recovery, image, system, two-node, metrocluster, configuration, boot the recovery image
+summary: The procedure for booting the impaired controller from the recovery image depends on whether the system is in a two-node MetroCluster configuration.
+---
+= Boot the recovery image - AFF FAS8300 and FAS8700
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/bootmedia_recovery_image_boot.adoc[]
