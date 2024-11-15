@@ -1,19 +1,5 @@
 .Steps
 
-. If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment replacement drive, if it is enabled
-+
-NOTE: You manually assign drive ownership and then reenable automatic drive assignment later in this procedure.
-
- .. Verify whether automatic drive assignment is enabled: `storage disk option show`
-+
-You can enter the command on either controller module.
-+
-If automatic drive assignment is enabled, the output shows `on` in the "`Auto Assign`" column (for each controller module).
-
- .. If automatic drive assignment is enabled, disable it: `storage disk option modify -node node_name -autoassign off`
-+
-You must disable automatic drive assignment on both controller modules.
-
 . Properly ground yourself.
 . Physically identify the failed drive.
 +
@@ -38,7 +24,7 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 +
 When the drive's activity LED is solid, it means that the drive has power. When the drive's activity LED is blinking, it means that the drive has power and I/O is in progress. If the drive firmware is automatically updating, the LED blinks.
 
-. If you are replacing another drive, repeat Steps 3 through 7.
+. If you are replacing another drive, repeat Steps 2 through 6.
 
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +
