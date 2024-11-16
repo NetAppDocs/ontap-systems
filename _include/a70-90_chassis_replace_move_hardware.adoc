@@ -228,3 +228,5 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 +
 The controller module begins to boot as soon as it is installed and power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command. 
 
+.What's next?
+After you’ve shutdown your AFF A70 or AFF A90 chassis storage system, you need to link:a70-90/chassis-replace-shutdown.adoc.html[shutdown your AFF A70 or AFF A90 storage system].

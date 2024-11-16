@@ -22,7 +22,7 @@ Make note of any faults presently on the system, such as LEDs on the system comp
 .Steps
 
 . Log into the cluster through SSH or log in from any node in the cluster using a local console cable and a laptop/console.
-. Turn off AutoSupport and indicate how long you expect the system to be offline:
+. If AutoSupport is enabled, turn off AutoSupport and indicate how long you expect the system to be offline:
 +
 `system node autosupport invoke -node * -type all -message "MAINT=8h Power Maintenance"`
 . Identify the SP/BMC address of all nodes:
@@ -49,3 +49,6 @@ NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `s
 {y|n}:_`
 
 . Wait for each controller to halt and display the LOADER prompt.
+
+.What's next?
+After you’ve shutdown your storage system, you need to link:chassis-replace-move-hardware.adoc.html[replace the chassis].

@@ -9,12 +9,43 @@ Before replacing the chassis, make sure to review the following requirements.
 
 == Step 1:  Review requirements
 
-. Review the requirements in 
-link:chassis-replace-requirements.html[Review the chassis replace requirements]
+. Review the requirements in link:chassis-replace-requirements.html[Review the chassis replace requirements]
 
 == Step 2: Run Config Advisor
 
-== Step 3: Turn on console, session logs, and location LED
+. Verify system health by downloading and running link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Conf Advisor] from the the http://mysupport.netapp.com/[NetApp Support Site^].
+
+. Resolve any issues before replacing the chassis.
+
+. Verify that both controller modules are running and cabled correctly.
+
+. Make any necessary corrections to configuration or cabling..  
+
+== Step 3: Open a console session, session logs, and location LED
+
+. Open a console session to monitor the system
+
+. Save the console sessions to a log file on the console.
+
++ 
+You should do scree captures to take scheen shots of the UI tools for later reference.
+
+. Turn on the blue Location LED on the storage system to help you identify the correct controllers:
+
++
+`storage shelf show`
++
+`storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
++
+
+NOTE: The Location LED remains lit for 30 minutes.
+
 
 == Step 4: Label the cables and ground yourself
 
+. Label all the cables associated with the storage system. This aids recabling later in this procedure.
+
+. If you are not already properly grounded, ground yourself.
+
+.What's next?
+After you’ve prepared to replace your AFF A70 or AFF A90 chassis hardware, you need to link:a70-90/chassis-replace-shutdown.adoc.html[shutdown your AFF A70 or AFF A90 storage system].
