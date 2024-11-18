@@ -3,7 +3,10 @@ Before replacing the boot media, make sure to review the following requirements 
 == Requirements
 * You must replace the failed component with a replacement FRU component of the same capacity that you received from your provider.
 
-* There must be no faulty cluster ports on the impaired controller.
+* The e0S (e0M wrench) port on the impaired controller cannot be faulty. 
++
+The e0S port is used for automated boot recovery.
+  
 
 == Considerations
 
