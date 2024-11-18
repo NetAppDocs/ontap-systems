@@ -30,6 +30,14 @@ Terracotta PSU locking tab
 
 Remove the controllers from the chassis.
 
+. Label the controller modules
+
+. Unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Remove the cable management device from the controller modules and set them aside. 
+
 . Check the amber NVRAM that status LED located in slot 4/5 on the back of each controller module is off. Look for the NV icon.
 +
 image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
@@ -51,13 +59,8 @@ NVRAM attention LED
 * If the NV LED is off, go to the next step.
 * If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 
-. Unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected.
-+
-Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
-
-. Remove the cable management device from the controller module. 
-
-. Press down on both of the locking latches on the controller, and then rotate both latches downward at the same time.
+Remove the controller modules:
+.. Press down on both of the locking latches on the controller, and then rotate both latches downward at the same time.
 +
 The controller module moves slightly out of the chassis.
 +
@@ -75,7 +78,7 @@ a|
 Locking pin
 |===
 
-. Slide the controller module out of the chassis and place it on a flat, stable surface.
+.. Slide the controller module out of the chassis and place it on a flat, stable surface.
 +
 Make sure that you support the bottom of the controller module as you slide it out of the chassis.
 
@@ -88,6 +91,7 @@ You need to remove the drives from each bay opening in the impaired chassis.
 . Gently remove the bezel from the front of the system.
 . Remove the drives:
  .. Press the release button at the top of the carrier face below the LEDs.
+
  .. Pull the cam handle to its fully open position to unseat the drive from the midplane, and then gently slide the drive out of the chassis.
 +
 The drive should disengage from the chassis, allowing it to slide free of the chassis.
@@ -96,7 +100,7 @@ NOTE: When removing a drive, always use two hands to support its weight.
 +
 NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
 
-.. Keep track of what drive bay each drive was from and set the drives aside on a static-free cart or table.
+.. Keep track of what drive bay each drive was in and set the drives aside on a static-free cart or table.
 
 .. Repeat this step for the remaining drives in the chassis.
 
@@ -105,30 +109,13 @@ NOTE: Drives are fragile. Handle them as little as possible to prevent damage to
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
 . Remove the screws from the chassis mount points.
-. With two people, slide the old chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
-. Using two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
-. Slide the chassis all the way into the equipment rack or system cabinet.
-. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
-. Install the drives from the old chassis into the replacement chassis:
-.. Align the drive from the old chassis with the same bay opening in the new chassis.
-. Gently push the drive into the chassis as far as it will go.
-+
-The cam handle engages and begins to rotate upward.
-
-.. Firmly push the drive the rest of the way into the chassis, and then lock the cam handle by pushing it up and against the drive carrier.
-+
-Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It clicks when it is secure.
-
-.. Repeat the process for the remaining drives in the system.
-. If you have not already done so, install the bezel.
-
-
+. With two people, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
 
 == Step 5: Install the replacement chassis
 
 . Using two people or a lift, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
 . Slide the chassis all the way into the equipment rack or system cabinet.
-. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
+. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
 
 == Step 6: Install the controller modules
 
@@ -149,36 +136,33 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 
 == Step 7:  Recable the controllers
 
+Once the controller modules are installed, recable the controller modules.
 
+. Reinstall the cable management devise in each controller.
+
+. Reconnect the cables to the respective controller modules.
+
++
+Make sure that the cables are connected referencing the cable labels.  Make sure the you reinsall and QSFP/SFP modules you may have removed.
 
 == Step 8: Install the drives
+
+Reinstall the drives in the corresponding controller slot.
+
 
 == Step 9: Install the PSU
 
 == Step 10: Boot the controllers and confirm giveback
 
-== Step 1: Remove the controller module
 
-include::../_include/a70-90_controller_remove_physical.adoc[]
 
-. Repeat these steps for the other controller module in the chassis.
 
-== Step 2: Move drives to the new chassis
 
-You need to remove the drives from each bay opening in the impaired chassis.
 
-. Gently remove the bezel from the front of the system.
-. Remove the drives:
- .. Press the release button at the top of the carrier face below the LEDs.
- .. Pull the cam handle to its fully open position to unseat the drive from the midplane, and then gently slide the drive out of the chassis.
-+
-The drive should disengage from the chassis, allowing it to slide free of the chassis.
-+
-NOTE: When removing a drive, always use two hands to support its weight.
-+
-NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
 
-. Keep track of what drive bay each drive was from and set the drives aside on a static-free cart or table.
+
+
+
 
 
 == Step 3: Replace chassis from within the equipment rack or system cabinet
