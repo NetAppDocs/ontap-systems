@@ -51,4 +51,5 @@ NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `s
 . Wait for each controller to halt and display the LOADER prompt.
 
 .What's next?
-After you’ve shutdown your storage system, you need to link:chassis-replace-move-hardware.html[replace the chassis].
+After you’ve shutdown your storage system, you need to 
+//link:chassis-replace-move-hardware.html[replace the chassis].
