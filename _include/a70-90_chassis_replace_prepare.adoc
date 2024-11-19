@@ -19,7 +19,7 @@ Before replacing the chassis, make sure to review the following requirements.
 
 . Verify that both controller modules are running and cabled correctly.
 
-. Make any necessary corrections to configuration or cabling..  
+. Make any necessary corrections to configuration or cabling.  
 
 == Step 3: Open a console session, session logs, and location LED
 
@@ -28,7 +28,7 @@ Before replacing the chassis, make sure to review the following requirements.
 . Save the console sessions to a log file on the console.
 
 + 
-You should do scree captures to take scheen shots of the UI tools for later reference.
+You should do screen captures to take scheen shots of the UI tools for later reference.
 
 . Turn on the blue Location LED on the storage system to help you identify the correct controllers:
 
@@ -41,9 +41,11 @@ You should do scree captures to take scheen shots of the UI tools for later refe
 NOTE: The Location LED remains lit for 30 minutes.
 
 
-== Step 4: Label the cables and ground yourself
+== Step 4: Label the cables and controllers and ground yourself
 
 . Label all the cables associated with the storage system. This aids recabling later in this procedure.
+
+. Label the controller modules.
 
 . If you are not already properly grounded, ground yourself.
 

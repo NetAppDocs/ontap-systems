@@ -1,16 +1,20 @@
 Remove the PSU, controller modules, drives, and impaired and then install the replacement chassis, controller modules, recable the controllers, install the drives, install the PSUs, and then boot the controllers and do a giveback.
 
-== Step 1: Remove the PSUs
+== Step 1: Remove the PSUs and cables
 
 You need to remove all four of the PSUs in the controller before removing the controller.  Removing them lightens the overall weight of each controller.
 
-. If you are not already grounded, properly ground yourself.
-. Unplug the controller module power supply cables from the controller module power supplies (PSU).
+[upperalpha]
+. Remove the PSUs
+
+[lowerroman]
+.. If you are not already grounded, properly ground yourself.
+.. Unplug the controller module power supply cables from the controller module power supplies (PSU).
 
 +
 NOTE: If your system has DC power, disconnect the power block from the PSUs. 
 
-. Remove the PSU by rotating the handle up, press the locking tab, and then pull PSU out of the controller module.
+.. Remove the PSU by rotating the handle up, press the locking tab, and then pull PSU out of the controller module.
 +
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
@@ -24,19 +28,23 @@ a|
 Terracotta PSU locking tab
 |===
 
-. Repeat these steps for the remaining PSUs.  
+.. Repeat these steps for the remaining PSUs. 
 
-== Step 2:  Remove the controller modules
+[upperalpha, start=2]
+. Remove cables
 
-Remove the controllers from the chassis.
+[lowerroman]
+.. Unplug the system cables and any  SFP and QSFP modules (if needed) from the controller module, but leave them in the cable management device to keep them organized. from the controllers.
 
-. Label the controller modules
-
-. Unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected.
 +
-Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+NOTE: Cables should have been labeled at the beginning of this procedure.
 
-. Remove the cable management device from the controller modules and set them aside. 
++
+.. Remove the cable management device from the controller modules and set them aside. 
+
+== Step 2:  Remove the controller modules and remove the drives
+
+Remove the controllers from the chassis and then remove the drives from the chassis.
 
 . Check the amber NVRAM that status LED located in slot 4/5 on the back of each controller module is off. Look for the NV icon.
 +
@@ -84,10 +92,6 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Repeat these steps for the second controller module.
 
-== Step 3:  Remove the drives
-
-You need to remove the drives from each bay opening in the impaired chassis.
-
 . Gently remove the bezel from the front of the system.
 . Remove the drives:
  .. Press the release button at the top of the carrier face below the LEDs.
@@ -104,20 +108,18 @@ NOTE: Drives are fragile. Handle them as little as possible to prevent damage to
 
 .. Repeat this step for the remaining drives in the chassis.
 
-== Step 4: Remove the impaired chassis 
+== Step 3: Remove the impaired chassis and instal the replacement chassis 
 
-You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
+Remove the impaired chassis and install the replacement chassis.
 
 . Remove the screws from the chassis mount points.
 . With two people, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
-
-== Step 5: Install the replacement chassis
 
 . Using two people or a lift, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
 . Slide the chassis all the way into the equipment rack or system cabinet.
 . Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
 
-== Step 6: Install the controller modules
+== Step 4: Install the controller module, recable and reinstall the drives and PSUs
 
 Beginning with the bottom controller module, install the controllers into the replacement chassis.
 
@@ -134,25 +136,19 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 
 . Repeat the preceding steps to install the second controller into the new chassis.
 
-== Step 7:  Recable the controllers
-
-Once the controller modules are installed, recable the controller modules.
-
 . Reinstall the cable management devise in each controller.
 
 . Reconnect the cables to the respective controller modules.
 
 +
-Make sure that the cables are connected referencing the cable labels.  Make sure the you reinsall and QSFP/SFP modules you may have removed.
+Make sure that the cables are connected referencing the cable labels.  Make sure the you reinstall and SFP/QSFP modules you may have removed.
 
-== Step 8: Install the drives
-
-Reinstall the drives in the corresponding controller slot.
+. Reinstall the drives in the corresponding controller slot.
 
 
-== Step 9: Install the PSU
+== Step 5: Install the PSU
 
-== Step 10: Boot the controllers and confirm giveback
+== Step 4: Boot the controllers and confirm giveback
 
 
 
@@ -211,8 +207,3 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 
 +
 The controller module begins to boot as soon as it is installed and power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command. 
-
-.What's next?
-After you’ve shutdown your AFF A70 or AFF A90 chassis storage system, you need to 
-
-// link:a70-90/chassis-replace-shutdown.html[shutdown your AFF A70 or AFF A90 storage system].
