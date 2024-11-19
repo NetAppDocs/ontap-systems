@@ -45,7 +45,7 @@ NOTE: Open an SSH session to every SP/BMC connection so that you can monitor pro
 
 NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `system node halt -node <node>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
-. Enter *y* for each controller in the cluster when you see `_Warning: Are you sure you want to halt node "cluster <node-name> number"?
+. Enter *y* for each controller in the cluster when you see `Warning: Are you sure you want to halt node "cluster <node-name> number"?`
 {y|n}:_`
 
 . Wait for each controller to halt and display the LOADER prompt.
