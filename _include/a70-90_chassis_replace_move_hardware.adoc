@@ -4,10 +4,8 @@ Remove the PSU, controller modules, drives, and impaired and then install the re
 
 You need to remove all four of the PSUs in the controller before removing the controller.  Removing them lightens the overall weight of each controller.
 
-[upperalpha]
 . Remove the PSUs
 
-[lowerroman]
 .. If you are not already grounded, properly ground yourself.
 .. Unplug the controller module power supply cables from the controller module power supplies (PSU).
 
@@ -30,10 +28,9 @@ Terracotta PSU locking tab
 
 .. Repeat these steps for the remaining PSUs. 
 
-[upperalpha, start=2]
+
 . Remove cables
 
-[lowerroman]
 .. Unplug the system cables and any  SFP and QSFP modules (if needed) from the controller module, but leave them in the cable management device to keep them organized. from the controllers.
 
 +
@@ -46,7 +43,8 @@ NOTE: Cables should have been labeled at the beginning of this procedure.
 
 Remove the controllers from the chassis and then remove the drives from the chassis.
 
-. Check the amber NVRAM that status LED located in slot 4/5 on the back of each controller module is off. Look for the NV icon.
+. Remove the controller modules.
+.. Check the amber NVRAM that status LED located in slot 4/5 on the back of each controller module is off. Look for the NV icon.
 +
 image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
 +
@@ -67,7 +65,6 @@ NVRAM attention LED
 * If the NV LED is off, go to the next step.
 * If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 
-Remove the controller modules:
 .. Press down on both of the locking latches on the controller, and then rotate both latches downward at the same time.
 +
 The controller module moves slightly out of the chassis.
@@ -90,11 +87,11 @@ Locking pin
 +
 Make sure that you support the bottom of the controller module as you slide it out of the chassis.
 
-. Repeat these steps for the second controller module.
+.. Repeat these steps for the second controller module.
 
-. Gently remove the bezel from the front of the system.
 . Remove the drives:
- .. Press the release button at the top of the carrier face below the LEDs.
+.. Gently remove the bezel from the front of the system.
+.. Press the release button at the top of the drive carrier face below the LEDs.
 
  .. Pull the cam handle to its fully open position to unseat the drive from the midplane, and then gently slide the drive out of the chassis.
 +
@@ -108,102 +105,78 @@ NOTE: Drives are fragile. Handle them as little as possible to prevent damage to
 
 .. Repeat this step for the remaining drives in the chassis.
 
-== Step 3: Remove the impaired chassis and instal the replacement chassis 
+== Step 3: Remove the impaired chassis and install the replacement chassis 
 
-Remove the impaired chassis and install the replacement chassis.
+. Remove the impaired chassis:
+.. Remove the screws from the chassis mount points.
+.. With two people, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
 
-. Remove the screws from the chassis mount points.
-. With two people, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
+. Install the replacement chassis:
 
-. Using two people or a lift, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
-. Slide the chassis all the way into the equipment rack or system cabinet.
-. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
+.. Using two people or a lift, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
+.. Slide the chassis all the way into the equipment rack or system cabinet.
+.. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
 
-== Step 4: Install the controller module, recable and reinstall the drives and PSUs
+== Step 4: Install the controller modules, recable and reinstall the drives and PSUs
 
-Beginning with the bottom controller module, install the controllers into the replacement chassis.
+. Install the controller modules:
 
-. If you opened the air duct, close air duct by rotating it down as far as it will go.
+
+
+.. If you opened the air duct, close air duct by rotating it down as far as it will go.
 +
 It should lie flush against the controller module sheet metal.
 
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller all the way into the chassis.
-
+.. Beginning with the bottom controller module, install the controllers into the replacement chassis.
+.. Align the end of the controller module with the opening in the chassis, and then gently push the controller all the way into the chassis.
 .. Rotate the locking latches upward into the locked position.
 .. If you have not already done so, reinstall the cable management device and recable the controller.
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. Repeat the preceding steps to install the second controller into the new chassis.
+.. Repeat the preceding steps to install the second controller into the new chassis.
 
-. Reinstall the cable management devise in each controller.
+.. Recable the controllers:
 
-. Reconnect the cables to the respective controller modules.
+.. Reinstall the cable management devise in each controller.
+.. Reconnect the cables to the respective controller modules.
 
 +
 Make sure that the cables are connected referencing the cable labels.  Make sure the you reinstall and SFP/QSFP modules you may have removed.
 
-. Reinstall the drives in the corresponding controller slot.
+. Reinstall the drives in the corresponding controller module slot for each controller module.
 
 
-== Step 5: Install the PSU
+. Install the PSU:
 
-== Step 4: Boot the controllers and confirm giveback
-
-
-
-
-
-
-
-
-
-
-
-
-== Step 3: Replace chassis from within the equipment rack or system cabinet
-
-You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
-
-. Remove the screws from the chassis mount points.
-. With two people, slide the old chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
-. Using two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
-. Slide the chassis all the way into the equipment rack or system cabinet.
-. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
-. Install the drives from the old chassis into the replacement chassis:
-.. Align the drive from the old chassis with the same bay opening in the new chassis.
-. Gently push the drive into the chassis as far as it will go.
+.. Using both hands, support and align the edges of the replacement PSU with the opening in the controller module.
+.. Gently push the PSU into the controller module until the locking tab clicks into place.
 +
-The cam handle engages and begins to rotate upward.
-
-.. Firmly push the drive the rest of the way into the chassis, and then lock the cam handle by pushing it up and against the drive carrier.
+The power supplies will only properly engage with the internal connector and lock in place one way.
 +
-Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It clicks when it is secure.
+NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
 
-.. Repeat the process for the remaining drives in the system.
-. If you have not already done so, install the bezel.
-
-== Step 4: Reinstall the controller modules
-
-Reinstall the controller modules into the chassis and reboot them.
-
-. If you opened the air duct, close air duct by rotating it down as far as it will go.
+.. Reconnect the PSU power cable to the PSU.
+ .. Secure the power cable to the PSU using the power cable retainer.
 +
-It should lie flush against the controller module sheet metal.
 
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller all the way into the chassis.
-
-.. Rotate the locking latches upward into the locked position.
-.. If you have not already done so, reinstall the cable management device and recable the controller.
-+
-If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
-
-. Repeat the preceding steps to install the second controller into the new chassis.
-
-. Plug the power cords into the power supplies.
+NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis and secure the power cable to the PSU with the thumbscrews.
 
 +
-NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
+The controller module begins to boot as soon as it is installed and power is restored.
 
-+
-The controller module begins to boot as soon as it is installed and power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command. 
+
+
+== Step 5: Boot the controllers and confirm giveback
+
+. Check the console output:
+.. If the controller boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
+
+.. If the console displays `waiting for giveback` after the reboot, log into the partner controller and check that the replaced controller is ready for giveback with the `storage failover show command`
+
+. Perform the giveback:
+
+.. Connect the console cable to the partner controller.
+.. Give back the controller with the `storage failover giveback -fromnode local`command.
+
+. Once the giveback is complete, run Active IQ Config Advisor to verify the health of the storage system.
