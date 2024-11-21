@@ -82,10 +82,11 @@ entries:
     - title: I/O module
       pdf-filename: FAS9500 I/O module
       entries:
-        - title: Replace
-          url: /fas9500/pci_cards_and_risers_replace.html
-        - title: Add
+        - title: Add I/O module
           url: /fas9500/add_io_module.html
+        - title: Replace I/O module
+          url: /fas9500/pci_cards_and_risers_replace.html
+
       # END I/O module replace
   # START LED USB
     - title: LED USB

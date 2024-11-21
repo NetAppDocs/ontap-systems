@@ -60,7 +60,7 @@ NOTE: Drive firmware checks occur every two minutes.
 +
 If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
+A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
 
 * When you unpack the replacement drive, save all packing materials for use when you return the failed drive.
 +
@@ -73,9 +73,7 @@ video::733011a7-e03a-41b0-8723-aa840133bf25[panopto, title="Hot-swapping a drive
 
 . If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment if it is enabled.
 +
-NOTE: You need to manually assign drive ownership if drives in the shelf are owned by both controller modules in the HA pair.
-+
-NOTE: You manually assign drive ownership and then reenable automatic drive assignment later in this procedure.
+NOTE: You need to manually assign drive ownership if drives in the shelf are owned by both controller modules in the HA pair. You complete this task later in this procedure.
 
  .. Verify whether automatic drive assignment is enabled: `storage disk option show`
 +
@@ -95,15 +93,18 @@ When a drive fails, the system logs a warning message to the system console indi
 NOTE: The activity (green) LED on a failed drive can be illuminated (solid), which indicates that the drive has power, but should not be blinking, which indicates I/O activity. A failed drive has no I/O activity.
 
 . Remove the failed drive:
++
+image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove drive.]
  .. Press the release button on the drive face to open the cam handle.
+ .. Rotate the cam handle downward to disengage the drive from the midplane.
  .. Slide the drive out of the shelf using the cam handle and supporting the drive with your other hand.
 . Wait a minimum of 70 seconds before inserting the replacement drive.
 +
 This allows the system to recognize that a drive was removed.
 
 . Insert the replacement drive:
- .. With the cam handle in the open position, use both hands to insert the replacement drive.
- .. Push until the drive stops.
+ .. With the cam handle in the open position, use both hands to insert the drive.
+ .. Gently push until the drive stops.
  .. Close the cam handle so that the drive is fully seated into the mid plane and the handle clicks into place.
 +
 Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.

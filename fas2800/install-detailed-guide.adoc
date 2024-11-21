@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, detailed, guide, prepare, install, hardware, cable, controllers, node, switchless, cluster, network, configuration, system, storage system, setup, discovery
 summary: "This procrdure gives detailed step-by-step instructions for installing a typical NetApp storage system."
 ---
-= Detailed steps - FAS2800
+= Detailed steps - FAS2820
 :icons: font
 :imagesdir: ../media/
 
@@ -350,7 +350,7 @@ image::../media/oie_cable_pull_tab_down.png[Pull tab direction]
 
 Use the animation or the step-by step instructions to complete the cabling between the controllers and to the drive shelves.
 
-IMPORTANT: Do not use port 0b2 on a FAS2800. This SAS port is not used by ONTAP and is always disabled. See link:../sas3/install-new-system.html[Install a shelf in a new storage system^] for more information.
+IMPORTANT: Do not use port 0b2 on a FAS2820. This SAS port is not used by ONTAP and is always disabled. See link:../sas3/install-new-system.html[Install a shelf in a new storage system^] for more information.
 
 video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto, title="Animation - Drive shelf cabling"]
 

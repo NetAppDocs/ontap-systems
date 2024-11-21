@@ -39,7 +39,7 @@ Having the current version of the DQP installed allows your system to recognize 
 
 * *Best practice:* The best practice is to run https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^] before and after hot-adding a shelf.
 +
-Running Active IQ Config Advisor before hot-adding a shelf provides a snap shot of the existing shelf Ethernet (ENET) connectivity, verifies NVMe shelf module (NSM) firmware versions, and allows you to verify a shelf ID already in use in the HA pair. 
+Running Active IQ Config Advisor before hot-adding a shelf provides a snapshot of the existing shelf Ethernet (ENET) connectivity, verifies NVMe shelf module (NSM) firmware versions, and allows you to verify a shelf ID already in use in the HA pair. 
 +
 Running Active IQ Config Advisor after hot-adding a shelf allows you to verify shelves are cabled correctly and that shelf IDs are unique within the HA pair.
 +

@@ -39,15 +39,15 @@ https://hwu.netapp.com[NetApp Hardware Universe^]
 
 * HA pair configurations must be cabled as multipath HA or quad-path HA configurations with the following exceptions:
 ** Platforms with internal storage do not support quad-path HA connectivity.
-** A FAS2800 HA pair can be cabled as tri-path HA.
+** A FAS2820 HA pair can be cabled as tri-path HA.
 +
-Information about the FAS2800 connectivity can be found in the <<Tri-path HA connectivity>> section.
+Information about the FAS2820 connectivity can be found in the <<Tri-path HA connectivity>> section.
 +
 ** Platforms with internal storage can be cabled as single-path HA configurations (from port 0b/0b1 to external shelves) to support connectivity to an external SAS tape backup device (from port 0a).
 
 [NOTE]
 ====
-For FAS2800 HA pairs, although the cabling to external shelves is single-path HA, because of each controller's internal connection of port 0b to its local expander (IOM12G) and port 0c to its partner’s expander, the HA pair configuration is multipath HA.
+For FAS2820 HA pairs, although the cabling to external shelves is single-path HA, because of each controller's internal connection of port 0b to its local expander (IOM12G) and port 0c to its partner’s expander, the HA pair configuration is multipath HA.
 ====
 
 * Single-controller configurations must be cabled as multipath or quad-path configurations, with the following exceptions:
@@ -221,7 +221,7 @@ image::../media/drw_fas2600_mpha_domain_example_IEOPS-1172.svg[Internal storage 
 
 === Tri-path HA connectivity
 
-Tri-path HA connectivity is available on FAS2800 HA pairs. Tri-path HA connectivity has three paths from each controller to internal (IOM12G) and external shelves:
+Tri-path HA connectivity is available on FAS2820 HA pairs. Tri-path HA connectivity has three paths from each controller to internal (IOM12G) and external shelves:
 
 * Each controller’s internal connection of port 0b to its local IOM12G and port 0c to its partner’s IOM12G gives an HA pair multipath HA connectivity.
 
@@ -233,16 +233,16 @@ The following shows the controller's internal connections and external cabling t
 
 image::../media/drw_fas2800_concept_tpha_IEOPS-950.svg[Tri path HA connectivity, width=440px]
 
-The FAS2800 external SAS ports: 
+The FAS2820 external SAS ports: 
 
 * The 0a port is from the internal HBA (like other platforms with an internal shelf).
 * The 0b1 port is from the internal shelf (like the 0b ports on other platforms with an internal shelf).
 * The 0b2 port is not used. It is disabled. If a cable is connected to it, an error message is generated.
 
 
-image::../media/drw_sas3_ports_on_fas2800_IEOPS-946.svg[FAS2800 external sas ports, width=440px]
+image::../media/drw_sas3_ports_on_fas2800_IEOPS-946.svg[FAS2820 external sas ports, width=440px]
 
-FAS2800 HA pair cabling examples can be found in the link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for platforms with internal storage] section.
+FAS2820 HA pair cabling examples can be found in the link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for platforms with internal storage] section.
 
 == Mini-SAS HD SAS optical cable rules
 
