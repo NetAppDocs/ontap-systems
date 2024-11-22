@@ -9,16 +9,16 @@
 
 
 == Step 1: Run Config Advisor
+You should run Active IQ Conf Advisor to correct any system issues before replacing the chassis
 
 . Verify system health by downloading and running link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Conf Advisor] from the the http://mysupport.netapp.com/[NetApp Support Site^].
-
-. Resolve any issues before replacing the chassis.
 
 . Verify that both controller modules are running and cabled correctly.
 
 . Make any necessary corrections to configuration or cabling.  
 
-== Step 2: Open a console session, session logs, and turn on the system location LED
+== Step 2: Open a console session, save session logs, and turn on the system location LED
+You should open a console session and save sessions logs for future use, and also turn on the system location LED to find the impaired chassis.
 
 . Open a console session with putty to monitor the system
 
@@ -40,7 +40,7 @@ NOTE: The Location LED remains lit for 30 minutes.
 
 == Step 3: Verify replacement components
 
-You should verify that you received the necessary components, remove it from packaging, and save the packaging.
+You should verify that you received the necessary components, remove it from packaging, save the packaging, and label the cables and controllers.
 
 . Before opening the packaging, you should look at the packaging label and verify:
 .. Component part number.
