@@ -25,8 +25,4 @@ Shut down the controllers so you can perform maintenance on the chassis.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Three]link:chassis-replace-move-hardware.html[Replace the chassis]
 [role="quick-margin-para"]
-Replacing the chassis includes removing the power supplies, hard drives, and controllers, removing and replacing the impaired chassis, and reinstalling the controllers and controller components into the replacement chassis.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Four]link:chassis-replace-complete-system-restore-rma.html[Complete chassis replacement]
-[role="quick-margin-para"]
-Verify the HA state of the chassis and return the failed part to NetApp.
+Replacing the chassis includes removing the power supplies, hard drives, and controllers, removing and replacing the impaired chassis, reinstalling the controllers and controller components into the replacement chassis, and returning the failed chassis to NetApp.
