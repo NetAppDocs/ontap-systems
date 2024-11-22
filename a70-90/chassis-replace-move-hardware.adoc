@@ -9,4 +9,6 @@ summary: "Move the hard drives, and controller module or modules from the impair
 :imagesdir: ../media/
 
 [.lead]
+Move the hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis with the new chassis of the same model as the impaired chassis and install the  components into the replacement chassis.
+
 include::../_include/a70-90_chassis_replace_move_hardware.adoc[]
