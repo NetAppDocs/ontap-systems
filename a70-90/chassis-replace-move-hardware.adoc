@@ -9,6 +9,6 @@ summary: "Move the hard drives, and controller module or modules from the impair
 :imagesdir: ../media/
 
 [.lead]
-Move the hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis with the new chassis of the same model as the impaired chassis and install the  components into the replacement chassis.
+Remove the PSU, controller modules, drives, and impaired chassis, and then install the replacement chassis of the same model, controller modules, recable the controllers, install the drives, install the PSUs, and then boot the controllers and do a giveback.
 
 include::../_include/a70-90_chassis_replace_move_hardware.adoc[]

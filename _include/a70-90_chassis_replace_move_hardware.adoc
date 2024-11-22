@@ -1,4 +1,3 @@
-Remove the PSU, controller modules, drives, and impaired and then install the replacement chassis, controller modules, recable the controllers, install the drives, install the PSUs, and then boot the controllers and do a giveback.
 
 == Step 1: Remove the PSUs and cables
 
@@ -107,6 +106,8 @@ NOTE: Drives are fragile. Handle them as little as possible to prevent damage to
 
 == Step 3: Remove the impaired chassis and install the replacement chassis 
 
+You need to remove the impaired chassis and install the replacement chassis.
+
 . Remove the impaired chassis:
 .. Remove the screws from the chassis mount points.
 .. With two people, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
@@ -118,10 +119,9 @@ NOTE: Drives are fragile. Handle them as little as possible to prevent damage to
 .. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
 
 == Step 4: Install the controller modules, recable and reinstall the drives and PSUs
+Once the replacement chassis is installed, you need to install the controllers, recable then, and reinstall the drives and PSUs.
 
 . Install the controller modules:
-
-
 
 .. If you opened the air duct, close air duct by rotating it down as far as it will go.
 +
@@ -167,7 +167,8 @@ The controller module begins to boot as soon as it is installed and power is res
 
 
 
-== Step 5: Boot the controllers and confirm giveback
+== Step 5: Boot the controllers, confirm giveback, Active IQ Config Advisor, and return the failed chassis to Netapp
+After the controllers reboot, confirm the giveback,  run Active IQ Config Advisor to check the health of the storage system, and then return the failed part to NetApp.
 
 . Check the console output:
 .. If the controller boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
@@ -180,3 +181,5 @@ The controller module begins to boot as soon as it is installed and power is res
 .. Give back the controller with the `storage failover giveback -fromnode local`command.
 
 . Once the giveback is complete, run Active IQ Config Advisor to verify the health of the storage system.
+
+. Return the failed part to NetApp, as described in the RMA instructions shipped with the kit. See the https://mysupport.netapp.com/site/info/rma[Part Return and Replacements] page for further information.
