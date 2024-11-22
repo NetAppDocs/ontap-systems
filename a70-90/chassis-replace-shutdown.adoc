@@ -12,3 +12,7 @@ summary: "To replace the chassis, you must shutdown the controllers."
 You must shutdown the controllers in the impaired chassis before removing them from the impaired chassis.
 
 include::../_include/shutdown_chassis.adoc[]
+
+.What's next?
+
+Once the controllers are shut down, you need to ink:chassis-replace-move-hardware.html[Replace the chassis].
