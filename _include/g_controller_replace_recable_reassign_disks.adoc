@@ -42,9 +42,7 @@ NOTE: You are prompted twice for the passphrase.
 . Give back only the CFO aggregates (the root aggregate): `storage failover giveback -fromnode local -only-cfo-aggregates _true_`
 * If you encounter errors, contact https://support.netapp.com[NetApp Support].
 . Wait 5 minutes after the giveback report completes, and check failover status and giveback status: `storage failover show` and `storage failover show-giveback`.
-. Move the console cable to the replacement node and enter `security key-manager onboard sync`
-
-!!!!!HEY, in the above step, the console cable was already connected to the replacement controller and laptop in topic Replace the controller, step 9 install the controller.
+. Move the console cable back to the replacement controller and enter `security key-manager onboard sync`
 +
 NOTE: You are prompted for the cluster-wide passphrase of OKM for the cluster.
 
