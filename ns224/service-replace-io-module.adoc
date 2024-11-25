@@ -67,12 +67,19 @@ include::../_include/t_module_remove.adoc[]
 
 . Remove the failed I/O module from the NSM:
 +
-
 image::../media/drw_t_io_module_replace_ieops-1980.svg[Replace the I/O module.]
-
-.. Turn the I/O module thumbscrew counterclockwise to loosen.
-.. Pull the I/O module out of the NSM using the port label tab on the left and the thumbscrew.
-
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Turn the I/O module thumbscrew counterclockwise to loosen.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Pull the I/O module out of the NSM using the port label tab on the left and the thumbscrew.
+|===
 
 . Install the replacement I/O module into the target slot:
 
