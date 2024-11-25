@@ -35,13 +35,17 @@ a|
 ONTAP 9.9.1
 |===
 
-== Shelf modules
+== Shelves
 
 [cols="2*",options="header"]
 |===
 | Shelf module| Support discontinued from...
 a|
-IOM 6 module|
+IOM6 6Gb/s SAS module, used in:
+
+* DS2246
+* DS4246
+* DS4486|
 ONTAP 9.16.1
 |===
 
