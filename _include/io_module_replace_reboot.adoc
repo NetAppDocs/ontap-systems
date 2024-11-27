@@ -1,0 +1,22 @@
+After you replace an I/O module, you must reboot the controller module.
+
+
+.Steps
+
+. From the LOADER prompt, reboot the node: 
++
+`bye` 
++
+NOTE: This reinitializes the I/O module and other components and reboots the node.
+
+. Give back the controller from the partner controller: 
++
+`storage failover giveback -ofnode _impaired_node_name_`
+
+. From the healthy node, restore automatic giveback if you disabled it:
++
+`storage failover modify -node local -auto-giveback _true_`
+
+. If AutoSupport is enabled, restore automatic case creation:
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
