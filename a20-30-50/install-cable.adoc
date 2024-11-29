@@ -116,10 +116,29 @@ Cable the controllers to the cluster network switches to create the ONTAP cluste
 
 
 =====
+Applies just to switchless or here too???The I/O module ports in slot 2 and 4 are 40/100GbE ports.???? Does this apply only to 30-50, if yes leave the 2 notes where the are, but if applies to all 3, then move it yo new paragraph below section lead text.???
 
-Add example
+.Steps
 
-Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 are unused and available for front-end connectivity, if needed.
+. Cable the Cluster/HA interconnect connections: 
++
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
++
+.. Cable controller A port e2a to cluster network switch A.
+.. Cable controller A port e4a to cluster network switch B.
+.. Cable controller B port e2a to cluster network switch A.
+.. Cable controller B port e4a to cluster network switch B.
++
+NOTE: Ports e2b and e4b on the I/O modules in slots 2 and 4 are unused and available for front-end (host network) connectivity, if needed.
+
+Or what ANdis said: Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 are unused and available for front-end connectivity, if needed.
++
+*Cluster/HA interconnect cables*
++
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable, width=100pxx]
++
+image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a50 two node switched cluster cabling diagram using two 100gbe io modules]
+
 
 =====
 
@@ -235,7 +254,7 @@ IMPORTANT: Do not plug in the power cords yet.
 
 
 == Step 4: Cable the shelf connections
-This procedure show you how to cable the controllers to one NS224 shelf.
+This procedure shows you how to cable the controllers to one NS224 shelf.
 
 .About this task
 
