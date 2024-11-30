@@ -95,13 +95,21 @@ image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg
 
 
 =====
-
-Add image: connector
+. Cable the Cluster/HA interconnect connections: 
 +
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
++
+.. Cable controller A port e4a to controller B port e4a.
+.. Cable controller A port e4b to controller B port e4b.
++
+*Add image: connector*
++
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100pxx]
 // Connector used in Bandit, use it here?
 +
 image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 two node switchless cluster cabling diagram using one 25gbe io module]
+
+
 =====
 
 
@@ -154,8 +162,10 @@ image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a
 +
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
 +
-.. Cable Controller A port e4a and Controller B port e4a to cluster network switch A. 
-.. Cable Controller A port e4b and Controller B port e4b to cluster network switch B.
+.. Cable controller A port e4a to cluster network switch A. 
+.. Cable controller A port e4b to cluster network switch B.
+.. Cable controller B port e4a to cluster network switch A. 
+.. Cable controller B port e4b to cluster network switch B.
 +
 *Cluster/HA interconnect cables*
 +
@@ -170,8 +180,16 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[C
 [%collapsible]
 
 =====
-
-Add image: connector
+. Cable the controllers to the cluster network switches:
++
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
++
+.. Cable controller A port e4a to cluster network switch A. 
+.. Cable controller A port e4b to cluster network switch B.
+.. Cable controller B port e4a to cluster network switch A. 
+.. Cable controller B port e4b to cluster network switch B.
++
+*Add image: connector*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 // Connector used in Bandit, use it here?
