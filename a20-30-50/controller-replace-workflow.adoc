@@ -21,15 +21,15 @@ Shut down or take over the impaired controller so that the healthy controller co
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-move-hardware.html[Replace the controller]
 [role="quick-margin-para"]
-Replacing the controller includes removing the impaired controller, moving the FRU components to the replacement controller, and then installing the replacement controller in the enclosure.
+Replacing the controller includes removing the impaired controller, moving the FRU components to the replacement controller, installing the replacement controller in the chassis, setting the time and date, and then recabling.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration ]
 [role="quick-margin-para"]
 Verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:controller-replace-recable-reassign-disks.html[Recable and give back the controller]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:controller-replace-recable-reassign-disks.html[Give back the controller]
 [role="quick-margin-para"]
-Recable the controller and transfer the ownership of storage resources back to the replacement controller. 
+Transfer the ownership of storage resources back to the replacement controller. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:controller-replace-restore-system-rma.html[Complete controller replacement]
 [role="quick-margin-para"]
