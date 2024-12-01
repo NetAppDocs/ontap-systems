@@ -124,9 +124,6 @@ image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 two n
 --
 .Switched cluster cabling
 --
-Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
-
-The ports on I/O modules in slot 2 and 4 are 40/100GbE ports.
 
 .AFF A30 or A50 with two 2-port 100GbE I/O modules
 [%collapsible]
@@ -135,7 +132,9 @@ The ports on I/O modules in slot 2 and 4 are 40/100GbE ports.
 =====
 Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
 
-Applies just to switchless or here too???The I/O module ports in slot 2 and 4 are 40/100GbE ports.???? Does this apply only to 30-50, if yes leave the 2 notes where the are, but if applies to all 3, then move it to new paragraph below section lead text.???
+The ports on I/O modules in slot 2 and 4 are 40/100GbE ports.
+
+Applies just to switchless or here too???
 
 .Steps
 
@@ -148,7 +147,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable controller B port e2a to cluster network switch A.
 .. Cable controller B port e4a to cluster network switch B.
 +
-NOTE: I/O module ports e2b and e4b are unused and available for hot network (front-end) connectivity, if needed.
+NOTE: I/O module ports e2b and e4b are unused and available for host network (front end) connectivity, if needed.
 +
 Or what ANdis said: Add note: The 40/100GbE ports e2b and e4b on the I/O modules in slots 2 and 4 are unused and available for front-end connectivity, if needed.
 +
@@ -169,6 +168,8 @@ image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a
 Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
 
 The ports on I/O modules in slot 2 and 4 are 40/100GbE ports.
+
+Applies just to switchless or here too???
 
 .Steps
 
