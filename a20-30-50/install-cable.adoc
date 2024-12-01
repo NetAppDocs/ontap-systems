@@ -283,12 +283,13 @@ image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 
 
 ====
 
-.AFF A20 with one 2-port 100?????? GbE module
+.AFF A20 with one 2-port 100?? GbE module
 [%collapsible]
 
 ====
 
-I/O module ports are 25 GbE...
+(I/O module ports are 25 GbE)
+
 .Steps
 . Cable the host network connections.  
 +
@@ -298,11 +299,13 @@ The following substeps are examples of optional host network cabling. If needed,
 +
 On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host network switches.
 +
-*40/100 GbE cables*  25 GbE Host cables?????????
+*40/100 GbE cables*  
++
+or is it 25 GbE Host cables????
 +
 image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable,width=100px]
 +
-image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
+image::../media/drw_isi_a20_host_4p_25gbe_cabling_ieops-2017.svg[Cable a20 to 40/100gbe ethernet host network switches]
 +
 .. Optional: Cable controllers to FC host network switches.
 +
@@ -312,7 +315,7 @@ On each controller, cable ports 1a, 1b, 1c and 1d  to the FC host network switch
 +
 image::../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 +
-image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
+image::../media/drw_isi_a20_4p_64gb_fc_cabling_ieops-2016.svg[Cable a20 to 64gb fc host network switches]
 
 
 ====
