@@ -24,9 +24,9 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 * Replacing the NSM involves moving the following:
 
 ** *NSM100 modules*: DIMMs, fans and power supply from the impaired NSM to the replacement NSM.
-** *NSM100B modules*: Fans, I/O module, and power supply from the impaired NSM to the replacement NSM.
+** *NSM100B modules*: Fans, DIMMs, boot media, I/O module, and power supply from the impaired NSM to the replacement NSM.
 +
-You do not move the real-time clock (RTC) battery or boot media. They come preinstalled in the replacement NSM.
+You do not move the real-time clock (RTC) battery. They come preinstalled in the replacement NSM.
 
 * Allow at least 70 seconds between removal and installation of the NVMe shelf module (NSM).
 +
@@ -200,20 +200,79 @@ include::../_include/t_module_remove.adoc[]
 . Open the cover of the impaired NSM and the replacement NSM by loosening the thumbscrew on each cover.
 
 
-. Move the fans from the impaired NSM to the replacement NSM:
+. Move all fans from the impaired NSM to the replacement NSM:
 +
 image::../media/drw_t_fan_replace_ieops-1979.svg[Remove failed fan.]
- .. Remove a fan by firmly grasping the sides where the blue touch points are located, and then pull it straight up out of its socket.
- .. Insert the fan in the replacement NSM by aligning it within the guides, and then pushing down until the fan connector is fully seated in the socket.
- .. Repeat these steps for the remaining fans.
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+
+Remove the failed fan by firmly grasping the sides where the blue touch points are located, and then pull it straight up out of its socket.
+
+a|
+image::../media/icon_round_1.png[Callout number 2]
+a|
+
+Insert the replacement fan by aligning it within the guides, and then push down until the fan connector is fully seated in the socket.
+|===
+
+
+
+. Move the boot media to the replacement NSM:
+.. Remove the boot media from the impaired NSM:
++
+image::../media/drw_t_boot_media_replace_ieops-1977.svg[Remove boot media.]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Boot media location
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Press down on the blue tab to release the right end of the boot media.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Lift the right end of the boot media up at a slight angle to get a good grip along the sides of the boot media.
+a|
+image::../media/icon_round_4.png[Callout number 4]
+a|
+Gently pull the left end of the boot media out of its socket.
+|===
+
+.. Install the boot media in the replacement NSM:
+... Align the edges of the boot media with the socket housing in the replacement NSM, and then gently push it squarely into the socket.
+... Rotate the boot media down toward the locking button.
+... Push the locking button, rotate the boot media all the way down, and then release the locking button.
+
 
 . Move the I/O module from the impaired NSM to the replacement NSM.
+.. Remove I/O module from the impaired NSM:
 +
 image::../media/drw_t_io_module_replace_ieops-1980.svg[Replace the I/O module.]
-.. Turn the I/O module thumbscrew counterclockwise to loosen.
-.. Pull the I/O module out of the NSM using the port label tab on the left and the thumbscrew.
-.. Align the I/O module with the edges of the slot in the replacement NSM.
-.. Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Turn the I/O module thumbscrew counterclockwise to loosen.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Pull the I/O module out of the NSM using the port label tab on the left and the thumbscrew.
+|===
+
+.. Install I/O module in the replacement NSM:
+
+... Align the I/O module with the edges of the slot in the replacement NSM.
+... Gently push the I/O module all the way into the slot, making sure to properly seat the module into the connector.
 +
 You can use the tab on the left and the thumbscrew to push in the I/O module.
 
@@ -221,7 +280,7 @@ You can use the tab on the left and the thumbscrew to push in the I/O module.
 
 . Move the power supply from the impaired NSM to the replacement NSM:
  .. Rotate the handle up, to its horizontal position, and then grasp it.
- .. With your thumb, press the blue tab to release the locking mechanism.
+ .. With your thumb, press the blue tab (AC PSU) or terra cotta tab (DC PSU) to release the locking mechanism.
  .. Pull the power supply out of the NSM while using your other hand to support its weight.
  .. Using both hands, support and align the edges of the power supply with the opening in the replacement NSM.
  .. Gently push the power supply into the NSM until the locking mechanism clicks into place.
@@ -250,7 +309,7 @@ The operator display panel attention LED turns off after the NSM reboots. This c
 If any cabling errors are generated, follow the corrective actions provided.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
-. Make sure that both NSMs in the shelf are running the same version of firmware: version 0200 or later.
+. Make sure that both NSMs in the shelf are running the same version of firmware: version 0300 or later.
 
 --
 ====
