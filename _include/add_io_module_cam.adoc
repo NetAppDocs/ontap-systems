@@ -1,5 +1,5 @@
 
-If the storage system has empty slots, install the new I/O module into one of the available slots. If all slots are occupied, remove an existing I/O module to make space and then install the new one.
+If the storage system has available slots, install the new I/O module into one of the available slots. If all slots are occupied, remove an existing I/O module to make space and then install the new one.
 
 .Before you begin
 
@@ -15,9 +15,9 @@ If the storage system has empty slots, install the new I/O module into one of th
 [role="tabbed-block"]
 ====
 
-.Add I/O module to an empty slot
+.Add I/O module to an available slot
 --
-You can add a new I/O module into a storage system with available empty slots.
+You can add a new I/O module into a storage system with available slots.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -36,9 +36,11 @@ You can add a new I/O module into a storage system with available empty slots.
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
 . Rotate the cable management tray up to the closed position.
-. Reboot the controller from the LOADER prompt: _bye_
+. From the LOADER prompt, reboot the node: 
 +
-NOTE: This reinitializes the PCIe cards and other components and reboots the node.
+`bye`
++
+NOTE: This reinitializes the I/O module and other components and reboots the node.
 +
 . Give back the controller from the partner controller: 
 +
@@ -46,11 +48,11 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 
 . Repeat these steps for controller B.
 
-. From the healthy node, restore automatic giveback if you disabled it by using the following command:
+. From the healthy node, restore automatic giveback if you disabled it:
 +
-`storage failover modify -node local -auto-giveback true` 
+`storage failover modify -node local -auto-giveback _true_`
 
-. If AutoSupport is enabled, restore automatic case creation by using the following command:
+. If AutoSupport is enabled, restore automatic case creation:
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
