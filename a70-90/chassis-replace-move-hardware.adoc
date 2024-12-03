@@ -11,5 +11,4 @@ summary: "Move the hard drives, and controller module or modules from the impair
 [.lead]
 You need to remove specific components from the controller modules before removing the impaired chassis, replace the chassis, re-install the components in the correct controller modules, and then return the controllers to operation. 
 
-
 include::../_include/a70-90_chassis_replace_move_hardware.adoc[]
