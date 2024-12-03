@@ -13,7 +13,20 @@ You can add an I/O module to your AFF A20, AFF A30, and AFF A50 storage systems 
 
 == Step 1: Shut down the impaired controller module
 
+//[role="tabbed-block"]
+//====
+
+//.Option 1: Most systems
+//--
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+//--
+//.Option 2: MetroCluster configuration
+//--
+//include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+//--
+//
+//====
+
 
 == Step 2: Add the new I/O module
 
