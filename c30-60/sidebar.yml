@@ -1,0 +1,95 @@
+section: a20-30-50
+title: AFF C30 and AFF C60 systems
+entries:
+ - title: Install and setup
+   pdf-filename: AFF C30 and AFF C60 Install and Setup
+   entries:
+     - title: Install workflow
+       url: /c30-60/install-overview.html
+     - title: Review requirements
+       url: /c30-60/install-requirements.html
+     - title: Prepare to install
+       url: /c30-60/install-prepare.html
+     - title: Install hardware
+       url: /c30-60/install-hardware.html
+     - title: Cable hardware
+       url: /c30-60/install-cable.html
+     - title: Power on system
+       url: /c30-60/install-power-hardware.html
+     - title: Complete system setup
+       url: /c30-60/install-complete.html
+ - title: Maintain
+   pdf-filename: AFF C30 and AFF C60 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /c30-60/maintain-overview.html
+# START boot media
+   - title: Boot media
+     entries:
+      - title: Boot media replace workflow
+        url: /c30-60/bootmedia-replace-workflow.html
+      - title: Review requirements
+        url: /c30-60/bootmedia-replace-requirements.html
+      - title: Check encryption keys
+        url: /c30-60/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
+        url: /c30-60/bootmedia-shutdown.html
+      - title: Replace boot media
+        url: /c30-60/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /c30-60/bootmedia-recovery-image-boot.html
+      - title: Restore encryption
+        url: /c30-60/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /c30-60/bootmedia-complete-rma.html
+    # END boot media
+   - title: Chassis
+     pdf-filename: AFF C30 and AFF C60 Chassis
+     entries:
+        - title: Chassis replace workflow
+          url: /c30-60/chassis-replace-workflow.html
+        - title: Review requirements
+          url: /c30-60/chassis-replace-requirements.html
+        - title: Shut down controllers
+          url: /c30-60/chassis-replace-shutdown.html
+        - title: Replace chassis
+          url: /c30-60/chassis-replace-move-hardware.html
+        - title: Complete chassis replacement
+          url: /c30-60/chassis-replace-complete-system-restore-rma.html
+   - title: Controller
+     pdf-filename: AFF C30 and AFF C60 Controller Module
+     entries:
+        - title: Controller replace workflow
+          url: /c30-60/controller-replace-workflow.html
+        - title: Review requirements
+          url: /c30-60/controller-replace-requirements.html
+        - title: Shut down impaired controller
+          url: /c30-60/controller-replace-shutdown.html
+        - title: Replace controller
+          url: /c30-60/controller-replace-move-hardware.html
+        - title: Restore system configuration
+          url: /c30-60/controller-replace-system-config-restore-and-verify.html
+        - title: Recable and give back controller
+          url: /c30-60/controller-replace-recable-reassign-disks.html
+        - title: Complete controller replacement
+          url: /c30-60/controller-replace-restore-system-rma.html
+   - title: DIMM
+     url: /c30-60/dimm-replace.html
+   - title: Drive
+     url: /c30-60/drive-replace.html
+   - title: Fan
+     url: /c30-60/fan-replace.html
+   - title: I/O module
+     entries:
+        - title: I/O module overview
+          url: /c30-60/io-module-overview.html
+        - title: Add I/O module
+          url: /c30-60/io-module-add.html
+        - title: Replace I/O module
+          url: /c30-60/io-module-replace.html
+   - title: NV Battery
+     url: /c30-60/nvdimm-battery-replace.html
+   - title: Power supply
+     url: /c30-60/power-supply-replace.html
+   - title: Real-time clock battery
+     url: /c30-60/rtc-battery-replace.html
