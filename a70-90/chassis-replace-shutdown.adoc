@@ -9,7 +9,7 @@ summary: "To replace the chassis, you must shutdown the controllers."
 :imagesdir: ../media/
 
 [.lead]
-You must shutdown the controllers in the impaired chassis before removing them from the impaired chassis.
+You must shut down the controllers in the impaired chassis before removing them from the impaired chassis.
 
 include::../_include/shutdown_chassis.adoc[]
 

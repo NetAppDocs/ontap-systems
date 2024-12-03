@@ -8,37 +8,28 @@
 * If you haven't done so, review the link:chassis-replace-requirements.html[Chassis replace requirements] before beginning the procedure.
 
 
-== Step 1: Run Config Advisor
-You should run Active IQ Conf Advisor to correct any system issues before replacing the chassis
-
-. Verify system health by downloading and running link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Conf Advisor] from the the http://mysupport.netapp.com/[NetApp Support Site^].
-
-. Verify that both controller modules are running and cabled correctly.
-
-. Make any necessary corrections to configuration or cabling.  
-
-== Step 2: Open a console session, save session logs, and turn on the system location LED
+== Step 1: Open a console session, save session logs, and turn on the system location LED
 You should open a console session and save sessions logs for future use, and also turn on the system location LED to find the impaired chassis.
 
-. Open a console session with putty to monitor the system
+. Connect to the serial console port to interface with and monitor the system
 
 . Save the console sessions to a log file on the console.
 
 + 
 You should do screen captures to take screen shots for later reference.
 
-. Turn on the blue Location LED on the storage system to help you identify the correct controllers:
+. Locate and turn on the controller LED:
 
-+
-`storage shelf show`
-+
-`storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
+.. Use the `system controller location-led show` command to show the current state of the location LED.
 +
 
 NOTE: The Location LED remains lit for 30 minutes.
 
+.. Change the state of the location LED with the `system controller location-led modify -node node1 -state on` 
 
-== Step 3: Verify replacement components
+
+
+== Step 2: Verify replacement components
 
 You should verify that you received the necessary components, remove it from packaging, save the packaging, and label the cables and controllers.
 
@@ -51,7 +42,7 @@ You should verify that you received the necessary components, remove it from pac
 
 . Save the packing for returning the failed component to NetApp.
 
-== Step 4: Label the cables and controllers and ground yourself
+== Step 3: Label the cables and controllers and ground yourself
 
 . Label all the cables associated with the storage system. This aids recabling later in this procedure.
 

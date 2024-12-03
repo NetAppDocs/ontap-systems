@@ -6,7 +6,6 @@ This procedure is for systems with two node configurations. If you have a system
 * Suspend external backup jobs.
 * Make sure you have the necessary permissions and credentials:
 ** Local administrator credentials for ONTAP.
-** NetApp onboard key management (OKM) cluster-wide passphrase if using storage encryption or NVE/NAE.
 ** BMC accessability for each controller.
 
 * Make sure you have the necessary tools and equipment for the replacement.
@@ -20,9 +19,9 @@ Make note of any faults presently on the system, such as LEDs on the system comp
 .Steps
 
 . Log into the cluster through SSH or log in from any node in the cluster using a local console cable and a laptop/console.
-. If AutoSupport is enabled, turn off AutoSupport and indicate how long you expect the system to be offline:
+. If AutoSupport is enabled, suppress case creation and indicate how long you expect the system to be offline:
 +
-`system node autosupport invoke -node * -type all -message "MAINT=8h Power Maintenance"`
+`system node autosupport invoke -node * -type all -message "MAINT=2h Replace chassis"`
 . Identify the SP/BMC address of all nodes:
 +
 `system service-processor show -node * -fields address`
@@ -38,13 +37,12 @@ NOTE: Open an SSH session to every SP/BMC connection so that you can monitor pro
 +
 . Halt the two nodes located in the impaired chassis: 
 +
-`system node halt -node <node>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
+`system node halt -node <node1>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
 +
 
-NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `system node halt -node <node>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
+NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `system node halt -node <node1>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
-. Enter *y* for each controller in the cluster when you see `Warning: Are you sure you want to halt node "cluster <node-name> number"?`
-{y|n}:_`
+. Enter *y* for each controller in the cluster when you see `Warning: Are you sure you want to halt node "cluster  number"? {y|n}:`
 
 . Wait for each controller to halt and display the LOADER prompt.
 
