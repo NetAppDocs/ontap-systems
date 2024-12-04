@@ -18,8 +18,10 @@ indexpage:
       links:
         - title: AFF A1K
           url: ../a1k/install-overview.html
-        - title: AFF A70 and A90
+        - title: AFF A70 and AFF A90
           url: ../a70-90/install-overview.html
+        - title: AFF A20, A30, and A50
+          url: ../a20-30-50/install-overview.html
         - title: AFF A150
           url: ../a150/install-setup.html
         - title: AFF A250
@@ -32,6 +34,8 @@ indexpage:
           url: ../a900/install_setup.html
     - title: Install and setup C-Series systems
       links:
+        - title: AFF C30 and AFF C60
+          url: ../c30-60/install-overview.html
         - title: AFF C80
           url: ../c80/install-overview.html
         - title: AFF C250
@@ -44,8 +48,10 @@ indexpage:
       links:
         - title: AFF A1K
           url: ../a1k/maintain-overview.html
-        - title: AFF A70 and A90
+        - title: AFF A70 and AFF A90
           url: ../a70-90/maintain-overview.html
+        - title: AFF A20, A30 and A50
+          url: ../a20-30-50/maintain-overview.html
         - title: AFF A150
           url: ../a150/maintain-overview.html
         - title: AFF A250
@@ -58,6 +64,8 @@ indexpage:
           url: ../a900/maintain-overview.html
     - title: Maintain C-Series systems
       links:
+        - title: AFF C30 and AFF C60
+          url: ../c30-60/maintain-overview.html
         - title: AFF C80
           url: ../c80/maintain-overview.html
         - title: AFF C250

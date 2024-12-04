@@ -12,6 +12,8 @@ indexpage:
           url: https://www.netapp.com/data-storage/aff-c-series/
     - title: Install and setup
       links:
+        - title: AFF C30 and AFF C60
+          url: ../c30-60/install-overview.html
         - title: AFF C80
           url: ../c80/install-overview.html
         - title: AFF C250
@@ -22,6 +24,8 @@ indexpage:
           url: ../c800/install-setup.html
     - title: Maintain your system
       links:
+        - title: AFF C30 and AFF C60
+          url: ../c30-60/maintain-overview.html
         - title: AFF C80
           url: ../c80/maintain-overview.html
         - title: AFF C250
