@@ -1,15 +1,15 @@
 ---
-permalink: a20-30-50/io-module-add.html
+permalink: c30-60/io-module-add.html
 sidebar: sidebar
-keywords: aff a20, aff a30, aff a50, add I/O module
+keywords: aff c30, aff c60, add I/O module
 summary: "To replace an I/O module, you must disconnect the cables from the module, remove the SFP and QSFP modules from the module, remove the module, install the replacement module, reinstall the SFP and QSFP modules, and then cable the I/O module."
 ---
-= Add I/O module - AFF A20, AFF A30, and AFF A50
+= Add I/O module - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can add an I/O module to your AFF A20, AFF A30, and AFF A50 storage systems when there are slots available or when all slots are fully populated.
+You can add an I/O module to your AFF C30 and AFF C60 storage systems when there are slots available or when all slots are fully populated.
 
 == Step 1: Shut down the impaired controller module
 
