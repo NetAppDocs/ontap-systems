@@ -37,7 +37,7 @@ Cable the controllers to your ONTAP cluster. This procedure differs depending on
 .Switchless cluster cabling
 --
 
-.AFF A30 or A50 with two 2-port 40/100 GbE I/O modules
+.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
 
 
@@ -55,7 +55,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
 +
-*Cluster/HA interconnect cables*
+*100 GbE Cluster/HA interconnect cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
 +
@@ -63,7 +63,7 @@ image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg
 
 =====
 
-.AFF A30 or A50 with one 2-port 40/100 GbE I/O module
+.AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
 [%collapsible]
 
 
@@ -79,7 +79,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable controller A port e4a to controller B port e4a.
 .. Cable controller A port e4b to controller B port e4b.
 +
-*Cluster/HA interconnect cables*
+*40/100 GbE Cluster/HA interconnect cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
 +
@@ -103,7 +103,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable controller A port e4a to controller B port e4a.
 .. Cable controller A port e4b to controller B port e4b.
 +
-*10/25 GbE cables*
+*25 GbE Cluster/HA interconnect cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100pxx]
 +
@@ -118,7 +118,7 @@ image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 two n
 .Switched cluster cabling
 --
 
-.AFF A30 or A50 with two 2-port 40/100 GbE I/O modules
+.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
 
 
@@ -131,14 +131,14 @@ Cable the controllers to the cluster network switches to create the ONTAP cluste
 +
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE.
 +
-.. Cable controller A port e2a to cluster network switch A.
-.. Cable controller A port e4a to cluster network switch B.
-.. Cable controller B port e2a to cluster network switch A.
-.. Cable controller B port e4a to cluster network switch B.
+.. Cable controller A port e4a to cluster network switch A.
+.. Cable controller A port e2a to cluster network switch B.
+.. Cable controller B port e4a to cluster network switch A.
+.. Cable controller B port e2a to cluster network switch B.
 +
 NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
 +
-*Cluster/HA interconnect cables*
+*40/100 GbE Cluster/HA interconnect cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
 +
@@ -205,7 +205,7 @@ Cable the controllers to your host network.
 
 This procedure differs depending on your storage system model and I/O module configuration.
 
-.AFF A30 or A50 with two 2-port 40/100 GbE I/O modules
+.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
 
 ====
@@ -241,7 +241,7 @@ image::../media/drw_isi_a30-50_4p_64gb_fc_2card_cabling_ieops-2023.svg[Cable a30
 
 ====
 
-.AFF A30 or A50 with one 2-port 10/25 GbE I/O module
+.AFF A30 or AFF A50 with one 2-port 10/25 GbE I/O module
 [%collapsible]
 
 ====
