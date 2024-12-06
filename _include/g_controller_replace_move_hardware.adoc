@@ -225,7 +225,39 @@ When inserted correctly, the DIMM should go in easily but fit tightly in the slo
 
 . Repeat these steps for the remaining DIMMs.
 
-== Step 6: Move the I/O modules
+== Step 6: Move the boot media
+
+Move the boot media to the replacement controller.
+
+. Remove the boot media from the impaired controller:
++
+image::../media/drw_g_boot_media_replace_ieops-1872.svg[Boot media replace graphic]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Boot media location
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Press down on the blue tab to release the right end of the boot media.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Lift the right end of the boot media up at a slight angle to get a good grip along the sides of the boot media.
+a|
+image::../media/icon_round_4.png[Callout number 4]
+a|
+Gently pull the left end of the boot media out of its socket.
+|===
++
+. Install the boot media into the replacement controller:
+.. Slide the socket end of the boot media into its socket.
+.. At the opposite end of the boot media, press down and hold the blue tab (in the open position), gently push down on that end of the boot media until it stops, and then release the tab to lock the boot media into place.
+
+== Step 7: Move the I/O modules
 
 Move the I/O modules and any I/O blanking modules to the replacement controller.
 
@@ -266,7 +298,7 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 . Repeat these steps to move the remaining I/O modules and any I/O blanking modules to the replacement controller. 
 
 
-== Step 9: Install the controller
+== Step 8: Install the controller
 
 Reinstall the controller into the chassis and reboot it.
 
