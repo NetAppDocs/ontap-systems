@@ -133,7 +133,7 @@ Successfully recovered keymanager secrets.
 If EKM is configured, the system displays the following prompt.
 
 ....
-Error when fetching key manager config from partner <IP>: 28
+Error when fetching key manager config from partner <IP>:
 
 Has key manager been configured on this system? {y|n}
 ....
