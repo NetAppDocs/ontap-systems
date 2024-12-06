@@ -24,7 +24,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 * Replacing the NSM involves moving the following:
 
 ** *NSM100 modules*: DIMMs, fans and power supply from the impaired NSM to the replacement NSM.
-** *NSM100B modules*: Fans, DIMMs, boot media, I/O module, and power supply from the impaired NSM to the replacement NSM.
+** *NSM100B modules*: DIMMs, fans, boot media, I/O module, and power supply from the impaired NSM to the replacement NSM.
 +
 You do not move the real-time clock (RTC) battery. They come preinstalled in the replacement NSM.
 
@@ -197,7 +197,46 @@ include::../_include/t_module_remove.adoc[]
 
 
 . Unpack the replacement NSM, and set it on a level surface near the impaired NSM.
-. Open the cover of the impaired NSM and the replacement NSM by loosening the thumbscrew on each cover.
+. Open the covers of both NSMs by loosening the thumbscrew on each cover.
+
+. Move the DIMMs from the impaired NSM to the replacement to the replacement NSM:
+.. Remove DIMM from the impaired NSM:
++
+image::../media/drw_t_dimm_ieops-1978.svg[Remove DIMMs.]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+DIMM slot numbering and positions.
+
+The NSM contains DIMMs in slots 1 and 3, and DIMM Blanks in slots 2 and 4.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+* Note the orientation of the DIMM in the socket so that you can insert it into the replacement DIMM using the same orientation.
+* Eject the faulty DIMM by slowly pushing apart the two DIMM ejector tabs on both ends of the DIMM slot.
+
+IMPORTANT: Carefully hold the DIMM by the corners or edges to avoid pressure on the DIMM circuit board components.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Lift the DIMM up and out of the slot.
+
+The ejector tabs remain in the open position.
+|===
+
+.. Install DIMM in the replacement NSM:
+ ... Hold the DIMM by the corners, and then insert the DIMM squarely into a slot.
++
+The notch on the bottom of the DIMM, among the pins, should line up with the tab in the slot.
++
+When inserted correctly, the DIMM should go in easily but fit tightly in the slot. If not, reinsert the DIMM.
+
+ ... Push down carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at both ends of the DIMM.
+ ... Repeat for the other DIMM.
+
 
 
 . Move all fans from the impaired NSM to the replacement NSM:

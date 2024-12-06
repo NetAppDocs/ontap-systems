@@ -225,7 +225,7 @@ module in slot 11 on each controller.
 slot 10 port b (e10b).
 .. Repeat the same cable move on controller B.
 
-* If you are hot-adding a fourth shelf, recable the third shelf across the RoCE-capable I/O modules in slot 9 and slot 8 on each controller.
+* If you are hot-adding a fourth shelf, recable the third shelf across the RoCE-capable I/O modules in slot 1 and slot 11 on each controller.
 +
 The substeps assume the third shelf is cabled to a RoCE-capable I/O 
 module in slot 9 on each controller.
