@@ -6,8 +6,10 @@
 
 .AFF systems
 --
-The AFF A-Series and AFF C-Series systems provide a robust, scale-out platform tailored for virtualized environments. They can be deployed as standalone systems or as high-performance tiers in NetApp ONTAP configurations.
-link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about AFF systems].
+The AFF A-Series and AFF C-Series systems provide a robust, scale-out platform tailored for virtualized environments. They can be deployed as standalone systems or as high-performance tiers in NetApp ONTAP configurations. link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about AFF systems].
+
+The supported storage system models are available beginning with the following ONTAP releases.
+
 
 [horizontal]
 ONTAP 9.16.1:: 
@@ -40,6 +42,8 @@ ONTAP 9.7::
 --
 ASA r2 systems deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers. link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about the ASA r2 systems].
 
+The supported storage system models are available beginning with the following ONTAP releases.
+
 [horizontal]
 ONTAP 9.16.0::
 * ASA A1K
@@ -50,6 +54,8 @@ ONTAP 9.16.0::
 .ASA systems
 --
 ASA A-Series and ASA C-Series systems deliver a simplified and dedicated SAN experience that provides continuous data availability for enterprise mission critical databases and other SAN workloads using FCP or iSCSI protocol. link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about the ASA systems].
+
+The supported storage system models are available beginning with the following ONTAP releases.
 
 [horizontal]
 
@@ -77,6 +83,8 @@ ONTAP 9.7::
 --
 FAS systems deliver efficient and secure secondary storage - the ultimate solution for tiering, backup, and disaster recovery. link:https://www.netapp.com/data-storage/fas/[Learn more about FAS systems].
 
+The supported storage system models are available beginning with the following ONTAP releases.
+
 [horizontal]
 
 ONTAP 9.15.1::
@@ -101,7 +109,9 @@ ONTAP 9.7::
 
 .Drive shelves
 --
-Drive shelves are specifically designed for NetApp AFF, ASA and FAS systems and help deliver the performance, resiliency, and flexibility your digital transformation needs. Drive shelves are available beginning with the following ONTAP releases.
+Drive shelves are specifically designed for NetApp AFF, ASA and FAS systems and help deliver the performance, resiliency, and flexibility your digital transformation needs. 
+
+Drive shelves are available beginning with the following ONTAP releases.
 
 [horizontal]
 
