@@ -189,11 +189,12 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable controller B port e4a to cluster network switch A. 
 .. Cable controller B port e4b to cluster network switch B.
 +
+image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched cluster cabling diagram using one 25gbe io module]
++
 *10/25 GbE cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100pxx]
-+
-image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched cluster cabling diagram using one 25gbe io module]
+
 
 ====
 
