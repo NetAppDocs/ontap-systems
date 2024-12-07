@@ -234,7 +234,7 @@ On each controller, cable ports 1a, 1b, 1c and 1d  to the FC host network switch
 +
 *64 Gb/s FC cables*
 +
-image::../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable, width=100pxx]
+image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100pxx]
 +
 image::../media/drw_isi_a30-50_4p_64gb_fc_2card_cabling_ieops-2023.svg[Cable a30 or a50 to 64gb fc host network switches using two io modules]
 
@@ -267,8 +267,7 @@ On each controller, cable ports 1a, 1b, 1c and 1d  to the FC host network switch
 +
 *64 Gb/s FC cables*
 +
-image::../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
-// [64 Gb fc cable, width=100pxx]
+image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100pxx]
 +
 image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
 
@@ -301,11 +300,7 @@ On each controller, cable ports 1a, 1b, 1c and 1d to the FC host network switche
 +
 *64 Gb/s FC cables*
 +
-image::../media/oie_cable_sfp_gbe_copper.png[BAD 64 Gb fc cable,width=100pxx]
-+
-image:../media/oie_cable_sfp_gbe_copper.png[TEST GOOD One GbE SFP copper connector, width=100pxx]
-+
-image:../media/oie_cable_sfp_gbe_copper.png[TEST 2 64 Gb fc cable,width=100pxx]
+image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100pxx]
 +
 image::../media/drw_isi_a20_4p_64gb_fc_cabling_ieops-2016.svg[Cable a20 to 64gb fc host network switches]
 
