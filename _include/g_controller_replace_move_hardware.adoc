@@ -162,12 +162,12 @@ a|
 a. Push in and hold the tab on the connector.
 
 b. Pull the connector up and out of the socket.
++
+As you pull up, gently rock the connector from end to end (lengthwise) to unseat it.
 |===
 
 . Install the NV battery into the replacement controller:
 .. Plug the wiring connector into its socket.
-+
-You might need to slightly rock the connector from end to end (lengthwise) until it is fully seated.
 +
 .. Route the wiring along the side of the power supply, into its retainer, and then through the channel in front of the NV battery compartment.
 .. Place the NV battery into the compartment.
@@ -193,7 +193,7 @@ image::../media/icon_round_1.png[Callout number 1]
 a|
 DIMM slot numbering and positions.
 
-NOTE: Depending on your storage system configuration you will have two or four DIMMs.
+NOTE: Depending on your storage system model, you will have two or four DIMMs.
 a|
 image::../media/icon_round_2.png[Callout number 1]
 a|
@@ -268,6 +268,8 @@ Make sure to label the cables so that you know where they came from.
 . Remove the I/O module from the impaired controller:
 +
 Make sure that you keep track of which slot the I/O module was in.
++
+If you are removing the I/O module in slot 4, make sure the right side controller handle is in the upright position to allow you access to the I/O module.
 +
 image::../media/drw_g_io_module_replace_ieops-1900.svg[Remove I/O module]
 +
