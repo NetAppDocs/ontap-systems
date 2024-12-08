@@ -219,7 +219,7 @@ Do one of the following if you are hot-adding a second shelf or a fourth shelf.
 * If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 2 and slot 10 on each controller.
 +
 The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
-module in slot 11 on each controller.
+module in slot 2 on each controller.
 +
 .. On controller A, move the cable from slot 2 port b (e2b) to
 slot 10 port b (e10b).
