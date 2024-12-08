@@ -1,0 +1,12 @@
+---
+permalink: c30-60/io-module-replace.html
+sidebar: sidebar
+keywords: aff c30, aff c60, replace a pcie card
+summary: "To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards."
+---
+= Replace I/O module - AFF C30 and AFF C60
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/g_io_module_replace.adoc[]
