@@ -39,25 +39,31 @@ NOTE: Do not completely insert the controller in the chassis until instructed to
 
 . Fully seat the controller in the chassis:
 +
-The controller boots to the LOADER prompt as soon as it is fully seated in the chassis.
-+
 .. Firmly push on the handles until the controller meets the midplane and is fully seated.
 +
 NOTE: Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
 +
 .. Rotate the controller handles up and lock in place with the tabs.
++
+NOTE: The controller begins to boot as soon as it is fully seated in the chassis.
++
+. Take the controller to the LOADER prompt by pressing CTRL-C to abort AUTOBOOT.
 
 . Set the time and date on the controller:
-
-.. From the LOADER prompt, display the date and time on the controller: `show date`
 +
-NOTE: Date and time default is in GMT. You have the option to display in local time and in 24hr mode.
+Make sure you are at the controller's LOADER prompt.
 +
-// NOTE: Time displayed is local time, not always GMT, and is displayed in 24hr mode.
+.. Display the date and time on the controller: `show date`
++
+NOTE: Time and date default is in GMT. You have the option to display in local time and in 24hr mode.
 +
 .. Set the current time in GMT: `set time hh:mm:ss`
 +
-You can get the current GMT from the healthy node: `date -u` 
+You can get the current GMT from the healthy node: `date -u`
++
+.. Set the current date: `set date ....`
+// Per SME fdbk, but man pages has no CMD for this.
+
 
 . Recable the controller as needed.
 +
