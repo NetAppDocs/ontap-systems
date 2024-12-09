@@ -61,9 +61,10 @@ NOTE: Time and date default is in GMT. You have the option to display in local t
 +
 You can get the current GMT from the healthy node: `date -u`
 +
-.. Set the current date: `set date ....`
-// Per SME fdbk, but man pages has no CMD for this.
-
+.. Set the current date in GMT: `set date mm/dd/yyyy`
++
+You can get the current GMT from the healthy node: `date -u`
++
 
 . Recable the controller as needed.
 +
