@@ -130,7 +130,7 @@ If you installed a storage I/O module, install and cable your NS224 shelves, as 
 +
 . Repeat the I/O module remove and install steps to add any additional I/O modules in the controller.
 
-. Reboot the impaired controller: `bye`
+. Reboot the impaired controller from the LOADER prompt: `bye`
 +
 This reinitializes the PCIe devices, other components, and reboots the node.
 
