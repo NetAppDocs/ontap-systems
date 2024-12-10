@@ -80,9 +80,9 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 After you replace an I/O module, you must reboot the controller.
 
 .Steps
-. Reboot the node from the LOADER prompt: `bye`
+. Reboot the controller from the LOADER prompt: `bye`
 +
-NOTE: This reinitializes the PCIe devices, other components, and reboots the node.
+Rebooting the impaired controller also reinitializes the I/O modules and other components.
 +
 
 . Return the node to normal operation: `storage failover giveback -ofnode _impaired_node_name_`
