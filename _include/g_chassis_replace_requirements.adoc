@@ -13,7 +13,7 @@ Before replacing the chassis, make sure to review the following requirements and
 
 * You can use the chassis replacement procedure with all versions of ONTAP supported by your storage system.
 
-* The chassis replacement procedure is written with the assumption that you are moving the bezel, drives, and controllers to the new chassis.
+* The chassis replacement procedure is written with the assumption that you are moving the bezel, drives, any drive blanks, and controllers to the new chassis.
 
 * If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +

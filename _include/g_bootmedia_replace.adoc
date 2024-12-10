@@ -98,7 +98,7 @@ The replacement boot media that you installed is without an ONTAP image so you n
  * You must have a copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the https://support.netapp.com/downloads[Downloads] section on the NetApp Support Site
   ** If NVE is supported, download the image with NetApp Volume Encryption, as indicated in the download button.
   ** If NVE is not supported, download the image without NetApp Volume Encryption, as indicated in the download button.
- * If your storage system is an HA pair, you must have a network connection between the node management ports of the controllers (typically the e0M interfaces).
+ * You must have a network connection between the node management ports of the controllers (typically the e0M interfaces).
  
 .Steps
  . Download and copy the appropriate service image from the https://mysupport.netapp.com/[NetApp Support Site] to the USB flash drive.
@@ -140,7 +140,7 @@ NOTE: The target port you configure is the target port you use to communicate wi
 *** gateway is the gateway for the network.
   
 +
-NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
+NOTE: Other parameters might be necessary for your interface. You can enter `help ifconfig` at the firmware prompt for details.
 
 +
 . Reconnect the power cord to the power supply (PSU) on the impaired controller.
