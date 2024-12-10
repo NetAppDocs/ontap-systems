@@ -26,7 +26,7 @@ To replace an AC PSU, complete the following steps.
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-. Identify the faulty PSU based on console error messages or through the red Fault LED on the PSU.
+. Identify the faulty PSU based on console error messages or through the red Attention LED on the PSU.
 
 .  Disconnect the power cord from the PSU by opening the power cord retainer, and then unplug the power cord from the PSU.
 +
@@ -81,7 +81,7 @@ To replace a DC PSU, complete the following steps.
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-. Identify the faulty PSU based on console error messages or through the red Fault LED on the PSU.
+. Identify the faulty PSU based on console error messages or through the red Attention LED on the PSU.
 . Disconnect the PSU:
 +
 NOTE: PSUs do not have a power switch.
@@ -100,7 +100,7 @@ The illustration and table in step 4 shows the two thumb screws (item #1) and th
 
 .. Pull the PSU out of the controller while using your other hand to support its weight.
 +
-NOTE: The PSU is short. Always use two hands to support it when removing it from the controller so that it does not swing free from the controller and injure you.
+CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller so that it does not swing free from the controller and injure you.
 +
 image::../media/drw_dcpsu_remove-replace-generic_IEOPS-788.svg[Remove a DC PSU,width=500px]
 
