@@ -35,7 +35,13 @@ If you need the RMA number or additional help with the replacement procedure, co
 
 * If you are replacing an AC power supply for an NS224 shelf with NSM100 modules, you can watch the following animation to familiarize yourself with the procedure before beginning. 
 +
+.Replace AC power supply for NS224 with NSM100 modules
+[%collapsible]
+====
+
 video::5794da63-99aa-425a-825f-aa86002f154d[panopto, title="Hot-swap a power supply in an NS224 shelf"]
+
+====
 
 Use the appropriate procedure for your type of PSU: AC or DC.
 
@@ -109,20 +115,7 @@ The illustration and table in step 4 shows the two thumb screws (item #1) and th
 
 . Remove the power supply:
 .. Rotate the handle up, to its horizontal position, and then grasp it.
-.. With your thumb, press the tab to release the locking mechanism. The color of the tab depends on your module model:
-+
-|===
-a| Model a| Tab color
-
-a|
-NSM100
-a|
-Blue
-a|
-NSM100B
-a|
-Terra cotta
-|===
+.. With your thumb, press the blue tab to release the locking mechanism.
 
 .. Pull the power supply out of the NSM while using your other hand to support its weight.
 +
