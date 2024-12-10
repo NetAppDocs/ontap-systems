@@ -5,16 +5,14 @@ sidebar: sidebar
 keywords: new, features, asa r2, aff, asa, fas
 summary: 'Learn about the supported version of ONTAP for your platform or shelf.'
 ---
-= Supported ONTAP hardware systems
+= ONTAP hardware and software compatibility
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Learn about the supported version of ONTAP for your storage system or drive shelf. 
+ONTAP storage systems are compatible with several versions of ONTAP software. Learn about the ONTAP versions that your storage systems and drives shelves support.
 
-The supported storage system models and drive shelves are available beginning with the following ONTAP releases.
-
-See the full configuration support and limitations for ONTAP hardware systems in  https://hwu.netapp.com[NetApp Hardware Universe]. For details about known issues, limitations, and upgrade cautions in ONTAP 9 releases, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP 9 Release Notes]. You must sign in with your NetApp account or create an account to access the Release Notes.
+Full configuration support and limitations for ONTAP hardware systems are available in  https://hwu.netapp.com[NetApp Hardware Universe]. Details about known issues, limitations, and upgrade cautions in ONTAP 9 software are available in the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP 9 Release Notes].
 
 include::./_include/new-platform-support-two.adoc[]
 

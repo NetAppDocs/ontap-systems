@@ -166,24 +166,41 @@ include::../_include/t_module_reinstall.adoc[]
 . Open the NSM cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
 +
-The FRU label on the NSM cover shows the location of the DIMMs and DIMM blanks in the center of the NSM.
+The FRU label on the NSM cover shows the location of the two DIMMs and two DIMM Blanks in the NSM.
 
 . Physically identify the faulty DIMM.
 +
 When a DIMM is faulty, the system logs a warning message to the system console indicating which DIMM needs to be replaced.
 //05Oct2022, Racer5: removed text describing location of onboard attention LED.
 
-. Replace the faulty DIMM:
+. Remove the faulty DIMM:
 +
 image::../media/drw_t_dimm_ieops-1978.svg[Remove DIMMs.]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+DIMM slot numbering and positions.
 
- .. Note the orientation of the DIMM in the slot so that you can insert the replacement DIMM using the same orientation.
- .. Eject the DIMM from its slot by slowly pushing apart the ejector tabs at both ends of the DIMM slot, and then lift the DIMM out of the slot.
-+
-NOTE: Carefully hold the DIMM by the corners or edges to avoid pressure on the DIMM circuit board components.
-+
+The NSM contains DIMMs in slots 1 and 3, and DIMM Blanks in slots 2 and 4.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+* Note the orientation of the DIMM in the socket so that you can insert the replacement DIMM using the same orientation.
+* Eject the faulty DIMM by slowly pushing apart the two DIMM ejector tabs on both ends of the DIMM slot.
+
+IMPORTANT: Carefully hold the DIMM by the corners or edges to avoid pressure on the DIMM circuit board components.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Lift the DIMM up and out of the slot.
+
 The ejector tabs remain in the open position.
+|===
 
+. Replace the DIMM:
  .. Remove the replacement DIMM from its antistatic shipping bag.
  .. Hold the DIMM by the corners, and then insert the DIMM squarely into a slot.
 +

@@ -11,6 +11,12 @@ summary: You cable each NS224 shelf you are hot-adding so that each shelf has tw
 [.lead]
 You cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
 
+.About this task
+
+Your hardware system may be compatible with both NS224 shelves with NSM100 modules and NS224 shelves with NSM100B modules. To check the compatibility and port names for your hardware and shelves, consult the https://hwu.netapp.com[NetApp Hardware Universe].
+
+
+
 .Cable shelf to AFF A1K
 [%collapsible]
 
@@ -32,7 +38,7 @@ include::../_include/cable-20-30-50-60-hot-add-shelf.adoc[]
 ====
 
 
-.Cable shelf to AFF A70 or AFF A90
+.Cable shelf to AFF A70, AFF A90 or AFF C80
 [%collapsible]
 
 
