@@ -18,6 +18,8 @@ This cabling section describes how to cable the NS224 shelf to the following sto
 * link:cable-eoa-systems-hot-add-shelf.html[Cable to EOA systems]
 
 == About this task
+* This procedure applies to direct-attached storage only. To view instructions for switch-attached storage, view our link:ns224/cable-as-switch-attached.html[switch-attached cabling guide].
+
 * Familiarize yourself with proper cable connector orientation, and the location and labeling of ports on the NS224 NSM100 shelf modules.
 
 ** Cables are inserted with the connector pull-tab facing up.
@@ -49,7 +51,7 @@ image::../media/drw_ns224_back_ports.png[Location of the NS224 NSM100 module por
 
 * Each NSM100B module includes 2 x 100GbE CX6/DX ports: e1a and e1b.
 +
-*Image will be inserted when complete.*
+image::../media/drw_ns224_nsmb_back_ports_ieops-2006.svg[Location of the NS224 NSM100B module ports e0a and e0b]
 
 --
 ====

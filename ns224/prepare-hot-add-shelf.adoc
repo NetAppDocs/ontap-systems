@@ -150,7 +150,7 @@ slot 8 port b (e8b).
 --
 
 
-.AFF A70 or AFF A90
+.AFF A70, AFF A90, or AFF C80
 --
 
 If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 8 on each controller.
@@ -212,6 +212,44 @@ The substeps assume the existing shelf is cabled to RoCE-capable ports in slot 4
 
 --
 
+.AFF A900
+--
+Do one of the following if you are hot-adding a second shelf or a fourth shelf.
+
+* If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 2 and slot 10 on each controller.
++
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 2 on each controller.
++
+.. On controller A, move the cable from slot 2 port b (e2b) to
+slot 10 port b (e10b).
+.. Repeat the same cable move on controller B.
+
+* If you are hot-adding a fourth shelf, recable the third shelf across the RoCE-capable I/O modules in slot 1 and slot 11 on each controller.
++
+The substeps assume the third shelf is cabled to a RoCE-capable I/O 
+module in slot 1 on each controller.
++
+.. On controller A, move the cable from slot 1 port b (e1b) to
+slot 11 port b (e11b).
+.. Repeat the same cable move on controller B.
+
+
+--
+
+.AFF A30, AFF C30, AFF A50, or AFF C60
+--
+
+If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 3 and slot 1 on each controller.
+
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 3 on each controller.
+
+.. On controller A, move the cable from slot 3 port b (e3b) to
+slot 1 port b (e1b).
+.. Repeat the same cable move on controller B.
+
+--
 ====
 // end tabbed area
 [start=2]
