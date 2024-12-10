@@ -79,7 +79,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable controller A port e4a to controller B port e4a.
 .. Cable controller A port e4b to controller B port e4b.
 +
-*40/100 GbE Cluster/HA interconnect cables*
+*100 GbE Cluster/HA interconnect cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
 +
@@ -140,14 +140,14 @@ NOTE: I/O module ports e2b and e4b are unused and available for host network con
 +
 *40/100 GbE Cluster/HA interconnect cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100pxx]
 +
 image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a50 switched cluster cabling diagram using two 100gbe io modules]
 
 
 =====
 
-.AFF A30 or A50 with one 2-port 40/100 GbE I/O module
+.AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
 [%collapsible]
 
 
@@ -165,9 +165,9 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable controller B port e4a to cluster network switch A. 
 .. Cable controller B port e4b to cluster network switch B.
 +
-*Cluster/HA interconnect cables*
+*40/100 GbE Cluster/HA interconnect cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100pxx]
 +
 image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
 
@@ -189,7 +189,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 .. Cable controller B port e4a to cluster network switch A. 
 .. Cable controller B port e4b to cluster network switch B.
 +
-*10/25 GbE cables*
+*10/25 GbE Cluster/HA interconnect cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100pxx]
 +
