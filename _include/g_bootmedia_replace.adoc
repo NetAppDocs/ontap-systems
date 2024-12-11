@@ -130,11 +130,16 @@ NOTE: The controller boots when fully seated in the chassis. It gets its power f
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
 
 . Set your network connection type at the LOADER prompt:
-** If you are configuring DHCP: `ifconfig e0M -auto`
+** If you are configuring DHCP: 
++
+`ifconfig e0M -auto`
 +
 NOTE: The target port you configure is the target port you use to communicate with the impaired controller from the healthy controller during var file system restore with a network connection. You can also use the e0M port in this command.
 
-** If you are configuring manual connections: `ifconfig e0M -addr=filer_addr -mask=netmask -gw=gateway`
+** If you are configuring manual connections: +
++
+`ifconfig e0M -addr=filer_addr -mask=netmask -gw=gateway`
++
 *** filer_addr is the IP address of the storage system.
 *** netmask is the network mask of the management network that is connected to the HA partner.
 *** gateway is the gateway for the network.

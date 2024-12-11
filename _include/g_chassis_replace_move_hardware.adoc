@@ -138,7 +138,12 @@ a|
 
 +
 
-. If controllers boot to the LOADER prompt, reboot the controllers: `boot_ontap`
+. If controllers boot to the LOADER prompt, reboot the controllers: 
++
+`boot_ontap`
++
 
-. Turn AutoSupport back on: `system node autosupport invoke -node * -type all -message MAINT=END`
+. Turn AutoSupport back on: 
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
 

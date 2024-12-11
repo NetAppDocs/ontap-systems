@@ -4,7 +4,9 @@ Verify the low-level system configuration of the replacement controller and reco
 
 You must verify the `HA` state of the controller and, if necessary, update the state to match your storage system configuration.
 
-. Boot to maintenance mode: `boot_ontap maint` 
+. Boot to maintenance mode: 
++
+`boot_ontap maint` 
 
 .. Enter `y` when you see _Continue with boot?_.
 +
@@ -17,11 +19,15 @@ NOTE: If you see _PERSONALITY MISMATCH_ contact customer support.
 
 . From the `sysconfig -v` output, compare the adapter card information with the cards and locations in the replacement controller.
 
-. Verify that all components display the same `HA` state: `ha-config show`
+. Verify that all components display the same `HA` state: 
++
+`ha-config show`
 +
 The HA state should be the same for all components.
 
-. If the displayed system state of the controller does not match your storage system configuration, set the `HA` state for the controller: `ha-config modify controller ha-state`
+. If the displayed system state of the controller does not match your storage system configuration, set the `HA` state for the controller: 
++
+`ha-config modify controller ha-state`
 
 +
 The value for HA-state can be one of the following:
@@ -31,14 +37,22 @@ The value for HA-state can be one of the following:
 // *** `mccip` (not supported in ASA systems)
 *** `non-ha` (not supported)
 
-. If the displayed system state of the controller does not match your storage system configuration, set the `HA` state for the controller: `ha-config modify controller ha-state`
-. Confirm that the setting has changed: `ha-config show`
+. If the displayed system state of the controller does not match your storage system configuration, set the `HA` state for the controller: 
++
+`ha-config modify controller ha-state`
+. Confirm that the setting has changed: 
++
+`ha-config show`
 
 == Step 2: Verify disk list
 
-. Verify that the adapter lists the paths to all disks with the `storage show disk -p`.
+. Verify that the adapter lists the paths to all disks:
++
+`storage show disk -p`
 +
 If you see any issues, check cabling and reseat cables.
 
-. Exit Maintenance mode: `halt`
+. Exit Maintenance mode: 
++
+`halt`
 

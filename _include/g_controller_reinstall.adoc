@@ -53,17 +53,26 @@ NOTE: The controller begins to boot as soon as it is fully seated in the chassis
 +
 Make sure you are at the controller's LOADER prompt.
 +
-.. Display the date and time on the controller: `show date`
+.. Display the date and time on the controller: 
++
+`show date`
 +
 NOTE: Time and date default is in GMT. You have the option to display in local time and in 24hr mode.
 +
-.. Set the current time in GMT: `set time hh:mm:ss`
+.. Set the current time in GMT: 
 +
-You can get the current GMT from the healthy node: `date -u`
+`set time hh:mm:ss`
 +
-.. Set the current date in GMT: `set date mm/dd/yyyy`
+You can get the current GMT from the healthy node: 
 +
-You can get the current GMT from the healthy node: `date -u`
+`date -u`
++
+.. Set the current date in GMT: 
++
+`set date mm/dd/yyyy`
++
+You can get the current GMT from the healthy node: +
+`date -u`
 +
 
 . Recable the controller as needed.
