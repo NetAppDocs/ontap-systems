@@ -12,7 +12,7 @@ Instructions in the ONTAP documentation describe additional steps you must perfo
 +
 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI^]
 
-* All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+* All other components in the storage system must be functioning properly, if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 * Verify that the drive you are removing is failed.
 +
@@ -96,7 +96,8 @@ Slide the drive out of the drive bay using the cam handle and supporting the dri
 
 When removing a drive, always use two hands to support its weight.
 
-NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
+NOTE: Because drives are fragile, minimize handling to avoid damaging them.
+
 |===
 +
 . Wait a minimum of 70 seconds before inserting the replacement drive.

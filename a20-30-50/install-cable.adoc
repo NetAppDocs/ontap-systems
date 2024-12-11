@@ -105,7 +105,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 *25 GbE Cluster/HA interconnect cables*
 +
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100pxx]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
 +
 image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 switchless cluster cabling diagram using one 25 gbe io module]
 
@@ -140,7 +140,7 @@ NOTE: I/O module ports e2b and e4b are unused and available for host network con
 +
 *40/100 GbE Cluster/HA interconnect cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100pxx]
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
 +
 image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a50 switched cluster cabling diagram using two 100gbe io modules]
 
@@ -167,7 +167,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 *40/100 GbE Cluster/HA interconnect cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100pxx]
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
 +
 image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
 
@@ -191,7 +191,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 *10/25 GbE Cluster/HA interconnect cables*
 +
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100pxx]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
 +
 image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched cluster cabling diagram using one 25gbe io module]
 +
@@ -223,7 +223,7 @@ NOTE: The ports on I/O modules in slot 2 and 4 are 40/100 GbE (host connectivity
 +
 *40/100 GbE cables*
 +
-image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable, width=100pxx]
+image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable, width=100px]
 +
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Cable to 40/100gbe ethernet host network switches]
 +
@@ -233,7 +233,7 @@ On each controller, cable ports 1a, 1b, 1c and 1d  to the FC host network switch
 +
 *64 Gb/s FC cables*
 +
-image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100pxx]
+image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 +
 image::../media/drw_isi_a30-50_4p_64gb_fc_2card_cabling_ieops-2023.svg[Cable a30 or a50 to 64gb fc host network switches using two io modules]
 
@@ -256,7 +256,7 @@ On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host netwo
 +
 *10/25 GbE cables*
 +
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100pxx]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
 +
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
 +
@@ -266,7 +266,7 @@ On each controller, cable ports 1a, 1b, 1c and 1d  to the FC host network switch
 +
 *64 Gb/s FC cables*
 +
-image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100pxx]
+image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 +
 image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
 
