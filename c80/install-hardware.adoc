@@ -1,0 +1,19 @@
+---
+permalink: c80/install-hardware.html
+sidebar: sidebar
+keywords: aff c80, install hardware, telco rack
+summary: Install your storage system in cabinet or telco rack.
+---
+= Install the hardware - AFF C80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you prepare to install your AFF C80 storage system, install the hardware for the system. First, install the rail kits. Then install and secure your storage system in a cabinet or telco rack.
+
+Skip this step if your cabinet is pre-populated.
+
+include::../_include/install_hardware.adoc[]
+
+.What's next?
+After you’ve installed the hardware for your AFF C80 system, you link:install-cable.html[cable the hardware for your AFF C80 storage system].

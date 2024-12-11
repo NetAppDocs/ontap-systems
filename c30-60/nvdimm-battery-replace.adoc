@@ -1,0 +1,13 @@
+---
+permalink: c30-60/nvdimm-battery-replace.html
+sidebar: sidebar
+keywords: aff c30, aff c60, replace the NV battery, NV battery
+summary: "To replace the NV battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module."
+
+---
+= Replace the NV battery - AFF C30 and AFF C60
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/g_nvdimm_battery_replace.adoc[]
