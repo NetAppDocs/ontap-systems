@@ -157,22 +157,3 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 
 +
 The controller modules begin to boot as soon as PSUs are installed and power is restored.
-
-
-
-== Step 5: Boot the controllers, confirm giveback, Active IQ Config Advisor, and return the failed chassis to Netapp
-After the controllers reboot, confirm the giveback,  run Active IQ Config Advisor to check the health of the storage system, and then return the failed part to NetApp.
-
-. Check the console output:
-.. If the controller boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
-
-.. If the console displays `waiting for giveback` after the reboot, log into the partner controller and check that the replaced controller is ready for giveback with the `storage failover show` command.
-
-. Perform the giveback:
-
-.. Connect the console cable to the partner controller.
-.. Give back the controller with the `storage failover giveback -fromnode local` command.
-
-. Once the giveback is complete, run Active IQ Config Advisor to verify the health of the storage system.
-
-. Return the failed part to NetApp, as described in the RMA instructions shipped with the kit. See the https://mysupport.netapp.com/site/info/rma[Part Return and Replacements] page for further information.
