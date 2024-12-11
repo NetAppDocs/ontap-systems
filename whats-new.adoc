@@ -2,27 +2,43 @@
 sidebar: sidebar
 permalink: whats-new.html
 sidebar: sidebar
-keywords: new, features, asa r2, aff, asa, fas, legacy, end-of-support
-summary: 'Learn about the new features for ONTAP hardware systems.'
+keywords: new, features, asa r2, aff, asa, fas
+summary: 'Learn about the new platforms for ONTAP hardware systems.'
 ---
-
 = What's new for ONTAP hardware systems
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Learn about the new features for ONTAP hardware systems.
+Learn what's new for ONTAP hardware systems.
 
-For details about known issues, limitations, and upgrade cautions in ONTAP 9 releases, refer to the https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508[ONTAP 9 Release Notes]. You must sign in with your NetApp account or create an account to access the Release Notes.
+== December 2024
 
-== Platform support
-include::./_include/new-platform-support.adoc[]
+=== AFF A20, AFF A30 and AFF A50
+The new AFF A20, A30 and A50 hardware systems extend high-performance, intelligent, and comprehensive data management capabilities to more customers and workloads. 
 
-== Switch support
-include::./_include/new-switch-support.adoc[]
+The systems offer real-time ML-based ransomware detection, seamless cloud integration, and unmatched performance for mission-critical workloads including AI, VMware, databases, and analytics with support for block, file, and object storage.
 
-== Shelf support
-include::./_include/new-shelf-support.adoc[]
+link:https://www.netapp.com/data-storage/aff-a-series/[Learn more about AFF A-Series systems].
 
-== Hardware updates
-include::./_include/new-hardware-updates.adoc[]
+=== AFF C30, AFF C60 and AFF C80
+The new AFF C30, AFF C60 and AFF C80 hardware systems make the performance and efficiency gains of flash more accessible to businesses by providing an industry-leading 1.5PB of storage capacity in two-rack deployments.
+
+The solution offers exceptional density with 60TB drives, increased performance, and improved I/O flexibility.
+
+link:https://www.netapp.com/data-storage/aff-c-series/[Learn more about AFF C-Series systems].
+
+== September 2024
+
+=== ASA r2 systems
+The new ASA r2 hardware systems (ASA A1K, ASA A70, and ASA A90) systems deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers. 
+
+link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about the ASA r2 systems].
+
+=== FAS70 and FAS90
+The new FAS70 and FAS90 hardware systems deliver affordable, yet high-performing backup storage, enabling a secure cyber vault for recovery from ransomware attacks.
+
+link:https://www.netapp.com/data-storage/fas/[Learn more about FAS systems].
+
+
+
