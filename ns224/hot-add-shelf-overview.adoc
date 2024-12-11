@@ -12,7 +12,7 @@ summary: To hot-add an NS224 drive shelf, your HA pair must meet certain require
 Follow these workflow steps to hot-add your NS224 shelf.
 
 .Before you begin
-* This procedure applies to direct-attached storage only. To view instructions for switch-attached storage, view our link:ns224/cable-as-switch-attached.html[switch-attached cabling guide].
+* This procedure applies to direct-attached storage only. To view instructions for switch-attached storage, view our link:cable-as-switch-attached.html[switch-attached cabling guide].
 * To hot-add an NS224 shelf, your HA pair must meet certain requirements. Review the link:requirements-hot-add-shelf.html[hot-add requirements and best practices].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:prepare-hot-add-shelf.html[Prepare to hot-add your shelf]
