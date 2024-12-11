@@ -1,4 +1,4 @@
-To replace the controller, you must remove the impaired controller, move FRU components from the impaired controller to the replacement controller, install the replacement controller in the chassis, and then boot the system to Maintenance mode.
+To replace the controller, you must remove the impaired controller, move FRU components from the impaired controller to the replacement controller, install the replacement controller in the chassis, set the time and date, and then recable the replacement controller.
 
 == Step 1: Remove the controller
 
@@ -162,12 +162,12 @@ a|
 a. Push in and hold the tab on the connector.
 
 b. Pull the connector up and out of the socket.
++
+As you pull up, gently rock the connector from end to end (lengthwise) to unseat it.
 |===
 
 . Install the NV battery into the replacement controller:
 .. Plug the wiring connector into its socket.
-+
-You might need to slightly rock the connector from end to end (lengthwise) until it is fully seated.
 +
 .. Route the wiring along the side of the power supply, into its retainer, and then through the channel in front of the NV battery compartment.
 .. Place the NV battery into the compartment.
@@ -193,7 +193,7 @@ image::../media/icon_round_1.png[Callout number 1]
 a|
 DIMM slot numbering and positions.
 
-NOTE: Depending on your storage system configuration you will have two or four DIMMs.
+NOTE: Depending on your storage system model, you will have two or four DIMMs.
 a|
 image::../media/icon_round_2.png[Callout number 1]
 a|
@@ -225,7 +225,39 @@ When inserted correctly, the DIMM should go in easily but fit tightly in the slo
 
 . Repeat these steps for the remaining DIMMs.
 
-== Step 6: Move the I/O modules
+== Step 6: Move the boot media
+
+Move the boot media to the replacement controller.
+
+. Remove the boot media from the impaired controller:
++
+image::../media/drw_g_boot_media_replace_ieops-1872.svg[Boot media replace graphic]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Boot media location
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Press down on the blue tab to release the right end of the boot media.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Lift the right end of the boot media up at a slight angle to get a good grip along the sides of the boot media.
+a|
+image::../media/icon_round_4.png[Callout number 4]
+a|
+Gently pull the left end of the boot media out of its socket.
+|===
++
+. Install the boot media into the replacement controller:
+.. Slide the socket end of the boot media into its socket.
+.. At the opposite end of the boot media, press down and hold the blue tab (in the open position), gently push down on that end of the boot media until it stops, and then release the tab to lock the boot media into place.
+
+== Step 7: Move the I/O modules
 
 Move the I/O modules and any I/O blanking modules to the replacement controller.
 
@@ -236,6 +268,8 @@ Make sure to label the cables so that you know where they came from.
 . Remove the I/O module from the impaired controller:
 +
 Make sure that you keep track of which slot the I/O module was in.
++
+If you are removing the I/O module in slot 4, make sure the right side controller handle is in the upright position to allow you access to the I/O module.
 +
 image::../media/drw_g_io_module_replace_ieops-1900.svg[Remove I/O module]
 +
@@ -266,7 +300,7 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 . Repeat these steps to move the remaining I/O modules and any I/O blanking modules to the replacement controller. 
 
 
-== Step 9: Install the controller
+== Step 8: Install the controller
 
 Reinstall the controller into the chassis and reboot it.
 

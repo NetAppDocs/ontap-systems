@@ -5,7 +5,6 @@ Use this procedure to replace a failed I/O module.
 All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
-* You can use this procedure with all versions of ONTAP supported by your storage system.
 
 * If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
@@ -81,9 +80,9 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 After you replace an I/O module, you must reboot the controller.
 
 .Steps
-. Reboot the node from the LOADER prompt: `bye`
+. Reboot the controller from the LOADER prompt: `bye`
 +
-NOTE: This reinitializes the PCIe devices, other components, and reboots the node.
+Rebooting the impaired controller also reinitializes the I/O modules and other components.
 +
 
 . Return the node to normal operation: `storage failover giveback -ofnode _impaired_node_name_`

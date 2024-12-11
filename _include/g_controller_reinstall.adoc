@@ -34,26 +34,50 @@ Rotate the handles to the upright position and lock in place with the locking ta
 Align the rear of the controller with the opening in the chassis, and then gently push the controller using the handles.
 +
 NOTE: Do not completely insert the controller in the chassis until instructed to do so.
-+
 
-. Reconnect the cables to the controller; however, do not plug in the power cord to the power supply (PSU) at this time.
-+
-// book end for comment in: If you are using fiber optic cables and you removed the transceivers (QSFPs or SFPs), reinstall them.
-+
-NOTE: Make sure that the console cable is connected to the controller because the controller begins to boot as soon as it is completely seated in the chassis and you want to catch and log the boot sequence.
-+
+. Connect the console cable to the console port on the controller and to the laptop so that the laptop receives console messages when the controller reboots.
+
 . Fully seat the controller in the chassis:
-
++
 .. Firmly push on the handles until the controller meets the midplane and is fully seated.
 +
 NOTE: Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
 +
-NOTE: The controller boots when fully seated in the chassis. It gets its power from the partner controller.
-+
-.. If the controller boots to the LOADER prompt, reboot the controller: `boot_ontap`
 .. Rotate the controller handles up and lock in place with the tabs.
 +
-. Reconnect the power cord to the PSU on the replacement controller.
+NOTE: The controller begins to boot as soon as it is fully seated in the chassis.
++
+. Take the controller to the LOADER prompt by pressing CTRL-C to abort AUTOBOOT.
+
+. Set the time and date on the controller:
++
+Make sure you are at the controller's LOADER prompt.
++
+.. Display the date and time on the controller: 
++
+`show date`
++
+NOTE: Time and date default is in GMT. You have the option to display in local time and in 24hr mode.
++
+.. Set the current time in GMT: 
++
+`set time hh:mm:ss`
++
+You can get the current GMT from the healthy node: 
++
+`date -u`
++
+.. Set the current date in GMT: 
++
+`set date mm/dd/yyyy`
++
+You can get the current GMT from the healthy node: +
+`date -u`
++
+
+. Recable the controller as needed.
++
+. Reconnect the power cord to the power supply (PSU).
 +
 Once power is restored to the PSU, the status LED should be green.
 +
@@ -74,11 +98,4 @@ a|
 
 |===
 
-+
-
-. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
-
-. Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
-
-. If AutoSupport is enabled, restore (unsuppress) automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 

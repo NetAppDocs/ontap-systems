@@ -1,4 +1,4 @@
-Move the drives, controllers, and bezel from the impaired chassis to the replacement chassis (of the same model), and then replace the impaired chassis within the equipment rack or system cabinet.
+Move the drives, any drive blanks, controllers, and bezel from the impaired chassis to the replacement chassis (of the same model), and then replace the impaired chassis within the equipment rack or system cabinet.
 
 == Step 1: Remove the controller
 
@@ -8,33 +8,50 @@ include::../_include/g_controller_remove.adoc[]
 
 == Step 2: Remove the drives from the impaired chassis
 
-You need to remove all of the drives from the impaired chassis so that later in the procedure you can install them in the replacement chassis.
+You need to remove all of the drives and any drive blanks from the impaired chassis so that later in the procedure you can install them in the replacement chassis.
 
 . Gently remove the bezel from the front of the storage system.
-. Remove the drives:
+. Remove the drives and any drive blanks:
 +
-NOTE: Keep track of what drive bay each drive was removed from because they must be installed in the same drive bays in the replacement chassis.
+NOTE: Keep track of what drive bay each drive and drive blank was removed from because they must be installed in the same drive bays in the replacement chassis.
++
+image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove NVMe drive]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Press the release button on the drive face to open the cam handle.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Rotate the cam handle downward to disengage the drive from the midplane.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand. 
 
-.. Press the release button on the drive face to open the cam handle.
-.. Rotate the cam handle downward to disengage the drive from the midplane.
-.. Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand.
-+
 When removing a drive, always use two hands to support its weight.
+
+NOTE: Because drives are fragile, minimize handling to avoid damaging them.
+|===
 +
-NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
 
 . Set the drives aside on a static-free cart or table.
 
 
 == Step 3: Replace the chassis from within the equipment rack or system cabinet
 
-You remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis, install the drives, and then install the bezel.
+You remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis, install the drives, any drive blanks and then install the bezel.
 
 . Remove the screws from the impaired chassis mount points.
 +
 Set the screws aside to use later in this procedure.
++
+NOTE: If the storage system shipped in a NetApp system cabinet, you must remove additional screws at the rear of the chassis before the chassis can be removed.
 
-. Using two people, remove the impaired chassis from the equipment rack or system cabinet by sliding it off the rails, and then set it aside.
+. Using two people or a power lift, remove the impaired chassis from the equipment rack or system cabinet by sliding it off the rails, and then set it aside.
 
 . Using two people, install the replacement chassis into the equipment rack or system cabinet by sliding it onto the rails.
 
@@ -81,9 +98,9 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 
 . Repeat these steps to install the second controller into the chassis.
 
-. Install the drives you removed from the impaired chassis into the replacement chassis:
+. Install the drives and any drive blanks you removed from the impaired chassis into the replacement chassis:
 +
-NOTE: The drives must be installed in the same drive bays in the replacement chassis.
+NOTE: The drives and drive blanks must be installed in the same drive bays in the replacement chassis.
 
 .. With the cam handle in the open position, use both hands to insert the drive.
 
@@ -96,7 +113,7 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 .. Repeat the process for the remaining drives.
 . Install the bezel.
 
-. Reconnect the power cords to the power supplies (PSU) on the controllers.
+. Reconnect the power cords to the power supplies (PSU) in the controllers.
 +
 Once power is restored to a PSU, the status LED should be green.
 +
@@ -121,7 +138,12 @@ a|
 
 +
 
-. If controllers boot to the LOADER prompt, reboot the controllers: `boot_ontap`
+. If controllers boot to the LOADER prompt, reboot the controllers: 
++
+`boot_ontap`
++
 
-. Turn AutoSupport back on: `system node autosupport invoke -node * -type all -message MAINT=END`
+. Turn AutoSupport back on: 
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
 

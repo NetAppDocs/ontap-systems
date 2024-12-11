@@ -12,7 +12,7 @@ Instructions in the ONTAP documentation describe additional steps you must perfo
 +
 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI^]
 
-* All other components in the storage system must be functioning properly; if not, contact technical support.
+* All other components in the storage system must be functioning properly, if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 * Verify that the drive you are removing is failed.
 +
@@ -58,13 +58,17 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 +
 NOTE: You manually assign drive ownership and then reenable automatic drive assignment later in this procedure.
 
-.. Verify whether automatic drive assignment is enabled: `storage disk option show`
+.. Verify whether automatic drive assignment is enabled: 
++
+`storage disk option show`
 +
 You can enter the command on either controller.
 +
 If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column (for each controller).
 
-.. If automatic drive assignment is enabled, disable it: `storage disk option modify -node node_name -autoassign off`
+.. If automatic drive assignment is enabled, disable it: 
++
+`storage disk option modify -node node_name -autoassign off`
 +
 You must disable automatic drive assignment on both controllers.
 
@@ -93,6 +97,11 @@ a|
 image::../media/icon_round_3.png[Callout number 3]
 a|
 Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand. 
+
+When removing a drive, always use two hands to support its weight.
+
+NOTE: Because drives are fragile, minimize handling to avoid damaging them.
+
 |===
 +
 . Wait a minimum of 70 seconds before inserting the replacement drive.
@@ -109,17 +118,23 @@ When the drive's activity LED is solid, it means that the drive has power. When 
 
 . If you are replacing another drive, repeat steps 3 through step 7.
 . If you disabled automatic drive assignment in step 1, manually assign drive ownership, and then reenable automatic drive assignment if needed:
-.. Display all unowned drives: `storage disk show -container-type unassigned`
+.. Display all unowned drives: 
++
+`storage disk show -container-type unassigned`
 +
 You can enter the command on either controller.
 
-.. Assign each drive: `storage disk assign -disk disk_name -owner owner_name`
+.. Assign each drive: 
++
+`storage disk assign -disk disk_name -owner owner_name`
 +
 You can enter the command on either controller.
 +
 You can use the wildcard character to assign more than one drive at once.
 
-.. Reenable automatic drive assignment if needed: `storage disk option modify -node node_name -autoassign on`
+.. Reenable automatic drive assignment if needed: 
++
+`storage disk option modify -node node_name -autoassign on`
 +
 You must reenable automatic drive assignment on both controllers.
 
