@@ -1,0 +1,87 @@
+You must remove the controller from the chassis when you replace the controller or replace a component inside the controller.
+
+.Before you begin
+
+All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+.Steps
+. On the impaired controller, make sure the NV LED is off.
++
+When the NV LED is off, destaging is complete and it is safe to remove the impaired controller.
++
+// The NV LED is off when destaging of the outstanding/uncommitted data to persistent flash (a partition on the boot media) has completed. Then it is safe to continue with this procedure.
++
+NOTE: If the NV LED is flashing (green), destage is in progress. You must wait for the NV LED to turn off. However, if the flashing continues for longer than five minutes, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
++
+The NV LED is located next to the NV icon on the controller.
++
+image::../media/drw_g_nvmem_led_ieops-1839.svg[NV status LED location]
+
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+NV icon and LED on the controller
+
+|===
+
+[start=2]
+. If you are not already grounded, properly ground yourself.
+
+. Disconnect the power on the impaired controller:
++
+NOTE: Power supplies (PSUs) do not have a power switch.
++
+[options="header" cols="1,2"]
+
+|===
+| If you are disconnecting a...| Then...
+a|
+AC PSU
+a|
+. Open the power cord retainer.
+. Unplug the power cord from the PSU and set it aside.
+a|
+DC PSU
+a|
+. Unscrew the two thumb screws on the D-SUB DC power cord connector.
+. Unplug the power cord from the PSU and set it aside.
+
+|===
+
++
+. Unplug all cables from the impaired controller.
++
+Keep track of where the cables were connected.
+
+. Remove the impaired controller:
++
+The following illustration shows the operation of the controller handles (from the left side of the controller) when removing a controller:
++
+image::../media/drw_g_and_t_handles_remove_ieops-1837.svg[controller handle operation to remove a controller]
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+On both ends of the controller, push the vertical locking tabs outward to release the handles.
+a|
+image::../media/icon_round_2.png[Callout number 2] 
+a|
+* Pull the handles towards you to unseat the controller from the midplane.
++
+As you pull, the handles extend out from the controller and then you feel some resistance, keep pulling.
++
+* Slide the controller out of the chassis while supporting the bottom of the controller, and place it on a flat, stable surface. 
+a|
+image::../media/icon_round_3.png[Callout number 3] 
+a|
+If needed, rotate the handles upright (next to the tabs) to move them out of the way.
+|===
+
+
+

@@ -12,8 +12,10 @@ sidebar:
       url: "/index.html"
     - title: Release notes
       entries:
-        - title: What's new
+        - title: What's new for ONTAP hardware systems
           url: /whats-new.html
+        - title: ONTAP hardware and software compatibility
+          url: /supported-platforms.html
         - title: End-of-support
           url: /eoa-hardware.html
     - title: Get started
@@ -26,6 +28,7 @@ sidebar:
         entries:   
         - section: a1k
         - section: a70-90
+        - section: a20-30-50
         - section: a150
         - section: a250
         - section: a400
@@ -34,6 +37,8 @@ sidebar:
       - title: C-Series systems
         url: /aff-cseries/index.html
         entries:
+        - section: c30-60
+        - section: c80
         - section: c250
         - section: c400
         - section: c800
