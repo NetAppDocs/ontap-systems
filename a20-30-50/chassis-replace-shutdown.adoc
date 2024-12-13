@@ -1,0 +1,12 @@
+---
+permalink: a20-30-50/chassis-replace-shutdown.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, shutdown the controllers
+summary: "To replace the chassis, you must shutdown the controllers."
+---
+= Shut down the controllers - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/shutdown_chassis.adoc[]

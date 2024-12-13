@@ -39,14 +39,8 @@ If your HA pair has non-dedicated RoCE-capable Ethernet ports that you are using
 
 * For some platform models, when a RoCE-capable PCIe card or I/O module is installed in a supported slot on a controller, the ports automatically default to storage use (instead of networking); however, it is recommended that you complete the following procedure to verify the RoCE-capable ports are configured for storage use.
 
-* If you determine that the non-dedicated RoCE-capable ports in your HA pair are not configured for storage use, it is a nondisruptive procedure to configure them. 
-+
-Depending on the version of ONTAP your HA pair is running, you might need to reboot the controllers:
-+
-** If your HA pair is running a version of ONTAP 9.6, you need to reboot the controllers, one at a time.
-+
-** If your HA pair is running ONTAP 9.7 or later, you do not need to reboot the controllers, unless one or both controllers are in maintenance mode. This procedure assumes that neither controller is in maintenance mode.
-+
+* If you determine that the non-dedicated RoCE-capable ports in your HA pair are not configured for storage use, it is a nondisruptive procedure to configure them. You do not need to reboot the controllers, unless one or both controllers are in maintenance mode. This procedure assumes that neither controller is in maintenance mode.
+
 * If in the future you need to change ports from storage use to networking use, enter the command, `storage port modify -node _node_name_ -port _port_name_ -mode network`.
 
 .Steps
@@ -58,7 +52,7 @@ Depending on the version of ONTAP your HA pair is running, you might need to reb
 +
 * If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `storage` in the `Mode` column.
 +
-* If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
+* If your HA pair is running ONTAP 9.7, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
 +
 [NOTE]
 ====
@@ -66,7 +60,7 @@ When non-dedicated ports are not configured for storage use, the command output 
 
 * If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `network` in the `Mode` column.
 
-* If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?`` column, also display `disabled` in the `State` column.
+* If your HA pair is running ONTAP 9.7, the non-dedicated ports, which display `false` in the `Is Dedicated?`` column, also display `disabled` in the `State` column.
 ====
 
 . If the non-dedicated ports are configured for storage use, you are done with this procedure.
@@ -85,47 +79,19 @@ ONTAP 9.8 or later
 a|
 `storage port modify -node _node_name_ -port _port_name_ -mode storage`
 a|
-ONTAP 9.7 or 9.6
+ONTAP 9.7
 a|
 `storage port enable -node _node_name_ -port _port_name_`
 |===
 
-. If your HA pair is running ONTAP 9.6, reboot the controller so that the port changes take effect: `system node reboot -node _node_name_ -reason _reason_for_the_reboot_`.
-+
-Otherwise, go to the next step.
-+
-NOTE: The reboot can take up to 15 minutes.
 
-. Repeat the steps for the second controller:
-+
-[options="header" cols="1,3"]
-|===
-| If your HA pair is running...| Then...
-a|
-ONTAP 9.7 or later
-a|
-
- .. Repeat step 4.
- .. Go to step 7.
-
-a|
-ONTAP 9.6
-a|
-
- .. Repeat steps 4 and 5.
-+
-NOTE: The first controller must have already completed its reboot.
-
- .. Go to step 7.
-
-+
-|===
+. Repeat step 4 for the second controller.
 
 . Verify that the non-dedicated ports on both controllers are configured for storage use: `storage port show`
 +
 * If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `storage` in the `Mode` column.
 +
-* If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
+* If your HA pair is running ONTAP 9.7, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
 
 == Recable existing shelves
 
@@ -184,7 +150,7 @@ slot 8 port b (e8b).
 --
 
 
-.AFF A70 or AFF A90
+.AFF A70, AFF A90, or AFF C80
 --
 
 If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 8 on each controller.
@@ -246,6 +212,44 @@ The substeps assume the existing shelf is cabled to RoCE-capable ports in slot 4
 
 --
 
+.AFF A900
+--
+Do one of the following if you are hot-adding a second shelf or a fourth shelf.
+
+* If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 2 and slot 10 on each controller.
++
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 2 on each controller.
++
+.. On controller A, move the cable from slot 2 port b (e2b) to
+slot 10 port b (e10b).
+.. Repeat the same cable move on controller B.
+
+* If you are hot-adding a fourth shelf, recable the third shelf across the RoCE-capable I/O modules in slot 1 and slot 11 on each controller.
++
+The substeps assume the third shelf is cabled to a RoCE-capable I/O 
+module in slot 1 on each controller.
++
+.. On controller A, move the cable from slot 1 port b (e1b) to
+slot 11 port b (e11b).
+.. Repeat the same cable move on controller B.
+
+
+--
+
+.AFF A30, AFF C30, AFF A50, or AFF C60
+--
+
+If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 3 and slot 1 on each controller.
+
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 3 on each controller.
+
+.. On controller A, move the cable from slot 3 port b (e3b) to
+slot 1 port b (e1b).
+.. Repeat the same cable move on controller B.
+
+--
 ====
 // end tabbed area
 [start=2]
