@@ -11,12 +11,12 @@
 == Step 1: Open a console session, save session logs, and turn on the system location LED
 You should open a console session and save sessions logs for future use, and also turn on the system location LED to find the impaired chassis.
 
-. Connect to the serial console port to interface with and monitor the system
+. Connect to the serial console port to interface with and monitor the system.
 
 . Save the console sessions to a log file on the console.
 
 + 
-You should do screen captures to take screen shots for later reference.
+You should do screen captures for later reference.
 
 . Locate and turn on the controller LED:
 
@@ -25,13 +25,13 @@ You should do screen captures to take screen shots for later reference.
 
 NOTE: The Location LED remains lit for 30 minutes.
 
-.. Change the state of the location LED with the `system controller location-led modify -node node1 -state on` 
+.. Change the state of the location LED to "on" with the `system controller location-led modify -node node1 -state on`. 
 
-
+ 
 
 == Step 2: Verify replacement components
 
-You should verify that you received the necessary components, remove it from packaging, save the packaging, and label the cables and controllers.
+You should verify that you received the necessary components, remove them from packaging, save the packaging, and label the cables and controllers.
 
 . Before opening the packaging, you should look at the packaging label and verify:
 .. Component part number.
