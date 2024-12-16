@@ -18,7 +18,7 @@ You can replace a failed power supply nondisruptively in an NS224 drive shelf th
 Always replace like for like.
 
 * If you are replacing more than one power supply, you must do so one at a time so that the shelf maintains power.
-* *Best practice:* The best practice is to replace the power supply within two minutes of removal from the NSM module.
+* *Best practice:* The best practice is to replace the power supply within two minutes of removal from the NSM.
 +
 If you exceed the two minutes, the shelf continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.
 * Do not revert firmware to a version that does not support your shelf and its components.
@@ -27,22 +27,33 @@ If you exceed the two minutes, the shelf continues to function, but ONTAP sends 
 +
 If you do not know the `shelf_name` of the affected shelf, run the `storage shelf show` command.
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
 
 * When you unpack the replacement power supply, save all packing materials for use when you return the failed power supply.
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
+* If you are replacing an AC power supply for an NS224 shelf with NSM100 modules, you can watch the following animation to familiarize yourself with the procedure before beginning. 
++
+.Replace AC power supply for NS224 with NSM100 modules
+[%collapsible]
+====
+
+video::5794da63-99aa-425a-825f-aa86002f154d[panopto, title="Hot-swap a power supply in an NS224 shelf"]
+
+====
+
 Use the appropriate procedure for your type of PSU: AC or DC.
+
+
 
 [role="tabbed-block"]
 ====
 
 .Option 1: Replace an AC power supply
 --
-To replace an AC power supply, you can watch the animation or complete the following steps. 
+Complete the following steps to replace an AC power supply.
 
-video::5794da63-99aa-425a-825f-aa86002f154d[panopto, title="Hot-swap a power supply in an NS224 shelf"]
 
 .Steps
 
@@ -56,12 +67,28 @@ The system logs a warning message to the system console indicating which power s
 Power supplies do not have a power switch.
 
 . Remove the power supply:
- .. Rotate the handle up, to its horizontal position, and then grasp it.
- .. With your thumb, press the blue tab to release the locking mechanism.
- .. Pull the power supply out of the NSM module while using your other hand to support its weight.
++
+image::../media/drw_t_psu_ac_replace_ieops-2035.svg[Remove a AC PSU]
++
+[cols="1,3"]
+|===
+a| 
+image:../media/icon_round_1.png[Callout number 1]
+a| 
+Rotate the handle up, to its horizontal position, and then grasp it.
+a| 
+image:../media/icon_round_2.png[Callout number 2] 
+a| 
+With your thumb, press the blue tab to release the locking mechanism.
+a| 
+image:../media/icon_round_3.png[Callout number 3] 
+a| 
+Pull the power supply out of the NSM while using your other hand to support its weight.
+|===
+
 . Insert the replacement power supply:
- .. Using both hands, support and align the edges of the power supply with the opening in the NSM module.
- .. Gently push the power supply into the NSM module until the locking mechanism clicks into place.
+ .. Using both hands, support and align the edges of the power supply with the opening in the NSM.
+ .. Gently push the power supply into the NSM until the locking mechanism clicks into place.
 +
 NOTE: Do not use excessive force or you might damage the internal connector.
 
@@ -88,10 +115,11 @@ The illustration and table in step 4 shows the two thumb screws (item #1) and th
 
 . Remove the power supply:
 .. Rotate the handle up, to its horizontal position, and then grasp it.
-.. With your thumb, press the blue tab to release the locking mechanism.
-.. Pull the power supply out of the NSM module while using your other hand to support its weight.
+.. With your thumb, press the terra-cotta tab to release the locking mechanism.
+
+.. Pull the power supply out of the NSM while using your other hand to support its weight.
 +
-NOTE: The power supply is short. Always use two hands to support it when removing it from the NSM module so that it does not swing free from the NSM module and injure you.
+NOTE: The power supply is short. Always use two hands to support it when removing it from the NSM so that it does not swing free from the NSM and injure you.
 +
 image::../media/drw_dcpsu_remove-replace-generic_IEOPS-788.svg[Remove a DC PSU]
 +
@@ -104,12 +132,12 @@ a| D-SUB DC power cable connector
 a| image:../media/icon_round_3.png[Callout number 3] 
 a| Power supply handle
 a| image:../media/icon_round_4.png[Callout number 4]
-a| Blue power supply locking tab
+a| Blue/Terra cotta power supply locking tab
 |===
 
 . Insert the replacement power supply:
-.. Using both hands, support and align the edges of the power supply with the opening in the NSM module.
-.. Gently push the power supply into the NSM module until the locking mechanism clicks into place.
+.. Using both hands, support and align the edges of the power supply with the opening in the NSM.
+.. Gently push the power supply into the NSM until the locking mechanism clicks into place.
 +
 A power supply must properly engage with the internal connector and locking mechanism. Repeat this step if you feel the power supply is not properly seated.
 +
