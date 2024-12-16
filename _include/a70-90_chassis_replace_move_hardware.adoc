@@ -1,7 +1,7 @@
 
 == Step 1: Remove the PSUs and cables
 
-You need to remove all four (two per controller) of the PSUs in the controller before removing the controller.  Removing them lightens the overall weight of each controller.
+You need to remove all four PSUs, two per controller, before removing the controller.  Removing them lightens the overall weight of each controller.
 
 . Remove the four PSUs:
 
@@ -30,7 +30,7 @@ Terracotta PSU locking tab
 
 . Remove the cables:
 
-.. Unplug the system cables and any  SFP and QSFP modules (if needed) from the controller module, but leave them in the cable management device to keep them organized. from the controllers.
+.. Unplug the system cables and any  SFP and QSFP modules (if needed) from the controller module, but leave them in the cable management device to keep them organized.
 
 +
 NOTE: Cables should have been labeled at the beginning of this procedure.
@@ -138,7 +138,7 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 +
 Make sure that the cables are connected referencing the cable labels.  
 
-. Reinstall the drives in the corresponding drive bay in the front of the chassis.
+. Reinstall the drives into their corresponding drive bays in the front of the chassis.
 
 
 . Install all four of the PSU:
