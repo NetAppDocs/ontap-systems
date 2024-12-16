@@ -1,7 +1,7 @@
 
 == Step 1: Remove the PSUs and cables
 
-You need to remove all four of the PSUs in the controller before removing the controller.  Removing them lightens the overall weight of each controller.
+You need to remove all four (two per controller) of the PSUs in the controller before removing the controller.  Removing them lightens the overall weight of each controller.
 
 . Remove the four PSUs:
 
@@ -28,7 +28,7 @@ Terracotta PSU locking tab
 .. Repeat these steps for the remaining PSUs. 
 
 
-. Remove cables
+. Remove the cables:
 
 .. Unplug the system cables and any  SFP and QSFP modules (if needed) from the controller module, but leave them in the cable management device to keep them organized. from the controllers.
 
@@ -62,7 +62,7 @@ NVRAM attention LED
 |===
 
 * If the NV LED is off, go to the next step.
-* If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
+* If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact http://mysupport.netapp.com/[NetApp Support Site^] for assistance.
 
 . Remove the controller modules:
 
@@ -102,7 +102,7 @@ NOTE: Always use two hands to support the drive weight when removing a drive.
 +
 NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
 
-.. Keep track of what drive bay each drive was in and set the drives aside on a static-free cart or table.
+.. Keep track of what drive bay each drive was in and set the drive aside on a static-free cart or table.
 
 .. Repeat this step for the remaining drives in the chassis.
 
@@ -122,7 +122,7 @@ Remove the impaired chassis and install the replacement chassis.
 
 == Step 4: Install the chassis components
 
-Once the replacement chassis is installed, you need to install the controller modules, recable them, and and then reinstall the drives and PSUs.
+Once the replacement chassis is installed, you need to install the controller modules, recable them, and then reinstall the drives and PSUs.
 
 . Beginning with the bottom controller module, install the controller modules in the replacement chassis:
 
@@ -135,7 +135,6 @@ It should lie flush against the controller module sheet metal.
 .. If you have not already done so, reinstall the cable management device and recable the controller.
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
-
 +
 Make sure that the cables are connected referencing the cable labels.  
 
