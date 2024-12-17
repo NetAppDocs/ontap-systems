@@ -40,10 +40,10 @@ NOTE: Open an SSH session to every SP/BMC connection so that you can monitor pro
 +
 . Halt the two nodes located in the impaired chassis: 
 +
-`system node halt -node <node>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
+`system node halt -node <node1>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
 +
 
-NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `system node halt -node <node>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
+NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `system node halt -node <node1>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
 . Enter *y* for each controller in the cluster when you see `_Warning: Are you sure you want to halt node "cluster <node-name> number"?
 {y|n}:_`
