@@ -159,7 +159,7 @@ You'll be prompted for the EKM settings that were initially used during setup.
 
 * On the partner node, retrieve the Keystore UUID using the following commands.
 +
-`vserver show -type admin`
+`vserver show -type admin -fields uuid`
 +
 `key-manager keystore show -vserver <nodename>`
 +
