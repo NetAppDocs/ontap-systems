@@ -58,9 +58,9 @@ When netboot is running, the `Starting BMR` message displays.
 --
 If no encryption is detected, the boot media recovery process continues without requiring key management.
 
-Continue to monitor the recovery process as it restores the backup config, env file, mdb, and rdb from the partner node.
+.. Continue to monitor the recovery process as it restores the backup config, env file, mdb, and rdb from the partner node.
 
-When the recovery process is complete, the node will reboot. The following messages indicate a successful recovery:
+.. When the recovery process is complete, the node will reboot. The following messages indicate a successful recovery:
 
 ....
 
@@ -72,6 +72,12 @@ Terminated
 varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
 
 ....
+
+.. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
+
+.. Return the impaired controller to normal operation by giving back its storage:
++
+`storage failover giveback -ofnode _impaired_node_name_`.
 
 --
 
@@ -125,6 +131,17 @@ Trying to delete any existing km_onboard.wkeydb file.
 Successfully recovered keymanager secrets.
 ....
 
+.. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
+
+.. Return the impaired controller to normal operation by giving back its storage:
++
+`storage failover giveback -ofnode _impaired_node_name_`.
+
+.. After booting with only the CFO aggregate, run the following command.
++
+`security key-manager onboard sync` 
+ 
+
 --
 
 .External Key Manager (EKM)
@@ -133,7 +150,7 @@ Successfully recovered keymanager secrets.
 If EKM is configured, the system displays the following prompt.
 
 ....
-Error when fetching key manager config from partner <IP>: 28
+Error when fetching key manager config from partner <IP>:
 
 Has key manager been configured on this system? {y|n}
 ....
@@ -159,7 +176,7 @@ You'll be prompted for the EKM settings that were initially used during setup.
 
 * On the partner node, retrieve the Keystore UUID using the following commands.
 +
-`vserver show -type admin`
+`vserver show -type admin -fields uuid`
 +
 `key-manager keystore show -vserver <nodename>`
 +
@@ -207,6 +224,13 @@ System halting...
 LOADER-B>
 ....
 =====
+
+.. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
+
+.. Return the impaired controller to normal operation by giving back its storage:
++
+`storage failover giveback -ofnode _impaired_node_name_`.
+
 --
 
 ====
@@ -215,11 +239,6 @@ LOADER-B>
 
 [start=4]
 
-. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
-
-. Return the impaired controller to normal operation by giving back its storage:
-+
-`storage failover giveback -ofnode _impaired_node_name_`.
 
 . If automatic giveback was disabled, reenable it: 
 +
