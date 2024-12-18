@@ -25,9 +25,7 @@ Reset encryption if enabled and return the controller to normal operation.
 .Onboard encryption (OKM)
 --
 . From the LOADER prompt, enter `boot_ontap maint`.
-. Check the TMP firmware version with the `sysconfig -v` command.
-* If version is less than 5.63, contact https://support.netapp.com[NetApp Support].
-* If the version is more than 5.63, exit to the LOADER prompt: `halt`.
+
 . Boot to the ONTAP  menu from the LOADER prompt `boot_ontap menu` and select option 10.
 . Enter the OKM passphrase. You can get this passphrase from the customer, or contact https://support.netapp.com[NetApp Support].
 +

@@ -31,7 +31,6 @@ The value for HA-state can be one of the following:
 *** `mccip` (not supported in ASA systems)
 *** `non-ha` (not supported)
 
-  . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
 . Confirm that the setting has changed: `ha-config show`
 
 == Step 2: Verify disk list
