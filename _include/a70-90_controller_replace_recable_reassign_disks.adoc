@@ -35,8 +35,7 @@ NOTE: You will be prompted twice for the passphrase.
 . At the boot menu, enter option `1` for normal boot.
 . Press <enter> when _Waiting for giveback_ is displayed.
 . Move the console cable to the partner node and login as `admin`.
-. Ensure any core dumps on the repaired node are saved by going to advanced mode" `set -privilege advanced` and then `run local partner savecore`.
-. Return to admin lever: `set privilege admin`.
+
 . Give back only the CFO aggregates (the root aggregate): `storage failover giveback -fromnode local -only-cfo-aggregates true`
 * If you encounter errors, contact https://support.netapp.com[NetApp Support].
 . Wait 5 minutes after the giveback report completes, and check failover status and giveback status: `storage failover show` and `storage failover show-giveback`.
