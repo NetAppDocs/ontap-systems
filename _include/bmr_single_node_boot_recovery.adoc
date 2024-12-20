@@ -135,9 +135,9 @@ Successfully recovered keymanager secrets.
 
 .. Return the impaired controller to normal operation by giving back its storage:
 +
-`storage failover giveback -ofnode _impaired_node_name_`.
+`storage failover giveback -ofnode _impaired_node_name_`
 
-.. After booting with only the CFO aggregate, run the following command.
+.. After the partner node is fully up and serving data, synchronize the OKM keys across the cluster.
 +
 `security key-manager onboard sync` 
  
