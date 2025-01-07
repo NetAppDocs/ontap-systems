@@ -1,5 +1,6 @@
 Restore the ONTAP image from the partner node when the boot media is corrupted.
 
+
 .About this task
 If a node's boot media is corrupted, the boot process will halt at the LOADER prompt and display boot error messages.
 
