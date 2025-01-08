@@ -317,7 +317,7 @@ The system begins to boot. Initial booting may take up to eight minutes.
 See your laptop's online help for more information.
 
 . Connect your laptop to the Management switch:
-
++
 image::../media/dwr_laptop_to_switch_only.svg[width=400px]
 
 . Select an ONTAP icon listed to discover:
@@ -347,9 +347,7 @@ https://mysupport.netapp.com/site/systems/register[NetApp Product Registration]
 +
 https://mysupport.netapp.com/site/tools[NetApp Downloads: Config Advisor]
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to ONTAP 9 documentation for information about configuring additional features in ONTAP.
-+
-https://docs.netapp.com/us-en/ontap/index.html
+. After you have completed the initial configuration, go to https://docs.netapp.com/us-en/ontap/index.html[ONTAP 9 documentation^] for information about configuring additional features in ONTAP.
 
 --
 
@@ -418,9 +416,7 @@ NOTE: The format for the address is +https://x.x.x.x+.
 +
 
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to ONTAP 9 documentation for information about configuring additional features in ONTAP.
-+
-https://docs.netapp.com/us-en/ontap/index.html
+. After you have completed the initial configuration, go to https://docs.netapp.com/us-en/ontap/index.html[ONTAP 9 documentation^] for information about configuring additional features in ONTAP.
 
 --
 
