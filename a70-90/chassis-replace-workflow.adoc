@@ -13,11 +13,11 @@ Follow these workflow steps to replace your chassis.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:chassis-replace-requirements.html[Review the chassis replace requirements]
 [role="quick-margin-para"]
-To replace the chassis, you must meet certain requirements.
+Review the requirements for replacing your system chassis.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[two]link:chassis-replace-prepare.html[Prepare for chassis replace]
 [role="quick-margin-para"]
-To replace the chassis, you must prepare for the replacement.
+Prepare to replace the chassis by locating the system, gathering system credentials and necessary tools, verifying the replacement chassis was received, and labeling the system cables.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[three]link:chassis-replace-shutdown.html[Shut down the controllers]
 [role="quick-margin-para"]
@@ -25,8 +25,8 @@ Shut down the controllers so you can perform maintenance on the chassis.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:chassis-replace-move-hardware.html[Replace the chassis]
 [role="quick-margin-para"]
-Replacing the chassis includes removing the power supplies, drives, and controllers, removing and replacing the impaired chassis, reinstalling the controllers and controller components into the replacement chassis, and applying power th the controllers.
+Replace the chassis by moving the components from the impaired chassis to the replacement chassis.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:chassis-replace-complete-system-restore-rma.html[Complete the chassis replacement]
 [role="quick-margin-para"]
-Completing the chassis replacement includes bring the controllers up, giving back the controllers, and returning the failed chassis to NetApp.
+Completing the chassis replacement includes bringing the controllers up, giving back the controllers, and returning the failed chassis to NetApp.
