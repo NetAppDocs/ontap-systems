@@ -267,7 +267,7 @@ video::c500e747-30f8-4763-9065-afbf00008e7f[panopto, title="Animation - Set driv
 See your laptop's online help for more information.
 
 . Connect your laptop to the Management switch.
-
++
 image::../media/dwr_laptop_to_switch_only.svg[width=400px]
 
 . Select an ONTAP icon listed to discover:
@@ -302,7 +302,7 @@ https://mysupport.netapp.com/site/systems/register[NetApp Product Registration]
 https://mysupport.netapp.com/site/tools[NetApp Downloads: Config Advisor]
 
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
+. After you have completed the initial configuration, go to https://docs.netapp.com/us-en/ontap/index.html[ONTAP 9 documentation^] for information about configuring additional features in ONTAP.
 
 === Option 2: Completing system setup and configuration if network discovery is not enabled
 
@@ -369,4 +369,4 @@ https://mysupport.netapp.com/site/systems/register[NetApp Product Registration]
 +
 https://mysupport.netapp.com/site/tools[NetApp Downloads: Config Advisor]
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
+. After you have completed the initial configuration, go to https://docs.netapp.com/us-en/ontap/index.html[ONTAP 9 documentation^] for information about configuring additional features in ONTAP.
