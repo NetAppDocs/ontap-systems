@@ -1,5 +1,6 @@
 Restore the ONTAP image from the partner node when the boot media is corrupted.
 
+
 .About this task
 If a node's boot media is corrupted, the boot process will halt at the LOADER prompt and display boot error messages.
 
@@ -41,7 +42,7 @@ The screen displays the following message:
 
 +
 
-. Monitor the boot media recovery process as LOADER configures the local cluster ports and executes `netboot` from the partner node.
+. Monitor the boot media recovery process as LOADER configures the local ports and executes `netboot` from the partner node.
 +
 When netboot is running, the `Starting BMR` message displays.
 +
@@ -135,9 +136,9 @@ Successfully recovered keymanager secrets.
 
 .. Return the impaired controller to normal operation by giving back its storage:
 +
-`storage failover giveback -ofnode _impaired_node_name_`.
+`storage failover giveback -ofnode _impaired_node_name_`
 
-.. After booting with only the CFO aggregate, run the following command.
+.. After the partner node is fully up and serving data, synchronize the OKM keys across the cluster.
 +
 `security key-manager onboard sync` 
  
