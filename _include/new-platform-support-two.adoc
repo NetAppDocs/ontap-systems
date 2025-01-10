@@ -8,7 +8,7 @@
 --
 The AFF A-Series and AFF C-Series systems provide a robust, scale-out platform tailored for virtualized environments. They can be deployed as standalone systems or as high-performance tiers in NetApp ONTAP configurations. link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about AFF systems].
 
-AFF A-Series and AFF C-Series systems are compatible with the following ONTAP releases.
+AFF A-Series and AFF C-Series systems are supported beginning in the following ONTAP releases.
 
 
 [horizontal]
@@ -42,7 +42,7 @@ ONTAP 9.7::
 --
 ASA r2 systems deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers. link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about the ASA r2 systems].
 
-ASA r2 systems are compatible with the following ONTAP releases.
+ASA r2 systems are supported beginning in the following ONTAP releases.
 
 [horizontal]
 ONTAP 9.16.0::
@@ -55,7 +55,7 @@ ONTAP 9.16.0::
 --
 ASA A-Series and ASA C-Series systems deliver a simplified and dedicated SAN experience that provides continuous data availability for enterprise mission critical databases and other SAN workloads using FCP or iSCSI protocol. link:https://www.netapp.com/data-storage/all-flash-san-storage-array[Learn more about the ASA systems].
 
-ASA systems are compatible with the following ONTAP releases.
+ASA systems are supported beginning in the following ONTAP releases.
 
 [horizontal]
 
@@ -83,7 +83,7 @@ ONTAP 9.7::
 --
 FAS systems deliver efficient and secure secondary storage - the ultimate solution for tiering, backup, and disaster recovery. link:https://www.netapp.com/data-storage/fas/[Learn more about FAS systems].
 
-FAS systems are compatible with the following ONTAP releases.
+FAS systems are supported beginning in the following ONTAP releases.
 
 [horizontal]
 
