@@ -3,25 +3,25 @@
 // if the context is a1k
 
 // :a1k:
-// include::../_include/install_prepare_fragment_conditional.adoc[]
+// include::../_include/install_requirements_fragment_conditional.adoc[]
 // :a1k!:
 
 // if the context is a70-90
 
 // :a70-90:
-// include::../_include/install_prepare_fragment_conditional.adoc[]
+// include::../_include/install_requirements_fragment_conditional.adoc[]
 // :a70-90!:
 
 // if the context is a20-30-50:
 
 // :a20-30-50:
-// include::../_include/install_prepare_fragment_conditional.adoc[]
+// include::../_include/install_requirements_fragment_conditional.adoc[]
 // :a-20-30-50!:
 
 // if the context is fas70-90:
 
 // :fas70-90:
-// include::../_include/install_prepare_fragment_conditional.adoc[]
+// include::../_include/install_requirements_fragment_conditional.adoc[]
 // :fas70-90!:
 
 == Equipment needed for install
@@ -71,12 +71,19 @@ endif::fas70-90[]
 === Shelf weight
 Take the necessary precautions when moving or lifting your shelf.
 
-// next applies only a1k-a70-90
-ifdef::a1k-a70-90[]
+// next applies only a1k
+ifdef::a1k[]
 An NS224 shelf can weigh up to 66.78 lbs (30.29 kg). To lift the shelf, use two people or a hydraulic lift. Keep all components in the shelf (both front and rear) to prevent unbalancing the shelf weight.
 
 image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 NSM100 lifting caution]
-endif::a1k-a70-90[]
+endif::a1k[]
+
+// next applies only a70-90
+ifdef::a70-90[]
+An NS224 shelf can weigh up to 66.78 lbs (30.29 kg). To lift the shelf, use two people or a hydraulic lift. Keep all components in the shelf (both front and rear) to prevent unbalancing the shelf weight.
+
+image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 NSM100 lifting caution]
+endif::a70-90[]
 
 // next applies only a20-30-50
 ifdef::a20-30-50[]
@@ -91,7 +98,7 @@ An NS224 shelf can weigh up to 66.78 lbs (30.29 kg). To lift the shelf, use two 
 
 image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 NSM100 lifting caution]
 
-A DS460C shelf can weigh up to 360.4 lbs (181.1  kg). To lift the storage shelf, you may need up to five people or a hydraulic lift. Keep all components in the storage shelf (both front and rear) to prevent unbalancing the shelf weight.
+A DS460C shelf can weigh up to 260.4 lbs (181.1  kg). To lift the storage shelf, you may need up to five people or a hydraulic lift. Keep all components in the storage shelf (both front and rear) to prevent unbalancing the shelf weight.
 
 image::../media/drw_ds460c_weight_warning_ieops-1932.svg[DS460C lifting caution]
 endif::fas70-90[]
