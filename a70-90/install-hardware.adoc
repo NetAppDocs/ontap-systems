@@ -13,7 +13,9 @@ After you prepare to install your AFF A70 or AFF A90 storage system, install the
 
 Skip this step if your cabinet is pre-populated.
 
-include::../_include/install_hardware.adoc[]
+:a1k-a70-90:
+include::../_include/install_hardware_fragment_conditional.adoc[]
+:a1k-a70-90!:
 
 .What's next?
 After you’ve installed the hardware for your AFF A70 or AFF A90 system, you link:install-cable.html[cable the hardware for your AFF A70 or AFF A90 storage system].
