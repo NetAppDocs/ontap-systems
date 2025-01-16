@@ -92,24 +92,17 @@ Enter the server configuration (servers.cfg) file contents:
 ....
 Enter the client certificate (client.crt) file contents:
 -----BEGIN CERTIFICATE-----
-MIIDvjCCAqagAwIBAgICN3gwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAlVT
-MRMwEQYDVQQIEwpDYWxpZm9ybmlhMQwwCgYDVQQHEwNTVkwxDzANBgNVBAoTBk5l
-MSUbQusvzAFs8G3P54GG32iIRvaCFnj2gQpCxciLJ0qB2foiBGx5XVQ/Mtk+rlap
-Pk4ECW/wqSOUXDYtJs1+RB+w0+SHx8mzxpbz3mXF/X/1PC3YOzVNCq5eieek62si
-Fp8=
+<certificate_value>
 -----END CERTIFICATE-----
 
 Enter the client key (client.key) file contents:
 -----BEGIN RSA PRIVATE KEY-----
-MIIEpQIBAAKCAQEAoU1eajEG6QC2h2Zih0jEaGVtQUexNeoCFwKPoMSePmjDNtrU
-MSB1SlX3VgCuElHk57XPdq6xSbYlbkIb4bAgLztHEmUDOkGmXYAkblQ=
+<key_value>
 -----END RSA PRIVATE KEY-----
 
 Enter the KMIP server CA(s) (CA.pem) file contents:
 -----BEGIN CERTIFICATE-----
-MIIEizCCA3OgAwIBAgIBADANBgkqhkiG9w0BAQsFADCBjzELMAkGA1UEBhMCVVMx
-7yaumMQETNrpMfP+nQMd34y4AmseWYGM6qG0z37BRnYU0Wf2qDL61cQ3/jkm7Y94
-EQBKG1NY8dVyjphmYZv+
+<certificate_value>
 -----END CERTIFICATE-----
 
 Enter the IP address for the KMIP server: 10.10.10.10
@@ -139,7 +132,7 @@ kmip_init: cmd: ReleaseExtraBSDPort e0M
 
 System is ready to utilize external key manager(s).
 Trying to recover keys from key servers....
-[Aug 29 21:06:28]: 0x808806100: 0: DEBUG: kmip2::main: [initOpenssl]:460: Performing initialization of OpenSSL
+Performing initialization of OpenSSL
 Successfully recovered keymanager secrets.
 
 ....
@@ -175,9 +168,9 @@ Selection (1-11)? 1
 +
 
 
-. Restore automatic giveback, if you disabled it, by entering the following command:
+. Restore automatic giveback if you disabled it:
 +
-`storage failover modify -node local -auto-giveback true` command.
+`storage failover modify -node local -auto-giveback true`
 
 . If AutoSupport is enabled, restore automatic case creation by entering  the following command:
 +
