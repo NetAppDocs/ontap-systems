@@ -9,5 +9,9 @@ summary: Complete the storage system setup and configuration using cluster disco
 :imagesdir: ../media/
 
 [.lead]
+After you’ve turned on your AFF C80 storage system, you are ready to discover you cluster network and set up an ONTAP cluster.
 
 include::../_include/install_complete.adoc[]
+
+.What's next?
+After your cluster is initialized, download and run https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor] to confirm your setup.
