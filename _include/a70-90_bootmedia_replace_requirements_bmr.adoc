@@ -6,3 +6,11 @@ Before replacing the boot media, make sure to review the following requirements.
  ** The _impaired_ controller is the controller on which you are performing maintenance.
  ** The _healthy_ controller is the HA partner of the impaired controller.
  * There must be no faulty cluster ports on the impaired controller.
+* If your system has Onboard Key Manager (OKM) configured, you need copies of the following files from the partner node before restoring OKM:
+** The OKM passphrase file contents
+
+* If your system has External Key Manager (EKM) configured, you need copies of the following files from the partner node before restoring EKM:
+** /cfcard/kmip/servers.cfg file
+** /cfcard/kmip/certs/client.crt file 
+** /cfcard/kmip/certs/client.key file 
+** /cfcard/kmip/certs/CA.pem file  

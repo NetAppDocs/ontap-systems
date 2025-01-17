@@ -61,7 +61,7 @@ The login prompt is displayed.
 +
 `key manager is configured.`
 +
-The system will run the appropriate boot menu option to restore the key manager.***
+The system will run the appropriate boot menu option to restore the key manager.
 
 
 
@@ -79,7 +79,7 @@ The system will run the appropriate boot menu option to restore the key manager.
 
 .Onboard Key Manager (OKM)
 --
-If Onboard Key Manager (OKM) is detected, the system displays the following prompt.  
+If Onboard Key Manager (OKM) is detected, the system displays the following message and begins running BootMenu option 10.  
 ....
 key manager is configured.
 Entering Bootmenu Option 10...
@@ -142,39 +142,19 @@ Successfully recovered keymanager secrets.
 
 .External Key Manager (EKM)
 --
-
-If EKM is configured, the system displays the following prompt.
-
-....
-Error when fetching key manager config from partner <IP>:
-
-Has key manager been configured on this system? {y|n}
-....
-
-.. Enter `Y` if EKM has been configured.
-+
+If Onboard Key Manager (OKM) is detected, the system displays the following message and begins running BootMenu option 11. 
 ....
 key manager is configured.
 Entering Bootmenu Option 11...
 ....
 
-+
-You'll be prompted for the EKM settings that were initially used during setup. You should have copies of the following files or information from the partner node:
+******If you are running OTAP 9.16.0:
 
-
+If you are running 9.16.1, continue the process blelow:
 .. Enter each EKM configuration setting when prompted:
 ... Enter the client certificate contents:
 +
 .Show example of client certificate contents
-[%collapsible]
-
-=====
-
-=====
-
-... Enter the client key file contents.
-+
-.Show example of client certificate file contents
 [%collapsible]
 
 =====
@@ -205,6 +185,43 @@ E6QjK37wnczekwWNuGP/WjhQZ/bId2Ac3qmiFwnikA2+qiNPWvN1w/Mds9GXBQvQ
 00yKg2zThsZMedLeJ45fPRh1UFQJJCwQzWR94ui1Iw8=
 -----END CERTIFICATE-----
 ....
+=====
+
+... Enter the client key file contents.
++
+.Show example of client key file contents
+[%collapsible]
+
+=====
+....
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEA0wvPm/zL6GTQ+v79Ies5SoIt8bRo3r2EXgyaGIZpTihb/zKM
+XVbjDrjwAs5pr85181tgW2gPYWO2Ase3+zuxQG6ANYT4IgZr3MwC7R1/O1JxJuOS
+CZTav/LO13HKYTvKX5GsfVqVEjzbx6vsHJC0NuP0hIgK3XjY3hMKTAJ4HYX73uWp
+JnOFqHDKOC7Xj72e8tTQD+SWbi6SUuQV6USfyCELIWSx+JGK52aZKjTVrqrWRDnn
+XfLDVcY8kco3fyFDo7sI6wTU+r1LBiv/KkcUvd1uKNJkObiSVeL2k1Fy9lPBP0D/
+RB+YEz1sx0QtdMx7VMmLVbcl7Lp2cmBYBZOs+wIDAQABAoIBAAxdpMx/A3OadKRA
+TJSwM6sp9Yc0CvECKb9Y/a5yMblipAFP9OmDLcqvC2EetxKWBlM8B2lTr5MFRKTl
+DuKpnLkpwFlicSeNOMS3L3S1Rb80FW0x6FynXCnjEDuPb0xDNJhk8LZnmFR5PGd2
+q18BG44bzTf2wKw5aHuaof/SJTeVhuOjpPX4GxGZjpUz+vTXb5UPaqJpKU7MvJGC
+36xlf1NEF7JDg/1OLb4rDQyjhETXVA7K180TJbtOJJbUFCj9Rug17+zZxZsaVTK1
+iCNGxBl6IpQ3lRdDNhxCmX2P1hpeH5C8X8pYQZ1VLzj2Psj8GBH8jty0nMRcyFy6
+rrxL+AECgYEA9lEwric1i6GBnJvKP4+ez72HaBrwcCfX9wdw2Qulr2rDBGAHVY2t
+pQfSOf3LA5lw6QRdevXSSEMGZ2ahxGi/53pIBUUlihjRvLhk5enbyok1KGtYa5cQ
+ewkJOIe+XBZo8HtMsZwD+ejJUZZSIUdAsmzHpG7cUttNqaBUg8hzWO0CgYEA21er
+37CBG4NtCFw42YuxtuiRsW9eCPGrLpyN01B55AwSoP+M8bI2XIRTn7o+Btvrd4IR
+UTZUj3Fso8U/LwQms0NCeMugMgYw3oBDLO5b3WO1VdmZWcdvu5oi9YBJPrpNWnEG
+Zs8JwP5EVfs/ZdRJlMR/tkjBqN6nr2Lo7nCt6IcCgYEAi/+PfJx6eZddNKbzZ/b4
+W7iseoY9PHHY9OW8xRAypqY2m4j9AipZlKACY8WVGsGehEJf42BOmZXG0QRrU1f6
+ItXEk4I+mOQMaYggiPDHZLFhjkyc3+HnkxaKsB+vGWX/VReveo9jTyp5Ki8XFSUL
+Z54eRp5gCZPt60heYNyQeu0CgYEAmdaCoI/97VsfRMbRxJq6mQvC64ytil5dboK0
+4inGY9Cn3C2AICCbCgZxVEzephbmrloWZTxS0Ix/4tk7+HDT59TbsTc38v3ulo+l
+DcVbvwnoq/7DFHnRfuWbcU55kLo/+JffIopBUA/Fw/xEudnLhcDPxfx/fz4yo8se
+jeWPw88CgYEAwD0hU4qD6i0DnLX15Rc2nidgPrkXPUzWXiBGSXTDQhOg0UDJ2MOH
+fIvIYnkkIkQg6A+5w2YE3FVlm5FU+uiXZp1Or1yhdF/bsDlbBIV0yP41kx3EpDDY
+HT7F9X/6S82bP7Z5BAbaMtT+N518ZSNqdwfiGaEZ84QKjZJYFwsK2Q0=
+-----END RSA PRIVATE KEY-----
+....
 
 =====
 
@@ -214,7 +231,40 @@ E6QjK37wnczekwWNuGP/WjhQZ/bId2Ac3qmiFwnikA2+qiNPWvN1w/Mds9GXBQvQ
 [%collapsible]
 
 =====
-
+....
+-----BEGIN CERTIFICATE-----
+MIIFgjCCA2qgAwIBAgIRAK5suvIVYhYMZV70M23kxFwwDQYJKoZIhvcNAQELBQAw
+WjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAk1EMRAwDgYDVQQHEwdCZWxjYW1wMRAw
+DgYDVQQKEwdHZW1hbHRvMRowGAYDVQQDExFLZXlTZWN1cmUgUm9vdCBDQTAeFw0y
+MjAyMDkxNzE3NTJaFw0zMjAyMDcxNzE3NTJaMFoxCzAJBgNVBAYTAlVTMQswCQYD
+VQQIEwJNRDEQMA4GA1UEBxMHQmVsY2FtcDEQMA4GA1UEChMHR2VtYWx0bzEaMBgG
+A1UEAxMRS2V5U2VjdXJlIFJvb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAw
+ggIKAoICAQDpox2e7FufWsebHs3+EkwUv7FSnMnsNiPLffmnqGZTjUN7AdjWDHjS
+KoBpK6TGkkFFyK96xcXp2mQbPj6qeP/bVkSjKTvvs0mMRk6VyfEKd85YFpIjnC/2
+E9BRx2CrUrySWmmLgbuE9tGYVBe/UvSj81vTusrBPvkKqATHo3GHiqhsFau1wL0l
+hEeuYZWneCS45mGcOkI1iN5iPr1kNBql65+uar4FHhAdI2bmmG/T5G0a5TlaN4f7
+NPiQrssMldveq0KW87uenmlvNQvw/r0B17edgk68ywMhA42TZeGvWAsbVHPalFwq
+lz+eEwkYiaAlQrWq+K9EABW5Lrn3c11ifsGxPzO1CSFz+vryXeEkN6BM274V2ftL
+Lj3V+MPcazRBu6k4Eu1yT5+mqbWKqa5yoVyM68hisuR0+rjXkRB3eth2j11C4yT/
+Ieub92myytCOzC41JWxTjMJ3E5swNBn7rucOMKxVPUVKSNVyBS+YewqRGbdUH1jK
+psGEGp1lfVdaW7W//mTY+SEpQ9o9Mzu8c2Syawm5TUBbAVgcEdie+hT4/F1bgtO+
+FRabQqfUndeRg/8c8hUjnpR6mMsYrF2CnaEdcoOd3cylp1FwyFHUmV3/YXd3vA83
+JP5Ehpc1Y1C+z/yTC68mXeZysLg6/f2VWEtHAVDgczU+8Ecdr4sRAwIDAQABo0Mw
+QTAOBgNVHQ8BAf8EBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAeBgNVHREEFzAVgRNz
+dXBwb3J0QGdlbWFsdG8uY29tMA0GCSqGSIb3DQEBCwUAA4ICAQBk/LOkxIq3sR5b
+a85FBmiI6IFz6F+CRokKlZDS6uDqbKTcRQ8LCr+qFA3+SxDkXxpEuMz+DF1nftYl
+mXQKajW5lUO0y1SM5j+z9/lBKWPqW0INqOXzLh55ZMIsWLUqX1R692wx04lkAk93
+pezAyzmrd4fxUQIlU95AgDPZ95Q0+de1HwO6ADyGglyGyAtjvVScX0UuV2Lb+6+m
+jIyrE5kUnGEXtCQZVuNdMaYmASwTRQfisxXQphz0ax/74Ux/vFz9SIFCnevOc2oi
+mbmz5BiP8BCTxTz5+nlY15VbqNoycqDjBXPVudlw1G32wv1Y9oPCvBfGFvzCECsu
+qSf1vOm1QW9e7qmJEEvsN2o4QTEdKynAQDdWHJkkaS4aygu+VMO1c1gS7SQkfrEE
+HZeFWy+Ln1q0+yoGhi+2YXrDRMwjAXw0DpniNxziicc2YlplhAJ62X6nDXz3SYas
+SIP/M4WYmj7EmzeyeIJs5boFu0bNa9x/1MtwozCcBnfrtR10E+TQ53tPodLTy/LI
+sWga9yXVe3cBdurl70fJXEXORTBQS35qJfNeo+nhynubrdzEz6m3Ep7m8egki0k4
+E6nH6jltA57Y3d+UJb+DqbQrUcs4ZdS/GqxLAfw/+5UGzWBs1ZzA3KQdR+kTyIsF
+QGfLBLH9gFyu7w0HD3ah5ASk2w2BPg==
+-----END CERTIFICATE-----
+....
 =====
 
 ... Enter the server configuration file contents.
@@ -223,7 +273,19 @@ E6QjK37wnczekwWNuGP/WjhQZ/bId2Ac3qmiFwnikA2+qiNPWvN1w/Mds9GXBQvQ
 [%collapsible]
 
 =====
-
+....
+10.225.89.37:5696.host=10.225.89.37
+10.225.89.37:5696.port=5696
+10.225.89.37:5696.trusted_file=/cfcard/kmip/certs/CA.pem
+10.225.89.37:5696.protocol=KMIP1_4
+10.225.89.37:5696.timeout=25
+10.225.89.37:5696.nbio=1
+10.225.89.37:5696.cert_file=/cfcard/kmip/certs/client.crt
+10.225.89.37:5696.key_file=/cfcard/kmip/certs/client.key
+10.225.89.37:5696.ciphers="TLSv1.2:kRSA:!CAMELLIA:!IDEA:!RC2:!RC4:!SEED:!eNULL:!aNULL"
+10.225.89.37:5696.verify=true
+10.225.89.37:5696.netapp_keystore_uuid=26649a0c-aeab-11ef-b7b4-d039eaa9ec70
+....
 =====
 +
 .Show example of configuration information needed from partner node - need to give examples of these....
