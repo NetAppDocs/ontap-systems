@@ -11,7 +11,9 @@ summary: Prepare to install your FAS70 and FAS90 platform.
 [.lead]
 Prepare to install your FAS70 or FAS90 storage system by getting the site ready, unpacking the boxes and comparing the contents of the boxes to the packing slip, and registering the system to access support benefits.
 
-include::../_include/install_prepare.adoc[]
+:a1k-a70-90:
+include::../_include/install_prepare_fragment_conditional.adoc[]
+:a1k-a70-90!:
 
 .What's next?
 After you’ve prepared to install your FAS70 or FAS90 hardware, you  link:install-hardware.html[install the hardware for your FAS70 or FAS90 storage system].

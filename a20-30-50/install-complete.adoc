@@ -9,5 +9,9 @@ summary: Complete the platform setup and configuration using cluster discovery w
 :imagesdir: ../media/
 
 [.lead]
+After you’ve turned on your AFF A20, AFF A30, or AFF A50 storage system, you are ready to discover you cluster network and set up an ONTAP cluster.
 
 include::../_include/install_complete.adoc[]
+
+.What's next?
+After your cluster is initialized, download and run https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor] to confirm your setup.

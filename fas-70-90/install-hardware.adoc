@@ -13,7 +13,11 @@ After you prepare to install your FAS70 or FAS90 storage system, install the har
 
 Skip this step if your cabinet is pre-populated.
 
-include::../_include/install_hardware.adoc[]
+:a1k-a70-90:
+
+include::../_include/install_hardware_fragment_conditional.adoc[]
+
+:a1k-a70-90!:
 
 .What's next?
 After you’ve installed the hardware for your FAS70 or FAS90 storage system, you link:install-cable.html[cable the hardware for your FAS70 or FAS90 storage system.].
