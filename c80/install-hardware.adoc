@@ -13,7 +13,11 @@ After you prepare to install your AFF C80 storage system, install the hardware f
 
 Skip this step if your cabinet is pre-populated.
 
-include::../_include/install_hardware.adoc[]
+:a1k-a70-90:
+
+include::../_include/install_hardware_fragment_conditional.adoc[]
+
+:a1k-a70-90!:
 
 .What's next?
 After you’ve installed the hardware for your AFF C80 system, you link:install-cable.html[cable the hardware for your AFF C80 storage system].
