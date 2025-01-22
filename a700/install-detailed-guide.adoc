@@ -156,7 +156,7 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
 image::../media/drw_9000_lifting_icon.png[Lifting weight cautions]
-
++
 NOTE: The label on the left indicates an empty chassis, while the label on the right indicates a fully-populated system.
 
 . Attach cable management devices (as shown).
@@ -185,7 +185,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
 video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto, title="Animation - Cable a two-node switchless cluster"]
-
++
 image::../media/drw_9000_TNSC_composite_cabling.png[Two node switchless cluster composite cabling]
 
 . Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
@@ -206,7 +206,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
 video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto, title="Animation - Switched cluster cabling"]
-
++
 image:../media/drw_9000_switched_cluster_cabling.png[Switched cluster composite cabling]
 
 . Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
@@ -364,7 +364,7 @@ https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMy
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
+. After you have completed the initial configuration, go to https://docs.netapp.com/us-en/ontap/index.html[ONTAP 9 documentation^] for information about configuring additional features in ONTAP.
 
 === Option 2: Completing system setup and configuration if network discovery is not enabled
 
@@ -437,4 +437,4 @@ https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMy
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
+. After you have completed the initial configuration, go to https://docs.netapp.com/us-en/ontap/index.html[ONTAP 9 documentation^] for information about configuring additional features in ONTAP.

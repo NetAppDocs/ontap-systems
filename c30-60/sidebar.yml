@@ -25,6 +25,7 @@ entries:
      url: /c30-60/maintain-overview.html
 # START boot media
    - title: Boot media
+     pdf-filename: AFF C30 and AFF C60 Boot Media
      entries:
       - title: Boot media replace workflow
         url: /c30-60/bootmedia-replace-workflow.html
@@ -80,6 +81,7 @@ entries:
    - title: Fan
      url: /c30-60/fan-replace.html
    - title: I/O module
+     pdf-filename: AFF C30 and AFF C60 I/O Module
      entries:
         - title: I/O module overview
           url: /c30-60/io-module-overview.html
