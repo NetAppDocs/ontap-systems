@@ -36,46 +36,44 @@ LOADER-A>
 +
 The screen displays the following message:
 +
-`Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
+`Starting boot media recovery (BMR) process.Press Ctrl-C to abort…`
+
+. Monitor the boot media recovery process.
+
+. The process completes and displays the `Installation complete.` message.  
+
+. The system checks for encryption and encryption type and displays one of two messages: 
 
 +
-
-. Monitor the boot media recovery process as LOADER configures the local ports and executes `netboot` from the partner node.
-+
-When netboot is running, the `Starting BMR` message displays.
-+
-
-
-. Continue monitoring the recovery process while it reboots twice during the recovery process.  
-.. If there is no NetApp Storage Encryption (NSE) on the system, you will see the tje following mesage:
+[options="header" cols="1,2"]
+|===
+| If the message displaying is...| Then...
+a|
 `key manager is not configured. Exiting.` 
-+
-The login prompt is displayed.
-+
-.. Log into the node.
-.. Return the impaired controller to normal operation by giving back its storage:
-+
-`storage failover giveback -ofnode _impaired_node_name_`. 
+a|
+Encryption is not installed on the system. 
 
-.. If NSE is found, you will see: 
-+
-`key manager is configured.`
-+
-The system will run the appropriate boot menu option to restore the key manager.
+Log into the node when the login prompt is displayed and give back the storage:
 
+`storage failover giveback -ofnode _impaired_node_name_`
 
+a|
 
+`key manager is configured.` 
+a|
+Encryption is installed on the system and the key manager configuration must be restored.
 
+The node access the boot menu and runs Option 10 for systems with OKM and Option 11 for systems with EKM. 
 
-****************stopped here - need to point path where to go*****
+|===
+
+. Select the appropriate key manager restoration process.
 +
 
 // start tabbed area
 +
 [role="tabbed-block"]
 ====
-
-
 
 .Onboard Key Manager (OKM)
 --
@@ -122,7 +120,7 @@ When the recovery process is complete, the node will reboot. The following messa
 Trying to recover keymanager secrets.... 
 Setting recovery material for the onboard key manager 
 Recovery secrets set successfully
-Trying to delete any existing km_onboard.wkeydb file.
+Trying to delete any existing km_onboard.keydb file.
  
 Successfully recovered keymanager secrets.
 ....
@@ -148,9 +146,24 @@ key manager is configured.
 Entering Bootmenu Option 11...
 ....
 
-******If you are running OTAP 9.16.0:
+.. Need step text here.
++
 
-If you are running 9.16.1, continue the process blelow:
+[options="header" cols="1,2"]
+|===
+If your system is running...| Then...
+a|
+ONTAP 9.16.0
+a|
+plug in process to stop boot and configure network connection
+a|
+ONTAP 9.16.1
+a|
+Go to the next step
+
+|===
+
+
 .. Enter each EKM configuration setting when prompted:
 ... Enter the client certificate contents:
 +
@@ -304,7 +317,7 @@ QGfLBLH9gFyu7w0HD3ah5ASk2w2BPg==
 
 .. Depending on whether the key is successfully restored, take one of the following actions:
 
-* If the EKM configuration has been restored, the process attempts to restore the Mroot-AK onto the node, then restores the backup config, env file, mdb, and rdb from the partner node and reboots the node. ***Proceed to step 4.
+* If the EKM configuration has been restored, the process attempts to restore the Mroot-AK onto the node, then restores the backup config, env file, mdb, and rdb from the partner node and reboots the node. Proceed to step 4.
 
 * If the key is not successfully restored, the system will halt and indicate that it could not restore the key. and display error and warning messages. Rerun the recovery process by entering `boot_recovery -partner`.
 +
