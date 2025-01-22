@@ -3,25 +3,25 @@
 // if the context is a1k
 
 // :a1k:
-// include::../_include/install_prepare_fragment_conditional.adoc[]
+// include::../_include/install_requirements_fragment_conditional.adoc[]
 // :a1k!:
 
 // if the context is a70-90
 
 // :a70-90:
-// include::../_include/install_prepare_fragment_conditional.adoc[]
+// include::../_include/install_requirements_fragment_conditional.adoc[]
 // :a70-90!:
 
 // if the context is a20-30-50:
 
 // :a20-30-50:
-// include::../_include/install_prepare_fragment_conditional.adoc[]
+// include::../_include/install_requirements_fragment_conditional.adoc[]
 // :a-20-30-50!:
 
 // if the context is fas70-90:
 
 // :fas70-90:
-// include::../_include/install_prepare_fragment_conditional.adoc[]
+// include::../_include/install_requirements_fragment_conditional.adoc[]
 // :fas70-90!:
 
 == Equipment needed for install
@@ -47,9 +47,9 @@ An A1K storage system can weigh up to 62.83 lbs (28.5 kg). To lift the storage s
 image::../media/drw_a1k_weight_caution_ieops-1698.svg[AFF A1K lifting caution icon]
 endif::a1k[]
 
-// next applies only to a70-90
+// next applies only to a70-90 and c80
 ifdef::a70-90[]
-An A70 or A90 storage system can weigh up to 151.68 lbs (68.8 kg). To lift the storage system, use four people or a hydraulic lift.
+The storage system can weigh up to 151.68 lbs (68.8 kg). To lift the storage system, use four people or a hydraulic lift.
 
 image::../media/drw_a70-90_weight_icon_ieops-1730.svg[AFF A90, AFF A70 weight caution icon]
 endif::a70-90[]
@@ -71,12 +71,19 @@ endif::fas70-90[]
 === Shelf weight
 Take the necessary precautions when moving or lifting your shelf.
 
-// next applies only a1k-a70-90
-ifdef::a1k-a70-90[]
+// next applies only a1k
+ifdef::a1k[]
 An NS224 shelf can weigh up to 66.78 lbs (30.29 kg). To lift the shelf, use two people or a hydraulic lift. Keep all components in the shelf (both front and rear) to prevent unbalancing the shelf weight.
 
 image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 NSM100 lifting caution]
-endif::a1k-a70-90[]
+endif::a1k[]
+
+// next applies only a70-90 and c80
+ifdef::a70-90[]
+An NS224 shelf can weigh up to 66.78 lbs (30.29 kg). To lift the shelf, use two people or a hydraulic lift. Keep all components in the shelf (both front and rear) to prevent unbalancing the shelf weight.
+
+image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 NSM100 lifting caution]
+endif::a70-90[]
 
 // next applies only a20-30-50
 ifdef::a20-30-50[]
@@ -91,7 +98,7 @@ An NS224 shelf can weigh up to 66.78 lbs (30.29 kg). To lift the shelf, use two 
 
 image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 NSM100 lifting caution]
 
-A DS460C shelf can weigh up to 360.4 lbs (181.1  kg). To lift the storage shelf, you may need up to five people or a hydraulic lift. Keep all components in the storage shelf (both front and rear) to prevent unbalancing the shelf weight.
+A DS460C shelf can weigh up to 260.4 lbs (181.1  kg). To lift the storage shelf, you may need up to five people or a hydraulic lift. Keep all components in the storage shelf (both front and rear) to prevent unbalancing the shelf weight.
 
 image::../media/drw_ds460c_weight_warning_ieops-1932.svg[DS460C lifting caution]
 endif::fas70-90[]
