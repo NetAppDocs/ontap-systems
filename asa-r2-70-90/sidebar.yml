@@ -5,9 +5,11 @@ entries:
   - title: Maintenance overview
     url: /asa-r2-70-90/maintain-overview.html
   # START boot media
-  - title: Boot media - automated recovery
+  - title: Boot media
     pdf-filename: ASA A70 and ASA A90 Boot Media Automated
     entries:
+      - title: Boot media overview
+        url: /asa-r2-70-90/bootmedia-overview.html
       - title: Boot media overview
         url: /asa-r2-70-90/bootmedia-overview-bmr.html
       - title: Boot media replace workflow
@@ -22,27 +24,6 @@ entries:
         url: /asa-r2-70-90/bootmedia-recovery-image-boot-bmr.html
       - title: Return failed part to NetApp
         url: /asa-r2-70-90/bootmedia-complete-rma-bmr.html
-  - title: Boot media - manual recovery
-    pdf-filename: ASA A70 and ASA A90 Boot Media Manual
-    entries:
-      - title: Boot media overview
-        url: /asa-r2-70-90/bootmedia-overview.html
-      - title: Boot media replace workflow
-        url: /asa-r2-70-90/bootmedia-replace-workflow.html
-      - title: Review requirements
-        url: /asa-r2-70-90/bootmedia-replace-requirements.html
-      - title: Check encryption keys
-        url: /asa-r2-70-90/bootmedia-encryption-preshutdown-checks.html
-      - title: Shut down impaired controller
-        url: /asa-r2-70-90/bootmedia-shutdown.html
-      - title: Replace boot media
-        url: /asa-r2-70-90/bootmedia-replace.html
-      - title: Boot recovery image
-        url: /asa-r2-70-90/bootmedia_recovery_image_boot_asa_r2.html
-      - title: Restore encryption
-        url: /asa-r2-70-90/bootmedia-encryption-restore.html
-      - title: Return failed part to NetApp
-        url: /asa-r2-70-90/bootmedia-complete-rma.html
     # END boot media
   - title: Chassis
     pdf-filename: ASA A70 and ASA A90 Chassis
