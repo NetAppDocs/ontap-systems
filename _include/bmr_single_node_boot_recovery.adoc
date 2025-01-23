@@ -1,10 +1,5 @@
-Restore the ONTAP image from the partner node when the boot media is corrupted.
+When you encounter boot error messages, you need to restore the ONTAP image from the partner node.
 
-
-.About this task
-If a node's boot media is corrupted, the boot process will halt at the LOADER prompt and display boot error messages.
-
-When you encounter these boot error messages, you need to restore the ONTAP image from the partner node.
 
 .Show example of boot error messages
 [%collapsible]
@@ -77,7 +72,7 @@ The node access the boot menu and runs Option 10 for systems with OKM and Option
 
 .Onboard Key Manager (OKM)
 --
-If Onboard Key Manager (OKM) is detected, the system displays the following message and begins running BootMenu option 10.  
+If Onboard Key Manager (OKM) is detected, the system displays the following message and begins running BootMenu Option 10.  
 ....
 key manager is configured.
 Entering Bootmenu Option 10...
@@ -85,7 +80,7 @@ Entering Bootmenu Option 10...
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ....
 
-.. From the Bootmenu Option prompt, enter `Y` to confirm you want to start the OKM recovery process.
+.. From the BootMenu Option prompt, enter `Y` to confirm you want to start the OKM recovery process.
 
 .. Enter the passphrase for onboard key manager when prompted, and enter the passphrase again to confirm.
 +
@@ -140,13 +135,13 @@ Successfully recovered keymanager secrets.
 
 .External Key Manager (EKM)
 --
-If Onboard Key Manager (OKM) is detected, the system displays the following message and begins running BootMenu option 11. 
+If Onboard Key Manager (OKM) is detected, the system displays the following message and begins running BootMenu Option 11. 
 ....
 key manager is configured.
 Entering Bootmenu Option 11...
 ....
 
-.. Need step text here.
+.. The next step depends on which version of ONTAP your system is running:
 +
 
 [options="header" cols="1,2"]
@@ -155,17 +150,26 @@ If your system is running...| Then...
 a|
 ONTAP 9.16.0
 a|
-plug in process to stop boot and configure network connection
+.. Press `Ctlr-C` to exit BootMenu Option 11
+.. Press `Ctlr-C`  to exit the EKM configuration process and return to the boot menu.
+.. Select BootMenu Option 8.
+.. Reboot the node. 
++ 
+If 'AUTOBOOT' is set, the node reboots and uses the configuration files from the partner node.
++
+If 'AUTOBOOT' is not set, enter the appropriate boot command. The node reboots and uses the configuration files from the partner node. 
+
+** Proceed to step 4.  
 a|
 ONTAP 9.16.1
 a|
-Go to the next step
+Proceed to step 4.
 
 |===
 
 
 .. Enter each EKM configuration setting when prompted:
-... Enter the client certificate contents:
+... Enter the client certificate contents from the `/cfcard/kmip/certs/client.crt.` file:
 +
 .Show example of client certificate contents
 [%collapsible]
@@ -200,7 +204,7 @@ E6QjK37wnczekwWNuGP/WjhQZ/bId2Ac3qmiFwnikA2+qiNPWvN1w/Mds9GXBQvQ
 ....
 =====
 
-... Enter the client key file contents.
+... Enter the client key file contents from the `/cfcard/kmip/certs/client.key` file.
 +
 .Show example of client key file contents
 [%collapsible]
@@ -238,7 +242,7 @@ HT7F9X/6S82bP7Z5BAbaMtT+N518ZSNqdwfiGaEZ84QKjZJYFwsK2Q0=
 
 =====
 
-... Enter the KMIP server file contents.
+... Enter the KMIP server file contents from the `/cfcard/kmip/servers.cfg` file.
 +
 .Show example of KMIP server file contents
 [%collapsible]
@@ -280,7 +284,7 @@ QGfLBLH9gFyu7w0HD3ah5ASk2w2BPg==
 ....
 =====
 
-... Enter the server configuration file contents.
+... Enter the server configuration file contents from the `/cfcard/kmip/certs/CA.pem` file.
 +
 .Show example of server configuration file contents
 [%collapsible]
@@ -301,17 +305,7 @@ QGfLBLH9gFyu7w0HD3ah5ASk2w2BPg==
 ....
 =====
 +
-.Show example of configuration information needed from partner node - need to give examples of these....
-[%collapsible]
 
-=====
-* A copy of the /cfcard/kmip/servers.cfg file from another cluster node, or, the following information:
-** The KMIP server address.
-** The KMIP port.
-** The Keystore UUID.
-* A copy of the /cfcard/kmip/certs/client.crt file from another cluster node, or, the client certificate.
-* A copy of the /cfcard/kmip/certs/client.key file from another cluster node, or, the client key.
-* 4) A copy of the /cfcard/kmip/certs/CA.pem file from another cluster node, or, the KMIP server.
 =====
 
 
