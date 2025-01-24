@@ -1,4 +1,4 @@
-When you encounter boot error messages, you need to restore the ONTAP image from the partner node.
+When you encounter boot error messages, you need to replace the boot media and restore the ONTAP image from the partner node.
 
 
 .Show example of boot error messages
@@ -31,9 +31,9 @@ LOADER-A>
 +
 The screen displays the following message:
 +
-`Starting boot media recovery (BMR) process.Press Ctrl-C to abort…`
+`Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
 
-. Monitor the boot media recovery process.
+. Monitor the boot media install recovery process.
 
 . The process completes and displays the `Installation complete.` message.  
 
@@ -58,7 +58,7 @@ a|
 a|
 Encryption is installed on the system and the key manager configuration must be restored.
 
-The node access the boot menu and runs Option 10 for systems with OKM and Option 11 for systems with EKM. 
+The node access the boot menu and runs Option 10 for systems with Onboard Key Manager (OKM) and Option 11 for systems with External Key Manager (EKM). 
 
 |===
 
@@ -73,7 +73,7 @@ The node access the boot menu and runs Option 10 for systems with OKM and Option
 
 .Onboard Key Manager (OKM)
 --
-If Onboard Key Manager (OKM) is detected, the system displays the following message and begins running BootMenu Option 10.  
+If OKM is detected, the system displays the following message and begins running BootMenu Option 10.  
 ....
 key manager is configured.
 Entering Bootmenu Option 10...
@@ -134,7 +134,7 @@ Successfully recovered keymanager secrets.
 --
 .External Key Manager (EKM)
 --
-If Onboard Key Manager (OKM) is detected, the system displays the following message and begins running BootMenu Option 11. 
+If EKM is detected, the system displays the following message and begins running BootMenu Option 11. 
 ....
 key manager is configured.
 Entering Bootmenu Option 11...
