@@ -63,6 +63,7 @@ The node access the boot menu and runs Option 10 for systems with OKM and Option
 |===
 
 . Select the appropriate key manager restoration process.
+
 +
 
 // start tabbed area
@@ -130,9 +131,7 @@ Successfully recovered keymanager secrets.
 +
 `security key-manager onboard sync` 
  
-
 --
-
 .External Key Manager (EKM)
 --
 If Onboard Key Manager (OKM) is detected, the system displays the following message and begins running BootMenu Option 11. 
@@ -143,10 +142,9 @@ Entering Bootmenu Option 11...
 
 .. The next step depends on which version of ONTAP your system is running:
 +
-
 [options="header" cols="1,2"]
 |===
-If your system is running...| Then...
+|If your system is running...| Then...
 a|
 ONTAP 9.16.0
 a|
@@ -159,11 +157,11 @@ If 'AUTOBOOT' is set, the node reboots and uses the configuration files from the
 +
 If 'AUTOBOOT' is not set, enter the appropriate boot command. The node reboots and uses the configuration files from the partner node. 
 
-** Proceed to step 4.  
+** Proceed to step c.  
 a|
 ONTAP 9.16.1
 a|
-Proceed to step 4.
+Proceed to the next step.
 
 |===
 
@@ -239,7 +237,6 @@ fIvIYnkkIkQg6A+5w2YE3FVlm5FU+uiXZp1Or1yhdF/bsDlbBIV0yP41kx3EpDDY
 HT7F9X/6S82bP7Z5BAbaMtT+N518ZSNqdwfiGaEZ84QKjZJYFwsK2Q0=
 -----END RSA PRIVATE KEY-----
 ....
-
 =====
 
 ... Enter the KMIP server file contents from the `/cfcard/kmip/servers.cfg` file.
@@ -306,18 +303,15 @@ QGfLBLH9gFyu7w0HD3ah5ASk2w2BPg==
 =====
 +
 
-=====
+... Depending on whether the key is successfully restored, take one of the following actions:
 
+* If the EKM configuration has been restored, the process attempts to restore the Mroot-AK onto the node, then restores the backup config, env file, mdb, and rdb from the partner node and reboots the node. Proceed to step c.
 
-.. Depending on whether the key is successfully restored, take one of the following actions:
-
-* If the EKM configuration has been restored, the process attempts to restore the Mroot-AK onto the node, then restores the backup config, env file, mdb, and rdb from the partner node and reboots the node. Proceed to step 4.
-
-* If the key is not successfully restored, the system will halt and indicate that it could not restore the key. and display error and warning messages. Rerun the recovery process by entering `boot_recovery -partner`.
+* If the key is not successfully restored, the system will halt and indicate that it could not restore the key. The error and warning messages are displayed. Rerun the recovery process by entering `boot_recovery -partner`.
 +
 .Show example of key recovery error and warning messages
 [%collapsible]
-+
+
 =====
 ....
 
@@ -338,7 +332,10 @@ System halting...
  
 LOADER-B>
 ....
+
+
 =====
+
 
 .. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
 
@@ -352,7 +349,6 @@ LOADER-B>
 
 // end tabbed area
 
-[start=4]
 
 
 . If automatic giveback was disabled, reenable it: 
