@@ -22,19 +22,18 @@ Make note of any faults presently on the system, such as LEDs on the system comp
 . If AutoSupport is enabled, suppress case creation and indicate how long you expect the system to be offline:
 +
 `system node autosupport invoke -node * -type all -message "MAINT=2h Replace chassis"`
-. Identify the SP/BMC address of all nodes:
+. Identify the SP/BMC address of all cluster nodes:
 +
 `system service-processor show -node * -fields address`
 
-. Exit the cluster shell: `exit`
-. Log into SP/BMC over SSH using the IP address of any of the nodes listed in the output from the previous step. 
+. Exit the cluster shell:
++
+`exit`
+. Log into SP/BMC over SSH using the IP address of any of the nodes listed in the output from the previous step to monitor progress. 
 +
 If you are using a console/laptop, log into the controller using the same cluster administrator credentials.
 +
 
-NOTE: Open an SSH session to every SP/BMC connection so that you can monitor progress.
-
-+
 . Halt the two nodes located in the impaired chassis: 
 +
 `system node halt -node <node1>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`

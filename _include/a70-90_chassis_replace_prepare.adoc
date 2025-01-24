@@ -1,31 +1,23 @@
-.Before you begin
-
-* Make sure to review the requirements in link to previous section.
-* Obtain local administrator credentials for ONTAP if you don't have them.
-* Stop all clients/hosts from accessing data on the target system.
-* Suspend all external backup jobs.
-* Make sure that you have the necessary tools and equipment for the replacement.
-* If you haven't done so, review the link:chassis-replace-requirements.html[Chassis replace requirements] before beginning the procedure.
+Prepare to replace the impaired chassis with the new chassis of the same model.
 
 
 == Step 1: Locate and monitor your system
-You should open a console session and save sessions logs for future use, and also turn on the system location LED to find the impaired chassis.
+You should open a console session and save sessions logs for future reference, and also turn on the system location LED to find the impaired chassis.
 
 . Connect to the serial console port to interface with and monitor the system.
 
-. Save the console sessions to a log file on the console.
+. Stop all clients/hosts from accessing data on the target system.
+. Suspend all external backup jobs.
 
-+ 
-You should do screen captures for later reference.
+. Save the console sessions to a log file on the console.
 
 . Locate and turn on the controller LED:
 
 .. Use the `system controller location-led show` command to show the current state of the location LED.
 +
+The Location LED remains lit for 30 minutes.
 
-NOTE: The Location LED remains lit for 30 minutes.
-
-.. Change the state of the location LED to "on" with the `system controller location-led modify -node node1 -state on`. 
+.. Change the state of the location LED to "on" with the `system controller location-led modify -node _node1_ -state on`. 
 
  
 
@@ -34,17 +26,15 @@ NOTE: The Location LED remains lit for 30 minutes.
 You should verify that you received the necessary components, remove them from packaging, and save the packaging.
 
 . Before opening the packaging, you should look at the packaging label and verify:
-.. Component part number.
-.. Part description.
-.. Quantity in the box.
+* Component part number.
+* Part description.
+* Quantity in the box.
 
-. Remove the contents for the packaging.
+. Remove the contents from the packaging and use the packaging to returning the failed component to NetApp.
 
-. Save the packing for returning the failed component to NetApp.
+== Step 3: Label the cables and controller modules and ground yourself
 
-== Step 3: Label the cables and controllers and ground yourself
-
-You should label the cables and controllers before removing them from the controllers or chassis.
+You should label the cables and controllers before removing them from the controller modules or chassis.
 
 . Label all the cables associated with the storage system. This aids recabling later in this procedure.
 

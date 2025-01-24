@@ -14,6 +14,7 @@ NOTE: If your system has DC power, disconnect the power block from the PSUs.
 .. Remove the PSU from the controller by rotating the PSU handle up so that you can pull the PSU out, press the PSU locking tab, and then pull PSU out of the controller module.
 +
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
+
 +
 image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[Replace PSU]
 
@@ -25,6 +26,7 @@ a|
 Terracotta PSU locking tab
 |===
 
++
 .. Repeat these steps for the remaining PSUs. 
 
 
@@ -61,8 +63,8 @@ a|
 NVRAM attention LED
 |===
 
-* If the NV LED is off, go to the next step.
-* If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact http://mysupport.netapp.com/[NetApp Support Site^] for assistance.
+* If the NVRAM LED is off, go to the next step.
+* If the NVRAM LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact http://mysupport.netapp.com/[NetApp Support Site^] for assistance.
 
 . Remove the controller modules:
 
@@ -98,11 +100,10 @@ Make sure that you support the bottom of the controller module as you slide it o
 +
 The drive should disengage from the chassis, allowing it to slide free of the chassis.
 +
-NOTE: Always use two hands to support the drive weight when removing a drive.
-+
-NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
+NOTE: Drives are fragile. Always use two hands to support the drive weight when removing a drive to prevent damage to them.
 
-.. Keep track of what drive bay each drive was in and set the drive aside on a static-free cart or table.
+
+.. Keep track of which drive bay each drive was in and set the drive aside on a static-free cart or table.
 
 .. Repeat this step for the remaining drives in the chassis.
 
