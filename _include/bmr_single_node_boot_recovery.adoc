@@ -1,27 +1,4 @@
-When you encounter boot error messages, you need to replace the boot media and restore the ONTAP image from the partner node.
-
-
-.Show example of boot error messages
-[%collapsible]
-
-====
-....
-Can't find primary boot device u0a.0 
-Can't find backup boot device u0a.1 
-ACPI RSDP Found at 0x777fe014 
-
-Starting AUTOBOOT press Ctrl-C to abort... 
-Could not load fat://boot0/X86_64/freebsd/image1/kernel: Device not found
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0, fat) 
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0, fat) 
-
-Autoboot of PRIMARY image failed. Device not found (-6) 
-LOADER-A>
-....
-
-====
-
+After physically replacing the impaired boot media, restore the image on the boot media through the automated boot recovery process.
 
 .Steps
 
@@ -58,7 +35,10 @@ a|
 a|
 Encryption is installed on the system and the key manager configuration must be restored.
 
-The node access the boot menu and runs Option 10 for systems with Onboard Key Manager (OKM) and Option 11 for systems with External Key Manager (EKM). 
+The node access the boot menu and runs:
+
+* Option 10 for systems with Onboard Key Manager (OKM).
+* Option 11 for systems with External Key Manager (EKM). 
 
 |===
 
@@ -81,7 +61,7 @@ Entering Bootmenu Option 10...
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ....
 
-.. From the BootMenu Option prompt, enter `Y` to confirm you want to start the OKM recovery process.
+.. Enter `Y` at the prompt to confirm you want to start the OKM recovery process.
 
 .. Enter the passphrase for onboard key manager when prompted, and enter the passphrase again to confirm.
 +
@@ -184,20 +164,10 @@ DgYKCZImiZPyLGQBARMAMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
 81tgW2gPYWO2Ase3+zuxQG6ANYT4IgZr3MwC7R1/O1JxJuOSCZTav/LO13HKYTvK
 X5GsfVqVEjzbx6vsHJC0NuP0hIgK3XjY3hMKTAJ4HYX73uWpJnOFqHDKOC7Xj72e
 8tTQD+SWbi6SUuQV6USfyCELIWSx+JGK52aZKjTVrqrWRDnnXfLDVcY8kco3fyFD
-o7sI6wTU+r1LBiv/KkcUvd1uKNJkObiSVeL2k1Fy9lPBP0D/RB+YEz1sx0QtdMx7
-VMmLVbcl7Lp2cmBYBZOs+wIDAQABozUwMzAOBgNVHQ8BAf8EBAMCA4gwEwYDVR0l
-BAwwCgYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADANBgkqhkiG9w0BAQsFAAOCAgEA
-LurhZW48Yt43zj4dpWPGtMHsJOqv/6dEGBK5u/3eXxSFiqHcEWpI2SHqrRoEFxgq
-NZGtoqci+Y829gUPzhRdjlhChtsEiFfUP//v6rELVVIImMJcXBDQs8fndy8My4tp
-nPMYOphKUOamGsI4CyYQRRLu5ZRwmn8UpxgFbcJKn7YqO5WCswX2/FmdoHbjzl1k
-EO2BfbrxK7bdkxACVBCOequPW9l3MERcIsTuJ0hvC+ymSBTvq4ZW8dDi83ZdBpPL
-+pLvnK21rSjjzwtHD5RsvMTM/QwKMgO7fAQw7JB4IogZiLvu0sSaSQUm1WZOiExi
-mb/JFhQkbkDF9eyKlprwd/ijG7aVJAD5DDnmOgJxnvJNnn2h5WCEu5UVJxAxEuBG
-OhXLzfi7+b4rThqlwonxeQN6ShSwK04VmLeVATzg1dT+BGIP9UKtYf3lfYzoCUsl
-qV5dJyJX3bQiSU1NCzeTbF65kH1dXfu9X0viy0WD6O/BoEhnZMsiMJA+zxJWealh
-4hGlKBb4JOVcNNGAah7rthcS9hubhflwinTalCTAidw65itM9iH64OWq8YZFZE4F
-E6QjK37wnczekwWNuGP/WjhQZ/bId2Ac3qmiFwnikA2+qiNPWvN1w/Mds9GXBQvQ
-00yKg2zThsZMedLeJ45fPRh1UFQJJCwQzWR94ui1Iw8=
+.
+.
+.
+.
 -----END CERTIFICATE-----
 ....
 =====
@@ -221,25 +191,16 @@ DuKpnLkpwFlicSeNOMS3L3S1Rb80FW0x6FynXCnjEDuPb0xDNJhk8LZnmFR5PGd2
 q18BG44bzTf2wKw5aHuaof/SJTeVhuOjpPX4GxGZjpUz+vTXb5UPaqJpKU7MvJGC
 36xlf1NEF7JDg/1OLb4rDQyjhETXVA7K180TJbtOJJbUFCj9Rug17+zZxZsaVTK1
 iCNGxBl6IpQ3lRdDNhxCmX2P1hpeH5C8X8pYQZ1VLzj2Psj8GBH8jty0nMRcyFy6
-rrxL+AECgYEA9lEwric1i6GBnJvKP4+ez72HaBrwcCfX9wdw2Qulr2rDBGAHVY2t
-pQfSOf3LA5lw6QRdevXSSEMGZ2ahxGi/53pIBUUlihjRvLhk5enbyok1KGtYa5cQ
-ewkJOIe+XBZo8HtMsZwD+ejJUZZSIUdAsmzHpG7cUttNqaBUg8hzWO0CgYEA21er
-37CBG4NtCFw42YuxtuiRsW9eCPGrLpyN01B55AwSoP+M8bI2XIRTn7o+Btvrd4IR
-UTZUj3Fso8U/LwQms0NCeMugMgYw3oBDLO5b3WO1VdmZWcdvu5oi9YBJPrpNWnEG
-Zs8JwP5EVfs/ZdRJlMR/tkjBqN6nr2Lo7nCt6IcCgYEAi/+PfJx6eZddNKbzZ/b4
-W7iseoY9PHHY9OW8xRAypqY2m4j9AipZlKACY8WVGsGehEJf42BOmZXG0QRrU1f6
-ItXEk4I+mOQMaYggiPDHZLFhjkyc3+HnkxaKsB+vGWX/VReveo9jTyp5Ki8XFSUL
-Z54eRp5gCZPt60heYNyQeu0CgYEAmdaCoI/97VsfRMbRxJq6mQvC64ytil5dboK0
-4inGY9Cn3C2AICCbCgZxVEzephbmrloWZTxS0Ix/4tk7+HDT59TbsTc38v3ulo+l
-DcVbvwnoq/7DFHnRfuWbcU55kLo/+JffIopBUA/Fw/xEudnLhcDPxfx/fz4yo8se
-jeWPw88CgYEAwD0hU4qD6i0DnLX15Rc2nidgPrkXPUzWXiBGSXTDQhOg0UDJ2MOH
-fIvIYnkkIkQg6A+5w2YE3FVlm5FU+uiXZp1Or1yhdF/bsDlbBIV0yP41kx3EpDDY
-HT7F9X/6S82bP7Z5BAbaMtT+N518ZSNqdwfiGaEZ84QKjZJYFwsK2Q0=
+.
+.
+.
+.
+
 -----END RSA PRIVATE KEY-----
 ....
 =====
 
-... Enter the KMIP server file contents from the `/cfcard/kmip/servers.cfg` file.
+... Enter the KMIP server CA(s) file contents from the  `/cfcard/kmip/certs/CA.pem` file.
 +
 .Show example of KMIP server file contents
 [%collapsible]
@@ -262,26 +223,16 @@ lz+eEwkYiaAlQrWq+K9EABW5Lrn3c11ifsGxPzO1CSFz+vryXeEkN6BM274V2ftL
 Lj3V+MPcazRBu6k4Eu1yT5+mqbWKqa5yoVyM68hisuR0+rjXkRB3eth2j11C4yT/
 Ieub92myytCOzC41JWxTjMJ3E5swNBn7rucOMKxVPUVKSNVyBS+YewqRGbdUH1jK
 psGEGp1lfVdaW7W//mTY+SEpQ9o9Mzu8c2Syawm5TUBbAVgcEdie+hT4/F1bgtO+
-FRabQqfUndeRg/8c8hUjnpR6mMsYrF2CnaEdcoOd3cylp1FwyFHUmV3/YXd3vA83
-JP5Ehpc1Y1C+z/yTC68mXeZysLg6/f2VWEtHAVDgczU+8Ecdr4sRAwIDAQABo0Mw
-QTAOBgNVHQ8BAf8EBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAeBgNVHREEFzAVgRNz
-dXBwb3J0QGdlbWFsdG8uY29tMA0GCSqGSIb3DQEBCwUAA4ICAQBk/LOkxIq3sR5b
-a85FBmiI6IFz6F+CRokKlZDS6uDqbKTcRQ8LCr+qFA3+SxDkXxpEuMz+DF1nftYl
-mXQKajW5lUO0y1SM5j+z9/lBKWPqW0INqOXzLh55ZMIsWLUqX1R692wx04lkAk93
-pezAyzmrd4fxUQIlU95AgDPZ95Q0+de1HwO6ADyGglyGyAtjvVScX0UuV2Lb+6+m
-jIyrE5kUnGEXtCQZVuNdMaYmASwTRQfisxXQphz0ax/74Ux/vFz9SIFCnevOc2oi
-mbmz5BiP8BCTxTz5+nlY15VbqNoycqDjBXPVudlw1G32wv1Y9oPCvBfGFvzCECsu
-qSf1vOm1QW9e7qmJEEvsN2o4QTEdKynAQDdWHJkkaS4aygu+VMO1c1gS7SQkfrEE
-HZeFWy+Ln1q0+yoGhi+2YXrDRMwjAXw0DpniNxziicc2YlplhAJ62X6nDXz3SYas
-SIP/M4WYmj7EmzeyeIJs5boFu0bNa9x/1MtwozCcBnfrtR10E+TQ53tPodLTy/LI
-sWga9yXVe3cBdurl70fJXEXORTBQS35qJfNeo+nhynubrdzEz6m3Ep7m8egki0k4
-E6nH6jltA57Y3d+UJb+DqbQrUcs4ZdS/GqxLAfw/+5UGzWBs1ZzA3KQdR+kTyIsF
-QGfLBLH9gFyu7w0HD3ah5ASk2w2BPg==
+.
+.
+.
+.
+.
 -----END CERTIFICATE-----
 ....
 =====
 
-... Enter the server configuration file contents from the `/cfcard/kmip/certs/CA.pem` file.
+... Enter the server configuration file contents from the `/cfcard/kmip/servers.cfg` file.
 +
 .Show example of server configuration file contents
 [%collapsible]
@@ -306,6 +257,22 @@ QGfLBLH9gFyu7w0HD3ah5ASk2w2BPg==
 ... Depending on whether the key is successfully restored, take one of the following actions:
 
 * If the EKM configuration has been restored, the process attempts to restore the Mroot-AK onto the node, then restores the backup config, env file, mdb, and rdb from the partner node and reboots the node. Proceed to step c.
++
+.Show example of successful restore messages
+[%collapsible]
+
+=====
+....
+
+System is ready to utilize external key manager(s).
+Trying to recover keys from key servers....
+[discover_versions]
+[status=SUCCESS reason= message=]
+...
+kmip2_client: Successfully imported the keys from external key server: 10.225.89.37:5696
+Successfully recovered keymanager secrets.
+....
+=====
 
 * If the key is not successfully restored, the system will halt and indicate that it could not restore the key. The error and warning messages are displayed. Rerun the recovery process by entering `boot_recovery -partner`.
 +
