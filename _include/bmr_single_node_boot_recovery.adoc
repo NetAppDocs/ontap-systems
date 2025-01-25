@@ -47,7 +47,7 @@ The node access the boot menu and runs:
 +
 
 // start tabbed area
-+
+
 [role="tabbed-block"]
 ====
 
@@ -132,12 +132,14 @@ a|
 .. Press `Ctlr-C`  to exit the EKM configuration process and return to the boot menu.
 .. Select BootMenu Option 8.
 .. Reboot the node. 
-+ 
-If 'AUTOBOOT' is set, the node reboots and uses the configuration files from the partner node.
-+
-If 'AUTOBOOT' is not set, enter the appropriate boot command. The node reboots and uses the configuration files from the partner node. 
 
-** Proceed to step c.  
++ 
+If `AUTOBOOT`  is set, the node reboots and uses the configuration files from the partner node.
++
+If `AUTOBOOT` is not set, enter the appropriate boot command. The node reboots and uses the configuration files from the partner node. 
+
+.. Proceed to step c.
+
 a|
 ONTAP 9.16.1
 a|
@@ -315,7 +317,6 @@ LOADER-B>
 ====
 
 // end tabbed area
-
 
 
 . If automatic giveback was disabled, reenable it: 
