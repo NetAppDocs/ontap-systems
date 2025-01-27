@@ -142,6 +142,8 @@ If `AUTOBOOT`  is set, the node reboots and uses the configuration files from th
 +
 If `AUTOBOOT` is not set, enter the appropriate boot command. The node reboots and uses the configuration files from the partner node. 
 
+.. Reboot the node so that EKM picks up the correct keys.
+
 .. Proceed to step c.
 
 a|
@@ -259,6 +261,46 @@ psGEGp1lfVdaW7W//mTY+SEpQ9o9Mzu8c2Syawm5TUBbAVgcEdie+hT4/F1bgtO+
 ....
 =====
 +
+... If prompted, enter the ONTAP Cluster UUID from the partner.
++
+.Show example of ONTAP Cluster UUID
+[%collapsible]
+
+=====
+....
+Notice: bootarg.mgwd.cluster_uuid is not set or is empty.
+Do you know the ONTAP Cluster UUID? {y/n} y
+Enter the ONTAP Cluster UUID: 7b0f6db4-aea8-11ef-910f-d039eaaa0f91
+ 
+ 
+System is ready to utilize external key manager(s).
+....
+=====
++
+
+... If prompted, enter the temporary network interface and settings for the node.
++
+.Show example of a temporary network setting
+[%collapsible]
+
+=====
+....
+In order to recover key information, a temporary network interface needs to be
+configured.
+ 
+Select the network port you want to use (for example, 'e0a')
+e0M
+ 
+Enter the IP address for port : 10.53.251.23
+Enter the netmask for port : 255.255.252.0
+Enter IP address of default gateway: 10.53.248.1
+Trying to recover keys from key servers....
+[discover_versions]
+[status=SUCCESS reason= message=]
+....
+=====
+
+
 
 ... Depending on whether the key is successfully restored, take one of the following actions:
 
