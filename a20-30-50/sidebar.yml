@@ -25,6 +25,7 @@ entries:
      url: /a20-30-50/maintain-overview.html
 # START boot media
    - title: Boot media
+     pdf-filename: AFF A20, AFF A30, and AFF A50 Boot Media
      entries:
       - title: Boot media replace workflow
         url: /a20-30-50/bootmedia-replace-workflow.html
@@ -80,6 +81,7 @@ entries:
    - title: Fan
      url: /a20-30-50/fan-replace.html
    - title: I/O module
+     pdf-filename: AFF A20, AFF A30, and AFF A50 I/O module
      entries:
         - title: I/O module overview
           url: /a20-30-50/io-module-overview.html

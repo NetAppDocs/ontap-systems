@@ -11,7 +11,11 @@ summary: Attach the power cables and power on the shelves and controllers.
 [.lead]
 After you install the rack hardware for your FAS70 0r FAS90 storage system and install the cables for the controllers and storage shelves, you should power on your storage shelves and controllers.
 
-include::../_include/install_power_hardware.adoc[]
+:fas70-90:
+
+include::../_include/install_power_hardware_fragment_conditional.adoc[]
+
+:fas-70-90!:
 
 .What's next?
 After you've turned on your FAS70 or FAS90 storage system, you link:install-complete.html[complete system setup].

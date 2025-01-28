@@ -23,10 +23,10 @@ To install your storage system, ensure that the site and the cabinet or rack tha
 . Make sure you have adequate cabinet or rack space for your storage system, shelves, and any switches:
 +
 // next two bullets applies to A1K, A70-90 and FAS70-90
-ifdef::a1k-a70-90-fas70-90[]
+ifdef::a1k-a70-90[]
 ** 4U in an HA configuration
 ** 2U for each NS224 storage shelf
-endif::a1k-a70-90-fas70-90[]
+endif::a1k-a70-90[]
 // next two bullets applies only to a20-30-50
 ifdef::a20-30-50[]
 ** 2U for a storage system
