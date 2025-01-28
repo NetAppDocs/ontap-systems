@@ -37,7 +37,7 @@ Cable the controllers to your ONTAP cluster. This procedure differs depending on
 --
 Cable the controllers to each other to create the ONTAP cluster connections.
 
-.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
+.AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
 ====
 
@@ -60,7 +60,7 @@ image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg
 
 ====
 
-.AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
+.AFF C30 or AFF C60 with one 2-port 40/100 GbE I/O module
 [%collapsible]
 
 
@@ -116,7 +116,7 @@ image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 switc
 --
 Cable the controllers to each other to create the ONTAP cluster connections.
 
-.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
+.AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
 
 
@@ -145,7 +145,7 @@ image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a
 
 ====
 
-.AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
+.AFF C30 or AFF C60 with one 2-port 40/100 GbE I/O module
 [%collapsible]
 
 
@@ -205,7 +205,7 @@ Cable the controllers to your host network.
 
 This procedure differs depending on your storage system model and I/O module configuration.
 
-.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
+.AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
 
 ====
@@ -241,7 +241,7 @@ image::../media/drw_isi_a30-50_4p_64gb_fc_2card_cabling_ieops-2023.svg[Cable a30
 
 ====
 
-.AFF A30 or AFF A50 with one 2-port 10/25 GbE I/O module
+.AFF C30 or AFF C60 with one 2-port 10/25 GbE I/O module
 [%collapsible]
 
 ====
