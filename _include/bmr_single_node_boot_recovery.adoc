@@ -1,4 +1,16 @@
-After physically replacing the impaired boot media, restore the image on the boot media through the automated boot recovery process.
+.Before you begin
+
+* Determine if Onboard Key Manger (OKM) or Eternal Key Manager (EKM) is configured using one of the following methods:
+** You can ask the customer or system administrator if OKM or EKM are enabled.
+** To check if OKM is enabled, you can use the `security key-manager onboard show`.
+** To check if EKM is enabled, you can use the `security key-manager external show`.
+* For OKM, you need the OKM passphrase file contents.
+* For EKM, you need copies of the following files from the partner node:
+** /cfcard/kmip/servers.cfg file.
+** /cfcard/kmip/certs/client.crt file. 
+** /cfcard/kmip/certs/client.key file.
+** /cfcard/kmip/certs/CA.pem file.
+
 
 .Steps
 
@@ -11,29 +23,31 @@ The screen displays the following message:
 `Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
 
 . Monitor the boot media install recovery process.
++
+The process completes and displays the `Installation complete.` message.  
 
-. The process completes and displays the `Installation complete.` message.  
-
-. The system checks for encryption and encryption type and displays one of two messages: 
+. The system checks for encryption and encryption type and displays one of two messages. Depending on what message is displayed, take one of the following actions:
 
 +
 [options="header" cols="1,2"]
 |===
-| If the message displaying is...| Then...
+| If you see this message...| Do this...
 a|
 `key manager is not configured. Exiting.` 
 a|
-Encryption is not installed on the system. 
+Encryption is not installed on the system. Complete the following steps:
 
-Log into the node when the login prompt is displayed and give back the storage:
-
+.. Log into the node when the login prompt is displayed and give back the storage:
++
 `storage failover giveback -ofnode _impaired_node_name_`
+
+.. Go to step 5 to enable automatic giveback if it was disabled.
 
 a|
 
 `key manager is configured.` 
 a|
-Encryption is installed on the system and the key manager configuration must be restored.
+Go to step 4 to restore the appropriate key manager.
 
 The node access the boot menu and runs:
 
@@ -65,7 +79,7 @@ This option must be used only in disaster recovery procedures. Are you sure? (y 
 
 .. Enter `Y` at the prompt to confirm you want to start the OKM recovery process.
 
-.. Enter the passphrase for onboard key manager when prompted, and enter the passphrase again to confirm.
+.. Enter the passphrase for onboard key manager when prompted, and enter the passphrase again when prompted, to confirm.
 +
 .Show example of passphrase prompts
 [%collapsible]
@@ -89,7 +103,7 @@ QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
 =====
 
 +
-.. Continue to monitor the recovery process as it restores the backup config, env file, mdb, and rdb from the partner node.
+.. Continue to monitor the recovery process as it restores the appropriate files from the partner node.
 +
 When the recovery process is complete, the node will reboot. The following messages indicate a successful recovery:
 +
@@ -128,11 +142,11 @@ Entering Bootmenu Option 11...
 +
 [options="header" cols="1,2"]
 |===
-|If your system is running...| Then...
+|If your system is running...| Do this...
 a|
 ONTAP 9.16.0
 a|
-.. Press `Ctlr-C` to exit BootMenu Option 11
+.. Press `Ctlr-C` to exit BootMenu Option 11.
 .. Press `Ctlr-C`  to exit the EKM configuration process and return to the boot menu.
 .. Select BootMenu Option 8.
 .. Reboot the node. 
@@ -154,94 +168,59 @@ Proceed to the next step.
 |===
 
 
-.. Enter each EKM configuration setting when prompted:
-... Enter the client certificate contents from the `/cfcard/kmip/certs/client.crt.` file:
+.. Enter the following EKM configuration setting when prompted:
 +
+[options="header",cols="2"]
+|===
+| Action | Example
+ 
+a| 
+Enter the client certificate contents from the `/cfcard/kmip/certs/client.crt` file.
+a|
 .Show example of client certificate contents
 [%collapsible]
 
 =====
 ....
 -----BEGIN CERTIFICATE-----
-MIIEPDCCAiSgAwIBAgIRAPhBSP8jLvD9euDHmrDJfKUwDQYJKoZIhvcNAQELBQAw
-WjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAk1EMRAwDgYDVQQHEwdCZWxjYW1wMRAw
-DgYDVQQKEwdHZW1hbHRvMRowGAYDVQQDExFLZXlTZWN1cmUgUm9vdCBDQTAeFw0y
-MjAyMTAyMDUyMThaFw00MjAyMDUyMDUyMThaMCIxDjAMBgNVBAMTBWFkbWluMRAw
-DgYKCZImiZPyLGQBARMAMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
-0wvPm/zL6GTQ+v79Ies5SoIt8bRo3r2EXgyaGIZpTihb/zKMXVbjDrjwAs5pr851
-81tgW2gPYWO2Ase3+zuxQG6ANYT4IgZr3MwC7R1/O1JxJuOSCZTav/LO13HKYTvK
-X5GsfVqVEjzbx6vsHJC0NuP0hIgK3XjY3hMKTAJ4HYX73uWpJnOFqHDKOC7Xj72e
-8tTQD+SWbi6SUuQV6USfyCELIWSx+JGK52aZKjTVrqrWRDnnXfLDVcY8kco3fyFD
-.
-.
-.
-.
+<certificate_value>
 -----END CERTIFICATE-----
 ....
 =====
+ 
+a|
+Enter the client key file contents from the `/cfcard/kmip/certs/client.key` file.
 
-... Enter the client key file contents from the `/cfcard/kmip/certs/client.key` file.
-+
+a|
 .Show example of client key file contents
 [%collapsible]
 
 =====
 ....
 -----BEGIN RSA PRIVATE KEY-----
-MIIEpQIBAAKCAQEA0wvPm/zL6GTQ+v79Ies5SoIt8bRo3r2EXgyaGIZpTihb/zKM
-XVbjDrjwAs5pr85181tgW2gPYWO2Ase3+zuxQG6ANYT4IgZr3MwC7R1/O1JxJuOS
-CZTav/LO13HKYTvKX5GsfVqVEjzbx6vsHJC0NuP0hIgK3XjY3hMKTAJ4HYX73uWp
-JnOFqHDKOC7Xj72e8tTQD+SWbi6SUuQV6USfyCELIWSx+JGK52aZKjTVrqrWRDnn
-XfLDVcY8kco3fyFDo7sI6wTU+r1LBiv/KkcUvd1uKNJkObiSVeL2k1Fy9lPBP0D/
-RB+YEz1sx0QtdMx7VMmLVbcl7Lp2cmBYBZOs+wIDAQABAoIBAAxdpMx/A3OadKRA
-TJSwM6sp9Yc0CvECKb9Y/a5yMblipAFP9OmDLcqvC2EetxKWBlM8B2lTr5MFRKTl
-DuKpnLkpwFlicSeNOMS3L3S1Rb80FW0x6FynXCnjEDuPb0xDNJhk8LZnmFR5PGd2
-q18BG44bzTf2wKw5aHuaof/SJTeVhuOjpPX4GxGZjpUz+vTXb5UPaqJpKU7MvJGC
-36xlf1NEF7JDg/1OLb4rDQyjhETXVA7K180TJbtOJJbUFCj9Rug17+zZxZsaVTK1
-iCNGxBl6IpQ3lRdDNhxCmX2P1hpeH5C8X8pYQZ1VLzj2Psj8GBH8jty0nMRcyFy6
-.
-.
-.
-.
-
+<key_value>
 -----END RSA PRIVATE KEY-----
 ....
 =====
 
-... Enter the KMIP server CA(s) file contents from the  `/cfcard/kmip/certs/CA.pem` file.
-+
+a|
+Enter the KMIP server CA(s) file contents from the `/cfcard/kmip/certs/CA.pem` file.
+a|
 .Show example of KMIP server file contents
 [%collapsible]
 
 =====
 ....
 -----BEGIN CERTIFICATE-----
-MIIFgjCCA2qgAwIBAgIRAK5suvIVYhYMZV70M23kxFwwDQYJKoZIhvcNAQELBQAw
-WjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAk1EMRAwDgYDVQQHEwdCZWxjYW1wMRAw
-DgYDVQQKEwdHZW1hbHRvMRowGAYDVQQDExFLZXlTZWN1cmUgUm9vdCBDQTAeFw0y
-MjAyMDkxNzE3NTJaFw0zMjAyMDcxNzE3NTJaMFoxCzAJBgNVBAYTAlVTMQswCQYD
-VQQIEwJNRDEQMA4GA1UEBxMHQmVsY2FtcDEQMA4GA1UEChMHR2VtYWx0bzEaMBgG
-A1UEAxMRS2V5U2VjdXJlIFJvb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAw
-ggIKAoICAQDpox2e7FufWsebHs3+EkwUv7FSnMnsNiPLffmnqGZTjUN7AdjWDHjS
-KoBpK6TGkkFFyK96xcXp2mQbPj6qeP/bVkSjKTvvs0mMRk6VyfEKd85YFpIjnC/2
-E9BRx2CrUrySWmmLgbuE9tGYVBe/UvSj81vTusrBPvkKqATHo3GHiqhsFau1wL0l
-hEeuYZWneCS45mGcOkI1iN5iPr1kNBql65+uar4FHhAdI2bmmG/T5G0a5TlaN4f7
-NPiQrssMldveq0KW87uenmlvNQvw/r0B17edgk68ywMhA42TZeGvWAsbVHPalFwq
-lz+eEwkYiaAlQrWq+K9EABW5Lrn3c11ifsGxPzO1CSFz+vryXeEkN6BM274V2ftL
-Lj3V+MPcazRBu6k4Eu1yT5+mqbWKqa5yoVyM68hisuR0+rjXkRB3eth2j11C4yT/
-Ieub92myytCOzC41JWxTjMJ3E5swNBn7rucOMKxVPUVKSNVyBS+YewqRGbdUH1jK
-psGEGp1lfVdaW7W//mTY+SEpQ9o9Mzu8c2Syawm5TUBbAVgcEdie+hT4/F1bgtO+
-.
-.
-.
-.
-.
+<KMIP_certificate_CA_value>
 -----END CERTIFICATE-----
 ....
 =====
 
-... Enter the server configuration file contents from the `/cfcard/kmip/servers.cfg` file.
-+
+ 
+a| 
+Enter the server configuration file contents from the `/cfcard/kmip/servers.cfg` file.
+a| 
 .Show example of server configuration file contents
 [%collapsible]
 
@@ -257,12 +236,13 @@ psGEGp1lfVdaW7W//mTY+SEpQ9o9Mzu8c2Syawm5TUBbAVgcEdie+hT4/F1bgtO+
 10.225.89.37:5696.key_file=/cfcard/kmip/certs/client.key
 10.225.89.37:5696.ciphers="TLSv1.2:kRSA:!CAMELLIA:!IDEA:!RC2:!RC4:!SEED:!eNULL:!aNULL"
 10.225.89.37:5696.verify=true
-10.225.89.37:5696.netapp_keystore_uuid=26649a0c-aeab-11ef-b7b4-d039eaa9ec70
+10.225.89.37:5696.netapp_keystore_uuid=<id_value>
 ....
 =====
-+
-... If prompted, enter the ONTAP Cluster UUID from the partner.
-+
+ 
+a| 
+If prompted, enter the ONTAP Cluster UUID from the partner.
+a| 
 .Show example of ONTAP Cluster UUID
 [%collapsible]
 
@@ -270,16 +250,16 @@ psGEGp1lfVdaW7W//mTY+SEpQ9o9Mzu8c2Syawm5TUBbAVgcEdie+hT4/F1bgtO+
 ....
 Notice: bootarg.mgwd.cluster_uuid is not set or is empty.
 Do you know the ONTAP Cluster UUID? {y/n} y
-Enter the ONTAP Cluster UUID: 7b0f6db4-aea8-11ef-910f-d039eaaa0f91
+Enter the ONTAP Cluster UUID: <cluster_uuid_value>
  
  
 System is ready to utilize external key manager(s).
 ....
 =====
-+
-
-... If prompted, enter the temporary network interface and settings for the node.
-+
+ 
+a| 
+If prompted, enter the temporary network interface and settings for the node.
+a| 
 .Show example of a temporary network setting
 [%collapsible]
 
@@ -300,11 +280,11 @@ Trying to recover keys from key servers....
 ....
 =====
 
+|===
 
+.. Depending on whether the key is successfully restored, take one of the following actions:
 
-... Depending on whether the key is successfully restored, take one of the following actions:
-
-* If the EKM configuration has been restored, the process attempts to restore the Mroot-AK onto the node, then restores the backup config, env file, mdb, and rdb from the partner node and reboots the node. Proceed to step c.
+* If the EKM configuration has been restored, the process attempts to restore the appropriate files from the partner node and reboots the node. Go to step d.
 +
 .Show example of successful restore messages
 [%collapsible]
@@ -352,9 +332,9 @@ LOADER-B>
 =====
 
 
-.. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
+.. When the node reboots, verify that the boot media recovery was successful by confirming that the system is back online and operational.
 
-.. Return the impaired controller to normal operation by giving back its storage:
+.. Return the controller to normal operation by giving back its storage:
 +
 `storage failover giveback -ofnode _impaired_node_name_`.
 --
@@ -362,7 +342,7 @@ LOADER-B>
 
 // end tabbed area
 
-[start=6]
+[start=5]
 
 . If automatic giveback was disabled, reenable it: 
 +

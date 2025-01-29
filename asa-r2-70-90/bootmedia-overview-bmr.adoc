@@ -4,11 +4,13 @@ sidebar: sidebar
 keywords: asa r2 a70, a90, overview, the boot media
 summary: Learn about the automated method for replacing the boot media.
 ---
-= Overview of automated boot media recovery - ASA A70 and ASA A90
+= Overview of boot media recovery - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+
+Boot media recovery uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
 
 When you encounter boot error messages, you need to replace the boot media and restore the ONTAP image from the partner node.
 
@@ -34,6 +36,4 @@ LOADER-A>
 
 ====
 
-You  replace a failed boot media image through the automated boot media recovery option.
 
-Automated boot media recovery uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
