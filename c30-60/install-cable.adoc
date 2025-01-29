@@ -35,11 +35,11 @@ Cable the controllers to your ONTAP cluster. This procedure differs depending on
 =====
 .Switchless cluster cabling
 --
-Cable the controllers to each other to create the ONTAP cluster connections.
 
 .AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
 ====
+Cable the controllers to each other to create the ONTAP cluster connections.
 
 .Steps
 
