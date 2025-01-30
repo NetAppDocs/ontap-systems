@@ -89,16 +89,9 @@ This option must be used only in disaster recovery procedures. Are you sure? (y 
 Enter the passphrase for onboard key management:
 Enter the passphrase again to confirm:
 Enter the backup data:
-TmV0QXBwIEtleSBCbG9iAAECAAAEAAAAcAEAAAAAAAA3yR6UAAAAACEAAAAAAAAA
-QAAAAAAAAACJz1u2AAAAAPX84XY5AU0p4Jcb9t8wiwOZoqyJPJ4L6/j5FHJ9yj/w
-RVDO1sZB1E4HO79/zYc82nBwtiHaSPWCbkCrMWuQQDsiAAAAAAAAACgAAAAAAAAA
-3WTh7gAAAAAAAAAAAAAAAAIAAAAAAAgAZJEIWvdeHr5RCAvHGclo+wAAAAAAAAAA
-IgAAAAAAAAAoAAAAAAAAAEOTcR0AAAAAAAAAAAAAAAACAAAAAAAJAGr3tJA/LRzU
-QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
-.
-.
-.
-.
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
 ....
 =====
 
