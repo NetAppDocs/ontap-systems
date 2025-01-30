@@ -9,7 +9,11 @@ summary: "After completing the NVE or NSE tasks, you need to complete the shutdo
 :imagesdir: ../media/
 
 [.lead]
-You need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller.
+Shut down or take over the impaired controller so you can perform maintenance on the boot media.
 
 
 include::../_include/shutdown_most_frus.adoc[]
+
+.What's next
+After you shut down the impaired controller, you link:bootmedia-replace-bmr.html[replace the boot media].
+

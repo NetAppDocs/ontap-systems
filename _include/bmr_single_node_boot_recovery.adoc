@@ -156,7 +156,7 @@ If `AUTOBOOT`  is set, the node reboots and uses the configuration files from th
 +
 If `AUTOBOOT` is not set, enter the appropriate boot command. The node reboots and uses the configuration files from the partner node. 
 
-.. Reboot the node so that EKM picks up the correct keys.
+.. Reboot the node so that EKM protects the boot media partition.
 
 .. Proceed to step c.
 
