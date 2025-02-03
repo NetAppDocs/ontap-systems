@@ -28,7 +28,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 
 == Step 1: Cable the cluster/HA connections
-Cable the controllers to your ONTAP cluster. This procedure differs depending on your storage system model and I/O module configuration.
+Cable the controllers to your ONTAP cluster. This procedure differs depending on your storage system's I/O module configuration.
 
 //open tabbed block 
 [role="tabbed-block"]
@@ -153,9 +153,7 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[C
 
 
 == Step 2: Cable the host network connections
-Cable the controllers to your host network. 
-
-This procedure differs depending on your storage system model and I/O module configuration.
+Cable the controllers to your host network. This procedure differs depending on your storage system's I/O module configuration.
 
 .AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
@@ -193,7 +191,7 @@ image::../media/drw_isi_a30-50_4p_64gb_fc_2card_cabling_ieops-2023.svg[Cable a30
 
 ====
 
-.AFF C30 or AFF C60 with one 2-port 10/25 GbE I/O module
+.AFF C30 or AFF C60 with one 4-port 10/25 GbE I/O module
 [%collapsible]
 
 ====
