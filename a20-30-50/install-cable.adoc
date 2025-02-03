@@ -241,7 +241,7 @@ image::../media/drw_isi_a30-50_4p_64gb_fc_2card_cabling_ieops-2023.svg[Cable a30
 
 ====
 
-.AFF A30 or AFF A50 with one 2-port 10/25 GbE I/O module
+.AFF A20, A30 or AFF A50 with one 2-port 10/25 GbE I/O module
 [%collapsible]
 
 ====
@@ -270,39 +270,6 @@ On each controller, cable ports 1a, 1b, 1c and 1d  to the FC host network switch
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 +
 image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
-
-
-====
-
-.AFF A20 with one 2-port 10/25 GbE module
-[%collapsible]
-
-====
-
-.Steps
-. Cable the host network connections.  
-+
-The following substeps are examples of optional host network cabling. If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
-
-.. Optional: Cable controllers to host network switches.
-+
-On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host network switches.
-+
-*10/25 GbE cables*  
-+
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100pxx]
-+
-image::../media/drw_isi_a20_host_4p_25gbe_cabling_ieops-2017.svg[Cable a20 to 40/100gbe ethernet host network switches]
-+
-.. Optional: Cable controllers to FC host network switches.
-+
-On each controller, cable ports 1a, 1b, 1c and 1d to the FC host network switches.
-+
-*64 Gb/s FC cables*
-+
-image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100pxx]
-+
-image::../media/drw_isi_a20_4p_64gb_fc_cabling_ieops-2016.svg[Cable a20 to 64gb fc host network switches]
 
 
 ====
