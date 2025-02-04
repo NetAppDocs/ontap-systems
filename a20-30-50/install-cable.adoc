@@ -28,7 +28,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 
 == Step 1: Cable the cluster/HA connections
-Cable the controllers to each other to create the ONTAP cluster connections. This procedure differs depending on your storage system model and I/O module configuration.
+Cable the controllers to create the ONTAP cluster connections.
 
 //open tabbed block 
 [role="tabbed-block"]
@@ -88,7 +88,7 @@ image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg
 
 
 ====
-Cable the controllers to each other to create the ONTAP cluster connections.
+
 
 .Steps
 . Cable the Cluster/HA interconnect connections: 
@@ -118,7 +118,6 @@ image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 switc
 
 
 ====
-Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
 
 .Steps
 
@@ -147,7 +146,6 @@ image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a
 
 
 ====
-Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
 
 .Steps
 
@@ -173,8 +171,6 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[C
 [%collapsible]
 ====
 
-Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
-
 . Cable the controllers to the cluster network switches:
 +
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports(on the I/O module in slot 4). The ports are 10/25 GbE.
@@ -198,9 +194,7 @@ image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched
 
 
 == Step 2: Cable the host network connections
-Cable the controllers to your Ethernet or FC host network. This procedure differs depending on your storage system model and I/O module configuration.
-
-The following are examples of host network cabling. If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
+Cable the controllers to your Ethernet or FC host network.
 
 //open tabbed block 
 [role="tabbed-block"]

@@ -28,7 +28,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 
 == Step 1: Cable the cluster/HA connections
-Cable the controllers to your ONTAP cluster. This procedure differs depending on your storage system's I/O module configuration.
+Cable the controllers to each other to create the ONTAP cluster connections.
 
 //open tabbed block 
 [role="tabbed-block"]
@@ -41,7 +41,6 @@ Cable the controllers to your ONTAP cluster. This procedure differs depending on
 
 
 ====
-Cable the controllers to each other to create the ONTAP cluster connections.
 
 .Steps
 
@@ -67,7 +66,6 @@ image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg
 
 
 ====
-Cable the controllers to each other to create the ONTAP cluster connections.
 
 .Steps
 
@@ -98,7 +96,6 @@ image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg
 
 
 ====
-Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
 
 .Steps
 
@@ -127,7 +124,7 @@ image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a
 
 
 ====
-Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
+
 
 .Steps
 
@@ -153,9 +150,7 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[C
 
 
 == Step 2: Cable the host network connections
-Cable the controllers to your Ethernet or FC host network. This procedure differs depending on your storage system model and I/O module configuration.
-
-The following are examples of host network cabling. If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
+Cable the controllers to your Ethernet or FC host network.
 
 //open tabbed block 
 [role="tabbed-block"]
