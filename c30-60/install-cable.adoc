@@ -152,15 +152,15 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[C
 == Step 2: Cable the host network connections
 Cable the controllers to your Ethernet or FC host network.
 
-//open tabbed block 
 [role="tabbed-block"]
 =====
+
 .Ethernet host cabling
 --
+Ethernet host cabling is based on the I/O modules installed in the controllers.
 
 .AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
-
 ====
 
 .Steps
@@ -174,13 +174,10 @@ NOTE: The ports on I/O modules in slot 2 and 4 are 40/100 GbE (host connectivity
 image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable, width=100px]
 +
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Cable to 40/100gbe ethernet host network switches]
-
-
 ====
 
 .AFF C30 or AFF C60 with one 4-port 10/25 GbE I/O module
 [%collapsible]
-
 ====
 
 .Steps
@@ -191,16 +188,16 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Ca
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
 +
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
-
+====
 
 --
+
 .FC host cabling
 --
-
+FC host cabling is based on the I/O modules installed in the controllers.
 
 .AFF C30 or AFF C60 with one 4-port 64 Gb/s FC I/O module
 [%collapsible]
-
 ====
 
 .Steps
@@ -211,10 +208,11 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Ca
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 +
 image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
-
 ====
 --
+
 =====
+
 //closed tabbed block
 
 
