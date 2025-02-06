@@ -1,0 +1,19 @@
+---
+permalink: asa-r2-70-90/chassis-replace-prepare.html
+sidebar: sidebar
+keywords: asa r2 a70, asa r2 a90, prepare to replace the chassis
+summary: "You replace an impaired chassis with the new chassis of the same model as the impaired chassis."
+---
+= Prepare for chassis replace - ASA A70 and ASA A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare to replace the impaired chassis with the new chassis of the same model as the impaired chassis.
+
+
+include::../_include/a70-90_chassis_replace_prepare.adoc[]
+
+.What's next?
+
+After you’ve prepared to replace your ASA A70 or ASA A90 chassis hardware, you need to link:chassis-replace-shutdown.html[shut down the controllers].
