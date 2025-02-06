@@ -6,14 +6,14 @@ You should open a console session and save sessions logs for future reference, a
 
 . Connect to the serial console port to interface with and monitor the system.
 
-. Locate and turn on the controller LED:
+. Locate and turn on the controller's Location LED:
 
 .. Use the `system controller location-led show` command to show the current state of the location LED.
-+
-The Location LED remains lit for 30 minutes.
+
 
 .. Change the state of the location LED to "on" with the `system controller location-led modify -node _node1_ -state on`. 
-
++
+The Location LED remains lit for 30 minutes.
  
 
 == Step 2: Verify replacement components
