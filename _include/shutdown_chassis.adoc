@@ -1,4 +1,4 @@
-This procedure is for systems with two node configurations. If you have a system with more than two nodes, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster[How to perform a graceful shutdown and power up of one HA pair in a F4+ node cluster^]. 
+This procedure is for systems with two node configurations. If you have a system with more than two nodes, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster[How to perform a graceful shutdown and power up of one HA pair in a 4+ node cluster^]. 
 
 .Before you begin
 
@@ -44,7 +44,9 @@ If you are using a console/laptop, log into the controller using the same cluste
 
 NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `system node halt -node <node1>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
-. Enter *y* for each controller in the cluster when you see `Warning: Are you sure you want to halt node _<node_name>_? {y|n}:`
+. Enter *y* for each controller in the cluster when you see:
++
+`Warning: Are you sure you want to halt node _<node_name>_? {y|n}:`
 
 . Wait for each controller to halt and display the LOADER prompt.
 

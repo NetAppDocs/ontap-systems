@@ -74,6 +74,7 @@ The controller module moves slightly out of the chassis.
 +
 image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[Controller remove graphic]
 +
+
 [cols="1,4"]
 |===
 a|
@@ -131,7 +132,7 @@ Once the replacement chassis is installed, you need to install the controller mo
 .. Rotate the locking latches upward into the locked position.
 .. If you have not already done so, reinstall the cable management device and recable the controller.
 +
-If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them.
 +
 Make sure that the cables are connected referencing the cable labels.  
 

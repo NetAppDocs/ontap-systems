@@ -1,6 +1,3 @@
-Prepare to replace the impaired chassis with the new chassis of the same model.
-
-
 == Step 1: Locate and monitor your system
 You should open a console session and save sessions logs for future reference, and also turn on the system location LED to find the impaired chassis.
 
@@ -11,7 +8,9 @@ You should open a console session and save sessions logs for future reference, a
 .. Use the `system controller location-led show` command to show the current state of the location LED.
 
 
-.. Change the state of the location LED to "on" with the `system controller location-led modify -node _node1_ -state on`. 
+.. Change the state of the location LED to "on":
++
+`system controller location-led modify -node _node1_ -state on`. 
 +
 The Location LED remains lit for 30 minutes.
  
