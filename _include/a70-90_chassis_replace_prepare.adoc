@@ -6,11 +6,6 @@ You should open a console session and save sessions logs for future reference, a
 
 . Connect to the serial console port to interface with and monitor the system.
 
-. Stop all clients/hosts from accessing data on the target system.
-. Suspend all external backup jobs.
-
-. Save the console sessions to a log file on the console.
-
 . Locate and turn on the controller LED:
 
 .. Use the `system controller location-led show` command to show the current state of the location LED.

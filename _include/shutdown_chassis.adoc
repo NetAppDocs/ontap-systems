@@ -2,8 +2,6 @@ This procedure is for systems with two node configurations. If you have a system
 
 .Before you begin
 
-* Stop all clients/host from accessing data on the NetApp system.
-* Suspend external backup jobs.
 * Make sure you have the necessary permissions and credentials:
 ** Local administrator credentials for ONTAP.
 ** BMC accessability for each controller.
@@ -19,6 +17,10 @@ Make note of any faults presently on the system, such as LEDs on the system comp
 .Steps
 
 . Log into the cluster through SSH or log in from any node in the cluster using a local console cable and a laptop/console.
+
+. Stop all clients/host from accessing data on the NetApp system.
+. Suspend external backup jobs.
+
 . If AutoSupport is enabled, suppress case creation and indicate how long you expect the system to be offline:
 +
 `system node autosupport invoke -node * -type all -message "MAINT=2h Replace chassis"`
@@ -29,6 +31,7 @@ Make note of any faults presently on the system, such as LEDs on the system comp
 . Exit the cluster shell:
 +
 `exit`
+
 . Log into SP/BMC over SSH using the IP address of any of the nodes listed in the output from the previous step to monitor progress. 
 +
 If you are using a console/laptop, log into the controller using the same cluster administrator credentials.
