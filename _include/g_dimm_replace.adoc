@@ -2,7 +2,7 @@ You must replace a DIMM in the controller when your storage system encounters er
 
 .Before you begin
 
-* All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+* Ensure all other components in the storage system are working correctly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing."
 
 * You must replace the failed FRU component with a replacement FRU component you received from your provider.
 
@@ -86,9 +86,9 @@ The ejector tabs remain in the open position.
 +
 The notch on the bottom of the DIMM, among the pins, should line up with the tab in the slot.
 +
-When inserted correctly, the DIMM should go in easily but fit tightly in the slot. If not, reinsert the DIMM.
+When inserted correctly, the DIMM goes in easily but fits tightly in the slot. If not, reinsert the DIMM.
 
-.. Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
+.. Visually check the DIMM to make sure it is evenly aligned and fully inserted into the slot.
 
 .. Push down carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at both ends of the DIMM.
 
