@@ -1,15 +1,15 @@
 
 == Step 1: Remove the PSUs and cables
 
-You need to remove all four PSUs, two per controller, before removing the controller.  Removing them lightens the overall weight of each controller.
+You need to remove all four power supply units (PSUs), two per controller, before removing the controller.  Removing them lightens the overall weight of each controller.
 
 . Remove the four PSUs:
 
 .. If you are not already grounded, properly ground yourself.
-.. Unplug power cords from the controller module power supplies (PSU).
+.. Unplug power cords from the controller module PSU.
 
 +
-NOTE: If your system has DC power, disconnect the power block from the PSUs. 
+If your system has DC power, disconnect the power block from the PSUs. 
 
 .. Remove the PSU from the controller by rotating the PSU handle up so that you can pull the PSU out, press the PSU locking tab, and then pull PSU out of the controller module.
 +
@@ -45,7 +45,7 @@ NOTE: Cables should have been labeled at the beginning of this procedure.
 Remove the controllers from the chassis and then remove the drives from the chassis.
 
 
-. Check the amber NVRAM that status LED located in slot 4/5 on the back of each controller module is off. Look for the NV icon.
+. Check the that amber NVRAM status LED located in slot 4/5 on the back of each controller module is off. Look for the NV icon.
 +
 image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
 +
@@ -151,8 +151,7 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 . Reconnect the PSU power cables to all four of the PSUs.
  .. Secure the power cable to the PSU using the power cable retainer.
 +
-
-NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis and secure the power cable to the PSU with the thumbscrews.
+If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis and secure the power cable to the PSU with the thumbscrews.
 
 +
 The controller modules begin to boot as soon as PSUs are installed and power is restored.

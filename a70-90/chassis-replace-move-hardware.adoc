@@ -12,9 +12,8 @@ summary: "Move the hard drives, and controller module or modules from the impair
 
 You need to remove specific components from the controller modules before removing the impaired chassis, replace the chassis, re-install the components in the correct controller modules, and then return the controllers to normal operation. 
 
-
 include::../_include/a70-90_chassis_replace_move_hardware.adoc[]
 
 .What's next?
 
-After you’ve replaced the impaired AFF A70 or AFF A90 chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[Complete the chassis replacement]. 
+After you’ve replaced the impaired AFF A70 or AFF A90 chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]. 

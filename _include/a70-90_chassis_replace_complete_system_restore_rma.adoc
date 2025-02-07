@@ -1,5 +1,5 @@
 
-== Step 1: Boot the controllers and give back the nodes 
+== Step 1: Boot the controllers and give back the controllers 
 After the controllers reboot, boot ONTAP and give back the controllers.
 
 . Check the console output:
@@ -14,9 +14,9 @@ After the controllers reboot, boot ONTAP and give back the controllers.
 
 == Step 2: Verify storage system health
 
-Once the controller has given back the storage, you should check the overall health with Active IQ Config Advisor.
+After the controller has given back the storage, you should check the overall health with https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor].
 
-. Once the giveback is complete, run Active IQ Config Advisor to verify the health of the storage system.
+. After the giveback is complete, run Active IQ Config Advisor to verify the health of the storage system.
 . Correct any issues you encounter.
 
 
