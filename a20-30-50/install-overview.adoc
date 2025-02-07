@@ -14,11 +14,15 @@ To install and set up your AFF A20, AFF A30, or AFF A50 storage system, you must
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Review the installation requirements]
 [role="quick-margin-para"]
+<<<<<<< HEAD
 Before installing your storage system, your storage system must meet the installation requirements.
+=======
+Before installing your storage system, it must meet the installation requirements.
+>>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[One]link:install-prepare.html[Prepare for installation]
 [role="quick-margin-para"]
-To prepare for install, you need to get the site ready, check the environmental and electrical requirements, and ensure there’s enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
+To prepare for installation, get the site ready, check environmental and electrical requirements, and ensure there’s enough rack space. Then, unpack the equipment, compare contents to the packing slip, and register the hardware to access support benefits.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Two]link:install-hardware.html[Install the hardware]
 [role="quick-margin-para"]
