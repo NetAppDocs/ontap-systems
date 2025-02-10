@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-a20-30-50/controller-replace-system-config-restore-and-verify.html
+sidebar: sidebar
+keywords: asa a20, asa a30, asa a50, restore and verify the system configuration, verify and set the ha state of the controller module
+summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
+---
+= Restore and verify the system configuration - ASA A20, ASA A30, and ASA A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/g_controller_replace_system_config_restore_and_verify.adoc[]

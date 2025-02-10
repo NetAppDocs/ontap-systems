@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-a20-30-50/bootmedia-recovery-image-boot.html
+sidebar: sidebar
+keywords: asa a20, asa a30, asa a50, boot the recovery image
+summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+---
+= Boot the recovery image - ASA A20, ASA A30, and ASA A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/bootmedia_recovery_image_boot.adoc[]
