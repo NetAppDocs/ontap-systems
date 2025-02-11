@@ -35,7 +35,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 [role="tabbed-block"]
 ====
 
-.Option 1: Switchless cluster cabling
+.Switchless cluster cabling
 --
 Use the Cluster/HA interconnect cable to connect ports e1a to e1a and ports e7a to e7a.
 
@@ -51,7 +51,7 @@ image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[Two-node switchless 
 
 
 --
-.Option 2: Switched cluster cabling
+.Switched cluster cabling
 --
 Use the 100 GbE cable to connect ports e1a to e1a and ports e7a to e7a.
 
@@ -65,10 +65,6 @@ Use the 100 GbE cable to connect ports e1a to e1a and ports e7a to e7a.
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable,width=100px]
 +
 image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[Cable cluster connections to cluster network,width=500px]
-
-
-
-
 
 
 --
@@ -111,9 +107,9 @@ image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your man
 IMPORTANT: Do not plug in the power cords yet. 
 
 == Step 4: Cable the shelf connections
-Cable your controllers to the shelf or shelves. 
+The following cabling procedures show how to connect your controllers to a storage shelf. Choose one of the following cabling options that matches your setup.
 
-These procedures show how to cable your controllers to one shelf or two shelves NS224 shelves or two or four DS460C shelves. You can directly connect up to four NS224 shelves to your controllers.
+For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^]. 
 
 
 // start tabbed area
@@ -121,9 +117,9 @@ These procedures show how to cable your controllers to one shelf or two shelves 
 [role="tabbed-block"]
 ====
 
-.Option 1: Connect to one NS224 storage shelf
+.Option 1: One NS224 storage shelf
 --
-Cable each controller to the NSM modules on the NS224 shelf. The graphics show cabling from each of the controllers: Controller A cabling in blue and Controller B cabling in yellow.
+Connect each controller to the NSM modules on the NS224 shelf. The graphics show controller A cabling in blue and controller B cabling in yellow.
 
 *100 GbE QSFP28 copper cables*
 
@@ -147,9 +143,9 @@ image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[Cable controller B ports 
 
 --
 
-.Option 2: Connect to two NS224 storage shelves
+..Option 2: Two NS224 storage shelves
 --
-Cable each controller to the NSM modules on both NS224 shelves. The graphics show cabling from each of the controllers: Controller A cabling in blue and Controller B cabling in yellow.
+Cable each controller to the NSM modules on both NS224 shelves. The graphics show controller A cabling in blue and controller B cabling in yellow
 
 *100 GbE QSFP28 copper cables*
 
@@ -184,9 +180,9 @@ image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[Cable controller B ports 
 +
 
 --
-.Option 3: Cable to two DS460C shelves
+.Option 3: Two DS460C shelves
 --
-Cable each controller to the IOM modules on both DS460C shelves. The graphics show cabling from each of the controllers: Controller A cabling in blue and Controller B cabling in yellow. 
+Cable each controller to the IOM modules on both DS460C shelves. The graphics show controller A cabling in blue and controller B cabling in yellow
 
 *mini-SAS HD cable*
 

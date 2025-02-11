@@ -36,7 +36,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 [role="tabbed-block"]
 ====
 
-.Option 1: Switchless cabling cluster
+.Switchless cluster cabling
 --
 Use the the Cluster/HA interconnect cable to connect to connect ports e1a to e1a and ports e7a to e7a. 
 
