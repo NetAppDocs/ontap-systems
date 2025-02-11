@@ -19,10 +19,6 @@ image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab orien
 * As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn the cable head over and try again.
 * If connecting to an optical switch, insert the small form-factor pluggable (SFP) transceiver into the controller port before cabling to the port.
 
-
-== Step 1: Connect the storage controllers to your network
-Connect the storage controllers to your host network.
-
 .Before you begin
 
 Contact your network administrator for information about connecting the storage system to the switches.
@@ -30,23 +26,22 @@ Contact your network administrator for information about connecting the storage 
 .About this task
 These procedures show common configurations. Keep in mind that the specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
+== Step 1: Connect the storage controllers to your network
+Cable the controllers to your ONTAP cluster. This procedure differs depending on your storage system model and I/O module configuration.
+
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
+
 [role="tabbed-block"]
 ====
 
 .Switchless cluster cabling
 --
-Connect your storage controllers to each other to create the ONTAP cluster connections, and then connect the Ethernet ports on each controller to your host network.
+Use the the Cluster/HA interconnect cable to connect to connect ports e1a to e1a and ports e7a to e7a. 
 
 .Steps
 
-. Use the the Cluster/HA interconnect cable to connect to connect ports e1a to e1a and ports e7a to e7a. 
-
-+
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
-
-+
-.. Connect port e1a on Controller A to port e1a on Controller B.
-.. Connect port e7a on Controller A to port e7a on Controller B.
+. Connect port e1a on Controller A to port e1a on Controller B.
+. Connect port e7a on Controller A to port e7a on Controller B.
 +
 *Cluster/HA interconnect cables*
 +
@@ -54,14 +49,11 @@ image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable,wi
 
 +
 image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[Two-node switchless cluster cabling diagram, width=500px]
-.. 
-
-
 
 --
 .Switched cluster cabling
 --
-Connect your storage controllers to the cluster network switches to create the ONTAP cluster connections, and then connect the Ethernet ports on each controller to your host network.
+Use the 100 GbE cable to connect ports e1a to e1a and ports e7a to e7a.
 
 .Steps
 
@@ -116,8 +108,9 @@ image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your m
 IMPORTANT: Do not plug in the power cords yet.
 
 == Step 4: Cable the shelf connections
-The following cabling procedures show how to connect your controllers to one shelf and to two shelves. You can directly connect up to four shelves to your controllers.
+The following cabling procedures show how to connect your controllers to a storage shelf. Choose one of the following cabling options that matches your setup.
 
+For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 // start tabbed area
 
