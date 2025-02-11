@@ -33,7 +33,7 @@ These procedures show common configurations. Keep in mind that the specific cabl
 [role="tabbed-block"]
 ====
 
-.Option 1: Connect the controllers to a switchless ONTAP cluster
+.Switchless cluster cabling
 --
 Connect your storage controllers to each other to create the ONTAP cluster connections, and then connect the Ethernet ports on each controller to your host network.
 
@@ -54,60 +54,19 @@ image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable,wi
 
 +
 image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[Two-node switchless cluster cabling diagram, width=500px]
-+
-. Connect the Ethernet module ports to your host network. 
-+
-The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
-
-.. Connect ports e9a and e9b to your Ethernet data network switch as shown.
-+
-NOTE: For maximum system performance for cluster and HA traffic, do not use ports e1b and e7b ports for host network connections.  Use a separate host card to maximize performance.
-
-+
-*100 GbE cable*
-+
-image::../media/oie_cable_sfp_gbe_copper.png[100Gb Ethernet cable, width=100px]
-+
-image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100 Gb Ethernet network,width=500px]
-
-+
-.. Connect your 10/25 GbE host network switches.
-+
-*4-ports, 10/25 GbE Host*
-+
-image::../media/oie_cable_sfp_gbe_copper.png[10/25 Gb cable,width=100px]
-+
-image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Ethernet network,width=500px]
-+
-
-
-. Use the 1000BASE-T RJ-45 cables to connect the controller management (wrench) ports to the management network switches.
-+
-image::../media/oie_cable_rj45.png[RJ45 cables]
-*1000BASE-T RJ-45 cables*
-+
-image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
-
-IMPORTANT: Do not plug in the power cords yet. 
+.. 
 
 
 
 --
-.Option 2: Connect the controllers to a switched ONTAP cluster
+.Switched cluster cabling
 --
 Connect your storage controllers to the cluster network switches to create the ONTAP cluster connections, and then connect the Ethernet ports on each controller to your host network.
 
 .Steps
 
-. Make the following cabling connections:
-
-+
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
-
-
-+
-.. Connect port e1a on Controller A and port e1a on Controller B to cluster network switch A. 
-.. Connect port e7a on Controller A and port e7a on Controller B to cluster network switch B.
+. Connect port e1a on Controller A and port e1a on Controller B to cluster network switch A. 
+. Connect port e7a on Controller A and port e7a on Controller B to cluster network switch B.
 +
 *100 GbE cable*
 +
@@ -115,45 +74,48 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
 image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[Cable cluster connections to cluster network,width=500px]
 
-. Connect the Ethernet module ports to your host network. 
-+
-The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
-
-.. Connect ports e9a and e9b to your Ethernet data network switch as shown.
-+
-NOTE: For maximum system performance for cluster and HA traffic, do not use ports e1b and e7b ports for host network connections.  Use a separate host card to maximize performance.
-+
-*100 GbE cable*
-+
-image::../media/oie_cable_sfp_gbe_copper.png[100Gb Ethernet cable,width=100px]
-+
-image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100Gb Ethernet network,width=500px]
-
-+
-.. Connect your 10/25 GbE host network switches.
-+
-*4-ports, 10/25 GbE Host*
-+
-image::../media/oie_cable_sfp_gbe_copper.png[10/25Gb Ethernet cable,width=100px]
-+
-image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 10/25Gb Ethernet network,width=500px]
-+
-
-
-. Connect the controller management (wrench) ports to the management network switches with 1000BASE-T RJ-45 cables.
-+
-image::../media/oie_cable_rj45.png[RJ-45 cables]
-*1000BASE-T RJ-45 cables*
-+
-image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
-
-IMPORTANT: Do not plug in the power cords yet. 
 
 --
 
 ====
 
-== Step 2: Connect the storage controllers to the storage shelves
+== Step 2: Cable the host network connections
+Connect the Ethernet module ports to your host network. 
+
+The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
+
+.Steps
+. Connect ports e9a and e9b to your Ethernet data network switch.
++
+NOTE: For maximum system performance for cluster and HA traffic, do not use ports e1b and e7b ports for host network connections.  Use a separate host card to maximize performance.
+
++
+*100 GbE cable*
++
+image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable, width=100px]
++
+image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100 Gb Ethernet network,width=500px]
+
++
+. Connect your 10/25 GbE host network switches.
++
+*4-ports, 10/25 GbE Host*
++
+image::../media/oie_cable_sfp_gbe_copper.svg[10/25 Gb cable,width=100px]
++
+image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Ethernet network,width=500px]
+
+== Step 3: Cable the management network connections
+Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
+
+image::../media/oie_cable_rj45.svg[RJ45 cables,width=100px]
+*1000BASE-T RJ-45 cables*
+
+image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network,width=500px]
+
+IMPORTANT: Do not plug in the power cords yet.
+
+== Step 4: Cable the shelf connections
 The following cabling procedures show how to connect your controllers to one shelf and to two shelves. You can directly connect up to four shelves to your controllers.
 
 
