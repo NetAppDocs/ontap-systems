@@ -12,19 +12,19 @@ summary: Management network ports on the controllers are connected to switches. 
 After you install the rack hardware for your AFF A70 or AFF A90 storage system, install the network cables for the controllers, and connect the cables between the controllers and storage shelves.
 
 .Before you begin
-Check the illustration arrow in the cabling diagrams for the proper cable connector pull-tab orientation.
-
-image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab orientation example]
-
-* As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn the cable head over and try again.
-* If connecting to an optical switch, insert the small form-factor pluggable (SFP) transceiver into the controller port before cabling to the port.
-
-.Before you begin
 
 Contact your network administrator for information about connecting the storage system to the switches.
 
 .About this task
-These procedures show common configurations. Keep in mind that the specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+* These procedures show common configurations. The specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+
+* The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
++
+As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
++
+image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab orientation example]
+
+* If cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
 
 == Step 1: Connect the storage controllers to your network
 Cable the controllers to your ONTAP cluster. This procedure differs depending on your storage system model and I/O module configuration.
@@ -117,9 +117,9 @@ For the maximum number of shelves supported for your storage system and for all 
 [role="tabbed-block"]
 ====
 
-.Option 1: Connect to one NS224 storage shelf
+.Option 1: One NS224 storage shelf
 --
-Connect each controller to the NSM modules on the NS224 shelf. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
+Connect each controller to the NSM modules on the NS224 shelf. The graphics show controller A cabling in blue and controller B cabling in yellow.
 
 *100 GbE QSFP28 copper cables*
 
@@ -138,9 +138,10 @@ image:../media/drw_a70-90_1shelf_cabling_b_ieops-1732.svg[Controller B e11a and 
 
 --
 
-.Option 2: Connect to two NS224 storage shelves
+.Option 2: Two NS224 storage shelves
 --
-Connect each controller to the NSM modules on both NS224 shelves. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
+Connect each controller to the NSM modules on both NS224 shelves. The graphics show controller A cabling in blue and controller B cabling in yellow.
+
 
 *100 GbE QSFP28 copper cables*
 
