@@ -28,16 +28,6 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 
 == Step 1: Cable the cluster/HA connections
-<<<<<<< HEAD
-Cable the controllers to your ONTAP cluster. This procedure differs depending on your storage system model and I/O module configuration.
-
-//open tabbed block 
-[role="tabbed-block"]
-=====
-.Switchless cluster cabling
---
-
-=======
 Cable the controllers to each other to create the ONTAP cluster connections.
 
 //open tabbed block 
@@ -46,16 +36,11 @@ Cable the controllers to each other to create the ONTAP cluster connections.
 .Switchless cluster cabling
 --
 
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 .AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
 
 
 ====
-<<<<<<< HEAD
-Cable the controllers to each other to create the ONTAP cluster connections.
-=======
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 
 .Steps
 
@@ -81,10 +66,6 @@ image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg
 
 
 ====
-<<<<<<< HEAD
-Cable the controllers to each other to create the ONTAP cluster connections.
-=======
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 
 .Steps
 
@@ -100,37 +81,8 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
 +
 image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[a30 and a50 switchless cluster cabling diagram using one 100gbe io module]
-<<<<<<< HEAD
-
-====
 
 
-.AFF C30 with one 2-port 10/25 GbE I/O module
-[%collapsible]
-
-
-====
-Cable the controllers to each other to create the ONTAP cluster connections.
-
-.Steps
-. Cable the Cluster/HA interconnect connections: 
-+
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 10/25 GbE.
-+
-.. Cable controller A port e4a to controller B port e4a.
-.. Cable controller A port e4b to controller B port e4b.
-+
-*25 GbE Cluster/HA interconnect cables*
-+
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
-+
-image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 switchless cluster cabling diagram using one 25 gbe io module]
-
-
-=======
-
-
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 ====
 
 
@@ -138,49 +90,12 @@ image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 switc
 --
 .Switched cluster cabling
 --
-<<<<<<< HEAD
 
 .AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
 
 
 ====
-Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
-
-.Steps
-
-. Cable the Cluster/HA interconnect connections: 
-+
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE.
-+
-.. Cable controller A port e4a to cluster network switch A.
-.. Cable controller A port e2a to cluster network switch B.
-.. Cable controller B port e4a to cluster network switch A.
-.. Cable controller B port e2a to cluster network switch B.
-+
-NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
-+
-*40/100 GbE Cluster/HA interconnect cables*
-+
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
-+
-image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a50 switched cluster cabling diagram using two 100gbe io modules]
-
-
-====
-
-.AFF C30 or AFF C60 with one 2-port 40/100 GbE I/O module
-=======
-
-.AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
-[%collapsible]
-
-
-====
-<<<<<<< HEAD
-Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
-=======
 
 .Steps
 
@@ -210,7 +125,6 @@ image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a
 
 ====
 
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 
 .Steps
 
@@ -229,34 +143,6 @@ image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=1
 +
 image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
 
-<<<<<<< HEAD
-====
-
-
-.AFF C30 with one 2-port 10/25 GbE I/O module
-[%collapsible]
-====
-
-Cable the controllers to the cluster network switches to create the ONTAP cluster connections.
-
-. Cable the controllers to the cluster network switches:
-+
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports(on the I/O module in slot 4). The ports are 10/25 GbE.
-+
-.. Cable controller A port e4a to cluster network switch A. 
-.. Cable controller A port e4b to cluster network switch B.
-.. Cable controller B port e4a to cluster network switch A. 
-.. Cable controller B port e4b to cluster network switch B.
-+
-*10/25 GbE Cluster/HA interconnect cables*
-+
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
-+
-image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched cluster cabling diagram using one 25gbe io module]
-+
-
-=======
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 ====
 --
 =====
@@ -264,11 +150,6 @@ image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched
 
 
 == Step 2: Cable the host network connections
-<<<<<<< HEAD
-Cable the controllers to your host network. 
-
-This procedure differs depending on your storage system model and I/O module configuration.
-=======
 Cable the controllers to your Ethernet or FC host network.
 
 [role="tabbed-block"]
@@ -277,7 +158,6 @@ Cable the controllers to your Ethernet or FC host network.
 .Ethernet host cabling
 --
 
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 
 .AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
 [%collapsible]
@@ -285,32 +165,13 @@ Cable the controllers to your Ethernet or FC host network.
 
 .Steps
 
-<<<<<<< HEAD
-. Cable the host network connections.  
-+
-The following substeps are examples of optional host network cabling. If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
-
-.. Optional: Cable controllers to the host network switches.
-+
-On each controller, cable ports e2b and e4b to the Ethernet host network switches.
-+
-=======
 . On each controller, cable ports e2b and e4b to the Ethernet host network switches.
 +
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 NOTE: The ports on I/O modules in slot 2 and 4 are 40/100 GbE (host connectivity is 40/100 GbE).
 +
 *40/100 GbE cables*
 +
 image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable, width=100px]
-<<<<<<< HEAD
-+
-image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Cable to 40/100gbe ethernet host network switches]
-+
-.. Optional: Cable controllers to FC host network switches.
-+
-On each controller, cable ports 1a, 1b, 1c and 1d  to the FC host network switches.
-=======
 +
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Cable to 40/100gbe ethernet host network switches]
 ====
@@ -341,90 +202,18 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Ca
 
 .Steps
 . On each controller, cable ports 1a, 1b, 1c and 1d  to the FC host network switches.
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 +
 *64 Gb/s FC cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
-<<<<<<< HEAD
-+
-image::../media/drw_isi_a30-50_4p_64gb_fc_2card_cabling_ieops-2023.svg[Cable a30 or a50 to 64gb fc host network switches using two io modules]
-
-
-====
-
-.AFF C30 or AFF C60 with one 2-port 10/25 GbE I/O module
-[%collapsible]
-
-====
-
-.Steps
-. Cable the host network connections.  
-+
-The following substeps are examples of optional host network cabling. If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
-
-.. Optional: Cable controllers to the host network switches.
-+
-On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host network switches.
-+
-*10/25 GbE cables*
-+
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
-+
-image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
-+
-.. Optional: Cable controllers to FC host network switches.
-+
-On each controller, cable ports 1a, 1b, 1c and 1d  to the FC host network switches.
-+
-*64 Gb/s FC cables*
-+
-image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
-=======
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 +
 image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
 ====
 --
 
-<<<<<<< HEAD
-.AFF C30 with one 2-port 10/25 GbE module
-[%collapsible]
-
-====
-
-.Steps
-. Cable the host network connections.  
-+
-The following substeps are examples of optional host network cabling. If needed, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific storage system configuration.
-
-.. Optional: Cable controllers to host network switches.
-+
-On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host network switches.
-+
-*10/25 GbE cables*  
-+
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100pxx]
-+
-image::../media/drw_isi_a20_host_4p_25gbe_cabling_ieops-2017.svg[Cable a20 to 40/100gbe ethernet host network switches]
-+
-.. Optional: Cable controllers to FC host network switches.
-+
-On each controller, cable ports 1a, 1b, 1c and 1d to the FC host network switches.
-+
-*64 Gb/s FC cables*
-+
-image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100pxx]
-+
-image::../media/drw_isi_a20_4p_64gb_fc_cabling_ieops-2016.svg[Cable a20 to 64gb fc host network switches]
-
-
-====
-=======
 =====
 
 //closed tabbed block
->>>>>>> 83b18acec5976d238be46c1d77bdc00999cec2e0
 
 
 == Step 3: Cable the management network connections
