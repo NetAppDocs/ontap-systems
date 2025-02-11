@@ -108,8 +108,9 @@ image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your man
 IMPORTANT: Do not plug in the power cords yet. 
 
 == Step 4: Cable the shelf connections
-The following cabling procedures show how to connect your controllers to one shelf and to two shelves. You can directly connect up to four shelves to your controllers.
+The following cabling procedures show how to connect your controllers to a storage shelf. Choose one of the following cabling options that matches your setup.
 
+For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 // start tabbed area
 
@@ -118,7 +119,7 @@ The following cabling procedures show how to connect your controllers to one she
 
 .Option 1: Connect to one NS224 storage shelf
 --
-Connect each controller to the NSM modules on the NS224 shelf. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
+Connect each controller to the NSM modules on the NS224 shelf. The graphics show controller A cabling in blue and controller B cabling in yellow.
 
 *100 GbE QSFP28 copper cables*
 
@@ -142,7 +143,8 @@ image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[Cable controller B ports 
 
 .Option 2: Connect to two NS224 storage shelves
 --
-Connect each controller to the NSM modules on both NS224 shelves. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
+Connect each controller to the NSM modules on both NS224 shelves. The graphics show controller A cabling in blue and controller B cabling in yellow.
+
 
 *100 GbE QSFP28 copper cables*
 
