@@ -58,10 +58,8 @@ indexpage:
           url: ../asa-r2-70-90/system-management-replace.html
     - title: ASA A20, ASA A30, and ASA A50
       links:
-        - title: Boot media - automated recovery
-          url: ../asa-r2-a20-30-50/bootmedia-overview-bmr.html
-        - title: Boot media - manual recovery
-          url: ../asa-r2-a20-30-50/bootmedia-overview.html
+        - title: Boot media
+          url: ../asa-r2-a20-30-50/bootmedia-replace-workflow.html
         - title: Chassis
           url: ../asa-r2-a20-30-50/chassis-replace-workflow.html
         - title: Controller
@@ -82,6 +80,4 @@ indexpage:
           url: ../asa-r2-a20-30-50/power-supply-replace.html
         - title: Real-time clock battery
           url: ../asa-r2-a20-30-50/rtc-battery-replace.html
-        - title: System Management module 
-          url: ../asa-r2-a20-30-50/system-management-replace.html
       
