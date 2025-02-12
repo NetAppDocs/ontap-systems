@@ -219,17 +219,17 @@ a|
 
 =====
 ....
-10.225.89.37:5696.host=10.225.89.37
-10.225.89.37:5696.port=5696
-10.225.89.37:5696.trusted_file=/cfcard/kmip/certs/CA.pem
-10.225.89.37:5696.protocol=KMIP1_4
-10.225.89.37:5696.timeout=25
-10.225.89.37:5696.nbio=1
-10.225.89.37:5696.cert_file=/cfcard/kmip/certs/client.crt
-10.225.89.37:5696.key_file=/cfcard/kmip/certs/client.key
-10.225.89.37:5696.ciphers="TLSv1.2:kRSA:!CAMELLIA:!IDEA:!RC2:!RC4:!SEED:!eNULL:!aNULL"
-10.225.89.37:5696.verify=true
-10.225.89.37:5696.netapp_keystore_uuid=<id_value>
+xxx.xxx.xxx.xxx:5696.host=xxx.xxx.xxx.xxx
+xxx.xxx.xxx.xxx:5696.port=5696
+xxx.xxx.xxx.xxx:5696.trusted_file=/cfcard/kmip/certs/CA.pem
+xxx.xxx.xxx.xxx:5696.protocol=KMIP1_4
+1xxx.xxx.xxx.xxx:5696.timeout=25
+xxx.xxx.xxx.xxx:5696.nbio=1
+xxx.xxx.xxx.xxx:5696.cert_file=/cfcard/kmip/certs/client.crt
+xxx.xxx.xxx.xxx:5696.key_file=/cfcard/kmip/certs/client.key
+xxx.xxx.xxx.xxx:5696.ciphers="TLSv1.2:kRSA:!CAMELLIA:!IDEA:!RC2:!RC4:!SEED:!eNULL:!aNULL"
+xxx.xxx.xxx.xxx:5696.verify=true
+xxx.xxx.xxx.xxx:5696.netapp_keystore_uuid=<id_value>
 ....
 =====
  
@@ -264,9 +264,9 @@ configured.
 Select the network port you want to use (for example, 'e0a')
 e0M
  
-Enter the IP address for port : 10.53.251.23
-Enter the netmask for port : 255.255.252.0
-Enter IP address of default gateway: 10.53.248.1
+Enter the IP address for port : xxx.xxx.xxx.xxx
+Enter the netmask for port : xxx.xxx.xxx.xxx
+Enter IP address of default gateway: xxx.xxx.xxx.xxx
 Trying to recover keys from key servers....
 [discover_versions]
 [status=SUCCESS reason= message=]
@@ -277,7 +277,7 @@ Trying to recover keys from key servers....
 
 .. Depending on whether the key is successfully restored, take one of the following actions:
 
-* If the EKM configuration has been restored, the process attempts to restore the appropriate files from the partner node and reboots the node. Go to step d.
+* If the EKM configuration has been successfully restored, the process attempts to restore the appropriate files from the partner node and reboots the node. Go to step d.
 +
 .Show example of successful restore messages
 [%collapsible]
@@ -290,7 +290,7 @@ Trying to recover keys from key servers....
 [discover_versions]
 [status=SUCCESS reason= message=]
 ...
-kmip2_client: Successfully imported the keys from external key server: 10.225.89.37:5696
+kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:xxxx
 Successfully recovered keymanager secrets.
 ....
 =====
