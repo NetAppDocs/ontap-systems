@@ -1,14 +1,9 @@
-Shut down the controllers so you can perform maintenance on the chassis.
-
-This procedure is for systems with two node configurations. If you have a system with more than two nodes, see https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_perform_a_graceful_shutdown_and_power_up_of_one_HA_pair_in_a_4__node_cluster[How to perform a graceful shutdown and power up of one HA pair in a four node cluster^]. 
+This procedure is for systems with two node configurations. For more information about graceful shutdown when servicing a cluster, see https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/What_is_the_procedure_for_graceful_shutdown_and_power_up_of_a_storage_system_during_scheduled_power_outage[Gracefully shutdown and power up your storage system Resolution Guide - NetApp Knowledge Base]. 
 
 .Before you begin
 
-* Stop all clients/host from accessing data on the NetApp system.
-* Suspend external backup jobs.
 * Make sure you have the necessary permissions and credentials:
 ** Local administrator credentials for ONTAP.
-** NetApp onboard key management (OKM) cluster-wide passphrase if using storage encryption or NVE/NAE.
 ** BMC accessability for each controller.
 
 * Make sure you have the necessary tools and equipment for the replacement.
@@ -22,22 +17,26 @@ Make note of any faults presently on the system, such as LEDs on the system comp
 .Steps
 
 . Log into the cluster through SSH or log in from any node in the cluster using a local console cable and a laptop/console.
-. Turn off AutoSupport and indicate how long you expect the system to be offline:
+
+. Stop all clients/host from accessing data on the NetApp system.
+. Suspend external backup jobs.
+
+. If AutoSupport is enabled, suppress case creation and indicate how long you expect the system to be offline:
 +
-`system node autosupport invoke -node * -type all -message "MAINT=8h Power Maintenance"`
-. Identify the SP/BMC address of all nodes:
+`system node autosupport invoke -node * -type all -message "MAINT=2h Replace chassis"`
+. Identify the SP/BMC address of all cluster nodes:
 +
 `system service-processor show -node * -fields address`
 
-. Exit the cluster shell: `exit`
-. Log into SP/BMC over SSH using the IP address of any of the nodes listed in the output from the previous step. 
+. Exit the cluster shell:
++
+`exit`
+
+. Log into SP/BMC over SSH using the IP address of any of the nodes listed in the output from the previous step to monitor progress. 
 +
 If you are using a console/laptop, log into the controller using the same cluster administrator credentials.
 +
 
-NOTE: Open an SSH session to every SP/BMC connection so that you can monitor progress.
-
-+
 . Halt the two nodes located in the impaired chassis: 
 +
 `system node halt -node <node1>,<node2> -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`
@@ -45,7 +44,9 @@ NOTE: Open an SSH session to every SP/BMC connection so that you can monitor pro
 
 NOTE: For clusters using SnapMirror synchronous operating in StrictSync mode: `system node halt -node <node1>,<node2>  -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true -ignore-strict-sync-warnings true`
 
-. Enter *y* for each controller in the cluster when you see `_Warning: Are you sure you want to halt node "cluster <node-name> number"?
-{y|n}:_`
+. Enter *y* for each controller in the cluster when you see:
++
+`Warning: Are you sure you want to halt node _<node_name>_? {y|n}:`
 
 . Wait for each controller to halt and display the LOADER prompt.
+
