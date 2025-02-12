@@ -1,25 +1,25 @@
-You must verify the HA state of the chassis and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
-== Step 1: Verify and set the HA state of the chassis
+== Step 1: Boot the controllers and give back the controllers 
+After the controllers reboot, boot ONTAP and give back the controllers.
 
-You must verify the HA state of the chassis, and, if necessary, update the state to match your system configuration.
+. Check the console output:
+.. If the controller boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
 
-. In Maintenance mode, from either controller module, display the HA state of the local controller module and chassis: `ha-config show`
-+
-The HA state should be the same for all components.
+.. If the console displays `waiting for giveback` after the reboot, log into the partner controller and check that the replaced controller is ready for giveback with the `storage failover show` command.
 
-. If the displayed system state for the chassis does not match your system configuration:
- .. Set the HA state for the chassis: `ha-config modify chassis _HA-state_`
-+
-The value for HA-state can be one of the following:
+. Perform the giveback:
 
-  *** `ha`
-  *** `mcc` (not supported in ASA)
-.. Confirm that the setting has changed: `ha-config show`
-. If you have not already done so, recable the rest of your system.
+.. Connect the console cable to the partner controller.
+.. Give back the controller with the `storage failover giveback -fromnode local` command.
+
+== Step 2: Verify storage system health
+
+After the controller has given back the storage, you should check the overall health with https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor].
+
+. After the giveback is complete, run Active IQ Config Advisor to verify the health of the storage system.
+. Correct any issues you encounter.
 
 
-
-== Step 2: Return the failed part to NetApp
+== Step 3: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
