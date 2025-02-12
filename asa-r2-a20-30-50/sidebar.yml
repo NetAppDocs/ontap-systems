@@ -1,23 +1,6 @@
 section: asa-r2-a20-30-50-maintain
 title: ASA A20, ASA A30, and ASA A50 systems
 entries:
- - title: Install and setup
-   pdf-filename: ASA A20, ASA A30, and ASA A50 Install and Setup
-   entries:
-     - title: Install workflow
-       url: /asa-r2-a20-30-50/install-overview.html
-     - title: Review requirements
-       url: /asa-r2-a20-30-50/install-requirements.html
-     - title: Prepare to install
-       url: /asa-r2-a20-30-50/install-prepare.html
-     - title: Install hardware
-       url: /asa-r2-a20-30-50/install-hardware.html
-     - title: Cable hardware
-       url: /asa-r2-a20-30-50/install-cable.html
-     - title: Power on system
-       url: /asa-r2-a20-30-50/install-power-hardware.html
-     - title: Complete system setup
-       url: /asa-r2-a20-30-50/install-complete.html
  - title: Maintain
    pdf-filename: ASA A20, ASA A30, and ASA A50 Maintain
    entries:
