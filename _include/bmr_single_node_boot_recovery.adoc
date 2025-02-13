@@ -27,6 +27,25 @@ The screen displays the following message:
 The process completes and displays the `Installation complete.` message.  
 
 . The system checks for encryption and encryption type and displays one of two messages. Depending on what message is displayed, take one of the following actions:
++
+
+IMPORTANT: Occasionally, the process may not be able to identify if key manager is configured on the system. It will display an error message, ask if key manager is configured for the system, and then ask what type of key manager is configured. The process will resume after you resolve the issue.
++
+
+.Show example of configuration error finding prompts
+[%collapsible]
+
+=====
+....
+Error when fetching key manager config from partner ${partner_ip}: ${status}
+
+Has key manager been configured on this system
+
+Is the key manager onboard
+
+....
+=====
+
 
 +
 [options="header" cols="1,2"]
@@ -279,7 +298,31 @@ Trying to recover keys from key servers....
 
 * If the EKM configuration has been successfully restored, the process attempts to restore the appropriate files from the partner node and reboots the node. Go to step d.
 +
-.Show example of successful restore messages
+.Show example of successful 9.16.0 restore messages
+[%collapsible]
+
+=====
+....
+
+mip2_client: Importing keys from external key server: xxx.xxx.xxx.xxx:5696
+[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdUtils: [locateMrootAkUuids]:420: Locating local cluster MROOT-AK with keystore UUID: 544c107c-e43b-11ef-b5f4-d039eaa9f53c
+[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:79: Calling KMIP Locate for the following attributes: [<x-NETAPP-ClusterId, 780d5da1-e439-11ef-9fea-d039eaa9f1a0>, <x-NETAPP-KeyUsage, MROOT-AK>, <x-NETAPP-KeystoreUuid, 544c107c-e43b-11ef-b5f4-d039eaa9f53c>, <x-NETAPP-Product, Data ONTAP>]
+[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:84: KMIP Locate executed successfully!
+[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [setUuidList]:50: UUID returned: 1f89e995b6ff4ccda131bc6e1c6804307d8d4d6c037746249a3440349568d7b4
+...
+kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696
+
+GEOM_ELI: Device nvd0s4.eli created.
+GEOM_ELI: Encryption: AES-XTS 256
+GEOM_ELI:     Crypto: software
+Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:140 MROOT-AK is requested.
+Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:162 Returning MROOT-AK.
+....
+=====
+
++
+
+.Show example of successful 9.16.1 restore messages
 [%collapsible]
 
 =====
@@ -294,6 +337,8 @@ kmip2_client: Successfully imported the keys from external key server: xxx.xxx.x
 Successfully recovered keymanager secrets.
 ....
 =====
+
++
 
 * If the key is not successfully restored, the system will halt and indicate that it could not restore the key. The error and warning messages are displayed. Rerun the recovery process by entering `boot_recovery -partner`.
 +
