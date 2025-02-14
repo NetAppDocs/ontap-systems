@@ -1,0 +1,122 @@
+To replace the boot media, you must remove the impaired controller, remove the impaired boot media, and install the replacement boot media in the impaired controller.
+
+== Step 1: Remove the controller
+
+include::../_include/g_controller_remove.adoc[]
+
+. Place the controller on an anti-static mat.
+
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+
+
+== Step 2: Replace the boot media
+
+To replace the boot media, locate it inside the controller and follow the specific sequence of steps.
+
+. If you are not already grounded, properly ground yourself. 
+
+. Remove the boot media:
++
+image::../media/drw_g_boot_media_replace_ieops-1872.svg[Boot media replace graphic]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Boot media location
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Press down on the blue tab to release the right end of the boot media.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Lift the right end of the boot media up at a slight angle to get a good grip along the sides of the boot media.
+a|
+image::../media/icon_round_4.png[Callout number 4]
+a|
+Gently pull the left end of the boot media out of its socket.
+|===
++
+. Install the replacement boot media:
+.. Remove the boot media from its package.
+.. Slide the socket end of the boot media into its socket.
+.. At the opposite end of the boot media, press down and hold the blue tab (in the open position), gently push down on that end of the boot media until it stops, and then release the tab to lock the boot media into place.
+
+== Step 3: Reinstall the controller
+
+Reinstall the controller into the chassis and reboot it.
+
+.About this task
+
+The following illustration shows the operation of the controller handles (from the left side of a controller) when reinstalling the controller, and can be used as a reference for the rest of the controller reinstallation steps.
+
+image::../media/drw_g_and_t_handles_reinstall_ieops-1838.svg[controller handle operation to install a controller]
+
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+If you rotated the controller handles upright (next to the tabs) to move them out of the way while you serviced the controller, rotate them down to the horizontal position. 
+a|
+image::../media/icon_round_2.png[Callout number 2] 
+a|
+Push the handles to reinsert the controller into the chassis halfway and then, when instructed, push until the controller is fully seated.
+a|
+image::../media/icon_round_3.png[Callout number 3] 
+a|
+Rotate the handles to the upright position and lock in place with the locking tabs.
+
+|===
+
+.Steps
+
+. Close the controller cover and turn the thumbscrew clockwise until tightened.
+
+. Insert the controller halfway into the chassis.
++
+Align the rear of the controller with the opening in the chassis, and then gently push the controller using the handles.
++
+NOTE: Do not completely insert the controller in the chassis until instructed to do so later in this procedure.
++
+
+. Reconnect the cables to the controller; however, do not plug in the power cord to the power supply (PSU) at this time.
++
+NOTE: Make sure that the console cable is connected to the controller because you want to catch and log the boot sequence later in the boot media replacement procedure when you fully seat the controller in the chassis and it begins to boot.
+
++
+. Fully seat the controller in the chassis:
+
+.. Firmly push on the handles until the controller meets the midplane and is fully seated.
++
+Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
++
+NOTE: The controller boots when fully seated in the chassis. It gets its power from the partner controller.
++
+.. If the controller boots to the LOADER prompt, reboot the controller: `boot_ontap`
+.. Rotate the controller handles up and lock in place with the tabs.
++
+. Reconnect the power cord to the PSU on the impaired controller.
++
+Once power is restored to the PSU, the status LED should be green.
++
+[options="header" cols="1,2"]
+
+|===
+| If you are reconnecting a...| Then...
+a|
+AC PSU
+a|
+. Plug the power cord into the PSU.
+. Secure the power cord with the power cord retainer.
+a|
+DC PSU
+a|
+. Plug the D-SUB DC power cord connector into the PSU.
+. Tighten the two thumb screws to secure the D-SUB DC power cord connector to the PSU.
+
+|===
+
