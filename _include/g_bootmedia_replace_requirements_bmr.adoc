@@ -7,6 +7,16 @@ Before replacing the boot media, make sure to review the following requirements 
 +
 The e0S port is used for automated boot recovery.
   
+* Determine if Onboard Key Manger (OKM) or Eternal Key Manager (EKM) is configured using one of the following methods:
+** You can ask the system administrator if OKM or EKM are enabled.
+** To check if OKM is enabled, you can use the `security key-manager onboard show`.
+** To check if EKM is enabled, you can use the `security key-manager external show`.
+* For OKM, you need the OKM passphrase file contents.
+* For EKM, you need copies of the following files from the partner node:
+** /cfcard/kmip/servers.cfg file.
+** /cfcard/kmip/certs/client.crt file. 
+** /cfcard/kmip/certs/client.key file.
+** /cfcard/kmip/certs/CA.pem file.
 
 == Considerations
 
