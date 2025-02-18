@@ -9,16 +9,16 @@ summary: 'Follow these high-level steps to install and set up your AFF A70 or A9
 :imagesdir: ../media/
 
 [.lead]
-To install and set up your AFF C30 or AFF C60 storage system, you must review the installation requirements and considerations, prepare your site, install and cable the hardware components, power on the storage system, and set up the ONTAP cluster.
+To install and set up your AFF C30 or AFF C60 storage system, you must review the installation requirements, prepare your site, install and cable the hardware components, power on the storage system, and set up the ONTAP cluster.
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Review the installation requirements and considerations]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Review the installation requirements]
 [role="quick-margin-para"]
-Before installing your storage system, your storage system must meet the installation requirements and you must review the installation considerations.
+Before installing your storage system, it must meet the installation requirements.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[One]link:install-prepare.html[Prepare for installation]
 [role="quick-margin-para"]
-To prepare for install, you need to get the site ready, check the environmental and electrical requirements, and ensure there’s enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
+To prepare for installation, get the site ready, check environmental and electrical requirements, and ensure there’s enough rack space. Then, unpack the equipment, compare contents to the packing slip, and register the hardware to access support benefits.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Two]link:install-hardware.html[Install the hardware]
 [role="quick-margin-para"]

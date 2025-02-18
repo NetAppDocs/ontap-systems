@@ -1,73 +1,157 @@
-Move the hard drives, and controller module from the impaired chassis to the new chassis, and swap out the impaired chassis with the new chassis of the same model as the impaired chassis.
 
-== Step 1: Remove the controller module
+== Step 1: Remove the PSUs and cables
 
-include::../_include/a70-90_controller_remove_physical.adoc[]
+You need to remove all four power supply units (PSUs), two per controller, before removing the controller.  Removing them lightens the overall weight of each controller.
 
-. Repeat these steps for the other controller module in the chassis.
+. Remove the four PSUs:
 
-== Step 2: Move drives to the new chassis
+.. If you are not already grounded, properly ground yourself.
+.. Unplug power cords from the controller module PSU.
 
-You need to move the drives from each bay opening in the old chassis to the same bay opening in the new chassis.
++
+If your system has DC power, disconnect the power block from the PSUs. 
 
-. Gently remove the bezel from the front of the system.
+.. Remove the PSU from the controller by rotating the PSU handle up so that you can pull the PSU out, press the PSU locking tab, and then pull PSU out of the controller module.
++
+CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
+
++
+image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[Replace PSU]
+
++
+[cols="1,4"]
+|===
+a|image:../media/icon_round_1.png[Callout number 1] 
+a|
+Terracotta PSU locking tab
+|===
+
++
+.. Repeat these steps for the remaining PSUs. 
+
+
+. Remove the cables:
+
+.. Unplug the system cables and any  SFP and QSFP modules (if needed) from the controller module, but leave them in the cable management device to keep them organized.
+
++
+NOTE: Cables should have been labeled at the beginning of this procedure.
+
++
+.. Remove the cable management device from the controller modules and set them aside. 
+
+== Step 2:  Remove the controller modules and drives
+
+Remove the controllers from the chassis and then remove the drives from the chassis.
+
+
+. Check the that amber NVRAM status LED located in slot 4/5 on the back of each controller module is off. Look for the NV icon.
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
++
+
+[cols="1,4"]
+
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM attention LED
+|===
+
+* If the NVRAM LED is off, go to the next step.
+* If the NVRAM LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact http://mysupport.netapp.com/[NetApp Support Site^] for assistance.
+
+. Remove the controller modules:
+
+.. Press down on both of the locking latches on the controller, and then rotate both latches downward at the same time.
++
+The controller module moves slightly out of the chassis.
++
+image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[Controller remove graphic]
++
+
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+Locking latch
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+Locking pin
+|===
+
+.. Slide the controller module out of the chassis by the locking latches, and place it on a flat, stable surface.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+.. Repeat these steps for the second controller module.
+
 . Remove the drives:
- .. Press the release button at the top of the carrier face below the LEDs.
+.. Gently remove the bezel from the front of the system.
+.. Press the release button at the top of the drive carrier face below the LEDs.
+
  .. Pull the cam handle to its fully open position to unseat the drive from the midplane, and then gently slide the drive out of the chassis.
 +
 The drive should disengage from the chassis, allowing it to slide free of the chassis.
 +
-NOTE: When removing a drive, always use two hands to support its weight.
-+
-NOTE: Drives are fragile. Handle them as little as possible to prevent damage to them.
-
-. Keep track of what drive bay each drive was from and set the drives aside on a static-free cart or table.
+NOTE: Drives are fragile. Always use two hands to support the drive weight when removing a drive to prevent damage to them.
 
 
-== Step 3: Replace chassis from within the equipment rack or system cabinet
+.. Keep track of which drive bay each drive was in and set the drive aside on a static-free cart or table.
 
-You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
+.. Repeat this step for the remaining drives in the chassis.
 
-. Remove the screws from the chassis mount points.
-. With two people, slide the old chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
-. Using two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
-. Slide the chassis all the way into the equipment rack or system cabinet.
-. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
-. Install the drives from the old chassis into the replacement chassis:
-.. Align the drive from the old chassis with the same bay opening in the new chassis.
-. Gently push the drive into the chassis as far as it will go.
-+
-The cam handle engages and begins to rotate upward.
+== Step 3: Replace the impaired chassis 
 
-.. Firmly push the drive the rest of the way into the chassis, and then lock the cam handle by pushing it up and against the drive carrier.
-+
-Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It clicks when it is secure.
+Remove the impaired chassis and install the replacement chassis.
 
-.. Repeat the process for the remaining drives in the system.
-. If you have not already done so, install the bezel.
+. Remove the impaired chassis:
+.. Remove the screws from the chassis mount points.
+.. Using two people or a lift, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
 
-== Step 4: Reinstall the controller modules
+. Install the replacement chassis:
 
-Reinstall the controller modules into the chassis and reboot them.
+.. Using two people or a lift, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
+.. Slide the chassis all the way into the equipment rack or system cabinet.
+.. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
 
-. If you opened the air duct, close air duct by rotating it down as far as it will go.
-+
-It should lie flush against the controller module sheet metal.
+== Step 4: Install the chassis components
 
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller all the way into the chassis.
+Once the replacement chassis is installed, you need to install the controller modules, recable them, and then reinstall the drives and PSUs.
 
+. Beginning with the bottom controller module, install the controller modules in the replacement chassis:
+
+.. Align the end of the controller module with the opening in the chassis, and then gently push the controller all the way into the chassis.
 .. Rotate the locking latches upward into the locked position.
 .. If you have not already done so, reinstall the cable management device and recable the controller.
 +
-If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them.
++
+Make sure that the cables are connected referencing the cable labels.  
 
-. Repeat the preceding steps to install the second controller into the new chassis.
+. Reinstall the drives into their corresponding drive bays in the front of the chassis.
 
-. Plug the power cords into the power supplies.
+
+. Install all four of the PSU:
+
+.. Using both hands, support and align the edges of the PSU with the opening in the controller module.
+.. Gently push the PSU into the controller module until the locking tab clicks into place.
++
+The power supplies will only properly engage with the internal connector and lock in place one way.
++
+NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
+
+. Reconnect the PSU power cables to all four of the PSUs.
+ .. Secure the power cable to the PSU using the power cable retainer.
++
+If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis and secure the power cable to the PSU with the thumbscrews.
 
 +
-NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
-
-+
-The controller module begins to boot as soon as it is installed and power is restored. If it boots to the LOADER prompt, reboot the controller with the `boot_ontap` command. 
-
+The controller modules begin to boot as soon as PSUs are installed and power is restored.
