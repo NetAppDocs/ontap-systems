@@ -20,11 +20,9 @@ For the ASA A1K storage system, you can perform maintenance procedures on the fo
 
 |===
 
-a| link:bootmedia-overview.html[Boot media - manual recovery]
+a| link:bootmedia-overview-bmr.html[Boot media]
 
-link:bootmedia-overview-bmr.html[Boot media - automated recovery]
-
-a| You can replace a failed boot media manually by using USB module for the boot image.
+a| You can replace a failed boot media from the partner node for the boot image.
 
 Automated boot media replace uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
 
