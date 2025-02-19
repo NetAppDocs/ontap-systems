@@ -1,33 +1,15 @@
-Restore the ONTAP image from the partner node when the boot media is corrupted.
+.Before you begin
 
-
-.About this task
-If a node's boot media is corrupted, the boot process will halt at the LOADER prompt and display boot error messages.
-
-When you encounter these boot error messages, you need to restore the ONTAP image from the partner node.
-
-.Show example of boot error messages
-[%collapsible]
-
-====
-....
-Can't find primary boot device u0a.0 
-Can't find backup boot device u0a.1 
-ACPI RSDP Found at 0x777fe014 
-
-Starting AUTOBOOT press Ctrl-C to abort... 
-Could not load fat://boot0/X86_64/freebsd/image1/kernel: Device not found
-
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0, fat) 
-ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0, fat) 
-
-Autoboot of PRIMARY image failed. Device not found (-6) 
-LOADER-A>
-....
-
-====
-
-
+* Determine if Onboard Key Manger (OKM) or Eternal Key Manager (EKM) is configured using one of the following methods:
+** You can ask the customer or system administrator if OKM or EKM are enabled.
+** To check if OKM is enabled, you can use the `security key-manager onboard show`.
+** To check if EKM is enabled, you can use the `security key-manager external show`.
+* For OKM, you need the OKM passphrase file contents.
+* For EKM, you need copies of the following files from the partner node:
+** /cfcard/kmip/servers.cfg file.
+** /cfcard/kmip/certs/client.crt file. 
+** /cfcard/kmip/certs/client.key file.
+** /cfcard/kmip/certs/CA.pem file.
 
 
 .Steps
@@ -40,51 +22,73 @@ The screen displays the following message:
 +
 `Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
 
+. Monitor the boot media install recovery process.
++
+The process completes and displays the `Installation complete.` message.  
+
+. The system checks for encryption and encryption type and displays one of two messages. Depending on what message is displayed, take one of the following actions:
 +
 
-. Monitor the boot media recovery process as LOADER configures the local ports and executes `netboot` from the partner node.
-+
-When netboot is running, the `Starting BMR` message displays.
+IMPORTANT: Occasionally, the process may not be able to identify if key manager is configured on the system. It will display an error message, ask if key manager is configured for the system, and then ask what type of key manager is configured. The process will resume after you resolve the issue.
 +
 
-. Depending on the encryption method, select the option that matches your system configuration:
+.Show example of configuration error finding prompts
+[%collapsible]
+
+=====
+....
+Error when fetching key manager config from partner ${partner_ip}: ${status}
+
+Has key manager been configured on this system
+
+Is the key manager onboard
+
+....
+=====
+
+
++
+[options="header" cols="1,2"]
+|===
+| If you see this message...| Do this...
+a|
+`key manager is not configured. Exiting.` 
+a|
+Encryption is not installed on the system. Complete the following steps:
+
+.. Log into the node when the login prompt is displayed and give back the storage:
++
+`storage failover giveback -ofnode _impaired_node_name_`
+
+.. Go to step 5 to enable automatic giveback if it was disabled.
+
+a|
+
+`key manager is configured.` 
+a|
+Go to step 4 to restore the appropriate key manager.
+
+The node access the boot menu and runs:
+
+* Option 10 for systems with Onboard Key Manager (OKM).
+* Option 11 for systems with External Key Manager (EKM). 
+
+|===
+
+. Select the appropriate key manager restoration process.
+
 +
 
 // start tabbed area
+
 +
+
 [role="tabbed-block"]
 ====
 
-.No Encryption 
---
-If no encryption is detected, the boot media recovery process continues without requiring key management.
-
-.. Continue to monitor the recovery process as it restores the backup config, env file, mdb, and rdb from the partner node.
-
-.. When the recovery process is complete, the node will reboot. The following messages indicate a successful recovery:
-
-....
-
-varfs_backup_restore: update checksum for varfs.tgz
-varfs_backup_restore: restore using /cfcard/x86_64/freebsd/oldvarfs.tgz
-varfs_backup_restore: Rebooting to load the new varfs
-.
-Terminated
-varfs_backup_restore: bootarg.abandon_varfs is set! Skipping /var backup.
-
-....
-
-.. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
-
-.. Return the impaired controller to normal operation by giving back its storage:
-+
-`storage failover giveback -ofnode _impaired_node_name_`.
-
---
-
 .Onboard Key Manager (OKM)
 --
-If Onboard Key Manager (OKM) is detected, the system displays the following prompt.  
+If OKM is detected, the system displays the following message and begins running BootMenu Option 10.  
 ....
 key manager is configured.
 Entering Bootmenu Option 10...
@@ -92,9 +96,9 @@ Entering Bootmenu Option 10...
 This option must be used only in disaster recovery procedures. Are you sure? (y or n):
 ....
 
-.. From the Bootmenu Option prompt, enter `Y` to confirm you want to use the bootmedia recovery option.
+.. Enter `Y` at the prompt to confirm you want to start the OKM recovery process.
 
-.. Enter the passphrase for onboard key manager when prompted, and enter the passphrase again to confirm.
+.. Enter the passphrase for onboard key manager when prompted, and enter the passphrase again when prompted, to confirm.
 +
 .Show example of passphrase prompts
 [%collapsible]
@@ -104,21 +108,14 @@ This option must be used only in disaster recovery procedures. Are you sure? (y 
 Enter the passphrase for onboard key management:
 Enter the passphrase again to confirm:
 Enter the backup data:
-TmV0QXBwIEtleSBCbG9iAAECAAAEAAAAcAEAAAAAAAA3yR6UAAAAACEAAAAAAAAA
-QAAAAAAAAACJz1u2AAAAAPX84XY5AU0p4Jcb9t8wiwOZoqyJPJ4L6/j5FHJ9yj/w
-RVDO1sZB1E4HO79/zYc82nBwtiHaSPWCbkCrMWuQQDsiAAAAAAAAACgAAAAAAAAA
-3WTh7gAAAAAAAAAAAAAAAAIAAAAAAAgAZJEIWvdeHr5RCAvHGclo+wAAAAAAAAAA
-IgAAAAAAAAAoAAAAAAAAAEOTcR0AAAAAAAAAAAAAAAACAAAAAAAJAGr3tJA/LRzU
-QRHwv+1aWvAAAAAAAAAAACQAAAAAAAAAgAAAAAAAAABHVFpxAAAAAHUgdVq0EKNp
-.
-.
-.
-.
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
 ....
 =====
 
 +
-.. Continue to monitor the recovery process as it restores the backup config, env file, mdb, and rdb from the partner node.
+.. Continue to monitor the recovery process as it restores the appropriate files from the partner node.
 +
 When the recovery process is complete, the node will reboot. The following messages indicate a successful recovery:
 +
@@ -127,7 +124,7 @@ When the recovery process is complete, the node will reboot. The following messa
 Trying to recover keymanager secrets.... 
 Setting recovery material for the onboard key manager 
 Recovery secrets set successfully
-Trying to delete any existing km_onboard.wkeydb file.
+Trying to delete any existing km_onboard.keydb file.
  
 Successfully recovered keymanager secrets.
 ....
@@ -142,104 +139,248 @@ Successfully recovered keymanager secrets.
 +
 `security key-manager onboard sync` 
  
-
 --
 
 .External Key Manager (EKM)
+
 --
-
-If EKM is configured, the system displays the following prompt.
-
-....
-Error when fetching key manager config from partner <IP>:
-
-Has key manager been configured on this system? {y|n}
-....
-
-.. Enter `Y` if EKM has been configured.
-+
+If EKM is detected, the system displays the following message and begins running BootMenu Option 11. 
 ....
 key manager is configured.
 Entering Bootmenu Option 11...
 ....
 
+.. The next step depends on which version of ONTAP your system is running:
 +
-You'll be prompted for the EKM settings that were initially used during setup.
+[options="header" cols="1,2"]
+|===
+|If your system is running...| Do this...
+a|
+ONTAP 9.16.0
+a|
+.. Press `Ctlr-C` to exit BootMenu Option 11.
+.. Press `Ctlr-C`  to exit the EKM configuration process and return to the boot menu.
+.. Select BootMenu Option 8.
+.. Reboot the node.
 
-.. Enter each EKM configuration setting when prompted. 
++ 
+If `AUTOBOOT`  is set, the node reboots and uses the configuration files from the partner node.
 +
+If `AUTOBOOT` is not set, enter the appropriate boot command. The node reboots and uses the configuration files from the partner node. 
 
-.. Verify that the attributes for the Cluster UUID and the Keystore UUID are correct. 
-* On the partner node, retrieve the Cluster UUID using the following command.
-+
-`cluster identity show`
-+
+.. Reboot the node so that EKM protects the boot media partition.
 
-* On the partner node, retrieve the Keystore UUID using the following commands.
-+
-`vserver show -type admin -fields uuid`
-+
-`key-manager keystore show -vserver <nodename>`
-+
+.. Proceed to step c.
 
-* If the partner node is unavailable, use the Mroot-AK key to retrieve the UUID:
-+
-** For the Cluster UUID, enter the following command: 
-+
-`x-NETAPP-ClusterName: <cluster name>` 
-+
-** For the Keystore UUID, enter the following command:
-+
-`x-NETAPP-KeyUsage: MROOT-AK` 
+a|
+ONTAP 9.16.1
+a|
+Proceed to the next step.
 
-.. Enter the values for Keystore UUID and Cluster UUID when prompted.
-+
+|===
 
+
+.. Enter the following EKM configuration setting when prompted:
++
+[options="header",cols="2"]
+|===
+| Action | Example
+ 
+a| 
+Enter the client certificate contents from the `/cfcard/kmip/certs/client.crt` file.
+a|
+.Show example of client certificate contents
+[%collapsible]
+
+=====
+....
+-----BEGIN CERTIFICATE-----
+<certificate_value>
+-----END CERTIFICATE-----
+....
+=====
+ 
+a|
+Enter the client key file contents from the `/cfcard/kmip/certs/client.key` file.
+
+a|
+.Show example of client key file contents
+[%collapsible]
+
+=====
+....
+-----BEGIN RSA PRIVATE KEY-----
+<key_value>
+-----END RSA PRIVATE KEY-----
+....
+=====
+
+a|
+Enter the KMIP server CA(s) file contents from the `/cfcard/kmip/certs/CA.pem` file.
+a|
+.Show example of KMIP server file contents
+[%collapsible]
+
+=====
+....
+-----BEGIN CERTIFICATE-----
+<KMIP_certificate_CA_value>
+-----END CERTIFICATE-----
+....
+=====
+
+ 
+a| 
+Enter the server configuration file contents from the `/cfcard/kmip/servers.cfg` file.
+a| 
+.Show example of server configuration file contents
+[%collapsible]
+
+=====
+....
+xxx.xxx.xxx.xxx:5696.host=xxx.xxx.xxx.xxx
+xxx.xxx.xxx.xxx:5696.port=5696
+xxx.xxx.xxx.xxx:5696.trusted_file=/cfcard/kmip/certs/CA.pem
+xxx.xxx.xxx.xxx:5696.protocol=KMIP1_4
+1xxx.xxx.xxx.xxx:5696.timeout=25
+xxx.xxx.xxx.xxx:5696.nbio=1
+xxx.xxx.xxx.xxx:5696.cert_file=/cfcard/kmip/certs/client.crt
+xxx.xxx.xxx.xxx:5696.key_file=/cfcard/kmip/certs/client.key
+xxx.xxx.xxx.xxx:5696.ciphers="TLSv1.2:kRSA:!CAMELLIA:!IDEA:!RC2:!RC4:!SEED:!eNULL:!aNULL"
+xxx.xxx.xxx.xxx:5696.verify=true
+xxx.xxx.xxx.xxx:5696.netapp_keystore_uuid=<id_value>
+....
+=====
+ 
+a| 
+If prompted, enter the ONTAP Cluster UUID from the partner.
+a| 
+.Show example of ONTAP Cluster UUID
+[%collapsible]
+
+=====
+....
+Notice: bootarg.mgwd.cluster_uuid is not set or is empty.
+Do you know the ONTAP Cluster UUID? {y/n} y
+Enter the ONTAP Cluster UUID: <cluster_uuid_value>
+ 
+ 
+System is ready to utilize external key manager(s).
+....
+=====
+ 
+a| 
+If prompted, enter the temporary network interface and settings for the node.
+a| 
+.Show example of a temporary network setting
+[%collapsible]
+
+=====
+....
+In order to recover key information, a temporary network interface needs to be
+configured.
+ 
+Select the network port you want to use (for example, 'e0a')
+e0M
+ 
+Enter the IP address for port : xxx.xxx.xxx.xxx
+Enter the netmask for port : xxx.xxx.xxx.xxx
+Enter IP address of default gateway: xxx.xxx.xxx.xxx
+Trying to recover keys from key servers....
+[discover_versions]
+[status=SUCCESS reason= message=]
+....
+=====
+
+|===
 
 .. Depending on whether the key is successfully restored, take one of the following actions:
+
+* If the EKM configuration has been successfully restored, the process attempts to restore the appropriate files from the partner node and reboots the node. Go to step d.
 +
-* If the key is successfully restored, the recovery process continues and reboots the node. Proceed to step 4.
+.Show example of successful 9.16.0 restore messages
+[%collapsible]
+
+=====
+....
+
+kmip2_client: Importing keys from external key server: xxx.xxx.xxx.xxx:5696
+[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdUtils: [locateMrootAkUuids]:420: Locating local cluster MROOT-AK with keystore UUID: <uuid>
+[Feb  6 04:57:43]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:79: Calling KMIP Locate for the following attributes: [<x-NETAPP-ClusterId, <uuid>>, <x-NETAPP-KeyUsage, MROOT-AK>, <x-NETAPP-KeystoreUuid, <uuid>>, <x-NETAPP-Product, Data ONTAP>]
+[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [doCmdImp]:84: KMIP Locate executed successfully!
+[Feb  6 04:57:44]: 0x80cc09000: 0: DEBUG: kmip2::kmipCmds::KmipLocateCmdBase: [setUuidList]:50: UUID returned: <uuid>
+...
+kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696
+
+GEOM_ELI: Device nvd0s4.eli created.
+GEOM_ELI: Encryption: AES-XTS 256
+GEOM_ELI:     Crypto: software
+Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:140 MROOT-AK is requested.
+Feb 06 05:02:37 [_server-name_]: crypto_get_mroot_ak:162 Returning MROOT-AK.
+....
+=====
+
 +
-* If the key is not successfully restored, the system will halt and display error and warning messages. Rerun the recovery process.
+
+.Show example of successful 9.16.1 restore messages
+[%collapsible]
+
+=====
+....
+
+System is ready to utilize external key manager(s).
+Trying to recover keys from key servers....
+[discover_versions]
+[status=SUCCESS reason= message=]
+...
+kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:xxxx
+Successfully recovered keymanager secrets.
+....
+=====
+
++
+
+* If the key is not successfully restored, the system will halt and indicate that it could not restore the key. The error and warning messages are displayed. Rerun the recovery process by entering `boot_recovery -partner`.
 +
 .Show example of key recovery error and warning messages
 [%collapsible]
-+
+
 =====
 ....
 
 ERROR: kmip_init: halting this system with encrypted mroot...
-
 WARNING: kmip_init: authentication keys might not be available.
-                                                 
-System cannot connect to key managers.        
-
+********************************************************
+*                 A T T E N T I O N                    *
+*                                                      *
+*       System cannot connect to key managers.         *
+*                                                      *
+********************************************************
 ERROR: kmip_init: halting this system with encrypted mroot...
-
+.
 Terminated
-
+ 
 Uptime: 11m32s
-
 System halting...
-
+ 
 LOADER-B>
 ....
+
+
 =====
 
-.. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
 
-.. Return the impaired controller to normal operation by giving back its storage:
+.. When the node reboots, verify that the boot media recovery was successful by confirming that the system is back online and operational.
+
+.. Return the controller to normal operation by giving back its storage:
 +
 `storage failover giveback -ofnode _impaired_node_name_`.
-
 --
-
 ====
 
 // end tabbed area
 
-[start=4]
-
+[start=5]
 
 . If automatic giveback was disabled, reenable it: 
 +
