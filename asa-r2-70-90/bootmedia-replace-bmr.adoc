@@ -10,3 +10,6 @@ summary: You locate the failed boot media by removing System Management module b
 
 [.lead]
 include::../_include/a70-90_bootmedia_replace-bmr.adoc[]
+
+.What's next
+After physically replacing the impaired boot media, link:bootmedia-recovery-image-boot-bmr.html[restore the ONTAP image from the partner node].
