@@ -1,29 +1,29 @@
 ---
 permalink: fas-70-90/caching-module-hot-swap.html
 sidebar: sidebar
-keywords: fas70, fas90, hot swap, replace, FlashCache module carrier, caching module, FlashCache
-summary: The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD caching drive integrated into each caching module. The caching modules can be hot-swapped, but the FlashCache module carrier is not hot-swappable. 
+keywords: fas70, fas90, hot swap, replace, Flash Cache module carrier, caching module, Flash Cache
+summary: The NVMe SSD Flash Cache module carrier contains one or two Flash Cache modules (caching modules) with a single SSD caching drive integrated into each caching module. The caching modules can be hot-swapped, but the Flash Cache module carrier is not hot-swappable. 
 ---
-= Replace the FlashCache module carrier or a caching module - FAS70 and FAS90
+= Replace the Flash Cache module carrier or a caching module - FAS70 and FAS90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The NVMe SSD FlashCache module carrier contains one or two FlashCache modules (caching modules) with a single SSD FlashCache drive integrated into each caching module. 
+The NVMe SSD Flash Cache module carrier contains one or two Flash Cache modules (caching modules) with a single SSD Flash Cache drive integrated into each caching module. 
 
-The FAS70 supports 2TB caching modules and FAS90 supports 4TB caching modules. You cannot mix caching modules of different capacity in the FlashCache module carrier.
+The FAS70 supports 2TB caching modules and FAS90 supports 4TB caching modules. You cannot mix caching modules of different capacity in the Flash Cache module carrier.
 
 You can perform either of the following procedures depending on what needs to be replaced: the entire Flashcache module carrier or a caching module.
 
-* <<Replace the FlashCache module carrier>>
+* <<Replace the Flash Cache module carrier>>
 * <<Replace the caching module>>
 
-== Replace the FlashCache module carrier
-The FlashCache module carrier is located in slot 6 and houses up to two FlashCache modules. You cannot hot-swap the FlashCache module carrier 
+== Replace the Flash Cache module carrier
+The Flash Cache module carrier is located in slot 6 and houses up to two Flash Cache modules. You cannot hot-swap the Flash Cache module carrier 
 
 .Before you begin
 
-* Ensure your storage system has the appropriate operating system for the replacement FlashCache module carrier.
+* Ensure your storage system has the appropriate operating system for the replacement Flash Cache module carrier.
 * Confirm all other components are functioning properly; if not, you must contact technical support.
 
 === Step 1: Shut down the impaired node
@@ -46,15 +46,15 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 // End snippet
 =====
-=== Step 2: Replace the FlashCache module carrier
+=== Step 2: Replace the Flash Cache module carrier
 
-Perform the following steps to replace the FlashCache module carrier.
+Perform the following steps to replace the Flash Cache module carrier.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. Locate the failed FlashCache module carrier, in slot 6, by the lit amber Attention LED on the front of the FlashCache module carrier.
+. Locate the failed Flash Cache module carrier, in slot 6, by the lit amber Attention LED on the front of the Flash Cache module carrier.
 +
-image::../media/drw_fas70-90_remove_caching_module_carrier_ieops-1772.svg[Remove the FlashCache module carrier]
+image::../media/drw_fas70-90_remove_caching_module_carrier_ieops-1772.svg[Remove the Flash Cache module carrier]
 
 
 +
@@ -64,7 +64,7 @@ image::../media/drw_fas70-90_remove_caching_module_carrier_ieops-1772.svg[Remove
 a|
 image:../media/icon_round_1.png[Callout number 1] 
 a|
-FlashCache module carrier
+Flash Cache module carrier
 a|
 image:../media/icon_round_2.png[Callout number 2]
 a|
@@ -72,25 +72,25 @@ Caching module slot numbers
 a|
 image:../media/icon_round_3.png[Callout number 3]
 a|
-FlashCache module carrier cam handle
+Flash Cache module carrier cam handle
 a|
 image:../media/icon_round_4.png[Callout number 4]
 a|
-FlashCache module carrier fault LED
+Flash Cache module carrier fault LED
 
 |===
 
-. Remove the failed FlashCache module carrier:
+. Remove the failed Flash Cache module carrier:
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
-.. Pinch the blue tab at the bottom of the FlashCache module carrier.
+.. Pinch the blue tab at the bottom of the Flash Cache module carrier.
 .. Rotate the tab away from the module. 
-. Pull the FlashCache module carrier out of the controller module and set it on an antistatic mat.
-. Move the caching modules to the replacement FlashCache module carrier:
+. Pull the Flash Cache module carrier out of the controller module and set it on an antistatic mat.
+. Move the caching modules to the replacement Flash Cache module carrier:
 .. Pinch the Terra Cotta tab at the top of the caching module and rotate the cam handle away from the caching module.
-.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the FlashCache module carrier.
-.. Install the caching module into the same slot in the replacement FlashCache module carrier and rotate the cam handle to the closed position on the caching module to lock it in place.
+.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the Flash Cache module carrier.
+.. Install the caching module into the same slot in the replacement Flash Cache module carrier and rotate the cam handle to the closed position on the caching module to lock it in place.
 . Repeat these steps if there is a second caching module.
-. Install the replacement FlashCache module carrier into the system:
+. Install the replacement Flash Cache module carrier into the system:
 .. Align the module with the edges of the enclosure slot opening.
 .. Gently slide the module into the slot all the way into the enclosure, and then rotate the cam latch all the way up to lock the module in place.
 .. Rotate the cable management tray up to the closed position.
@@ -98,7 +98,7 @@ FlashCache module carrier fault LED
 
 === Step 3: Reboot the controller
 
-After you replace the FlashCache module carrier, you must reboot the controller module.
+After you replace the Flash Cache module carrier, you must reboot the controller module.
 
 .Steps
 
@@ -118,7 +118,7 @@ include::../_include/complete_rma.adoc[]
 
 .Before you begin
 
-The FlashCache modules (caching modules) are located in slot 6-1 or in slot 6-2 or in both slot 6-1 and slot 6-2. 
+The Flash Cache modules (caching modules) are located in slot 6-1 or in slot 6-2 or in both slot 6-1 and slot 6-2. 
 
 You can hot-swap the individual caching modules with caching modules of the same capacity from the same vendor or from a different supported vendor.
 
@@ -174,9 +174,9 @@ Caching module fault LED
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 .. Press the terra cotta release button on the front of the caching module.
 .. Rotate the cam handle as far as it will go.
-.. Remove the caching module module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the FlashCache module carrier.
+.. Remove the caching module module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the Flash Cache module carrier.
 +
-Be sure to support the caching module as you remove it from the FlashCache module carrier.
+Be sure to support the caching module as you remove it from the Flash Cache module carrier.
 
 . Install the replacement caching module:
  .. Align the edges of the caching module with the opening in the controller module.
