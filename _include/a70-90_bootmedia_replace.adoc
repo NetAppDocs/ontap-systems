@@ -4,25 +4,6 @@ You must uplug the controller module, remove the System Management module from t
 
 The boot media is located inside the System Management module and is accessed by removing the module from the system.
 
-
-image::../media/drw_a70-90_boot_media_remove_replace_ieops-1367.svg[Boot media replace graphic]
-
-[cols="1,4"]
-|===
-a|
-image::../media/icon_round_1.png[Callout number 1] 
-a|
-System Management module cam latch
-a|
-image::../media/icon_round_2.png[Callout number 2]
-a|
-Boot media locking button
-a|
-image::../media/icon_round_3.png[Callout number 3]
-a|
-Boot media
-|===
-
 . On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
@@ -40,6 +21,26 @@ The cam lever moves away from the chassis.
  .. Rotate the cam lever all the way down and remove the System Management module from the controller module.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
 . Remove the boot media from the management module:
++
+
+image::../media/drw_a70-90_boot_media_remove_replace_ieops-1367.svg[Boot media replace graphic]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1] 
+a|
+System Management module cam latch
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Boot media locking button
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Boot media
+|===
+
 .. Press the blue locking button.
 .. Rotate the boot media up,  slide it out of the socket, and set it aside.
 . Install the replacement boot media into the System Management module:

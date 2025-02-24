@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, boot the recovery image
 summary: You can restore image on the boot media from the partner controller through the automated boot recovery process.  
 ---
-= Automated boot recovery  - ASA A70 and ASA A90
+= Restore the ONTAP image  - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
@@ -15,4 +15,8 @@ After physically replacing the impaired boot media, restore the ONTAP image from
 include::../_include/bmr_single_node_boot_recovery.adoc[]
 
 .What's next
+<<<<<<< HEAD
 After you've restored the ONTAP image and the node is up and serving data, you link:bootmedia-complete-rma-bmr.html[return the failed part to NetApp].
+=======
+After you've restored the ONTAP image and the node is up and serving data, you link:bootmedia-complete-rma-bmr.html[return the failed part to NetApp].
+>>>>>>> 1476f3fe57e2804cf10e9dcae90bda29217cf6a8
