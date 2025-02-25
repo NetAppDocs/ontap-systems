@@ -7,6 +7,9 @@
 
 .No encryption
 --
+Return the impaired controller to normal operation by giving back its storage
+
+.Steps
 . From the LOADER prompt, enter `boot_ontap`.
 
 . Press <enter> when console messages stop.
@@ -20,7 +23,9 @@
 +
 `storage failover modify -node local -auto-giveback true`.
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: 
++
+`system node autosupport invoke -node * -type all -message MAINT=END`.
 --
 
 .Onboard encryption (OKM)
