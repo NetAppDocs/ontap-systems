@@ -2,14 +2,14 @@
 permalink: a70-90/io-module-overview.html
 sidebar: sidebar
 keywords: AFF A90, AFF A70, replace io module
-summary: "You must replace the failed component with a replacement field replacable unit (FRU) component you received from your provider."
+summary: You can replace a failed I/O module in your AFF A70 or AFF A90 storage system with the same type of I/O module, or with a different kind of I/O module. You can also add an I/O module into a system with empty slots.
 ---
 = Overview of add and replace I/O module - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/a70-90_io_module_overview.adoc[]
+You can replace a failed I/O module in your AFF A70 or AFF A90 storage system with the same type of I/O module, or with a different kind of I/O module. You can also add an I/O module into a system with empty slots.
 
 
 * link:io-module-add.html[Add an I/O module]
