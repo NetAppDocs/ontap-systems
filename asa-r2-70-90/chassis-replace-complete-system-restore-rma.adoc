@@ -2,14 +2,13 @@
 permalink: asa-r2-70-90/chassis-replace-complete-system-restore-rma.html
 sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, verify and set HA state, complete the replacement process
-summary: "You must verify the HA state of the chassis and return the failed part to NetApp, as described in the RMA instructions shipped with the kit."
+summary: Verify the HA state of the chassis and return the failed part to NetApp to complete the final step in the ASA A70 and ASA A90 chassis replacement workflow. After ensuring the HA state matches your system configuration, follow the RMA instructions included with the kit to return the failed part.
 ---
 = Complete the chassis replacement - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-To complete the chassis replacement process, you need to boot to ONTAP, give back the storage, verify the storage system health, and return the failed chassis to NetApp.
+Verify the HA state of the chassis and return the failed part to NetApp to complete the final step in the ASA A70 and ASA A90 chassis replacement workflow. After ensuring the HA state matches your system configuration, follow the RMA instructions included with the kit to return the failed part.
 
 include::../_include/a70-90_chassis_replace_complete_system_restore_rma.adoc[]
