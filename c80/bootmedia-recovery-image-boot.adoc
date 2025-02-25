@@ -9,4 +9,6 @@ summary: You must boot the ONTAP image from the USB drive, restore the file syst
 :imagesdir: ../media/
 
 [.lead]
+If the boot media in your C80 system is corrupted, you can boot the recovery image from a USB drive, restore the configuration from the partner node, and verify the environment variables.
+
 include::../_include/bootmedia_recovery_image_boot.adoc[]
