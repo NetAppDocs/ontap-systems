@@ -1,7 +1,7 @@
 settings:
   name: "Install and maintain"
   internal:
-    pdf_enabled: false
+    pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
@@ -69,6 +69,7 @@ sidebar:
         entries:
         - section: asa-r2-a1k-maintain
         - section: asa-r2-a70-90-maintain
+        - section: asa-r2-a20-30-50-maintain
     - title: FAS systems
       url: /fas/index.html
       entries:
