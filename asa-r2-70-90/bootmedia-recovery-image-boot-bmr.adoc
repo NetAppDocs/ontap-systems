@@ -10,6 +10,7 @@ summary: If the boot media in your ASA A70 or ASA A90 system is corrupted, you c
 
 [.lead]
 If the boot media in your ASA A70 or ASA A90 system is corrupted, you can boot the recovery image and restore the configuration from the partner node.
+
 include::../_include/bmr_single_node_boot_recovery.adoc[]
 
 .What's next
