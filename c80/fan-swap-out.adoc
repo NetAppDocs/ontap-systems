@@ -2,12 +2,13 @@
 permalink: c80/fan-swap-out.html
 sidebar: sidebar
 keywords: c80, aff, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
-summary: To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
+summary: Replace a fan module in your AFF C80 system when a fan fails or is not operating efficiently, which can affect system cooling and overall performance.
 ---
 = Replace a fan module - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a fan module in your AFF C80 system when a fan fails or is not operating efficiently, which can affect system cooling and overall performance.
 
 include::../_include/a70-90_fan_swap_out.adoc[]
