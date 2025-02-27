@@ -2,11 +2,13 @@
 permalink: c80/controller-replace-move-hardware.html
 sidebar: sidebar
 keywords: c80, move the controller module hardware
-summary: "To replace a controller module, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
+summary: Replace the controller in your AFF C80 system when a hardware failure or upgrade requires it. This process involves removing the impaired controller,  moving the components to the replacement controller, installing the replacement controller, and rebooting the system.
 ---
 = Replace the controller module - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the controller in your AFF C80 system when a hardware failure or upgrade requires it. This process involves removing the impaired controller,  moving the components to the replacement controller, installing the replacement controller, and rebooting the system.
+
 include::../_include/a70-90_controller_replace_move_hardware.adoc[]

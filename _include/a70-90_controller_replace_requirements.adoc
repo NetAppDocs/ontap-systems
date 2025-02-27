@@ -1,4 +1,4 @@
-You must review the requirements for the controller replacement procedure and select the correct one for your version of the ONTAP operating system.
+Review the requirements for replacing the controller module.
 
 * All drive shelves must be working properly.
 * The healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").

@@ -2,11 +2,13 @@
 permalink: c80/bootmedia-replace.html
 sidebar: sidebar
 keywords: c80, replace the boot media
-summary: You locate the failed boot media in the controller module by removing Riser 3 on the controller module before you can replace the boot media.
+summary: The boot media in your AFF C80 system stores essential firmware and configuration data. If the boot media fails, you must unplug the controller module, remove the System Management module, remove the impaired boot media, and replace the boot media in the System Management module. 
 ---
 = Replace the boot media - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+The boot media in your AFF C80 system stores essential firmware and configuration data. If the boot media fails, you must unplug the controller module, remove the System Management module, remove the impaired boot media, and replace the boot media in the System Management module. 
+
 include::../_include/a70-90_bootmedia_replace.adoc[]
