@@ -12,3 +12,6 @@ summary: "You need to complete the shutdown of the impaired controller."
 You need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller.
 
 include::../_include/shutdown_most_frus.adoc[]
+
+.What's next
+After you shut down the impaired controller, link:bootmedia-replace-bmr.html[replace the boot media].
