@@ -1,0 +1,30 @@
+---
+permalink: asa-r2-a20-30-50/bootmedia-overview-bmr.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, overview, automatic recovery, boot media
+summary: Learn about the automated method for replacing the boot media.
+---
+= Overview of boot media recovery - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Boot media recovery uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
+
+When you encounter boot error messages similar to the one shown below, you need to replace the boot media and restore the ONTAP image from the partner node.
+
+
+....
+Can't find primary boot device u0a.0 
+Can't find backup boot device u0a.1 
+ACPI RSDP Found at 0x777fe014 
+
+Starting AUTOBOOT press Ctrl-C to abort... 
+Could not load fat://boot0/X86_64/freebsd/image1/kernel: Device not found
+
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/Linux/image1/vmlinuz (boot0, fat) 
+ERROR: Error booting OS on: 'boot0' file: fat://boot0/X86_64/freebsd/image1/kernel (boot0, fat) 
+
+Autoboot of PRIMARY image failed. Device not found (-6) 
+LOADER-A>
+....

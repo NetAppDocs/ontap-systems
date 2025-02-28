@@ -1,0 +1,13 @@
+---
+permalink: asa-r2-a20-30-50/fan-replace.html
+sidebar: sidebar
+keywords: asa a20, asa a30, asa a50, asa, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
+summary: To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
+---
+= Replace a fan module - ASA A20, ASA A30, and ASA A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+include::../_include/g_fan_replace.adoc[]

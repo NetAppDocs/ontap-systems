@@ -2,15 +2,14 @@
 permalink: a70-90/chassis-replace-move-hardware.html
 sidebar: sidebar
 keywords: aff a70, aff a90, move hardware components, replace the chassis
-summary: "Move the hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
+summary: Replace the chassis in your AFF A70 or AFF A90 system when a hardware failure or upgrade requires it. This process involves powering down the system, removing the existing chassis, installing the new one, and reconfiguring components to ensure proper system operation.
 ---
 = Replace the chassis - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-You need to remove specific components from the controller modules before removing the impaired chassis, replace the chassis, re-install the components in the correct controller modules, and then return the controllers to normal operation. 
+Replace the chassis in your AFF A70 or AFF A90 system when a hardware failure or upgrade requires it. This process involves powering down the system, removing the existing chassis, installing the new one, and reconfiguring components to ensure proper system operation. 
 
 include::../_include/a70-90_chassis_replace_move_hardware.adoc[]
 
