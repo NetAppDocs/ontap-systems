@@ -2,11 +2,13 @@
 permalink: c80/controller-replace-recable-reassign-disks.html
 sidebar: sidebar
 keywords: c80, how to recable the system, teboot the system
-summary: You must recable the storage reboot the controller.
+summary: Return control of storage resources to the replacement controller so your AFF C80 system can resume normal operation.
 ---
 = Recable and give back the controller - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Return control of storage resources to the replacement controller so your AFF C80 system can resume normal operation.
+
 include::../_include/a70-90_controller_replace_recable_reassign_disks.adoc[]

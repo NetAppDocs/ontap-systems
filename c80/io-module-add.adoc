@@ -9,4 +9,6 @@ summary: "To replace an I/O module, you must disconnect the cables from the modu
 :imagesdir: ../media/
 
 [.lead]
+You can add an I/O module to your AFF C80 storage system when there are empty slots available or when all slots are fully populated.
+
 include::../_include/add_io_module_cam.adoc[]

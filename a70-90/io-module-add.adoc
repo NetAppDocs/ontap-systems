@@ -2,7 +2,7 @@
 permalink: a70-90/io-module-add.html
 sidebar: sidebar
 keywords: aff a70, aff a90, add I/O module
-summary: "To replace an I/O module, you must disconnect the cables from the module, remove the SFP and QSFP modules from the module, remove the module, install the replacement module, reinstall the SFP and QSFP modules, and then cable the I/O module."
+summary: You can add an I/O module to your AFF A70 and AFF A90 storage system when there are empty slots available or when all slots are fully populated.
 ---
 = Add I/O module - AFF A70 and AFF A90
 :icons: font
@@ -13,7 +13,7 @@ You can add an I/O module to your AFF A70 and AFF A90 storage system when there 
 
 == Step 1: Shut down the impaired controller module
 
-Shut down or take over the impaired controller module.
+Shut down or take over the impaired controller module using one of the following options.
 
 [role="tabbed-block"]
 ====
