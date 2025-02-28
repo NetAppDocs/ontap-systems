@@ -2,11 +2,13 @@
 permalink: c80/chassis-replace-move-hardware.html
 sidebar: sidebar
 keywords: c80, move hardware components, replace the chassis
-summary: "Move the hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
+summary: Replace the chassis in your AFF C80 system when a hardware failure or upgrade requires it. This process involves powering down the system, removing the existing chassis, installing the new one, and reconfiguring components to ensure proper system operation.
 ---
 = Replace the chassis - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the chassis in your AFF C80 system when a hardware failure or upgrade requires it. This process involves powering down the system, removing the existing chassis, installing the new one, and reconfiguring components to ensure proper system operation.
+
 include::../_include/a70-90_chassis_replace_move_hardware.adoc[]

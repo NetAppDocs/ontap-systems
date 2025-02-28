@@ -1,0 +1,12 @@
+---
+permalink: asa-r2-a20-30-50/chassis-replace-shutdown.html
+sidebar: sidebar
+keywords: asa a20, asa a30, asa a50, shutdown the controllers
+summary: "To replace the chassis, you must shutdown the controllers."
+---
+= Shut down the controllers - ASA A20, ASA A30, and ASA A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/shutdown_chassis.adoc[]

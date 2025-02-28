@@ -2,18 +2,17 @@
 permalink: asa-r2-70-90/chassis-replace-move-hardware.html
 sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, move hardware components, replace the chassis
-summary: "Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
+summary: Replace the chassis in your ASA A70 or ASA A90 system when a hardware failure or upgrade requires it. This process involves powering down the system, removing the existing chassis, installing the new one, and reconfiguring components to ensure proper system operation.
 ---
 = Move and replace hardware - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-You need to remove specific components from the controller modules before removing the impaired chassis, replace the chassis, re-install the components in the correct controller modules, and then return the controllers to normal operation. 
+Replace the chassis in your ASA A70 or ASA A90 system when a hardware failure or upgrade requires it. This process involves powering down the system, removing the existing chassis, installing the new one, and reconfiguring components to ensure proper system operation.
 
 include::../_include/a70-90_chassis_replace_move_hardware.adoc[]
 
 .What's next?
 
-After you’ve replaced the impaired AFF A70 or AFF A90 chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]. 
+After you’ve replaced the impaired ASA A70 or ASA A90 chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]. 
