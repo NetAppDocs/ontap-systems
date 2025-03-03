@@ -151,19 +151,3 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
 +
 The system begins to boot and stops at the LOADER prompt.
 
-. Set your network connection type at the LOADER prompt:
- ** If you are configuring DHCP: `ifconfig e0a -auto`
-+
-NOTE: The target port you configure is the target port you use to communicate with the impaired controller from the healthy controller during var file system restore with a network connection. You can also use the e0M port in this command.
-
- ** If you are configuring manual connections: `ifconfig e0a -addr=filer_addr -mask=netmask -gw=gateway-dns=dns_addr-domain=dns_domain`
-  *** `filer_addr` is the IP address of the storage system.
-  *** `netmask` is the network mask of the management network that is connected to the HA partner.
-  *** `gateway` is the gateway for the network.
-  *** `dns_addr` is the IP address of a name server on your network.
-  *** `dns_domain` is the Domain Name System (DNS) domain name.
-+
-If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL. You need only the server's host name.
-
-+
-NOTE: Other parameters might be necessary for your interface. You can enter `help ifconfig` at the firmware prompt for details.
