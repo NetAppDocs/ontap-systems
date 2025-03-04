@@ -1,0 +1,97 @@
+section: fas50
+title: FAS50 systems
+entries:
+ - title: Install and setup
+   pdf-filename: FAS50 Install and Setup
+   entries:
+     - title: Install workflow
+       url: /fas50/install-overview.html
+     - title: Review requirements
+       url: /fas50/install-requirements.html
+     - title: Prepare to install
+       url: /fas50/install-prepare.html
+     - title: Install hardware
+       url: /fas50/install-hardware.html
+     - title: Cable hardware
+       url: /fas50/install-cable.html
+     - title: Power on system
+       url: /fas50/install-power-hardware.html
+     - title: Complete system setup
+       url: /fas50/install-complete.html
+ - title: Maintain
+   pdf-filename: FAS50 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /fas50/maintain-overview.html
+# START boot media
+   - title: Boot media
+     pdf-filename: FAS50 Boot Media
+     entries:
+      - title: Boot media replace workflow
+        url: /fas50/bootmedia-replace-workflow.html
+      - title: Review requirements
+        url: /fas50/bootmedia-replace-requirements.html
+      - title: Check encryption keys
+        url: /fas50/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
+        url: /fas50/bootmedia-shutdown.html
+      - title: Replace boot media
+        url: /fas50/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /fas50/bootmedia-recovery-image-boot.html
+      - title: Restore encryption
+        url: /fas50/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /fas50/bootmedia-complete-rma.html
+    # END boot media
+   - title: Chassis
+     pdf-filename: FAS50 Chassis
+     entries:
+        - title: Chassis replace workflow
+          url: /fas50/chassis-replace-workflow.html
+        - title: Review requirements
+          url: /fas50/chassis-replace-requirements.html
+        - title: Shut down controllers
+          url: /fas50/chassis-replace-shutdown.html
+        - title: Replace chassis
+          url: /fas50/chassis-replace-move-hardware.html
+        - title: Complete chassis replacement
+          url: /fas50/chassis-replace-complete-system-restore-rma.html
+   - title: Controller
+     pdf-filename: FAS50 Controller Module
+     entries:
+        - title: Controller replace workflow
+          url: /fas50/controller-replace-workflow.html
+        - title: Review requirements
+          url: /fas50/controller-replace-requirements.html
+        - title: Shut down impaired controller
+          url: /fas50/controller-replace-shutdown.html
+        - title: Replace controller
+          url: /fas50/controller-replace-move-hardware.html
+        - title: Restore system configuration
+          url: /fas50/controller-replace-system-config-restore-and-verify.html
+        - title: Give back controller
+          url: /fas50/controller-replace-recable-reassign-disks.html
+        - title: Complete controller replacement
+          url: /fas50/controller-replace-restore-system-rma.html
+   - title: DIMM
+     url: /fas50/dimm-replace.html
+   - title: Drive
+     url: /fas50/drive-replace.html
+   - title: Fan
+     url: /fas50/fan-replace.html
+   - title: I/O module
+     pdf-filename: FAS50 I/O module
+     entries:
+        - title: I/O module overview
+          url: /fas50/io-module-overview.html
+        - title: Add I/O module
+          url: /fas50/io-module-add.html
+        - title: Replace I/O module
+          url: /fas50/io-module-replace.html
+   - title: NV Battery
+     url: /fas50/nvdimm-battery-replace.html
+   - title: Power supply
+     url: /fas50/power-supply-replace.html
+   - title: Real-time clock battery
+     url: /fas50/rtc-battery-replace.html
