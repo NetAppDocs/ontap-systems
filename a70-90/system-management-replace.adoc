@@ -9,6 +9,6 @@ summary:  Replace the System Management module in your AFF A70 or AFF A90 system
 :imagesdir: ../media/
 
 [.lead]
-Replace the System Management module in your AFF A70 or AFF A90 system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the impaired controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
+Replace the System Management module in your AFF A70 or AFF A90 system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
 
 include::../_include/a70-90_system_mgmt_replace.adoc[]
