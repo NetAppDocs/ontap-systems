@@ -9,7 +9,7 @@ summary: Replace the chassis in your AFF A70 or AFF A90 system when a hardware f
 :imagesdir: ../media/
 
 [.lead]
-Replace the chassis in your AFF A70 or AFF A90 system when a hardware failure or upgrade requires it. The replacement process involves powering down the system, removing the existing chassis, installing the new one, and reconfiguring components to ensure proper system operation. 
+Replace the chassis in your AFF A70 or AFF A90 system when a hardware failure requires it. The replacement process involves removing the power supply units (PSUs), removing the existing chassis, installing the new one, and reconfiguring components to ensure proper system operation. 
 
 include::../_include/a70-90_chassis_replace_move_hardware.adoc[]
 
