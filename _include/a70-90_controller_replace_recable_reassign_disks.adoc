@@ -7,7 +7,7 @@
 
 .No encryption
 --
-Return the impaired controller to normal operation by giving back its storage
+Return the impaired controller to normal operation by giving back its storage.
 
 .Steps
 . From the LOADER prompt, enter `boot_ontap`.
@@ -28,7 +28,7 @@ Return the impaired controller to normal operation by giving back its storage
 `system node autosupport invoke -node * -type all -message MAINT=END`.
 --
 
-.Onboard encryption (OKM)
+.OKM encryption
 --
 Reset onboard encryption and return the controller to normal operation.
 
@@ -82,7 +82,7 @@ If the _Restored_ column shows anything but _true_, contact https://support.neta
 
 --
 
-.External key manager (EKM))
+.EKM encryption
 
 --
 Reset encryption and return the controller to normal operation.

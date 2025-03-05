@@ -2,13 +2,13 @@
 permalink: a70-90/controller-replace-recable-reassign-disks.html
 sidebar: sidebar
 keywords: aff a70, aff a90, how to recable the system, reboot the system
-summary: Return control of storage resources to the replacement controller so your AFF A70 or AFF A90 system can resume normal operation.
+summary: RReturn control of storage resources to the replacement controller so your AFF A70 or AFF A90 system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption, Onboard Key Manager (OKM) encryption, or External Key Manager (EKM) encryption.
 ---
 = Give back the controller - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Return control of storage resources to the replacement controller so your AFF A70 or AFF A90 system can resume normal operation.
+Return control of storage resources to the replacement controller so your AFF A70 or AFF A90 system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption, Onboard Key Manager (OKM) encryption, or External Key Manager (EKM) encryption.
 
 include::../_include/a70-90_controller_replace_recable_reassign_disks.adoc[]
