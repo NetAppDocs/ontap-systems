@@ -56,6 +56,10 @@ NOTE: I/O module ports e2b and e4b are unused and available for host network con
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
 +
 image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[a30 and a50 switchless cluster cabling diagram using two 100gbe io modules]
++
+NEEDED???
+
+image::../media/drw_isi_fas50_switchless_2p_100gbe_cabling_ieops-1937.svg[fas50 switchless cluster cabling diagram using two 100gbe io modules]
 
 ====
 
@@ -79,6 +83,10 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
 +
 image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[a30 and a50 switchless cluster cabling diagram using one 100gbe io module]
++
+image::../media/drw_isi_fas50_switchless_2p_100gbe_cabling_ieops-1937.svg[fas50 switchless cluster cabling diagram using one 100gbe io module]
+
+
 
 ====
 
@@ -186,6 +194,8 @@ image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100p
 +
 image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched cluster cabling diagram using one 25gbe io module]
 +
+image:../media/drw_isi_fas50_2p_100gbe_switched_cluster_cabling_ieops-1936.svg[fas50 switched cluster cabling diagram using one 100gbe io module]
+
 
 ====
 --
@@ -237,6 +247,9 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Ca
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
 +
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
++image::../media/fas50_4p_25gbe_optional_cabling_ieops-1934.svg[cable fas50 to 25gbe ethernet host network switches]
+
+
 ====
 
 --
@@ -257,6 +270,9 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Ca
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 +
 image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
++
+image::../media/drw_isi_fas50_4p_64gb_fc_optional_cabling_ieops-1935.svg[Cable to 64gb fc host network switches]
+
 
 ====
 --
@@ -274,7 +290,7 @@ Cable the controllers to your management network.
 +
 image::../media/oie_cable_rj45.png[RJ-45 cables]
 +
-image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your management network]
+image::../media/drw_isi_fas50_wrench_cabling_ieops-1938.svg[Connect to your management network]
 
 // [Connect to your management network,width=500px] or xx
 
