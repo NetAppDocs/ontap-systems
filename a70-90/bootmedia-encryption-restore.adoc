@@ -4,11 +4,14 @@ sidebar: sidebar
 keywords: aff a70, aff a90, post boot media replacement steps for okm, nse, and nve
 summary: Restore encryption on the replacement boot media in your AFF A70 or AFF A90 system to ensure continued data protection. This process involves verifying key availability, reapplying encryption settings, confirming secure access to your data.
 ---
-= Restore encryption - AFF A70 and AFF A90
+= Restore encryption on the boot media - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media in your AFF A70 or AFF A90 system to ensure continued data protection. This process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data. 
+Restore encryption on the replacement boot media in your AFF A70 or AFF A90 system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data. 
 
 include::../_include/encryption_restore_bootmedia.adoc[]
+
+.What's next?
+After restoring encryption on the boot media, you need to link:bootmedia-complete-rma.html[return the failed part to NetApp].

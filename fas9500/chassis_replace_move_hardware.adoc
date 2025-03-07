@@ -101,7 +101,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 == Step 4: Remove the I/O modules
 
-To remove I/O modules from the impaired chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the FlashCache module, if present, from the NVRAM module when moving it to a replacement chassis.
+To remove I/O modules from the impaired chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the Flash Cache module, if present, from the NVRAM module when moving it to a replacement chassis.
 
 . If you are not already grounded, properly ground yourself.
 . Unplug any cabling associated with the target I/O module.
@@ -222,7 +222,7 @@ When inserted into a live system, the amber Attention LED flashes four times whe
 
 == Step 10: Install I/O modules
 
-To install I/O modules, including the NVRAM/FlashCache modules from the impaired chassis, follow the specific sequence of steps.
+To install I/O modules, including the NVRAM/Flash Cache modules from the impaired chassis, follow the specific sequence of steps.
 
 You must have the chassis installed so that you can install the I/O modules into the corresponding slots in the replacement chassis.
 

@@ -1,7 +1,7 @@
 During the process of upgrading by moving storage, you power on node3 and node4, boot the software image, and configure the nodes. Physical port layout between original and new nodes can be different. Mapping of ports between original and replacement nodes should be done to identify proper layout of ports and connections.
 
 .About this task
-If the version of ONTAP running on the new nodes is different to the version on the original nodes, you must have downloaded the correct <ontap_version>_image.tgz file from the NetApp Support Site to a web-accessible directory (see Step 4). You need the <ontap_version>_image.tgz file to perform a netboot of your system.
+If the version of ONTAP running on the new nodes is different to the version on the original nodes, you must have downloaded the correct <xxx_image.tgz> file from the NetApp Support Site to a web-accessible directory (see Step 4). You need the <xxx_image.tgz> file to perform a netboot of your system.
 
 .Steps
 . Turn on the power to node3, and then immediately press Ctrl-C at the console terminal to access the LOADER prompt.
@@ -47,9 +47,9 @@ a|
 a|
 *All other systems*
 a|
-`+netboot http://web_server_ip/path_to_web-accessible_directory/<ontap_version>_image.tgz+`
+`+netboot http://web_server_ip/path_to_web-accessible_directory/<xxx_image.tgz>+`
 |===
-The path_to_the_web-accessible_directory is the location of the downloaded <ontap_version>_image.tgz file.
+The path_to_the_web-accessible_directory is the location of the downloaded <xxx_image.tgz> file.
 +
 NOTE: If you are unable to netboot the new controllers, contact technical support.
 
@@ -57,7 +57,7 @@ NOTE: If you are unable to netboot the new controllers, contact technical suppor
 +
 Disregard the following message: "This procedure is not supported for Non-Disruptive Upgrade on an HA pair". It applies to nondisruptive upgrades of software, not to upgrades of controllers.
 
-. If you are prompted to continue the procedure, enter `y`, and when prompted for the package, enter the URL of the image file: `+http://web_server_ip/path_to_web-accessible_directory/<ontap_version>_image.tgz+`.
+. If you are prompted to continue the procedure, enter `y`, and when prompted for the package, enter the URL of the image file: `+http://web_server_ip/path_to_web-accessible_directory/<xxx_image.tgz>+`.
 +
 Enter username/password if applicable, or press Enter to continue.
 

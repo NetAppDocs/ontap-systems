@@ -118,17 +118,19 @@ Do not completely insert the controller module in the chassis until instructed t
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. If the power supplies were unplugged, plug them back in and reinstall the power cable retainers.
 . Complete the reinstallation of the controller module:
  .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
 The locking latches rise when the controller module is fully seated.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-+
-The controller module begins to boot as soon as it is fully seated in the chassis.
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
+
+ .. Plug the power cords into the power supplies, reinstall the power cable locking collar, and then connect the power supplies to the power source.
++
+The controller module begins to boot as soon as power is restored. Be prepared to interrupt the boot process.
+
  .. If you have not already done so, reinstall the cable management device.
  .. Halt the controller at the LOADER prompt.
 . Reset the time and date on the controller:
