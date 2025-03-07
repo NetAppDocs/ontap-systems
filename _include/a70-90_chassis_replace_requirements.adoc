@@ -3,10 +3,13 @@ The chassis is the physical enclosure housing all the controller components such
 Before replacing the chassis, make sure to review the following requirements.
 
 * Make sure all other components in the system are functioning properly; if not, contact http://mysupport.netapp.com/[NetApp Support Site^] for assistance.
+
 * Obtain local administrator credentials for ONTAP if you don't have them.
 
 * Make sure that you have the necessary tools and equipment for the replacement.
 
 * You can use the chassis replacement procedure with all versions of ONTAP supported by your system.
+
 * The chassis replacement procedure is written with the assumption that you are moving the bezel, NVMe drives, and controller modules to the new chassis, and that the replacement chassis is a new component from NetApp.
-* *The chassis replacement procedure is disruptive.* For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+
+* The chassis replacement procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.

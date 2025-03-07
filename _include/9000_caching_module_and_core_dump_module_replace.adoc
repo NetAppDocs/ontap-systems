@@ -35,7 +35,7 @@ include::../_include/shutdown_2n_mcc.adoc[]
 
 == Step 2: Replace or add a caching module
 
-The NVMe SSD Flash Cache modules (FlashCache or caching modules) are separate modules. They are located in the front of the NVRAM module. To replace or add a caching module, locate it on the rear of the system on slot 6, and then follow the specific sequence of steps to replace it.
+The NVMe SSD Flash Cache modules (Flash Cache or caching modules) are separate modules. They are located in the front of the NVRAM module. To replace or add a caching module, locate it on the rear of the system on slot 6, and then follow the specific sequence of steps to replace it.
 
 .Before you begin
 

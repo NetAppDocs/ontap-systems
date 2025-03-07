@@ -2,14 +2,14 @@
 permalink: a70-90/controller-replace-restore-system-rma.html
 sidebar: sidebar
 keywords: aff a70, aff a90, how to restore NetApp Storage Encryption, how to complete the replacement process
-summary: Verify the logical interfaces are reporting to their home port, perform a cluster health check, and return the failed part to NetApp to complete the final step in the AFF A70 and AFF A90 controller replacement workflow.
+summary: Verify that the logical interfaces are reporting to their home port, perform a cluster health check, and then return the failed part to NetApp to complete the final step in the AFF A70 and AFF A90 controller replacement procedure.
 ---
 = Complete controller replacement - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Verify the logical interfaces are reporting to their home port, perform a cluster health check, and return the failed part to NetApp to complete the final step in the AFF A70 and AFF A90 controller replacement workflow.
+Verify that the logical interfaces are reporting to their home port, perform a cluster health check, and then return the failed part to NetApp to complete the final step in the AFF A70 and AFF A90 controller replacement procedure.
 
 == Step 1: Verify LIFs and check cluster health
 
