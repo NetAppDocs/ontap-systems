@@ -35,7 +35,7 @@ Reset onboard encryption and return the controller to normal operation.
 .Steps
 . From the LOADER prompt, enter:
 +
-`boot_ontap maint`.
+`boot_ontap maint`
 
 . Boot to the ONTAP  menu from the LOADER prompt `boot_ontap menu` and select option 10.
 . Enter the OKM passphrase. You can get this passphrase from the customer, or contact https://support.netapp.com[NetApp Support].
@@ -123,12 +123,7 @@ NOTE: Contact https://support.netapp.com[NetApp Support] if you have issues.
 +
 `storage failover show`.
 
-. Ensure any core dumps on the repaired node are saved by going to advanced mode:
-+
-`set -privilege advanced` and then `run local partner savecore`.
-. Return the impaired controller to normal operation by giving back its storage: 
-+
-`storage failover giveback -ofnode _impaired_node_name_`.
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
 . If automatic giveback was disabled, reenable it: 
 +
