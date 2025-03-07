@@ -33,7 +33,7 @@ entries:
           url: /a70-90/bootmedia-replace-requirements.html
         - title: Check encryption keys
           url: /a70-90/bootmedia-encryption-preshutdown-checks.html
-        - title: Shut down impaired controller
+        - title: Shut down controller
           url: /a70-90/bootmedia-shutdown.html
         - title: Replace boot media
           url: /a70-90/bootmedia-replace.html
@@ -84,7 +84,7 @@ entries:
      url: /a70-90/fan-swap-out.html
    - title: NVRAM
      url: /a70-90/nvram-replace.html
-   - title: NV Battery
+   - title: NV battery
      url: /a70-90/nvdimm-battery-replace.html
    - title: I/O module
      pdf-filename: AFF A70 and AFF A90 I/O module

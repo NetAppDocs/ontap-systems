@@ -121,20 +121,20 @@ Do not completely insert the controller module in the chassis until instructed t
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. If the power supplies were unplugged, plug them back in and reinstall the power cable retainers.
 . Insert the controller module into the chassis:
  .. Ensure the latching mechanism arms are locked in the fully extended position.
  .. Using both hands, align and gently slide the controller module into the latching mechanism arms until it stops.
  .. Place your index fingers through the finger holes from the inside of the latching mechanism.
  .. Press your thumbs down on the orange tabs on top of the latching mechanism and gently push the controller module over the stop.
  .. Release your thumbs from the top of the latching mechanisms and continue pushing until the latching mechanisms snap into place.
+ +
+The controller module should be fully inserted and flush with the edges of the chassis.
+.. Plug the power cords into the power supplies, reinstall the power cable locking collar, and then connect the power supplies to the power source.
 +
-The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
+The controller module begins to boot as soon as power is restored. Be prepared to interrupt the boot process.
 
  .. Halt the controller at the LOADER prompt.
 
-+
-The controller module should be fully inserted and flush with the edges of the chassis.
 . Reset the time and date on the controller:
  .. Check the date and time on the healthy controller with the `show date` command.
  .. At the LOADER prompt on the target controller, check the time and date.

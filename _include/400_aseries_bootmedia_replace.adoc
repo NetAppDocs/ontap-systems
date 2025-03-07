@@ -136,7 +136,6 @@ The USB flash drive should have the efi folder and the same Service Image (BIOS)
 +
 When recabling, remember to reinstall the media converters (SFPs or QSFPs) if they were removed.
 
-. Plug the power cable into the power supply and reinstall the power cable retainer.
 . Insert the USB flash drive into the USB slot on the controller module.
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
@@ -148,10 +147,12 @@ Make sure that you install the USB flash drive in the slot labeled for USB devic
 The locking latches rise when the controller module is fully seated.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-+
-The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
+ .. Plug the power cords into the power supplies, reinstall the power cable locking collar, and then connect the power supplies to the power source.
++
+The controller module begins to boot as soon as power is restored. Be prepared to interrupt the boot process.
+
  .. If you have not already done so, reinstall the cable management device.
 . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
