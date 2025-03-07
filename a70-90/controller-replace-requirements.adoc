@@ -2,7 +2,7 @@
 permalink: a70-90/controller-replace-requirements.html
 sidebar: sidebar
 keywords: aff a70, aff a90, prerequisite, replace the controller module
-summary: Before replacing the chassis in your AFF A70 or AFF A90 system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement chassis, a backup of your system configuration, and access to any required tools and firmware.
+summary: Before replacing the controller in your AFF A70 or AFF A90 system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement controller, a backup of your system configuration, and access to any required tools and firmware.
 ---
 = Controller replace requirements - AFF A70 and AFF A90
 :icons: font
@@ -12,3 +12,7 @@ summary: Before replacing the chassis in your AFF A70 or AFF A90 system, ensure 
 Before replacing the controller in your AFF A70 or AFF A90 system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement controller, a backup of your system configuration, and access to any required tools and firmware.
 
 include::../_include/a70-90_controller_replace_requirements.adoc[]
+
+.What's next?
+
+After you’ve the reviewed the requirements to replace your AFF A70 or AFF A90 controller, you need to link:controller-replace-shutdown.html[shut down the controllers].

@@ -11,14 +11,9 @@ summary: If you have a system in which the NS224 drive shelves need to be cabled
 [.lead]
 If you have a system in which the NS224 drive shelves need to be cabled as switch-attached storage (not direct-attached storage), use the information provided.
 
-* Cable NS224 drive shelves through storage switches:
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2876580[NS224 NVMe Drive Shelf Cabling Guide^]
+* To cable NS224 drive shelves through storage switches, you can refer to the https://hwu.netapp.com[NetApp Hardware Universe^] for more information. For older hardware models, switch cabling information can also be found in the https://library.netapp.com/ecm/ecm_download_file/ECMLP2876580[NS224 NVMe Drive Shelf Cabling Guide^].
 
-* Install your storage switches:
-+
-https://docs.netapp.com/us-en/ontap-systems-switches/index.html[AFF and FAS Switch Documentation^]
+* To install your storage switches, refer to the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[AFF and FAS Switch Documentation^].
 
-* Confirm supported hardware, such as storage switches and cables, for your platform model:
-+
-https://hwu.netapp.com[NetApp Hardware Universe^]
+* To confirm supported hardware for your platform model, such as storage switches and cables, refer to the https://hwu.netapp.com[NetApp Hardware Universe^].
+

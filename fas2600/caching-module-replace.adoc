@@ -30,7 +30,7 @@ You might want to erase the contents of your caching module before replacing it.
 . Although data on the caching module is encrypted, you might want to erase any data from the impaired caching module and verify that the caching module has no data:
 .. Erase the data on the caching module: `system controller flash-cache secure-erase run -node _node name_ localhost -device-id _device_number_`
 +
-NOTE: Run the `system controller flash-cache show` command if you don't know the flashcache device ID.
+NOTE: Run the `system controller flash-cache show` command if you don't know the Flash Cache device ID.
 +
 .. Verify that the data has been erased from the caching module: `system controller flash-cache secure-erase show`
 +

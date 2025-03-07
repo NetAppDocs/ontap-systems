@@ -1,6 +1,6 @@
-The NVRAM module consists of the NVRAM10 and DIMMs and up to two NVMe SSD Flash Cache modules (FlashCache or caching modules) per NVRAM module. You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. 
+The NVRAM module consists of the NVRAM10 and DIMMs and up to two NVMe SSD Flash Cache modules (Flash Cache or caching modules) per NVRAM module. You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. 
 
-To replace a failed NVRAM module, you must remove it from the chassis, remove the FlashCache module or modules from the NVRAM module, move the DIMMs to the replacement module, reinstall the FlashCache module or modules, and install the replacement NVRAM module into the chassis. 
+To replace a failed NVRAM module, you must remove it from the chassis, remove the Flash Cache module or modules from the NVRAM module, move the DIMMs to the replacement module, reinstall the Flash Cache module or modules, and install the replacement NVRAM module into the chassis. 
 
 Because the system ID is derived from the NVRAM module, if replacing the module, disks belonging to the system are reassigned to the new system ID.
 
@@ -40,7 +40,7 @@ To replace the NVRAM module, locate it in slot 6 in the chassis and follow the s
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. Move the FlashCache module from the old NVRAM module to the new NVRAM module:
+. Move the Flash Cache module from the old NVRAM module to the new NVRAM module:
 +
 image::../media/drw_9000_remove_flashcache.png[Replacie the caching module]
 +
@@ -50,20 +50,20 @@ image::../media/drw_9000_remove_flashcache.png[Replacie the caching module]
 a|
 image:../media/icon_round_1.png[Callout number 1] 
 a|
-Orange release button (gray on empty FlashCache modules)
+Orange release button (gray on empty Flash Cache modules)
 a|
 image:../media/icon_round_2.png[Callout number 2]
 a|
-FlashCache cam handle
+Flash Cache cam handle
 |===
 
- .. Press the orange button on the front of the FlashCache module.
+ .. Press the orange button on the front of the Flash Cache module.
 +
-NOTE: The release button on empty FlashCache modules is gray.
+NOTE: The release button on empty Flash Cache modules is gray.
 
  .. Swing the cam handle out until the module begins to slide out of the old NVRAM module.
  .. Grasp the module cam handle and slide it out of the NVRAM module and insert it into the front of the new NVRAM module.
- .. Gently push the FlashCache module all the way into the NVRAM module, and then swing the cam handle closed until it locks the module in place.
+ .. Gently push the Flash Cache module all the way into the NVRAM module, and then swing the cam handle closed until it locks the module in place.
 
 . Remove the target NVRAM module from the chassis:
  .. Depress the lettered and numbered cam button.
