@@ -49,7 +49,7 @@ The image is downloaded from the USB flash drive.
 
 .. At the loader prompt, netboot the impaired node:
 +
-`netboot \http://_web_server_ip/path_to_web-accessible_directory_/<ontap_version>_image.tgz`
+`netboot \http://_web_server_ip/path_to_web-accessible_directory_/<xxx_image.tgz>`
 
 .. From the Boot Menu, select Option `7`.
 

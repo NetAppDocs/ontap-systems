@@ -132,21 +132,24 @@ For more information, see the https://docs.netapp.com/us-en/ontap/high-availabil
 
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: _storage failover show_
 
-. Verify that the disks that the disk pools are as expected: `storage disk show -ownership`
+. Verify all disks are displayed: `storage disk show`
 +
 
 ----
-node1:> storage disk show -ownership
 
-Disk     Aggregate  Home Owner    DR Home      Home ID       Owner ID    DR Home ID  Reserver Pool
--------- --------- ------------- ------------- ------------- ----------- ----------- ----------- ----------- ------
-1.0.0 pod_NVME_SSD_1
+::> storage disk show
+                     Usable           Disk    Container   Container
+Disk                   Size Shelf Bay Type    Type        Name
+---------------- ---------- ----- --- ------- ----------- ---------
+1.0.0                3.49TB     0   0 SSD-NVM aggregate   pod_NVME_SSD_1
+1.0.1                3.49TB     0   1 SSD-NVM aggregate   pod_NVME_SSD_1
+1.0.2                3.49TB     0   2 SSD-NVM aggregate   pod_NVME_SSD_1
+1.0.3                3.49TB     0   3 SSD-NVM aggregate   pod_NVME_SSD_1
+1.0.4                3.49TB     0   4 SSD-NVM aggregate   pod_NVME_SSD_1
 
-0 0 - 0 Pool0
-1.0.1 pod_NVME_SSD_1
-0 0 - 0 Pool0
-1.0.2 pod_NVME_SSD_1
-0 0 - 0 Pool0
+[...]
+48 entries were displayed.
+
 ----
 
 

@@ -85,14 +85,14 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 
 . Recable the console to the controller module, and then reconnect the management port.
 . Complete the installation of the controller module:
- .. Plug the power cord into the power supply, reinstall the power cable locking collar, and then connect the power supply to the power source.
  .. Using the locking latches, firmly push the controller module into the chassis until the locking latches begin to rise.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 
  .. Fully seat the controller module in the chassis by rotating the locking latches upward, tilting them so that they clear the locking pins, gently push the controller all the way in, and then lower the locking latches into the locked position.
+.. Plug the power cords into the power supplies, reinstall the power cable locking collar, and then connect the power supplies to the power source.
 +
-The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
+The controller module begins to boot as soon as power is restored. Be prepared to interrupt the boot process.
 
  .. If you have not already done so, reinstall the cable management device.
  .. Interrupt the normal boot process and boot to LOADER by pressing `Ctrl-C`.
