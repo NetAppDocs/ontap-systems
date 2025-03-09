@@ -68,27 +68,28 @@ image::../media/drw_9500_remove_flashcache.svg[width=340]
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-Terra cotta release button.
+Press the release button on the module face to open the cam handle.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-Caching module cam handle.
+Rotate the cam handle downward to disengage the module from the midplane.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Slide the module out of the drive bay using the cam handle and supporting the module with your other hand. 
+
+When removing a module, always use two hands to support its weight.
 
 |===
 
-.. Press the terra cotta release button on the front of the caching module.
-+
-NOTE: Do not use the numbered and lettered I/O cam latch to eject the caching module. The numbered and lettered I/O cam latch ejects the entire NVRAM11 module and not the caching module.
-
-.. Rotate the cam handle until the caching module begins to slide out of the NVRAM11 module.
-.. Gently pull the cam handle straight toward you to remove the caching module from the NVRAM11 module.
-+
-Be sure to support the caching module as you remove it from the NVRAM11 module.
-
 . Install the replacement caching module:
- .. Align the edges of the caching module with the drive bay opening.
- .. Gently push the caching module into the bay until the cam handle engages.
- .. Rotate the cam handle up until it locks into place.
+ .. With the cam handle in the open position, use both hands to insert the module.
+.. Gently push until the module stops.
+.. Close the cam handle so that the module is fully seated into the midplane and the handle clicks into place.
++
+Be sure to close the cam handle slowly so that it aligns correctly with the face of the module.
+. Verify that the drive's activity (green) LED is illuminated.
+
 . Bring the replacement caching module online:
 +
 `system controller slot module insert`
