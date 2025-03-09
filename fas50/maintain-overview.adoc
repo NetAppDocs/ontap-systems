@@ -24,7 +24,7 @@ a| link:bootmedia-replace-workflow.html[Boot media]
 
 a| The boot media stores a primary and secondary set of ONTAP image files as well as system configuration information that the system uses when it boots.
 
-a| link:caching_module_hot_swap.html[Caching module]
+a| link:caching-module-hot-swap.html[Caching module]
 
 a| A caching module (Flash Cache module) utilizes high-speed SSDs to store frequently accessed data ("hot data") for quicker retrieval.
 
