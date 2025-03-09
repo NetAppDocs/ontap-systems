@@ -82,16 +82,17 @@ For HA pairs with two controller modules in the same chassis, the sequence in wh
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 
 . Recable the console to the controller module, and then reconnect the management port.
-. Plug the power cables into the power supplies and reinstall the power cable retainers.
 . Insert the controller module into the chassis:
  .. Ensure the latching mechanism arms are locked in the fully extended position.
  .. Using both hands, align and gently slide the controller module into the latching mechanism arms until it stops.
  .. Place your index fingers through the finger holes from the inside of the latching mechanism.
  .. Press your thumbs down on the orange tabs on top of the latching mechanism and gently push the controller module over the stop.
  .. Release your thumbs from the top of the latching mechanisms and continue pushing until the latching mechanisms snap into place.
-+
-The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
 +
 The controller module should be fully inserted and flush with the edges of the chassis.
+.. Plug the power cords into the power supplies, reinstall the power cable locking collar, and then connect the power supplies to the power source.
++
+The controller module begins to boot as soon as power is restored. Be prepared to interrupt the boot process.
+
 . Repeat the preceding steps to install the second controller into the new chassis.

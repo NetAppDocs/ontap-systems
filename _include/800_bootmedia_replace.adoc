@@ -168,14 +168,14 @@ Risers
 +
 When recabling, remember to reinstall the media converters (SFPs or QSFPs) if they were removed.
 
- . Plug the power cable into the power supply and reinstall the power cable retainer.
  . Insert the USB flash drive into the USB slot on the controller module.
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
  . Gently push the controller module all the way into the system until the controller module locking hooks begin to rise, firmly push on the locking hooks to finish seating the controller module, and then swing the locking hooks into the locked position over the pins on the controller module.
+. Plug the power cords into the power supplies, reinstall the power cable locking collar, and then connect the power supplies to the power source.
 +
-The controller begins to boot as soon as it is completely installed into the chassis.
+The controller module begins to boot as soon as power is restored. Be prepared to interrupt the boot process.
 
  . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
