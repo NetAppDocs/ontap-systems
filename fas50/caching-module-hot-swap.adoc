@@ -2,7 +2,7 @@
 permalink: fas50/caching_module_hot_swap.html
 sidebar: sidebar
 keywords: fas50, hot swap, replace, Flash Cache
-summary: "The NVMe SSD Flash Cache modules (Flash Cache or caching modules) are located in the front of the NVRAM11 module in Slot 6 of FAS9500 systems only. You can hot-swap the caching module of the same capacity from the same or different supported vendor."
+summary: "You can hot-swap an NVMe SSD Flash Cache module (caching module) of the same capacity from the same or different supported vendor."
 ---
 = Hot-swap a caching module - FAS50
 :icons: font
@@ -17,28 +17,40 @@ You can hot-swap an NVMe SSD Flash Cache module (caching module) of the same cap
 Your storage system must meet certain criteria depending on your situation:
 
 * It must have the appropriate operating system for the caching module you are installing.
-* The caching module must be functioning well enough to be seen by the system. If the caching module is not functioning since the last boot, you cannot use this procedure and must use the cold-swap procedure.
+* The caching module must be functioning well enough to be seen by the system. If the caching module is not functioning since the last boot, you cannot use this procedure and must use the cold-swap procedure???????????????
 * It must support the caching capacity.
 * The replacement caching module must have the same capacity as the failed caching module, but can be from a different supported vendor.
 * All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. Locate the failed caching module, in shelf slot 0 or 23, by the lit amber Attention LED on the front of the caching module.
+. Locate the failed caching module (in drive slot 0 or 23 in the front of the storage system) by the lit amber Attention LED on the front of the caching module.
 . Prepare the caching module slot for replacement:
-.. Record the caching module capacity, part number, and serial number on the target node: `system node run local sysconfig -av 6`
-.. In admin privilege level, prepare the target NVMe slot for removal, responding `y` when prompted whether to continue: `system controller slot module remove -node node_name -slot slot_number` The following command prepares slot 6-1 on node1 for removal, and displays a message that it is safe to remove:
+.. Record the caching module capacity, part number, and serial number on the target node: 
++
+`system node run local sysconfig -av _slot_number_`
+.. In admin privilege level, prepare the target NVMe slot for removal:
++
+`system controller slot module remove -node _node_name_ -slot _slot_number_` 
++
+Respond `y` when prompted whether to continue.
++
+For example:
++
+The following command prepares slot 0 on node1 for removal, and displays a message that it is safe to remove:
 +
 ----
-::> system controller slot module remove -node node1 -slot 6-1
+::> system controller slot module remove -node node1 -slot 0
 
-Warning: SSD module in slot 6-1 of the node node1 will be powered off for removal.
+Warning: SSD module in slot 0 of the node node1 will be powered off for removal.
 Do you want to continue? (y|n): `y`
 
 The module has been successfully removed from service and powered off. It can now be safely removed.
 ----
 
-.. Display the slot status with the `system controller slot module show` command.
+.. Display the slot status:
++
+`system controller slot module show`
 +
 The NVMe slot status displays `powered-off` in the screen output for the caching module that needs replacing.
 
@@ -73,28 +85,36 @@ NOTE: Do not use the numbered and lettered I/O cam latch to eject the caching mo
 +
 Be sure to support the caching module as you remove it from the NVRAM11 module.
 
-. Install the caching module:
- .. Align the edges of the caching module with the opening in the NVRAM11 module.
+. Install the replacement caching module:
+ .. Align the edges of the caching module with the drive bay opening.
  .. Gently push the caching module into the bay until the cam handle engages.
- .. Rotate the cam handle until it locks into place.
-. Bring the replacement caching module online by using the `system controller slot module insert` command as follows:
+ .. Rotate the cam handle up until it locks into place.
+. Bring the replacement caching module online:
 +
-The following command prepares slot 6-1 on node1 for power-on, and displays a message that it is powered on:
+`system controller slot module insert`
++
+For example:
++
+The following command prepares slot 0 on node1 for power-on, and displays a message that it is powered on:
 +
 ----
-::> system controller slot module insert -node node1 -slot 6-1
+::> system controller slot module insert -node node1 -slot 0
 
-Warning: NVMe module in slot 6-1 of the node localhost will be powered on and initialized.
+Warning: NVMe module in slot 0 of the node localhost will be powered on and initialized.
 Do you want to continue? (y|n): `y`
 
 The module has been successfully powered on, initialized and placed into service.
 ----
 
-. Verify the slot status using the `system controller slot module show` command.
+. Verify the slot status:
 +
-Make sure that command output reports status for the as `powered-on` and ready for operation.
+`system controller slot module show`
++
+Make sure that command output reports status as `powered-on` and ready for operation.
 
-. Verify that the replacement caching module is online and recognized, and then visually confirm that the amber attention LED is not lit: `sysconfig -av slot_number`
+. Verify that the replacement caching module is online and recognized, and then visually confirm that the amber attention LED is not lit: 
++
+`sysconfig -av _slot_number_`
 +
 NOTE: If you replace the caching module with a caching module from a different vendor, the new vendor name is displayed in the command output.
 
