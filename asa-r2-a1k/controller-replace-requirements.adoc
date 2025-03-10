@@ -2,11 +2,17 @@
 permalink: asa-r2-a1k/controller-replace-requirements.html
 sidebar: sidebar
 keywords: asa r2 a1k, prerequisite, replace the controller module
-summary: "You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system."
+summary: Before replacing the controller in your ASA A1K system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement controller, a backup of your system configuration, and access to any required tools and firmware.
 ---
-= Controller replace requirements - ASA A1K
+= Requirements to replace the controller - ASA A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Before replacing the controller in your ASA A1K system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement controller, a backup of your system configuration, and access to any required tools and firmware.
+
 include::../_include/a1k_controller_replace_requirements-asa-r2.adoc[]
+
+.What's next?
+
+After you’ve the reviewed the requirements to replace your ASA A1K controller, you need to link:controller-replace-shutdown.html[shut down the controllers].

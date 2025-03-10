@@ -2,13 +2,15 @@
 permalink: asa-r2-a1k/bootmedia-replace-bmr.html
 sidebar: sidebar
 keywords: asa r2 a1k, replace the boot media
-summary: You locate the failed boot media in the controller module by removing Riser 3 on the controller module before you can replace the boot media.
+summary: The boot media in your ASA A1K system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media in the System Management module, and then reinstalling the System Management module.
 ---
 = Replace the boot media - ASA A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+The boot media in your ASA A1K system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media in the System Management module, and then reinstalling the System Management module.
+
 include::../_include/a1k_bootmedia_replace-bmr.adoc[]
 
 .What's next
