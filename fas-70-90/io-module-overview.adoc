@@ -9,7 +9,9 @@ summary: "You must replace the failed component with a replacement field replace
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/a1k_io_module_overview.adoc[]
+The FAS70 or FAS90 system offers flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
+
+You can replace a failed I/O module in your FAS70 or FAS90 storage system with the same type of I/O module, or with a different kind of I/O module. You can also add an I/O module into a system with empty slots.
 
 
 * link:io-module-add.html[Add an I/O module]
