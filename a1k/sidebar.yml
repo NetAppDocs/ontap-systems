@@ -27,13 +27,13 @@ entries:
    - title: Boot media
      pdf-filename: AFF A1K Boot Media
      entries:
-        - title: Boot media replace workflow
+        - title: Quick start for boot media replacement
           url: /a1k/bootmedia-replace-workflow.html
         - title: Review requirements
           url:  /a1k/bootmedia-replace-requirements.html
         - title: Check encryption keys
           url: /a1k/bootmedia-encryption-preshutdown-checks.html
-        - title: Shut down impaired controller
+        - title: Shut down controller
           url: /a1k/bootmedia-shutdown.html
         - title: Replace boot media
           url: /a1k/bootmedia-replace.html
@@ -47,7 +47,7 @@ entries:
    - title: Controller
      pdf-filename: AFF A1K Controller Module
      entries:
-        - title: Controller replace workflow
+        - title: Quick start for controller replacement
           url: /a1k/controller-replace-workflow.html
         - title: Review requirements
           url:  /a1k/controller-replace-requirements.html
