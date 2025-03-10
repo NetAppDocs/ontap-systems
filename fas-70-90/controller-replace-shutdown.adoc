@@ -2,14 +2,14 @@
 permalink: fas-70-90/controller-replace-shutdown.html
 sidebar: sidebar
 keywords: fas70, fas90, shut down the impaired controller
-summary: "To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage."
+summary: Shut down the controller in your FAS70 or FAS90 storage system when it is impaired. Before performing maintenance or component replacement it is critical to shut down the controller safely to prevent data loss and ensure system stability.
 ---
 = Shut down the impaired controller - FAS70 and FAS90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+Shut down the controller in your FAS70 or FAS90 storage system when it is impaired. Before performing maintenance or component replacement it is critical to shut down the controller safely to prevent data loss and ensure system stability.
 
 [role="tabbed-block"]
 ====
