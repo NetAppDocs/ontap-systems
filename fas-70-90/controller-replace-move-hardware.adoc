@@ -12,3 +12,7 @@ summary: Replace the controller in your FAS70 or FAS90 system when a hardware fa
 Replace the controller in your FAS70 or FAS90 system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
 
 include::../_include/a1k_controller_replace_move_hardware.adoc[]
+
+.What's next?
+
+After you’ve replaced the impaired FAS70 or FAS90 controller, you need to link:controller-replace-system-config-restore-and-verify.html[restore the system configuration].

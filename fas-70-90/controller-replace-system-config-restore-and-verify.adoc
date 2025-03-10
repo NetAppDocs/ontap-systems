@@ -12,3 +12,7 @@ summary: Verify that the controller's HA configuration is active and functioning
 Verify that the controller's HA configuration is active and functioning correctly in your FAS70 or FAS90 storage system, and confirm that the system's adapters list all the paths to the disks.
 
 include::../_include/a1k_controller_replace_system_config_restore_and_verify.adoc[]
+
+.What's next?
+
+After you’ve restored and verified the system configuration for your FAS70 or FAS90 system, you need to link:controller-replace-recable-reassign-disks.html[give back the controller].

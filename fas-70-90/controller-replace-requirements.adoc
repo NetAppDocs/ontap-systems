@@ -12,3 +12,7 @@ summary: Before replacing the controller in your FAS70 or FAS90 system, ensure y
 Before replacing the controller in your FAS70 or FAS90 system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement controller, a backup of your system configuration, and access to any required tools and firmware.
 
 include::../_include/a1k_controller_replace_requirements.adoc[]
+
+.What's next?
+
+After you’ve the reviewed the requirements to replace your FAS70 or FAS90 controller, you need to link:controller-replace-shutdown.html[shut down the controllers].

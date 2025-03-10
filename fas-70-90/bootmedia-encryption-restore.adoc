@@ -12,3 +12,6 @@ summary: Restore encryption on the replacement boot media in your FAS70 or FAS90
 Restore encryption on the replacement boot media in your FAS70 or FAS90 system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data.
 
 include::../_include/encryption_restore_bootmedia.adoc[]
+
+.What's next?
+After restoring encryption on the boot media, you need to link:bootmedia-complete-rma.html[return the failed part to NetApp].
