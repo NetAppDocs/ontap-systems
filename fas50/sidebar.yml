@@ -44,6 +44,8 @@ entries:
       - title: Return failed part to NetApp
         url: /fas50/bootmedia-complete-rma.html
     # END boot media
+   - title: Caching module
+     url: /fas50/caching-module-hot-swap.html
    - title: Chassis
      pdf-filename: FAS50 Chassis
      entries:
@@ -76,6 +78,8 @@ entries:
           url: /fas50/controller-replace-restore-system-rma.html
    - title: DIMM
      url: /fas50/dimm-replace.html
+   - title: Test
+     url: /fas50/caching-module-hot-swap.html
    - title: Drive
      url: /fas50/drive-replace.html
    - title: Fan
