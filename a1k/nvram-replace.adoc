@@ -1,9 +1,8 @@
 ---
 permalink: a1k/nvram-replace.html
 sidebar: sidebar
-keywords: aff a1k, replace an nvdimm
-summary: Replace the NVRAM in your AFF A1K system when the non-volatile memory becomes faulty or requires an upgrade. The replacement process involves
-shutting down the impaired controller, replacing the NVRAM module or the NVRAM DIMM, reassigning the disks, and returning the failed part to NetApp.
+keywords: aff a1k, replace nvram
+summary: Replace the NVRAM in your AFF A1K system when the non-volatile memory becomes faulty or requires an upgrade.
 ---
 = Replace NVRAM - AFF A1K
 :icons: font
