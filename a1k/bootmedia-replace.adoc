@@ -2,11 +2,16 @@
 permalink: a1k/bootmedia-replace.html
 sidebar: sidebar
 keywords: aff a1k, replace the boot media
-summary: You locate the failed boot media in the controller module by removing Riser 3 on the controller module before you can replace the boot media.
+summary: The boot media in your AFF A1K system stores essential firmware and configuration data. If the boot media fails, you must unplug the controller module, remove the System Management module, remove the impaired boot media, and replace the boot media in the System Management module.
 ---
 = Replace the boot media - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+The boot media in your AFF A1K system stores essential firmware and configuration data. If the boot media fails, you must unplug the controller module, remove the System Management module, remove the impaired boot media, and replace the boot media in the System Management module. 
+
 include::../_include/a1k_bootmedia_replace.adoc[]
+
+.What's next?
+After replacing the boot media, you need to link:bootmedia-recovery-image-boot.html[boot the recovery image].
