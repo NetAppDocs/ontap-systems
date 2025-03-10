@@ -1,7 +1,9 @@
-Use this procedure to replace a failed I/O module.
+You can use this procedure with all versions of ONTAP supported by your storage system.
 
-* You can use this procedure with all versions of ONTAP supported by your storage system.
-* All other components in the storage system must be functioning properly; if not, you must contact technical support.
+.Before you begin
+* You must have the replacement part available.
+* Make sure all other components in the storage system are functioning properly; if not, contact technical support.
+
 
 == Step 1: Shut down the impaired node
 
