@@ -2,14 +2,14 @@
 permalink: fas-70-90/caching-module-hot-swap.html
 sidebar: sidebar
 keywords: fas70, fas90, hot swap, replace, Flash Cache module carrier, caching module, Flash Cache
-summary: The NVMe SSD Flash Cache module carrier contains one or two Flash Cache modules (caching modules) with a single SSD caching drive integrated into each caching module. The caching modules can be hot-swapped, but the Flash Cache module carrier is not hot-swappable. 
+summary: The NVMe SSD Flash Cache module carrier in your FAS70 or FAS90 system contains one or two Flash Cache modules (caching modules) with a single SSD Flash Cache drive integrated into each caching module.
 ---
 = Replace the Flash Cache module carrier or a caching module - FAS70 and FAS90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The NVMe SSD Flash Cache module carrier contains one or two Flash Cache modules (caching modules) with a single SSD Flash Cache drive integrated into each caching module. 
+The NVMe SSD Flash Cache module carrier in your FAS70 or FAS90 system contains one or two Flash Cache modules (caching modules) with a single SSD Flash Cache drive integrated into each caching module. 
 
 The FAS70 supports 2TB caching modules and FAS90 supports 4TB caching modules. You cannot mix caching modules of different capacity in the Flash Cache module carrier.
 
