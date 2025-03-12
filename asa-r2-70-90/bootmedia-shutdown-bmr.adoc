@@ -9,7 +9,8 @@ summary: "You need to complete the shutdown of the impaired controller."
 :imagesdir: ../media/
 
 [.lead]
-Shut down or take over the impaired controller so you can perform maintenance on the boot media.
+Shut down the controller in your ASA A70 or ASA A90 storage system when when you need to replace the boot media. Before performing maintenance or component replacement it is critical to shut down the controller safely to prevent data loss and ensure system stability.
+
 
 include::../_include/shutdown_most_frus.adoc[]
 
