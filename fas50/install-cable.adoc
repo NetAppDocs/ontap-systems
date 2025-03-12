@@ -298,32 +298,50 @@ IMPORTANT: Do not plug in the power cords yet.
 
 
 == Step 4: Cable the shelf connections
-This procedure shows you how to cable the controllers to one NS224 shelf.
+This procedure shows you how to cable the controllers to one or two DS460C shelves.
 
 .About this task
 
 * For the maximum number of shelves supported for your storage system and for all of your cabling options, such as optical and switch-attached, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-* You cable each controller to each NSM100B module on the NS224 shelf using the storage cables that came with your storage system, which could be the following cable type:
+* You cable each controller to each IOM12 module on the SAS shelf (DS460C shelves are shown) using the storage cables that came with your storage system, which could be the following cable type:
 +
-*100 GbE QSFP28 copper cables*
+*100 GbE QSFP28 copper cables* ????? Check FAS70?
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable,width=100px]
 * The graphics show controller A cabling in blue and controller B cabling in yellow. 
 
+=== Cable the FAS50 to one DS460C shelf
+
 .Steps
 
 . Cable controller A to the shelf:
-.. Cable controller A port e3a to NSM A port e1a.
-.. Cable controller A port e3b to NSM B port e1b.
+.. Cable controller A port 3a to IOMA port 1.
+.. Cable controller A port 3d to IOMB port 3.
 +
-image:../media/drw_isi_g_1_ns224_controller_a_cabling_ieops-1945.svg[Controller A ports e3a and e3b cabled to one NS224 shelf]
+image:../media/drw_isi_fas50_1_ds460c_controller_a_cabling_ieops-2167.svg[Controller A ports 3a and 3d cabled to one DS460C shelf]
 
 . Cable controller B to the shelf:
-.. Cable controller B port e3a to NSM B port e1a.
-.. Cable controller B port e3b to NSM A port e1b.
+.. Cable controller B port 3a to IOMB port 1.
+.. Cable controller B port 3d to IOMA port 3.
 +
-image:../media/drw_isi_g_1_ns224_controller_b_cabling_ieops-1946.svg[Controller B ports e3a and e3b cabled to one NS224 shelf]
+image:../media/drw_isi_fas50_1_ds460c_controller_b_cabling_ieops-2169.svg[Controller B ports 3a and 3d cabled to one DS460C shelf]
+
+=== Cable the FAS50 to two DS460C shelves
+
+.Steps
+
+. Cable controller A to the shelf: ???
+.. Cable controller A port 3a to IOMA port 1.
+.. Cable controller A port 3d to IOMB port 3.
++
+image:../media/drw_isi_fas50_2_ds460c_controller_a_cabling_ieops-2170.svg[Controller A ports 3a and 3d cabled to one DS460C shelf????]
+
+. Cable controller B to the shelf: ????
+.. Cable controller B port 3a to IOMB port 1.
+.. Cable controller B port 3d to IOMA port 3.
++
+image:../media/drw_isi_fas50_2_ds460c_controller_b_cabling_ieops-2171.svg[Controller B ports 3a and 3d cabled to one DS460C shelf???]
 
 .What's next?
 
