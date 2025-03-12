@@ -9,7 +9,7 @@ summary: Get started with replacing the boot media in your AFF A70 or AFF A90 st
 :imagesdir: ../media/
 
 [.lead]
-Get started with replacing the boot media in your AFF A70 or AFF A90 storage system by preparing the replacement media, installing it in the system, restoring the boot image, and verifying the system functionality.
+Get started with replacing the boot media in your AFF A70 or AFF A90 storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements.html[Review requirements to replace the boot media]
 [role="quick-margin-para"]
@@ -17,9 +17,9 @@ Review the requirements for replacing the boot media.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-encryption-preshutdown-checks.html[Check encryption key support and status]
 [role="quick-margin-para"]
-Verify whether the system has security key manager enabled or encrypted disks.
+Determine whether the system has security key manager enabled or encrypted disks.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:bootmedia-shutdown.html[Shut down the impaired controller]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:bootmedia-shutdown.html[Shut down the controller]
 [role="quick-margin-para"]
 Shut down or take over the impaired controller so that the healthy controller continues to serve data from the impaired controller's storage. 
 
