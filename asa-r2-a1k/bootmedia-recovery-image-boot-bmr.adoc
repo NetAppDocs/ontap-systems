@@ -2,14 +2,16 @@
 permalink: asa-r2-a1k/bootmedia-recovery-image-boot-bmr.html
 sidebar: sidebar
 keywords: asa r2 a1k, boot the recovery image
-summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+summary: Restore the ONTAP image on the replacement boot media in your ASA A1K system. The process involves initiating the boot recovery process from the LOADER prompt and monitoring the recovery process until it completes and the node reboots.
 ---
-= Automated boot recovery - ASA A1K
+= Restore the ONTAP image on the boot media - ASA A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After physically replacing the impaired boot media, restore the ONTAP image from the partner node.
+Restore the ONTAP image on the replacement boot media in your ASA A1K system. The process involves initiating the boot recovery process from the LOADER prompt and monitoring the recovery process until it completes and the node reboots.
+
+During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it. 
 
 include::../_include/bmr_single_node_boot_recovery.adoc[]
 
