@@ -149,7 +149,7 @@ endif::a1k-a70-90[]
 // next image applies only to A20-30-50-fas50
 ifdef::a20-30-50-fas50[]
 image::../media/drw_psu_layout_1_ieops-1886.svg[A20 or A30 or A50 or fas50 storage system power connection diagram]
-endif::a20-30-50-fas50 []
+endif::a20-30-50-fas50[]
 
 * The system begins to boot. Initial booting might take up to eight minutes. 
 +
