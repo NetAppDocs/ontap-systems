@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: asa r2 a1k, boot the recovery image
 summary: Restore the ONTAP image on the replacement boot media in your ASA A1K system. The process involves initiating the boot recovery process from the LOADER prompt and monitoring the recovery process until it completes and the node reboots.
 ---
-= Restore the ONTAP image on the boot media - ASA A1K
+= Restore the image on the boot media - ASA A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore the ONTAP image on the replacement boot media in your ASA A1K system. The process involves initiating the boot recovery process from the LOADER prompt and monitoring the recovery process until it completes and the node reboots.
+After installing the new boot media device in your AFF A1K system, you can start the automated boot media recovery process to restore the configuration from the partner node.
 
 During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it. 
 
