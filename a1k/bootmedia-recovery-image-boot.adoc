@@ -2,14 +2,14 @@
 permalink: a1k/bootmedia-recovery-image-boot.html
 sidebar: sidebar
 keywords: aff a1k, boot the recovery image
-summary: If the boot media in your AFF A1K system is corrupted, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
+summary: After installing the new boot media device in your AFF A1K system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
 ---
 = Boot the recovery image - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If the boot media in your AFF A1K system is corrupted, you can boot the recovery image from a USB drive and restore the configuration from the partner node. 
+After installing the new boot media device in your AFF A1K system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
 
 include::../_include/bootmedia_recovery_image_boot.adoc[]
 
