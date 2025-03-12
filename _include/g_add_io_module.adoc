@@ -6,7 +6,7 @@ You can add I/O modules to your storage system by either adding them to availabl
 
 * If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^] and use the best one available for your I/O module.
 
-* All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+* All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
 * When adding I/O modules, you add the same module type in each controller. This procedure has you add them one at a time by repeating steps.

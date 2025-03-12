@@ -16,46 +16,16 @@ You can hot-swap an NVMe SSD caching module (Flash Cache module) of the same cap
 
 Your storage system must meet certain criteria depending on your situation:
 
-* It must have the appropriate operating system for the caching module you are installing.
-* The caching module must be functioning well enough to be seen by the system. If the caching module is not functioning since the last boot, you cannot use this procedure and must use the cold-swap procedure???????????
-* It must support the caching capacity.
+* Your storage system must have the appropriate operating system for the caching module you are installing.
 * The replacement caching module must have the same capacity as the failed caching module, but can be from a different supported vendor.
-* All other components in the storage system must be functioning properly; if not, you must contact technical support.
+* All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. Locate the failed caching module (in drive slot 0 or 23 in the front of the storage system) by the lit amber Attention LED on the front of the caching module.
-. Prepare the caching module slot for replacement:
-.. Record the caching module capacity, part number, and serial number on the target node: 
+. Locate the failed caching module by the lit amber Attention LED on the front of the caching module.
 +
-`system node run local sysconfig -av _slot_number_`
-.. In admin privilege level, prepare the target NVMe slot for removal:
-+
-`system controller slot module remove -node _node_name_ -slot _slot_number_` 
-+
-Respond `y` when prompted whether to continue.
-+
-For example:
-+
-The following command prepares slot 0 on node1 for removal, and displays a message that it is safe to remove:
-+
-----
-::> system controller slot module remove -node node1 -slot 0
+A caching module can be in drive slot 0 or 23.
 
-Warning: SSD module in slot 0 of the node node1 will be powered off for removal.
-Do you want to continue? (y|n): `y`
-
-The module has been successfully removed from service and powered off. It can now be safely removed.
-----
-
-.. Display the slot status:
-+
-`system controller slot module show`
-+
-The NVMe slot status displays `powered-off` in the screen output for the caching module that needs replacing.
-
-+
-NOTE: See the https://docs.netapp.com/us-en/ontap-cli-9121/[Command man pages^] for your version of ONTAP for more details.
 . Remove the caching module:
 
 +
@@ -89,34 +59,5 @@ When removing a module, always use two hands to support its weight.
 +
 Be sure to close the cam handle slowly so that it aligns correctly with the face of the module.
 . Verify that the module's activity (green) LED is illuminated.
-
-. Bring the replacement caching module online:
-+
-`system controller slot module insert`
-+
-For example:
-+
-The following command prepares slot 0 on node1 for power-on, and displays a message that it is powered on:
-+
-----
-::> system controller slot module insert -node node1 -slot 0
-
-Warning: NVMe module in slot 0 of the node localhost will be powered on and initialized.
-Do you want to continue? (y|n): `y`
-
-The module has been successfully powered on, initialized and placed into service.
-----
-
-. Verify the slot status:
-+
-`system controller slot module show`
-+
-Make sure that command output reports status as `powered-on` and ready for operation.
-
-. Verify that the replacement caching module is online and recognized, and then visually confirm that the amber attention LED is not lit: 
-+
-`sysconfig -av _slot_number_`
-+
-NOTE: If you replace the caching module with a caching module from a different vendor, the new vendor name is displayed in the command output.
 
 include::../_include/complete_rma_step.adoc[]
