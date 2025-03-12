@@ -2,7 +2,7 @@ The NVRAM module consists of the NVRAM12 hardware and field-replaceable DIMMs. Y
 
 All other components in the system must be functioning properly; if not, you must contact https://support.netapp.com[NetApp Support].
 
-You must replace the failed component with a replacement FRU component you received from your provider.
+Make sure you replace the failed component with a replacement component you received from NetApp.
 
 == Step 1: Shut down the impaired controller
 

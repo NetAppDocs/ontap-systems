@@ -9,4 +9,6 @@ summary: "You must review the prerequisites for the replacement procedure and se
 :imagesdir: ../media/
 
 [.lead]
+Before replacing the controller in your ASA A70 or ASA A90 system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement controller, a backup of your system configuration, and access to any required tools and firmware.
+
 include::../_include/a70-90_controller_replace_requirements-asa-r2.adoc[]
