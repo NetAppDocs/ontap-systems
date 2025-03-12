@@ -9,6 +9,6 @@ summary: If the boot media in your AFF C80 system is corrupted, you can boot the
 :imagesdir: ../media/
 
 [.lead]
-If the boot media in your AFF C80 system is corrupted, you can boot the recovery image from a USB drive, restore the configuration from the partner node, and verify the environment variables.
+After installing the new boot media device in your AFF C80 system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
 
 include::../_include/bootmedia_recovery_image_boot.adoc[]
