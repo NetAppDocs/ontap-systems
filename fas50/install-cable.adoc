@@ -331,6 +331,12 @@ image:../media/drw_isi_fas50_1_ds460c_controller_b_cabling_ieops-2169.svg[Contro
 
 .Steps
 
+. Cable the shelf-to-shelf connections:
+.. Cable Shelf 1 IOMA port 3 to Shelf 2 IOMA port 1.
+.. Cable Shelf 1 IOMB port 3 to Shelf 2 IOMB port 1.
++
+image:../media/drw_isi_fas50_2_ds460c_shelf_to_shelf_ieops-2172.svg[cable shelf to shelf connections]
+
 . Cable controller A to the shelf: ???
 .. Cable controller A port 3a to IOMA port 1.
 .. Cable controller A port 3d to IOMB port 3.
