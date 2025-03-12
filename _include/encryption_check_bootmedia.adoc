@@ -1,5 +1,4 @@
-Before shutting down the impaired controller, check if your version of ONTAP supports NetApp Volume Encryption (NVE) and if your key management system is properly configured. 
-
+ 
 == Step 1: Check if your version of ONTAP supports NetApp Volume Encryption
 
 Check whether your ONTAP version supports NetApp Volume Encryption (NVE). This information is crucial for downloading the correct ONTAP image.
