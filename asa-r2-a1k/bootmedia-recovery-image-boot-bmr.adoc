@@ -9,7 +9,7 @@ summary: Restore the ONTAP image on the replacement boot media in your ASA A1K s
 :imagesdir: ../media/
 
 [.lead]
-After installing the new boot media device in your  ASA A1K system, you can start the automated boot media recovery process to restore the configuration from the partner node.
+After installing the new boot media device in your ASA A1K system, you can start the automated boot media recovery process to restore the configuration from the partner node.
 
 During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it. 
 
