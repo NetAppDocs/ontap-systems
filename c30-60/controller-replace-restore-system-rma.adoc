@@ -15,17 +15,16 @@ To restore your storage system to full operation, you must verify the LIfs, chec
 
 include::../_include/install_licenses_mcc.adoc[]
 
-= Step 2: Verify LIFs and check cluster health
+== Step 2: Verify LIFs, register the serial number, and check cluster health
 
-include::../_include/check_lifs_cluster_health.adoc[]
+include::../_include/check_lifs_register_serial_number.adoc[]
 
 == Step 3: Return the failed part to NetApp
-
 include::../_include/complete_rma.adoc[]
 
 
-The link here is differnt than in Step 2 above. Use which one for Gizo and Vino?
 
-== Step 2: Verify LIFs, register the serial number and check cluster health?
+// No longer being used: Mar 6 2025.
+// == Step 1: Verify LIFs and check cluster health
 
-include::../_include/check_lifs_register_serial_number.adoc[]
+// include::../_include/check_lifs_cluster_health.adoc[]
