@@ -4,11 +4,15 @@ sidebar: sidebar
 keywords: c80, move the controller module hardware
 summary: Replace the controller in your AFF C80 system when a hardware failure or upgrade requires it. This process involves removing the impaired controller,  moving the components to the replacement controller, installing the replacement controller, and rebooting the system.
 ---
-= Replace the controller module - AFF C80
+= Replace the controller - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the controller in your AFF C80 system when a hardware failure or upgrade requires it. This process involves removing the impaired controller,  moving the components to the replacement controller, installing the replacement controller, and rebooting the system.
+Replace the controller in your AFF C80 system when a hardware failure requires it. This process involves removing the impaired controller,  moving the components to the replacement controller, installing the replacement controller, and rebooting the system.
 
 include::../_include/a70-90_controller_replace_move_hardware.adoc[]
+
+.What's next?
+
+After you’ve replaced the impaired AFF C80 controller, you need to link:controller-replace-system-config-restore-and-verify.html[restore the system configuration].

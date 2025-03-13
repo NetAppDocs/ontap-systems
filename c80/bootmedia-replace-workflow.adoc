@@ -2,14 +2,14 @@
 permalink: c80/bootmedia-replace-workflow.html
 sidebar: sidebar
 keywords: aff c80, replace the boot media
-summary: Get started with replacing the boot media in your AFF C80 storage system by preparing the replacement media, installing it in the system, restoring the boot image, and verifying the system functionality.
+summary: Get started with replacing the boot media in your AFF C80 storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
 ---
 = Quick start for boot media replacement - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Get started with replacing the boot media in your AFF C80 storage system by preparing the replacement media, installing it in the system, restoring the boot image, and verifying the system functionality.
+Get started with replacing the boot media in your AFF C80 storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements.html[Review the boot media requirements]
 [role="quick-margin-para"]
