@@ -2,14 +2,14 @@
 permalink: asa-r2-70-90/chassis-replace-shutdown.html
 sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, shutdown the controllers
-summary: "To replace the chassis, you must shutdown the controllers."
+summary: Shut down the controllers in your ASA A70 or ASA A90 storage system when you need to replace the chassis. It is critical to shut down the controllers safely to prevent data loss and ensure system stability.
 ---
 = Shut down the controllers - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must shut down the controllers in the impaired chassis before removing them.
+Shut down the controllers in your ASA A70 or ASA A90 storage system when you need to replace the chassis. It is critical to shut down the controllers safely to prevent data loss and ensure system stability.
 
 include::../_include/shutdown_chassis.adoc[]
 
