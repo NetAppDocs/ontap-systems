@@ -1,12 +1,12 @@
 section: afx-1k-maintain
-title: AFX A1K systems
-pdf-filename: AFX A1K Maintain
+title: AFX 1K systems
+pdf-filename: AFX 1K Maintain
 entries:
   - title: Maintenance overview
     url: /afx-1k/maintain-overview.html
   # START boot media
   - title: Boot media
-    pdf-filename: AFX A1K Boot Media
+    pdf-filename: AFX 1K Boot Media
     entries:
       - title: Quick start for boot media replacement
         url: /afx-1k/bootmedia-replace-workflow.html
@@ -26,7 +26,7 @@ entries:
         url: /afx-1k/bootmedia-complete-rma.html
     # END boot media
   - title: Controller
-    pdf-filename: AFX A1K Controller
+    pdf-filename: AFX 1K Controller
     entries:
       - title: Quick start for controller replacement
         url: /afx-1k/controller-replace-workflow.html
@@ -51,7 +51,7 @@ entries:
   - title: NV battery
     url: /afx-1k/nvdimm-battery-replace.html
   - title: I/O module
-    pdf-filename: AFX A1K IO Module
+    pdf-filename: AFX 1K IO Module
     entries:
       - title: I/O module overview
         url: /afx-1k/io-module-overview.html
