@@ -2,13 +2,15 @@
 permalink: a1k/io-module-add.html
 sidebar: sidebar
 keywords: aff a1k, add I/O module
-summary: "To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards,  and then reinstall the SFP and QSFP modules before cabling the cards."
+summary: Add an I/O module to your AFF A1K system to enhance network connectivity and expand your system's ability to handle data traffic. 
 ---
 = Add I/O module - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Add an I/O module to your AFF A1K system to enhance network connectivity and expand your system's ability to handle data traffic. 
+
 You can add an I/O module to your AFF A1K storage system when there are empty slots available or when all slots are fully populated.
 
 == Step 1: Shut down the impaired controller module

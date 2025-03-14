@@ -2,14 +2,13 @@
 permalink: asa-r2-70-90/dimm-replace.html
 sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, replace a dimm
-summary: Replace a DIMM in  your AFF C80 system when excessive correctable or uncorrectable errors are detected. These issues, often caused by a single DIMM failure, can prevent the storage system from booting ONTAP.
-
+summary: Replace a DIMM in your  ASA A70 or  ASA A90 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
 = Replace a DIMM - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a DIMM in  your AFF C80 system when excessive correctable or uncorrectable errors are detected. These issues, often caused by a single DIMM failure, can prevent the storage system from booting ONTAP.
+Replace a DIMM in your ASA A70 or ASA A90 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 
 include::../_include/a70-90_dimm_replace_asa_r2.adoc[]

@@ -2,16 +2,16 @@
 permalink: asa-r2-a1k/maintain-overview.html
 sidebar: sidebar
 keywords: asa r2 a1k maintenance, maintenance, repairing a1k, repairing asa a1k, replace asa a1k components, replace asa a1k components
-summary: Maintain the ASA r2 A1K hardware
+summary: Maintain the hardware of your ASA A1K storage system to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 ---
-= Maintain ASA A1K hardware
+= Overview of the maintenance procedures - ASA A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You might need to perform maintenance procedures on your hardware. Procedures specific to maintaining your ASA A1K system components are in this section.
+Maintain the hardware of your ASA A1K storage system to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 
-The procedures in this section assume that the A1K system has already been deployed as a storage node in the ONTAP environment.
+The maintenance procedures assume that the ASA A1K system has already been deployed as a storage node in the ONTAP environment.
 
 == System components
 For the ASA A1K storage system, you can perform maintenance procedures on the following components.

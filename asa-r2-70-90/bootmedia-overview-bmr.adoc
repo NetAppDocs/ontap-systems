@@ -2,18 +2,16 @@
 permalink: asa-r2-70-90/bootmedia-overview-bmr.html
 sidebar: sidebar
 keywords: asa r2 a70, a90, overview, the boot media
-summary: Learn about the automated method for replacing the boot media.
+summary: Boot media recovery for your ASA A70 or ASA A90 storage system uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on your replacement boot media.
 ---
 = Overview of boot media recovery - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-Boot media recovery uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
+Boot media recovery for your ASA A70 or ASA A90 storage system uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on your replacement boot media.
 
 When you encounter boot error messages similar to the one shown below, you need to replace the boot media and restore the ONTAP image from the partner node.
-
 
 ....
 Can't find primary boot device u0a.0 

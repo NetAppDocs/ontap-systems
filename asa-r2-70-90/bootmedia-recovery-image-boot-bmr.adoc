@@ -2,14 +2,16 @@
 permalink: asa-r2-70-90/bootmedia-recovery-image-boot-bmr.html
 sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, boot the recovery image
-summary: If the boot media in your ASA A70 or ASA A90 system is corrupted, you can boot the recovery image, restore the configuration from the partner node, and verify the environment variables.  
+summary: After installing the new boot media device in your  ASA A70 or  ASA A90 system, you can start the automated boot media recovery process to restore the configuration from the partner node. 
 ---
-= Restore the ONTAP image  - ASA A70 and ASA A90
+= Restore the image on the boot media - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If the boot media in your ASA A70 or ASA A90 system is corrupted, you can boot the recovery image and restore the configuration from the partner node.
+After installing the new boot media device in your ASA A70 or ASA A90 system, you can start the automated boot media recovery process to restore the configuration from the partner node.
+
+During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it.
 
 include::../_include/bmr_single_node_boot_recovery.adoc[]
 

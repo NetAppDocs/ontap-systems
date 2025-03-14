@@ -2,11 +2,13 @@
 permalink: asa-r2-a1k/dimm-replace.html
 sidebar: sidebar
 keywords: asa r2 a1k, replace a dimm
-summary: "You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic."
+summary: Replace a DIMM in your ASA A1K system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
 = Replace a DIMM - ASA A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a DIMM in your ASA A1K system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+
 include::../_include/a1k_dimm_replace_asa_r2.adoc[]
