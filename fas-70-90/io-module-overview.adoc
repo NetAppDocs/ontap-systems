@@ -20,6 +20,8 @@ Adding additional modules can improve redundancy, helping to ensure that the sys
 +
 Replacing a failing I/O module can restore the system to its optimal operating state.
 
-* The I/O slots on FAS70 and FAS90 controllers are numbered 1 through 11.
-+
+.I/O slot numbering
+
+The I/O slots on FAS70 and FAS90 controllers are numbered 1 through 11, as shown in the following illustration.
+
 image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on FAS70 and FAS90 controllers]
