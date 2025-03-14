@@ -2,12 +2,14 @@
 permalink: fas-70-90/system-management-replace.html
 sidebar: sidebar
 keywords: fas70, fas90, replace the system manager module
-summary: You must replace the System management module.
+summary: Replace the System Management module in your FAS70 or FAS90 system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
 ---
 = Replace system management module - FAS70 and FAS90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the System Management module in your FAS70 or FAS90 system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
+
 include::../_include/a1k_system_mgmt_replace.adoc[]
 
