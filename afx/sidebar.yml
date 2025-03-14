@@ -1,12 +1,6 @@
 section: get-started
-title: Get started
+title: Install your AFX system
 entries:
-- title: Learn about your ASA r2 system
-  url: "/get-started/learn-about.html"
-- title: Quick start
-  url: "/get-started/quick-start.html"
-- title: Install your ASA r2 system
-  entries:
   - title: Install workflow
     url: "/install-setup/install-setup-workflow.html"
   - title: Review hardware requirements
@@ -18,12 +12,4 @@ entries:
   - title: Cable hardware
     url: "/install-setup/cable-hardware.html"  
   - title: Power on system
-    url: "/install-setup/power-on-hardware.html" 
-- title: Set up your ASA r2 system
-  entries:     
-  - title: Set up the cluster
-    url: "/install-setup/initialize-ontap-cluster.html"  
-  - title: Set up SAN host configuration
-    url: "/install-setup/set-up-san-host.html"     
-  - title: Set up data access
-    url: "/install-setup/set-up-data-access.html"    
+    url: "/install-setup/power-on-hardware.html"    
