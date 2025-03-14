@@ -1,7 +1,3 @@
-Verify the storage and network connections, and then give back the controller.
-
-== Give back the controller
-Reset encryption if enabled and return the controller to normal operation.
 
 // start tabbed block area
 
@@ -10,6 +6,9 @@ Reset encryption if enabled and return the controller to normal operation.
 
 .No encryption
 --
+Return the impaired controller to normal operation by giving back its storage.
+
+.Steps
 . From the LOADER prompt, enter `boot_ontap`.
 
 . Press <enter> when console messages stop.
@@ -22,8 +21,11 @@ Reset encryption if enabled and return the controller to normal operation.
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 --
 
-.Onboard encryption (OKM)
+.OKM encryption
 --
+Reset onboard encryption and return the controller to normal operation.
+
+.Steps
 . From the LOADER prompt, enter:
 +
 `boot_ontap maint`
@@ -56,9 +58,11 @@ If the _Restored_ column shows anything but _true_, contact https://support.neta
 
 --
 
-.External key manager (EKM))
-
+.EKM encryption
 --
+Reset encryption and return the controller to normal operation.
+
+.Steps
 . If the root volume is encrypted with External Key Manager and the console cable is connected to the replacement node, enter `boot_ontap menu` and select option `11`.
 
 . Answer `y` or `n`  to the following questions:

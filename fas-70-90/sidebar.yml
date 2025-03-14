@@ -27,13 +27,13 @@ entries:
    - title: Boot media
      pdf-filename: FAS70 and FAS90 Boot Media
      entries:
-        - title: Boot media replace workflow
+        - title: Quick start for boot media replacement
           url: /fas-70-90/bootmedia-replace-workflow.html
         - title: Review requirements
           url:  /fas-70-90/bootmedia-replace-requirements.html
         - title: Check encryption keys
           url: /fas-70-90/bootmedia-encryption-preshutdown-checks.html
-        - title: Shut down impaired controller
+        - title: Shut down controller
           url: /fas-70-90/bootmedia-shutdown.html
         - title: Replace boot media
           url: /fas-70-90/bootmedia-replace.html
@@ -47,7 +47,7 @@ entries:
    - title: Controller
      pdf-filename: FAS70 and FAS90 Controller Module
      entries:
-        - title: Controller replace workflow
+        - title: Quick start for controller replacement
           url: /fas-70-90/controller-replace-workflow.html
         - title: Requirements and considerations
           url:  /fas-70-90/controller-replace-requirements.html
@@ -69,7 +69,7 @@ entries:
      url: /fas-70-90/caching-module-hot-swap.html 
    - title: NVRAM
      url: /fas-70-90/nvram-replace.html
-   - title: NV Battery
+   - title: NV battery
      url: /fas-70-90/nvdimm-battery-replace.html
    - title: I/O module
      entries:

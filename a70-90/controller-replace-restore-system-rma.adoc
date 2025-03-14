@@ -9,7 +9,7 @@ summary: Verify that the logical interfaces are reporting to their home port, pe
 :imagesdir: ../media/
 
 [.lead]
-Verify that the logical interfaces are reporting to their home port, perform a cluster health check, and then return the failed part to NetApp to complete the final step in the AFF A70 and AFF A90 controller replacement procedure.
+Verify that the logical interfaces (LIFs) are reporting to their home port, perform a cluster health check, and then return the failed part to NetApp to complete the final step in the AFF A70 and AFF A90 controller replacement procedure.
 
 == Step 1: Verify LIFs and check cluster health
 
