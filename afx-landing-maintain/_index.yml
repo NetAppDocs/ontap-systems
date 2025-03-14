@@ -1,0 +1,29 @@
+indexpage:
+  title: Maintain AFX systems
+  lead: Maintain the hardware of your AFX storage systems to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
+  summary: Learn how maintain your AFX systems.
+  keywords: maintain afx 1k
+  tiles:
+    - title: AFX 1K
+      links:
+        - title: Boot media
+          url: ../afx-1k/bootmedia-replace-workflow.html
+        - title: Controller
+          url: ../afx-1k/controller-replace-workflow.html
+        - title: DIMM
+          url: ../afx-1k/dimm-replace.html
+        - title: Fan
+          url: ../afx-1k/fan-replace.html
+        - title: NVRAM
+          url: ../afx-1k/nvram-replace.html
+        - title: NV battery
+          url: ../afx-1k/nvdimm-battery-replace.html
+        - title: I/O module
+          url: ../afx-1k/io-module-overview.html
+        - title: Power supply
+          url: ../afx-1k/power-supply-replace.html
+        - title: Real-time clock battery
+          url: ../afx-1k/rtc-battery-replace.html
+        - title: System Management module
+          url: ../afx-1k/system-management-replace.html
+    
