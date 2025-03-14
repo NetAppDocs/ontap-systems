@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: asa r2 a70 asa r2 a90 maintenance, maintenance, repairing asa r2 a70 asa r2 a90, repairing a70 asa r2 a90, replace a70 asa r2 a90 components
 summary: Maintain the ASA r2 A70, ASA r2 A90 hardware
 ---
-= Maintain ASA A70 and ASA A90 hardware
+= Overview of the maintenance procedures - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You might need to perform maintenance procedures on your hardware. Procedures specific to maintaining your ASA A70 and ASA A90 system components are in this section.
+Maintain the hardware of your ASA A70 and ASA A90 storage systems to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 
-The procedures in this section assume that the ASA A70 and ASA A90 systems have already been deployed as a storage node in the ONTAP environment.
+The maintenance procedures assume that the  ASA A70 and  ASA A90 systems have already been deployed as a storage node in the ONTAP environment.
 
 == System components
 For the ASA A70 and ASA A90 storage systems, you can perform maintenance procedures on the following components.

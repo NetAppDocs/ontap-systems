@@ -2,11 +2,13 @@
 permalink: asa-r2-a1k/system-management-replace.html
 sidebar: sidebar
 keywords: asa r2 a1k, replace the system manager module
-summary: You must replace .
+summary: Replace the System Management module in your ASA A1K system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
 ---
 = Replace system management module - ASA A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the System Management module in your ASA A1K system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
+
 include::../_include/a1k_system_mgmt_replace_asa_r2.adoc[]
