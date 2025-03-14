@@ -2,13 +2,16 @@
 permalink: c80/bootmedia-replace.html
 sidebar: sidebar
 keywords: c80, replace the boot media
-summary: The boot media in your AFF C80 system stores essential firmware and configuration data. If the boot media fails, you must unplug the controller module, remove the System Management module, remove the impaired boot media, and replace the boot media in the System Management module. 
+summary: The boot media in your AFF C80 system stores essential firmware and configuration data. If the boot media fails, you must unplug the controller module, remove the System Management module, remove the impaired boot media, and install the replacement boot media in the System Management module. 
 ---
 = Replace the boot media - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The boot media in your AFF C80 system stores essential firmware and configuration data. If the boot media fails, you must unplug the controller module, remove the System Management module, remove the impaired boot media, and replace the boot media in the System Management module. 
+The boot media in your AFF C80 system stores essential firmware and configuration data. If the boot media fails, you must unplug the controller module, remove the System Management module, remove the impaired boot media, and install the replacement boot media in the System Management module. 
 
 include::../_include/a70-90_bootmedia_replace.adoc[]
+
+.What's next?
+After replacing the boot media, you need to link:bootmedia-recovery-image-boot.html[boot the recovery image].

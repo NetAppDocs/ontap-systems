@@ -2,11 +2,16 @@
 permalink: a1k/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
 keywords: aff a1k, pre-shutdown checks for onboard encryption keys
-summary: "Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check what version of ONTAP the system is running."
+summary: To ensure data security on your AFF A1k storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption, and before you shut down the controller check if the key manager is active.
 ---
-= Check encryption key support and status - AFF A1K
+= Check encryption key support and status on the boot media - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+To ensure data security on your AFF A1k storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption (NVE), and before you shut down the controller check if the key manager is active.
+
 include::../_include/encryption_check_bootmedia.adoc[]
+
+.What's next?
+After checking the encryption key support and status on the boot media, you need to link:bootmedia-shutdown.html[shut down the controller].

@@ -2,13 +2,13 @@
 permalink: asa-r2-70-90/fan-swap-out.html
 sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, asa r2, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
-summary: Replace a fan module in your ASA A70 or ASA A90 system when a fan fails or is not operating efficiently, which can affect system cooling and overall performance.
+summary: Replace a fan module in your ASA A70 or ASA A90 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 ---
 = Replace a fan module - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a fan module in your ASA A70 or ASA A90 system when a fan fails or is not operating efficiently, which can affect system cooling and overall performance.
+Replace a fan module in your ASA A70 or ASA A90 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 
 include::../_include/a70-90_fan_swap_out_asa_r2.adoc[]

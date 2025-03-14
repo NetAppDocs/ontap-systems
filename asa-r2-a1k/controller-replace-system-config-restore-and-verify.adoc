@@ -2,11 +2,17 @@
 permalink: asa-r2-a1k/controller-replace-system-config-restore-and-verify.html
 sidebar: sidebar
 keywords: asa r2 a1k, restore and verify the system configuration, verify and set the ha state of the controller module
-summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
+summary: Verify that the controller’s HA configuration is active and functioning correctly in your ASA A1K storage system, and confirm that the system’s adapters list all the paths to the disks.
 ---
 = Restore and verify the system configuration - ASA A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Verify that the controller’s HA configuration is active and functioning correctly in your ASA A1K storage system, and confirm that the system’s adapters list all the paths to the disks.
+
 include::../_include/a1k_controller_replace_system_config_restore_and_verify.adoc[]
+
+.What's next?
+
+After you’ve restored and verified the system configuration for your ASA A1K system, you need to link:controller-replace-recable-reassign-disks.html[give back the controller].
