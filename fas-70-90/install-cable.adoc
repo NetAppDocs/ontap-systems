@@ -18,9 +18,9 @@ Contact your network administrator for information about connecting the storage 
 .About this task
 * These procedures show common configurations. The specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-* The I/O slots on a FAS70-90 controller are numbered 1 through 11.
+* The I/O slots on FAS70 and FAS90 controllers are numbered 1 through 11.
 +
-image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on an A1K controller]
+image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on FAS70 and FAS90 controllers]
 
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
