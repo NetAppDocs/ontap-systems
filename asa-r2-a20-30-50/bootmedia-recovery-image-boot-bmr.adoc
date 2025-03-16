@@ -9,7 +9,7 @@ summary: You can restore image on the boot media from the partner controller thr
 :imagesdir: ../media/
 
 [.lead]
-After installing the new boot media device in your ASA A20, ASA A30 or ASA A50 storage system, you can start the automated boot media recovery process to restore the configuration from the healthy node.
+After installing the new boot media device in your ASA A20, ASA A30, or ASA A50 storage system, you can start the automated boot media recovery process to restore the configuration from the healthy node.
 
 During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it.
 
