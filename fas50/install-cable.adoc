@@ -368,11 +368,6 @@ image:../media/drw_isi_fas50_1_ds460c_controller_b_cabling_ieops-2169.svg[Contro
 --
 Connect each controller to the IOM12 modules on both DS460C shelves.
 
-*100 GbE QSFP28 copper cables*
-
-image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable,width=100px]
-.Steps
-
 . Cable the shelf-to-shelf connections:
 .. Cable Shelf 1 IOMA port 3 to Shelf 2 IOMA port 1.
 .. Cable Shelf 1 IOMB port 3 to Shelf 2 IOMB port 1.
@@ -396,11 +391,9 @@ image:../media/drw_isi_fas50_2_ds460c_controller_b_cabling_ieops-2171.svg[Contro
 ====
 
 
-// end tabbed area above is FAS70-90.............
-//Below is stFAS50 stuff you meed to move in to tabbed option 2
-//
-//
-//
+// end tabbed area 
+
+
 
 // Remove lines 406 - 442 if Andris and Lueth are okay with the tabbled options above!!!!!!!!!!!!!!!!!!!!!
 //
