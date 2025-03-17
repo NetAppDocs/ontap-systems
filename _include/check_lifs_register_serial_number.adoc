@@ -9,6 +9,8 @@ If any LIFs are listed as false, revert them to their home ports: `network inter
 ** If AutoSupport is enabled, send an AutoSupport message to register the serial number.
 ** If AutoSupport is not enabled, call https://mysupport.netapp.com[NetApp Support] to register the serial number.
 
+. Check the health of your cluster. See the https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP[How to perform a cluster health check with a script in ONTAP^] KB article for more information.
+
 . If an AutoSupport maintenance window was triggered, end it by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`

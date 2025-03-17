@@ -2,18 +2,16 @@
 permalink: asa-r2-a1k/bootmedia-overview-bmr.html
 sidebar: sidebar
 keywords: asa r2 a1k, overview, the boot media
-summary: Learn about the automated method for replacing the boot media.
+summary: Boot media recovery uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
 ---
 = Overview of boot media recovery - ASA A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Boot media recovery uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
+Boot media recovery for your ASA A1K storage system uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on your replacement boot media.
 
 When you encounter boot error messages, you need to replace the boot media and restore the ONTAP image from the partner node.
-
-
 
 ....
 Can't find primary boot device u0a.0 

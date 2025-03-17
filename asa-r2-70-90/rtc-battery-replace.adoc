@@ -9,4 +9,6 @@ summary: "You replace the real-time clock (RTC) battery in the controller module
 :imagesdir: ../media/
 
 [.lead]
+Replace the real-time clock (RTC) battery, commonly known as a coin cell battery, in your ASA A70 or ASA A90 system to ensure that services and applications relying on accurate time synchronization remain operational.
+
 include::../_include/a70-90_rtc_battery_replace_asa_r2.adoc[]

@@ -2,12 +2,13 @@
 permalink: a1k/nvdimm-battery-replace.html
 sidebar: sidebar
 keywords: aff a1k, replace the nv battery, NV battery
-summary: "To replace the NV battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module."
-
+summary: Replace the NV battery in your AFF A1K system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
 ---
-= Replace the NV Battery - AFF A1K
+= Replace the NV battery - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the NV battery in your AFF A1K system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
+
 include::../_include/a1k_nvdimm_battery_replace.adoc[]

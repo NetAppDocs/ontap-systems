@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: c80, replace the chassis
 summary: Before replacing the chassis in your AFF C80 system, verify all other components in the system are functioning properly, ensure that you have local administrator credentials for ONTAP, the correct replacement chassis, and the necessary tools.
 ---
-= Chassis replace requirements - AFF C80
+= Requirements to replace the chassis - AFF C80
 :icons: font
 :imagesdir: ../media/
 
@@ -12,3 +12,7 @@ summary: Before replacing the chassis in your AFF C80 system, verify all other c
 Before replacing the chassis in your AFF C80 system, verify all other components in the system are functioning properly, ensure that you have local administrator credentials for ONTAP, the correct replacement chassis, and the necessary tools.
 
 include::../_include/a70-90_chassis_replace_requirements.adoc[]
+
+.What's next?
+
+After you've reviewed the requirements to replace the chassis, you need to link:chassis-replace-prepare.html[prepare to replace the chassis].

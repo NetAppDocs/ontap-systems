@@ -2,11 +2,17 @@
 permalink: fas-70-90/controller-replace-system-config-restore-and-verify.html
 sidebar: sidebar
 keywords: fas70, fas90, restore and verify the system configuration, verify and set the ha state of the controller module
-summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
+summary: Verify that the controller's HA configuration is active and functioning correctly in your FAS70 or FAS90 storage system, and confirm that the system's adapters list all the paths to the disks.
 ---
 = Restore and verify the system configuration - FAS70 and FAS90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Verify that the controller's HA configuration is active and functioning correctly in your FAS70 or FAS90 storage system, and confirm that the system's adapters list all the paths to the disks.
+
 include::../_include/a1k_controller_replace_system_config_restore_and_verify.adoc[]
+
+.What's next?
+
+After you’ve restored and verified the system configuration for your FAS70 or FAS90 system, you need to link:controller-replace-recable-reassign-disks.html[give back the controller].
