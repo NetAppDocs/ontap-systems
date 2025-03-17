@@ -2,14 +2,14 @@
 permalink: c80/chassis-replace-shutdown.html
 sidebar: sidebar
 keywords: c80, shutdown the controllers
-summary: Shut down the controllers in your AFF C80 storage system when you need to replace the chassis. Before performing maintenance or component replacement it is critical to shut down the controller safely to prevent data loss and ensure system stability.
+summary: Shut down the controllers in your AFF C80 storage system to prevent data loss and ensure system stability when replacing the chassis.
 ---
-= Shut down the controllers - AFF C80
+= Shut down the controllers to replace the chassis - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the controllers in your AFF C80 storage system when you need to replace the chassis. Before performing maintenance or component replacement it is critical to shut down the controller safely to prevent data loss and ensure system stability.
+Shut down the controllers in your AFF C80 storage system to prevent data loss and ensure system stability when replacing the chassis.
 
 include::../_include/shutdown_chassis.adoc[]
 
