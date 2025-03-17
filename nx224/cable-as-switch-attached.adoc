@@ -1,0 +1,19 @@
+---
+permalink: nx224/cable-as-switch-attached.html
+sidebar: sidebar
+keywords: nx224 nvme drive shelf cabling guide, ns224 drive shelf cabling guide, nx224 shelf cabling guide, ns224 cabling guide, switch-attach, switch-attached, switch-attached storage, cable nx224 drive shelves as switch-attached storage
+summary: If you have a system in which the NX224 drive shelves need to be cabled as switch-attached storage \(not direct-attached storage\), use the information provided.
+---
+= Cable shelves as switch-attached storage - NX224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you have a system in which the NX224 drive shelves need to be cabled as switch-attached storage (not direct-attached storage), use the information provided.
+
+* To cable NX224 drive shelves through storage switches, you can refer to the https://hwu.netapp.com[NetApp Hardware Universe^] for more information. For older hardware models, switch cabling information can also be found in the https://library.netapp.com/ecm/ecm_download_file/ECMLP2876580[NX224 NVMe Drive Shelf Cabling Guide^].
+
+* To install your storage switches, refer to the https://docs.netapp.com/us-en/ontap-systems-switches/index.html[Switch documentation for ONTAP hardware systems^].
+
+* To confirm supported hardware for your platform model, such as storage switches and cables, refer to the https://hwu.netapp.com[NetApp Hardware Universe^].
+
