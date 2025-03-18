@@ -2,14 +2,14 @@
 permalink: c80/controller-replace-requirements.html
 sidebar: sidebar
 keywords: aff a1k, prerequisite, replace the controller module
-summary: Before replacing the controller in your AFF C80 system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement controller, a backup of your system configuration, and access to any required tools and firmware.
+summary: Before replacing the controller in your AFF C80 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
 ---
 = Requirements to replace the controller - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before replacing the controller in your AFF C80 system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement controller, a backup of your system configuration, and access to any required tools and firmware.
+Before replacing the controller in your AFF C80 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
 
 include::../_include/a70-90_controller_replace_requirements.adoc[]
 
