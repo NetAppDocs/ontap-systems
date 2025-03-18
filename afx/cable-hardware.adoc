@@ -54,9 +54,9 @@ Use the Cluster/HA interconnect cable to connect ports e1a to e1a and ports e7a 
 +
 *Cluster/HA interconnect cables*
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable,width=100pxx]
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable]
 +
-image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[Two-node switchless cluster cabling diagram,width=500px]
+image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[Two-node switchless cluster cabling diagram]
 --
 
 .Switched cluster cabling
@@ -72,7 +72,7 @@ Use the 100 GbE cable to connect ports e1a to e1a and ports e7a to e7a.
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[Cable cluster connections to cluster network,width=500px]
+image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[Cable cluster connections to cluster network]
 --
 
 ====
@@ -95,27 +95,27 @@ NOTE: For maximum system performance for cluster and HA traffic, do not use port
 +
 *100 GbE cable*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable]
 +
-image::../media/drw_a1k_network_cabling1_ieops-1649.svg[Cable to 100Gb Ethernet network,width=500px]
+image::../media/drw_a1k_network_cabling1_ieops-1649.svg[Cable to 100Gb Ethernet network]
 
 +
 . Connect your 10/25 GbE host network switches.
 +
 *10/25 GbE Host*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb Ethernet cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb Ethernet cable]
 +
-image::../media/drw_a1k_network_cabling2_ieops-1650.svg[Cable to 10/25Gb Ethernet network,width=500px]
+image::../media/drw_a1k_network_cabling2_ieops-1650.svg[Cable to 10/25Gb Ethernet network]
 
 
 == Step 3: Connect the controllers to the management network.
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
 
-image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
+image::../media/oie_cable_rj45.svg[RJ-45 cables]
 *1000BASE-T RJ-45 cables*
 
-image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network,width=500px]
+image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network]
 
 IMPORTANT: Do not plug in the power cords yet. 
 
@@ -136,7 +136,7 @@ Choose one of the following cabling options that matches your setup.
 
 .Option 1: One NX224 storage shelf
 --
-Connect each controller to the NSM modules on the NS224 shelf. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
+Connect each controller to the NSM modules on the NX224 shelf. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
 
 .Steps
 
@@ -144,18 +144,18 @@ Connect each controller to the NSM modules on the NS224 shelf. The graphics show
 .. Connect port e11a to NSM A port e0a.
 .. Connect port e11b to port NSM B port e0b.
 +
-image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[Controller A e11a and e11b to a single NS224 shelf]
+image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[Controller A e11a and e11b to a single NX224 shelf]
 
 . On controller B, connect the following ports:
 .. Connect port e11a to NSM B port e0a.
 .. Connect port e11b to NSM A port e0b.
 +
-image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[Cable controller B ports e11a and e11b to a single NS224 shelf]
+image:../media/drw_a1k_1shelf_cabling_b_ieops-1704.svg[Cable controller B ports e11a and e11b to a single NX224 shelf]
 --
 
 .Option 2: Two NX224 storage shelves
 --
-Connect each controller to the NSM modules on both NS224 shelves. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
+Connect each controller to the NSM modules on both NX224 shelves. The graphics show cabling from each of the controllers: Controller A cabling is shown in blue and Controller B cabling is shown in yellow.
 
 .Steps
 
@@ -190,5 +190,3 @@ image:../media/drw_a1k_2shelf_cabling_b_ieops-1706.svg[Controller-to-shelf conne
 
 .What's next?
 After you've connected the storage controllers to your network and then connected the controllers to your storage shelves, you link:power-on-hardware.html[power on the AFX storage system].
-
-// 2024 Sept 23, ONTAPDOC 1922
