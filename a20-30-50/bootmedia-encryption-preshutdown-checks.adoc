@@ -2,7 +2,7 @@
 permalink: a20-30-50/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, pre-shutdown checks for onboard encryption keys
-summary: To ensure data security on your A20, AFF A30, or AFF A50 storage system, you need to verify the encryption key support and status on your boot media.
+summary: To ensure data security on your A20, AFF A30, or AFF A50 storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption, and before you shut down the controller check if the key manager is active.
 ---
 = Check encryption key support and status on the boot media - AFF A20, AFF A30, and AFF A50
 :icons: font
