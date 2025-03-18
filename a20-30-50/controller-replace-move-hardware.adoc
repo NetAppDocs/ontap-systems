@@ -12,3 +12,7 @@ summary: Replace the controller in your AFF A20, AFF A30, or AFF A50 system when
 Replace the controller in your AFF A20, AFF A30, or AFF A50 system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
 
 include::../_include/g_controller_replace_move_hardware.adoc[]
+
+.What's next?
+
+After you’ve replaced the impaired AFF A20, AFF A30, or AFF A50 controller, you need to link:controller-replace-system-config-restore-and-verify.html[restore the system configuration].

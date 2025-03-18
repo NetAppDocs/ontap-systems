@@ -12,3 +12,7 @@ summary: Replace the chassis in your AFF A20, AFF A30, or AFF A50 system when a 
 Replace the chassis in your AFF A20, AFF A30, or AFF A50 system when a hardware failure requires it. The replacement process involves removing the controller and power supply units (PSUs), removing the drives from the impaired chassis, installing the replacement chassis, and reinstalling the chassis components.
 
 include::../_include/g_chassis_replace_move_hardware.adoc[]
+
+.What's next?
+
+After you’ve replaced the impaired AFF A20, AFF A30, or AFF A50 chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]. 

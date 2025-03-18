@@ -12,3 +12,7 @@ summary: Shut down the controllers in your AFF A20, AFF A30, or AFF A50 storage 
 Shut down the controllers in your AFF A20, AFF A30, or AFF A50 storage system to prevent data loss and ensure system stability when replacing the chassis.
 
 include::../_include/shutdown_chassis.adoc[]
+
+.What's next?
+
+After you've shut down the controllers, you need to link:chassis-replace-move-hardware.html[replace the chassis].
