@@ -4,18 +4,16 @@ sidebar: sidebar
 keywords: hot-swap, fail, disk, drive, ds460c, nondisruptive, replace, system, power, serving, data, i/o, hot-swap a disk drive in a ds460c disk shelf
 summary: You can hot-swap a failed disk drive in a DS460C disk shelf.
 ---
-= Hot-swap a disk drive in a DS460C disk shelf - shelves with IOM12/IOM12B modules
+= Hot-swap a disk drive in a DS460C disk shelf
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-swap a failed disk drive in a DS460C disk shelf.
+You can hot-swap a failed disk drive in a DS460C disk shelf with IOM12, IOM12B, or IOM12C modules.
 
 .Before you begin
 
-* The replacement disk drive must be supported by the DS460C disk shelf.
-+
-https://hwu.netapp.com[NetApp Hardware Universe]
+* The replacement disk drive must be supported by the DS460C disk shelf. You can view supported disk drives for your configuration in the https://hwu.netapp.com[NetApp Hardware Universe].
 
 * All other components in the system must be functioning properly; if not, contact technical support.
 * The disk drive you are removing must be failed.
@@ -26,9 +24,8 @@ NOTE: Depending on the disk drive type and capacity, it can take up to several h
 
 * If you are replacing a self-encrypting disk (SED), you must follow the instructions for Replacing an SED in the ONTAP documentation for your version of ONTAP.
 +
-Instructions in the ONTAP documentation describe additional steps you must perform before and after replacing an SED.
-+
-https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI]
+Instructions in the https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI] documentation describe additional steps you must perform before and after replacing an SED.
+
 
 .About this task
 

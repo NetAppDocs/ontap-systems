@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: system, configuration, whether, perform, nondisruptive, iom12, module, hot-swap, disruptive, replacement, hot-swap or replace an iom12/iom12b module, iom12b
 summary: Your system configuration determines whether you can perform a nondisruptive IOM12/IOM12B module hot-swap or a disruptive IOM12/IOM12B module replacement when an IOM12/IOM12B module fails.
 ---
-= Hot-swap or replace an IOM12/IOM12B module - shelves with IOM12/IOM12B modules
+= Hot-swap or replace an IOM12, IOM12B, or IOM12C module
 :icons: font
 :imagesdir: ../media/
 
@@ -13,14 +13,14 @@ Your system configuration determines whether you can perform a nondisruptive she
 
 .Before you begin
 
-All other components in the system--including the other IOM12/IOM12B module--must be functioning properly.
+All other components in the system--including the other IOM12/IOM12B/IOM12C module--must be functioning properly.
 
 .About this task
-* This procedure applies to shelves having IOM12 modules and shelves having IOM12B modules.
+* This procedure applies to shelves having IOM12, IOM12B, or IOM12C modules.
 +
-NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
+NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module, an IOM12B module with another IOM12B module, or an IOM12C module with another IOM12C module. 
 
-* The IOM12 modules and the IOM12B modules can be distinguished by their appearance:
+* The IOM12, IOM12B, and IOM12C modules can be distinguished by their appearance:
 +
 The IOM12 modules are distinguished by an "IOM12" label:
 +
@@ -29,20 +29,18 @@ image::../media/drw_iom12.gif[Front of IOM12]
 The IOM12B modules are distinguished by a blue stripe and an "IOM12B" label:
 +
 image::../media/iom12b.png[Front of IOM12B]
++
+The IOM12C modules are distinguished by a blue and gray stripe and an "IOM12C" label:
++
+image::../media/drw_iom12c_ieops-2175.svg[Front of IOM12C, width=1000px]
 
 * For multipathed (multipath HA or multipath), tri-path HA, and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap a shelf IOM (nondisruptively replace a shelf IOM in a system that is powered on and serving data--I/O is in progress).
 * For FAS2600 series and FAS2700 series single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.
 * For FAS2600 series single-path configurations, you must halt your system to replace a shelf IOM.
 +
-NOTE: If you attempt to hot-swap a shelf IOM on a disk shelf with a single-path connection, you will lose all access to the disk drives in the disk shelf as well as any disk shelves beneath. You could also bring down your entire system.
+CAUTION: If you attempt to hot-swap a shelf IOM on a disk shelf with a single-path connection, you will lose all access to the disk drives in the disk shelf as well as any disk shelves beneath. You could also bring down your entire system.
 
-* The best practice is to have the current versions of disk shelf (IOM) firmware and disk drive firmware on your system before adding new disk shelves, shelf FRU components, or SAS cables.
-+
-Current versions of firmware can be found on the NetApp Support Site.
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
+* *Best practice*: Ensure your system has the current versions of disk shelf (IOM) firmware and disk drive firmware before adding new disk shelves, shelf FRU components, or SAS cables. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware].
 
 * Disk shelf (IOM) firmware is automatically updated (nondisruptively) on a new shelf IOM with a non-current firmware version.
 +
@@ -52,7 +50,7 @@ Shelf IOM firmware checks occur every ten minutes. An IOM firmware update can ta
 +
 A disk shelf has three location LEDs: one on the operator display panel and one on each shelf IOM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
 
-* If needed, you can refer to the Monitoring disk shelf LEDs section for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
+* If needed, you can refer to the link:/sas3/service-monitor-leds.html#operator-display-panel-leds[Monitoring disk shelf LEDs] guide for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
 
 .Steps
 

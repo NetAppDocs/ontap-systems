@@ -21,14 +21,12 @@ NOTE: For a FAS2600 series single-controller system that has the external storag
 
 * Your system cannot have any SAS cabling error messages.
 +
-You can download and run Active IQ Config Advisor to view any SAS cabling error messages and the corrective actions you should take.
-+
-https://mysupport.netapp.com/site/tools[NetApp Downloads: Config Advisor^]
+To view any SAS cabling error messages and the corrective actions you should take, download and run the https://mysupport.netapp.com/site/tools[Active IQ Config Advisor^].
 
 * HA pair configurations cannot be in a takeover state.
 * You must have removed all aggregates from the disk drives (the disk drives must be spares) in the disk shelves you are removing.
 +
-NOTE: If you attempt this procedure with aggregates on the disk shelf you are removing, you could fail the system with a multidisk panic.
+CAUTION: If you attempt this procedure with aggregates on the disk shelf you are removing, you could fail the system with a multidisk panic.
 +
 You can use the `storage aggregate offline -aggregate _aggregate_name_` command and then the `storage aggregate delete -aggregate _aggregate_name_` command.
 
@@ -36,18 +34,16 @@ You can use the `storage aggregate offline -aggregate _aggregate_name_` command 
 
 .About this task
 
-* *Best practice:* The best practice is to remove disk drive ownership after you remove the aggregates from the disk drives in the disk shelves you are removing.
+* *Best practice*: Remove disk drive ownership after you remove the aggregates from the disk drives in the disk shelves you are removing.
 +
 Removing ownership information from a spare disk drive allows the disk drive to be properly integrated into another node (as needed).
 
 [NOTE]
 ====
-The procedure for removing ownership from disk drives requires you to disable disk ownership automatic assignment. You reenable disk ownership automatic assignment at the end of this procedure.
-
-https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggregates overview^]
+You must disable disk ownership automatic assignment before you remove ownership from disk drives. You reenable this feature at the end of this procedure. To learn more about disk aggregates, see https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggregates overview^].
 ====
 
-* For a clustered ONTAP system that is greater than two-nodes, best practice is to have reassigned epsilon to an HA pair other than the one that is undergoing planned maintenance.
+* *Best practice*: For a clustered ONTAP system that is greater than two-nodes, reassign epsilon to an HA pair other than the one that is undergoing planned maintenance.
 +
 Reassigning epsilon minimizes the risk of unforeseen errors impacting all nodes in a clustered ONTAP system. You can use the following steps to determine the node holding epsilon and reassign epsilon if needed:
 +
