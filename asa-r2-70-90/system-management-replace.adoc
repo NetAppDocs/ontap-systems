@@ -1,12 +1,14 @@
 ---
 permalink: asa-r2-70-90/system-management-replace.html
 sidebar: sidebar
-keywords: AFF A70, AFF A90, replace the system management module
-summary: You must replace .
+keywords:  ASA A70,  ASA A90, replace the system management module
+summary: Replace the System Management module in your ASA A70 or ASA A90 system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
 ---
-= Replace system management module - ASA A70 and ASA A90
+= Replace the system management module - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the System Management module in your ASA A70 or ASA A90 system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
+
 include::../_include/a70-90_system_mgmt_replace_asa_r2.adoc[]
