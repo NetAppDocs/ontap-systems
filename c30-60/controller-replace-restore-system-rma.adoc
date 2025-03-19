@@ -9,7 +9,7 @@ summary: "To restore your system to full operation, you must verify the LIfs, ch
 :imagesdir: ../media/
 
 [.lead]
-To complete the controller replacement for your AFF A20, AFF A30, or AFF A50 system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller's serial number and then return the failed part to NetApp.
+To complete the controller replacement for your AFF C30 or AFF C60 system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller's serial number and then return the failed part to NetApp.
 
 == Step 1: Install licenses for the replacement controller in ONTAP
 

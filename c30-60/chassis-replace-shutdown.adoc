@@ -9,7 +9,7 @@ summary: "To replace the chassis, you must shutdown the controllers."
 :imagesdir: ../media/
 
 [.lead]
-Shut down the controllers in your AFF A20, AFF A30, or AFF A50 storage system to prevent data loss and ensure system stability when replacing the chassis.
+Shut down the controllers in your AFF C30 or AFF C60 storage system to prevent data loss and ensure system stability when replacing the chassis.
 
 include::../_include/shutdown_chassis.adoc[]
 

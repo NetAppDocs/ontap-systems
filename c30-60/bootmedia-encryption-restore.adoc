@@ -2,14 +2,14 @@
 permalink: c30-60/bootmedia-encryption-restore.html
 sidebar: sidebar
 keywords: aff c30, aff c60, post boot media replacement steps for okm, nse, and nve
-summary: Restore encryption on the replacement boot media in your AFF A20, AFF A30, or AFF A50 system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data.
+summary: Restore encryption on the replacement boot media in your AFF C30 or AFF C60 system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data.
 ---
 = Restore encryption on the boot media - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media in your AFF A20, AFF A30, or AFF A50 system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data.
+Restore encryption on the replacement boot media in your AFF C30 or AFF C60 system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data.
 
 include::../_include/encryption_restore_bootmedia.adoc[]
 

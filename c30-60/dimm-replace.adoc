@@ -9,6 +9,6 @@ summary: "Replace a DIMM in the controller module when your system registers an 
 :imagesdir: ../media/
 
 [.lead]
-Replace a DIMM in your AFF A20, AFF A30, or AFF A50 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+Replace a DIMM in your AFF C30 or AFF C60 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 
 include::../_include/g_dimm_replace.adoc[]
