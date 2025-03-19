@@ -9,4 +9,10 @@ summary: "You replace an impaired chassis with the new chassis of the same model
 :imagesdir: ../media/
 
 [.lead]
+Before replacing the chassis in your AFF A20, AFF A30, or AFF A50 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement chassis, and the necessary tools.
+
 include::../_include/g_chassis_replace_requirements.adoc[]
+
+.What's next?
+
+After you've reviewed the requirements to replace the chassis, you need to link:chassis-replace-shutdown.html[shut down the controllers]
