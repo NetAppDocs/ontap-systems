@@ -307,7 +307,9 @@ The following procedures show how to cable the controllers to a storage system w
 
 * For the maximum number of shelves supported for your storage system and all of your cabling options, such as optical and switch-attached, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-* DS460C shelves are shown, although other SAS shelves are supported, see link:https://hwu.netapp.com[NetApp Hardware Universe^]).
+* The cabling examples show DS460C shelves; however, additional SAS shelves are supported, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
++
+Cabling for other supported SAS shelves is similar. See link:../sas3/install-new-system.html[Install and cable shelves for a new system installations]. You can also refer to link:../sas3/overview-cabling-rules-examples.html[SAS cabling rues, worksheets, and examples overview^].
 
 * The graphics show controller A cabling in blue and controller B cabling in yellow.
 
