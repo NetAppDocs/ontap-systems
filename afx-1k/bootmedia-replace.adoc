@@ -2,14 +2,14 @@
 permalink: afx-1k/bootmedia-replace.html
 sidebar: sidebar
 keywords: afx 1k, replace the boot media
-summary: The boot media in your AFX 1K system stores essential firmware and configuration data. If the boot media fails, you must unplug the controller module, remove the System Management module, remove the impaired boot media, and install the replacement boot media in the System Management module.
+summary: The boot media in your AFX 1K system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
 ---
 = Replace the boot media - AFX 1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The boot media in your AFX 1K system stores essential firmware and configuration data. If the boot media fails, you must unplug the controller module, remove the System Management module, remove the impaired boot media, and install the replacement boot media in the System Management module. 
+The boot media in your AFX 1K system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media. 
 
 include::../_include/a1k_bootmedia_replace.adoc[]
 

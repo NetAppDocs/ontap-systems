@@ -8,7 +8,7 @@ entries:
   - title: Boot media
     pdf-filename: AFX 1K Boot Media
     entries:
-      - title: Quick start for boot media replacement
+      - title: Boot media replacement workflow
         url: /afx-1k/bootmedia-replace-workflow.html
       - title: Review requirements
         url:  /afx-1k/bootmedia-replace-requirements.html
@@ -28,12 +28,12 @@ entries:
   - title: Controller
     pdf-filename: AFX 1K Controller
     entries:
-      - title: Quick start for controller replacement
+      - title: Controller replacement workflow
         url: /afx-1k/controller-replace-workflow.html
       - title: Review requirements
         url:  /afx-1k/controller-replace-requirements.html
       - title: Shut down impaired controller
-        url: /afx-1k/controller-replace-shutdown-nomcc.html
+        url: /afx-1k/controller-replace-shutdown.html
       - title: Replace controller
         url: /afx-1k/controller-replace-move-hardware.html
       - title: Restore system configuration
