@@ -36,31 +36,31 @@ Cable the controllers to create the ONTAP cluster connections.
 .Switchless cluster cabling
 --
 
-.FAS50 with two 2-port 40/100 GbE I/O modules
-[%collapsible]
-====
+//.FAS50 with two 2-port 40/100 GbE I/O modules
+//[%collapsible]
+//====
 
-.Steps
+//.Steps
 
-. Cable the Cluster/HA interconnect connections: 
-+
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE. 
-+
-.. Cable controller A port e2a to controller B port e2a.
-.. Cable controller A port e4a to controller B port e4a.
-+
-NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
-+
-*100 GbE Cluster/HA interconnect cables*
-+
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
-+
-image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[a30 and a50 switchless cluster cabling diagram using two 100gbe io modules]
-+
+//. Cable the Cluster/HA interconnect connections: 
+//+
+//NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE. 
+//+
+//.. Cable controller A port e2a to controller B port e2a.
+//.. Cable controller A port e4a to controller B port e4a.
+//+
+//NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
+//+
+//*100 GbE Cluster/HA interconnect cables*
+//+
+//image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
+//+
+//image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[a30 and a50 switchless cluster cabling diagram using two 100gbe io modules]
+//+
 
-image::../media/drw_isi_fas50_switchless_2p_100gbe_cabling_ieops-1937.svg[fas50 switchless cluster cabling diagram using one 100gbe io modules]
+//image::../media/drw_isi_fas50_switchless_2p_100gbe_cabling_ieops-1937.svg[fas50 switchless cluster cabling diagram using one 100gbe io modules]
 
-====
+//====
 
 .FAS50 with one 2-port 40/100 GbE I/O module
 [%collapsible]
@@ -120,58 +120,58 @@ image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 switc
 .Switched cluster cabling
 --
 
-.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
+//.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
+//[%collapsible]
+
+
+//====
+
+//.Steps
+
+//. Cable the Cluster/HA interconnect connections: 
+//+
+//NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE.
+//+
+//.. Cable controller A port e4a to cluster network switch A.
+//.. Cable controller A port e2a to cluster network switch B.
+//.. Cable controller B port e4a to cluster network switch A.
+//.. Cable controller B port e2a to cluster network switch B.
+//+
+//NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
+//+
+//*40/100 GbE Cluster/HA interconnect cables*
+//+
+//image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
+//+
+//image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a50 switched cluster cabling diagram using two 100gbe io modules]
+
+
+//====
+
+//.AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
 [%collapsible]
 
 
-====
+//====
 
-.Steps
+//.Steps
 
-. Cable the Cluster/HA interconnect connections: 
-+
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE.
-+
-.. Cable controller A port e4a to cluster network switch A.
-.. Cable controller A port e2a to cluster network switch B.
-.. Cable controller B port e4a to cluster network switch A.
-.. Cable controller B port e2a to cluster network switch B.
-+
-NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
-+
-*40/100 GbE Cluster/HA interconnect cables*
-+
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
-+
-image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a50 switched cluster cabling diagram using two 100gbe io modules]
+//. Cable the controllers to the cluster network switches:
+//+
+//NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
+//+
+//.. Cable controller A port e4a to cluster network switch A. 
+//.. Cable controller A port e4b to cluster network switch B.
+//.. Cable controller B port e4a to cluster network switch A. 
+//.. Cable controller B port e4b to cluster network switch B.
+//+
+//*40/100 GbE Cluster/HA interconnect cables*
+//+
+//image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
+//+
+//image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
 
-
-====
-
-.AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
-[%collapsible]
-
-
-====
-
-.Steps
-
-. Cable the controllers to the cluster network switches:
-+
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
-+
-.. Cable controller A port e4a to cluster network switch A. 
-.. Cable controller A port e4b to cluster network switch B.
-.. Cable controller B port e4a to cluster network switch A. 
-.. Cable controller B port e4b to cluster network switch B.
-+
-*40/100 GbE Cluster/HA interconnect cables*
-+
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
-+
-image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
-
-====
+//====
 
 
 .FAS50 with one 2-port 10/25 GbE I/O module
@@ -212,26 +212,26 @@ Cable the controllers to your Ethernet or FC host network.
 --
 
 
-.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
-[%collapsible]
+//.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
+//[%collapsible]
 
-====
+//====
 
-.Steps
+//.Steps
 
-. On each controller, cable ports e2b and e4b to the Ethernet host network switches.
-+
-NOTE: The ports on I/O modules in slot 2 and 4 are 40/100 GbE (host connectivity is 40/100 GbE).
-+
-*40/100 GbE cables*
-+
-image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable, width=100px]
-+
-image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Cable to 40/100gbe ethernet host network switches]
+//. On each controller, cable ports e2b and e4b to the Ethernet host network switches.
+//+
+//NOTE: The ports on I/O modules in slot 2 and 4 are 40/100 GbE (host connectivity is 40/100 GbE).
+//+
+//*40/100 GbE cables*
+//+
+//image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable, width=100px]
+//+
+//image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Cable to 40/100gbe ethernet host network switches]
 
 
 
-====
+//====
 
 .FAS50 with one 4-port 10/25 GbE I/O module
 [%collapsible]
