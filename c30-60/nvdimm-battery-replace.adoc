@@ -2,12 +2,13 @@
 permalink: c30-60/nvdimm-battery-replace.html
 sidebar: sidebar
 keywords: aff c30, aff c60, replace the NV battery, NV battery
-summary: "To replace the NV battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module."
-
+summary: Replace the NV battery in your AFF A20, AFF A30, or AFF A50 system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
 ---
 = Replace the NV battery - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the NV battery in your AFF A20, AFF A30, or AFF A50 system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
+
 include::../_include/g_nvdimm_battery_replace.adoc[]
