@@ -81,7 +81,7 @@ image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[Cable cluster co
 
 
 
-== Step 2: Connect controllers to the host network
+== Step 2: Connect the controllers to the host network
 Connect the Ethernet module ports to your host network. 
 
 This procedure differs depending on your storage system model and I/O module configuration. The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
@@ -109,10 +109,10 @@ image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb Ethernet cable]
 image::../media/drw_a1k_network_cabling2_ieops-1650.svg[Cable to 10/25Gb Ethernet network]
 
 
-== Step 3: Connect the controllers to the management network.
+== Step 3: Connect the controllers to the management network
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
 
-image::../media/oie_cable_rj45.svg[RJ-45 cables]
+image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 
 image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network]
