@@ -2,13 +2,15 @@
 permalink: c80/io-module-add.html
 sidebar: sidebar
 keywords: c80, add I/O module
-summary: "To replace an I/O module, you must disconnect the cables from the module, remove the SFP and QSFP modules from the module, remove the module, install the replacement module, reinstall the SFP and QSFP modules, and then cable the I/O module."
+summary: Add an I/O module to your AFF C80 system to enhance network connectivity and expand your system’s ability to handle data traffic.
 ---
 = Add I/O module - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Add an I/O module to your AFF C80 system to enhance network connectivity and expand your system’s ability to handle data traffic.
+
 You can add an I/O module to your AFF C80 storage system when there are empty slots available or when all slots are fully populated.
 
 include::../_include/add_io_module_cam.adoc[]

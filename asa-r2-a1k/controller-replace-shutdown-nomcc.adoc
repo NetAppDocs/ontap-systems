@@ -2,15 +2,17 @@
 permalink: asa-r2-a1k/controller-replace-shutdown-nomcc.html
 sidebar: sidebar
 keywords: asa r2 a1k, shut down the impaired controller
-summary: "To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage."
+summary: Shut down the controller in your ASA A1K storage system when it is impaired. Before performing maintenance or component replacement it is critical to shut down the controller safely to prevent data loss and ensure system stability.
 ---
 = Shut down the impaired controller - ASA A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down or take over the impaired controller.
-
+Shut down the controller in your ASA A1K storage system when it is impaired. Before performing maintenance or component replacement it is critical to shut down the controller safely to prevent data loss and ensure system stability.
 
 include::../_include/shutdown_most_frus.adoc[]
 
+.What's next?
+
+After you've shut down the controller, you need to link:controller-replace-move-hardware.html[replace the controller].

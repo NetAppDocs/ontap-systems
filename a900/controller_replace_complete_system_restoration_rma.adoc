@@ -9,7 +9,7 @@ summary: 'To complete the replacement procedure and restore your system to full 
 :imagesdir: ../media/
 
 [.lead]
-To complete the replacement procedure and restore your system to full operation, you must recable the storage, restore the NetApp Storage Encryption configuration (if necessary), and install licenses for the new controller. You must complete a series of tasks before restoring your system to full operation.
+To complete the replacement procedure and restore your system to full operation, restore the NetApp Storage Encryption configuration (if necessary) and install licenses for the new controller.
 
 == Step 1: Install licenses for the replacement controller in ONTAP
 

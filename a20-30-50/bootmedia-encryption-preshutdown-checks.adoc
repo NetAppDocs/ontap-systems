@@ -9,4 +9,6 @@ summary: "Prior to shutting down the impaired controller and checking the status
 :imagesdir: ../media/
 
 [.lead]
+To ensure data security on your A20, AFF A30, or AFF A50 storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption (NVE), and before you shut down the controller check if the key manager is active. 
+
 include::../_include/encryption_check_bootmedia.adoc[]
