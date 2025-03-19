@@ -301,7 +301,7 @@ IMPORTANT: Do not plug in the power cords yet.
 
 
 == Step 4: Cable the shelf connections
-The following procedures show how to cable the controllers to a storage system with one or two DS460C shelves.
+The following procedures show how to cable the controllers to one or two DS460C shelves.
 
 .About this task
 
@@ -309,7 +309,7 @@ The following procedures show how to cable the controllers to a storage system w
 
 * The cabling examples show DS460C shelves; however, additional SAS shelves are supported, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 +
-Cabling for other supported SAS shelves is similar. See link:../sas3/install-new-system.html[Install and cable shelves for a new system installations^]. You can also refer to link:../sas3/overview-cabling-rules-examples.html[SAS cabling rues, worksheets, and examples overview^].
+Cabling for other supported SAS shelves is similar. See link:../sas3/install-new-system.html[Install and cable shelves for a new system installation^]. You can also refer to link:../sas3/overview-cabling-rules-examples.html[SAS cabling rues, worksheets, and examples overview^].
 
 * The graphics show controller A cabling in blue and controller B cabling in yellow.
 
