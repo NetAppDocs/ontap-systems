@@ -2,17 +2,17 @@
 permalink: c80/chassis-replace-shutdown.html
 sidebar: sidebar
 keywords: c80, shutdown the controllers
-summary: Shut down the controllers in your AFF C80 storage system to prevent data loss and ensure system stability when replacing the chassis.
+summary: Shut down the controller in your AFF C80 storage system to prevent data loss and ensure system stability when replacing the chassis.
 ---
-= Shut down the controllers to replace the chassis - AFF C80
+= Shut down the controller to replace the chassis - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the controllers in your AFF C80 storage system to prevent data loss and ensure system stability when replacing the chassis.
+Shut down the controller in your AFF C80 storage system to prevent data loss and ensure system stability when replacing the chassis.
 
 include::../_include/shutdown_chassis.adoc[]
 
 .What's next?
 
-After you've shut down the controllers, you need to link:chassis-replace-move-hardware.html[replace the chassis].
+After you've shut down the controller, you need to link:chassis-replace-move-hardware.html[replace the chassis].
