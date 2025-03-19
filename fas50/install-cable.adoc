@@ -174,22 +174,25 @@ image::../media/drw_isi_fas50_switchless_2p_100gbe_cabling_ieops-1937.svg[fas50 
 //====
 
 
-.FAS50 with one 2-port 10/25 GbE I/O module
+.FAS50 with one 2-port 40/100 GbE I/O module
 [%collapsible]
 ====
 
 . Cable the controllers to the cluster network switches:
 +
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports(on the I/O module in slot 4). The ports are 10/25 GbE.
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports(on the I/O module in slot 4). The ports are 40/100 GbE.
 +
 .. Cable controller A port e4a to cluster network switch A. 
 .. Cable controller A port e4b to cluster network switch B.
 .. Cable controller B port e4a to cluster network switch A. 
 .. Cable controller B port e4b to cluster network switch B.
 +
-*10/25 GbE Cluster/HA interconnect cables*
+*40/100 GbE Cluster/HA interconnect cables*
 +
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
+//*10/25 GbE Cluster/HA interconnect cables*
+//+
+//image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
 //+
 //image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched cluster cabling diagram using one 25gbe io module]
 +
