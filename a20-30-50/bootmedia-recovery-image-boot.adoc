@@ -13,3 +13,6 @@ summary: You must boot the ONTAP image from the USB drive, restore the file syst
 After installing the new boot media device in your AFF A20, AFF A30, or AFF A50 system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
 
 include::../_include/bootmedia_recovery_image_boot.adoc[]
+
+.What's next?
+After booting the recovery image, you need to link:bootmedia-encryption-restore.html[restore encryption on the boot media].
