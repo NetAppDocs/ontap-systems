@@ -13,15 +13,15 @@ Get started with replacing the boot media in your AFF A20, AFF A30, or AFF A50 s
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements.html[Review the boot media requirements]
 [role="quick-margin-para"]
-To replace the boot media, you must meet certain requirements.
+Review the requirements for replacing the boot media.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[One]link:bootmedia-encryption-preshutdown-checks.html[Check onboard encryption keys]
 [role="quick-margin-para"]
-Verify whether your storage system has security key manager enabled or encrypted disks.
+Determine whether the system has security key manager enabled or encrypted disks.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Two]link:bootmedia-shutdown.html[Shut down the controller]
 [role="quick-margin-para"]
-Shut down or take over the impaired controller so that the healthy controller continues to serve data from the impaired controller storage. 
+Shut down or take over the impaired controller so that the healthy controller continues to serve data from the impaired controller storage.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Three]link:bootmedia-replace.html[Replace the boot media]
 [role="quick-margin-para"]
