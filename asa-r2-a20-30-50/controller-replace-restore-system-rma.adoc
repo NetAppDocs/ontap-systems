@@ -14,7 +14,7 @@ Restore the NetApp Storage Encryption configuration (if necessary), install lice
 
 == Step 1: Install licenses for the replacement controller in ONTAP
 
-include::../_include/install_licenses_mcc.adoc[]
+include::../_include/install_licenses_nonmcc.adoc[]
 
 == Step 2: Verify LIFs, register the serial number, and check cluster health
 
