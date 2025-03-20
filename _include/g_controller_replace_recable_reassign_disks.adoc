@@ -1,6 +1,4 @@
-Give back the controller.
 
-== Give back the controller
 Reset encryption if enabled and return the controller to normal operation.
 
 // start tabbed block area
@@ -10,6 +8,9 @@ Reset encryption if enabled and return the controller to normal operation.
 
 .No encryption
 --
+Return the impaired controller to normal operation by giving back its storage.
+
+.Steps
 . From the LOADER prompt, enter `boot_ontap`.
 
 . Press <enter> when console messages stop.
@@ -24,6 +25,9 @@ Reset encryption if enabled and return the controller to normal operation.
 
 .Onboard encryption (OKM)
 --
+Reset onboard encryption and return the controller to normal operation.
+
+.Steps
 . From the LOADER prompt, enter `boot_ontap maint`.
 . Boot to the ONTAP menu from the LOADER prompt `boot_ontap menu` and select option 10.
 . Enter the OKM passphrase.
@@ -67,8 +71,10 @@ If the output shows results (the key IDs of keys that are not present in the sys
 --
 
 .External key manager (EKM)
-
 --
+Reset encryption and return the controller to normal operation.
+
+.Steps
 . If the root volume is encrypted with External Key Manager and the console cable is connected to the replacement node, enter `boot_ontap menu` and select option `11`.
 
 . Answer `y` or `n` to the following questions:
