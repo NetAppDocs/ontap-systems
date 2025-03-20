@@ -2,11 +2,13 @@
 permalink: c30-60/rtc-battery-replace.html
 sidebar: sidebar
 keywords: aff c30, aff c60, replace the real-time clock battery
-summary: "You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function."
+summary: Replace the real-time clock (RTC) battery, commonly known as a coin cell battery, in your AFF C30 or AFF C60 system to ensure that services and applications relying on accurate time synchronization remain operational.
 ---
 = Replace the real-time clock battery - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the real-time clock (RTC) battery, commonly known as a coin cell battery, in your AFF C30 or AFF C60 system to ensure that services and applications relying on accurate time synchronization remain operational.
+
 include::../_include/g_rtc_battery_replace.adoc[]
