@@ -23,9 +23,6 @@ sidebar:
     - title: AFF systems
       url: /aff-landing/index.html 
       entries:
-      - title: A-Series systems
-        url: /aff-aseries/index.html 
-        entries:   
         - section: a1k
         - section: a70-90
         - section: a20-30-50
@@ -34,9 +31,6 @@ sidebar:
         - section: a400
         - section: a800
         - section: a900
-      - title: C-Series systems
-        url: /aff-cseries/index.html
-        entries:
         - section: c30-60
         - section: c80
         - section: c250
@@ -44,18 +38,12 @@ sidebar:
         - section: c800
     - title: ASA systems
       url: /allsan-landing/index.html
-      entries:  
-      - title: A-Series systems
-        url: /allsan-a-series/index.html
-        entries:    
+      entries:   
         - section: asa150
         - section: asa250
         - section: asa400
         - section: asa800
-        - section: asa900
-      - title: C-Series systems
-        url: /allsan-c-series/index.html
-        entries:    
+        - section: asa900    
         - section: asa-c250
         - section: asa-c-400
         - section: asa-c800
