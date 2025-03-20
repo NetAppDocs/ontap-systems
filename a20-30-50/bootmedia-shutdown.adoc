@@ -2,14 +2,14 @@
 permalink: a20-30-50/bootmedia-shutdown.html
 sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, shut down the controller
-summary: "After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller."
+summary: Shut down the impaired controller in your AFF A20, AFF A30, or AFF A50 storage system to prevent data loss and ensure system stability when replacing the boot media.
 ---
-= Shut down impaired controller - AFF A20, AFF A30, and AFF A50
+= Shut down the controller to replace the boot media - AFF A20, AFF A30, and AFF A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down or take over the impaired controller.
+Shut down the impaired controller in your AFF A20, AFF A30, or AFF A50 storage system to prevent data loss and ensure system stability when replacing the boot media.
 
 // After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
@@ -26,3 +26,6 @@ include::../_include/shutdown_most_frus.adoc[]
 // --
 
 // ====
+
+.What's next?
+After shutting down the controller, you need to link:bootmedia-replace.html[replace the boot media].
