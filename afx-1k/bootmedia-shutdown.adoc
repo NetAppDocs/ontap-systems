@@ -1,0 +1,29 @@
+---
+permalink: afx-1k/bootmedia-shutdown.html
+sidebar: sidebar
+keywords: afx 1k, shut down the controller
+summary: Shut down the controller in your AFX 1K storage system when when you need to replace the boot media. Before performing maintenance or component replacement it is critical to shut down the controller safely to prevent data loss and ensure system stability.
+---
+= Shut down the controller to replace the boot media - AFX 1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down the controller in your AFF A20, AFF A30, or AFF A50 storage system to prevent data loss and ensure system stability when replacing the boot media.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
+
+====
+
+.What's next?
+After shutting down the controller, you need to link:bootmedia-replace.html[replace the boot media].

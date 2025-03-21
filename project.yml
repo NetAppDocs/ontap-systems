@@ -42,6 +42,17 @@ sidebar:
         - section: c250
         - section: c400
         - section: c800
+    - title: AFX systems
+      url: /afx/index.html
+      entries:  
+      - title: Install and setup
+        url: /afx/afx-install-setup.html
+        entries:
+        - section: afx-get-started
+      - title: Maintain
+        url: /afx-landing-maintain/index.html
+        entries:
+        - section: afx-1k-maintain
     - title: ASA systems
       url: /allsan-landing/index.html
       entries:  
@@ -98,6 +109,7 @@ sidebar:
       url: /drive-shelves/index.html
       entries:
         - section: ns224
+        - section: nx224
         - section: sas3
     - title: Cabinet and rail kits
       entries:

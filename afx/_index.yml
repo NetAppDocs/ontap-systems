@@ -1,0 +1,36 @@
+indexpage:
+  title: AFX systems
+  lead: The new NetApp AFX systems (AFX 1K) deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers.
+  summary: The new NetApp AFX systems (AFX 1K) deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers.
+  keywords: afx, afx 1k, install, setup, maintain
+  tiles:
+    - title: Get started
+      links:
+        - title: Learn about AFX storage systems
+          url: TBD
+        - title: AFX datasheet 
+          url: TBD
+
+    - title: Install and maintain AFX systems
+      links:
+        - title: Install AFX systems
+          url: https://docs.netapp.com/us-en/asa-r2/install-setup/install-setup-workflow.html
+        - title: Maintain AFX systems
+          url: ../afx-landing-maintain/index.html
+    - title: Manage data on AFX systems
+      links:
+        - title: Provision SAN storage
+          url: https://docs.netapp.com/us-en/asa-r2/manage-data/provision-san-storage.html
+        - title: Clone data
+          url: https://docs.netapp.com/us-en/asa-r2/manage-data/data-cloning.html
+        - title: Modify storage units
+          url: https://docs.netapp.com/us-en/asa-r2/manage-data/modify-storage-units.html
+    - title: Protect and secure data on AFX systems 
+      links: 
+        - title: Create snapshots
+          url: https://docs.netapp.com/us-en/asa-r2/data-protection/create-snapshots.html         
+        - title: Set up snapshot replication
+          url: https://docs.netapp.com/us-en/asa-r2/data-protection/snapshot-replication.html  
+        - title: Encrypt data at rest
+          url: https://docs.netapp.com/us-en/asa-r2/secure-data/encrypt-data-at-rest.html
+    
