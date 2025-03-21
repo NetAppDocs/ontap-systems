@@ -2,26 +2,26 @@
 permalink: a20-30-50/bootmedia-replace-workflow.html
 sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, replace the boot media
-summary: You must replace the failed component with a replacement FRU component you received from your provider.
+summary: Get started with replacing the boot media in your AFF A20, AFF A30, or AFF A50 storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
 ---
 = Boot media replacement workflow - AFF A20, AFF A30, and AFF A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Follow these workflow steps to replace your boot media.
+Get started with replacing the boot media in your AFF A20, AFF A30, or AFF A50 storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements.html[Review the boot media requirements]
 [role="quick-margin-para"]
-To replace the boot media, you must meet certain requirements.
+Review the requirements for replacing the boot media.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[One]link:bootmedia-encryption-preshutdown-checks.html[Check onboard encryption keys]
 [role="quick-margin-para"]
-Verify whether your storage system has security key manager enabled or encrypted disks.
+Determine whether the system has security key manager enabled or encrypted disks.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Two]link:bootmedia-shutdown.html[Shut down the impaired controller]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Two]link:bootmedia-shutdown.html[Shut down the controller]
 [role="quick-margin-para"]
-Shut down or take over the impaired controller so that the healthy controller continues to serve data from the impaired controller storage. 
+Shut down or take over the impaired controller so that the healthy controller continues to serve data from the impaired controller storage.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Three]link:bootmedia-replace.html[Replace the boot media]
 [role="quick-margin-para"]
