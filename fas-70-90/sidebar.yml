@@ -27,7 +27,7 @@ entries:
    - title: Boot media
      pdf-filename: FAS70 and FAS90 Boot Media
      entries:
-        - title: Quick start for boot media replacement
+        - title: Boot media replacement workflow
           url: /fas-70-90/bootmedia-replace-workflow.html
         - title: Review requirements
           url:  /fas-70-90/bootmedia-replace-requirements.html
@@ -47,7 +47,7 @@ entries:
    - title: Controller
      pdf-filename: FAS70 and FAS90 Controller Module
      entries:
-        - title: Quick start for controller replacement
+        - title: Controller replacement workflow
           url: /fas-70-90/controller-replace-workflow.html
         - title: Requirements and considerations
           url:  /fas-70-90/controller-replace-requirements.html

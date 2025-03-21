@@ -2,14 +2,14 @@
 permalink: c80/controller-replace-workflow.html
 sidebar: sidebar
 keywords: aff c80, replace the controller workflow
-summary: Get started with replacing the controller in your AFF C80 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and verifying system operations.
+summary: Get started with replacing the controller in your AFF C80 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller.
 ---
-= Quick start for controller replacement - AFF C80
+= Controller replacement workflow - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Get started with replacing the controller in your AFF C80 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and verifying system operations. 
+Get started with replacing the controller in your AFF C80 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-replace-requirements.html[Review the controller replacement requirements]
 [role="quick-margin-para"]

@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/bootmedia-shutdown-bmr.html
 sidebar: sidebar
-keywords: aff a20, aff a30, aff a50, shut down the controller
+keywords: asa a20, asa a30, asa a50, shut down the controller
 summary: "You need to complete the shutdown of the impaired controller."
 ---
 = Shut down the controller - ASA A20, ASA A30, and ASA A50
@@ -9,9 +9,11 @@ summary: "You need to complete the shutdown of the impaired controller."
 :imagesdir: ../media/
 
 [.lead]
-You need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller.
+Shut down the controller in your ASA A20, ASA A30, or ASA A50 storage system when when you need to replace the boot media. Before performing maintenance or component replacement it is critical to shut down the controller safely to prevent data loss and ensure system stability.
+
 
 include::../_include/shutdown_most_frus.adoc[]
 
 .What's next
-After you shut down the impaired controller, link:bootmedia-replace-bmr.html[replace the boot media].
+After you shut down the impaired controller, you link:bootmedia-replace-bmr.html[replace the boot media].
+
