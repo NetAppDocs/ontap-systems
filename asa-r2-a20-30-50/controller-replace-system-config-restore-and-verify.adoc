@@ -9,10 +9,10 @@ summary: "After completing the hardware replacement and booting to Maintenance m
 :imagesdir: ../media/
 
 [.lead]
-Verify that the controller’s HA configuration is active and functioning correctly in your AFF A20, AFF A30, or AFF A50 storage system, and confirm that the system’s adapters list all the paths to the disks.
+Verify that the controller’s HA configuration is active and functioning correctly in your ASA A20, ASA A30, or ASA A50 storage system, and confirm that the system’s adapters list all the paths to the disks.
 
 include::../_include/g_controller_replace_system_config_restore_and_verify.adoc[]
 
 .What's next?
 
-After you’ve restored and verified the system configuration for your AFF A20, AFF A30, or AFF A50 system, you need to link:controller-replace-recable-reassign-disks.html[give back the controller].
+After you’ve restored and verified the system configuration for your ASA A20, ASA A30, or ASA A50 system, you need to link:controller-replace-recable-reassign-disks.html[give back the controller].

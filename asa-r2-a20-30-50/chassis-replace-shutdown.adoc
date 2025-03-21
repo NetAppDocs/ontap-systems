@@ -2,14 +2,14 @@
 permalink: asa-r2-a20-30-50/chassis-replace-shutdown.html
 sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, shutdown the controllers
-summary: Shut down the controllers in your AFF A20, AFF A30, or AFF A50 storage system to prevent data loss and ensure system stability when replacing the chassis
+summary: Shut down the controllers in your ASA A20, ASA A30, or ASA A50 storage system to prevent data loss and ensure system stability when replacing the chassis
 ---
 = Shut down the controllers to replace the chassis - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the controllers in your AFF A20, AFF A30, or AFF A50 storage system to prevent data loss and ensure system stability when replacing the chassis.
+Shut down the controllers in your ASA A20, ASA A30, or ASA A50 storage system to prevent data loss and ensure system stability when replacing the chassis.
 
 include::../_include/shutdown_chassis.adoc[]
 
