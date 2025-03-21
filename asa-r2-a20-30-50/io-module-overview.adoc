@@ -9,8 +9,9 @@ summary: "You must replace the failed component with a replacement field replaca
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/g_io_module_overview.adoc[]
+The ASA A20, ASA A30, and ASA A50 systems offer flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
 
+You can replace a failed I/O module in your storage system with the same type of I/O module, or with a different type of I/O module. You can also add an I/O module to a storage system with available slots.
 
 * link:io-module-add.html[Add an I/O module]
 +
