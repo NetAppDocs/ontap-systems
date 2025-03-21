@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/bootmedia-recovery-image-boot-bmr.html
 sidebar: sidebar
-keywords: aff a20, aff a30, aff a50, boot the recovery image
+keywords: asa a20, asa a30, asa a50, boot the recovery image
 summary: You can restore image on the boot media from the partner controller through the automated boot recovery process.  
 ---
 = Restore the ONTAP image  - ASA A20, ASA A30, and ASA A50
@@ -9,4 +9,11 @@ summary: You can restore image on the boot media from the partner controller thr
 :imagesdir: ../media/
 
 [.lead]
+After installing the new boot media device in your ASA A20, ASA A30, or ASA A50 storage system, you can start the automated boot media recovery process to restore the configuration from the healthy node.
+
+During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it.
+
 include::../_include/bmr_single_node_boot_recovery.adoc[]
+
+.What's next
+After you've restored the ONTAP image and the node is up and serving data, you link:bootmedia-complete-rma-bmr.html[return the failed part to NetApp].
