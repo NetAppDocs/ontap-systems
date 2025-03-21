@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/bootmedia-complete-rma-bmr.html
 sidebar: sidebar
-keywords: aff a20, aff a30, aff a50, complete the replacement process
+keywords: asa a20, asa a30, asa a50, complete the replacement process
 summary: After you replace the part, you can return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 ---
 = Return the failed part to NetApp - ASA A20, ASA A30, and ASA A50
@@ -9,4 +9,8 @@ summary: After you replace the part, you can return the failed part to NetApp, a
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/complete_rma.adoc[]
+When a component in your ASA A20, ASA A30, or ASA A50 storage system fails, return the failed part to NetApp. See the https://mysupport.netapp.com/site/info/rma[Part Return and Replacements] page for further information.
+
+//Feb-March 2025
+//No longer use generic include since need to contain system model name in lead
+// include::../_include/complete_rma.adoc[]
