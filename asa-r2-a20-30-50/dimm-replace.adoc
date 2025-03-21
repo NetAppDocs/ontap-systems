@@ -2,11 +2,13 @@
 permalink: asa-r2-a20-30-50/dimm-replace.html
 sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace a dimm
-summary: "You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic."
+summary: Replace a DIMM in your AFF A20, AFF A30, or AFF A50 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
 = Replace a DIMM - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a DIMM in your AFF A20, AFF A30, or AFF A50 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+
 include::../_include/g_dimm_replace.adoc[]

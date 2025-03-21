@@ -2,14 +2,14 @@
 permalink: asa-r2-a20-30-50/controller-replace-shutdown.html
 sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, shut down the impaired controller
-summary: "To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage."
+summary: Shut down the impaired controller in your AFF A20, AFF A30, or AFF A50 storage system to prevent data loss and ensure system stability when replacing the controller.
 ---
 = Shut down the impaired controller - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down or take over the impaired controller.
+Shut down the impaired controller in your AFF A20, AFF A30, or AFF A50 storage system to prevent data loss and ensure system stability when replacing the controller.
 
 // Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
@@ -26,3 +26,7 @@ include::../_include/shutdown_most_frus.adoc[]
 // --
 
 // ====
+
+.What's next?
+
+After you've shut down the controller, you need to link:controller-replace-move-hardware.html[replace the controller].
