@@ -2,19 +2,30 @@
 permalink: asa-r2-a20-30-50/controller-replace-restore-system-rma.html
 sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, how to restore NetApp Storage Encryption, how to complete the replacement process
-summary: "To restore your system to full operation, you must verify the LIfs, check cluster health,  and return the failed part to NetApp."
+summary: "Restore the NetApp Storage Encryption configuration (if necessary), install licenses for the replacement controller, verify that the logical interfaces (LIFs) are reporting to their home port, perform a cluster health check, register the replacement controller's serial number, and then return the failed part to NetApp to complete the final step in the ASA A20, ASA A30, or ASA A50 controller replacement procedure."
 ---
 = Complete controller replacement - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To restore your storage system to full operation, you must verify the LIFs, check cluster health, and return the failed part to NetApp.
+Restore the NetApp Storage Encryption configuration (if necessary), install licenses for the replacement controller, verify that the logical interfaces (LIFs) are reporting to their home port, perform a cluster health check, register the replacement controller's serial number, and then return the failed part to NetApp to complete the final step in the ASA A20, ASA A30, or ASA A50 controller replacement procedure.
 
-== Step 1: Verify LIFs and check cluster health
 
-include::../_include/check_lifs_cluster_health.adoc[]
+== Step 1: Install licenses for the replacement controller in ONTAP
 
-== Step 2: Return the failed part to NetApp
+include::../_include/install_licenses_nonmcc.adoc[]
 
+== Step 2: Verify LIFs, register the serial number, and check cluster health
+
+include::../_include/check_lifs_register_serial_number.adoc[]
+
+== Step 3: Return the failed part to NetApp
 include::../_include/complete_rma.adoc[]
+
+
+
+// No longer being used: Mar 6 2025.
+// == Step 1: Verify LIFs and check cluster health
+
+// include::../_include/check_lifs_cluster_health.adoc[]
