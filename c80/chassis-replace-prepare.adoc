@@ -1,0 +1,19 @@
+---
+permalink: c80/chassis-replace-prepare.html
+sidebar: sidebar
+keywords: aff c80, replace the chassis
+summary: Prepare to replace the impaired chassis in your C80 system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller modules.
+---
+= Prepare to replace the chassis - C80
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare to replace the impaired chassis in your AFF A70 or AFF A90 system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller modules.
+
+
+include::../_include/a70-90_chassis_replace_prepare.adoc[]
+
+.What's next?
+
+After you’ve prepared to replace your C80 chassis hardware, you need to link:chassis-replace-shutdown.html[shut down the controllers].
