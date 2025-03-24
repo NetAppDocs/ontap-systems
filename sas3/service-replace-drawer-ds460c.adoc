@@ -11,6 +11,8 @@ summary: Replacing a drive drawer in a shelf requires you to either halt the ent
 [.lead]
 Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.
 
+This procedure applies to shelves with IOM12, IOM12B, and IOM12C modules.
+
 .Before you begin
 
 You need these items for this procedure:
@@ -25,9 +27,9 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 
 .About this task
 
-* This procedure applies to shelves having DCM drive drawers and/or DCM2 drive drawers. (Shelves will also have two IOM12 modules or two IOM12B modules.)
+* This procedure applies to shelves having DCM drive drawers and/or DCM2 or DCM3 drive drawers. (Shelves will also have two IOM12 modules or two IOM12B modules.)
 +
-When a DCM or DCM2 drive drawer fails, you receive a DCM or DCM2 drive drawer to replace it.
+When a DCM, DCM2, or DCM3 drive drawer fails, you receive a DCM, DCM2, or DCM3 drive drawer to replace it.
 
 [NOTE]
 ====
@@ -36,7 +38,7 @@ If when you replace a failed drive drawer, it results in the shelf having a comb
 The IOM12 FW upgrade can be done before or after replacing a drive drawer. This procedure has you upgrade the FW as part of the preparation for the drawer replacement procedure.
 ====
 
-* The DCM drive drawers and the DCM2 drive drawers can be distinguished by their appearance:
+* The DCM, DCM2, and DCM3 drive drawers can be distinguished by their appearance:
 +
 The DCM drive drawers look like the following:
 +

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, health, disk, shelf, location, status, condition, led, component, operator, display, panel, iom12, power, supply, fan, ds460c, shelves, drive, monitor disk shelf leds, operator display panel leds, iom12 module leds, power supply leds, fan leds on ds460c disk shelves, disk drive leds
 summary: You can monitor the health of your disk shelf by understanding the location and status conditions of the LEDs on your disk shelf components.
 ---
-= Monitor disk shelf LEDs - shelves with IOM12/IOM12B modules
+= Monitor DS212C, DS224C, and DS460C disk shelf LEDs
 :icons: font
 :imagesdir: ../media/
 
@@ -35,7 +35,7 @@ Attention
 a|
 Solid amber
 a|
-An error occurred with the function of one of more FRUs: the disk shelf, disk drives, IOM12/IOM12B modules, or power supplies.
+An error occurred with the function of one of more FRUs: the disk shelf, disk drives, IOM12/IOM12B/IOM12C modules, or power supplies.
 
 Check event messages to determine corrective action to take.
 a|
@@ -53,7 +53,7 @@ Solid blue
 a|
 The system administrator activated this LED function to aid in physically locating the disk shelf requiring service.
 
-The location LED on the operator display panel and both IOM12/IOM12B modules illuminate when this LED function is activated. Location LEDs automatically turn off after 30 minutes.
+The location LED on the operator display panel and both IOM12/IOM12B/IOM12C modules illuminate when this LED function is activated. Location LEDs automatically turn off after 30 minutes.
 |===
 Depending on your disk shelf model, the operator display panel looks different; however, the three LEDs are arranged in the same way.
 
@@ -61,13 +61,13 @@ The following illustration is of a DS224C disk shelf operator display panel with
 
 image::../media/drw_opd.gif[End cap operator display]
 
-== IOM12/IOM12B module LEDs
+== IOM12/IOM12B/IOM12C module LEDs
 
-The LEDs on the IOM12/IOM12B module indicate whether the module is functioning normally, whether it is ready for I/O traffic, and whether there are any problems with the hardware.
+The LEDs on the IOM12/IOM12B/IOM12C module indicate whether the module is functioning normally, whether it is ready for I/O traffic, and whether there are any problems with the hardware.
 
-The following table describes IOM12/IOM12B module LEDs associated with the function of the module and the function of each SAS port on the module.
+The following table describes IOM12/IOM12B/IOM12C module LEDs associated with the function of the module and the function of each SAS port on the module.
 
-The IOM12/IOM12B module is used in DS460C, DS224C, and DS212C disk shelves.
+The IOM12/IOM12B/IOM12C module is used in DS460C, DS224C, and DS212C disk shelves.
 
 [cols="4*",options="header"]
 |===
@@ -79,7 +79,7 @@ Attention
 a|
 Solid amber
 a|
-IOM12/IOM12B module function: An error occurred with the function of the IOM12/IOM12B module.
+IOM12/IOM12B/IOM12C module function: An error occurred with the function of the IOM12/IOM12B/IOM12C module.
 
 SAS port function: Less than all four SAS lanes established a link (with either an adapter or another disk shelf).
 
@@ -100,9 +100,9 @@ Location
 a|
 Solid blue
 a|
-The system administrator activated this LED function to aid in physically locating the disk shelf with the failed IOM12/IOM12B module.
+The system administrator activated this LED function to aid in physically locating the disk shelf with the failed IOM12/IOM12B/IOM12C module.
 
-The location LED on the operator display panel and both IOM12/IOM12B modules illuminate when this LED function is activated. Location LEDs automatically turn off after 30 minutes.
+The location LED on the operator display panel and both IOM12/IOM12B/IOM12C modules illuminate when this LED function is activated. Location LEDs automatically turn off after 30 minutes.
 
 |===
 The following illustration is for an IOM12 module:
@@ -115,7 +115,7 @@ image::../media/iom12b.png[IOM12B module]
 
 The IOM12C modules are distinguished by a blue and gray stripe and an "IOM12C" label:
 
-image::../media/drw_iom12c_ieops-2175.svg[IOM12c module, width=800px]
+image::../media/drw_iom12c_ieops-2175.svg[IOM12C module, width=800px]
 
 == Power supply LEDs
 

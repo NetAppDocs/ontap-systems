@@ -11,12 +11,11 @@ summary: You can hot-swap a failed power supply in a DS460C, DS224C, or DS212C d
 [.lead]
 You can hot-swap a failed power supply in a DS460C, DS224C, or DS212C disk shelf.
 
+This procedure applies to shelves with IOM12, IOM12B, and IOM12C modules.
+
 .Before you begin
 
-All other components in the system--including the other power supply--must be functioning properly.
-
-.About this task
-
+* All other components in the system--including the other power supply--must be functioning properly.
 * If you are replacing more than one power supply, you must do so one at a time so that the disk shelf maintains power.
 * You must replace a power supply within two minutes of removal to minimize disruption to the disk shelf's airflow.
 * Always use two hands when removing, installing, or carrying a power supply to support its weight.

@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b
 summary: You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
 ---
-= Hot-remove a shelf - shelves with IOM12/IOM12B modules
+= Hot-remove a DS212C, D224C, or DS460C shelf
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-remove a disk shelf with IOM12/IOM12B modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace a disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
+You can hot-remove a disk shelf with IOM12, IOM12B, or IOM12C modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace a disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
 
 .Before you begin
 
@@ -142,7 +142,7 @@ a|
 |===
 You can refer to the following cabling examples when removing a disk shelf from an end of a stack or the middle of a stack. Note the following about the cabling examples:
 
- ** The IOM12/IOM12B modules are arranged side-by-side as in a DS224C or DS212C disk shelf; if you have a DS460C, the IOM12/IOM12B modules are arranged one above the other.
+ ** The IOM12/IOM12B?IOM12C modules are arranged side-by-side as in a DS224C or DS212C disk shelf; if you have a DS460C, the IOM12/IOM12B/IOM12C modules are arranged one above the other.
  ** The stack in each example is cabled with standard shelf-to-shelf cabling, which is used in stacks cabled with multipath HA, tri-path HA, or multipath connectivity.
 +
 You can infer the recabling if your stack is cabled with quad-path HA or quad-path connectivity, which uses double-wide shelf-to-shelf cabling.

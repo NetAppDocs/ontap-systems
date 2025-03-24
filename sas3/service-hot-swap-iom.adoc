@@ -4,18 +4,17 @@ sidebar: sidebar
 keywords: system, configuration, whether, perform, nondisruptive, iom12, module, hot-swap, disruptive, replacement, hot-swap or replace an iom12/iom12b module, iom12b
 summary: Your system configuration determines whether you can perform a nondisruptive IOM12/IOM12B module hot-swap or a disruptive IOM12/IOM12B module replacement when an IOM12/IOM12B module fails.
 ---
-= Hot-swap or replace an IOM12, IOM12B, or IOM12C module
+= Hot-swap or replace an IOM module in a DS212C, DS224C, or DS460C disk shelf
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Your system configuration determines whether you can perform a nondisruptive shelf IOM hot-swap or a disruptive shelf IOM replacement when a shelf IOM fails.
+Your system configuration determines whether you can perform a nondisruptive shelf IOM hot-swap or a disruptive shelf IOM replacement when a IOM12, IOM12B, or IOM12C shelf IOM fails.
 
 .Before you begin
 
-All other components in the system--including the other IOM12/IOM12B/IOM12C module--must be functioning properly.
+* All other components in the system--including the other IOM12/IOM12B/IOM12C module--must be functioning properly.
 
-.About this task
 * This procedure applies to shelves having IOM12, IOM12B, or IOM12C modules.
 +
 NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module, an IOM12B module with another IOM12B module, or an IOM12C module with another IOM12C module. 
@@ -32,7 +31,7 @@ image::../media/iom12b.png[Front of IOM12B]
 +
 The IOM12C modules are distinguished by a blue and gray stripe and an "IOM12C" label:
 +
-image::../media/drw_iom12c_ieops-2175.svg[Front of IOM12C, width=1000px]
+image::../media/drw_iom12c_ieops-2175.svg[Front of IOM12C, width=850px]
 
 * For multipathed (multipath HA or multipath), tri-path HA, and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap a shelf IOM (nondisruptively replace a shelf IOM in a system that is powered on and serving data--I/O is in progress).
 * For FAS2600 series and FAS2700 series single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.
