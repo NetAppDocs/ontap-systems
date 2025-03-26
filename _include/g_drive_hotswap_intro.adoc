@@ -1,0 +1,55 @@
+You can replace a failed drive nondisruptively while I/O is in progress.
+
+When a drive fails, the platform logs a warning message to the system console indicating which drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
+
+.Before you begin
+
+* The drive that you are installing must be supported by your storage system.
++
+https://hwu.netapp.com[NetApp Hardware Universe^]
+
+* If self-encrypting drive (SED) authentication is enabled, you must use the SED replacement instructions in the ONTAP documentation.
++
+Instructions in the ONTAP documentation describe additional steps you must perform before and after replacing an SED.
++
+https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI^]
+
+* All other components in the storage system must be functioning properly, if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+* Verify that the drive you are removing is failed.
++
+You can verify that the drive is failed by running the `storage disk show -broken` command. The failed drive appears in the list of failed drives. If it does not, you should wait, and then run the command again.
++
+NOTE: Depending on the drive type and capacity, it can take up to several hours for the drive to appear in the list of failed drives.
+
+.About this task
+
+* When replacing a failed drive, you must wait 70 seconds between the removal of the drive and the insertion of the replacement drive to allow the storage system to recognize that a drive was removed.
+
+* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a drive.
++
+Having the current version of the DQP installed allows your system to recognize and use newly qualified drives. This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
++
+//30 aug 2022, BURT 1491809: correct the DQP link
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[NetApp Downloads: Disk Qualification Package^]
+
+* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
++
+[NOTE]
+====
+Do not revert firmware to a version that does not support your shelf and its components.
+====
+
+* Drive firmware is automatically updated (nondisruptively) on new drives that have non-current firmware versions.
++
+NOTE: Drive firmware checks occur every two minutes.
+
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
