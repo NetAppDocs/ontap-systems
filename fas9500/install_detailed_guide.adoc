@@ -104,7 +104,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-image::../media/oie_cable_fiber_lc_connector.png[width=85px]
+image::../media/oie_cable_fiber_lc_connector.png[LC optical connector]
 a|
 FC optical network
 a|
@@ -126,7 +126,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[width=85px]
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini SAS connector]
 a|
 Storage
 a|
@@ -134,7 +134,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-image::../media/oie_cable_micro_usb.pngMicro USB connector]
+image::../media/oie_cable_micro_usb.png[Micro USB connector]
 a|
 Console connection during software setup on non-Windows or Mac laptop/console
 a|
@@ -202,7 +202,7 @@ image::../media/drw_9500_tnsc_network_cabling.svg[align="center",width=500px]
 |===
 | Step| Perform on each controller
 a|
-image::../media/icon_square_1_green.png
+image::../media/icon_square_1_green.png[Callout icon 1]
 a|
 Cable cluster interconnect ports:
 
@@ -211,11 +211,11 @@ Cable cluster interconnect ports:
 
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 a|
-image::../media/icon_square_2_yellow.png[Callout icon 2]
+image::../media/icon_square_2_purple.png[Callout icon 2]
 a|
 Cable controller management (wrench) ports.
 
-image::../media/oie_cable_rj45.png
+image::../media/oie_cable_rj45.png[RJ-45 connector]
 
 a|
 image::../media/icon_square_3_orange.png[Callout icon 3]
@@ -237,7 +237,7 @@ the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 a|
-image::../media/icon_square_4_red.png
+image::../media/icon_square_4_red.png[Callout icon 4]
 a|
 Cable 25 GbE connections:
 
@@ -248,11 +248,13 @@ Cable ports in slot A5 and B5 (5a,
 
 image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
 a|
+image::../media/icon_square_5_grey.png[Callout icon 4]
+a|
 * Strap the cables to the cable
 management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
-a|
+
 image::../media/oie_cable_power.png[Power cables]
 
 image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power sources]
@@ -301,7 +303,7 @@ cluster network switch.
 
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 a|
-image::../media/icon_square_2_yellow.png[Callout icon 2]
+image::../media/icon_square_2_purple.png[Callout icon 2]
 a|
 Cable controller management (wrench) ports.
 
@@ -335,13 +337,15 @@ Cable ports in slot A5 and B5 (5a,
 (7a, 7b, 7c, and 7d) to the
 25 GbE network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.png
+image::../media/oie_cable_sfp_gbe_copper.png[100 Gbe copper connector]
+a|
+image::../media/icon_square_4_red.png[Callout icon 4]
 a|
 * Strap the cables to the cable
 management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
-a|
+
 image::../media/oie_cable_power.png[Power cables]
 
 image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power sources]
@@ -385,17 +389,28 @@ image::../media/icon_square_1_blue.png[width=30px]
 a|
 Connect drive shelf stack one to the controllers, using the graphic for reference.
 
+*Mini-SAS cable*
+
 image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[width=85px]
 
-mini-SAS cable
 a|
 image::../media/icon_square_2_yellow.png[Callout icon 2]
 a|
-Connect drive shelf stack two to the controllers, using the graphic for reference.
+Connect the drive shelves within stack two to each other, using the graphic for reference.
+
+*Mini-SAS cable*
 
 image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[width=85px]
 
-mini-SAS cable
+a|
+image::../media/icon_square_3_tourquoise.png[Callout icon 3]
+a|
+Connect drive shelf stack two to the controllers, using the graphic for reference.
+
+*Mini-SAS cable*
+
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[width=85px]
+
 
 |===
 
@@ -474,11 +489,10 @@ image::../media/dwr_laptop_to_switch_only.svg[width=500px]
 +
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.svg[width=500px]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[width=500px]
 
 .. Open File Explorer.
-.. Click network in the left pane.
-.. Right click and select refresh.
+.. Click Network in the left pane and right-click and select refresh.
 .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
