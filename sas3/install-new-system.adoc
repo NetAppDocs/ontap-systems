@@ -4,12 +4,56 @@ sidebar: sidebar
 keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b, iom12c
 summary: If your new system--HA pair or single-controller configuration--did not come installed in a cabinet, you must install and cable the disk shelves in a rack.
 ---
-= Install and cable DS212C, DS224C, or DS460C shelves for a new system installation
+= Install and cable shelves for a new system installation (DS212C, DS224C, or DS460C shelves)
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 If your new system--HA pair or single-controller configuration--did not come installed in a cabinet, you can install and cable the disk shelves in a rack.
+
+
+.About this task
+
+* Disk shelves with IOM12/IOM12B/IOM12C modules are shipped with shelf IDs preset to 00.
++
+NOTE: If you have an HA pair with at least two stacks, the disk shelf containing the root aggregates for the second stack has the shelf ID preset to 10.
++
+You must set shelf IDs so they are unique within the HA pair or single-controller configuration. You can manually set shelf IDs or have shelf IDs automatically assigned for all disk shelves in the HA pair or single-controller configuration using a command in maintenance mode. Instructions for both methods are provided.
+* You can identify the disk shelves containing the root aggregates by the labels on the disk shelf box and disk shelf chassis.
++
+The labels show the stack number; for example, *Loop or Stack #: 1* and *Loop or Stack #: 2*. Disk shelves that do not contain the root aggregates only show the disk shelf serial number on the labels.
+* If at system setup and configuration, you do not configure the system to use automatic disk ownership assignment. You need to manually assign disk ownership.
+* In-band Alternate Control Path (IBACP) is automatically enabled.
++
+IBACP is not supported on single-path HA or single-path configurations.
+
+
+* You can familiarize yourself with the considerations for properly handling SAS cables:
+** If you are using mini-SAS HD SAS optical cables, you must have met the rules in link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cable rules].
+** Visually inspect the SAS port to verify the proper orientation of the connector before plugging it in.
++
+The SAS cable connectors are keyed. When oriented correctly into a SAS port, the connector clicks into place and if the disk shelf power is on at the time, the disk shelf SAS port LNK LED illuminates green. For disk shelves, you insert a SAS cable connector with the pull tab oriented down (on the underside of the connector).
++
+For controllers, the orientation of SAS ports can vary depending on the platform model; therefore, the correct orientation of the SAS cable connector varies.
+** To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
++
+Cables have a minimum bend radius. Cable manufacturer specifications define the minimum bend radius; however, a general guideline for minimum bend radius is 10 times the cable diameter.
+** *Best practice*: Use Velcro wraps instead of tie-wraps to bundle and secure system cables to allow for easier cable adjustments.
+
+
+* You can familiarize yourself with the considerations for properly handling DS460C drives:
+** The drives are packaged separately from the shelf chassis.
++
+You should take inventory of the drives along with the rest of the system equipment you received.
+** After you unpack the drives, you should save the packaging materials for future use.
++
+CAUTION: *Possible loss of data access:* If in the future, you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
++
+NOTE: Keep disk drives in their ESD bag until you are ready to install them.
+** When handling the drives, always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis to prevent static discharges.
++
+If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
+
 
 .Before you begin
 
@@ -23,60 +67,16 @@ Installation and setup instructions can be found by navigating to your platform 
 
 * Disk shelves and controllers must not be powered on at this time.
 
-* Familiarize yourself with the general considerations for completing this procedure:
-** Disk shelves with IOM12/IOM12B/IOM12C modules are shipped with shelf IDs preset to 00.
-+
-NOTE: If you have an HA pair with at least two stacks, the disk shelf containing the root aggregates for the second stack has the shelf ID preset to 10.
-+
-You must set shelf IDs so they are unique within the HA pair or single-controller configuration. You can manually set shelf IDs or have shelf IDs automatically assigned for all disk shelves in the HA pair or single-controller configuration using a command in maintenance mode. Instructions for both methods are provided.
-** You can identify the disk shelves containing the root aggregates by the labels on the disk shelf box and disk shelf chassis.
-+
-The labels show the stack number; for example, *Loop or Stack #: 1* and *Loop or Stack #: 2*. Disk shelves that do not contain the root aggregates only show the disk shelf serial number on the labels.
-** If at system setup and configuration, you do not configure the system to use automatic disk ownership assignment. You need to manually assign disk ownership.
-** In-band Alternate Control Path (IBACP) is automatically enabled.
-+
-IBACP is not supported on single-path HA or single-path configurations.
-
-
 * *Best practice*: Ensure your system can recognize and utilize newly qualified disk drives by https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[downloading the current version of the Disk Qualification Package (DQP)^].
 //30 aug 2022, BURT 1491809: correct the DQP link
 +
 This allows you to avoid system event messages about having non-current disk drive information. You also avoid the possible prevention of disk partitioning because disk drives are not recognized. The DQP notifies you of non-current disk drive firmware.
-
 
 * *Best practice*: Verify SAS connections are cabled correctly and that shelf IDS are unique within the HA pair or single-controller configuration by https://mysupport.netapp.com/site/tools[downloading and running Config Advisor^] after a new system installation.
 +
 If any SAS cabling or duplicate shelf ID errors are generated, follow the corrective actions provided.
 +
 You need network access to download Config Advisor.
-
-
-* Familiarize yourself with the considerations for properly handling SAS cables:
-** If you are using mini-SAS HD SAS optical cables, you must have met the rules in link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cable rules].
-** Visually inspect the SAS port to verify the proper orientation of the connector before plugging it in.
-+
-The SAS cable connectors are keyed. When oriented correctly into a SAS port, the connector clicks into place and if the disk shelf power is on at the time, the disk shelf SAS port LNK LED illuminates green. For disk shelves, you insert a SAS cable connector with the pull tab oriented down (on the underside of the connector).
-+
-For controllers, the orientation of SAS ports can vary depending on the platform model; therefore, the correct orientation of the SAS cable connector varies.
-** To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
-+
-Cables have a minimum bend radius. Cable manufacturer specifications define the minimum bend radius; however, a general guideline for minimum bend radius is 10 times the cable diameter.
-** *Best practice*: Use Velcro wraps instead of tie-wraps to bundle and secure system cables to allow for easier cable adjustments.
-
-
-* Familiarize yourself with the considerations for properly handling DS460C drives:
-** The drives are packaged separately from the shelf chassis.
-+
-You should take inventory of the drives along with the rest of the system equipment you received.
-** After you unpack the drives, you should save the packaging materials for future use.
-+
-CAUTION: *Possible loss of data access:* If in the future, you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
-+
-NOTE: Keep disk drives in their ESD bag until you are ready to install them.
-** When handling the drives, always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis to prevent static discharges.
-+
-If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
-
 
 
 

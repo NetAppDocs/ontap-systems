@@ -2,7 +2,7 @@ section: sas3
 title: SAS shelves
 entries:
   - title: Install and cable
-    pdf-filename: Shelves with IOM12/IOM2B Modules Install and Cable
+    pdf-filename: DS212C, DS224C, or DS460C shelves install and cable
     entries:
     - title: Install and cable shelves for new system
       url: /sas3/install-new-system.html
@@ -33,7 +33,7 @@ entries:
       - title: How to read worksheet for quad-pathed connectivity
         url: /sas3/install-cabling-worksheets-how-to-read-quadpath.html
   - title: Maintain
-    pdf-filename: Shelves with IOM12/IOM12B Modules Maintain
+    pdf-filename: DS212C, DS224C, or DS460C shelves maintain
     entries:
     - title: Disk drive in DS224C or DS212C shelf
       url: /sas3/service-hot-swap-drive-ds224c-ds212c.html
@@ -56,7 +56,7 @@ entries:
           url: /sas3/service-monitor-leds.html
     - title: Fan module in DS460C shelf
       url: /sas3/service-replace-fan-ds460c.html
-    - title: IOM12/IOM12B module
+    - title: IOM12/IOM12B/IOM12C module
       url: /sas3/service-hot-swap-iom.html
     - title: Power supply
       url: /sas3/service-hot-swap-power-supply.html
