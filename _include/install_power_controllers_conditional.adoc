@@ -61,5 +61,10 @@ endif::a20-30-50[]
 * The LEDs flash on and the fans start, which indicates that the controllers are powering on.
 +
 * The fans might be very noisy when they first start up. The fan noise during start-up is normal.
++
+// next applies only to A20-30-50
+ifdef::a20-30-50[]
+* The shelf ID display on the front of the system chassis does not illuminate. The system's internal shelf ID is fixed at 00.
+endif::a20-30-50[]
 
 . Secure the power cords using the securing device on each power supply.
