@@ -11,9 +11,7 @@ summary: Your system configuration determines whether you can perform a nondisru
 [.lead]
 Your system configuration determines whether you can perform a nondisruptive shelf IOM hot-swap or a disruptive shelf IOM replacement when a IOM12, IOM12B, or IOM12C shelf IOM fails.
 
-.Before you begin
-
-* All other components in the system--including the other IOM12/IOM12B/IOM12C module--must be functioning properly.
+.About this task
 
 * This procedure applies to shelves having IOM12, IOM12B, or IOM12C modules.
 +
@@ -39,8 +37,6 @@ image::../media/drw_iom12c_ieops-2175.svg[Front of IOM12C, width=850px]
 +
 CAUTION: If you attempt to hot-swap a shelf IOM on a disk shelf with a single-path connection, you will lose all access to the disk drives in the disk shelf as well as any disk shelves beneath. You could also bring down your entire system.
 
-* *Best practice*: Ensure your system has the current versions of disk shelf (IOM) firmware and disk drive firmware before adding new disk shelves, shelf FRU components, or SAS cables. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware].
-
 * Disk shelf (IOM) firmware is automatically updated (nondisruptively) on a new shelf IOM with a non-current firmware version.
 +
 Shelf IOM firmware checks occur every ten minutes. An IOM firmware update can take up to 30 minutes.
@@ -50,6 +46,12 @@ Shelf IOM firmware checks occur every ten minutes. An IOM firmware update can ta
 A disk shelf has three location LEDs: one on the operator display panel and one on each shelf IOM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
 
 * If needed, you can refer to the link:/sas3/service-monitor-leds.html#operator-display-panel-leds[Monitoring disk shelf LEDs] guide for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
+
+.Before you begin
+
+* All other components in the system--including the other IOM12/IOM12B/IOM12C module--must be functioning properly.
+
+* *Best practice*: Ensure your system has the current versions of disk shelf (IOM) firmware and disk drive firmware before adding new disk shelves, shelf FRU components, or SAS cables. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware].
 
 .Steps
 

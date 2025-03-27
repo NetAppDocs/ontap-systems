@@ -51,20 +51,14 @@ NOTE: Do not place hands on the disk drive boards exposed on the underside of th
 +
 NOTE: Magnetic fields can destroy all data on the disk drive and cause irreparable damage to the disk drive circuitry.
 
-* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a disk drive.
-+
-Having the current version of the DQP installed allows your system to recognize and utilize newly qualified disk drives; therefore, avoiding system event messages about having non-current disk drive information. You also avoid the possible prevention of disk partitioning because disk drives are not recognized. The DQP also notifies you of non-current disk drive firmware.
-+
-//30 aug 2022, BURT 1491809: correct the DQP link
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[NetApp Downloads: Disk Qualification Package^]
 
-* The best practice is to have the current versions of disk shelf (IOM) firmware and disk drive firmware on your system before adding new disk shelves, shelf FRU components, or SAS cables.
+* *Best practice*: Ensure your system can recognize and utilize newly qualified disk drives by https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[downloading the current version of the Disk Qualification Package (DQP)^] before hot-swapping a disk drive.
+//30 aug 2022, BURT 1491809: correct the DQP link
 +
-Current versions of firmware can be found on the NetApp Support Site.
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
+Having the current version of the DQP installed allows your system to recognize and utilize newly qualified disk drives; therefore, avoiding system event messages about having non-current disk drive information. You also avoid the possible prevention of disk partitioning because disk drives are not recognized. The DQP notifies you of non-current disk drive firmware.
+
+
+* *Best practice*: Ensure your system has the current versions of disk shelf (IOM) firmware and disk drive firmware on your system before adding new disk shelves, shelf FRU components, or SAS cables. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware^].
 
 * Disk drive firmware is automatically updated (nondisruptively) on new disk drives with non current firmware versions.
 +

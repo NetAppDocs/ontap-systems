@@ -52,17 +52,16 @@ The DCM3 drive drawers are distinguished by a blue and gray stripe and "DCM3" la
 +
 image::../media/drw_dcm3_ieops-2176.svg[Front view of a DCM3 drive shelf, width=750px]
 
-== Prepare to replace a drive drawer
+== Step 1: Prepare to replace a drive drawer
 
 Before you replace a drive drawer, you must make sure to update IOM12 FW if needed, and either halt the HA pair, which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair. Lastly, you must power off the shelf.
 
-.steps
+.Steps
 . Determine if when you replace the failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.
 . If the shelf will have a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later; otherwise, go to the next step.
 +
-Current versions of firmware can be found on the NetApp Support Site.
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
+You can go to the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download current versions of disk shelf firmware].
+
 . If the shelf contains the root aggregate from either controller in the HA pair, or if you chose to halt the HA pair (instead of keeping the HA pair up and running), complete the following substeps; otherwise, go to the next step.
 +
 NOTE: Data aggregates can remain on the shelf when halting the HA pair.
@@ -95,9 +94,16 @@ Disk drives that are spares show `spare` in the `Container Type` column.
 NOTE: If you have failed disk drives in the shelf, `broken` appears in the `Container Type` column.
 .. Power off the shelf.
 
-== Remove the cable chains
+== Step 2: Remove the cable chains
 
 Left and right cable chains for each drive drawer in the DS460C drive shelf allow the drawers to slide in and out. Before you can remove a drive drawer, you must remove both cable chains.
+
+.About this task
+
+Each drive drawer has left and right cable chains. The metal ends on the cable chains slide into corresponding vertical and horizontal brackets inside the enclosure, as follows:
+
+* The left and right vertical brackets connect the cable chain to the enclosure's midplane.
+* The left and right horizontal brackets connect the cable chain to the individual drawer.
 
 .Before you begin
 
@@ -110,13 +116,6 @@ Left and right cable chains for each drive drawer in the DS460C drive shelf allo
 NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to the shelf, use proper antistatic protection when handling shelf components.
 
  ** Flashlight
-
-.About this task
-
-Each drive drawer has left and right cable chains. The metal ends on the cable chains slide into corresponding vertical and horizontal brackets inside the enclosure, as follows:
-
-* The left and right vertical brackets connect the cable chain to the enclosure's midplane.
-* The left and right horizontal brackets connect the cable chain to the individual drawer.
 
 .Steps
 
@@ -204,7 +203,7 @@ The figure shows the orange ring on the horizontal bracket being pushed down so 
  .. To unplug the cable chain, pull your finger toward you approximately 1 inch (2.5 cm), but leave the cable chain connector within the vertical bracket.
 . Disconnect the left cable chain from the horizontal bracket, and pull the entire cable chain out of the drive shelf.
 
-== Remove a drive drawer
+== Step 3: Remove a drive drawer
 
 After removing the right and left cable chains, you can remove the drive drawer from the drive shelf. Removing a drive drawer entails sliding the drawer part of the way out, removing the drives, and removing the drive drawer.
 
@@ -247,7 +246,7 @@ Drive drawer release lever
  .. While holding both release levers, pull the drive drawer toward you.
  .. Remove the drive drawer from the drive shelf.
 
-== Install a drive drawer
+== Step 4: Install a drive drawer
 
 Installing a drive drawer into a drive shelf entails sliding the drawer into the empty slot, installing the drives, and replacing the front bezel.
 
@@ -320,7 +319,7 @@ NOTE: *Risk of equipment malfunction:* Make sure to completely close the drive d
 +
 . Attach the bezel to the front of the drive shelf.
 
-== Attach the cable chains
+== Step 5: Attach the cable chains
 
 The final step in installing a drive drawer is attaching the replacement left and right cable chains to the drive shelf. When attaching a cable chain, reverse the order you used when disconnecting the cable chain. You must insert the chain's horizontal connector into the horizontal bracket in the enclosure before inserting the chain's vertical connector into the vertical bracket in the enclosure.
 
@@ -423,8 +422,4 @@ Guide rail
  .. Turn on both power switches on the drive shelf.
  .. Confirm that both fans come on and that the amber LED on the back of the fans is off.
  . If you had halted the HA pair, boot ONTAP on both controllers; otherwise go to the next step.
- . If you had moved data off the shelf and deleted the data aggregates, you can now use the spare disks in the shelf for aggregate creation or expansion.
-+
-https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-creation-workflow-concept.html[Aggregate creation workflow]
-+
-https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-expansion-workflow-concept.html[Aggregate expansion workflow]
+ . If you had moved data off the shelf and deleted the data aggregates, you can now use the spare disks in the shelf for aggregate creation or expansion. To learn more about these procedures, you can refer to the https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-creation-workflow-concept.html[Aggregate creation workflow] and https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-expansion-workflow-concept.html[Aggregate expansion workflow].
