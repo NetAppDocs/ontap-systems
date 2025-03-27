@@ -2,21 +2,19 @@
 permalink: fas50/controller-replace-restore-system-rma.html
 sidebar: sidebar
 keywords: fas50, how to restore NetApp Storage Encryption, how to complete the replacement process
-summary: "Restore the NetApp Storage Encryption configuration (if necessary), install licenses for the replacement controller, verify that the logical interfaces (LIFs) are reporting to their home port, perform a cluster health check, register the replacement controller's serial number, and then return the failed part to NetApp to complete the final step in the FAS50 controller replacement procedure."
+summary: "To complete the controller replacement for your FAS50 system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller's serial number and then return the failed part to NetApp."
 ---
 = Complete controller replacement - FAS50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore the NetApp Storage Encryption configuration (if necessary), install licenses for the replacement controller, verify that the logical interfaces (LIFs) are reporting to their home port, perform a cluster health check, register the replacement controller's serial number, and then return the failed part to NetApp to complete the final step in the FAS50 controller replacement procedure.
+To complete the controller replacement for your FAS50 system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller's serial number and then return the failed part to NetApp.
 
 
 == Step 1: Install licenses for the replacement controller in ONTAP
 
 include::../_include/install_licenses_mcc.adoc[]
-
-//For Above: Need to verify if FAS50 supports MCC-IP. If not, like for ASA A20-30-50, need to create a new general include with"9.10" replaced with "9.16.0"? And see if that KB is still applicable.
 
 == Step 2: Verify LIFs, register the serial number, and check cluster health
 
@@ -24,6 +22,9 @@ include::../_include/check_lifs_register_serial_number.adoc[]
 
 == Step 3: Return the failed part to NetApp
 include::../_include/complete_rma.adoc[]
+
+
+
 
 
 
