@@ -2,13 +2,13 @@
 permalink: asa-r2-a20-30-50/power-supply-replace.html
 sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace a power supply
-summary: Replace an AC or DC power supply unit (PSU) in your ASA A20, ASA A30, or ASA A50 system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation.
+summary: Replace an AC or DC power supply unit (PSU) in your ASA A20, ASA A30, or ASA A50 system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
 ---
 = Replace a power supply - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace an AC or DC power supply unit (PSU) in your ASA A20, ASA A30, or ASA A50 system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the target PSU from the power source, unplugging the power cord, removing the faulty PSU and installing the replacement PSU, and then reconnecting it to the power source.
+Replace an AC or DC power supply unit (PSU) in your ASA A20, ASA A30, or ASA A50 system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
 
 include::../_include/g_power_supply_replace.adoc[]
