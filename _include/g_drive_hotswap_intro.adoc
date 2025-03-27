@@ -1,7 +1,5 @@
 You can replace a failed drive nondisruptively while I/O is in progress.
 
-When a drive fails, the platform logs a warning message to the system console indicating which drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
-
 .Before you begin
 
 * The drive that you are installing must be supported by your storage system.
