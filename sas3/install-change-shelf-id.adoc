@@ -4,21 +4,12 @@ sidebar: sidebar
 keywords: change, shelf, id, system, ontap, run, hot-add, ontap, controller, module, available, serve, data, unown, spare, offline, aggregate
 summary: You can change a shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running \(controller modules are available to serve data\) and all drives in the shelf are unowned, spares, or part of offlined aggregate\(s\).
 ---
-= Change a shelf ID (DS212C, DS224C, or DS460C shelves)
+= Change a shelf ID - DS212C, DS224C, or DS460C shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You can change a shelf ID in a system with IOM12/IOM12B/IOM12C modules when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
-
-
-.Before you begin
-
-* If ONTAP is up and running (controller modules are available to serve data), you must have verified that all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
-+
-You can verify the state of the drives by using the `storage disk show -shelf _shelf_number_` command. Output in the Container Type column should display spare or broken if it is a failed drive. Additionally, the Container Name and Owner columns should have a dash.
-
-* You can verify shelf IDs already in use in your system by running Active IQ Config Advisor or using the `storage shelf show -fields shelf-id` command. You can https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[download and access the Active IQ Config Advisor] on the NetApp Support Site.
 
 .About this task
 
@@ -30,6 +21,16 @@ If you have a platform with internal storage, shelf IDs must be unique across th
 * You must power cycle a shelf in order for the shelf ID to take effect.
 +
 The amount of time you wait before turning the power back on depends on the state of ONTAP, as described later in this procedure.
+
+
+.Before you begin
+
+* If ONTAP is up and running (controller modules are available to serve data), you must have verified that all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
++
+You can verify the state of the drives by using the `storage disk show -shelf _shelf_number_` command. Output in the Container Type column should display spare or broken if it is a failed drive. Additionally, the Container Name and Owner columns should have a dash.
+
+* You can verify shelf IDs already in use in your system by running Active IQ Config Advisor or using the `storage shelf show -fields shelf-id` command. You can https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[download and access the Active IQ Config Advisor] on the NetApp Support Site.
+
 
 .Steps
 
