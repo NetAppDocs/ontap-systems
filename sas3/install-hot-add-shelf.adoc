@@ -13,7 +13,7 @@ You can hot-add one or more disk shelves with IOM12/IOM12B/IOM12C modules to an 
 
 .About this task
 
-You cannot use this procedure to mix a stack: hot-add a shelf with IOM12/IOM12B modules to a stack of shelves that has IOM6 modules. If you need to mix a stack, use link:iom12-hot-add-mix.html[Hot-add IOM12 shelves to a stack of IOM6 shelves].
+You cannot use this procedure to mix a stack. If you need to mix a stack, use link:iom12-hot-add-mix.html[Hot-add IOM12 shelves to a stack of IOM6 shelves].
 
 [[before_you_begin]]
 .Before you begin
@@ -96,7 +96,7 @@ NOTE: Keep disk drives in their ESD bag until you are ready to install them.
 +
 If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
 
-== Install disk shelves for a hot-add
+== Step 1: Install disk shelves for a hot-add
 
 For each disk shelf you are hot-adding, you install the disk shelf into a rack, connect the power cords, power on the disk shelf, and set the disk shelf ID before cabling the SAS connections.
 
@@ -112,17 +112,15 @@ NOTE: Do not flange-mount the disk shelf into a telco-type rack; the disk shelf'
 +
 To make a disk shelf lighter and easier to maneuver, remove the power supplies and I/O modules (IOMs).
 +
-For DS460C disk shelves, although the drives are packaged separately, which makes the shelf lighter, an empty DS460C shelf still weighs approximately 132 lb (60kg); therefore, exercise the following caution when moving a shelf.
+CAUTION: Although the drives in DS460C shelves are packaged separately, which makes the shelf lighter, an empty DS460C shelf still weighs approximately 132 lb (60kg). It is recommended that you use a mechanized lift or four people using the lift handles to safely move an empty DS460C shelf.
 +
-CAUTION: It is recommended that you use a mechanized lift or four people using the lift handles to safely move an empty DS460C shelf.
-+
-Your DS460C shipment was packaged with four detachable lift handles (two for each side). To use the lift handles, you install them by inserting the tabs of the handles into the slots in the side of the shelf and pushing up until they click into place. Then, as you slide the disk shelf onto the rails, you detach one set of handles at a time using the thumb latch. The following illustration shows how to attach a lift handle.
+Your DS460C shipment includes four detachable lift handles (two for each side). To use the lift handles, you install them by inserting the tabs of the handles into the slots in the side of the shelf and pushing up until they click into place. Then, as you slide the disk shelf onto the rails, you detach one set of handles at a time using the thumb latch. The following illustration shows how to attach a lift handle.
 +
 image::../media/drw_ds460c_handles.gif[Installing the lift handles]
 
 . Reinstall any power supplies and IOMs you removed prior to installing your disk shelf into the rack.
 
-. If you are installing a DS460C disk shelf, install the drives into the drive drawers; otherwise, go to the next step.
+. If you are installing a DS460C disk shelf, install the drives into the drive drawers. Otherwise, go to the next step.
 +
 [NOTE]
 ====
@@ -131,7 +129,7 @@ Always wear an ESD wrist strap grounded to an unpainted surface on your storage 
 If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
 ====
 +
-If you purchased a partially populated shelf, meaning that the shelf has less than the 60 drives it supports, for each drawer, install the drives as follows:
+If you purchased a partially populated shelf, meaning that the shelf has less than the 60 drives it supports, install the drives as follows in each drawer:
 
 ** Install the first four drives into the front slots (0, 3, 6, and 9).
 +
@@ -165,13 +163,10 @@ Raised button on the right side of the drive carrier
 You must be sure that slots 0, 3, 6, and 9 in each drawer contain drives.
 +
 .. Carefully push the drive drawer back into the enclosure.
-+
-|===
-a|
++s
 image:../media/2860_dwg_e2860_de460c_gentle_close.gif[Gently closing the drawer]
-a|
++
 CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
-|===
 +
 .. Close the drive drawer by pushing both levers towards the center.
 .. Repeat these steps for each drawer in the disk shelf.
@@ -185,7 +180,7 @@ CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the dr
 +
 If you have a platform model with an internal disk shelf, shelf IDs must be unique across the internal disk shelf and externally attached disk shelves.
 +
-You can use the following substeps to change shelf IDs, or for more detailed instructions, use link:install-change-shelf-id.html[Change a shelf ID^].
+You can use the following substeps to change shelf IDs. For more detailed instructions, use link:install-change-shelf-id.html[Change a shelf ID^].
 
  .. If needed, verify shelf IDs already in use by running Config Advisor.
 +
@@ -201,7 +196,7 @@ The shelf ID blinks and the operator display panel amber LED blinks until you po
 
  .. Repeat substeps a through d for each disk shelf you are hot-adding.
 
-== Cable disk shelves for a hot-add
+== Step 2: Cable disk shelves for a hot-add
 
 You cable the SAS connections (shelf-to-shelf and controller-to-stack) as applicable for hot-added disk shelves so they have connectivity to the system.
 
@@ -373,11 +368,11 @@ You need to reenable disk ownership automatic assignment on both controllers in 
 +
 In the output, "`in-band`" is listed as "`active`" for each node.
 
-== (Optional) Move or transport DS460C shelves
+== (Optional) Step 3: Move or transport DS460C shelves
 
-If in the future, you move DS460C shelves to a different part of the data center or transport the shelves to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
+If in the future you move DS460C shelves to a different part of the data center or transport the shelves to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
 
-* If when you installed DS460C shelves as part of your shelf hot-add, you saved the drive packaging materials, use these to repackage the drives before moving them.
+* If you saved the drive packaging materials when you installed DS460C shelves as part of your shelf hot-add, use these to repackage the drives before moving them.
 +
 If you did not save the packaging materials, you should place drives on cushioned surfaces or use alternate cushioned packaging. Never stack drives on top of each other.
 
