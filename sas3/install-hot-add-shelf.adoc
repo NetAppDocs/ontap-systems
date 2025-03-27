@@ -96,7 +96,7 @@ NOTE: Keep disk drives in their ESD bag until you are ready to install them.
 +
 If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
 
-== Install disk shelves with IOM12/IOM12B/IOM12C modules for a hot-add
+== Install disk shelves for a hot-add
 
 For each disk shelf you are hot-adding, you install the disk shelf into a rack, connect the power cords, power on the disk shelf, and set the disk shelf ID before cabling the SAS connections.
 
@@ -201,7 +201,7 @@ The shelf ID blinks and the operator display panel amber LED blinks until you po
 
  .. Repeat substeps a through d for each disk shelf you are hot-adding.
 
-== Cable disk shelves with IOM12/IOM12B/IOM12C modules for a hot-add
+== Cable disk shelves for a hot-add
 
 You cable the SAS connections (shelf-to-shelf and controller-to-stack) as applicable for hot-added disk shelves so they have connectivity to the system.
 
@@ -373,7 +373,7 @@ You need to reenable disk ownership automatic assignment on both controllers in 
 +
 In the output, "`in-band`" is listed as "`active`" for each node.
 
-== Move or transport DS460C shelves
+== (Optional) Move or transport DS460C shelves
 
 If in the future, you move DS460C shelves to a different part of the data center or transport the shelves to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
 
