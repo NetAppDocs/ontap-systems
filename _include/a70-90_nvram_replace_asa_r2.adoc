@@ -17,6 +17,7 @@ include::../_include/shutdown_most_frus.adoc[]
 To replace the NVRAM module, locate it in slot 4/5 in the chassis and follow the specific sequence of steps.
 
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
+// ontap-systems-internal/issues/1151
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
 +
@@ -75,6 +76,7 @@ NOTE: The controller reboots as soon as it is fully seated in the chassis.
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, and then replace the target DIMM.
 
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
+// ontap-systems-internal/issues/1151
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
 +

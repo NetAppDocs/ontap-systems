@@ -32,6 +32,7 @@ include::../_include/shutdown_most_frus.adoc[]
 Replace the impaired system management module.
 
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
+// ontap-systems-internal/issues/1151
 +
 NOTE:  Make sure NVRAM destage has completed before proceeding.
 +
