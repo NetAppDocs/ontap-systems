@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace a pcie card
 summary: "To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards."
 ---
-= Replace I/O module - ASA A20, ASA A30, and ASA A50
+= Replace an I/O module - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace an I/O module in your ASA A20, ASA A30, or ASA A50 system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
+
 include::../_include/g_io_module_replace.adoc[]
