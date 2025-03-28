@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  ASA A90,  ASA A70, replace io module
 summary: The ASA A70 and ASA A90 systems offer flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
 ---
-= Overview of add and replace I/O module - ASA A70 and ASA A90
+= Overview of add and replace an I/O module - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
@@ -21,3 +21,9 @@ Adding additional modules can improve redundancy, helping to ensure that the sys
 * link:io-module-replace.html[Replace an I/O module]
 +
 Replacing a failing I/O module can restore the system to its optimal operating state. 
+
+.I/O slot numbering
+
+The I/O slots on ASA A70 and ASA A90 controllers are numbered 1 through 11, as shown in the following illustration.
+
+image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on ASA A70 and AFF A90 controllers]

@@ -2,14 +2,14 @@
 permalink: c30-60/controller-replace-shutdown.html
 sidebar: sidebar
 keywords: aff c30, aff c60, shut down the impaired controller
-summary: "To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage."
+summary: Shut down the impaired controller in your AFF C30 or AFF C60 storage system to prevent data loss and ensure system stability when replacing the controller.
 ---
 = Shut down the impaired controller - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+Shut down the impaired controller in your AFF C30 or AFF C60 storage system to prevent data loss and ensure system stability when replacing the controller.
 
 [role="tabbed-block"]
 ====
@@ -23,4 +23,10 @@ include::../_include/shutdown_most_frus.adoc[]
 include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 --
 
-====
+// ====
+
+
+
+.What's next?
+
+After you've shut down the controller, you need to link:controller-replace-move-hardware.html[replace the controller].

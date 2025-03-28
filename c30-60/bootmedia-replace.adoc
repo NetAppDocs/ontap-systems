@@ -2,11 +2,16 @@
 permalink: c30-60/bootmedia-replace.html
 sidebar: sidebar
 keywords: aff c30, aff c60, replace the boot media
-summary: You locate the failed boot media in the controller module by removing Riser 3 on the controller module before you can replace the boot media.
+summary: The boot media in your AFF C30 or AFF C60 system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
 ---
 = Replace the boot media - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+The boot media in your AFF C30 or AFF C60 system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
+
 include::../_include/g_bootmedia_replace.adoc[]
+
+.What's next?
+After replacing the boot media, you need to link:bootmedia-recovery-image-boot.html[boot the recovery image].

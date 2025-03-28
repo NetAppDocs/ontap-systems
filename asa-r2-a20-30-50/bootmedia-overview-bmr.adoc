@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/bootmedia-overview-bmr.html
 sidebar: sidebar
-keywords: aff a20, aff a30, aff a50, overview, automatic recovery, boot media
+keywords: asa a20, asa a30, asa a50, overview, automatic recovery, boot media
 summary: Learn about the automated method for replacing the boot media.
 ---
 = Overview of boot media recovery - ASA A20, ASA A30, and ASA A50
@@ -9,7 +9,7 @@ summary: Learn about the automated method for replacing the boot media.
 :imagesdir: ../media/
 
 [.lead]
-Boot media recovery uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
+Boot media recovery for your ASA A20, ASA A30, or ASA A50 storage system uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
 
 When you encounter boot error messages similar to the one shown below, you need to replace the boot media and restore the ONTAP image from the partner node.
 
