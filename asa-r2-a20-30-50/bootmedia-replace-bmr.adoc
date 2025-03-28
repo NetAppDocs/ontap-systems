@@ -9,6 +9,8 @@ summary: You locate the failed boot media by removing System Management module b
 :imagesdir: ../media/
 
 [.lead]
+The boot media in your ASA A20, ASA A30, or ASA A50 system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
+
 include::../_include/g_bootmedia_replace-bmr.adoc[]
 
 .What's next

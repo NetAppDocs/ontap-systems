@@ -11,8 +11,14 @@ summary: Attach the power cables and power on the shelves and controllers.
 [.lead]
 After you install the rack hardware for your AFF A1K storage system and install the cables for the controllers and storage shelves, you should power on your storage shelves and controllers. 
 
+== Step 1: Power on the shelf and assign shelf ID
+
+include::../_include/install_power_shelf_ns224.adoc[]
+
+== Step 2: Power on the controllers
+
 :a1k-a70-90:
-include::../_include/install_power_hardware_fragment_conditional.adoc[]
+include::../_include/install_power_controllers_conditional.adoc[]
 :a1k-a70-90!:
 
 .What's next?
