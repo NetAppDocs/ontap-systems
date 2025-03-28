@@ -9,9 +9,9 @@ summary: Maintain the ASA A20, ASA A30, and ASA A50 hardware
 :imagesdir: ../media/
 
 [.lead]
-You might need to perform maintenance procedures on your hardware. Procedures specific to maintaining your ASA A20, ASA A30, and ASA A50 system components are in this section.
+Maintain the hardware of your ASA A20, ASA A30, or ASA A50 storage systems to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 
-The procedures in this section assume that the ASA A20, ASA A30, or ASA A50 storage systems have already been deployed as storage nodes in the ONTAP environment.
+The maintenance procedures assume that the ASA A20, ASA A30, and ASA A50 systems have already been deployed as a storage nodes in the ONTAP environment.
 
 == System components
 For the ASA A20, ASA A30, and ASA A50 storage systems, you can perform maintenance procedures on the following components.

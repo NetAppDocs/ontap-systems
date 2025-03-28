@@ -2,14 +2,14 @@
 permalink: asa-r2-70-90/chassis-replace-move-hardware.html
 sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, move hardware components, replace the chassis
-summary: Replace the chassis in your ASA A70 or ASA A90 system when a hardware failure requires it. This process involves powering down the system, removing the existing chassis, installing the new one, and reconfiguring components to ensure proper system operation.
+summary: Replace the chassis of your ASA A70 or ASA A90 system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components.
 ---
 = Move and replace hardware - ASA A70 and ASA A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the chassis in your ASA A70 or ASA A90 system when a hardware failure requires it. This process involves powering down the system, removing the existing chassis, installing the new one, and reconfiguring components to ensure proper system operation.
+Replace the chassis of your ASA A70 or ASA A90 system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components.
 
 include::../_include/a70-90_chassis_replace_move_hardware.adoc[]
 

@@ -3,20 +3,42 @@
 . Properly ground yourself.
 . Physically identify the failed drive.
 +
-When a drive fails, the system logs a warning message to the system console indicating which drive failed. Additionally, the attention (amber) LED on the drive shelf operator display panel and the failed drive illuminate.
+When a drive fails, the system logs a warning message to the system console indicating which drive failed. Additionally, the attention (amber) LED on the shelf operator display panel and the failed drive illuminate.
 +
 NOTE: The activity (green) LED on a failed drive can be illuminated (solid), which indicates that the drive has power, but should not be blinking, which indicates I/O activity. A failed drive has no I/O activity.
 
 . Remove the failed drive:
- .. Press the release button on the drive face to open the cam handle.
- .. Slide the drive out of the shelf using the cam handle and supporting the drive with your other hand.
++
+image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove NVMe drive]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Press the release button on the drive face to open the cam handle.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Rotate the cam handle downward to disengage the drive from the midplane.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand. 
+
+When removing a drive, always use two hands to support its weight.
+
+NOTE: Because drives are fragile, minimize handling to avoid damaging them.
+
+|===
++
 . Wait a minimum of 70 seconds before inserting the replacement drive.
 +
 This allows the system to recognize that a drive was removed.
 
 . Insert the replacement drive:
  .. With the cam handle in the open position, use both hands to insert the replacement drive.
- .. Push until the drive stops.
+ .. Gently push until the drive stops.
  .. Close the cam handle so that the drive is fully seated into the midplane and the handle clicks into place.
 +
 Be sure to close the cam handle slowly so that it aligns correctly with the face of the drive.
