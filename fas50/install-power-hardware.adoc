@@ -19,9 +19,9 @@ include::../_include/install_power_shelf_sas.adoc[]
 
 == Step 3: Power on the controllers
 
-:fas50:
+:fas50-a20-30-50:
 include::../_include/install_power_controllers_conditional.adoc[]
-:fas50!:
+:fas50-a20-30-50!:
 
 .What's next?
 After you've powered on your storage system, you link:install-complete.html[complete system setup].
