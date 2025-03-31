@@ -36,32 +36,6 @@ Cable the controllers to create the ONTAP cluster connections.
 .Switchless cluster cabling
 --
 
-//.FAS50 with two 2-port 40/100 GbE I/O modules
-//[%collapsible]
-//====
-
-//.Steps
-
-//. Cable the Cluster/HA interconnect connections: 
-//+
-//NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE. 
-//+
-//.. Cable controller A port e2a to controller B port e2a.
-//.. Cable controller A port e4a to controller B port e4a.
-//+
-//NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
-//+
-//*100 GbE Cluster/HA interconnect cables*
-//+
-//image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
-//+
-//image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[a30 and a50 switchless cluster cabling diagram using two 100gbe io modules]
-//+
-
-//image::../media/drw_isi_fas50_switchless_2p_100gbe_cabling_ieops-1937.svg[fas50 switchless cluster cabling diagram using one 100gbe io modules]
-
-//====
-
 .FAS50 with one 2-port 40/100 GbE I/O module
 [%collapsible]
 
@@ -90,88 +64,9 @@ image::../media/drw_isi_fas50_switchless_2p_100gbe_cabling_ieops-1937.svg[fas50 
 ====
 
 
-//.FAS50 with one 2-port 10/25 GbE I/O module
-//[%collapsible]
-
-
-//====
-
-
-//.Steps
-//. Cable the Cluster/HA interconnect connections: 
-//+
-//NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 10/25 GbE.
-//+
-//.. Cable controller A port e4a to controller B port e4a.
-//.. Cable controller A port e4b to controller B port e4b.
-//+
-//*25 GbE Cluster/HA interconnect cables*
-//+
-//image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
-//+
-//image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 switchless cluster cabling diagram using one 25 gbe io module]
-
-
-//====
-
-
-
 --
 .Switched cluster cabling
 --
-
-//.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
-//[%collapsible]
-
-
-//====
-
-//.Steps
-
-//. Cable the Cluster/HA interconnect connections: 
-//+
-//NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE.
-//+
-//.. Cable controller A port e4a to cluster network switch A.
-//.. Cable controller A port e2a to cluster network switch B.
-//.. Cable controller B port e4a to cluster network switch A.
-//.. Cable controller B port e2a to cluster network switch B.
-//+
-//NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
-//+
-//*40/100 GbE Cluster/HA interconnect cables*
-//+
-//image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
-//+
-//image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a50 switched cluster cabling diagram using two 100gbe io modules]
-
-
-//====
-
-//.AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
-[%collapsible]
-
-
-//====
-
-//.Steps
-
-//. Cable the controllers to the cluster network switches:
-//+
-//NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
-//+
-//.. Cable controller A port e4a to cluster network switch A. 
-//.. Cable controller A port e4b to cluster network switch B.
-//.. Cable controller B port e4a to cluster network switch A. 
-//.. Cable controller B port e4b to cluster network switch B.
-//+
-//*40/100 GbE Cluster/HA interconnect cables*
-//+
-//image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
-//+
-//image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
-
-//====
 
 
 .FAS50 with one 2-port 40/100 GbE I/O module
@@ -215,27 +110,6 @@ Cable the controllers to your Ethernet or FC host network.
 --
 
 
-//.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
-//[%collapsible]
-
-//====
-
-//.Steps
-
-//. On each controller, cable ports e2b and e4b to the Ethernet host network switches.
-//+
-//NOTE: The ports on I/O modules in slot 2 and 4 are 40/100 GbE (host connectivity is 40/100 GbE).
-//+
-//*40/100 GbE cables*
-//+
-//image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable, width=100px]
-//+
-//image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Cable to 40/100gbe ethernet host network switches]
-
-
-
-//====
-
 .FAS50 with one 4-port 10/25 GbE I/O module
 [%collapsible]
 
@@ -247,8 +121,6 @@ Cable the controllers to your Ethernet or FC host network.
 *10/25 GbE cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
-//+
-//image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
 +
 image::../media/drw_isi_fas50_4p_25gbe_optional_cabling_ieops-1934.svg[cable fas50 to 10/25gbe ethernet host network switches]
 
@@ -271,8 +143,6 @@ image::../media/drw_isi_fas50_4p_25gbe_optional_cabling_ieops-1934.svg[cable fas
 *64 Gb/s FC cables*
 +
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
-//+
-//image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
 +
 image::../media/drw_isi_fas50_4p_64gb_fc_optional_cabling_ieops-1935.svg[Cable to 64gb fc host network switches]
 
@@ -294,8 +164,6 @@ Cable the controllers to your management network.
 image::../media/oie_cable_rj45.png[RJ-45 cables]
 +
 image::../media/drw_isi_fas50_wrench_cabling_ieops-1938.svg[Connect to your management network]
-
-// [Connect to your management network,width=500px] or xx
 
 IMPORTANT: Do not plug in the power cords yet. 
 
@@ -342,31 +210,6 @@ image:../media/drw_isi_fas50_1_ds460c_controller_a_cabling_ieops-2167.svg[Contro
 +
 image:../media/drw_isi_fas50_1_ds460c_controller_b_cabling_ieops-2169.svg[Controller B ports 3a and 3d cabled to one DS460C shelf]
 
-// Below commented out should be removed unless Andris/Lueth want another cabling option shown, then need to update.
-//--
-
-//.Option 2 test: Two NS224 storage shelves
-//--
-//Cable each controller to the NSM modules on both NS224 shelves.
-
-//*100 GbE QSFP28 copper cables*
-
-//image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable,width=100px]
-
-//.Steps
-
-//. Cable controller A to the shelf:
-//.. Cable controller A port 3a to IOMA port 1.
-//.. Cable controller A port 3d to IOMB port 3.
-//+
-//image:../media/drw_isi_fas50_1_ds460c_controller_a_cabling_ieops-2167.svg[Controller A ports 3a and 3d cabled to one DS460C shelf]
-
-//. Cable controller B to the shelf:
-//.. Cable controller B port 3a to IOMB port 1.
-//.. Cable controller B port 3d to IOMA port 3.
-//+
-//image:../media/drw_isi_fas50_1_ds460c_controller_b_cabling_ieops-2169.svg[Controller B ports 3a and 3d cabled to one DS460C shelf]
-//+
 
 --
 .Option 2: Two DS460C shelves
@@ -398,50 +241,6 @@ image:../media/drw_isi_fas50_2_ds460c_controller_b_cabling_ieops-2171.svg[Contro
 
 // end tabbed area 
 
-
-
-// Remove lines 406 - 442 if Andris and Lueth are okay with the tabbled options above!!!!!!!!!!!!!!!!!!!!!
-//
-//
-//
-//
-//=== Cable the FAS50 to one DS460C shelf
-
-//.Steps
-
-//. Cable controller A to the shelf:
-//.. Cable controller A port 3a to IOMA port 1.
-//.. Cable controller A port 3d to IOMB port 3.
-//+
-//image:../media/drw_isi_fas50_1_ds460c_controller_a_cabling_ieops-2167.svg[Controller A ports 3a and 3d cabled to one DS460C shelf]
-
-//. Cable controller B to the shelf:
-//.. Cable controller B port 3a to IOMB port 1.
-//.. Cable controller B port 3d to IOMA port 3.
-//+
-//image:../media/drw_isi_fas50_1_ds460c_controller_b_cabling_ieops-2169.svg[Controller B ports 3a and 3d cabled to one DS460C shelf]
-
-//=== Cable the FAS50 to two DS460C shelves
-
-//.Steps
-
-//. Cable the shelf-to-shelf connections:
-//.. Cable Shelf 1 IOMA port 3 to Shelf 2 IOMA port 1.
-//.. Cable Shelf 1 IOMB port 3 to Shelf 2 IOMB port 1.
-//+
-//image:../media/drw_isi_fas50_2_ds460c_shelf_to_shelf_ieops-2172.svg[cable shelf to shelf connections]
-
-//. Cable controller A to the shelves:
-//.. Cable controller A port 3a to shelf 1 IOMA port 1.
-//.. Cable controller A port 3d to shelf 2 IOMB port 3.
-//+
-//image:../media/drw_isi_fas50_2_ds460c_controller_a_cabling_ieops-2170.svg[Controller A ports 3a and 3d cabled to two DS460C shelves]
-
-//. Cable controller B to the shelves:
-//.. Cable controller B port 3a to shelf 1 IOMB port 1.
-//.. Cable controller B port 3d to shelf 2 IOMA port 3.
-//+
-//image:../media/drw_isi_fas50_2_ds460c_controller_b_cabling_ieops-2171.svg[Controller B ports 3a and 3d cabled to two DS460C shelves]
 
 .What's next?
 
