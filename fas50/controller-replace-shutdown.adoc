@@ -2,7 +2,7 @@
 permalink: fas50/controller-replace-shutdown.html
 sidebar: sidebar
 keywords: fas50, shut down the impaired controller
-summary: "To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage."
+summary: "Shut down the impaired controller in your FAS50 storage system to prevent data loss and ensure system stability when replacing the controller."
 ---
 = Shut down the impaired controller - FAS50
 :icons: font
@@ -25,7 +25,7 @@ include::../_include/shutdown_most_frus.adoc[]
 include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 --
 
-// ====
+====
 
 .What's next?
 
