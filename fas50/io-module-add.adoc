@@ -2,13 +2,15 @@
 permalink: fas50/io-module-add.html
 sidebar: sidebar
 keywords: fas50, add I/O module
-summary: "To replace an I/O module, you must disconnect the cables from the module, remove the SFP and QSFP modules from the module, remove the module, install the replacement module, reinstall the SFP and QSFP modules, and then cable the I/O module."
+summary: "Add an I/O module to your FAS50 system to enhance network connectivity and expand your system’s ability to handle data traffic."
 ---
 = Add I/O module - FAS50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Add an I/O module to your FAS50 system to enhance network connectivity and expand your system’s ability to handle data traffic.
+
 You can add an I/O module to your FAS50 storage systems when there are slots available or when all slots are fully populated.
 
 .About this task
@@ -21,21 +23,22 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 == Step 1: Shut down the impaired controller module
 
-//[role="tabbed-block"]
-//====
+[role="tabbed-block"]
+====
 
-//.Option 1: Most systems
-//--
+.Option 1: Most systems
+--
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
-//--
-//.Option 2: MetroCluster configuration
-//--
-//include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
-//--
-//
-//====
+--
+.Option 2: MetroCluster configuration
+--
+include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+--
+
+====
 
 
 == Step 2: Add the new I/O module
 
 include::../_include/add_io_module_thumb.adoc[]
+

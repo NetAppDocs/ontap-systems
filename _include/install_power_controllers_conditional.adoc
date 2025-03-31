@@ -64,7 +64,7 @@ endif::fas50-a20-30-50[]
 +
 // next applies only to FAS50 and A20-30-50
 ifdef::fas50-a20-30-50[]
-* The shelf ID display on the front of the system chassis does not illuminate. The system's internal shelf ID is fixed at 00.
+* The shelf ID display on the front of the system chassis does not illuminate.
 endif::fas50-a20-30-50[]
 
 . Secure the power cords using the securing device on each power supply.

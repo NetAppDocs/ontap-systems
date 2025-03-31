@@ -69,7 +69,8 @@ endif::a20-30-50[]
 
 // next applies only to fas50
 ifdef::fas50[]
-The storage system can weigh up to 61.5 lbs (27.9 kg). To lift the storage system, use two people or a hydraulic lift.
+The storage system can weigh up to 53.8 lbs (24.4 kg). To lift the storage system, use two people or a hydraulic lift.
+// Weight will be more with 22 NVMe drives...later.
 
 image::../media/drw_g_lifting_weight_ieops-1831.svg[FAS50 weight caution icon]
 endif::fas50[]
