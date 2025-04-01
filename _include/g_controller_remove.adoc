@@ -2,7 +2,7 @@ You must remove the controller from the chassis when you replace the controller 
 
 .Before you begin
 
-All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+Make sure all other components in the storage system are functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .Steps
 . On the impaired controller, make sure the NV LED is off.

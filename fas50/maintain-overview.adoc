@@ -2,16 +2,16 @@
 permalink: fas50/maintain-overview.html
 sidebar: sidebar
 keywords: aff a20 aff a30 aff a50 maintenance, maintenance, repairing a20 aff a30 aff a50, replace a20 aff a30 aff a50 components
-summary: Maintain the FAS50 hardware
+summary: Maintain the hardware of your FAS50 storage systems to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 ---
 = Overview of hardware maintenance -  FAS50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You might need to perform maintenance procedures on your hardware. Procedures specific to maintaining your FAS50 system components are in this section.
+Maintain the hardware of your FAS50 storage systems to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 
-The procedures in this section assume that the FAS50 storage systems have already been deployed as storage nodes in the ONTAP environment.
+The maintenance procedures assume that the FAS50 systems have already been deployed as a storage nodes in the ONTAP environment.
 
 == System components
 For the FAS50 storage systems, you can perform maintenance procedures on the following components.
@@ -24,6 +24,10 @@ a| link:bootmedia-replace-workflow.html[Boot media]
 
 a| The boot media stores a primary and secondary set of ONTAP image files as well as system configuration information that the system uses when it boots.
 
+a| link:caching-module-hot-swap.html[Caching module]
+
+a| A caching module (Flash Cache module) utilizes high-speed SSDs to store frequently accessed data for quicker retrieval.
+
 a| link:chassis-replace-workflow.html[Chassis]
 
 a| The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
@@ -35,10 +39,6 @@ a| A controller consists of a board, firmware, and software. It controls the dri
 a| link:dimm-replace.html[DIMM]
 
 a| A dual in-line memory module (DIMM) is a type of computer memory. They are installed to add system memory to a controller motherboard.
-
-a| link:drive-replace.html[Drive]
-
-a| A drive is a device that provides the physical storage needed for data.
 
 a| link:fan-replace.html[Fan]
 
