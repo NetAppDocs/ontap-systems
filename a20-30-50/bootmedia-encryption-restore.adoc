@@ -13,4 +13,5 @@ Restore encryption on the replacement boot media in your AFF A20, AFF A30, or AF
 
 include::../_include/encryption_restore_bootmedia.adoc[]
 
+.What's next?
 After restoring encryption on the boot media, you need to link:bootmedia-complete-rma.html[return the failed part to NetApp].
