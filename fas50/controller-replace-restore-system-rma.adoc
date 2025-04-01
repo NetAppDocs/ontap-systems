@@ -1,0 +1,34 @@
+---
+permalink: fas50/controller-replace-restore-system-rma.html
+sidebar: sidebar
+keywords: fas50, how to restore NetApp Storage Encryption, how to complete the replacement process
+summary: "To complete the controller replacement for your FAS50 system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller's serial number and then return the failed part to NetApp."
+---
+= Complete controller replacement - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To complete the controller replacement for your FAS50 system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller's serial number and then return the failed part to NetApp.
+
+
+== Step 1: Install licenses for the replacement controller in ONTAP
+
+include::../_include/install_licenses_mcc.adoc[]
+
+== Step 2: Verify LIFs, register the serial number, and check cluster health
+
+include::../_include/check_lifs_register_serial_number.adoc[]
+
+== Step 3: Return the failed part to NetApp
+include::../_include/complete_rma.adoc[]
+
+
+
+
+
+
+// No longer being used: Mar 6 2025.
+// == Step 1: Verify LIFs and check cluster health
+
+// include::../_include/check_lifs_cluster_health.adoc[]

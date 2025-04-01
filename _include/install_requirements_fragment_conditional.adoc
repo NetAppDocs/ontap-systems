@@ -18,11 +18,18 @@
 // include::../_include/install_requirements_fragment_conditional.adoc[]
 // :a-20-30-50!:
 
+// if the context is fas50:
+
+// :fas50:
+// include::../_include/install_requirements_fragment_conditional.adoc[]
+// :fas50!:
+
 // if the context is fas70-90:
 
 // :fas70-90:
 // include::../_include/install_requirements_fragment_conditional.adoc[]
 // :fas70-90!:
+
 
 == Equipment needed for install
 To install your storage system, you need the following equipment and tools. 
@@ -59,6 +66,14 @@ The storage system can weigh up to 61.5 lbs (27.9 kg). To lift the storage syste
 
 image::../media/drw_g_lifting_weight_ieops-1831.svg[AFF A20 A30 A50 and C30 and C60 weight caution icon]
 endif::a20-30-50[]
+
+// next applies only to fas50
+ifdef::fas50[]
+The storage system can weigh up to 53.8 lbs (24.4 kg). To lift the storage system, use two people or a hydraulic lift.
+// Weight will be more with 22 NVMe drives...later.
+
+image::../media/drw_g_lifting_weight_ieops-1831.svg[FAS50 weight caution icon]
+endif::fas50[]
 
 // next applies only to fas70-90
 ifdef::fas70-90[]
@@ -97,10 +112,17 @@ An NS224 shelf can weigh up to 66.78 lbs (30.29 kg). To lift the shelf, use two 
 
 image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NS224 NSM100 lifting caution]
 
-A DS460C shelf can weigh up to 260.4 lbs (181.1  kg). To lift the storage shelf, you may need up to five people or a hydraulic lift. Keep all components in the storage shelf (both front and rear) to prevent unbalancing the shelf weight.
+A DS460C shelf can weigh up to 260.4 lbs (181.1 kg). To lift the storage shelf, you might need up to five people or a hydraulic lift. Keep all components in the storage shelf (both front and rear) to prevent unbalancing the shelf weight.
 
 image::../media/drw_ds460c_weight_warning_ieops-1932.svg[DS460C lifting caution]
 endif::fas70-90[]
+
+// next applies only to fas50
+ifdef::fas50[]
+A DS460C shelf can weigh up to 260.4 lbs (181.1 kg). To lift the shelf, you might need up to five people or a hydraulic lift. Keep all components in the shelf (both front and rear) to prevent unbalancing the shelf weight.
+
+image::../media/drw_ds460c_weight_warning_ieops-1932.svg[DS460C lifting caution]
+endif::fas50[]
 
 .Related information
 

@@ -1,0 +1,17 @@
+---
+permalink: fas50/bootmedia-encryption-preshutdown-checks.html
+sidebar: sidebar
+keywords: fas50, pre-shutdown checks for onboard encryption keys
+summary: "To ensure data security on your FAS50 storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption (NVE), and before you shut down the controller check if the key manager is active."
+---
+= Check onboard encryption keys - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To ensure data security on your FAS50 storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption (NVE), and before you shut down the controller check if the key manager is active.
+
+include::../_include/encryption_check_bootmedia.adoc[]
+
+.What's next?
+After checking the encryption key support and status on the boot media, you need to link:bootmedia-shutdown.html[shut down the controller].
