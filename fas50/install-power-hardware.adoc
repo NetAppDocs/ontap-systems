@@ -1,0 +1,27 @@
+---
+permalink: fas50/install-power-hardware.html
+sidebar: sidebar
+keywords: fas50, power controllers
+summary: Attach the power cables and power on the shelves and controllers.
+---
+= Power on the storage system - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you cable the controllers to the network and shelves in your FAS50 storage system, you power on your shelves and controllers. 
+
+
+== Step 1: Power on the shelf and assign shelf ID
+
+include::../_include/install_power_shelf_sas.adoc[]
+
+
+== Step 2: Power on the controllers
+
+:fas50-a20-30-50:
+include::../_include/install_power_controllers_conditional.adoc[]
+:fas50-a20-30-50!:
+
+.What's next?
+After you've powered on your storage system, you link:install-complete.html[complete system setup].

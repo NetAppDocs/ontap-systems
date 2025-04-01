@@ -1,0 +1,14 @@
+---
+permalink: fas50/chassis-replace-complete-system-restore-rma.html
+sidebar: sidebar
+keywords: fas50, verify and set HA state, complete the replacement process
+summary: "Verify the HA state of the chassis and then return the failed part to NetApp to complete the final step in the FAS50 chassis replacement procedure."
+---
+= Complete chassis replacement - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Verify the HA state of the chassis and then return the failed part to NetApp to complete the final step in the FAS50 chassis replacement procedure.
+
+include::../_include/g_chassis_replace_complete_system_restore_rma.adoc[]

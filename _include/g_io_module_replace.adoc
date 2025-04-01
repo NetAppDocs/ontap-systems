@@ -1,7 +1,7 @@
 
 
 .Before you begin
-All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
 
@@ -13,24 +13,22 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 
 == Step 1: Shut down the impaired controller
- 
-Shut down or take over the impaired controller.
 
-// Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the impaired controller using one of the following options.
  
-// [role="tabbed-block"]
-// ====
+[role="tabbed-block"]
+====
  
-// .Option 1: Most systems
-// --
+.Option 1: Most systems
+--
 include::../_include/shutdown_most_frus.adoc[]
-// --
-// .Option 2: Controller is in a MetroCluster
-// --
-// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
-// --
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
  
-// ====
+====
 
 
 == Step 2: Replace a failed I/O module

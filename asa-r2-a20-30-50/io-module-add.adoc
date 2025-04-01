@@ -23,19 +23,7 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 == Step 1: Shut down the impaired controller module
 
-//[role="tabbed-block"]
-//====
-
-//.Option 1: Most systems
-//--
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
-//--
-//.Option 2: MetroCluster configuration
-//--
-//include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
-//--
-//
-//====
 
 
 == Step 2: Add the new I/O module
