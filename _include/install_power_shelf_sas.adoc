@@ -6,7 +6,7 @@ Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf
 +
 If you have internal shelves (storage), which are integrated within the controllers, they are assigned a fixed shelf ID of 00.
 
-* You must power cycle a shelf (turn off the power switch at the rear of the SAS shelf, wait the appropriate amount of time, and then switch the power back on) for the shelf ID to take effect.
+* You must power cycle a shelf (turn off the power switch on each of the power supplies of the SAS shelf, wait the appropriate amount of time, and then switch the power back on) for the shelf ID to take effect.
 
 .Steps
 . Power on the shelf by connecting the power cords first to the shelf, securing them in place with the power cord retainer, connecting the power cords to power sources on different circuits, and then turning on the power switch on each of the power supplies (at the rear of the shelf).

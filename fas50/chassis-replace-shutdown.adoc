@@ -1,0 +1,18 @@
+---
+permalink: fas50/chassis-replace-shutdown.html
+sidebar: sidebar
+keywords: fas50, shutdown the controllers
+summary: "Shut down the controllers in your FAS50 storage system to prevent data loss and ensure system stability when replacing the chassis."
+---
+= Shut down the controllers - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down the controllers in your FAS50 storage system to prevent data loss and ensure system stability when replacing the chassis.
+
+include::../_include/shutdown_chassis.adoc[]
+
+.What's next?
+
+After you've shut down the controllers, you need to link:chassis-replace-move-hardware.html[replace the chassis].
