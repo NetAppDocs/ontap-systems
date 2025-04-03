@@ -1,19 +1,16 @@
 You must install new licenses for the _replacement_ node if the impaired node was using ONTAP features that require a standard (node-locked) license. For features with standard licenses, each node in the cluster should have its own key for the feature.
 
-.About this task
-Until you install license keys, features requiring standard licenses continue to be available to the _replacement_ node. However, if the impaired node was the only node in the cluster with a license for the feature, no configuration changes to the feature are allowed. 
-
-Also, using unlicensed features on the node might put you out of compliance with your license agreement, so you should install the replacement license key or keys on the _replacement_ node as soon as possible.
-
 .Before you begin
+// For Vino and Gizo it is later than 9.10.1 (9.16.0 + at initial system release), so the only info in this license section should be what's in the KB???? Is this a situation where we incorporate the KB into IE doc.
+If your system was initially running ONTAP 9.10.1 or later, use the procedure documented in  https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system#Internal_Notes^[Post Motherboard Replacement Process to update Licensing on a AFF/FAS system]. If you are unsure of the initial ONTAP release for your system, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for more information.
 
-The licenses keys must be in the 28-character format.
 
-You have a 90-day grace period in which to install the license keys. After the grace period, all old licenses are invalidated. After a valid license key is installed, you have 24 hours to install all of the keys before the grace period ends.
-
-//Mar 19 2025: this KB states it applies to AFF and FAS only. This nonmcc topic is being used for ASAr2, so KB would not apply, but confirming.
-
-//NOTE: If your system was initially running ONTAP 9.10.1 or later, use the procedure documented in  https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system#Internal_Notes^[Post Motherboard Replacement Process to update Licensing on a AFF/FAS system]. If you are unsure of the initial ONTAP release for your system, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for more information.
+.About this task
+* Until you install license keys, features requiring standard licenses continue to be available to the _replacement_ node. However, if the impaired node was the only node in the cluster with a license for the feature, no configuration changes to the feature are allowed. 
++
+Also, using unlicensed features on the node might put you out of compliance with your license agreement, so you should install the replacement license key or keys on the _replacement_ node as soon as possible.
+* The licenses keys must be in the 28-character format.
+* You have a 90-day grace period in which to install the license keys. After the grace period, all old licenses are invalidated. After a valid license key is installed, you have 24 hours to install all of the keys before the grace period ends.
 
 .Steps
 
