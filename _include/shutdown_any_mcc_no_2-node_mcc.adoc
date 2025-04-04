@@ -40,6 +40,7 @@ Take over or halt the impaired controller from the healthy controller:
 
 The _-halt true_ parameter brings you to the LOADER prompt.
 
+// 3 Apr 2025, replaced by -halt true parameter.
 // When the impaired controller shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 
 |===
