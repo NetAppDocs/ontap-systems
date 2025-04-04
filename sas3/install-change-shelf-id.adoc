@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: change, shelf, id, system, ontap, run, hot-add, ontap, controller, module, available, serve, data, unown, spare, offline, aggregate
 summary: You can change a shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running \(controller modules are available to serve data\) and all drives in the shelf are unowned, spares, or part of offlined aggregate\(s\).
 ---
-= Change a shelf ID - DS212C, DS224C, or DS460C shelves
+= Change a DS212C, DS224C, or DS460C shelf ID
 :icons: font
 :imagesdir: ../media/
 
