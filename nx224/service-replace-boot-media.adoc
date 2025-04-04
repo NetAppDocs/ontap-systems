@@ -1,0 +1,237 @@
+---
+permalink: nx224/service-replace-boot-media.html
+sidebar: sidebar
+keywords: nx224, shelves, shelf, nx224 shelves, boot, media, run, ontap, nvme, module, nsm, firmware, version, nondisruptive, i/o
+summary: When the boot media fails on an NX224 drive shelf in an HA pair that is running ONTAP 9.7 or later, or the shelf is running NVMe shelf module \(NSM\) firmware version 1.1x or later, you can replace the boot media. Replacing the boot media can be done nondisruptively, while the drive shelf is powered on, and I/O is in progress.
+---
+= Replace the boot media - NX224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can replace a failed boot media in an NX224 shelf. Replacing the boot media can be done nondisruptively, while the drive shelf is powered on, and I/O is in progress.
+
+.Before you begin
+
+* *NX224 with NSM100 modules only*: Your HA pair must already be running ONTAP 9.7 or later, which has the minimum supported version of NSM firmware.
++
+You can enter the `storage shelf show -module` command at the console of either controller to verify the version of NSM firmware on your shelf.
++
+[NOTE]
+====
+If your shelf is not running NSM firmware version 0111 or later, you cannot replace the boot media, you must replace the NSM.
+
+link:service-replace-nsm100.html[Replace an NSM - NX224 shelves^]
+====
+* *NX224 with NSM100 modules only*: You need a Phillips #1 screwdriver.
++
+The screw used to secure the boot media to the board requires a Phillips #1 screwdriver; using a different type of screwdriver could strip the screw.
+
+* The shelf's partner NSM must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM).
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
+* All other components in the system must be functioning properly.
+
+.About this task
+
+* After the boot media is replaced, the boot image from the shelf's partner NSM is automatically copied to the replacement boot media.
++
+This can take up to five minutes.
+
+* Allow at least 70 seconds between removal and installation of the NVMe shelf module (NSM).
++
+This allows enough time for ONTAP to process the NSM removal event.
+
+* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
++
+If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
++
+A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
+
+* After replacing the boot media, you can return the failed part to NetApp as described in the RMA instructions shipped with the kit.
++
+If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
+
+
+[role="tabbed-block"]
+====
+
+.NSM100 modules
+--
+
+You can use the following animation or the written steps to replace the boot media.
+
+video::20ed85f9-1f80-4e0e-9219-ab4600070d8a[panopto, title="Replace the NX224 shelf boot media"]
+
+.Steps
+
+
+
+. Make sure that both NSMs in the shelf are running the same version of firmware: version 0200 or later.
+. Properly ground yourself.
+. Disconnect the cabling from the NSM that contains the FRU that you are replacing:
+ .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
++
+Power supplies do not have a power switch.
+
+ .. Disconnect the storage cabling from the NSM ports.
++
+Make a note of the NSM ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM, later in this procedure.
+. Remove the NSM from the shelf:
+ .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM.
++
+NOTE: If you are removing the bottom NSM, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
+
+ .. With your thumbs, press down and hold the orange tabs on top of the latching mechanisms.
++
+The latching mechanisms raise, clearing the latching pins on the shelf.
+
+ .. Gently pull until the NSM is about one third of the way out of the shelf, grasp the NSM sides with both hands to support its weight, and then place it on a flat stable surface.
++
+When you begin pulling, the latching mechanism arms extend from the NSM and lock in their fully extended position.
+. Loosen the NSM cover thumb screw and open the cover.
+. Physically locate the failed boot media.
++
+The boot media is located along the shelf chassis wall opposite from the power supply.
+
+. Replace the boot media:
+ .. Using the Phillips #1 screwdriver, carefully remove the screw securing the bottom (notched) end of the boot media to the board.
+ .. Remove the boot media by rotating the notched end up slightly and then gently pulling it towards you until it releases from the socket.
++
+You can hold the boot media by placing your thumb and forefinger on the side edges, at the notched end.
+
+ .. Unpack the boot media from the antistatic bag.
+ .. Insert the replacement boot media by pushing it gently into the socket until it is seated squarely and completely in the socket.
++
+You can hold the boot media by placing your thumb and forefinger on the side edges, at the notched end. Make sure that the side with the heat sink is facing up.
++
+When correctly seated, and when you let go of the boot media, the notched end of the boot media is angled up, away from the board, because it is not yet secured with the screw.
+
+ .. Gently hold down the notched end of the boot media as you insert and tighten the screw with the screwdriver to secure the boot media in place.
++
+NOTE: Tighten the screw just enough to hold the boot media securely in place, but do not overtighten.
+. Close the NSM cover, and then tighten the thumb screw.
+. Reinsert the NSM into the shelf:
+ .. Make sure that the latching mechanism arms are locked in the fully extended position.
+ .. Using both hands, gently slide the NSM into the shelf until the weight of the NSM is fully supported by the shelf.
+ .. Push the NSM into the shelf until it stops (about half an inch from the back of the shelf).
++
+You can place your thumbs on the orange tabs on the front of each finger loop (of the latching mechanism arms) to push in the NSM.
+
+ .. Loop your index fingers through the finger holes of the latching mechanisms on either side of the NSM.
++
+NOTE: If you are inserting the bottom NSM, and if the bottom rail is obstructing access to the latching mechanisms, place your index fingers through the finger holes from the inside (by crossing your arms).
+
+ .. With your thumbs, press down and hold the orange tabs on top of the latching mechanisms.
+ .. Gently push forward to get the latches over the stop.
+ .. Release your thumbs from the tops of the latching mechanisms, and then continue pushing until the latching mechanisms snap into place.
++
+The NSM should be fully inserted into the shelf and flush with the edges of the shelf.
+. Reconnect the cabling to the NSM:
+ .. Reconnect the storage cabling to the same two NSM ports.
++
+Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
+
+ .. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer if it is an AC power supply, or tighten the two thumb screws if it is a DC power supply.
++
+When functioning correctly, a power supply's bicolored LED illuminates green.
++
+Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
+. Verify that the attention (amber) LEDs on the NSM containing the failed boot media and the shelf operator display panel are no longer illuminated.
++
+It can take between 5 to 10 minutes for the attention LEDs to turn off. This is the amount of time it takes the NSM to reboot and the boot media image copy to complete.
++
+If the fault LEDs remain on, the boot media might not be seated correctly or there might be another issue and you should contact technical support for assistance.
+
+. Verify that the NSM is cabled correctly, by running Active IQ Config Advisor.
++
+If any cabling errors are generated, follow the corrective actions provided.
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
+--
+
+.NSM100B modules
+
+--
+
+You can use the following steps to replace the failed boot media.
+
+.Steps
+
+
+. Properly ground yourself.
+. Disconnect the cabling from the NSM that contains the FRU that you are replacing:
+ .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
++
+Power supplies do not have a power switch.
+
+ .. Disconnect the storage cabling from the NSM ports.
++
+Make a note of the NSM ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM, later in this procedure.
+
+include::../_include/t_module_remove.adoc[]
+
+. Open the NSM cover by turning the thumbscrew counterclockwise to loosen it, and then open the cover.
+
+. Physically locate the failed boot media.
+
+. Remove the boot media:
++
+image::../media/drw_t_boot_media_replace_ieops-1977.svg[Remove boot media.]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Boot media location
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Press down on the blue tab to release the right end of the boot media.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Lift the right end of the boot media up at a slight angle to get a good grip along the sides of the boot media.
+a|
+image::../media/icon_round_4.png[Callout number 4]
+a|
+Gently pull the left end of the boot media out of its socket.
+|===
+
+. Install the replacement boot media:
+.. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
+.. Rotate the boot media down toward the locking button.
+.. Push the locking button, rotate the boot media all the way down, and then release the locking button.
+
+. Close the NSM cover, and then tighten the thumb screw.
+
+include::../_include/t_module_reinstall.adoc[]
+
+
+. Reconnect the cabling to the NSM:
+ .. Reconnect the storage cabling to the same two NSM ports.
++
+Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
+
+ .. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer if it is an AC power supply, or tighten the two thumb screws if it is a DC power supply.
++
+When functioning correctly, a power supply's bicolored LED illuminates green.
++
+Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
+. Verify that the attention (amber) LEDs on the NSM containing the failed boot media and the shelf operator display panel are no longer illuminated.
++
+It can take between 5 to 10 minutes for the attention LEDs to turn off. This is the amount of time it takes the NSM to reboot and the boot media image copy to complete.
++
+If the fault LEDs remain on, the boot media might not be seated correctly or there might be another issue and you should contact technical support for assistance.
+
+. Verify that the NSM is cabled correctly, by running Active IQ Config Advisor.
++
+If any cabling errors are generated, follow the corrective actions provided.
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
+--
+====
