@@ -12,7 +12,14 @@ Shut down or take over the impaired controller.
 
 include::../_include/shutdown_most_frus.adoc[]
 
-== Step 2: Replace the NVRAM module
+== Step 2: Replace the NVRAM module or NVRAM DIMM
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Option 1: Replace the NVRAM module
+--
 
 To replace the NVRAM module, locate it in slot 4/5 in the enclosure and follow the specific sequence of steps.
 
@@ -48,7 +55,9 @@ DIMM locking tabs
 . Rotate the cable management tray up to the closed position.
 
 
-== Step 3: Replace a NVRAM DIMM
+--
+.Option 2: Replace the NVRAM DIMM
+--
 
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, and then replace the target DIMM.
 
@@ -85,13 +94,19 @@ NOTE: Consult the FRU map label on the side of the NVRAM module to determine the
 . Recable the PSUs.
 . Rotate the cable management tray up to the closed position.
 
-== Step 4: Reboot the controller
+--
+
+====
+
+// end tabbed area
+
+== Step 3: Reboot the controller
 
 After you replace the FRU, you must reboot the controller module.
 
 . To boot ONTAP from the LOADER prompt, enter _bye_.
 
-== Step 5: Verify controller state
+== Step 4: Verify controller state
 
 You must confirm the controller state of the controllers connected to the disk pool when you boot the controller.
 
