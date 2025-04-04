@@ -1,7 +1,6 @@
 You must install new licenses for the _replacement_ node if the impaired node was using ONTAP features that require a standard (node-locked) license. For features with standard licenses, each node in the cluster should have its own key for the feature.
 
 .Before you begin
-
 If your system was initially running ONTAP 9.10.1 or later, use the procedure documented in  https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system#Internal_Notes^[Post Motherboard Replacement Process to update Licensing on ONTAP platforms]. If you are unsure of the initial ONTAP release for your system, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for more information.
 
 
