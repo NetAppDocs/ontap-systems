@@ -1,8 +1,8 @@
 You must install new licenses for the _replacement_ node if the impaired node was using ONTAP features that require a standard (node-locked) license. For features with standard licenses, each node in the cluster should have its own key for the feature.
 
 .Before you begin
-// For Vino and Gizo it is later than 9.10.1 (9.16.0 + at initial system release), so the only info in this license section should be what's in the KB???? Is this a situation where we incorporate the KB into IE doc.
-If your system was initially running ONTAP 9.10.1 or later, use the procedure documented in  https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system#Internal_Notes^[Post Motherboard Replacement Process to update Licensing on a AFF/FAS system]. If you are unsure of the initial ONTAP release for your system, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for more information.
+
+If your system was initially running ONTAP 9.10.1 or later, use the procedure documented in  https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system#Internal_Notes^[Post Motherboard Replacement Process to update Licensing on ONTAP platforms]. If you are unsure of the initial ONTAP release for your system, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for more information.
 
 
 .About this task
