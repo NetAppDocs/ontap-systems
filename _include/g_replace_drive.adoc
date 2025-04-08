@@ -12,7 +12,7 @@ Instructions in the ONTAP documentation describe additional steps you must perfo
 +
 https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI^]
 
-* All other components in the storage system must be functioning properly, if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+* All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 * Verify that the drive you are removing is failed.
 +

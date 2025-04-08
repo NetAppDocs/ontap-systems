@@ -32,8 +32,8 @@ The HA state should be the same for all components.
 The value for HA-state can be one of the following:
 
 *** `ha`
-// *** `mcc` (not supported)
-// *** `mccip` (not supported in ASA systems)
+*** `mcc` (not supported)
+*** `mccip` (not supported in ASA systems)
 *** `non-ha` (not supported)
 
 . Confirm that the setting has changed: 

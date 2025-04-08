@@ -1,0 +1,18 @@
+---
+permalink: fas50/controller-replace-system-config-restore-and-verify.html
+sidebar: sidebar
+keywords: fas50, restore and verify the system configuration, verify and set the ha state of the controller module
+summary: "Verify that the controller’s HA configuration is active and functioning correctly in your FAS50 storage system, and confirm that the system’s adapters list all the paths to the disks."
+---
+= Restore and verify the system configuration - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Verify that the controller’s HA configuration is active and functioning correctly in your FAS50 storage system, and confirm that the system’s adapters list all the paths to the disks.
+
+include::../_include/g_controller_replace_system_config_restore_and_verify.adoc[]
+
+.What's next?
+
+After you’ve restored and verified the system configuration for your FAS50 system, you need to link:controller-replace-recable-reassign-disks.html[give back the controller].
