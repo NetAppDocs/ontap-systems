@@ -55,7 +55,7 @@ endif::a1k-a70-90[]
 ifdef::fas50-a20-30-50[]
 image::../media/drw_psu_layout_1_ieops-1886.svg[A20 or A30 or A50 storage system power connection diagram]
 endif::fas50-a20-30-50[]
-
++
 * The system begins to boot. Initial booting might take up to eight minutes. 
 +
 * The LEDs flash on and the fans start, which indicates that the controllers are powering on.
