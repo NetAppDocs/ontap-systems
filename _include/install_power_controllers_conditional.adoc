@@ -41,7 +41,6 @@ endif::a1k-a70-90[]
 ifdef::fas50-a20-30-50[]
 image::../media/drw_g_isi_console_serial_port_cabling_ieops-1882.svg[Console connections]
 endif::fas50-a20-30-50[]
-
 +
 . Assign a TCP/IP address to the laptop, using one that is on the management subnet.
 +
@@ -62,7 +61,7 @@ endif::fas50-a20-30-50[]
 +
 * The fans might be very noisy when they first start up. The fan noise during start-up is normal.
 +
-// next applies only to FAS50 and A20-30-50
+// next bullet applies only to FAS50 and A20-30-50
 ifdef::fas50-a20-30-50[]
 +
 * The shelf ID display on the front of the system chassis does not illuminate.
