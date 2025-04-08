@@ -73,6 +73,7 @@ If automatic drive assignment is enabled, the output shows `on` in the `Auto Ass
 You must disable automatic drive assignment on both controllers.
 
 . Properly ground yourself.
+. Remove the bezel from the front of the storage system.
 . Physically identify the failed drive.
 +
 When a drive fails, the system logs a warning message to the system console indicating which drive failed. Additionally, the attention (amber) LED on the drive shelf operator display panel and the failed drive illuminate.
@@ -117,6 +118,7 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 When the drive's activity LED is solid, it means that the drive has power. When the drive's activity LED is blinking, it means that the drive has power and I/O is in progress. If the drive firmware is automatically updating, the LED blinks.
 
 . If you are replacing another drive, repeat steps 3 through step 7.
+. Reinstall the bezel on the front of the storage system.
 . If you disabled automatic drive assignment in step 1, manually assign drive ownership, and then reenable automatic drive assignment if needed:
 .. Display all unowned drives: 
 +
