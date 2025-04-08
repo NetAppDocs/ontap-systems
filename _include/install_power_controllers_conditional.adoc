@@ -41,9 +41,9 @@ endif::a1k-a70-90[]
 ifdef::fas50-a20-30-50[]
 image::../media/drw_g_isi_console_serial_port_cabling_ieops-1882.svg[Console connections]
 endif::fas50-a20-30-50[]
-+
+
 . Assign a TCP/IP address to the laptop, using one that is on the management subnet.
-+
+
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
 // next image applies only to A1K and A70-90
@@ -66,5 +66,5 @@ ifdef::fas50-a20-30-50[]
 +
 * The shelf ID display on the front of the system chassis does not illuminate.
 endif::fas50-a20-30-50[]
-+
+
 . Secure the power cords using the securing device on each power supply.
