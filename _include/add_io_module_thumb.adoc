@@ -24,7 +24,7 @@ You can add a new I/O module into a storage system with available slots.
 
 . On the impaired controller, remove the I/O blanking module from the target slot.
 +
-Unused I/O slots should have blanking module installed to prevent possible thermal issues.
+Unused I/O slots should have blanking module installed to prevent possible thermal issues and for EMC compliance.
 +
 image::../media/drw_g_io_blanking_module_replace_ieops-1901.svg[Remove an I/O blanking module]
 +
