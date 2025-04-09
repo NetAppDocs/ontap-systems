@@ -1,0 +1,64 @@
+---
+permalink: fas50/caching-module-hot-swap.html
+sidebar: sidebar
+keywords: fas50, hot swap, replace, Flash Cache
+summary: "You can hot-swap an NVMe SSD Flash Cache module (caching module) of the same capacity from the same or different supported vendor."
+---
+= Hot-swap a caching module - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can hot-swap an NVMe SSD caching module (Flash Cache module) of the same capacity from the same or different supported vendor.
+
+
+.Before you begin
+
+Your storage system must meet certain criteria depending on your situation:
+
+* Your storage system must have the appropriate operating system for the caching module you are installing.
+* The replacement caching module must have the same capacity as the failed caching module, but can be from a different supported vendor.
+* All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing.
+
+.Steps
+. Properly ground yourself.
+. Locate the failed caching module by the lit amber Attention LED on the front of the caching module.
++
+A caching module can be in drive bay 0 or 23.
+
+. Remove the caching module:
+
++
+
+image::../media/drw_fas50_flash_cache_module_replace_ieops-2173.svg[fas50 caching module replacement steps graphic]
+
++
+[cols="20%,80%"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Press the release button on the module face to open the cam handle.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Rotate the cam handle downward to disengage the module from the midplane.
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Slide the module out of the drive bay using the cam handle and supporting the module with your other hand. 
+
+When removing a module, always use two hands to support its weight.
+
+|===
+
+. Wait a minimum of 70 seconds before inserting the replacement caching module.
+. Install the replacement caching module:
+ .. With the cam handle in the open position, use both hands to insert the module.
+.. Gently push until the module stops.
+.. Close the cam handle so that the module is fully seated into the midplane and the handle clicks into place.
++
+Be sure to close the cam handle slowly so that it aligns correctly with the face of the module.
+. Verify that the module's activity (green) LED is illuminated.
+
+include::../_include/complete_rma_step.adoc[]

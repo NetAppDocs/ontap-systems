@@ -1,4 +1,3 @@
-To replace a fan, you must remove the controller, remove the faulty fan, install the replacement fan, and then reinstall the controller.
 
 .About this task
 If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
@@ -9,23 +8,21 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 == Step 1: Shut down the impaired controller
  
-Shut down or take over the impaired controller.
-
-// Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the impaired controller using one of the following options.
  
-// [role="tabbed-block"]
-// ====
+[role="tabbed-block"]
+====
  
-// .Option 1: Most systems
-// --
+.Option 1: Most systems
+--
 include::../_include/shutdown_most_frus.adoc[]
-// --
-// .Option 2: Controller is in a MetroCluster
-// --
-// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
-// --
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
  
-// ====
+====
 
 == Step 2: Remove the controller
 

@@ -1,4 +1,3 @@
-You must verify the HA state of the chassis and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
 == Step 1: Verify and set the HA state of the chassis
 
@@ -16,9 +15,9 @@ The HA state should be the same for all components.
 `ha-config modify chassis _HA-state_`
 +
 The value for HA-state should be _ha_.
-// The value for HA-state can be one of the following:
-// *** _ha_
-// *** _mcc_ (not supported in ASA)
+The value for HA-state can be one of the following:
+*** _ha_
+*** _mcc_ (not supported in ASA)
 
 .. Confirm that the setting has changed: 
 +
