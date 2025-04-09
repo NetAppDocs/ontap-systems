@@ -75,7 +75,7 @@ include::../_include/t_module_remove.adoc[]
 . Move the DIMMs from the impaired NSM to the replacement to the replacement NSM:
 .. Remove DIMM from the impaired NSM:
 +
-image::../media/drw_t_dimm_ieops-1978.svg[Remove DIMMs.]
+image::../media/drw_tp_dimm_ieops-2202.svg[Remove DIMMs.]
 +
 [cols="1,4"]
 |===
@@ -84,7 +84,6 @@ image::../media/icon_round_1.png[Callout number 1]
 a|
 DIMM slot numbering and positions.
 
-The NSM contains DIMMs in slots 1 and 3, and DIMM Blanks in slots 2 and 4.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
@@ -114,7 +113,7 @@ When inserted correctly, the DIMM should go in easily but fit tightly in the slo
 
 . Move all fans from the impaired NSM to the replacement NSM:
 +
-image::../media/drw_t_fan_replace_ieops-1979.svg[Remove failed fan.]
+image::../media/drw_tp_fan_replace_ieops-2203.svg[Remove failed fan.]
 +
 [cols="1,4"]
 |===
@@ -136,7 +135,7 @@ Insert the replacement fan by aligning it within the guides, and then push down 
 . Move the boot media to the replacement NSM:
 .. Remove the boot media from the impaired NSM:
 +
-image::../media/drw_t_boot_media_replace_ieops-1977.svg[Remove boot media.]
+image::../media/drw_tp_boot_media_replace_ieops-2201.svg[Remove boot media.]
 +
 [cols="1,4"]
 |===
@@ -167,7 +166,7 @@ Gently pull the left end of the boot media out of its socket.
 . Move the I/O module from the impaired NSM to the replacement NSM.
 .. Remove I/O module from the impaired NSM:
 +
-image::../media/drw_t_io_module_replace_ieops-1980.svg[Replace the I/O module.]
+image::../media/temp_io_module.png[Replace the I/O module.]
 +
 [cols="1,4"]
 |===
