@@ -38,9 +38,7 @@ If you need the RMA number or additional help with the replacement procedure, co
 
 .Before you begin
 
-The shelf's partner NSM must be up and running and cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM).
-
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+The shelf's partner NSM must be up and running and cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM). You can verify the partner NSM's status by https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[downloading and running Config Advisor^].
 
 
 .Steps
