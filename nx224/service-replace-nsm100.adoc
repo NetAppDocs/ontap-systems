@@ -11,13 +11,6 @@ summary: You can replace an impaired NVMe shelf module \(NSM\) nondisruptively i
 [.lead]
 You can replace an impaired NVMe shelf module (NSM) nondisruptively in an NX224 drive shelf that is powered on, and while I/O is in progress.
 
-.Before you begin
-
-* The shelf's partner NSM must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the failed NSM.
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
-
-* All other components in the system must be functioning properly.
 
 .About this task
 
@@ -29,18 +22,13 @@ You do not move the real-time clock (RTC) battery. They come preinstalled in the
 +
 This allows enough time for ONTAP to process the NSM removal event.
 
-* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
+* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware^].
 +
 [NOTE]
 ====
 Do not revert firmware to a version that does not support your shelf and its components.
-
-
 ====
+
 * Shelf (NSM) firmware is automatically updated (nondisruptively) on a new NSM that has a non-current firmware version.
 +
 NSM firmware checks occur every 10 minutes. An NSM firmware update can take up to 30 minutes.
@@ -55,7 +43,11 @@ A shelf has three location LEDs: one on the operator display panel and one on ea
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
+.Before you begin
 
+* The shelf's partner NSM must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the failed NSM. You can verify the partner NSM's status by https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[downloading and running Config Advisor^].
+
+* All other components in the system must be functioning properly.
 
 .Steps
 
@@ -65,7 +57,7 @@ If you need the RMA number or additional help with the replacement procedure, co
 The system logs a warning message to the system console indicating which module is impaired. Additionally, the attention (amber) LED on the drive shelf operator display panel and the impaired module illuminate.
 
 . Disconnect the cabling from the impaired NSM:
- .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumbs screws if it is a DC power supply, and then unplug the power cord from the power supply.
+ .. Disconnect the power cord from the power supply by opening the power cord retainer and then unplugging the power cord from the power supply.
 +
 Power supplies do not have a power switch.
 
@@ -200,7 +192,7 @@ You can use the tab on the left and the thumbscrew to push in the I/O module.
 
 . Move the power supply from the impaired NSM to the replacement NSM:
  .. Rotate the handle up, to its horizontal position, and then grasp it.
- .. With your thumb, press the blue tab (AC PSU) or terra cotta tab (DC PSU) to release the locking mechanism.
+ .. With your thumb, press the blue tab to release the locking mechanism.
  .. Pull the power supply out of the NSM while using your other hand to support its weight.
  .. Using both hands, support and align the edges of the power supply with the opening in the replacement NSM.
  .. Gently push the power supply into the NSM until the locking mechanism clicks into place.
@@ -215,7 +207,7 @@ include::../_include/t_module_reinstall.adoc[]
 +
 Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
 
- .. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer if it is an AC power supply, or tighten the two thumb screws if it is a DC power supply.
+ .. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer.
 +
 When functioning correctly, a power supply's bicolored LED illuminates green.
 +
@@ -224,9 +216,8 @@ Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not i
 +
 The operator display panel attention LED turns off after the NSM reboots. This can take three to five minutes.
 
-. Verify that the NSM is cabled correctly, by running Active IQ Config Advisor.
+. Verify that the NSM is cabled correctly, by https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[running Active IQ Config Advisor^].
 +
 If any cabling errors are generated, follow the corrective actions provided.
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
 . Make sure that both NSMs in the shelf are running the same version of firmware: version 0300 or later.

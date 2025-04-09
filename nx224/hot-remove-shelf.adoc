@@ -11,6 +11,26 @@ summary: You can hot-remove an NX224 drive shelf that has had the aggregates rem
 [.lead]
 You can hot-remove an NX224 drive shelf that has had the aggregates removed from the drives, in an HA pair that is up and serving data (I/O is in progress).
 
+.About this task
+
+* If you are hot-removing more than one shelf, you remove one shelf at a time.
+* *Best practice:* The best practice is to clear drive ownership after you remove the aggregates from the drives in the shelf you are removing.
++
+Clearing ownership information from a spare drive allows the drive to be properly integrated into another node (as needed).
++
+The procedure for removing ownership from drives can be found in the https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[disks and aggregates content^].:
++
+NOTE: The procedure requires you to disable automatic drive assignment. You reenable automatic drive assignment at the end of this procedure (after you have hot-removed the shelf).
+
+* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
++
+If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
++
+A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+
+* After disconnecting a shelf from non-dedicated RoCE capable ports (on board the controllers, on RoCE capable PCIe cards, a combination of both, or on I/O modules), you have the option of reconfiguring these ports for networking use.
+
+
 .Before you begin
 
 * Your HA pair cannot be in a takeover state.
@@ -23,29 +43,6 @@ You can use the `storage aggregate offline -aggregate _aggregate_name_` command 
 To review more information on this step and avoid potential IO issues, see the https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggregates overview^].
 
 * If your system shipped in a system cabinet, you need a Phillips screwdriver to remove the screws securing the shelf to the cabinet rack rails.
-
-.About this task
-
-* If you are hot-removing more than one shelf, you remove one shelf at a time.
-* *Best practice:* The best practice is to clear drive ownership after you remove the aggregates from the drives in the shelf you are removing.
-+
-Clearing ownership information from a spare drive allows the drive to be properly integrated into another node (as needed).
-+
-The procedure for removing ownership from drives can be found in the disks and aggregates content:
-+
-https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggregates overview^]
-
-NOTE: The procedure requires you to disable automatic drive assignment. You reenable automatic drive assignment at the end of this procedure (after you have hot-removed the shelf).
-
-* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
-+
-If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
-+
-A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
-
-* After disconnecting a shelf from non-dedicated RoCE capable ports (on board the controllers, on RoCE capable PCIe cards, a combination of both, or on I/O modules), you have the option of reconfiguring these ports for networking use.
-+
-If your HA pair is running ONTAP 9.7 or later, you do not need to reboot the controllers, unless one or both controllers are in maintenance mode. This procedure assumes that neither controller is in maintenance mode.
 
 .Steps
 
@@ -85,7 +82,7 @@ Disk         Size Shelf Bay Type     Type        Name       Owner
 
 . Physically locate the shelf you are removing.
 . Disconnect the cabling from the shelf you are removing:
- .. Disconnect the power cords from the power supplies by opening the power cord retainer if they are AC power supplies, or unscrewing the two thumb screws if they are DC power supplies, and then unplug the power cords from the power supplies.
+ .. Disconnect the power cords from the power supplies by opening the power cord retainer and then unplugging the power cords from the power supplies.
 +
 Power supplies do not have a power switch.
 
@@ -110,44 +107,17 @@ You run the command on both controller modules.
 +
 You can enter the command on either controller module.
 +
-NOTE: The non-dedicated ports configured for storage use are displayed in the output as follows:
-If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `storage` in the `Mode` column.
-If your HA pair is running ONTAP 9.7, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
+NOTE: TThe non-dedicated ports display `storage` in the `Mode` column.
 
- .. Complete the set of steps applicable to the version of ONTAP your HA pair is running:
-+
-[options="header" cols="1,2"]
-|===
-| If your HA pair is running...| Then...
-a|
-ONTAP 9.8 or later
-a|
-
-  .. Reconfigure the non-dedicated ports for networking use, on the first controller module: `storage port modify -node _node name_ -port _port name_ -mode network`
+.. Reconfigure the non-dedicated ports for networking use, on the first controller module: `storage port modify -node _node name_ -port _port name_ -mode network`
 +
 You must run this command for each port you are reconfiguring.
 
-  .. Repeat the above step to reconfigure the ports on the second controller module.
-  .. Go to substep 8c to verify all port changes.
+.. Repeat the above step to reconfigure the ports on the second controller module.
 
-a|
-ONTAP 9.7
-a|
-
-  .. Reconfigure the non-dedicated ports for networking use, on the first controller module: `storage port disable -node _node name_ -port _port name_`
-+
-You must run this command for each port you are reconfiguring.
-
-  .. Repeat the above step to reconfigure the ports on the second controller module.
-  .. Go to substep 8c to verify all port changes.
-
-
-|===
-
- .. Verify that the non-dedicated ports of both controller modules are reconfigured for networking use: `storage port show`
+.. Verify that the non-dedicated ports of both controller modules are reconfigured for networking use: `storage port show`
 +
 You can enter the command on either controller module.
 +
-If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `network` in the `Mode` column.
-+
-If your HA pair is running ONTAP 9.7, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `disabled` in the `State` column.
+The non-dedicated ports display `network` in the `Mode` column.
+

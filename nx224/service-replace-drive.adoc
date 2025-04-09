@@ -13,15 +13,11 @@ You can replace a failed drive nondisruptively in an NX224 drive shelf that is p
 
 .Before you begin
 
-* The drive that you are installing must be supported by the NX224 shelf.
-+
-https://hwu.netapp.com[NetApp Hardware Universe^]
+* The drive that you are installing must be supported by the NX224 shelf. You can verify your shelve's compatible drives in the https://hwu.netapp.com[NetApp Hardware Universe^].
 
 * If SED authentication is enabled, you must use the SED replacement instructions in the ONTAP documentation.
 +
-Instructions in the ONTAP documentation describe additional steps you must perform before and after replacing an SED.
-+
-https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI^]
+You can view the additional steps that must be completed before and after replacing an SED in the https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI documentation^].
 
 * All other components in the system must be functioning properly; if not, contact technical support.
 * Verify that the drive you are removing is failed.
@@ -32,24 +28,17 @@ NOTE: Depending on the drive type and capacity, it can take up to several hours 
 
 .About this task
 
-* *Best practice:* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a drive.
+* *Best practice:* Ensure your system can recognize and use newly qualified drives by https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[downloading the current version of the Disk Qualification Package^].
 +
-Having the current version of the DQP installed allows your system to recognize and use newly qualified drives. This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
+This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
 +
 //30 aug 2022, BURT 1491809: correct the DQP link
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[NetApp Downloads: Disk Qualification Package^]
 
-* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
+* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware^].
 +
 [NOTE]
 ====
 Do not revert firmware to a version that does not support your shelf and its components.
-
-
 ====
 
 * Drive firmware is automatically updated (nondisruptively) on new drives that have non-current firmware versions.

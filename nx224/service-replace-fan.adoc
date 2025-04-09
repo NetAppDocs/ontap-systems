@@ -11,12 +11,6 @@ summary: You can replace a failed fan nondisruptively in an NX224 drive shelf th
 [.lead]
 If one or both of the fans in your fan module fail, you can replace your fan module. This procedure can be completed nondisruptively in an NX224 drive shelf that is powered on with I/O in progress.
 
-.Before you begin
-
-The shelf's partner NSM must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM).
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
-
 
 .About this task
 
@@ -24,19 +18,13 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 +
 This allows enough time for ONTAP to process the NSM removal event.
 
-* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
-
-** To update your 
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
+* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware^].
 +
 [NOTE]
 ====
 Do not revert firmware to a version that does not support your shelf and its components.
-
-
 ====
+
 * If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
 If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
@@ -48,12 +36,18 @@ A shelf has three location LEDs: one on the operator display panel and one on ea
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
 
+.Before you begin
+
+The shelf's partner NSM must be up and running and cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM).
+
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
+
 
 .Steps
 
 . Properly ground yourself.
 . Disconnect the cabling from the NSM that contains the FRU that you are replacing:
- .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
+ .. Disconnect the power cord from the power supply by opening the power cord retainer and then unplugging the power cord from the power supply.
 +
 Power supplies do not have a power switch.
 
@@ -100,7 +94,7 @@ include::../_include/t_module_reinstall.adoc[]
 +
 Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
 
- .. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer if it is an AC power supply, or tighten the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
+ .. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer.
 +
 When functioning correctly, a power supply's bicolored LED illuminates green.
 +
@@ -109,9 +103,7 @@ Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not i
 +
 The NSM attention LEDs turn off after the NSM reboots and no longer detects a fan issue. This can take three to five minutes.
 
-. Verify that the NSM is cabled correctly, by running Active IQ Config Advisor.
+. Verify that the NSM is cabled correctly, by https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[running Active IQ Config Advisor^].
 +
 If any cabling errors are generated, follow the corrective actions provided.
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 

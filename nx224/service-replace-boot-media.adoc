@@ -11,14 +11,6 @@ summary: When the boot media fails on an NX224 drive shelf in an HA pair that is
 [.lead]
 You can replace a failed boot media in an NX224 shelf. Replacing the boot media can be done nondisruptively, while the drive shelf is powered on, and I/O is in progress.
 
-.Before you begin
-
-* The shelf's partner NSM must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM).
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
-
-* All other components in the system must be functioning properly.
-
 .About this task
 
 * After the boot media is replaced, the boot image from the shelf's partner NSM is automatically copied to the replacement boot media.
@@ -27,7 +19,7 @@ This can take up to five minutes.
 
 * Allow at least 70 seconds between removal and installation of the NVMe shelf module (NSM).
 +
-This allows enough time for ONTAP to process the NSM removal event.
+This allows enough time for ONTAP to process the NSM removal event. 
 
 * If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
@@ -39,13 +31,17 @@ A shelf has three location LEDs: one on the operator display panel and one on ea
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
+.Before you begin
+
+* The shelf's partner NSM must be up and running and cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM). You can verify the partner NSM's status by https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[downloading and running Config Advisor^].
+
+* All other components in the system must be functioning properly.
 
 .Steps
 
-
 . Properly ground yourself.
 . Disconnect the cabling from the NSM that contains the FRU that you are replacing:
- .. Disconnect the power cord from the power supply by opening the power cord retainer if it is an AC power supply, or unscrewing the two thumb screws if it is a DC power supply, and then unplug the power cord from the power supply.
+ .. Disconnect the power cord from the power supply by opening the power cord retainer and then unplugging the power cord from the power supply.
 +
 Power supplies do not have a power switch.
 
@@ -98,7 +94,7 @@ include::../_include/t_module_reinstall.adoc[]
 +
 Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
 
- .. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer if it is an AC power supply, or tighten the two thumb screws if it is a DC power supply.
+ .. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer.
 +
 When functioning correctly, a power supply's bicolored LED illuminates green.
 +
@@ -109,9 +105,7 @@ It can take between 5 to 10 minutes for the attention LEDs to turn off. This is 
 +
 If the fault LEDs remain on, the boot media might not be seated correctly or there might be another issue and you should contact technical support for assistance.
 
-. Verify that the NSM is cabled correctly, by running Active IQ Config Advisor.
+. Verify that the NSM is cabled correctly, by https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[running Active IQ Config Advisor^].
 +
 If any cabling errors are generated, follow the corrective actions provided.
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
