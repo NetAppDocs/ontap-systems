@@ -56,7 +56,7 @@ include::../_include/t_module_reinstall.adoc[]
 . Open the NSM cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
 
 +
-The FRU label on the NSM cover shows the location of the two DIMMs and two DIMM Blanks in the NSM.
+The FRU label on the NSM cover shows the location of the four DIMMs in the NSM.
 
 . Physically identify the faulty DIMM.
 +
@@ -74,7 +74,6 @@ image::../media/icon_round_1.png[Callout number 1]
 a|
 DIMM slot numbering and positions.
 
-The NSM contains DIMMs in slots 1 and 3, and DIMM Blanks in slots 2 and 4.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|

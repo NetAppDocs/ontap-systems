@@ -9,13 +9,7 @@ summary: You can replace a failed Ethernet I/O module nondisruptively in an NX22
 :imagesdir: ../media/
 
 [.lead]
-You can replace a failed Ethernet I/O module nondisruptively in an NX224 drive shelf that is powered on, and while I/O is in progress. This procedure only applies to NX224 shelves with NSM100B modules.
-
-.Before you begin
-
-* The shelf's partner NSM must be up and running and cabled correctly so that your shelf maintains connectivity when you remove the failed NSM. You can verify the partner NSM's status by https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[downloading and running Config Advisor^].
-
-* All other components in the system must be functioning properly.
+You can replace a failed Ethernet I/O module nondisruptively in an NX224 drive shelf that is powered on, and while I/O is in progress. 
 
 .About this task
 
@@ -43,6 +37,12 @@ A shelf has three location LEDs: one on the operator display panel and one on ea
 * When you unpack the replacement NSM, save all packing materials for use when you return the failed NSM.
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
+
+.Before you begin
+
+* The shelf's partner NSM must be up and running and cabled correctly so that your shelf maintains connectivity when you remove the failed NSM. You can verify the partner NSM's status by https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[downloading and running Config Advisor^].
+
+* All other components in the system must be functioning properly.
 
 .Steps
 
