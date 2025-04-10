@@ -12,7 +12,7 @@ If you see the _System ID mismatch_ warning message, enter `y`.
 . Enter `sysconfig -v` and capture the display contents.
 
 +
-NOTE: if you see _PERSONALITY MISMATCH_ contact customer support.
+NOTE: If you see _PERSONALITY MISMATCH_ contact customer support.
 
 . From the `sysconfig -v` output, compare the adapter card information with the cards and locations in the replacement controller.
 
