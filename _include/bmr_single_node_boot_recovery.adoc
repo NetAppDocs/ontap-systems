@@ -30,7 +30,7 @@ The screen displays the following message:
 
 . Monitor the boot media install recovery process.
 +
-The process completes and displays the `Installation complete.` message.  
+The process completes and displays the `Installation complete` message.  
 
 . The system checks for encryption and encryption type and displays one of two messages. Depending on what message is displayed, take one of the following actions:
 +
@@ -346,7 +346,9 @@ Successfully recovered keymanager secrets.
 
 +
 
-* If the key is not successfully restored, the system will halt and indicate that it could not restore the key. The error and warning messages are displayed. Rerun the recovery process by entering `boot_recovery -partner`.
+* If the key is not successfully restored, the system will halt and indicate that it could not restore the key. The error and warning messages are displayed. Rerun the recovery process: 
++
+`boot_recovery -partner`
 +
 .Show example of key recovery error and warning messages
 [%collapsible]
@@ -380,7 +382,7 @@ LOADER-B>
 
 .. Return the controller to normal operation by giving back its storage:
 +
-`storage failover giveback -ofnode _impaired_node_name_`.
+`storage failover giveback -ofnode _impaired_node_name_`
 --
 ====
 
@@ -390,8 +392,8 @@ LOADER-B>
 
 . If automatic giveback was disabled, reenable it: 
 +
-`storage failover modify -node local -auto-giveback true`.
+`storage failover modify -node local -auto-giveback true`
 
 . If AutoSupport is enabled, restore automatic case creation: 
 +
-`system node autosupport invoke -node * -type all -message MAINT=END`.
+`system node autosupport invoke -node * -type all -message MAINT=END`
