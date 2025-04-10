@@ -51,7 +51,7 @@ Replace the impaired system management module.
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 // ontap-systems-internal/issues/1151
 +
-NOTE:  Make sure NVRAM destage has completed before proceeding.
+NOTE: Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 +
 
 +

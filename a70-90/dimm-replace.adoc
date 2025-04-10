@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, replace a dimm
 summary: Replace a DIMM in your AFF A70 or AFF A90 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
-= Replace a DIMM with correctable or uncorrectable errors - AFF A70 and AFF A90
+= Replace a DIMM - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 
