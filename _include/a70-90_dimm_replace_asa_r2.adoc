@@ -26,7 +26,7 @@ To replace the DIMMs, locate them inside the controller and follow the specific 
 . Locate the DIMMs on your controller module and identify the target DIMM.
 
 +
-NOTE: Consult either the https://hwu.netapp.com[Netapp Hardware Universe] or the FRU map on your controller module for exact DIMM locations for the AFF A70 or AFF A90. 
+Use the FRU map on the controller airduct to locate the DIMM slot. 
 
 +
 
