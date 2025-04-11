@@ -1,6 +1,7 @@
 .Steps
 
 . Properly ground yourself.
+. Remove the bezel from the front of the storage system.
 . Physically identify the failed drive.
 +
 When a drive fails, the system logs a warning message to the system console indicating which drive failed. Additionally, the attention (amber) LED on the shelf operator display panel and the failed drive illuminate.
@@ -46,7 +47,8 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 +
 When the drive's activity LED is solid, it means that the drive has power. When the drive's activity LED is blinking, it means that the drive has power and I/O is in progress. If the drive firmware is automatically updating, the LED blinks.
 
-. If you are replacing another drive, repeat Steps 2 through 6.
+. If you are replacing another drive, repeat Steps 2 through 7.
+. Reinstall the bezel on the front of the storage system.
 
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +

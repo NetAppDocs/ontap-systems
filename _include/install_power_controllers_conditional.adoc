@@ -42,9 +42,8 @@ ifdef::fas50-a20-30-50[]
 image::../media/drw_g_isi_console_serial_port_cabling_ieops-1882.svg[Console connections]
 endif::fas50-a20-30-50[]
 
-+
 . Assign a TCP/IP address to the laptop, using one that is on the management subnet.
-+
+
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
 // next image applies only to A1K and A70-90
@@ -55,14 +54,14 @@ endif::a1k-a70-90[]
 ifdef::fas50-a20-30-50[]
 image::../media/drw_psu_layout_1_ieops-1886.svg[A20 or A30 or A50 storage system power connection diagram]
 endif::fas50-a20-30-50[]
-
++
 * The system begins to boot. Initial booting might take up to eight minutes. 
 +
 * The LEDs flash on and the fans start, which indicates that the controllers are powering on.
 +
 * The fans might be very noisy when they first start up. The fan noise during start-up is normal.
 +
-// next applies only to FAS50 and A20-30-50
+// next bullet applies only to FAS50 and A20-30-50
 ifdef::fas50-a20-30-50[]
 * The shelf ID display on the front of the system chassis does not illuminate.
 endif::fas50-a20-30-50[]
