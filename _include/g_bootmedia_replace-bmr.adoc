@@ -1,4 +1,3 @@
-To replace the boot media, you must remove the impaired controller, remove the impaired boot media, and then install the replacement boot media in the impaired controller.
 
 == Step 1: Remove the controller
 
@@ -94,9 +93,8 @@ NOTE: Make sure that the console cable is connected to the controller because yo
 +
 Do not use excessive force when sliding the controller into the chassis; it could damage the connectors.
 +
-NOTE: The controller boots when fully seated in the chassis. It gets its power from the partner controller.
+NOTE: The controller boots to the LOADER prompt when fully seated in the chassis. It gets its power from the partner controller.
 +
-.. If the controller boots to the LOADER prompt, reboot the controller: `boot_ontap`
 .. Rotate the controller handles up and lock in place with the tabs.
 +
 . Reconnect the power cord to the PSU on the impaired controller.

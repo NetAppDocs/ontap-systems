@@ -7,7 +7,7 @@ If the storage system has available slots, install the new I/O module into one o
 
 * If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^]  and use the best one available for your I/O module.
 
-* All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+* All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 
 // start tabbed area
@@ -24,7 +24,7 @@ You can add a new I/O module into a storage system with available slots.
 
 . On the impaired controller, remove the I/O blanking module from the target slot.
 +
-Unused I/O slots should have blanking module installed to prevent possible thermal issues.
+Unused I/O slots should have blanking module installed to prevent possible thermal issues and for EMC compliance.
 +
 image::../media/drw_g_io_blanking_module_replace_ieops-1901.svg[Remove an I/O blanking module]
 +
@@ -56,7 +56,7 @@ If you installed a storage I/O module, install and cable your NS224 shelves, as 
 +
 Rebooting the impaired controller also reinitializes the I/O modules and other components.
 +
-. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`
+. Give back the impaired controller from the healthy controller: `storage failover giveback -ofnode _impaired_node_name_`
 // This is used in internal FRU docs: Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
 . Repeat these steps to add an I/O module to the other controller.
@@ -134,15 +134,15 @@ If you installed a storage I/O module, install and cable your NS224 shelves, as 
 +
 Rebooting the impaired controller also reinitializes the I/O modules and other components.
 
-. Give back the impaired controller from the partner controller: `storage failover giveback -ofnode _impaired_node_name_`
+. Give back the impaired controller from the healthy controller: `storage failover giveback -ofnode _impaired_node_name_`
 +
 // This is used in internal FRU docs: Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 +
 . Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
 
-. If AutoSupport is enabled, restore (unsuppress) automatic case creation: system node autosupport invoke -node * -type all -message MAINT=END
+. If AutoSupport is enabled, restore (unsuppress) automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 
-. If you installed a NIC module, specify the usage mode for each port as _network_: `storage port modify -node *_<node name>_ -port *_<port name>_ -mode network`
+. If you installed a NIC module, specify the usage mode for each port as _network_: `storage port modify -node _node_name_ -port _port_name_ -mode _network_`
 
 . Repeat these steps for the other controller.
 --

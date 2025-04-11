@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, replace io module
 summary: The AFF A1K system offers flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
 ---
-= Overview of add and replace I/O module - AFF A1K
+= Overview of add and replace an I/O module - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
@@ -23,6 +23,6 @@ Replacing a failing I/O module can restore the system to its optimal operating s
 
 .I/O slot numbering
 
-The I/O slots on ASA A1K controller are numbered 1 through 11, as shown in the following illustration.
+The I/O slots on the AFF A1K controller are numbered 1 through 11, as shown in the following illustration.
 
 image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on an AFF A1K controller]

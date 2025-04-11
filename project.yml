@@ -84,6 +84,7 @@ sidebar:
     - title: FAS systems
       url: /fas/index.html
       entries:
+      - section: fas50
       - section: fas-70-90
       - section: fas2700
       - section: fas2800
@@ -166,4 +167,3 @@ sidebar:
 product-family:
   name: ONTAP hardware systems
   repo: ontap-systems-family
-

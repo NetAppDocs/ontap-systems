@@ -2,11 +2,17 @@
 permalink: asa-r2-a20-30-50/controller-replace-requirements.html
 sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, prerequisite, replace the controller module
-summary: "You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system."
+summary: Before replacing the controller in your ASA A20, ASA A30, or ASA A50 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
 ---
-= Controller replacement requirements - ASA A20, ASA A30, and ASA A50
+= Requirements to replace the controller - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Before replacing the controller in your ASA A20, ASA A30, or ASA A50 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
+
 include::../_include/g_controller_replace_requirements.adoc[]
+
+.What's next?
+
+After you’ve reviewed the requirements to replace the impaired controller, you need to link:controller-replace-shutdown.html[shut down the impaired controller].

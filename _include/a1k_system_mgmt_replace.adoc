@@ -48,7 +48,7 @@ Replace the impaired system management module.
 
 . Remove the System Management module:
 +
-NOTE:  Make sure NVRAM destage has completed before proceeding.
+NOTE:  Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.  
 +
 image::../media/drw_a1k_sys-mgmt_remove_ieops-1384.svg[Replace the System Management module]
 +
@@ -61,9 +61,7 @@ System Management module cam latch
 |===
 
 .. If you are not already grounded, properly ground yourself.  
-+
-NOTE:  Make sure NVRAM destage has completed before proceeding.
-+
+
 .. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 .. Disconnect the power cords from the PSU for the impaired controller.
 

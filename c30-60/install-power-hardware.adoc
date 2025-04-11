@@ -11,11 +11,19 @@ summary: Attach the power cables and power on the shelves and controllers.
 [.lead]
 After you cable the controllers to the network and shelves in your AFF C30 or AFF C60 storage system, you power on your shelves and controllers. 
 
-:a20-30-50:
- 
-include::../_include/install_power_hardware_fragment_conditional.adoc[]
- 
-:a20-30-50!:
+
+== Step 1: Power on the shelf and assign shelf ID
+
+include::../_include/install_power_shelf_ns224.adoc[]
+
+== Step 2: Power on the controllers
+
+:fas50-a20-30-50:
+
+include::../_include/install_power_controllers_conditional.adoc[]
+
+:fas50-a20-30-50!:
+
 
 .What's next?
 After you've powered on your storage system, you link:install-complete.html[complete system setup].

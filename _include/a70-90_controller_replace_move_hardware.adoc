@@ -98,7 +98,23 @@ Move the DIMMs to the replacement controller module.
 . Open the controller air duct on the top of the controller.
 .. Insert your fingers in the recesses at the far ends of the air duct.
 .. Lift the air duct and rotate it upward as far as it will go.
-. Locate the system DIMMs on the motherboard.
+. Locate the system DIMMs on the motherboard, using the DIMM map on top of the air duct.
++
+The DIMM locations, by model, are listed in the following table:
+
++
+[cols="1,4"]
+
+|===
+
+|Model|DIMM slot location
+
+a|
+FAS70 |3, 10, 19, 26
+a|
+FAS90 |3, 7, 10, 14, 19, 23, 26, 30  
+
+|===
 
 +
 image::../media/drw_a70_90_dimm_ieops-1513.svg[DIMM map]

@@ -1,4 +1,3 @@
-Verify the low-level system configuration of the replacement controller and reconfigure the system settings as necessary.
 
 == Step 1: Verify HA config settings
 
@@ -27,14 +26,14 @@ The HA state should be the same for all components.
 
 . If the displayed system state of the controller does not match your storage system configuration, set the `HA` state for the controller: 
 +
-`ha-config modify controller ha-state`
+`ha-config modify controller ha`
 
 +
-The value for HA-state can be one of the following:
+The value for the HA state can be one of the following:
 
 *** `ha`
-// *** `mcc` (not supported)
-// *** `mccip` (not supported in ASA systems)
+*** `mcc` (not supported)
+*** `mccip` (not supported in ASA systems)
 *** `non-ha` (not supported)
 
 . Confirm that the setting has changed: 

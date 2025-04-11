@@ -1,0 +1,18 @@
+---
+permalink: fas50/chassis-replace-move-hardware.html
+sidebar: sidebar
+keywords: fas50, move hardware components, replace the chassis
+summary: "Replace the chassis of your FAS50 storage system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing any caching modules, installing the replacement chassis, and reinstalling the chassis components."
+---
+= Replace the chassis - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace the chassis of your FAS50 storage system when a hardware failure requires it. The replacement process involves removing the controllers, removing any caching modules and drive blanks, installing the replacement chassis, and reinstalling the chassis components.
+
+include::../_include/g_chassis_replace_move_hardware.adoc[]
+
+.What's next?
+
+After you’ve replaced the impaired FAS50 chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement].

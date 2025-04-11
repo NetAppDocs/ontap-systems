@@ -1,0 +1,18 @@
+---
+permalink: fas50/controller-replace-recable-reassign-disks.html
+sidebar: sidebar
+keywords: fas50, how to reboot the system
+summary: "Return control of storage resources to the replacement controller so your FAS50 system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption, Onboard Key Manager (OKM) encryption, or External Key Manager (EKM) encryption."
+---
+= Give back the controller - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Return control of storage resources to the replacement controller so your FAS50 system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption, Onboard Key Manager (OKM) encryption, or External Key Manager (EKM) encryption.
+
+include::../_include/g_controller_replace_recable_reassign_disks.adoc[]
+
+.What's next?
+
+After you've transferred the ownership of storage resources back to the replacement controller, you need to link:controller-replace-restore-system-rma.html[complete the controller replacement] procedure.

@@ -25,11 +25,22 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 ====
 
-== Step 2: Replace the NVRAM module
+== Step 2: Replace the NVRAM module or NVRAM DIMM
+
+Replace the NVRAM module or NVRAM DIMMs using the appropriate following option.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Option 1: Replace the NVRAM module
+--
 
 To replace the NVRAM module, locate it in slot 4/5 in the chassis and follow the specific sequence of steps.
 
-. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
+. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
+// ontap-systems-internal/issues/1151
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
 +
@@ -89,11 +100,14 @@ NOTE: The controller reboots as soon as it is fully seated in the chassis.
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
-== Step 3: Replace the NVRAM DIMM
+--
+.Option 2: Replace the NVRAM DIMM
+--
 
 To replace NVRAM DIMMs in the NVRAM module, first must remove the NVRAM module and then replace the target DIMM.
 
-. On the front of the chassis, use your thumbs to firmly push each drive in until you feel a positive stop. This ensures that the drives are firmly seated against the chassis midplane.  
+. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
+// ontap-systems-internal/issues/1151
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
 +
@@ -160,8 +174,13 @@ NOTE: The controller reboots as soon as it is fully seated in the chassis.
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
+--
 
-== Step 4: Reassign disks
+====
+
+// end tabbed area
+
+== Step 3: Reassign disks
 
 You must confirm the system ID change when you boot the controller and then verify that the change was implemented.
 
@@ -251,6 +270,6 @@ dr-group-id            cluster node           configuration-state
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
 
-== Step 5: Return the failed part to NetApp
+== Step 4: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
