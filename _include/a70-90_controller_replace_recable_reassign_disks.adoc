@@ -90,17 +90,13 @@ Reset encryption and return the controller to normal operation.
 .Steps
 
 . If the root volume is encrypted with External Key Manager and the console cable is connected to the replacement node, enter `boot_ontap menu` and select option `11`.
-
-. Answer `y` or `n`  to the following questions:
+. If these questions appear, answer `y` or `n` as appropriate:
 +
 Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} 
 +
 Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n} 
 +
 Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n} 
-+
-
-OR
 +
 Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} 
 +
