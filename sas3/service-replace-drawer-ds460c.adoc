@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf, dcm2, dcm
 summary: Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.
 ---
-= Replace a drive drawer in a DS460C disk shelf
+= Replace a drive drawer - DS460C
 :icons: font
 :imagesdir: ../media/
 
