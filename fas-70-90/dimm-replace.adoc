@@ -11,4 +11,4 @@ summary: Replace a DIMM in your FAS70 or FAS90 system if excessive correctable o
 [.lead]
 Replace a DIMM in your FAS70 or FAS90 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 
-include::../_include/a1k_dimm_replace.adoc[]
+include::../_include/fas70-90_dimm_replace.adoc[]
