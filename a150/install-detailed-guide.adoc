@@ -162,7 +162,7 @@ image::../media/icon_square_1_green.png[Callout number 1]
 a|
 Cluster interconnect
 a|
-image::../media/icon_square_2_yellow.png[Callout number 2]
+image::../media/icon_square_2_orange.png[Callout number 2]
 a|
 Controllers to host data network switches
 a|
@@ -300,7 +300,8 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS con
 
  ** Controller 1 port 0a to IOM B port 1 on first drive shelf in the stack.
  ** Controller 2 port 0b to IOM B port 3 on the last drive shelf in the stack.
- image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]     mini-SAS HD to mini-SAS HD cables
+ +
+image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS connector]     mini-SAS HD to mini-SAS HD cables
 
 For additional cabling information, see link:../sas3/install-new-system.html[Install and cable shelves for a new system installation - shelves with IOM12/IOM12B modules].
 
@@ -339,7 +340,7 @@ image::../media/dwr_laptop_to_switch_only.svg[width=400px]
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Select an ONTAP icon]
 
  .. Open File Explorer.
  .. Click network in the left pane.
