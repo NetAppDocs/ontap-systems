@@ -16,9 +16,12 @@ NOTE: If you have difficulty removing the controller module, place your index fi
 +
 image::../media/drw_a250_pcm_remove_install.png[Opening the latching mechanism]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/icon_round_1.png[Callout number 1] a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
 Lever
 a|
 image:../media/icon_round_2.png[Callout number 2]
@@ -31,9 +34,12 @@ Latching mechanism
 +
 image::../media/drw_a250_open_controller_module_cover.png[Opening the controller module cover]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/icon_round_1.png[Callout number 1] a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
 Thumbscrew
 a|
 image:../media/icon_round_2.png[Callout number 2]
@@ -105,9 +111,11 @@ There are two folders in the unzipped service image file:
 
 +
 NOTE: If the service image has no efi folder, see link:https://kb.netapp.com/onprem/ontap/hardware/EFI_folder_missing_from_Service_Image_download_file_used_for_boot_device_recovery_for_FAS_and_AFF_models[EFI folder missing from Service Image download file used for boot device recovery for FAS and AFF models^ ].
+
 +
 The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
 
++
 . Remove the USB flash drive from your laptop.
 . If you have not already done so, install the air duct.
 +
