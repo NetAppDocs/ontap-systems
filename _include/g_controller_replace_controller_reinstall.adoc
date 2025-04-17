@@ -36,6 +36,8 @@ Align the rear of the controller with the opening in the chassis, and then gentl
 NOTE: Do not completely insert the controller in the chassis until instructed to do so.
 
 . Connect the console cable to the console port on the controller and to the laptop so that the laptop receives console messages when the controller reboots.
++
+NOTE: Do not connect any other cables or power cords at this time.
 
 . Fully seat the controller in the chassis:
 +
@@ -45,7 +47,7 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 +
 .. Rotate the controller handles up and lock in place with the tabs.
 +
-NOTE: The controller begins to boot as soon as it is fully seated in the chassis.
+NOTE: The replacement controller receives power from the healthy controller and begins to boot as soon as it is fully seated in the chassis.
 +
 . Take the controller to the LOADER prompt by pressing CTRL-C to abort AUTOBOOT.
 
