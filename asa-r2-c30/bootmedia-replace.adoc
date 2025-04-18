@@ -1,0 +1,17 @@
+---
+permalink: asa-r2-c30/bootmedia-replace.html
+sidebar: sidebar
+keywords: asa c30, replace the boot media
+summary: The boot media in your ASA C30 system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
+---
+= Replace the boot media - ASA C30
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The boot media in your ASA C30 system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
+
+include::../_include/g_bootmedia_replace.adoc[]
+
+.What's next?
+After replacing the boot media, you need to link:bootmedia-recovery-image-boot.html[boot the recovery image].

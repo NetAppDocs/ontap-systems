@@ -1,0 +1,43 @@
+---
+permalink: asa-r2-c30/io-module-add.html
+sidebar: sidebar
+keywords: asa c30, add I/O module
+summary: Add an I/O module to your ASA C30 system to enhance network connectivity and expand your system’s ability to handle data traffic.
+---
+= Add an I/O module - ASA C30
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Add an I/O module to your ASA C30 system to enhance network connectivity and expand your system’s ability to handle data traffic.
+
+You can add an I/O module to your ASA C30 storage systems when there are slots available or when all slots are fully populated.
+
+.About this task
+
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
+== Step 1: Shut down the impaired controller module
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+--
+.Option 2: MetroCluster configuration
+--
+include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+--
+
+====
+
+
+== Step 2: Add the new I/O module
+
+include::../_include/add_io_module_thumb.adoc[]

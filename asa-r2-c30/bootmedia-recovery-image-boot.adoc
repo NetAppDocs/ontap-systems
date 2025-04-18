@@ -1,0 +1,17 @@
+---
+permalink: asa-r2-c30/bootmedia-recovery-image-boot.html
+sidebar: sidebar
+keywords: asa c30, boot the recovery image
+summary: After installing the new boot media device in your ASA C30 system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
+---
+= Boot the recovery image - ASA C30
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After installing the new boot media device in your ASA C30 system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
+
+include::../_include/bootmedia_recovery_image_boot.adoc[]
+
+.What's next?
+After booting the recovery image, you need to link:bootmedia-encryption-restore.html[restore encryption on the boot media].
