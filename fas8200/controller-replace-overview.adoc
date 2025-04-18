@@ -12,7 +12,7 @@ summary: "You must review the prerequisites for the replacement procedure and se
 You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
 
 * All drive shelves must be working properly.
-* If your system is a FlexArray system or has a V_StorageAttach license, you must refer to the additional required steps before performing this procedure.
+* If your system has a V_StorageAttach license, you must refer to the additional required steps before performing this procedure.
 * If your system is in an HA pair, the healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
 * If your system is in a MetroCluster configuration, you must review the section https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html[Choosing the correct recovery procedure] to determine whether you should use this procedure.
 +
