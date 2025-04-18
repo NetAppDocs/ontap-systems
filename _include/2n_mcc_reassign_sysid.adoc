@@ -36,13 +36,13 @@ Local System ID: 118065481
     ...
 ----
 
-. Reassign disk ownership (for FAS systems) or LUN ownership (for FlexArray systems), by using the system ID information obtained from the disk show command: `disk reassign -s old system ID`
+. Reassign disk ownership (for FAS systems), by using the system ID information obtained from the disk show command: `disk reassign -s old system ID`
 +
 In the case of the preceding example, the command is: `disk reassign -s 118073209`
 +
 You can respond `Y` when prompted to continue.
 
-. Verify that the disks (or FlexArray LUNs) were assigned correctly: `disk show -a`
+. Verify that the disks were assigned correctly: `disk show -a`
 +
 Verify that the disks belonging to the _replacement_ node show the new system ID for the _replacement_ node. In the following example, the disks owned by system-1 now show the new system ID, 118065481:
 +
