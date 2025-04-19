@@ -2,14 +2,14 @@
 permalink: asa-r2-c30/controller-replace-move-hardware.html
 sidebar: sidebar
 keywords: asa c30, move the controller module hardware
-summary: Replace the controller in your ASA C30 system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+summary: Replace the controller in your ASA C30 storage system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
 ---
 = Replace the controller - ASA C30
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the controller in your ASA C30 system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+Replace the controller in your ASA C30 storage system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
 
 include::../_include/g_controller_replace_move_hardware.adoc[]
 
