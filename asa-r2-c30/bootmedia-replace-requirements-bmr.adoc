@@ -2,17 +2,17 @@
 permalink: asa-r2-c30/bootmedia-replace-requirements-bmr.html
 sidebar: sidebar
 keywords: asa c30, replace the boot media
-summary: Before replacing the boot media in your ASA A20, ASA A30 or ASA A50 storage system, ensure you meet the necessary requirements and considerations for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S (e0M wrench) port on the impaired controller is not faulty, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
+summary: Before replacing the boot media in your ASA C30 storage system, ensure you meet the necessary requirements and considerations for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S (e0M wrench) port on the impaired controller is not faulty, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
 ---
 = Requirements to replace the boot media - ASA C30
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before replacing the boot media in your ASA A20, ASA A30 or ASA A50 storage system, ensure you meet the necessary requirements and considerations for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S (e0M wrench) port on the impaired controller is not faulty, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
+Before replacing the boot media in your ASA C30 storage system, ensure you meet the necessary requirements and considerations for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S (e0M wrench) port on the impaired controller is not faulty, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
 
 include::../_include/g_bootmedia_replace_requirements_bmr.adoc[]
 
 .What's next
 
-After you've reviewed the boot media requirements, you link:bootmedia-shutdown-bmr.html[shut down the impaired controller].
+After you've reviewed the boot media requirements, you link:bootmedia-shutdown-bmr.html[shut down the controller].

@@ -2,7 +2,7 @@
 permalink: asa-r2-c30/index.html
 sidebar: sidebar
 keywords: asa c30, maintenance, maintenance, repairing a70 aff a90,  replace a70 aff a90 components
-summary: Maintain the ASA C30 hardware
+summary: For the ASA C30 storage systems, you can perform maintenance procedures on the following components.
 ---
 = Maintain ASA C30 hardware
 :icons: font
@@ -55,6 +55,3 @@ A power supply provides a redundant power source in a controller shelf.
 
 A real time clock battery preserves system date and time information if the power is off. 
 
-== System Management module
-
-The System Management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).
