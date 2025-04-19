@@ -74,10 +74,10 @@ indexpage:
           url: ../asa-r2-a20-30-50/power-supply-replace.html
         - title: Real-time clock battery
           url: ../asa-r2-a20-30-50/rtc-battery-replace.html
-    - title: ASA AC30
+    - title: ASA C30
       links:
         - title: Boot media
-          url: ../asa-r2-c30/bootmedia-replace-workflow.html
+          url: ../asa-r2-c30/bootmedia-replace-workflow-bmr.html
         - title: Chassis
           url: ../asa-r2-c30/chassis-replace-workflow.html
         - title: Controller
@@ -96,6 +96,4 @@ indexpage:
           url: ../asa-r2-c30/power-supply-replace.html
         - title: Real-time clock battery
           url: ../asa-r2-c30/rtc-battery-replace.html
-        - title: System Management module
-          url: ../asa-r2-c30/system-management-replac
       

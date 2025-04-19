@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-c30/bootmedia-replace-bmr.html
 sidebar: sidebar
-keywords: asa c300, replace the boot media
+keywords: asa c30, replace the boot media
 summary: The boot media in your ASA C30 storage system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
 ---
 = Replace the boot media - ASA C30
