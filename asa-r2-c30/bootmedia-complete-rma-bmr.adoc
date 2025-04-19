@@ -1,0 +1,16 @@
+---
+permalink: asa-r2-c30/bootmedia-complete-rma-bmr.html
+sidebar: sidebar
+keywords: asa c30, complete the replacement process
+summary: After you replace the part, you can return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+---
+= Return the failed part to NetApp - ASA C30
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When a component in your ASA C30 storage system fails, return the failed part to NetApp. See the https://mysupport.netapp.com/site/info/rma[Part Return and Replacements] page for further information.
+
+//Feb-March 2025
+//No longer use generic include since need to contain system model name in lead
+// include::../_include/complete_rma.adoc[]
