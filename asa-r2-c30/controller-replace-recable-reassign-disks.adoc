@@ -2,7 +2,7 @@
 permalink: asa-r2-c30/controller-replace-recable-reassign-disks.html
 sidebar: sidebar
 keywords: asa c30, how to recable the system, reboot the system
-summary: Return control of storage resources to the replacement controller so your ASA C30 storage system can resume normal operation.
+summary: Return control of storage resources to the replacement controller so your ASA C30 storage system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption, Onboard Key Manager (OKM) encryption, or External Key Manager (EKM) encryption.
 ---
 = Give back the controller - ASA C30
 :icons: font
