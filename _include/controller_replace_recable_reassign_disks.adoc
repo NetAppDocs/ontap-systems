@@ -1,0 +1,118 @@
+
+Reset encryption if enabled and return the controller to normal operation.
+
+// start tabbed block area
+
+[role="tabbed-block"]
+====
+
+.No encryption
+--
+Return the impaired controller to normal operation by giving back its storage.
+
+.Steps
+. From the LOADER prompt, enter `boot_ontap`.
+
+. Press <enter> when console messages stop.
+* If you see the _login_ prompt, go to the next step at the end of this section.
+* If you see _Waiting for giveback_, press the <enter> key, log into the partner node, and then go to the next step at the end of this section. 
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback _true_`
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
+--
+
+.Onboard encryption (OKM)
+--
+Reset onboard encryption and return the controller to normal operation.
+
+.Steps
+. From the LOADER prompt, enter `boot_ontap maint`.
+. Boot to the ONTAP menu from the LOADER prompt `boot_ontap menu` and select option 10.
+. Enter the OKM passphrase.
++
+NOTE: You are prompted twice for the passphrase.
+
+. Enter the backup key data when prompted.
+. At the boot menu, enter option `1` for normal boot.
+. Press <enter> when _Waiting for giveback_ is displayed.
+. Move the console cable to the partner node and login as `admin`.
+. Give back only the CFO aggregates (the root aggregate): `storage failover giveback -fromnode local -only-cfo-aggregates _true_`
+* If you encounter errors, contact https://support.netapp.com[NetApp Support].
+. Wait 5 minutes after the giveback report completes, and check failover status and giveback status: `storage failover show` and `storage failover show-giveback`.
++
+// . Move the console cable back to the replacement controller and synchronize missing keys:`security key-manager onboard sync`
+// +
+// NOTE: You are prompted for the cluster-wide passphrase of OKM for the cluster.
+// 
+// . Check status of the keys: `security key-manager key query -key-type svm-KEK`
+// +
+// If the _Restored_ column shows anything but _true_, contact https://support.netapp.com[NetApp Support]. 
++
+
+. Synchronize and verify status of the keys:
+.. Move the console cable back to the replacement controller.
+.. Synchronize missing keys: `security key-manager onboard sync`
++
+NOTE: You are prompted for the cluster-wide passphrase of OKM for the cluster.
+.. Verify status of the keys: `security key-manager key query -restored _false_`
++
+The output should show no results when when properly synchronized.
++
+If the output shows results (the key IDs of keys that are not present in the system's internal key table), contact https://support.netapp.com[NetApp Support]. 
+
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback _true_`
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
+
+--
+
+.External key manager (EKM)
+--
+Reset encryption and return the controller to normal operation.
+
+.Steps
+. If the root volume is encrypted with External Key Manager and the console cable is connected to the replacement node, enter `boot_ontap menu` and select option `11`.
+
+. If these questions appear, answer `y` or `n` as appropriate:
++
+Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} 
++
+Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n} 
++
+Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n} 
++
+Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} 
++
+Do you know the KMIP server address? {y/n} 
++
+Do you know the KMIP port? {y/n} 
++
+NOTE: Contact https://support.netapp.com[NetApp Support] if you have issues.
+
+. Supply the information for:
+* The client certificate (client.crt) file contents
+* The client key (client.key) file contents
+* The KMIP server CA(s) (CA.pem) file contents
+* The IP address for the KMIP server
+* The port for the KMIP server
+
+. Once the system processes, you see the Boot Menu. Select '1' for normal boot.
+
+. Check the takeover status: `storage failover show`
+
+. Ensure any core dumps on the repaired node are saved by going to advanced mode `set -privilege advanced` and then `run local partner nosavecore`.
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback _true_`
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
+--
+
+====
+
+// end tabbed block area
+
