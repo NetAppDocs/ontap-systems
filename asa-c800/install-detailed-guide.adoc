@@ -180,6 +180,7 @@ Cable the HA interconnect ports:
 
 ** e0b to e0b
 ** e1b to e1b
+
 image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 
 a|
@@ -189,6 +190,7 @@ Cable the cluster interconnect ports:
 
 ** e0a to e0a
 ** e1a to e1a
+
 image:../media/drw_affa800_tnsc_clust_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 a|
 image:../media/icon_square_3_purple.png[Step 3]
@@ -239,13 +241,16 @@ Cable the HA interconnect ports:
 
 ** e0b to e0b
 ** e1b to e1b
+
 image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 a|
 image:../media/icon_square_2_green.png[Callout number 2]
 a|
 Cable the cluster interconnect ports to the 100 GbE cluster interconnect switches.
+
 ** e0a
 ** e1a
+
 image:../media/drw_affa800_switched_clust_cabling.png[Cluster interconnect cabling]
 a|
 image:../media/icon_square_3_purple.png[Step 3]
@@ -427,11 +432,10 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Select an ONTAP icon]
 
  .. Open File Explorer.
- .. Click *Network* in the left pane.
- .. Right-click and select *refresh*.
+ .. Click network in the left pane and right click and select refresh.
  .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
