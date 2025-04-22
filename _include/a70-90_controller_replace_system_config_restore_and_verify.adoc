@@ -12,7 +12,7 @@ If you see the _System ID mismatch_ warning message, enter `y`.
 . Enter `sysconfig -v` and capture the display contents.
 
 +
-NOTE: if you see _PERSONALITY MISMATCH_ contact customer support.
+NOTE: If you see _PERSONALITY MISMATCH_ contact customer support.
 
 . From the `sysconfig -v` output, compare the adapter card information with the cards and locations in the replacement controller.
 
@@ -20,10 +20,10 @@ NOTE: if you see _PERSONALITY MISMATCH_ contact customer support.
 +
 The HA state should be the same for all components.
 
-. If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
+. If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha`
 
 +
-The value for HA-state can be one of the following:
+The value for the HA state can be one of the following:
 
 *** `ha`
 *** `mcc` (not supported)

@@ -2,11 +2,17 @@
 permalink: fas50/controller-replace-requirements.html
 sidebar: sidebar
 keywords: fas50, prerequisite, replace the controller module
-summary: "You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system."
+summary: "Before replacing the controller in your FAS50 storage system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file."
 ---
-= Controller replacement requirements - FAS50
+= Requirements to replace the controller - FAS50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Before replacing the controller in your FAS50 storage system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
+
 include::../_include/g_controller_replace_requirements.adoc[]
+
+.What's next?
+
+After you’ve reviewed the requirements to replace the impaired controller, you need to link:controller-replace-shutdown.html[shut down the impaired controller].
