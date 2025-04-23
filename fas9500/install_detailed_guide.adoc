@@ -191,9 +191,11 @@ image::../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
+
 +
 video::da08295f-ba8c-4de7-88c3-ae7c0170408d[panopto, title="Animation - Two-node switchless cluster cabling"]
 +
+
 image::../media/drw_9500_tnsc_network_cabling.svg[align="center",width=500px]
 +
 
@@ -279,8 +281,10 @@ image::../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
+
 +
 video::3ad3f118-8339-4683-865f-ae7c0170400c[panopto, title="Animation - Switched cluster cabling"]
+
 +
 image::../media/drw_9500_switched_network_cabling.svg[align="center",width=500px]
 
@@ -374,9 +378,11 @@ image::../media/oie_cable_pull_tab_down.png[Cable pull tab direction]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
 . Use the following animation or drawings to cable your controllers to three (1 stack of one drive shelf and one stack of two drive shelves) DS224C drive shelves.
+
 +
 video::c958aae6-9d08-4d3d-a213-ae7c017040cd[panopto, title="Animation - Cable your drive shelves"]
 +
+
 image::../media/drw_9500_sas_shelf_cabling.svg[align="center",width=670px]
 +
 
@@ -427,9 +433,11 @@ You can complete the system setup and configuration using cluster discovery with
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
 . Use the following animation or drawing  to set one or more drive shelf IDs:
+
 +
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set your shelf ID's"]
 +
+
 image::../media/drw_power-on_set_shelf_ID_set.svg[width=500px]
 +
 
@@ -468,9 +476,11 @@ shelf to set shelf ID.
 
 
 . Turn on the power switches on the power supplies to both nodes.
+
 +
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto, title="Animation - Turn on the power to the controllers"]
 +
+
 image::../media/drw_9500_power-on.svg[width=500px]
 +
 
@@ -481,9 +491,11 @@ NOTE: Initial booting may take up to eight minutes.
 See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
+
 +
 video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect your laptop to the Management switch"]
 +
+
 image::../media/dwr_laptop_to_switch_only.svg[width=500px]
 
 +
@@ -535,9 +547,11 @@ image::../media/drw_9500_cable_console_switch_controller.svg[width=500px]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:
+
 +
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set your shelf ID's"]
 +
+
 image::../media/drw_power-on_set_shelf_ID_set.svg[width=500px]
 +
 
@@ -574,9 +588,11 @@ shelf to set shelf ID.
 |===
 
 . Turn on the power switches on the power supplies to both nodes.
+
 +
 video::a905e56e-c995-4704-9673-adfa0005a891[panopto, title="Animation - Turn on the power to the controllers"]
 +
+
 image::../media/drw_9500_power-on.svg[width=500]
 +
 NOTE: Initial booting may take up to eight minutes.
