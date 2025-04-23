@@ -51,6 +51,7 @@ Use the the Cluster/HA interconnect cable to connect to connect ports e1a to e1a
 . Connect port e7a on Controller A to port e7a on Controller B.
 +
 *Cluster/HA interconnect cables*
+
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.svg[Cluster HA cable]
 
@@ -67,9 +68,9 @@ Use the 100 GbE cable to connect ports e1a to e1a and ports e7a to e7a.
 . Connect port e7a on Controller A and port e7a on Controller B to cluster network switch B.
 +
 *100 GbE cable*
-+
+
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
-+
+
 image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[Cable cluster connections to cluster network]
 
 --
