@@ -49,6 +49,34 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 +
 NOTE: The replacement controller receives power from the healthy controller and begins to boot as soon as it is fully seated in the chassis.
 +
+. Take the controller to the LOADER prompt by pressing CTRL-C to abort AUTOBOOT.
+
+. Set the time and date on the controller:
++
+Make sure you are at the controller's LOADER prompt.
++
+.. Display the date and time on the controller: 
++
+`show date`
++
+NOTE: Time and date default is in GMT. You have the option to display in local time and in 24hr mode.
++
+.. Set the current time in GMT: 
++
+`set time hh:mm:ss`
++
+You can get the current GMT from the healthy node: 
++
+`date -u`
++
+.. Set the current date in GMT: 
++
+`set date mm/dd/yyyy`
++
+You can get the current GMT from the healthy node: +
+`date -u`
++
+
 . Recable the controller as needed.
 +
 . Reconnect the power cord to the power supply (PSU).
