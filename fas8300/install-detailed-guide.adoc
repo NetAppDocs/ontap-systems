@@ -247,9 +247,8 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
- .. Click network in the left pane.
- .. Right click and select refresh.
- .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
+.. Click *Network* in the left pane and right-click and select *refresh*.
+..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
 +

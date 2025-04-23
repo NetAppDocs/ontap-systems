@@ -325,8 +325,8 @@ image::../media/dwr_laptop_to_switch_only.svg[width=400px]
 image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
- .. Click network in the left pane and right click and select refresh.
- .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
+.. Click *Network* in the left pane and right-click and select *refresh*.
+..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
 
