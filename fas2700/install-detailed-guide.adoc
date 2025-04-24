@@ -420,7 +420,7 @@ image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[Mini-SAS to mini-SAS con
 
 |===
 
-If you have more than one drive shelf stack, see the https://docs.netapp.com/us-en/ontap/sas3/index.html[Installing and cabling^] for your drive shelf type.
+NOTE: For more SAS cabling information and worksheets, see link:../sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules]
 
 
 . To complete setting up your system, see <<Step 5: Complete system setup and configuration>>
