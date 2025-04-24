@@ -65,7 +65,7 @@ X66240-2, 2m
 X66240A-5, 5m
 
 a|
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[]
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[25Gb network cable]
 a|
 Network cable
 a|
@@ -100,7 +100,7 @@ X66031A, 1m
 
 X66032A, 2m
 a|
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[]
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS to mini-SAS cable]
 a|
 Storage
 a|
@@ -116,7 +116,7 @@ Power cables
 a|
 No part number label
 a|
-image::../media/oie_cable_power.png[]
+image::../media/oie_cable_power.png[Power cable]
 a|
 Powering up the storage system
 a|
@@ -140,11 +140,11 @@ Install your storage system in a telco rack or NetApp storage system cabinet, as
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the storage system.
 +
-image::../media/oie_fas2800_weight_caution_IEOPS-1070.svg[]
+image::../media/oie_fas2800_weight_caution_IEOPS-1070.svg[Lifting caution label]
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_cable_management_arm_install.svg[]
+image::../media/drw_cable_management_arm_install.svg[Install cable management arm]
 
 . Place the bezel on the front of the storage system.
 
@@ -202,27 +202,27 @@ video::90577508-fa79-46cf-b18a-afe8016325af[panopto, title= Animation - Cabling 
 
 . Cable the cluster interconnect ports e0a to e0a and e0b to e0b with the cluster interconnect cable: 
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[]
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[25Gb network cable]
 *Cluster interconnect cables*
 +
-image::../media/drw_2800_tnsc_cluster_cabling_IEOPS-892.svg[]
+image::../media/drw_2800_tnsc_cluster_cabling_IEOPS-892.svg[Two-node cluster cabling]
 . Cable the e0M ports to the management network switches with the RJ45 cables:
 +
 image::../media/oie_cable_rj45.png[RJ-45 cables]
 *RJ45 cables*
 +
-image::../media/drw_2800_management_connection_IEOPS-1077.svg[]
+image::../media/drw_2800_management_connection_IEOPS-1077.svg[Management connection]
 +
 . Cable the mezzanine card ports to your host network. 
 +
-image::../media/drw_2800_network_cabling_IEOPS-894.svg[]
+image::../media/drw_2800_network_cabling_IEOPS-894.svg[Network connections]
 
 .. If you have a 4-port Ethernet data network, cable ports e1a through e1d to your Ethernet data network. 
 ** 4-ports, 10/25Gb Ethernet, SFP28 
 +
 image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector] 
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[]
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[25Gb Ethernet cable]
 +
 
 ** 4-ports, 10GBASE-T, RJ45 
@@ -265,25 +265,25 @@ video::6553a3db-57dd-4247-b34a-afe8016315d4[panopto, title="Animation - Switched
 
 . Cable the cluster interconnect ports e0a to e0a and e0b to e0b with the cluster interconnect cable: 
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[]
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[25Gb Ethernet connector]
 +
-image::../media/drw_2800_switched_cluster_cabling_IEOPS-893.svg[]
+image::../media/drw_2800_switched_cluster_cabling_IEOPS-893.svg[Switched cluster connections]
 . Cable the e0M ports to the management network switches with the RJ45 cables:
 +
 image::../media/oie_cable_rj45.png[RJ-45 cables]
 +
-image::../media/drw_2800_management_connection_IEOPS-1077.svg[]
+image::../media/drw_2800_management_connection_IEOPS-1077.svg[Management network connection]
 +
 . Cable the mezzanine card ports to your host network. 
 +
-image::../media/drw_2800_network_cabling_IEOPS-894.svg[]
+image::../media/drw_2800_network_cabling_IEOPS-894.svg[Network connections]
 
 .. If you have a 4-port Ethernet data network, cable ports e1a through e1d to your Ethernet data network. 
 ** 4-ports, 10/25Gb Ethernet, SFP28 
 +
 image::../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector] 
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[]
+image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[25Gb Ethernet connector]
 +
 
 ** 4-ports, 10GBASE-T, RJ45 
@@ -360,28 +360,31 @@ video::b2a7549d-8141-47dc-9e20-afe8016f4386[panopto, title="Animation - Drive sh
 .. Port 1 on IOM A to port 3 on the IOM A on the shelf directly below.
 .. Port 1 on IOM B to port 3 on the IOM B on the shelf directly below.
 +
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[]     
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini SAS to mini SAS connector]
+
 *mini-SAS HD to mini-SAS HD cables*
 +
-image::../media/drw_2800_shelf-to-shelf_cabling_IEOPS-895.svg[]
+image::../media/drw_2800_shelf-to-shelf_cabling_IEOPS-895.svg[Shelf to shelf cabling]
 +
 . Cable controller A to the drive shelves.
 .. Controller A port 0a to IOM B port 1 on first drive shelf in the stack.
  .. Controller A port 0b1 to IOM A port 3 on the last drive shelf in the stack.
 +
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[]     
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini SAS to mini SAS connector] 
+
 *mini-SAS HD to mini-SAS HD cables*
 +
-image::../media/dwr-2800_controller1-to shelves_IEOPS-896.svg[]     
+image::../media/dwr-2800_controller1-to shelves_IEOPS-896.svg[Controller A to shelf connection]     
 +
 . Connect controller B to the drive shelves.
 .. Controller B port 0a to IOM A port 1 on first drive shelf in the stack.
 .. Controller B port 0b1 to IOM B port 3 on the last drive shelf in the stack.
 + 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[]     
+image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini SAS to mini SAS connector]     
+
 *mini-SAS HD to mini-SAS HD cables*
 +
-image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[]
+image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[Controller B to shelf connection]
 
 
 == Step 5: Complete storage system setup and configuration
@@ -408,7 +411,7 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto, title="Animation - Set driv
 NOTE: Initial booting may take up to eight minutes.
 +
 
-image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[]
+image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[Turn on power]
 
 . Make sure that your laptop has network discovery enabled.
 +
@@ -418,7 +421,7 @@ See your laptop's online help for more information.
 
 .  Use  the graphic or steps to discover the storage system node to configure::
 +
-image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Auto discover system]
 
  .. Open File Explorer.
 .. Click *Network* in the left pane and right-click and select *refresh*.
@@ -449,9 +452,9 @@ If network discovery is not enabled on your laptop, manually complete the config
 +
 NOTE: See your laptop or console's online help for how to configure the console port.
 
- .. Connect the console cable to the laptop or console, and connect the console port on the controller using the console cable that came with your storage system, and then cConnect the laptop or console to the switch on the management subnet.
+ .. Connect the console cable to the laptop or console, and connect the console port on the controller using the console cable that came with your storage system, and then connect the laptop or console to the switch on the management subnet.
 +
-image::../media/drw_2800_laptop_to_switch_to_controller_IEOPS-1084.svg[]
+image::../media/drw_2800_laptop_to_switch_to_controller_IEOPS-1084.svg[Laptop to switch connection]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:
@@ -461,7 +464,7 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto, title="Animation - Set driv
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[]
+image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[Turn on power]
 +
 NOTE: Initial booting may take up to eight minutes.
 
