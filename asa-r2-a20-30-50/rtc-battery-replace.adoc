@@ -11,4 +11,4 @@ summary: Replace the real-time clock (RTC) battery, commonly known as a coin cel
 [.lead]
 Replace the real-time clock (RTC) battery, commonly known as a coin cell battery, in your ASA A20, ASA A30, or ASA A50 system to ensure that services and applications relying on accurate time synchronization remain operational.
 
-include::../_include/g_rtc_battery_replace.adoc[]
+include::../_include/g_rtc_battery_replace_asa_r2.adoc[]
