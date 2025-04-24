@@ -51,12 +51,11 @@ Use the the Cluster/HA interconnect cable to connect to connect ports e1a to e1a
 . Connect port e7a on Controller A to port e7a on Controller B.
 +
 *Cluster/HA interconnect cables*
-
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.svg[Cluster HA cable]
-
+image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
-image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[Two-node switchless cluster cabling diagram]
+image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[Two-node switchless cluster cabling diagram]
+
 
 --
 .Switched cluster cabling
