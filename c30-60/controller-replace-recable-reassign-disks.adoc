@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff c30, aff c60, how to recable the system, reboot the system
 summary: Return control of storage resources to the replacement controller so your AFF C30 or AFF C60 system can resume normal operation.
 ---
-= Recable and give back the controller - AFF C30 and AFF C60
+= Give back the controller - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Return control of storage resources to the replacement controller so your AFF C30 or AFF C60 system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption, Onboard Key Manager (OKM) encryption, or External Key Manager (EKM) encryption.
 
-include::../_include/g_controller_replace_recable_reassign_disks.adoc[]
+include::../_include/controller_replace_recable_reassign_disks.adoc[]
 
 .What's next?
 

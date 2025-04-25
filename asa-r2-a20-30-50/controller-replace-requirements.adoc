@@ -11,7 +11,7 @@ summary: Before replacing the controller in your ASA A20, ASA A30, or ASA A50 sy
 [.lead]
 Before replacing the controller in your ASA A20, ASA A30, or ASA A50 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
 
-include::../_include/g_controller_replace_requirements.adoc[]
+include::../_include/g_controller_replace_requirements_asa_r2.adoc[]
 
 .What's next?
 
