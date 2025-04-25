@@ -40,29 +40,26 @@ image::../media/drw_ssn_label.png[Example of system serial number]
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the link:https://hwu.netapp.com[NetApp Hardware Universe^] to locate the cable and identify its use.
 +
-[options="header" cols="1,2,1,2"]
+[options="header" cols="1,2,2,2"]
 |===
 | Connector type| Part number and length| Type of cable...| For...
-.3+a|
+a|
 100 GbE cable
 a|
 X66211A-05 (112-00595), 0.5m
-.5+a|
-image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
-a|
-HA interconnect
-a|
-X66211A-05 (112-00595), 0.5m;
 
 X66211-1 (112-00573), 1m
-a|
-Cluster interconnect network
-a|
-X66211-2 (112-00574), 2m;
+
+X66211-2 (112-00574), 2m
 
 X66211-5 (112-00576), 5m
+
 a|
-Storage, Data
+image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
+a|
+* HA interconnect
+* Cluster interconnect network
+* Storage, Data
 a|
 10 GbE cable
 a|
@@ -70,7 +67,9 @@ X6566B-3-R6 (112-00300), 3m;
 
 X6566B-5-R6 (112-00301), 5m
 a|
-Data
+image:../media/oie_cable100_gbe_qsfp28.png[10 GbE QSFP28 connector]
+a|
+* Data
 a|
 25 GbE cable
 a|
@@ -78,7 +77,9 @@ X66240A-2 (112-00598), 2m;
 
 X66240A-5 (112-00600), 5m
 a|
-Data
+image:../media/oie_cable100_gbe_qsfp28.png[25 GbE QSFP28 connector]
+a|
+* Data
 a|
 RJ-45 (order dependent)
 a|
@@ -86,7 +87,7 @@ Not applicable
 a|
 image:../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
-Management
+* Management
 a|
 Fibre Channel
 a|
@@ -100,7 +101,7 @@ X66250-30 (112-00347) 30m
 a|
 image:../media/oie_cable_fc_optical.png[OIE Fibre Channel optical cable]
 a|
-
+* Network 
 a|
 Micro-USB console cable
 a|
@@ -108,7 +109,7 @@ Not applicable
 a|
 image:../media/oie_cable_micro_usb.png[Micro USB connector]
 a|
-Console connection during software setup
+* Console connection during software setup
 a|
 Power cables
 a|
@@ -116,7 +117,7 @@ Not applicable
 a|
 image:../media/oie_cable_power.png[Power cables]
 a|
-Powering up the system
+Connecting the PSUs to power source
 |===
 
 . Download and complete the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002[Cluster Configuration Worksheet^].
@@ -180,6 +181,7 @@ Cable the HA interconnect ports:
 
 ** e0b to e0b
 ** e1b to e1b
+
 image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 
 a|
@@ -189,6 +191,7 @@ Cable the cluster interconnect ports:
 
 ** e0a to e0a
 ** e1a to e1a
+
 image:../media/drw_affa800_tnsc_clust_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 a|
 image:../media/icon_square_3_purple.png[Step 3]
@@ -239,13 +242,16 @@ Cable the HA interconnect ports:
 
 ** e0b to e0b
 ** e1b to e1b
+
 image:../media/drw_affa800_ha_pair_cabling.png[HA pair cabling]
 a|
 image:../media/icon_square_2_green.png[Callout number 2]
 a|
 Cable the cluster interconnect ports to the 100 GbE cluster interconnect switches.
+
 ** e0a
 ** e1a
+
 image:../media/drw_affa800_switched_clust_cabling.png[Cluster interconnect cabling]
 a|
 image:../media/icon_square_3_purple.png[Step 3]
@@ -427,12 +433,11 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Select an ONTAP icon]
 
  .. Open File Explorer.
- .. Click *Network* in the left pane.
- .. Right-click and select *refresh*.
- .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
+.. Click *Network* in the left pane and right-click and select *refresh*.
+..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
 +
