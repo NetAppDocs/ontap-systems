@@ -40,16 +40,20 @@ image::../media/drw_ssn_label.png[Example of system serial number]
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the link:https://hwu.netapp.com[NetApp Hardware Universe^] to locate the cable and identify its use.
 +
+
++
 [options="header" cols="1,2,1,2"]
 |===
 | Type of cable...| Part number and length| Connector type| For...
-.2+a|
+.2+
+a|
 25 GbE cable
 a|
 X66240A-05 (112-00595), 0.5m;
 
 X66240-2 (112-00573), 2m
-.3+a|
+.3+
+a|
 image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 Cluster interconnect network
@@ -271,11 +275,11 @@ video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto, title="Animation - Cable th
 .Steps
 . Cable controller A to the shelf.  
 +
-image:../media/drw_affa250_1shelf_cabling_a.png[Controller A cabling]
+image:../media/drw_affa250_1shelf_cabling_a.png[Controller 1 cabling]
 
 . Cable controller B to the shelf.
 +
-image:../media/drw_affa250_1shelf_cabling_b.png[Controller B cabling]
+image:../media/drw_affa250_1shelf_cabling_b.png[Controller 2 cabling]
 --
 
 ====
@@ -310,12 +314,11 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Select an ONTAP icon]
 
  .. Open File Explorer.
- .. Click *Network* in the left pane.
- .. Right-click and select *refresh*.
- .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
+.. Click *Network* in the left pane and right-click and select *refresh*.
+..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
 
