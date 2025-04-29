@@ -39,13 +39,6 @@ image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your man
 
 IMPORTANT: Do not plug in the power cords yet. 
 
-== Step 1: Cable the cluster/HA connections
-Cable the controllers to your ONTAP cluster. For switchless clusters, connect the controllers to each other. For switched clusters, connect the controllers to the cluster network switches.
-
-This procedure differs depending on your storage system model and I/O module configuration.
-
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
-
 == Step 2: Connect the controllers to the host network
 Connect the Ethernet module ports to your host network. 
 
@@ -76,5 +69,22 @@ image::../media/drw_a1k_network_cabling2_ieops-1650.svg[Cable to 10/25Gb Etherne
 == Step 3: Cable the controller-to-switch connections
 Connect the controller to the switches.
 
+Use the 100 GbE cable to connect ports e1a to e1a and ports e7a to e7a.
+
+.Steps
+
+. Connect port e1a on Controller A and port e1a on Controller B to cluster network switch A. 
+. Connect port e7a on Controller A and port e7a on Controller B to cluster network switch B.
++
+*100 GbE cable*
++
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
++
+image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[Cable cluster connections to cluster network]
+
 == Step 4: Cable the shelf-to-switch connections
 Connect the shelf to the switches.
+
+.What's next?
+
+After you’ve cabled the hardware for your AFF A1K system, you link:afx/power-on-hardware.html[power on the AFX A1K storage system].
