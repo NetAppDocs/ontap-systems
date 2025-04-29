@@ -1,5 +1,3 @@
-How you cable an NS224 shelf in an AFF A800 or AFF C800 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controllers.
-
 .Before you begin
 
 * You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
@@ -23,7 +21,7 @@ NOTE: This step assumes you installed the RoCE-capable PCIe card in slot 5.
 +
 The following illustration shows cabling for one hot-added shelf using one RoCE-capable PCIe card on each controller:
 +
-image::../media/drw_ns224_a800_c800_1shelf_IEOPS-964.svg[Cabling for an AFF A800 or AFF C800 with one NS224 shelf and one PCIe card, width=452px]
+image::../media/drw_ns224_a800_c800_1shelf_IEOPS-964.svg[Cabling for an AFF/ASA A800 or AFF/ASA C800 with one NS224 shelf and one PCIe card, width=452px]
 
 . If you are hot-adding one or two shelves using two sets of RoCE-capable ports (two RoCE-capable PCIe cards) on each controller, complete the applicable substeps.
 +

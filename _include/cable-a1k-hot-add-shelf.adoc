@@ -1,5 +1,3 @@
-You can hot-add up to three additional NS224 shelves (for a total of four shelves) to an AFF A1K HA pair.
-
 .Before you begin
 
 * You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
@@ -31,7 +29,7 @@ Otherwise, go to the next step.
 +
 The following illustration highlights the cabling for the second shelf in the HA pair with two RoCE-capable I/O modules in each controller:
 +
-image::../media/drw_ns224_vino_m_2shelves_2cards_ieops-1642.svg[Cabling for AFF A1K with two shelves and two IO modules, width=452px]
+image::../media/drw_ns224_vino_m_2shelves_2cards_ieops-1642.svg[Cabling for AFF/ASA A1K with two shelves and two IO modules, width=452px]
 +
 . If the NS224 shelf you are hot-adding will be the third NS224 shelf in the HA pair with three RoCE-capable I/O modules in each controller, complete the following substeps. 
 Otherwise, go to the next step.
@@ -42,7 +40,7 @@ Otherwise, go to the next step.
 +
 The following illustration highlights the cabling for the third shelf in the HA pair with three RoCE-capable I/O modules in each controller:
 +
-image::../media/drw_ns224_vino_m_3shelves_3cards_ieops-1643.svg[Cabling for AFF A1K with three shelves and three IO modules, width=452px]
+image::../media/drw_ns224_vino_m_3shelves_3cards_ieops-1643.svg[Cabling for AFF/ASA A1K with three shelves and three IO modules, width=452px]
 
 . If the NS224 shelf you are hot-adding will be the third NS224 shelf in the HA pair with four RoCE-capable I/O modules in each controller, complete the following substeps. 
 Otherwise, go to the next step.
@@ -53,7 +51,7 @@ Otherwise, go to the next step.
 +
 The following illustration highlights the cabling for the third shelf in the HA pair with four RoCE-capable I/O modules in each controller:
 +
-image::../media/drw_ns224_vino_m_3shelves_4cards_ieops-1644.svg[Cabling for AFF A1K with three shelves and four IO modules, width=452px]
+image::../media/drw_ns224_vino_m_3shelves_4cards_ieops-1644.svg[Cabling for AFF/ASA A1K with three shelves and four IO modules, width=452px]
 
 . If the NS224 shelf you are hot-adding will be the fourth NS224 shelf in the HA pair with four RoCE-capable I/O modules in each controller, complete the following substeps. 
 
@@ -64,7 +62,7 @@ image::../media/drw_ns224_vino_m_3shelves_4cards_ieops-1644.svg[Cabling for AFF 
 +
 The following illustration highlights the cabling for the fourth shelf in the HA pair with four RoCE-capable I/O modules in each controller:
 +
-image::../media/drw_ns224_vino_m_4shelves_4cards_ieops-1645.svg[Cabling for AFF A1K with four shelves and four IO modules, width=452px]
+image::../media/drw_ns224_vino_m_4shelves_4cards_ieops-1645.svg[Cabling for AFF/ASA A1K with four shelves and four IO modules, width=452px]
 
 . Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +

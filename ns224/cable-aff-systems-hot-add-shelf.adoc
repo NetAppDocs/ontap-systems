@@ -22,16 +22,31 @@ Your hardware system may be compatible with both NS224 shelves with NSM100 modul
 
 
 ====
+You can hot-add up to three additional NS224 shelves (for a total of four shelves) to an AFF A1K HA pair.
 
 include::../_include/cable-a1k-hot-add-shelf.adoc[]
 
 ====
 
-.Cable shelf to AFF A20, AFF A30, AFF A50, AFF C30, or AFF C60
+.Cable shelf to AFF A20
 [%collapsible]
 
 
 ====
+
+You can hot-add one NS224 shelf to an AFF A20 HA pair when additional storage (to the internal shelf) is needed.
+
+include::../_include/cable-20-hot-add-shelf.adoc[]
+
+====
+
+.Cable shelf to AFF A30, AFF A50, AFF C30, or AFF C60
+[%collapsible]
+
+
+====
+
+You can hot-add up to two NS224 shelves to an AFF A30, AFF C30, AFF A50, or AFF C60 HA pair when additional storage (to the internal shelf) is needed.
 
 include::../_include/cable-20-30-50-60-hot-add-shelf.adoc[]
 
@@ -44,6 +59,8 @@ include::../_include/cable-20-30-50-60-hot-add-shelf.adoc[]
 
 ====
 
+You can hot-add up to two NS224 shelves to an AFF A70, AFF A90 or AFF C80 HA pair when additional storage (to the internal shelf) is needed.
+
 include::../_include/cable-70-90-hot-add-shelf.adoc[]
 
 ====
@@ -55,6 +72,8 @@ include::../_include/cable-70-90-hot-add-shelf.adoc[]
 
 ====
 
+When additional storage is needed, you can hot-add a maximum of one NS224 shelf to an AFF A250 or AFF C250 HA pair.
+
 include::../_include/cable-a250-c250-hot-add-shelf.adoc[]
 
 ====
@@ -63,6 +82,8 @@ include::../_include/cable-a250-c250-hot-add-shelf.adoc[]
 [%collapsible]
 
 ====
+
+How you cable an NS224 shelf for a hot-add depends on whether you have an AFF A400 or AFF C400 HA pair.
 
 include::../_include/cable-a400-c400-hot-add-shelf.adoc[]
 
@@ -73,6 +94,8 @@ include::../_include/cable-a400-c400-hot-add-shelf.adoc[]
 
 ====
 
+How you cable an NS224 shelf in an AFF A800 or AFF C800 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controllers.
+
 include::../_include/cable-a800-c800-hot-add-shelf.adoc[]
 
 ====
@@ -82,6 +105,8 @@ include::../_include/cable-a800-c800-hot-add-shelf.adoc[]
 [%collapsible]
 
 ====
+
+When additional storage is needed, you can hot-add up to three additional NS224 drive shelves (for a total of four shelves) to an AFF A900 HA pair.
 
 include::../_include/cable-a900-hot-add-shelf.adoc[]
 
