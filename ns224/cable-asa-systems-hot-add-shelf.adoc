@@ -90,12 +90,12 @@ include::../_include/cable-a400-c400-hot-add-shelf.adoc[]
 
 ====
 
-How you cable an NS224 shelf in an ASA A800 or ASA C800 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controllers.
-
 .Cable shelf to ASA A800 or ASA C800
 [%collapsible]
 
 ====
+
+How you cable an NS224 shelf in an ASA A800 or ASA C800 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controllers.
 
 include::../_include/cable-a800-c800-hot-add-shelf.adoc[]
 
