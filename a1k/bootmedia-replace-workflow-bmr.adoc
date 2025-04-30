@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: a1k, replace the boot media
 summary: You must replace the failed component with a replacement FRU component you received from your provider.
 ---
-= Boot media replacement workflow - AFF A1K
+= Boot media automatic recovery workflow - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Boot media automatic recovery for your AFF A1K storage system uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on your replacement boot media.
+Boot media automatic recovery for your AFF A1K storage system uses the partner node's boot image to reinstall ONTAP on the replacement boot media. The system automatically selects the appropriate boot menu option to complete the recovery.
 
 Get started with replacing the boot media in your AFF A1K storage system by reviewing the replacement requirements, shutting down the controller, replacing the boot media, restoring the image on the boot media, and verifying the system functionality.
 
