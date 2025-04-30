@@ -4,14 +4,13 @@ sidebar: sidebar
 keywords: aff a1k, replace the boot media
 summary: Get started with replacing the boot media in your AFF A1K storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
 ---
-= Boot media replacement workflow - AFF A1K
+= Boot media manual recovery workflow - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Manual boot media recovery on your AFF A1K system includes booting the recovery image from a USB drive and restoring the configuration from the partner node.
+If your boot media fails and your system cannot boot, you can manually recover your system using a replacement boot media and a USB drive containing a recovery image. The boot media replacement workflow guides you through preparing for and performing a manual boot media recovery, including replacing the failed media, restoring the ONTAP image, and reapplying encryption settings if necessary.
 
-Get started with replacing the boot media in your AFF A1K storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements.html[Review the boot media requirements]
 [role="quick-margin-para"]
