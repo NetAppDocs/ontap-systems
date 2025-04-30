@@ -46,7 +46,7 @@ include::../_include/cable-20-hot-add-shelf.adoc[]
 
 ====
 
-You can hot-add up to two NS224 shelves to an ASA A30, ASA C30, ASA A50, or ASA C60 HA pair when additional storage (to the internal shelf) is needed.
+You can hot-add up to two NS224 shelves to an ASA A30 or A50 HA pair when additional storage (to the internal shelf) is needed.
 
 include::../_include/cable-30-50-60-hot-add-shelf.adoc[]
 
@@ -106,6 +106,8 @@ include::../_include/cable-a800-c800-hot-add-shelf.adoc[]
 [%collapsible]
 
 ====
+
+When additional storage is needed, you can hot-add up to three additional NS224 drive shelves (for a total of four shelves) to an ASA A900 HA pair.
 
 include::../_include/cable-a900-hot-add-shelf.adoc[]
 
