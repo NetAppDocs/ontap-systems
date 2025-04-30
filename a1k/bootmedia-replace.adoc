@@ -9,7 +9,7 @@ summary: The boot media in your AFF A1K system stores essential firmware and con
 :imagesdir: ../media/
 
 [.lead]
-The boot media in your AFF A1K system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media using a USB flash drive.
+The boot media in your AFF A1K system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive.
 
 include::../_include/a1k_bootmedia_replace.adoc[]
 
