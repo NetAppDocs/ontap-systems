@@ -2,13 +2,17 @@
 permalink: a1k/bootmedia-shutdown-bmr.html
 sidebar: sidebar
 keywords: a1k, shut down the controller
-summary: "You need to complete the shutdown of the impaired controller."
+summary: Shut down the impaired controller in your AFF A1K storage system to prevent data loss and ensure system stability when replacing the boot media.
 ---
-= Shut down the controller - AFF A1K
+= Shut down the controller to replace the boot media - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller.
+Shut down the impaired controller in your AFF A1K storage system to prevent data loss and ensure system stability when replacing the boot media.
+
 
 include::../_include/shutdown_most_frus.adoc[]
+
+.What's next
+After you shut down the impaired controller, you link:bootmedia-replace-bmr.html[replace the boot media].

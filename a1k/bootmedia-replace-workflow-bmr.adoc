@@ -9,21 +9,23 @@ summary: You must replace the failed component with a replacement FRU component 
 :imagesdir: ../media/
 
 [.lead]
-Follow these workflow steps to replace your boot media.
+Boot media recovery for your AFF A1K storage system uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on your replacement boot media.
+
+Get started with replacing the boot media in your AFF A1K storage system by reviewing the replacement requirements, shutting down the controller, replacing the boot media, restoring the image on the boot media, and verifying the system functionality.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements-bmr.html[Review the boot media requirements]
 [role="quick-margin-para"]
-To replace the boot media, you must meet certain requirements.
+Review the requirements for boot media replacement.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-shutdown-bmr.html[Shut down the impaired controller]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-shutdown-bmr.html[Shut down the controller]
 [role="quick-margin-para"]
-Shut down or take over the impaired controller so that the healthy controller continues to serve data from the impaired controller storage. 
+Shut down the controller in your storage system when when you need to replace the boot media.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:bootmedia-replace-bmr.html[Replace the boot media]
 [role="quick-margin-para"]
 Remove the failed boot media from the System Management module and install the replacement boot media.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia-recovery-image-boot-bmr.html[Restore the image on the boot media (automated boot recovery)]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia-recovery-image-boot-bmr.html[Restore the image on the boot media]
 [role="quick-margin-para"]
 Restore the ONTAP image from the partner controller.
 
