@@ -1,5 +1,3 @@
-When additional storage is needed, you can hot-add up to three additional NS224 drive shelves (for a total of four shelves) to an AFF A900 HA pair.
-
 .Before you begin
 
 * You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
@@ -27,7 +25,7 @@ Otherwise, go to the next step.
 +
 The following illustration shows the second shelf cabling (and the first shelf).
 +
-image::../media/drw_ns224_a900_2shelves.png[Cabling for an AFF A900 with two NS224 shelves and two IO modules]
+image::../media/drw_ns224_a900_2shelves.png[Cabling for an AFF/ASA A900 with two NS224 shelves and two IO modules]
 
 . If the NS224 shelf you are hot-adding will be the third NS224 shelf in the HA pair, complete the following substeps.
 +
@@ -40,7 +38,7 @@ Otherwise, go to the next step.
 +
 The following illustration shows the third shelf cabling.
 +
-image::../media/drw_ns224_a900_3shelves.png[Cabling for an AFF A900 with three NS224 shelves and four IO modules]
+image::../media/drw_ns224_a900_3shelves.png[Cabling for an AFF/ASA A900 with three NS224 shelves and four IO modules]
 
 . If the NS224 shelf you are hot-adding will be the fourth NS224 shelf in the HA pair, complete the following substeps.
 +
@@ -53,7 +51,7 @@ Otherwise, go to the next step.
 +
 The following illustration shows the fourth shelf cabling.
 +
-image::../media/drw_ns224_a900_4shelves.png[Cabling for an AFF A900 with four NS224 shelves and four IO modules]
+image::../media/drw_ns224_a900_4shelves.png[Cabling for an AFF/ASA A900 with four NS224 shelves and four IO modules]
 
 
 . Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
