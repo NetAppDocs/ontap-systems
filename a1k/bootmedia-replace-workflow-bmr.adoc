@@ -9,7 +9,7 @@ summary: You must replace the failed component with a replacement FRU component 
 :imagesdir: ../media/
 
 [.lead]
-The boot media automatic recovery process automatically identifies and selects the appropriate boot menu option and uses the partner node's boot image to reinstall ONTAP on the AFF A1K system's replacement boot media.
+The automatic recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on partner node to reinstall ONTAP on the replacement boot media in your AFF A1K system.
 
 The automatic boot media recovery process is supported only in ONTAP 9.17.0 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
