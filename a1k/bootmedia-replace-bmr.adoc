@@ -2,16 +2,16 @@
 permalink: a1k/bootmedia-replace-bmr.html
 sidebar: sidebar
 keywords: a1k, replace the boot media
-summary: You locate the failed boot media by removing System Management module before you can replace the boot media.
+summary: The boot media in your AFF A1K system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media in the System Management module, and then reinstalling the System Management module.
 ---
-= Replace the boot media for automated boot recovery - AFF A1K
+= Replace the boot media for automatic boot recovery - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 The boot media in your AFF A1K system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media in the System Management module, and then reinstalling the System Management module.
 
-Your storage system must be running ONTAP 9.17.1RC or later to use the automated boot recovery procedure. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+The automatic boot media recovery process is supported only in ONTAP 9.17.0 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 include::../_include/a1k_bootmedia_replace-bmr.adoc[]
 
