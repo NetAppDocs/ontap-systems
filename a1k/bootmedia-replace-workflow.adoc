@@ -9,7 +9,7 @@ summary: Get started with replacing the boot media in your AFF A1K storage syste
 :imagesdir: ../media/
 
 [.lead]
-If your boot media fails and your system cannot boot, you can manually recover your system using a replacement boot media and a USB drive containing a recovery image. The boot media replacement workflow guides you through preparing for and performing a manual boot media recovery, including replacing the failed media, restoring the ONTAP image, and reapplying encryption settings if necessary.
+If your boot media fails and your system cannot boot, you can manually recover your system using a replacement boot media and a USB drive containing a recovery image. The boot media manual recovery workflow guides you through preparing for and performing a manual boot media recovery, including replacing the failed media, restoring the ONTAP image, and reapplying encryption settings if necessary.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements.html[Review the boot media requirements]

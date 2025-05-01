@@ -13,6 +13,8 @@ After installing the new boot media device in your AFF A1K system, you can start
 
 During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it. 
 
+Your storage system must be running ONTAP 9.17.1RC or later to use the automated boot recovery procedure. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+
 include::../_include/bmr_single_node_boot_recovery.adoc[]
 
 .What's next
