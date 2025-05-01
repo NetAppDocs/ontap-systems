@@ -44,7 +44,8 @@ image::../media/drw_a250_open_controller_module_cover.png[Open the controller mo
 [cols="1,4"]
 |===
 a|
-image:../media/icon_round_1.png[Callout number 1]|
+image:../media/icon_round_1.png[Callout number 1]
+a|
 Thumbscrew
 a|
 image::../media/icon_round_2.png[Callout number 2]
@@ -86,16 +87,19 @@ image:../media/icon_round_3.png[Callout number 3]
 a|
 The battery should eject out.
 |===
-The battery will be ejected out.
 
++
 . Remove the replacement battery from the antistatic shipping bag.
 . Locate the RTC battery holder between the heatsink and the midplane and insert it exactly as shown in the graphic.
 +
 image::../media/drw_a250_install_rtc_batt.png[Install the RTC battery]
 +
+
+[cols="1,4"]
 |===
 a|
-image:../media/icon_round_1.png[Callout number 1]|
+image:../media/icon_round_1.png[Callout number 1]
+a|
 With positive polarity face up, slide the battery under the tab of the battery housing.
 a|
 image:../media/icon_round_2.png[Callout number 2]
@@ -105,7 +109,7 @@ Push the battery gently into place and make sure the tab secures it to the housi
 CAUTION: Pushing it in aggressively might cause the battery to eject out again.
 
 |===
-
++
 . Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
 
 == Step 4: Reinstall the controller module and setting time/date after RTC battery replacement
