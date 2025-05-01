@@ -11,7 +11,7 @@ summary: Before replacing the boot media in your AFF A1K system, ensure you meet
 [.lead]
 Before replacing the boot media in your AFF A1K system, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that there are no defective cluster ports on the controller, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
 
-The automatic boot media recovery process is supported only in ONTAP 9.17.0 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+The automatic boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 include::../_include/bootmedia_replace_requirements_bmr.adoc[]
 
