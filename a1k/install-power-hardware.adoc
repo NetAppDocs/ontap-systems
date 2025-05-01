@@ -18,7 +18,9 @@ include::../_include/install_power_shelf_ns224.adoc[]
 == Step 2: Power on the controllers
 
 :a1k-a70-90:
+
 include::../_include/install_power_controllers_conditional.adoc[]
+
 :a1k-a70-90!:
 
 .What's next?
