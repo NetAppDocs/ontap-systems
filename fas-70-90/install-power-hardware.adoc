@@ -39,11 +39,11 @@ include::../_include/install_power_shelf_sas.adoc[]
 
 == Step 2: Power on the controllers
 
-:fas70-90:
+:a1k-a70-90:
 
 include::../_include/install_power_controllers_conditional.adoc[]
 
-:fas-70-90!:
+:a1k-a70-90!:
 
 .What's next?
 After you've turned on your FAS70 or FAS90 storage system, you link:install-complete.html[complete system setup].
