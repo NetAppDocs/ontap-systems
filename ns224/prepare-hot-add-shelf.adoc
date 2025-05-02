@@ -119,6 +119,8 @@ NOTE: Moving a cable does not require any wait time between unplugging the cable
 
 // start tabbed area
 
+* For AFF systems:
++
 [role="tabbed-block"]
 ====
 
@@ -251,7 +253,136 @@ slot 1 port b (e1b).
 
 --
 ====
+
 // end tabbed area
+
+* For ASA systems:
++
+[role="tabbed-block"]
+====
+
+.ASA A1K
+--
+Do one of the following if you are hot-adding a second shelf or a fourth shelf.
+
+NOTE: If you have an ASA A1K HA pair and you are hot-adding a third shelf and installing a third or fourth RoCE-capable I/O module in each controller, the third shelf is cabled to only the third or third and fourth I/O modules. You do not need to recable any existing shelves. 
+
+* If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 10 on each controller.
++
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 11 on each controller.
++
+.. On controller A, move the cable from slot 11 port b (e11b) to
+slot 10 port b (e10b).
+.. Repeat the same cable move on controller B.
+
+* If you are hot-adding a fourth shelf, recable the third shelf across the RoCE-capable I/O modules in slot 9 and slot 8 on each controller.
++
+The substeps assume the third shelf is cabled to a RoCE-capable I/O 
+module in slot 9 on each controller.
++
+.. On controller A, move the cable from slot 9 port b (e9b) to
+slot 8 port b (e8b).
+.. Repeat the same cable move on controller B.
+
+
+--
+
+
+.ASA A70 or ASA A90
+--
+
+If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 8 on each controller.
+
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 11 on each controller.
+
+.. On controller A, move the cable from slot 11 port b (e11b) to
+slot 8 port b (e8b).
+.. Repeat the same cable move on controller B.
+
+--
+
+.ASA A800 or ASA C800
+--
+
+If you are hot-adding a second shelf, recable the first shelf across the two sets of RoCE-capable ports in slot 5 and slot 3 on each controller.
+
+The substeps assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
+
+.. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
+.. Repeat the same cable move on controller B.
+
+--
+
+.ASA A400 or ASA C400
+--
+If you are hot-adding a second shelf, depending on your platform model, do one of the following:
+
+* On the ASA A400:
++
+Recable the first shelf across the two sets of RoCE-capable ports, onboard e0c/e0d and in slot 5, on each controller.
++
+The substeps assume the existing shelf is cabled to RoCE-capable onboard ports e0c/e0d on each controller.
++
+.. On controller A, move the cable from port e0d to slot 5 Port b (e5b).
+.. Repeat the same cable move on controller B.
+
+* On the ASA C400:
++
+Recable the first shelf across the two sets of RoCE-capable ports in slot 4 and slot 5, on each controller.
++
+The substeps assume the existing shelf is cabled to RoCE-capable ports in slot 4 on each controller.
++
+.. On controller A, move the cable from slot 4 port a (e4a) to slot 5 port b (e5b).
+.. Repeat the same cable move on controller B.
+
+--
+
+.ASA A900
+--
+Do one of the following if you are hot-adding a second shelf or a fourth shelf.
+
+* If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 2 and slot 10 on each controller.
++
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 2 on each controller.
++
+.. On controller A, move the cable from slot 2 port b (e2b) to
+slot 10 port b (e10b).
+.. Repeat the same cable move on controller B.
+
+* If you are hot-adding a fourth shelf, recable the third shelf across the RoCE-capable I/O modules in slot 1 and slot 11 on each controller.
++
+The substeps assume the third shelf is cabled to a RoCE-capable I/O 
+module in slot 1 on each controller.
++
+.. On controller A, move the cable from slot 1 port b (e1b) to
+slot 11 port b (e11b).
+.. Repeat the same cable move on controller B.
+
+
+--
+
+.ASA A30 or ASA A50
+--
+
+If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 3 and slot 1 on each controller.
+
+The substeps assume the existing shelf is cabled to a RoCE-capable I/O 
+module in slot 3 on each controller.
+
+.. On controller A, move the cable from slot 3 port b (e3b) to
+slot 1 port b (e1b).
+.. Repeat the same cable move on controller B.
+
+--
+====
+
+
+
+
+
 [start=2]
 . Verify that the recabled shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +
