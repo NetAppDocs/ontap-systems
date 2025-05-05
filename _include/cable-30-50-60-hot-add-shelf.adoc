@@ -9,12 +9,34 @@
 
 .About this task
 
-* This procedure assumes that your HA pair has only internal storage (no external shelves) and that you are hot-adding up to two additional shelves and two RoCE-capable I/O modules in each controller.
+* This procedure assumes that your HA pair has only internal storage (no external shelves) and that you are Hot-adding up to two additional shelves and two RoCE-capable I/O modules in each controller.
 
 * This procedure addresses the following hot-add scenarios:
 ** Hot-adding the first shelf to an HA pair with one RoCE-capable I/O module in each controller.
 ** Hot-adding the first shelf to an HA pair with two RoCE-capable I/O modules in each controller.
 ** Hot- adding the second shelf to an HA pair with two RoCE-capable I/O modules in each controller.
+
+* These systems are compatible with both NS224 shelves with NSM100 modules and NS224 shelves with NSM100B modules. To ensure you cable your controllers to the correct ports, replace the "X" in each diagram with the correct port number for your module:
++
+[cols="1,4"]
+|===
+a|Module type a|Port labeling
+
+a|
+NSM100
+a|
+"0"
+
+ex. e0a
+
+a|
+NSM100B
+a|
+"1"
+
+ex. e1a
+|===
+
 
 .Steps
 
@@ -22,20 +44,20 @@
 +
 Otherwise, go to the next step.
 +
-NOTE: This step assumes you installed the RoCE-capable I/O module in slot 11.
+NOTE: This step assumes you installed the RoCE-capable I/O module in slot 3.
 +
-.. Cable shelf NSM A port e0a to controller A slot 11 port a (e11a).
-.. Cable shelf NSM A port e0b to controller B slot 11 port b (e11b).
-.. Cable shelf NSM B port e0a to controller B slot 11 port a (e11a).
-.. Cable shelf NSM B port e0b to controller A slot 11 port b (e11b).
+.. Cable shelf NSM A port eXa to controller A slot 3 port a (e3a).
+.. Cable shelf NSM A port eXb to controller B slot 3 port b (e3b).
+.. Cable shelf NSM B port eXa to controller B slot 3 port a (e3a).
+.. Cable shelf NSM B port eXb to controller A slot 3 port b (e3b).
 +
 The following illustration shows cabling for one hot-added shelf using one RoCE-capable I/O module in each controller module: 
 +
-image::../media/drw_ns224_vino_i_1shelf_1card_ieops-1639.svg[Cabling for AFF/ASA A70 or A90 with one shelf and one IO module, width=452px]
+image::../media/drw_ns224_g_1shelf_1card_ieops-2002.svg[Cabling for AFF/ASA A30, AFF/ASA C30, AFF/ASA A50, or AFF/ASA C60 with one shelf and one IO module, width=452px]
 
 . If you are hot-adding one or two shelves using two sets of RoCE-capable ports (two RoCE-capable I/O modules) in each controller module, complete the applicable substeps.
 +
-NOTE: This step assumes you installed the RoCE-capable I/O modules in slots 11 and 8.
+NOTE: This step assumes you installed the RoCE-capable I/O modules in slots 3 and 1.
 +
 [options="header" cols="1,3"]]
 |===
@@ -43,30 +65,30 @@ NOTE: This step assumes you installed the RoCE-capable I/O modules in slots 11 a
 a|
 Shelf 1
 a|
-.. Cable NSM A port e0a to controller A slot 11 port a (e11a).
-.. Cable NSM A port e0b to controller B slot 8 port b (e8b).
-.. Cable NSM B port e0a to controller B slot 11 port a (e11a).
-.. Cable NSM B port e0b to controller A slot 8 port b (e8b).
+.. Cable NSM A port eXa to controller A slot 3 port a (e3a).
+.. Cable NSM A port eXb to controller B slot 1 port b (e1b).
+.. Cable NSM B port eXa to controller B slot 3 port a (e3a).
+.. Cable NSM B port eXb to controller A slot 1 port b (e1b).
 .. If you are hot-adding a second shelf, complete the "`Shelf 2`" substeps; otherwise, go to step 3.
 
 The following illustration shows cabling for one hot-added shelf
 using two RoCE-capable I/O modules in each controller module: 
 
-image::../media/drw_ns224_vino_i_1shelf_2cards_ieops-1640.svg[Cabling for AFF/ASA A70 or A90 with one shelf and two IO modules, width=452px]
+image::../media/drw_ns224_g_1shelf_2card_ieops-2005.svg[Cabling for AFF/ASA A30, AFF/ASA C30, AFF/ASA A50, or AFF/ASA C60 with one shelf and two IO modules, width=452px]
 
 a|
 Shelf 2
 a|
-.. Cable NSM A port e0a to controller A slot 8 port a (e8a).
-.. Cable NSM A port e0b to controller B slot 11 port b (e11b).
-.. Cable NSM B port e0a to controller B slot 8 port a (e8a).
-.. Cable NSM B port e0b to controller A slot 11 port b (e11b).
+.. Cable NSM A port eXa to controller A slot 1 port a (e1a).
+.. Cable NSM A port eXb to controller B slot 3 port b (e3b).
+.. Cable NSM B port eXa to controller B slot 1 port a (e1a).
+.. Cable NSM B port eXb to controller A slot 3 port b (e3b).
 .. Go to step 3.
 
 The following illustration shows cabling for two hot-added shelf 
 using two RoCE-capable I/O modules in each controller module: 
 
-image::../media/drw_ns224_vino_i_2shelves_2cards_ieops-1641.svg[Cabling for AFF/ASA A70 or A90 with two shelves and two IO modules, width=452px]
+image::../media/drw_ns224_g_2shelf_2card_ieops-2003.svg[Cabling for AFF A30/ASA, AFF/ASA C30, AFF/ASA A50, or AFF/ASA C60 with two shelves and two IO modules, width=452px]
 
 |===
 

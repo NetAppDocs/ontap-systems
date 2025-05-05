@@ -44,11 +44,11 @@ endif::fas50-a20-30-50[]
 
 . Assign a TCP/IP address to the laptop, using one that is on the management subnet.
 
-. Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
+. Plug the two power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
-// next image applies only to A1K and A70-90
+// next image applies only to A1K, A70-90 and FAS70-90
 ifdef::a1k-a70-90[]
-image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[A1K storage system and A70 or A90 power connection diagram]
+image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[AFF A1K AFF A70 or AFF A90 or FAS70 or FAS90 power connection diagram]
 endif::a1k-a70-90[]
 // next image applies only to FAS50 and A20-30-50
 ifdef::fas50-a20-30-50[]
