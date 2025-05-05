@@ -1,0 +1,16 @@
+
+.USB flash drive
+* Ensure you have a USB flash drive formatted to FAT32. 
+* The USB must have sufficient storage capacity to hold the `image_xxx.tgz` file.
+
+.File preparation
+Copy the `image_xxx.tgz` file to the USB flash drive. This file will be used when you transfer the ONTAP image using the USB flash drive.
+
+.Component replacement
+Replace the failed component with the replacement component provided by NetApp.
+
+.Controller identification
+It is critical to apply the commands to the correct controller when you are replacing the impaired boot media:
+
+* The _impaired controller_ is the controller on which you are performing maintenance.
+* The _healthy controller_ is the HA partner of the impaired controller.
