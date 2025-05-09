@@ -13,25 +13,9 @@ After you prepare to install your AFX storage system, you should install the swi
 
 Go to the https://docs.netapp.com/us-en/afx/index.html[Switch documentation^] to learn how to install your switch model for your AFX system.
 
-.AFX cluster switches
+.AFX switches
 
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/install-hardware-bes53248.html[Install BES-53248 switch^]
-
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/install-switch-9336c-cluster.html[Install Cisco Nexus 9336C-FX2 switch^]
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/install-hardware-sn2100-cluster.html[Install NVIDIA SN2100 switch^]
-
-
-.AFX storage switches
-
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-storage/install-9336c-storage.html[Install Cisco Nexus 9336C-FX2 switch^]
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100-storage/configure-overview-sn2100-storage.html[Install NVIDIA SN2100 switch^]
-
-.AFX shared switches
-
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/install-9336c-shared.html[Install Cisco Nexus 9336C-FX2 switch^]
-
+* link:https://review.docs.netapp.com/us-en/ontap-systems-switches_yos-doc331-oam-updates/switch-cisco-3232c/install-overview-cisco-3232c.html[Install Cisco Nexus 93362D-GX2B^]
 
 .What's next?
 After you've installed the switches for your AFX storage system, you link:deploy-hardware.html[install the hardware for your AFX storage system].
-
-// 2024 Sept 23, ONTAPDOC 1922
