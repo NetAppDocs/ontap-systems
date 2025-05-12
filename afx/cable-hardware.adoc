@@ -118,13 +118,33 @@ image::../media/drw_afx_switched_cluster_cabling_b_ieops.png[Cable cluster conne
 == Step 4: Cable the controller storage to switch connections
 Connect the controller storage ports to the switches. 
 
-. Connect port e0a on the shelf to the switch A.
+. Connect the following storage ports to switch A.
+* Controller A
+** e10a
+** e11a
+* Controller B
+** e10a
+** e11a 
 +
 *200 GbE cable*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[200 Gb cable]
 +
 image::../media/drw_afx_controller_storage_cabling_a_ieops.png[Cable controller storage to switch A]
+
+. Connect the following storage ports to switch B.
+* Controller A
+** e10b
+** e11b
+* Controller B
+** e10b
+** e11b 
++
+*200 GbE cable*
++
+image::../media/oie_cable100_gbe_qsfp28.png[200 Gb cable]
++
+image::../media/drw_afx_controller_storage_cabling_B_ieops.png[Cable controller storage to switch A]
 
 == Step 5: Cable the shelf-to-switch connections
 Connect the NX224 storage shelves to the switches.   
