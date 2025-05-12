@@ -23,21 +23,6 @@ a|
 <<Option 2: Manually reassign the system ID on systems in a two-node MetroCluster configuration>>
 |===
 
-You must use the correct procedure for your configuration:
-
-[options="header" cols="1,2"]
-|===
-| Controller redundancy| Then use this procedure...
-a|
-HA pair
-a|
-<<Option 1: Verify the system ID change on an HA system>>]
-a|
-Two-node MetroCluster configuration
-a|
-<<Option 2: Manually reassign the system ID on systems in a two-node MetroCluster configuration>>
-|===
-
 === Option 1: Verify the system ID change on an HA system
 
 You must confirm the system ID change when you boot the _replacement_ controller and then verify that the change was implemented.
