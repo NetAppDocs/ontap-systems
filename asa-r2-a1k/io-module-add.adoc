@@ -24,7 +24,7 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 Shut down or take over the impaired controller module.
 
-include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+include::../_include/shutdown_most_frus.adoc[]
 
 == Step 2: Add the new I/O module
 
