@@ -29,6 +29,10 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 * If cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
 
+* The following cabling requirements apply to AFX 1k storage system configurations: 
+** Cisco 9336 switch configurations require 100GbE cable connections. 
+** Cisco 9332 switch configurations require 200GbE cable connections. 
+
 == Step 1: Connect the controllers to the management network
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
 
