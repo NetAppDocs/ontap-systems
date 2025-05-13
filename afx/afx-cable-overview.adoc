@@ -11,7 +11,7 @@ summary: Learn how to cable your controllers to the network, switches, and drive
 [.lead]
 Learn how to cable your controllers to the network, switches, and drive shelves. 
 
-The initial configuration of the AFK 1k storage system supports four nodes connected through a switch to the drive shelves. Additional node and disk shelf configurations are supported and utilize the same switch-based cabling methodology as the four node schema depicted below. 
+The initial configuration of the AFX 1k storage system supports four nodes connected through dual switches to the drive shelves. Additional nodes and disk shelves can be utilized to expand on the initial AFX 1K storage system configuration. Expanded AFX 1k configurations follow the same switch-based cabling methodology as the four node schema depicted below. 
 
 image:../media/afx_cable_overview_half_node.png[AFK 1K four node cabling]
 
@@ -21,14 +21,13 @@ image:../media/afx_cable_overview_half_node.png[AFK 1K four node cabling]
 |===
 a| *Controller Shelf* a| *Drive Shelf* a| *Switch* a| *Cables*
 a|
-AFK 1k
+AFX 1k
 a|
 NX224
 a|
-Cisco 9332, Cisco 9336
+Cisco 9332 (200GbE), Cisco 9336 (100GbE)
 a|
 * 400 GbE-based QSFP-DD
 * RJ-45 cables
 * Cluster/HA interconnect cables
-* 
 |===
