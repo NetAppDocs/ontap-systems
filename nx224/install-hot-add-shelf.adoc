@@ -30,6 +30,12 @@ To change the shelf ID, you use the paper clip or ballpoint pen to access the sh
 +
 You cannot have exceeded the maximum number of shelves supported by your HA pair after hot-adding shelves. See https://hwu.netapp.com[NetApp Hardware Universe^].
 
+* *Best practice:* Ensure you have the current version of the https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[Disk Qualification Package^] installed before hot-adding a shelf.
++
+Having the current version of the DQP installed allows your system to recognize and use newly qualified drives. This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
++
+//30 aug 2022, BURT 1491809: correct the DQP link
+
 * *Best practice*: Run https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^] before and after hot-adding a shelf to view any storage cabling error messages and the corrective actions you should take.
 +
 Running Active IQ Config Advisor before hot-adding a shelf provides a snapshot of the existing shelf Ethernet (ENET) connectivity, verifies NVMe shelf module (NSM) firmware versions, and allows you to verify a shelf ID already in use in the HA pair.
