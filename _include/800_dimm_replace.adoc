@@ -6,7 +6,9 @@ You must replace the failed component with a replacement FRU component you recei
 
 == Step 1: Shut down the impaired controller
 
-include::../_include/recable_system_after_controller_rep.adoc[]
+include::../_include/shutdown_most_frus.adoc[]
+
+//AFFFASDOC-267 wrong include corrected
 
 == Step 2: Remove the controller module
 
