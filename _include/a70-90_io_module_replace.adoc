@@ -76,13 +76,7 @@ After you replace an I/O module, you must reboot the controller module.
 
 .Steps
 
-. From the LOADER prompt, reboot the node: `bye` 
-+
-NOTE: This reinitializes the I/O cards and other components and reboots the node.
-
-. Return the node to normal operation: _storage failover giveback -ofnode impaired_node_name_
-
-. If automatic giveback was disabled, reenable it: _storage failover modify -node local -auto-giveback true_
+include::../_include/io_module_replace_reboot.adoc[]
 
 == Step 4: Return the failed part to NetApp
 
