@@ -27,8 +27,12 @@ NX224
 a|
 Cisco 9332 (200GbE), Cisco 9336 (100GbE)
 a|
-* 100GbE-based QSFP cables
-* 200GbE-based QSFP cables 
+* 100GbE-based QSFP cables (Cisco 9336)
+* 200GbE-based QSFP cables (Cisco 9332)
+
+NOTE: Breakout cables are used for connections between the switches, controller, and drive shelf. 
+
 * RJ-45 cables
 * Cluster/HA interconnect cables
+* ISL cables for connection between switch A and switch B
 |===
