@@ -1,23 +1,48 @@
 ---
-permalink: nx224/install-hot-add-shelf.html
+permalink: nx224/hot-add-shelf.html
 sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, hot-add, ha, pair, install, hot-add an nx224 drive shelf
 summary: You can hot-add an NX224 drive shelf after your HA pair meets certain requirements, and after the preparation tasks applicable to your HA pair are completed.
 ---
-= Install a shelf for a hot-add - NX224 shelves
+= Hot-add a shelf - NX224 shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You need to install an NX224 shelf in a cabinet or telco rack, connect the power cords (which automatically powers on the shelf), and set the shelf ID.
+You can 
 
 .Before you begin 
 
-* Make sure your have a paper clip with one side straightened or a narrow-tipped ballpoint pen.
+* Before hot-adding a shelf, ensure you have:
+** A paper clip with one side straightened or a narrow-tipped ballpoint pen.
 +
 To change the shelf ID, you use the paper clip or ballpoint pen to access the shelf ID button behind the Operator Display Panel (ODP) for the change shelf ID step.
 
-* Understand that a fully loaded NX224 shelf can weigh up to 66.78 lbs (30.29 kg) with NSM100 modules or an average of 56.8 lbs (25.8 kg) with NSM100B modules and requires two people to lift or use of a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
+** The correct number and type of cables to connect the shelf. See https://hwu.netapp.com[NetApp Hardware Universe^].
+
+* Understand that a fully loaded NX224 shelf can weigh an average of 56.8 lbs (25.8 kg) and requires two people to lift or use of a hydraulic lift. Avoid removing shelf components (from the front or rear of the shelf) to reduce the shelf weight, because shelf weight will become unbalanced.
+
+* An NX224 shelf contains two NSM140 modules. The top module goes in slot A (NSM A) and the bottom module goes in slot B (NSM B).
+
+* Your platform model and version of ONTAP must support the NX224 shelf and drives you are hot-adding. See https://hwu.netapp.com[NetApp Hardware Universe^]
+
+* Your HA pair must have less than the maximum number of shelves supported, by at least the number of shelves you plan to hot-add.
++
+You cannot have exceeded the maximum number of shelves supported by your HA pair after hot-adding shelves. See https://hwu.netapp.com[NetApp Hardware Universe^].
+
+* *Best practice*: Run https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^] before and after hot-adding a shelf to view any storage cabling error messages and the corrective actions you should take.
++
+Running Active IQ Config Advisor before hot-adding a shelf provides a snapshot of the existing shelf Ethernet (ENET) connectivity, verifies NVMe shelf module (NSM) firmware versions, and allows you to verify a shelf ID already in use in the HA pair.
++
+Running Active IQ Config Advisor after hot-adding a shelf allows you to verify shelves are cabled correctly and that shelf IDs are unique within the HA pair.
+
+* *Best practice:* Ensure you have current versions of https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NVMe shelf module (NSM) firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[drive firmware^] on your storage system before adding a new shelf.
++
+NOTE: Do not revert firmware to a version that does not support your shelf and its components.
+
+== Install a shelf for a hot-add
+
+You need to install an NX224 shelf in a cabinet or telco rack, connect the power cords (which automatically powers on the shelf), and set the shelf ID.
 
 .Steps
 
@@ -38,8 +63,6 @@ If you are installing multiple shelves, place the first shelf directly above the
 .. Connect the power cords to the shelf and secure them in place.
 +
 If they are AC power supplies, secure them in place with the power cord retainer.
-+
-If they are DC power supplies, secure them in place with the two thumb screws.
 +
 .. Connect the power cords to different power sources for resiliency.
 +
@@ -93,5 +116,55 @@ You must unplug both power cords from the shelf, wait 10 seconds, and then plug 
 +
 When power is restored to the power supplies, their bicolored LEDs illuminate green.
 
-.What's next?
-Cable your hot-add shelf. Go to link:cable-overview-hot-add-shelf.html[Overview of cabling for a hot-add].
+
+== Cable shelf for hot-add
+
+You cable each NX224 shelf you are hot-adding so that each shelf has four connections to each switch.
+
+.Before you begin
+
+* Familiarize yourself with proper cable connector orientation, and the location and labeling of ports on the NX224 NSM140 shelf modules.
+
+** Cables are inserted with the connector pull-tab facing up.
++
+When a cable is inserted correctly, it clicks into place.
++
+After you connect both ends of the cable, the shelf and controller port LNK (green) LEDs illuminate. If a port LNK LED does not illuminate, reseat the cable.
++
+image::../media/oie_cable_pull_tab_up.png[Cables are inserted with the connector pull tab facing up]
+
+** Each NSM140 module includes 4 x 100GbE CX7 Path_A ports (e1a, e2a, e3a, and e4a) and 4 x 100GbE CX7 Path_B ports (e1b, e2b, e3b, and e4b).
++
+The following illustration highlights the Path_A and Path_B ports on the NSM140 modules:
++
+image::../media/drw_tp_nsm_ports_ieops-2301.svg[Location of the NX224 NSM140 Path_A and Path_B ports.]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Path_A ports
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Path_B ports
+|===
+
+* After you have cabled a hot-added shelf, ONTAP recognizes the shelf. NSM shelf firmware and drive firmware should be updated automatically, if needed.
++
+NOTE: Firmware updates can take up to 30 minutes.
+
+.Steps
+
+. Cable shelf NSM A and NSM B Path_A ports e1a, e2a, e3a, and e4a to any port on switch A.
+. Cable shelf NSM A and NSM B Path_B ports e1b, e2b, e3b, and e4b to any port on switch B.
++
+The following illustration highlights the cabling for hot-adding an additional shelf in an AFX A1K configuration:
++
+image::../media/switch_cabling_draft.png[nx224 switch cabling draft]
++
+Any additional shelves will follow the same switch-based cabling methodology.
+. Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.
