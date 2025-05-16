@@ -38,7 +38,7 @@ Boot the ONTAP image from the USB drive, restore the file system, and verify the
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:bootmedia-encryption-restore.html[Restore encryption]
 [role="quick-margin-para"]
-Restore the onboard key manager configuration or the external key manager from the ONATP boot menu.
+Restore the onboard key manager configuration or the external key manager from the ONTAP boot menu.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:bootmedia-complete-rma.html[Return the failed part to NetApp]
 [role="quick-margin-para"]
