@@ -6,13 +6,20 @@ You must replace the failed component with a replacement FRU component you recei
 
 == Step 1: Shut down the impaired controller
 
-include::../_include/recable_system_after_controller_rep.adoc[]
+include::../_include/shutdown_most_frus.adoc[]
+
+//AFFFASDOC-267 wrong include corrected
 
 == Step 2: Remove the controller module
 
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
 
 . If you are not already grounded, properly ground yourself.
+. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
+// ontap-systems/issues/343
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
++
 . Unplug the controller module power supplies from the source.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected.
