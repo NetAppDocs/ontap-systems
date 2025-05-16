@@ -13,6 +13,8 @@ You can replace a failed power supply nondisruptively in an NS224 drive shelf th
 
 .About this task
 
+* This procedure applies to NS224 shelves with either NSM100 or NSM100B modules.
+
 * Do not mix power supplies with different efficiency ratings or with different input types. 
 +
 Always replace like for like.
@@ -33,13 +35,13 @@ A shelf has three location LEDs: one on the operator display panel and one on ea
 +
 If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
-* If you are replacing an AC power supply for an NS224 shelf with NSM100 modules, you can watch the following animation to familiarize yourself with the procedure before beginning. 
+* If you are replacing an AC power supply for an NS224 shelf, you can watch the following animation to familiarize yourself with the procedure before beginning. The animation shows an NS224 with NSM100 modules, but the steps are the same for shelves with NSM100B modules.
 +
-.Replace AC power supply for NS224 with NSM100 modules
+.Replace AC power supply for NS224
 [%collapsible]
 ====
 
-video::5794da63-99aa-425a-825f-aa86002f154d[panopto, title="Hot-swap a power supply in an NS224 shelf"]
+video::5794da63-99aa-425a-825f-aa86002f154d[panopto, title="Hot-swap an AC power supply in an NS224 shelf"]
 
 ====
 
