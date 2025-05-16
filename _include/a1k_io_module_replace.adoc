@@ -14,7 +14,7 @@ Shut down or take over the impaired controller using one of the following option
 
 .Option 1: Most systems
 --
-include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+include::../_include/shutdown_most_frus.adoc[]
 --
 .Option 2: Controller is in a MetroCluster
 --
@@ -72,13 +72,8 @@ After you replace an I/O module, you must reboot the controller module.
 
 
 .Steps
-. From the LOADER prompt, reboot the node: `bye` 
-+
-This reinitializes the I/O cards and other components and reboots the node.
-+
-. Return the node to normal operation: `storage failover giveback -ofnode impaired_node_name` 
 
-. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true` 
+include::../_include/io_module_replace_reboot.adoc[] 
 
 == Step 4: Return the failed part to NetApp
 
