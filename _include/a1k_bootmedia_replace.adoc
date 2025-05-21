@@ -24,7 +24,7 @@ Boot media
 |===
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the power supply cables from the PSUs from the controller.
+. Unplug the power supply cables from the PSUs from the controller and then pull the controller module, at the front of the system, out a few inches.
 
 +
 NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
@@ -82,6 +82,8 @@ The USB flash drive should have the appropriate ONTAP image of what the impaired
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
  . Plug the power cables into the power supplies and reinstall the power cable retainer.
+
+ . Gently reseat and lock the controller module at the front of the system.
 
 +
 The controller begins to boot as soon as power is reconnected to the system.
