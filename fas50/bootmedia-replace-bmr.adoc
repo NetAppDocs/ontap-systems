@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas50, replace the boot media
 summary: The boot media in your FAS50 storage system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then reinstalling the controller module.
 ---
-= Replace the boot media for automatic boot recovery - FAS50
+= Replace the boot media for automated boot recovery - FAS50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 The boot media in your FAS50 storage system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then reinstalling the controller module.
 
-The automatic boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 include::../_include/g_bootmedia_replace-bmr.adoc[]
 

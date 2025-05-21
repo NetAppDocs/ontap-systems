@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas50, replace the boot media
 summary: Before replacing the boot media in your AFF A20, AFF A30, and AFF A50 storage system, ensure you meet the necessary requirements for a successful replacement.
 ---
-= Requirements for automatic boot media recovery - FAS50
+= Requirements for automated boot media recovery - FAS50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Before replacing the boot media in your FAS50 storage system, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S (e0M wrench) port on the impaired controller is not faulty, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
 
-The automatic boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 include::../_include/g_bootmedia_replace_requirements_bmr.adoc[]
 

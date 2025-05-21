@@ -2,16 +2,16 @@
 permalink: fas50/bootmedia-recovery-image-boot-bmr.html
 sidebar: sidebar
 keywords: fas50, boot the recovery image
-summary: After installing the new boot media device in your FAS50 storage system, you can start the automatic boot media recovery process to restore the configuration from the partner node.  
+summary: After installing the new boot media device in your FAS50 storage system, you can start the automated boot media recovery process to restore the configuration from the partner node.  
 ---
-= Automatic boot media recovery from the partner node - FAS50
+= Automated boot media recovery from the partner node - FAS50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After installing the new boot media device in your FAS50 storage system, you can start the automatic boot media recovery process to restore the configuration from the partner node. During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it. 
+After installing the new boot media device in your FAS50 storage system, you can start the automated boot media recovery process to restore the configuration from the partner node. During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it. 
 
-The automatic boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 include::../_include/bmr_single_node_boot_recovery.adoc[]
 

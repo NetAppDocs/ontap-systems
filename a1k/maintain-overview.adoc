@@ -22,7 +22,7 @@ For the AFF A1K storage system, you can perform maintenance procedures on the fo
 
 a| link:bootmedia-replace-workflow-bmr.html[Boot media - automated recovery]
 
-a| The boot media stores a primary and secondary set of ONTAP image files that the system uses to boot the image from the partner node and automatically run the appropriate boot menu option to install the boot image on your replacement boot media. The automatic boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+a| The boot media stores a primary and secondary set of ONTAP image files that the system uses to boot the image from the partner node and automatically run the appropriate boot menu option to install the boot image on your replacement boot media. The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 a| link:bootmedia-replace-workflow.html[Boot media- manual recovery]
 

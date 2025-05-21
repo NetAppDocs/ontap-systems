@@ -2,16 +2,16 @@
 permalink: c30-60/bootmedia-replace-workflow-bmr.html
 sidebar: sidebar
 keywords: aff c30, aff c60, replace the boot media
-summary: The automatic recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on partner node to reinstall ONTAP on the replacement boot media in your AFF C30 or AFF C60 storage system.
+summary: The automated recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on the partner node to reinstall ONTAP on the replacement boot media in your AFF C30 or AFF C60 storage system.
 ---
-= Boot media automatic recovery workflow - AFF C30 and AFF C60
+= Boot media automated recovery workflow - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The automatic recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on partner node to reinstall ONTAP on the replacement boot media in your AFF C30 or AFF C60 storage system.
+The automated recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on the partner node to reinstall ONTAP on the replacement boot media in your AFF C30 or AFF C60 storage system.
 
-The automatic boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 To get started, review the replacement requirements, shut down the controller, replace the boot media, allow the system to restore the image, and verify system functionality.
 
