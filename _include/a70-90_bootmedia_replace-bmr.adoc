@@ -53,13 +53,11 @@ Boot media
 .. Rotate the cable management tray up to the closed position.
 .. Recable the System Management module.
 
-. Plug the power cords into the power supplies.
+. Plug the power cords into the power supplies. The controller reboots as soon as power is restored.
 
 +
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies.
 
 + 
-NOTE: The controller reboots as soon as power is restored.
-+
 
 . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.

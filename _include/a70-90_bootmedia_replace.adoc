@@ -86,14 +86,13 @@ The USB flash drive should have the appropriate ONTAP image of what the impaired
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
-. Plug the power cords into the power supplies.
+. Plug the power cords into the power supplies. The controller reboots as soon as power is restored.
 
 +
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies.
 
 + 
-NOTE: The controller reboots as soon as power is restored.
-+
+
  . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.

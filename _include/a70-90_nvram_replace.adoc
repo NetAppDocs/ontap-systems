@@ -82,14 +82,13 @@ DIMM locking tabs
 . Install the replacement NVRAM module into the chassis:
  .. Align the module with the edges of the chassis opening in slot 4/5.
  .. Gently slide the module into the slot all the way, and then push the cam latch all the way up to lock the module in place.
-. Plug the power cords into the power supplies.
+ 
+. Plug the power cords into the power supplies. The controller reboots as soon as power is restored.
 
 +
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies.
 
 + 
-NOTE: The controller reboots as soon as power is restored.
-+
 
  . Rotate the cable management tray up to the closed position.
 
@@ -155,14 +154,12 @@ NOTE: Consult the FRU map label on the side of the NVRAM module to determine the
 . Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
 . Install the NVRAM module into the chassis:
  .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
-. Plug the power cords into the power supplies.
+. Plug the power cords into the power supplies. The controller reboots as soon as power is restored.
 
 +
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies.
 + 
 
-NOTE: The controller reboots as soon as power is restored.
-+
 
 . Rotate the cable management tray up to the closed position.
 
