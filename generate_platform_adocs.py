@@ -209,7 +209,7 @@ for xml_file in glob.glob('techspec_*.xml'):
         pmid = get_text(pc, 'PlatformModelId', '')
         compliance = [e for e in all_compliance if get_text(e, 'PlatformModelId', '') == pmid]
         # Build adoc content with general header
-        permalink = f"{folder}/specifications.html"
+        permalink = f"{folder}/overview.html"
         keywords = f"{model} specifications, {model} specs, NetApp {model}, {model} hardware"
         summary = f"Key specifications for the {model} storage system"
         adoc_title = f"Key specifications for {model}"
