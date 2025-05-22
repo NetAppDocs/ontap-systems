@@ -1,0 +1,144 @@
+---
+permalink: fas/specifications.html
+sidebar: sidebar
+keywords: FAS90 specifications, FAS90 specs, NetApp FAS90, FAS90 hardware
+summary: Key specifications for the FAS90 storage system
+---
+= Key specifications for FAS90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following are select specifications for the FAS90. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of FAS90 specifications. This page is reflective of a single high availability pair. 
+
+=== Key specifications for FAS90
+
+Platform Configuration: FAS90 Dual Chassis HA Pair
+
+Max Raw Capacity: 15.0000 PB
+
+Memory: 1024.0000 GB
+
+Form Factor: 2U chassis with 1 HA controllers 
+
+ONTAP Version: b_startONTAP: 9.16.1P2b_end
+
+PCIe Expansion Slots: 18
+
+Minimum ONTAP Version: ONTAP 9.15.1
+
+=== Scaleout Maximums
+|===
+| Type | HA Pairs | Raw Capacity | Max Memory
+| NAS | 12 | 180.0 PB / 159.9 PiB | 12288 GB
+| SAN | 6 | 90.0 PB / 79.9 PiB | 6144 GB
+| HA Pair |  | 15.0 PB / 13.3 PiB | 1024.0000
+|===
+
+=== IO
+
+==== Onboard IO
+No onboard IO data.
+
+==== Total IO
+|===
+| Protocol | Ports
+| Ethernet 200 Gbps | 20
+| Ethernet 100 Gbps | 32
+| Ethernet 25 Gbps | 48
+| Ethernet 10 Gbps | 48
+| FC 64 Gbps | 48
+| NVMe/FC  64 Gbps | 48
+|  | 0
+| SAS 12 Gbps | 48
+|===
+
+==== Management Ports
+|===
+| Protocol | Ports
+| Ethernet 1 Gbps | 2
+| RS-232 115 Kbps | 4
+| USB 600 Mbps | 2
+|===
+
+=== Storage Networking Supported
+CIFS;
+FC;
+iSCSI;
+NFS v3;
+NFS v4.0;
+NFS v4.1;
+NFS v4.2;
+NVMe/FC ;
+NVMe/TCP;
+S3;
+S3 with NAS;
+SMB 2.0;
+SMB 2.1;
+SMB 2.x;
+SMB 3.0;
+SMB 3.1;
+SMB 3.1.1;
+
+=== System Environment Specifications
+* Typical Power: 3392 BTU/hr
+* Worst-case Power: 5136 BTU/hr
+* Weight: 59.5 lb<br/>27.0 kg
+* Height: 2U
+* Width: 19” IEC rack-compliant (17.7” 44.9 cm)
+* Depth: 30.0”<br/>(35.2” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.5;<br/>Sound pressure (LpAm) (bystander positions): 67.7 dB
+
+=== Compliance
+* Certifications EMC/EMI: AMCA,
+FCC,
+ICES,
+KC,
+Morocco,
+VCCI
+* Certifications safety: BIS,
+CB,
+CSA,
+G_K_U-SoR,
+IRAM,
+NOM,
+NRCS,
+SONCAP,
+TBS
+* Certifications Safety/EMC/EMI: EAC,
+UKRSEPRO
+* Certifications Safety/EMC/EMI/RoHS: BSMI,
+CE DoC,
+UKCA DoC
+* Standards EMC/EMI: BS-EN-55032,
+BS-EN55035,
+CISPR 32,
+EN55022,
+EN55024,
+EN55032,
+EN55035,
+EN61000-3-2,
+EN61000-3-3,
+FCC Part 15 Class A,
+ICES-003,
+KS C 9832,
+KS C 9835
+* Standards Safety: ANSI/UL60950-1,
+ANSI/UL62368-1,
+BS-EN62368-1,
+CAN/CSA C22.2 No. 60950-1,
+CAN/CSA C22.2 No. 62368-1,
+CNS 15598-1,
+EN60825-1,
+EN62368-1,
+IEC 62368-1,
+IEC60950-1,
+IS 13252(part 1)
+
+=== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface;
+Redundant hot-swappable controllers;
+Redundant hot-swappable power supplies;
+SAS in-band management over SAS connections for external shelves;

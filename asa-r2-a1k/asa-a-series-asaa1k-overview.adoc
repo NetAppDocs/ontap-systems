@@ -1,0 +1,130 @@
+---
+permalink: asa-r2-a1k/specifications.html
+sidebar: sidebar
+keywords: ASA A1K specifications, ASA A1K specs, NetApp ASA A1K, ASA A1K hardware
+summary: Key specifications for the ASA A1K storage system
+---
+= Key specifications for ASA A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following are select specifications for the ASA A1K. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A1K specifications. This page is reflective of a single high availability pair. 
+
+=== Key specifications for ASA A1K
+
+Platform Configuration: ASA A1KA Dual Chassis HA Pair
+
+Max Raw Capacity: 2.6622 PB
+
+Memory: 2048.0000 GB
+
+Form Factor: 2U chassis with 1 HA controllers 
+
+ONTAP Version: b_startONTAP: 9.16.1P2b_end
+
+PCIe Expansion Slots: 18
+
+Minimum ONTAP Version: ONTAP 9.16.0
+
+=== Scaleout Maximums
+|===
+| Type | HA Pairs | Raw Capacity | Max Memory
+| NAS |  |  | 
+| SAN | 6 | 16.0 PB / 14.2 PiB | 12288 GB
+| HA Pair |  | 2.7 PB / 2.4 PiB | 2048.0000
+|===
+
+=== IO
+
+==== Onboard IO
+No onboard IO data.
+
+==== Total IO
+|===
+| Protocol | Ports
+| Ethernet 200 Gbps | 24
+| Ethernet 100 Gbps | 36
+| Ethernet 25 Gbps | 56
+| Ethernet 10 Gbps | 56
+| FC 64 Gbps | 56
+| NVMe/FC  64 Gbps | 56
+|  | 0
+|===
+
+==== Management Ports
+|===
+| Protocol | Ports
+| Ethernet 1 Gbps | 2
+| RS-232 115 Kbps | 4
+| USB 600 Mbps | 2
+|===
+
+=== Storage Networking Supported
+FC;
+iSCSI;
+NVMe/FC ;
+NVMe/TCP;
+
+=== System Environment Specifications
+* Typical Power: 4402 BTU/hr
+* Worst-case Power: 6174 BTU/hr
+* Weight: 59.5 lb<br/>27.0 kg
+* Height: 2U
+* Width: 19” IEC rack-compliant (17.7” 44.9 cm)
+* Depth: 30.0”<br/>(35.2” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.5;<br/>Sound pressure (LpAm) (bystander positions): 67.7 dB
+
+=== Compliance
+* Certifications EMC/EMI: AMCA,
+FCC,
+ICES,
+KC,
+Morocco,
+VCCI
+* Certifications safety: BIS,
+CB,
+CSA,
+G_K_U-SoR,
+IRAM,
+NOM,
+NRCS,
+SONCAP,
+TBS
+* Certifications Safety/EMC/EMI: EAC,
+UKRSEPRO
+* Certifications Safety/EMC/EMI/RoHS: BSMI,
+CE DoC,
+UKCA DoC
+* Standards EMC/EMI: BS-EN-55032,
+BS-EN55035,
+CISPR 32,
+EN55022,
+EN55024,
+EN55032,
+EN55035,
+EN61000-3-2,
+EN61000-3-3,
+FCC Part 15 Class A,
+ICES-003,
+KS C 9832,
+KS C 9835
+* Standards Safety: ANSI/UL60950-1,
+ANSI/UL62368-1,
+BS-EN62368-1,
+CAN/CSA C22.2 No. 60950-1,
+CAN/CSA C22.2 No. 62368-1,
+CNS 15598-1,
+EN60825-1,
+EN62368-1,
+IEC 62368-1,
+IEC60950-1,
+IS 13252(part 1)
+
+=== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface;
+Redundant hot-swappable controllers;
+Redundant hot-swappable power supplies;
+SAS in-band management over SAS connections for external shelves;
