@@ -42,11 +42,11 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
 
 . Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
 
-. Disconnect power to the controller module by pulling the controller module out about three inches:
+. Unplug the controller's PSUs.
 
-.. Press down on both of the controller module locking latches, and then rotate both latches downward at the same time.
-.. Pull the controller module about 3 inches out of the chassis to disengage power.
-
++
+NOTE: If your system has DC power, disconnect the power block from the PSUs. 
++
 
 . Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 
@@ -112,14 +112,14 @@ The boot media rotates slightly upward.
 
 . Recable the System Management module.
 
-. Reconnect power to the controller module:
-.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
-+
-The locking latches rise when the controller module is fully seated.
-+
-.. Rotate the locking latches upward into the locked position.
+. Plug the power cords into the power supplies. The controller reboots as soon as power is restored.
 
-. Rotate the cable management tray up to the closed position.
++
+NOTE: If you have DC power supplies, reconnect the power block to the power supplies.
+
++ 
+
+ . Rotate the cable management tray up to the closed position.
 
 == Step 3: Reboot the controller module
 
