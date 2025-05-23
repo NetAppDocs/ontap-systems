@@ -13,7 +13,7 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 
 . Reinstall the cable management arm, if removed, but do not reconnect any cables to the replacement controller.
 
-. Plug the console cable into the console port of the replacement controller module and reconnect it to the laptop so that so that it receives console messages when it reboots. The replacement controller receives power from the healthy controller and begins to reboot as soon as it is seated completely in the chassis. 
+. Plug the console cable into the console port of the replacement controller module and reconnect it to the laptop so that so that it receives console messages when it reboots. 
 
 . Complete the reinstallation of the controller module:
  .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
@@ -25,8 +25,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 
 .. Rotate the locking latches upward into the locked position.
 
-+
-NOTE: The controller boots to the LOADER prompt as soon as it is fully seated.
+.. Plug in the power supplies. The controller boots to the LOADER prompt as soon as power is restored.
 
 . From the LOADER prompt, enter `show date` to display the date and time on the replacement controller.  Date and time are in GMT.
 
