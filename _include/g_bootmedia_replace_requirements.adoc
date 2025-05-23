@@ -1,15 +1,6 @@
-Before replacing the boot media, make sure to review the following requirements and considerations.
-
 
 * You must have a USB flash drive, formatted to FAT32, with the appropriate amount of storage to hold the `image_xxx.tgz`.
 
 * You must copy the `image_xxx.tgz` file to the USB flash drive for later use in this procedure.
 
 * You must replace the failed component with a replacement FRU component of the same capacity that you received from your provider.
-
-
-* If needed, you can turn on the platform chassis location (blue) LEDs to aid in physically locating the affected platform. Log into the BMC using SSH and enter the `system location-led _on_` command.
-+
-A platform chassis has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
-+
-You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
