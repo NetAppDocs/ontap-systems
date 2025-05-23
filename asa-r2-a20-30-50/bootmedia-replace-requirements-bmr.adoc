@@ -11,6 +11,8 @@ summary: Before replacing the boot media in your ASA A20, ASA A30 or ASA A50 sto
 [.lead]
 Before replacing the boot media in your ASA A20, ASA A30 or ASA A50 storage system, ensure you meet the necessary requirements and considerations for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S (e0M wrench) port on the impaired controller is is working properly, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
 
+Review the following requirements.
+
 include::../_include/bootmedia_replace_requirements_eos_bmr.adoc[]
 
 .What's next
