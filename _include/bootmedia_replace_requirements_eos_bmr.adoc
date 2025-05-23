@@ -1,5 +1,4 @@
 
-== Requirements
 * You must replace the failed component with a replacement FRU component of the same capacity that you received from NetApp.
 
 * The e0S (e0M wrench) port is used to communicate between the two controllers during the automated boot recovery process. Make sure that the e0S port on the impaired controller is working properly.
@@ -11,7 +10,4 @@
 ** /cfcard/kmip/certs/client.key file.
 ** /cfcard/kmip/certs/CA.pem file.
 
-* It is important that you apply the commands in these steps on the correct controller:
-** The _impaired_ controller is the controller on which you are performing maintenance.
-** The _healthy_ controller is the HA partner of the impaired controller.
 
