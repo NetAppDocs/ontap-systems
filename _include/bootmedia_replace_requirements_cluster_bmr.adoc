@@ -9,3 +9,5 @@ Review the following requirements.
 ** /cfcard/kmip/certs/client.crt
 ** /cfcard/kmip/certs/client.key
 ** /cfcard/kmip/certs/CA.pem
+
+//May 22, 2025: GH#1231, changed include name bootmedia_replace_requirements_bmr to add the "cluster" designation. This include used only for one platform family: aff a1k, aff 70-90, asa a1k, asa 70-90, fas70-90, aff c80.

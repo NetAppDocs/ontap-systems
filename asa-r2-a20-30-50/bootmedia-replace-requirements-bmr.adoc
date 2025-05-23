@@ -18,3 +18,6 @@ include::../_include/bootmedia_replace_requirements_eos_bmr.adoc[]
 .What's next
 
 After you've reviewed the boot media requirements, you link:bootmedia-shutdown-bmr.html[shut down the impaired controller].
+
+
+//May 22, 2025: GH#1231, changed include name g_bootmedia_replace_requirements_bmr to make generic (remove "g") and add the "eos" designation. This include is used for the following platform family: aff a20-30-50, aff c30-60, fas50, asa a20-30-50, asa c30; and for some older platforms.
