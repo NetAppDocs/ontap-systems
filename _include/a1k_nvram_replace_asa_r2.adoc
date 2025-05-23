@@ -27,7 +27,7 @@ Replace the NVRAM module or NVRAM DIMMs using the appropriate following option.
 To replace the NVRAM module, locate it in slot 4/5 in the enclosure and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the power cord from both PSUs.
+Unplug the power supply cables from the PSUs and then pull the controller module out a few inches from the front of the system.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the impaired NVRAM module from the enclosure:
  .. Depress the locking cam button.
@@ -65,7 +65,7 @@ DIMM locking tabs
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, and then replace the target DIMM.
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the power cord from both PSUs.
+. Unplug the power supply cables from the PSUs and then pull the controller module out a few inches from the front of the system.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the target NVRAM module from the enclosure.
 +
@@ -94,7 +94,6 @@ NOTE: Consult the FRU map label on the side of the NVRAM module to determine the
 . Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
 . Install the NVRAM module into the enclosure:
 .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
-. Recable the PSUs.
 . Rotate the cable management tray up to the closed position.
 
 --
@@ -107,7 +106,9 @@ NOTE: Consult the FRU map label on the side of the NVRAM module to determine the
 
 After you replace the FRU, you must reboot the controller module.
 
-. To boot ONTAP from the LOADER prompt, enter _bye_.
+. Plug the power cables back into the PSU and gently reseat and lock the controller module at the front of the system. 
++
+The system will begin to reboot, typically to the LOADER prompt.
 
 == Step 4: Verify controller state
 
