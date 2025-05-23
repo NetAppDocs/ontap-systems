@@ -9,7 +9,7 @@ summary: Before replacing the boot media in your ASA A1K system, ensure you meet
 :imagesdir: ../media/
 
 [.lead]
-Before replacing the boot media in your ASA A1K system, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the cluster ports on the controller are working properly, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
+Before replacing the boot media in your ASA A1K system, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming the cluster ports on the impaired controller are working properly, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
 
 include::../_include/bootmedia_replace_requirements_cluster_bmr.adoc[]
 
