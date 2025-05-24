@@ -10,4 +10,9 @@ Review the following requirements.
 ** /cfcard/kmip/certs/client.key
 ** /cfcard/kmip/certs/CA.pem
 
+* It is critical to apply the commands to the correct controller when you are replacing the impaired boot media:
+
+** The _impaired controller_ is the controller on which you are performing maintenance.
+** The _healthy controller_ is the HA partner of the impaired controller.
+
 //May 22, 2025: GH#1231, changed include name bootmedia_replace_requirements_bmr to add the "cluster" designation. This include used only for one platform family: aff a1k, aff 70-90, asa a1k, asa 70-90, fas70-90, aff c80.
