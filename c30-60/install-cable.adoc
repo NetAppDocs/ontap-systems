@@ -243,7 +243,11 @@ This procedure shows you how to cable the controllers to one NS224 shelf.
 
 * For the maximum number of shelves supported for your storage system and for all of your cabling options, such as optical and switch-attached, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-* You cable each controller to each NSM100B module on the NS224 shelf using the storage cables that came with your storage system, which could be the following cable type:
+* The NS224 shelf cabling procedure shows NSM100B modules instead of NSM100 modules. The cabling is the same regardless of the type of NSM modules used, only the port names are different: 
+** NSM100B modules use ports e1a and e1b on an I/O module in slot 1.
+** NSM100 modules use built-in (onboard) ports e0a and e0b.
+
+* You cable each controller to each NSM module on the NS224 shelf using the storage cables that came with your storage system, which could be the following cable type:
 +
 *100 GbE QSFP28 copper cables*
 +
@@ -269,3 +273,4 @@ image:../media/drw_isi_g_1_ns224_controller_b_cabling_ieops-1946.svg[Controller 
 After you’ve cabled the hardware for your storage system, you link:install-power-hardware.html[power on the storage system].
 
 
+//May 21, 2025 GH issue #350
