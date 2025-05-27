@@ -23,7 +23,7 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 == Step 1: Shut down the impaired controller
 
-include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+include::../_include/shutdown_most_frus.adoc[]
 
 
 == Step 2: Add the new I/O module
