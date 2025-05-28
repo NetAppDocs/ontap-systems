@@ -1,7 +1,7 @@
 ---
 permalink: a20-30-50/io-module-overview.html
 sidebar: sidebar
-keywords: AFF A90, AFF A70, replace io module
+keywords: AFF A20, AFF A30, and AFF A50, replace io module
 summary: The AFF A20, AFF A30, and AFF A50 systems offer flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
 ---
 = Overview of add and replace an I/O module - AFF A20, AFF A30, and AFF A50
@@ -16,6 +16,12 @@ You can replace a failed I/O module in your storage system with the same type of
 * link:io-module-add.html[Add an I/O module]
 +
 Adding additional I/O modules can improve redundancy, helping to ensure that the storage system remains operational even if one I/O module fails.
+
+* link:io-module-hotswap.html[Hot-swap an I/O module]
++
+Hot-swap a failing I/O module can restore the storage system to its optimal operating state.
++
+Your storage system must be running ONTAP 9.17.1 or later and meet certain requirements to use this procedure.
 
 * link:io-module-replace.html[Replace an I/O module]
 +
