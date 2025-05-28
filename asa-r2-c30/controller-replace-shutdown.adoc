@@ -11,19 +11,14 @@ summary: Shut down the impaired controller in your ASA C30 storage system to pre
 [.lead]
 Shut down the impaired controller in your ASA C30 storage system to prevent data loss and ensure system stability when replacing the controller.
 
-[role="tabbed-block"]
-====
-
-.Option 1: Most systems
---
 include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
---
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+// --
 
-====
+// ====
 
 
 
