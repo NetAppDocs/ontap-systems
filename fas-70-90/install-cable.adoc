@@ -118,6 +118,21 @@ For the maximum number of shelves supported for your storage system and for all 
 For additional SAS shelf cabling guidance, see link:https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html[SAS cabling rules and concepts - shelves with IOM12/IOM12B modules].
 
 
+
+.About this task
+
+// Issue ontap-systems/350 - cover NSM100B
+
+The FAS70 and FAS90 storage systems supports DS212C, DS224C, DS460C, and NS224 shelves with either the NSM100 or NSM100B module. 
+
+The major differences between the NS224 modules are:  
+
+** NSM100 shelf modules use built-in ports e0a and e0b.
+
+** NSM100B shelf modules use ports e1a and e1b in slot 1.
+
+The following NS224 cabling example shows NSM100 modules in the NS224 shelves when referring to shelf module ports.
+
 // start tabbed area
 
 [role="tabbed-block"]
