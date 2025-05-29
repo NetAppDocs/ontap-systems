@@ -1,0 +1,284 @@
+---
+permalink: a70-90/overview.html
+sidebar: sidebar
+summary: Key specifications for the A70-90 platform group
+---
+= Key specifications for A70-90 platform group
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following are select specifications for the A70-90 platform group. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.
+
+== AFF A90
+
+=== Key specifications for AFF A90
+
+Platform Configuration: AFF A90 Single Chassis HA Pair
+
+Max Raw Capacity: 6.6096 PB
+
+Memory: 2048.0000 GB
+
+Form Factor: 4U chassis with 2 HA controllers and 48 drive slots
+
+ONTAP Version: b_startONTAP: 9.16.1P2b_end
+
+PCIe Expansion Slots: 18
+
+Minimum ONTAP Version: ONTAP 9.15.1RC2
+
+=== Scaleout Maximums
+|===
+| Type | HA Pairs | Raw Capacity | Max Memory
+| NAS | 12 | 79.3 PB / 70.4 PiB | 24576 GB
+| SAN | 6 | 39.7 PB / 35.2 PiB | 12288 GB
+| HA Pair |  | 6.6 PB / 5.9 PiB | 2048.0000
+|===
+
+=== IO
+
+==== Onboard IO
+No onboard IO data.
+
+==== Total IO
+|===
+| Protocol | Ports
+| Ethernet 200 Gbps | 24
+| Ethernet 100 Gbps | 36
+| Ethernet 25 Gbps | 56
+| Ethernet 10 Gbps | 56
+| FC 64 Gbps | 56
+| NVMe/FC  64 Gbps | 56
+|  | 0
+| SAS 12 Gbps | 56
+|===
+
+==== Management Ports
+|===
+| Protocol | Ports
+| Ethernet 1 Gbps | 2
+| RS-232 115 Kbps | 4
+| USB 600 Mbps | 2
+|===
+
+=== Storage Networking Supported
+CIFS;
+FC;
+iSCSI;
+NFS v3;
+NFS v4.0;
+NFS v4.1;
+NFS v4.2;
+NFSv3/RDMA;
+NFSv4/RDMA;
+NVMe/FC ;
+NVMe/TCP;
+S3;
+S3 with NAS;
+SMB 2.0;
+SMB 2.1;
+SMB 2.x;
+SMB 3.0;
+SMB 3.1;
+SMB 3.1.1;
+
+=== System Environment Specifications
+* Typical Power: 8304 BTU/hr
+* Worst-case Power: 10948 BTU/hr
+* Weight: 118.0 lb<br/>53.5 kg
+* Height: 4U
+* Width: 19” IEC rack-compliant (17.6” 44.7 cm)
+* Depth: 34.5”<br/>(36.6” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.6;<br/>Sound pressure (LpAm) (bystander positions): 71.6 dB
+
+=== Compliance
+* Certifications EMC/EMI: AMCA,
+FCC,
+ICES,
+KC,
+Morocco,
+VCCI
+* Certifications safety: BIS,
+CB,
+CSA,
+G_K_U-SoR,
+IRAM,
+NOM,
+NRCS,
+SONCAP,
+TBS
+* Certifications Safety/EMC/EMI: EAC,
+UKRSEPRO
+* Certifications Safety/EMC/EMI/RoHS: BSMI,
+CE DoC,
+UKCA DoC
+* Standards EMC/EMI: BS-EN-55032,
+BS-EN55035,
+CISPR 32,
+EN55022,
+EN55024,
+EN55032,
+EN55035,
+EN61000-3-2,
+EN61000-3-3,
+FCC Part 15 Class A,
+ICES-003,
+KS C 9832,
+KS C 9835
+* Standards Safety: ANSI/UL60950-1,
+ANSI/UL62368-1,
+BS-EN62368-1,
+CAN/CSA C22.2 No. 60950-1,
+CAN/CSA C22.2 No. 62368-1,
+CNS 15598-1,
+EN60825-1,
+EN62368-1,
+IEC 62368-1,
+IEC60950-1,
+IS 13252(part 1)
+
+=== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface;
+Redundant hot-swappable controllers;
+Redundant hot-swappable power supplies;
+SAS in-band management over SAS connections for external shelves;
+
+== AFF A70
+
+=== Key specifications for AFF A70
+
+Platform Configuration: AFF A70 Single Chassis HA Pair
+
+Max Raw Capacity: 6.6096 PB
+
+Memory: 256.0000 GB
+
+Form Factor: 4U chassis with 2 HA controllers and 48 drive slots
+
+ONTAP Version: b_startONTAP: 9.16.1P2b_end
+
+PCIe Expansion Slots: 18
+
+Minimum ONTAP Version: ONTAP 9.15.1RC2
+
+=== Scaleout Maximums
+|===
+| Type | HA Pairs | Raw Capacity | Max Memory
+| NAS | 12 | 79.3 PB / 70.4 PiB | 3072 GB
+| SAN | 6 | 39.7 PB / 35.2 PiB | 1536 GB
+| HA Pair |  | 6.6 PB / 5.9 PiB | 256.0000
+|===
+
+=== IO
+
+==== Onboard IO
+No onboard IO data.
+
+==== Total IO
+|===
+| Protocol | Ports
+| Ethernet 200 Gbps | 24
+| Ethernet 100 Gbps | 36
+| Ethernet 25 Gbps | 56
+| Ethernet 10 Gbps | 56
+| FC 64 Gbps | 56
+| NVMe/FC  64 Gbps | 56
+|  | 0
+| SAS 12 Gbps | 56
+|===
+
+==== Management Ports
+|===
+| Protocol | Ports
+| Ethernet 1 Gbps | 2
+| RS-232 115 Kbps | 4
+| USB 600 Mbps | 2
+|===
+
+=== Storage Networking Supported
+CIFS;
+FC;
+iSCSI;
+NFS v3;
+NFS v4.0;
+NFS v4.1;
+NFS v4.2;
+NFSv3/RDMA;
+NFSv4/RDMA;
+NVMe/FC ;
+NVMe/TCP;
+S3;
+S3 with NAS;
+SMB 2.0;
+SMB 2.1;
+SMB 2.x;
+SMB 3.0;
+SMB 3.1;
+SMB 3.1.1;
+
+=== System Environment Specifications
+* Typical Power: 6938 BTU/hr
+* Worst-case Power: 9089 BTU/hr
+* Weight: 118.0 lb<br/>53.5 kg
+* Height: 4U
+* Width: 19” IEC rack-compliant (17.6” 44.7 cm)
+* Depth: 34.5”<br/>(36.6” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.6;<br/>Sound pressure (LpAm) (bystander positions): 71.6 dB
+
+=== Compliance
+* Certifications EMC/EMI: AMCA,
+FCC,
+ICES,
+KC,
+Morocco,
+VCCI
+* Certifications safety: BIS,
+CB,
+CSA,
+G_K_U-SoR,
+IRAM,
+NOM,
+NRCS,
+SONCAP,
+TBS
+* Certifications Safety/EMC/EMI: EAC,
+UKRSEPRO
+* Certifications Safety/EMC/EMI/RoHS: BSMI,
+CE DoC,
+UKCA DoC
+* Standards EMC/EMI: BS-EN-55032,
+BS-EN55035,
+CISPR 32,
+EN55022,
+EN55024,
+EN55032,
+EN55035,
+EN61000-3-2,
+EN61000-3-3,
+FCC Part 15 Class A,
+ICES-003,
+KS C 9832,
+KS C 9835
+* Standards Safety: ANSI/UL60950-1,
+ANSI/UL62368-1,
+BS-EN62368-1,
+CAN/CSA C22.2 No. 60950-1,
+CAN/CSA C22.2 No. 62368-1,
+CNS 15598-1,
+EN60825-1,
+EN62368-1,
+IEC 62368-1,
+IEC60950-1,
+IS 13252(part 1)
+
+=== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface;
+Redundant hot-swappable controllers;
+Redundant hot-swappable power supplies;
+SAS in-band management over SAS connections for external shelves;
+

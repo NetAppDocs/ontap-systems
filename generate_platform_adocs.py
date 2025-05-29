@@ -106,18 +106,20 @@ A_SERIES_MODELS = {
     # Add more as needed for all AFF A models
 }
 ASA_SERIES_MODELS = {
-    'asaa50': 'asa-r2-a20-30-50',
-    'asaa30': 'asa-r2-a20-30-50',
+    # All ASA R2 A1K, A70, A90, A20, A30, and A50 map to the same 'asa-r2' folder
+    'asaa1k': 'asa-r2',
+    'asaa70': 'asa-r2',
+    'asaa90': 'asa-r2',
+    'asaa20': 'asa-r2',
+    'asaa30': 'asa-r2',
+    'asaa50': 'asa-r2',
+    # All other ASA models keep their current mapping
     'asaa900': 'asa900',
     'asaa800': 'asa800',
     'asaa400': 'asa400',
     'asa250': 'asa250',
     'asaa250': 'asa250',
-    'asaa1k': 'asa-r2-a1k',
-    'asaa90': 'asa-r2-70-90',
-    'asaa70': 'asa-r2-70-90',
     'asaa150': 'asa150',
-    'asaa20': 'asa-r2-a20-30-50',
 }
 
 def get_text(elem, tag, default=None):
@@ -140,6 +142,7 @@ def adoc_table(headers, rows):
     return out
 
 # Find all techspec XML files
+folder_to_platformconfigs = {}
 for xml_file in glob.glob('techspec_*.xml'):
     # Extract platform type id from filename
     platform_type_id = xml_file.split('_')[1].split('.')[0]
@@ -168,15 +171,25 @@ for xml_file in glob.glob('techspec_*.xml'):
             folder = ASA_SERIES_MODELS[model_key]
         else:
             folder = NORMALIZED_FOLDER_MAP.get(model_key)
-            # If not found, try prefix folder (e.g., aff-aseries, fas, etc.)
             if (not folder or not os.path.isdir(folder)) and (prefix in PLATFORM_FOLDER_MAP.values() and os.path.isdir(prefix)):
                 folder = prefix
         if not folder or not os.path.isdir(folder):
             print(f"Skipping model '{model}' (normalized: '{model_key}') - no folder match for model or prefix '{prefix}'.")
             continue
-        adoc_name = f"{prefix}-{model_key}-overview.adoc"
-        adoc_path = os.path.join(folder, adoc_name)
-        # Extract main fields
+        if folder not in folder_to_platformconfigs:
+            folder_to_platformconfigs[folder] = []
+        folder_to_platformconfigs[folder].append((pc, all_onboard, all_totalio, all_mgmt, all_env, all_compliance))
+
+# Now, for each folder, generate a single overview.adoc with all models in that group
+for folder, configs in folder_to_platformconfigs.items():
+    adoc_path = os.path.join(folder, 'overview.adoc')
+    content = ''
+    # Compose a general header for the group
+    content += f"---\npermalink: {folder}/overview.html\nsidebar: sidebar\nsummary: Key specifications for the {folder.upper()} platform group\n---\n"
+    content += f"= Key specifications for {folder.upper()} platform group\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are select specifications for the {folder.upper()} platform group. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.\n\n"
+    for pc, all_onboard, all_totalio, all_mgmt, all_env, all_compliance in configs:
+        model = get_text(pc, 'PlatformModel')
+        content += f"== {model}\n\n"
         config = get_text(pc, 'PlatformConfig', '')
         max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
         memory = get_text(pc, 'PlatformMemory_GB', '')
@@ -208,14 +221,7 @@ for xml_file in glob.glob('techspec_*.xml'):
         # Compliance
         pmid = get_text(pc, 'PlatformModelId', '')
         compliance = [e for e in all_compliance if get_text(e, 'PlatformModelId', '') == pmid]
-        # Build adoc content with general header
-        permalink = f"{folder}/overview.html"
-        keywords = f"{model} specifications, {model} specs, NetApp {model}, {model} hardware"
-        summary = f"Key specifications for the {model} storage system"
-        adoc_title = f"Key specifications for {model}"
-        lead = f"The following are select specifications for the {model}. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {model} specifications. This page is reflective of a single high availability pair. "
-        content = f"---\npermalink: {permalink}\nsidebar: sidebar\nkeywords: {keywords}\nsummary: {summary}\n---\n"
-        content += f"= {adoc_title}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\n{lead}\n\n=== Key specifications for {model}\n\n"
+        content += f"=== Key specifications for {model}\n\n"
         content += f"Platform Configuration: {config}\n\n"
         content += f"Max Raw Capacity: {max_capacity} PB\n\n"
         content += f"Memory: {memory} GB\n\n"
@@ -254,8 +260,8 @@ for xml_file in glob.glob('techspec_*.xml'):
                 content += f"* {std}: {val}\n"
         else:
             content += "No compliance data available.\n"
-        content += f"\n=== High Availability\n{ha}\n"
-        # Write .adoc file
-        with open(adoc_path, 'w', encoding='utf-8') as f:
-            f.write(content)
-        print(f"Created {adoc_path}")
+        content += f"\n=== High Availability\n{ha}\n\n"
+    # Write .adoc file
+    with open(adoc_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+    print(f"Created {adoc_path}")
