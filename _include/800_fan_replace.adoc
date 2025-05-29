@@ -9,6 +9,11 @@ include::../_include/shutdown_most_frus.adoc[]
 You must remove the controller module from the chassis when you replace a fan module.
 
 . If you are not already grounded, properly ground yourself.
+. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
+// ontap-systems/issues/343
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
++
 . Unplug the controller module power supplies from the source.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables from the controller module, keeping track of where the cables were connected.
@@ -22,6 +27,8 @@ The controller module moves slightly out of the chassis.
 +
 image::../media/drw_a800_pcm_remove.png[Releasing the controller module]
 +
+
+[cols="1,4"]
 |===
 a|
 image:../media/icon_round_1.png[Callout number 1]|

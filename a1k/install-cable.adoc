@@ -51,9 +51,9 @@ Use the Cluster/HA interconnect cable to connect ports e1a to e1a and ports e7a 
 +
 *Cluster/HA interconnect cables*
 +
-image::../media/oie_cable_25Gb_Ethernet_SFP28_IEOPS-1069.svg[Cluster HA cable,width=100pxx]
+image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
-image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[Two-node switchless cluster cabling diagram,width=500px]
+image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[Two-node switchless cluster cabling diagram]
 
 
 --
@@ -70,7 +70,7 @@ Use the 100 GbE cable to connect ports e1a to e1a and ports e7a to e7a.
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[Cable cluster connections to cluster network,width=500px]
+image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[Cable cluster connections to cluster network]
 
 --
 
@@ -90,26 +90,28 @@ NOTE: For maximum system performance for cluster and HA traffic, do not use port
 +
 *100 GbE cable*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[100Gb Ethernet cable]
 +
-image::../media/drw_a1k_network_cabling1_ieops-1649.svg[Cable to 100Gb Ethernet network,width=500px]
+image::../media/drw_a1k_network_cabling1_ieops-1649.svg[Cable to 100Gb Ethernet network]
 
 +
 . Connect your 10/25 GbE host network switches.
 +
 *10/25 GbE Host*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[10/25Gb Ethernet cable,width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[10/25Gb Ethernet cable]
 +
-image::../media/drw_a1k_network_cabling2_ieops-1650.svg[Cable to 10/25Gb Ethernet network,width=500px]
+image::../media/drw_a1k_network_cabling2_ieops-1650.svg[Cable to 10/25Gb Ethernet network]
 
 == Step 3: Cable the management network connections
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
 
-image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 
-image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network,width=500px]
+image::../media/oie_cable_rj45.png[RJ-45 cables]
+
+
+image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network]
 
 IMPORTANT: Do not plug in the power cords yet. 
 
@@ -117,6 +119,18 @@ IMPORTANT: Do not plug in the power cords yet.
 The following cabling procedures show how to connect your controllers to a storage shelf. Choose one of the following cabling options that matches your setup.
 
 For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+
+.About this task
+
+// Issue ontap-systems/350 - cover NSM100B
+
+The AFF A1K storage systems support NS224 shelves with either the NSM100 or NSM100B module. The major differences between the modules are:  
+
+** NSM100 shelf modules use built-in port e0a and e0b.
+
+** NSM100B shelf modules use ports e1a and e1b in slot 1.
+
+The following cabling example shows NSM100 modules in the NS224 shelves when referring to shelf module ports.
 
 // start tabbed area
 
@@ -129,7 +143,7 @@ Connect each controller to the NSM modules on the NS224 shelf. The graphics show
 
 *100 GbE QSFP28 copper cables*
 
-image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable,width=100px]
+image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable]
 
 .Steps
 
@@ -154,7 +168,7 @@ Connect each controller to the NSM modules on both NS224 shelves. The graphics s
 
 *100 GbE QSFP28 copper cables*
 
-image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable,width=100px]
+image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable]
 
 .Steps
 

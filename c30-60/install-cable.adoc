@@ -16,7 +16,9 @@ After you install your AFF C30 or AFF C60 storage system hardware, cable the con
 Contact your network administrator for information about connecting the storage system to your network switches.
 
 .About this task
-* The cluster/HA and host network cabling procedures show common configurations. Keep in mind that the specific cabling depends on the components ordered for your storage system. For comprehensive configuration and slot priority details, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
+* The cluster/HA and host network cabling procedures show common configurations. 
++
+If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
 
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
@@ -55,9 +57,9 @@ NOTE: I/O module ports e2b and e4b are unused and available for host network con
 +
 *100 GbE Cluster/HA interconnect cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable]
 +
-image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[a30 and a50 switchless cluster cabling diagram using two 100gbe io modules]
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[a30 and a60 switchless cluster cabling diagram using two 100gbe io modules]
 
 ====
 
@@ -78,9 +80,9 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 *100 GbE Cluster/HA interconnect cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100pxx]
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable]
 +
-image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[a30 and a50 switchless cluster cabling diagram using one 100gbe io module]
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[a30 and a60 switchless cluster cabling diagram using one 100gbe io module]
 
 
 ====
@@ -112,9 +114,9 @@ NOTE: I/O module ports e2b and e4b are unused and available for host network con
 +
 *40/100 GbE Cluster/HA interconnect cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable]
 +
-image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a50 switched cluster cabling diagram using two 100gbe io modules]
+image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a60 switched cluster cabling diagram using two 100gbe io modules]
 
 
 ====
@@ -139,7 +141,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 *40/100 GbE Cluster/HA interconnect cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
+image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable]
 +
 image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
 
@@ -171,7 +173,7 @@ NOTE: The ports on I/O modules in slot 2 and 4 are 40/100 GbE (host connectivity
 +
 *40/100 GbE cables*
 +
-image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable, width=100px]
+image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable]
 +
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Cable to 40/100gbe ethernet host network switches]
 ====
@@ -185,7 +187,7 @@ image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Ca
 +
 *10/25 GbE cables*
 +
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
 ====
@@ -221,13 +223,15 @@ Cable the controllers to your management network.
 
 . Cable the management (wrench) ports on each controller to the management network switches.
 +
+
 *1000BASE-T RJ-45 cables*
+
 +
 image::../media/oie_cable_rj45.png[RJ-45 cables]
 +
 image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your management network]
 
-// [Connect to your management network,width=500px] or xx
+// [Connect to your management network] or xx
 
 IMPORTANT: Do not plug in the power cords yet. 
 
@@ -239,7 +243,11 @@ This procedure shows you how to cable the controllers to one NS224 shelf.
 
 * For the maximum number of shelves supported for your storage system and for all of your cabling options, such as optical and switch-attached, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-* You cable each controller to each NSM100B module on the NS224 shelf using the storage cables that came with your storage system, which could be the following cable type:
+* The NS224 shelf cabling procedure shows NSM100B modules instead of NSM100 modules. The cabling is the same regardless of the type of NSM modules used, only the port names are different: 
+** NSM100B modules use ports e1a and e1b on an I/O module in slot 1.
+** NSM100 modules use built-in (onboard) ports e0a and e0b.
+
+* You cable each controller to each NSM module on the NS224 shelf using the storage cables that came with your storage system, which could be the following cable type:
 +
 *100 GbE QSFP28 copper cables*
 +
@@ -265,3 +273,4 @@ image:../media/drw_isi_g_1_ns224_controller_b_cabling_ieops-1946.svg[Controller 
 After you’ve cabled the hardware for your storage system, you link:install-power-hardware.html[power on the storage system].
 
 
+//May 21, 2025 GH issue #350
