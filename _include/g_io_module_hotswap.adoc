@@ -52,16 +52,16 @@ Verify the I/O module slot status displays powered-off in the screen output for 
 See the Command man pages for your version of ONTAP for more details.
 
 
-== Step 2: Replace the failed I/O module
+== Step 2: Replace the failed cluster/HA I/O module
 
 include::../_include/g_io_module_cluster_ha_slot4_hotswap.adoc[]
 
 // May 29, 205: created new g-family include for hot-swapping a cluster/HA I/O module in slot 4.
 
 
-== Step 3: Bring the replacement I/O module online
+== Step 3: Bring the replacement cluster/HA I/O module online
 
-Bring the replacement cluster/HA module online and verify it is online and recognized.
+Bring the replacement cluster/HA I/O module online and verify it is online and recognized.
 
 . Bring the replacement I/O module online by using the system controller slot module insert command:
 +
