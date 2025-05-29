@@ -30,10 +30,8 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 
 .. Rotate the locking latches upward into the locked position.
 
-+
-NOTE: If the controller boots to the LOADER prompt, reboot it with the `boot_ontap` command.
 
-. Plug the power cords into the power supplies.
+. Plug the power cords into the power supplies. The controller reboots as soon as power is restored.
 
 +
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
