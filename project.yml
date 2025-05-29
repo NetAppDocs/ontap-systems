@@ -37,22 +37,10 @@ sidebar:
       - title: C-Series systems
         url: /aff-cseries/index.html
         entries:
-        - title: Maintain
-          url: /aff-cseries/maintain.html
-        - title: Key specifications
-          url: /c30-60/overview.html
         - section: c30-60
-        - title: Key specifications
-          url: /c80/overview.html
         - section: c80
-        - title: Key specifications
-          url: /c250/overview.html
         - section: c250
-        - title: Key specifications
-          url: /c400/overview.html
         - section: c400
-        - title: Key specifications
-          url: /c800/overview.html
         - section: c800
     - title: ASA systems
       url: /allsan-landing/index.html
@@ -60,139 +48,50 @@ sidebar:
       - title: A-Series systems
         url: /allsan-a-series/index.html
         entries:    
-        - title: Maintain
-          url: /allsan-a-series/maintain.html
-        - title: ASA A150 systems
-          url: /asa150/index.html
-          entries:
-          - title: Install and setup
-            url: /asa150/install-setup.html
-          - title: Maintain
-            url: /asa150/maintain.html
-          - title: Key specifications
-            url: /asa150/overview.html
-          - section: asa150
-        - title: ASA A250 systems
-          url: /asa250/index.html
-          entries:
-          - title: Install and setup
-            url: /asa250/install-setup.html
-          - title: Maintain
-            url: /asa250/maintain.html
-          - title: Key specifications
-            url: /asa250/overview.html
-          - section: asa250
-        - title: ASA A400 systems
-          url: /asa400/index.html
-          entries:
-          - title: Install and setup
-            url: /asa400/install-setup.html
-          - title: Maintain
-            url: /asa400/maintain.html
-          - title: Key specifications
-            url: /asa400/overview.html
-          - section: asa400
-        - title: ASA A800 systems
-          url: /asa800/index.html
-          entries:
-          - title: Install and setup
-            url: /asa800/install-setup.html
-          - title: Maintain
-            url: /asa800/maintain.html
-          - title: Key specifications
-            url: /asa800/overview.html
-          - section: asa800
-        - title: ASA A900 systems
-          url: /asa900/index.html
-          entries:
-          - title: Install and setup
-            url: /asa900/install-setup.html
-          - title: Maintain
-            url: /asa900/maintain.html
-          - title: Key specifications
-            url: /asa900/overview.html
-          - section: asa900
+        - section: asa150
+        - section: asa250
+        - section: asa400
+        - section: asa800
+        - section: asa900
       - title: C-Series systems
         url: /allsan-c-series/index.html
         entries:    
-        - title: Maintain
-          url: /allsan-c-series/maintain.html
-        - title: Key specifications
-          url: /asa-c250/overview.html
         - section: asa-c250
-        - title: Key specifications
-          url: /asa-c400/overview.html
         - section: asa-c-400
-        - title: Key specifications
-          url: /asa-c800/overview.html
         - section: asa-c800
     - title: ASA r2 systems
       url: /asa-r2/index.html
       entries:  
+      - title: Install and setup
+        url: /asa-r2/asa-r2-install-setup.html 
       - title: Maintain
-        url: /asa-r2/maintain.html
-      - title: Key specifications
-        url: /asa-r2/overview.html
+        url: /asa-r2-landing-maintain/index.html
+        entries:
+        - section: asa-r2-a1k-maintain
+        - section: asa-r2-a70-90-maintain
+        - section: asa-r2-a20-30-50-maintain
     - title: FAS systems
       url: /fas/index.html
       entries:
-      - title: Maintain
-        url: /fas/maintain.html
-      - title: Key specifications
-        url: /fas50/overview.html
       - section: fas50
-      - title: Key specifications
-        url: /fas-70-90/overview.html
       - section: fas-70-90
-      - title: Key specifications
-        url: /fas2700/overview.html
       - section: fas2700
-      - title: Key specifications
-        url: /fas2800/overview.html
       - section: fas2800
-      - title: Key specifications
-        url: /fas8300/overview.html
       - section: fas8300
-      - title: Key specifications
-        url: /fas9500/overview.html
       - section: fas9500
     - title: End-of-availability systems
       url: /endofavail/index.html
       entries:
-        - title: Maintain
-          url: /endofavail/maintain.html
-        - title: Key specifications
-          url: /a200/overview.html
         - section: a200
-        - title: Key specifications
-          url: /a220/overview.html
         - section: a220
-        - title: Key specifications
-          url: /a300/overview.html
         - section: a300
-        - title: Key specifications
-          url: /a320/overview.html
         - section: a320
-        - title: Key specifications
-          url: /a700/overview.html
         - section: a700
-        - title: Key specifications
-          url: /a700s/overview.html
         - section: a700s
-        - title: Key specifications
-          url: /c190/overview.html
         - section: c190
-        - title: Key specifications
-          url: /fas2600/overview.html
         - section: fas2600
-        - title: Key specifications
-          url: /fas500f/overview.html
         - section: fas500f
-        - title: Key specifications
-          url: /fas8200/overview.html
         - section: fas8200
-        - title: Key specifications
-          url: /fas9000/overview.html
         - section: fas9000
         - title: Other models
           url: /other/other-models.html
