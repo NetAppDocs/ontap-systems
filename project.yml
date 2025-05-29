@@ -28,30 +28,54 @@ sidebar:
         entries:   
         - title: Maintain
           url: /aff-aseries/maintain.html
-        - title: Key specifications
-          url: /a1k/overview.html
-        - section: a1k
-        - title: Key specifications
-          url: /a70-90/overview.html
-        - section: a70-90
-        - title: Key specifications
-          url: /a20-30-50/overview.html
-        - section: a20-30-50
-        - title: Key specifications
-          url: /a150/overview.html
-        - section: a150
-        - title: Key specifications
-          url: /a250/overview.html
-        - section: a250
-        - title: Key specifications
-          url: /a400/overview.html
-        - section: a400
-        - title: Key specifications
-          url: /a800/overview.html
-        - section: a800
-        - title: Key specifications
-          url: /a900/overview.html
-        - section: a900
+        - title: AFF A1K systems
+          url: /a1k/index.html
+          entries:
+          - title: Key specifications
+            url: /a1k/overview.html
+          - section: a1k
+        - title: AFF A70-90 systems
+          url: /a70-90/index.html
+          entries:
+          - title: Key specifications
+            url: /a70-90/overview.html
+          - section: a70-90
+        - title: AFF A20-30-50 systems
+          url: /a20-30-50/index.html
+          entries:
+          - title: Key specifications
+            url: /a20-30-50/overview.html
+          - section: a20-30-50
+        - title: AFF A150 systems
+          url: /a150/index.html
+          entries:
+          - title: Key specifications
+            url: /a150/overview.html
+          - section: a150
+        - title: AFF A250 systems
+          url: /a250/index.html
+          entries:
+          - title: Key specifications
+            url: /a250/overview.html
+          - section: a250
+        - title: AFF A400 systems
+          url: /a400/index.html
+          entries:
+          - title: Key specifications
+            url: /a400/overview.html
+          - section: a400
+        - title: AFF A800 systems
+          url: /a800/index.html
+          entries:
+          - title: Key specifications
+            url: /a800/overview.html
+          - section: a800
+        - title: AFF A900 systems
+          url: /a900/index.html
+          entries:
+          - title: Key specifications
+            url: /a900/overview.html
+          - section: a900
       - title: C-Series systems
         url: /aff-cseries/index.html
         entries:
@@ -80,21 +104,36 @@ sidebar:
         entries:    
         - title: Maintain
           url: /allsan-a-series/maintain.html
-        - title: Key specifications
-          url: /asa150/overview.html
-        - section: asa150
-        - title: Key specifications
-          url: /asa250/overview.html
-        - section: asa250
-        - title: Key specifications
-          url: /asa400/overview.html
-        - section: asa400
-        - title: Key specifications
-          url: /asa800/overview.html
-        - section: asa800
-        - title: Key specifications
-          url: /asa900/overview.html
-        - section: asa900
+        - title: ASA A150 systems
+          url: /asa150/index.html
+          entries:
+          - title: Key specifications
+            url: /asa150/overview.html
+          - section: asa150
+        - title: ASA A250 systems
+          url: /asa250/index.html
+          entries:
+          - title: Key specifications
+            url: /asa250/overview.html
+          - section: asa250
+        - title: ASA A400 systems
+          url: /asa400/index.html
+          entries:
+          - title: Key specifications
+            url: /asa400/overview.html
+          - section: asa400
+        - title: ASA A800 systems
+          url: /asa800/index.html
+          entries:
+          - title: Key specifications
+            url: /asa800/overview.html
+          - section: asa800
+        - title: ASA A900 systems
+          url: /asa900/index.html
+          entries:
+          - title: Key specifications
+            url: /asa900/overview.html
+          - section: asa900
       - title: C-Series systems
         url: /allsan-c-series/index.html
         entries:    
