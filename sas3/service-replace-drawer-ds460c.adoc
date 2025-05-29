@@ -54,13 +54,17 @@ image::../media/drw_dcm3_ieops-2176.svg[Front view of a DCM3 drive shelf, width=
 
 == Step 1: Prepare to replace a drive drawer
 
-Before you replace a drive drawer, you must make sure to update IOM12 FW if needed, and either halt the HA pair, which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair. Lastly, you must power off the shelf.
+Before you replace a drive drawer, you must make sure to update IOM FW if needed, and either halt the HA pair, which allows you to keep data aggregates on the shelf, or keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives. You must then offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair. Lastly, you must power off the shelf.
 
 .Steps
 . Determine if when you replace the failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.
-. If the shelf will have a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later; otherwise, go to the next step.
+. Determine if you will need to upgrade your IOM firmware:
+
+** If the shelf will have a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later; otherwise, go to the next step.
+** If the shelf will have a combination of IOM12 modules and any number of DCM3 drive drawers, you must upgrade the IOM12 FW to version 0400 or later.
+** If the shelf will have a combination of IOM12B modules and any number of DCM3 drive drawers, you must upgrade the IOM12B FW to version 0200 or later.
 +
-You can go to the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download current versions of disk shelf firmware].
+If needed, you can go to the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download current versions of disk shelf firmware]. Otherwise, go to the next step.
 
 . If the shelf contains the root aggregate from either controller in the HA pair, or if you chose to halt the HA pair (instead of keeping the HA pair up and running), complete the following substeps; otherwise, go to the next step.
 +
