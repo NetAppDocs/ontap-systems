@@ -63,6 +63,7 @@ Before you replace a drive drawer, you must make sure to update IOM FW if needed
 ** If the shelf will have a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later; otherwise, go to the next step.
 ** If the shelf will have a combination of IOM12 modules and any number of DCM3 drive drawers, you must upgrade the IOM12 FW to version 0400 or later.
 ** If the shelf will have a combination of IOM12B modules and any number of DCM3 drive drawers, you must upgrade the IOM12B FW to version 0200 or later.
+
 +
 If needed, you can go to the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download current versions of disk shelf firmware]. Otherwise, go to the next step.
 
