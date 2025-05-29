@@ -3,8 +3,8 @@
 .Before you begin
 * Your storage system must meet all of the following requirements in order to use this procedure; otherwise you must use the link:io-module-replace.html[replace an I/O module procedure].
 ** Your storage system must be running ONTAP 9.17.1 or later.
-** Your storage system must already be in a takeover state.
-** The I/O module that failed must be a cluster/HA module and you must be replacing it with an equivalent card.
+** Your storage system must be in a takeover state; the impaired node (node with the failed cluster/HA I/O module) must have taken over the partner node.
+** The I/O module that failed must be a cluster/HA module and you must be replacing it with an equivalent module.
 ** Your storage system configuration must have only one cluster/HA module (located in slot 4), not two cluster/HA modules.
 ** Your storage system must be a two-node configuration.
 

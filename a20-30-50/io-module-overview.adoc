@@ -9,7 +9,7 @@ summary: The AFF A20, AFF A30, and AFF A50 systems offer flexibility in expandin
 :imagesdir: ../media/
 
 [.lead]
-The AFF A20, AFF A30, and AFF A50 systems offer flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
+The AFF A20, AFF A30, and AFF A50 storage systems offer flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding, hot-swapping, or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
 
 You can replace a failed I/O module in your storage system with the same type of I/O module, or with a different type of I/O module. You can also add an I/O module to a storage system with available slots.
 
@@ -19,7 +19,7 @@ Adding additional I/O modules can improve redundancy, helping to ensure that the
 
 * link:io-module-hotswap.html[Hot-swap an I/O module]
 +
-Hot-swap a failing I/O module can restore the storage system to its optimal operating state.
+Hot-swapping a failing I/O module can restore the storage system to its optimal operating state.
 +
 Your storage system must be running ONTAP 9.17.1 or later and meet certain requirements to use this procedure.
 

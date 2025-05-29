@@ -4,16 +4,27 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, hotswap a pcie card
 summary: Replace an I/O module in your AFF A20, AFF A30, or AFF A50 system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
 ---
-= Hot-swap an I/O module - AFF A20, AFF A30, and AFF A50
+= Hot-swap a cluster/HA I/O module - AFF A20, AFF A30, and AFF A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Hot-swap a failed cluster/HA module in a two-node AFF A20, AFF A30, or AFF A50 storage system in a single cluster/HA I/O module configuration, and which is in a takeover state. The hot-swap process does not require a controller shutdown or reboot. It involves preparing the I/O module slot for removal, hot-swapping the failed I/O module, bringing the replacement I/O module online, verifying the replacement I/O module is online and recognized, and returning the failed part to NetApp.
+You can hot-swap a failed cluster/HA I/O module in your AFF A20, AFF A30, or AFF A50 storage system when your system is running ONTAP 9.17.1 or later, is a two-node system in a single cluster/HA I/O module configuration, and is in a takeover state.
 
-Hot-swap an I/O module in your AFF A20, AFF A30, or AFF A50 storage system when your system is a two-node system in a single cluster/HA module configuration, and is in a takeover state. The hot-swap process does not require a controller shutdown or reboot. The hot-swap process involves preparing the I/O module slot for removal, hot-swapping the failed cluster/HA module, bringing the replacement cluster/HA module online, verifying the replacement cluster/HA module is online and recognized, and returning the failed part to NetApp.
+You can hot-swap a failed cluster/HA I/O module when your AFF A20, AFF A30, or AFF A50 storage system meets specific system requirements. Your system must be running ONTAP 9.17.1 or later, must be a two-node system in a single cluster/HA I/O module configuration, and must be in a takeover state..
 
-The I/O module hot-swap process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:io-module-replace.html[replace an I/O module procedure].
+The hot-swap process involves preparing the I/O module slot for removal, hot-swapping the failed cluster/HA I/O module, bringing the replacement cluster/HA I/O module online, and returning the failed part to NetApp.The hot-swap process does not require a controller shutdown or reboot.
+
+If your system is not running ONTAP 9.17.1 or later, or does not meet the system requirements, you must use the link:io-module-replace.html[replace an I/O module procedure].
+
+Hot-swapping a failed cluster/HA I/O module in your AFF A20, AFF A30, or AFF A50 storage system requires meeting specific system requirements. This process is applicable to a two-node storage system in a single cluster/HA I/O module configuration that is in a takeover state. The hot-swap process does not require a controller shutdown or reboot...
+
+
+Hot-swap a failed cluster/HA module in a two-node AFF A20, AFF A30, or AFF A50 storage system in a single cluster/HA I/O module configuration, and which is in a takeover state. The hot-swap process does not require a controller shutdown or reboot. It involves preparing the I/O module slot for removal, hot-swapping the failed I/O module, bringing the replacement I/O module online, verifying the replacement I/O module is online and recognized, and returning the failed part to NetApp...
+
+Hot-swap an I/O module in your AFF A20, AFF A30, or AFF A50 storage system when your system is a two-node system in a single cluster/HA module configuration, and is in a takeover state. The hot-swap process does not require a controller shutdown or reboot. The hot-swap process involves preparing the I/O module slot for removal, hot-swapping the failed cluster/HA module, bringing the replacement cluster/HA module online, verifying the replacement cluster/HA module is online and recognized, and returning the failed part to NetApp...
+
+The I/O module hot-swap process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:io-module-replace.html[replace an I/O module procedure]...
 
 If a two-node system using the Single NIC Cluster/HA configuration is in takeover and needs to replace the Cluster/HA NIC, then follow these instructions to replace the I/O module without rebooting.???
 
