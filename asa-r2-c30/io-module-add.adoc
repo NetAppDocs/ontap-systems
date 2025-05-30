@@ -1,21 +1,21 @@
 ---
-permalink: asa-r2-a20-30-50/io-module-add.html
+permalink: asa-r2-c30/io-module-add.html
 sidebar: sidebar
-keywords: asa a20, asa a30, asa a50, add I/O module
-summary: "To replace an I/O module, you must disconnect the cables from the module, remove the SFP and QSFP modules from the module, remove the module, install the replacement module, reinstall the SFP and QSFP modules, and then cable the I/O module."
+keywords: asa c30, add I/O module
+summary: Add an I/O module to your ASA C30 storage system to enhance network connectivity and expand your system’s ability to handle data traffic.
 ---
-= Add an I/O module - ASA A20, ASA A30, and ASA A50
+= Add an I/O module - ASA C30
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Add an I/O module to your ASA A20, ASA A30, or ASA A50 system to enhance network connectivity and expand your system’s ability to handle data traffic.
+Add an I/O module to your ASA C30 storage system to enhance network connectivity and expand your system’s ability to handle data traffic.
 
 You can add an I/O module to your ASA C30 storage system if there are available slots. If all slots are fully populated, you can replace an existing module to add a new one.
 
 .About this task
 
-If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the asaected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 
 A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 
