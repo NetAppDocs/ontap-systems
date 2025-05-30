@@ -1,0 +1,27 @@
+---
+permalink: asa-r2-c30/controller-replace-shutdown.html
+sidebar: sidebar
+keywords: asa c30, shut down the impaired controller
+summary: Shut down the impaired controller in your ASA C30 storage system to prevent data loss and ensure system stability when replacing the controller.
+---
+= Shut down the impaired controller - ASA C30
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down the impaired controller in your ASA C30 storage system to prevent data loss and ensure system stability when replacing the controller.
+
+include::../_include/shutdown_most_frus.adoc[]
+// --
+// .Option 2: Controller is in a MetroCluster
+// --
+// include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+// --
+
+// ====
+
+
+
+.What's next?
+
+After you've shut down the impaired controller, you need to link:controller-replace-move-hardware.html[replace the controller].
