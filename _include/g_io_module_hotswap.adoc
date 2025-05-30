@@ -83,15 +83,19 @@ The module has been successfully powered on, initialized and placed into service
 
 . Verify that a hotplug.init.success EMS event is logged for each port reporting that initialization succeeded.
 +
-NOTE: this might take several minutes to allow for any required firmware updates and port initialization.
+NOTE: This might take several minutes to allow for any required firmware updates and port initialization.
 
-. Verify the slot status using the system controller slot module show command.
+. Verify the slot status:
++
+`system controller slot module show`
 
 . Verify the I/O module slot status displays powered-on and ready for operation for the I/O module inserted.
 
-. Verify that the replacement I/O module is online and recognized, and then visually confirm that the amber attention LED is not lit: sysconfig -av slot_number
+. Verify that the replacement I/O module is online and recognized: 
++
+`sysconfig -av _slot_number_`
 
-. Cable the I/O module.
+. Visually confirm that the amber attention LED for slot 4 is not lit.
 
 == Step 4: Return the failed part to NetApp
 
