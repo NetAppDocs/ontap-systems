@@ -9,11 +9,7 @@ summary: Replace an I/O module in your AFF A20, AFF A30, or AFF A50 system when 
 :imagesdir: ../media/
 
 [.lead]
-You can hot-swap a failed cluster/HA I/O module for an equivalent module when your AFF A20, AFF A30, or AFF A50 storage system meets specific system requirements. Your system must be running ONTAP 9.17.1 or later, must be a two-node system in a single cluster/HA I/O module configuration, and must be in a takeover state.
-
-The hot-swap process does not require a controller shutdown or reboot. The process involves preparing the I/O module slot for removal, hot-swapping the failed cluster/HA I/O module for an equivalent module, bringing the replacement cluster/HA I/O module online, and returning the failed part to NetApp.
-
-If your system is not running ONTAP 9.17.1 or later, or does not meet the system requirements, you must use the link:io-module-replace.html[replace an I/O module procedure].
+Hot-swap a cluster/HA I/O module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails. The process involves preparing the I/O module slot for removal, hot-swapping the failed cluster/HA I/O module for an equivalent module, bringing the replacement cluster/HA I/O module online, and returning the failed part to NetApp.
 
 
 include::../_include/g_io_module_hotswap.adoc[]
