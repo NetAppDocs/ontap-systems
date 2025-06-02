@@ -3,22 +3,11 @@ The boot media is located inside the System Management module and is accessed by
 
 .Steps
 
-. If you are not already grounded, properly ground yourself.
-. Unplug the power supply cables from the PSUs and then pull the controller module out a few inches from the front of the system.
+The boot media is located inside the System Management module and is accessed by removing the module from the system.
 
-NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
-+
-.. Remove any cables connected to the System Management module. Make sure that you label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
-.. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
-.. Depress the System Management cam button.
-.. Rotate the cam latch down as far as it will go.
-.. Remove the System Management module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
-.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
-. Remove the boot media from the management module:
 
-+
 image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[Boot media replace graphic]
-+
+
 [cols="1,4"]
 |===
 a|
@@ -34,6 +23,21 @@ image::../media/icon_round_3.png[Callout number 3]
 a|
 Boot media
 |===
+
+. If you are not already grounded, properly ground yourself.
+. Unplug the power supply cables from the PSUs and then pull the controller module out a few inches from the front of the system.
+
++
+NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
++
+
+.. Remove any cables connected to the System Management module. Make sure that you label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
+.. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
+.. Depress the System Management cam button.
+.. Rotate the cam latch down as far as it will go.
+.. Remove the System Management module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
+.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
+. Remove the boot media from the management module:
 
 .. Press the blue locking button.
 .. Rotate the boot media up,  slide it out of the socket, and set it aside.
