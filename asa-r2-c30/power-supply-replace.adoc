@@ -1,0 +1,14 @@
+---
+permalink: asa-r2-c30/power-supply-replace.html
+sidebar: sidebar
+keywords: asa c30, replace a power supply
+summary: Replace an AC or DC power supply unit (PSU) in your ASA C30 storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
+---
+= Replace a power supply - ASA C30
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace an AC or DC power supply unit (PSU) in your ASA C30 storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.
+
+include::../_include/g_power_supply_replace.adoc[]
