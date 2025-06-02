@@ -1,19 +1,19 @@
 ---
-permalink: asa-r2-a20-30-50/controller-replace-workflow.html
+permalink: asa-r2-c30/controller-replace-workflow.html
 sidebar: sidebar
-keywords: asa a20, asa a30, asa a50, replace the controller workflow
-summary: Get started with replacing the controller in your ASA A20, ASA A30, or ASA A50 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller.
+keywords: asa c30, replace the controller workflow
+summary: Get started with replacing the controller in your ASA C30 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller.
 ---
-= Controller replacement workflow - ASA A20, ASA A30, and ASA A50
+= Controller replacement workflow - ASA C30
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Get started with replacing the controller in your ASA A20, ASA A30, or ASA A50 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller.
+Get started with replacing the controller in your ASA C30 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-replace-requirements.html[Review the controller replacement requirements]
 [role="quick-margin-para"]
-Review the requirements to replace the controller.
+To replace the controller, you must meet certain requirements. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:controller-replace-shutdown.html[Shut down the impaired controller]
 [role="quick-margin-para"]
