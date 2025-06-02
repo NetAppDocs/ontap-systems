@@ -11,9 +11,8 @@ summary: Before replacing the boot media in your ASA C30 storage system, ensure 
 [.lead]
 Before replacing the boot media in your ASA C30 storage system, ensure you meet the necessary requirements and considerations for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S (e0M wrench) port on the impaired controller is working properly, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
 
-include::../_include/g_bootmedia_replace_requirements_bmr.adoc[]
+include::../_include/bootmedia_replace_requirements_e0s_bmr.adoc[]
 
-// May 22: after ASA C30 is published, replace above URL with bootmedia_replace_requirements_eos_bmr
 
 .What's next
 
