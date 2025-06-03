@@ -1,15 +1,14 @@
 ---
-permalink: asa-r2-70-90/overview.html
+permalink: asa-r2-key-specifications/asa-a70-key-specifications.html
 sidebar: sidebar
-keywords: ASA A70 specifications, ASA A70 specs, NetApp ASA A70, ASA A70 hardware
-summary: Key specifications for the ASA A70 storage system
+summary: Key specifications for ASA A70
 ---
 = Key specifications for ASA A70
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the ASA A70. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A70 specifications. This page is reflective of a single high availability pair. 
+The following are select specifications for ASA A70. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.
 
 === Key specifications for ASA A70
 
@@ -128,3 +127,4 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 SAS in-band management over SAS connections for external shelves;
+

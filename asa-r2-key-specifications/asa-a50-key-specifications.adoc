@@ -1,23 +1,22 @@
 ---
-permalink: asa-r2-a20-30-50/overview.html
+permalink: asa-r2-key-specifications/asa-a50-key-specifications.html
 sidebar: sidebar
-keywords: ASA A30 specifications, ASA A30 specs, NetApp ASA A30, ASA A30 hardware
-summary: Key specifications for the ASA A30 storage system
+summary: Key specifications for ASA A50
 ---
-= Key specifications for ASA A30
+= Key specifications for ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the ASA A30. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A30 specifications. This page is reflective of a single high availability pair. 
+The following are select specifications for ASA A50. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.
 
-=== Key specifications for ASA A30
+=== Key specifications for ASA A50
 
-Platform Configuration: ASA A30 Single Chassis HA Pair
+Platform Configuration: ASA A50 Single Chassis HA Pair
 
-Max Raw Capacity: 1.1016 PB
+Max Raw Capacity: 1.8360 PB
 
-Memory: 128.0000 GB
+Memory: 256.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
 
@@ -31,8 +30,8 @@ Minimum ONTAP Version: ONTAP 9.16.1
 |===
 | Type | HA Pairs | Raw Capacity | Max Memory
 | NAS |  |  | 
-| SAN | 4 | 4.4 PB / 3.9 PiB | 512 GB
-| HA Pair |  | 1.1 PB / 1.0 PiB | 128.0000
+| SAN | 6 | 11.0 PB / 9.8 PiB | 1536 GB
+| HA Pair |  | 1.8 PB / 1.6 PiB | 256.0000
 |===
 
 === IO
@@ -66,8 +65,8 @@ NVMe/FC ;
 NVMe/TCP;
 
 === System Environment Specifications
-* Typical Power: 2892 BTU/hr
-* Worst-case Power: 4445 BTU/hr
+* Typical Power: 3076 BTU/hr
+* Worst-case Power: 4860 BTU/hr
 * Weight: 60.7 lb<br/>27.5 kg
 * Height: 2U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
@@ -127,3 +126,4 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 SAS in-band management over SAS connections for external shelves;
+

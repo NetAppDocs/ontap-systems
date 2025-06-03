@@ -1,23 +1,22 @@
 ---
-permalink: asa-r2-a20-30-50/overview.html
+permalink: asa-r2-key-specifications/asa-a20-key-specifications.html
 sidebar: sidebar
-keywords: ASA A50 specifications, ASA A50 specs, NetApp ASA A50, ASA A50 hardware
-summary: Key specifications for the ASA A50 storage system
+summary: Key specifications for ASA A20
 ---
-= Key specifications for ASA A50
+= Key specifications for ASA A20
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the ASA A50. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A50 specifications. This page is reflective of a single high availability pair. 
+The following are select specifications for ASA A20. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.
 
-=== Key specifications for ASA A50
+=== Key specifications for ASA A20
 
-Platform Configuration: ASA A50 Single Chassis HA Pair
+Platform Configuration: ASA A20 Single Chassis HA Pair
 
-Max Raw Capacity: 1.8360 PB
+Max Raw Capacity: 0.7344 PB
 
-Memory: 256.0000 GB
+Memory: 128.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
 
@@ -31,8 +30,8 @@ Minimum ONTAP Version: ONTAP 9.16.1
 |===
 | Type | HA Pairs | Raw Capacity | Max Memory
 | NAS |  |  | 
-| SAN | 6 | 11.0 PB / 9.8 PiB | 1536 GB
-| HA Pair |  | 1.8 PB / 1.6 PiB | 256.0000
+| SAN | 3 | 2.2 PB / 2.0 PiB | 384 GB
+| HA Pair |  | 0.7 PB / 0.7 PiB | 128.0000
 |===
 
 === IO
@@ -43,8 +42,8 @@ No onboard IO data.
 ==== Total IO
 |===
 | Protocol | Ports
-| Ethernet 100 Gbps | 16
-| Ethernet 25 Gbps | 24
+| Ethernet 100 Gbps | 12
+| Ethernet 25 Gbps | 32
 | Ethernet 10 Gbps | 24
 | FC 64 Gbps | 24
 | NVMe/FC  64 Gbps | 24
@@ -66,8 +65,8 @@ NVMe/FC ;
 NVMe/TCP;
 
 === System Environment Specifications
-* Typical Power: 3076 BTU/hr
-* Worst-case Power: 4860 BTU/hr
+* Typical Power: 2489 BTU/hr
+* Worst-case Power: 3890 BTU/hr
 * Weight: 60.7 lb<br/>27.5 kg
 * Height: 2U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
@@ -127,3 +126,4 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 SAS in-band management over SAS connections for external shelves;
+
