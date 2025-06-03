@@ -41,15 +41,15 @@ NOTE: When you see _Do you want to continue?_, enter `y`.
 +
 For example, the following command prepares slot 4 on node1 for removal, and displays a message that it is safe to remove:
 +
-::> system controller slot module remove -node node1 -slot 4
-+
-Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node1 will be
+----
+node1::> system controller slot module remove -node node1 -slot 4
 
-          powered off for removal.
-+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node1 will be powered off for removal.
+
 Do you want to continue? {y|n}: y
-+
+
 The module has been successfully removed from service and powered off. It can now be safely removed.
+----
 
 . Display the slot status:
 +
@@ -81,15 +81,15 @@ The output should confirm the I/O module was successfully brought online (powere
 +
 For example, the following command prepares slot 4 on node1 for power-on, and displays a message that the process was successful:
 +
-::> system controller slot module insert -node _node1_ -slot _4_
-+
-Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node1 will be
+----
+node1::> system controller slot module insert -node _node1_ -slot _4_
 
-          powered on and initialized.
-+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node1 will be powered on and initialized.
+
 Do you want to continue? {y|n}: `y`
-+
+
 The module has been successfully powered on, initialized and placed into service.
+----
 
 . Verify that a hotplug.init.success EMS event is logged for each port reporting that initialization succeeded.
 +
