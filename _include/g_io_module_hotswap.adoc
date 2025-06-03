@@ -5,7 +5,9 @@
 ** Your storage system must be running ONTAP 9.17.1 or later.
 ** The I/O module that failed must be a cluster/HA module (in slot 4) and you must be replacing it with an equivalent module. You cannot change the module type.
 ** Your storage system configuration must have only one cluster/HA module (located in slot 4), not two cluster/HA modules.
-** Your storage system must be in a takeover state; the impaired node (node with the failed cluster/HA I/O module) must have taken over the partner node.
+** Your storage system must be in a takeover state; the impaired node (node with the failed cluster/HA I/O module) must have taken over the partner node. The take over should have occured automatically if the module is failed.
++
+You can verify the take over state...
 ** Your storage system must be a two-node configuration.
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
@@ -67,17 +69,23 @@ include::../_include/g_io_module_cluster_ha_slot4_hotswap.adoc[]
 
 Bring the replacement cluster/HA I/O module online and verify it is online and recognized.
 
-. Bring the replacement I/O module online by using the system controller slot module insert command:
+. Bring the replacement I/O module online:
 +
-The following command prepares slot 4 on node1 for power-on, and displays a message that it is powered on:
+`system controller slot module insert -node _node_name_ -slot _slot_name_`
 +
-::> system controller slot module insert -node node1 -slot 4
+Answer `y` when prompted.
++
+The output should confirm the I/O module was successfully brought online (powered on, initialized, and placed into service).
++
+For example, the following command prepares slot 4 on node1 for power-on, and displays a message that the process was successful:
++
+::> system controller slot module insert -node _node1_ -slot _4_
 +
 Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node1 will be
 
           powered on and initialized.
 +
-Do you want to continue? {y|n}: y
+Do you want to continue? {y|n}: `y`
 +
 The module has been successfully powered on, initialized and placed into service.
 
