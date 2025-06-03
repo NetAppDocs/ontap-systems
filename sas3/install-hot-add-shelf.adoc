@@ -11,10 +11,6 @@ summary: You can hot-add one or more disk shelves with IOM12/IOM12B/IOM12C modul
 [.lead]
 You can hot-add one or more disk shelves with IOM12/IOM12B/IOM12C modules to an existing stack of disk shelves with IOM12/IOM12B/IOM12C modules or hot-add a stack of one or more disk shelves with IOM12/IOM12B/IOM12C modules directly to a SAS HBA or an onboard SAS port on the controller.
 
-.About this task
-
-You cannot use this procedure to mix a stack. If you need to mix a stack, use link:iom12-hot-add-mix.html[Hot-add IOM12 shelves to a stack of IOM6 shelves].
-
 [[before_you_begin]]
 .Before you begin
 
@@ -50,7 +46,7 @@ After hot-adding the disk shelf, you must replace the SAS copper cables for the 
 **  If you are hot-adding a disk shelf with IOM12/IOM12B/IOM12C modules to an existing stack (of disk shelves with IOM12/IOM12B/IOM12C modules), you can hot-add the disk shelf to either end--the logical first or last disk shelf--of the stack.
 +
 For single-path HA and single-path configurations, as applicable to AFF A200, AFF A220, FAS2600 series, and FAS2700 systems, you hot-add disk shelves to the end of the stack that does not have controller connections.
-**  Disk shelves with IOM12/IOM12B/IOM12C modules must be in their own unique stack; they cannot be added to a stack that has shelves with IOM6 modules or IOM3 modules.
+**  Disk shelves with IOM12/IOM12B/IOM12C modules must be in their own unique stack.
 **  This procedure assumes your configuration is using in-band ACP.
 +
 For configurations that have in-band ACP enabled, in-band ACP is automatically enabled on hot-added disk shelves. For configurations in which in-band ACP is not enabled, hot-added disk shelves operate without any ACP functionality.
