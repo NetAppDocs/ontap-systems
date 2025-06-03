@@ -52,6 +52,7 @@ The DCM3 drive drawers are distinguished by a blue and gray stripe and "DCM3" la
 +
 image::../media/drw_dcm3_ieops-2176.svg[Front view of a DCM3 drive shelf, width=750px]
 
+[[prepare_to_replace_drive_drawer]]
 == Step 1: Prepare to replace a drive drawer
 
 Before you replace a drive drawer, you must make sure to update IOM FW and ONTAP if needed, and either halt the HA pair, which allows you to keep data aggregates on the shelf, or keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives. You must then offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair. Lastly, you must power off the shelf.
@@ -83,7 +84,7 @@ NOTE: Data aggregates can remain on the shelf when halting the HA pair.
 .. Halt both controllers in the HA pair.
 .. Verify that your HA pair halted by checking the storage system console.
 .. Power off the shelf.
-.. Go to the section, <<Remove the cable chains>>.
+.. Go to the section, <<remove_cable_chains,Remove the cable chains>>.
 . If you chose to keep the HA pair up and running, complete the following substeps:
 +
 NOTE: If you attempt to replace a drawer with aggregates on the disk shelf, you could cause a system disruption with a multidisk panic.
@@ -108,6 +109,7 @@ Disk drives that are spares show `spare` in the `Container Type` column.
 NOTE: If you have failed disk drives in the shelf, `broken` appears in the `Container Type` column.
 .. Power off the shelf.
 
+[[remove_cable_chains]]
 == Step 2: Remove the cable chains
 
 Left and right cable chains for each drive drawer in the DS460C drive shelf allow the drawers to slide in and out. Before you can remove a drive drawer, you must remove both cable chains.
@@ -121,7 +123,7 @@ Each drive drawer has left and right cable chains. The metal ends on the cable c
 
 .Before you begin
 
-* You have completed the <<Prepare to replace a drive drawer>> steps so that your HA pair is halted  or you have moved all of the data from the data aggregates residing on the disk drives, and offlined and deleted the data aggregates to allow the disk drives to become spares.
+* You have completed the <<prepare_to_replace_drive_drawer,Prepare to replace a drive drawer>> steps so that your HA pair is halted  or you have moved all of the data from the data aggregates residing on the disk drives, and offlined and deleted the data aggregates to allow the disk drives to become spares.
 * You have powered off the shelf.
 
 * You have obtained the following items:
