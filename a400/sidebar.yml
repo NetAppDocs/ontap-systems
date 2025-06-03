@@ -84,4 +84,6 @@ entries:
       pdf-filename: AFF A400 Real-Time Clock Battery
       url: /a400/rtc-battery-replace.html
     - title: Key specifications
-      url: /a400/overview.html
+      entries:
+        - title: AFF A400
+          url: /a400/overview.html
