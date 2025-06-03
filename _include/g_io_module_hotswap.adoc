@@ -33,9 +33,11 @@ Prepare the I/O module slot 4, by removing the cluster/HA I/O module from servic
 +
 Make sure to label the cables so that you know where they came from.
 
-. In admin privilege level, prepare the I/O module slot for removal, responding y when prompted whether to continue: 
+. In admin privilege level, prepare the I/O module slot for removal:
 +
 `system controller slot module remove -node _node_name_ -slot _slot_number_`
++
+NOTE: When you see _Do you want to continue?_, enter `y`. 
 +
 For example, the following command prepares slot 4 on node1 for removal, and displays a message that it is safe to remove:
 +
@@ -73,7 +75,7 @@ Bring the replacement cluster/HA I/O module online and verify it is online and r
 +
 `system controller slot module insert -node _node_name_ -slot _slot_name_`
 +
-Answer `y` when prompted.
+NOTE: When you see _Do you want to continue?_, enter `y`. 
 +
 The output should confirm the I/O module was successfully brought online (powered on, initialized, and placed into service).
 +
