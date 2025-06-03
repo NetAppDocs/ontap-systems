@@ -14,7 +14,7 @@ You can verify the take over state...
 
 .About this task
 
-If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 
 A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 
@@ -33,7 +33,7 @@ Prepare the I/O module slot 4, by removing the cluster/HA I/O module from servic
 +
 Make sure to label the cables so that you know where they came from.
 
-. In admin privilege level, prepare the I/O module slot for removal:
+. Prepare the I/O module slot 4 on the impaired controller for removal:
 +
 `system controller slot module remove -node _node_name_ -slot _slot_number_`
 +
@@ -51,11 +51,11 @@ Do you want to continue? {y|n}: y
 The module has been successfully removed from service and powered off. It can now be safely removed.
 ----
 
-. Display the slot status:
+. Verify I/O module slot 4 on the impaired controller is powered off:
 +
 `system controller slot module show`
 +
-Verify the I/O module slot status displays powered-off in the screen output for the I/O module that needs replacing.
+The screen output should show `powered-off`for the slot 4 status on the impaired controller.
 +
 See the Command man pages for your version of ONTAP for more details.
 
