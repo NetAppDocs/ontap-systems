@@ -96,4 +96,8 @@ entries:
    - title: Real-time clock battery
      url: /c30-60/rtc-battery-replace.html
  - title: Key specifications
-   url: /c30-60/overview.html
+   subitems:
+    - title: AFF C30
+      url: c30-key-specifications.html
+    - title: AFF C60
+      url: c60-key-specifications.html

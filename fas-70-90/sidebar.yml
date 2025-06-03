@@ -86,4 +86,8 @@ entries:
    - title: System Management module
      url: /fas-70-90/system-management-replace.html
  - title: Key specifications
-   url: /fas-70-90/overview.html
+   subitems:
+     - title: FAS70
+       url: fas70-key-specifications.html
+     - title: FAS90
+       url: fas90-key-specifications.html

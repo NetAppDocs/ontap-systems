@@ -102,4 +102,8 @@ entries:
    - title: System Management module 
      url: /a70-90/system-management-replace.html
  - title: Key specifications
-   url: /a70-90/overview.html
+   subitems:
+     - title: AFF A70
+       url: a70-key-specifications.html
+     - title: AFF A90
+       url: a90-key-specifications.html

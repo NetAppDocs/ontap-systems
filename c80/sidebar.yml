@@ -100,4 +100,6 @@ entries:
    - title: System Management module 
      url: /c80/system-management-replace.html
  - title: Key specifications
-   url: /c80/overview.html
+   subitems:
+     - title: AFF C80
+       url: c80-key-specifications.html
