@@ -2,14 +2,14 @@
 permalink: fas50/bootmedia-encryption-restore.html
 sidebar: sidebar
 keywords: fas50, post boot media replacement steps for okm, nse, and nve
-summary: Restore encryption on the replacement boot media in your FAS50 system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data.
+summary: Restore encryption on the replacement boot media in your FAS50 storage system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data.
 ---
-= Restore encryption - FAS50
+= Restore encryption keys after manual boot recovery - FAS50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media in your FAS50 system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data.
+Restore encryption on the replacement boot media in your FAS50 storage system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data.
 
 include::../_include/encryption_restore_bootmedia.adoc[]
 

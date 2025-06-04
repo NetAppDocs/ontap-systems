@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: a1k, shut down the controller
 summary: Shut down the impaired controller in your AFF A1K storage system to prevent data loss and ensure system stability when replacing the boot media.
 ---
-= Shut down the controller for automatic boot media recovery - AFF A1K
+= Shut down the controller for automated boot media recovery - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the impaired controller in your AFF A1K storage system to prevent data loss and maintain system stability during the automatic boot media recovery process.
+Shut down the impaired controller in your AFF A1K storage system to prevent data loss and maintain system stability during the automated boot media recovery process.
 
-The automatic boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 include::../_include/shutdown_most_frus.adoc[]
 

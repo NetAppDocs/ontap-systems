@@ -2,7 +2,7 @@
 permalink: a1k/bootmedia-replace-workflow.html
 sidebar: sidebar
 keywords: aff a1k, replace the boot media
-summary: Get started with manually replacing the boot media in your AFF A1K storage system by reviewing the recovery requirements, shutting down the controller, replacing the boot media, using the USB drive to restore the image, and reapplying encryption settings if necessary..
+summary: The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF A1K system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
 ---
 = Boot media manual recovery workflow - AFF A1K
 :icons: font
@@ -38,7 +38,7 @@ Boot the ONTAP image from the USB drive, restore the file system, and verify the
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:bootmedia-encryption-restore.html[Restore encryption]
 [role="quick-margin-para"]
-Restore the onboard key manager configuration or the external key manager from the ONATP boot menu.
+Restore the onboard key manager configuration or the external key manager from the ONTAP boot menu.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:bootmedia-complete-rma.html[Return the failed part to NetApp]
 [role="quick-margin-para"]
