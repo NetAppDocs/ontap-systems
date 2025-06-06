@@ -11,10 +11,9 @@ summary: 'You must locate the boot media in the controller and follow the direct
 To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
 
 == Step 1: Remove the controller module
-:icons: font
-:imagesdir: ../media/
 
-[.lead]
+.Steps
+
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
 . If you are not already grounded, properly ground yourself.
@@ -26,6 +25,7 @@ image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
 
 . Turn the controller module over and place it on a flat, stable surface.
 . Open the cover by pressing the blue buttons on the sides of the controller module to release the cover, and then rotate the cover up and off of the controller module.
+
 +
 image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Open the controller]
 
@@ -41,12 +41,9 @@ Controller module cover release button
 |===
 
 == Step 2: Replace the boot media
-:icons: font
-:imagesdir: ../media/
 
 Locate the boot media in the controller module, located under the mezzanine card and follow the directions to replace it.
 
-video::10a29a01-a86e-451c-b05a-af4701726f57[panopto, title="Animation - Replace the boot media"]
 
 image:../media/drw_2850_replace_boot_media_IEOPS-696.svg[Replace the boot media]
 
@@ -106,14 +103,7 @@ See https://kb.netapp.com/onprem/ontap/os/Which_ONTAP_image_should_I_download%3F
 +
 NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
 +
-There are two folders in the unzipped service image file:
-
-  *** `boot`
-  *** `efi`
-
- .. Copy the `efi` folder to the top directory on the USB flash drive.
-+
-The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
+The USB flash drive should have the same Service Image (BIOS) version of what the impaired controller is running.
 
  .. Remove the USB flash drive from your laptop.
 . Install the controller module:
