@@ -22,8 +22,8 @@ To install your AFX storage system, ensure that the site and the cabinet or rack
 +
 
 ** 4U in an HA configuration
-** 2U for each NX224 storage shelf
-** 1U for most switches
+** 2U for each AFX node
+** 1U for each Cisco 9332 switch
 
 
 == Step 2: Unpack the boxes
@@ -49,12 +49,12 @@ The following items are some of the contents you might see in the boxes.
 |*Cables* |
 a|* Bezel
 * Storage system
-* Rail kits with instructions (optional)
+* Rail kits with instructions 
 * Storage shelf (if you ordered additional storage)
 a|* Management Ethernet cables (RJ-45 cables)
 * Network cables
 * Power cords
-* Storage cables (if you ordered additional storage) 
+* Storage cables 
 * USB-C serial port cable |
 |===
 

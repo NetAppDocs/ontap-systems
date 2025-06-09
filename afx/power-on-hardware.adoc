@@ -2,22 +2,20 @@
 sidebar: sidebar
 permalink: afx/power-on-hardware.html
 keywords: afx, afx 1k, power on
-summary: Power on each shelf to assign a unique shelf ID, power on the AFX controllers, and secure the power cables. 
+summary: Power on each shelf to assign a unique shelf ID, power on the AFX nodes, and secure the power cables. 
 ---
 = Power on your AFX storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you install the rack hardware for your AFX storage system and install the cables for the controllers and storage shelves, you should power on your storage shelves and controllers.
+After you install the rack hardware for your AFX storage system and install the cables for the nodes and storage shelves, you should power on your storage shelves and nodes.
 
 == Step 1: Power on the shelf and assign shelf ID
 Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup.
 
 .About this task
 * A valid shelf ID is 01 through 99. 
-+
-If you have internal shelves (storage), which are integrated within the controllers, they are assigned a fixed shelf ID of 00.
 
 * You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
 
@@ -96,8 +94,8 @@ A power supply is powered on as soon as the power cord is plugged in. Its bicolo
 . Replace the left end cap.
 
 
-== Step 2: Power on the controllers
-After you've turned on your storage shelves and assigned them unique IDs, turn on the power to the storage controllers.
+== Step 2: Power on the nodes
+After you've turned on your storage shelves and assigned them unique IDs, turn on the power to the storage nodes.
 
 .Steps
 

@@ -27,11 +27,12 @@ As you insert the connector, you should feel it click into place; if you do not 
 +
 image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direction]
 
-* If cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
+* When cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
 
-* The following cabling requirements apply to AFX 1k storage system configurations: 
-** Cisco 9336 switch configurations require 100GbE cable connections. 
-** Cisco 9332 switch configurations require 200GbE cable connections. 
+* The AFX 1K storage system utilizes 400GbEx100GbE breakout cables. The 400GBE connections are made to the switch ports, and the 100GbE connections are made to the controller and drive shelf ports.
+
+* The following cabling requirements apply to AFX 1k storage system configurations:  
+** Cisco 9332 switch configurations require 400GbEx100GbE cable connections. 
 
 == Step 1: Connect the controllers to the management network
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
@@ -62,7 +63,7 @@ This procedure differs depending on your storage system model and I/O module con
 ** e8a
 ** e9a 
 +
-*200 GbE cable*
+*100GbE cable*
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable]
 +
@@ -80,14 +81,14 @@ image::../media/drw_afx_network_cabling_a_ieops.png[Cable to 200Gb Ethernet netw
 ** e8b
 ** e9b 
 +
-*200 GbE cable*
+*100GbE cable*
 +
 image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable]
 +
 image::../media/drw_afx_network_cabling_b_ieops.png[Cable to 10/25Gb Ethernet network]
 
 == Step 3: Cable the cluster/HA connections
-Use the Cluster/HA interconnect cable to connect ports e1a and e7a to the switch A and switch B.
+Use the Cluster/HA interconnect cable to connect ports e1a and e7a to switch A and e1b and e1b to switch B. The e1a/e1b ports are used for the HA connections, and the e7a/e7b ports are used for the cluster connections.
 
 .Steps
 
@@ -99,7 +100,7 @@ Use the Cluster/HA interconnect cable to connect ports e1a and e7a to the switch
 ** e1a
 ** e7a 
 +
-*Cluster/HA interconnect cables*
+*100GbE Cluster/HA interconnect cables*
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
@@ -113,7 +114,7 @@ image::../media/drw_afx_switched_cluster_cabling_a_ieops.png[Cable cluster conne
 ** e1b
 ** e7b 
 +
-*Cluster/HA interconnect cables*
+*100GbE Cluster/HA interconnect cables*
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
@@ -130,7 +131,7 @@ Connect the controller storage ports to the switches.
 ** e10a
 ** e11a 
 
-*200 GbE cable*
+*100GbE cable*
 
 image::../media/oie_cable100_gbe_qsfp28.png[200 Gb cable]
 
@@ -143,8 +144,8 @@ image::../media/drw_afx_controller_storage_cable_a_ieops.png[Cable controller st
 * Controller B
 ** e10b
 ** e11b 
-+
-*200 GbE cable*
+
+*100GbE cable*
 
 image::../media/oie_cable100_gbe_qsfp28.png[200 Gb cable]
 
@@ -157,7 +158,7 @@ For the maximum number of shelves supported for your storage system and for all 
 
 . Connect port e0a on the shelf to the switch A.
 +
-*200 GbE QSFP28 copper cables*
+*100 GbE QSFP28 copper cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[200 GbE QSFP28 copper cable]
 +
@@ -165,7 +166,7 @@ image::../media/drw_afx_shelf_cabling_a_ieops.png[Cable shelf to switch A]
 
 . Connect port e0b on the shelf to the switch B.
 + 
-*200 GbE QSFP28 copper cables*
+*100 GbE QSFP28 copper cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[200 GbE QSFP28 copper cable]
 +
@@ -173,4 +174,4 @@ image::../media/drw_afx_shelf_cabling_b_ieops.png[Cable shelf to switch B]
 
 .What's next?
 
-After you’ve cabled the hardware for your AFF AFK A1K system, you link:/power-on-hardware.html[power on the AFX A1K storage system].
+After you’ve cabled the hardware for your AFF AFK 1K system, you link:/power-on-hardware.html[power on the AFX 1K storage system].

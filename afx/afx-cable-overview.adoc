@@ -2,16 +2,16 @@
 permalink: afx/afx-cable-overview.html
 sidebar: sidebar
 keywords: afx, afx 1k, cable, overview
-summary: Learn how to cable your controllers to the network, switches, and drive shelves. 
+summary: Learn how to cable your nodes to the network, switches, and drive shelves. 
 ---
 = Overview of cabling for AFX storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn how to cable your controllers to the network, switches, and drive shelves. 
+Learn how to cable your nodes to the network, switches, and drive shelves. 
 
-The initial configuration of the AFX 1k storage system supports four nodes connected through dual switches to the drive shelves. Additional nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1k configurations follow the same switch-based cabling methodology as the four node schema depicted below. 
+The initial configuration of the AFX 1k storage system supports a minimum four nodes connected through dual switches to the drive shelves. Additional nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1k configurations follow the same switch-based cabling methodology as the four node schema depicted below. 
 
 image:../media/afx_cable_overview_half_node.png[AFK 1K four node cabling]
 
@@ -25,10 +25,9 @@ AFX 1k
 a|
 NX224
 a|
-Cisco 9332 (200GbE), Cisco 9336 (100GbE)
+Cisco 9332 (400GbE)
 a|
-* 100GbE-based QSFP cables (Cisco 9336)
-* 200GbE-based QSFP cables (Cisco 9332)
+* 400GbEx100GbE QSFP breakout cable cables (Cisco 9332)
 
 NOTE: Breakout cables are used for connections between the switches, controller, and drive shelf. 
 
