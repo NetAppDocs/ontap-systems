@@ -99,13 +99,7 @@ Install the system image on the replacement boot media using a USB flash drive w
 ** If NVE is supported on the cluster, download the image with NetApp Volume Encryption.
 ** If NVE is not supported on the cluster, download the image without NetApp Volume Encryption.
 See https://kb.netapp.com/onprem/ontap/os/Which_ONTAP_image_should_I_download%3F_With_or_without_Volume_Encryption%3F[Which ONTAP image should I download? With or without Volume Encryption?^] for more details.
-. Unzip the downloaded image.
-+
-NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
-+
-The USB flash drive should have the same Service Image (BIOS) version of what the impaired controller is running.
-
- .. Remove the USB flash drive from your laptop.
+. Remove the USB flash drive from your laptop.
 . Install the controller module:
 .. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 .. Recable the controller module.
