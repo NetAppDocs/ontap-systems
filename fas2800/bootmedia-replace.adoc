@@ -113,13 +113,7 @@ Make sure that you install the USB flash drive in the slot labeled for USB devic
 
 . Push the controller module all the way into the system, making sure that the cam handle clears the USB flash drive, firmly push the cam handle to finish seating the controller module, push the cam handle to the closed position, and then tighten the thumbscrew.
 +
-The controller begins to boot as soon as it is completely installed into the chassis.
+The controller begins to boot as soon as it is completely installed into the chassis and stops at the LOADER prompt. 
 
-. Interrupt the boot process to stop at the LOADER prompt by pressing Ctrl-C when you see Starting AUTOBOOT press Ctrl-C to abort....
-+
-If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
-
-. For systems with one controller in the chassis, reconnect the power and turn on the power supplies.
-+
-The system begins to boot and stops at the LOADER prompt.
-
+.What's next?
+After replacing the boot media, you need to link:bootmedia-recovery-image-boot.html[boot the recovery image].
