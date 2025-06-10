@@ -8,7 +8,8 @@ summary: 'You must locate the boot media in the controller and follow the direct
 :icons: font
 :imagesdir: ../media/
 
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+[.lead]
+You must remove and open the impaired controller module, locate and replace the boot media in the controller, transfer the boot image to a USB drive, insert the USB drive in the controller, and then boot the controller.
 
 == Step 1: Remove the controller module
 
