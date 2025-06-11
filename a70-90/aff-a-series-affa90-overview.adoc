@@ -1,38 +1,38 @@
 ---
-permalink: a20-30-50/overview.html
+permalink: a90-key-specifications.html
 sidebar: sidebar
-keywords: AFF A30 specifications, AFF A30 specs, NetApp AFF A30, AFF A30 hardware
-summary: Key specifications for the AFF A30 storage system
+keywords: AFF A90 specifications, AFF A90 specs, NetApp AFF A90, AFF A90 hardware
+summary: Key specifications for the AFF A90 storage system
 ---
-= Key specifications for AFF A30
+= Key specifications for AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the AFF A30. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A30 specifications. This page is reflective of a single high availability pair. 
+The following are select specifications for the AFF A90. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A90 specifications. This page is reflective of a single high availability pair. 
 
-=== Key specifications for AFF A30
+=== Key specifications for AFF A90
 
-Platform Configuration: AFF A30 Single Chassis HA Pair
+Platform Configuration: AFF A90 Single Chassis HA Pair
 
-Max Raw Capacity: 4.0392 PB
+Max Raw Capacity: 6.6096 PB
 
-Memory: 128.0000 GB
+Memory: 2048.0000 GB
 
-Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
+Form Factor: 4U chassis with 2 HA controllers and 48 drive slots
 
 ONTAP Version: b_startONTAP: 9.16.1P2b_end
 
-PCIe Expansion Slots: 8
+PCIe Expansion Slots: 18
 
-Minimum ONTAP Version: ONTAP 9.16.1RC1
+Minimum ONTAP Version: ONTAP 9.15.1RC2
 
 === Scaleout Maximums
 |===
 | Type | HA Pairs | Raw Capacity | Max Memory
-| NAS | 4 | 16.2 PB / 14.3 PiB | 512 GB
-| SAN | 4 | 16.2 PB / 14.3 PiB | 512 GB
-| HA Pair |  | 4.0 PB / 3.6 PiB | 128.0000
+| NAS | 12 | 79.3 PB / 70.4 PiB | 24576 GB
+| SAN | 6 | 39.7 PB / 35.2 PiB | 12288 GB
+| HA Pair |  | 6.6 PB / 5.9 PiB | 2048.0000
 |===
 
 === IO
@@ -43,13 +43,14 @@ No onboard IO data.
 ==== Total IO
 |===
 | Protocol | Ports
-| Ethernet 100 Gbps | 16
-| Ethernet 25 Gbps | 24
-| Ethernet 10 Gbps | 24
-| FC 64 Gbps | 24
-| NVMe/FC  64 Gbps | 24
+| Ethernet 200 Gbps | 24
+| Ethernet 100 Gbps | 36
+| Ethernet 25 Gbps | 56
+| Ethernet 10 Gbps | 56
+| FC 64 Gbps | 56
+| NVMe/FC  64 Gbps | 56
 |  | 0
-| SAS 12 Gbps | 16
+| SAS 12 Gbps | 56
 |===
 
 ==== Management Ports
@@ -68,6 +69,8 @@ NFS v3;
 NFS v4.0;
 NFS v4.1;
 NFS v4.2;
+NFSv3/RDMA;
+NFSv4/RDMA;
 NVMe/FC ;
 NVMe/TCP;
 S3;
@@ -80,15 +83,15 @@ SMB 3.1;
 SMB 3.1.1;
 
 === System Environment Specifications
-* Typical Power: 2892 BTU/hr
-* Worst-case Power: 4445 BTU/hr
-* Weight: 60.7 lb<br/>27.5 kg
-* Height: 2U
+* Typical Power: 8304 BTU/hr
+* Worst-case Power: 10948 BTU/hr
+* Weight: 118.0 lb<br/>53.5 kg
+* Height: 4U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
-* Depth: 
+* Depth: 34.5”<br/>(36.6” with cable management bracket)
 * Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
 * Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
-* Acoustic Noise: Declared sound power (LwAd): 8.0;<br/>Sound pressure (LpAm) (bystander positions): 70.5 dB
+* Acoustic Noise: Declared sound power (LwAd): 8.6;<br/>Sound pressure (LpAm) (bystander positions): 71.6 dB
 
 === Compliance
 * Certifications EMC/EMI: AMCA,

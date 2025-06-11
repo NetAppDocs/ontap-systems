@@ -1,19 +1,18 @@
 ---
-permalink: a20-30-50/overview.html
+permalink: a30-key-specifications.html
 sidebar: sidebar
-keywords: AFF A20 specifications, AFF A20 specs, NetApp AFF A20, AFF A20 hardware
-summary: Key specifications for the AFF A20 storage system
+summary: Key specifications for AFF A30
 ---
-= Key specifications for AFF A20
+= Key specifications for AFF A30
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the AFF A20. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A20 specifications. This page is reflective of a single high availability pair. 
+The following are select specifications for AFF A30. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.
 
-=== Key specifications for AFF A20
+=== Key specifications for AFF A30
 
-Platform Configuration: AFF A20 Single Chassis HA Pair
+Platform Configuration: AFF A30 Single Chassis HA Pair
 
 Max Raw Capacity: 4.0392 PB
 
@@ -30,8 +29,8 @@ Minimum ONTAP Version: ONTAP 9.16.1RC1
 === Scaleout Maximums
 |===
 | Type | HA Pairs | Raw Capacity | Max Memory
-| NAS | 3 | 12.1 PB / 10.8 PiB | 384 GB
-| SAN | 3 | 12.1 PB / 10.8 PiB | 384 GB
+| NAS | 4 | 16.2 PB / 14.3 PiB | 512 GB
+| SAN | 4 | 16.2 PB / 14.3 PiB | 512 GB
 | HA Pair |  | 4.0 PB / 3.6 PiB | 128.0000
 |===
 
@@ -43,8 +42,8 @@ No onboard IO data.
 ==== Total IO
 |===
 | Protocol | Ports
-| Ethernet 100 Gbps | 12
-| Ethernet 25 Gbps | 32
+| Ethernet 100 Gbps | 16
+| Ethernet 25 Gbps | 24
 | Ethernet 10 Gbps | 24
 | FC 64 Gbps | 24
 | NVMe/FC  64 Gbps | 24
@@ -80,8 +79,8 @@ SMB 3.1;
 SMB 3.1.1;
 
 === System Environment Specifications
-* Typical Power: 2489 BTU/hr
-* Worst-case Power: 3890 BTU/hr
+* Typical Power: 2892 BTU/hr
+* Worst-case Power: 4445 BTU/hr
 * Weight: 60.7 lb<br/>27.5 kg
 * Height: 2U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
@@ -111,7 +110,7 @@ UKRSEPRO
 * Certifications Safety/EMC/EMI/RoHS: BSMI,
 CE DoC,
 UKCA DoC
-* Standards EMC/EMI: BS-EN-55024,
+* Standards EMC/EMI: BS-EN-55032,
 BS-EN55035,
 CISPR 32,
 EN55022,
@@ -141,3 +140,4 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 SAS in-band management over SAS connections for external shelves;
+

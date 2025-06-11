@@ -370,6 +370,187 @@ for folder, configs in folder_to_platformconfigs.items():
             print(f"Created {adoc_path}")
         continue  # Skip normal group output for this folder
 
+    # Special handling for a20-30-50: generate separate files for A20, A30, and A50
+    if folder == 'a20-30-50':
+        for pc, all_onboard, all_totalio, all_mgmt, all_env, all_compliance in configs:
+            model = get_text(pc, 'PlatformModel')
+            model_key = model.lower().replace(' ', '').replace('-', '').replace('_', '')
+            if model_key == 'affa20':
+                adoc_path = os.path.join(folder, 'a20-key-specifications.adoc')
+                permalink = 'a20-key-specifications.html'
+            elif model_key == 'affa30':
+                adoc_path = os.path.join(folder, 'a30-key-specifications.adoc')
+                permalink = 'a30-key-specifications.html'
+            elif model_key == 'affa50':
+                adoc_path = os.path.join(folder, 'a50-key-specifications.adoc')
+                permalink = 'a50-key-specifications.html'
+            else:
+                continue
+            content = ''
+            content += f"---\npermalink: {permalink}\nsidebar: sidebar\nsummary: Key specifications for {model}\n---\n"
+            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are select specifications for {model}. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.\n\n"
+            config = get_text(pc, 'PlatformConfig', '')
+            max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
+            memory = get_text(pc, 'PlatformMemory_GB', '')
+            form_factor = get_text(pc, 'ControllerChassisFormFactor', '')
+            os_version = get_text(pc, 'OSVersion', '')
+            pci_slots = get_text(pc, 'PCIExpansionSlots', '')
+            min_os = get_text(pc, 'MinOSVersion', '')
+            ha = clean_br(get_text(pc, 'HighAvailability', ''))
+            storage_networking = clean_br(get_text(pc, 'StorageNetworkingSupported', ''))
+            scaleout = {
+                'NAS HAPairs': get_text(pc, 'NASScaleOut_HAPairs', ''),
+                'NAS RawCapacity': get_text(pc, 'NASScaleOut_RawCapacity', ''),
+                'NAS MaxMemory': get_text(pc, 'NASScaleOut_MaxMemory', ''),
+                'SAN HAPairs': get_text(pc, 'SANScaleOut_HAPAirs', ''),
+                'SAN RawCapacity': get_text(pc, 'SANScaleOut_RawCapacity', ''),
+                'SAN MaxMemory': get_text(pc, 'SANScaleOut_MaxMemory', ''),
+                'HA Pair RawCapacity': get_text(pc, 'HAPair_RawCapacity', ''),
+                'HA Pair MaxMemory': memory,
+            }
+            pcid = get_text(pc, 'PlatformConfigId', '')
+            onboard = [(get_text(e, 'ProtocolStack', ''), get_text(e, 'PortsCount', '')) for e in all_onboard if get_text(e, 'PlatformConfigId', '') == pcid]
+            totalio = [(get_text(e, 'ProtocolStack', ''), get_text(e, 'PortsCount', '')) for e in all_totalio if get_text(e, 'PlatformConfigId', '') == pcid]
+            mgmt = [(get_text(e, 'ProtocolStack', ''), get_text(e, 'PortsCount', '')) for e in all_mgmt if get_text(e, 'PlatformConfigId', '') == pcid]
+            envs = [e for e in all_env if get_text(e, 'PlatformConfigId', '') == pcid]
+            env = envs[0] if envs else None
+            pmid = get_text(pc, 'PlatformModelId', '')
+            compliance = [e for e in all_compliance if get_text(e, 'PlatformModelId', '') == pmid]
+            content += f"=== Key specifications for {model}\n\n"
+            content += f"Platform Configuration: {config}\n\n"
+            content += f"Max Raw Capacity: {max_capacity} PB\n\n"
+            content += f"Memory: {memory} GB\n\n"
+            content += f"Form Factor: {form_factor}\n\n"
+            content += f"ONTAP Version: {os_version}\n\n"
+            content += f"PCIe Expansion Slots: {pci_slots}\n\n"
+            content += f"Minimum ONTAP Version: {min_os}\n\n"
+            content += f"=== Scaleout Maximums\n" + adoc_table([
+                'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
+                ['NAS', scaleout['NAS HAPairs'], scaleout['NAS RawCapacity'], scaleout['NAS MaxMemory']],
+                ['SAN', scaleout['SAN HAPairs'], scaleout['SAN RawCapacity'], scaleout['SAN MaxMemory']],
+                ['HA Pair', '', scaleout['HA Pair RawCapacity'], scaleout['HA Pair MaxMemory']],
+            ]) + '\n'
+            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_table(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
+            content += f"\n==== Total IO\n" + (adoc_table(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
+            content += f"\n==== Management Ports\n" + (adoc_table(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
+            content += f"\n=== Storage Networking Supported\n{storage_networking}\n\n"
+            content += f"=== System Environment Specifications\n"
+            if env:
+                content += f"* Typical Power: {get_text(env, 'BtusPerHourTypical', '')}\n"
+                content += f"* Worst-case Power: {get_text(env, 'BtusPerHourWorst', '')}\n"
+                content += f"* Weight: {get_text(env, 'Weight', '')}\n"
+                content += f"* Height: {get_text(env, 'Height', '')}\n"
+                content += f"* Width: {get_text(env, 'Width', '')}\n"
+                content += f"* Depth: {get_text(env, 'Depth', '')}\n"
+                content += f"* Operating Temp/Altitude/Humidity: {get_text(env, 'Operating_Temp_Alt_Rel_Humidity', '')}\n"
+                content += f"* Non-operating Temp/Humidity: {get_text(env, 'Nonoperating_Temp_Rel_Humidity', '')}\n"
+                content += f"* Acoustic Noise: {get_text(env, 'Operating_Acoustic_Noise', '')}\n"
+            else:
+                content += "No environment data available.\n"
+            content += f"\n=== Compliance\n"
+            if compliance:
+                for c in compliance:
+                    std = get_text(c, 'StandardType', '')
+                    val = clean_br(get_text(c, 'storageNetworkingSupported', ''))
+                    content += f"* {std}: {val}\n"
+            else:
+                content += "No compliance data available.\n"
+            content += f"\n=== High Availability\n{ha}\n\n"
+            os.makedirs(os.path.dirname(adoc_path), exist_ok=True)
+            with open(adoc_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+            print(f"Created {adoc_path}")
+        continue  # Skip normal group output for this folder
+
+    # Special handling for c30-60: generate separate files for C30 and C60
+    if folder == 'c30-60':
+        for pc, all_onboard, all_totalio, all_mgmt, all_env, all_compliance in configs:
+            model = get_text(pc, 'PlatformModel')
+            model_key = model.lower().replace(' ', '').replace('-', '').replace('_', '')
+            if model_key == 'affc30':
+                adoc_path = os.path.join(folder, 'c30-key-specifications.adoc')
+                permalink = 'c30-key-specifications.html'
+            elif model_key == 'affc60':
+                adoc_path = os.path.join(folder, 'c60-key-specifications.adoc')
+                permalink = 'c60-key-specifications.html'
+            else:
+                continue
+            content = ''
+            content += f"---\npermalink: {permalink}\nsidebar: sidebar\nsummary: Key specifications for {model}\n---\n"
+            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are select specifications for {model}. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.\n\n"
+            config = get_text(pc, 'PlatformConfig', '')
+            max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
+            memory = get_text(pc, 'PlatformMemory_GB', '')
+            form_factor = get_text(pc, 'ControllerChassisFormFactor', '')
+            os_version = get_text(pc, 'OSVersion', '')
+            pci_slots = get_text(pc, 'PCIExpansionSlots', '')
+            min_os = get_text(pc, 'MinOSVersion', '')
+            ha = clean_br(get_text(pc, 'HighAvailability', ''))
+            storage_networking = clean_br(get_text(pc, 'StorageNetworkingSupported', ''))
+            scaleout = {
+                'NAS HAPairs': get_text(pc, 'NASScaleOut_HAPairs', ''),
+                'NAS RawCapacity': get_text(pc, 'NASScaleOut_RawCapacity', ''),
+                'NAS MaxMemory': get_text(pc, 'NASScaleOut_MaxMemory', ''),
+                'SAN HAPairs': get_text(pc, 'SANScaleOut_HAPAirs', ''),
+                'SAN RawCapacity': get_text(pc, 'SANScaleOut_RawCapacity', ''),
+                'SAN MaxMemory': get_text(pc, 'SANScaleOut_MaxMemory', ''),
+                'HA Pair RawCapacity': get_text(pc, 'HAPair_RawCapacity', ''),
+                'HA Pair MaxMemory': memory,
+            }
+            pcid = get_text(pc, 'PlatformConfigId', '')
+            onboard = [(get_text(e, 'ProtocolStack', ''), get_text(e, 'PortsCount', '')) for e in all_onboard if get_text(e, 'PlatformConfigId', '') == pcid]
+            totalio = [(get_text(e, 'ProtocolStack', ''), get_text(e, 'PortsCount', '')) for e in all_totalio if get_text(e, 'PlatformConfigId', '') == pcid]
+            mgmt = [(get_text(e, 'ProtocolStack', ''), get_text(e, 'PortsCount', '')) for e in all_mgmt if get_text(e, 'PlatformConfigId', '') == pcid]
+            envs = [e for e in all_env if get_text(e, 'PlatformConfigId', '') == pcid]
+            env = envs[0] if envs else None
+            pmid = get_text(pc, 'PlatformModelId', '')
+            compliance = [e for e in all_compliance if get_text(e, 'PlatformModelId', '') == pmid]
+            content += f"=== Key specifications for {model}\n\n"
+            content += f"Platform Configuration: {config}\n\n"
+            content += f"Max Raw Capacity: {max_capacity} PB\n\n"
+            content += f"Memory: {memory} GB\n\n"
+            content += f"Form Factor: {form_factor}\n\n"
+            content += f"ONTAP Version: {os_version}\n\n"
+            content += f"PCIe Expansion Slots: {pci_slots}\n\n"
+            content += f"Minimum ONTAP Version: {min_os}\n\n"
+            content += f"=== Scaleout Maximums\n" + adoc_table([
+                'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
+                ['NAS', scaleout['NAS HAPairs'], scaleout['NAS RawCapacity'], scaleout['NAS MaxMemory']],
+                ['SAN', scaleout['SAN HAPairs'], scaleout['SAN RawCapacity'], scaleout['SAN MaxMemory']],
+                ['HA Pair', '', scaleout['HA Pair RawCapacity'], scaleout['HA Pair MaxMemory']],
+            ]) + '\n'
+            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_table(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
+            content += f"\n==== Total IO\n" + (adoc_table(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
+            content += f"\n==== Management Ports\n" + (adoc_table(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
+            content += f"\n=== Storage Networking Supported\n{storage_networking}\n\n"
+            content += f"=== System Environment Specifications\n"
+            if env:
+                content += f"* Typical Power: {get_text(env, 'BtusPerHourTypical', '')}\n"
+                content += f"* Worst-case Power: {get_text(env, 'BtusPerHourWorst', '')}\n"
+                content += f"* Weight: {get_text(env, 'Weight', '')}\n"
+                content += f"* Height: {get_text(env, 'Height', '')}\n"
+                content += f"* Width: {get_text(env, 'Width', '')}\n"
+                content += f"* Depth: {get_text(env, 'Depth', '')}\n"
+                content += f"* Operating Temp/Altitude/Humidity: {get_text(env, 'Operating_Temp_Alt_Rel_Humidity', '')}\n"
+                content += f"* Non-operating Temp/Humidity: {get_text(env, 'Nonoperating_Temp_Rel_Humidity', '')}\n"
+                content += f"* Acoustic Noise: {get_text(env, 'Operating_Acoustic_Noise', '')}\n"
+            else:
+                content += "No environment data available.\n"
+            content += f"\n=== Compliance\n"
+            if compliance:
+                for c in compliance:
+                    std = get_text(c, 'StandardType', '')
+                    val = clean_br(get_text(c, 'storageNetworkingSupported', ''))
+                    content += f"* {std}: {val}\n"
+            else:
+                content += "No compliance data available.\n"
+            content += f"\n=== High Availability\n{ha}\n\n"
+            os.makedirs(os.path.dirname(adoc_path), exist_ok=True)
+            with open(adoc_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+            print(f"Created {adoc_path}")
+        continue  # Skip normal group output for this folder
+
     # Default: group output for all other folders
     adoc_path = os.path.join(folder, 'overview.adoc')
     content = ''

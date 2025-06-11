@@ -1,23 +1,22 @@
 ---
-permalink: a20-30-50/overview.html
+permalink: c60-key-specifications.html
 sidebar: sidebar
-keywords: AFF A50 specifications, AFF A50 specs, NetApp AFF A50, AFF A50 hardware
-summary: Key specifications for the AFF A50 storage system
+summary: Key specifications for AFF C60
 ---
-= Key specifications for AFF A50
+= Key specifications for AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the AFF A50. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A50 specifications. This page is reflective of a single high availability pair. 
+The following are select specifications for AFF C60. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.
 
-=== Key specifications for AFF A50
+=== Key specifications for AFF C60
 
-Platform Configuration: AFF A50 Single Chassis HA Pair
+Platform Configuration: AFF C60 Single Chassis HA Pair
 
-Max Raw Capacity: 4.0392 PB
+Max Raw Capacity: 7.3680 PB
 
-Memory: 256.0000 GB
+Memory: 128.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
 
@@ -30,9 +29,9 @@ Minimum ONTAP Version: ONTAP 9.16.1RC1
 === Scaleout Maximums
 |===
 | Type | HA Pairs | Raw Capacity | Max Memory
-| NAS | 12 | 48.5 PB / 43.0 PiB | 3072 GB
-| SAN | 6 | 24.2 PB / 21.5 PiB | 1536 GB
-| HA Pair |  | 4.0 PB / 3.6 PiB | 256.0000
+| NAS | 4 | 29.5 PB / 26.2 PiB | 512 GB
+| SAN | 4 | 29.5 PB / 26.2 PiB | 512 GB
+| HA Pair |  | 7.4 PB / 6.5 PiB | 128.0000
 |===
 
 === IO
@@ -49,7 +48,6 @@ No onboard IO data.
 | FC 64 Gbps | 24
 | NVMe/FC  64 Gbps | 24
 |  | 0
-| SAS 12 Gbps | 16
 |===
 
 ==== Management Ports
@@ -80,8 +78,8 @@ SMB 3.1;
 SMB 3.1.1;
 
 === System Environment Specifications
-* Typical Power: 3076 BTU/hr
-* Worst-case Power: 4860 BTU/hr
+* Typical Power: 2892 BTU/hr
+* Worst-case Power: 4445 BTU/hr
 * Weight: 60.7 lb<br/>27.5 kg
 * Height: 2U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
@@ -140,4 +138,4 @@ IS 13252(part 1)
 Ethernet based baseboard management controller (BMC) and ONTAP management interface;
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
-SAS in-band management over SAS connections for external shelves;
+
