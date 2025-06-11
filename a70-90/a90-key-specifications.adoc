@@ -1,23 +1,22 @@
 ---
-permalink: a70-90/overview.html
+permalink: a90-key-specifications.html
 sidebar: sidebar
-keywords: AFF A70 specifications, AFF A70 specs, NetApp AFF A70, AFF A70 hardware
-summary: Key specifications for the AFF A70 storage system
+summary: Key specifications for AFF A90
 ---
-= Key specifications for AFF A70
+= Key specifications for AFF A90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the AFF A70. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A70 specifications. This page is reflective of a single high availability pair. 
+The following are select specifications for AFF A90. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.
 
-=== Key specifications for AFF A70
+=== Key specifications for AFF A90
 
-Platform Configuration: AFF A70 Single Chassis HA Pair
+Platform Configuration: AFF A90 Single Chassis HA Pair
 
 Max Raw Capacity: 6.6096 PB
 
-Memory: 256.0000 GB
+Memory: 2048.0000 GB
 
 Form Factor: 4U chassis with 2 HA controllers and 48 drive slots
 
@@ -30,9 +29,9 @@ Minimum ONTAP Version: ONTAP 9.15.1RC2
 === Scaleout Maximums
 |===
 | Type | HA Pairs | Raw Capacity | Max Memory
-| NAS | 12 | 79.3 PB / 70.4 PiB | 3072 GB
-| SAN | 6 | 39.7 PB / 35.2 PiB | 1536 GB
-| HA Pair |  | 6.6 PB / 5.9 PiB | 256.0000
+| NAS | 12 | 79.3 PB / 70.4 PiB | 24576 GB
+| SAN | 6 | 39.7 PB / 35.2 PiB | 12288 GB
+| HA Pair |  | 6.6 PB / 5.9 PiB | 2048.0000
 |===
 
 === IO
@@ -83,8 +82,8 @@ SMB 3.1;
 SMB 3.1.1;
 
 === System Environment Specifications
-* Typical Power: 6938 BTU/hr
-* Worst-case Power: 9089 BTU/hr
+* Typical Power: 8304 BTU/hr
+* Worst-case Power: 10948 BTU/hr
 * Weight: 118.0 lb<br/>53.5 kg
 * Height: 4U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
@@ -144,3 +143,4 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 SAS in-band management over SAS connections for external shelves;
+
