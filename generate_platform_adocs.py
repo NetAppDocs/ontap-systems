@@ -3,6 +3,20 @@ import glob
 import xml.etree.ElementTree as ET
 import re
 
+def postprocess_adoc_file(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+    # Remove b_start and b_end (and any text like b_start...b_end)
+    content = re.sub(r'b_start(.*?)b_end', lambda m: m.group(1), content)
+    # Remove any remaining b_start or b_end
+    content = content.replace('b_start', '').replace('b_end', '')
+    # Replace <br/> and <br> with newlines
+    content = re.sub(r'<br\s*/?>', '\n', content)
+    # Remove semicolons at end of lines
+    content = re.sub(r';\s*$', '', content, flags=re.MULTILINE)
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(content)
+
 # Map platform model to folder (add more as needed)
 PLATFORM_FOLDER_MAP = {
     'A150': 'a150',
@@ -130,17 +144,28 @@ def get_text(elem, tag, default=None):
 def get_related(elems, key, value):
     return [e for e in elems if e.findtext(key) == value]
 
+def sentence_case(s):
+    if not s:
+        return s
+    s = s.strip()
+    # Capitalize first letter, lowercase the rest, but preserve proper nouns and acronyms
+    if len(s) > 1:
+        return s[0].upper() + s[1:]
+    return s.upper()
+
 def clean_br(val):
     if not val:
         return ''
     return re.sub(r'<br\s*/?>', '\n', val, flags=re.IGNORECASE)
 
-def adoc_table(headers, rows):
-    out = f"|===\n| {' | '.join(headers)}\n"
+def adoc_bulleted_list(headers, rows):
+    out = ''
     for row in rows:
-        out += '| ' + ' | '.join(row) + '\n'
-    out += '|===\n'
-    return out
+        # Each row is a list of values, zipped with headers
+        items = [f"{headers[i]}: {row[i]}" for i in range(len(headers)) if row[i]]
+        if items:
+            out += f"* {'; '.join(items)}\n"
+    return out if out else 'No data available.\n'
 
 # Add explicit FAS model to folder mapping for special cases
 FAS_MODEL_TO_FOLDER = {
@@ -219,7 +244,7 @@ for folder, configs in folder_to_platformconfigs.items():
             adoc_path = os.path.join(folder, f'{model_key}-key-specifications.adoc')
             content = ''
             content += f"---\npermalink: {folder}/{model_key}-key-specifications.html\nsidebar: sidebar\nsummary: Key specifications for {model}\n---\n"
-            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are select specifications for {model}. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.\n\n"
+            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are a selection of key specifications for {model} in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {model} specifications.\n\n"
             config = get_text(pc, 'PlatformConfig', '')
             max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
             memory = get_text(pc, 'PlatformMemory_GB', '')
@@ -255,15 +280,15 @@ for folder, configs in folder_to_platformconfigs.items():
             content += f"ONTAP Version: {os_version}\n\n"
             content += f"PCIe Expansion Slots: {pci_slots}\n\n"
             content += f"Minimum ONTAP Version: {min_os}\n\n"
-            content += f"=== Scaleout Maximums\n" + adoc_table([
+            content += f"=== Scaleout Maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', scaleout['NAS HAPairs'], scaleout['NAS RawCapacity'], scaleout['NAS MaxMemory']],
                 ['SAN', scaleout['SAN HAPairs'], scaleout['SAN RawCapacity'], scaleout['SAN MaxMemory']],
                 ['HA Pair', '', scaleout['HA Pair RawCapacity'], scaleout['HA Pair MaxMemory']],
             ]) + '\n'
-            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_table(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
-            content += f"\n==== Total IO\n" + (adoc_table(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
-            content += f"\n==== Management Ports\n" + (adoc_table(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
+            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
+            content += f"\n==== Total IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
+            content += f"\n==== Management Ports\n" + (adoc_bulleted_list(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
             content += f"\n=== Storage Networking Supported\n{storage_networking}\n\n"
             content += f"=== System Environment Specifications\n"
             if env:
@@ -290,6 +315,7 @@ for folder, configs in folder_to_platformconfigs.items():
             os.makedirs(os.path.dirname(adoc_path), exist_ok=True)
             with open(adoc_path, 'w', encoding='utf-8') as f:
                 f.write(content)
+            postprocess_adoc_file(adoc_path)
             print(f"Created {adoc_path}")
         continue  # Skip normal group output for this folder
 
@@ -309,7 +335,7 @@ for folder, configs in folder_to_platformconfigs.items():
                 continue
             content = ''
             content += f"---\npermalink: {permalink}\nsidebar: sidebar\nsummary: Key specifications for {model}\n---\n"
-            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are select specifications for {model}. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.\n\n"
+            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are a selection of key specifications for {model} in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {model} specifications.\n\n"
             config = get_text(pc, 'PlatformConfig', '')
             max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
             memory = get_text(pc, 'PlatformMemory_GB', '')
@@ -345,15 +371,15 @@ for folder, configs in folder_to_platformconfigs.items():
             content += f"ONTAP Version: {os_version}\n\n"
             content += f"PCIe Expansion Slots: {pci_slots}\n\n"
             content += f"Minimum ONTAP Version: {min_os}\n\n"
-            content += f"=== Scaleout Maximums\n" + adoc_table([
+            content += f"=== Scaleout Maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', scaleout['NAS HAPairs'], scaleout['NAS RawCapacity'], scaleout['NAS MaxMemory']],
                 ['SAN', scaleout['SAN HAPairs'], scaleout['SAN RawCapacity'], scaleout['SAN MaxMemory']],
                 ['HA Pair', '', scaleout['HA Pair RawCapacity'], scaleout['HA Pair MaxMemory']],
             ]) + '\n'
-            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_table(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
-            content += f"\n==== Total IO\n" + (adoc_table(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
-            content += f"\n==== Management Ports\n" + (adoc_table(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
+            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
+            content += f"\n==== Total IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
+            content += f"\n==== Management Ports\n" + (adoc_bulleted_list(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
             content += f"\n=== Storage Networking Supported\n{storage_networking}\n\n"
             content += f"=== System Environment Specifications\n"
             if env:
@@ -380,6 +406,7 @@ for folder, configs in folder_to_platformconfigs.items():
             os.makedirs(os.path.dirname(adoc_path), exist_ok=True)
             with open(adoc_path, 'w', encoding='utf-8') as f:
                 f.write(content)
+            postprocess_adoc_file(adoc_path)
             print(f"Created {adoc_path}")
         continue  # Skip normal group output for this folder
 
@@ -401,7 +428,7 @@ for folder, configs in folder_to_platformconfigs.items():
                 continue
             content = ''
             content += f"---\npermalink: {permalink}\nsidebar: sidebar\nsummary: Key specifications for {model}\n---\n"
-            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are select specifications for {model}. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.\n\n"
+            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are a selection of key specifications for {model} in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {model} specifications.\n\n"
             config = get_text(pc, 'PlatformConfig', '')
             max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
             memory = get_text(pc, 'PlatformMemory_GB', '')
@@ -437,15 +464,15 @@ for folder, configs in folder_to_platformconfigs.items():
             content += f"ONTAP Version: {os_version}\n\n"
             content += f"PCIe Expansion Slots: {pci_slots}\n\n"
             content += f"Minimum ONTAP Version: {min_os}\n\n"
-            content += f"=== Scaleout Maximums\n" + adoc_table([
+            content += f"=== Scaleout Maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', scaleout['NAS HAPairs'], scaleout['NAS RawCapacity'], scaleout['NAS MaxMemory']],
                 ['SAN', scaleout['SAN HAPairs'], scaleout['SAN RawCapacity'], scaleout['SAN MaxMemory']],
                 ['HA Pair', '', scaleout['HA Pair RawCapacity'], scaleout['HA Pair MaxMemory']],
             ]) + '\n'
-            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_table(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
-            content += f"\n==== Total IO\n" + (adoc_table(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
-            content += f"\n==== Management Ports\n" + (adoc_table(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
+            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
+            content += f"\n==== Total IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
+            content += f"\n==== Management Ports\n" + (adoc_bulleted_list(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
             content += f"\n=== Storage Networking Supported\n{storage_networking}\n\n"
             content += f"=== System Environment Specifications\n"
             if env:
@@ -472,6 +499,7 @@ for folder, configs in folder_to_platformconfigs.items():
             os.makedirs(os.path.dirname(adoc_path), exist_ok=True)
             with open(adoc_path, 'w', encoding='utf-8') as f:
                 f.write(content)
+            postprocess_adoc_file(adoc_path)
             print(f"Created {adoc_path}")
         continue  # Skip normal group output for this folder
 
@@ -490,7 +518,7 @@ for folder, configs in folder_to_platformconfigs.items():
                 continue
             content = ''
             content += f"---\npermalink: {permalink}\nsidebar: sidebar\nsummary: Key specifications for {model}\n---\n"
-            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are select specifications for {model}. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.\n\n"
+            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are a selection of key specifications for {model} in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {model} specifications.\n\n"
             config = get_text(pc, 'PlatformConfig', '')
             max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
             memory = get_text(pc, 'PlatformMemory_GB', '')
@@ -526,15 +554,15 @@ for folder, configs in folder_to_platformconfigs.items():
             content += f"ONTAP Version: {os_version}\n\n"
             content += f"PCIe Expansion Slots: {pci_slots}\n\n"
             content += f"Minimum ONTAP Version: {min_os}\n\n"
-            content += f"=== Scaleout Maximums\n" + adoc_table([
+            content += f"=== Scaleout Maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', scaleout['NAS HAPairs'], scaleout['NAS RawCapacity'], scaleout['NAS MaxMemory']],
                 ['SAN', scaleout['SAN HAPairs'], scaleout['SAN RawCapacity'], scaleout['SAN MaxMemory']],
                 ['HA Pair', '', scaleout['HA Pair RawCapacity'], scaleout['HA Pair MaxMemory']],
             ]) + '\n'
-            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_table(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
-            content += f"\n==== Total IO\n" + (adoc_table(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
-            content += f"\n==== Management Ports\n" + (adoc_table(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
+            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
+            content += f"\n==== Total IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
+            content += f"\n==== Management Ports\n" + (adoc_bulleted_list(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
             content += f"\n=== Storage Networking Supported\n{storage_networking}\n\n"
             content += f"=== System Environment Specifications\n"
             if env:
@@ -561,6 +589,7 @@ for folder, configs in folder_to_platformconfigs.items():
             os.makedirs(os.path.dirname(adoc_path), exist_ok=True)
             with open(adoc_path, 'w', encoding='utf-8') as f:
                 f.write(content)
+            postprocess_adoc_file(adoc_path)
             print(f"Created {adoc_path}")
         continue  # Skip normal group output for this folder
 
@@ -579,7 +608,7 @@ for folder, configs in folder_to_platformconfigs.items():
                 continue
             content = ''
             content += f"---\npermalink: {permalink}\nsidebar: sidebar\nsummary: Key specifications for {model}\n---\n"
-            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are select specifications for {model}. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.\n\n"
+            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are a selection of key specifications for {model} in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {model} specifications.\n\n"
             config = get_text(pc, 'PlatformConfig', '')
             max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
             memory = get_text(pc, 'PlatformMemory_GB', '')
@@ -615,15 +644,15 @@ for folder, configs in folder_to_platformconfigs.items():
             content += f"ONTAP Version: {os_version}\n\n"
             content += f"PCIe Expansion Slots: {pci_slots}\n\n"
             content += f"Minimum ONTAP Version: {min_os}\n\n"
-            content += f"=== Scaleout Maximums\n" + adoc_table([
+            content += f"=== Scaleout Maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', scaleout['NAS HAPairs'], scaleout['NAS RawCapacity'], scaleout['NAS MaxMemory']],
                 ['SAN', scaleout['SAN HAPairs'], scaleout['SAN RawCapacity'], scaleout['SAN MaxMemory']],
                 ['HA Pair', '', scaleout['HA Pair RawCapacity'], scaleout['HA Pair MaxMemory']],
             ]) + '\n'
-            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_table(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
-            content += f"\n==== Total IO\n" + (adoc_table(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
-            content += f"\n==== Management Ports\n" + (adoc_table(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
+            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
+            content += f"\n==== Total IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
+            content += f"\n==== Management Ports\n" + (adoc_bulleted_list(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
             content += f"\n=== Storage Networking Supported\n{storage_networking}\n\n"
             content += f"=== System Environment Specifications\n"
             if env:
@@ -650,6 +679,7 @@ for folder, configs in folder_to_platformconfigs.items():
             os.makedirs(os.path.dirname(adoc_path), exist_ok=True)
             with open(adoc_path, 'w', encoding='utf-8') as f:
                 f.write(content)
+            postprocess_adoc_file(adoc_path)
             print(f"Created {adoc_path}")
         continue  # Skip normal group output for this folder
 
@@ -668,7 +698,7 @@ for folder, configs in folder_to_platformconfigs.items():
                 continue
             content = ''
             content += f"---\npermalink: {permalink}\nsidebar: sidebar\nsummary: Key specifications for {model}\n---\n"
-            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are select specifications for {model}. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.\n\n"
+            content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are a selection of key specifications for {model} in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {model} specifications.\n\n"
             config = get_text(pc, 'PlatformConfig', '')
             max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
             memory = get_text(pc, 'PlatformMemory_GB', '')
@@ -704,15 +734,15 @@ for folder, configs in folder_to_platformconfigs.items():
             content += f"ONTAP Version: {os_version}\n\n"
             content += f"PCIe Expansion Slots: {pci_slots}\n\n"
             content += f"Minimum ONTAP Version: {min_os}\n\n"
-            content += f"=== Scaleout Maximums\n" + adoc_table([
+            content += f"=== Scaleout Maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', scaleout['NAS HAPairs'], scaleout['NAS RawCapacity'], scaleout['NAS MaxMemory']],
                 ['SAN', scaleout['SAN HAPairs'], scaleout['SAN RawCapacity'], scaleout['SAN MaxMemory']],
                 ['HA Pair', '', scaleout['HA Pair RawCapacity'], scaleout['HA Pair MaxMemory']],
             ]) + '\n'
-            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_table(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
-            content += f"\n==== Total IO\n" + (adoc_table(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
-            content += f"\n==== Management Ports\n" + (adoc_table(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
+            content += f"=== IO\n\n==== Onboard IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
+            content += f"\n==== Total IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
+            content += f"\n==== Management Ports\n" + (adoc_bulleted_list(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
             content += f"\n=== Storage Networking Supported\n{storage_networking}\n\n"
             content += f"=== System Environment Specifications\n"
             if env:
@@ -739,6 +769,7 @@ for folder, configs in folder_to_platformconfigs.items():
             os.makedirs(os.path.dirname(adoc_path), exist_ok=True)
             with open(adoc_path, 'w', encoding='utf-8') as f:
                 f.write(content)
+            postprocess_adoc_file(adoc_path)
             print(f"Created {adoc_path}")
         continue  # Skip normal group output for this folder
 
@@ -747,10 +778,11 @@ for folder, configs in folder_to_platformconfigs.items():
     content = ''
     # Compose a general header for the group
     content += f"---\npermalink: {folder}/overview.html\nsidebar: sidebar\nsummary: Key specifications for the {folder.upper()} platform group\n---\n"
-    content += f"= Key specifications for {folder.upper()} platform group\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are select specifications for the {folder.upper()} platform group. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.\n\n"
+    content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are a selection of key specifications for {model} in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {model} specifications.\n\n"
     for pc, all_onboard, all_totalio, all_mgmt, all_env, all_compliance in configs:
         model = get_text(pc, 'PlatformModel')
-        content += f"== {model}\n\n"
+        # Fix heading hierarchy: '===' -> '==', '====' -> '===', '=====' -> '===='
+        content += f"== {sentence_case(f'Key specifications for {model}')}\n\n"
         config = get_text(pc, 'PlatformConfig', '')
         max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
         memory = get_text(pc, 'PlatformMemory_GB', '')
@@ -782,7 +814,7 @@ for folder, configs in folder_to_platformconfigs.items():
         # Compliance
         pmid = get_text(pc, 'PlatformModelId', '')
         compliance = [e for e in all_compliance if get_text(e, 'PlatformModelId', '') == pmid]
-        content += f"=== Key specifications for {model}\n\n"
+        content += f"== {sentence_case(f'Key specifications for {model}')}\n\n"
         content += f"Platform Configuration: {config}\n\n"
         content += f"Max Raw Capacity: {max_capacity} PB\n\n"
         content += f"Memory: {memory} GB\n\n"
@@ -790,17 +822,17 @@ for folder, configs in folder_to_platformconfigs.items():
         content += f"ONTAP Version: {os_version}\n\n"
         content += f"PCIe Expansion Slots: {pci_slots}\n\n"
         content += f"Minimum ONTAP Version: {min_os}\n\n"
-        content += f"=== Scaleout Maximums\n" + adoc_table([
+        content += f"== {sentence_case('Scaleout maximums')}\n" + adoc_bulleted_list([
             'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
             ['NAS', scaleout['NAS HAPairs'], scaleout['NAS RawCapacity'], scaleout['NAS MaxMemory']],
             ['SAN', scaleout['SAN HAPairs'], scaleout['SAN RawCapacity'], scaleout['SAN MaxMemory']],
             ['HA Pair', '', scaleout['HA Pair RawCapacity'], scaleout['HA Pair MaxMemory']],
         ]) + '\n'
-        content += f"=== IO\n\n==== Onboard IO\n" + (adoc_table(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
-        content += f"\n==== Total IO\n" + (adoc_table(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
-        content += f"\n==== Management Ports\n" + (adoc_table(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
-        content += f"\n=== Storage Networking Supported\n{storage_networking}\n\n"
-        content += f"=== System Environment Specifications\n"
+        content += f"== {sentence_case('IO')}\n\n=== {sentence_case('Onboard IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], onboard) if onboard else 'No onboard IO data.\n')
+        content += f"\n=== Total IO\n" + (adoc_bulleted_list(['Protocol', 'Ports'], totalio) if totalio else 'No total IO data.\n')
+        content += f"\n=== Management Ports\n" + (adoc_bulleted_list(['Protocol', 'Ports'], mgmt) if mgmt else 'No management port data.\n')
+        content += f"\n== Storage Networking Supported\n{storage_networking}\n\n"
+        content += f"== {sentence_case('System environment specifications')}\n"
         if env:
             content += f"* Typical Power: {get_text(env, 'BtusPerHourTypical', '')}\n"
             content += f"* Worst-case Power: {get_text(env, 'BtusPerHourWorst', '')}\n"
@@ -813,16 +845,8 @@ for folder, configs in folder_to_platformconfigs.items():
             content += f"* Acoustic Noise: {get_text(env, 'Operating_Acoustic_Noise', '')}\n"
         else:
             content += "No environment data available.\n"
-        content += f"\n=== Compliance\n"
+        content += f"\n== Compliance\n"
         if compliance:
             for c in compliance:
                 std = get_text(c, 'StandardType', '')
                 val = clean_br(get_text(c, 'storageNetworkingSupported', ''))
-                content += f"* {std}: {val}\n"
-        else:
-            content += "No compliance data available.\n"
-        content += f"\n=== High Availability\n{ha}\n\n"
-    # Write .adoc file
-    with open(adoc_path, 'w', encoding='utf-8') as f:
-        f.write(content)
-    print(f"Created {adoc_path}")

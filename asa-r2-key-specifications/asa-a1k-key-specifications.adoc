@@ -8,7 +8,7 @@ summary: Key specifications for ASA A1K
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for ASA A1K. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.
+The following are a selection of key specifications for ASA A1K in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A1K specifications.
 
 === Key specifications for ASA A1K
 
@@ -20,19 +20,16 @@ Memory: 2048.0000 GB
 
 Form Factor: 2U chassis with 1 HA controllers 
 
-ONTAP Version: b_startONTAP: 9.16.1P2b_end
+ONTAP Version: ONTAP: 9.16.1P2
 
 PCIe Expansion Slots: 18
 
 Minimum ONTAP Version: ONTAP 9.16.0
 
 === Scaleout Maximums
-|===
-| Type | HA Pairs | Raw Capacity | Max Memory
-| NAS |  |  | 
-| SAN | 6 | 16.0 PB / 14.2 PiB | 12288 GB
-| HA Pair |  | 2.7 PB / 2.4 PiB | 2048.0000
-|===
+* Type: NAS
+* Type: SAN; HA Pairs: 6; Raw Capacity: 16.0 PB / 14.2 PiB; Max Memory: 12288 GB
+* Type: HA Pair; Raw Capacity: 2.7 PB / 2.4 PiB; Max Memory: 2048.0000
 
 === IO
 
@@ -40,41 +37,43 @@ Minimum ONTAP Version: ONTAP 9.16.0
 No onboard IO data.
 
 ==== Total IO
-|===
-| Protocol | Ports
-| Ethernet 200 Gbps | 24
-| Ethernet 100 Gbps | 36
-| Ethernet 25 Gbps | 56
-| Ethernet 10 Gbps | 56
-| FC 64 Gbps | 56
-| NVMe/FC  64 Gbps | 56
-|  | 0
-|===
+* Protocol: Ethernet 200 Gbps; Ports: 24
+* Protocol: Ethernet 100 Gbps; Ports: 36
+* Protocol: Ethernet 25 Gbps; Ports: 56
+* Protocol: Ethernet 10 Gbps; Ports: 56
+* Protocol: FC 64 Gbps; Ports: 56
+* Protocol: NVMe/FC  64 Gbps; Ports: 56
+* Ports: 0
 
 ==== Management Ports
-|===
-| Protocol | Ports
-| Ethernet 1 Gbps | 2
-| RS-232 115 Kbps | 4
-| USB 600 Mbps | 2
-|===
+* Protocol: Ethernet 1 Gbps; Ports: 2
+* Protocol: RS-232 115 Kbps; Ports: 4
+* Protocol: USB 600 Mbps; Ports: 2
 
 === Storage Networking Supported
-FC;
-iSCSI;
-NVMe/FC ;
-NVMe/TCP;
-
+FC
+iSCSI
+NVMe/FC 
+NVMe/TCP
 === System Environment Specifications
 * Typical Power: 4402 BTU/hr
 * Worst-case Power: 6174 BTU/hr
-* Weight: 59.5 lb<br/>27.0 kg
+* Weight: 59.5 lb
+27.0 kg
 * Height: 2U
 * Width: 19” IEC rack-compliant (17.7” 44.9 cm)
-* Depth: 30.0”<br/>(35.2” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
-* Acoustic Noise: Declared sound power (LwAd): 8.5;<br/>Sound pressure (LpAm) (bystander positions): 67.7 dB
+* Depth: 30.0”
+(35.2” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C
+50°F to 
+95°F) at
+<= 3048m
+<= 10000 ft) elevation;8% to 80%
+relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.5
+Sound pressure (LpAm) (bystander positions): 67.7 dB
 
 === Compliance
 * Certifications EMC/EMI: AMCA,
@@ -123,8 +122,7 @@ IEC60950-1,
 IS 13252(part 1)
 
 === High Availability
-Ethernet based baseboard management controller (BMC) and ONTAP management interface;
-Redundant hot-swappable controllers;
-Redundant hot-swappable power supplies;
-SAS in-band management over SAS connections for external shelves;
-
+Ethernet based baseboard management controller (BMC) and ONTAP management interface
+Redundant hot-swappable controllers
+Redundant hot-swappable power supplies
+SAS in-band management over SAS connections for external shelves

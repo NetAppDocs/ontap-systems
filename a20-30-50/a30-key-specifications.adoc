@@ -8,7 +8,7 @@ summary: Key specifications for AFF A30
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for AFF A30. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.
+The following are a selection of key specifications for AFF A30 in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A30 specifications.
 
 === Key specifications for AFF A30
 
@@ -20,19 +20,16 @@ Memory: 128.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
 
-ONTAP Version: b_startONTAP: 9.16.1P2b_end
+ONTAP Version: ONTAP: 9.16.1P2
 
 PCIe Expansion Slots: 8
 
 Minimum ONTAP Version: ONTAP 9.16.1RC1
 
 === Scaleout Maximums
-|===
-| Type | HA Pairs | Raw Capacity | Max Memory
-| NAS | 4 | 16.2 PB / 14.3 PiB | 512 GB
-| SAN | 4 | 16.2 PB / 14.3 PiB | 512 GB
-| HA Pair |  | 4.0 PB / 3.6 PiB | 128.0000
-|===
+* Type: NAS; HA Pairs: 4; Raw Capacity: 16.2 PB / 14.3 PiB; Max Memory: 512 GB
+* Type: SAN; HA Pairs: 4; Raw Capacity: 16.2 PB / 14.3 PiB; Max Memory: 512 GB
+* Type: HA Pair; Raw Capacity: 4.0 PB / 3.6 PiB; Max Memory: 128.0000
 
 === IO
 
@@ -40,54 +37,55 @@ Minimum ONTAP Version: ONTAP 9.16.1RC1
 No onboard IO data.
 
 ==== Total IO
-|===
-| Protocol | Ports
-| Ethernet 100 Gbps | 16
-| Ethernet 25 Gbps | 24
-| Ethernet 10 Gbps | 24
-| FC 64 Gbps | 24
-| NVMe/FC  64 Gbps | 24
-|  | 0
-| SAS 12 Gbps | 16
-|===
+* Protocol: Ethernet 100 Gbps; Ports: 16
+* Protocol: Ethernet 25 Gbps; Ports: 24
+* Protocol: Ethernet 10 Gbps; Ports: 24
+* Protocol: FC 64 Gbps; Ports: 24
+* Protocol: NVMe/FC  64 Gbps; Ports: 24
+* Ports: 0
+* Protocol: SAS 12 Gbps; Ports: 16
 
 ==== Management Ports
-|===
-| Protocol | Ports
-| Ethernet 1 Gbps | 2
-| RS-232 115 Kbps | 4
-| USB 600 Mbps | 2
-|===
+* Protocol: Ethernet 1 Gbps; Ports: 2
+* Protocol: RS-232 115 Kbps; Ports: 4
+* Protocol: USB 600 Mbps; Ports: 2
 
 === Storage Networking Supported
-CIFS;
-FC;
-iSCSI;
-NFS v3;
-NFS v4.0;
-NFS v4.1;
-NFS v4.2;
-NVMe/FC ;
-NVMe/TCP;
-S3;
-S3 with NAS;
-SMB 2.0;
-SMB 2.1;
-SMB 2.x;
-SMB 3.0;
-SMB 3.1;
-SMB 3.1.1;
-
+CIFS
+FC
+iSCSI
+NFS v3
+NFS v4.0
+NFS v4.1
+NFS v4.2
+NVMe/FC 
+NVMe/TCP
+S3
+S3 with NAS
+SMB 2.0
+SMB 2.1
+SMB 2.x
+SMB 3.0
+SMB 3.1
+SMB 3.1.1
 === System Environment Specifications
 * Typical Power: 2892 BTU/hr
 * Worst-case Power: 4445 BTU/hr
-* Weight: 60.7 lb<br/>27.5 kg
+* Weight: 60.7 lb
+27.5 kg
 * Height: 2U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
 * Depth: 
-* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
-* Acoustic Noise: Declared sound power (LwAd): 8.0;<br/>Sound pressure (LpAm) (bystander positions): 70.5 dB
+* Operating Temp/Altitude/Humidity: 10°C to 35°C
+50°F to 
+95°F) at
+<= 3048m
+<= 10000 ft) elevation;8% to 80%
+relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.0
+Sound pressure (LpAm) (bystander positions): 70.5 dB
 
 === Compliance
 * Certifications EMC/EMI: AMCA,
@@ -136,8 +134,7 @@ IEC60950-1,
 IS 13252(part 1)
 
 === High Availability
-Ethernet based baseboard management controller (BMC) and ONTAP management interface;
-Redundant hot-swappable controllers;
-Redundant hot-swappable power supplies;
-SAS in-band management over SAS connections for external shelves;
-
+Ethernet based baseboard management controller (BMC) and ONTAP management interface
+Redundant hot-swappable controllers
+Redundant hot-swappable power supplies
+SAS in-band management over SAS connections for external shelves
