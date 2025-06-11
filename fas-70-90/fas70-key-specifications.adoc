@@ -1,15 +1,14 @@
 ---
-permalink: fas/overview.html
+permalink: fas70-key-specifications.html
 sidebar: sidebar
-keywords: FAS70 specifications, FAS70 specs, NetApp FAS70, FAS70 hardware
-summary: Key specifications for the FAS70 storage system
+summary: Key specifications for FAS70
 ---
 = Key specifications for FAS70
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the FAS70. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of FAS70 specifications. This page is reflective of a single high availability pair. 
+The following are select specifications for FAS70. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of specifications. This page is reflective of a single high availability pair.
 
 === Key specifications for FAS70
 
@@ -142,3 +141,4 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 SAS in-band management over SAS connections for external shelves;
+
