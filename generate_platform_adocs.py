@@ -785,10 +785,17 @@ for folder, configs in folder_to_platformconfigs.items():
     else:
         lead_model = folder.upper()
     content += f"= Key specifications for {lead_model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are a selection of key specifications for {lead_model} in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {lead_model} specifications.\n\n"
+    # Only one H2 after the lead
+    if len(configs) == 1:
+        # Only one model, do not repeat the heading
+        pass
+    else:
+        content += f"== Key specifications\n\n"
     for pc, all_onboard, all_totalio, all_mgmt, all_env, all_compliance in configs:
         model = get_text(pc, 'PlatformModel')
-        # Fix heading hierarchy: '===' -> '==', '====' -> '===', '=====' -> '===='
-        content += f"== {sentence_case(f'Key specifications for {model}')}\n\n"
+        # If multiple models, add a subheading for each
+        if len(configs) > 1:
+            content += f"=== {sentence_case(f'{model}')}\n\n"
         config = get_text(pc, 'PlatformConfig', '')
         max_capacity = get_text(pc, 'MaxRawCapacity_PB', '')
         memory = get_text(pc, 'PlatformMemory_GB', '')
