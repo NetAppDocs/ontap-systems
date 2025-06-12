@@ -778,7 +778,13 @@ for folder, configs in folder_to_platformconfigs.items():
     content = ''
     # Compose a general header for the group
     content += f"---\npermalink: {folder}/overview.html\nsidebar: sidebar\nsummary: Key specifications for the {folder.upper()} platform group\n---\n"
-    content += f"= Key specifications for {model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are a selection of key specifications for {model} in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {model} specifications.\n\n"
+    # Use the first model in configs for the lead section
+    if configs:
+        first_pc = configs[0][0]
+        lead_model = get_text(first_pc, 'PlatformModel')
+    else:
+        lead_model = folder.upper()
+    content += f"= Key specifications for {lead_model}\n:icons: font\n:imagesdir: ../media/\n\n[.lead]\nThe following are a selection of key specifications for {lead_model} in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of {lead_model} specifications.\n\n"
     for pc, all_onboard, all_totalio, all_mgmt, all_env, all_compliance in configs:
         model = get_text(pc, 'PlatformModel')
         # Fix heading hierarchy: '===' -> '==', '====' -> '===', '=====' -> '===='
