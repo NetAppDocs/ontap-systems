@@ -376,10 +376,10 @@ image::../media/dwr-2800_controller1-to shelves_IEOPS-896.svg[Controller A to sh
 . Connect controller B to the drive shelves.
 .. Controller B port 0a to IOM A port 1 on first drive shelf in the stack.
 .. Controller B port 0b1 to IOM B port 3 on the last drive shelf in the stack.
-+ 
 
++ 
 image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[Controller B to shelf connection]
-+
+
 
 == Step 5: Complete storage system setup and configuration
 
