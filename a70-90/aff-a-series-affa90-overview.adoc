@@ -28,12 +28,9 @@ PCIe Expansion Slots: 18
 Minimum ONTAP Version: ONTAP 9.15.1RC2
 
 === Scaleout Maximums
-|===
-| Type | HA Pairs | Raw Capacity | Max Memory
-| NAS | 12 | 79.3 PB / 70.4 PiB | 24576 GB
-| SAN | 6 | 39.7 PB / 35.2 PiB | 12288 GB
-| HA Pair |  | 6.6 PB / 5.9 PiB | 2048.0000
-|===
+* NAS: 12 HA Pairs, 79.3 PB / 70.4 PiB Raw Capacity, 24576 GB Max Memory
+* SAN: 6 HA Pairs, 39.7 PB / 35.2 PiB Raw Capacity, 12288 GB Max Memory
+* HA Pair: 6.6 PB / 5.9 PiB Raw Capacity, 2048.0000 GB Max Memory
 
 === IO
 
@@ -41,25 +38,18 @@ Minimum ONTAP Version: ONTAP 9.15.1RC2
 No onboard IO data.
 
 ==== Total IO
-|===
-| Protocol | Ports
-| Ethernet 200 Gbps | 24
-| Ethernet 100 Gbps | 36
-| Ethernet 25 Gbps | 56
-| Ethernet 10 Gbps | 56
-| FC 64 Gbps | 56
-| NVMe/FC  64 Gbps | 56
-|  | 0
-| SAS 12 Gbps | 56
-|===
+* Ethernet 200 Gbps: 24 Ports
+* Ethernet 100 Gbps: 36 Ports
+* Ethernet 25 Gbps: 56 Ports
+* Ethernet 10 Gbps: 56 Ports
+* FC 64 Gbps: 56 Ports
+* NVMe/FC  64 Gbps: 56 Ports
+* SAS 12 Gbps: 56 Ports
 
 ==== Management Ports
-|===
-| Protocol | Ports
-| Ethernet 1 Gbps | 2
-| RS-232 115 Kbps | 4
-| USB 600 Mbps | 2
-|===
+* Ethernet 1 Gbps: 2 Ports
+* RS-232 115 Kbps: 4 Ports
+* USB 600 Mbps: 2 Ports
 
 === Storage Networking Supported
 CIFS;

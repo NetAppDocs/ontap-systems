@@ -167,6 +167,10 @@ def adoc_bulleted_list(headers, rows):
             out += f"* {'; '.join(items)}\n"
     return out if out else 'No data available.\n'
 
+# Ensure all output sections use bulleted lists, never tables
+def write_adoc_section_as_bullets(headers, rows):
+    return adoc_bulleted_list(headers, rows)
+
 # Add explicit FAS model to folder mapping for special cases
 FAS_MODEL_TO_FOLDER = {
     'fas70': 'fas-70-90',
