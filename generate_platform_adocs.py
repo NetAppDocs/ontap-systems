@@ -690,10 +690,10 @@ for folder, configs in folder_to_platformconfigs.items():
             model_key = model.lower().replace(' ', '').replace('-', '').replace('_', '')
             if model_key == 'fas8300':
                 adoc_path = os.path.join(folder, 'fas8300-key-specifications.adoc')
-                permalink = 'fas8300-key-specifications.html'
+                permalink = '/fas8300/fas8300-key-specifications.html'
             elif model_key == 'fas8700':
                 adoc_path = os.path.join(folder, 'fas8700-key-specifications.adoc')
-                permalink = 'fas8700-key-specifications.html'
+                permalink = '/fas8300/fas8700-key-specifications.html'
             else:
                 continue
             content = ''
@@ -850,3 +850,11 @@ for folder, configs in folder_to_platformconfigs.items():
             for c in compliance:
                 std = get_text(c, 'StandardType', '')
                 val = clean_br(get_text(c, 'storageNetworkingSupported', ''))
+                content += f"* {std}: {val}\n"
+        else:
+            content += "No compliance data available.\n"
+        content += f"\n== High Availability\n{ha}\n\n"
+    with open(adoc_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+    postprocess_adoc_file(adoc_path)
+    print(f"Created {adoc_path}")

@@ -10,9 +10,9 @@ summary: Key specifications for the FAS2800 platform group
 [.lead]
 The following are a selection of key specifications for FAS8300 in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of FAS8300 specifications.
 
-== FAS2820
+== Key specifications for FAS2820
 
-=== Key specifications for FAS2820
+== Key specifications for FAS2820
 
 Platform Configuration: FAS2820 Single Chassis HA Pair
 
@@ -22,78 +22,74 @@ Memory: 128.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 12 drive slots
 
-ONTAP Version: b_startONTAP: 9.16.1P2b_end
+ONTAP Version: ONTAP: 9.16.1P2
 
 PCIe Expansion Slots: 4
 
 Minimum ONTAP Version: ONTAP 9.13.1RC1
 
-=== Scaleout Maximums
-|===
-| Type | HA Pairs | Raw Capacity | Max Memory
-| NAS | 12 | 38.0 PB / 33.8 PiB | 1536 GB
-| SAN | 6 | 19.0 PB / 16.9 PiB | 768 GB
-| HA Pair |  | 3.2 PB / 2.8 PiB | 128.0000
-|===
+== Scaleout maximums
+* Type: NAS; HA Pairs: 12; Raw Capacity: 38.0 PB / 33.8 PiB; Max Memory: 1536 GB
+* Type: SAN; HA Pairs: 6; Raw Capacity: 19.0 PB / 16.9 PiB; Max Memory: 768 GB
+* Type: HA Pair; Raw Capacity: 3.2 PB / 2.8 PiB; Max Memory: 128.0000
 
-=== IO
+== IO
 
-==== Onboard IO
-|===
-| Protocol | Ports
-| Ethernet 25 Gbps | 4
-| SAS 12 Gbps | 4
-|===
+=== Onboard IO
+* Protocol: Ethernet 25 Gbps; Ports: 4
+* Protocol: SAS 12 Gbps; Ports: 4
 
-==== Total IO
-|===
-| Protocol | Ports
-| Ethernet 25 Gbps | 12
-| Ethernet 10 Gbps | 8
-| FC 32 Gbps | 8
-| NVMe/FC  32 Gbps | 8
-|  | 0
-| SAS 12 Gbps | 4
-|===
+=== Total IO
+* Protocol: Ethernet 25 Gbps; Ports: 12
+* Protocol: Ethernet 10 Gbps; Ports: 8
+* Protocol: FC 32 Gbps; Ports: 8
+* Protocol: NVMe/FC  32 Gbps; Ports: 8
+* Ports: 0
+* Protocol: SAS 12 Gbps; Ports: 4
 
-==== Management Ports
-|===
-| Protocol | Ports
-| Ethernet 1 Gbps | 2
-| RS-232 115 Kbps | 4
-| USB 600 Mbps | 2
-|===
+=== Management Ports
+* Protocol: Ethernet 1 Gbps; Ports: 2
+* Protocol: RS-232 115 Kbps; Ports: 4
+* Protocol: USB 600 Mbps; Ports: 2
 
-=== Storage Networking Supported
-CIFS;
-FC;
-FCoE;
-iSCSI;
-NFS v3;
-NFS v4.0;
-NFS v4.1;
-NVMe/TCP;
-S3;
-S3 with NAS;
-SMB 2.0;
-SMB 2.1;
-SMB 2.x;
-SMB 3.0;
-SMB 3.1;
-SMB 3.1.1;
-
-=== System Environment Specifications
+== Storage Networking Supported
+CIFS
+FC
+FCoE
+iSCSI
+NFS v3
+NFS v4.0
+NFS v4.1
+NVMe/TCP
+S3
+S3 with NAS
+SMB 2.0
+SMB 2.1
+SMB 2.x
+SMB 3.0
+SMB 3.1
+SMB 3.1.1
+== System environment specifications
 * Typical Power: 1815 BTU/hr
 * Worst-case Power: 2339 BTU/hr
-* Weight: 57.2 lb<br/>25.9 kg
+* Weight: 57.2 lb
+25.9 kg
 * Height: 2U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
-* Depth: 20.0”<br/>(25.1” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
-* Acoustic Noise: Declared sound power (LwAd): 7.8;<br/>Sound pressure (LpAm) (bystander positions): 68.4 dB
+* Depth: 20.0”
+(25.1” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C
+50°F to 
+95°F) at
+<= 3048m
+<= 10000 ft) elevation;8% to 80%
+relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 7.8
+Sound pressure (LpAm) (bystander positions): 68.4 dB
 
-=== Compliance
+== Compliance
 * Certifications EMC/EMI: AMCA,
 FCC,
 ICES,
@@ -139,9 +135,8 @@ IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
 
-=== High Availability
-Ethernet based baseboard management controller (BMC) and ONTAP management interface;
-Redundant hot-swappable controllers;
-Redundant hot-swappable power supplies;
-SAS in-band management over SAS connections for external shelves;
-
+== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface
+Redundant hot-swappable controllers
+Redundant hot-swappable power supplies
+SAS in-band management over SAS connections for external shelves

@@ -10,9 +10,9 @@ summary: Key specifications for the FAS9500 platform group
 [.lead]
 The following are a selection of key specifications for ASA A150 in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A150 specifications.
 
-== FAS9500
+== Key specifications for FAS9500
 
-=== Key specifications for FAS9500
+== Key specifications for FAS9500
 
 Platform Configuration: FAS9500 Single Chassis HA Pair
 
@@ -22,76 +22,75 @@ Memory: 2048.0000 GB
 
 Form Factor: 8U chassis with 2 HA controllers 
 
-ONTAP Version: b_startONTAP: 9.16.1P2b_end
+ONTAP Version: ONTAP: 9.16.1P2
 
 PCIe Expansion Slots: 20
 
 Minimum ONTAP Version: ONTAP 9.10.1P3
 
-=== Scaleout Maximums
-|===
-| Type | HA Pairs | Raw Capacity | Max Memory
-| NAS | 12 | 180.0 PB / 159.9 PiB | 24576 GB
-| SAN | 6 | 90.0 PB / 79.9 PiB | 12288 GB
-| HA Pair |  | 15.0 PB / 13.3 PiB | 2048.0000
-|===
+== Scaleout maximums
+* Type: NAS; HA Pairs: 12; Raw Capacity: 180.0 PB / 159.9 PiB; Max Memory: 24576 GB
+* Type: SAN; HA Pairs: 6; Raw Capacity: 90.0 PB / 79.9 PiB; Max Memory: 12288 GB
+* Type: HA Pair; Raw Capacity: 15.0 PB / 13.3 PiB; Max Memory: 2048.0000
 
-=== IO
+== IO
 
-==== Onboard IO
+=== Onboard IO
 No onboard IO data.
 
-==== Total IO
-|===
-| Protocol | Ports
-| Ethernet 100 Gbps | 32
-| Ethernet 25 Gbps | 64
-| Ethernet 10 Gbps | 64
-| FC 32 Gbps | 64
-| NVMe/FC  32 Gbps | 64
-|  | 0
-| SAS 12 Gbps | 64
-|===
+=== Total IO
+* Protocol: Ethernet 100 Gbps; Ports: 32
+* Protocol: Ethernet 25 Gbps; Ports: 64
+* Protocol: Ethernet 10 Gbps; Ports: 64
+* Protocol: FC 32 Gbps; Ports: 64
+* Protocol: NVMe/FC  32 Gbps; Ports: 64
+* Ports: 0
+* Protocol: SAS 12 Gbps; Ports: 64
 
-==== Management Ports
-|===
-| Protocol | Ports
-| Ethernet 1 Gbps | 2
-| RS-232 115 Kbps | 6
-| USB 12 Mbps | 2
-|===
+=== Management Ports
+* Protocol: Ethernet 1 Gbps; Ports: 2
+* Protocol: RS-232 115 Kbps; Ports: 6
+* Protocol: USB 12 Mbps; Ports: 2
 
-=== Storage Networking Supported
-CIFS;
-FC;
-iSCSI;
-NFS v3;
-NFS v4.0;
-NFS v4.1;
-NFS v4.2;
-NVMe/FC ;
-NVMe/TCP;
-S3;
-S3 with NAS;
-SMB 2.0;
-SMB 2.1;
-SMB 2.x;
-SMB 3.0;
-SMB 3.1;
-SMB 3.1.1;
-
-=== System Environment Specifications
+== Storage Networking Supported
+CIFS
+FC
+iSCSI
+NFS v3
+NFS v4.0
+NFS v4.1
+NFS v4.2
+NVMe/FC 
+NVMe/TCP
+S3
+S3 with NAS
+SMB 2.0
+SMB 2.1
+SMB 2.x
+SMB 3.0
+SMB 3.1
+SMB 3.1.1
+== System environment specifications
 * Typical Power: 8004 BTU/hr
 * Worst-case Power: 9937 BTU/hr
-* Weight: 220.5 lb<br/>100.0 kg
+* Weight: 220.5 lb
+100.0 kg
 * Height: 8U
 * Width: 19” IEC rack-compliant (17.7” 45.0 cm)
-* Depth: 28.8”<br/>(36.8” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 90%<br/>relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
-* Acoustic Noise: Declared sound power (LwAd): 7.4;<br/>Sound pressure (LpAm) (bystander positions): 65.0 dB
+* Depth: 28.8”
+(36.8” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C
+50°F to 
+95°F) at
+<= 3048m
+<= 10000 ft) elevation;8% to 90%
+relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 7.4
+Sound pressure (LpAm) (bystander positions): 65.0 dB
 
-=== Compliance
+== Compliance
 * Certifications EMC/EMI: AMCA,
 FCC,
 ICES,
@@ -137,9 +136,8 @@ IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
 
-=== High Availability
-Ethernet based baseboard management controller (BMC) and ONTAP management interface;
-Redundant hot-swappable controllers;
-Redundant hot-swappable power supplies;
-SAS in-band management over SAS connections for external shelves;
-
+== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface
+Redundant hot-swappable controllers
+Redundant hot-swappable power supplies
+SAS in-band management over SAS connections for external shelves

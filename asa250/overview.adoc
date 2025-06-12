@@ -10,9 +10,9 @@ summary: Key specifications for the ASA250 platform group
 [.lead]
 The following are a selection of key specifications for ASA A400 in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A400 specifications.
 
-== ASA A250
+== Key specifications for ASA A250
 
-=== Key specifications for ASA A250
+== Key specifications for ASA A250
 
 Platform Configuration: ASA A250 100V Single Chassis HA Pair
 
@@ -22,58 +22,45 @@ Memory: 128.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
 
-ONTAP Version: b_startONTAP: 9.16.1P2b_end
+ONTAP Version: ONTAP: 9.16.1P2
 
 PCIe Expansion Slots: 4
 
 Minimum ONTAP Version: ONTAP 9.13.1
 
-=== Scaleout Maximums
-|===
-| Type | HA Pairs | Raw Capacity | Max Memory
-| NAS |  |  | 
-| SAN | 6 | 4.4 PB / 3.9 PiB | 768 GB
-| HA Pair |  | 0.7 PB / 0.7 PiB | 128.0000
-|===
+== Scaleout maximums
+* Type: NAS
+* Type: SAN; HA Pairs: 6; Raw Capacity: 4.4 PB / 3.9 PiB; Max Memory: 768 GB
+* Type: HA Pair; Raw Capacity: 0.7 PB / 0.7 PiB; Max Memory: 128.0000
 
-=== IO
+== IO
 
-==== Onboard IO
-|===
-| Protocol | Ports
-| Ethernet 25 Gbps | 4
-| Ethernet 10 Gbps | 4
-|===
+=== Onboard IO
+* Protocol: Ethernet 25 Gbps; Ports: 4
+* Protocol: Ethernet 10 Gbps; Ports: 4
 
-==== Total IO
-|===
-| Protocol | Ports
-| Ethernet 100 Gbps | 4
-| Ethernet 25 Gbps | 12
-| Ethernet 10 Gbps | 4
-| FC 32 Gbps | 8
-| NVMe/FC  32 Gbps | 8
-|  | 0
-|===
+=== Total IO
+* Protocol: Ethernet 100 Gbps; Ports: 4
+* Protocol: Ethernet 25 Gbps; Ports: 12
+* Protocol: Ethernet 10 Gbps; Ports: 4
+* Protocol: FC 32 Gbps; Ports: 8
+* Protocol: NVMe/FC  32 Gbps; Ports: 8
+* Ports: 0
 
-==== Management Ports
-|===
-| Protocol | Ports
-| Ethernet 1 Gbps | 2
-| RS-232 115 Kbps | 4
-| USB 12 Mbps | 4
-|===
+=== Management Ports
+* Protocol: Ethernet 1 Gbps; Ports: 2
+* Protocol: RS-232 115 Kbps; Ports: 4
+* Protocol: USB 12 Mbps; Ports: 4
 
-=== Storage Networking Supported
-FC;
-iSCSI;
-NVMe/FC ;
-NVMe/TCP;
-
-=== System Environment Specifications
+== Storage Networking Supported
+FC
+iSCSI
+NVMe/FC 
+NVMe/TCP
+== System environment specifications
 No environment data available.
 
-=== Compliance
+== Compliance
 * Certifications EMC/EMI: AMCA,
 FCC,
 ICES,
@@ -119,9 +106,8 @@ IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
 
-=== High Availability
-Ethernet based baseboard management controller (BMC) and ONTAP management interface;
-Redundant hot-swappable controllers;
-Redundant hot-swappable power supplies;
-SAS in-band management over SAS connections for external shelves;
-
+== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface
+Redundant hot-swappable controllers
+Redundant hot-swappable power supplies
+SAS in-band management over SAS connections for external shelves
