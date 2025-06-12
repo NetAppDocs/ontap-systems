@@ -31,12 +31,12 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
 +
-image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[width=500px]
+image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
 
 . Turn the controller module over and place it on a flat, stable surface.
 . Open the cover by pressing the blue buttons on the sides of the controller module to release the cover, and then rotate the cover up and off of the controller module.
 +
-image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[width=500px]
+image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Remove the controller cover]
 
 == Step 3: Replace the RTC battery
 
@@ -44,7 +44,7 @@ Replace the RTC battery by locating it inside the controller and follow the spec
 
 video::7420d100-23b1-4213-a8da-af4701725622[panopto, title="Animation - Replace the RTC battery"]
 
-image::../media/drw_2850_replace_rtc_battery_IEOPS-701.svg[width=500px]
+image::../media/drw_2850_replace_rtc_battery_IEOPS-701.svg[Replace the RTC battery]
 
 . If you are not already grounded, properly ground yourself.
 . Locate the RTC battery.
@@ -56,6 +56,7 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 . Locate the empty battery holder in the controller module.
 . Note the polarity of the RTC battery, and then insert it into the holder by tilting the battery at an angle and pushing down.
 . Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
+. Reinstall the controller cover.
 
 == Step 4: Reinstall the controller module
 
