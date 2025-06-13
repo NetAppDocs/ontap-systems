@@ -7,7 +7,7 @@ Prepare the I/O module slot 4 so that it is safe to remove the failed cluster/HA
 
 . If you are not already grounded, properly ground yourself.
 
-. Unplug cabling from the failed I/O module.
+. Unplug cabling from the failed cluster/HA I/O module.
 +
 Make sure to label the cables so that you know where they came from.
 
@@ -34,8 +34,6 @@ The module has been successfully removed from service and powered off. It can no
 `system controller slot module show`
 +
 The screen output should show `powered-off`for the slot 4 status on the impaired controller.
-+
-See the Command man pages for your version of ONTAP for more details.
 
 
 

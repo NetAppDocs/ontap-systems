@@ -8,14 +8,10 @@ Replace the failed cluster/HA I/O module in slot 4 with an equivalent module:
 
 . If you are not already grounded, properly ground yourself. 
 
-. Unplug cabling from the failed cluster/HA I/O module.
-+
-Make sure to label the cables so that you know where they came from.
-
 . Remove the failed cluster/HA I/O module from the controller:
 +
 
-image::../media/drw_g_io_module_replace_ieops-1900.svg[Remove I/O module]
+image::../media/drw_g_io_module_hotswap_slot4_ieops-2366.svg[hotswap cluster ha I/O module]
 +
 [cols="1,4"]
 |===
