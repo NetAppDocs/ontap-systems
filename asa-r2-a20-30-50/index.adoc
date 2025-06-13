@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/index.html
 sidebar: sidebar
-keywords: asa a70 asa a90 maintenance, maintenance, repairing a70 asa a90,  replace a70 asa a90 components
+keywords: asa a20, asa a30, asa a50 maintenance, maintenance, repairing a70 asa a90,  replace a70 asa a90 components
 summary: Maintain the ASA A20, ASA A30, and ASA A50 hardware
 ---
 = Maintain ASA A20, ASA A30, and ASA A50 hardware
@@ -55,6 +55,3 @@ A power supply provides a redundant power source in a controller shelf.
 
 A real time clock battery preserves system date and time information if the power is off. 
 
-== System Management module
-
-The System Management module provides the interface between the controller and a console or laptop for controller or system maintenance purposes. The System management module contains the boot media and stores the system serial number (SSN).

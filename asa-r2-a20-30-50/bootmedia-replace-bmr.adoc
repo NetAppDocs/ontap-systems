@@ -14,4 +14,4 @@ The boot media in your ASA A20, ASA A30, or ASA A50 system stores essential firm
 include::../_include/g_bootmedia_replace-bmr.adoc[]
 
 .What's next
-After physically replacing the impaired boot media, link:bootmedia-recovery-image-boot-bmr.html[restore the ONTAP image from the partner node].
+After physically replacing the impaired boot media, you link:bootmedia-recovery-image-boot-bmr.html[restore the ONTAP image from the partner node].

@@ -5,79 +5,44 @@ include::../_include/g_controller_remove.adoc[]
 
 . Repeat these steps for the other controller in the chassis.
 
-// == Step 2: Remove the drives from the impaired chassis
+== Step 2: Remove the drives from the impaired chassis
 
-// You need to remove all of the drives and any drive blanks from the impaired chassis so that later in the procedure you can install them in the replacement chassis.
-
-// . Gently remove the bezel from the front of the storage system.
-// . Remove the drives and any drive blanks:
-// +
-// NOTE: Keep track of what drive bay each drive and drive blank was removed from because they must be installed in the same drive bays in the replacement chassis.
-// +
-// image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove NVMe drive]
-// +
-// [cols="1,4"]
-// |===
-// a|
-// image::../media/icon_round_1.png[Callout number 1]
-// a|
-// Press the release button on the drive face to open the cam handle.
-// a|
-// image::../media/icon_round_2.png[Callout number 2]
-// a|
-// Rotate the cam handle downward to disengage the drive from the midplane.
-// a|
-// image::../media/icon_round_3.png[Callout number 3]
-// a|
-// Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand. 
-
-// When removing a drive, always use two hands to support its weight.
-
-// NOTE: Because drives are fragile, minimize handling to avoid damaging them.
-// |===
-// +
-
-// . Set the drives aside on a static-free cart or table.
-
-// NEW for initial FAS50 release only:
-
-== Step 2: Remove the caching modules from the impaired chassis
-
-You need to remove any caching modules and drive blanks from the impaired chassis so that later in the procedure you can install them in the replacement chassis.
+You need to remove all of the drives and any drive blanks from the impaired chassis so that later in the procedure you can install them in the replacement chassis.
 
 . Gently remove the bezel from the front of the storage system.
-. Remove the caching modules and drive blanks:
+. Remove the drives and any drive blanks:
 +
-NOTE: Keep track of what drive bay each caching module was removed from because they must be installed in the same drive bays in the replacement chassis.
+NOTE: Keep track of what drive bay each drive and drive blank was removed from because they must be installed in the same drive bays in the replacement chassis.
 +
-image::../media/drw_fas50_flash_cache_module_replace_ieops-2173.svg[fas50 caching module replacement steps graphic]
-
+image::../media/drw_nvme_drive_replace_ieops-1904.svg[Remove NVMe drive]
 +
-[cols="20%,80%"]
+[cols="1,4"]
 |===
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-Press the release button on the module face to open the cam handle.
+Press the release button on the drive face to open the cam handle.
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-Rotate the cam handle downward to disengage the module from the midplane.
+Rotate the cam handle downward to disengage the drive from the midplane.
 a|
 image::../media/icon_round_3.png[Callout number 3]
 a|
-Slide the module out of the drive bay using the cam handle and supporting the module with your other hand. 
+Slide the drive out of the drive bay using the cam handle and supporting the drive with your other hand. 
 
-When removing a module, always use two hands to support its weight.
+When removing a drive, always use two hands to support its weight.
+
+NOTE: Because drives are fragile, minimize handling to avoid damaging them.
 |===
 +
 
-. Set the caching modules aside on a static-free cart or table.
+. Set the drives aside on a static-free cart or table.
 
 
-== Step 3: Replace the chassis from within the equipment rack or system cabinet
+== Step 2: Replace the chassis from within the equipment rack or system cabinet
 
-You remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis, install the drives, any drive blanks and then install the bezel.
+You remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis, install the drives, any drive blanks, and then install the bezel.
 
 . Remove the screws from the impaired chassis mount points.
 +
@@ -132,13 +97,9 @@ NOTE: Do not use excessive force when sliding the controller into the chassis; i
 
 . Repeat these steps to install the second controller into the chassis.
 
-. Install the caching modules and drive blanks you removed from the impaired chassis into the replacement chassis:
+. Install the drives and any drive blanks you removed from the impaired chassis into the replacement chassis:
 +
-NOTE: The caching modules and drive blanks must be installed in the same drive bays in the replacement chassis.
-
-// . Install the drives and any drive blanks you removed from the impaired chassis into the replacement chassis:
-// +
-// NOTE: The drives and drive blanks must be installed in the same drive bays in the replacement chassis.
+NOTE: The drives and drive blanks must be installed in the same drive bays in the replacement chassis.
 
 .. With the cam handle in the open position, use both hands to insert the drive.
 
