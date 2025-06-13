@@ -55,7 +55,7 @@ include::../_include/g_io_module_hotswap_ha_slot4_swap_hardware.adoc[]
 
 == Step 3: Bring the replacement cluster/HA I/O module online
 
-// New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specific/reference slot 4 and so is unique to g-platforms.
+// New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specify/reference slot 4, which is unique to g-platforms.
 
 include::../_include/g_io_module_hotswap_ha_slot4_bring_online.adoc[]
 

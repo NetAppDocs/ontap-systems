@@ -1,4 +1,4 @@
-//This include applies only to the cluster/HA I/O module in slot 4 running 9.17.1 to bring the replacement cluster/HA I/O module online.
+// New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specify/reference slot 4, which is unique to g-platforms.
 
 
 Bring the replacement cluster/HA I/O module (in slot 4) online and verify it is online and recognized.

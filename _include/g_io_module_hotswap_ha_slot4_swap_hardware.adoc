@@ -1,4 +1,6 @@
 
+// New include specific to g-platform family because the hardware hot-swap steps for a cluster/HA I/O module in slot 4 are unique to g-platforms.
+
 Replace the failed cluster/HA I/O module in slot 4 with an equivalent module:
 
 
