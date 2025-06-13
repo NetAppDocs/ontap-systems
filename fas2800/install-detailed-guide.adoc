@@ -376,7 +376,11 @@ image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[Controller B to sh
 
 == Step 5: Complete storage system setup and configuration
 
-Complete your storage system setup and configuration using either Option 1: if network  discovery enabled or Option 2: if network discovery is not enabled. 
+Complete your storage system setup and configuration using either Option 1: if network  discovery enabled or Option 2: if network discovery is not enabled.
+
+Use the following animation in either option where setting shelf ID is required:
+
+video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto, title="Animation - Set drive shelf IDs"]
 
 [role="tabbed-block"]
 ====
@@ -387,9 +391,7 @@ Complete your storage system setup and configuration using either Option 1: if n
 If network discovery enabled on your laptop, complete storage system setup and configuration using automatic cluster discovery.
 
 .Steps
-. Use the following animation to turn on shelf power and set shelf IDs.
-+
-video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto, title="Animation - Set drive shelf IDs"]
+. Turn on shelf power and set shelf IDsusing the animation at the beginning of this Step.
 
 . Power on the controllers 
 .. Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
@@ -444,9 +446,7 @@ NOTE: See your laptop or console's online help for how to configure the console 
 image::../media/drw_2800_laptop_to_switch_to_controller_IEOPS-1084.svg[Laptop to switch connection]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
-. Use the following animation to set one or more drive shelf IDs:
-+
-video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto, title="Animation - Set drive shelf IDs"]
+. Turn on shelf power and set shelf IDs using the animation at the beginning of this Step.
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
