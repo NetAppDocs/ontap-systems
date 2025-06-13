@@ -32,7 +32,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 * The AFX 1K storage system utilizes 400GbEx100GbE breakout cables. The 400GBE connections are made to the switch ports, and the 100GbE connections are made to the controller and drive shelf ports.
 
 * The following cabling requirements apply to AFX 1k storage system configurations:  
-** Cisco 9332 switch configurations require 400GbEx100GbE cable connections. 
+** Cisco 9332 and 9364 switch configurations require 400GbEx100GbE cable connections. 
 
 == Step 1: Connect the controllers to the management network
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
@@ -40,7 +40,7 @@ Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each
 image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 
-image::../media/drw_afx_management_connection_ieops.png[Connect to your management network]
+image::../media/drw_afx_management_connection_ieops-2349.svg[Connect to your management network]
 
 IMPORTANT: Do not plug in the power cords yet. 
 
@@ -65,9 +65,9 @@ This procedure differs depending on your storage system model and I/O module con
 +
 *100GbE cable*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable]
+image::../media/oie_cable_sfp_gbe_copper.svg[100 Gb Ethernet cable]
 +
-image::../media/drw_afx_network_cabling_a_ieops.png[Cable to 200Gb Ethernet network]
+image::../media/drw_afx_network_cabling_a_ieops-2350.svg[Cable to Ethernet network]
 
 . Connect the following ports to your Ethernet data network switch B.
 * Controller A
@@ -83,9 +83,9 @@ image::../media/drw_afx_network_cabling_a_ieops.png[Cable to 200Gb Ethernet netw
 +
 *100GbE cable*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100Gb Ethernet cable]
+image::../media/oie_cable_sfp_gbe_copper.svg[100 Gb Ethernet cable]
 +
-image::../media/drw_afx_network_cabling_b_ieops.png[Cable to 10/25Gb Ethernet network]
+image::../media/drw_afx_network_cabling_b_ieops-2351.svg[Cable to Ethernet network]
 
 == Step 3: Cable the cluster/HA connections
 Use the Cluster/HA interconnect cable to connect ports e1a and e7a to switch A and e1b and e1b to switch B. The e1a/e1b ports are used for the HA connections, and the e7a/e7b ports are used for the cluster connections.
@@ -104,7 +104,7 @@ Use the Cluster/HA interconnect cable to connect ports e1a and e7a to switch A a
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
-image::../media/drw_afx_switched_cluster_cabling_a_ieops.png[Cable cluster connections to cluster network]
+image::../media/drw_afx_switched_cluster_cabling_a_ieops-2352.svg[Cable cluster connections to cluster network]
 
 . Connect the following ports to cluster network switch B.
 * Controller A
@@ -118,7 +118,7 @@ image::../media/drw_afx_switched_cluster_cabling_a_ieops.png[Cable cluster conne
 +
 image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
-image::../media/drw_afx_switched_cluster_cabling_b_ieops.png[Cable cluster connections to cluster network]
+image::../media/drw_afx_switched_cluster_cabling_b_ieops-2353.svg[Cable cluster connections to cluster network]
 
 == Step 4: Cable the controller storage to switch connections
 Connect the controller storage ports to the switches. 
@@ -133,9 +133,9 @@ Connect the controller storage ports to the switches.
 
 *100GbE cable*
 
-image::../media/oie_cable100_gbe_qsfp28.png[200 Gb cable]
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 
-image::../media/drw_afx_controller_storage_cable_a_ieops.png[Cable controller storage to switch A]
+image::../media/drw_afx_controller_storage_cable_a_ieops-2354.svg[Cable controller storage to switch A]
 
 . Connect the following storage ports to switch B.
 * Controller A
@@ -147,9 +147,9 @@ image::../media/drw_afx_controller_storage_cable_a_ieops.png[Cable controller st
 
 *100GbE cable*
 
-image::../media/oie_cable100_gbe_qsfp28.png[200 Gb cable]
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 
-image::../media/drw_afx_controller_storage_cable_b_ieops.png[Cable controller storage to switch B]
+image::../media/drw_afx_controller_storage_cable_b_ieops-2355.svg[Cable controller storage to switch B]
 
 == Step 5: Cable the shelf-to-switch connections
 Connect the NX224 storage shelves to the switches.   
@@ -160,17 +160,17 @@ For the maximum number of shelves supported for your storage system and for all 
 +
 *100 GbE QSFP28 copper cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[200 GbE QSFP28 copper cable]
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_shelf_cabling_a_ieops.png[Cable shelf to switch A]
+image::../media/drw_afx_shelf_cabling_a_ieops-2356.svg[Cable shelf to switch A]
 
 . Connect port e0b on the shelf to the switch B.
 + 
 *100 GbE QSFP28 copper cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[200 GbE QSFP28 copper cable]
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_shelf_cabling_b_ieops.png[Cable shelf to switch B]
+image::../media/drw_afx_shelf_cabling_b_ieops-2357.svg[Cable shelf to switch B]
 
 .What's next?
 
