@@ -1,0 +1,41 @@
+//This include applies only to the cluster/HA I/O module in slot 4 running 9.17.1 to bring the replacement cluster/HA I/O module online.
+
+
+Bring the replacement cluster/HA I/O module (in slot 4) online and verify it is online and recognized.
+
+. Bring the replacement cluster/HA I/O module online:
++
+`system controller slot module insert -node _node_name_ -slot _slot_name_`
++
+NOTE: When you see _Do you want to continue?_, enter `y`. 
++
+The output should confirm the cluster/HA I/O module was successfully brought online (powered on, initialized, and placed into service).
++
+For example, the following command prepares slot 4 on node1 for power-on, and displays a message that the process was successful:
++
+----
+node1::> system controller slot module insert -node _node1_ -slot _4_
+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node1 will be powered on and initialized.
+
+Do you want to continue? {y|n}: `y`
+
+The module has been successfully powered on, initialized and placed into service.
+----
+
+. Verify that a hotplug.init.success EMS event is logged for each port reporting that initialization succeeded.
++
+NOTE: This might take several minutes to allow for any required firmware updates and port initialization.
+
+. Verify the slot status:
++
+`system controller slot module show`
+
+. From the output, verify the I/O module slot 4 status displays powered-on and ready for operation for the cluster/HA I/O module you inserted.
+
+. Verify that the replacement cluster/HA I/O module is online and recognized: 
++
+`sysconfig -av _slot_number_`
+
+. Visually confirm that the amber attention LED for slot 4 is not illuminated.
+

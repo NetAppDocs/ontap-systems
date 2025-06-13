@@ -1,4 +1,5 @@
-//This include applies only to the cluster/HA I/O module in slot 4 running 9.17.1.
+// KILL topic.
+// This include applies only to the cluster/HA I/O module in slot 4 running 9.17.1.
 
 .Before you begin
 * Your storage system must meet all of the following requirements in order to use this procedure; otherwise, you must use the link:io-module-replace.html[replace an I/O module procedure].
