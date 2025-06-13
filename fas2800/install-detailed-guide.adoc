@@ -152,11 +152,6 @@ image::../media/drw_cable_management_arm_install.svg[Install cable management ar
 
 Cable the controllers to your network as either a two-node switchless cluster or a switched cluster.
 
-video::90577508-fa79-46cf-b18a-afe8016325af[panopto, title= Animation - Cabling a two-node switchless cluster cabling]
-
-video::6553a3db-57dd-4247-b34a-afe8016315d4[panopto, title="Animation - Switched cluster cabling"]
-
-
 The following table identifies the cable type with the call out number and cable color in the illustrations for both two-node switchless cluster and switched cluster.
 
 [options="header" cols="20%,80%"]
@@ -188,6 +183,11 @@ Host network switches
 
 image::../media/oie_cable_pull_tab_down.png[Pull tab direction]
 
+Depending on your system configuration, you can ust the applicable animation or detailed steps in the table to cable your controllers to your network as either a two-node switchless cluster or a switched cluster.
+
+video::90577508-fa79-46cf-b18a-afe8016325af[panopto, title= Animation - Cabling a two-node switchless cluster cabling]
+
+video::6553a3db-57dd-4247-b34a-afe8016315d4[panopto, title="Animation - Switched cluster cabling"]
 
 [role="tabbed-block"]
 ====
@@ -196,14 +196,6 @@ image::../media/oie_cable_pull_tab_down.png[Pull tab direction]
 --
 
 Cable your network connections and your cluster interconnect ports for a two-node switchless cluster.
-
-.About this task
-
-Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches.
-
-//
-video::90577508-fa79-46cf-b18a-afe8016325af[panopto, title= Animation - Cabling a two-node switchless cluster cabling]
-//
 
 .Steps
 
@@ -261,14 +253,6 @@ IMPORTANT: DO NOT plug in the power cords.
 --
 
 Cable your network connections and your cluster interconnect ports for a switched cluster.
-
-.About this task
-
-Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches.
-
-//
-video::6553a3db-57dd-4247-b34a-afe8016315d4[panopto, title="Animation - Switched cluster cabling"]
-//
 
 .Steps
 
