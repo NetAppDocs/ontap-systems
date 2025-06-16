@@ -9,7 +9,7 @@ summary: Return control of storage resources to the replacement controller so yo
 :imagesdir: ../media/
 
 [.lead]
-Return control of storage resources to the replacement controller so your AFF A1K system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption, Onboard Key Manager (OKM) encryption, or External Key Manager (EKM) encryption.
+Return control of storage resources to the replacement controller so your AFF A1K system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption or  Onboard Key Manager (OKM) encryption.
 
 include::../_include/controller_replace_recable_reassign_disks.adoc[]
 
