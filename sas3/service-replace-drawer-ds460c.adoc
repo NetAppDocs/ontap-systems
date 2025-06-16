@@ -33,7 +33,7 @@ When a DCM, DCM2, or DCM3 drive drawer fails, you receive a DCM, DCM2, or DCM3 d
 
 [NOTE]
 ====
-If when you replace a failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later because the IOM12 modules require a version of FW that supports DCM2 drive drawers.
+When you replace a failed drive drawer with a newer DCM2 or DCM3 drive drawer, ensure that ONTAP software and the IOM12 or IOM12B module firmware are running the minimum versions required to support DCM2 or DCM3 drawers.
 
 The IOM12 FW upgrade can be done before or after replacing a drive drawer. This procedure has you upgrade the FW as part of the preparation for the drawer replacement procedure.
 ====
@@ -70,7 +70,7 @@ If needed, you can go to the NetApp Support Site to https://mysupport.netapp.com
 
 . If your shelf will have a combination of IOM12 or IOM12B modules with any number of DCM3 drive drawers, your system must be running the following minimum versions of ONTAP:
 
-** ONTAP 9.17.1RC
+** ONTAP 9.17.1RC1
 ** ONTAP 9.16.1P3
 ** ONTAP 9.15.1P11
 ** ONTAP 9.14.1P13
