@@ -147,7 +147,17 @@ Connect the NX224 storage shelves to the switches.
 
 For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-. Connect port e0a on the shelf to the switch A.
+. Connect the following shelf ports to switch A.
+* Shelf A
+** e1a
+** e2a
+** e3a
+** e4a
+* Shelf B
+** e1a
+** e2a
+** e3a
+** e4a
 +
 *100GbE cables*
 +
@@ -155,7 +165,17 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
 image::../media/drw_afx_shelf_cabling_a_ieops-2356.svg[Cable shelf to switch A]
 
-. Connect port e0b on the shelf to the switch B.
+. Connect the following shelf ports to switch B.
+* Shelf A
+** e1b
+** e2b
+** e3b
+** e4b
+* Shelf B
+** e1b
+** e2b
+** e3b
+** e4b
 + 
 *100GbE cables*
 +
