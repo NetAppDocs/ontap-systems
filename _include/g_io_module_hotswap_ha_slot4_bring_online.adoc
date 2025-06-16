@@ -5,13 +5,15 @@ Bring the replacement cluster/HA I/O module (in slot 4) online and verify it is 
 
 . Bring the replacement cluster/HA I/O module online:
 +
+// this CMD adds a module on the controller
++
 `system controller slot module insert -node _node_name_ -slot _slot_name_`
 +
 NOTE: When you see _Do you want to continue?_, enter `y`. 
 +
 The output should confirm the cluster/HA I/O module was successfully brought online (powered on, initialized, and placed into service).
 +
-For example, the following command prepares slot 4 on node1 for power-on, and displays a message that the process was successful:
+For example, the following command brings slot 4 on node1 online, and displays a message that the process was successful:
 +
 ----
 node1::> system controller slot module insert -node _node1_ -slot _4_
@@ -23,15 +25,13 @@ Do you want to continue? {y|n}: `y`
 The module has been successfully powered on, initialized and placed into service.
 ----
 
-. Verify that a hotplug.init.success EMS event is logged for each port reporting that initialization succeeded.
+. Verify that a hotplug.init.success EMS event is logged for each cluster/HA I/O module port reporting that initialization succeeded.
 +
 NOTE: This might take several minutes to allow for any required firmware updates and port initialization.
 
-. Verify the slot status:
+. Verify the I/O module slot 4 status displays powered-on and ready for operation for the cluster/HA I/O module you inserted:
 +
 `system controller slot module show`
-
-. From the output, verify the I/O module slot 4 status displays powered-on and ready for operation for the cluster/HA I/O module you inserted.
 
 . Verify that the replacement cluster/HA I/O module is online and recognized: 
 +
