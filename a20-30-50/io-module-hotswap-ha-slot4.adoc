@@ -4,21 +4,26 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, hotswap a cluster ha card
 summary: Hot-swap a cluster/HA I/O module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails. The process involves preparing the I/O module slot for removal, hot-swapping the failed cluster/HA I/O module for an equivalent module, bringing the replacement cluster/HA I/O module online, and returning the failed part to NetApp.
 ---
-= Hot-swap a cluster/HA I/O module - AFF A20, AFF A30, and AFF A50
+= Hot-swap the cluster/HA module in slot 4 - AFF A20, AFF A30, and AFF A50
 :icons: font
 :imagesdir: ../media/
 
-//Jul 25, 2025: GH issue #1185 to support I/O hot-swap of cluster/HA I/O module in slot 4 for g- platform family.
+//Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family.
+
+//Hot-swap the I/O module used for cluster and HA traffic - AFF...
 
 [.lead]
-Hot-swap a cluster/HA I/O module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails. The process involves preparing the I/O module slot for removal, hot-swapping the failed cluster/HA I/O module for an equivalent module, bringing the replacement cluster/HA I/O module online, and returning the failed part to NetApp.
+The I/O module in slot 4, also known as the cluster/HA module, supports interconnects for clustering and high-availability. You can hot-swap a cluster/HA module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails. 
+
+The hot-swap process involves preparing slot 4 for cluster/HA module removal, hot-swapping the failed cluster/HA module for an equivalent module, bringing the replacement cluster/HA module online, and returning the failed part to NetApp.
+
 
 .Before you begin
 * Your storage system must meet all of the following requirements in order to use this procedure; otherwise, you must use the link:io-module-replace.html[replace an I/O module procedure].
 ** Your storage system must be running ONTAP 9.17.1 or later.
-** The I/O module that failed must be a cluster/HA module (in slot 4) and you must be replacing it with an equivalent module. You cannot change the module type.
+** The I/O module that failed must be a cluster/HA module in slot 4 and you must be replacing it with an equivalent module. You cannot change the module type.
 ** Your storage system configuration must have only one cluster/HA module (located in slot 4), not two cluster/HA modules.
-** The controller with the failed cluster/HA I/O module must have taken over the healthy controller. The take over should have occured automatically if the module is failed.
+** The controller with the failed cluster/HA module must have taken over the healthy controller. The take over should have occured automatically if the module is failed.
 +
 You can verify the take over state...
 ** Your storage system must be a two-node cluster configuration.
@@ -46,14 +51,14 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 include::../_include/g_io_module_hotswap_ha_slot4_prepare_slot.adoc[]
 
 
-== Step 2: Replace the failed cluster/HA I/O module
+== Step 2: Replace the failed cluster/HA module
 
 // New include specific to g-platform family because the hardware hot-swap steps for a cluster/HA I/O module in slot 4 are unique to g-platforms.
 
 include::../_include/g_io_module_hotswap_ha_slot4_swap_hardware.adoc[]
 
 
-== Step 3: Bring the replacement cluster/HA I/O module online
+== Step 3: Bring the replacement cluster/HA module online
 
 // New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specify/reference slot 4, which is unique to g-platforms.
 
