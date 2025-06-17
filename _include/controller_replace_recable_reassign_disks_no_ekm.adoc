@@ -67,48 +67,7 @@ If the output shows results (the key IDs of keys that are not present in the sys
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 
 --
-
-.External key manager (EKM)
---
-Reset encryption and return the controller to normal operation.
-
-.Steps
-. If the root volume is encrypted with External Key Manager and the console cable is connected to the replacement node, enter `boot_ontap menu` and select option `11`.
-
-. If these questions appear, answer `y` or `n` as appropriate:
-+
-Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} 
-+
-Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n} 
-+
-Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n} 
-+
-Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n} 
-+
-Do you know the KMIP server address? {y/n} 
-+
-Do you know the KMIP port? {y/n} 
-+
-NOTE: Contact https://support.netapp.com[NetApp Support] if you have issues.
-
-. Supply the information for:
-* The client certificate (client.crt) file contents
-* The client key (client.key) file contents
-* The KMIP server CA(s) (CA.pem) file contents
-* The IP address for the KMIP server
-* The port for the KMIP server
-
-. Once the system processes, you see the Boot Menu. Select '1' for normal boot.
-
-. Check the takeover status: `storage failover show`
-
-. Ensure any core dumps on the repaired node are saved by going to advanced mode `set -privilege advanced` and then `run local partner nosavecore`.
-. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
-
-. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback _true_`
-
-. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
---
+// EKM not affected - With a controller replacement on these systems, the entire EKM configuration is untouched because nothing changes with SSN, system ID or contents of the boor device (/var). Only OKM requires restoration because of the new TPM chip on the new motherboard.
 
 ====
 
