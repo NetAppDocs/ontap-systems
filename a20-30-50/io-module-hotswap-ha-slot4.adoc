@@ -2,7 +2,7 @@
 permalink: a20-30-50/io-module-hotswap.html
 sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, hotswap a cluster ha card
-summary: The I/O module in slot 4, also known as the cluster/HA module, supports interconnects for clustering and high-availability. You can hot-swap a cluster/HA module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails.
+summary: The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails.
 ---
 = Hot-swap the I/O module used for cluster and HA traffic - AFF A20, AFF A30, and AFF A50
 :icons: font
@@ -10,20 +10,20 @@ summary: The I/O module in slot 4, also known as the cluster/HA module, supports
 
 //Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family.
 
-//old: Hot-swap the cluster/HA module in slot 4 - AFF A20, AFF A30, and AFF A50
+//old: Hot-swap the cluster and HA I/O module in slot 4 - AFF A20, AFF A30, and AFF A50
 
 [.lead]
-The I/O module in slot 4, also known as the cluster/HA I/O module, supports interconnects for clustering and high-availability. You can hot-swap a cluster/HA I/O module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails.
+The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails.
 
-The hot-swap process involves preparing slot 4 for cluster/HA I/O module removal, hot-swapping the failed cluster/HA I/O module for an equivalent module, bringing the replacement cluster/HA I/O module online, and returning the failed part to NetApp.
+The hot-swap process involves preparing slot 4 for removal, hot-swapping the failed module for an equivalent one, bringing the replacement module online, and returning the failed module to NetApp.
 
 
 .Before you begin
 * Your storage system must meet all of the following requirements in order to use this procedure; otherwise, you must use the link:io-module-replace.html[replace an I/O module procedure].
 ** Your storage system must be running ONTAP 9.17.1 or later.
-** The I/O module that failed must be a cluster/HA I/O module in slot 4 and you must be replacing it with an equivalent I/O module. You cannot change the I/O module type.
-** Your storage system configuration must have only one cluster/HA I/O module located in slot 4, not two cluster/HA I/O modules.
-** The controller with the failed cluster/HA I/O module (the impaired controller) must have taken over the healthy controller. The take over should have occured automatically if the I/O module is failed.
+** The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with an equivalent I/O module. You cannot change the I/O module type.
+** Your storage system configuration must have only one cluster and HA I/O module located in slot 4, not two cluster and HA I/O modules.
+** The controller with the failed cluster and HA I/O module (the impaired controller) must have taken over the healthy controller. The takeover should have occured automatically if the I/O module is failed.
 +
 You can verify that the impaired controller successfully took over the healthy controller by entering the `storage failover show` command.
 +
