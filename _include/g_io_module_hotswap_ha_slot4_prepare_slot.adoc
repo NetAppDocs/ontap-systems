@@ -3,11 +3,11 @@
 // New include specific to g-platform family because the slot 4 location for the cluster/HA I/O module is unique to g-platforms.
 
 
-Prepare the I/O module slot 4 so that it is safe to remove the failed cluster/HA module:
+Prepare the I/O module slot 4 so that it is safe to remove the failed cluster/HA I/O module:
 
 . Properly ground yourself.
 
-. Unplug cabling from the failed cluster/HA module.
+. Unplug cabling from the failed cluster/HA I/O module.
 +
 Make sure to label the cables so that you know where they came from.
 

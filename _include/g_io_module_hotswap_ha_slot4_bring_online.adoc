@@ -1,9 +1,9 @@
 // New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specify/reference slot 4, which is unique to g-platforms.
 
 
-Bring the replacement cluster/HA module in slot 4 online and verify it is online and recognized.
+Bring the replacement cluster/HA I/O module in slot 4 online and verify it is online and recognized.
 
-. Bring the replacement cluster/HA module online:
+. Bring the replacement cluster/HA I/O module online:
 +
 // this CMD adds a module on the controller
 +
@@ -11,7 +11,7 @@ Bring the replacement cluster/HA module in slot 4 online and verify it is online
 +
 NOTE: When you see _Do you want to continue?_, enter `y`. 
 +
-The output should confirm the cluster/HA module was successfully brought online (powered on, initialized, and placed into service).
+The output should confirm the cluster/HA I/O module was successfully brought online (powered on, initialized, and placed into service).
 +
 For example, the following command brings slot 4 on node1 online, and displays a message that the process was successful:
 +
@@ -25,15 +25,15 @@ Do you want to continue? {y|n}: `y`
 The module has been successfully powered on, initialized and placed into service.
 ----
 
-. Verify that a hotplug.init.success EMS event is logged for each cluster/HA module port reporting that initialization succeeded.
+. Verify that a hotplug.init.success EMS event is logged for each cluster/HA I/O module port reporting that initialization succeeded.
 +
 NOTE: This might take several minutes to allow for any required firmware updates and port initialization.
 
-. Verify the I/O module slot 4 status displays powered-on and ready for operation for the cluster/HA module you inserted:
+. Verify the I/O module slot 4 status displays powered-on and ready for operation for the cluster/HA I/O module you inserted:
 +
 `system controller slot module show`
 
-. Verify that the replacement cluster/HA module is online and recognized: 
+. Verify that the replacement cluster/HA I/O module is online and recognized: 
 +
 `sysconfig -av _slot_number_`
 
