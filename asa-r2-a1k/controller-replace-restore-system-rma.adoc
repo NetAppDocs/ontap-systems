@@ -9,7 +9,7 @@ summary: Verify that the logical interfaces (LIFs) are reporting to their home p
 :imagesdir: ../media/
 
 [.lead]
-To complete the controller replacement for your AFF A1K system, first restore the NetApp Storage Encryption configuration (if necessary). Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, return the failed part to NetApp.
+To complete the controller replacement for your ASA A1K system, first restore the NetApp Storage Encryption configuration (if necessary). Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, return the failed part to NetApp.
 
 == Step 1: Verify LIFs and check cluster health
 
