@@ -4,18 +4,22 @@ sidebar: sidebar
 keywords: afx, afx 1k, cable, overview
 summary: Learn how to cable your nodes to the network, switches, and drive shelves. 
 ---
-= Overview of cabling for AFX storage system
+= Supported cabling configuration for your AFX A1K system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn how to cable your nodes to the network, switches, and drive shelves. 
+Learn about the supported hardware components and cabling options for the AFX 1K storage system, including compatible drive shelves, switches, and cable types required for proper system setup. 
 
-The initial configuration of the AFX 1k storage system supports a minimum four nodes connected through dual switches to the drive shelves. Additional nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1k configurations follow the same switch-based cabling methodology as the four node schema depicted below. 
+== Supported AFX 1K cabling configuration
+The initial configuration of the AFX 1K storage system supports a minimum of four nodes connected through dual switches to the drive shelves. 
+
+Additional nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1K configurations follow the same switch-based cabling methodology as the four node schema depicted below. 
 
 image:../media/afx_cable_overview_half_node_source_ieops-2358.svg[AFK 1K four node cabling]
 
-== Hardware overview
+== Supported hardware components
+Review the compatible drive shelves, switches, and cable types for the AFX 1K storage system.
 
 [options="header"]
 |===
@@ -38,4 +42,4 @@ NOTE: Breakout cables are used for connections between the switches, controller,
 |===
 
 .What's next?
-After reviewing the hardware cabling summary, you can link:cable-hardware.html[cable the controllers and storage shelves for your AFX system].
+After reviewing the supported system configuration and hardware components, you link:cable-hardware.html[cable the controllers and storage shelves for your AFX system].
