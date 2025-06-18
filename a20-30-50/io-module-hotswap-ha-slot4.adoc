@@ -48,21 +48,21 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 == Step 1: Prepare the I/O module slot 4
 
-// New include specific to g-platform family because the slot 4 location for the cluster/HA I/O module is unique to g-platforms.
+// New include specific to g-platform family because the slot 4 location for the cluster and HA I/O module is unique to g-platforms.
 
 include::../_include/g_io_module_hotswap_ha_slot4_prepare_slot.adoc[]
 
 
 == Step 2: Replace the failed cluster/HA module
 
-// New include specific to g-platform family because the hardware hot-swap steps for a cluster/HA I/O module in slot 4 are unique to g-platforms.
+// New include specific to g-platform family because the hardware hot-swap steps for a cluster and HA I/O module in slot 4 are unique to g-platforms.
 
 include::../_include/g_io_module_hotswap_ha_slot4_swap_hardware.adoc[]
 
 
 == Step 3: Bring the replacement cluster/HA module online
 
-// New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specify/reference slot 4, which is unique to g-platforms.
+// New include specific to g-platform family because the steps for bringing the replacement cluster and HA I/O module online specify/reference slot 4, which is unique to g-platforms.
 
 include::../_include/g_io_module_hotswap_ha_slot4_bring_online.adoc[]
 
