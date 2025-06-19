@@ -9,16 +9,12 @@ summary: Verify that the logical interfaces (LIFs) are reporting to their home p
 :imagesdir: ../media/
 
 [.lead]
-To complete the controller replacement for your AFF A1K system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller's serial number and then return the failed part to NetApp.
+To complete the controller replacement for your AFF A1K system, first restore the NetApp Storage Encryption configuration (if necessary). Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, return the failed part to NetApp.
 
 
-== Step 1: Install licenses for the replacement controller in ONTAP
+== Step 1: Verify LIFs and check cluster health
 
-include::../_include/install_licenses_mcc.adoc[]
+include::../_include/check_lifs_cluster_health.adoc[]
 
-== Step 2: Verify LIFs, register the serial number, and check cluster health
-
-include::../_include/check_lifs_register_serial_number.adoc[]
-
-== Step 3: Return the failed part to NetApp
+== Step 2: Return the failed part to NetApp
 include::../_include/complete_rma.adoc[]
