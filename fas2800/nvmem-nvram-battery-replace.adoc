@@ -31,11 +31,11 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module half-way out of the chassis.
 +
-image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[width=500px]
+image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
 
 . Check the NVMEM LED located on the back of the controller module.  Look for the NV icon:
 +
-image::../media/drw_hw_nvram_icon.svg[width=70px]
+image::../media/drw_hw_nvram_icon.svg[NV icon]
 +
 NOTE: The green NV LED on the faceplate will start flashing when power is removed from the controller if the system was in the "waiting for giveback" state, or the system was not taken over or halted properly (uncommitted data).  If the impaired controller module was not successfully taken over by the partner controller module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
 
@@ -55,13 +55,13 @@ Remove the failed NVMEM battery from the system and replace it with a new NVMEM 
 . Turn the controller module over and place it on a flat, stable surface.
 . Open the cover by pressing the blue buttons on the sides of the controller module to release the cover, and then rotate the cover up and off of the controller module.
 +
-image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[width=500px]
+image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Remove the controller cover]
 
 . Locate the NVMEM battery in the controller module.
 +
 video::592217fb-4868-4294-a559-af4701725598[panopto, title="Animation - Replace the NV battery"]
 +
-image::../media/drw_2850_replace_nvbattery_IEOPS-715.svg[width=500px]
+image::../media/drw_2850_replace_nvbattery_IEOPS-715.svg[Replace the NV battery]
 +
 [cols="1,3"]
 |===
