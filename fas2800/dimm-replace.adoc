@@ -35,12 +35,12 @@ Leave the cables in the cable management device so that when you reinstall the c
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
 +
-image::../media/drw_2240_x_opening_cam_latch.svg[width=500px]
+image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
 
 . Turn the controller module over and place it on a flat, stable surface.
 . Open the cover by pressing the blue buttons on the sides of the controller module to release the cover, and then rotate the cover up and off of the controller module.
 +
-image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[width=500px]
+image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Open the controller]
 
 [cols="1,3"]
 |===
@@ -63,7 +63,7 @@ NOTE: Before replacing a DIMM, you need to unplug the NVMEM battery from the con
 +
 You must perform a clean system shutdown before replacing system components to avoid losing unwritten data in the nonvolatile memory (NVMEM). The LED is located on the back of the controller module. Look for the following icon:
 +
-image::../media/drw_hw_nvram_icon.svg[width=70px]
+image::../media/drw_hw_nvram_icon.svg[NV icon]
 
 . If the NVMEM LED is not flashing, there is no content in the NVMEM; you can skip the following steps and proceed to the next task in this procedure.
 . If the NVMEM LED is flashing, there is data in the NVMEM and you must disconnect the battery to clear the memory:
@@ -84,7 +84,7 @@ The DIMM will rotate up a little.
 NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 +
 
-image::../media/drw_2850_replace_dimms_IEOPS-699.svg[width=500px]
+image::../media/drw_2850_replace_dimms_IEOPS-699.svg[Replace DIMMs]
 
 +
 [cols="1,3"]
