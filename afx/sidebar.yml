@@ -7,13 +7,17 @@ entries:
     url: "/afx/install-setup-requirements.html"    
   - title: Prepare to install
     url: "/afx/prepare-hardware.html"
-  - title: Install switches
-    url: "/afx/install-switches.html"  
+  - title: Gather network information
+    url: "/afx/install-network-reqs.html"
   - title: Install hardware
-    url: "/afx/deploy-hardware.html"
+    entries:
+      - title: Install switches
+        url: "/afx/install-switches.html"  
+      - title: Install storage system and shelves
+        url: "/afx/deploy-hardware.html"
   - title: Cabling 
     entries:
-      - title: Cabling overview
+      - title: Review cabling requirements
         url: "/afx/afx-cable-overview.html"
       - title: Cable hardware
         url: "/afx/cable-hardware.html"  
