@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: afx/cable-hardware.html
 keywords: afx, afx 1k, cable controllers
-summary: Learn how to attach the AFX controller cables to your network and cable the controllers to the shelves. 
+summary: Learn how to attach the AFX 1k controller cables to your network and cable the controllers to the shelves. 
 ---
-= Cable the hardware for your AFX storage system
+= Cable the hardware for your AFX 1k storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you install the rack hardware for your AFX storage system, install the network cables for the controllers, and connect the cables between the controllers and storage shelves.
+After you install the rack hardware for your AFX 1k storage system, install the network cables for the controllers, and connect the cables between the controllers and storage shelves.
 
 .Before you begin
 
@@ -121,11 +121,11 @@ Connect the controller storage ports to the switches.
 * Controller B
 ** e10a
 ** e11a 
-
++
 *100GbE cables*
-
++
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
-
++
 image::../media/drw_afx_controller_storage_cable_a_ieops-2354.svg[Cable controller storage to switch A]
 
 . Connect the following storage ports to switch B.
@@ -135,11 +135,11 @@ image::../media/drw_afx_controller_storage_cable_a_ieops-2354.svg[Cable controll
 * Controller B
 ** e10b
 ** e11b 
-
++
 *100GbE cables*
-
++
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
-
++
 image::../media/drw_afx_controller_storage_cable_b_ieops-2355.svg[Cable controller storage to switch B]
 
 == Step 5: Cable the shelf-to-switch connections

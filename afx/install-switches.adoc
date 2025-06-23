@@ -2,16 +2,16 @@
 sidebar: sidebar
 permalink: afx/install-switches.html
 keywords: afx, afx 1k, install, setup, switches
-summary: Learn how to install the rail kits for the AFX storage system and storage shelves, and secure the AFX hardware in the cabinet or telco rack. 
+summary: Learn how to install the switches for the AFX 1k storage system and storage shelves. 
 ---
-= Install the switches in your AFX storage system
+= Install the switches for your AFX 1k storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you prepare to install your AFX storage system, you should install the switches for your system.
+After you prepare to install your AFX 1k storage system, you should install the switches for your system.
 
-Go to the https://docs.netapp.com/us-en/afx/index.html[Switch documentation^] to learn how to install your switch model for your AFX system.
+Go to the https://docs.netapp.com/us-en/afx/index.html[Switch documentation^] to learn how to install your switch model for your AFX 1k system.
 
 .AFX switches
 
@@ -19,4 +19,4 @@ Go to the https://docs.netapp.com/us-en/afx/index.html[Switch documentation^] to
 * link:https://review.docs.netapp.com/us-en/ontap-systems-switches_yos-doc331-oam-updates/switch-cisco-9364d-gx2a/configure-switch-overview-9364d-cluster.html[Install Cisco Nexus 9364D-GX2A^]
 
 .What's next?
-After you've installed the switches for your AFX storage system, you link:deploy-hardware.html[install the hardware for your AFX storage system].
+After you've installed the switches for your AFX 1k storage system, you link:deploy-hardware.html[install the hardware for your AFX 1k storage system].

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: afx/install-setup-workflow.html
 keywords: afx, afx 1k, install, setup, workflow
-summary: Get started with the install and setup of the AFX storage system and deploy it in your ONTAP environment.
+summary: Get started with the install and setup of the AFX 1k storage system and deploy it in your ONTAP environment.
 ---
 = Installation and setup workflow for AFX 1k storage systems
 :icons: font
@@ -15,7 +15,7 @@ To install and configure your AFX 1k storage system, you review the hardware req
 [role="quick-margin-para"]
 Review the hardware requirements to install your AFX 1k storage system.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:prepare-hardware.html[Prepare to install your AFX storage system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:prepare-hardware.html[Prepare to install your AFX 1k storage system]
 [role="quick-margin-para"]
 To prepare to install your AFX 1k storage system, you need to get the site ready, check the environmental and electrical requirements, and ensure there's enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
 
@@ -27,13 +27,13 @@ Install your switches in the cabinet or telco rack.
 [role="quick-margin-para"]
 To install the hardware, install the rail kits for your storage system and shelves, and then install and secure your storage system in the cabinet or telco rack. Next, slide the shelves onto the rails. Finally, attach cable management devices to the rear of the storage system for organized cable routing.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:cable-hardware.html[Cable the controllers and storage shelves for your AFX storage system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:cable-hardware.html[Cable the controllers and storage shelves for your AFX 1k storage system]
 [role="quick-margin-para"]
 To cable the hardware, first connect the storage controllers to your network and then connect the controllers to your storage shelves.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:power-on-hardware.html[Power on your AFX storage system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:power-on-hardware.html[Power on your AFX 1k storage system]
 [role="quick-margin-para"]
-Before you power on the controllers, power on each NX224 shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
+Before you power on the controllers, power on each storage shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
 
 // 2025, Jan 25, ONTAPDOC 2261
 // 2024 Sept 23, ONTAPDOC 1922
