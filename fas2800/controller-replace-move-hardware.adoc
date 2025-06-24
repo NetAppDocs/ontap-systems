@@ -28,12 +28,12 @@ Leave the cables in the cable management device so that when you reinstall the c
 . If you left the SFP modules in the system after removing the cables, move them to the replacement controller module.
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
 +
-image::../media/drw_2240_x_opening_cam_latch.svg[width=500px]
+image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
 
 . Turn the controller module over and place it on a flat, stable surface.
 . Open the cover by pressing the blue buttons on the sides of the controller module to release the cover, and then rotate the cover up and off of the controller module.
 +
-image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[width=500px]
+image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Remove the cover]
 
 [cols="1,3"]
 |===
@@ -52,7 +52,7 @@ Remove the NVMEM battery from the impaired controller module and install it into
 
 NOTE: Do not plug the NVMEM battery in until directed to do so.
 
-image::../media/drw_2850_replace_nvbattery_IEOPS-715.svg[width=500px]
+image::../media/drw_2850_replace_nvbattery_IEOPS-715.svg[Move the NV battery]
 
 [cols="1,3"]
 |===
@@ -82,7 +82,7 @@ NOTE: Do not plug the battery in yet.  You will plug it in once the rest of the 
 
 Remove the IO Plate and PCIe mezzanine card from the impaired controller module.
 
-image::../media/drw_2850_replace_HIC_IEOPS-700.svg[width=500px]
+image::../media/drw_2850_replace_HIC_IEOPS-700.svg[Move the mezzanine card]
 
 [cols="1,3"]
 |===
@@ -111,7 +111,7 @@ Remove the boot media from the impaired controller module and install it in the 
 
 . After removing the mezzanine card, locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_2850_replace_boot_media_IEOPS-696.svg[width=500px]
+image::../media/drw_2850_replace_boot_media_IEOPS-696.svg[Move the boot media]
 +
 
 [cols="1,3"]
@@ -152,7 +152,7 @@ Install the mezzanine card in the replacement controller module.
 
 Remove the DIMMs from the impaired controller module and install them into the replacement controller module.
 
-image::../media/drw_2850_replace_dimms_IEOPS-699.svg[width=500px]
+image::../media/drw_2850_replace_dimms_IEOPS-699.svg[Move the DIMMs]
 
 
 [cols="1,3"]
@@ -194,7 +194,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 Remove the caching module from the impaired controller module install it into replacement controller module.
 
-image::../media/drw_2850_replace_caching module_IEOPS-697.svg[width=500px]
+image::../media/drw_2850_replace_caching module_IEOPS-697.svg[Move the caching module]
 
 [cols="1,3"]
 |===
