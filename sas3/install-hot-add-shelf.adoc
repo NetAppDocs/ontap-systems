@@ -92,6 +92,7 @@ NOTE: Keep disk drives in their ESD bag until you are ready to install them.
 +
 If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
 
+[[install_disk_shelves_for_a_hot_add]]
 == Step 1: Install disk shelves for a hot-add
 
 For each disk shelf you are hot-adding, you install the disk shelf into a rack, connect the power cords, power on the disk shelf, and set the disk shelf ID before cabling the SAS connections.
@@ -207,7 +208,7 @@ NOTE: Firmware updates can take up to 30 minutes.
 .Before you begin
 
 
-* You must have met the requirements for completing this procedure in the <<before_you_begin,Before you begin>> section and installed, powered on, and set shelf IDs for each disk shelf as instructed in link:install-hot-add-shelf.html#install-disk-shelves-with-iom12iom12b-modules-for-a-hot-add[Install disk shelves with IOM12 modules for a hot-add].
+* You must have met the requirements for completing this procedure in the <<before_you_begin,Before you begin>> section and installed, powered on, and set shelf IDs for each disk shelf as instructed in <<install_disk_shelves_for_a_hot_add,Install disk shelves with IOM12 modules for a hot-add>>.
 
 
 .Steps
