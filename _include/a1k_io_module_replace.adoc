@@ -68,11 +68,6 @@ Make sure that you keep track of which slot the I/O module was in.
 
 == Step 3: Reboot the controller
 
-After you replace an I/O module, you must reboot the controller module.
-
-
-.Steps
-
 include::../_include/io_module_replace_reboot.adoc[] 
 
 == Step 4: Return the failed part to NetApp

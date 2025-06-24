@@ -4,7 +4,7 @@ permalink: /afx/install-network-reqs.html
 keywords: shared storage cluster switch
 summary: From ONTAP 9.9.1, you can use Cisco Nexus 9364d-gx2a switches to combine storage and cluster functionality into a shared switch scenario.
 ---
-= Network requirements for your AFX A1K system
+= Network requirements for your AFX 1K system
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: From ONTAP 9.9.1, you can use Cisco Nexus 9364d-gx2a switches to combin
 :imagesdir: ./media/
 
 [.lead]
-Record the required information for each network you connect to your AFX A1K storage system. 
+Record the required information for each network you connect to your AFX 1K storage system. 
 
 == Gather network information
 Before you begin the installation of your AFX storage system, gather the required network information

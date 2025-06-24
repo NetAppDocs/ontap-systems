@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: afx 1k, prepare installation
 summary: Complete the setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the storage system and then connecting to the management switch.
 ---
-= Complete storage system setup and configuration - AFX 1k
+= Complete storage system setup and configuration - AFX 1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you’ve turned on your AFX 1k storage system, you are ready to discover you cluster network and set up an ONTAP cluster.
+After you’ve turned on your AFX 1K storage system, you are ready to discover you cluster network and set up an ONTAP cluster.
 
 include::../_include/install_complete.adoc[]
 

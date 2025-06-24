@@ -4,28 +4,28 @@ sidebar: sidebar
 keywords: afx, afx 1k, cable, overview
 summary: Learn how to cable your nodes to the network, switches, and storage shelves. 
 ---
-= Supported cabling configuration for your AFX A1K system
+= Supported cabling configuration for your AFX 1K system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Learn about the supported hardware components and cabling options for the AFX 1K storage system, including compatible drive shelves, switches, and cable types required for proper system setup. 
+Learn about the supported hardware components and cabling options for the AFX 1K storage system, including compatible storage disk shelves, switches, and cable types required for proper system setup. 
 
 == Supported AFX 1K cabling configuration
-The initial configuration of the AFX 1K storage system supports a minimum of four nodes connected through dual switches to the drive shelves. 
+The initial configuration of the AFX 1K storage system supports a minimum of four nodes connected through dual switches to the storage disk shelves. 
 
 Additional nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1K configurations follow the same switch-based cabling methodology as the four node schema depicted below. 
 
 image:../media/afx_cable_overview_half_node_source_ieops-2358.svg[AFK 1K four node cabling]
 
 == Supported hardware components
-Review the compatible drive shelves, switches, and cable types for the AFX 1K storage system.
+Review the compatible storage disk shelves, switches, and cable types for the AFX 1K storage system.
 
 [options="header"]
 |===
-a| *Controller Shelf* a| *Drive Shelf* a| *Supported Switches* a| *Supported Cables*
+a| *Controller Shelf* a| *Disk Shelf* a| *Supported Switches* a| *Supported Cables*
 a|
-AFX 1k
+AFX 1K
 a|
 NX224
 a|
@@ -34,7 +34,7 @@ a|
 a|
 * 400GbEx100GbE QSFP breakout cable cables
 
-NOTE: Breakout cables are used for connections between the switches, controller, and drive shelf. 
+NOTE: Breakout cables are used for connections between the switches, controller, and disk shelf. 
 
 * RJ-45 cables
 * Cluster/HA interconnect cables
@@ -42,4 +42,4 @@ NOTE: Breakout cables are used for connections between the switches, controller,
 |===
 
 .What's next?
-After reviewing the supported system configuration and hardware components, you link:cable-hardware.html[cable the controllers and storage shelves for your AFX system].
+After reviewing the supported system configuration and hardware components, you link:cable-hardware.html[cable the controllers and storage shelves for your AFX 1K system].

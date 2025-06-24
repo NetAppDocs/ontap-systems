@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: afx/install-switches.html
 keywords: afx, afx 1k, install, setup, switches
-summary: Learn how to install the switches for the AFX 1k storage system and storage shelves. 
+summary: Learn how to install the switches for the AFX 1K storage system and storage shelves. 
 ---
-= Install the switches for your AFX storage system
+= Install the switches for your AFX 1K storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you prepare to install your AFX storage system, you should install the switches in the cabinet or telco rack.
+After you prepare to install your AFX 1K storage system, you should install the switches in the cabinet or telco rack.
 
 Depending on your configuration, you might need to install the Cisco Nexus 9332D-GX2B switch and pass-through panel in a NetApp cabinet. Standard brackets are included with the switch.
 
@@ -102,4 +102,4 @@ The management port is the upper-right port located on the PSU side of the switc
 
 
 .What's next?
-After you've installed the switches in the cabinet or rack, you link:deploy-hardware.html[install the AFX storage system and shelves in the cabinet or rack].
+After you've installed the switches in the cabinet or rack, you link:deploy-hardware.html[install the AFX 1K storage system and shelves in the cabinet or rack].

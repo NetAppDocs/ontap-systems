@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: afx/cable-hardware.html
 keywords: afx, afx 1k, cable controllers
-summary: Learn how to attach the AFX 1k controller cables to your network and cable the controllers to the shelves. 
+summary: Learn how to attach the AFX 1K controller cables to your network and cable the controllers to the shelves. 
 ---
-= Cable the hardware for your AFX 1k storage system
+= Cable the hardware for your AFX 1K storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you install the rack hardware for your AFX 1k storage system, install the network cables for the controllers, and connect the cables between the controllers and storage shelves.
+After you install the rack hardware for your AFX 1K storage system, install the network cables for the controllers, and connect the cables between the controllers and storage shelves.
 
 .Before you begin
 
@@ -36,7 +36,7 @@ NOTE: Cisco 9332 and 9364 switch configurations to the AFK 1k system require 400
 == Step 1: Connect the controllers to the management network
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
 
-image::../media/oie_cable_rj45.svg[RJ-45 cables,width=100px]
+image::../media/oie_cable_rj45.png[RJ-45 cables,width=100px]
 *1000BASE-T RJ-45 cables*
 
 image::../media/drw_afx_management_connection_ieops-2349.svg[Connect to your management network]
@@ -60,7 +60,7 @@ This procedure differs depending on your storage system model and I/O module con
 +
 *100GbE cables*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100 Gb Ethernet cable]
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 +
 image::../media/drw_afx_network_cabling_a_ieops-2350.svg[Cable to Ethernet network]
 
@@ -74,7 +74,7 @@ image::../media/drw_afx_network_cabling_a_ieops-2350.svg[Cable to Ethernet netwo
 +
 *100GbE cables*
 +
-image::../media/oie_cable_sfp_gbe_copper.svg[100 Gb Ethernet cable]
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 +
 image::../media/drw_afx_network_cabling_b_ieops-2351.svg[Cable to Ethernet network]
 
