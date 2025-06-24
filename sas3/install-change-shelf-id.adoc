@@ -9,7 +9,7 @@ summary: You can change a shelf ID in a system when ONTAP is not yet running or 
 :imagesdir: ../media/
 
 [.lead]
-You can change a shelf ID in a system with IOM12/IOM12B/IOM12C modules when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
+You can change a shelf ID in a system with IOM12/IOM12B modules when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
 
 .About this task
 

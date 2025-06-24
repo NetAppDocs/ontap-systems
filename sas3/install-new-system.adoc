@@ -1,7 +1,7 @@
 ---
 permalink: sas3/install-new-system.html
 sidebar: sidebar
-keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b, iom12c
+keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b
 summary: If your new system--HA pair or single-controller configuration--did not come installed in a cabinet, you must install and cable the disk shelves in a rack.
 ---
 = Install and cable shelves - DS212C, DS224C, or DS460C
@@ -14,7 +14,7 @@ If your new system--HA pair or single-controller configuration--did not come ins
 
 .About this task
 
-* Disk shelves with IOM12/IOM12B/IOM12C modules are shipped with shelf IDs preset to 00.
+* Disk shelves with IOM12/IOM12B modules are shipped with shelf IDs preset to 00.
 +
 NOTE: If you have an HA pair with at least two stacks, the disk shelf containing the root aggregates for the second stack has the shelf ID preset to 10.
 +

@@ -9,7 +9,7 @@ summary: You can use this example to guide you through how to read and apply a c
 :imagesdir: ../media/
 
 [.lead]
-You can use this example to guide you through how to read and apply a completed worksheet to cable controller-to-stack connections for disk shelves with IOM12/IOM12B/IOM12C modules for multipathed connectivity.
+You can use this example to guide you through how to read and apply a completed worksheet to cable controller-to-stack connections for disk shelves with IOM12/IOM12B modules for multipathed connectivity.
 
 .Before you begin
 
@@ -21,7 +21,7 @@ link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cablin
 
 * This procedure references the following worksheet and cabling example to demonstrate how to read a worksheet to cable controller-to-stack connections.
 +
-The configuration used in this example is a multipath HA configuration with two quad-port SAS HBAs (eight SAS ports) on each controller and two stacks of disk shelves with IOM12/IOM12B/IOM12C modules. Port pairs are cabled by skipping every other port pair in the worksheet.
+The configuration used in this example is a multipath HA configuration with two quad-port SAS HBAs (eight SAS ports) on each controller and two stacks of disk shelves with IOM12/IOM12B modules. Port pairs are cabled by skipping every other port pair in the worksheet.
 +
 NOTE: When you have more port pairs than you need to cable the stacks in your system, the best practice is to skip port pairs to optimize the SAS ports on your system. By optimizing SAS ports, you optimize your system's performance.
 

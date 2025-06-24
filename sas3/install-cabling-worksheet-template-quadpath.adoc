@@ -2,14 +2,14 @@
 permalink: sas3/install-cabling-worksheet-template-quadpath.html
 sidebar: sidebar
 keywords: complete, completing, worksheet, template, controller, sas, port, pair, cable, controller, disk, shelves, shelf, iom12, quad-pathed, connectivity, ha, pair, controller-to-stack, controller-to-stack cabling worksheet template for quad-pathed connectivity
-summary: By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12/IOM12B/IOM12C modules to achieve quad-pathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the quad-pathed connections for your configuration.
+summary: By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12/IOM12B modules to achieve quad-pathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the quad-pathed connections for your configuration.
 ---
 = Cabling worksheet for quad-pathed connectivity - DS212C, DS224C, or DS460C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12/IOM12B/IOM12C modules to achieve quad-pathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the quad-pathed connections for your configuration.
+By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12/IOM12B modules to achieve quad-pathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the quad-pathed connections for your configuration.
 
 .About this task
 
@@ -17,7 +17,7 @@ By completing the worksheet template, you can define the controller SAS port pai
 +
 Examples of completed worksheets are provided for quad-path HA and quad-path configurations.
 +
-A configuration with two quad-port SAS HBAs and two stacks of disk shelves with IOM12/IOM12B/IOM12C modules is used for the worksheet examples.
+A configuration with two quad-port SAS HBAs and two stacks of disk shelves with IOM12/IOM12B modules is used for the worksheet examples.
 
 * The worksheet template allows for up to two stacks; you need to add more columns if needed.
 * Quad-pathed connectivity for controller-to-stack connections consists of two sets of multipathed cabling: the first set of cabling is referred to as "`multipathed`"; the second set of cabling is referred to as "`quad-pathed`".

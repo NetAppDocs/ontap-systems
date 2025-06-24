@@ -1,15 +1,15 @@
 ---
 permalink: sas3/install-cabling-worksheet-template-multipath.html
 sidebar: sidebar
-keywords: complete, completing, worksheet, template, controller, sas, port, pair, cable, controller, disk, shelves, iom12, module, achieve, multipathed, connectivity, ha, pair, single-controller, configuration, worksheet, connection, controller-to-stack cabling worksheet template for multipathed connectivity, iom12c, iom12b
-summary: By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12/IOM12B/IOM12C modules to achieve multipathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the multipathed connections for your configuration.
+keywords: complete, completing, worksheet, template, controller, sas, port, pair, cable, controller, disk, shelves, iom12, module, achieve, multipathed, connectivity, ha, pair, single-controller, configuration, worksheet, connection, controller-to-stack cabling worksheet template for multipathed connectivity, iom12b
+summary: By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12/IOM12B modules to achieve multipathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the multipathed connections for your configuration.
 ---
 = Cabling worksheet for multipathed connectivity - DS212C, DS224C, or DS460C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12/IOM12B/IOM12C modules to achieve multipathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the multipathed connections for your configuration.
+By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12/IOM12B modules to achieve multipathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the multipathed connections for your configuration.
 
 .Before you begin
 
@@ -23,7 +23,7 @@ link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cablin
 +
 Examples of completed worksheets are provided for multipath HA and multipath configurations.
 +
-A configuration with two quad-port SAS HBAs and two stacks of disk shelves with IOM12/IOM12B/IOM12C modules is used for the worksheet examples.
+A configuration with two quad-port SAS HBAs and two stacks of disk shelves with IOM12/IOM12B modules is used for the worksheet examples.
 
 * The worksheet template allows for up to six stacks; you need to add more columns if needed.
 * If needed, you can refer to the link:install-cabling-rules.html[SAS cabling rules and concepts] for information about supported configurations, the controller slot numbering convention, shelf-to-shelf connectivity, and controller-to-shelf connectivity (including use of port pairs).

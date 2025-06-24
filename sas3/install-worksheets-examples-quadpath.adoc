@@ -9,7 +9,7 @@ summary: You can use the completed controller-to-stack cabling worksheet and cab
 :imagesdir: ../media/
 
 [.lead]
-You can use the completed controller-to-stack cabling worksheet and cabling example to cable a quad-path HA configuration that has two quad-port SAS HBAs. This applies to shelves with IOM12/IOM12B/IOM12C modules.
+You can use the completed controller-to-stack cabling worksheet and cabling example to cable a quad-path HA configuration that has two quad-port SAS HBAs. This applies to shelves with IOM12/IOM12B modules.
 
 * If needed, you can refer to link:install-cabling-rules.html[SAS cabling rules] for information about supported configurations, the controller slot numbering convention, shelf-to-shelf connectivity, and controller-to-shelf connectivity (including the use of port pairs).
 * If needed, you can refer to link:install-cabling-worksheets-how-to-read-quadpath.html[How to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity].

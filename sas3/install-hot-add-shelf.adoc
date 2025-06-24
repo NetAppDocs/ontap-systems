@@ -1,22 +1,22 @@
 ---
 permalink: sas3/install-hot-add-shelf.html
 sidebar: sidebar
-keywords: hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b, iom12c
-summary: You can hot-add one or more disk shelves with IOM12/IOM12B/IOM12C modules to an existing stack of disk shelves with IOM12/IOM12B/IOM12C modules or hot-add a stack of one or more disk shelves with IOM12/IOM12B/IOM12C modules directly to a SAS HBA or an onboard SAS port on the controller.
+keywords: hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b
+summary: You can hot-add one or more disk shelves with IOM12/IOM12B modules to an existing stack of disk shelves with IOM12/IOM12B modules or hot-add a stack of one or more disk shelves with IOM12/IOM12B modules directly to a SAS HBA or an onboard SAS port on the controller.
 ---
 = Hot-add shelves - DS212C, DS224C, or DS460C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-add one or more disk shelves with IOM12/IOM12B/IOM12C modules to an existing stack of disk shelves with IOM12/IOM12B/IOM12C modules or hot-add a stack of one or more disk shelves with IOM12/IOM12B/IOM12C modules directly to a SAS HBA or an onboard SAS port on the controller.
+You can hot-add one or more disk shelves with IOM12/IOM12B modules to an existing stack of disk shelves with IOM12/IOM12B modules or hot-add a stack of one or more disk shelves with IOM12/IOM12B modules directly to a SAS HBA or an onboard SAS port on the controller.
 
 [[before_you_begin]]
 .Before you begin
 
 You must meet certain requirements and familiarize yourself with the best practices and considerations for this procedure before hot-adding disk shelves.
 
-* Ensure that your system meets certain requirements before hot-adding disk shelves with IOM12/IOM12B/IOM12C modules:
+* Ensure that your system meets certain requirements before hot-adding disk shelves with IOM12/IOM12B modules:
 ** Your system and version of ONTAP must support the disk shelves you are hot-adding, including the IOMs, disk drives, and SAS cables. You can view what version of ONTAP you need for your shelves in the https://hwu.netapp.com[NetApp Hardware Universe^].
 **  Your system must have less than the maximum number of disk drives supported, by at least the number of disk shelves you plan to hot-add.
 +
@@ -43,10 +43,10 @@ After hot-adding the disk shelf, you must replace the SAS copper cables for the 
 
 
 * Familiarize yourself with the general considerations for completing this procedure:
-**  If you are hot-adding a disk shelf with IOM12/IOM12B/IOM12C modules to an existing stack (of disk shelves with IOM12/IOM12B/IOM12C modules), you can hot-add the disk shelf to either end--the logical first or last disk shelf--of the stack.
+**  If you are hot-adding a disk shelf with IOM12/IOM12B modules to an existing stack (of disk shelves with IOM12/IOM12B modules), you can hot-add the disk shelf to either end--the logical first or last disk shelf--of the stack.
 +
 For single-path HA and single-path configurations, as applicable to AFF A200, AFF A220, FAS2600 series, and FAS2700 systems, you hot-add disk shelves to the end of the stack that does not have controller connections.
-**  Disk shelves with IOM12/IOM12B/IOM12C modules must be in their own unique stack.
+**  Disk shelves with IOM12/IOM12B modules must be in their own unique stack.
 **  This procedure assumes your configuration is using in-band ACP.
 +
 For configurations that have in-band ACP enabled, in-band ACP is automatically enabled on hot-added disk shelves. For configurations in which in-band ACP is not enabled, hot-added disk shelves operate without any ACP functionality.
