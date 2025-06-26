@@ -77,10 +77,49 @@ PLATFORM_FOLDER_MAP = {
     'PLATFORM-SUPPLEMENTAL': 'platform-supplemental',
     'SAS3': 'sas3',
     'STORE-REDIRECTS': 'store-redirects',
+    # User-requested platforms (original and normalized keys):
+    'AFF A200': 'a200',
+    'AFF A220': 'a220',
+    'AFF A300': 'a300',
+    'AFF A320': 'a320',
+    'AFF A700': 'a700',
+    'AFF A700s': 'a700s',
+    'AFF C190': 'c190',
+    'FAS2600': 'fas2600',
+    'FAS8200': 'fas8200',
+    'FAS500f': 'fas500f',
+    'FAS9000': 'fas9000',
+    # Normalized keys for XML matching:
+    'affa200': 'a200',
+    'affa220': 'a220',
+    'affa300': 'a300',
+    'affa320': 'a320',
+    'affa700': 'a700',
+    'affa700s': 'a700s',
+    'affc190': 'c190',
+    'fas2600': 'fas2600',
+    'fas8200': 'fas8200',
+    'fas500f': 'fas500f',
+    'fas9000': 'fas9000',
 }
 
 # Normalize keys for better matching
 NORMALIZED_FOLDER_MAP = {k.lower().replace('-', '').replace('_', ''): v for k, v in PLATFORM_FOLDER_MAP.items()}
+
+# Add normalized keys for user-requested platforms to ensure correct matching
+NORMALIZED_FOLDER_MAP.update({
+    'affa200': 'a200',
+    'affa220': 'a220',
+    'affa300': 'a300',
+    'affa320': 'a320',
+    'affa700': 'a700',
+    'affa700s': 'a700s',
+    'affc190': 'c190',
+    'fas2600': 'fas2600',
+    'fas8200': 'fas8200',
+    'fas500f': 'fas500f',
+    'fas9000': 'fas9000',
+})
 
 # Map platform type id to prefix for adoc file naming
 PLATFORM_TYPE_PREFIX = {
@@ -218,6 +257,7 @@ for xml_file in glob.glob('techspec_*.xml'):
             continue
         # Normalize model key for matching
         model_key = model.lower().replace(' ', '').replace('-', '').replace('_', '')
+        print(f"DEBUG: Found model '{model}' (normalized: '{model_key}') in XML '{xml_file}'")
         # Explicit FAS model-to-folder mapping
         if model_key in FAS_MODEL_TO_FOLDER:
             folder = FAS_MODEL_TO_FOLDER[model_key]
