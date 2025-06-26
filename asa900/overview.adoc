@@ -8,24 +8,17 @@ summary: Key specifications for the ASA900 platform group
 :imagesdir: ../media/
 
 [.lead]
-The following are a selection of key specifications for ASA A900 in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A900 specifications.
+The following are a selection of key specifications for an ASA A900 system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A900 specifications.
 
 == Key specifications for ASA A900
 
-Platform Configuration: ASA A900 Single Chassis HA Pair
-
-Max Raw Capacity: 14.6880 PB
-
-Memory: 2048.0000 GB
-
-Form Factor: 8U chassis with 2 HA controllers 
-
-ONTAP Version: ONTAP: 9.16.1P2
-
-PCIe Expansion Slots: 20
-
-Minimum ONTAP Version: ONTAP 9.13.1
-
+* Platform Configuration: ASA A900 Single Chassis HA Pair
+* Max Raw Capacity: 14.6880 PB
+* Memory: 2048.0000 GB
+* Form Factor: 8U chassis with 2 HA controllers 
+* ONTAP Version: ONTAP: 9.16.1P2
+* PCIe Expansion Slots: 20
+* Minimum ONTAP Version: ONTAP 9.13.1
 == Scaleout maximums
 * Type: NAS
 * Type: SAN; HA Pairs: 6; Raw Capacity: 88.1 PB / 78.3 PiB; Max Memory: 12288 GB
@@ -51,10 +44,10 @@ No onboard IO data.
 * Protocol: USB 12 Mbps; Ports: 2
 
 == Storage Networking Supported
-FC
-iSCSI
-NVMe/FC 
-NVMe/TCP
+* FC
+* iSCSI
+* NVMe/FC 
+* NVMe/TCP
 == System environment specifications
 * Typical Power: 8004 BTU/hr
 * Worst-case Power: 9937 BTU/hr
@@ -122,7 +115,7 @@ IEC60950-1,
 IS 13252(part 1)
 
 == High Availability
-Ethernet based baseboard management controller (BMC) and ONTAP management interface
-Redundant hot-swappable controllers
-Redundant hot-swappable power supplies
-SAS in-band management over SAS connections
+* Ethernet based baseboard management controller (BMC) and ONTAP management interface
+* Redundant hot-swappable controllers
+* Redundant hot-swappable power supplies
+* SAS in-band management over SAS connections

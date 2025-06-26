@@ -8,24 +8,17 @@ summary: Key specifications for the C250 platform group
 :imagesdir: ../media/
 
 [.lead]
-The following are a selection of key specifications for AFF C250 in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF C250 specifications.
+The following are a selection of key specifications for an AFF C250 system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF C250 specifications.
 
 == Key specifications for AFF C250
 
-Platform Configuration: AFF C250 Single Chassis HA Pair
-
-Max Raw Capacity: 1.4736 PB
-
-Memory: 128.0000 GB
-
-Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
-
-ONTAP Version: ONTAP: 9.16.1P2
-
-PCIe Expansion Slots: 4
-
-Minimum ONTAP Version: ONTAP 9.10.1P15
-
+* Platform Configuration: AFF C250 Single Chassis HA Pair
+* Max Raw Capacity: 1.4736 PB
+* Memory: 128.0000 GB
+* Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
+* ONTAP Version: ONTAP: 9.16.1P2
+* PCIe Expansion Slots: 4
+* Minimum ONTAP Version: ONTAP 9.10.1P15
 == Scaleout maximums
 * Type: NAS; HA Pairs: 12; Raw Capacity: 17.7 PB / 15.7 PiB; Max Memory: 1536 GB
 * Type: SAN; HA Pairs: 6; Raw Capacity: 8.8 PB / 7.9 PiB; Max Memory: 768 GB
@@ -51,23 +44,23 @@ Minimum ONTAP Version: ONTAP 9.10.1P15
 * Protocol: USB 12 Mbps; Ports: 4
 
 == Storage Networking Supported
-CIFS
-FC
-iSCSI
-NFS v3
-NFS v4.0
-NFS v4.1
-NFS v4.2
-NVMe/FC 
-NVMe/TCP
-S3
-S3 with NAS
-SMB 2.0
-SMB 2.1
-SMB 2.x
-SMB 3.0
-SMB 3.1
-SMB 3.1.1
+* CIFS
+* FC
+* iSCSI
+* NFS v3
+* NFS v4.0
+* NFS v4.1
+* NFS v4.2
+* NVMe/FC 
+* NVMe/TCP
+* S3
+* S3 with NAS
+* SMB 2.0
+* SMB 2.1
+* SMB 2.x
+* SMB 3.0
+* SMB 3.1
+* SMB 3.1.1
 == System environment specifications
 * Typical Power: 2906 BTU/hr
 * Worst-case Power: 3750 BTU/hr
@@ -134,6 +127,6 @@ IEC60950-1,
 IS 13252(part 1)
 
 == High Availability
-Ethernet based baseboard management controller (BMC) and ONTAP management interface
-Redundant hot-swappable controllers
-Redundant hot-swappable power supplies
+* Ethernet based baseboard management controller (BMC) and ONTAP management interface
+* Redundant hot-swappable controllers
+* Redundant hot-swappable power supplies

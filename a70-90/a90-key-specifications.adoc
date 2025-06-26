@@ -8,24 +8,17 @@ summary: Key specifications for AFF A90
 :imagesdir: ../media/
 
 [.lead]
-The following are a selection of key specifications for AFF A90 in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A90 specifications.
+The following are a selection of key specifications for an AFF A90 system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A90 specifications.
 
 === Key specifications for AFF A90
 
-Platform Configuration: AFF A90 Single Chassis HA Pair
-
-Max Raw Capacity: 6.6096 PB
-
-Memory: 2048.0000 GB
-
-Form Factor: 4U chassis with 2 HA controllers and 48 drive slots
-
-ONTAP Version: ONTAP: 9.16.1P2
-
-PCIe Expansion Slots: 18
-
-Minimum ONTAP Version: ONTAP 9.15.1RC2
-
+* Platform Configuration: AFF A90 Single Chassis HA Pair
+* Max Raw Capacity: 6.6096 PB
+* Memory: 2048.0000 GB
+* Form Factor: 4U chassis with 2 HA controllers and 48 drive slots
+* ONTAP Version: ONTAP: 9.16.1P2
+* PCIe Expansion Slots: 18
+* Minimum ONTAP Version: ONTAP 9.15.1RC2
 === Scaleout Maximums
 * Type: NAS; HA Pairs: 12; Raw Capacity: 79.3 PB / 70.4 PiB; Max Memory: 24576 GB
 * Type: SAN; HA Pairs: 6; Raw Capacity: 39.7 PB / 35.2 PiB; Max Memory: 12288 GB
@@ -52,25 +45,25 @@ No onboard IO data.
 * Protocol: USB 600 Mbps; Ports: 2
 
 === Storage Networking Supported
-CIFS
-FC
-iSCSI
-NFS v3
-NFS v4.0
-NFS v4.1
-NFS v4.2
-NFSv3/RDMA
-NFSv4/RDMA
-NVMe/FC 
-NVMe/TCP
-S3
-S3 with NAS
-SMB 2.0
-SMB 2.1
-SMB 2.x
-SMB 3.0
-SMB 3.1
-SMB 3.1.1
+* CIFS
+* FC
+* iSCSI
+* NFS v3
+* NFS v4.0
+* NFS v4.1
+* NFS v4.2
+* NFSv3/RDMA
+* NFSv4/RDMA
+* NVMe/FC 
+* NVMe/TCP
+* S3
+* S3 with NAS
+* SMB 2.0
+* SMB 2.1
+* SMB 2.x
+* SMB 3.0
+* SMB 3.1
+* SMB 3.1.1
 === System Environment Specifications
 * Typical Power: 8304 BTU/hr
 * Worst-case Power: 10948 BTU/hr
@@ -138,7 +131,7 @@ IEC60950-1,
 IS 13252(part 1)
 
 === High Availability
-Ethernet based baseboard management controller (BMC) and ONTAP management interface
-Redundant hot-swappable controllers
-Redundant hot-swappable power supplies
-SAS in-band management over SAS connections for external shelves
+* Ethernet based baseboard management controller (BMC) and ONTAP management interface
+* Redundant hot-swappable controllers
+* Redundant hot-swappable power supplies
+* SAS in-band management over SAS connections for external shelves

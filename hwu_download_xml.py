@@ -13,6 +13,7 @@ if not username or not password:
 server = 'db.epic.netapp.com'
 database = 'DHWU2.0'
 platform_ids = [2032, 5265148, 13684325, 30310846, 31745792, 32834061] #ADD your platform IDs here
+#    2032': 'fas','5265148': 'aff-a-series','13684325': 'asa-aff-a-series', '30310846': 'aff-c-series','31745792': 'asa-a-series','32834061': 'asa-c-series'
 
 conn_str = (
     f"DRIVER={{ODBC Driver 17 for SQL Server}};"
