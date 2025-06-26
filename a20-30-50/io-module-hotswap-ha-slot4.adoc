@@ -53,14 +53,14 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 include::../_include/g_io_module_hotswap_ha_slot4_prepare_slot.adoc[]
 
 
-== Step 2: Replace the failed cluster/HA module
+== Step 2: Replace the failed cluster and HA I/O module
 
 // New include specific to g-platform family because the hardware hot-swap steps for a cluster and HA I/O module in slot 4 are unique to g-platforms.
 
 include::../_include/g_io_module_hotswap_ha_slot4_swap_hardware.adoc[]
 
 
-== Step 3: Bring the replacement cluster/HA module online
+== Step 3: Bring the replacement cluster and HA I/O module online
 
 // New include specific to g-platform family because the steps for bringing the replacement cluster and HA I/O module online specify/reference slot 4, which is unique to g-platforms.
 
