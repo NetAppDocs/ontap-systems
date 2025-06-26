@@ -16,9 +16,6 @@ After you install your FAS50 storage system hardware, cable the controllers to t
 Contact your network administrator for information about connecting the storage system to your network switches.
 
 .About this task
-* The cluster/HA and host network cabling procedures show common configurations. 
-+
-If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
 
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
@@ -30,7 +27,16 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 
 == Step 1: Cable the cluster/HA connections
-Cable the controllers to create the ONTAP cluster connections.
+Cable the controllers to create the ONTAP cluster connections. 
+
+// Cable the cluster/HA interconnect connections for the controllers.
+
+[NOTE]
+====
+The cluster/HA cabling examples show common configurations. 
+
+If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
+====
 
 //open tabbed block 
 [role="tabbed-block"]
@@ -104,6 +110,13 @@ image:../media/drw_isi_fas50_2p_100gbe_switched_cluster_cabling_ieops-1936.svg[f
 
 == Step 2: Cable the host network connections
 Cable the controllers to your Ethernet or FC host network.
+
+[NOTE]
+====
+The host network cabling examples show common configurations. 
+
+If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
+====
 
 //open tabbed block 
 [role="tabbed-block"]

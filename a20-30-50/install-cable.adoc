@@ -16,9 +16,6 @@ After you install your AFF A20, AFF A30, or AFF A50 storage system hardware, cab
 Contact your network administrator for information about connecting the storage system to your network switches.
 
 .About this task
-* The cluster/HA and host network cabling procedures show common configurations. 
-+
-If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
 
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
@@ -31,6 +28,13 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 == Step 1: Cable the cluster/HA connections
 Cable the controllers to create the ONTAP cluster connections.
+
+[NOTE]
+====
+The cluster/HA cabling examples show common configurations. 
+
+If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
+====
 
 //open tabbed block 
 [role="tabbed-block"]
@@ -197,6 +201,13 @@ image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched
 
 == Step 2: Cable the host network connections
 Cable the controllers to your Ethernet or FC host network.
+
+[NOTE]
+====
+The host network cabling examples show common configurations. 
+
+If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
+====
 
 //open tabbed block 
 [role="tabbed-block"]
