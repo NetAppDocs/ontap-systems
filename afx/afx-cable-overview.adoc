@@ -2,7 +2,7 @@
 permalink: afx/afx-cable-overview.html
 sidebar: sidebar
 keywords: afx, afx 1k, cable, overview
-summary: Learn how to cable your nodes to the network, switches, and storage shelves. 
+summary: Learn how to cable your controller nodes to the network, switches, and storage shelves. 
 ---
 = Supported cabling configuration for your AFX 1K system
 :icons: font
@@ -12,11 +12,11 @@ summary: Learn how to cable your nodes to the network, switches, and storage she
 Learn about the supported hardware components and cabling options for the AFX 1K storage system, including compatible storage disk shelves, switches, and cable types required for proper system setup. 
 
 == Supported AFX 1K cabling configuration
-The initial configuration of the AFX 1K storage system supports a minimum of four nodes connected through dual switches to the storage disk shelves. 
+The initial configuration of the AFX 1K storage system supports a minimum of four controller nodes connected through dual switches to the storage disk shelves. 
 
-Additional nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1K configurations follow the same switch-based cabling methodology as the four node schema depicted below. 
+Additional controller nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1K configurations follow the same switch-based cabling methodology as the four node schema depicted below. 
 
-image:../media/afx_cable_overview_half_node_source_ieops-2358.svg[AFK 1K four node cabling]
+image:../media/drw_afx_cable_overview_half_node_ieops-2358.svg[AFK 1K four node cabling]
 
 == Supported hardware components
 Review the compatible storage disk shelves, switches, and cable types for the AFX 1K storage system.

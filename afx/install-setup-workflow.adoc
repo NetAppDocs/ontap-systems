@@ -27,13 +27,13 @@ Install your switches in the cabinet or telco rack.
 [role="quick-margin-para"]
 To install the hardware, install the rail kits for your storage system and shelves, and then install and secure your storage system in the cabinet or telco rack. Next, slide the shelves onto the rails. Finally, attach cable management devices to the rear of the storage system for organized cable routing.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:cable-hardware.html[Cable the controllers and storage shelves for your AFX 1K storage system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:cable-hardware.html[Cable the controllers and shelves for your AFX 1K storage system]
 [role="quick-margin-para"]
-To cable the hardware, first connect the storage controllers to your network and then connect the controllers to your storage shelves.
+To cable the hardware, first connect the storage controller nodes to your network and then connect the controller nodes to your storage shelves.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:power-on-hardware.html[Power on your AFX 1K storage system]
 [role="quick-margin-para"]
-Before you power on the controllers, power on each storage shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
+Before you power on the controller nodes, power on each storage shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
 
 // 2025, Jan 25, ONTAPDOC 2261
 // 2024 Sept 23, ONTAPDOC 1922
