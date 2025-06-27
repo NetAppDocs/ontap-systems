@@ -2,14 +2,14 @@
 permalink: afx-1k/nvram-replace.html
 sidebar: sidebar
 keywords: afx 1k, replace nvram
-summary: Replace the NVRAM in your AFX 1K system when the non-volatile memory becomes faulty or requires an upgrade.
+summary: Replace the NVRAM in your AFX 1K storage system when the non-volatile memory becomes faulty or requires an upgrade.
 ---
 = Replace NVRAM - AFX 1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the NVRAM in your AFX 1K system when the non-volatile memory becomes faulty or requires an upgrade. The replacement process involves
+Replace the NVRAM in your AFX 1K storage system when the non-volatile memory becomes faulty or requires an upgrade. The replacement process involves
 shutting down the impaired controller, replacing the NVRAM module or the NVRAM DIMM, reassigning the disks, and returning the failed part to NetApp.
 
 include::../_include/a1k_nvram_replace.adoc[]
