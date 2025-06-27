@@ -31,7 +31,7 @@ NOTE: This might take several minutes to allow for any required firmware updates
 +
 `system controller slot module show`
 +
-The output should show slot 4 status as powered on and ready for operation for the cluster and HA I/O module you inserted.
+The output should show slot 4 status as `powered-on` and ready for operation for the cluster and HA I/O module you inserted.
 
 . Verify that the replacement cluster and HA I/O module is online and recognized: 
 +
