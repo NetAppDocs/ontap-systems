@@ -1,17 +1,17 @@
 ---
-permalink: a20-30-50/io-module-hotswap.html
+permalink: a30-60/io-module-hotswap.html
 sidebar: sidebar
-keywords: aff a20, aff a30, aff a50, hotswap a cluster ha card
-summary: The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails.
+keywords: aff c30, aff c60, hotswap a cluster ha card
+summary: The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF C30 or AFF C60 storage system when the module fails.
 ---
-= Hot-swap the I/O module used for cluster and HA traffic - AFF A20, AFF A30, and AFF A50
+= Hot-swap the I/O module used for cluster and HA traffic - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 //Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family.
 
 [.lead]
-The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails.
+The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF C30 or AFF C60 storage system when the module fails.
 
 The hot-swap process involves preparing slot 4 for removal, hot-swapping the failed module for an equivalent one, bringing the replacement module online, and returning the failed module to NetApp.
 
