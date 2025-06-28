@@ -27,7 +27,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 
 == Step 1: Cable the cluster/HA connections
-Cable the controllers to create the ONTAP cluster connections.
+Create the ONTAP cluster connections. For switchless clusters, connect the controllers to each other. For switched clusters, connect the controllers to the cluster network switches.
 
 [NOTE]
 ====
