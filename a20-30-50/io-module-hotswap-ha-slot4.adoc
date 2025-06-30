@@ -8,7 +8,7 @@ summary: The cluster and HA I/O module supports interconnects for clustering and
 :icons: font
 :imagesdir: ../media/
 
-//Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family.
+//Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family on 9.17.1 and later.
 
 [.lead]
 The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails.
