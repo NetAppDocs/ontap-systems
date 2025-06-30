@@ -15,7 +15,7 @@ The ASA C30 storage system offers flexibility in expanding or replacing I/O modu
 +
 Adding additional I/O modules can improve redundancy, helping to ensure that the storage system remains operational even if one I/O module fails.
 
-* link:io-module-hotswap.html[Hot-swap a cluster and HA I/O module]
+* link:io-module-hotswap-ha-slot4.html[Hot-swap a cluster and HA I/O module]
 +
 Hot-swapping a failing cluster and HA I/O module can restore the storage system to its optimal operating state. Hot-swapping is done without having to shut down the impaired controller.
 +
