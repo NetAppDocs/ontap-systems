@@ -9,7 +9,7 @@ summary: Replacing a drive drawer in a shelf requires you to either halt the ent
 :imagesdir: ../media/
 
 [.lead]
-Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.
+Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the shelf's disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.
 
 .Before you begin
 
@@ -50,7 +50,7 @@ image::../media/dcm2.png[Front view of a DCM2 drive shelf]
 
 Before you replace a drive drawer, you must make sure to update IOM12 FW if needed, and either halt the HA pair, which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair. Lastly, you must power off the shelf.
 
-.steps
+.Steps
 . Determine if when you replace the failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.
 . If the shelf will have a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later; otherwise, go to the next step.
 +
@@ -69,7 +69,7 @@ NOTE: Data aggregates can remain on the shelf when halting the HA pair.
 +
 NOTE: If you attempt to replace a drawer with aggregates on the disk shelf, you could cause a system disruption with a multidisk panic.
 
-.. Move all of the data from the data aggregates residing on the disk drives.
+.. Move all of the data from the data aggregates residing on the entire shelf's disk drives.
 +
 Data includes, but is not limited to, volumes and LUNs.
 
