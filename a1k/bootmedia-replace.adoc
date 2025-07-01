@@ -2,7 +2,7 @@
 permalink: a1k/bootmedia-replace.html
 sidebar: sidebar
 keywords: aff a1k, replace the boot media
-summary: The boot media in your AFF A1K system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
+summary: The boot media in your AFF A1K system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive.
 ---
 = Replace the boot media and prepare for manual boot recovery - AFF A1K
 :icons: font

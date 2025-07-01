@@ -1,0 +1,37 @@
+---
+permalink: fas50/bootmedia-replace-workflow-bmr.html
+sidebar: sidebar
+keywords: fas50, replace the boot media
+summary: The automated recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on partner node to reinstall ONTAP on the replacement boot media in your FAS50 storage system.
+---
+= Boot media automatic recovery workflow - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The automated recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on partner node to reinstall ONTAP on the replacement boot media in your FAS50 storage system.
+
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+
+To get started, review the replacement requirements, shut down the controller, replace the boot media, allow the system to restore the image, and verify system functionality.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements-bmr.html[Review the boot media requirements]
+[role="quick-margin-para"]
+Review the requirements for boot media replacement.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-shutdown-bmr.html[Shut down the controller]
+[role="quick-margin-para"]
+Shut down the controller in your storage system when when you need to replace the boot media.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:bootmedia-replace-bmr.html[Replace the boot media]
+[role="quick-margin-para"]
+Remove the failed boot media from the impaired controller and install the replacement boot media.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia-recovery-image-boot-bmr.html[Restore the image on the boot media]
+[role="quick-margin-para"]
+Restore the ONTAP image from the partner controller.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:bootmedia-complete-rma-bmr.html[Return the failed part to NetApp]
+[role="quick-margin-para"]
+Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+

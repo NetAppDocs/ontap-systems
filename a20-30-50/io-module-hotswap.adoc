@@ -1,0 +1,17 @@
+---
+permalink: a20-30-50/io-module-hotswap.html
+sidebar: sidebar
+keywords: aff a20, aff a30, aff a50, hotswap a pcie card
+summary: Replace an I/O module in your AFF A20, AFF A30, or AFF A50 system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
+---
+= Hot-swap a cluster/HA I/O module - AFF A20, AFF A30, and AFF A50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Hot-swap a cluster/HA I/O module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails. The process involves preparing the I/O module slot for removal, hot-swapping the failed cluster/HA I/O module for an equivalent module, bringing the replacement cluster/HA I/O module online, and returning the failed part to NetApp.
+
+
+include::../_include/g_io_module_hotswap.adoc[]
+
+//Jul 25, 2025: GH issue #1185 to support cluster/HA I/O hot-swap.
