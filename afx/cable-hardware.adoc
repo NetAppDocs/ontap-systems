@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: afx/cable-hardware.html
-keywords: afx, afx 1k, cable controllers
+keywords: afx, afx 1k, cable controllers, Cisco Nexus 9332D-GX2B, Cisco Nexus 9364D-GX2A, switches, switch, cable hardware, cable storage shelves
 summary: Learn how to attach the AFX 1K controller cables to your network and cable the controllers to the shelves. 
 ---
 = Cable the hardware for your AFX 1K storage system
@@ -31,7 +31,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 * The AFX 1K storage system utilizes 400GbEx100GbE breakout cables. The 400GBE connections are made to the switch ports, and the 100GbE connections are made to the controller and drive shelf ports.
 +
-NOTE: Cisco 9332 and 9364 switch configurations to the AFK 1k system require 400GbEx100GbE breakout cable connections. 
+NOTE: Cisco Nexus 9332D-GX2B and 9364D-GX2A switch configurations to the AFK 1k system require 400GbEx100GbE breakout cable connections. 
 
 == Step 1: Connect the controllers to the management network
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.

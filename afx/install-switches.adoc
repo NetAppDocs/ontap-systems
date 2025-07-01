@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: afx/install-switches.html
-keywords: afx, afx 1k, install, setup, switches
+keywords: afx, afx 1k, install, setup, switches, cisco 9332, cisco 9336, switches,
 summary: Learn how to install the switches for the AFX 1K storage system and storage shelves. 
 ---
 = Install the switches for your AFX 1K storage system
@@ -13,7 +13,7 @@ After you prepare to install your AFX 1K storage system, you should install the 
 
 Depending on your configuration, you might need to install the Cisco Nexus 9332D-GX2B switch and pass-through panel in a NetApp cabinet. Standard brackets are included with the switch.
 
-.What you'll need
+.Before you begin
 
 * The pass-through panel kit, which is available from NetApp (part number X8784-R6).
 +

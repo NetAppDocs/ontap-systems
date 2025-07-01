@@ -1,7 +1,7 @@
 ---
 permalink: afx/afx-cable-overview.html
 sidebar: sidebar
-keywords: afx, afx 1k, cable, overview
+keywords: afx, afx 1k, cable, overview, cisco 9332, cisco 9364, cabling, hardware, switches, storage shelves, disk shelves, controller nodes
 summary: Learn how to cable your controller nodes to the network, switches, and storage shelves. 
 ---
 = Supported cabling configuration for your AFX 1K storage system
@@ -29,8 +29,8 @@ AFX 1K
 a|
 NX224
 a|
-* Cisco 9332 (400GbE)
-* Cisco 9364 (400GbE)
+* Cisco Nexus 9332D-GX2B (400GbE)
+* Cisco Nexus 9364D-GX2A (400GbE)
 a|
 * 400GbEx100GbE QSFP breakout cable cables
 
@@ -40,6 +40,24 @@ NOTE: Breakout cables are used for connections between the switches, controller,
 * Cluster/HA interconnect cables
 * ISL cables for connection between switch A and switch B
 |===
+
+== Cabling and configuration considerations for Cisco Nexus 9332D-GX2b and 9364D-GX2A switches
+Before configuring your Cisco 9332D-GX2b or 9364D-GX2A switch, review the following considerations. 
+
+=== Support for NVIDIA CX6-DX Ethernet ports
+If connecting a switch port to an ONTAP controller using NVIDIA  ConnectX-6 Dx (CX6-DX) NIC port (part number X50130B), you must hard-code the switch port speed.
+
+[subs=+quotes]
+----
+(cs1)# *configure*
+(cs1)(config)# *interface Ethernet1/16/?*
+(cs1)(config-if)# *speed 100000*
+(cs1)(config-if)# *no negotiate auto*
+(cs1)(config-if)# *exit*
+(cs1)(config)# *exit*
+(cs1)# *copy running-config startup-config*
+----
+See the https://hwu.netapp.com/Switch/Index[Hardware Universe^] for more information on switch ports.
 
 .What's next?
 After reviewing the supported system configuration and hardware components, you link:cable-hardware.html[cable the controllers and storage shelves for your AFX 1K system].
