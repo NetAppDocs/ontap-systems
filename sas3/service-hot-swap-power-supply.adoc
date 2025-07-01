@@ -4,35 +4,28 @@ sidebar: sidebar
 keywords: hot-swap, fail, power, supply, ds460c, ds224c, ds212c, disk, shelf-nondisruptively, shelf, nondisruptive, system, power, i/o, progress, hot-swap a power supply
 summary: You can hot-swap a failed power supply in a DS460C, DS224C, or DS212C disk shelf.
 ---
-= Hot-swap a power supply - shelves with IOM12/IOM12B modules
+= Hot-swap a power supply - DS212C, DS224C, or DS460C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You can hot-swap a failed power supply in a DS460C, DS224C, or DS212C disk shelf.
 
+This procedure applies to shelves with IOM12 or IOM12B modules.
+
 .Before you begin
 
-All other components in the system--including the other power supply--must be functioning properly.
-
-.About this task
-
+* All other components in the system--including the other power supply--must be functioning properly.
 * If you are replacing more than one power supply, you must do so one at a time so that the disk shelf maintains power.
 * You must replace a power supply within two minutes of removal to minimize disruption to the disk shelf's airflow.
 * Always use two hands when removing, installing, or carrying a power supply to support its weight.
-* The best practice is to have the current versions of disk shelf (IOM) firmware and disk drive firmware on your system before adding new disk shelves, shelf FRU components, or SAS cables.
-+
-Current versions of firmware can be found on the NetApp Support Site.
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
+* *Best practice*: Ensure your system has the current versions of disk shelf (IOM) firmware and disk drive firmware before adding new disk shelves, shelf FRU components, or SAS cables. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware].
 
 * If needed, you can turn on the disk shelf's location (blue) LEDs to aid in physically locating the affected disk shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
 A disk shelf has three location LEDs: one on the operator display panel and one on each shelf IOM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
 
-* If needed, you can refer to the Monitoring disk shelf LEDs section for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
+* If needed, you can refer to the link:/sas3/service-monitor-leds.html#operator-display-panel-leds[Monitoring disk shelf LEDs] guide for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
 
 .Steps
 
@@ -54,14 +47,14 @@ image::../media/drw_2600_psu.gif[Opening the power supply cam handle]
 
 . Use the cam handle to slide the power supply out of the disk shelf.
 +
-If you have a DS224C or DS212C disk shelf, as you remove the power supply, a flap swings into place to block the empty bay, helping to maintain air flow and cooling.
+If you have a DS224C or DS212C disk shelf, as you remove the power supply, a flap swings into place to block the empty bay. This helps maintain air flow and cooling.
 +
 NOTE: When handling a power supply, always use two hands to support its weight.
 
 . Make sure that the on/off switch of the new power supply is in the Off position.
-. Using two hands, with the cam handle of the new power supply in the open position, support and align the edges of the new power supply with the opening in the disk shelf, and then firmly push the new power supply until it meets the mid plane.
+. With the cam handle of the new power supply in the open position, use two hands to support and align the edges of the new power supply with the opening in the disk shelf. Then, firmly push the new power supply until it meets the mid plane.
 +
-NOTE: Do not use excessive force when sliding the power supply into the disk shelf; you might damage the connectors.
+CAUTION: Do not use excessive force when sliding the power supply into the disk shelf; you might damage the connectors.
 
 . Close the cam handle so that the latch clicks into the locked position and the power supply is fully seated.
 . Reconnect the power supply cable and turn on the new power supply:
@@ -69,7 +62,7 @@ NOTE: Do not use excessive force when sliding the power supply into the disk she
  .. Reconnect the power cord to the power supply and secure the power cord with the power cord retainer.
  .. Turn on the power switch.
 +
-The power supply's power (green) LED and attention (amber) LED illuminate, and then within 40 seconds, the attention (amber) LED turns off.
+The power supply's power (green) LED and attention (amber) LED illuminate. Within 40 seconds, the attention (amber) LED turns off.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +
 Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number or additional help with the replacement procedure.
