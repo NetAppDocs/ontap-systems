@@ -37,5 +37,5 @@ The output should show slot 4 status as `powered-on` and ready for operation for
 +
 `sysconfig -av _slot_number_`
 
-. Visually confirm that the amber attention LED for slot 4 is not illuminated.
+// Visually confirm that the amber attention LED for slot 4 is not illuminated.
 
