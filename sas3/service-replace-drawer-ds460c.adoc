@@ -9,7 +9,8 @@ summary: Replacing a drive drawer in a shelf requires you to either halt the ent
 :imagesdir: ../media/
 
 [.lead]
-Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the shelf's disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.
+To replace a drive drawer in a shelf, you can halt the entire storage system (HA pair), which allows you to keep the data aggregates on the shelf. Alternatively, you can keep the HA pair up and running, which requires you to move all data from the data aggregates on the shelf’s disk drives and then offline and delete those data aggregates. If the shelf contains a root aggregate, you must halt the HA pair.
+
 
 .Before you begin
 
@@ -69,7 +70,7 @@ NOTE: Data aggregates can remain on the shelf when halting the HA pair.
 +
 NOTE: If you attempt to replace a drawer with aggregates on the disk shelf, you could cause a system disruption with a multidisk panic.
 
-.. Move all of the data from the data aggregates residing on the entire shelf's disk drives.
+.. Move all of the data from the data aggregates located on all disk drives on the shelf.
 +
 Data includes, but is not limited to, volumes and LUNs.
 
