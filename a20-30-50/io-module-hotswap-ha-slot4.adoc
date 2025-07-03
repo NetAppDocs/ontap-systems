@@ -21,12 +21,14 @@ The hot-swap process involves preparing slot 4 for removal, hot-swapping the fai
 ** Your storage system must be running ONTAP 9.17.1 or later.
 ** The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with an equivalent I/O module. You cannot change the I/O module type.
 ** Your storage system configuration must have only one cluster and HA I/O module located in slot 4, not two cluster and HA I/O modules.
-** The controller with the failed cluster and HA I/O module (the impaired controller) must have taken over the healthy controller. The takeover should have occured automatically if the I/O module is failed.
+** Your storage system must be a two-node (switchless or switched) cluster configuration.
+** The controller with the failed cluster and HA I/O module (the impaired controller) must have taken over the healthy partner controller. The takeover should have occured automatically if the I/O module is failed.
 +
-You can verify that the impaired controller successfully took over the healthy controller by entering the `storage failover show` command.
+For two-node clusters, the storage system cannot discern which controller has the the failed I/O module, so either controller might initiate the takeover. The cluster and HA I/O module hot-swap procedure is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy partner controller.
 +
-If you are not sure which node has the failed I/O module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].  
-** Your storage system must be a two-node cluster configuration.
+You can verify that the impaired controller successfully took over the healthy partner controller by entering the `storage failover show` command.
++
+If you are not sure which controller has the failed I/O module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].  
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 

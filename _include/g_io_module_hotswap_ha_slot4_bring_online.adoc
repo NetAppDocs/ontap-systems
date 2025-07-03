@@ -25,6 +25,8 @@ The module has been successfully powered on, initialized and placed into service
 
 . Verify that a hotplug.init.success EMS event is logged for each cluster and HA I/O module port reporting that initialization succeeded.
 +
+`event log show -node local -message-name \*hotplug.init*`
++
 NOTE: This might take several minutes to allow for any required firmware updates and port initialization.
 
 . Verify I/O module slot 4 is powered on and ready for operation:
@@ -35,7 +37,32 @@ The output should show slot 4 status as `powered-on` and ready for operation for
 
 . Verify that the replacement cluster and HA I/O module is online and recognized: 
 +
-`sysconfig -av _slot_number_`
+`system controller config show -node local -slot4`
+// `sysconfig -av _slot_number_`
++
+If the replacement cluster and HA I/O module was successfully brought online and is recognize, the output shows I/O module information, including port information, for slot 4.
++
+For example, you will see similar output shown below:
+----
+node1::*> system controller config show -node _node1_ -slot 4
 
-// Visually confirm that the amber attention LED for slot 4 is not illuminated.
+Node: node1
+Sub- Device/
+Slot slot Information
+---- ---- -----------------------------
+   4    - Dual 40G/100G Ethernet Controller CX6-DX
+                  e4a MAC Address: d0:39:ea:59:69:74 (auto-100g_cr4-fd-up)
+                          QSFP Vendor:        CISCO-BIZLINK
+                          QSFP Part Number:   L45593-D218-D10
+                          QSFP Serial Number: LCC2807GJFM-B
+                  e4b MAC Address: d0:39:ea:59:69:75 (auto-100g_cr4-fd-up)
+                          QSFP Vendor:        CISCO-BIZLINK
+                          QSFP Part Number:   L45593-D218-D10
+                          QSFP Serial Number: LCC2809G26F-A
+                  Device Type:        CX6-DX PSID(NAP0000000027)
+                  Firmware Version:   22.44.1700
+                  Part Number:        111-05341
+                  Hardware Revision:  20
+                  Serial Number:      032403001370
+----
 
