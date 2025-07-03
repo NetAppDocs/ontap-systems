@@ -2,14 +2,14 @@
 permalink: nx224/service-replace-io-module.html
 sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, replace, fail,  nondisruptive, power, i/o
-summary: You can replace a failed Ethernet I/O module nondisruptively in an NX224 drive shelf that is powered on, and while I/O is in progress.
+summary: You can replace a failed Ethernet I/O module nondisruptively in an NX224 shelf that is powered on, and while I/O is in progress.
 ---
 = Replace the Ethernet I/O module - NX224 shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can replace a failed Ethernet I/O module nondisruptively in an NX224 drive shelf that is powered on, and while I/O is in progress. 
+You can replace a failed Ethernet I/O module nondisruptively in an NX224 shelf that is powered on, and while I/O is in progress. 
 
 .About this task
 
@@ -86,7 +86,7 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 
 include::../_include/t_module_reinstall.adoc[]
 
-. Recable the NSM.
+. Recable the NSM:
 .. Reconnect the storage cabling to the same two NSM ports.
 +
 Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
@@ -97,7 +97,7 @@ When functioning correctly, a power supply's bicolored LED illuminates green.
 +
 Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
 
-. Verify that the attention (amber) LEDs on the NSM containing the failed I/O module and the shelf operator display panel are no longer illuminated
+. Verify that the attention (amber) LEDs on the NSM containing the failed I/O module and the shelf operator display panel are no longer illuminated.
 +
 The NSM attention LEDs turn off after the NSM reboots and no longer detects an I/O module issue. This can take three to five minutes.
 

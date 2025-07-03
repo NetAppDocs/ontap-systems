@@ -9,7 +9,7 @@ summary: You can change a shelf ID in a system when ONTAP is not yet running or 
 :imagesdir: ../media/
 
 [.lead]
-You can change a shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
+You can change an NX224 shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
 
 .Before you begin
 
@@ -39,7 +39,7 @@ You connect the power cords first to the shelf, securing them in place with the 
 
 . Remove the left end cap to locate the small hole to the right of the LEDs.
 +
-image::../media/drw_oie_change_ns224_shelf_ID_ieops-836.svg[Change NX224 shelf ID]
+image::../media/drw_tp_change_shelf_id_ieops-2381.svg[Change NX224 shelf ID]
 +
 
 [cols="20%,80%"]
@@ -59,7 +59,7 @@ Shelf ID number
 a|
 image::../media/icon_round_4.png[[Callout number 4]
 a|
-Shelf ID button
+Shelf ID button access
 
 |===
 . Change the first number of the shelf ID:

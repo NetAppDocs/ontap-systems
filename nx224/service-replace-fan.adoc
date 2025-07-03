@@ -2,14 +2,14 @@
 permalink: nx224/service-replace-fan.html
 sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, fail, fan, nondisruptive, power, i/o, progress, replace, replace a fan
-summary: You can replace a failed fan nondisruptively in an NX224 drive shelf that is powered on, and while I/O is in progress.
+summary: You can replace a failed fan nondisruptively in an NX224 shelf that is powered on, and while I/O is in progress.
 ---
 = Replace a fan module - NX224 shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If one or both of the fans in your fan module fail, you can replace your fan module. This procedure can be completed nondisruptively in an NX224 drive shelf that is powered on with I/O in progress.
+If one or both of the fans in your fan module fail, you can replace your fan module. This procedure can be completed nondisruptively in an NX224 shelf that is powered on with I/O in progress.
 
 
 .About this task
@@ -18,7 +18,7 @@ If one or both of the fans in your fan module fail, you can replace your fan mod
 +
 This allows enough time for ONTAP to process the NSM removal event.
 
-* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware^].
+* *Best practice:* The best practice is to have current versions of NSM firmware and drive firmware on your system before replacing FRU components. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware^].
 +
 [NOTE]
 ====
@@ -49,7 +49,7 @@ The shelf's partner NSM must be up and running and cabled correctly so that your
 +
 Power supplies do not have a power switch.
 
- .. Disconnect the storage cabling from the NSM ports.
+ .. Disconnect the shelf cabling from the NSM ports.
 +
 Make a note of the NSM ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM later in this procedure.
 
@@ -88,7 +88,7 @@ Insert the replacement fan by aligning it within the guides, and then push down 
 include::../_include/t_module_reinstall.adoc[]
 
 . Reconnect the cabling to the NSM:
- .. Reconnect the storage cabling to the same two NSM ports.
+ .. Reconnect the shelf cabling to the same two NSM ports.
 +
 Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
 

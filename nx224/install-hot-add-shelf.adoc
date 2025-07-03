@@ -11,6 +11,12 @@ summary: You can hot-add an NX224 drive shelf after your HA pair meets certain r
 [.lead]
 You can expand your storage capabilities by hot-adding an NX224 shelf to your existing HA configuration.
 
+.About this task
+
+* After you have cabled a hot-added shelf, ONTAP recognizes the shelf. NSM shelf firmware and drive firmware should be updated automatically, if needed.
++
+NOTE: Firmware updates can take up to 30 minutes.
+
 .Before you begin 
 
 * Before hot-adding a shelf, ensure you have:
@@ -98,7 +104,7 @@ Shelf ID number
 a|
 image::../media/icon_round_4.png[[Callout number 4]
 a|
-Shelf ID button
+Shelf ID button access
 
 |===
 .. Remove the left end cap and locate the small hole to the right of the LEDs.
@@ -150,27 +156,24 @@ image::../media/drw_tp_nsm_ports_ieops-2301.svg[Location of the NX224 NSM140 Pat
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-Path_A ports
+Path_A ports (blue ports)
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-Path_B ports
+Path_B ports (red ports)
 |===
 
-* After you have cabled a hot-added shelf, ONTAP recognizes the shelf. NSM shelf firmware and drive firmware should be updated automatically, if needed.
-+
-NOTE: Firmware updates can take up to 30 minutes.
+
 
 .Steps
 
 . Cable shelf NSM A and NSM B Path_A ports e1a, e2a, e3a, and e4a to any port on switch A.
 . Cable shelf NSM A and NSM B Path_B ports e1b, e2b, e3b, and e4b to any port on switch B.
 +
-The following illustration highlights the cabling for hot-adding an additional shelf in an AFX A1K configuration:
+The following illustration highlights the cabling for hot-adding an additional shelf to a switch configuration. To add additional shelves, follow the same switch-based cabling methodology.
 +
 image::../media/drw_nx224_afx_a1k_ieops-2344.svg[NX224 switch cabling to AFX A1K]
-+
-Any additional shelves will follow the same switch-based cabling methodology.
+
 . Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +
 If any cabling errors are generated, follow the corrective actions provided.

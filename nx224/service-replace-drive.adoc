@@ -2,14 +2,14 @@
 permalink: nx224/service-replace-drive.html
 sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, fail, replace, drive, nondisruptive, i/o, hot-swap, hot-swap a drive
-summary: You can replace a failed drive nondisruptively in an NX224 drive shelf that is powered on, and while I/O is in progress.
+summary: You can replace a failed drive nondisruptively in an NX224 shelf that is powered on, and while I/O is in progress.
 ---
 = Hot-swap a drive - NX224 shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can replace a failed drive nondisruptively in an NX224 drive shelf that is powered on, and while I/O is in progress.
+You can replace a failed drive nondisruptively in an NX224 shelf that is powered on, and while I/O is in progress.
 
 .Before you begin
 
@@ -75,7 +75,7 @@ You must disable automatic drive assignment on both controller modules.
 . Properly ground yourself.
 . Physically identify the failed drive.
 +
-When a drive fails, the system logs a warning message to the system console indicating which drive failed. Additionally, the attention (amber) LED on the drive shelf operator display panel and the failed drive illuminate.
+When a drive fails, the system logs a warning message to the system console indicating which drive failed. Additionally, the attention (amber) LED on the shelf operator display panel and the failed drive illuminate.
 +
 NOTE: The activity (green) LED on a failed drive can be illuminated (solid), which indicates that the drive has power, but should not be blinking, which indicates I/O activity. A failed drive has no I/O activity.
 
