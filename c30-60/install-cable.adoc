@@ -16,9 +16,6 @@ After you install your AFF C30 or AFF C60 storage system hardware, cable the con
 Contact your network administrator for information about connecting the storage system to your network switches.
 
 .About this task
-* The cluster/HA and host network cabling procedures show common configurations. 
-+
-If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
 
 * The cabling graphics have arrow icons showing the proper orientation (up or down) of the cable connector pull-tab when inserting a connector into a port.
 +
@@ -30,7 +27,14 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 
 == Step 1: Cable the cluster/HA connections
-Cable the controllers to each other to create the ONTAP cluster connections.
+Create the ONTAP cluster connections. For switchless clusters, connect the controllers to each other. For switched clusters, connect the controllers to the cluster network switches.
+
+[NOTE]
+====
+The cluster/HA cabling examples show common configurations. 
+
+If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
+====
 
 //open tabbed block 
 [role="tabbed-block"]
@@ -153,6 +157,13 @@ image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[C
 
 == Step 2: Cable the host network connections
 Cable the controllers to your Ethernet or FC host network.
+
+[NOTE]
+====
+The host network cabling examples show common configurations. 
+
+If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
+====
 
 [role="tabbed-block"]
 =====
