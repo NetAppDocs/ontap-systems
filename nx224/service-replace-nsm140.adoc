@@ -1,5 +1,5 @@
 ---
-permalink: nx224/service-replace-nsm100.html
+permalink: nx224/service-replace-nsm140.html
 sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, replace, impair, nvme, module, nsm, nondisruptive, drive, i/o, nsm, replace an NSM
 summary: You can replace an impaired NVMe shelf module \(NSM\) nondisruptively in an NX224 drive shelf that is powered on, and while I/O is in progress.
@@ -16,13 +16,13 @@ You can replace an impaired NVMe shelf module (NSM) nondisruptively in an NX224 
 
 * Replacing the NSM involves moving the DIMMs, fans, boot media, I/O module, and power supply from the impaired NSM to the replacement NSM.
 +
-You do not move the real-time clock (RTC) battery. They come preinstalled in the replacement NSM.
+You do not move the real-time clock (RTC) battery. It comes preinstalled in the replacement NSM.
 
-* Allow at least 70 seconds between removal and installation of the NVMe shelf module (NSM).
+* Allow at least 70 seconds between removal and installation of the NSM.
 +
 This allows enough time for ONTAP to process the NSM removal event.
 
-* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware^].
+* *Best practice:* The best practice is to have current versions of NSM firmware and drive firmware on your system before replacing FRU components. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware^].
 +
 [NOTE]
 ====
@@ -72,8 +72,8 @@ include::../_include/t_module_remove.adoc[]
 . Unpack the replacement NSM, and set it on a level surface near the impaired NSM.
 . Open the covers of both NSMs by loosening the thumbscrew on each cover.
 
-. Move the DIMMs from the impaired NSM to the replacement to the replacement NSM:
-.. Remove DIMM from the impaired NSM:
+. Move all four DIMMs from the impaired NSM to the replacement NSM:
+.. Remove each DIMM from the impaired NSM:
 +
 image::../media/drw_tp_dimm_replace_ieops-2202.svg[Remove DIMMs.]
 +
@@ -99,7 +99,7 @@ Lift the DIMM up and out of the slot.
 The ejector tabs remain in the open position.
 |===
 
-.. Install DIMM in the replacement NSM:
+.. Install each DIMM in the replacement NSM:
  ... Hold the DIMM by the corners, and then insert the DIMM squarely into a slot.
 +
 The notch on the bottom of the DIMM, among the pins, should line up with the tab in the slot.
@@ -107,7 +107,6 @@ The notch on the bottom of the DIMM, among the pins, should line up with the tab
 When inserted correctly, the DIMM should go in easily but fit tightly in the slot. If not, reinsert the DIMM.
 
  ... Push down carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at both ends of the DIMM.
- ... Repeat for the other DIMM.
 
 
 
@@ -190,14 +189,14 @@ You can use the tab on the left and the thumbscrew to push in the I/O module.
 . Close the cover of each NSM, and then tighten each thumbscrew.
 
 . Move the power supply from the impaired NSM to the replacement NSM:
- .. Rotate the handle up, to its horizontal position, and then grasp it.
- .. With your thumb, press the terra-cotta tab to release the locking mechanism.
+ .. Rotate the power supply handle up, to its horizontal position, and then grasp it.
+ .. With your thumb, press the terra-cotta tab on the power supply to release the locking mechanism.
  .. Pull the power supply out of the NSM while using your other hand to support its weight.
  .. Using both hands, support and align the edges of the power supply with the opening in the replacement NSM.
  .. Gently push the power supply into the NSM until the locking mechanism clicks into place.
 +
 NOTE: Do not use excessive force or you might damage the internal connector.
- .. Rotate the handle down, so it is out of the way of normal operations.
+ .. Rotate the power supply handle down, so it is out of the way of normal operations.
 
 include::../_include/t_module_reinstall.adoc[]
 
