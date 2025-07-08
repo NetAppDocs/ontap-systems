@@ -14,7 +14,7 @@ The output should confirm the cluster and HA I/O module was successfully brought
 For example, the following command brings slot 4 on node1 online, and displays a message that the process was successful:
 +
 ----
-node1::> system controller slot module insert -node _node1_ -slot _4_
+node1::> system controller slot module insert -node node1 -slot 4
 
 Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node1 will be powered on and initialized.
 
@@ -25,7 +25,9 @@ The module has been successfully powered on, initialized and placed into service
 
 . Verify that a hotplug.init.success EMS event is logged for each cluster and HA I/O module port reporting that initialization succeeded.
 +
-`event log show -node local -message-name \*hotplug.init*`
+`event log show -event *hotplug* -severity*`
++
+// was: `event log show -node local -message-name \*hotplug.init*`
 +
 NOTE: This might take several minutes to allow for any required firmware updates and port initialization.
 
@@ -38,13 +40,14 @@ The output should show slot 4 status as `powered-on` and ready for operation for
 . Verify that the replacement cluster and HA I/O module is online and recognized: 
 +
 `system controller config show -node local -slot4`
-// `sysconfig -av _slot_number_`
+// was: `sysconfig -av _slot_number_`
 +
 If the replacement cluster and HA I/O module was successfully brought online and is recognize, the output shows I/O module information, including port information, for slot 4.
 +
-For example, you will see similar output shown below:
+For example, you will see output similar to the following:
++
 ----
-node1::*> system controller config show -node _node1_ -slot 4
+node1::> system controller config show -node node1 -slot 4
 
 Node: node1
 Sub- Device/
