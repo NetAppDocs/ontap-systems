@@ -25,11 +25,27 @@ The module has been successfully powered on, initialized and placed into service
 
 . Verify that a hotplug.init.success EMS event is logged for each cluster and HA I/O module port reporting that initialization succeeded.
 +
-`event log show -event *hotplug* -severity*`
+// Tim said Jul 6:`event log show -event *hotplug* -severity*`
 +
-// was: `event log show -node local -message-name \*hotplug.init*`
+// Jul 8 Tish new and want OK from Tim: `event log show -node local -message-name *hotplug.init* -severity*`
 +
 NOTE: This might take several minutes to allow for any required firmware updates and port initialization.
++
+The following shows output...
++
+----
+odq-a50-1ab::> event log show -node odq-a50-1a -message-name *hotplug.init* -severity *
+
+Time                Node             Severity      Event
+
+------------------- ---------------- ------------- ---------------------------
+
+7/3/2025 17:28:11   odq-a50-1a       NOTICE        hotplug.init.success: Initialization of ports "e4a" in slot 4 succeeded after hot plug module insert.
+
+7/3/2025 17:28:11   odq-a50-1a       NOTICE        hotplug.init.success: Initialization of ports "e4b" in slot 4 succeeded after hot plug module insert.
+
+2 entries were displayed.
+----
 
 . Verify I/O module slot 4 is powered on and ready for operation:
 +
