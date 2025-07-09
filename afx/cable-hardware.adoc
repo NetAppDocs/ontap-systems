@@ -183,6 +183,13 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
 image::../media/drw_afx_shelf_cabling_b_ieops-2357.svg[Cable shelf to switch B]
 
+== Configure the switches for your AFX 1K storage system
+After you have cabled your AFX 1K storage system, you must configure the switches to support the AFX 1K storage system.
+
+* For Cisco Nexus 9332D-GX2B switches, see link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9332d-gx2b/setup-switch-9332d-cluster.html[Configure Cisco Nexus 9332D-GX2B switch^].
+
+* For Cisco Nexus 9364D-GX2A switches, see link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9364d-gx2a/setup-switch-9364d-cluster.html[Configure Cisco Nexus 9364D-GX2A switch^].
+
 .What's next?
 
-After you’ve cabled the hardware for your AFF AFK 1K system, you link:power-on-hardware.html[power on the AFX 1K storage system].
+After you’ve cabled the hardware and configured the switches for your AFF AFK 1K system, you link:power-on-hardware.html[power on the AFX 1K storage system].

@@ -41,23 +41,5 @@ NOTE: Breakout cables are used for connections between the switches, controller,
 * ISL cables for connection between switch A and switch B
 |===
 
-== Cabling and configuration considerations for Cisco switches
-Before configuring your Cisco 9332D-GX2b or 9364D-GX2A switch, review the following considerations. 
-
-=== Support for NVIDIA CX6-DX Ethernet ports
-If connecting a switch port to an ONTAP controller using NVIDIA  ConnectX-6 Dx (CX6-DX) NIC port (part number X50130B), you must hard-code the switch port speed.
-
-[subs=+quotes]
-----
-(cs1)# *configure*
-(cs1)(config)# *interface Ethernet1/16/?*
-(cs1)(config-if)# *speed 100000*
-(cs1)(config-if)# *no negotiate auto*
-(cs1)(config-if)# *exit*
-(cs1)(config)# *exit*
-(cs1)# *copy running-config startup-config*
-----
-See the https://hwu.netapp.com/Switch/Index[Hardware Universe^] for more information on switch ports.
-
 .What's next?
 After reviewing the supported system configuration and hardware components, link:install-network-reqs.html[review the network requirements for your AFX 1K storage system].
