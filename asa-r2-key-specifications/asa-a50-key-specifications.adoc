@@ -8,9 +8,9 @@ summary: Key specifications for ASA A50
 :imagesdir: ../media/
 
 [.lead]
-The following are a selection of key specifications for an ASA A50 system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A50 specifications.
+The following are select specifications for the ASA A50 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
 
-=== Key specifications for ASA A50
+== ASA A50 specifications at a glance
 
 * Platform Configuration: ASA A50 Single Chassis HA Pair
 * Max Raw Capacity: 1.8360 PB
@@ -19,17 +19,17 @@ The following are a selection of key specifications for an ASA A50 system in a s
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 8
 * Minimum ONTAP Version: ONTAP 9.16.1
-=== Scaleout Maximums
+== Scaleout maximums
 * Type: NAS
 * Type: SAN; HA Pairs: 6; Raw Capacity: 11.0 PB / 9.8 PiB; Max Memory: 1536 GB
 * Type: HA Pair; Raw Capacity: 1.8 PB / 1.6 PiB; Max Memory: 256.0000
 
-=== IO
+== IO
 
-==== Onboard IO
+== Onboard IO
 No onboard IO data.
 
-==== Total IO
+== Total IO
 * Protocol: Ethernet 100 Gbps; Ports: 16
 * Protocol: Ethernet 25 Gbps; Ports: 24
 * Protocol: Ethernet 10 Gbps; Ports: 24
@@ -37,17 +37,17 @@ No onboard IO data.
 * Protocol: NVMe/FC  64 Gbps; Ports: 24
 * Ports: 0
 
-==== Management Ports
+== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 2
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 600 Mbps; Ports: 2
 
-=== Storage Networking Supported
+== Storage networking supported
 * FC
 * iSCSI
 * NVMe/FC 
 * NVMe/TCP
-=== System Environment Specifications
+== System environment specifications
 * Typical Power: 3076 BTU/hr
 * Worst-case Power: 4860 BTU/hr
 * Weight: 60.7 lb
@@ -66,7 +66,7 @@ relative humidity, noncondensing
 * Acoustic Noise: Declared sound power (LwAd): 8.0
 Sound pressure (LpAm) (bystander positions): 70.5 dB
 
-=== Compliance
+== Compliance
 * Certifications EMC/EMI: AMCA,
 FCC,
 ICES,
@@ -112,7 +112,7 @@ IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
 
-=== High Availability
+== High availability
 * Ethernet based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies

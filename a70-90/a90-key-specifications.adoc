@@ -8,9 +8,9 @@ summary: Key specifications for AFF A90
 :imagesdir: ../media/
 
 [.lead]
-The following are a selection of key specifications for an AFF A90 system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A90 specifications.
+The following are select specifications for the AFF A90 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
 
-=== Key specifications for AFF A90
+== AFF A90 specifications at a glance
 
 * Platform Configuration: AFF A90 Single Chassis HA Pair
 * Max Raw Capacity: 6.6096 PB
@@ -19,17 +19,17 @@ The following are a selection of key specifications for an AFF A90 system in a s
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 18
 * Minimum ONTAP Version: ONTAP 9.15.1RC2
-=== Scaleout Maximums
+== Scaleout maximums
 * Type: NAS; HA Pairs: 12; Raw Capacity: 79.3 PB / 70.4 PiB; Max Memory: 24576 GB
 * Type: SAN; HA Pairs: 6; Raw Capacity: 39.7 PB / 35.2 PiB; Max Memory: 12288 GB
 * Type: HA Pair; Raw Capacity: 6.6 PB / 5.9 PiB; Max Memory: 2048.0000
 
-=== IO
+== IO
 
-==== Onboard IO
+== Onboard IO
 No onboard IO data.
 
-==== Total IO
+== Total IO
 * Protocol: Ethernet 200 Gbps; Ports: 24
 * Protocol: Ethernet 100 Gbps; Ports: 36
 * Protocol: Ethernet 25 Gbps; Ports: 56
@@ -39,12 +39,12 @@ No onboard IO data.
 * Ports: 0
 * Protocol: SAS 12 Gbps; Ports: 56
 
-==== Management Ports
+== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 2
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 600 Mbps; Ports: 2
 
-=== Storage Networking Supported
+== Storage networking supported
 * CIFS
 * FC
 * iSCSI
@@ -64,7 +64,7 @@ No onboard IO data.
 * SMB 3.0
 * SMB 3.1
 * SMB 3.1.1
-=== System Environment Specifications
+== System environment specifications
 * Typical Power: 8304 BTU/hr
 * Worst-case Power: 10948 BTU/hr
 * Weight: 118.0 lb
@@ -84,7 +84,7 @@ relative humidity, noncondensing
 * Acoustic Noise: Declared sound power (LwAd): 8.6
 Sound pressure (LpAm) (bystander positions): 71.6 dB
 
-=== Compliance
+== Compliance
 * Certifications EMC/EMI: AMCA,
 FCC,
 ICES,
@@ -130,7 +130,7 @@ IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
 
-=== High Availability
+== High availability
 * Ethernet based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies

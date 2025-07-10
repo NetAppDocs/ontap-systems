@@ -8,9 +8,9 @@ summary: Key specifications for FAS8700
 :imagesdir: ../media/
 
 [.lead]
-The following are a selection of key specifications for an FAS8700 system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of FAS8700 specifications.
+The following are select specifications for the FAS8700 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
 
-=== Key specifications for FAS8700
+== FAS8700 specifications at a glance
 
 * Platform Configuration: FAS8700 Single Chassis HA Pair, Ethernet Bundle
 * Max Raw Capacity: 15.0000 PB
@@ -19,19 +19,19 @@ The following are a selection of key specifications for an FAS8700 system in a s
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 14
 * Minimum ONTAP Version: ONTAP 9.7RC1
-=== Scaleout Maximums
+== Scaleout maximums
 * Type: NAS; HA Pairs: 12; Raw Capacity: 180.0 PB / 159.9 PiB; Max Memory: 6144 GB
 * Type: SAN; HA Pairs: 6; Raw Capacity: 90.0 PB / 79.9 PiB; Max Memory: 3072 GB
 * Type: HA Pair; Raw Capacity: 15.0 PB / 13.3 PiB; Max Memory: 512.0000
 
-=== IO
+== IO
 
-==== Onboard IO
+== Onboard IO
 * Protocol: Ethernet 100 Gbps; Ports: 4
 * Protocol: Ethernet 25 Gbps; Ports: 12
 * Protocol: SAS 12 Gbps; Ports: 8
 
-==== Total IO
+== Total IO
 * Protocol: Ethernet 100 Gbps; Ports: 20
 * Protocol: Ethernet 25 Gbps; Ports: 28
 * Protocol: Ethernet 10 Gbps; Ports: 32
@@ -40,12 +40,12 @@ The following are a selection of key specifications for an FAS8700 system in a s
 * Ports: 0
 * Protocol: SAS 12 Gbps; Ports: 40
 
-==== Management Ports
+== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 2
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 12 Mbps; Ports: 4
 
-=== Storage Networking Supported
+== Storage networking supported
 * CIFS
 * FC
 * iSCSI
@@ -63,7 +63,7 @@ The following are a selection of key specifications for an FAS8700 system in a s
 * SMB 3.0
 * SMB 3.1
 * SMB 3.1.1
-=== System Environment Specifications
+== System environment specifications
 * Typical Power: 5430 BTU/hr
 * Worst-case Power: 5796 BTU/hr
 * Weight: 108.9 lb
@@ -83,7 +83,7 @@ relative humidity, noncondensing
 * Acoustic Noise: Declared sound power (LwAd): 8.5
 Sound pressure (LpAm) (bystander positions): 67.2 dB
 
-=== Compliance
+== Compliance
 * Certifications EMC/EMI: AMCA,
 FCC,
 ICES,
@@ -129,7 +129,7 @@ IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
 
-=== High Availability
+== High availability
 * Ethernet based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies

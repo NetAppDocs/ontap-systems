@@ -8,7 +8,7 @@ summary: Key specifications for the ASA-C400 platform group
 :imagesdir: ../media/
 
 [.lead]
-The following are a selection of key specifications for an ASA C400 system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA C400 specifications.
+The following are select specifications for the ASA C400 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
 
 == Key specifications for ASA C400
 
@@ -26,11 +26,11 @@ The following are a selection of key specifications for an ASA C400 system in a 
 
 == IO
 
-=== Onboard IO
+== Onboard IO
 * Protocol: Ethernet 100 Gbps; Ports: 4
 * Protocol: Ethernet 25 Gbps; Ports: 12
 
-=== Total IO
+== Total IO
 * Protocol: Ethernet 100 Gbps; Ports: 24
 * Protocol: Ethernet 25 Gbps; Ports: 28
 * Protocol: Ethernet 10 Gbps; Ports: 32
@@ -38,12 +38,12 @@ The following are a selection of key specifications for an ASA C400 system in a 
 * Protocol: NVMe/FC  32 Gbps; Ports: 40
 * Ports: 0
 
-=== Management Ports
+== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 2
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 12 Mbps; Ports: 4
 
-== Storage Networking Supported
+== Storage networking supported
 * FC
 * iSCSI
 * NVMe/FC 
@@ -113,7 +113,7 @@ IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
 
-== High Availability
+== High availability
 * Ethernet based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
