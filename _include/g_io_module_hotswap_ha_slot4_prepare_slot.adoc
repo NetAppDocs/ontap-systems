@@ -19,7 +19,7 @@ For example, the following AutoSupport message suppresses automatic case creatio
 +
 `node1::> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. Disable automatic giveback from the console of the impaired controller (the controller that took over the healthy partner controller): 
+. Disable automatic giveback from the console of the impaired controller (the controller that took over the healthy controller): 
 +
 `storage failover modify -node local -auto-giveback false`
 +

@@ -29,7 +29,7 @@ The module has been successfully powered on, initialized and placed into service
 +
 NOTE: It might take several minutes to allow for any required firmware updates and port initialization.
 +
-The output should show a hotplug.init.success EMS event logged for each port on the cluster and HA I/O module with `_hotplug.init.success:_` in the Event column.
+The output should show a hotplug.init.success EMS event logged for each port on the cluster and HA I/O module with `_hotplug.init.success:_` in the `_Event_` column.
 +
 For example, the following output shows initialization succeded for cluster and HA I/O module ports e4b and e4a:
 +
@@ -87,15 +87,16 @@ Slot slot Information
                   Serial Number:      032403001370
 ----
 
-. Return the healthy partner controller (the controller that was taken over) to normal operation: 
+. Return the healthy controller (the controller that was taken over) to normal operation: 
 +
-`storage failover giveback -ofnode _healthy_partner_node_name_`
+`storage failover giveback -ofnode _healthy_node_name_`
 +
 
-. Restore automatic giveback from the console of the impaired controller (the controller that took over the healthy partner controller): 
+. Restore automatic giveback from the console of the impaired controller (the controller that took over the healthy controller): 
 +
 `storage failover modify -node local -auto-giveback _true_`
 +
+How come using local here too??
 
 . If AutoSupport is enabled, restore automatic case creation:
 +
