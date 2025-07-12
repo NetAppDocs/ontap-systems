@@ -3,7 +3,7 @@
 // New include specific to g-platform family because the slot 4 location for the cluster/HA I/O module is unique to g-platforms.
 
 
-Prepare the I/O module slot 4 so that it is safe to remove the failed cluster and HA I/O module:
+Prepare I/O module slot 4 so that it is safe to remove the failed cluster and HA I/O module:
 
 . Properly ground yourself.
 
@@ -25,9 +25,9 @@ For example, the following AutoSupport message suppresses automatic case creatio
 +
 NOTE: When you see _Do you want to disable auto-giveback?_, enter `y`.
 
-. Prepare the I/O module slot 4 on the impaired controller for removal:
+. Prepare I/O module slot 4 on the impaired controller for removal:
 +
-`system controller slot module remove -node impaired_node_name_ -slot _slot_number_`
+`system controller slot module remove -node _impaired_node_name_ -slot _slot_number_`
 +
 NOTE: When you see _Do you want to continue?_, enter `y`. 
 +

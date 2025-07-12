@@ -25,11 +25,11 @@ NOTE: If your storage system does not meet all of the following requirements, yo
 ** The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with an equivalent I/O module. You cannot change the I/O module type.
 ** Your storage system configuration must have only one cluster and HA I/O module located in slot 4, not two cluster and HA I/O modules.
 ** Your storage system must be a two-node (switchless or switched) cluster configuration.
-** The controller with the failed cluster and HA I/O module (the impaired controller) must have taken over the healthy partner controller. The takeover should have occured automatically if the I/O module is failed.
+** The controller with the failed cluster and HA I/O module (the impaired controller) must have taken over the healthy HA partner controller. The takeover should have occured automatically if the I/O module is failed.
 +
-For two-node clusters, the storage system cannot discern which controller has the the failed I/O module, so either controller might initiate the takeover. The cluster and HA I/O module hot-swap procedure is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy partner controller.
+For two-node clusters, the storage system cannot discern which controller has the the failed I/O module, so either controller might initiate the takeover. The cluster and HA I/O module hot-swap procedure is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller.
 +
-You can verify that the impaired controller successfully took over the healthy partner controller by entering the `storage failover show` command.
+You can verify that the impaired controller successfully took over the healthy controller by entering the `storage failover show` command.
 +
 If you are not sure which controller has the failed I/O module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].  
 
@@ -39,7 +39,7 @@ If you are not sure which controller has the failed I/O module, contact https://
 
 * It is critical to apply the commands to the correct controller when you are hot-swapping the cluster and HA I/O module:
 
-** The _impaired controller_ is the controller on which you are hot-swapping the cluster and HA I/O module and it is the controller that has taken over the healthy partner controller.
+** The _impaired controller_ is the controller on which you are hot-swapping the cluster and HA I/O module and it is the controller that has taken over the healthy controller.
 ** The _healthy controller_ is the HA partner of the impaired controller and it is the controller that was taken over by the impaired controller.
 
 * If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
