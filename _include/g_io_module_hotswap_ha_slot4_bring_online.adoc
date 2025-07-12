@@ -11,12 +11,12 @@ NOTE: When you see _Do you want to continue?_, enter `y`.
 +
 The output should confirm the cluster and HA I/O module was successfully brought online (powered on, initialized, and placed into service).
 +
-For example, the following command brings slot 4 on node1 (the impaired controller) online, and displays a message that the process was successful:
+For example, the following command brings slot 4 on node2 (the impaired controller) online, and displays a message that the process was successful:
 +
 ----
-node1::> system controller slot module insert -node node1 -slot 4
+node2::> system controller slot module insert -node node2 -slot 4
 
-Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node1 will be powered on and initialized.
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node2 will be powered on and initialized.
 
 Do you want to continue? {y|n}: `y`
 
@@ -40,9 +40,9 @@ Time                Node             Severity      Event
 
 ------------------- ---------------- ------------- ---------------------------
 
-7/11/2025 16:04:06  node1       NOTICE        hotplug.init.success: Initialization of ports "e4b" in slot 4 succee
+7/11/2025 16:04:06  node2       NOTICE        hotplug.init.success: Initialization of ports "e4b" in slot 4 succee
 
-7/11/2025 16:04:06  node1      NOTICE        hotplug.init.success: Initialization of ports "e4a" in slot 4 succee
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e4a" in slot 4 succee
 
 2 entries were displayed.
 ----
@@ -53,21 +53,19 @@ Time                Node             Severity      Event
 +
 The output should show slot 4 status as `_powered-on_` and ready for operation for the cluster and HA I/O module you inserted.
 
-. Verify that the replacement cluster and HA I/O module is online and recognized: 
-+
-Why use local here but node1 in other cmds?
+. Verify that the replacement cluster and HA I/O module is online and recognized by entering the following command from the console of the impaired controller (the controller that took over the healthy controller): 
 +
 `system controller config show -node local -slot4`
 // was: `sysconfig -av _slot_number_`
 +
 If the replacement cluster and HA I/O module was successfully brought online and is recognize, the output shows I/O module information, including port information, for slot 4.
 +
-For example, you will see output similar to the following:
+For example, you should see output similar to the following:
 +
 ----
-node1::> system controller config show -node node1 -slot 4
+node2::> system controller config show -node local -slot 4
 
-Node: node1
+Node: node2
 Sub- Device/
 Slot slot Information
 ---- ---- -----------------------------
@@ -95,8 +93,6 @@ Slot slot Information
 . Restore automatic giveback from the console of the impaired controller (the controller that took over the healthy controller): 
 +
 `storage failover modify -node local -auto-giveback _true_`
-+
-How come using local here too??
 
 . If AutoSupport is enabled, restore automatic case creation:
 +
