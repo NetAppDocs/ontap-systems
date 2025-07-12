@@ -3,7 +3,7 @@
 // New include specific to g-platform family because the slot 4 location for the cluster/HA I/O module is unique to g-platforms.
 
 
-Prepare I/O module slot 4 so that it is safe to remove the failed cluster and HA I/O module:
+Prepare the storage system and I/O module slot 4 so that it is safe to remove the failed cluster and HA I/O module:
 
 . Properly ground yourself.
 
@@ -13,19 +13,19 @@ Make sure to label the cables so that you know where they came from.
 
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
 +
-`system node autosupport invoke -node * -type all -message MAINT=<_number of hours down>h`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
 +
 For example, the following AutoSupport message suppresses automatic case creation for two hours:
 +
 `node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. Disable automatic giveback from the console of the impaired controller (the controller that took over the healthy controller): 
+. Disable automatic giveback from the console of the impaired controller: 
 +
 `storage failover modify -node local -auto-giveback false`
 +
 NOTE: When you see _Do you want to disable auto-giveback?_, enter `y`.
 
-. Prepare I/O module slot 4 on the impaired controller (the controller that took over the healthy controller) for removal:
+. Prepare I/O module slot 4 on the impaired controller for removal:
 +
 `system controller slot module remove -node _impaired_node_name_ -slot _slot_number_`
 +
@@ -47,7 +47,7 @@ The module has been successfully removed from service and powered off. It can no
 +
 `system controller slot module show`
 +
-The output should show slot 4 status as `powered-off` on the impaired controller.
+The output should show slot 4 status on the impaired controller as `_powered-off_`.
 
 
 
