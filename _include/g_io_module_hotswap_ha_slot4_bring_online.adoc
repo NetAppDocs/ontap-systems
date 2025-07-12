@@ -5,13 +5,13 @@ Bring the replacement cluster and HA I/O module in slot 4 online and then verify
 
 . Bring the replacement cluster and HA I/O module online:
 +
-`system controller slot module insert -node _node_name_ -slot _slot_name_`
+`system controller slot module insert -node impaired_node_name_ -slot _slot_name_`
 +
 NOTE: When you see _Do you want to continue?_, enter `y`. 
 +
 The output should confirm the cluster and HA I/O module was successfully brought online (powered on, initialized, and placed into service).
 +
-For example, the following command brings slot 4 on node1 online, and displays a message that the process was successful:
+For example, the following command brings slot 4 on node1 (the impaired controller) online, and displays a message that the process was successful:
 +
 ----
 node1::> system controller slot module insert -node node1 -slot 4
@@ -23,26 +23,26 @@ Do you want to continue? {y|n}: `y`
 The module has been successfully powered on, initialized and placed into service.
 ----
 
-. Verify that a hotplug.init.success EMS event is logged for each cluster and HA I/O module port reporting that initialization succeeded.
+. Verify that each port on the cluster and HA I/O module successfully initiated:
 +
-// Tim said Jul 6:`event log show -event *hotplug* -severity*`
+`event log show -event \*hotplug.init*`
 +
-// Jul 8 Tish new and want OK from Tim: `event log show -node local -message-name *hotplug.init* -severity*`
+NOTE: It might take several minutes to allow for any required firmware updates and port initialization.
 +
-NOTE: This might take several minutes to allow for any required firmware updates and port initialization.
+The output should show a hotplug.init.success EMS event logged for each port on the cluster and HA I/O module with `_hotplug.init.success:_` in the Event column.
 +
-The following shows output...
+For example, the following output shows initialization succeded for cluster and HA I/O module ports e4b and e4a:
 +
 ----
-odq-a50-1ab::> event log show -node odq-a50-1a -message-name *hotplug.init* -severity *
+node1::> event log show -event *hotplug.init*                        
 
 Time                Node             Severity      Event
 
 ------------------- ---------------- ------------- ---------------------------
 
-7/3/2025 17:28:11   odq-a50-1a       NOTICE        hotplug.init.success: Initialization of ports "e4a" in slot 4 succeeded after hot plug module insert.
+7/11/2025 16:04:06  node1       NOTICE        hotplug.init.success: Initialization of ports "e4b" in slot 4 succee
 
-7/3/2025 17:28:11   odq-a50-1a       NOTICE        hotplug.init.success: Initialization of ports "e4b" in slot 4 succeeded after hot plug module insert.
+7/11/2025 16:04:06  node1      NOTICE        hotplug.init.success: Initialization of ports "e4a" in slot 4 succee
 
 2 entries were displayed.
 ----
@@ -51,9 +51,11 @@ Time                Node             Severity      Event
 +
 `system controller slot module show`
 +
-The output should show slot 4 status as `powered-on` and ready for operation for the cluster and HA I/O module you inserted.
+The output should show slot 4 status as `_powered-on_` and ready for operation for the cluster and HA I/O module you inserted.
 
 . Verify that the replacement cluster and HA I/O module is online and recognized: 
++
+Why use local here but node1 in other cmds?
 +
 `system controller config show -node local -slot4`
 // was: `sysconfig -av _slot_number_`
@@ -85,3 +87,16 @@ Slot slot Information
                   Serial Number:      032403001370
 ----
 
+. Return the healthy partner controller (the controller that was taken over) to normal operation: 
++
+`storage failover giveback -ofnode _healthy_partner_node_name_`
++
+
+. Restore automatic giveback from the console of the impaired controller (the controller that took over the healthy partner controller): 
++
+`storage failover modify -node local -auto-giveback _true_`
++
+
+. If AutoSupport is enabled, restore automatic case creation:
++
+`system node autosupport invoke -node * -type all -message MAINT=end`
