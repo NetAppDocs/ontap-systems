@@ -58,20 +58,6 @@ If you need the RMA number or additional help with the replacement procedure, co
 
 .Steps
 
-. If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment if it is enabled.
-+
-NOTE: You need to manually assign drive ownership if drives in the shelf are owned by both controller modules in the OAM cluster. You complete this task later in this procedure.
-
- .. Verify whether automatic drive assignment is enabled: `storage disk option show`
-+
-You can enter the command on either controller module.
-+
-If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column (for each controller module).
-
- .. If automatic drive assignment is enabled, disable it: `storage disk option modify -node node_name -autoassign off`
-+
-You must disable automatic drive assignment on both controller modules.
-
 . Properly ground yourself.
 . Physically identify the failed drive.
 +
@@ -114,17 +100,3 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 When the drive's activity LED is solid, it means that the drive has power. When the drive's activity LED is blinking, it means that the drive has power and I/O is in progress. If the drive firmware is automatically updating, the LED blinks.
 
 . If you are replacing another drive, repeat steps 3 through step 7.
-. If you disabled automatic drive assignment in step 1, manually assign drive ownership, and then reenable automatic drive assignment if needed:
- .. Display all unowned drives: `storage disk show -container-type unassigned`
-+
-You can enter the command on either controller module.
-
- .. Assign each drive: `storage disk assign -disk disk_name -owner owner_name`
-+
-You can enter the command on either controller module.
-+
-You can use the wildcard character to assign more than one drive at once.
-
- .. Reenable automatic drive assignment if needed: `storage disk option modify -node node_name -autoassign on`
-+
-You must reenable automatic drive assignment on both controller modules.
