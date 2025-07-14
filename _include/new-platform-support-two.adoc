@@ -124,7 +124,9 @@ Drive shelves are available beginning with the following ONTAP releases.
 
 [horizontal]
 
-ONTAP 9.16.1:: NS224 with NSM100B modules
+ONTAP 9.16.1:: 
+* DCM3 for SAS shelves
+* NS224 with NSM100B modules
 
 ONTAP 9.6:: NS224 shelf with NSM100 modules
 
