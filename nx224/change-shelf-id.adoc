@@ -9,7 +9,7 @@ summary: You can change a shelf ID in a system when ONTAP is not yet running or 
 :imagesdir: ../media/
 
 [.lead]
-You can change an NX224 shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
+You can change an NX224 shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned or spares.
 
 .Before you begin
 
@@ -36,6 +36,8 @@ NOTE: NX224 shelves do not have power switches on the power supplies.
 . Power on the shelf, if it's not already on.
 +
 You connect the power cords first to the shelf, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.
++
+A power supply is powered on as soon as the power cord is plugged in. Its bicolored LED should illuminate green. Wait at least 180 seconds before continuing to the next step. 
 
 . Remove the left end cap to locate the small hole to the right of the LEDs.
 +
@@ -98,7 +100,7 @@ You must unplug the power cord from both power supplies on the shelf, wait the a
 A power supply is powered on as soon as the power cord is plugged in. Its bicolored LED should illuminate green.
 
  ** If ONTAP is not yet running or you are hot-adding a shelf (that has not yet been cabled to the system), wait at least 10 seconds.
- ** If ONTAP is running (controllers are available to serve data), and all drives in the shelf are unowned, spares, or part of offlined aggregate(s), wait at least 70 seconds.
+ ** If ONTAP is running (controllers are available to serve data), and all drives in the shelf are unowned, spares, wait at least 180 seconds.
 +
 This time allows ONTAP to properly delete the old shelf address and update the copy of the new shelf address.
 
