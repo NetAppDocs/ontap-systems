@@ -2,14 +2,14 @@
 permalink: nx224/hot-add-shelf.html
 sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, hot-add, ha, pair, install, hot-add an nx224 drive shelf
-summary: You can hot-add an NX224 drive shelf after your HA pair meets certain requirements, and after the preparation tasks applicable to your HA pair are completed.
+summary: You can hot-add an NX224 drive shelf after your OAM cluster meets certain requirements, and after the preparation tasks applicable to your OAM cluster are completed.
 ---
 = Hot-add a shelf - NX224 shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can expand your storage capabilities by hot-adding an NX224 shelf to your existing HA configuration.
+You can expand your storage capabilities by hot-adding an NX224 shelf to your existing OAM cluster configuration.
 
 .About this task
 
@@ -32,9 +32,9 @@ To change the shelf ID, you use the paper clip or ballpoint pen to access the sh
 
 * Your platform model and version of ONTAP must support the NX224 shelf and drives you are hot-adding. See https://hwu.netapp.com[NetApp Hardware Universe^]
 
-* Your HA pair must have less than the maximum number of shelves supported, by at least the number of shelves you plan to hot-add.
+* Your OAM cluster must have less than the maximum number of shelves supported, by at least the number of shelves you plan to hot-add.
 +
-You cannot have exceeded the maximum number of shelves supported by your HA pair after hot-adding shelves. See https://hwu.netapp.com[NetApp Hardware Universe^].
+You cannot have exceeded the maximum number of shelves supported by your OAM cluster after hot-adding shelves. See https://hwu.netapp.com[NetApp Hardware Universe^].
 
 * *Best practice:* Ensure you have the current version of the https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[Disk Qualification Package^] installed before hot-adding a shelf.
 +
@@ -44,9 +44,9 @@ Having the current version of the DQP installed allows your system to recognize 
 
 * *Best practice*: Run https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^] before and after hot-adding a shelf to view any storage cabling error messages and the corrective actions you should take.
 +
-Running Active IQ Config Advisor before hot-adding a shelf provides a snapshot of the existing shelf Ethernet (ENET) connectivity, verifies NVMe shelf module (NSM) firmware versions, and allows you to verify a shelf ID already in use in the HA pair.
+Running Active IQ Config Advisor before hot-adding a shelf provides a snapshot of the existing shelf Ethernet (ENET) connectivity, verifies NVMe shelf module (NSM) firmware versions, and allows you to verify a shelf ID already in use in the OAM cluster.
 +
-Running Active IQ Config Advisor after hot-adding a shelf allows you to verify shelves are cabled correctly and that shelf IDs are unique within the HA pair.
+Running Active IQ Config Advisor after hot-adding a shelf allows you to verify shelves are cabled correctly and that shelf IDs are unique within the OAM cluster.
 
 * *Best practice:* Ensure you have current versions of https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NVMe shelf module (NSM) firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[drive firmware^] on your storage system before adding a new shelf.
 +
@@ -80,7 +80,7 @@ If they are AC power supplies, secure them in place with the power cord retainer
 +
 A shelf powers up when connected to a power source; it does not have power switches. When functioning correctly, a power supply's bicolored LED illuminates green.
 
-. Set the shelf ID to a number that is unique within the HA pair:
+. Set the shelf ID to a number that is unique within the OAM cluster:
 +
 For more detailed instructions, see link:change-shelf-id.html[Change a shelf ID - NX224 shelves^].
 +

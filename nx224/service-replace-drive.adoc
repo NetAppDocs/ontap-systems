@@ -60,7 +60,7 @@ If you need the RMA number or additional help with the replacement procedure, co
 
 . If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment if it is enabled.
 +
-NOTE: You need to manually assign drive ownership if drives in the shelf are owned by both controller modules in the HA pair. You complete this task later in this procedure.
+NOTE: You need to manually assign drive ownership if drives in the shelf are owned by both controller modules in the OAM cluster. You complete this task later in this procedure.
 
  .. Verify whether automatic drive assignment is enabled: `storage disk option show`
 +
