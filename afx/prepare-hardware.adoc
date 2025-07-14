@@ -4,7 +4,7 @@ permalink: afx/prepare-hardware.html
 keywords: prepare, hardware installation, afx, afx 1k
 summary: Prepare to install the AFX storage system in your ONTAP environment and register the hardware to access support benefits. 
 ---
-= Prepare to install an AFX storage system
+= Prepare to install your AFX storage system
 :icons: font
 :imagesdir: ../media/
 
@@ -18,12 +18,12 @@ To install your AFX storage system, ensure that the site and the cabinet or rack
 
 . Use https://hwu.netapp.com[NetApp Hardware Universe^] to confirm that your site meets the environmental and electrical requirements for your storage system.
 
-. Make sure you have adequate cabinet or rack space for your storage system, shelves, and any switches:
+. Make sure you have adequate cabinet or rack space for your storage system, shelves, and switches:
 +
 
 ** 4U in an HA configuration
-** 2U for each NX224 storage shelf
-** 1U for most switches
+** 2U for each AFX node
+** 1U or 2U depending on switch model
 
 
 == Step 2: Unpack the boxes
@@ -49,12 +49,12 @@ The following items are some of the contents you might see in the boxes.
 |*Cables* |
 a|* Bezel
 * Storage system
-* Rail kits with instructions (optional)
+* Rail kits with instructions 
 * Storage shelf (if you ordered additional storage)
 a|* Management Ethernet cables (RJ-45 cables)
 * Network cables
 * Power cords
-* Storage cables (if you ordered additional storage) 
+* Storage cables 
 * USB-C serial port cable |
 |===
 

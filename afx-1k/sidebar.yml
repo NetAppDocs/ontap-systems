@@ -12,16 +12,12 @@ entries:
         url: /afx-1k/bootmedia-replace-workflow.html
       - title: Review requirements
         url:  /afx-1k/bootmedia-replace-requirements.html
-      - title: Check encryption keys
-        url: /afx-1k/bootmedia-encryption-preshutdown-checks.html
       - title: Shut down controller
         url: /afx-1k/bootmedia-shutdown.html
       - title: Replace boot media
         url: /afx-1k/bootmedia-replace.html
-      - title: Boot recovery image
+      - title: Restore boot media
         url: /afx-1k/bootmedia-recovery-image-boot.html
-      - title: Restore encryption
-        url: /afx-1k/bootmedia-encryption-restore.html
       - title: Return failed part to NetApp
         url: /afx-1k/bootmedia-complete-rma.html
     # END boot media

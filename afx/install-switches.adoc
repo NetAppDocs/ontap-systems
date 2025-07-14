@@ -4,34 +4,102 @@ permalink: afx/install-switches.html
 keywords: afx, afx 1k, install, setup, switches
 summary: Learn how to install the rail kits for the AFX storage system and storage shelves, and secure the AFX hardware in the cabinet or telco rack. 
 ---
-= Install the switches in your AFX storage system
+= Install the switches for your AFX storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you prepare to install your AFX storage system, you should install the switches for your system.
+After you prepare to install your AFX storage system, you should install the switches in the cabinet or telco rack.
 
-Go to the https://docs.netapp.com/us-en/afx/index.html[Switch documentation^] to learn how to install your switch model for your AFX system.
+Depending on your configuration, you might need to install the Cisco Nexus 9332D-GX2B switch and pass-through panel in a NetApp cabinet. Standard brackets are included with the switch.
 
-.AFX cluster switches
+.What you'll need
 
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/install-hardware-bes53248.html[Install BES-53248 switch^]
+* The pass-through panel kit, which is available from NetApp (part number X8784-R6).
++
+The NetApp pass-through panel kit contains the following hardware:
 
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/install-switch-9336c-cluster.html[Install Cisco Nexus 9336C-FX2 switch^]
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/install-hardware-sn2100-cluster.html[Install NVIDIA SN2100 switch^]
+ ** One pass-through blanking panel
+ ** Four 10-32 x .75 screws
+ ** Four 10-32 clip nuts
+
+* For each switch, eight 10-32 or 12-24 screws and clip nuts to mount the brackets and slider rails to the front and rear cabinet posts.
+* The Cisco standard rail kit to install the switch in a NetApp cabinet.
+
+NOTE: The jumper cords are not included with the pass-through kit and should be included with your switches. If they were not shipped with the switches, you can order them from NetApp (part number X1558A-R6).
 
 
-.AFX storage switches
+.Steps
+. Install the pass-through blanking panel.
 
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-storage/install-9336c-storage.html[Install Cisco Nexus 9336C-FX2 switch^]
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100-storage/configure-overview-sn2100-storage.html[Install NVIDIA SN2100 switch^]
+ .. Determine the vertical location of the switches and blanking panel in the cabinet or rack.
++
 
-.AFX shared switches
+ .. Install two clip nuts on each side in the appropriate square holes for front cabinet rails.
+ .. Center the panel vertically to prevent intrusion into adjacent rack space, and then tighten the screws.
+ .. Insert the female connectors of both 48-inch jumper cords from the rear of the panel and through the brush assembly.
++
+image::../media/cisco_9148_jumper_cords.gif[]
++
+_(1) Female connector of the jumper cord._
 
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/install-9336c-shared.html[Install Cisco Nexus 9336C-FX2 switch^]
+. Install the rack-mount brackets on the switch chassis.
+ .. Position a front rack-mount bracket on one side of the switch chassis so that the mounting ear is aligned with the chassis faceplate (on the PSU or fan side), and then use four M4 screws to attach the bracket to the chassis.
++
+image::../media/3132q_front_bracket.gif[front bracket]
+
+ .. Repeat step <<SUBSTEP_9F2E2DDAEE084FE5853D1A6C6D945941,2a>> with the other front rack-mount bracket on the other side of the switch.
+ .. Install the rear rack-mount bracket on the switch chassis.
+ .. Repeat step <<SUBSTEP_53A502380D6D4F058F62ED5ED5FC2000,2c>> with the other rear rack-mount bracket on the other side of the switch.
+. Install the clip nuts in the square hole locations for all four IEA posts.
++
+image::../media/ru_locations_for_3132q_v.gif[]
++
+The two 9332D-GX2B switches are always mounted in the top 2U of the cabinet RU41 and 42.
+
+. Install the slider rails in the cabinet or rack.
+ .. Position the first slider rail at the RU42 mark on the back side of the rear left post, insert screws with the matching thread type, and then tighten the screws with your fingers.
++
+image::../media/3132q_v_slider_rails.gif[]
++
+_(1) As you gently slide the slider rail, align it to the screw holes in the rack._
++
+_(2) Tighten the screws of the slider rails to the cabinet posts._
+
+ .. Repeat step <<SUBSTEP_81651316D3F84964A76BC80A9DE48C0E,4a>> for the right-side rear post.
+ .. Repeat steps <<SUBSTEP_81651316D3F84964A76BC80A9DE48C0E,4a>> and <<SUBSTEP_593967A423024594B9A41A04703DC458,4b>> at the RU41 locations on the cabinet.
+. Install the switch in the cabinet.
++
+NOTE: This step requires two people: one person to support the switch from the front and another to guide the switch into the rear slider rails.
+
+ .. Position the back of the switch at RU41.
++
+image::../media/3132q_v_positioning.gif[3232C positioning at U39-40]
++
+_(1) As the chassis is pushed toward the rear posts, align the two rear rack-mount guides with the slider rails._
++
+_(2)  Gently slide the switch until the front rack-mount brackets are flush with the front posts._
+
+ .. Attach the switch to the cabinet.
++
+image::../media/3132q_attaching.gif[]
++
+_(1) With one person holding the front of the chassis level, the other person should fully tighten the four rear screws to the cabinet posts._
+
+ .. With the chassis now supported without assistance, fully tighten the front screws to the posts.
+ .. Repeat steps <<SUBSTEP_4F538C8C55E34C5FB5D348391088A0FE,5a>> through <<SUBSTEP_EB8FE2FED2CA4120B709CC753C0F50FC,5c>> for the second switch at the RU42 location.
++
+NOTE: By using the fully installed switch as a support, it is not necessary to hold the front of the second switch during the installation process.
+
+. When the switches are installed, connect the jumper cords to the switch power inlets.
+. Connect the male plugs of both jumper cords to the closest available PDU outlets.
++
+NOTE: To maintain redundancy, the two cords must be connected to different PDUs.
+
+. Connect the management port on each switch to either of the management switches (if ordered) or connect them directly to your management network.
++
+The management port is the upper-right port located on the PSU side of the switch. The CAT6 cable for each switch needs to be routed through the pass-through panel after the switches are installed to connect to the management switches or management network.
 
 
 .What's next?
-After you've installed the switches for your AFX storage system, you link:deploy-hardware.html[install the hardware for your AFX storage system].
-
-// 2024 Sept 23, ONTAPDOC 1922
+After you've installed the switches in the cabinet or rack, you link:deploy-hardware.html[install the AFX storage system and shelves in the cabinet or rack].
