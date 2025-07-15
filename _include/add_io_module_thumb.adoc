@@ -56,7 +56,9 @@ If you installed a storage I/O module, install and cable your NS224 shelves, as 
 +
 Rebooting the impaired controller also reinitializes the I/O modules and other components.
 +
-. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+. Return the impaired controller to normal operation by giving back its storage:
++
+`storage failover giveback -ofnode _impaired_node_name_`.
 
 . Repeat these steps to add an I/O module to the other controller.
 
