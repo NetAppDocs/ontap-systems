@@ -9,11 +9,12 @@ summary: Learn how to install the switches for the AFX 1K storage system and sto
 :imagesdir: ../media/
 
 [.lead]
-After you prepare to install your AFX 1K storage system, you should install the switches in the cabinet or telco rack.
+After you complete your preparation for the AFX 1K storage system installation, you should install the switches in the cabinet or telco rack.
 
 Depending on your configuration, you might need to install the Cisco Nexus 9332D-GX2B switch and pass-through panel in a NetApp cabinet. Standard brackets are included with the switch.
 
 .Before you begin
+Make sure you have the following components available: 
 
 * The pass-through panel kit, which is available from NetApp (part number X8784-R6).
 +
@@ -31,6 +32,7 @@ NOTE: The jumper cords are not included with the pass-through kit and should be 
 
 .Steps
 . Install the pass-through blanking panel.
+//Does this apply only if you are installing in a cabinet?
 
  .. Determine the vertical location of the switches and blanking panel in the cabinet or rack.
 +
@@ -68,7 +70,7 @@ _(2) Tighten the screws of the slider rails to the cabinet posts._
 
  .. Repeat step <<SUBSTEP_81651316D3F84964A76BC80A9DE48C0E,4a>> for the right-side rear post.
  .. Repeat steps <<SUBSTEP_81651316D3F84964A76BC80A9DE48C0E,4a>> and <<SUBSTEP_593967A423024594B9A41A04703DC458,4b>> at the RU41 locations on the cabinet.
-. Install the switch in the cabinet.
+. Install the switch in the cabinet or rack.
 +
 NOTE: This step requires two people: one person to support the switch from the front and another to guide the switch into the rear slider rails.
 
@@ -80,7 +82,7 @@ _(1) As the chassis is pushed toward the rear posts, align the two rear rack-mou
 +
 _(2)  Gently slide the switch until the front rack-mount brackets are flush with the front posts._
 
- .. Attach the switch to the cabinet.
+ .. Attach the switch to the cabinet or rack.
 +
 image::../media/3132q_attaching.gif[]
 +
@@ -95,11 +97,6 @@ NOTE: By using the fully installed switch as a support, it is not necessary to h
 . Connect the male plugs of both jumper cords to the closest available PDU outlets.
 +
 NOTE: To maintain redundancy, the two cords must be connected to different PDUs.
-
-. Connect the management port on each switch to either of the management switches (if ordered) or connect them directly to your management network.
-+
-The management port is the upper-right port located on the PSU side of the switch. The CAT6 cable for each switch needs to be routed through the pass-through panel after the switches are installed to connect to the management switches or management network.
-
 
 .What's next?
 After you've installed the switches in the cabinet or rack, you link:deploy-hardware.html[install the AFX 1K storage system and shelves in the cabinet or rack].

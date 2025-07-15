@@ -21,7 +21,7 @@ To prepare to install your AFX 1K storage system, you need to get the site ready
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:install-switches.html[Install the switches for your AFX storage system]
 [role="quick-margin-para"]
-Install your switches in the cabinet or telco rack. 
+Install your Cisco Nexus 9332D-GX2B or 9364-GX2A switches in the cabinet or telco rack for your AFX 1K storage system. You might also need to install a pass-through panel kit if you are using the Cisco Nexus 9332D-GX2B switch. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:deploy-hardware.html[Install the hardware for your AFX storage system]
 [role="quick-margin-para"]

@@ -29,11 +29,15 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direct
 
 * When cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
 
-* The AFX 1K storage system utilizes 400GbEx100GbE breakout cables. The 400GBE connections are made to the switch ports, and the 100GbE connections are made to the controller and drive shelf ports.
-+
-NOTE: Cisco Nexus 9332D-GX2B and 9364D-GX2A switch configurations to the AFK 1K system require 400GbEx100GbE breakout cable connections. 
+* The AFX 1K storage system utilizes 400GbEx100GbE breakout cables. The 400GBE connections are made to the switch ports, and the 100GbE connections are made to the controller and drive shelf ports. Storage and HA/Cluster connections can be made to any non-ISL port on the switch.
+
+NOTE: Cisco Nexus 9332D-GX2B and 9364D-GX2A switch configurations to the AFX 1K system require 400GbEx100GbE breakout cable connections.
 
 == Step 1: Connect the controllers to the management network
+Connect the management port on each switch to either of the management switches (if ordered) or connect them directly to your management network.
+
+The management port is the upper-right port located on the PSU side of the switch. The CAT6 cable for each switch needs to be routed through the pass-through panel after the switches are installed to connect to the management switches or management network.
+
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
 
 image::../media/oie_cable_rj45.png[RJ-45 cables,width=100px]
@@ -83,7 +87,7 @@ Use the Cluster/HA interconnect cable to connect ports e1a and e7a to switch A a
 
 .Steps
 
-. Connect the following ports to cluster network switch A.
+. Connect the following ports to cluster network any non-ISL port on switch A.
 * Controller A
 ** e1a
 ** e7a
@@ -97,7 +101,7 @@ image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
 image::../media/drw_afx_switched_cluster_cabling_a_ieops-2352.svg[Cable cluster connections to cluster network]
 
-. Connect the following ports to cluster network switch B.
+. Connect the following ports to cluster network any non-ISL port on switch B.
 * Controller A
 ** e1b
 ** e7b
@@ -111,10 +115,10 @@ image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
 image::../media/drw_afx_switched_cluster_cabling_b_ieops-2353.svg[Cable cluster connections to cluster network]
 
-== Step 4: Cable the controller storage to switch connections
+== Step 4: Cable the controller-to-switch connections
 Connect the controller storage ports to the switches.  Make sure you have the appropriate number and type of cables and cable connectors for your switches. See https://hwu.netapp.com[Hardware Universe^] for more information.
 
-. Connect the following storage ports to switch A.
+. Connect the following storage ports to any non-ISL port on switch A.
 * Controller A
 ** e10a
 ** e11a
@@ -128,7 +132,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
 image::../media/drw_afx_controller_storage_cable_a_ieops-2354.svg[Cable controller storage to switch A]
 
-. Connect the following storage ports to switch B.
+. Connect the following storage ports to any non-ISL port on switch B.
 * Controller A
 ** e10b
 ** e11b
@@ -147,7 +151,7 @@ Connect the NX224 storage shelves to the switches.
 
 For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-. Connect the following shelf ports to switch A.
+. Connect the following shelf ports to any non-ISL port on switch A.
 * Shelf A
 ** e1a
 ** e2a
@@ -165,7 +169,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
 image::../media/drw_afx_shelf_cabling_a_ieops-2356.svg[Cable shelf to switch A]
 
-. Connect the following shelf ports to switch B.
+. Connect the following shelf ports to any non-ISL port on switch B.
 * Shelf A
 ** e1b
 ** e2b
@@ -183,7 +187,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
 image::../media/drw_afx_shelf_cabling_b_ieops-2357.svg[Cable shelf to switch B]
 
-== Configure the switches for your AFX 1K storage system
+== Step 6: Configure the switches for your AFX 1K storage system
 After you have cabled your AFX 1K storage system, you must configure the switches to support the AFX 1K storage system.
 
 * For Cisco Nexus 9332D-GX2B switches, see link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9332d-gx2b/setup-switch-9332d-cluster.html[Configure Cisco Nexus 9332D-GX2B switch^].
@@ -192,4 +196,4 @@ After you have cabled your AFX 1K storage system, you must configure the switche
 
 .What's next?
 
-After you’ve cabled the hardware and configured the switches for your AFF AFK 1K system, you link:power-on-hardware.html[power on the AFX 1K storage system].
+After you’ve cabled the hardware and configured the switches for your AFX 1K system, you link:power-on-hardware.html[power on the AFX 1K storage system].
