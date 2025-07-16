@@ -1,7 +1,7 @@
 // New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specify/reference slot 4, which is unique to g-platforms.
 
 
-Bring the replacement cluster and HA I/O module in slot 4 online, verify the ports initialized successfully, verify slot 4 is powered on, and then verify it is online and recognized.
+Bring the replacement cluster and HA I/O module in slot 4 online, verify the module ports initialized successfully, verify slot 4 is powered on, and then verify the module is online and recognized.
 
 . Bring the replacement cluster and HA I/O module online:
 +
@@ -34,15 +34,15 @@ The output should show a hotplug.init.success EMS event logged for each port on 
 For example, the following output shows initialization succeded for cluster and HA I/O module ports e4b and e4a:
 +
 ----
-node1::> event log show -event *hotplug.init*                        
+node2::> event log show -event *hotplug.init*                        
 
 Time                Node             Severity      Event
 
 ------------------- ---------------- ------------- ---------------------------
 
-7/11/2025 16:04:06  node2       NOTICE        hotplug.init.success: Initialization of ports "e4b" in slot 4 succee
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e4b" in slot 4 succeeded
 
-7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e4a" in slot 4 succee
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e4a" in slot 4 succeeded
 
 2 entries were displayed.
 ----

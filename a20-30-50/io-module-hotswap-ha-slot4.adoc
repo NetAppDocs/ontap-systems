@@ -13,7 +13,7 @@ summary: The cluster and HA I/O module supports interconnects for clustering and
 [.lead]
 The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails and when your storage system meets specific requirements.
 
-The hot-swap process involves preparing the storage system and I/O module slot 4 so that it's safe to remove the failed module, hot-swapping the failed module for an equivalent one, bringing the replacement module online, and returning the failed module to NetApp.
+The hot-swap process involves preparing the storage system and I/O module slot 4 so that it's safe to remove the failed module, hot-swapping the failed module for an equivalent one, bringing the replacement module online, restoring the storage system to normal operation, and returning the failed module to NetApp.
 
 
 .Before you begin
@@ -25,7 +25,7 @@ NOTE: If your storage system does not meet all of the following requirements, yo
 ** The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with an equivalent I/O module. You cannot change the I/O module type.
 ** Your storage system configuration must have only one cluster and HA I/O module located in slot 4, not two cluster and HA I/O modules.
 ** Your storage system must be a two-node (switchless or switched) cluster configuration.
-** The controller with the failed cluster and HA I/O module (the impaired controller) must have taken over the healthy HA partner controller. The takeover should have occured automatically if the I/O module is failed.
+** The controller with the failed cluster and HA I/O module (the impaired controller) must have taken over the healthy partner controller. The takeover should have occured automatically if the I/O module is failed.
 +
 For two-node clusters, the storage system cannot discern which controller has the the failed I/O module, so either controller might initiate the takeover. The cluster and HA I/O module hot-swap procedure is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller.
 +
