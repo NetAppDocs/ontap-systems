@@ -1,7 +1,7 @@
 // New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specify/reference slot 4, which is unique to g-platforms.
 
 
-Bring the replacement cluster and HA I/O module in slot 4 online and then verify it is online and recognized.
+Bring the replacement cluster and HA I/O module in slot 4 online, verify the ports initialized successfully, verify slot 4 is powered on, and then verify it is online and recognized.
 
 . Bring the replacement cluster and HA I/O module online:
 +
@@ -23,7 +23,7 @@ Do you want to continue? {y|n}: `y`
 The module has been successfully powered on, initialized and placed into service.
 ----
 
-. Verify that each port on the cluster and HA I/O module successfully initiated:
+. Verify that each port on the cluster and HA I/O module successfully initialized:
 +
 `event log show -event \*hotplug.init*`
 +
@@ -85,15 +85,3 @@ Slot slot Information
                   Serial Number:      032403001370
 ----
 
-. Return the healthy controller (the controller that was taken over) to normal operation: 
-+
-`storage failover giveback -ofnode _healthy_node_name_`
-+
-
-. Restore automatic giveback from the console of the impaired controller (the controller that took over the healthy controller): 
-+
-`storage failover modify -node local -auto-giveback _true_`
-
-. If AutoSupport is enabled, restore automatic case creation:
-+
-`system node autosupport invoke -node * -type all -message MAINT=end`

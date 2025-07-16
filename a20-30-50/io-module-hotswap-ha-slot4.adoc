@@ -11,9 +11,9 @@ summary: The cluster and HA I/O module supports interconnects for clustering and
 //Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family on 9.17.1 and later.
 
 [.lead]
-The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails.
+The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails and when your storage system meets specific requirements.
 
-The hot-swap process involves preparing slot 4 for removal, hot-swapping the failed module for an equivalent one, bringing the replacement module online, and returning the failed module to NetApp.
+The hot-swap process involves preparing the storage system and I/O module slot 4 so that it's safe to remove the failed module, hot-swapping the failed module for an equivalent one, bringing the replacement module online, and returning the failed module to NetApp.
 
 
 .Before you begin
@@ -49,7 +49,7 @@ A storage system has three location LEDs: one on the operator display panel and 
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
 
-== Step 1: Prepare for the cluster and HA I/O module hot-swap
+== Step 1: Prepare the storage system and I/O module slot 4
 
 // New include specific to g-platform family because the slot 4 location for the cluster and HA I/O module is unique to g-platforms.
 
@@ -70,7 +70,13 @@ include::../_include/g_io_module_hotswap_ha_slot4_swap_hardware.adoc[]
 include::../_include/g_io_module_hotswap_ha_slot4_bring_online.adoc[]
 
 
-== Step 4: Return the failed part to NetApp
+== Step 4: Restore the storage system to normal operation
+
+// New include that's generic - can be used for the g-platform family and v-platform family.
+
+include::../_include/io_module_hotswap_restore_system.adoc[]
+
+== Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
 

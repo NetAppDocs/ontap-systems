@@ -25,13 +25,13 @@ For example, the following AutoSupport message suppresses automatic case creatio
 +
 NOTE: When you see _Do you want to disable auto-giveback?_, enter `y`.
 
-. Prepare I/O module slot 4 on the impaired controller for removal:
+. Prepare the failed cluster and HA module in slot 4 for removal by removing it from service and powering it off:
 +
 `system controller slot module remove -node _impaired_node_name_ -slot _slot_number_`
 +
 NOTE: When you see _Do you want to continue?_, enter `y`. 
 +
-For example, the following command prepares slot 4 on node2 (the impaired controller) for removal, and displays a message that it is safe to remove:
+For example, the following command prepares the module in slot 4 on node2 (the impaired controller) for removal, and displays a message that it is safe to remove:
 +
 ----
 node2::> system controller slot module remove -node node2 -slot 4
@@ -43,11 +43,11 @@ Do you want to continue? {y|n}: y
 The module has been successfully removed from service and powered off. It can now be safely removed.
 ----
 
-. Verify I/O module slot 4 on the impaired controller is powered off:
+. Verify the failed cluster and HA module in slot 4 is powered off:
 +
 `system controller slot module show`
 +
-The output should show slot 4 status on the impaired controller as `_powered-off_`.
+The output should show `_powered-off_` in the status column for the failed module in slot 4.
 
 
 
