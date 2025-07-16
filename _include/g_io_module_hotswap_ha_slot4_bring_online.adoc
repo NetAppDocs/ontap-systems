@@ -51,7 +51,7 @@ Time                Node             Severity      Event
 +
 `system controller slot module show`
 +
-The output should show slot 4 status as `_powered-on_` and ready for operation for the cluster and HA I/O module you inserted.
+The output should show slot 4 status as `_powered-on_` and therefore ready for operation of the replacement cluster and HA I/O module.
 
 . Verify that the replacement cluster and HA I/O module is online and recognized by entering the following command from the console of the impaired controller (the controller that took over the healthy controller): 
 +
