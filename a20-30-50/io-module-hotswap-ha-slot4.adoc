@@ -37,6 +37,8 @@ If you are not sure which controller has the failed I/O module, contact https://
 
 .About this task
 
+* Hot-swapping the cluster and HA I/O module means that you do not have to perform any controller takeover steps; the impaired controller has already taken over the healthy controller.
+
 * It is critical to apply the commands to the correct controller when you are hot-swapping the cluster and HA I/O module:
 
 ** The _impaired controller_ is the controller on which you are hot-swapping the cluster and HA I/O module and it is the controller that has taken over the healthy controller.
