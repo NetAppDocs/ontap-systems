@@ -12,3 +12,7 @@ summary: 'Once environment variables are checked, you must complete steps specif
 Restore encryption on the replacement boot media.
 
 include::../_include/encryption_restore_bootmedia.adoc[]
+
+.What's next?
+After restoring encryption on the boot media, you need to link:bootmedia-complete-rma.html[return the failed part to NetApp].
+

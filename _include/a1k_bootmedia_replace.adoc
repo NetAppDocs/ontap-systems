@@ -1,4 +1,4 @@
-.
+
 
 == Step 1: Replace the boot media
 
@@ -24,7 +24,7 @@ Boot media
 |===
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the power supply cables from the PSUs from the controller.
+. Unplug the power supply cables from the PSUs from the controller and then pull the controller module, at the front of the system, out a few inches.
 
 +
 NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
@@ -81,10 +81,11 @@ The USB flash drive should have the appropriate ONTAP image of what the impaired
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
- . Plug the power cables into the power supplies and reinstall the power cable retainer.
+ . Plug the power cables back into the PSU and gently reseat and lock the controller module at the front of the system. 
++
+The system will begin to reboot, typically to the LOADER prompt.
 
 +
-The controller begins to boot as soon as power is reconnected to the system.
 
  . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +

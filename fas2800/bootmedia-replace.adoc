@@ -8,13 +8,13 @@ summary: 'You must locate the boot media in the controller and follow the direct
 :icons: font
 :imagesdir: ../media/
 
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+[.lead]
+You must remove and open the impaired controller module, locate and replace the boot media in the controller, transfer the boot image to a USB drive, insert the USB drive in the controller, and then boot the controller.
 
 == Step 1: Remove the controller module
-:icons: font
-:imagesdir: ../media/
 
-[.lead]
+.Steps
+
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
 . If you are not already grounded, properly ground yourself.
@@ -26,6 +26,7 @@ image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
 
 . Turn the controller module over and place it on a flat, stable surface.
 . Open the cover by pressing the blue buttons on the sides of the controller module to release the cover, and then rotate the cover up and off of the controller module.
+
 +
 image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Open the controller]
 
@@ -41,12 +42,9 @@ Controller module cover release button
 |===
 
 == Step 2: Replace the boot media
-:icons: font
-:imagesdir: ../media/
 
 Locate the boot media in the controller module, located under the mezzanine card and follow the directions to replace it.
 
-video::10a29a01-a86e-451c-b05a-af4701726f57[panopto, title="Animation - Replace the boot media"]
 
 image:../media/drw_2850_replace_boot_media_IEOPS-696.svg[Replace the boot media]
 
@@ -102,20 +100,7 @@ Install the system image on the replacement boot media using a USB flash drive w
 ** If NVE is supported on the cluster, download the image with NetApp Volume Encryption.
 ** If NVE is not supported on the cluster, download the image without NetApp Volume Encryption.
 See https://kb.netapp.com/onprem/ontap/os/Which_ONTAP_image_should_I_download%3F_With_or_without_Volume_Encryption%3F[Which ONTAP image should I download? With or without Volume Encryption?^] for more details.
-. Unzip the downloaded image.
-+
-NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
-+
-There are two folders in the unzipped service image file:
-
-  *** `boot`
-  *** `efi`
-
- .. Copy the `efi` folder to the top directory on the USB flash drive.
-+
-The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
-
- .. Remove the USB flash drive from your laptop.
+. Remove the USB flash drive from your laptop.
 . Install the controller module:
 .. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 .. Recable the controller module.
@@ -126,15 +111,9 @@ When recabling, remember to reinstall the media converters (SFPs) if they were r
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
-. Push the controller module all the way into the system, making sure that the cam handle clears the USB flash drive, firmly push the cam handle to finish seating the controller module, push the cam handle to the closed position, and then tighten the thumbscrew.
+. Push the controller module all the way into the system, making sure that the cam handle clears the USB flash drive, firmly push the cam handle to finish seating the controller module, push the cam handle to the closed position, and then tighten the thumbscrew. 
 +
-The controller begins to boot as soon as it is completely installed into the chassis.
+The controller begins to boot as soon as it is completely installed into the chassis and stops at the LOADER prompt. 
 
-. Interrupt the boot process to stop at the LOADER prompt by pressing Ctrl-C when you see Starting AUTOBOOT press Ctrl-C to abort....
-+
-If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
-
-. For systems with one controller in the chassis, reconnect the power and turn on the power supplies.
-+
-The system begins to boot and stops at the LOADER prompt.
-
+.What's next?
+After replacing the boot media, you need to link:bootmedia-recovery-image-boot.html[boot the recovery image].

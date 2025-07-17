@@ -31,21 +31,24 @@ The Flash Cache module carrier is located in slot 6 and houses up to two Flash C
 Shut down or take over the impaired controller using one of the following options.
 
  
-.Option 1 Most systems
-[%collapsible]
+[role="tabbed-block"]
 ====
-include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
+
 ====
-// End snippet
- 
-.Option 2 MetroCluster configuration
-[%collapsible]
-=====
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 
+
 // End snippet
-=====
+
 === Step 2: Replace the Flash Cache module carrier
 
 Perform the following steps to replace the Flash Cache module carrier.

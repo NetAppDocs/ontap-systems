@@ -29,7 +29,7 @@ To cable the hardware, first connect the storage controllers to your network and
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:install-power-hardware.html[Power on the AFF C80 storage system]
 [role="quick-margin-para"]
-Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
+Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup, connect the laptop or console to the controller, and then connect the controllers to the power sources.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:install-complete.html[Complete storage system setup]
 [role="quick-margin-para"]
