@@ -9,7 +9,7 @@ Prepare the storage system and I/O module slot 4 so that it is safe to remove th
 
 . Unplug cabling from the failed cluster and HA I/O module.
 +
-Make sure to label the cables so that you know where they came from.
+Make sure to label the cables so that later in this procedure you can reconnect them to the same ports.
 
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
 +

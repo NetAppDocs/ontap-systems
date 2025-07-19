@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, hotswap a cluster ha card
 summary: The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails.
 ---
-= Hot-swap the I/O module used for cluster and HA traffic - AFF A20, AFF A30, and AFF A50
+= Hot-swap an I/O module used for cluster and HA traffic - AFF A20, AFF A30, and AFF A50
 :icons: font
 :imagesdir: ../media/
 
 //Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family on 9.17.1 and later.
 
 [.lead]
-The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails and when your storage system meets specific requirements.
+The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your AFF A20, AFF A30, or AFF A50 storage system when the module fails and if your storage system meets specific requirements.
 
 The hot-swap process involves preparing the storage system and I/O module slot 4 so that it's safe to remove the failed module, hot-swapping the failed module for an equivalent one, bringing the replacement module online, restoring the storage system to normal operation, and returning the failed module to NetApp.
 
@@ -37,7 +37,9 @@ If you are not sure which controller has the failed I/O module, contact https://
 
 .About this task
 
-* Hot-swapping the cluster and HA I/O module means that you do not have to perform any controller takeover steps; the impaired controller has already taken over the healthy controller.
+* Hot-swapping the cluster and HA I/O module means that you do not have to perform a manual takeover; the impaired controller has automatically taken over the healthy controller.
++
+When the controller with the failed cluster and HA I/O module (the impaired controller) has taken over the healthy controller, the only way to recover without an outage is to hot-swap the module.
 
 * It is critical to apply the commands to the correct controller when you are hot-swapping the cluster and HA I/O module:
 

@@ -1,16 +1,16 @@
 
 // New include that's generic - can be used for the g-platform family and v-platform family.
 
-Restore your storage system to normal operation after.
+Restore your storage system to normal operation by giving back storage to the healthy controller, restoring automatic giveback, and reenabling AutoSupport automatic case creation.
 
 
 .Steps
 
-. Return the healthy controller (the controller that was taken over) to normal operation: 
+. Return the healthy controller (the controller that was taken over) to normal operation by giving back its storage: 
 +
 `storage failover giveback -ofnode _healthy_node_name_`
 +
-// The healthy node state should be "waiting for giveback".
+// The healthy controller should be in the "waiting for giveback" state.
 +
 . Restore automatic giveback from the console of the impaired controller (the controller that took over the healthy controller): 
 +
