@@ -22,10 +22,10 @@ The hot-swap process involves preparing the storage system and I/O module slot 4
 NOTE: If your storage system does not meet all of the following requirements, you must use the link:io-module-replace.html[replace an I/O module procedure].
 
 ** Your storage system must be running ONTAP 9.17.1 or later.
-** The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with an equivalent I/O module. You cannot change the I/O module type.
+** The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with an equivalent cluster and HA I/O module. You cannot change the I/O module type.
 ** Your storage system configuration must have only one cluster and HA I/O module located in slot 4, not two cluster and HA I/O modules.
 ** Your storage system must be a two-node (switchless or switched) cluster configuration.
-** The controller with the failed cluster and HA I/O module (the impaired controller) must have taken over the healthy partner controller. The takeover should have occured automatically if the I/O module is failed.
+** The controller with the failed cluster and HA I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occured automatically if the I/O module is failed.
 +
 For two-node clusters, the storage system cannot discern which controller has the the failed I/O module, so either controller might initiate the takeover. The cluster and HA I/O module hot-swap procedure is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller.
 +
@@ -37,9 +37,9 @@ If you are not sure which controller has the failed I/O module, contact https://
 
 .About this task
 
-* Hot-swapping the cluster and HA I/O module means that you do not have to perform a manual takeover; the impaired controller has automatically taken over the healthy controller.
+* Hot-swapping the cluster and HA I/O module means that you do not have to perform a manual takeover; the impaired controller (the controller with the failed cluster and HA I/O module) has automatically taken over the healthy controller.
 +
-When the controller with the failed cluster and HA I/O module (the impaired controller) has taken over the healthy controller, the only way to recover without an outage is to hot-swap the module.
+When the impaired controller has taken over the healthy controller, the only way to recover without an outage is to hot-swap the module.
 
 * It is critical to apply the commands to the correct controller when you are hot-swapping the cluster and HA I/O module:
 
