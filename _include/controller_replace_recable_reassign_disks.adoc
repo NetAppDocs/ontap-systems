@@ -37,7 +37,8 @@ NOTE: You are prompted twice for the passphrase.
 . Press <enter> when _Waiting for giveback_ is displayed.
 . Move the console cable to the partner node and login as `admin`.
 . Give back only the CFO aggregates (the root aggregate): `storage failover giveback -fromnode local -only-cfo-aggregates _true_`
-* If you encounter errors, contact https://support.netapp.com[NetApp Support].
++
+NOTE: If you encounter errors, contact https://support.netapp.com[NetApp Support].
 . Wait 5 minutes after the giveback report completes, and check failover status and giveback status: `storage failover show` and `storage failover show-giveback`.
 +
 // . Move the console cable back to the replacement controller and synchronize missing keys:`security key-manager onboard sync`
