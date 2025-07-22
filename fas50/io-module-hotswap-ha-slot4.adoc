@@ -11,31 +11,40 @@ summary: The cluster and HA I/O module supports interconnects for clustering and
 //Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family.
 
 [.lead]
-The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your FAS50 storage system when the module fails.
+The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your FAS50 storage system when the module fails and if your storage system meets specific requirements.
 
-The hot-swap process involves preparing slot 4 for removal, hot-swapping the failed module for an equivalent one, bringing the replacement module online, and returning the failed module to NetApp.
+The hot-swap process involves preparing the storage system and I/O module slot 4 so that it's safe to remove the failed module, hot-swapping the failed module for an equivalent one, bringing the replacement module online, restoring the storage system to normal operation, and returning the failed module to NetApp.
 
 
 .Before you begin
-* Your storage system must meet all of the following requirements in order to use this procedure; otherwise, you must use the link:io-module-replace.html[replace an I/O module procedure].
+* Your storage system must meet all of the following requirements in order to use this procedure.
++
+NOTE: If your storage system does not meet all of the following requirements, you must use the link:io-module-replace.html[replace an I/O module procedure].
+
 ** Your storage system must be running ONTAP 9.17.1 or later.
-** The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with an equivalent I/O module. You cannot change the I/O module type.
+** The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with another cluster and HA I/O module. You cannot change the I/O module type.
 ** Your storage system configuration must have only one cluster and HA I/O module located in slot 4, not two cluster and HA I/O modules.
-** The controller with the failed cluster and HA I/O module (the impaired controller) must have taken over the healthy controller. The takeover should have occured automatically if the I/O module is failed.
+** Your storage system must be a two-node (switchless or switched) cluster configuration.
+** The controller with the failed cluster and HA I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occured automatically if the I/O module is failed.
++
+For two-node clusters, the storage system cannot discern which controller has the the failed I/O module, so either controller might initiate the takeover. The cluster and HA I/O module hot-swap procedure is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller.
 +
 You can verify that the impaired controller successfully took over the healthy controller by entering the `storage failover show` command.
 +
-If you are not sure which node has the failed I/O module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].  
-** Your storage system must be a two-node cluster configuration.
+If you are not sure which controller has the failed I/O module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].  
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
 
-* It is critical to apply the commands to the correct controller when you are performing maintenance:
+* Hot-swapping the cluster and HA I/O module means that you do not have to perform a manual takeover; the impaired controller (the controller with the failed cluster and HA I/O module) has automatically taken over the healthy controller.
++
+When the impaired controller has taken over the healthy controller, the only way to recover without an outage is to hot-swap the module.
 
-** The _impaired controller_ is the controller on which you are performing maintenance.
-** The _healthy controller_ is the HA partner of the impaired controller.
+* It is critical to apply the commands to the correct controller when you are hot-swapping the cluster and HA I/O module:
+
+** The _impaired controller_ is the controller on which you are hot-swapping the cluster and HA I/O module and it is the controller that has taken over the healthy controller.
+** The _healthy controller_ is the HA partner of the impaired controller and it is the controller that was taken over by the impaired controller.
 
 * If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
@@ -44,7 +53,7 @@ A storage system has three location LEDs: one on the operator display panel and 
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
 
-== Step 1: Prepare the I/O module slot 4
+== Step 1: Prepare the storage system and I/O module slot 4
 
 // New include specific to g-platform family because the slot 4 location for the cluster and HA I/O module is unique to g-platforms.
 
@@ -65,9 +74,12 @@ include::../_include/g_io_module_hotswap_ha_slot4_swap_hardware.adoc[]
 include::../_include/g_io_module_hotswap_ha_slot4_bring_online.adoc[]
 
 
-== Step 4: Return the failed part to NetApp
+== Step 4: Restore the storage system to normal operation
+
+// New include that's generic - can be used for the g-platform family and v-platform family.
+
+include::../_include/io_module_hotswap_restore_system.adoc[]
+
+== Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
-
-
-
