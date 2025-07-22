@@ -19,7 +19,7 @@ Adding additional I/O modules can improve redundancy, helping to ensure that the
 
 * link:io-module-hotswap-ha-slot4.html[Hot-swap a cluster and HA I/O module]
 +
-Hot-swapping a failed cluster and HA I/O module can restore the storage system to its optimal operating state. Hot-swapping is done without having to shut down the impaired controller.
+Hot-swapping a failed cluster and HA I/O module can restore the storage system to its optimal operating state. Hot-swapping is done without having to manually take over the impaired controller.
 +
 To use this procedure, your storage system must be running ONTAP 9.17.1 or later and meet specific storage system requirements.
 
