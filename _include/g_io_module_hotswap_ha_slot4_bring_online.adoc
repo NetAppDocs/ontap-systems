@@ -31,7 +31,7 @@ NOTE: It might take several minutes to allow for any required firmware updates a
 +
 The output should show a hotplug.init.success EMS event logged for each port on the cluster and HA I/O module with `_hotplug.init.success:_` in the `_Event_` column.
 +
-For example, the following output shows initialization succeded for cluster and HA I/O module ports e4b and e4a:
+For example, the following output shows initialization succeeded for cluster and HA I/O module ports e4b and e4a:
 +
 ----
 node2::> event log show -event *hotplug.init*                        
