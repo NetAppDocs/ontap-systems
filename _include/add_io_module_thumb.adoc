@@ -56,14 +56,19 @@ If you installed a storage I/O module, install and cable your NS224 shelves, as 
 +
 Rebooting the impaired controller also reinitializes the I/O modules and other components.
 +
-. Give back the impaired controller from the healthy controller: `storage failover giveback -ofnode _impaired_node_name_`
-// This is used in internal FRU docs: Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+. Return the impaired controller to normal operation by giving back its storage:
++
+`storage failover giveback -ofnode _impaired_node_name_`.
 
 . Repeat these steps to add an I/O module to the other controller.
 
-. Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
+. Restore automatic giveback from the console of the healthy controller: 
++
+`storage failover modify -node local -auto-giveback true`
 
-. If AutoSupport is enabled, restore (unsuppress) automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
+. If AutoSupport is enabled, restore (unsuppress) automatic case creation: +
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
 
 
 --
@@ -130,19 +135,27 @@ If you installed a storage I/O module, install and cable your NS224 shelves, as 
 +
 . Repeat the I/O module remove and install steps to add any additional I/O modules in the controller.
 
-. Reboot the impaired controller from the LOADER prompt: `bye`
+. Reboot the impaired controller from the LOADER prompt: 
++
+`bye`
 +
 Rebooting the impaired controller also reinitializes the I/O modules and other components.
 
-. Give back the impaired controller from the healthy controller: `storage failover giveback -ofnode _impaired_node_name_`
+. Return the impaired controller to normal operation by giving back its storage:
 +
-// This is used in internal FRU docs: Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+`storage failover giveback -ofnode _impaired_node_name_`
 +
-. Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
+. Restore automatic giveback from the console of the healthy controller: 
++
+`storage failover modify -node local -auto-giveback true`
 
-. If AutoSupport is enabled, restore (unsuppress) automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
+. If AutoSupport is enabled, restore (unsuppress) automatic case creation:
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
 
-. If you installed a NIC module, specify the usage mode for each port as _network_: `storage port modify -node _node_name_ -port _port_name_ -mode _network_`
+. If you installed a NIC module, specify the usage mode for each port as _network_:
++
+`storage port modify -node _node_name_ -port _port_name_ -mode _network_`
 
 . Repeat these steps for the other controller.
 --
