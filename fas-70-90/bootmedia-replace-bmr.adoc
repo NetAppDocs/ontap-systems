@@ -1,0 +1,19 @@
+---
+permalink: fas-70-90/bootmedia-replace-bmr.html
+sidebar: sidebar
+keywords: fas70, fas90, replace the boot media
+summary: The boot media in your FAS70 or FAS90 storage system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media in the System Management module, and then reinstalling the System Management module.
+---
+= Replace the boot media for automated boot recovery - FAS70 and FAS90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The boot media in your FAS70 or FAS90 storage system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media in the System Management module, and then reinstalling the System Management module.
+
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+
+include::../_include/a1k_bootmedia_replace-bmr.adoc[]
+
+.What's next
+After physically replacing the impaired boot media, link:bootmedia-recovery-image-boot-bmr.html[restore the ONTAP image from the partner node].

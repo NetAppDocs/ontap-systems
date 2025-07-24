@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: monitor, health, disk, shelf, location, status, condition, led, component, operator, display, panel, iom12, power, supply, fan, ds460c, shelves, drive, monitor disk shelf leds, operator display panel leds, iom12 module leds, power supply leds, fan leds on ds460c disk shelves, disk drive leds
 summary: You can monitor the health of your disk shelf by understanding the location and status conditions of the LEDs on your disk shelf components.
 ---
-= Monitor disk shelf LEDs - shelves with IOM12/IOM12B modules
+= Monitor shelf LEDs - DS212C, DS224C, or DS460C
 :icons: font
 :imagesdir: ../media/
 
@@ -112,6 +112,7 @@ image::../media/drw_iom12.gif[IOM12 module]
 The IOM12B modules are distinguished by a blue stripe and an "IOM12B" label:
 
 image::../media/iom12b.png[IOM12B module]
+
 
 == Power supply LEDs
 

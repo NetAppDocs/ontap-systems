@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules, iom12b, concepts
 summary: "Disk shelves with IOM12/IOM12B modules can be cabled in HA pair and single-controller configurations (for supported platforms)."
 ---
-= SAS cabling rules and concepts - shelves with IOM12/IOM12B modules
+= SAS cabling rules and concepts - DS212C, DS224C, or DS460C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Disk shelves with IOM12/IOM12B modules can be cabled in HA pair and single-controller configurations (for supported platforms) by applying the SAS cabling rules: configuration rules, controller slot numbering rules, shelf-to-shelf connection rules, controller-to-stack connection rules, and if applicable, mini-SAS HD SAS optical cable rules.
 
-NOTE: The SAS cabling rules regarding controller slot numbering rules, shelf-to-shelf connection rules, and controller-to-stack connection rules described in this guide are the same rules that apply to all SAS disk shelves, whether they have IOM12/IOM12B, IOM6, or IOM3 modules. However, the information in this guide is specific to the unique characteristics of disk shelves with IOM12/IOM12B modules and their use in supported configurations.
+NOTE: The SAS cabling rules regarding controller slot numbering rules, shelf-to-shelf connection rules, and controller-to-stack connection rules described in this guide are the same rules that apply to all SAS disk shelves, whether they have IOM12 or IOM12B  modules. However, the information in this guide is specific to the unique characteristics of disk shelves with IOM12/IOM12B modules and their use in supported configurations.
 
 The SAS cabling rules regarding configuration rules and mini-SAS HD SAS optical cable rules described in this guide are specific to disk shelves with IOM12/IOM12B modules.
 
@@ -27,8 +27,6 @@ You should avoid deviating from the rules; deviations might reduce reliability, 
 == Configuration rules
 
 Disk shelves with IOM12/IOM12B modules are supported on specific types of HA pair and single-controller configurations.
-
-NOTE: The FAS25XX platforms are not addressed in this content.
 
 [NOTE]
 ====
