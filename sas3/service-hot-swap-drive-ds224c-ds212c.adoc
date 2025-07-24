@@ -4,18 +4,29 @@ sidebar: sidebar
 keywords: hot-swap, fail, disk, drive, ds224c, ds212c, disk, shelf-nondisruptive, nondisruptive, replace, i/o, hot-swap a disk drive in a ds224c or ds212c disk shelf
 summary: You can hot-swap a failed disk drive in a DS224C or DS212C disk shelf.
 ---
-= Hot-swap a disk drive in a DS224C or DS212C disk shelf - shelves with IOM12/IOM12B modules
+= Hot-swap a disk drive - DS212C, DS224C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-swap a failed disk drive in a DS224C or DS212C disk shelf.
+You can hot-swap a failed disk drive in a DS224C or DS212C disk shelf with IOM12, IOM12B modules.
+
+.About this task
+
+
+* Disk drive firmware is automatically updated (nondisruptively) on new disk drives with non current firmware versions.
++
+NOTE: Disk drive firmware checks occur every two minutes.
+
+* If needed, you can turn on the disk shelf's location (blue) LEDs to aid in physically locating the affected disk shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
++
+A disk shelf has three location LEDs: one on the operator display panel and one on each shelf IOM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+
+* If needed, you can refer to the Monitoring disk shelf LEDs section for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
 
 .Before you begin
 
-* The disk drive that you are installing must be supported by the DS224C or DS212C disk shelf.
-+
-https://hwu.netapp.com[NetApp Hardware Universe^]
+* The disk drive that you are installing must be supported by the DS224C or DS212C disk shelf. You can view supported disk drives for your configuration in the https://hwu.netapp.com[NetApp Hardware Universe].
 
 * All other components in the system must be functioning properly; if not, contact technical support.
 * The disk drive you are removing must be failed.
@@ -26,11 +37,15 @@ NOTE: Depending on the disk drive type and capacity, it can take up to several h
 
 * If you are replacing a self-encrypting disk (SED), you must follow the instructions for Replacing an SED in the ONTAP documentation for your version of ONTAP.
 +
-Instructions in the ONTAP documentation describe additional steps you must perform before and after replacing an SED.
-+
-https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI^]
+Instructions in the https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI] documentation describe additional steps you must perform before and after replacing an SED.
 
-.About this task
+* *Best practice*: Ensure your system can recognize and utilize newly qualified disk drives by https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[downloading the current version of the Disk Qualification Package (DQP)^] before hot-swapping a drive.
+//30 aug 2022, BURT 1491809: correct the DQP link
++
+This allows you to avoid system event messages about having non-current disk drive information. You also avoid the possible prevention of disk partitioning because disk drives are not recognized. The DQP notifies you of non-current disk drive firmware.
+
+
+* *Best practice*: Ensure your system has the current versions of disk shelf (IOM) firmware and disk drive firmware on your system before adding new disk shelves, shelf FRU components, or SAS cables. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware^].
 
 * You should take steps to avoid electrostatic discharge (ESD):
  ** Keep the disk drive in the ESD bag until you are ready to install it.
@@ -51,31 +66,6 @@ NOTE: Do not place hands on the disk drive boards exposed on the underside of th
 * Disk drives should be kept away from magnetic devices.
 +
 NOTE: Magnetic fields can destroy all data on the disk drive and cause irreparable damage to the disk drive circuitry.
-
-* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a disk drive.
-+
-Having the current version of the DQP installed allows your system to recognize and utilize newly qualified disk drives; therefore, avoiding system event messages about having non-current disk drive information. You also avoid the possible prevention of disk partitioning because disk drives are not recognized. The DQP also notifies you of non-current disk drive firmware.
-+
-//30 aug 2022, BURT 1491809: correct the DQP link
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[NetApp Downloads: Disk Qualification Package^]
-
-* The best practice is to have the current versions of disk shelf (IOM) firmware and disk drive firmware on your system before adding new disk shelves, shelf FRU components, or SAS cables.
-+
-Current versions of firmware can be found on the NetApp Support Site.
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
-+
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
-
-* Disk drive firmware is automatically updated (nondisruptively) on new disk drives with non current firmware versions.
-+
-NOTE: Disk drive firmware checks occur every two minutes.
-
-* If needed, you can turn on the disk shelf's location (blue) LEDs to aid in physically locating the affected disk shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
-+
-A disk shelf has three location LEDs: one on the operator display panel and one on each shelf IOM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
-
-* If needed, you can refer to the Monitoring disk shelf LEDs section for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
 
 .Steps
 

@@ -4,14 +4,32 @@ sidebar: sidebar
 keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b
 summary: You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
 ---
-= Hot-remove a shelf - shelves with IOM12/IOM12B modules
+= Hot-remove a shelf - DS212C, DS224C, and DS460C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-remove a disk shelf with IOM12/IOM12B modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace a disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
+You can hot-remove a disk shelf with IOM12 or IOM12B modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace a disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
+
+.About this task
+
+* If you are hot-removing a disk shelf from a stack (but keeping the stack), you recable and verify one path at a time (path A then path B) to bypass the disk shelf you are removing so that you always maintain single-path connectivity from the controllers to the stack.
++
+NOTE: If you do not maintain single-path connectivity from the controllers to the stack when recabling the stack to bypass the disk shelf you are removing, you could fail the system with a multidisk panic.
+
+* *Possible shelf damage:* If you are removing a DS460C shelf and you are moving it to a different part of the data center or transporting it to a different location, see the "Move or transport DS460C shelves" section at the end of this procedure.
+
 
 .Before you begin
+
+* *Best practice*: Remove disk drive ownership after you remove the aggregates from the disk drives in the disk shelves you are removing.
++
+Removing ownership information from a spare disk drive allows the disk drive to be properly integrated into another node (as needed).
+
+[NOTE]
+====
+You must disable disk ownership automatic assignment before you remove ownership from disk drives. You reenable this feature at the end of this procedure. To learn more about disk aggregates, see https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggregates overview^].
+====
 
 * Your system must be a multipath HA, tri-path HA, multipath, quad-path HA, or quad-path configuration.
 +
@@ -21,33 +39,18 @@ NOTE: For a FAS2600 series single-controller system that has the external storag
 
 * Your system cannot have any SAS cabling error messages.
 +
-You can download and run Active IQ Config Advisor to view any SAS cabling error messages and the corrective actions you should take.
-+
-https://mysupport.netapp.com/site/tools[NetApp Downloads: Config Advisor^]
+To view any SAS cabling error messages and the corrective actions you should take, download and run the https://mysupport.netapp.com/site/tools[Active IQ Config Advisor^].
 
 * HA pair configurations cannot be in a takeover state.
 * You must have removed all aggregates from the disk drives (the disk drives must be spares) in the disk shelves you are removing.
 +
-NOTE: If you attempt this procedure with aggregates on the disk shelf you are removing, you could fail the system with a multidisk panic.
+CAUTION: If you attempt this procedure with aggregates on the disk shelf you are removing, you could fail the system with a multidisk panic.
 +
 You can use the `storage aggregate offline -aggregate _aggregate_name_` command and then the `storage aggregate delete -aggregate _aggregate_name_` command.
 
 * If you are removing one or more disk shelves from within a stack, you must have factored the distance to bypass the disk shelves you are removing; therefore, if the current cables are not long enough, you need to have longer cables available.
 
-.About this task
-
-* *Best practice:* The best practice is to remove disk drive ownership after you remove the aggregates from the disk drives in the disk shelves you are removing.
-+
-Removing ownership information from a spare disk drive allows the disk drive to be properly integrated into another node (as needed).
-
-[NOTE]
-====
-The procedure for removing ownership from disk drives requires you to disable disk ownership automatic assignment. You reenable disk ownership automatic assignment at the end of this procedure.
-
-https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggregates overview^]
-====
-
-* For a clustered ONTAP system that is greater than two-nodes, best practice is to have reassigned epsilon to an HA pair other than the one that is undergoing planned maintenance.
+* *Best practice*: For a clustered ONTAP system that is greater than two-nodes, reassign epsilon to an HA pair other than the one that is undergoing planned maintenance.
 +
 Reassigning epsilon minimizes the risk of unforeseen errors impacting all nodes in a clustered ONTAP system. You can use the following steps to determine the node holding epsilon and reassign epsilon if needed:
 +
@@ -59,11 +62,6 @@ The node that holds epsilon shows `true` in the `Epsilon` column. (The nodes tha
 . Assign epsilon to a node in another HA pair: `cluster modify -node _node_name_ -epsilon true`
 . Return to the admin privilege level: `set -privilege admin`
 
-* If you are hot-removing a disk shelf from a stack (but keeping the stack), you recable and verify one path at a time (path A then path B) to bypass the disk shelf you are removing so that you always maintain single-path connectivity from the controllers to the stack.
-+
-NOTE: If you do not maintain single-path connectivity from the controllers to the stack when recabling the stack to bypass the disk shelf you are removing, you could fail the system with a multidisk panic.
-
-* *Possible shelf damage:* If you are removing a DS460C shelf and you are moving it to a different part of the data center or transporting it to a different location, see the "Move or transport DS460C shelves" section at the end of this procedure.
 
 .Steps
 

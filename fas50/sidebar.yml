@@ -24,10 +24,25 @@ entries:
    - title: Maintenance overview
      url: /fas50/maintain-overview.html
 # START boot media
-   - title: Boot media
+   - title: Boot media - automated recovery
      pdf-filename: FAS50 Boot Media
      entries:
-      - title: Boot media replace workflow
+      - title: Boot media replacement workflow
+        url: /fas50/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /fas50/bootmedia-replace-requirements-bmr.html
+      - title: Shut down impaired controller
+        url: /fas50/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /fas50/bootmedia-replace-bmr.html
+      - title: Boot recovery image
+        url: /fas50/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /fas50/bootmedia-complete-rma-bmr.html
+   - title: Boot media - manual recovery
+     pdf-filename: FAS50 Boot Media
+     entries:
+      - title: Boot media replacement workflow
         url: /fas50/bootmedia-replace-workflow.html
       - title: Review requirements
         url: /fas50/bootmedia-replace-requirements.html
@@ -87,6 +102,8 @@ entries:
           url: /fas50/io-module-overview.html
         - title: Add I/O module
           url: /fas50/io-module-add.html
+        - title: Hot-swap cluster/HA module
+          url: /fas50/io-module-hotswap-ha-slot4.html
         - title: Replace I/O module
           url: /fas50/io-module-replace.html
    - title: NV battery
