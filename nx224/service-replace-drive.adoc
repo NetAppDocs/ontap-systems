@@ -13,7 +13,7 @@ You can replace a failed drive nondisruptively in an NX224 shelf that is powered
 
 .Before you begin
 
-* The drive that you are installing must be supported by the NX224 shelf. You can verify your shelve's compatible drives in the https://hwu.netapp.com[NetApp Hardware Universe^].
+* The drive that you are installing must be supported by the NX224 shelf. You can verify your shelf's compatible drives in the https://hwu.netapp.com[NetApp Hardware Universe^].
 
 * If SED authentication is enabled, you must use the SED replacement instructions in the ONTAP documentation.
 +
