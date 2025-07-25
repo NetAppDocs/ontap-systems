@@ -2,14 +2,14 @@
 permalink: fas-70-90/bootmedia-replace.html
 sidebar: sidebar
 keywords: fas70, fas90, replace the boot media
-summary: configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
+summary: The boot media in your FAS70 or FAS90 system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive.
 ---
-= Replace the boot media - FAS70 and FAS90
+= Replace the boot media and prepare for manual boot recovery - FAS70 and FAS90
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The boot media in your FAS70 or FAS90 system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
+The boot media in your FAS70 or FAS90 system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive.
 
 include::../_include/a1k_bootmedia_replace.adoc[]
 

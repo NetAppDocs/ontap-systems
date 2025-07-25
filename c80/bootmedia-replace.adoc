@@ -2,14 +2,14 @@
 permalink: c80/bootmedia-replace.html
 sidebar: sidebar
 keywords: c80, replace the boot media
-summary: The boot media in your AFF C80 system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media. 
+summary: The boot media in your AFF C80 system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive. 
 ---
-= Replace the boot media - AFF C80
+= Replace the boot media and prepare for manual boot recovery - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The boot media in your AFF C80 system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media. 
+The boot media in your AFF C80 system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive. 
 
 include::../_include/a70-90_bootmedia_replace.adoc[]
 

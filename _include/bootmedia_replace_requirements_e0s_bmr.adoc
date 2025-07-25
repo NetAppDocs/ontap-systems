@@ -1,0 +1,20 @@
+
+* You must replace the failed component with a replacement FRU component of the same capacity that you received from NetApp.
+
+* The e0S (e0M wrench) port is used to communicate between the two controllers during the automated boot recovery process. Make sure that the e0S port on the impaired controller is working properly.
+  
+* For OKM, you need the OKM passphrase file contents.
+* For EKM, you need copies of the following files from the partner node:
+** /cfcard/kmip/servers.cfg file.
+** /cfcard/kmip/certs/client.crt file. 
+** /cfcard/kmip/certs/client.key file.
+** /cfcard/kmip/certs/CA.pem file.
+
+* It is critical to apply the commands to the correct controller when you are replacing the impaired boot media:
+
+** The _impaired controller_ is the controller on which you are performing maintenance.
+** The _healthy controller_ is the HA partner of the impaired controller.
+
+
+//May 22, 2025: GH#1231, changed include name g_bootmedia_replace_requirements_bmr to make generic (remove "g") and add the "eos" designation. This include is used for the following platform family: aff a20-30-50, aff c30-60, fas50, asa a20-30-50, asa c30; and for some older platforms.
+
