@@ -2,9 +2,9 @@
 permalink: a70-90/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
 keywords: aff a70, aff a90, pre-shutdown checks for onboard encryption keys
-summary: To ensure data security on your AFF A70 and AFF A90 storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption (NVE), and before you shut down the controller check if the key manager is active. 
+summary: To ensure data security on your AFF A70 or AFF A90 storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption (NVE), and before you shut down the controller check if the key manager is active. 
 ---
-= Check encryption key support and status on the boot media - AFF A70 and AFF A90
+= Check encryption support for manual boot media recovery - AFF A70 and AFF A90
 :icons: font
 :imagesdir: ../media/
 

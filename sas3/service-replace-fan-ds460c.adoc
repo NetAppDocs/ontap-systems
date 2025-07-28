@@ -4,14 +4,16 @@ sidebar: sidebar
 keywords: ds460c, drive, shelf, fan, module, cooling, disk, replace, replace a fan module in a ds460c disk shelf
 summary: Each DS460C drive shelf includes two fan modules. If a fan module fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling. When you remove the failed fan module, you do not have to turn off power to your disk shelf.
 ---
-= Replace a fan module in a DS460C disk shelf - shelves with IOM12/IOM12B modules
+= Replace a fan module - DS460C
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Each DS460C drive shelf includes two fan modules. If a fan module fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling. When you remove the failed fan module, you do not have to turn off power to your disk shelf.
+Each DS460C drive shelf includes two fan modules. If a fan module fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling. When you remove the failed fan module, you do not have to turn off power to your disk shelf. 
 
-.About this task
+This procedure applies to shelves with IOM12 or IOM12B modules.
+
+.Before you begin
 
 You must ensure that you remove and replace the fan module within 30 minutes to prevent the system from overheating.
 
