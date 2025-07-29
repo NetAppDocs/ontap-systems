@@ -2,14 +2,14 @@
 permalink: c80/bootmedia-recovery-image-boot.html
 sidebar: sidebar
 keywords: c80, boot the recovery image
-summary: If the boot media in your AFF C80 system is corrupted, you can boot the recovery image from a USB drive, restore the configuration from the partner node, and verify the environment variables
+summary: After installing the new boot media device in your AFF C80 system, you can boot the recovery image manually from a USB drive to restore the configuration from the partner node.
 ---
-= Boot the recovery image - AFF C80
+= Manual boot media recovery from a USB drive - AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After installing the new boot media device in your AFF C80 system, you can boot the recovery image from a USB drive and restore the configuration from the partner node. 
+After installing the new boot media device in your AFF C80 system, you can boot the recovery image manually from a USB drive to restore the configuration from the partner node. 
 
 include::../_include/bootmedia_recovery_image_boot.adoc[]
 
