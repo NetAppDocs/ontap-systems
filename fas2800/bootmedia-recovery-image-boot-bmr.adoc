@@ -1,0 +1,20 @@
+---
+permalink: fas2800/bootmedia-recovery-image-boot-bmr.html
+sidebar: sidebar
+keywords: fas2800, boot the recovery image
+summary: Restore the ONTAP image on the replacement boot media in your fas2800 system. The process involves initiating the boot recovery process from the LOADER prompt and monitoring the recovery process until it completes and the node reboots.
+---
+= Restore the image on the boot media - FAS2800
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After installing the new boot media device in your FAS2800 system, you can start the automated boot media recovery process to restore the configuration from the partner node. During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it. 
+
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+
+include::../_include/bmr_single_node_boot_recovery.adoc[]
+
+.What's next
+
+After you've restored the ONTAP image and the node is up and serving data, you link:bootmedia-complete-rma-bmr.html[return the failed part to NetApp].

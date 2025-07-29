@@ -1,0 +1,18 @@
+---
+permalink: asa900/bootmedia-replace-requirements-bmr.html
+sidebar: sidebar
+keywords: asa900, replace the boot media
+summary: Before replacing the boot media in your ASA A900 system, ensure you meet the necessary requirements for a successful replacement.
+---
+= Requirement to replace the boot media - ASA A900
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before replacing the boot media in your ASA A900, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S (e0M wrench) port on the impaired controller is not faulty, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
+
+include::../_include/bootmedia_replace_requirements_e0s_bmr.adoc[]
+
+.What's next
+
+After you've reviewed the boot media requirements, you link:bootmedia-shutdown-bmr.html[shut down the controller].

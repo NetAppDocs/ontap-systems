@@ -1,0 +1,18 @@
+---
+permalink: asa900/bootmedia-shutdown-bmr.html
+sidebar: sidebar
+keywords: asa900, shut down the controller
+summary: Shut down the impaired controller in your ASA A900 storage system to prevent data loss and ensure system stability when replacing the boot media.
+---
+= Shut down the controller to replace the boot media - ASA A900
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down the impaired controller in your ASA A900 storage system to prevent data loss and ensure system stability when replacing the boot media.
+
+
+include::../_include/shutdown_most_frus.adoc[]
+
+.What's next
+After you shut down the impaired controller, you link:bootmedia-replace-bmr.html[replace the boot media].

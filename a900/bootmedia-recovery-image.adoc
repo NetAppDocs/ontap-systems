@@ -1,0 +1,14 @@
+---
+permalink: a900/bootmedia-recovery-image.html
+sidebar: sidebar
+keywords:
+summary: The procedure for booting the impaired controller from the recovery image depends on whether the system is in a two-node MetroCluster configuration.
+---
+= Boot the recovery image - AFF A900
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After installing the new boot media device in your system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
+
+include::../_include/bootmedia_recovery_image_boot.adoc[]
