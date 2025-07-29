@@ -8,7 +8,7 @@ NOTE: If your storage system does not meet all requirements, you must use the li
 .Requirements
 
 * Your storage system must be running ONTAP 9.17.1 or later.
-* The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with another cluster and HA I/O module. You cannot change the I/O module type.
+* The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with an equivalent cluster and HA I/O module. You cannot change the I/O module type.
 * Your storage system configuration must have only one cluster and HA I/O module located in slot 4, not two cluster and HA I/O modules.
 * Your storage system must be a two-node (switchless or switched) cluster configuration.
 * The controller with the failed cluster and HA I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occurred automatically if the I/O module is failed.
