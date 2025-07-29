@@ -21,7 +21,7 @@ To prepare to install your AFX 1K storage system, you need to get the site ready
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:install-switches.html[Install the switches for your AFX storage system]
 [role="quick-margin-para"]
-Install your Cisco Nexus 9332D-GX2B or 9364-GX2A switches in the cabinet or telco rack for your AFX 1K storage system. You might also need to install a pass-through panel kit if you are using the Cisco Nexus 9332D-GX2B switch. 
+Install your Cisco Nexus 9332D-GX2B or 9364-GX2A switches in the cabinet or telco rack for your AFX 1K storage system. You might also need to install a pass-through panel kit if you are using the Cisco Nexus 9364D-GX2A switch. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:deploy-hardware.html[Install the hardware for your AFX storage system]
 [role="quick-margin-para"]
@@ -29,9 +29,13 @@ To install the hardware, install the rail kits for your storage system and shelv
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:cable-hardware.html[Cable the controllers and shelves for your AFX 1K storage system]
 [role="quick-margin-para"]
-To cable the hardware, first connect the storage controller nodes to your network and then connect the controller nodes to your storage shelves.
+To cable the hardware, first connect the storage controller nodes to your network, then connect the controller nodes and storage shelves to the cluster switches.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:power-on-hardware.html[Power on your AFX 1K storage system]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:power-on-configure-switch.html[Power on and configure the switches for your AFX 1K storage system]
+[role="quick-margin-para"]
+After cabling the hardware, power on the switches and configure them to support your AFX 1K storage system. Refer to the configuration instructions for the Cisco Nexus 9332D-GX2B and 9364D-GX2A switches based on your AFX 1K deployment.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:power-on-hardware.html[Power on your AFX 1K storage system]
 [role="quick-margin-para"]
 Before you power on the controller nodes, power on each storage shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup.
 

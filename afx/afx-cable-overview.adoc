@@ -32,13 +32,14 @@ a|
 * Cisco Nexus 9332D-GX2B (400GbE)
 * Cisco Nexus 9364D-GX2A (400GbE)
 a|
-* 400GbEx100GbE QSFP breakout cable cables
+* 4 x 100GbE QSFP breakout cable cables
 
-NOTE: Breakout cables are used for connections between the switches, controller, and disk shelf. 
+NOTE: Breakout cables are used for 100GbE connections between the switches, controllers, and disk shelves. 
 
-* RJ-45 cables
-* Cluster/HA interconnect cables
-* ISL cables for connection between switch A and switch B
+* 100GbE cables to controller cluster and HA ports
+* 100GbE cables to disk shelves
+* 400GbE cables for ISL connections between switch A and switch B 
+* RJ-45 cables for management connections
 |===
 
 .What's next?

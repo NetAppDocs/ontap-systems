@@ -25,7 +25,7 @@ Refer to the https://hwu.netapp.com[Hardware Universe^] for the latest informati
 
 * Cluster management IP address
 +
-The cluster management IP address is a unique IPv4 address for the cluster management interface used by the cluster administrator to access the admin storage VM and manage the cluster. You can obtain this IP address from the administrator responsible for assigning IP addresses in your organization.
+The cluster management IP address is a unique IP address for the cluster management interface used by the cluster administrator to access the admin storage VM and manage the cluster. You can obtain this IP address from the administrator responsible for assigning IP addresses in your organization.
 
 * Network subnet mask
 +
@@ -33,7 +33,7 @@ During cluster setup, ONTAP recommends a set of network interfaces appropriate f
 
 * Network gateway IP address
 
-* Partner node IP address
+* Node management IP addresses (one per node)
 
 * DNS domain names
 
@@ -54,7 +54,6 @@ You need the following network information for all switch configurations.
 
 * IP subnet for management network traffic
 * Host names and IP addresses for each of the storage system controllers and all applicable switches
-* Most storage system controllers are managed through the e0M interface by connecting to the Ethernet service port (wrench icon). 
 * Refer to the https://hwu.netapp.com[Hardware Universe^] for the latest information.
 
 === Cabling requirements
