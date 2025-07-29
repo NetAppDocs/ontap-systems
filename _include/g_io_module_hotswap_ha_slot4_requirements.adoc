@@ -1,18 +1,17 @@
-// New include specific to g-platform family because the requirements reference 9.17.1 and slot 4, are unique to g-platforms.
+// New include specific to g-platform family because the requirements reference 9.17.1 and slot 4, which are unique to g-platforms.
 
-Ensure that your storage system meets all of the following requirements in order to use this procedure. You should also read the considerations for better context of this procedure.
+In order to use this procedure, your storage system must meet all of the following requirements. You should also read the considerations for better context of this procedure.
+
+NOTE: If your storage system does not meet all of the following requirements, you must use the link:io-module-replace.html[replace an I/O module procedure].
+
 
 .Requirements
 
-* Your storage system must meet all of the following requirements in order to use this procedure.
-+
-NOTE: If your storage system does not meet all of the following requirements, you must use the link:io-module-replace.html[replace an I/O module procedure].
-
-** Your storage system must be running ONTAP 9.17.1 or later.
-** The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with another cluster and HA I/O module. You cannot change the I/O module type.
-** Your storage system configuration must have only one cluster and HA I/O module located in slot 4, not two cluster and HA I/O modules.
-** Your storage system must be a two-node (switchless or switched) cluster configuration.
-** The controller with the failed cluster and HA I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occurred automatically if the I/O module is failed.
+* Your storage system must be running ONTAP 9.17.1 or later.
+* The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with another cluster and HA I/O module. You cannot change the I/O module type.
+* Your storage system configuration must have only one cluster and HA I/O module located in slot 4, not two cluster and HA I/O modules.
+* Your storage system must be a two-node (switchless or switched) cluster configuration.
+* The controller with the failed cluster and HA I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occurred automatically if the I/O module is failed.
 +
 For two-node clusters, the storage system cannot discern which controller has the failed I/O module, so either controller might initiate the takeover. The cluster and HA I/O module hot-swap procedure is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller.
 +
