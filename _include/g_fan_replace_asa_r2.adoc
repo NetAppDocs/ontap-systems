@@ -1,4 +1,4 @@
-To replace a fan, you must remove the controller, remove the faulty fan, install the replacement fan, and then reinstall the controller.
+
 
 .About this task
 If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
