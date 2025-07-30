@@ -6,30 +6,6 @@ A storage system has three location LEDs: one on the operator display panel and 
 
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
-== Step 1: Shut down the impaired controller
- 
-Shut down or take over the impaired controller using one of the following options.
- 
-[role="tabbed-block"]
-====
- 
-.Option 1: Most systems
---
-include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
---
- 
-====
-
-== Step 2: Remove the controller
-
-include::../_include/g_controller_remove.adoc[]
-
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover. 
-
 == Step 3: Replace fan
 
 To replace a fan, remove the failed fan and replace it with a new fan.
@@ -55,13 +31,3 @@ Pull the fan straight up and out its socket.
 
 .  Insert the replacement fan by aligning it within the guides, and then push down until the fan connector is fully seated in the socket.
 
-
-== Step 4: Reinstall the controller module
-
-Reinstall the controller into the chassis and reboot it.
-
-include::../_include/g_controller_reinstall.adoc[]
-
-== Step 5: Return the failed part to NetApp
-
-include::../_include/complete_rma.adoc[]
