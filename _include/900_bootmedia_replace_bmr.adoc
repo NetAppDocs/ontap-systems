@@ -1,0 +1,95 @@
+The boot media is located inside the controller module under the air duct, and is accessed by removing the controller module from the system.
+
+
+.Steps
+. If you are not already grounded, properly ground yourself.
+. Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
+. Slide the terra cotta button on the cam handle downward until it unlocks.
+
++
+video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto, title="Animation - Remove the controller"]
++
+image::../media/drw_a900_remove_PCM.png[Release the controller]
++
+
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+Cam handle release button
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Cam handle
+|===
+
+
+. Rotate the cam handle so that it completely disengages the controller module from the chassis, and then slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+. Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
++
+image::../media/drw_a900_PCM_open.png[Lift the cover off the controller module]
++
+
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+Controller module cover locking button
+|===
+
+. Replace the boot media:
+.. Lift the black air duct at the back of the controller module and then locate the boot media using the following illustration or the FRU map on the controller module:
+
++
+video::c5080658-765e-4d29-8456-adf2000e1495[panopto, title="Animation - Replace boot media"]
+
++
+image::../media/drw_a900_remove_boot_dev.png[Remove boot media]
+
++
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+Press release tab
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Boot media
+|===
+
++
+.. Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
++
+NOTE: Do not twist or pull the boot media straight up, because this could damage the socket or the boot media.
+
+.. Align the edges of the replacement boot media with the boot media socket, and then gently push it into the socket.
+.. Check the boot media to make sure that it is seated squarely and completely in the socket.
++
+If necessary, remove the boot media and reseat it into the socket.
+
+.. Push the boot media down to engage the locking button on the boot media housing.
+
+. Reinstall the controller module lid by aligning the pins on the lid with the slots on the motherboard carrier, and then slide the lid into place.
+
+. Reinstall the controller module:
+
+.. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
+.. Recable the controller module, as needed.
+.. Push the controller module all the way into the system, making sure that the cam handle clears the USB flash drive, firmly push the cam handle to finish seating the controller module, and then push the cam handle to the closed position.
++
+The controller begins to boot as soon as it is completely installed into the chassis.
++
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
+
+. If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
+
+ .. Boot to Maintenance mode: `boot_ontap maint`
+ .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t iniitator adapter_name`
+ .. Halt to return to Maintenance mode: `halt`

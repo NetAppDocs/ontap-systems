@@ -1,0 +1,81 @@
+
+The boot media is located inside the controller module and is accessed by removing the controller module from the chassis and removing the controller module cover.module from the system.
+
+.Steps
+
+Replace the boot media.
+
+. If you are not already grounded, properly ground yourself.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
+
+. Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
++
+image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
+
+. Turn the controller module over and place it on a flat, stable surface.
+. Open the cover by pressing the blue buttons on the sides of the controller module to release the cover, and then rotate the cover up and off of the controller module.
+
++
+image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Open the controller]
++
+
+[cols="1,2"]
+|===
+
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Controller module cover release button
+
+|===
+
+. Locate the boot media in the controller module, located under the mezzanine card and follow the directions to replace it.
+
++
+image:../media/drw_2850_replace_boot_media_IEOPS-696.svg[Replace the boot media]
++
+
+[cols="1,2"]
+|===
+
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Boot media locking tab
+
+|===
+
+
+. Remove the mezzanine card using the following illustration or the FRU map on the controller module:
+.. Remove the IO Plate by sliding it straight out from thr controller module.
+.. Loosen the thumbscrews on the mezzanine card.  
++
+
+NOTE: You can loosen the thumbscrews with your fingers or a screwdriver. If you use your fingers, you might need to rotate the NV battery up for better finger purchase on the thumbscrew next to it.
+
++
+.. Lift the mezzanine card straight up.  
+
+. Replace the boot media: 
+.. Press the blue button on the boot media housing to release the boot media from its housing, rotate the boot media up, and then gently pull it straight out of the boot media socket.
++
+NOTE: Do not twist or pull the boot media straight up, because this could damage the socket or the boot media.
+
+.. Align the edges of the replacement boot media with the boot media socket, and then gently push it into the socket.
+Check the boot media to make sure that it is seated squarely and completely in the socket, and if necessary, remove the boot media and reseat it into the socket.
+
+.. Push the blue locking button, rotate the boot media all the way down, and then release the locking button to lock the boot media in place.
+. Reinstall the mezzanine card: 
+.. Align the socket on the motherboard with the socket on the mezzanine card, and then gently seat the card in the socket.
+.. Tighten the three thumbscrews on the mezzanine card.
+.. Reinstall the IO Plate.
+. Reinstall the controller module cover and lock it into place.
+
+. Install the controller module:
+.. Align the end of the controller module with the opening in the chassis, and then gently push the controller module half-way into the way into the system. 
+.. Recable the controller, firmly push the cam handle to finish seating the controller module, push the cam handle to the closed position, and then tighten the thumbscrew. 
++
+The controller begins to boot and stops at the LOADER prompt. 
+
+.What's next?
+After replacing the boot media, you need to link:bootmedia-recovery-image-boot.html[boot the recovery image].
