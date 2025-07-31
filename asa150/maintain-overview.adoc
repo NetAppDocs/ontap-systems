@@ -42,4 +42,4 @@ A power supply provides a redundant power source in a controller shelf.
 == Real time clock battery
 A real time clock battery preserves system date and time information if the power is off. 
 
-//GH issue 370: deleted caching module since not supported for this platform.
+////July 2025: ontap-systems 370: deleted caching module since not supported for this platform.
