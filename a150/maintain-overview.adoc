@@ -15,9 +15,6 @@ For the AFF A150 storage system, you can perform maintenance procedures on the f
 
 The boot media stores a primary and secondary set of boot image files that the system uses when it boots. 
 
-== Caching module
-
-You must replace the controller's caching module when your system registers a single AutoSupport (ASUP) message that the module has gone offline.
 
 == Chassis
 The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
@@ -44,3 +41,5 @@ A power supply provides a redundant power source in a controller shelf.
 
 == Real time clock battery
 A real time clock battery preserves system date and time information if the power is off. 
+
+//July 2025: ontap-systems 370: deleted caching module since not supported for this platform.

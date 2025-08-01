@@ -11,4 +11,36 @@ summary: Replace a fan module in your ASA A20, ASA A30, or ASA A50 system when a
 [.lead]
 Replace a fan module in your ASA A20, ASA A30, or ASA A50 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 
+
+.About this task
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
+== Step 1: Shut down the impaired controller
+ 
+include::../_include/shutdown_most_frus.adoc[]
+
+== Step 2: Remove the controller
+
+include::../_include/g_controller_remove.adoc[]
+
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover. 
+
+== Step 3: Replace fan
+
 include::../_include/g_fan_replace_asa_r2.adoc[]
+
+
+== Step 4: Reinstall the controller module
+
+Reinstall the controller into the chassis and reboot it.
+
+include::../_include/g_controller_reinstall.adoc[]
+
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
