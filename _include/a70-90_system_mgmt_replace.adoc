@@ -1,19 +1,5 @@
 The System Management module, located at the back of the controller in slot 8,  contains onboard components for system management, as well as ports for external management. The target controller must be shut down to replace an impaired System Management module or to replace the boot media.
 
-The System Management module has the following onboard components:
-
-** Boot media, allowing boot media replacement without removing the controller module.
-** BMC
-** Management switch
-
-The System Management module also contains the following ports for external management:
-
-** RJ45 Serial
-** USB Serial (Type-C)
-** USB Type-A (Boot recovery)
-** e0M RJ45 Ethernet
-  
-
 .Before you begin
 
 * Make sure all other system components are working properly.
@@ -44,22 +30,20 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 ====
 
-== Step 2: Replace the impaired System Management module
+== Step 2: Replace the System Management module
 
 Replace the impaired system management module.
 
+.Steps
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 // ontap-systems-internal/issues/1151
 +
-NOTE: Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
-+
-
+. Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
 
 . Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
 
-. If you are not already grounded, properly ground yourself.
 .  Unplug the controller's PSUs.
 
 +
@@ -68,9 +52,7 @@ NOTE: If your system has DC power, disconnect the power block from the PSUs.
 
 . Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 
-. Remove the System Management module:
-
-.. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
+. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 +
 image::../media/drw_70-90_sys-mgmt_remove_ieops-1817.svg[Replace the System Management module]
 
@@ -143,6 +125,7 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 
 Reboot the controller module.
 
+.Steps
 . Enter _bye_ at the LOADER prompt.
 . Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
