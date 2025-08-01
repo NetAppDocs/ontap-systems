@@ -11,4 +11,47 @@ summary: Replace an I/O module in your AFF C30 or AFF C60 system when the module
 [.lead]
 Replace an I/O module in your AFF C30 or AFF C60 system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
 
+.Before you begin
+All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+.About this task
+
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller using one of the following options.
+ 
+[role="tabbed-block"]
+====
+ 
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
+ 
+====
+
+
+== Step 2: Replace a failed I/O module
+
 include::../_include/g_io_module_replace.adoc[]
+
+
+== Step 3: Reboot the controller
+
+include::../_include/io_module_replace_reboot.adoc[]
+
+
+== Step 4: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
