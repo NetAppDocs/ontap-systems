@@ -19,19 +19,24 @@ For example, the following AutoSupport message suppresses automatic case creatio
 +
 `node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. Disable automatic giveback from the console of the impaired controller: 
+. Disable automatic giveback:
+
+.. Enter the following command from the console of the impaired controller: 
 +
 `storage failover modify -node local -auto-giveback false`
-+
-NOTE: When you see _Do you want to disable auto-giveback?_, enter `y`.
+
+.. Enter `y` when you see the prompt _Do you want to disable auto-giveback?_
 
 . Prepare the failed cluster and HA module in slot 4 for removal by removing it from service and powering it off:
+
+
+.. Enter the following command:
 +
 `system controller slot module remove -node _impaired_node_name_ -slot _slot_number_`
+
+.. Enter `y` when you see the prompt _Do you want to continue?_ 
 +
-NOTE: When you see _Do you want to continue?_, enter `y`. 
-+
-For example, the following command prepares the module in slot 4 on node2 (the impaired controller) for removal, and displays a message that it is safe to remove:
+For example, the following command prepares the module in slot 4 on node 2 (the impaired controller) for removal, and displays a message that it is safe to remove:
 +
 ----
 node2::> system controller slot module remove -node node2 -slot 4

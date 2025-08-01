@@ -11,4 +11,42 @@ summary: Replace the NV battery in your ASA A20, ASA A30, or ASA A50 system when
 [.lead]
 Replace the NV battery in your ASA A20, ASA A30, or ASA A50 system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
 
+To replace the NV battery, you must remove the controller, remove the faulty battery, install the replacement battery, and then reinstall the controller.
+
+.Before you begin
+All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+.About this task
+If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
+
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
+== Step 1: Shut down the impaired controller
+
+include::../_include/shutdown_most_frus.adoc[]
+
+
+== Step 2: Remove the controller
+
+include::../_include/g_controller_remove.adoc[]
+
+. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+
+== Step 3: Replace the NV battery
+
 include::../_include/g_nvdimm_battery_replace_asa_r2.adoc[]
+
+
+== Step 4: Reinstall the controller
+
+Reinstall the controller into the chassis and reboot it.
+
+include::../_include/g_controller_reinstall.adoc[]
+
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
+

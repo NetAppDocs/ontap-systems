@@ -1,7 +1,9 @@
 
 * You must replace the failed component with a replacement FRU component of the same capacity that you received from NetApp.
 
-* The e0S (e0M wrench) port is used to communicate between the two controllers during the automated boot recovery process. Make sure that the e0S port on the impaired controller is working properly.
+* Verify that the e0M (wrench) port on the impaired controller is connected and not faulty.
++
+The e0M port is used to communicate between the two controllers during the automated boot recovery process.
   
 * For OKM, you need the OKM passphrase file contents.
 * For EKM, you need copies of the following files from the partner node:
