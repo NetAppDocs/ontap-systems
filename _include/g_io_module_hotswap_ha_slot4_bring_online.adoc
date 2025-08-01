@@ -5,13 +5,15 @@ Bring the replacement cluster and HA I/O module in slot 4 online, verify the mod
 
 . Bring the replacement cluster and HA I/O module online:
 +
-`system controller slot module insert -node impaired_node_name_ -slot _slot_name_`
+.. Enter the following command:
 +
-NOTE: When you see _Do you want to continue?_, enter `y`. 
+`system controller slot module insert -node _impaired_node_name_ -slot _slot_name_`
+
+.. Enter `y` when you see the prompt, _Do you want to continue?_ 
 +
 The output should confirm the cluster and HA I/O module was successfully brought online (powered on, initialized, and placed into service).
 +
-For example, the following command brings slot 4 on node2 (the impaired controller) online, and displays a message that the process was successful:
+For example, the following command brings slot 4 on node 2 (the impaired controller) online, and displays a message that the process was successful:
 +
 ----
 node2::> system controller slot module insert -node node2 -slot 4
