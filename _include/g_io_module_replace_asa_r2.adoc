@@ -1,25 +1,6 @@
-Use this procedure to replace a failed I/O module. 
-// with the same type of I/O module. should be added because a FRU procedure is like-for-like...But Step 3 says you can replace with a different module. But isn;t this use case covered in I/O add when the slot is unavailable? 
-
-.Before you begin
-All other components in the storage system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
-
-.About this task
-
-If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
-
-A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
-
-You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
-
-
-== Step 1: Shut down the impaired controller
-
-include::../_include/shutdown_most_frus.adoc[]
-
-== Step 2: Replace a failed I/O module
-
 To replace a failed I/O module, locate it in the controller and follow the specific sequence of steps.
+
+.Steps
 
 . If you are not already grounded, properly ground yourself. 
 
@@ -58,20 +39,4 @@ You can use the tab on the left and the thumbscrew to push in the I/O Module.
 . Cable the I/O module.
 
 
-== Step 3: Reboot the controller
 
-After you replace an I/O module, you must reboot the controller.
-
-.Steps
-. Reboot the controller from the LOADER prompt: `bye`
-+
-Rebooting the impaired controller also reinitializes the I/O modules and other components.
-+
-
-. Return the node to normal operation: `storage failover giveback -ofnode _impaired_node_name_`
-
-. Restore automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback _true_`
-
-== Step 4: Return the failed part to NetApp
-
-include::../_include/complete_rma.adoc[]
