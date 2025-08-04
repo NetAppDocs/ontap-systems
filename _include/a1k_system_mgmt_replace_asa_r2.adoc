@@ -53,7 +53,9 @@ System Management module cam latch
 .. If you are not already grounded, properly ground yourself.  
 
 .. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
-.. Unplug the power supply cables from the PSUs and then pull the controller module out a few inches from the front of the system. 
+
+// 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.
+.. Unplug the power supply cables from the PSUs. 
 
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 

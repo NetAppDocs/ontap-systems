@@ -24,7 +24,9 @@ Boot media
 |===
 
 . If you are not already grounded, properly ground yourself.
-. Unplug the power supply cables from the PSUs from the controller and then pull the controller module, at the front of the system, out a few inches.
+
+// 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.
+. Unplug the power supply cables from the PSUs from the controller.
 
 +
 NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
