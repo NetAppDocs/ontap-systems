@@ -36,9 +36,9 @@ a| link:fan-replace.html[Fan]
 
 a| A fan cools the controller.
 
-a| link:nvram-replace.html[NVRAM]
+a| link:nvram-replace.html[NVRAM module]
 
-a| The NVRAM (Non-Volatile Random Access Memory) is a module that allows the controller to protect and save in-flight data if the system loses power. The system ID resides in the NVRAM module. When replaced, the controller assumes the new system ID from the replacement NVRAM module.
+a| The NVRAM (Non-Volatile Random Access Memory) module allows the controller to protect and save in-flight data if the system loses power. The system ID resides in the NVRAM module. When replaced, the controller assumes the new system ID from the replacement NVRAM module.
 
 a| link:nvdimm-battery-replace.html[NV battery]
 

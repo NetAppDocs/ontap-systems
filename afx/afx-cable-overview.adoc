@@ -14,9 +14,9 @@ Learn about the supported hardware components and cabling options for the AFX 1K
 == Supported AFX 1K cabling configuration
 The initial configuration of the AFX 1K storage system supports a minimum of four controller nodes connected through dual switches to the storage disk shelves. 
 
-Additional controller nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1K configurations follow the same switch-based cabling methodology as the four node schema depicted below. 
+Additional controller nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1K configurations follow the same switch-based cabling methodology as the schema depicted below. 
 
-image:../media/drw_afx_cable_overview_half_node_ieops_temp.svg[AFK 1K four node cabling]
+image:../media/drw_afx_cable_overview_half_node_ieops_temp.svg[AFK 1K storage system example cabling]
 
 == Supported hardware components
 Review the compatible storage disk shelves, switches, and cable types for the AFX 1K storage system.
