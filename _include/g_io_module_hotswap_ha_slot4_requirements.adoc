@@ -1,6 +1,6 @@
 // New include specific to g-platform family because the requirements reference 9.17.1 and slot 4, which are unique to g-platforms.
 
-To use this procedure, make sure your storage system meets all requirements and learn additional context for this procedure.
+To use this procedure, make sure your storage system meets all requirements and learn about additional context for this procedure.
 
 NOTE: If your storage system does not meet all requirements, you must use the link:io-module-replace.html[replace an I/O module procedure].
 
@@ -23,7 +23,7 @@ If you are not sure which controller has the failed I/O module, contact https://
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
-. Learn additional context for this procedure:
+. Learn about additional context for this procedure:
 
 * Hot-swapping the cluster and HA I/O module means that you do not have to perform a manual takeover; the impaired controller (the controller with the failed cluster and HA I/O module) has automatically taken over the healthy controller.
 +
