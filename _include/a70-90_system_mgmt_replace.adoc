@@ -49,7 +49,7 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 Replace the impaired system management module.
 
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-// ontap-systems-internal/issues/1151
+
 +
 NOTE: Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 +
@@ -157,3 +157,5 @@ include::../_include/install_licenses_serial_number-system_mgmt_module.adoc[]
 == Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
+
+// ontap-systems-internal/issues/1151

@@ -40,7 +40,7 @@ To replace the NVRAM module, locate it in slot 4/5 in the enclosure and follow t
 
 . If you are not already grounded, properly ground yourself.
 
-// 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.
+
 . Unplug the power supply cables from the PSUs from the controller.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the impaired NVRAM module from the enclosure:
@@ -226,3 +226,5 @@ dr-group-id            cluster node           configuration-state
 == Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
+
+// 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.

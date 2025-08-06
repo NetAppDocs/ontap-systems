@@ -105,7 +105,7 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 To replace NVRAM DIMMs in the NVRAM module, first must remove the NVRAM module and then replace the target DIMM.
 
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-// ontap-systems-internal/issues/1151
+
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
 +
@@ -268,3 +268,5 @@ dr-group-id            cluster node           configuration-state
 == Step 4: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
+
+// ontap-systems-internal/issues/1151

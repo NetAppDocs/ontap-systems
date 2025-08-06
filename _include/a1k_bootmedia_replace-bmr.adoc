@@ -25,13 +25,14 @@ Boot media
 |===
 
 . If you are not already grounded, properly ground yourself.
-// 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.
+
 . Unplug the power supply cables from the PSUs.
 
 +
 NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
 +
 
+. Remove the System Management module:
 .. Remove any cables connected to the System Management module. Make sure that you label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 .. Depress the System Management cam button.
@@ -58,3 +59,5 @@ NOTE: If your storage system has DC power supplies, disconnect the power cable b
 
 +
 The controller begins to boot as soon as power is reconnected to the system.
+
+// 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.
