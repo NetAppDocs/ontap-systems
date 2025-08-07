@@ -39,6 +39,7 @@ Replace the NVRAM module or NVRAM DIMMs using the appropriate following option.
 
 To replace the NVRAM module, locate it in slot 4/5 in the chassis and follow the specific sequence of steps.
 
+.Steps
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 // ontap-systems-internal/issues/1151
 +
@@ -104,6 +105,7 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 
 To replace NVRAM DIMMs in the NVRAM module, first must remove the NVRAM module and then replace the target DIMM.
 
+.Steps
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 
 +
