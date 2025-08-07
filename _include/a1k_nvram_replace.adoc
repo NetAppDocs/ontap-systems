@@ -81,6 +81,8 @@ DIMM locking tabs
 
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, and then replace the target DIMM.
 
+.Steps
+
 . If you are not already grounded, properly ground yourself.
 . Unplug the power supply cables from the PSUs.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
@@ -124,7 +126,9 @@ NOTE: Consult the FRU map label on the side of the NVRAM module to determine the
 
 After you replace the FRU, you must reboot the controller module.
 
-. Plug the power cables back into the PSU and gently reseat and lock the controller module at the front of the system. 
+.Steps
+
+. Plug the power cables back into the PSU. 
 +
 The system will begin to reboot, typically to the LOADER prompt.
 +
