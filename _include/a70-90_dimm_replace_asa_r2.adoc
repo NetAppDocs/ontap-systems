@@ -1,24 +1,7 @@
 
-.Before you begin
-
-* All other components in the system must be functioning properly; if not, you must contact technical support.
-
-* You must replace the failed component with a replacement FRU component you received from your provider.
-
-== Step 1: Shut down the impaired controller
- 
-Shut down or take over the impaired controller.
- 
-include::../_include/shutdown_most_frus.adoc[]
-
-== Step 2: Remove the controller module
-
-include::../_include/a70-90_controller_remove_physical.adoc[]
-
-== Step 3: Replace a DIMM
-
 To replace the DIMMs, locate them inside the controller and follow the specific sequence of steps.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Open the controller air duct on the top of the controller.
 .. Insert your fingers in the recesses at the far ends of the air duct.
@@ -59,14 +42,5 @@ IMPORTANT: Visually inspect the DIMM to verify that it is evenly aligned and ful
 
 . Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
 . Close the controller air duct.
-
-
-== Step 4: Reinstall the controller module
-
-include::../_include/a70-90_controller_install_step_physical.adoc[]
-
-== Step 5: Return the failed part to NetApp
-
-include::../_include/complete_rma.adoc[]
 
 

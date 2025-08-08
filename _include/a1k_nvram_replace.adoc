@@ -38,8 +38,12 @@ Replace the NVRAM module or NVRAM DIMMs using the appropriate following option.
 
 To replace the NVRAM module, locate it in slot 4/5 in the enclosure and follow the specific sequence of steps.
 
+.Steps
+
 . If you are not already grounded, properly ground yourself.
-. Unplug the power supply cables from the PSUs from the controller and then pull the controller module, at the front of the system, out a few inches.
+
+
+. Unplug the power supply cables from the PSUs.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the impaired NVRAM module from the enclosure:
  .. Depress the locking cam button.
@@ -77,8 +81,10 @@ DIMM locking tabs
 
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, and then replace the target DIMM.
 
+.Steps
+
 . If you are not already grounded, properly ground yourself.
-. Unplug the power supply cables from the PSUs and then pull the controller module out a few inches from the front of the system.
+. Unplug the power supply cables from the PSUs.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the target NVRAM module from the enclosure.
 +
@@ -118,9 +124,11 @@ NOTE: Consult the FRU map label on the side of the NVRAM module to determine the
 
 == Step 3: Reboot the controller
 
-After you replace the FRU, you must reboot the controller module.
+After you replace the FRU, you must reboot the controller module by plugging the power cables back into the PSU.
 
-. Plug the power cables back into the PSU and gently reseat and lock the controller module at the front of the system. 
+.Steps
+
+. Plug the power cables back into the PSU. 
 +
 The system will begin to reboot, typically to the LOADER prompt.
 +
@@ -224,3 +232,5 @@ dr-group-id            cluster node           configuration-state
 == Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
+
+// 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.
