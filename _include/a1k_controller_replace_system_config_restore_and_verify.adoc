@@ -3,6 +3,7 @@
 
 You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
 
+.Steps
 . Boot to maintenance mode: `boot_ontap maint` 
 
 .. Enter `y` when you see _Continue with boot?_.
@@ -34,6 +35,7 @@ The value for the HA state can be one of the following:
 
 == Step 2: Verify disk list
 
+.Steps
 . Verify that the adapter lists the paths to all disks with the `storage show disk -p`.
 +
 If you see any issues, check cabling and reseat cables.

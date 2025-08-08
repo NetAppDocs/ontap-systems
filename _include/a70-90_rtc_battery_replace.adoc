@@ -29,6 +29,7 @@ include::../_include/a70-90_controller_remove_physical.adoc[]
 
 Remove failed RTC battery and install the replacement RTC battery.
 
+.Steps
 . Open the controller air duct on the top of the controller.
 .. Insert your fingers in the recesses at the far ends of the air duct.
 .. Lift the air duct and rotate it upward as far as it will go.
@@ -65,6 +66,7 @@ NOTE: After replacing the RTC battery, inserting controller and powering on firs
 `RTC power failure error`
 These messages are expected and you can continue with this procedure.
 
+.Steps
  . Check the date and time on the healthy controller with the `cluster date show` command.
  
 NOTE: If your system stops at the boot menu, select the option for  `Reboot node` and respond _y_ when prompted, then boot to LOADER by pressing _Ctrl-C_

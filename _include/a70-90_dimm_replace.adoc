@@ -7,7 +7,7 @@
 
 == Step 1: Shut down the impaired controller
  
-Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the impaired controller using one of the following options. 
  
 [role="tabbed-block"]
 ====
@@ -30,6 +30,8 @@ include::../_include/a70-90_controller_remove_physical.adoc[]
 == Step 3: Replace the DIMM
 
 To replace the DIMM, locate them inside the controller and follow the specific sequence of steps.
+
+.Steps
 
 . If you are not already grounded, properly ground yourself.
 . Open the controller air duct on the top of the controller.

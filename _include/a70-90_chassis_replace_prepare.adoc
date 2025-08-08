@@ -1,6 +1,7 @@
 == Step 1: Locate and monitor your system
 You should open a console session and save sessions logs for future reference, and also turn on the system location LED to find the impaired chassis.
 
+.Steps
 . Connect to the serial console port to interface with and monitor the system.
 
 . Locate and turn on the controller's Location LED:
@@ -19,6 +20,7 @@ The Location LED remains lit for 30 minutes.
 
 You should verify that you received the necessary components, remove them from packaging, and save the packaging.
 
+.Steps
 . Before opening the packaging, you should look at the packaging label and verify:
 * Component part number.
 * Part description.
@@ -30,6 +32,7 @@ You should verify that you received the necessary components, remove them from p
 
 You should label the cables and controller modules before removing them from the controller modules or chassis.
 
+.Steps
 . Label all the cables associated with the storage system. This aids recabling later in this procedure.
 
 . Label the controller modules.
