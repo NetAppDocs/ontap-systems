@@ -1,7 +1,7 @@
 
 The boot media is located inside the System Management module and is accessed by removing the module from the system.
 
-.Steps
+
 
 Replace the boot media.
 
@@ -24,13 +24,16 @@ a|
 Boot media
 |===
 
+.Steps
 . If you are not already grounded, properly ground yourself.
-. Unplug the power supply cables from the PSUs and then pull the controller module out a few inches from the front of the system.
+
+. Unplug the power supply cables from the PSUs.
 
 +
 NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
 +
 
+. Remove the System Management module:
 .. Remove any cables connected to the System Management module. Make sure that you label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 .. Depress the System Management cam button.
@@ -52,8 +55,7 @@ NOTE: If your storage system has DC power supplies, disconnect the power cable b
 . Rotate the cable management tray up to the closed position.
 .. Recable the System Management module.
 . Plug the power cables into the power supplies and reinstall the power cable retainer.
-
- . Gently reseat and lock the controller module at the front of the system.
-
 +
 The controller begins to boot as soon as power is reconnected to the system.
+
+// 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.

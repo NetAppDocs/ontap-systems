@@ -1,0 +1,18 @@
+
+Reboot the controller module.
+
+.Steps
+. Enter _bye_ at the LOADER prompt.
+. Return the controller to normal operation by giving back its storage: 
++
+`storage failover giveback -ofnode _impaired_node_name_`
+
++
+. Restore automatic giveback:
++
+`storage failover modify -node local -auto-giveback true`
+
+. If an AutoSupport maintenance window was triggered, end it:
++
+`system node autosupport invoke -node * -type all -message MAINT=END` 
+

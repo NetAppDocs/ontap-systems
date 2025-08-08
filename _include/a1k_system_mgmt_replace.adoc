@@ -46,6 +46,7 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 Replace the impaired system management module.
 
+.Steps
 . Remove the System Management module:
 +
 NOTE:  Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.  
@@ -61,8 +62,11 @@ System Management module cam latch
 |===
 
 .. If you are not already grounded, properly ground yourself.
-.. Unplug the power supply cables from the PSUs and then pull the controller module out a few inches from the front of the system. 
 
+
+.. Unplug the power supply cables from the PSUs. 
+
+. Remove the System Manage module 
 .. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 .. Disconnect the power cords from the PSU for the impaired controller.
 
@@ -112,7 +116,8 @@ Boot media
 
 Reboot the controller module.
 
-. Plug the power cables back into the PSU and gently reseat and lock the controller module at the front of the system. 
+.Steps
+. Plug the power cables back into the PSU. 
 +
 The system will begin to reboot, typically to the LOADER prompt.
 +
@@ -132,4 +137,4 @@ include::../_include/install_licenses_serial_number-system_mgmt_module.adoc[]
 
 include::../_include/complete_rma.adoc[]
 
-
+// 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.

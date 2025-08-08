@@ -3,6 +3,8 @@
 
 Check whether your ONTAP version supports NetApp Volume Encryption (NVE). This information is crucial for downloading the correct ONTAP image.
 
+.Steps
+
 . Determine if your ONTAP version supports encryption by running the following command:
 +
 `version -v`
@@ -16,6 +18,7 @@ If the output includes `1Ono-DARE`, NVE is not supported on your cluster version
 == Step 2: Determine if it is safe to shut down the controller
 To safely shut down a controller, first identify whether the External Key Manager (EKM) or the Onboard Key Manager (OKM) is active. Then, verify the key manager in use, display the appropriate key information, and take action based on the status of the authentication keys.
 
+.Steps
 
 . Determine which key manager is enabled on your system:
 +
