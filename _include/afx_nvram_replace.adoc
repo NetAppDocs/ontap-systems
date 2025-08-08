@@ -110,7 +110,7 @@ After you replace the FRU, you must reboot the controller module.
 +
 The system will begin to reboot, typically to the LOADER prompt.
 +
-. Enter _bye_ at the LOADER prompt.
+. Enter `bye` at the LOADER prompt.
 
 == Step 4: Reassign disks
 
@@ -119,7 +119,9 @@ You must confirm the system ID change when you boot the controller and then veri
 CAUTION: Disk reassignment is only needed when replacing the NVRAM module and does not apply to NVRAM DIMM replacement. 
 
 .Steps
-. If the controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: _halt_
+. If the controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: 
++
+`halt`
 . From the LOADER prompt on the controller, boot the controller and enter _y_ when prompted to override the system ID due to a system ID mismatch.
 . Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: _storage failover show_
 +

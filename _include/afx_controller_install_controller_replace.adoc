@@ -21,7 +21,7 @@ NOTE: The controller boots to the LOADER prompt as soon as it is fully seated.
 +
 NOTE: Time displayed is local time not always GMT and is displayed in 24hr mode.
 
-. Set the current time in GMT with the `set time hh:mm:ss` command.  You can get the current GMT from the partner node with the `date -u`command.
+. Set the current time in GMT with the `set time hh:mm:ss` command.  You can get the current GMT from the partner node with the `date -u` command.
 
 
 

@@ -11,7 +11,7 @@ summary: Before replacing the boot media in your AFX 1K system, ensure you meet 
 [.lead]
 Before replacing the boot media in your AFX 1K system, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that there are no defective cluster ports on the controller, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
 
-include::../_include/bootmedia_replace_requirements_bmr.adoc[]
+include::../_include/a1k_bootmedia_replace_requirements_bmr.adoc[]
 
 .What's next?
 

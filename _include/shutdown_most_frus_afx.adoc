@@ -36,7 +36,6 @@ a|
 System prompt or password prompt
 a|
 Take over or halt the impaired controller from the healthy controller: 
-+
 `storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
 
 The _-halt true_ parameter brings you to the LOADER prompt.
