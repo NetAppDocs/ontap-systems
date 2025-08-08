@@ -2,14 +2,14 @@
 permalink: a20-30-50/fan-replace.html
 sidebar: sidebar
 keywords: aff a20, aff a30, aff a50, aff, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
-summary: Replace a fan module in your AFF A20, AFF A30, or AFF A50 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
+summary: Replace a fan module in your AFF A20, AFF A30, or AFF A50 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 ---
 = Replace a fan module - AFF A20, AFF A30, and AFF A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a fan module in your AFF A20, AFF A30, or AFF A50 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
+Replace a fan module in your AFF A20, AFF A30, or AFF A50 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 
 .About this task
 If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.

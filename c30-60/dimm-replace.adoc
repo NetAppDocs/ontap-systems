@@ -2,14 +2,14 @@
 permalink: c30-60/dimm-replace.html
 sidebar: sidebar
 keywords: aff c30, aff c60, replace a dimm
-summary: "Replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic."
+summary: Replace a DIMM in your AFF C30 or AFF C60 storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
 = Replace a DIMM - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a DIMM in your AFF C30 or AFF C60 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+Replace a DIMM in your AFF C30 or AFF C60 storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 
 .Before you begin
 
