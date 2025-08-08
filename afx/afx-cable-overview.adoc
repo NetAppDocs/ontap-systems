@@ -16,7 +16,7 @@ The initial configuration of the AFX 1K storage system supports a minimum of fou
 
 Additional controller nodes and disk shelves can be used to expand on the initial AFX 1K storage system configuration. Expanded AFX 1K configurations follow the same switch-based cabling methodology as the schema depicted below. 
 
-image:../media/drw_afx_cable_overview_half_node_ieops_temp.svg[AFK 1K storage system example cabling]
+image:../media/drw_afx_cable_overview_half_node_ieops-2358.svg[AFK 1K storage system example cabling]
 
 == Supported hardware components
 Review the compatible storage disk shelves, switches, and cable types for the AFX 1K storage system.
@@ -29,7 +29,7 @@ AFX 1K
 a|
 NX224
 a|
-* Cisco Nexus 9332D-GX2B (400GbE)
+* Cisco Nexus 9332D-GX2B (400GbE)drw_afx_cable_overview_half_node_ieops-2358.svg
 * Cisco Nexus 9364D-GX2A (400GbE)
 a|
 * 4 x 100GbE QSFP breakout cable cables
