@@ -2,14 +2,14 @@
 permalink: asa-r2-a20-30-50/controller-replace-restore-system-rma.html
 sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, how to restore NetApp Storage Encryption, how to complete the replacement process
-summary: To complete the controller replacement for your ASA A20, ASA A30, or ASA A50 system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller’s serial number and then return the failed part to NetApp.
+summary: To complete the controller replacement for your ASA A20, ASA A30, or ASA A50 storage system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller’s serial number and then return the failed part to NetApp.
 ---
 = Complete controller replacement - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To complete the controller replacement for your ASA A20, ASA A30, or ASA A50 system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller’s serial number and then return the failed part to NetApp.
+To complete the controller replacement for your ASA A20, ASA A30, or ASA A50 storage system, first restore the NetApp Storage Encryption configuration (if necessary) and install the required licenses on the new controller. Next, confirm that the logical interfaces (LIFs) are reporting to their home ports and perform a cluster health check. Finally, register the new controller’s serial number and then return the failed part to NetApp.
 
 
 == Step 1: Install licenses for the replacement controller in ONTAP

@@ -10,13 +10,13 @@ When a drive fails, the platform logs a warning message to the system console in
 +
 The failed drive appears in the list of failed drives. If it does not, you should wait, and then run the command again.
 +
-NOTE: It can take up to several hours for the drive to appear in the list of failed drives.
+It can take up to several hours for the drive to appear in the list of failed drives.
 
 * Determine whether SED authentication is enabled.
 +
-How you replace the disk depends on how the disk drive is being used. If SED authentication is enabled, you must use the SED replacement instructions in the https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]. These Instructions describe additional steps you must perform before and after replacing an SED.
+How you replace the disk depends on how the disk drive is being used. If SED authentication is enabled, you must use the SED replacement instructions in the https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]. These instructions describe additional steps you must perform before and after replacing an SED.
 
-* Make sure the replacement drive is supported by your platform. See the https://hwu.netapp.com[NetApp Hardware Universe].
+* Make sure the replacement drive is supported by your platform. See https://hwu.netapp.com[NetApp Hardware Universe].
 
 * Make sure all other components in the system are functioning properly; if not, you must contact technical support.
 
@@ -25,3 +25,5 @@ How you replace the disk depends on how the disk drive is being used. If SED aut
 Drive firmware is automatically updated (nondisruptively) on new drives that have non-current firmware versions.
 
 When replacing several disk drives, you must wait 70 seconds between the removal of each failed disk drive and the insertion of the replacement disk drive to allow the storage system to recognize the existence of each new disk.
+
+You manually assign drive ownership and then reenable automatic drive assignment later in this procedure.
