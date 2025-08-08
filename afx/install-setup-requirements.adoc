@@ -1,0 +1,68 @@
+---
+sidebar: sidebar
+permalink: afx/install-setup-requirements.html
+keywords: afx, afx 1k, install, setup, requirements, cautions
+summary: Review the equipment needed and the lifting precautions for your AFX storage system and storage shelves.
+---
+= Installation requirements for AFX storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Review the equipment needed and the lifting precautions for your AFX storage system and storage shelves. 
+
+== Equipment needed for install
+To install your AFX storage system, you need the following equipment and tools. 
+
+** Access to a Web browser to configure your storage system
+** Electrostatic discharge (ESD) strap 
+** Flashlight
+** Laptop or console with a USB/serial connection
+** Paperclip or narrow tipped ball point pen for setting storage shelf IDs
+** Phillips #2 screwdriver 
+
+== Lifting precautions 
+AFX storage systems and storage shelves are heavy. Exercise caution when lifting and moving these items.
+
+=== Storage system weights
+Take the necessary precautions when moving or lifting your AFX storage system.
+
+An AFX 1K storage system can weigh up to 62.83 lbs (28.5 kg). To lift the storage system, use two people or a hydraulic lift.
+
+image::../media/drw_a1k_weight_caution_ieops-1698.svg[ASA A1K lifting caution icon]
+
+
+
+=== Storage shelf weights
+Take the necessary precautions when moving or lifting your shelf.
+
+
+[role="tabbed-block"]
+====
+
+.NX224 shelf
+--
+
+An NX224 shelf can weigh up to 66.78 lbs (30.29 kg). To lift the shelf, use two people or a hydraulic lift. Keep all components in the shelf (both front and rear) to prevent unbalancing the shelf weight.
+
+image::../media/drw_ns224_lifting_weight_ieops-1716.svg[NX224 NSM100 lifting caution]
+
+--
+.NX224 shelf with NSM140 modules
+--
+An NX224 shelf with NSM140 modules can weigh up to 56.8 lbs (25.8 kg). To lift the shelf, use two people or a hydraulic lift. Keep all components in the shelf (both front and rear) to prevent unbalancing the shelf weight.
+
+image::../media/drw_ns224_nsm100b_lifting_weight_ieops-1832.svg[NX224 with NSM140 lifting caution]
+
+--
+
+====
+
+.Related information
+
+*  https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[Safety information and regulatory notices^]
+
+.What's next?
+After you've reviewed the hardware requirements, you link:prepare-hardware.html[prepare to install your AFX storage system].
+
+// 2024 Sept 23, ONTAPDOC 1922

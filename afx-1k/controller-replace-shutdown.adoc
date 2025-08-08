@@ -1,0 +1,32 @@
+---
+permalink: afx-1k/controller-replace-shutdown.html
+sidebar: sidebar
+keywords: afx 1k, shut down the impaired controller
+summary: Shut down the controller in your AFX 1K storage system when it is impaired. Before performing maintenance or component replacement it is critical to shut down the controller safely to prevent data loss and ensure system stability.
+---
+= Shut down the impaired controller - AFX 1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down the impaired controller in your AFX 1K, AFF A20, AFF A30, or AFF A50 storage system to prevent data loss and ensure system stability when replacing the  controller. 
+
+Shut down the controller module using one of the following options.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
+
+====
+
+.What's next?
+
+After you've shut down the controller, you need to link:controller-replace-move-hardware.html[replace the controller].

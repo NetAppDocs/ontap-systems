@@ -1,0 +1,19 @@
+---
+permalink: afx-1k/bootmedia-recovery-image-boot.html
+sidebar: sidebar
+keywords: afx 1k, boot the recovery image
+summary: After installing the new boot media device in your AFX A1K system, you can start the automated boot media recovery process to restore the configuration from the partner node.
+---
+= Boot the recovery image - AFX 1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After installing the new boot media device in your AFX A1K system, you can start the automated boot media recovery process to restore the configuration from the partner node.
+
+During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it. 
+
+include::../_include/bmr_single_node_boot_recovery.adoc[]
+
+.What's next?
+After you've restored the ONTAP image and the node is up and serving data, you need to link:bootmedia-complete-rma.html[return the failed part to NetApp].

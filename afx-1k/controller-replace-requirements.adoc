@@ -1,0 +1,19 @@
+---
+permalink: afx-1k/controller-replace-requirements.html
+sidebar: sidebar
+keywords: afx 1k, prerequisite, replace the controller module
+summary: Before replacing the controller in your AFX 1K system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement controller, a backup of your system configuration, and access to any required tools and firmware.
+---
+= Requirements to replace the controller - AFX 1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before replacing the controller in your AFX 1K system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
+
+include::../_include/a1k_controller_replace_requirements.adoc[]
+
+.What's next?
+
+After you’ve the reviewed the requirements to replace your AFX 1K controller, you need to link:controller-replace-shutdown.html[shut down the controllers].
+

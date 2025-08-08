@@ -1,0 +1,18 @@
+---
+permalink: afx-1k/controller-replace-move-hardware.html
+sidebar: sidebar
+keywords: afx 1k, move the controller module hardware
+summary: Replace the controller in your AFX 1K system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+---
+= Replace the controller - AFX 1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace the controller in your AFX 1K system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+
+include::../_include/a1k_controller_replace_move_hardware.adoc[]
+
+.What's next?
+
+After you’ve replaced the impaired AFX 1K controller, you need to link:controller-replace-system-config-restore-and-verify.html[restore the system configuration].

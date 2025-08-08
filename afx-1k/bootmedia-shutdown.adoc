@@ -1,0 +1,18 @@
+---
+permalink: afx-1k/bootmedia-shutdown.html
+sidebar: sidebar
+keywords: afx 1k, shut down the controller
+summary: Shut down the impaired controller in your AFX 1K storage system to prevent data loss and ensure system stability when replacing the boot media.
+---
+= Shut down the controller to replace the boot media - AFX 1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down the impaired controller in your AFX 1K storage system to prevent data loss and ensure system stability when replacing the boot media.
+
+
+include::../_include/shutdown_most_frus.adoc[]
+
+.What's next?
+After shutting down the controller, you need to link:bootmedia-replace.html[replace the boot media].

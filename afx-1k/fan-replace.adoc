@@ -1,0 +1,14 @@
+---
+permalink: afx-1k/fan-replace.html
+sidebar: sidebar
+keywords: afx 1k, replace a fan
+summary: Replace a fan module in your AFX 1K system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
+---
+= Replace a fan - AFX 1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace a fan module in your AFX 1K system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
+
+include::../_include/a1k_fan_replace.adoc[]
