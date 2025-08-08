@@ -13,7 +13,7 @@ Verify that the logical interfaces (LIFs) are reporting to their home port, perf
 
 == Step 1: Verify LIFs and and check cluster health
 
-include::../_include/check_lifs_cluster_health.adoc[]
+include::../_include/afx_check_lifs_cluster_health.adoc[]
 
 == Step 2: Return the failed part to NetApp
 

@@ -15,23 +15,8 @@ You can add an I/O module to your AFX 1K storage system when there are empty slo
 
 == Step 1: Shut down the impaired controller module
 
-Shut down or take over the impaired controller module.
-
-[role="tabbed-block"]
-====
-
-.Option 1: Most systems
---
-include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
---
-.Option 2: MetroCluster configuration
---
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
---
-
-====
-
+include::../_include/shutdown_afx_frus_no_PCM_remove.adoc[]
 
 == Step 2: Add the new I/O module
 
-include::../_include/add_io_module_cam.adoc[]
+include::../_include/afx_add_io_module_cam.adoc[]

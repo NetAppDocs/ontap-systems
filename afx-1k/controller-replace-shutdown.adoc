@@ -13,19 +13,7 @@ Shut down the impaired controller in your AFX 1K storage system to prevent data 
 
 Shut down the controller module using one of the following options.
 
-[role="tabbed-block"]
-====
-
-.Option 1: Most systems
---
-include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
---
-
-====
+include::../_include/shutdown_most_frus_afx.adoc[]
 
 .What's next?
 
