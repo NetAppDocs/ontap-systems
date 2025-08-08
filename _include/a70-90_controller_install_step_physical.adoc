@@ -1,6 +1,5 @@
 // Install the controller module - AFF A70 and AFF A90 (integrated) - NOT FOR CONTROLLER REPLACE
 
-
 Reinstall the controller module and reboot it.
 
 .Steps
@@ -19,29 +18,32 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 If you removed the transceivers (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
 +
-NOTE: Make sure that the console cable is connected to the repaired controller module so that it receives console messages when it reboots. The repaired controller receives power from the healthy controller and begins to reboot as soon as it is seated completely in the chassis.
+Make sure that the console cable is connected to the repaired controller module so that it receives console messages when it reboots. The repaired controller receives power from the healthy controller and begins to reboot as soon as it is seated completely in the chassis.
 
 . Complete the reinstallation of the controller module:
  .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
 The locking latches rise when the controller module is fully seated.
-
 +
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-
+Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 
 .. Rotate the locking latches upward into the locked position.
 
 
 . Plug the power cords into the power supplies. The controller reboots as soon as power is restored.
-
 +
-NOTE: If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
+If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis.
 
 
-. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+. Return the impaired controller to normal operation by giving back its storage: 
++
+`storage failover giveback -ofnode _impaired_node_name_`.
 
-. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`.
+. If automatic giveback was disabled, reenable it: 
++
+`storage failover modify -node local -auto-giveback true`.
 
-. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`.
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: 
++
+`system node autosupport invoke -node * -type all -message MAINT=END`.
 
