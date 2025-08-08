@@ -27,6 +27,7 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 To replace an I/O module, locate it within the enclosure and follow the specific sequence of steps.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 
 . Unplug any cabling on the target I/O module.
@@ -67,11 +68,6 @@ Make sure that you keep track of which slot the I/O module was in.
 . Rotate the cable management tray up to the closed position.
 
 == Step 3: Reboot the controller
-
-After you replace an I/O module, you must reboot the controller module.
-
-
-.Steps
 
 include::../_include/io_module_replace_reboot.adoc[] 
 

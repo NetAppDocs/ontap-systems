@@ -2,13 +2,13 @@
 permalink: asa-r2-a20-30-50/chassis-replace-move-hardware.html
 sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, move hardware components, replace the chassis
-summary: Replace the chassis of your ASA A20, ASA A30, or ASA A50 system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components.
+summary: Replace the chassis of your ASA A20, ASA A30, or ASA A50 storage system when a hardware failure requires it. The replacement process involves removing the controllers, removing the drives, installing the replacement chassis, and reinstalling the chassis components.
 ---
 = Replace the chassis - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the chassis of your ASA A20, ASA A30, or ASA A50 system when a hardware failure requires it. The replacement process involves removing the controllers, removing the drives, installing the replacement chassis, and reinstalling the chassis components.
+Replace the chassis of your ASA A20, ASA A30, or ASA A50 storage system when a hardware failure requires it. The replacement process involves removing the controllers, removing the drives, installing the replacement chassis, and reinstalling the chassis components.
 
 include::../_include/g_chassis_replace_move_hardware.adoc[]

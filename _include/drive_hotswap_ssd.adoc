@@ -1,9 +1,7 @@
 .Steps
 
-. If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment replacement drive, if it is enabled
+. If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment, if it is enabled.
 +
-NOTE: You manually assign drive ownership and then reenable automatic drive assignment later in this procedure.
-
 .. Verify whether automatic drive assignment is enabled: `storage disk option show`
 +
 You can enter the command on either controller module.
@@ -38,21 +36,27 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 +
 When the drive's activity LED is solid, it means that the drive has power. When the drive's activity LED is blinking, it means that the drive has power and I/O is in progress. If the drive firmware is automatically updating, the LED blinks.
 
-. If you are replacing another drive, repeat Steps 3 through 7.
+. If you are replacing another drive, repeat steps 3 through 7.
 . If you disabled automatic drive assignment in Step 1, then, manually assign drive ownership and then reenable automatic drive assignment if needed.
-.. Display all unowned drives: `storage disk show -container-type unassigned`
+.. Display all unowned drives: 
++
+`storage disk show -container-type unassigned`
 +
 You can enter the command on either controller module.
 
-.. Assign each drive: `storage disk assign -disk disk_name -owner node_name`
+.. Assign each drive: 
++
+`storage disk assign -disk disk_name -owner node_name`
 +
 You can enter the command on either controller module.
 +
 You can use the wildcard character to assign more than one drive at once.
 
-.. Reenable automatic drive assignment if needed: `storage disk option modify -node node_name -autoassign on`
+.. Reenable automatic drive assignment if needed: 
++
+`storage disk option modify -node node_name -autoassign on`
 +
 You must reenable automatic drive assignment on both controller modules.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +
-Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number or additional help with the replacement procedure.
+Contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] if you need the RMA number or additional help with the replacement procedure.

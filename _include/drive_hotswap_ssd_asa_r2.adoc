@@ -4,9 +4,9 @@
 . Remove the bezel from the front of the storage system.
 . Physically identify the failed drive.
 +
-When a drive fails, the system logs a warning message to the system console indicating which drive failed. Additionally, the attention (amber) LED on the shelf operator display panel and the failed drive illuminate.
+* When a drive fails, the system logs a warning message to the system console indicating which drive failed. Additionally, the attention (amber) LED on the shelf operator display panel and the failed drive illuminate.
 +
-NOTE: The activity (green) LED on a failed drive can be illuminated (solid), which indicates that the drive has power, but should not be blinking, which indicates I/O activity. A failed drive has no I/O activity.
+* The activity (green) LED on a failed drive can be illuminated (solid), which indicates that the drive has power, but should not be blinking, which indicates I/O activity. A failed drive has no I/O activity.
 
 . Remove the failed drive:
 +
@@ -29,7 +29,7 @@ Slide the drive out of the drive bay using the cam handle and supporting the dri
 
 When removing a drive, always use two hands to support its weight.
 
-NOTE: Because drives are fragile, minimize handling to avoid damaging them.
+Because drives are fragile, minimize handling to avoid damaging them.
 
 |===
 +
@@ -52,4 +52,4 @@ When the drive's activity LED is solid, it means that the drive has power. When 
 
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +
-Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number or additional help with the replacement procedure.
+Contact technical support https://mysupport.netapp.com/site/global/dashboard[NetApp Support] if you need the RMA number or additional help with the replacement procedure.

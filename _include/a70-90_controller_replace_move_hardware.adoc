@@ -7,6 +7,7 @@ include::../_include/a70-90_controller_remove_physical.adoc[]
 
 Move the power supplies to the replacement controller.
 
+.Steps
 . Rotate the cam handle such that it can be used to pull power supply out of the controller module while pressing the locking tab.
 +
 CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
@@ -37,6 +38,7 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 
 Move the fans modules to the replacement controller module.
 
+.Steps
 . Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
 +
 image::../media/drw_a70-90_fan_remove_replace_ieops-1366.svg[Remove fans]
@@ -61,6 +63,7 @@ Fan module
 
 Move the NV battery to the replacement controller module.
 
+.Steps
 . Open the air duct cover in the middle of the controller module and locate the NV battery.
 +
 image::../media/drw_a70-90_remove_replace_nvmembat_ieops-1369.svg[Move the NV battery]
@@ -95,6 +98,7 @@ NV battery pack plug
 
 Move the DIMMs to the replacement controller module.
 
+.Steps
 . Open the controller air duct on the top of the controller.
 .. Insert your fingers in the recesses at the far ends of the air duct.
 .. Lift the air duct and rotate it upward as far as it will go.
@@ -159,6 +163,7 @@ image::../media/icon_round_1.png[Callout number 1]
 I/O module cam lever
 |===
 
+.Steps
 . Unplug any cabling on the target I/O module.
 +
 Make sure that you label the cables so that you know where they came from.
@@ -196,6 +201,7 @@ System Management module cam latch
 
 |===
 
+.Steps
 . Remove the System Management module from the impaired controller module:
 .. Depress the system management cam button.
 .. Rotate the cam lever all the way down.
@@ -223,6 +229,7 @@ a|
 DIMM locking tab
 |===
 
+.Steps
 . Remove the NVRAM module from the impaired controller module:
 
 .. Depress the cam latch button.
