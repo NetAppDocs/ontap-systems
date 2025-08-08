@@ -1,6 +1,7 @@
 
 Replace the impaired system management module.
 
+.Steps
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 // ontap-systems-internal/issues/1151
 +
@@ -93,6 +94,7 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 
 Reboot the controller module.
 
+.Steps
 . Enter _bye_ at the LOADER prompt.
 . Return the controller to normal operation by giving back its storage: 
 +
