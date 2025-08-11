@@ -125,7 +125,7 @@ image::../media/oie_cable_25Gb_Ethernet_SFP28_ieops-1069.png[Cluster HA cable]
 +
 image::../media/drw_afx_switched_cluster_cabling_b_ieops-2353.svg[Cable cluster connections to cluster network]
 
-== Step 4: Cable the controller-to-switch connections
+== Step 4: Cable the controller-to-switch storage connections
 Connect the controller storage ports to the switches.  Make sure you have the appropriate number and type of cables and cable connectors for your switches. See https://hwu.netapp.com[Hardware Universe^] for more information.
 
 . Connect the following storage ports to any non-ISL port on switch A.

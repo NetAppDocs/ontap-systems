@@ -21,7 +21,7 @@ image:../media/drw_afx_cable_overview_half_node_ieops-2358.svg[AFK 1K storage sy
 == Supported hardware components
 Review the compatible storage disk shelves, switches, and cable types for the AFX 1K storage system.
 
-[options="header"]
+[cols="2,2,3,6",options="header"]
 |===
 a| *Controller Shelf* a| *Disk Shelf* a| *Supported Switches* a| *Supported Cables*
 a|
@@ -29,7 +29,7 @@ AFX 1K
 a|
 NX224
 a|
-* Cisco Nexus 9332D-GX2B (400GbE)drw_afx_cable_overview_half_node_ieops-2358.svg
+* Cisco Nexus 9332D-GX2B (400GbE)
 * Cisco Nexus 9364D-GX2A (400GbE)
 a|
 * 4 x 100GbE QSFP breakout cable cables
