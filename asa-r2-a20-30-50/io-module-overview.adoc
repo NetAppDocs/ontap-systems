@@ -1,15 +1,15 @@
 ---
 permalink: asa-r2-a20-30-50/io-module-overview.html
 sidebar: sidebar
-keywords: ASA A90, ASA A70, replace io module, io module add, io module hotswap
-summary: The ASA A20, ASA A30, and ASA A50 systems offer flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding, hot-swapping or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
+keywords: asa a20, asa a30, asa a50, replace io module, io module add, io module hotswap
+summary: The ASA A20, ASA A30, and ASA A50 storage systems offer flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding, hot-swapping or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
 ---
 = Overview of I/O module maintenance - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The ASA A20, ASA A30, and ASA A50 systems offer flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding, hot-swapping or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
+The ASA A20, ASA A30, and ASA A50 storage systems offer flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding, hot-swapping or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
 
 You can replace a failed I/O module in your storage system with the same type of I/O module, or with a different type of I/O module. You can hot-swap a cluster and HA I/O module when your storage system meets specific requirements. You can also add an I/O module to a storage system with available slots.
 

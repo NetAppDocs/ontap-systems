@@ -1,11 +1,8 @@
 // New include specific to g-platform family because the requirements reference 9.17.1 and slot 4, which are unique to g-platforms.
 
-To use this procedure, your storage system must meet all requirements. Read the considerations for additional context of this procedure.
+To use this procedure, make sure your storage system meets all requirements.
 
 NOTE: If your storage system does not meet all requirements, you must use the link:io-module-replace.html[replace an I/O module procedure].
-
-
-.Requirements
 
 * Your storage system must be running ONTAP 9.17.1 or later.
 * The I/O module that failed must be a cluster and HA I/O module in slot 4 and you must be replacing it with an equivalent cluster and HA I/O module. You cannot change the I/O module type.
@@ -20,20 +17,3 @@ You can verify that the impaired controller successfully took over the healthy c
 If you are not sure which controller has the failed I/O module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].  
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
-
-.Considerations
-
-* Hot-swapping the cluster and HA I/O module means that you do not have to perform a manual takeover; the impaired controller (the controller with the failed cluster and HA I/O module) has automatically taken over the healthy controller.
-+
-When the impaired controller has taken over the healthy controller, the only way to recover without an outage is to hot-swap the module.
-
-* It is critical to apply the commands to the correct controller when you are hot-swapping the cluster and HA I/O module:
-
-** The _impaired controller_ is the controller on which you are hot-swapping the cluster and HA I/O module and it is the controller that has taken over the healthy controller.
-** The _healthy controller_ is the HA partner of the impaired controller and it is the controller that was taken over by the impaired controller.
-
-* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
-+
-A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
-+
-You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.

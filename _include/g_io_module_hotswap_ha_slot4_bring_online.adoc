@@ -3,6 +3,8 @@
 
 Bring the replacement cluster and HA I/O module in slot 4 online, verify the module ports initialized successfully, verify slot 4 is powered on, and then verify the module is online and recognized.
 
+.Steps
+
 . Bring the replacement cluster and HA I/O module online:
 +
 .. Enter the following command:
