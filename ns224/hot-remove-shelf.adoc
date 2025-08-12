@@ -11,6 +11,8 @@ summary: You can hot-remove an NS224 drive shelf that has had the aggregates rem
 [.lead]
 You can hot-remove an NS224 drive shelf that has had the aggregates removed from the drives, in an HA pair that is up and serving data (I/O is in progress).
 
+NOTE: This procedure does not apply to ASA r2 systems.
+
 .Before you begin
 
 * Your HA pair cannot be in a takeover state.
