@@ -41,8 +41,22 @@ NOTE: Observe the polarity of the battery as you remove it from the holder. The 
 
 == Step 4: Reinstall the controller module
 
+Reinstall the controller module and boot it.
 
-include::../_include/afx_controller_install_step_physical.adoc[]
+. Ensure the air duct is completely closed by rotating it down as far as it will go.
++
+It must lie flush against the controller module sheet metal.
+
+. Align the end of the controller module with the opening in the enclosure, and slide the controller module into the chassis with the levers rotated away from the front of the system.
+
+. Once the controller module stops you from sliding it farther, rotate the cam handles inward until they latch back under the fans
+
++
+NOTE: Do not use excessive force when sliding the controller module into the enclosure to avoid damaging the connectors.
++
+The controller module begins to boot as soon as it is fully seated in the enclosure.
+
+. Align the bezel with the ball studs and then gently push the bezel into place.
 
 == Step 5: Reset the time and date on the controller
 
@@ -51,15 +65,27 @@ NOTE: After replacing the RTC battery, inserting controller and powering on firs
 `RTC power failure error`
 These messages are excpected and you can continue with this procedure.
 
- . Check the date and time on the healthy controller with the `cluster date show` command.
-
+. Check the date and time on the healthy controller with the `cluster date show` command.
++
 NOTE: If your system stops at the boot menu, select the option for  `Reboot node` and respond _y_ when prompted, then boot to LOADER by pressing _Ctrl-C_
-
++
  .. At the LOADER prompt on the target controller, check the time and date with the `show date` command.
  .. If necessary, modify the date with the `set date mm/dd/yyyy` command.
  .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
- . Confirm the date and time on the target controller.
+
+. Confirm the date and time on the target controller.
 . At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the controller reboot.
+. Return the impaired controller to normal operation by giving back its storage: 
++
+`storage failover giveback -ofnode _impaired_node_name_`
+
+. If automatic giveback was disabled, reenable it:
++
+`storage failover modify -node local -auto-giveback true`
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation:
++ 
+`system node autosupport invoke -node * -type all -message MAINT=END`
 
 == Step 6: Return the failed part to NetApp
 

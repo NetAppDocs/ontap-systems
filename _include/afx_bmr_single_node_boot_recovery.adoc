@@ -1,0 +1,226 @@
+.Before you begin
+
+* For OKM, you need the cluster-wide passphrase and also the backup data.
+* For EKM, you need copies of the following files from the partner node:
+** /cfcard/kmip/servers.cfg file.
+** /cfcard/kmip/certs/client.crt file. 
+** /cfcard/kmip/certs/client.key file.
+** /cfcard/kmip/certs/CA.pem file.
+
+
+.Steps
+
+. From the LOADER prompt, enter the command:
++
+`boot_recovery -partner`
++
+The screen displays the following message:
++
+`Starting boot media recovery (BMR) process. Press Ctrl-C to abort…`
+
+. Monitor the boot media install recovery process.
++
+The process completes and displays the `Installation complete` message.  
+
+. The system checks for encryption and encryption type and displays one of two messages. Depending on what message is displayed, take one of the following actions:
++
+
+IMPORTANT: Occasionally, the process may not be able to identify if key manager is configured on the system. It will display an error message, ask if key manager is configured for the system, and then ask what type of key manager is configured. The process will resume after you resolve the issue.
++
+
+.Show example of configuration error finding prompts
+[%collapsible]
+
+=====
+....
+Error when fetching key manager config from partner ${partner_ip}: ${status}
+
+Has key manager been configured on this system
+
+Is the key manager onboard
+
+....
+=====
+
+
++
+[options="header" cols="1,2"]
+|===
+| If you see this message...| Do this...
+a|
+`key manager is not configured. Exiting.` 
+a|
+Encryption is not installed on the system. Complete the following steps:
+
+.. Log into the node when the login prompt is displayed and give back the storage:
++
+`storage failover giveback -ofnode _impaired_node_name_`
+
+.. Go to step 5 to enable automatic giveback if it was disabled.
+
+a|
+
+`key manager is configured.` 
+a|
+Go to step 4 to restore the appropriate key manager.
+
+The node accesses the boot menu and runs:
+
+* Option 10 for systems with Onboard Key Manager (OKM).
+* Option 11 for systems with External Key Manager (EKM). 
+
+|===
+
+. Select the appropriate key manager restoration process.
+
++
+
+// start tabbed area
+
++
+
+[role="tabbed-block"]
+====
+
+.Onboard Key Manager (OKM)
+--
+If OKM is detected, the system displays the following message and begins running BootMenu Option 10.  
+....
+key manager is configured.
+Entering Bootmenu Option 10...
+ 
+This option must be used only in disaster recovery procedures. Are you sure? (y or n):
+....
+
+.. Enter `Y` at the prompt to confirm you want to start the OKM recovery process.
+
+.. Enter the following when prompted:
+... The passphrase 
+... The passphrase again when prompted to confirm
+... Backup data for onboard key manager
++
+.Show example of passphrase and backup data prompts
+[%collapsible]
+
+=====
+....
+Enter the passphrase for onboard key management:
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
+Enter the passphrase again to confirm:
+-----BEGIN PASSPHRASE-----
+<passphrase_value>
+-----END PASSPHRASE-----
+Enter the backup data:
+-----BEGIN BACKUP-----
+<passphrase_value>
+-----END ACKUP-----
+....
+=====
+
++
+.. Continue to monitor the recovery process as it restores the appropriate files from the partner node.
++
+When the recovery process is complete, the node will reboot. The following messages indicate a successful recovery:
++
+
+....
+Trying to recover keymanager secrets.... 
+Setting recovery material for the onboard key manager 
+Recovery secrets set successfully
+Trying to delete any existing km_onboard.keydb file.
+ 
+Successfully recovered keymanager secrets.
+....
+
+.. When the node reboots, verify the boot media recovery was successful by confirming that the system is back online and operational.
+
+.. Return the impaired controller to normal operation by giving back its storage:
++
+`storage failover giveback -ofnode _impaired_node_name_`
+
+.. After the partner node is fully up and serving data, synchronize the OKM keys across the cluster.
++
+`security key-manager onboard sync` 
+ 
+--
+
+.External Key Manager (EKM)
+
+--
+If EKM is detected, the system displays the following message and begins running BootMenu Option 11. 
+....
+key manager is configured.
+Entering Bootmenu Option 11...
+....
+
+.. The next step depends on which version of ONTAP your system is running:
++
+[options="header" cols="1,2"]
+|===
+|If your system is running...| Do this...
+a|
+ONTAP 9.17.1 and later
+a|
+Proceed to the next step.
+
+|===
+
+.. Depending on whether the key is successfully restored, take one of the following actions:
+
+* If you see `kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696` in the output, the EKM configuration has been successfully restored. 
++
+The process attempts to restore the appropriate files from the partner node and reboots the node. Go to step d.
+
+* If the key is not successfully restored, the system will halt and indicate that it could not restore the key. The error and warning messages are displayed. You must rerun the recovery process: 
++
+`boot_recovery -partner`
++
+.Show example of key recovery error and warning messages
+[%collapsible]
+
+=====
+....
+
+ERROR: kmip_init: halting this system with encrypted mroot...
+WARNING: kmip_init: authentication keys might not be available.
+********************************************************
+*                 A T T E N T I O N                    *
+*                                                      *
+*       System cannot connect to key managers.         *
+*                                                      *
+********************************************************
+ERROR: kmip_init: halting this system with encrypted mroot...
+.
+Terminated
+ 
+Uptime: 11m32s
+System halting...
+ 
+LOADER-B>
+....
+
+
+=====
+
+
+.. When the node reboots, verify that the boot media recovery was successful by confirming that the system is back online and operational.
+
+.. Return the controller to normal operation by giving back its storage:
++
+`storage failover giveback -ofnode _impaired_node_name_`
+--
+====
+
+// end tabbed area
+
+[start=5]
+
+. If automatic giveback was disabled, reenable it: 
++
+`storage failover modify -node local -auto-giveback true`
+
+. If AutoSupport is enabled, restore automatic case creation: 
++
+`system node autosupport invoke -node * -type all -message MAINT=END`

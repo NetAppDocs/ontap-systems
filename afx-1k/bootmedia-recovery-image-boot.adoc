@@ -14,7 +14,7 @@ After installing the new boot media device in your AFX 1K system, you can start 
 .About this task
 During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it. 
 
-include::../_include/bmr_single_node_boot_recovery.adoc[]
+include::../_include/afx_bmr_single_node_boot_recovery.adoc[]
 
 .What's next?
 After you've restored the ONTAP image and the node is up and serving data, you need to link:bootmedia-complete-rma.html[return the failed part to NetApp].

@@ -125,7 +125,7 @@ CAUTION: Disk reassignment is only needed when replacing the NVRAM module and do
 . From the LOADER prompt on the controller, boot the controller and enter _y_ when prompted to override the system ID due to a system ID mismatch.
 . Wait until the Waiting for giveback... message is displayed on the console of the controller with the replacement module and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: _storage failover show_
 +
-In the command output, you should see a message that the system ID has changed on the impaired controller, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
+In the command output, you should see a message that the system ID has changed on the impaired controller. In the following example, node2 has undergone replacement and displays current state.
 +
 ----
 node1:> storage failover show
@@ -138,11 +138,11 @@ node2             node1             -            Waiting for giveback
 ----
 
 . Give back the controller:
- .. From the healthy controller, give back the replaced controller's storage: _storage failover giveback -ofnode replacement_node_name_
+ .. From the healthy controller, give back the replaced controller's storage: `_storage failover giveback -ofnode replacement_node_name_`
 +
 The controller takes back its storage and completes booting.
 +
-If you are prompted to override the system ID due to a system ID mismatch, you should enter _y_.
+If you are prompted to override the system ID due to a system ID mismatch, you should enter: `_y_`
 +
 NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
@@ -155,7 +155,7 @@ The output from the `storage failover show` command should not include the Syste
 + 
 `storage disk show -ownership`
 +
-The disks belonging to the controller should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 151759706:
+The disks belonging to the controller should show the new system ID. In the following example, the disks owned by node1 now show the Home ID and Owner ID as zero (0) and empty (-). 
 +
 ----
 node1:> storage disk show -ownership
@@ -163,8 +163,8 @@ node1:> storage disk show -ownership
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
 1.0.0  aggr0_1  node1  0       -        0        -                      0       Pool0
-1.0.1  aggr0_1  node1 0                 0        -                      0       Pool0
-.
+1.0.1  aggr0_1  node1  0                0        -                      0       Pool0
+1.0.2  aggr0_1  node1  0                0        -                      0       Pool0
 .
 .
 ----
