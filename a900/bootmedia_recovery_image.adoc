@@ -11,4 +11,6 @@ summary: 'The procedure for booting the impaired controller from the recovery im
 [.lead]
 After installing the new boot media device in your system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
 
+If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
+
 include::../_include/bootmedia_recovery_image_boot.adoc[]
