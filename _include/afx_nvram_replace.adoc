@@ -161,11 +161,11 @@ The disks belonging to the controller should show the new system ID. In the foll
 ----
 node1:> storage disk show -ownership
 
-Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
------ ------    ----- ------ -------- -------    -------    -------  ---------  ---
-1.0.0  aggr0_1  node1  0       -        0        -                      0       Pool0
-1.0.1  aggr0_1  node1  0                0        -                      0       Pool0
-1.0.2  aggr0_1  node1  0                0        -                      0       Pool0
+Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home  ID Reserver  Pool
+----- ------    ----- ------ -------- -------    -------   -------  ---------    ---
+1.0.0  aggr0_1  node1  0       -        0        -                      0        Pool0
+1.0.1  aggr0_1  node1  0                0        -                      0        Pool0
+1.0.2  aggr0_1  node1  0                0        -                      0        Pool0
 .
 .
 ----
