@@ -11,6 +11,8 @@ summary: Get started with replacing the boot media in your ASA C400 storage syst
 [.lead]
 Get started with replacing the boot media in your ASA C400 storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
 
+If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
+
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements.html[Review the boot media requirements]
 [role="quick-margin-para"]
 Review the requirements for replacing the boot media.
