@@ -13,4 +13,5 @@ To ensure data security on your storage system, you need to verify the encryptio
 
 If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
 
+
 include::../_include/encryption_check_bootmedia.adoc[]
