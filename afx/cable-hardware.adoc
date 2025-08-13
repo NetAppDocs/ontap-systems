@@ -161,31 +161,31 @@ Connect the NX224 storage shelves to the switches.
 
 For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
-. Connect the following shelf ports to any non-ISL port on switch A.
-* Module A
+. Connect the following shelf ports to any non-ISL port on switch A and switch B for module A.
+* Module A to switch A connections
 ** e1a
 ** e2a
 ** e3a
 ** e4a
-* Module B
-** e1a
-** e2a
-** e3a
-** e4a
+* Module A to switch B connections
+** e1b
+** e2b
+** e3b
+** e4b
 +
 *100GbE cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_shelf_cabling_a_ieops-2356.svg[Cable shelf to switch A]
+image::../media/drw_afx_shelf_cabling_a_ieops-2356.svg[Cable shelf to switch A and switch B]
 
-. Connect the following shelf ports to any non-ISL port on switch B.
-* Module A
-** e1b
-** e2b
-** e3b
-** e4b
-* Module B
+. Connect the following shelf ports to any non-ISL port on switch A and switch B for module B.
+* Module B to switch A connections
+** e1a
+** e2a
+** e3a
+** e4a
+* Module B to switch B connections
 ** e1b
 ** e2b
 ** e3b
@@ -195,7 +195,7 @@ image::../media/drw_afx_shelf_cabling_a_ieops-2356.svg[Cable shelf to switch A]
 +
 image::../media/oie_cable100_gbe_qsfp28.png[100 Gb cable]
 +
-image::../media/drw_afx_shelf_cabling_b_ieops-2357.svg[Cable shelf to switch B]
+image::../media/drw_afx_shelf_cabling_b_ieops-2357.svg[Cable shelf to switch A and switch B]
 
 .What's next?
 
