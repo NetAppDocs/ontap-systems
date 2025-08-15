@@ -26,6 +26,11 @@ image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on an A
 As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 +
 image:../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab direction]
++
+[NOTE]
+====
+The connector components are delicate and care should be taken when clicking into place.
+====
 
 * When cabling to an optical fiber connection, insert the optical transceiver into the controller port before cabling to the switch port.
 
@@ -60,15 +65,15 @@ IMPORTANT: Do not plug in the power cords yet.
 == Step 2: Connect the controllers to the host network
 Connect the Ethernet module ports to your host network. 
 
-This procedure differs depending on your storage system model and I/O module configuration. The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
+This procedure may differ depending on your I/O module configuration. The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
 
 .Steps
 
 . Connect the following ports to your Ethernet data network switch A.
-* Controller A (example)
+* Controller A (Example)
 ** e2a
 ** e3a
-* Controller B (example)
+* Controller B (Example)
 ** e2a
 ** e3a
 +
@@ -79,10 +84,10 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 Gb Ethernet cable]
 image::../media/drw_afx_network_cabling_a_ieops-2350.svg[Cable to Ethernet network]
 
 . Connect the following ports to your Ethernet data network switch B.
-* Controller A (example)
+* Controller A (Example)
 ** e2b
 ** e3b
-* Controller B (example)
+* Controller B (Example)
 ** e2b
 ** e3b
 +

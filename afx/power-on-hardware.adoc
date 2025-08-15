@@ -17,7 +17,7 @@ Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf
 .About this task
 * A valid shelf ID is 01 through 99. 
 
-* You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
+* You must power cycle a shelf (unplug both power cords, wait a minimum of 10 seconds, and then plug them back in) for the shelf ID to take effect.
 
 .Steps
 . Power on the shelf by connecting the power cords first to the shelf, securing them in place with the power cord retainer, and then connecting the power cords to power sources on different circuits.
@@ -131,8 +131,5 @@ image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[A1K storage system a
 
 .What's next?
 After you've turned on your AFX 1K storage system, you link:/install-setup/cluster-setup.html[set up an ONTAP AFX cluster].
-
-NOTE: INTERNAL - Temporary link for IDR approvers.
-After you've turned on your AFX 1K storage system, you link:https://review.docs.netapp.com/us-en/ontap-afx_main/install-setup/cluster-setup.html[set up an ONTAP AFX cluster].
 
 // 2024 Sept 23, ONTAPDOC 1922
