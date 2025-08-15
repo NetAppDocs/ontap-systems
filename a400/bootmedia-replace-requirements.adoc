@@ -11,7 +11,7 @@ summary: Before replacing the boot media in your AFF A400 system, ensure you mee
 [.lead]
 Before replacing the boot media in your AFF A400 system, ensure you meet the necessary requirements for a successful replacement. This includes making sure you have a USB flash drive with the appropriate amount of storage and verifying that you have the correct replacement boot device.
 
-If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
 
 include::../_include/bootmedia_replace_requirements.adoc[]
 
