@@ -11,6 +11,8 @@ summary: 'You must locate the boot media in the controller and follow the direct
 [.lead]
 You must remove and open the impaired controller module, locate and replace the boot media in the controller, transfer the boot image to a USB drive, insert the USB drive in the controller, and then boot the controller.
 
+If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
+
 == Step 1: Remove the controller module
 
 .Steps

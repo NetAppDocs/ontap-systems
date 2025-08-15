@@ -9,6 +9,8 @@ summary: 'You must remove and open the controller module, locate and replace the
 [.lead]
 You must remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.
 
+If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
+
 == Step 1: Remove the controller module
 :icons: font
 :imagesdir: ../media/
