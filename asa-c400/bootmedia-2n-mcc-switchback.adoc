@@ -11,6 +11,6 @@ summary: After you have completed the FRU replacement in a two-node MetroCluster
 [.lead]
 After you have completed the FRU replacement in a two-node MetroCluster configuration, you can perform the MetroCluster switchback operation. This returns the configuration to its normal operating state, with the sync-source storage virtual machines (SVMs) on the formerly impaired site now active and serving data from the local disk pools.
 
-If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure]
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
 
 include::../_include/2n_mcc_switchback.adoc[]

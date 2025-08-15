@@ -13,6 +13,6 @@ Shut down or take over the impaired controller using one of the following option
 
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 
-If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
+If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 include::../_include/shutdown_most_frus.adoc[]

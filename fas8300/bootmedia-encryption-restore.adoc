@@ -11,6 +11,6 @@ summary: 'Once environment variables are checked, you must complete steps specif
 [.lead]
 Restore encryption on the replacement boot media.
 
-If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure]
+If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 include::../_include/encryption_restore_bootmedia.adoc[]
