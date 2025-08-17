@@ -89,23 +89,3 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 + 
 
  . Rotate the cable management tray up to the closed position.
-
-== Step 3: Reboot the controller
-
-Reboot the controller module.
-
-.Steps
-. Enter _bye_ at the LOADER prompt.
-. Return the controller to normal operation by giving back its storage: 
-+
-`storage failover giveback -ofnode _impaired_node_name_`
-
-+
-. Restore automatic giveback:
-+
-`storage failover modify -node local -auto-giveback true`
-
-. If an AutoSupport maintenance window was triggered, end it:
-+
-`system node autosupport invoke -node * -type all -message MAINT=END` 
-
