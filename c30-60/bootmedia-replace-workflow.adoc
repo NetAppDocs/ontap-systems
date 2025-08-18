@@ -2,14 +2,14 @@
 permalink: c30-60/bootmedia-replace-workflow.html
 sidebar: sidebar
 keywords: aff c30, aff c60, replace the boot media
-summary: The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF C30 or AFF C60 system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
+summary: The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF C30 or AFF C60 storage system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
 ---
 = Boot media manual recovery workflow - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF C30 or AFF C60 system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
+The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF C30 or AFF C60 storage system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
 
 If your system is running in ONTAP 9.17.1 and later, use the link:bootmedia-replace-workflow-bmr.html[automatic boot recovery procedure].
 

@@ -2,7 +2,7 @@
 permalink: c30-60/install-power-hardware.html
 sidebar: sidebar
 keywords: aff c30, aff c60, power controllers
-summary: Attach the power cables and power on the shelves and controllers.
+summary: After you cable the controllers to the network and shelves in your AFF C30 or AFF C60 storage system, you power on your shelves and controllers. 
 ---
 = Power on the storage system - AFF C30 and AFF C60
 :icons: font
@@ -26,4 +26,4 @@ include::../_include/install_power_controllers_conditional.adoc[]
 
 
 .What's next?
-After you've powered on your storage system, you link:install-complete.html[complete system setup].
+After you've powered on your storage system, you https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html[set up your cluster].
