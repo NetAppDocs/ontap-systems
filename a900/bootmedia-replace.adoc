@@ -11,6 +11,6 @@ summary: You must remove and open the controller module, locate and replace the 
 [.lead]
 You must unplug the controller module, remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.
 
-If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 
 include::../_include/900_bootmedia_replace.adoc[]
