@@ -60,14 +60,14 @@ a| The LED USB module provides connectivity to console ports and system status.
 
 a|link:nvram_module_or_nvram_dimm_replacement[NVRAM] 
 
-The NVRAM module (Non-Volatile Random Access Memory) allows the controller to retain data across power cycles or system reboots, while the NVRAM DIMM maintaints NVRAM settings.
+a| The NVRAM module (Non-Volatile Random Access Memory) allows the controller to retain data across power cycles or system reboots, while the NVRAM DIMM maintaints NVRAM settings.
 
 a| link:power-supply-replace[Power supply] 
 
-A power supply provides a redundant power source in a controller.
+a| A power supply provides a redundant power source in a controller.
 
 a|link:rtc-battery-replace[Real-time clock battery]
 
-A real time clock battery preserves system date and time information if the power is off. 
+a| A real time clock battery preserves system date and time information if the power is off. 
 
 |===

@@ -41,8 +41,7 @@ a| link:dimm-replace.html[DIMM]
 
 a| You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
 
-a|
-link:dcpm-nvram11-battery-replace[DCPM]
+a| link:dcpm-nvram11-battery-replace[DCPM]
 
 a| The DCPM (destage controller power module) contains the NVRAM11 battery.
 
@@ -50,24 +49,24 @@ a| link:fan-replace.html[Fan]
 
 a| The fan cools the controller.
 
-a|link:pci_cards_and_risers_replace[I/O module] 
+a| link:pci_cards_and_risers_replace[I/O module] 
 
 a| The  I/O module (Input/Output module) is a hardware component that acts as an intermediary between the controller and various devices or systems that need to exchange data with the controller.
 
-a|link:led_module_replace[LED USB] 
+a| link:led_module_replace[LED USB] 
 
 a| The LED USB module provides connectivity to console ports and system status. 
 
-a|link:nvram_module_or_nvram_dimm_replacement[NVRAM] 
+a| link:nvram_module_or_nvram_dimm_replacement[NVRAM] 
 
-The NVRAM module (Non-Volatile Random Access Memory) allows the controller to retain data across power cycles or system reboots, while the NVRAM DIMM maintaints NVRAM settings.
+a| The NVRAM module (Non-Volatile Random Access Memory) allows the controller to retain data across power cycles or system reboots, while the NVRAM DIMM maintaints NVRAM settings.
 
 a| link:power-supply-replace[Power supply] 
 
-A power supply provides a redundant power source in a controller.
+a| A power supply provides a redundant power source in a controller.
 
-a|link:rtc-battery-replace[Real-time clock battery]
+a| link:rtc-battery-replace[Real-time clock battery]
 
-A real time clock battery preserves system date and time information if the power is off. 
+a| A real time clock battery preserves system date and time information if the power is off. 
 
 |===
