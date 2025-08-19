@@ -1,31 +1,7 @@
-All other components in the system must be functioning properly; if not, you must contact technical support.
-
-== Step 1: Shut down the impaired controller
-
-Shut down or take over the impaired controller using one of the following options.
-
-[role="tabbed-block"]
-====
-
-.Option 1: Most systems
---
-include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
---
-
-====
-
-== Step 2: Remove the controller module
-
-include::../_include/a70-90_controller_remove_physical.adoc[]
-
-== Step 3: Replace the NV battery
 
 Remove the failed NV battery from the controller module and install the replacement NV battery.
 
+.Steps
 . Open the air duct cover and locate the NV battery.
 +
 image::../media/drw_a70-90_remove_replace_nvmembat_ieops-1369.svg[Replace the NV battery]
@@ -54,10 +30,3 @@ NV battery plug
 +
 Make sure that the plug locks into the socket.
 
-== Step 4: Reinstall the controller module
-
-include::../_include/a70-90_controller_install_step_physical.adoc[]
-
-== Step 5: Return the failed part to NetApp
-
-include::../_include/complete_rma.adoc[]

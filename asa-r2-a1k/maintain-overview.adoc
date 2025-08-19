@@ -20,11 +20,9 @@ For the ASA A1K storage system, you can perform maintenance procedures on the fo
 
 |===
 
-a| link:bootmedia-replace-workflow-bmr.html[Boot media]
+a| link:bootmedia-replace-workflow-bmr.html[Boot media - automated recovery]
 
-a| You can replace a failed boot media from the partner node for the boot image.
-
-Automated boot media replace uses the boot image from the partner node and automatically runs the appropriate boot menu option to install the boot image on the replacement boot media.
+a|The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot. During automated recovery, the system retrieves the boot image from the partner node and automatically runs the appropriate boot menu option to install the image on your replacement boot media. 
 
 a| link:controller-replace-workflow.html[Controller]
 

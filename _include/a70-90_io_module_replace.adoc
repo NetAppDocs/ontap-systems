@@ -1,31 +1,6 @@
-You can use this procedure with all versions of ONTAP supported by your storage system.
-
-.Before you begin
-* You must have the replacement part available.
-* Make sure all other components in the storage system are functioning properly; if not, contact technical support.
-
-== Step 1: Shut down the impaired controller
-
-Shut down or take over the impaired controller using one of the following options.
-
-[role="tabbed-block"]
-====
-
-.Option 1: Most systems
---
-include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
---
-
-====
-
-== Step 2: Replace a failed I/O module
-
 To replace an I/O module, locate it within the controller module and follow the specific sequence of steps.
 
+.Steps
 . If you are not already grounded, properly ground yourself. 
 
 . Unplug any cabling on the target I/O module.
@@ -68,16 +43,3 @@ Make sure that you keep track of which slot the I/O module was in.
 . Repeat the remove and install steps to replace additional modules for the controller.
 
 . Rotate the cable management tray into the locked position.
-
-== Step 3: Reboot the controller
-
-After you replace an I/O module, you must reboot the controller module.
-
-
-.Steps
-
-include::../_include/io_module_replace_reboot.adoc[]
-
-== Step 4: Return the failed part to NetApp
-
-include::../_include/complete_rma.adoc[]

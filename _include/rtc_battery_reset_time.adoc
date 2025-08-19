@@ -1,0 +1,21 @@
+
+After you replace the RTC battery, insert the controller, and power on for the first BIOS reset, you will see the following error messages: 
+
+`RTC date/time error. Reset date/time to default`
+
+`RTC power failure error`
+
+These messages are expected and you can continue with this procedure.
+
+.Steps
+ . Check the date and time on the healthy controller with the `cluster date show` command.
+ +
+If your system stops at the boot menu, select the option for  `Reboot node` and respond _y_ when prompted, then boot to LOADER by pressing _Ctrl-C_
+
+ .. At the LOADER prompt on the target controller, check the time and date with the `cluster date show` command.
+ .. If necessary, modify the date with the `set date mm/dd/yyyy` command.
+ .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
+ . Confirm the date and time on the target controller.
+. At the LOADER prompt, enter _bye_ to reinitialize the PCIe cards and other components and let the controller reboot.
+
+
