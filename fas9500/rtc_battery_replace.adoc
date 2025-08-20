@@ -22,6 +22,7 @@ include::../_include/shutdown_most_frus.adoc[]
 
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
@@ -63,12 +64,13 @@ Controller module cover locking button
 
 To replace the RTC battery, you must locate the failed battery in the controller module, remove it from the holder, and then install the replacement battery in the holder.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Locate the RTC battery.
 +
 video::3b977f96-3ebb-4b11-9703-ae78004b4add[panopto, title="Animation - Replace RTC battery"]
 +
-image::../media/drw_9500_remove_RTC_battery.svg[Replace the RTC bsttery]
+image::../media/drw_9500_remove_RTC_battery.svg[Replace the RTC battery]
 +
 
 [cols="20%,80%"]
@@ -83,6 +85,7 @@ a|
 Slide battery out from housing
 |===
 
+.Steps
 . Gently push the battery away from the holder, rotate it away from the holder, and then lift it out of the holder.
 +
 NOTE: Note the polarity of the battery as you remove it from the holder. The battery is marked with a plus sign and must be positioned in the holder correctly. A plus sign near the holder tells you how the battery should be positioned.
@@ -97,6 +100,7 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 
 After you replace the RTC battery, you must reinstall the controller module. If the RTC battery has been left out of the controller module for more than 10 minutes, you may have to reset the time and date.
 
+.Steps
 . If you have not already done so, close the air duct or controller module cover.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
