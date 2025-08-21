@@ -11,6 +11,8 @@ summary: Get started with replacing the boot media in your AFF C400 storage syst
 [.lead]
 Get started with replacing the boot media in your AFF C400 storage system by reviewing the replacement requirements, shutting down the controller, replacing the boot media, restoring the image on the boot media, and verifying the system functionality.
 
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements-bmr.html[Review the boot media requirements]
 [role="quick-margin-para"]
 Review the requirements for boot media replacement.
