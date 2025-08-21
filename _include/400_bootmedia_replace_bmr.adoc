@@ -77,38 +77,3 @@ If necessary, remove the boot media and reseat it into the socket.
  .. Placing a finger at the end of the boot media by the blue button, push down on the boot media end to engage the blue locking button.
  .. While pushing down on the boot media, lift the blue locking button to lock the boot media in place.
 . Close the air duct.
-
-
-
-== Step 3: Transfer the boot image to the boot media
-
-. Reinstall the controller module:
-.. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
-.. Reinstall the cable management device and recable the system, as needed.
-+
-When recabling, remember to reinstall the media converters (SFPs or QSFPs) if they were removed.
-
-.. Plug the power cable into the power supply and reinstall the power cable retainer.
-.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
-+
-The locking latches rise when the controller module is fully seated.
-+
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-.. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
-.. Reconnect the PSUs to the power source.
-+
-The controller module begins to boot as soon as ithe power supplies are plugged into the power sourc. Be prepared to interrupt the boot process.
-
- 
- .. If you have not already done so, reinstall the cable management device.
-. Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
-+
-If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then `halt` the controller to boot to LOADER.
-
-. If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
- .. Boot to Maintenance mode: `boot_ontap maint`
- .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t _initiator adapter_name_`
- .. Halt to return to Maintenance mode: `halt`
-
-+
-The changes will be implemented when the system is booted.
