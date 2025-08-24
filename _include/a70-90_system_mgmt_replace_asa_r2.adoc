@@ -2,11 +2,7 @@
 Replace the impaired system management module.
 
 .Steps
-. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-// ontap-systems-internal/issues/1151
-+
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
-+
+
 . Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 +
 image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
