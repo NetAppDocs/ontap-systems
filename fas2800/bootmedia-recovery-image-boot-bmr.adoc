@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2800, boot the recovery image
 summary: Restore the ONTAP image on the replacement boot media in your fas2800 system. The process involves initiating the boot recovery process from the LOADER prompt and monitoring the recovery process until it completes and the node reboots.
 ---
-= Restore the image on the boot media - FAS2800
+= Automated boot media recovery from the partner node - FAS2800
 :icons: font
 :imagesdir: ../media/
 
