@@ -3,14 +3,15 @@ permalink: a1k/bootmedia-shutdown.html
 sidebar: sidebar
 keywords: aff a1k, shut down the controller
 summary: Shut down the impaired controller in your AFF A1K storage system to prevent data loss and maintain system stability during the manual boot media recovery process.
-
 ---
 = Shut down the controller for manual boot media recovery - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the impaired controller in your AFF A1K storage system to prevent data loss and maintain system stability during the manual boot media recovery process.
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller. Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 
 [role="tabbed-block"]
 ====
