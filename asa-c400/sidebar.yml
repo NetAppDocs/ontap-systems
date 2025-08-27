@@ -17,7 +17,7 @@ entries:
    entries:
    - title: Maintenance overview
      url: /asa-c400/maintain-overview.html
-      # START boot media
+          # START boot media
    - title: Boot media - automated recovery
      pdf-filename: ASA C400 Boot Media Automated
      entries:
@@ -52,7 +52,7 @@ entries:
         url: /asa-c400/bootmedia-encryption-restore.html
       - title: Return failed part to NetApp
         url: /asa-c400/bootmedia-complete-rma.html
-        # END boot media
+          # END boot media
    - title: Chassis
      pdf-filename: ASA C400 Chassis
      entries:
