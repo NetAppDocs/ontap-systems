@@ -1,9 +1,9 @@
-section: asa-c-400
+section: asa-c400
 title: ASA C400 systems
 entries:
-  - title: Install and setup
-    pdf-filename: ASA C400 Install and Setup
-    entries:
+ - title: Install and setup
+   pdf-filename: ASA C400 Install and Setup
+   entries:
     - title: Choose install and setup experience
       url: /asa-c400/install-setup.html
     - title: Quick steps
@@ -12,15 +12,15 @@ entries:
       url: /asa-c400/install-videos.html
     - title: Detailed steps
       url: /asa-c400/install-detailed-guide.html
-  - title: Maintain
-    pdf-filename: ASA C400 Maintain
-    entries:
-    - title: Overview
-      url: /asa-c400/maintain-overview.html
+ - title: Maintain
+   pdf-filename: ASA C400 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /asa-c400/maintain-overview.html
           # START boot media
-  - title: Boot media - automated recovery
-    pdf-filename: AFF C400 Boot Media Automated
-    entries:
+   - title: Boot media - automated recovery
+     pdf-filename: ASA C400 Boot Media Automated
+     entries:
       - title: Boot media replacement workflow
         url: /asa-c400/bootmedia-replace-workflow-bmr.html
       - title: Review requirements
@@ -33,9 +33,9 @@ entries:
         url: /asa-c400/bootmedia-recovery-image-boot-bmr.html
       - title: Return failed part to NetApp
         url: /asa-c400/bootmedia-complete-rma-bmr.html
-  - title: Boot media - manual recovery
-    pdf-filename: AFF C400 Boot Media manual
-    entries:
+   - title: Boot media - manual recovery
+     pdf-filename: ASA C400 Boot Media manual
+     entries:
       - title: Boot media replacement workflow
         url: /asa-c400/bootmedia-replace-workflow.html
       - title: Review requirements
@@ -53,9 +53,9 @@ entries:
       - title: Return failed part to NetApp
         url: /asa-c400/bootmedia-complete-rma.html
           # END boot media
-  - title: Chassis
-    pdf-filename: ASA C400 Chassis
-    entries:
+   - title: Chassis
+     pdf-filename: ASA C400 Chassis
+     entries:
       - title: Overview
         url: /asa-c400/chassis-replace-overview.html
       - title: Shut down impaired controller
@@ -64,9 +64,9 @@ entries:
         url: /asa-c400/chassis-replace-move-hardware.html
       - title: Complete chassis replacement
         url: /asa-c400/chassis-replace-complete-system-restore-rma.html
-  - title: Controller
-    pdf-filename: ASA C400 Controller Module
-    entries:
+   - title: Controller
+     pdf-filename: ASA C400 Controller Module
+     entries:
       - title: Overview
         url: /asa-c400/controller-replace-overview.html
       - title: Shut down impaired controller
@@ -79,24 +79,24 @@ entries:
         url: /asa-c400/controller-replace-recable-reassign-disks.html
       - title: Complete system restoration
         url: /asa-c400/controller-replace-restore-system-rma.html
-  - title: DIMM
-    pdf-filename: ASA C400 DIMM
-    url: /asa-c400/dimm-replace.html
-  - title: Fan
-    pdf-filename: ASA C400 Fan Module
-    url: /asa-c400/fan-swap-out.html
-  - title: NVDIMM battery
-    pdf-filename: ASA C400 NVDIMM Battery Battery
-    url: /asa-c400/nvdimm-battery-replace.html
-  - title: NVDIMM
-    pdf-filename: ASA A320 NVDIMM
-    url: /asa-c400/nvdimm-replace.html
-  - title: PCIe or mezzanine card
-    pdf-filename: ASA C400 PCIe or Mezzanine Card
-    url: /asa-c400/pci-cards-and-risers-replace.html
-  - title: Power supply
-    pdf-filename: ASA C400 Power Supply
-    url: /asa-c400/power-supply-replace.html
-  - title: Real-time clock battery
-    pdf-filename: ASA C400 Real-Time Clock Battery
-    url: /asa-c400/rtc-battery-replace.html
+   - title: DIMM
+     pdf-filename: ASA C400 DIMM
+     url: /asa-c400/dimm-replace.html
+   - title: Fan
+     pdf-filename: ASA C400 Fan Module
+     url: /asa-c400/fan-swap-out.html
+   - title: NVDIMM battery
+     pdf-filename: ASA C400 NVDIMM Battery Battery
+     url: /asa-c400/nvdimm-battery-replace.html
+   - title: NVDIMM
+     pdf-filename: ASA C400 NVDIMM
+     url: /asa-c400/nvdimm-replace.html
+   - title: PCIe or mezzanine card
+     pdf-filename: ASA C400 PCIe or Mezzanine Card
+     url: /asa-c400/pci-cards-and-risers-replace.html
+   - title: Power supply
+     pdf-filename: ASA C400 Power Supply
+     url: /asa-c400/power-supply-replace.html
+   - title: Real-time clock battery
+     pdf-filename: ASA C400 Real-Time Clock Battery
+     url: /asa-c400/rtc-battery-replace.html
