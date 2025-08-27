@@ -130,7 +130,7 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
 
 . If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
  .. Boot to Maintenance mode: `boot_ontap maint`
- .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t iniitator adapter_name`
+ .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t initiator adapter_name`
  .. Halt to return to Maintenance mode: `halt`
 
 +
