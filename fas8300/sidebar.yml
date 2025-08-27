@@ -1,9 +1,9 @@
 section: fas8300
 title: FAS8300 and FAS8700 systems
 entries:
-  - title: Install and setup
-    pdf-filename: FAS8300 and FAS8700 Install and Setup
-    entries:
+ - title: Install and setup
+   pdf-filename: FAS8300 and FAS8700 Install and Setup
+   entries:
     - title: Choose install and setup experience
       url: /fas8300/install-setup.html
     - title: Quick steps
@@ -12,15 +12,15 @@ entries:
       url: /fas8300/install-videos.html
     - title: Detailed steps
       url: /fas8300/install-detailed-guide.html
-  - title: Maintain
-    pdf-filename: FAS8300 and FAS8700 Maintain
-    entries:
-    - title: Overview
-      url: /fas8300/maintain-overview.html
+ - title: Maintain
+   pdf-filename: FAS8300 and FAS8700 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /fas8300/maintain-overview.html
           # START boot media
-  - title: Boot media - automated recovery
-    pdf-filename: FAS8300 and FAS8700 Boot Media Automated
-    entries:
+   - title: Boot media - automated recovery
+     pdf-filename: FAS8300 and FAS8700 Boot Media Automated
+     entries:
       - title: Boot media replacement workflow
         url: /fas8300/bootmedia-replace-workflow-bmr.html
       - title: Review requirements
@@ -33,9 +33,9 @@ entries:
         url: /fas8300/bootmedia-recovery-image-boot-bmr.html
       - title: Return failed part to NetApp
         url: /fas8300/bootmedia-complete-rma-bmr.html
-  - title: Boot media - manual recovery
-    pdf-filename: FAS8300 and FAS8700 Boot Media manual
-    entries:
+   - title: Boot media - manual recovery
+     pdf-filename: FAS8300 and FAS8700 Boot Media manual
+     entries:
       - title: Boot media replacement workflow
         url: /fas8300/bootmedia-replace-workflow.html
       - title: Review requirements
@@ -53,12 +53,12 @@ entries:
       - title: Return failed part to NetApp
         url: /fas8300/bootmedia-complete-rma.html
           # END boot media
-  - title: Caching module
-    pdf-filename: FAS8300 and FAS8700 Caching Module
-    url: /fas8300/caching-module-replace.html
-  - title: Chassis
-    pdf-filename: FAS8300 and FAS8700 Chassis
-    entries:
+   - title: Caching module
+     pdf-filename: FAS8300 and FAS8700 Caching Module
+     url: /fas8300/caching-module-replace.html
+   - title: Chassis
+     pdf-filename: FAS8300 and FAS8700 Chassis
+     entries:
       - title: Overview
         url: /fas8300/chassis-replace-overview.html
       - title: Shut down impaired controller
@@ -67,9 +67,9 @@ entries:
         url: /fas8300/chassis-replace-move-hardware.html
       - title: Complete replacement
         url: /fas8300/chassis-replace-complete-system-restore-rma.html
-  - title: Controller
-    pdf-filename: FAS8300 and FAS8700 Controller
-    entries:
+   - title: Controller
+     pdf-filename: FAS8300 and FAS8700 Controller
+     entries:
       - title: Overview
         url: /fas8300/controller-replace-overview.html
       - title: Shut down impaired controller
@@ -82,21 +82,21 @@ entries:
         url: /fas8300/controller-replace-recable-reassign-disks.html
       - title: Complete replacement
         url: /fas8300/controller-replace-restore-system-rma.html
-  - title: DIMM
-    pdf-filename: FAS8300 and FAS8700 DIMM
-    url: /fas8300/dimm-replace.html
-  - title: Fan
-    url: /fas8300/fan-swap-out.html
-  - title: NVDIMM
-    url: /fas8300/nvdimm-replace.html
-  - title: NVDIMM battery
-    url: /fas8300/nvdimm-battery-replace.html
-  - title: PCIe or mezzanine card
-    pdf-filename: FAS8300 and FAS8700 PCIe or Mezzanine Card
-    url: /fas8300/pci-cards-and-risers-replace.html
-  - title: Power supply
-    pdf-filename: FAS8300 and FAS8700 Power Supply
-    url: /fas8300/power-supply-replace.html
-  - title: Real-time clock battery
-    pdf-filename: FAS8300 and FAS8700 Real-Time Clock Battery
-    url: /fas8300/rtc-battery-replace.html
+   - title: DIMM
+     pdf-filename: FAS8300 and FAS8700 DIMM
+     url: /fas8300/dimm-replace.html
+   - title: Fan
+     url: /fas8300/fan-swap-out.html
+   - title: NVDIMM
+     url: /fas8300/nvdimm-replace.html
+   - title: NVDIMM battery
+     url: /fas8300/nvdimm-battery-replace.html
+   - title: PCIe or mezzanine card
+     pdf-filename: FAS8300 and FAS8700 PCIe or Mezzanine Card
+     url: /fas8300/pci-cards-and-risers-replace.html
+   - title: Power supply
+     pdf-filename: FAS8300 and FAS8700 Power Supply
+     url: /fas8300/power-supply-replace.html
+   - title: Real-time clock battery
+     pdf-filename: FAS8300 and FAS8700 Real-Time Clock Battery
+     url: /fas8300/rtc-battery-replace.html
