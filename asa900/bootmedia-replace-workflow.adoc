@@ -18,7 +18,7 @@ If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-
 [role="quick-margin-para"]
 Review the requirements for replacing the boot media.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-encryption-preshutdown-checks.html[Check encryption key support and status]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia_encryption_preshutdown_checks.html[Check encryption key support and status]
 [role="quick-margin-para"]
 Determine whether the system has security key manager enabled or encrypted disks.
 
@@ -26,11 +26,11 @@ Determine whether the system has security key manager enabled or encrypted disks
 [role="quick-margin-para"]
 Shut down the controller when when you need to replace the boot media.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia-replace.html[Replace the boot media]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia_replace.html[Replace the boot media]
 [role="quick-margin-para"]
 Remove the failed boot media from the System Management module and install the replacement boot media, and then transfer an ONTAP image using a USB flash drive.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:bootmedia-recovery-image.html[Boot the recovery image]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:bootmedia_recovery_image.html[Boot the recovery image]
 [role="quick-margin-para"]
 Boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 
@@ -38,6 +38,6 @@ Boot the ONTAP image from the USB drive, restore the file system, and verify the
 [role="quick-margin-para"]
 Restore the onboard key manager configuration or the external key manager from the ONATP boot menu.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:bootmedia-complete-rma.html[Return the failed part to NetApp]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:bootmedia_complete_rma.html[Return the failed part to NetApp]
 [role="quick-margin-para"]
 Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
