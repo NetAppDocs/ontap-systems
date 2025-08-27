@@ -22,18 +22,18 @@ For the AFF A800 storage system, you can perform maintenance procedures on the f
 
 a| link:bootmedia-replace-workflow-bmr.html[Boot media - automated recovery]
 
-a|The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot. During automated recovery, the system retrieves the boot image from the partner node and automatically runs the appropriate boot menu option to install the image on your replacement boot media. The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+a| The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot. During automated recovery, the system retrieves the boot image from the partner node and automatically runs the appropriate boot menu option to install the image on your replacement boot media. The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 a| link:bootmedia-replace-workflow.html[Boot media - manual recovery]
 
-a| The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot the image from a USB drive and restore the configuration from the partner node. If your storage system is running ONTAP 9.17.1 and later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure].
+a| The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot. During manual recovery, you boot the storage system from a USB drive and manually restore the file system image and configuration. If your storage system is running ONTAP 9.17.1 and later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure].
 
-a| link:chassis-replace-workflow.html[Chassis]
+a| link:chassis-replace-overview.html[Chassis]
 
 
 a| The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
 
-a| link:controller-replace-workflow.html[Controller]
+a| link:controller-replace-overview.html[Controller]
 
 a| A controller consists of a board, firmware, and software. It controls the drives and implements the ONTAP functions.
 
