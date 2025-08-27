@@ -26,7 +26,7 @@ a| The boot media stores a primary and secondary set of ONTAP image files that t
 
 a| link:bootmedia-replace-workflow.html[Boot media - manual recovery]
 
-a| The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot. During manual recovery, you boot the system from a USB drive and manually restore the file system image and configuration. If your storage system is running ONTAP 9.17.1 and later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure].
+a| The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot. During manual recovery, you boot the storage system from a USB drive and manually restore the file system image and configuration. If your storage system is running ONTAP 9.17.1 and later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure].
 
 a| link:chassis-replace-overview.html[Chassis]
 
