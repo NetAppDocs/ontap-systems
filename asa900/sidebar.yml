@@ -37,19 +37,19 @@ entries:
      pdf-filename: AFF ASA 900 Boot Media manual
      entries:
       - title: Overview
-        url: /asa900/bootmedia-replace-overview.html
+        url: /asa900/bootmedia_replace_overview.html
       - title: Check encryption keys
-        url: /asa900/bootmedia-encryption-preshutdown-checks.html
+        url: /asa900/bootmedia_encryption_preshutdown_checks.html
       - title: Shut down impaired controller
         url: /asa900/bootmedia-shutdown.html
       - title: Replace boot media
-        url: /asa900/bootmedia-replace.html
+        url: /asa900/bootmedia_replace.html
       - title: Boot recovery image
-        url: /asa900/bootmedia-recovery-image-boot.html
+        url: /asa900/bootmedia_recovery_image_boot.html
       - title: Restore encryption
         url: /asa900/bootmedia-encryption-restore.html
       - title: Return failed part to NetApp
-        url: /asa900/bootmedia-complete-rma.html
+        url: /asa900/bootmedia_complete_rma.html
           # END boot media
    - title: Chassis
      pdf-filename: ASA A900 Chassis
