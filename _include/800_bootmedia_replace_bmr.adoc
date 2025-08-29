@@ -1,0 +1,109 @@
+The boot media is located inside the controller module under the air duct, and is accessed by removing the controller module from the system.
+
+. If you are not already grounded, properly ground yourself.
+. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
+// ontap-systems/issues/343
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
++
+. Unplug the controller module power supplies from the source.
+. Release the power cable retainers, and then unplug the cables from the power supplies.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Remove the cable management device from the controller module and set it aside.
+. Press down on both of the locking latches, and then rotate both latches downward at the same time.
++
+The controller module moves slightly out of the chassis.
++
+image::../media/drw_a800_pcm_remove.png[Releasing the controller module]
++
+
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+Locking latch
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Locking pin
+|===
+
+. Slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+. Place the controller module on a stable, flat surface, and then open the air duct:
+ .. Press in the locking tabs on the sides of the air duct toward the middle of the controller module.
+ .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
++
+image::../media/drw_a800_open_air_duct.png[Opening the air duct]
++
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+Air duct locking tabs
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Slide air duct towards fan modules
+a|
+image:../media/icon_round_3.png[Callout number 3]
+a|
+Rotate air duct towards fan modules
+|===
+
+
+. Locate the boot media in the controller module and replace it:
++
+image::../media/drw_a800_boot_media_replace.png[Replace the boot media]
++
+
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+Air duct
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Riser 3
+a|
+image:../media/icon_round_3.png[Callout number 3]
+a|
+Phillips #1 screwdriver
+a|
+image:../media/icon_round_4.png[Callout number 4]
+a|
+Boot media screw
+a|
+image:../media/icon_round_5.png[Callout number 5]
+a|Boot media
+|===
+
+.. Using a #1 Phillips head screwdriver, remove the screw holding down the boot media and set the screw aside in a safe place.
+.. Grasping the sides of the boot media, gently rotate the boot media up, and then pull the boot media straight out of the socket and set it aside.
+. Install the replacement boot media into the controller module:
+.. Align the edges of the boot media with the socket housing, and then gently push it squarely into the socket.
+.. Rotate the boot media down toward the motherboard.
+.. Secure the boot media to the motherboard using the boot media screw.
++
+Do not over-tighten the screw or you might damage the boot media.
+. Reinstall the riser into the controller module.
+. Close the air duct:
+.. Rotate the air duct downward.
+.. Slide the air duct toward the risers until it clicks into place.
+
+. Install the controller module:
+.. Align the end of the controller module with the opening in the chassis, and then gently push the controller module half-way into the way into the system. 
+.. Recable the controller module, firmly push the cam handle to finish seating the controller module, push the cam handle to the closed position, and then tighten the thumbscrew. 
++
+The controller module begins to boot and stops at the LOADER prompt. 
+
+ 

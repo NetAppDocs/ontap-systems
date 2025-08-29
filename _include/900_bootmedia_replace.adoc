@@ -1,4 +1,3 @@
-You must unplug the controller module, remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.
 
 == Step 1: Remove the controller module
 :icons: font
@@ -59,7 +58,7 @@ You must locate the boot media in the controller and follow the directions to re
 +
 video::c5080658-765e-4d29-8456-adf2000e1495[panopto, title="Animation - Replace boot media"]
 +
-image::../media/drw_a900_remove_boot_dev.png[Remove boot media]
+image::../media/drw_9000_remove_boot_dev.svg[Remove boot media]
 +
 
 [cols="1,4"]
@@ -131,7 +130,7 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
 
 . If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
  .. Boot to Maintenance mode: `boot_ontap maint`
- .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t iniitator adapter_name`
+ .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t initiator adapter_name`
  .. Halt to return to Maintenance mode: `halt`
 
 +
