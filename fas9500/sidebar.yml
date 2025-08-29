@@ -1,104 +1,118 @@
 section: fas9500
 title: FAS9500 systems
 entries:
-  - title: Install and setup
-    pdf-filename: FAS9500 Install and Setup
-    entries:
+ - title: Install and setup
+   pdf-filename: FAS9500 Install and Setup
+   entries:
     - title: Choose install and setup experience
-      url: /fas9500/install_setup.html
+      url: /fas9500/install-setup.html
     - title: Quick steps
-      url: /fas9500/install_quick_guide.html
+      url: /fas9500/install-quick-guide.html
     - title: Video steps
-      url: /fas9500/install_videos.html
+      url: /fas9500/install-videos.html
     - title: Detailed steps
-      url: /fas9500/install_detailed_guide.html
-  - title: Maintain
-    pdf-filename: FAS9500 Maintain
-    entries:
-    - title: Overview
-      url: /fas9500/maintain-overview.html
-      # START boot media
-    - title: Boot media
-      pdf-filename: FAS9500 Boot Media
-      entries:
-      - title: Overview
-        url: /fas9500/bootmedia_replace_overview.html
+      url: /fas9500/install-detailed-guide.html
+ - title: Maintain
+   pdf-filename: FAS9500 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /fas9500/maintain-overview.html
+     # START boot media
+   - title: Boot media - automated recovery
+     pdf-filename: FAS9500 Boot Media Automated
+     entries:
+      - title: Boot media replacement workflow
+        url: /fas9500/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /fas9500/bootmedia-replace-requirements-bmr.html
+      - title: Shut down controller
+        url: /fas9500/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /fas9500/bootmedia-replace-bmr.html
+      - title: Restore image on boot media
+        url: /fas9500/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /fas9500/bootmedia-complete-rma-bmr.html
+   - title: Boot media - manual recovery
+     pdf-filename: FAS9500 Boot Media manual
+     entries:
+      - title: Boot media replacement workflow
+        url: /fas9500/bootmedia-replace-workflow.html
+      - title: Review requirements
+        url: /fas9500/bootmedia-replace-requirements.html
       - title: Check encryption keys
-        url: /fas9500/bootmedia_encryption_preshutdown_checks.html
-      - title: Shut down the impaired controller
+        url: /fas9500/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
         url: /fas9500/bootmedia-shutdown.html
       - title: Replace boot media
-        url: /fas9500/bootmedia_replace.html
-      - title: Boot the recovery image
-        url: /fas9500/bootmedia_recovery_image.html
-      - title: Post boot media replacement steps for OKM, NSE, and NVE
-        url: /fas9500/bootmedia_encryption_restore.html
-      - title: Return the failed part to NetApp
-        url: /fas9500/bootmedia_complete_rma.html
+        url: /fas9500/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /fas9500/bootmedia-recovery-image.html
+      - title: Restore encryption
+        url: /fas9500/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /fas9500/bootmedia-complete-rma.html
         # END boot media
-    - title: Caching module
-      url: /fas9500/caching_module_hot_swap.html
-    - title: Chassis
-      pdf-filename: FAS9500 Chassis
-      entries:
+   - title: Chassis
+     pdf-filename: FAS9500 Chassis
+     entries:
       - title: Overview
         url: /fas9500/chassis_replace_overview.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /fas9500/chassis_replace_shutdown.html
-      - title: Replace the hardware
+      - title: Replace chassis
         url: /fas9500/chassis_replace_move_hardware.html
-      - title: Restoring and verifying configuration
+      - title: Restore and verify configuration
         url: /fas9500/chassis_replace_complete_system_restore_rma.html
       # START controller module replacement
-    - title: Controller module
-      pdf-filename: FAS9500 Controller Module
-      entries:
+   - title: Controller
+     pdf-filename: FAS9500 Controller Module
+     entries:
       - title: Overview
         url: /fas9500/controller_replace_overview.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /fas9500/controller_replace_shutdown.html
-      - title: Replace the controller module hardware
+      - title: Replace controller
         url: /fas9500/controller_replace.html
-      - title: Restore and verify the system configuration
+      - title: Restore and verify system configuration
         url: /fas9500/controller_replace_system_config_restore_and_verify.html
-      - title: Recable the system
+      - title: Recable system
         url: /fas9500/controller_replace_recable_reassign_disks.html
       - title: Complete system restoration
         url: /fas9500/controller_replace_complete_system_restoration_rma.html
       # END controller module replacement
       # START DIMM replace
-    - title: DIMM
-      url: /fas9500/dimm_replace.html
+   - title: DIMM
+     url: /fas9500/dimm_replace.html
       # END DIMM replace
       # START DCPM battery replacement
-    - title: DCPM
-      url: /fas9500/dcpm-nvram11-battery-replace.html
+   - title: DCPM
+     url: /fas9500/dcpm-nvram11-battery-replace.html
       # END DCPM battery replacement
       # START Fan
-    - title: Fan
-      url: /fas9500/fan_swap_out.html
+   - title: Fan
+     url: /fas9500/fan_swap_out.html
       # END fan
-      # START I/O module replace
-    - title: I/O module
-      pdf-filename: FAS9500 I/O module
-      entries:
+      # START I/O module
+   - title: I/O module
+     pdf-filename: FAS9500 I/O module
+     entries:
         - title: Add I/O module
           url: /fas9500/add_io_module.html
         - title: Replace I/O module
           url: /fas9500/pci_cards_and_risers_replace.html
-
-      # END I/O module replace
-  # START LED USB
-    - title: LED USB
-      url: /fas9500/led_module_replace.html
-  # END LED USB
+      # END I/O module
+      # START LED USB
+   - title: LED USB
+     url: /fas9500/led_module_replace.html
+      # END LED USB
       # START NVRAM module and/or NVRAM DIMMs replace
-    - title: NVRAM
-      url: /fas9500/nvram_module_or_nvram_dimm_replacement.html
+   - title: NVRAM
+     url: /fas9500/nvram_module_or_nvram_dimm_replacement.html
       # END NVRAM module and/or NVRAM DIMMs replace
       # START Power supply replacement
-    - title: Power supply
-      url: /fas9500/power_supply_swap_out.html
+   - title: Power supply
+     url: /fas9500/power_supply_swap_out.html
       # END Power supply replace
-    - title: Real-time clock battery
-      url: /fas9500/rtc_battery_replace.html
+   - title: Real-time clock battery
+     url: /fas9500/rtc_battery_replace.html

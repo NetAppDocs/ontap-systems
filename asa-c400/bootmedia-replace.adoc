@@ -4,9 +4,13 @@ sidebar: sidebar
 keywords: asa c400, asa, c400, locate, boot, media, controller, module, fre, map, direction, replace, replace the boot media
 summary: You must locate the boot media in the controller module \(see the FRU map on the controller module\), and then follow the directions to replace it.
 ---
-= Replace the boot media - ASA C400
+= Replace the boot media and prepare for manual boot recovery - ASA C400
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
+
 include::../_include/400_bootmedia_replace.adoc[]

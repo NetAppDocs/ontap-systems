@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.'
 ---
-= Shut down the impaired controller - FAS9500
+= Shut down the controller for manual boot media recovery - FAS9500
 :icons: font
 :imagesdir: ../media/
 
@@ -12,5 +12,7 @@ summary: 'You can shut down or take over the impaired controller using different
 Shut down or take over the impaired controller using one of the following options.
 
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
+
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 
 include::../_include/shutdown_most_frus.adoc[]

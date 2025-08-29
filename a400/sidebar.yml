@@ -1,9 +1,9 @@
 section: a400
 title: AFF A400 systems
 entries:
-  - title: Install and setup
-    pdf-filename: AFF A400 Install and Setup
-    entries:
+ - title: Install and setup
+   pdf-filename: AFF A400 Install and Setup
+   entries:
     - title: Choose install and setup experience
       url: /a400/install-setup.html
     - title: Quick steps
@@ -12,33 +12,50 @@ entries:
       url: /a400/install-videos.html
     - title: Detailed steps
       url: /a400/install-detailed-guide.html
-  - title: Maintain
-    pdf-filename: AFF A400 Maintain
-    entries:
-    - title: Overview
-      url: /a400/maintain-overview.html
-    - title: Boot media
-      pdf-filename: AFF A400 Boot Media
-      entries:
-      - title: Overview
-        url: /a400/bootmedia-replace-overview.html
-      - title: Check encryption keys
-        url: /a400/bootmedia-encryption-preshutdown-checks.html
-      - title: Shut down impaired controller
-        url: /a400/bootmedia-shutdown.html
+ - title: Maintain
+   pdf-filename: AFF A400 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /a400/maintain-overview.html
+    # START boot media
+   - title: Boot media - automated recovery
+     pdf-filename: AFF A400 Boot Media Automated
+     entries:
+      - title: Boot media replacement workflow
+        url: /a400/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /a400/bootmedia-replace-requirements-bmr.html
+      - title: Shut down controller
+        url: /a400/bootmedia-shutdown-bmr.html
       - title: Replace boot media
-        url: /a400/bootmedia-replace.html
+        url: /a400/bootmedia-replace-bmr.html
       - title: Boot recovery image
-        url: /a400/bootmedia-recovery-image-boot.html
-      - title: Switch back MetroCluster config
-        url: /a400/bootmedia-2n-mcc-switchback.html
-      - title: Restore encryption
-        url: /a400/bootmedia-encryption-restore.html
+        url: /a400/bootmedia-recovery-image-boot-bmr.html
       - title: Return failed part to NetApp
-        url: /a400/bootmedia-complete-rma.html
-    - title: Chassis
-      pdf-filename: AFF A400 Chassis
-      entries:
+        url: /a400/bootmedia-complete-rma-bmr.html
+   - title: Boot media - manual recovery
+     pdf-filename: AFF A400 Boot Media
+     entries:
+        - title: Boot media replacement workflow
+          url: /a400/bootmedia-replace-workflow.html
+        - title: Review requirements
+          url:  /a400/bootmedia-replace-requirements.html
+        - title: Check encryption keys
+          url: /a400/bootmedia-encryption-preshutdown-checks.html
+        - title: Shut down controller
+          url: /a400/bootmedia-shutdown.html
+        - title: Replace boot media
+          url: /a400/bootmedia-replace.html
+        - title: Boot recovery image
+          url: /a400/bootmedia-recovery-image-boot.html
+        - title: Restore encryption
+          url: /a400/bootmedia-encryption-restore.html
+        - title: Return failed part to NetApp
+          url: /a400/bootmedia-complete-rma.html
+          # END boot media
+   - title: Chassis
+     pdf-filename: AFF A400 Chassis
+     entries:
       - title: Overview
         url: /a400/chassis-replace-overview.html
       - title: Shut down impaired controller
@@ -47,9 +64,9 @@ entries:
         url: /a400/chassis-replace-move-hardware.html
       - title: Complete chassis replacement
         url: /a400/chassis-replace-complete-system-restore-rma.html
-    - title: Controller
-      pdf-filename: AFF A400 Controller Module
-      entries:
+   - title: Controller
+     pdf-filename: AFF A400 Controller Module
+     entries:
       - title: Overview
         url: /a400/controller-replace-overview.html
       - title: Shut down impaired controller
@@ -62,24 +79,24 @@ entries:
         url: /a400/controller-replace-recable-reassign-disks.html
       - title: Complete system restoration
         url: /a400/controller-replace-restore-system-rma.html
-    - title: DIMM
-      pdf-filename: AFF A400 DIMM
-      url: /a400/dimm-replace.html
-    - title: Fan
-      pdf-filename: AFF A400 Fan Module
-      url: /a400/fan-swap-out.html
-    - title: NVDIMM battery
-      pdf-filename: AFF A400 NVDIMM Battery Battery
-      url: /a400/nvdimm-battery-replace.html
-    - title: NVDIMM
-      pdf-filename: AFF A320 NVDIMM
-      url: /a400/nvdimm-replace.html
-    - title: PCIe or mezzanine card
-      pdf-filename: AFF A400 PCIe or Mezzanine Card
-      url: /a400/pci-cards-and-risers-replace.html
-    - title: Power supply
-      pdf-filename: AFF A400 Power Supply
-      url: /a400/power-supply-replace.html
-    - title: Real-time clock battery
-      pdf-filename: AFF A400 Real-Time Clock Battery
-      url: /a400/rtc-battery-replace.html
+   - title: DIMM
+     pdf-filename: AFF A400 DIMM
+     url: /a400/dimm-replace.html
+   - title: Fan
+     pdf-filename: AFF A400 Fan Module
+     url: /a400/fan-swap-out.html
+   - title: NVDIMM battery
+     pdf-filename: AFF A400 NVDIMM Battery Battery
+     url: /a400/nvdimm-battery-replace.html
+   - title: NVDIMM
+     pdf-filename: AFF A320 NVDIMM
+     url: /a400/nvdimm-replace.html
+   - title: PCIe or mezzanine card
+     pdf-filename: AFF A400 PCIe or Mezzanine Card
+     url: /a400/pci-cards-and-risers-replace.html
+   - title: Power supply
+     pdf-filename: AFF A400 Power Supply
+     url: /a400/power-supply-replace.html
+   - title: Real-time clock battery
+     pdf-filename: AFF A400 Real-Time Clock Battery
+     url: /a400/rtc-battery-replace.html

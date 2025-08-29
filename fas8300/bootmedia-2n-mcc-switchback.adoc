@@ -1,12 +1,16 @@
 ---
 permalink: fas8300/bootmedia-2n-mcc-switchback.html
 sidebar: sidebar
-keywords: fas8300, fas8300, fru, replacement, two-node, metrocluster, configuration, switchback, operation, operating, system, sync-source, storage,virtual, machine, svm, impair, site, serving, data, local, disk, pool, switch, aggregate, switch back aggregates in a two-node metrocluster configuration
+keywords: fas8300, fas8700, fru, replacement, two-node, metrocluster, configuration, switchback, operation, operating, system, sync-source, storage,virtual, machine, svm, impair, site, serving, data, local, disk, pool, switch, aggregate, switch back aggregates in a two-node metrocluster configuration
 summary: After you have completed the FRU replacement in a two-node MetroCluster configuration, you can perform the MetroCluster switchback operation. This returns the configuration to its normal operating state, with the sync-source storage virtual machines \(SVMs\) on the formerly impaired site now active and serving data from the local disk pools.
 ---
-= Switch back aggregates in a two-node MetroCluster configuration - AFF fas8300 and FAS8700
+= Switch back aggregates in a two-node MetroCluster configuration - FAS8300 and FAS8700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+After you have completed the FRU replacement in a two-node MetroCluster configuration, you can perform the MetroCluster switchback operation. This returns the configuration to its normal operating state, with the sync-source storage virtual machines (SVMs) on the formerly impaired site now active and serving data from the local disk pools.
+
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
+
 include::../_include/2n_mcc_switchback.adoc[]
