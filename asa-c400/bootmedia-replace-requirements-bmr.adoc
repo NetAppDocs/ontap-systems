@@ -1,0 +1,20 @@
+---
+permalink: asa-c400/bootmedia-replace-requirements-bmr.html
+sidebar: sidebar
+keywords: asa-c400, replace the boot media
+summary: Before replacing the boot media in your ASA C400 system, ensure you meet the necessary requirements for a successful replacement.
+---
+= Requirements for automated boot media recovery - ASA C400
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before replacing the boot media in your ASA C400, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S (e0M wrench) port on the impaired controller is not faulty, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
+
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+
+include::../_include/bootmedia_replace_requirements_e0s_bmr.adoc[]
+
+.What's next
+
+After you've reviewed the boot media requirements, you link:bootmedia-shutdown-bmr.html[shut down the controller].

@@ -34,6 +34,7 @@ include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
 To replace the NVRAM module, located it in slot 6 in the chassis and follow the specific sequence of steps.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 
 . Remove the target NVRAM module from the chassis:
@@ -94,6 +95,7 @@ DIMM and DIMM ejector tabs
 
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, open the module, and then replace the target DIMM.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Remove the target NVRAM module from the chassis:
 .. Depress the lettered and numbered cam latch.
@@ -150,7 +152,7 @@ DIMM and DIMM ejector tabs
 
 After you replace the FRU, you must reboot the controller module.
 
-. To boot ONTAP from the LOADER prompt, enter `bye`.
+To boot ONTAP from the LOADER prompt, enter `bye`.
 
 == Step 5: Reassigning disks
 
