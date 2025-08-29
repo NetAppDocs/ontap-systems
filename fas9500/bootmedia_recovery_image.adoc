@@ -11,6 +11,10 @@ summary: 'The procedure for booting the impaired node from the recovery image de
 [.lead]
 You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
+
+
+.Steps
 . From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
 +
 The image is downloaded from the USB flash drive.
@@ -77,7 +81,7 @@ If you are prompted to continue with the update, press `y`.
  .. If an environment variable is not set as expected, modify it with the `setenv _environment_variable_name_ _changed_value_` command.
  .. Save your changes using the `saveenv` command.
 . The next depends on your system configuration:
- ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia_encryption_restore.adoc[Post boot media replacement steps for OKM, NSE, and NVE]
+ ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia-encryption-restore.adoc[Post boot media replacement steps for OKM, NSE, and NVE]
  ** If your system does not have onboard keymanager, NSE or NVE configured, complete the steps in this section.
 . From the LOADER prompt, enter the `boot_ontap` command.
 +

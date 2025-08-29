@@ -1,0 +1,19 @@
+---
+permalink: fas8300/bootmedia-replace-bmr.html
+sidebar: sidebar
+keywords: fas8300, fas8700, replace the boot media
+summary: The boot media in your FAS8300 or FAS8700 system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media in the controller module, and then reinstalling the controller module.
+---
+= Replace the boot media for automated boot recovery - FAS8300 and FAS8700
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The boot media in your FAS8300 or FAS8700 system stores essential firmware and configuration data. The replacement process involves removing and opening the controller module, removing the impaired boot media, installing the replacement boot media in the controller module, and then reinstalling the controller module.
+
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+
+include::../_include/400_bootmedia_replace_bmr.adoc[]
+
+.What's next
+After physically replacing the impaired boot media, link:bootmedia-recovery-image-boot-bmr.html[restore the ONTAP image from the partner node].
