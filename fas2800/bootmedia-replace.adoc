@@ -4,12 +4,14 @@ sidebar: sidebar
 keywords: fas2800, replace, boot, media, controller, module, fru map
 summary: 'You must locate the boot media in the controller and follow the directions to replace it.'
 ---
-= Replace the boot media - FAS2820
+= Replace the boot media and prepare for manual boot recovery - FAS2820
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You must remove and open the impaired controller module, locate and replace the boot media in the controller, transfer the boot image to a USB drive, insert the USB drive in the controller, and then boot the controller.
+
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 
 == Step 1: Remove the controller module
 
