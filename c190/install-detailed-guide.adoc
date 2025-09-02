@@ -167,7 +167,6 @@ NOTE: If connecting to an optical switch, insert the SFP into the controller por
 .About this task
 Refer to the following cabling illustrations when cabling between the controllers and the switches.
 
-[horizontal]
 UTA2 data network configurations:: 
 +
 image::../media/drw_c190_tnsc_unified_network_cabling_animated_gif.png[Two-node switchless cluster unified network cabling animation]
@@ -186,7 +185,6 @@ image:../media/drw_c190_u_tnsc_clust_cbling.png[Cluster interconnect cabling]
 +
 
 . Cable the controllers to either a UTA2 data network or an Ethernet network.
-[horizontal]
 UTA2 data network configurations:: 
 Use one of the following cable types to cable the e0c/0c and e0d/0d or e0e/0e and e0f/0f data ports to your host network. 
 +
@@ -224,7 +222,6 @@ NOTE: If connecting to an optical switch, insert the SFP into the controller por
 .About this task
 Refer to the following cabling illustrations when cabling between the controllers and the switches.
 
-[horizontal]
 Unified network configurations::
 +
 image::../media/drw_c190_switched_unified_network_cabling_animated_gif.png[Switched cluster unified network cabling animation]
@@ -243,7 +240,6 @@ Perform the following steps on each controller module.
 image:../media/drw_c190_u_switched_clust_cbling.png[Clusterinterconnect cabling]
 +
 . Cable the controllers to either a UTA2 data network or an Ethernet network.
-[horizontal]
 UTA2 data network configurations::
 Use one of the following cable types to cable the e0c/0c and e0d/0d or e0e/0e and e0f/0f data ports to your host network.
 +
