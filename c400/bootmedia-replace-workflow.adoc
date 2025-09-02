@@ -1,0 +1,43 @@
+---
+permalink: c400/bootmedia-replace-workflow.html
+sidebar: sidebar
+keywords: aff c400, replace the boot media
+summary: Get started with replacing the boot media in your AFF C400 storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
+---
+= Boot media manual recovery workflow - AFF C400
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Get started with replacing the boot media in your AFF C400 storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
+
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements.html[Review the boot media requirements]
+[role="quick-margin-para"]
+Review the requirements for replacing the boot media.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-encryption-preshutdown-checks.html[Check encryption key support and status]
+[role="quick-margin-para"]
+Determine whether the system has security key manager enabled or encrypted disks.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:bootmedia-shutdown.html[Shut down the controller]
+[role="quick-margin-para"]
+Shut down the controller when when you need to replace the boot media.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia-replace.html[Replace the boot media]
+[role="quick-margin-para"]
+Remove the failed boot media from the System Management module and install the replacement boot media, and then transfer an ONTAP image using a USB flash drive.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:bootmedia-recovery-image-boot.html[Boot the recovery image]
+[role="quick-margin-para"]
+Boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:bootmedia-encryption-restore.html[Restore encryption]
+[role="quick-margin-para"]
+Restore the onboard key manager configuration or the external key manager from the ONATP boot menu.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:bootmedia-complete-rma.html[Return the failed part to NetApp]
+[role="quick-margin-para"]
+Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.

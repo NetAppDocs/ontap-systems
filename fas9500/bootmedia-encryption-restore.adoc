@@ -1,0 +1,16 @@
+---
+permalink: fas9500/bootmedia-encryption-restore.html
+sidebar: sidebar
+keywords:
+summary: 'Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager \(OKM\), NetApp Storage Encryption \(NSE\) or NetApp Volume Encryption \(NVE\) enabled.'
+---
+= Restore encryption - FAS9500
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Restore encryption on the replacement boot media.
+
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
+
+include::../_include/encryption_restore_bootmedia.adoc[]
