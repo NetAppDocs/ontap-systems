@@ -172,7 +172,6 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .About this task
 You can use either the UTA2 data network ports or the ethernet data network ports  to connect the controllers to your host network. Refer to the following cabling illustrations when cabling between the controllers and the switches.
 
-[horizontal]
 UTA2 data network configurations:: 
 +
 image::../media/drw_2700_tnsc_unified_network_cabling_animated_gif.png[Two-node switchless cluster cabling in a unified network configurtion]
@@ -192,7 +191,6 @@ image:../media/drw_c190_u_tnsc_clust_cbling.png[Cluster interconnect cabling]
 +
 
 . Do one of the following:
-[horizontal]
 UTA2 data network configurations:: 
 Use one of the following cable types to cable the UTA2 data ports to your host network. 
 +
@@ -231,7 +229,6 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .About this task
 You can use either the UTA2 data network ports or the ethernet data network ports  to connect the controllers to your host network. Refer to the following cabling illustrations when cabling between the controllers and the switches.
 
-[horizontal]
 Unified network cabling::
 +
 image::../media/drw_2700_switched_unified_network_cabling_animated_gif.png[Switched luster unified network cabling]
@@ -250,7 +247,6 @@ Perform the following steps on each controller module.
 image:../media/drw_c190_u_switched_clust_cbling.png[Clusterinterconnect cabling]
 +
 . Do one of the following:
-[horizontal]
 UTA2 data network configurations::
 Use one of the following cable types to cable the UTA2 data ports to your host network.
 +
