@@ -124,9 +124,9 @@ This reinitializes the PCIe cards and other components and reboots the node.
 +
 * If you removed a storage I/O module and installed a new NIC I/O module, use the following network command for each port:
 +
-`storage port modify -node _<node name>__ -port _<port name>__ -mode network`
+`storage port modify -node <node name>__ -port <port name>__ -mode network`
 
-* If you removed a NIC I/O module and installed a storage I/O module, install and cable your NS224 shelves, as described in link:../ns224/hot-add-shelf-overview.html[Hot-add workflow].
+* If you removed a NIC I/O module and installed a storage I/O module, install and cable your NX224 shelves, as described in link:../nx224/hot-add-shelf-overview.html[Hot-add workflow].
 
 . Repeat these steps for controller B.
 --

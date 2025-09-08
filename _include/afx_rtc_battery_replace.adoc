@@ -63,7 +63,7 @@ The controller module begins to boot as soon as it is fully seated in the enclos
 NOTE: After replacing the RTC battery, inserting controller and powering on first BIOS reset, you will see the following error messages: 
 `RTC date/time error. Reset date/time to default`
 `RTC power failure error`
-These messages are excpected and you can continue with this procedure.
+These messages are expected and you can continue with this procedure.
 
 . Check the date and time on the healthy controller with the `cluster date show` command.
 +
@@ -72,6 +72,7 @@ NOTE: If your system stops at the boot menu, select the option for  `Reboot node
  .. At the LOADER prompt on the target controller, check the time and date with the `show date` command.
  .. If necessary, modify the date with the `set date mm/dd/yyyy` command.
  .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
+ ... You can get the current GMT from the partner node with the `date -u` command.
 
 . Confirm the date and time on the target controller.
 . At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the controller reboot.

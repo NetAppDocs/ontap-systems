@@ -155,18 +155,6 @@ key manager is configured.
 Entering Bootmenu Option 11...
 ....
 
-.. The next step depends on which version of ONTAP your system is running:
-+
-[options="header" cols="1,2"]
-|===
-|If your system is running...| Do this...
-a|
-ONTAP 9.17.1 and later
-a|
-Proceed to the next step.
-
-|===
-
 .. Depending on whether the key is successfully restored, take one of the following actions:
 
 * If you see `kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696` in the output, the EKM configuration has been successfully restored. 

@@ -32,11 +32,11 @@ Press Ctrl-C, and then respond `y` when prompted.
 a|
 System prompt or password prompt (enter system password)
 a|
-Halt or take over the impaired controller from the healthy controller:
+Take over or halt the impaired controller from the healthy controller:
 
 `storage failover takeover -ofnode impaired_node_name -halt true`
 
-When the impaired controller shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
+The `-halt true` parameter brings you to the LOADER prompt.
 
 
 |===

@@ -1,4 +1,4 @@
-You must install new licenses for the node if the impaired node was using ONTAP features that require a standard (node-locked) license. For features with standard licenses, each node in the cluster should have its own key for the feature.
+When you replace the system management module, the controller's system serial number (SSN) changes. You must install new licenses for the node if the impaired node was using ONTAP features that require a standard (node-locked) license. For features with standard licenses, each node in the cluster should have its own key for the feature.
 
 .About this task
 Until you install license keys, features requiring standard licenses continue to be available to the node. However, if the node was the only node in the cluster with a license for the feature, no configuration changes to the feature are allowed. Also, using unlicensed features on the node might put you out of compliance with your license agreement, so you should install the replacement license key or keys on the for the node as soon as possible.
@@ -9,7 +9,7 @@ A NetApp License File (NLF) for the new system serial number is required. For mo
 
 You have a 90-day grace period in which to install the license keys. After the grace period, all old licenses are invalidated. After a valid license key is installed, you have 24 hours to install all of the keys before the grace period ends.
 
-NOTE: If your system was initially running ONTAP 9.15.1 or later, use the procedure documented in  link:https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system#Internal_Notes[Post Motherboard Replacement Process to update Licensing on a AFF/FAS system^]. If you are unsure of the initial ONTAP release for your system, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for more information. 
+NOTE: If your system was initially running ONTAP 9.15.1 or later, use the procedure documented in  link:https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system[Post Motherboard Replacement Process to update Licensing on a AFF/FAS system^]. If you are unsure of the initial ONTAP release for your system, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for more information. 
 
 .Steps
 
