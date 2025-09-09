@@ -1,4 +1,3 @@
-After you have completed the FRU replacement in a two-node MetroCluster configuration, you can perform the MetroCluster switchback operation. This returns the configuration to its normal operating state, with the sync-source storage virtual machines (SVMs) on the formerly impaired site now active and serving data from the local disk pools.
 
 This task only applies to two-node MetroCluster configurations.
 

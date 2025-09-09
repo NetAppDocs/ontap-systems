@@ -65,7 +65,7 @@ Both numbers on the digital display start blinking and the amber LED on the oper
 You must turn off both power switches, wait the appropriate amount of time, and then turn them back on to complete the power cycle.
 
  ** If ONTAP is not yet running or you are hot-adding a shelf (that has not yet been cabled to the system), wait at least 10 seconds.
- ** If ONTAP is running (controllers are available to serve data), and all disk drives in the shelf are unowned, spares, or part of offlined aggregate(s), wait at least 70 seconds.
+ ** If ONTAP is running (controllers are available to serve data), and all disk drives in the shelf are unowned, spares, or part of offlined aggregate(s), wait at least 120 seconds.
 +
 This time allows ONTAP to properly delete the old shelf address and update the copy of the new shelf address.
 

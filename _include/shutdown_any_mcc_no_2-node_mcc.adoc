@@ -15,9 +15,13 @@ The following AutoSupport message suppresses automatic case creation for two hou
 +
 `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. Disable automatic giveback from the console of the healthy controller: 
+. Disable automatic giveback:
+.. Enter the following command from the console of the healthy controller: 
 +
-`storage failover modify –node local -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
+
+.. Enter `y` when you see the prompt _Do you want to disable auto-giveback?_
+
 . Take the impaired controller to the LOADER prompt:
 +
 [%header,cols="1,2"]
