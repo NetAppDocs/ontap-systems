@@ -1,45 +1,29 @@
-The System Management module, located at the back of the controller in slot 8,  contains onboard components for system management, as well as ports for external management. The target controller must be shut down to replace an impaired System Management module or replace the boot media.
-
-The System Management module has the following onboard components:
-
-** Boot media, allowing boot media replacement without removing the controller module.
-** BMC
-** Management switch
-
-The System Management module also contains the following ports for external management:
-
-** RJ45 Serial
-** USB Serial (Type-C)
-** USB Type-A (Boot recovery)
-** e0M RJ45 Ethernet
-
-.Before you begin
-* This procedure uses the following terminology:
- ** The impaired controller is the controller on which you are performing maintenance.
- ** The healthy controller is the HA partner of the impaired controller.
- * All other system components must be working properly.
-* The partner controller must be able to take over the impaired controller.
-* You must replace the failed component with a replacement FRU component you received from your provider.
-
-== Step 1: Shut down the impaired controller
-
-Shut down or take over the impaired controller.
-
-include::../_include/shutdown_most_frus.adoc[]
-
-== Step 2: Replace the impaired System Management module
 
 Replace the impaired system management module.
 
-. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-// ontap-systems-internal/issues/1151
+.Steps
+
+. Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 +
-NOTE: Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
 +
 
-+
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
+[cols="1,4"]
 
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM attention LED
+|===
+
+* If the NV LED is off, go to the next step.
+* If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
++
 . Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
 
 . Unplug the controller's PSUs.
@@ -50,9 +34,7 @@ NOTE: If your system has DC power, disconnect the power block from the PSUs.
 
 . Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 
-. Remove the System Management module:
-
-.. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
+. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 +
 image::../media/drw_70-90_sys-mgmt_remove_ieops-1817.svg[Replace the System Management module]
 
@@ -120,20 +102,3 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 + 
 
  . Rotate the cable management tray up to the closed position.
-
-== Step 3: Reboot the controller module
-
-Reboot the controller module.
-
-. Enter _bye_ at the LOADER prompt.
-. Return the controller to normal operation by giving back its storage: _storage failover giveback -ofnode _impaired_node_name__
-. Restore automatic giveback by using the `storage failover modify -node local -auto-giveback true` command.
-. If an AutoSupport maintenance window was triggered, end it by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
-
-== Step 4: Install licenses and register serial number
-
-include::../_include/install_licenses_serial_number-system_mgmt_module.adoc[]
-
-== Step 5: Return the failed part to NetApp
-
-include::../_include/complete_rma.adoc[]

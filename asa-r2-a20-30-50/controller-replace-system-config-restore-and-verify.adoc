@@ -2,7 +2,7 @@
 permalink: asa-r2-a20-30-50/controller-replace-system-config-restore-and-verify.html
 sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, restore and verify the system configuration, verify and set the ha state of the controller module
-summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
+summary: Verify that the controller’s HA configuration is active and functioning correctly in your ASA A20, ASA A30, or ASA A50 storage system, and confirm that the system’s adapters list all the paths to the disks.
 ---
 = Restore and verify the system configuration - ASA A20, ASA A30, and ASA A50
 :icons: font

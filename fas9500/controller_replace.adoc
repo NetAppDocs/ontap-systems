@@ -19,6 +19,7 @@ video::dc8d4acb-e061-45dd-8a0e-ae78004b6974[panopto, title="Animation - Replace 
 
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
@@ -64,6 +65,7 @@ Controller module cover locking button
 
 You must locate the boot media and follow the directions to remove it from the old controller and insert it in the new controller.
 
+.Steps
 . Locate the boot media using the following illustration or the FRU map on the controller module:
 
 +
@@ -103,6 +105,7 @@ To move the DIMMs, locate and move them from the old controller into the replace
 
 NOTE: The VER2 controller has fewer DIMM sockets. There is no reduction in the number of DIMMs supported or change in the DIMM socket numbering. When moving the DIMMs to the new controller module, install the DIMMs into the same socket number/location as the impaired controller module.  See the FRU map diagram on the VER2 controller module for DIMM socket locations.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Locate the DIMMs on your controller module.
 . Note the orientation of the DIMM in the socket so that you can insert the DIMM in the replacement controller module in the proper orientation.
@@ -152,6 +155,7 @@ For HA pairs with two controller modules in the same chassis, the sequence in wh
 
 NOTE: The system might update system firmware when it boots. Do not abort this process. The procedure requires you to interrupt the boot process, which you can typically do at any time after prompted to do so. However, if the system updates the system firmware when it boots, you must wait until after the update is complete before interrupting the boot process.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . If you have not already done so, replace the cover on the controller module.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

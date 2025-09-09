@@ -4,7 +4,6 @@
 
 The boot media is located inside the System Management module and is accessed by removing the module from the system.
 
-
 image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[Boot media replace graphic]
 
 [cols="1,4"]
@@ -23,12 +22,16 @@ a|
 Boot media
 |===
 
+.Steps
 . If you are not already grounded, properly ground yourself.
-. Unplug the power supply cables from the PSUs from the controller and then pull the controller module, at the front of the system, out a few inches.
+
+. Unplug the power supply cables from the PSUs.
 
 +
 NOTE: If your storage system has DC power supplies, disconnect the power cable block from the power supply units (PSUs).
 +
+
+. Remove the System Management module:
 .. Remove any cables connected to the System Management module. Make sure that you label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 .. Depress the System Management cam button.
@@ -63,6 +66,7 @@ The replacement boot media that you installed is without an ONTAP image. You can
  * If your system is an HA pair, you must have a network connection between the node management ports of the controllers (typically the e0M interfaces).
 
 .Steps
+
 . Download and copy the appropriate service image from the https://mysupport.netapp.com/[NetApp Support Site] to the USB flash drive.
 .. Download the service image from the Downloads link on the page, to your work space on your laptop.
 .. Unzip the service image.
@@ -81,7 +85,7 @@ The USB flash drive should have the appropriate ONTAP image of what the impaired
 +
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
- . Plug the power cables back into the PSU and gently reseat and lock the controller module at the front of the system. 
+ . Plug the power cables back into the PSU. 
 +
 The system will begin to reboot, typically to the LOADER prompt.
 
@@ -90,5 +94,7 @@ The system will begin to reboot, typically to the LOADER prompt.
  . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
+
+// 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.
 
 

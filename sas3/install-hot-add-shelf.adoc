@@ -206,9 +206,7 @@ NOTE: Firmware updates can take up to 30 minutes.
 
 .Before you begin
 
-
-* You must have met the requirements for completing this procedure in the <<before_you_begin,Before you begin>> section and installed, powered on, and set shelf IDs for each disk shelf as instructed in <<install_disk_shelves_for_a_hot_add,Install disk shelves with IOM12 modules for a hot-add>>.
-
+* You must have met the requirements for completing this procedure and installed, powered on, and set shelf IDs for each disk shelf as instructed in <<install_disk_shelves_for_a_hot_add,Install disk shelves with IOM12 modules for a hot-add>>.
 
 .Steps
 
@@ -306,8 +304,6 @@ a|
 |===
 
 . If you hot-added a disk shelf with mini-SAS HD SAS optical cables to a stack of disk shelves connected with SAS copper cables, replace the SAS copper cables; otherwise, go to the next step.
-+
-The stack must meet the requirements stated in the <<before_you_begin,Before you begin>> section of this procedure.
 +
 Replace cables one at a time and make sure that you wait at least 70 seconds between disconnecting a cable and connecting a new one.
 

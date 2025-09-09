@@ -2,6 +2,7 @@
 == Step 1: Boot the controllers and give back the controllers 
 After the controllers reboot, boot ONTAP and give back the controllers.
 
+.Steps
 . Check the console output:
 .. If the controller boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
 
@@ -16,6 +17,7 @@ After the controllers reboot, boot ONTAP and give back the controllers.
 
 After the controller has given back the storage, you should check the overall health with https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor].
 
+.Steps
 . After the giveback is complete, run Active IQ Config Advisor to verify the health of the storage system.
 . Correct any issues you encounter.
 
