@@ -49,9 +49,9 @@ NOTE: You will be prompted twice for the passphrase.
 +
 `admin`
 
-. Give back only the CFO aggregates (the root aggregate): 
+. Give back only the root with override-destination-checks option: 
 +
-`storage failover giveback -fromnode local -only-cfo-aggregates true`
+`storage  failover giveback -ofnode impaired-node -only-root true -override-destination-checks true`
 +
 * If you encounter errors, contact https://support.netapp.com[NetApp Support].
 . Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
@@ -80,6 +80,11 @@ If the _Restored_ column shows anything but _true_, contact https://support.neta
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
+. If the HA internconnect links were taken down, bring them back up:
++
+`system ha interconnect link on -node healthy-node -link 0`
++
+`system ha interconnect link on -node healthy-node -link 1`
 --
 
 ====
