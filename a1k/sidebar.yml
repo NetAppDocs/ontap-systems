@@ -57,6 +57,21 @@ entries:
         - title: Return failed part to NetApp
           url: /a1k/bootmedia-complete-rma.html
           # END boot media
+   - title: Chassis
+     pdf-filename: AFF A1K Chassis
+     entries:
+        - title: Chassis replacement workflow
+          url: /a1k/chassis-replace-workflow.html
+        - title: Review requirements
+          url: /a1k/chassis-replace-requirements.html
+        - title: Prepare to replace
+          url: /a1k/chassis-replace-prepare.html
+        - title: Shut down controllers
+          url: /a1k/chassis-replace-shutdown.html
+        - title: Replace chassis
+          url: /a1k/chassis-replace-move-hardware.html
+        - title: Complete chassis replacement
+          url: /a1k/chassis-replace-complete-system-restore-rma.html
    - title: Controller
      pdf-filename: AFF A1K Controller Module
      entries:
