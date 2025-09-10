@@ -1,4 +1,4 @@
-The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
+The chassis is the physical enclosure housing all the system components such as the fans, controller/CPU unit, NVRAM12, system management module, I/O cards and blanking modules, and PSUs.
 
 Review the following requirements.
 
@@ -10,6 +10,5 @@ Review the following requirements.
 
 * You can use the chassis replacement procedure with all versions of ONTAP supported by your system.
 
-* The chassis replacement procedure is written with the assumption that you are moving the bezel, NVMe drives, and controller modules to the new chassis, and that the replacement chassis is a new component from NetApp.
+* The chassis replacement procedure is written with the assumption that you are moving the bezel, fans, controller module, NVRAM12, system management module, I/O cards and blanking modules, and PSUs to the new chassis, and that the replacement chassis is a new component from NetApp.
 
-* The chassis replacement procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.

@@ -28,14 +28,12 @@ You should verify that you received the necessary components, remove them from p
 
 . Remove the contents from the packaging and use the packaging to returning the failed component to NetApp.
 
-== Step 3: Label the cables and controller modules
+== Step 3: Label the cables
 
-You should label the cables and controller modules before removing them from the controller modules or chassis.
+You should label the cables before removing them from the I/O modules on the back of the system.
 
 .Steps
 . Label all the cables associated with the storage system. This aids recabling later in this procedure.
-
-. Label the controller modules.
 
 . If you are not already properly grounded, ground yourself.
 
