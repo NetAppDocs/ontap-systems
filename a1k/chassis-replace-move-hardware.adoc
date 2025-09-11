@@ -9,7 +9,7 @@ summary: Replace the chassis of your AFF A1K system when a hardware failure requ
 :imagesdir: ../media/
 
 [.lead]
-Replace the chassis of your AFF A1K system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components. 
+Replace the chassis of your AFF A1K system when a hardware failure requires it. The replacement process involves removing the controller and fans from the front of the chassis, and removing the  power supply units (PSUs), NVRAM12, I/O modules and blanks, and system management module and then installing the replacement chassis, and reinstalling the chassis components.
 
 include::../_include/a1k_chassis_replace_move_hardware.adoc[]
 

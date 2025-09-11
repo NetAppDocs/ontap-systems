@@ -4,20 +4,20 @@
 You need to remove all four power supply units (PSUs), two per controller, before removing the controller.  Removing them lightens the overall weight of each controller.
 
 .Steps
-. Remove the four PSUs:
+. Remove the PSUs:
 
 .. If you are not already grounded, properly ground yourself.
-.. Unplug power cords from the controller module PSU.
+.. Unplug power cords from the the PSUs.
 
 +
 If your system has DC power, disconnect the power block from the PSUs. 
 
-.. Remove the PSU from the controller by rotating the PSU handle up so that you can pull the PSU out, press the PSU locking tab, and then pull PSU out of the controller module.
+.. Remove the two PSUs from the rear of the enclosure by rotating the PSU handle up so that you can pull the PSU out, press the PSU locking tab, and then pull PSU out of the controller module.
 +
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 
 +
-image::../media/drw_a70-90_psu_remove_replace_ieops-1368.svg[Replace PSU]
+image::../media/drw_a1k_psu_remove_replace_ieops-1378.svg[Remove or replace PSU]
 
 +
 [cols="1,4"]
@@ -28,7 +28,7 @@ Terracotta PSU locking tab
 |===
 
 +
-.. Repeat these steps for the remaining PSUs. 
+.. Repeat these steps for the second PSU.
 
 
 . Remove the cables:
@@ -41,75 +41,130 @@ NOTE: Cables should have been labeled at the beginning of this procedure.
 +
 .. Remove the cable management device from the controller modules and set them aside. 
 
-== Step 2:  Remove the controller modules and drives
+== Step 2: Remove the I/O cards, NVRAM12, and system management module
 
-Remove the controllers from the chassis and then remove the drives from the chassis.
-
-.Steps
-. Check the that amber NVRAM status LED located in slot 4/5 on the back of each controller module is off. Look for the NV icon.
-+
-image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
+. Remove the target I/O module from the enclosure:
 +
 
-[cols="1,4"]
-
-|===
-a|
-image:../media/icon_round_1.png[Callout number 1] 
-a|
-NVRAM status LED
-a|
-image:../media/icon_round_2.png[Callout number 2] 
-a|
-NVRAM attention LED
-|===
-
-* If the NVRAM LED is off, go to the next step.
-* If the NVRAM LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact http://mysupport.netapp.com/[NetApp Support Site^] for assistance.
-
-. Remove the controller modules:
-
-.. Press down on both of the locking latches on the controller, and then rotate both latches downward at the same time.
+image:../media/drw_a1k_io_remove_replace_ieops-1382.svg[Remove I/O module]
 +
-The controller module moves slightly out of the chassis.
-+
-image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[Controller remove graphic]
-+
-
 [cols="1,4"]
 |===
 a|
 image:../media/icon_round_1.png[Callout number 1] 
 a|
-Locking latch
+I/O cam latch
+|===
+
+.. Depress the cam button on the target module.
+.. Rotate the cam latch away from the module as far as it will go.
+.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
++
+Make sure that you keep track of which slot the I/O module was in.
+
+.. Set the I/O module aside and repeat these steps for any other I/O modules.
+
+. Remove the NVRAM12 module:
+ .. Depress the locking cam button.
++
+The cam button moves away from the enclosure.
+
+ .. Rotate the cam latch down as far as it will go.
++
+ .. Remove the impaired NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
++
+image::../media/drw_a1k_nvram12_remove_replace_ieops-1380.svg[Remove the NVRAM12 module and DIMMs]
++
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] |
+Cam locking button
 a|
 image:../media/icon_round_2.png[Callout number 2] 
 a|
-Locking pin
+DIMM locking tabs
 |===
 
-.. Slide the controller module out of the chassis by the locking latches, and place it on a flat, stable surface.
+.. Set the NVRAM module on a stable surface.
+
+. Remove the system management module:
+.. Depress the cam button on the System Management module.
+
+.. Rotate the cam lever down as far as it will go.
+ .. Loop your finger into the hole on the cam lever and pull the module straight out of the system.
+.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
+
 +
-Make sure that you support the bottom of the controller module as you slide it out of the chassis.
-
-.. Repeat these steps for the second controller module.
-
-. Remove the drives:
-.. Gently remove the bezel from the front of the system.
-.. Press the release button at the top of the drive carrier face below the LEDs.
-
- .. Pull the cam handle to its fully open position to unseat the drive from the midplane, and then gently slide the drive out of the chassis.
+image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[Boot media replace]
 +
-The drive should disengage from the chassis, allowing it to slide free of the chassis.
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+System Management module cam latch
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Boot media locking button
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Boot media
+|===
+
+== Step 3: Remove the fans
+
+. Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
+. Identify the fan module that you must replace by checking the console error messages and looking at the Attention LED on each fan module.
 +
-NOTE: Drives are fragile. Always use two hands to support the drive weight when removing a drive to prevent damage to them.
+Facing the controller module, fan modules are numbered 1 through 5, from left to right. 
++
 
+NOTE: There is a single LED for each fan. It is green when the fan is functioning correctly and amber when not.
+ 
+. Press the black button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
++
+IMPORTANT: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 
-.. Keep track of which drive bay each drive was in and set the drive aside on a static-free cart or table.
++
 
-.. Repeat this step for the remaining drives in the chassis.
+image::../media/drw_a1k_fan_remove_replace_ieops-1376.svg[Fan replace]
++
 
-== Step 3: Replace the impaired chassis 
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+Black release button
+|===
+
+. Set the fan module aside.
+. Repeat these steps to remove the rest of the fan modules.
+
+== Step 4: Remove the controller module
+
+. On the front of the unit, hook your fingers into the holes in the locking cams, squeeze the tabs on the cam levers, and gently, but firmly rotate both latches toward you at the same time.
++
+The controller module moves slightly out of the enclosure.
++
+image::../media/drw_a1k_pcm_remove_replace_ieops-1375.svg[Controller remove graphic]
++
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+|
+Locking cam latches
+|===
+
+. Slide the controller module out of the enclosure and place it on a flat, stable surface.
++
+Make sure that you support the bottom of the controller module as you slide it out of the enclosure.
+
+== Step 5: Replace the impaired chassis 
 
 Remove the impaired chassis and install the replacement chassis.
 
