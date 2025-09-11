@@ -1,0 +1,13 @@
+= Automated boot media recovery workflow - A5X
+
+This workflow describes the steps for automated boot media recovery in ONTAP 9.17.1 and later for A5X systems.
+
+. Review requirements for boot media replacement.
+. Perform pre-shutdown encryption checks.
+. Shut down the controller.
+. Replace the boot media.
+. Boot the recovery image.
+. Restore encryption.
+. Complete the RMA process.
+
+NOTE: For manual recovery, refer to the manual boot recovery procedure.
