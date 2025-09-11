@@ -1,7 +1,7 @@
 
 == Step 1: Remove the PSUs and cables
 
-You need to remove all four power supply units (PSUs), two per controller, before removing the controller.  Removing them lightens the overall weight of each controller.
+You need to remove all four power supply units (PSUs), two per controller, before removing the controller.  Removing them lightens the overall weight of the controller.
 
 .Steps
 . Remove the PSUs:
@@ -12,7 +12,7 @@ You need to remove all four power supply units (PSUs), two per controller, befor
 +
 If your system has DC power, disconnect the power block from the PSUs. 
 
-.. Remove the two PSUs from the rear of the enclosure by rotating the PSU handle up so that you can pull the PSU out, press the PSU locking tab, and then pull PSU out of the controller module.
+.. Remove the two PSUs from the rear of the chassis by rotating the PSU handle up so that you can pull the PSU out, press the PSU locking tab, and then pull PSU out of the controller module.
 +
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 
@@ -43,7 +43,7 @@ NOTE: Cables should have been labeled at the beginning of this procedure.
 
 == Step 2: Remove the I/O cards, NVRAM12, and system management module
 
-. Remove the target I/O module from the enclosure:
+. Remove the target I/O module from the chassis:
 +
 
 image:../media/drw_a1k_io_remove_replace_ieops-1382.svg[Remove I/O module]
@@ -58,7 +58,7 @@ I/O cam latch
 
 .. Depress the cam button on the target module.
 .. Rotate the cam latch away from the module as far as it will go.
-.. Remove the module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
+.. Remove the module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
 +
 Make sure that you keep track of which slot the I/O module was in.
 
@@ -67,11 +67,11 @@ Make sure that you keep track of which slot the I/O module was in.
 . Remove the NVRAM12 module:
  .. Depress the locking cam button.
 +
-The cam button moves away from the enclosure.
+The cam button moves away from the chassis.
 
  .. Rotate the cam latch down as far as it will go.
 +
- .. Remove the impaired NVRAM module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the enclosure.
+ .. Remove the impaired NVRAM module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
 +
 image::../media/drw_a1k_nvram12_remove_replace_ieops-1380.svg[Remove the NVRAM12 module and DIMMs]
 +
@@ -148,7 +148,7 @@ Black release button
 
 . On the front of the unit, hook your fingers into the holes in the locking cams, squeeze the tabs on the cam levers, and gently, but firmly rotate both latches toward you at the same time.
 +
-The controller module moves slightly out of the enclosure.
+The controller module moves slightly out of the chassis.
 +
 image::../media/drw_a1k_pcm_remove_replace_ieops-1375.svg[Controller remove graphic]
 +
@@ -160,9 +160,9 @@ image:../media/icon_round_1.png[Callout number 1]
 Locking cam latches
 |===
 
-. Slide the controller module out of the enclosure and place it on a flat, stable surface.
+. Slide the controller module out of the chassis and place it on a flat, stable surface.
 +
-Make sure that you support the bottom of the controller module as you slide it out of the enclosure.
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
 
 == Step 5: Replace the impaired chassis 
 
