@@ -1,3 +1,4 @@
+
 == Step 1: Remove the controller module
 
 include::../_include/a5x_controller_remove_physical.adoc[]
@@ -11,7 +12,7 @@ Move the power supplies to the replacement controller.
 +
 CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_a5x_psu_remove_replace_ieops-xxxx.svg[PSU remove]
+image::../media/drw_a5x_psu_remove_replace_ieops-1368.svg[PSU remove]
 
 +
 [cols="1,4"]
@@ -40,7 +41,7 @@ Move the fans modules to the replacement controller module.
 .Steps
 . Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
 +
-image::../media/drw_a5x_fan_remove_replace_ieops-xxxx.svg[Remove fans]
+image::../media/drw_a5x_fan_remove_replace_ieops-1366.svg[Remove fans]
 +
 [cols="1,4"]
 
@@ -103,7 +104,7 @@ Move the DIMMs to the replacement controller module.
 .. Lift the air duct and rotate it upward as far as it will go.
 . Locate the system DIMMs on the motherboard, using the DIMM map on top of the air duct.
 +
-The DIMM locations for the AFF A5X are listed in the following table:
+The DIMM locations, by model, are listed in the following table:
 
 +
 [cols="1,4"]
@@ -149,7 +150,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 Move the I/O modules to the replacement controller module.
 
-image::../media/drw_a5x_io_remove_replace_ieops-xxxx.svg[Remove I/O module]
+image::../media/drw_a70_90_io_remove_replace_ieops-1532.svg[Remove I/O module]
 
 [cols="1,4"]
 
@@ -185,7 +186,7 @@ NOTE: To move the I/O modules from slots 6 and 7, you must move the carrier cont
 
 Move the System Management module to the replacement controller module.
 
-image::../media/drw_a5x_sys-mgmt_remove_ieops-xxxx.svg[Move the System Management module]
+image::../media/drw_a5x_sys-mgmt_remove_ieops-1817.svg[Move the System Management module]
 
 [cols="1,4"]
 
@@ -211,7 +212,7 @@ System Management module cam latch
 
 Move the NVRAM module to the replacement controller module.
 
-image::../media/drw_a5x_nvram12_remove_replace_ieops-xxxx.svg[Remove the NVRAM12 module and DIMMs]
+image::../media/drw_a5x_nvram12_remove_replace_ieops-1370.svg[Remove the NVRAM12 module and DIMMs]
 
 [cols="1,4"]
 
@@ -245,3 +246,4 @@ The cam button moves away from the chassis.
 == Step 9: Install the controller module
 
 include::../_include/a5x_controller_install_controller_replace.adoc[]
+ 

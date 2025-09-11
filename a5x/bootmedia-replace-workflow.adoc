@@ -1,15 +1,15 @@
 ---
-permalink: a70-90/bootmedia-replace-workflow.html
+permalink: a5x/bootmedia-replace-workflow.html
 sidebar: sidebar
-keywords: aff a70, a90, replace the boot media
-summary: The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF A70 or AFF A90 system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
+keywords: aff a5x, replace the boot media
+summary: The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF A5X system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
 ---
-= Boot media manual recovery workflow - AFF A70 and AFF A90
+= Boot media manual recovery workflow - AFF A5X
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF A70 or AFF A90 system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
+The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF A5X system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
 
 If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 

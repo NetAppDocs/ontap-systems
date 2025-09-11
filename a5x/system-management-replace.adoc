@@ -1,15 +1,15 @@
 ---
-permalink: a70-90/system-management-replace.html
+permalink: a5x/system-management-replace.html
 sidebar: sidebar
-keywords: AFF A70, AFF A90, replace the system management module
-summary:  Replace the System Management module in your AFF A70 or AFF A90 system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the impaired controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
+keywords: aff a5x, replace the system management module
+summary:  Replace the System Management module in your AFF A5X system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the impaired controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
 ---
-= Replace the system management module - AFF A70 and AFF A90
+= Replace the system management module - AFF A5X
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the System Management module in your AFF A70 or AFF A90 system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
+Replace the System Management module in your AFF A5X system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
 
 The System Management module, located at the back of the controller in slot 8,  contains onboard components for system management, as well as ports for external management. The target controller must be shut down to replace an impaired System Management module or to replace the boot media.
 
@@ -45,7 +45,7 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 == Step 2: Replace the System Management module
 
-include::../_include/a70-90_system_mgmt_replace.adoc[]
+include::../_include/a5x_system_mgmt_replace.adoc[]
 
 == Step 3: Reboot the controller
 

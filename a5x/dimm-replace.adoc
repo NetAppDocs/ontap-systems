@@ -1,15 +1,15 @@
 ---
-permalink: a70-90/dimm-replace.html
+permalink: a5x/dimm-replace.html
 sidebar: sidebar
-keywords: aff a70, aff a90, replace a dimm
-summary: Replace a DIMM in your AFF A70 or AFF A90 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+keywords: aff a5x, replace a dimm
+summary: Replace a DIMM in your AFF A5X system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
-= Replace a DIMM - AFF A70 and AFF A90
+= Replace a DIMM - AFF A5X
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a DIMM in your AFF A70 or AFF A90 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+Replace a DIMM in your AFF A5X system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 
 .Before you begin
 
@@ -37,17 +37,17 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 == Step 2: Remove the controller module
 
-include::../_include/a70-90_controller_remove_physical.adoc[]
+include::../_include/a5x_controller_remove_physical.adoc[]
 
 == Step 3: Replace the DIMM
 
 To replace the DIMM, locate them inside the controller and follow the specific sequence of steps.
 
-include::../_include/a70-90_dimm_replace.adoc[]
+include::../_include/a5x_dimm_replace.adoc[]
 
 == Step 4: Reinstall the controller module
 
-include::../_include/a70-90_controller_install_step_physical.adoc[]
+include::../_include/a5x_controller_install_step_physical.adoc[]
 
 == Step 5: Return the failed part to NetApp
 

@@ -1,18 +1,18 @@
 ---
-permalink: a70-90/chassis-replace-move-hardware.html
+permalink: a5x/chassis-replace-move-hardware.html
 sidebar: sidebar
-keywords: aff a70, aff a90, move hardware components, replace the chassis
-summary: Replace the chassis of your AFF A70 or AFF A90 system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components. 
+keywords: aff a5x, move hardware components, replace the chassis
+summary: Replace the chassis of your AFF A5X system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components. 
 ---
-= Replace the chassis - AFF A70 and AFF A90
+= Replace the chassis - AFF A5X
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the chassis of your AFF A70 or AFF A90 system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components. 
+Replace the chassis of your AFF A5X system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components. 
 
-include::../_include/a70-90_chassis_replace_move_hardware.adoc[]
+include::../_include/a5x_chassis_replace_move_hardware.adoc[]
 
 .What's next?
 
-After you’ve replaced the impaired AFF A70 or AFF A90 chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]. 
+After you’ve replaced the impaired AFF A5X chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]. 
