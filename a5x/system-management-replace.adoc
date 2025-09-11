@@ -1,0 +1,60 @@
+---
+permalink: a70-90/system-management-replace.html
+sidebar: sidebar
+keywords: AFF A70, AFF A90, replace the system management module
+summary:  Replace the System Management module in your AFF A70 or AFF A90 system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the impaired controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
+---
+= Replace the system management module - AFF A70 and AFF A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace the System Management module in your AFF A70 or AFF A90 system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
+
+The System Management module, located at the back of the controller in slot 8,  contains onboard components for system management, as well as ports for external management. The target controller must be shut down to replace an impaired System Management module or to replace the boot media.
+
+.Before you begin
+
+* Make sure all other system components are working properly.
+* Make sure that the partner controller is able to take over the impaired controller.
+* Make sure you replace the failed component with a replacement component you received from NetApp.
+
+.About this task
+This procedure uses the following terminology:
+
+ * The impaired controller is the controller on which you are performing maintenance.
+ * The healthy controller is the HA partner of the impaired controller.
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller using one of the following options.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
+
+====
+
+== Step 2: Replace the System Management module
+
+include::../_include/a70-90_system_mgmt_replace.adoc[]
+
+== Step 3: Reboot the controller
+
+include::../_include/reboot_controller.adoc[]
+
+== Step 4: Install licenses and register serial number
+
+include::../_include/install_licenses_serial_number-system_mgmt_module.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

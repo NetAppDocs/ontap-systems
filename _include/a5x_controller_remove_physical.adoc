@@ -1,0 +1,63 @@
+// Remove the controller module - AFF A5X (integrated)
+
+You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
+
+.Steps
+
+. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
+// ontap-systems-internal/issues/1151 
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
++
+
+. Check the amber NVRAM that status LED located in slot 4/5 on the back of the impaired controller module is off. Look for the NV icon.
++
+image::../media/drw_a5x_nvram-led_ieops-xxxx.svg[NVRAM attention and status LED location graphic]
++
+
+[cols="1,4"]
+
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM attention LED
+|===
+
+* If the NV LED is off, go to the next step.
+* If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
+
+. If you are not already grounded, properly ground yourself.
+. Unplug the controller module power supply cables from the controller module power supplies (PSU).
+
++
+NOTE: If your system has DC power, disconnect the power block from the PSUs. 
++
+
+. Unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected.
+
+. Press down on both of the locking latches, and then rotate both latches downward at the same time.
++
+The controller module moves slightly out of the chassis.
++
+image::../media/drw_a5x_pcm_remove_replace_ieops-xxxx.svg[Controller remove graphic]
++
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+Locking latch
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+Locking pin
+|===
+
+. Slide the controller module out of the chassis and place it on a flat, stable surface.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.

@@ -1,0 +1,14 @@
+---
+permalink: a70-90/chassis-replace-complete-system-restore-rma.html
+sidebar: sidebar
+keywords: aff a70, aff a90,  verify and set HA state, complete the replacement process
+summary: Reboot the controllers, verify system health, and return the failed part to NetApp to complete the final step in the AFF A70 and AFF A90 chassis replacement procedure.
+---
+= Complete the chassis replacement - AFF A70 and AFF A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Reboot the controllers, verify system health, and return the failed part to NetApp to complete the final step in the AFF A70 and AFF A90 chassis replacement procedure.
+
+include::../_include/a70-90_chassis_replace_complete_system_restore_rma.adoc[]

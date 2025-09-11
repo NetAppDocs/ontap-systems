@@ -1,0 +1,17 @@
+---
+permalink: a70-90/bootmedia-recovery-image-boot.html
+sidebar: sidebar
+keywords: aff a70, aff a90, boot the recovery image
+summary: After installing the new boot media device in your AFF A70 or AFF A90 system, you can boot the recovery image manually from a USB drive to restore the configuration from the partner node. 
+---
+= Manual boot media recovery from a USB drive - AFF A70 and AFF A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After installing the new boot media device in your AFF A70 or AFF A90 system, you can boot the recovery image manually from a USB drive to restore the configuration from the partner node. 
+
+include::../_include/bootmedia_recovery_image_boot.adoc[]
+
+.What's next?
+After booting the recovery image, you need to link:bootmedia-encryption-restore.html[restore encryption on the boot media].

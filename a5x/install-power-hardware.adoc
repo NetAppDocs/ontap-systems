@@ -1,0 +1,26 @@
+---
+permalink: a70-90/install-power-hardware.html
+sidebar: sidebar
+keywords: aff a70, a90, power controllers
+summary: After you install the rack hardware for your AFF A70 or AFF A90 storage system and install the cables for the controllers and storage shelves, you should power on your storage shelves and controllers.
+---
+= Power on the storage system - AFF A70 and AFF A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you install the rack hardware for your AFF A70 or AFF A90 storage system and install the cables for the controllers and storage shelves, you should power on your storage shelves and controllers. 
+
+
+== Step 1: Power on the shelf and assign shelf ID
+
+include::../_include/install_power_shelf_ns224.adoc[]
+
+== Step 2: Power on the controllers
+
+:a1k-a70-90:
+include::../_include/install_power_controllers_conditional.adoc[]
+:a1k-a70-90!:
+
+.What's next?
+After you've turned on your AFF A70 or AFF A90 storage system, you https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html[set up your cluster].

@@ -1,0 +1,32 @@
+---
+permalink: a70-90/controller-replace-shutdown.html
+sidebar: sidebar
+keywords: aff a70, aff a90, shut down the impaired controller
+summary: Shut down the controller in your AFF A70 or AFF A90 storage system to prevent data loss and ensure system stability when replacing the controller.
+---
+= Shut down the impaired controller - AFF A70 and AFF A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Shut down the controller in your AFF A70 or AFF A90 storage system to prevent data loss and ensure system stability when replacing the controller. 
+
+Shut down the controller module using one of the following options.
+
+[role="tabbed-block"]
+====
+
+.Option 1: Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Option 2: Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
+--
+
+====
+
+.What's next?
+
+After you've shut down the controller, you need to link:controller-replace-move-hardware.html[replace the controller].

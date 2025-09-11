@@ -1,0 +1,44 @@
+---
+permalink: a70-90/bootmedia-replace-workflow.html
+sidebar: sidebar
+keywords: aff a70, a90, replace the boot media
+summary: The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF A70 or AFF A90 system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
+---
+= Boot media manual recovery workflow - AFF A70 and AFF A90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF A70 or AFF A90 system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
+
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
+
+To get started, review the recovery requirements, shut down the controller, replace the boot media, use the USB drive to restore the image, and reapply encryption settings if necessary.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:bootmedia-replace-requirements.html[Review requirements to replace the boot media]
+[role="quick-margin-para"]
+Review the requirements for replacing the boot media.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-encryption-preshutdown-checks.html[Check encryption key support and status]
+[role="quick-margin-para"]
+Determine whether the system has security key manager enabled or encrypted disks.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:bootmedia-shutdown.html[Shut down the controller]
+[role="quick-margin-para"]
+Shut down the controller when when you need to replace the boot media.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia-replace.html[Replace the boot media]
+[role="quick-margin-para"]
+Remove the failed boot media from the System Management module and install the replacement boot media, and then transfer an ONTAP image using a USB flash drive.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:bootmedia-recovery-image-boot.html[Boot the recovery image]
+[role="quick-margin-para"]
+Boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:bootmedia-encryption-restore.html[Restore encryption]
+[role="quick-margin-para"]
+Restore the onboard key manager configuration or the external key manager from the ONTAP boot menu.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:bootmedia-complete-rma.html[Return the failed part to NetApp]
+[role="quick-margin-para"]
+Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
