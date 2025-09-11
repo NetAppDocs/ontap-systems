@@ -7,7 +7,7 @@ You need to remove all four power supply units (PSUs), two per controller, befor
 . Remove the PSUs:
 
 .. If you are not already grounded, properly ground yourself.
-.. Unplug power cords from the the PSUs.
+.. Unplug power cords from the PSUs.
 
 +
 If your system has DC power, disconnect the power block from the PSUs. 
@@ -184,20 +184,29 @@ Remove the impaired chassis and install the replacement chassis.
 After the replacement chassis is installed, you need to install the controller modules, recable them, and then reinstall the drives and PSUs.
 
 .Steps
-. Beginning with the bottom controller module, install the controller modules in the replacement chassis:
-
-.. Align the end of the controller module with the opening in the chassis, and then gently push the controller all the way into the chassis.
+. Install the I/O cards:
+.. Align the end of the I/O module with the same slot in the replacement chassis as in the impaired chassis, and then gently push the module all the way into the chassis.
+.. Rotate the cam latch upward into the locked position.
+.. Repeat these steps for any other I/O modules.
+. Install the NVRAM12 module in the back of the chassis:
+.. Align the end of the NVRAM12 module with the opening in the chassis, and then gently push the module all the way into the chassis.
+.. Rotate the cam latch upward into the locked position.
+. Install the system management module:
+.. Align the end of the system management module with the opening in the chassis, and then gently push the module all the way into the chassis.
+.. Rotate the cam latch upward into the locked position.
+. Install the controller module:
+.. Align the end of the controller module with the opening in the front of the chassis, and then gently push the controller all the way into the chassis.
 .. Rotate the locking latches upward into the locked position.
-.. If you have not already done so, reinstall the cable management device and recable the controller.
+. Install the fans:
+.. Align the fan module with the opening in the chassis, and then gently push the fan module all the way into the chassis until it clicks into place.
+.. Repeat these steps to install the rest of the fan modules.
+.. If you have not already done so, reinstall the cable management device and reconnect the cables to the controller.
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them.
 +
-Make sure that the cables are connected referencing the cable labels.  
+Make sure that the cables are connected according to the cable labels.
 
-. Reinstall the drives into their corresponding drive bays in the front of the chassis.
-
-
-. Install all four of the PSUs:
+. Install the PSUs:
 
 .. Using both hands, support and align the edges of the PSU with the opening in the controller module.
 .. Gently push the PSU into the controller module until the locking tab clicks into place.
