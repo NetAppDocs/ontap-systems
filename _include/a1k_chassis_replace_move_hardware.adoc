@@ -1,7 +1,7 @@
 
 == Step 1: Remove the PSUs and cables
 
-You need to remove all four power supply units (PSUs), two per controller, before removing the controller.  Removing them lightens the overall weight of the controller.
+You need to remove the two power supply units (PSUs) before removing the controller.
 
 .Steps
 . Remove the PSUs:
@@ -12,7 +12,7 @@ You need to remove all four power supply units (PSUs), two per controller, befor
 +
 If your system has DC power, disconnect the power block from the PSUs. 
 
-.. Remove the two PSUs from the rear of the chassis by rotating the PSU handle up so that you can pull the PSU out, press the PSU locking tab, and then pull PSU out of the controller module.
+.. Remove the two PSUs from the rear of the chassis by rotating the PSU handle up so that you can pull the PSU out, press the PSU locking tab, and then pull PSU out of the chassis.
 +
 CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 
@@ -39,13 +39,13 @@ Terracotta PSU locking tab
 NOTE: Cables should have been labeled at the beginning of this procedure.
 
 +
-.. Remove the cable management device from the controller modules and set them aside. 
+.. Remove the cable management device from the chassis and set it aside. 
 
 == Step 2: Remove the I/O cards, NVRAM12, and system management module
 
 . Remove the target I/O module from the chassis:
-+
 
++
 image:../media/drw_a1k_io_remove_replace_ieops-1382.svg[Remove I/O module]
 +
 [cols="1,4"]
@@ -94,7 +94,6 @@ DIMM locking tabs
 .. Rotate the cam lever down as far as it will go.
  .. Loop your finger into the hole on the cam lever and pull the module straight out of the system.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
-
 +
 image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[Boot media replace]
 +
@@ -114,37 +113,8 @@ a|
 Boot media
 |===
 
-== Step 3: Remove the fans
 
-. Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
-. Identify the fan module that you must replace by checking the console error messages and looking at the Attention LED on each fan module.
-+
-Facing the controller module, fan modules are numbered 1 through 5, from left to right. 
-+
-
-NOTE: There is a single LED for each fan. It is green when the fan is functioning correctly and amber when not.
- 
-. Press the black button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
-+
-IMPORTANT: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
-
-+
-
-image::../media/drw_a1k_fan_remove_replace_ieops-1376.svg[Fan replace]
-+
-
-[cols="1,4"]
-|===
-a|
-image:../media/icon_round_1.png[Callout number 1] 
-a|
-Black release button
-|===
-
-. Set the fan module aside.
-. Repeat these steps to remove the rest of the fan modules.
-
-== Step 4: Remove the controller module
+== Step 3: Remove the controller module
 
 . On the front of the unit, hook your fingers into the holes in the locking cams, squeeze the tabs on the cam levers, and gently, but firmly rotate both latches toward you at the same time.
 +
@@ -164,22 +134,22 @@ Locking cam latches
 +
 Make sure that you support the bottom of the controller module as you slide it out of the chassis.
 
-== Step 5: Replace the impaired chassis 
+== Step 4: Replace the impaired chassis 
 
 Remove the impaired chassis and install the replacement chassis.
 
 .Steps
 . Remove the impaired chassis:
 .. Remove the screws from the chassis mount points.
-.. Using two people or a lift, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
+.. Slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
 
 . Install the replacement chassis:
 
-.. Using two people or a lift, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
+.. Install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
 .. Slide the chassis all the way into the equipment rack or system cabinet.
 .. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
 
-== Step 4: Install the chassis components
+== Step : Install the chassis components
 
 After the replacement chassis is installed, you need to install the controller modules, recable them, and then reinstall the drives and PSUs.
 
@@ -197,12 +167,9 @@ After the replacement chassis is installed, you need to install the controller m
 . Install the controller module:
 .. Align the end of the controller module with the opening in the front of the chassis, and then gently push the controller all the way into the chassis.
 .. Rotate the locking latches upward into the locked position.
-. Install the fans:
-.. Align the fan module with the opening in the chassis, and then gently push the fan module all the way into the chassis until it clicks into place.
-.. Repeat these steps to install the rest of the fan modules.
 .. If you have not already done so, reinstall the cable management device and reconnect the cables to the controller.
 +
-If you removed the media converters (QSFPs or SFPs), remember to reinstall them.
+NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them.
 +
 Make sure that the cables are connected according to the cable labels.
 
