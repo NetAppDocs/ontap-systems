@@ -9,6 +9,10 @@ summary: Links to boot media replacement procedures by platform.
 
 This page provides links to boot media replacement procedures organized by platform.
 
+[role="tabbed-block"]
+====
+.AFF Platforms
+--
 * link:a150/bootmedia-replace-overview.html[AFF A150^]
 * link:a200/bootmedia-replace-overview.html[AFF A200^]
 * link:a220/bootmedia-replace-overview.html[AFF A220^]
@@ -19,6 +23,14 @@ This page provides links to boot media replacement procedures organized by platf
 * link:a700/bootmedia-replace-overview.html[AFF A700^]
 * link:a700s/bootmedia-replace-overview.html[AFF A700s^]
 * link:a800/bootmedia-replace-overview.html[AFF A800^]
+* link:c190/bootmedia-replace-overview.html[AFF C190^]
+* link:c250/bootmedia-replace-overview.html[AFF C250^]
+* link:c400/bootmedia-replace-overview.html[AFF C400^]
+* link:c800/bootmedia-replace-overview.html[AFF C800^]
+--
+
+.ASA Platforms
+--
 * link:asa150/bootmedia-replace-overview.html[ASA A150^]
 * link:asa250/bootmedia-replace-overview.html[ASA A250^]
 * link:asa400/bootmedia-replace-overview.html[ASA A400^]
@@ -26,10 +38,10 @@ This page provides links to boot media replacement procedures organized by platf
 * link:asa-c250/bootmedia-replace-overview.html[ASA C250^]
 * link:asa-c400/bootmedia-replace-overview.html[ASA C400^]
 * link:asa-c800/bootmedia-replace-overview.html[ASA C800^]
-* link:c190/bootmedia-replace-overview.html[FAS C190^]
-* link:c250/bootmedia-replace-overview.html[FAS C250^]
-* link:c400/bootmedia-replace-overview.html[FAS C400^]
-* link:c800/bootmedia-replace-overview.html[FAS C800^]
+--
+
+.FAS Platforms
+--
 * link:fas2600/bootmedia-replace-overview.html[FAS2600^]
 * link:fas2700/bootmedia-replace-overview.html[FAS2700^]
 * link:fas2800/bootmedia-replace-overview.html[FAS2800^]
@@ -37,3 +49,5 @@ This page provides links to boot media replacement procedures organized by platf
 * link:fas8200/bootmedia-replace-overview.html[FAS8200^]
 * link:fas8300/bootmedia-replace-overview.html[FAS8300^]
 * link:fas9000/bootmedia-replace-overview.html[FAS9000^]
+--
+====

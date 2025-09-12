@@ -9,6 +9,10 @@ summary: Links to NVMEM/NVRAM battery replacement procedures by platform.
 
 This page provides links to NVMEM/NVRAM battery replacement procedures organized by platform.
 
+[role="tabbed-block"]
+====
+.AFF Platforms
+--
 * link:a150/nvmem-nvram-battery-replace.html[AFF A150^]
 * link:a1k/nvmem-nvram-battery-replace.html[AFF A1K^]
 * link:a20-30-50/nvmem-nvram-battery-replace.html[AFF A20/30/50^]
@@ -23,6 +27,16 @@ This page provides links to NVMEM/NVRAM battery replacement procedures organized
 * link:a700s/nvmem-nvram-battery-replace.html[AFF A700s^]
 * link:a800/nvmem-nvram-battery-replace.html[AFF A800^]
 * link:a900/nvmem-nvram-battery-replace.html[AFF A900^]
+* link:c190/nvmem-nvram-battery-replace.html[AFF C190^]
+* link:c250/nvmem-nvram-battery-replace.html[AFF C250^]
+* link:c30-60/nvmem-nvram-battery-replace.html[AFF C30/60^]
+* link:c400/nvmem-nvram-battery-replace.html[AFF C400^]
+* link:c80/nvmem-nvram-battery-replace.html[AFF C80^]
+* link:c800/nvmem-nvram-battery-replace.html[AFF C800^]
+--
+
+.ASA Platforms
+--
 * link:asa150/nvmem-nvram-battery-replace.html[ASA A150^]
 * link:asa250/nvmem-nvram-battery-replace.html[ASA A250^]
 * link:asa400/nvmem-nvram-battery-replace.html[ASA A400^]
@@ -31,12 +45,10 @@ This page provides links to NVMEM/NVRAM battery replacement procedures organized
 * link:asa-c250/nvmem-nvram-battery-replace.html[ASA C250^]
 * link:asa-c400/nvmem-nvram-battery-replace.html[ASA C400^]
 * link:asa-c800/nvmem-nvram-battery-replace.html[ASA C800^]
-* link:c190/nvmem-nvram-battery-replace.html[FAS C190^]
-* link:c250/nvmem-nvram-battery-replace.html[FAS C250^]
-* link:c30-60/nvmem-nvram-battery-replace.html[FAS C30/60^]
-* link:c400/nvmem-nvram-battery-replace.html[FAS C400^]
-* link:c80/nvmem-nvram-battery-replace.html[FAS C80^]
-* link:c800/nvmem-nvram-battery-replace.html[FAS C800^]
+--
+
+.FAS Platforms
+--
 * link:fas-70-90/nvmem-nvram-battery-replace.html[FAS70/90^]
 * link:fas2600/nvmem-nvram-battery-replace.html[FAS2600^]
 * link:fas2700/nvmem-nvram-battery-replace.html[FAS2700^]
@@ -47,3 +59,5 @@ This page provides links to NVMEM/NVRAM battery replacement procedures organized
 * link:fas8300/nvdimm-battery-replace.html[FAS8300^]
 * link:fas9000/dcpm-nvram10-battery-replace.html[FAS9000^]
 * link:fas9500/dcpm-nvram11-battery-replace.html[FAS9500^]
+--
+====
