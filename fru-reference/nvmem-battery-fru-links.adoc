@@ -1,0 +1,61 @@
+---
+sidebar: sidebar
+permalink: fru-reference/nvmem-battery-fru-links.html
+keywords: NVMEM battery, NVRAM battery, field replaceable units, FRU, battery replacement
+summary: Links to NVMEM/NVRAM battery replacement procedures by platform.
+---
+
+= NVMEM/NVRAM Battery FRU Links
+
+.lead
+This page provides links to NVMEM/NVRAM battery replacement procedures organized by platform.
+
+[role="tabbed-block"]
+====
+.AFF Platforms
+--
+* link:..a150/nvmem-nvram-battery-replace.html[AFF A150^]
+* link:..a1k/nvmem-nvram-battery-replace.html[AFF A1K^]
+* link:..a20-30-50/nvmem-nvram-battery-replace.html[AFF A20/30/50^]
+* link:..a220/nvmem-nvram-battery-replace.html[AFF A220^]
+* link:..a250/nvmem-nvram-battery-replace.html[AFF A250^]
+* link:..a300/nvmem-nvram-battery-replace.html[AFF A300^]
+* link:..a320/nvmem-nvram-battery-replace.html[AFF A320^]
+* link:..a400/nvmem-nvram-battery-replace.html[AFF A400^]
+* link:..a70-90/nvmem-nvram-battery-replace.html[AFF A70/90^]
+* link:..a700/nvmem-nvram-battery-replace.html[AFF A700^]
+* link:..a700s/nvmem-nvram-battery-replace.html[AFF A700s^]
+* link:..a800/nvmem-nvram-battery-replace.html[AFF A800^]
+* link:..a900/nvmem-nvram-battery-replace.html[AFF A900^]
+* link:..c190/nvmem-nvram-battery-replace.html[AFF C190^]
+* link:..c250/nvmem-nvram-battery-replace.html[AFF C250^]
+* link:..c30-60/nvmem-nvram-battery-replace.html[AFF C30/60^]
+* link:..c400/nvmem-nvram-battery-replace.html[AFF C400^]
+* link:..c80/nvmem-nvram-battery-replace.html[AFF C80^]
+* link:..c800/nvmem-nvram-battery-replace.html[AFF C800^]
+--
+
+.ASA Platforms
+* link:..asa150/nvmem-nvram-battery-replace.html[ASA A150^]
+* link:..asa250/nvmem-nvram-battery-replace.html[ASA A250^]
+* link:..asa800/nvmem-nvram-battery-replace.html[ASA A800^]
+* link:..asa900/nvmem-nvram-battery-replace.html[ASA A900^]
+* link:..asa-c250/nvmem-nvram-battery-replace.html[ASA C250^]
+* link:..asa-c400/nvmem-nvram-battery-replace.html[ASA C400^]
+* link:..asa-c800/nvmem-nvram-battery-replace.html[ASA C800^]
+--
+
+.FAS Platforms
+--
+* link:..fas-70-90/nvmem-nvram-battery-replace.html[FAS70/90^]
+* link:..fas2600/nvmem-nvram-battery-replace.html[FAS2600^]
+* link:..fas2700/nvmem-nvram-battery-replace.html[FAS2700^]
+* link:..fas2800/nvmem-nvram-battery-replace.html[FAS2800^]
+* link:..fas50/nvmem-nvram-battery-replace.html[FAS50^]
+* link:..fas500f/nvmem-battery-replace.html[FAS500f^]
+* link:..fas8200/nvmem-nvram-battery-replace.html[FAS8200^]
+* link:..fas8300/nvdimm-battery-replace.html[FAS8300^]
+* link:..fas9000/dcpm-nvram10-battery-replace.html[FAS9000^]
+* link:..fas9500/dcpm-nvram11-battery-replace.html[FAS9500^]
+--
+====
