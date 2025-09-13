@@ -2,17 +2,17 @@
 sidebar: sidebar
 permalink: fru-reference/io-module-fru-links.html
 keywords: IO module, field replaceable units, FRU, IO module replacement
-summary: Links to IO module replacement procedures by platform.
+summary: Links to IO module replacement procedures by system.
 ---
 
 = IO Module FRU Links
 
 [.lead]
-This page provides links to IO module replacement procedures organized by platform.
+This page provides links to IO module replacement procedures organized by system.
 
 [role="tabbed-block"]
 ====
-.AFF Platforms
+.AFF Systems
 --
 * link:../a1k/io-module-replace.html[AFF A1K^]
 * link:../a20-30-50/io-module-replace.html[AFF A20/30/50^]
@@ -24,7 +24,7 @@ This page provides links to IO module replacement procedures organized by platfo
 * link:../c800/io-module-replace.html[AFF C800^]
 --
 
-.ASA Platforms
+.ASA Systems
 --
 * link:../asa400/io-module-replace.html[ASA A400^]
 * link:../asa800/io-module-replace.html[ASA A800^]
@@ -33,7 +33,7 @@ This page provides links to IO module replacement procedures organized by platfo
 * link:../asa-c800/io-module-replace.html[ASA C800^]
 --
 
-.FAS Platforms
+.FAS Systems
 --
 * link:../fas50/io-module-replace.html[FAS50^]
 * link:../fas-70-90/io-module-replace.html[FAS70/90^]

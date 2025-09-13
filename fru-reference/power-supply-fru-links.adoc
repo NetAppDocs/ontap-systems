@@ -2,17 +2,17 @@
 sidebar: sidebar
 permalink: fru-reference/power-supply-fru-links.html
 keywords: power supply, field replaceable units, FRU, power supply replacement
-summary: Links to power supply replacement procedures by platform.
+summary: Links to power supply replacement procedures by system.
 ---
 
 = Power Supply FRU Links
 
 [.lead]
-This page provides links to power supply replacement procedures organized by platform.
+This page provides links to power supply replacement procedures organized by system.
 
 [role="tabbed-block"]
 ====
-.AFF Platforms
+.AFF Systems
 --
 * link:../a150/power-supply-replace.html[AFF A150^]
 * link:../a1k/power-supply-replace.html[AFF A1K^]
@@ -35,7 +35,7 @@ This page provides links to power supply replacement procedures organized by pla
 * link:../c800/power-supply-replace.html[AFF C800^]
 --
 
-.ASA Platforms
+.ASA Systems
 * link:../asa150/power-supply-replace.html[ASA A150^]
 * link:../asa250/power-supply-replace.html[ASA A250^]
 * link:../asa800/power-supply-replace.html[ASA A800^]
@@ -45,7 +45,7 @@ This page provides links to power supply replacement procedures organized by pla
 * link:../asa-c800/power-supply-replace.html[ASA C800^]
 --
 
-.FAS Platforms
+.FAS Systems
 --
 * link:../fas50/power-supply-replace.html[FAS50^]
 * link:../fas-70-90/power-supply-replace.html[FAS70/90^]

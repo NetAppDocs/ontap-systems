@@ -2,17 +2,17 @@
 sidebar: sidebar
 permalink: fru-reference/fan-fru-links.html
 keywords: fan, field replaceable units, FRU, fan replacement
-summary: Links to fan replacement procedures by platform.
+summary: Links to fan replacement procedures by system.
 ---
 
 = Fan FRU Links
 
 [.lead]
-This page provides links to fan replacement procedures organized by platform.
+This page provides links to fan replacement procedures organized by system.
 
 [role="tabbed-block"]
 ====
-.AFF Platforms
+.AFF Systems
 --
 * link:../a150/fan-replace.html[AFF A150^]
 * link:../a1k/fan-replace.html[AFF A1K^]
@@ -35,7 +35,7 @@ This page provides links to fan replacement procedures organized by platform.
 * link:../c800/fan-replace.html[AFF C800^]
 --
 
-.ASA Platforms
+.ASA Systems
 --
 * link:../asa150/fan-replace.html[ASA A150^]
 * link:../asa250/fan-replace.html[ASA A250^]
@@ -46,7 +46,7 @@ This page provides links to fan replacement procedures organized by platform.
 * link:../asa-c800/fan-replace.html[ASA C800^]
 --
 
-.FAS Platforms
+.FAS Systems
 --
 * link:../fas50/fan-replace.html[FAS50^]
 * link:../fas-70-90/fan-replace.html[FAS70/90^]

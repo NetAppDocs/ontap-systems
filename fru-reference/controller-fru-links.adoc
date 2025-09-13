@@ -2,17 +2,17 @@
 sidebar: sidebar
 permalink: fru-reference/controller-fru-links.html
 keywords: controller, field replaceable units, FRU, controller replacement
-summary: Links to controller replacement procedures by platform.
+summary: Links to controller replacement procedures by system.
 ---
 
 = Controller FRU Links
 
 [.lead]
-This page provides links to controller replacement procedures organized by platform.
+This page provides links to controller replacement procedures organized by system.
 
 [role="tabbed-block"]
 ====
-.AFF Platforms
+.AFF Systems
 --
 * link:../a150/controller-replace-overview.html[AFF A150^]
 * link:../a1k/controller-replace-overview.html[AFF A1K^]
@@ -36,7 +36,7 @@ This page provides links to controller replacement procedures organized by platf
 * link:../c800/controller-replace-overview.html[AFF C800^]
 --
 
-.ASA Platforms
+.ASA Systems
 --
 * link:../asa150/controller-replace-overview.html[ASA A150^]
 * link:../asa250/controller-replace-overview.html[ASA A250^]
@@ -47,7 +47,7 @@ This page provides links to controller replacement procedures organized by platf
 * link:../asa-c800/controller-replace-overview.html[ASA C800^]
 --
 
-.FAS Platforms
+.FAS Systems
 --
 * link:../fas50/controller-replace-overview.html[FAS50^]
 * link:../fas-70-90/controller-replace-overview.html[FAS70/90^]

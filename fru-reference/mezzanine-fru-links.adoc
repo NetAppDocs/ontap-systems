@@ -2,17 +2,17 @@
 sidebar: sidebar
 permalink: fru-reference/mezzanine-fru-links.html
 keywords: mezzanine, field replaceable units, FRU, mezzanine replacement
-summary: Links to mezzanine replacement procedures by platform.
+summary: Links to mezzanine replacement procedures by system.
 ---
 
 = Mezzanine FRU Links
 
 [.lead]
-This page provides links to mezzanine replacement procedures organized by platform.
+This page provides links to mezzanine replacement procedures organized by system.
 
 [role="tabbed-block"]
 ====
-.AFF Platforms
+.AFF Systems
 --
 * link:../a150/mezzanine-replace.html[AFF A150^]
 * link:../a220/mezzanine-replace.html[AFF A220^]
@@ -33,7 +33,7 @@ This page provides links to mezzanine replacement procedures organized by platfo
 * link:../c800/mezzanine-replace.html[AFF C800^]
 --
 
-.ASA Platforms
+.ASA Systems
 --
 * link:../asa150/mezzanine-replace.html[ASA A150^]
 * link:../asa250/mezzanine-replace.html[ASA A250^]
@@ -44,7 +44,7 @@ This page provides links to mezzanine replacement procedures organized by platfo
 * link:../asa-c800/mezzanine-replace.html[ASA C800^]
 --
 
-.FAS Platforms
+.FAS Systems
 --
 * link:../fas50/mezzanine-replace.html[FAS50^]
 * link:../fas-70-90/mezzanine-replace.html[FAS70/90^]
