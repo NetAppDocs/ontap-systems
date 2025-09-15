@@ -1,12 +1,5 @@
 ---
-perma[.lead]
-Shut down the controller in your AFF A1K storage system to prevent data loss and ensure system stability when replacing the chassis.
-
-include::../_include/shutdown_chassis.adoc[]
-
-.What's next?
-
-After you've shut down the controller, you need to link:chassis-replace-move-hardware.html[replace the chassis].k/chassis-replace-shutdown.html
+permalink: a1k/chassis-replace-shutdown.html
 sidebar: sidebar
 keywords: aff a1k, shutdown the controller
 summary: Shut down the controller in your AFF A1K storage system to prevent data loss and ensure system stability when replacing the chassis.
