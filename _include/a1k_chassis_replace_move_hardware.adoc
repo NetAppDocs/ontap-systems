@@ -71,7 +71,7 @@ The cam button moves away from the chassis.
 
  .. Rotate the cam latch down as far as it will go.
 +
- .. Remove the impaired NVRAM module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
+ .. Remove the NVRAM module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
 +
 image::../media/drw_nvram1_remove_only_ieops-2574.svg[Remove the NVRAM12 module and DIMMs]
 +
@@ -92,7 +92,7 @@ NVRAM12 cam latch
  .. Loop your finger into the hole on the cam lever and pull the module straight out of the system.
 .. Place the System Management module on an anti-static mat, so that the boot media is accessible.
 +
-image::../media/drw_a1k_sys-mgmt_remove_ieops-1384.svg[System Management replace]
+image::../media/drw_a1k_sys-mgmt_remove_ieops-1384.svg[System Management remove]
 +
 [cols="1,4"]
 |===
@@ -139,7 +139,7 @@ Remove the impaired chassis and install the replacement chassis.
 .. Slide the chassis all the way into the equipment rack or system cabinet.
 .. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
 
-== Step : Install the chassis components
+== Step  5: Install the chassis components
 
 After the replacement chassis is installed, you need to install the controller modules, recable them, and then reinstall the drives and PSUs.
 
