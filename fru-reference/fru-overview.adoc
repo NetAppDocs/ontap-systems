@@ -12,78 +12,24 @@ summary: Overview of platform field replaceable units and links to replacement p
 For ONTAP hardware systems, you can perform maintenance procedures on the following field replaceable unit (FRU) components.
 
 |===
-| FRU Type | Description | Replacement Procedures
+| FRU procedure | Description
 
-| Boot media 
-| The boot media stores a primary and secondary set of boot image files that the system uses when it boots. 
-| link:../bootmedia-fru-links.html[Boot media replacement procedures by platform^]
-
-| Caching module 
-| You must replace the controller's caching module when your system registers a single AutoSupport (ASUP) message that the module has gone offline. 
-| link:../caching-module-fru-links.html[Caching module replacement procedures by platform^]
-
-| Chassis 
-| The chassis is the physical enclosure housing all the controller components, such as the controller/CPU unit, power supply, and I/O. 
-| link:../chassis-fru-links.html[Chassis replacement procedures by platform^]
-
-| Controller 
-| A controller consists of a board, firmware, and software. It controls the drives and implements the ONTAP functions. 
-| link:../controller-fru-links.html[Controller replacement procedures by platform^]
-
-| DCPM power module 
-| The data center persistent memory (DCPM) power module provides backup power for DCPM modules during unexpected power loss events. 
-| link:../dcpm-power-fru-links.html[DCPM power module replacement procedures by platform^]
-
-| DIMM 
-| You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM. 
-| link:../dimm-fru-links.html[DIMM replacement procedures by platform^]
-
-| Drive 
-| A drive is a device that provides the physical storage media for data. 
-| link:../drive-fru-links.html[Drive replacement procedures by platform^]
-
-| Fan 
-| A fan provides airflow for cooling system components and maintaining proper operating temperatures. 
-| link:../fan-fru-links.html[Fan replacement procedures by platform^]
-
-| IO module 
-| An I/O module provides network and storage connectivity interfaces for the controller. 
-| link:../io-module-fru-links.html[IO module replacement procedures by platform^]
-
-| LED module 
-| The LED module provides visual status indicators for system health and component status. 
-| link:../led-module-fru-links.html[LED module replacement procedures by platform^]
-
-| Mezzanine 
-| A mezzanine card provides additional I/O connectivity and expansion capabilities for the controller. 
-| link:../mezzanine-fru-links.html[Mezzanine replacement procedures by platform^]
-
-| NVDIMM 
-| You must replace an NVDIMM (non-volatile dual in-line memory module) when the module fails or shows errors. 
-| link:../nvdimm-fru-links.html[NVDIMM replacement procedures by platform^]
-
-| NVMEM/NVRAM battery 
-| A battery is included with a controller and preserves cached data if the AC power fails. 
-| link:../nvmem-battery-fru-links.html[NVMEM/NVRAM battery replacement procedures by platform^]
-
-| NVRAM module 
-| The NVRAM module provides non-volatile storage for system metadata and cached write data. 
-| link:../nvram-module-fru-links.html[NVRAM module replacement procedures by platform^]
-
-| PCI cards and risers 
-| PCI cards and risers provide expansion slots for additional functionality and I/O connectivity. 
-| link:../pci-cards-fru-links.html[PCI cards and risers replacement procedures by platform^]
-
-| Power supply 
-| A power supply provides a redundant power source in a controller shelf. 
-| link:../power-supply-fru-links.html[Power supply replacement procedures by platform^]
-
-| RTC battery 
-| A real-time clock battery preserves system date and time information if the power is off. 
-| link:../rtc-battery-fru-links.html[RTC battery replacement procedures by platform^]
-
-| System management module 
-| The system management module provides out-of-band management capabilities for the system. 
-| link:../system-management-fru-links.html[System management module replacement procedures by platform^]
-
+| link:bootmedia-fru-links.html[Boot media replacement procedures by platform^] | The boot media stores a primary and secondary set of boot image files that the system uses when it boots.
+| link:caching-module-fru-links.html[Caching module replacement procedures by platform^] | You must replace the controller's caching module when your system registers a single AutoSupport (ASUP) message that the module has gone offline.
+| link:chassis-fru-links.html[Chassis replacement procedures by platform^] | The chassis is the physical enclosure housing all the controller components, such as the controller/CPU unit, power supply, and I/O.
+| link:controller-fru-links.html[Controller replacement procedures by platform^] | A controller consists of a board, firmware, and software. It controls the drives and implements the ONTAP functions.
+| link:dcpm-power-fru-links.html[DCPM power module replacement procedures by platform^] | The data center persistent memory (DCPM) power module provides backup power for DCPM modules during unexpected power loss events.
+| link:dimm-fru-links.html[DIMM replacement procedures by platform^] | You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
+| link:drive-fru-links.html[Drive replacement procedures by platform^] | A drive is a device that provides the physical storage media for data.
+| link:fan-fru-links.html[Fan replacement procedures by platform^] | A fan provides airflow for cooling system components and maintaining proper operating temperatures.
+| link:io-module-fru-links.html[IO module replacement procedures by platform^] | An I/O module provides network and storage connectivity interfaces for the controller.
+| link:led-module-fru-links.html[LED module replacement procedures by platform^] | The LED module provides visual status indicators for system health and component status.
+| link:mezzanine-fru-links.html[Mezzanine replacement procedures by platform^] | A mezzanine card provides additional I/O connectivity and expansion capabilities for the controller.
+| link:nvdimm-fru-links.html[NVDIMM replacement procedures by platform^] | You must replace an NVDIMM (non-volatile dual in-line memory module) when the module fails or shows errors.
+| link:nvmem-battery-fru-links.html[NVMEM/NVRAM battery replacement procedures by platform^] | A battery is included with a controller and preserves cached data if the AC power fails.
+| link:nvram-module-fru-links.html[NVRAM module replacement procedures by platform^] | The NVRAM module provides non-volatile storage for system metadata and cached write data.
+| link:pci-cards-fru-links.html[PCI cards and risers replacement procedures by platform^] | PCI cards and risers provide expansion slots for additional functionality and I/O connectivity.
+| link:power-supply-fru-links.html[Power supply replacement procedures by platform^] | A power supply provides a redundant power source in a controller shelf.
+| link:rtc-battery-fru-links.html[RTC battery replacement procedures by platform^] | A real-time clock battery preserves system date and time information if the power is off.
+| link:system-management-fru-links.html[System management module replacement procedures by platform^] | The system management module provides out-of-band management capabilities for the system.
 |===

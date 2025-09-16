@@ -7,8 +7,18 @@ summary: Links to caching module replacement procedures by system.
 
 = Caching Module FRU Links
 
-.FAS systems
+[.lead]
+Links to caching module replacement procedures organized by system.
 
+[role="tabbed-block"]
+====
+.AFF systems
+--
+* link:../a700/caching-module-and-core-dump-module-replace.html[AFF A700^]
+--
+
+.FAS systems
+--
 * link:../fas50/caching-module-hot-swap.html[FAS50^]
 * link:../fas-70-90/caching-module-hot-swap.html[FAS70/90^]
 * link:../fas2600/caching-module-replace.html[FAS2600^]
@@ -17,3 +27,5 @@ summary: Links to caching module replacement procedures by system.
 * link:../fas8200/caching-module-replace.html[FAS8200^]
 * link:../fas8300/caching-module-replace.html[FAS8300^]
 * link:../fas9000/caching-module-hot-swap.html[FAS9000^]
+--
+====

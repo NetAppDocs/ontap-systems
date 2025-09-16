@@ -8,6 +8,17 @@ summary: Links to DCPM power module replacement procedures by system.
 = DCPM Power Module FRU Links
 
 [.lead]
-This page provides links to DCPM power module replacement procedures organized by system.
+Links to DCPM power module replacement procedures organized by system.
 
+[role="tabbed-block"]
+====
+.AFF systems
+--
+* link:../a700/dcpm-power-replace.html[AFF A700^]
+--
+
+.FAS systems
+--
 * link:../fas9000/dcpm-power-replace.html[FAS9000^]
+--
+====
