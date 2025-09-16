@@ -1,0 +1,18 @@
+---
+permalink: asa-r2-a1k/chassis-replace-move-hardware.html
+sidebar: sidebar
+keywords: asa a1k, move hardware components, replace the chassis
+summary: Replace the chassis of your ASA A1K system when a hardware failure requires it. The replacement process involves emoving the controller from the front of the chassis, and removing the power supply units (PSUs), NVRAM12, I/O modules and blanks, and system management module and then installing the replacement chassis, and reinstalling the chassis components. 
+---
+= Replace the chassis - ASA A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace the chassis of your ASA A1K system when a hardware failure requires it. The replacement process involves removing the controller from the front of the chassis, and removing the power supply units (PSUs), NVRAM12, I/O modules and blanks, and system management module and then installing the replacement chassis, and reinstalling the chassis components.
+
+include::../_include/a1k_chassis_replace_move_hardware.adoc[]
+
+.What's next?
+
+After you’ve replaced the impaired ASA A1K chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]. 
