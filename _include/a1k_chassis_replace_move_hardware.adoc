@@ -90,7 +90,6 @@ NVRAM12 cam latch
 
 .. Rotate the cam lever down as far as it will go.
  .. Loop your finger into the hole on the cam lever and pull the module straight out of the system.
-.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
 +
 image::../media/drw_a1k_sys-mgmt_remove_ieops-1384.svg[System Management remove]
 +
@@ -144,24 +143,26 @@ Remove the impaired chassis and install the replacement chassis.
 After the replacement chassis is installed, you need to install the controller modules, recable them, and then reinstall the drives and PSUs.
 
 .Steps
-. Install the I/O cards:
-.. Align the end of the I/O module with the same slot in the replacement chassis as in the impaired chassis, and then gently push the module all the way into the chassis.
-.. Rotate the cam latch upward into the locked position.
-.. Repeat these steps for any other I/O modules.
-. Install the NVRAM12 module in the back of the chassis:
-.. Align the end of the NVRAM12 module with the opening in the chassis, and then gently push the module all the way into the chassis.
-.. Rotate the cam latch upward into the locked position.
-. Install the system management module:
-.. Align the end of the system management module with the opening in the chassis, and then gently push the module all the way into the chassis.
-.. Rotate the cam latch upward into the locked position.
 . Install the controller module:
 .. Align the end of the controller module with the opening in the front of the chassis, and then gently push the controller all the way into the chassis.
 .. Rotate the locking latches upward into the locked position.
+. Install the I/O cards at the rear of the chassis:
+.. Align the end of the I/O module with the same slot in the replacement chassis as in the impaired chassis, and then gently push the module all the way into the chassis.
+.. Rotate the cam latch upward into the locked position.
+.. Repeat these steps for any other I/O modules.
+. Install the system management module at the rear of the chassis:
+.. Align the end of the system management module with the opening in the chassis, and then gently push the module all the way into the chassis.
+.. Rotate the cam latch upward into the locked position.
+
 .. If you have not already done so, reinstall the cable management device and reconnect the cables to the controller.
 +
 NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them.
 +
 Make sure that the cables are connected according to the cable labels.
+. Install the NVRAM12 module in the back of the chassis at the rear of the chassis:
+.. Align the end of the NVRAM12 module with the opening in the chassis, and then gently push the module all the way into the chassis.
+.. Rotate the cam latch upward into the locked position.
+
 
 . Install the PSUs:
 
@@ -172,8 +173,7 @@ The power supplies will only properly engage with the internal connector and loc
 +
 NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
 
-. Reconnect the PSU power cables to all four of the PSUs.
- .. Secure the power cable to the PSU using the power cable retainer.
+. Reconnect the PSU power cables to both of the PSUs and secure each power cable to the PSU using the power cable retainer.
 +
 If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis and secure the power cable to the PSU with the thumbscrews.
 

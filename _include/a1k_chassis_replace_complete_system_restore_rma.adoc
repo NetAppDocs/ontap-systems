@@ -10,7 +10,11 @@ After the controllers reboot, boot ONTAP and give back the controllers.
 . Perform the giveback:
 
 .. Connect the console cable to the partner controller.
-.. Give back the controller with the `storage failover giveback -fromnode local` command.
+.. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+
+.. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback _true_`
+
+.. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 
 == Step 2: Verify storage system health
 
