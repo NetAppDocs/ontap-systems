@@ -2,14 +2,14 @@
 permalink: a1k/controller-replace-move-hardware.html
 sidebar: sidebar
 keywords: aff a1k, move the controller module hardware
-summary: Replace the controller in your AFF A1K system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+summary: Replace the controller in your AFF A1K system when a hardware failure requires it. he replacement process involves removing the controller from the front of the chassis, and removing the power supply units (PSUs), NVRAM12, I/O modules and blanks, and system management module and then installing the replacement chassis, and reinstalling the chassis components.
 ---
 = Replace the controller - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the controller in your AFF A1K system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+Replace the controller in your AFF A1K system when a hardware failure requires it. Remove the controller from the front. Remove the power supply units (PSUs), NVRAM12, I/O modules, blanks, and system management module from the rear. Install the new chassis and reinstall all components.
 
 include::../_include/a1k_controller_replace_move_hardware.adoc[]
 
