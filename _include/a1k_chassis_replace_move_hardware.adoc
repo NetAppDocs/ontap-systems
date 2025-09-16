@@ -140,12 +140,12 @@ Remove the impaired chassis and install the replacement chassis.
 
 == Step  5: Install the chassis components
 
-After the replacement chassis is installed, you need to install the controller modules, recable them, and then reinstall the drives and PSUs.
+After the replacement chassis is installed, you need to install the controller module, recable the I/O modules and system management module, and then reinstall and plug in the PSUs.
 
 .Steps
 . Install the controller module:
 .. Align the end of the controller module with the opening in the front of the chassis, and then gently push the controller all the way into the chassis.
-.. Rotate the locking latches upward into the locked position.
+.. Rotate the locking latches into the locked position.
 . Install the I/O cards at the rear of the chassis:
 .. Align the end of the I/O module with the same slot in the replacement chassis as in the impaired chassis, and then gently push the module all the way into the chassis.
 .. Rotate the cam latch upward into the locked position.
@@ -154,7 +154,7 @@ After the replacement chassis is installed, you need to install the controller m
 .. Align the end of the system management module with the opening in the chassis, and then gently push the module all the way into the chassis.
 .. Rotate the cam latch upward into the locked position.
 
-.. If you have not already done so, reinstall the cable management device and reconnect the cables to the controller.
+.. If you have not already done so, reinstall the cable management device and reconnect the cables to the I/O cards and system management module.
 +
 NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them.
 +
@@ -166,8 +166,8 @@ Make sure that the cables are connected according to the cable labels.
 
 . Install the PSUs:
 
-.. Using both hands, support and align the edges of the PSU with the opening in the controller module.
-.. Gently push the PSU into the controller module until the locking tab clicks into place.
+.. Using both hands, support and align the edges of the PSU with the opening in the chassis.
+.. Gently push the PSU into the chassis until the locking tab clicks into place.
 +
 The power supplies will only properly engage with the internal connector and lock in place one way.
 +
