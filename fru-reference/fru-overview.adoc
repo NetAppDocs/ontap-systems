@@ -1,9 +1,7 @@
----
 permalink: fru-reference/fru-overview.html
 sidebar: sidebar
 keywords: FRU reference, field replaceable units, platform FRUs, hardware components, replacement procedures
 summary: Overview of platform field replaceable units and links to replacement procedures by FRU type
----
 = Platform FRU overview
 :icons: font
 :imagesdir: ../media/
@@ -11,6 +9,7 @@ summary: Overview of platform field replaceable units and links to replacement p
 [.lead]
 For ONTAP hardware systems, you can perform maintenance procedures on the following field replaceable unit (FRU) components.
 
+ [cols="1,2"]
 |===
 | FRU procedure | Description
 
