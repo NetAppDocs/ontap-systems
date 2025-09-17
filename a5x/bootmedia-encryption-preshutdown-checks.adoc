@@ -1,9 +1,0 @@
-= Boot media encryption pre-shutdown checks - A5X
-
-Before shutting down the controller for boot media replacement, verify the encryption status and perform any required pre-shutdown checks for your A5X system.
-
-. Check if encryption is enabled on the system.
-. If encryption is enabled, ensure you have access to the necessary key management information.
-. Follow any platform-specific instructions for handling encrypted boot media.
-
-NOTE: If you need more details, refer to the general boot media encryption documentation for your ONTAP version and platform family.

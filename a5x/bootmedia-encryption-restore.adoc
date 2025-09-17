@@ -1,9 +1,0 @@
-= Restore encryption on the boot media - A5X
-
-After booting the recovery image, restore encryption on the boot media for your A5X system.
-
-. Verify encryption status and key management.
-. Follow ONTAP prompts to restore encryption keys if required.
-. Confirm successful restoration before proceeding.
-
-NOTE: Refer to platform-specific or ONTAP documentation for additional details.
