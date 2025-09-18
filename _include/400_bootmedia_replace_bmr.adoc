@@ -1,0 +1,80 @@
+The boot media is located inside the controller module under the air duct, and is accessed by removing the controller module from the system.
+
+.Steps
+. If you are not already grounded, properly ground yourself.
+. Release the power cable retainers, and then unplug the cables from the power supplies.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Remove the cable management device from the controller module and set it aside.
+. Press down on both of the locking latches, and then rotate both latches downward at the same time.
++
+The controller module moves slightly out of the chassis.
++
+image::../media/drw_c400_remove_controller_IEOPS-1216.svg[Remove controller]
++
+[cols="10,90"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] a|
+Locking latches
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Controller moves slightly out of chassis
+|===
+
+. Slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+. Place the controller module on a stable, flat surface.
+
+. Open the air duct:
++
+image::../media/drw_c400_open_air_duct_IEOPS-1215.svg[Open the air duct]
++
+[cols="10,90"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] a|
+Locking tabs
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Slide air duct toward back of controller
+a|
+image::../media/icon_round_3.png[Callout number 3]
+a|
+Rotate air duct up
+|===
+
+ .. Press the locking tabs on the sides of the air duct in toward the middle of the controller module.
+ .. Slide the air duct toward the back of the controller module, and then rotate it upward to its completely open position.
+. Locate and remove the boot media from the controller module:
++
+image::../media/drw_c400_replace_boot_media_IEOPS-1217.svg[Remove the boot media]
++
+[cols="10,90"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] a|
+Press blue button
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Rotate boot media up and remove from socket
+|===
+ .. Press the blue button at the end of the boot media until the lip on the boot media clears the blue button.
+ .. Rotate the boot media up and gently pull the boot media out of the socket.
+. Align the edges of the replacement boot media with the boot media socket, and then gently push it into the socket.
+. Check the boot media to make sure that it is seated squarely and completely in the socket.
++
+If necessary, remove the boot media and reseat it into the socket.
+
+. Lock the boot media in place:
+ .. Rotate the boot media down toward the motherboard.
+ .. Placing a finger at the end of the boot media by the blue button, push down on the boot media end to engage the blue locking button.
+ .. While pushing down on the boot media, lift the blue locking button to lock the boot media in place.
+. Close the air duct.

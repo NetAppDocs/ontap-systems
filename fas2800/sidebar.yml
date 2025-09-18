@@ -1,9 +1,9 @@
 section: fas2800
 title: FAS2820 systems
 entries:
-    - title: Install and setup
-      pdf-filename: FAS2820 Install and Setup
-      entries:
+  - title: Install and setup
+    pdf-filename: FAS2820 Install and Setup
+    entries:
       - title: Choose install and setup experience
         url: /fas2800/install-setup.html
       - title: Quick steps
@@ -11,75 +11,94 @@ entries:
       - title: Videos steps
         url: /fas2800/install-videos.html
       - title: Detailed steps
-        url: /fas2800/install-detailed-guide.html
-    - title: Maintain
-      pdf-filename: FAS2820 Maintain
+        url: /fas2800/install-detailed-guide.html 
+  - title: Maintain
+    pdf-filename: AFF FAS2800 Maintain
+    entries:
+    - title: Maintenance Overview
+      url: /fas2800/maintain-overview.html
+    # START boot media
+    - title: Boot media - automated recovery
+      pdf-filename: FAS2820 Boot Media Automated     
       entries:
-      - title: Overview
-        url: /fas2800/maintain-overview.html
-      - title: Boot media
-        pdf-filename: FAS2820 Boot Media
-        entries:
-          - title: Overview
-            url: /fas2800/bootmedia-replace-overview.html
-          - title: Check encryption keys
-            url: /fas2800/bootmedia-encryption-preshutdown-checks.html
-          - title: Shut down impaired controller
-            url: /fas2800/bootmedia-shutdown.html
-          - title: Replace boot media
-            url: /fas2800/bootmedia-replace.html
-          - title: Boot recovery image
-            url: /fas2800/bootmedia-recovery-image-boot.html
-          - title: Restore encryption
-            url: /fas2800/bootmedia-encryption-restore.html
-          - title: Return failed part to NetApp
-            url: /fas2800/bootmedia-complete-rma.html
-      - title: Caching module
-        pdf-filename: FAS2820 Caching Module
-        url: /fas2800/caching-module-replace.html
-      - title: Chassis
-        pdf-filename: FAS2820 Chassis
-        entries:
-          - title: Overview
-            url: /fas2800/chassis-replace-overview.html
-          - title: Shut down impaired controller
-            url: /fas2800/chassis-replace-shutdown.html
-          - title: Replace hardware
-            url: /fas2800/chassis-replace-move-hardware.html
-          - title: Restore configuration
-            url: /fas2800/chassis-replace-complete-system-restore-rma.html
-      - title: Controller
-        pdf-filename: FAS2820 Controller
-        entries:
-          - title: Overview
-            url: /fas2800/controller-replace-overview.html
-          - title: Shut down impaired controller
-            url: /fas2800/controller-replace-shutdown.html
-          - title: Replace controller hardware
-            url: /fas2800/controller-replace-move-hardware.html
-          - title: Restore system configuration
-            url: /fas2800/controller-replace-system-config-restore-and-verify.html
-          - title: Recable system
-            url: /fas2800/controller-replace-recable-reassign-disks.html
-          - title: Complete system restoration
-            url: /fas2800/controller-replace-restore-system-rma.html
-      - title: DIMM
-        pdf-filename: FAS2820 DIMM
-        url: /fas2800/dimm-replace.html
-      - title: Drive
-        pdf-filename: FAS2820 Drive
-        url: /fas2800/drive-replace.html
-      - title: NVMEM battery
-        pdf-filename: FAS2820 NVMEM Battery
-        url: /fas2800/nvmem-nvram-battery-replace.html
-      - title: Mezzanine card
-        pdf-filename: FAS2820 Mezzanine card
-        url: /fas2800/pci-cards-and-risers-replace.html
-      - title: Power supply
-        pdf-filename: FAS2820 Power Supply
-        url: /fas2800/power-supply-swap-out.html
-      - title: Real-time clock battery
-        pdf-filename: FAS2820 Real-Time Clock Battery
-        url: /fas2800/rtc-battery-replace.html
+      - title: Boot media replacement workflow
+        url: /fas2800/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /fas2800/bootmedia-replace-requirements-bmr.html
+      - title: Shut down controller
+        url: /fas2800/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /fas2800/bootmedia-replace-bmr.html
+      - title: Boot recovery image
+        url: /fas2800/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /fas2800/bootmedia-complete-rma-bmr.html
+    - title: Boot Media - manual recovery
+      pdf-filename: FAS2820 Boot Media Manual
+      entries:
+      - title: Boot media replacement workflow
+        url: /fas2800/bootmedia-replace-workflow.html
+      - title: Review requirements
+        url: /a800/bootmedia-replace-requirements.html
+      - title: Check encryption keys
+        url: /fas2800/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
+        url: /fas2800/bootmedia-shutdown.html
+      - title: Replace boot media
+        url: /fas2800/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /fas2800/bootmedia-recovery-image-boot.html
+      - title: Restore encryption
+        url: /fas2800/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /fas2800/bootmedia-complete-rma.html
+        # END boot media
+    - title: Caching module
+      pdf-filename: FAS2820 Caching Module
+      url: /fas2800/caching-module-replace.html
+    - title: Chassis
+      pdf-filename: FAS2820 Chassis
+      entries:
+        - title: Overview
+          url: /fas2800/chassis-replace-overview.html
+        - title: Shut down impaired controller
+          url: /fas2800/chassis-replace-shutdown.html
+        - title: Replace hardware
+          url: /fas2800/chassis-replace-move-hardware.html
+        - title: Restore configuration
+          url: /fas2800/chassis-replace-complete-system-restore-rma.html
+    - title: Controller
+      pdf-filename: FAS2820 Controller
+      entries:
+        - title: Overview
+          url: /fas2800/controller-replace-overview.html
+        - title: Shut down impaired controller
+          url: /fas2800/controller-replace-shutdown.html
+        - title: Replace controller hardware
+          url: /fas2800/controller-replace-move-hardware.html
+        - title: Restore system configuration
+          url: /fas2800/controller-replace-system-config-restore-and-verify.html
+        - title: Recable system
+          url: /fas2800/controller-replace-recable-reassign-disks.html
+        - title: Complete system restoration
+          url: /fas2800/controller-replace-restore-system-rma.html
+    - title: DIMM
+      pdf-filename: FAS2820 DIMM
+      url: /fas2800/dimm-replace.html
+    - title: Drive
+      pdf-filename: FAS2820 Drive
+      url: /fas2800/drive-replace.html
+    - title: NVMEM battery
+      pdf-filename: FAS2820 NVMEM Battery
+      url: /fas2800/nvmem-nvram-battery-replace.html
+    - title: Mezzanine card
+      pdf-filename: FAS2820 Mezzanine card
+      url: /fas2800/pci-cards-and-risers-replace.html
+    - title: Power supply
+      pdf-filename: FAS2820 Power Supply
+      url: /fas2800/power-supply-swap-out.html
+    - title: Real-time clock battery
+      pdf-filename: FAS2820 Real-Time Clock Battery
+      url: /fas2800/rtc-battery-replace.html
     - title: Key specifications
       url: /fas2800/overview.html

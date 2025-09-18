@@ -1,0 +1,72 @@
+---
+permalink: asa-r2-c30/io-module-hotswap-ha-slot4.html
+sidebar: sidebar
+keywords: asa c30, hotswap a cluster ha card
+summary: The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your ASA C30 storage system when the module fails and if your storage system meets specific requirements.
+---
+= Hot-swap the I/O module used for cluster and HA traffic - ASA C30
+:icons: font
+:imagesdir: ../media/
+
+//Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family.
+
+[.lead]
+The cluster and HA I/O module supports interconnects for clustering and high-availability. You can hot-swap the module in your ASA C30 storage system when the module fails and if your storage system meets specific requirements.
+
+To hot-swap a module, you ensure your storage system meets the procedure requirements, prepare the storage system and I/O module in slot 4, hot-swap the failed module for an equivalent one, bring the replacement module online, restore the storage system to normal operation, and return the failed module to NetApp.
+
+.About this task
+
+* Hot-swapping the cluster and HA I/O module means that you do not have to perform a manual takeover; the impaired controller (the controller with the failed cluster and HA I/O module) has automatically taken over the healthy controller.
++
+When the impaired controller has taken over the healthy controller, the only way to recover without an outage is to hot-swap the module.
+
+* It is critical to apply the commands to the correct controller when you are hot-swapping the cluster and HA I/O module:
+
+** The _impaired controller_ is the controller on which you are hot-swapping the cluster and HA I/O module and it is the controller that has taken over the healthy controller.
+** The _healthy controller_ is the HA partner of the impaired controller and it is the controller that was taken over by the impaired controller.
+
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
++
+A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
++
+You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+
+
+== Step 1: Ensure the storage system meets the procedure requirements
+
+// New include specific to g-platform family because the requirements reference 9.17.1 and slot 4, which are unique to g-platforms.
+
+include::../_include/g_io_module_hotswap_ha_slot4_requirements.adoc[]
+
+== Step 2: Prepare the storage system and I/O module slot 4
+
+// New include specific to g-platform family because the slot 4 location for the cluster and HA I/O module is unique to g-platforms.
+
+include::../_include/g_io_module_hotswap_ha_slot4_prepare_slot.adoc[]
+
+
+== Step 3: Replace the failed cluster and HA I/O module
+
+// New include specific to g-platform family because the hardware hot-swap steps for a cluster and HA I/O module in slot 4 are unique to g-platforms.
+
+include::../_include/g_io_module_hotswap_ha_slot4_swap_hardware.adoc[]
+
+
+== Step 4: Bring the replacement cluster and HA I/O module online
+
+// New include specific to g-platform family because the steps for bringing the replacement cluster and HA I/O module online specify/reference slot 4, which is unique to g-platforms.
+
+include::../_include/g_io_module_hotswap_ha_slot4_bring_online.adoc[]
+
+
+== Step 5: Restore the storage system to normal operation
+
+// New include that's generic - can be used for the g-platform family and v-platform family.
+
+include::../_include/io_module_hotswap_restore_system.adoc[]
+
+== Step 6: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
+

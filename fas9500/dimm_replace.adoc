@@ -25,6 +25,7 @@ include::../_include/shutdown_most_frus.adoc[]
 
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
@@ -67,6 +68,7 @@ To replace the DIMMs, locate them inside the controller and follow the specific 
 
 NOTE: The VER2 controller has fewer DIMM sockets. There is no reduction in the number of DIMMs supported or change in the DIMM socket numbering. When moving the DIMMs to the new controller module, install the DIMMs into the same socket number/location as the impaired controller module.  See the FRU map diagram on the VER2 controller module for DIMM socket locations.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Locate the DIMMs on your controller module.
 +
@@ -113,6 +115,7 @@ After you install the components into the controller module, you must install th
 
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 
 . If you have not already done so, replace the cover on the controller module.

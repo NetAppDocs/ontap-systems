@@ -1,0 +1,60 @@
+
+
+// New include specific to g-platform family because the slot 4 location for the cluster/HA I/O module is unique to g-platforms.
+
+
+Prepare the storage system and I/O module slot 4 so that it is safe to remove the failed cluster and HA I/O module:
+
+.Steps
+
+. Properly ground yourself.
+
+. Unplug cabling from the failed cluster and HA I/O module.
++
+Make sure to label the cables so that later in this procedure you can reconnect them to the same ports.
+
+. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
++
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
++
+For example, the following AutoSupport message suppresses automatic case creation for two hours:
++
+`node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. Disable automatic giveback:
+
+.. Enter the following command from the console of the impaired controller: 
++
+`storage failover modify -node local -auto-giveback false`
+
+.. Enter `y` when you see the prompt _Do you want to disable auto-giveback?_
+
+. Prepare the failed cluster and HA module in slot 4 for removal by removing it from service and powering it off:
+
+
+.. Enter the following command:
++
+`system controller slot module remove -node _impaired_node_name_ -slot _slot_number_`
+
+.. Enter `y` when you see the prompt _Do you want to continue?_ 
++
+For example, the following command prepares the module in slot 4 on node 2 (the impaired controller) for removal, and displays a message that it is safe to remove:
++
+----
+node2::> system controller slot module remove -node node2 -slot 4
+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node2 will be powered off for removal.
+
+Do you want to continue? {y|n}: y
+
+The module has been successfully removed from service and powered off. It can now be safely removed.
+----
+
+. Verify the failed cluster and HA module in slot 4 is powered off:
++
+`system controller slot module show`
++
+The output should show `_powered-off_` in the status column for the failed module in slot 4.
+
+
+

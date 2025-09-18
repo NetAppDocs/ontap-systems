@@ -16,18 +16,31 @@ entries:
        url: /a20-30-50/install-cable.html
      - title: Power on system
        url: /a20-30-50/install-power-hardware.html
-     - title: Complete system setup
-       url: /a20-30-50/install-complete.html
  - title: Maintain
    pdf-filename: AFF A20, AFF A30, and AFF A50 Maintain
    entries:
    - title: Maintenance overview
      url: /a20-30-50/maintain-overview.html
 # START boot media
-   - title: Boot media
+   - title: Boot media - automated recovery
      pdf-filename: AFF A20, AFF A30, and AFF A50 Boot Media
      entries:
-      - title: Boot media replace workflow
+      - title: Boot media replacement workflow
+        url: /a20-30-50/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /a20-30-50/bootmedia-replace-requirements-bmr.html
+      - title: Shut down controller
+        url: /a20-30-50/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /a20-30-50/bootmedia-replace-bmr.html
+      - title: Boot recovery image
+        url: /a20-30-50/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /a20-30-50/bootmedia-complete-rma-bmr.html
+   - title: Boot media - manual recovery
+     pdf-filename: AFF A20, AFF A30, and AFF A50 Boot Media
+     entries:
+      - title: Boot media replacement workflow
         url: /a20-30-50/bootmedia-replace-workflow.html
       - title: Review requirements
         url: /a20-30-50/bootmedia-replace-requirements.html
@@ -87,6 +100,8 @@ entries:
           url: /a20-30-50/io-module-overview.html
         - title: Add I/O module
           url: /a20-30-50/io-module-add.html
+        - title: Hot-swap cluster/HA module
+          url: /a20-30-50/io-module-hotswap-ha-slot4.html
         - title: Replace I/O module
           url: /a20-30-50/io-module-replace.html
    - title: NV battery

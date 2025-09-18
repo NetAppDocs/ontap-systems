@@ -16,15 +16,28 @@ entries:
        url: /a70-90/install-cable.html
      - title: Power on system
        url: /a70-90/install-power-hardware.html
-     - title: Complete system setup
-       url: /a70-90/install-complete.html
  - title: Maintain
    pdf-filename: AFF A70, AFF A90 Maintain
    entries:
    - title: Maintenance overview
      url: /a70-90/maintain-overview.html
       # START boot media
-   - title: Boot media
+   - title: Boot media - automated recovery
+     pdf-filename: AFF A70, AFF A90 Boot Media
+     entries:
+        - title: Boot media replacement workflow
+          url: /a70-90/bootmedia-replace-workflow-bmr.html
+        - title: Review requirements
+          url: /a70-90/bootmedia-replace-requirements-bmr.html
+        - title: Shut down controller
+          url: /a70-90/bootmedia-shutdown-bmr.html
+        - title: Replace boot media
+          url: /a70-90/bootmedia-replace-bmr.html
+        - title: Boot recovery image
+          url: /a70-90/bootmedia-recovery-image-boot-bmr.html
+        - title: Return failed part to NetApp
+          url: /a70-90/bootmedia-complete-rma-bmr.html
+   - title: Boot media - manual recovery
      pdf-filename: AFF A70, AFF A90 Boot Media
      entries:
         - title: Boot media replacement workflow

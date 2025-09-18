@@ -153,6 +153,7 @@ Powering up the system
 
 You need to install your system in a 4-post rack or NetApp system cabinet, as applicable.
 
+.Steps
 . Install the rail kits, as needed.
 . Install and secure your system using the instructions included with the rail kit.
 +
@@ -190,6 +191,7 @@ image::../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
+.Steps
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 
 +
@@ -280,6 +282,7 @@ image::../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
+.Steps
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 
 +
@@ -377,6 +380,7 @@ image::../media/oie_cable_pull_tab_down.png[Cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
+.Steps
 . Use the following animation or drawings to cable your controllers to three (1 stack of one drive shelf and one stack of two drive shelves) DS224C drive shelves.
 
 +
@@ -432,6 +436,7 @@ You can complete the system setup and configuration using cluster discovery with
 
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
+.Steps
 . Use the following animation or drawing  to set one or more drive shelf IDs:
 
 +
@@ -536,6 +541,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 
 If you are not using a Windows or Mac-based laptop or console or if auto discovery is not enabled, you must complete the configuration and setup using this task.
 
+.Steps
 . Cable and configure your laptop or console:
  .. Set the console port on the laptop or console to 115,200 baud with N-8-1.
 +

@@ -1,85 +1,102 @@
 section: a900
 title: AFF A900 systems
 entries:
-  - title: Install and setup
-    pdf-filename: AFF A900 Install and Setup
-    entries:
+ - title: Install and setup
+   pdf-filename: AFF A900 Install and Setup
+   entries:
     - title: Choose install and setup experience
-      url: /a900/install_setup.html
+      url: /a900/install-setup.html
     - title: Quick steps
-      url: /a900/install_quick_guide.html
+      url: /a900/install-quick-guide.html
     - title: Video steps
-      url: /a900/install_videos.html
+      url: /a900/install-videos.html
     - title: Detailed steps
-      url: /a900/install_detailed_guide.html
-  - title: Maintain
-    pdf-filename: AFF A900 Maintain
-    entries:
-    - title: Overview
-      url: /a900/maintain-overview.html
-      # START boot media
-    - title: Boot media
-      pdf-filename: AFF A900 Boot Media
-      entries:
-      - title: Overview
-        url: /a900/bootmedia_replace_overview.html
+      url: /a900/install-detailed-guide.html
+ - title: Maintain
+   pdf-filename: AFF A900 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /a900/maintain-overview.html    
+     # START boot media
+   - title: Boot media - automated recovery
+     pdf-filename: AFF A900 Boot Media Automated
+     entries:
+      - title: Boot media replacement workflow
+        url: /a900/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /a900/bootmedia-replace-requirements-bmr.html
+      - title: Shut down controller
+        url: /a900/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /a900/bootmedia-replace-bmr.html
+      - title: Restore image on boot media
+        url: /a900/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /a900/bootmedia-complete-rma-bmr.html
+   - title: Boot media - manual recovery
+     pdf-filename: AFF A900 Boot Media manual
+     entries:
+      - title: Boot media replacement workflow
+        url: /a900/bootmedia-replace-workflow.html
+      - title: Review requirements
+        url: /a900/bootmedia-replace-requirements.html
       - title: Check encryption keys
-        url: /a900/bootmedia_encryption_preshutdown_checks.html
+        url: /a900/bootmedia-encryption-preshutdown-checks.html
       - title: Shut down impaired controller
         url: /a900/bootmedia-shutdown.html
-      - title: Replace boot image
-        url: /a900/bootmedia_replace.html
+      - title: Replace boot media
+        url: /a900/bootmedia-replace.html
       - title: Boot recovery image
         url: /a900/bootmedia_recovery_image.html
       - title: Restore encryption
         url: /a900/bootmedia-encryption-restore.html
       - title: Return failed part to NetApp
-        url: /a900/bootmedia_complete_rma.html
-        # END boot media
-    - title: Chassis
-      pdf-filename: AFF A900 Chassis
-      entries:
-      - title: Overview
-        url: /a900/chassis_replace_overview.html
-      - title: Shut down impaired controller
-        url: /a900/chassis_replace_shutdown.html
-      - title: Replace chassis
-        url: /a900/chassis_replace_move_hardware.html
-      - title: Restore and verify configuration
-        url: /a900/chassis_replace_complete_system_restore_rma.html
+        url: /a900/bootmedia-complete-rma.html
+          # END boot media
+   - title: Chassis
+     pdf-filename: AFF A900 Chassis
+     entries:
+        - title: Overview
+          url: /a900/chassis_replace_overview.html
+        - title: Shut down impaired controller
+          url: /a900/chassis_replace_shutdown.html
+        - title: Replace chassis
+          url: /a900/chassis_replace_move_hardware.html
+        - title: Restore and verify configuration
+          url: /a900/chassis_replace_complete_system_restore_rma.html
       # START controller module replacement
-    - title: Controller
-      pdf-filename: AFF A900 Controller Module
-      entries:
-      - title: Overview
-        url: /a900/controller_replace_overview.html
-      - title: Shut down impaired controller
-        url: /a900/controller_replace_shutdown.html
-      - title: Replace controller
-        url: /a900/controller_replace.html
-      - title: Restore and verify system configuration
-        url: /a900/controller_replace_system_config_restore_and_verify.html
-      - title: Recable system
-        url: /a900/controller_replace_recable_reassign_disks.html
-      - title: Complete system restoration
-        url: /a900/controller_replace_complete_system_restoration_rma.html
+   - title: Controller
+     pdf-filename: AFF A900 Controller Module
+     entries:
+        - title: Overview
+          url: /a900/controller_replace_overview.html
+        - title: Shut down impaired controller
+          url: /a900/controller_replace_shutdown.html
+        - title: Replace controller
+          url: /a900/controller_replace.html
+        - title: Restore and verify system configuration
+          url: /a900/controller_replace_system_config_restore_and_verify.html
+        - title: Recable system
+          url: /a900/controller_replace_recable_reassign_disks.html
+        - title: Complete system restoration
+          url: /a900/controller_replace_complete_system_restoration_rma.html
       # END controller module replacement
       # START DIMM replace
-    - title: DIMM
-      url: /a900/dimm_replace.html
+   - title: DIMM
+     url: /a900/dimm_replace.html
       # END DIMM replace
       # START DCPM battery replacement
-    - title: DCPM
-      url: /a900/dcpm-nvram11-battery-replace.html
+   - title: DCPM
+     url: /a900/dcpm-nvram11-battery-replace.html
       # END DCPM battery replacement
       # START Fan
-    - title: Fan
-      url: /a900/fan_swap_out.html
+   - title: Fan
+     url: /a900/fan_swap_out.html
       # END fan
       # START I/O module
-    - title: I/O module
-      pdf-filename: AFF A900 I/O module
-      entries:
+   - title: I/O module
+     pdf-filename: AFF A900 I/O module
+     entries:
         - title: Add I/O module
           url: /a900/add_io_module.html
         - title: Replace I/O module
@@ -87,18 +104,18 @@ entries:
 
       # END I/O module
   # START LED USB
-    - title: LED USB
-      url: /a900/led_module_replace.html
+   - title: LED USB
+     url: /a900/led_module_replace.html
   # END LED USB
       # START NVRAM module and/or NVRAM DIMMs replace
-    - title: NVRAM
-      url: /a900/nvram_module_or_nvram_dimm_replacement.html
+   - title: NVRAM
+     url: /a900/nvram_module_or_nvram_dimm_replacement.html
       # END NVRAM module and/or NVRAM DIMMs replace
       # START Power supply replacement
-    - title: Power supply
-      url: /a900/power_supply_swap_out.html
+   - title: Power supply
+     url: /a900/power_supply_swap_out.html
       # END Power supply replace
-    - title: Real-time clock battery
-      url: /a900/rtc_battery_replace.html
-  - title: Key specifications
-    url: /a900/overview.html
+   - title: Real-time clock battery
+     url: /a900/rtc_battery_replace.html
+   - title: Key specifications
+     url: /a900/overview.html

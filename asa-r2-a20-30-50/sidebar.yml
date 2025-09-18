@@ -1,9 +1,6 @@
 section: asa-r2-a20-30-50-maintain
 title: ASA A20, ASA A30, and ASA A50 systems
 entries:
- - title: Maintain
-   pdf-filename: ASA A20, ASA A30, and ASA A50 Maintain
-   entries:
    - title: Maintenance overview
      url: /asa-r2-a20-30-50/maintain-overview.html
 # START boot media
@@ -66,6 +63,8 @@ entries:
           url: /asa-r2-a20-30-50/io-module-overview.html
         - title: Add I/O module
           url: /asa-r2-a20-30-50/io-module-add.html
+        - title: Hot-swap cluster/HA module
+          url: /asa-r2-a20-30-50/io-module-hotswap-ha-slot4.html
         - title: Replace I/O module
           url: /asa-r2-a20-30-50/io-module-replace.html
    - title: NV battery

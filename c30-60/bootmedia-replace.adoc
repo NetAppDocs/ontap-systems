@@ -2,14 +2,14 @@
 permalink: c30-60/bootmedia-replace.html
 sidebar: sidebar
 keywords: aff c30, aff c60, replace the boot media
-summary: The boot media in your AFF C30 or AFF C60 system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
+summary: The boot media in your AFF C30 or AFF C60 storage system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive.
 ---
-= Replace the boot media - AFF C30 and AFF C60
+= Replace the boot media and prepare for manual boot recovery - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The boot media in your AFF C30 or AFF C60 system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media.
+The boot media in your AFF C30 or AFF C60 storage system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive.
 
 include::../_include/g_bootmedia_replace.adoc[]
 

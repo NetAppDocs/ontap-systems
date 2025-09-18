@@ -1,0 +1,24 @@
+---
+permalink: fas50/bootmedia-replace-requirements-bmr.html
+sidebar: sidebar
+keywords: fas50, replace the boot media
+summary: Before replacing the boot media in your FAS50 storage system, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0M (wrench) port on the impaired controller is working properly, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
+---
+= Requirements for automated boot media recovery - FAS50
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before replacing the boot media in your FAS50 storage system, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0M (wrench) port on the impaired controller is working properly, and determining whether Onboard Key Manager (OKM) or External Key Manager (EKM) is enabled.
+
+The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+
+Review the following requirements.
+
+include::../_include/bootmedia_replace_requirements_e0s_bmr.adoc[]
+
+.What's next
+
+After you've reviewed the boot media requirements, you link:bootmedia-shutdown-bmr.html[shut down the controller].
+
+//May 22, 2025: GH#1231, changed include name g_bootmedia_replace_requirements_bmr to make generic (remove "g") and add the "eos" designation. This include is used for the following platform family: aff a20-30-50, aff c30-60, fas50, asa a20-30-50, asa c30; and for some older platforms.

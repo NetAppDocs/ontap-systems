@@ -1,0 +1,93 @@
+// New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specify/reference slot 4, which is unique to g-platforms.
+
+
+Bring the replacement cluster and HA I/O module in slot 4 online, verify the module ports initialized successfully, verify slot 4 is powered on, and then verify the module is online and recognized.
+
+.Steps
+
+. Bring the replacement cluster and HA I/O module online:
++
+.. Enter the following command:
++
+`system controller slot module insert -node _impaired_node_name_ -slot _slot_name_`
+
+.. Enter `y` when you see the prompt, _Do you want to continue?_ 
++
+The output should confirm the cluster and HA I/O module was successfully brought online (powered on, initialized, and placed into service).
++
+For example, the following command brings slot 4 on node 2 (the impaired controller) online, and displays a message that the process was successful:
++
+----
+node2::> system controller slot module insert -node node2 -slot 4
+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 4 of node node2 will be powered on and initialized.
+
+Do you want to continue? {y|n}: `y`
+
+The module has been successfully powered on, initialized and placed into service.
+----
+
+. Verify that each port on the cluster and HA I/O module successfully initialized:
++
+`event log show -event \*hotplug.init*`
++
+NOTE: It might take several minutes to allow for any required firmware updates and port initialization.
++
+The output should show a hotplug.init.success EMS event logged for each port on the cluster and HA I/O module with `_hotplug.init.success:_` in the `_Event_` column.
++
+For example, the following output shows initialization succeeded for cluster and HA I/O module ports e4b and e4a:
++
+----
+node2::> event log show -event *hotplug.init*                        
+
+Time                Node             Severity      Event
+
+------------------- ---------------- ------------- ---------------------------
+
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e4b" in slot 4 succeeded
+
+7/11/2025 16:04:06  node2      NOTICE        hotplug.init.success: Initialization of ports "e4a" in slot 4 succeeded
+
+2 entries were displayed.
+----
+
+. Verify I/O module slot 4 is powered on and ready for operation:
++
+`system controller slot module show`
++
+The output should show slot 4 status as `_powered-on_` and therefore ready for operation of the replacement cluster and HA I/O module.
+
+. Verify that the replacement cluster and HA I/O module is online and recognized.
++
+Enter the command from the console of the impaired controller:
++
+`system controller config show -node local -slot4`
+// was: `sysconfig -av _slot_number_`
++
+If the replacement cluster and HA I/O module was successfully brought online and is recognize, the output shows I/O module information, including port information, for slot 4.
++
+For example, you should see output similar to the following:
++
+----
+node2::> system controller config show -node local -slot 4
+
+Node: node2
+Sub- Device/
+Slot slot Information
+---- ---- -----------------------------
+   4    - Dual 40G/100G Ethernet Controller CX6-DX
+                  e4a MAC Address: d0:39:ea:59:69:74 (auto-100g_cr4-fd-up)
+                          QSFP Vendor:        CISCO-BIZLINK
+                          QSFP Part Number:   L45593-D218-D10
+                          QSFP Serial Number: LCC2807GJFM-B
+                  e4b MAC Address: d0:39:ea:59:69:75 (auto-100g_cr4-fd-up)
+                          QSFP Vendor:        CISCO-BIZLINK
+                          QSFP Part Number:   L45593-D218-D10
+                          QSFP Serial Number: LCC2809G26F-A
+                  Device Type:        CX6-DX PSID(NAP0000000027)
+                  Firmware Version:   22.44.1700
+                  Part Number:        111-05341
+                  Hardware Revision:  20
+                  Serial Number:      032403001370
+----
+

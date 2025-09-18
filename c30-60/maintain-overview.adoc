@@ -2,16 +2,16 @@
 permalink: c30-60/maintain-overview.html
 sidebar: sidebar
 keywords: aff c30, aff c60, maintenance, maintenance, repairing a20 aff a30 aff a50, replace a20 aff a30 aff a50 components
-summary: Maintain the hardware of your AFF C30 or AFF C60 storage systems to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
+summary: Maintain the hardware of your AFF C30 or AFF C60 storage system to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 ---
 = Overview of hardware maintenance -  AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Maintain the hardware of your AFF C30 or AFF C60 storage systems to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
+Maintain the hardware of your AFF C30 or AFF C60 storage system to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 
-The procedures in this section assume that the AFF C30 or AFF C60 storage systems have already been deployed as storage nodes in the ONTAP environment.
+The procedures in this section assume that the AFF C30 or AFF C60 storage system has already been deployed as a storage node in the ONTAP environment.
 
 == System components
 For the AFF C30 and AFF C60 storage systems, you can perform maintenance procedures on the following components.
@@ -20,9 +20,13 @@ For the AFF C30 and AFF C60 storage systems, you can perform maintenance procedu
 
 |===
 
-a| link:bootmedia-replace-workflow.html[Boot media]
+a| link:bootmedia-replace-workflow-bmr.html[Boot media - automated recovery]
 
-a| The boot media stores a primary and secondary set of ONTAP image files as well as system configuration information that the system uses when it boots.
+a|The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot. During automated recovery, the system retrieves the boot image from the partner node and automatically runs the appropriate boot menu option to install the image on your replacement boot media. The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
+
+a| link:bootmedia-replace-workflow.html[Boot media- manual recovery]
+
+a| The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot the image from a USB drive and restore the configuration from the partner node
 
 a| link:chassis-replace-workflow.html[Chassis]
 
