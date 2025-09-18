@@ -32,3 +32,5 @@ For ONTAP hardware systems, you can perform maintenance procedures on the follow
 | link:rtc-battery-fru-links.html[RTC battery replacement procedures by platform^] | A real-time clock battery preserves system date and time information if the power is off.
 | link:system-management-fru-links.html[System management module replacement procedures by platform^] | The system management module provides out-of-band management capabilities for the system.
 |===
+
+// 2025-09-18: ontap-systems-internal/issues/769
