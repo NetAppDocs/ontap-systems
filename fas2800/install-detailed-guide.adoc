@@ -33,7 +33,7 @@ IMPORTANT: Customers with specific power requirements must check https://hwu.net
 +
 . Access the https://docs.netapp.com/us-en/ontap/task_configure_ontap.html#assign-a-node-management-ip-address[Configure ONTAP on a new cluster with System Manager^]
 .. Review the requirements amd procedure steps.
-.. Gather information about your storage system by completing the https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[setup worksheet^ (need the URL to the worksheet)].
+.. Gather information about your storage system by completing the https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002[Cluster Configuration Worksheet^].
 .. Record the storage system serial number from the controllers.
 +
 image::../media/drw_ssn_label.svg[Example of system serial number]
