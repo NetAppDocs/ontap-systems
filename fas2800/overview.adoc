@@ -24,13 +24,13 @@ The following are select specifications for the FAS2820 storage system in a sing
 * Type: SAN; HA Pairs: 6; Raw Capacity: 19.0 PB / 16.9 PiB; Max Memory: 768 GB
 * Type: HA Pair; Raw Capacity: 3.2 PB / 2.8 PiB; Max Memory: 128.0000
 
-== IO
+== I/O
 
-== Onboard IO
+=== Onboard I/O
 * Protocol: Ethernet 25 Gbps; Ports: 4
 * Protocol: SAS 12 Gbps; Ports: 4
 
-== Total IO
+=== Total I/O
 * Protocol: Ethernet 25 Gbps; Ports: 12
 * Protocol: Ethernet 10 Gbps; Ports: 8
 * Protocol: FC 32 Gbps; Ports: 8
@@ -38,7 +38,7 @@ The following are select specifications for the FAS2820 storage system in a sing
 * Ports: 0
 * Protocol: SAS 12 Gbps; Ports: 4
 
-== Management ports
+=== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 2
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 600 Mbps; Ports: 2

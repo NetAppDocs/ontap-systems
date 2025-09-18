@@ -24,13 +24,13 @@ The following are select specifications for the ASA C250 storage system in a sin
 * Type: SAN; HA Pairs: 6; Raw Capacity: 8.8 PB / 7.9 PiB; Max Memory: 768 GB
 * Type: HA Pair; Raw Capacity: 1.5 PB / 1.3 PiB; Max Memory: 128.0000
 
-== IO
+== I/O
 
-== Onboard IO
+=== Onboard I/O
 * Protocol: Ethernet 25 Gbps; Ports: 4
 * Protocol: Ethernet 10 Gbps; Ports: 4
 
-== Total IO
+=== Total I/O
 * Protocol: Ethernet 100 Gbps; Ports: 4
 * Protocol: Ethernet 25 Gbps; Ports: 20
 * Protocol: Ethernet 10 Gbps; Ports: 4
@@ -38,7 +38,7 @@ The following are select specifications for the ASA C250 storage system in a sin
 * Protocol: NVMe/FC  32 Gbps; Ports: 16
 * Ports: 0
 
-== Management ports
+=== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 2
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 12 Mbps; Ports: 4

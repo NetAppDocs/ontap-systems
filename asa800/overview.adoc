@@ -24,12 +24,12 @@ The following are select specifications for the ASA A800 storage system in a sin
 * Type: SAN; HA Pairs: 6; Raw Capacity: 39.7 PB / 35.2 PiB; Max Memory: 7680 GB
 * Type: HA Pair; Raw Capacity: 6.6 PB / 5.9 PiB; Max Memory: 1280.0000
 
-== IO
+== I/O
 
-== Onboard IO
+=== Onboard I/O
 * Protocol: Ethernet 100 Gbps; Ports: 4
 
-== Total IO
+=== Total I/O
 * Protocol: Ethernet 100 Gbps; Ports: 20
 * Protocol: Ethernet 25 Gbps; Ports: 16
 * Protocol: Ethernet 10 Gbps; Ports: 32
@@ -39,7 +39,7 @@ The following are select specifications for the ASA A800 storage system in a sin
 * Ports: 0
 * Protocol: SAS 12 Gbps; Ports: 32
 
-== Management ports
+=== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 4
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 12 Mbps; Ports: 4

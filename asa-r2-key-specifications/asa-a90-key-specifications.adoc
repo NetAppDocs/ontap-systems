@@ -10,7 +10,7 @@ summary: Key specifications for ASA A90
 [.lead]
 The following are select specifications for the ASA A90 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
 
-== ASA A90 specifications at a glance
+== Key capacity, memory, form factor, and ONTAP Version specifications
 
 * Platform Configuration: ASA A90 Single Chassis HA Pair
 * Max Raw Capacity: 2.6622 PB
@@ -24,12 +24,12 @@ The following are select specifications for the ASA A90 storage system in a sing
 * Type: SAN; HA Pairs: 6; Raw Capacity: 16.0 PB / 14.2 PiB; Max Memory: 12288 GB
 * Type: HA Pair; Raw Capacity: 2.7 PB / 2.4 PiB; Max Memory: 2048.0000
 
-== IO
+== I/O
 
-== Onboard IO
-No onboard IO data.
+=== Onboard I/O
+No onboard I/O data.
 
-== Total IO
+=== Total I/O
 * Protocol: Ethernet 200 Gbps; Ports: 24
 * Protocol: Ethernet 100 Gbps; Ports: 36
 * Protocol: Ethernet 25 Gbps; Ports: 56
@@ -38,7 +38,7 @@ No onboard IO data.
 * Protocol: NVMe/FC  64 Gbps; Ports: 56
 * Ports: 0
 
-== Management ports
+=== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 2
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 600 Mbps; Ports: 2

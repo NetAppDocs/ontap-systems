@@ -23,19 +23,19 @@ The following are select specifications for the ASA A150 storage system in a sin
 * Type: SAN; HA Pairs: 6; Raw Capacity: 3.3 PB / 2.9 PiB; Max Memory: 384 GB
 * Type: HA Pair; Raw Capacity: 0.5 PB / 0.5 PiB; Max Memory: 64.0000
 
-== IO
+== I/O
 
-== Onboard IO
+=== Onboard I/O
 * Protocol: Ethernet 10 Gbps; Ports: 12
 * Protocol: FC 16 Gbps; Ports: 8
 * Protocol: SAS 12 Gbps; Ports: 4
 
-== Total IO
+=== Total I/O
 * Protocol: Ethernet 10 Gbps; Ports: 12
 * Protocol: FC 16 Gbps; Ports: 8
 * Protocol: SAS 12 Gbps; Ports: 4
 
-== Management ports
+=== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 2
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 12 Mbps; Ports: 2

@@ -445,15 +445,15 @@ for folder, configs in folder_to_platformconfigs.items():
             for label, value in key_specs:
                 if value:
                     content += f"* {label}: {value}\n"
-            content += f"== {sentence_case('Scaleout maximums')}\n" + adoc_bulleted_list([
+            content += f"== Scaleout maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', clean_br(scaleout['NAS HAPairs']), clean_br(scaleout['NAS RawCapacity']), clean_br(scaleout['NAS MaxMemory'])],
                 ['SAN', clean_br(scaleout['SAN HAPairs']), clean_br(scaleout['SAN RawCapacity']), clean_br(scaleout['SAN MaxMemory'])],
                 ['HA Pair', '', clean_br(scaleout['HA Pair RawCapacity']), clean_br(scaleout['HA Pair MaxMemory'])],
             ]) + '\n'
-            content += f"== {sentence_case('IO')}\n\n== {sentence_case('Onboard IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard IO data.\n')
-            content += f"\n== {sentence_case('Total IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total IO data.\n')
-            content += f"\n== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
+            content += f"== {sentence_case('I/O')}\n\n=== {sentence_case('Onboard I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard I/O data.\n')
+            content += f"\n=== {sentence_case('Total I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total I/O data.\n')
+            content += f"\n=== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
             content += f"\n== {sentence_case('Storage networking supported')}\n" + adoc_storage_networking_bullets(storage_networking) + "\n"
             content += f"== {sentence_case('System environment specifications')}\n"
             if env:
@@ -546,15 +546,15 @@ for folder, configs in folder_to_platformconfigs.items():
             for label, value in key_specs:
                 if value:
                     content += f"* {label}: {value}\n"
-            content += f"== {sentence_case('Scaleout maximums')}\n" + adoc_bulleted_list([
+            content += f"== Scaleout maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', clean_br(scaleout['NAS HAPairs']), clean_br(scaleout['NAS RawCapacity']), clean_br(scaleout['NAS MaxMemory'])],
                 ['SAN', clean_br(scaleout['SAN HAPairs']), clean_br(scaleout['SAN RawCapacity']), clean_br(scaleout['SAN MaxMemory'])],
                 ['HA Pair', '', clean_br(scaleout['HA Pair RawCapacity']), clean_br(scaleout['HA Pair MaxMemory'])],
             ]) + '\n'
-            content += f"== {sentence_case('IO')}\n\n== {sentence_case('Onboard IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard IO data.\n')
-            content += f"\n== {sentence_case('Total IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total IO data.\n')
-            content += f"\n== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
+            content += f"== {sentence_case('I/O')}\n\n=== {sentence_case('Onboard I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard I/O data.\n')
+            content += f"\n=== {sentence_case('Total I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total I/O data.\n')
+            content += f"\n=== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
             content += f"\n== {sentence_case('Storage networking supported')}\n" + adoc_storage_networking_bullets(storage_networking) + "\n"
             content += f"== {sentence_case('System environment specifications')}\n"
             if env:
@@ -644,15 +644,15 @@ for folder, configs in folder_to_platformconfigs.items():
             for label, value in key_specs:
                 if value:
                     content += f"* {label}: {value}\n"
-            content += f"== {sentence_case('Scaleout maximums')}\n" + adoc_bulleted_list([
+            content += f"== Scaleout maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', clean_br(scaleout['NAS HAPairs']), clean_br(scaleout['NAS RawCapacity']), clean_br(scaleout['NAS MaxMemory'])],
                 ['SAN', clean_br(scaleout['SAN HAPairs']), clean_br(scaleout['SAN RawCapacity']), clean_br(scaleout['SAN MaxMemory'])],
                 ['HA Pair', '', clean_br(scaleout['HA Pair RawCapacity']), clean_br(scaleout['HA Pair MaxMemory'])],
             ]) + '\n'
-            content += f"== {sentence_case('IO')}\n\n== {sentence_case('Onboard IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard IO data.\n')
-            content += f"\n== {sentence_case('Total IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total IO data.\n')
-            content += f"\n== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
+            content += f"== {sentence_case('I/O')}\n\n=== {sentence_case('Onboard I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard I/O data.\n')
+            content += f"\n=== {sentence_case('Total I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total I/O data.\n')
+            content += f"\n=== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
             content += f"\n== {sentence_case('Storage networking supported')}\n" + adoc_storage_networking_bullets(storage_networking) + "\n"
             content += f"== {sentence_case('System environment specifications')}\n"
             if env:
@@ -742,15 +742,15 @@ for folder, configs in folder_to_platformconfigs.items():
             for label, value in key_specs:
                 if value:
                     content += f"* {label}: {value}\n"
-            content += f"== {sentence_case('Scaleout maximums')}\n" + adoc_bulleted_list([
+            content += f"== Scaleout maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', clean_br(scaleout['NAS HAPairs']), clean_br(scaleout['NAS RawCapacity']), clean_br(scaleout['NAS MaxMemory'])],
                 ['SAN', clean_br(scaleout['SAN HAPairs']), clean_br(scaleout['SAN RawCapacity']), clean_br(scaleout['SAN MaxMemory'])],
                 ['HA Pair', '', clean_br(scaleout['HA Pair RawCapacity']), clean_br(scaleout['HA Pair MaxMemory'])],
             ]) + '\n'
-            content += f"== {sentence_case('IO')}\n\n== {sentence_case('Onboard IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard IO data.\n')
-            content += f"\n== {sentence_case('Total IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total IO data.\n')
-            content += f"\n== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
+            content += f"== {sentence_case('I/O')}\n\n=== {sentence_case('Onboard I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard I/O data.\n')
+            content += f"\n=== {sentence_case('Total I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total I/O data.\n')
+            content += f"\n=== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
             content += f"\n== {sentence_case('Storage networking supported')}\n" + adoc_storage_networking_bullets(storage_networking) + "\n"
             content += f"== {sentence_case('System environment specifications')}\n"
             if env:
@@ -840,15 +840,15 @@ for folder, configs in folder_to_platformconfigs.items():
             for label, value in key_specs:
                 if value:
                     content += f"* {label}: {value}\n"
-            content += f"== {sentence_case('Scaleout maximums')}\n" + adoc_bulleted_list([
+            content += f"== Scaleout maximums\n" + adoc_bulleted_list([
                 'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
                 ['NAS', clean_br(scaleout['NAS HAPairs']), clean_br(scaleout['NAS RawCapacity']), clean_br(scaleout['NAS MaxMemory'])],
                 ['SAN', clean_br(scaleout['SAN HAPairs']), clean_br(scaleout['SAN RawCapacity']), clean_br(scaleout['SAN MaxMemory'])],
                 ['HA Pair', '', clean_br(scaleout['HA Pair RawCapacity']), clean_br(scaleout['HA Pair MaxMemory'])],
             ]) + '\n'
-            content += f"== {sentence_case('IO')}\n\n== {sentence_case('Onboard IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard IO data.\n')
-            content += f"\n== {sentence_case('Total IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total IO data.\n')
-            content += f"\n== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
+            content += f"== {sentence_case('I/O')}\n\n=== {sentence_case('Onboard I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard I/O data.\n')
+            content += f"\n=== {sentence_case('Total I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total I/O data.\n')
+            content += f"\n=== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
             content += f"\n== {sentence_case('Storage networking supported')}\n" + adoc_storage_networking_bullets(storage_networking) + "\n"
             content += f"== {sentence_case('System environment specifications')}\n"
             if env:
@@ -949,15 +949,15 @@ for folder, configs in folder_to_platformconfigs.items():
         for label, value in key_specs:
             if value:
                 content += f"* {label}: {value}\n"
-        content += f"== {sentence_case('Scaleout maximums')}\n" + adoc_bulleted_list([
+        content += f"== Scaleout maximums\n" + adoc_bulleted_list([
             'Type', 'HA Pairs', 'Raw Capacity', 'Max Memory'], [
             ['NAS', clean_br(scaleout['NAS HAPairs']), clean_br(scaleout['NAS RawCapacity']), clean_br(scaleout['NAS MaxMemory'])],
             ['SAN', clean_br(scaleout['SAN HAPairs']), clean_br(scaleout['SAN RawCapacity']), clean_br(scaleout['SAN MaxMemory'])],
             ['HA Pair', '', clean_br(scaleout['HA Pair RawCapacity']), clean_br(scaleout['HA Pair MaxMemory'])],
         ]) + '\n'
-        content += f"== {sentence_case('IO')}\n\n== {sentence_case('Onboard IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard IO data.\n')
-        content += f"\n== {sentence_case('Total IO')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total IO data.\n')
-        content += f"\n== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
+        content += f"== {sentence_case('I/O')}\n\n=== {sentence_case('Onboard I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in onboard]) if onboard else 'No onboard I/O data.\n')
+        content += f"\n=== {sentence_case('Total I/O')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in totalio]) if totalio else 'No total I/O data.\n')
+        content += f"\n=== {sentence_case('Management ports')}\n" + (adoc_bulleted_list(['Protocol', 'Ports'], [(clean_br(proto), clean_br(ports)) for proto, ports in mgmt]) if mgmt else 'No management port data.\n')
         content += f"\n== {sentence_case('Storage networking supported')}\n" + adoc_storage_networking_bullets(storage_networking) + "\n"
         content += f"== {sentence_case('System environment specifications')}\n"
         if env:

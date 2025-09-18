@@ -24,12 +24,12 @@ The following are select specifications for the AFF A90 storage system in a sing
 * Type: SAN; HA Pairs: 6; Raw Capacity: 39.7 PB / 35.2 PiB; Max Memory: 12288 GB
 * Type: HA Pair; Raw Capacity: 6.6 PB / 5.9 PiB; Max Memory: 2048.0000
 
-== IO
+== I/O
 
-== Onboard IO
-No onboard IO data.
+=== Onboard I/O
+No onboard I/O data.
 
-== Total IO
+=== Total I/O
 * Protocol: Ethernet 200 Gbps; Ports: 24
 * Protocol: Ethernet 100 Gbps; Ports: 36
 * Protocol: Ethernet 25 Gbps; Ports: 56
@@ -39,7 +39,7 @@ No onboard IO data.
 * Ports: 0
 * Protocol: SAS 12 Gbps; Ports: 56
 
-== Management ports
+=== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 2
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 600 Mbps; Ports: 2

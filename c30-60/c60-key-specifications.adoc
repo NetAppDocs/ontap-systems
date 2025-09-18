@@ -24,12 +24,12 @@ The following are select specifications for the AFF C60 storage system in a sing
 * Type: SAN; HA Pairs: 4; Raw Capacity: 29.5 PB / 26.2 PiB; Max Memory: 512 GB
 * Type: HA Pair; Raw Capacity: 7.4 PB / 6.5 PiB; Max Memory: 128.0000
 
-== IO
+== I/O
 
-== Onboard IO
-No onboard IO data.
+=== Onboard I/O
+No onboard I/O data.
 
-== Total IO
+=== Total I/O
 * Protocol: Ethernet 100 Gbps; Ports: 16
 * Protocol: Ethernet 25 Gbps; Ports: 24
 * Protocol: Ethernet 10 Gbps; Ports: 24
@@ -37,7 +37,7 @@ No onboard IO data.
 * Protocol: NVMe/FC  64 Gbps; Ports: 24
 * Ports: 0
 
-== Management ports
+=== Management ports
 * Protocol: Ethernet 1 Gbps; Ports: 2
 * Protocol: RS-232 115 Kbps; Ports: 4
 * Protocol: USB 600 Mbps; Ports: 2
