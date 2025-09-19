@@ -6,9 +6,11 @@ summary: Links to NVDIMM replacement procedures by system.
 ---
 
 = NVDIMM FRU Links
+:icons: font
+:imagesdir: ../media/
 
 [.lead]
-This page provides links to NVDIMM replacement procedures organized by system.
+This page provides links to NVDIMM replacement procedures organized by platform type.
 
 [role="tabbed-block"]
 ====
@@ -30,13 +32,10 @@ This page provides links to NVDIMM replacement procedures organized by system.
 * link:../asa-r2-a1k/nvdimm-replace.html[ASA A1K^]
 * link:../asa-r2-a20-30-50/nvdimm-replace.html[ASA A20/30/50^]
 * link:../asa-r2-70-90/nvdimm-replace.html[ASA A70/90^]
-* link:../asa-r2-c30/nvdimm-replace.html[ASA C30^]
 --
 
 .FAS systems
 --
-* link:../fas50/nvdimm-replace.html[FAS50^]
-* link:../fas-70-90/nvdimm-replace.html[FAS70/90^]
 * link:../fas8300/nvdimm-replace.html[FAS8300^]
 --
 ====

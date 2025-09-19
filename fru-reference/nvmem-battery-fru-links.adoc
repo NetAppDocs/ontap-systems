@@ -6,9 +6,11 @@ summary: Links to NVMEM/NVRAM battery replacement procedures by system.
 ---
 
 = NVMEM/NVRAM Battery FRU Links
+:icons: font
+:imagesdir: ../media/
 
 [.lead]
-This page provides links to NVMEM/NVRAM battery replacement procedures organized by system.
+This page provides links to NVMEM/NVRAM battery replacement procedures organized by platform type.
 
 [role="tabbed-block"]
 ====
@@ -64,9 +66,6 @@ This page provides links to NVMEM/NVRAM battery replacement procedures organized
 * link:../fas8300/nvdimm-battery-replace.html[FAS8300^]
 * link:../fas9000/dcpm-nvram10-battery-replace.html[FAS9000^]
 * link:../fas9500/dcpm-nvram11-battery-replace.html[FAS9500^]
---
-====
---
 --
 ====
 
