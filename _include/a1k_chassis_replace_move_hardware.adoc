@@ -1,0 +1,181 @@
+
+== Step 1: Remove the PSUs and cables
+
+You need to remove the two power supply units (PSUs) before removing the controller.
+
+.Steps
+. Remove the PSUs:
+
+.. If you are not already grounded, properly ground yourself.
+.. Unplug power cords from the PSUs.
+
++
+If your system has DC power, disconnect the power block from the PSUs. 
+
+.. Remove the two PSUs from the rear of the chassis by rotating the PSU handle up so that you can pull the PSU out, press the PSU locking tab, and then pull PSU out of the chassis.
++
+CAUTION: The PSU is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
+
++
+image::../media/drw_a1k_psu_remove_replace_ieops-1378.svg[Remove or replace PSU]
+
++
+[cols="1,4"]
+|===
+a|image:../media/icon_round_1.png[Callout number 1] 
+a|
+Terracotta PSU locking tab
+|===
+
++
+.. Repeat these steps for the second PSU.
+
+
+. Remove the cables:
+
+.. Unplug the system cables and any  SFP and QSFP modules (if needed) from the controller module, but leave them in the cable management device to keep them organized.
+
++
+NOTE: Cables should have been labeled at the beginning of this procedure.
+
++
+.. Remove the cable management device from the chassis and set it aside. 
+
+== Step 2: Remove the I/O cards, NVRAM12, and system management module
+
+. Remove the target I/O module from the chassis:
+
++
+image:../media/drw_a1k_io_remove_replace_ieops-1382.svg[Remove I/O module]
++
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+I/O cam latch
+|===
+
+.. Depress the cam button on the target module.
+.. Rotate the cam latch away from the module as far as it will go.
+.. Remove the module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
++
+Make sure that you keep track of which slot the I/O module was in.
+
+.. Set the I/O module aside and repeat these steps for any other I/O modules.
+
+. Remove the NVRAM12 module:
+ .. Depress the locking cam button.
++
+The cam button moves away from the chassis.
+
+ .. Rotate the cam latch down as far as it will go.
++
+ .. Remove the NVRAM module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
++
+image::../media/drw_nvram1_remove_only_ieops-2574.svg[Remove the NVRAM12 module and DIMMs]
++
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] |
+NVRAM12 cam latch
+
+|===
+
+.. Set the NVRAM module on a stable surface.
+
+. Remove the system management module:
+.. Depress the cam button on the System Management module.
+
+.. Rotate the cam lever down as far as it will go.
+ .. Loop your finger into the hole on the cam lever and pull the module straight out of the system.
++
+image::../media/drw_a1k_sys-mgmt_remove_ieops-1384.svg[System Management remove]
++
+[cols="1,4"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+System Management module cam latch
+
+|===
+
+
+== Step 3: Remove the controller module
+
+. On the front of the unit, hook your fingers into the holes in the locking cams, squeeze the tabs on the cam levers, and gently, but firmly rotate both latches toward you at the same time.
++
+The controller module moves slightly out of the chassis.
++
+image::../media/drw_a1k_pcm_remove_replace_ieops-1375.svg[Controller remove graphic]
++
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+|
+Locking cam latches
+|===
+
+. Slide the controller module out of the chassis and place it on a flat, stable surface.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+== Step 4: Replace the impaired chassis 
+
+Remove the impaired chassis and install the replacement chassis.
+
+.Steps
+. Remove the impaired chassis:
+.. Remove the screws from the chassis mount points.
+.. Slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
+
+. Install the replacement chassis:
+
+.. Install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
+.. Slide the chassis all the way into the equipment rack or system cabinet.
+.. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
+
+== Step  5: Install the chassis components
+
+After the replacement chassis is installed, you need to install the controller module, recable the I/O modules and system management module, and then reinstall and plug in the PSUs.
+
+.Steps
+. Install the controller module:
+.. Align the end of the controller module with the opening in the front of the chassis, and then gently push the controller all the way into the chassis.
+.. Rotate the locking latches into the locked position.
+. Install the I/O cards at the rear of the chassis:
+.. Align the end of the I/O module with the same slot in the replacement chassis as in the impaired chassis, and then gently push the module all the way into the chassis.
+.. Rotate the cam latch upward into the locked position.
+.. Repeat these steps for any other I/O modules.
+. Install the system management module at the rear of the chassis:
+.. Align the end of the system management module with the opening in the chassis, and then gently push the module all the way into the chassis.
+.. Rotate the cam latch upward into the locked position.
+
+.. If you have not already done so, reinstall the cable management device and reconnect the cables to the I/O cards and system management module.
++
+NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them.
++
+Make sure that the cables are connected according to the cable labels.
+. Install the NVRAM12 module in the back of the chassis at the rear of the chassis:
+.. Align the end of the NVRAM12 module with the opening in the chassis, and then gently push the module all the way into the chassis.
+.. Rotate the cam latch upward into the locked position.
+
+
+. Install the PSUs:
+
+.. Using both hands, support and align the edges of the PSU with the opening in the chassis.
+.. Gently push the PSU into the chassis until the locking tab clicks into place.
++
+The power supplies will only properly engage with the internal connector and lock in place one way.
++
+NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
+
+. Reconnect the PSU power cables to both of the PSUs and secure each power cable to the PSU using the power cable retainer.
++
+If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis and secure the power cable to the PSU with the thumbscrews.
+
++
+The controller modules begin to boot as soon as PSUs are installed and power is restored.
