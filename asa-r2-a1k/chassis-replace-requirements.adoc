@@ -1,0 +1,18 @@
+---
+permalink: asa-r2-a1k/chassis-replace-requirements.html
+sidebar: sidebar
+keywords: asa a1k, replace the chassis
+summary: Before replacing the chassis in your ASA A1K system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have local administrator credentials for ONTAP, the correct replacement chassis, and the necessary tools.
+---
+= Requirements to replace the chassis - ASA A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before replacing the chassis in your ASA A1K system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have local administrator credentials for ONTAP, the correct replacement chassis, and the necessary tools.
+
+include::../_include/a1k_chassis_replace_requirements.adoc[]
+
+.What's next?
+
+After you've reviewed the requirements to replace the chassis, you need to link:chassis-replace-prepare.html[prepare to replace the chassis].

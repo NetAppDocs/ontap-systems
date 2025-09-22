@@ -57,6 +57,21 @@ entries:
         - title: Return failed part to NetApp
           url: /fas-70-90/bootmedia-complete-rma.html
           # END boot media
+   - title: Chassis
+     pdf-filename: FAS70 and FAS90 Chassis
+     entries:
+        - title: Chassis replacement workflow
+          url: /fas-70-90/chassis-replace-workflow.html
+        - title: Review requirements
+          url: /fas-70-90/chassis-replace-requirements.html
+        - title: Prepare to replace
+          url: /fas-70-90/chassis-replace-prepare.html
+        - title: Shut down controller
+          url: /fas-70-90/chassis-replace-shutdown.html
+        - title: Replace chassis
+          url: /fas-70-90/chassis-replace-move-hardware.html
+        - title: Complete chassis replacement
+          url: /fas-70-90/chassis-replace-complete-system-restore-rma.html
    - title: Controller
      pdf-filename: FAS70 and FAS90 Controller Module
      entries:
