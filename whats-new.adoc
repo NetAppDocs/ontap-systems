@@ -12,6 +12,16 @@ summary: 'Learn about the new platforms for ONTAP hardware systems.'
 [.lead]
 Learn what's new for ONTAP hardware systems. For additional support information, see link:supported-platforms.html[ONTAP hardware and software compatibility] and link:eoa-hardware.html[hardware no longer supported].
 
+== September 2025
+
+=== Platform specifications
+The ONTAP hardware systems documentation now includes specifications also found in link:https://hwu.netapp.com[Hardware Universe]. For example, link:https://docs.netapp.com/us-en/ontap-systems_hotfix-main/a1k/overview.html[Key specifications for AFF A1K].
+
+=== Platform FRU procedure reference
+The ONTAP hardware systems documentation now includes links to FRU procedures organized by platform model. 
+
+link:fru-reference/fru-overview.html[Platform FRU reference]
+
 == May 2025
 
 === ASA C30
