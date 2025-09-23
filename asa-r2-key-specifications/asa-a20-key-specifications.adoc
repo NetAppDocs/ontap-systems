@@ -1,0 +1,119 @@
+---
+permalink: asa-r2-key-specifications/asa-a20-key-specifications.html
+sidebar: sidebar
+summary: Key specifications for ASA A20
+---
+= Key specifications for ASA A20
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following are select specifications for the ASA A20 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+
+== Key capacity, memory, form factor, and ONTAP Version specifications
+
+* Platform Configuration: ASA A20 Single Chassis HA Pair
+* Max Raw Capacity: 0.7344 PB
+* Memory: 128.0000 GB
+* Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
+* ONTAP Version: ONTAP: 9.16.1P2
+* PCIe Expansion Slots: 8
+* Minimum ONTAP Version: ONTAP 9.16.1
+== Scaleout maximums
+* Type: NAS
+* Type: SAN; HA Pairs: 3; Raw Capacity: 2.2 PB / 2.0 PiB; Max Memory: 384 GB
+* Type: HA Pair; Raw Capacity: 0.7 PB / 0.7 PiB; Max Memory: 128.0000
+
+== I/O
+
+=== Onboard I/O
+No onboard I/O data.
+
+=== Total I/O
+* Protocol: Ethernet 100 Gbps; Ports: 12
+* Protocol: Ethernet 25 Gbps; Ports: 32
+* Protocol: Ethernet 10 Gbps; Ports: 24
+* Protocol: FC 64 Gbps; Ports: 24
+* Protocol: NVMe/FC  64 Gbps; Ports: 24
+* Ports: 0
+
+=== Management ports
+* Protocol: Ethernet 1 Gbps; Ports: 2
+* Protocol: RS-232 115 Kbps; Ports: 4
+* Protocol: USB 600 Mbps; Ports: 2
+
+== Storage networking supported
+* FC
+* iSCSI
+* NVMe/FC 
+* NVMe/TCP
+== System environment specifications
+* Typical Power: 2489 BTU/hr
+* Worst-case Power: 3890 BTU/hr
+* Weight: 60.7 lb
+27.5 kg
+* Height: 2U
+* Width: 19” IEC rack-compliant (17.6” 44.7 cm)
+* Depth: 
+* Operating Temp/Altitude/Humidity: 10°C to 35°C
+50°F to 
+95°F) at
+<= 3048m
+<= 10000 ft) elevation;8% to 80%
+relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.0
+Sound pressure (LpAm) (bystander positions): 70.5 dB
+
+== Compliance
+* Certifications EMC/EMI: AMCA,
+FCC,
+ICES,
+KC,
+Morocco,
+VCCI
+* Certifications safety: BIS,
+CB,
+CSA,
+G_K_U-SoR,
+IRAM,
+NOM,
+NRCS,
+SONCAP,
+TBS
+* Certifications Safety/EMC/EMI: EAC,
+UKRSEPRO
+* Certifications Safety/EMC/EMI/RoHS: BSMI,
+CE DoC,
+UKCA DoC
+* Standards EMC/EMI: BS-EN-55032,
+BS-EN55035,
+CISPR 32,
+EN55022,
+EN55024,
+EN55032,
+EN55035,
+EN61000-3-2,
+EN61000-3-3,
+FCC Part 15 Class A,
+ICES-003,
+KS C 9832,
+KS C 9835
+* Standards Safety: ANSI/UL60950-1,
+ANSI/UL62368-1,
+BS-EN62368-1,
+CAN/CSA C22.2 No. 60950-1,
+CAN/CSA C22.2 No. 62368-1,
+CNS 15598-1,
+EN60825-1,
+EN62368-1,
+IEC 62368-1,
+IEC60950-1,
+IS 13252(part 1)
+
+== High availability
+* Ethernet based baseboard management controller (BMC) and ONTAP management interface
+* Redundant hot-swappable controllers
+* Redundant hot-swappable power supplies
+* SAS in-band management over SAS connections for external shelves

@@ -1,0 +1,131 @@
+---
+permalink: a150/overview.html
+sidebar: sidebar
+summary: Key specifications for the A150 platform group
+---
+= Key specifications for AFF A150
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following are select specifications for the AFF A150 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+
+== Key specifications for AFF A150
+
+* Platform Configuration: AFF A150 UTA2 Single Chassis HA Pair
+* Max Raw Capacity: 0.5472 PB
+* Memory: 64.0000 GB
+* Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
+* ONTAP Version: ONTAP: 9.16.1P2
+* Minimum ONTAP Version: ONTAP 9.10.1P12
+== Scaleout maximums
+* Type: NAS; HA Pairs: 12; Raw Capacity: 6.6 PB / 5.8 PiB; Max Memory: 768 GB
+* Type: SAN; HA Pairs: 6; Raw Capacity: 3.3 PB / 2.9 PiB; Max Memory: 384 GB
+* Type: HA Pair; Raw Capacity: 0.5 PB / 0.5 PiB; Max Memory: 64.0000
+
+== I/O
+
+=== Onboard I/O
+* Protocol: Ethernet 10 Gbps; Ports: 12
+* Protocol: FC 16 Gbps; Ports: 8
+* Protocol: SAS 12 Gbps; Ports: 4
+
+=== Total I/O
+* Protocol: Ethernet 10 Gbps; Ports: 12
+* Protocol: FC 16 Gbps; Ports: 8
+* Protocol: SAS 12 Gbps; Ports: 4
+
+=== Management ports
+* Protocol: Ethernet 1 Gbps; Ports: 2
+* Protocol: RS-232 115 Kbps; Ports: 4
+* Protocol: USB 12 Mbps; Ports: 2
+
+== Storage networking supported
+* CIFS
+* FC
+* FCoE
+* iSCSI
+* NFS v3
+* NFS v4.0
+* NFS v4.1
+* NFS v4.2
+* NVMe/TCP
+* S3
+* S3 with NAS
+* SMB 2.0
+* SMB 2.1
+* SMB 2.x
+* SMB 3.0
+* SMB 3.1
+* SMB 3.1.1
+== System environment specifications
+* Typical Power: 1209 BTU/hr
+* Worst-case Power: 1676 BTU/hr
+* Weight: 60.8 lb
+27.6 kg
+* Height: 2U
+* Width: 19” IEC rack-compliant (17.6” 44.7 cm)
+* Depth: 19.0”
+(24.1” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 5°C to 45°C
+41°F to 
+113°F) at
+<= 3048m
+<= 10000 ft) elevation;8% to 90%
+relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 6.9
+Sound pressure (LpAm) (bystander positions): 51.0 dB
+
+== Compliance
+* Certifications EMC/EMI: AMCA,
+FCC,
+ICES,
+KC,
+Morocco,
+VCCI
+* Certifications safety: BIS,
+CB,
+CSA,
+G_K_U-SoR,
+IRAM,
+NOM,
+NRCS,
+SONCAP,
+TBS
+* Certifications Safety/EMC/EMI: EAC,
+UKRSEPRO
+* Certifications Safety/EMC/EMI/RoHS: BSMI,
+CE DoC,
+UKCA DoC
+* Standards EMC/EMI: BS-EN-55024,
+BS-EN55035,
+CISPR 32,
+EN55022,
+EN55024,
+EN55032,
+EN55035,
+EN61000-3-2,
+EN61000-3-3,
+FCC Part 15 Class A,
+ICES-003,
+KS C 9832,
+KS C 9835
+* Standards Safety: ANSI/UL60950-1,
+ANSI/UL62368-1,
+BS-EN62368-1,
+CAN/CSA C22.2 No. 60950-1,
+CAN/CSA C22.2 No. 62368-1,
+CNS 14336,
+EN60825-1,
+EN62368-1,
+IEC 62368-1,
+IEC60950-1,
+IS 13252(part 1)
+
+== High availability
+* Ethernet based baseboard management controller (BMC) and ONTAP management interface
+* Redundant hot-swappable controllers
+* Redundant hot-swappable power supplies
+* SAS in-band management over SAS connections
