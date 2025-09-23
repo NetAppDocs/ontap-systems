@@ -2,7 +2,7 @@
 permalink: fru-reference/fru-overview.html
 sidebar: sidebar
 keywords: FRU reference, field replaceable units, platform FRUs, hardware components, replacement procedures
-summary: Overview of platform field replaceable units and links to replacement procedures by FRU type
+summary: Overview of platform field replaceable units and links to replacement procedures by FRU type.
 ---
 = Platform FRU reference
 :icons: font
@@ -11,8 +11,10 @@ summary: Overview of platform field replaceable units and links to replacement p
 [.lead]
 For ONTAP hardware systems, you can perform maintenance procedures on the following field replaceable unit (FRU) components.
 
- [cols="1,2"]
+[cols="1,2"]
+
 |===
+
 | FRU procedure | Description
 
 | link:bootmedia-fru-links.html[Boot media replacement procedures by platform^] | The boot media stores a primary and secondary set of boot image files that the system uses when it boots.
