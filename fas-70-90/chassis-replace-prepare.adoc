@@ -1,0 +1,18 @@
+---
+permalink: fas-70-90/chassis-replace-prepare.html
+sidebar: sidebar
+keywords: aff a1k, replace the chassis
+summary: Prepare to replace the impaired chassis in your FAS70 and FAS90 system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller modules.
+---
+= Prepare to replace the chassis - FAS70 and FAS90
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare to replace the impaired chassis in your FAS70 or FAS90 system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller module.
+
+include::../_include/a1k_chassis_replace_prepare.adoc[]
+
+.What's next?
+
+After you’ve prepared to replace your FAS70 or FAS90 chassis hardware, you need to link:chassis-replace-shutdown.html[shut down the controller].

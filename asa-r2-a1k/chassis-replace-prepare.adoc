@@ -1,0 +1,18 @@
+---
+permalink: asa-r2-a1k/chassis-replace-prepare.html
+sidebar: sidebar
+keywords: asa a1k, replace the chassis
+summary: Prepare to replace the impaired chassis in your ASA A1K system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller modules.
+---
+= Prepare to replace the chassis - ASA A1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare to replace the impaired chassis in your ASA A1K system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller module.
+
+include::../_include/a1k_chassis_replace_prepare.adoc[]
+
+.What's next?
+
+After you’ve prepared to replace your ASA A1K chassis hardware, you need to link:chassis-replace-shutdown.html[shut down the controller].

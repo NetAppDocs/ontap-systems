@@ -11,7 +11,6 @@ The AFF A-Series and AFF C-Series systems provide a robust, scale-out platform t
 AFF A-Series and AFF C-Series systems are supported beginning in the following ONTAP releases.
 
 
-[horizontal]
 ONTAP 9.16.1:: 
 * AFF A20 
 * AFF A30 
@@ -44,7 +43,6 @@ ASA r2 systems deliver a unified hardware and software solution that creates a s
 
 ASA r2 systems are supported beginning in the following ONTAP releases.
 
-[horizontal]
 ONTAP 9.16.1::
 * ASA A20
 * ASA A30
@@ -63,7 +61,6 @@ ASA A-Series and ASA C-Series systems deliver a simplified and dedicated SAN exp
 
 ASA systems are supported beginning in the following ONTAP releases.
 
-[horizontal]
 
 ONTAP 9.13.1P1::
 * ASA C250
@@ -91,7 +88,6 @@ FAS systems deliver efficient and secure secondary storage - the ultimate soluti
 
 FAS systems are supported beginning in the following ONTAP releases.
 
-[horizontal]
 
 ONTAP 9.16.1::
 * FAS50
@@ -122,7 +118,6 @@ Drive shelves are specifically designed for NetApp AFF, ASA, and FAS systems and
 
 Drive shelves are available beginning with the following ONTAP releases.
 
-[horizontal]
 
 ONTAP 9.16.1:: 
 * DCM3 for SAS-3 shelves
