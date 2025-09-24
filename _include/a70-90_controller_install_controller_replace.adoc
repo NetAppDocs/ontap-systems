@@ -4,7 +4,6 @@
 Reinstall the controller module and reboot it.
 
 .Steps
-. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 . Ensure the air duct is completely closed by rotating it down as far as it will go.
 +
 It must lie flush against the controller module sheet metal.
@@ -26,9 +25,7 @@ The locking latches rise when the controller module is fully seated.
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 
 .. Rotate the locking latches upward into the locked position.
-
-.. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-
+    
 .. Plug in the power supplies. The controller boots to the LOADER prompt as soon as power is restored.
 
 . From the LOADER prompt, enter `show date` to display the date and time on the replacement controller.  Date and time are in GMT.

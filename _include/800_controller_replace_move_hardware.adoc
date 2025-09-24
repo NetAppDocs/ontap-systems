@@ -298,7 +298,6 @@ When locked, the locking latch is flush with the top of the riser and the riser 
 
 After all of the components have been moved from the impaired controller module to the replacement controller module, you must install the replacement controller module into the chassis and then boot it to Maintenance mode.
 
-. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 . If you have not already done so, close the air duct:
  .. Swing the air duct all the way down to the controller module.
  .. Slide the air duct toward the risers until the locking tabs click into place.
@@ -338,7 +337,6 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
  
 . Plug the system cables and transceiver modules into the controller module and reinstall the cable management device.
-. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 . Plug the power cables into the power supplies and reinstall the power cable retainers.
 +
 The controller module begins to boot as soon as it is connected to power. Be prepared to interrupt the boot process.
