@@ -152,6 +152,46 @@ sidebar:
               url: /platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html
             - title: Reinstall door and illuminated badge
               url: /platform-supplemental/42u-1280mm-reinstall-door-and-badge.html
+    - title: Platform FRU reference
+      entries:
+        - title: Overview
+          url: /fru-reference/fru-overview.html
+        - title: Boot media
+          url: /fru-reference/bootmedia-fru-links.html
+        - title: Caching module
+          url: /fru-reference/caching-module-fru-links.html
+        - title: Chassis
+          url: /fru-reference/chassis-fru-links.html
+        - title: Controller
+          url: /fru-reference/controller-fru-links.html
+        - title: DCPM power module
+          url: /fru-reference/dcpm-power-fru-links.html
+        - title: DIMM
+          url: /fru-reference/dimm-fru-links.html
+        - title: Drive
+          url: /fru-reference/drive-fru-links.html
+        - title: Fan
+          url: /fru-reference/fan-fru-links.html
+        - title: I/O module
+          url: /fru-reference/io-module-fru-links.html
+        - title: LED module
+          url: /fru-reference/led-module-fru-links.html
+        - title: Mezzanine
+          url: /fru-reference/mezzanine-fru-links.html
+        - title: NVDIMM
+          url: /fru-reference/nvdimm-fru-links.html
+        - title: NVMEM/NVRAM battery
+          url: /fru-reference/nvmem-battery-fru-links.html
+        - title: NVRAM module
+          url: /fru-reference/nvram-module-fru-links.html
+        - title: PCI cards and risers
+          url: /fru-reference/pci-cards-fru-links.html
+        - title: Power supply
+          url: /fru-reference/power-supply-fru-links.html
+        - title: RTC battery
+          url: /fru-reference/rtc-battery-fru-links.html
+        - title: System management module
+          url: /fru-reference/system-management-fru-links.html
     - title: Legal notices
       url: "/legal-notices.html"
 product-family:
