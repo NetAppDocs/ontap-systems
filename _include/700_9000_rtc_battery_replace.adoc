@@ -3,6 +3,8 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
+You must use an approved RTC battery.
+
 == Step 1: Shut down the impaired controller
 
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
