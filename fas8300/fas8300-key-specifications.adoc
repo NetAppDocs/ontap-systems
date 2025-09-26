@@ -1,0 +1,136 @@
+---
+permalink: /fas8300/fas8300-key-specifications.html
+sidebar: sidebar
+summary: Key specifications for FAS8300
+---
+= Key specifications for FAS8300
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following are select specifications for the FAS8300 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+
+== FAS8300 specifications at a glance
+
+* Platform Configuration: FAS8300 Single Chassis HA Pair, Ethernet Bundle
+* Max Raw Capacity: 15.0000 PB
+* Memory: 256.0000 GB
+* Form Factor: 4U chassis with 2 HA controllers 
+* ONTAP Version: ONTAP: 9.16.1P2
+* PCIe Expansion Slots: 14
+* Minimum ONTAP Version: ONTAP 9.7RC1
+== Scaleout maximums
+* Type: NAS; HA Pairs: 12; Raw Capacity: 180.0 PB / 159.9 PiB; Max Memory: 3072 GB
+* Type: SAN; HA Pairs: 6; Raw Capacity: 90.0 PB / 79.9 PiB; Max Memory: 1536 GB
+* Type: HA Pair; Raw Capacity: 15.0 PB / 13.3 PiB; Max Memory: 256.0000
+
+== I/O
+
+=== Onboard I/O
+* Protocol: Ethernet 100 Gbps; Ports: 4
+* Protocol: Ethernet 25 Gbps; Ports: 12
+* Protocol: SAS 12 Gbps; Ports: 8
+
+=== Total I/O
+* Protocol: Ethernet 100 Gbps; Ports: 20
+* Protocol: Ethernet 25 Gbps; Ports: 28
+* Protocol: Ethernet 10 Gbps; Ports: 32
+* Protocol: FC 32 Gbps; Ports: 32
+* Protocol: NVMe/FC  32 Gbps; Ports: 32
+* Ports: 0
+* Protocol: SAS 12 Gbps; Ports: 40
+
+=== Management ports
+* Protocol: Ethernet 1 Gbps; Ports: 2
+* Protocol: RS-232 115 Kbps; Ports: 4
+* Protocol: USB 12 Mbps; Ports: 4
+
+== Storage networking supported
+* CIFS
+* FC
+* iSCSI
+* NFS v3
+* NFS v4.0
+* NFS v4.1
+* NFS v4.2
+* NVMe/FC 
+* NVMe/TCP
+* S3
+* S3 with NAS
+* SMB 2.0
+* SMB 2.1
+* SMB 2.x
+* SMB 3.0
+* SMB 3.1
+* SMB 3.1.1
+== System environment specifications
+* Typical Power: 4024 BTU/hr
+* Worst-case Power: 5017 BTU/hr
+* Weight: 108.5 lb
+49.2 kg
+* Height: 4U
+* Width: 19” IEC rack-compliant (17.6” 44.7 cm)
+* Depth: 32.6”
+(34.7” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C
+50°F to 
+95°F) at
+<= 3048m
+<= 10000 ft) elevation;8% to 80%
+relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.5
+Sound pressure (LpAm) (bystander positions): 67.2 dB
+
+== Compliance
+* Certifications EMC/EMI: AMCA,
+FCC,
+ICES,
+KC,
+Morocco,
+VCCI
+* Certifications safety: BIS,
+CB,
+CSA,
+G_K_U-SoR,
+IRAM,
+NOM,
+NRCS,
+SONCAP,
+TBS
+* Certifications Safety/EMC/EMI: EAC,
+UKRSEPRO
+* Certifications Safety/EMC/EMI/RoHS: BSMI,
+CE DoC,
+UKCA DoC
+* Standards EMC/EMI: BS-EN-55024,
+BS-EN55035,
+CISPR 32,
+EN55022,
+EN55024,
+EN55032,
+EN55035,
+EN61000-3-2,
+EN61000-3-3,
+FCC Part 15 Class A,
+ICES-003,
+KS C 9832,
+KS C 9835
+* Standards Safety: ANSI/UL60950-1,
+ANSI/UL62368-1,
+BS-EN62368-1,
+CAN/CSA C22.2 No. 60950-1,
+CAN/CSA C22.2 No. 62368-1,
+CNS 14336,
+EN60825-1,
+EN62368-1,
+IEC 62368-1,
+IEC60950-1,
+IS 13252(part 1)
+
+== High availability
+* Ethernet based baseboard management controller (BMC) and ONTAP management interface
+* Redundant hot-swappable controllers
+* Redundant hot-swappable power supplies
+* SAS in-band management over SAS connections for external shelves
