@@ -1,0 +1,148 @@
+---
+permalink: c400/overview.html
+sidebar: sidebar
+keywords: AFF C400 specifications, AFF C400 specs, NetApp AFF C400, AFF C400 hardware
+summary: Key specifications for the AFF C400 storage system
+---
+= Key specifications for AFF C400
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following are select specifications for the AFF C400. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF C400 specifications. This page is reflective of a single high availability pair. 
+
+=== Key specifications for AFF C400
+
+Platform Configuration: AFF C400 Single Chassis HA Pair, Ethernet Bundle
+
+Max Raw Capacity: 2.9472 PB
+
+Memory: 256.0000 GB
+
+Form Factor: 4U chassis with 2 HA controllers 
+
+ONTAP Version: b_startONTAP: 9.16.1P2b_end
+
+PCIe Expansion Slots: 10
+
+Minimum ONTAP Version: ONTAP 9.10.1P15
+
+=== Scaleout Maximums
+|===
+| Type | HA Pairs | Raw Capacity | Max Memory
+| NAS | 12 | 35.4 PB / 31.4 PiB | 3072 GB
+| SAN | 6 | 17.7 PB / 15.7 PiB | 1536 GB
+| HA Pair |  | 2.9 PB / 2.6 PiB | 256.0000
+|===
+
+=== IO
+
+==== Onboard IO
+|===
+| Protocol | Ports
+| Ethernet 100 Gbps | 4
+| Ethernet 25 Gbps | 12
+|===
+
+==== Total IO
+|===
+| Protocol | Ports
+| Ethernet 100 Gbps | 24
+| Ethernet 25 Gbps | 28
+| Ethernet 10 Gbps | 32
+| FC 32 Gbps | 40
+| NVMe/FC  32 Gbps | 40
+|  | 0
+|===
+
+==== Management Ports
+|===
+| Protocol | Ports
+| Ethernet 1 Gbps | 2
+| RS-232 115 Kbps | 4
+| USB 12 Mbps | 4
+|===
+
+=== Storage Networking Supported
+CIFS;
+FC;
+iSCSI;
+NFS v3;
+NFS v4.0;
+NFS v4.1;
+NFS v4.2;
+NFSv3/RDMA;
+NFSv4/RDMA;
+NVMe/FC ;
+NVMe/TCP;
+S3;
+S3 with NAS;
+SMB 2.0;
+SMB 2.1;
+SMB 2.x;
+SMB 3.0;
+SMB 3.1;
+SMB 3.1.1;
+
+=== System Environment Specifications
+* Typical Power: 4209 BTU/hr
+* Worst-case Power: 5215 BTU/hr
+* Weight: 110.0 lb<br/>49.9 kg
+* Height: 4U
+* Width: 19” IEC rack-compliant (17.6” 44.7 cm)
+* Depth: 32.6”<br/>(34.7” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.5;<br/>Sound pressure (LpAm) (bystander positions): 67.2 dB
+
+=== Compliance
+* Certifications EMC/EMI: AMCA,
+FCC,
+ICES,
+KC,
+Morocco,
+VCCI
+* Certifications safety: BIS,
+CB,
+CSA,
+G_K_U-SoR,
+IRAM,
+NOM,
+NRCS,
+SONCAP,
+TBS
+* Certifications Safety/EMC/EMI: EAC,
+UKRSEPRO
+* Certifications Safety/EMC/EMI/RoHS: BSMI,
+CE DoC,
+UKCA DoC
+* Standards EMC/EMI: BS-EN-55024,
+BS-EN55035,
+CISPR 32,
+EN55022,
+EN55024,
+EN55032,
+EN55035,
+EN61000-3-2,
+EN61000-3-3,
+FCC Part 15 Class A,
+ICES-003,
+KS C 9832,
+KS C 9835
+* Standards Safety: ANSI/UL60950-1,
+ANSI/UL62368-1,
+BS-EN62368-1,
+CAN/CSA C22.2 No. 60950-1,
+CAN/CSA C22.2 No. 62368-1,
+CNS 14336,
+EN60825-1,
+EN62368-1,
+IEC 62368-1,
+IEC60950-1,
+IS 13252(part 1)
+
+=== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface;
+Redundant hot-swappable controllers;
+Redundant hot-swappable power supplies;
+SAS in-band management over SAS connections;

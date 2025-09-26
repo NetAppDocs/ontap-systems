@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: fru-reference/mezzanine-fru-links.html
+keywords: mezzanine, field replaceable units, FRU, mezzanine replacement
+summary: This page provides links to mezzanine replacement procedures by system.
+---
+= Mezzanine FRU Links
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+This page provides links to mezzanine replacement procedures organized by platform model.
+
+[role="tabbed-block"]
+====
+.AFF systems
+--
+* link:../a250/mezzanine-replace.html[AFF A250^]
+* link:../c250/mezzanine-replace.html[AFF C250^]
+--
+
+.ASA systems
+--
+* link:../asa250/mezzanine-replace.html[ASA A250^]
+* link:../asa-c250/mezzanine-replace.html[ASA C250^]
+--
+
+.FAS systems
+--
+* link:../fas500f/mezzanine-replace.html[FAS500f^]
+--
+====
+
+// 2025-09-18: ontap-systems-internal/issues/769
