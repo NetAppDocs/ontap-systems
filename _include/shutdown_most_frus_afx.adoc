@@ -25,7 +25,6 @@ NOTE: When you see _Do you want to disable auto-giveback?_, enter `y`.
 +
 `system ha interconnect link off -node healthy-node -link 1`
 
-
 . Take the impaired controller to the LOADER prompt:
 +
 [options="header" cols="1,2"]
@@ -35,10 +34,6 @@ a|
 The LOADER prompt
 a|
 Go to the next step.
-a|
-Waiting for giveback...
-a|
-Do nothing and wait to be prompted.
 a|
 System prompt or password prompt
 a|
