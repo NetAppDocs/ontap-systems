@@ -1,0 +1,50 @@
+== Step 1: Boot the controllers and give back the controllers 
+After the controllers reboot, boot ONTAP and give back the controllers.
+
+.Steps
+. Check the console output:
+.. If the controller boots to the LOADER prompt, reboot the controller with the `boot_ontap` command.
+
+.. If the console displays `waiting for giveback` after the reboot, log into the partner controller and check that the replaced controller is ready for giveback with the `storage failover show` command.
+
+. Perform the giveback:
+
+.. Connect the console cable to the partner controller.
+.. Press <enter> when console messages stop.
+* If you see the _login_ prompt, go to the next step.
+* If you do not see login prompt, log into the partner node.
+.. Give back only the root with override-destination-checks option:
++
+`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
++
+NOTE: If you encounter errors, contact https://support.netapp.com[NetApp Support].
+
+.. Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
++
+`storage failover show` and `storage failover show-giveback`
+.. If the HA internconnect links were taken down, bring them back up:
++
+`system ha interconnect link on -node healthy-node -link 0`
++
+`system ha interconnect link on -node healthy-node -link 1`
+
+.. Return the impaired controller to normal operation by giving back its storage: 
++
+`storage failover giveback -ofnode _impaired_node_name_`
+
+.. If automatic giveback was disabled, reenable it: `storage failover modify -node _impaired_node_name_ -auto-giveback _true_`
+
+.. If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
+
+== Step 2: Verify storage system health
+
+After the controller has given back the storage, you should check the overall health with https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor].
+
+.Steps
+. After the giveback is complete, run Active IQ Config Advisor to verify the health of the storage system.
+. Correct any issues you encounter.
+
+
+== Step 3: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
