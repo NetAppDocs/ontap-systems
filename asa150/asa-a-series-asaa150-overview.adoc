@@ -1,0 +1,122 @@
+---
+permalink: asa150/overview.html
+sidebar: sidebar
+keywords: ASA A150 specifications, ASA A150 specs, NetApp ASA A150, ASA A150 hardware
+summary: Key specifications for the ASA A150 storage system
+---
+= Key specifications for ASA A150
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following are select specifications for the ASA A150. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A150 specifications. This page is reflective of a single high availability pair. 
+
+=== Key specifications for ASA A150
+
+Platform Configuration: ASA A150 UTA2 Single Chassis HA Pair
+
+Max Raw Capacity: 0.5472 PB
+
+Memory: 64.0000 GB
+
+Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
+
+ONTAP Version: b_startONTAP: 9.16.1P2b_end
+
+PCIe Expansion Slots: 
+
+Minimum ONTAP Version: ONTAP 9.13.1
+
+=== Scaleout Maximums
+|===
+| Type | HA Pairs | Raw Capacity | Max Memory
+| NAS |  |  | 
+| SAN | 6 | 3.3 PB / 2.9 PiB | 384 GB
+| HA Pair |  | 0.5 PB / 0.5 PiB | 64.0000
+|===
+
+=== IO
+
+==== Onboard IO
+|===
+| Protocol | Ports
+| Ethernet 10 Gbps | 12
+| FC 16 Gbps | 8
+| SAS 12 Gbps | 4
+|===
+
+==== Total IO
+|===
+| Protocol | Ports
+| Ethernet 10 Gbps | 12
+| FC 16 Gbps | 8
+| SAS 12 Gbps | 4
+|===
+
+==== Management Ports
+|===
+| Protocol | Ports
+| Ethernet 1 Gbps | 2
+| RS-232 115 Kbps | 4
+| USB 12 Mbps | 2
+|===
+
+=== Storage Networking Supported
+FC;
+iSCSI;
+NVMe/TCP;
+
+=== System Environment Specifications
+No environment data available.
+
+=== Compliance
+* Certifications EMC/EMI: AMCA,
+FCC,
+ICES,
+KC,
+Morocco,
+VCCI
+* Certifications safety: BIS,
+CB,
+CSA,
+G_K_U-SoR,
+IRAM,
+NOM,
+NRCS,
+SONCAP,
+TBS
+* Certifications Safety/EMC/EMI: EAC,
+UKRSEPRO
+* Certifications Safety/EMC/EMI/RoHS: BSMI,
+CE DoC,
+UKCA DoC
+* Standards EMC/EMI: BS-EN-55024,
+BS-EN55035,
+CISPR 32,
+EN55022,
+EN55024,
+EN55032,
+EN55035,
+EN61000-3-2,
+EN61000-3-3,
+FCC Part 15 Class A,
+ICES-003,
+KS C 9832,
+KS C 9835
+* Standards Safety: ANSI/UL60950-1,
+ANSI/UL62368-1,
+BS-EN62368-1,
+CAN/CSA C22.2 No. 60950-1,
+CAN/CSA C22.2 No. 62368-1,
+CNS 14336,
+EN60825-1,
+EN62368-1,
+IEC 62368-1,
+IEC60950-1,
+IS 13252(part 1)
+
+=== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface;
+Redundant hot-swappable controllers;
+Redundant hot-swappable power supplies;
+SAS in-band management over SAS connections;
