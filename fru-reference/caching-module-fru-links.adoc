@@ -11,15 +11,6 @@ summary: This page provides links to caching module replacement procedures by sy
 [.lead]
 This page provides links to caching module replacement procedures organized by system.
 
-[role="tabbed-block"]
-====
-.AFF systems
---
-* link:../a700/caching-module-and-core-dump-module-replace.html[AFF A700]
---
-
-.FAS systems
---
 * link:../fas50/caching-module-hot-swap.html[FAS50]
 * link:../fas-70-90/caching-module-hot-swap.html[FAS70/90]
 * link:../fas2600/caching-module-replace.html[FAS2600]
@@ -28,7 +19,6 @@ This page provides links to caching module replacement procedures organized by s
 * link:../fas8200/caching-module-replace.html[FAS8200]
 * link:../fas8300/caching-module-replace.html[FAS8300]
 * link:../fas9000/caching-module-hot-swap.html[FAS9000]
---
-====
+
 
 // 2025-09-18: ontap-systems-internal/issues/769
