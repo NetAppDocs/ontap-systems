@@ -1,7 +1,7 @@
 settings:
   name: "Install and maintain"
   internal:
-    pdf_enabled: enable
+    pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
