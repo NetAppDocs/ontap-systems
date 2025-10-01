@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: fru-reference/power-supply-fru-links.html
 keywords: power supply, field replaceable units, FRU, power supply replacement
-summary: This page provides links to power supply replacement procedures by system.
+summary: "Find power supply replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step power supply replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model."
 ---
-= Power Supply FRU Links
+= Access power supply replacement procedures by platform family
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This page provides links to power supply replacement procedures organized by platform model.
+Find power supply replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step power supply replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model.
 
 [role="tabbed-block"]
 ====
@@ -45,10 +45,6 @@ This page provides links to power supply replacement procedures organized by pla
 * link:../asa-c250/power-supply-replace.html[ASA C250]
 * link:../asa-c400/power-supply-replace.html[ASA C400]
 * link:../asa-c800/power-supply-replace.html[ASA C800]
---
-
-.ASA systems
---
 * link:../asa-r2-a1k/power-supply-replace.html[ASA A1K]
 * link:../asa-r2-a20-30-50/power-supply-replace.html[ASA A20/30/50]
 * link:../asa-r2-70-90/power-supply-replace.html[ASA 70/90]

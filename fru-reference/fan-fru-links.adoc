@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: fru-reference/fan-fru-links.html
 keywords: fan, field replaceable units, FRU, fan replacement
-summary: This page provides links to fan replacement procedures by system.
+summary: "Find fan replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step fan replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model."
 ---
-= Fan FRU Links
+= Access fan replacement procedures by platform family
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This page provides links to fan replacement procedures organized by platform model.
+Find fan replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step fan replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model.
 
 [role="tabbed-block"]
 ====
@@ -40,10 +40,6 @@ This page provides links to fan replacement procedures organized by platform mod
 * link:../asa-c250/fan-replace.html[ASA C250]
 * link:../asa-c400/fan-swap-out.html[ASA C400]
 * link:../asa-c800/fan-replace.html[ASA C800]
---
-
-.ASA systems
---
 * link:../asa-r2-a1k/fan-replace.html[ASA A1K]
 * link:../asa-r2-a20-30-50/fan-replace.html[ASA A20/30/50]
 * link:../asa-r2-70-90/fan-swap-out.html[ASA 70/90]

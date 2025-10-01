@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: fru-reference/rtc-battery-fru-links.html
 keywords: RTC battery, field replaceable units, FRU, RTC battery replacement
-summary: This page provides links to RTC battery replacement procedures by system.
+summary: "Find RTC battery replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step RTC battery replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model."
 ---
-= RTC Battery FRU Links
+= Access RTC battery replacement procedures by platform family
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This page provides links to RTC battery replacement procedures organized by platform model.
+Find RTC battery replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step RTC battery replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model.
 
 [role="tabbed-block"]
 ====
@@ -45,10 +45,6 @@ This page provides links to RTC battery replacement procedures organized by plat
 * link:../asa-c250/rtc-battery-replace.html[ASA C250]
 * link:../asa-c400/rtc-battery-replace.html[ASA C400]
 * link:../asa-c800/rtc-battery-replace.html[ASA C800]
---
-
-.ASA systems
---
 * link:../asa-r2-a1k/rtc-battery-replace.html[ASA A1K]
 * link:../asa-r2-a20-30-50/rtc-battery-replace.html[ASA A20/30/50]
 * link:../asa-r2-70-90/rtc-battery-replace.html[ASA 70/90]
