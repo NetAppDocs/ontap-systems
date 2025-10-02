@@ -94,7 +94,7 @@ The boot media rotates slightly upward.
 
 . Recable the System Management module.
 
-. Reinstall the controller module.
+. Reinstall the controller module. The controller reboots as soon as it is fully inserted.
 .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
 The locking latches rise when the controller module is fully seated.
@@ -103,7 +103,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 
 .. Rotate the locking latches upward into the locked position. 
 
-. Plug the power cords into the power supplies. The controller reboots as soon as power is restored.
+. Plug the power cords into the power supplies. 
 
 +
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies.
