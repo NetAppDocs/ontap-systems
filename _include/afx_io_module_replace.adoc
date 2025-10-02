@@ -70,10 +70,14 @@ NOTE: Rebooting the impaired controller also reinitializes the I/O modules and o
 +
 `storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
 +
-NOTE: If you encounter errors, contact https://support.netapp.com[NetApp Support].
+NOTE: The following command is only available in the Diagnostic mode privilege level. For more information on privilege levels, see link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html[Understand the privilege levels for ONTAP CLI commands^]. 
++
+If you encounter errors, contact https://support.netapp.com[NetApp Support].      
 . Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
 +
 `storage failover show` and `storage failover show-giveback`
++
+NOTE: The following command is only available in the Diagnostic mode privilege level.
 . If the HA internconnect links were taken down, bring them back up:
 +
 `system ha interconnect link on -node healthy-node -link 0`
@@ -87,7 +91,7 @@ NOTE: If you encounter errors, contact https://support.netapp.com[NetApp Support
 `storage failover giveback -ofnode _impaired_node_name_`
 . Restore automatic giveback from the console of the healthy controller:
 +
-`storage failover modify -node local -auto-giveback true` 
+`storage failover modify -node local -auto-giveback-of true` 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation:
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`       

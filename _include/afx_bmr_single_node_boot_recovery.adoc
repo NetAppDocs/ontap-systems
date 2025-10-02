@@ -50,7 +50,7 @@ Is the key manager onboard
 a|
 `key manager is not configured. Exiting.` 
 a|
-Encryption is not installed on the system. Complete the following steps:
+Encryption is not configured on the system. Complete the following steps:
 
 .. Press <enter> when console messages stop.
 * If you see the login prompt, go to step 4.
@@ -75,23 +75,29 @@ The node accesses the boot menu and runs:
 +
 `storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
 +
+NOTE: The following command is only available in the Diagnostic mode privilege level. For more information on privilege levels, see link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html[Understand the privilege levels for ONTAP CLI commands^]. 
++
 If you encounter errors, contact https://support.netapp.com[NetApp Support].
 +
 .. Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
 +
 `storage failover show and storage failover show-giveback`
 +
-.. If the HA internconnect links were taken down, bring them back up:
+NOTE: The following command is only available in the Diagnostic mode privilege level.
++
+.. If you are running ONTAP 9.17.1 and the HA internconnect links were taken down, bring them back up:
 +
 `system ha interconnect link on -node healthy-node -link 0`
 +
 `system ha interconnect link on -node healthy-node -link 1`
 +
+NOTE: If you are running 9.18.1 or higher, skip the above step and go to the next step.
++
 .. Return the impaired controller to normal operation by giving back its storage:
 +
 `storage failover giveback -ofnode _impaired_node_name_`
 
-. Select the appropriate key manager restoration process.
+. For systems with key-manager configured, select the appropriate key manager restoration process.
 +
 
 // start tabbed area
@@ -238,7 +244,7 @@ LOADER-B>
 
 . If automatic giveback was disabled, reenable it: 
 +
-`storage failover modify -node local -auto-giveback true`
+`storage failover modify -node local auto-giveback-of true`
 
 . If AutoSupport is enabled, restore automatic case creation: 
 +

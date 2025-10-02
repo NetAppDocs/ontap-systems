@@ -112,17 +112,20 @@ The system will begin to reboot, typically to the LOADER prompt.
 +
 . Enter `bye` at the LOADER prompt.
 
-== Step 4: Reassign disks
+== Step 4: Complete NVRAM replacement
 
-You must confirm the system ID change when you boot the controller and then verify that the change was implemented.
-
-CAUTION: Disk reassignment is only needed when replacing the NVRAM module and does not apply to NVRAM DIMM replacement. 
+Perform the following steps to complete the NVRAM replacement.
 
 .Steps
-. If the controller is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: 
-+
-`halt`
 . From the LOADER prompt on the controller, boot the controller and enter _y_ when prompted to override the system ID due to a system ID mismatch.
++
+The following is an example of the prompt for overriding the system ID:
++
+----
+WARNING: System ID mismatch. This usually occurs when replacing a boot device or NVRAM cards!
+Override system ID? {y|n}
+----
+
 . From the healthy controller, verify that the new partner system ID has been automatically assigned: 
 `_storage failover show_`
 +
@@ -133,8 +136,7 @@ node1:> storage failover show
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
-node1             node2             false        In takeover, Auto giveback will be 
-                                                 initiated in 120 seconds   
+node1             node2             false        In takeover  
 node2             node1             -            Waiting for giveback
 ----
 
@@ -143,8 +145,6 @@ node2             node1             -            Waiting for giveback
 +
 The controller takes back its storage and completes booting.
 +
-If you are prompted to override the system ID due to a system ID mismatch, you should enter: `_y_`
-+
 NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
 For more information, see the https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted[Manual giveback commands^] topic to override the veto.
@@ -152,22 +152,6 @@ For more information, see the https://docs.netapp.com/us-en/ontap/high-availabil
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: _storage failover show_
 +
 The output from the `storage failover show` command should not include the System ID changed on partner message.
-. Verify that the disks were assigned correctly:
-+ 
-`storage disk show -ownership`
-+
-The disks belonging to the controller should display. In the following example, the disks owned by node1 now show the Home ID and Owner ID as zero (0). 
-+
-----
-node1:> storage disk show -ownership
-
-Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID   Reserver     Pool
------ ------    ----- ------ -------- -------    -------   -------      ---------    ---
-1.0.0  aggr0_1  node1  0       -        0         0                      0           Pool0
-1.0.1  aggr0_1  node1  0                0         0                      0           Pool0
-.
-.
-----
 
 . Verify that the expected volumes are present for each controller:
 + 
@@ -176,14 +160,11 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID   Reserver
 . Press <enter> when console messages stop.
 * If you see the _login_ prompt, go to the next step.
 * If you do not see login prompt, log into the partner node.
-. Give back only the root with override-destination-checks option:
-+
-`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
-+
-NOTE: If you encounter errors, contact https://support.netapp.com[NetApp Support].
 . Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
 +
 `storage failover show` and `storage failover show-giveback`
++
+NOTE: The following command is only available in the Diagnostic mode privilege level.
 . If the HA internconnect links were taken down, bring them back up:
 +
 `system ha interconnect link on -node healthy-node -link 0`
@@ -196,7 +177,7 @@ NOTE: If you encounter errors, contact https://support.netapp.com[NetApp Support
 
 . If automatic giveback was disabled, reenable it:
 + 
-`storage failover modify -node local -auto-giveback true`
+`storage failover modify -node local -auto-giveback-of true`
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation:
 + 
