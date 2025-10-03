@@ -116,4 +116,4 @@ NOTE: Contact https://support.netapp.com[NetApp Support] if you have issues.
 
 // Created this generic include to address GH issue 1184.
 
-// Oct 3 2025: GH issue 382: All shipping platforms are nosavecore platforms, so (the old) step 6 is not needed: "Ensure any core dumps on the repaired node are saved by going to advanced mode `set -privilege advanced` and then `run local partner nosavecore`."
+// Oct 3 2025: GH issue 382, all shipping platforms are nosavecore platforms, so in the External Key Manager tabbed option, (the old) step 6 is not needed: "Ensure any core dumps on the repaired node are saved by going to advanced mode `set -privilege advanced` and then `run local partner nosavecore`."
