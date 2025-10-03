@@ -81,7 +81,7 @@ If you encounter errors, contact https://support.netapp.com[NetApp Support].
 +
 .. Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
 +
-`storage failover show and storage failover show-giveback`
+`storage failover show` and `storage failover show-giveback`
 +
 NOTE: The following command is only available in the Diagnostic mode privilege level.
 +
