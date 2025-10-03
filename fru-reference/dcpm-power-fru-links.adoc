@@ -2,16 +2,16 @@
 sidebar: sidebar
 permalink: fru-reference/dcpm-power-fru-links.html
 keywords: DCPM power module, field replaceable units, FRU, DCPM power replacement
-summary: This page provides links to DCPM power module replacement procedures by system.
+summary: "Find DCPM power module replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step DCPM power module replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model."
 ---
-= DCPM Power Module FRU Links
+= DCPM power module replacement procedures by platform family
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This page provides links to DCPM power module replacement procedures organized by platform model.
+Find DCPM power module replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step DCPM power module replacement workflows for AFF and FAS systems to help you quickly locate the correct procedure for your specific model.
 
-* link:../a700/dcpm-power-replace.html[AFF A700^]
-* link:../fas9000/dcpm-power-replace.html[FAS9000^]
+* link:../a700/dcpm-power-replace.html[AFF A700]
+* link:../fas9000/dcpm-power-replace.html[FAS9000]
 
 // 2025-09-18: ontap-systems-internal/issues/769

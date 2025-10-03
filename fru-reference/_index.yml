@@ -1,0 +1,54 @@
+indexpage:
+  title: System component replacement reference for NetApp storage systems
+  lead: Find replacement procedures for your storage system's field replaceable units (FRUs). This reference provides direct links to step-by-step replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific hardware maintenance needs.
+  summary: Find replacement procedures for your storage system's field replaceable units (FRUs). This reference provides direct links to step-by-step replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific hardware maintenance needs.
+  keywords: FRU reference, field replaceable units, platform FRUs, hardware components, replacement procedures, AFF, ASA, FAS
+  tiles:
+    - title: Core system components
+      links:
+        - title: Controller replacement procedures
+          url: /controller-fru-links.html
+        - title: Chassis replacement procedures
+          url: /chassis-fru-links.html
+        - title: Boot media replacement procedures
+          url: /bootmedia-fru-links.html
+        - title: System management module replacement procedures
+          url: /system-management-fru-links.html
+    - title: Memory and storage modules
+      links:
+        - title: DIMM replacement procedures
+          url: /dimm-fru-links.html
+        - title: NVDIMM replacement procedures
+          url: /nvdimm-fru-links.html
+        - title: NVRAM module replacement procedures
+          url: /nvram-module-fru-links.html
+    - title: Power and cooling
+      links:
+        - title: Power supply replacement procedures
+          url: /power-supply-fru-links.html
+        - title: Fan replacement procedures
+          url: /fan-fru-links.html
+        - title: DCPM power module replacement procedures
+          url: /dcpm-power-fru-links.html
+    - title: I/O and expansion cards
+      links:
+        - title: I/O module replacement procedures
+          url: /io-module-fru-links.html
+        - title: PCI cards and risers replacement procedures
+          url: /pci-cards-fru-links.html
+        - title: Mezzanine replacement procedures
+          url: /mezzanine-fru-links.html
+    - title: Storage and drives
+      links:
+        - title: Drive replacement procedures
+          url: /drive-fru-links.html
+        - title: Caching module replacement procedures
+          url: /caching-module-fru-links.html
+    - title: System batteries and indicators
+      links:
+        - title: NVMEM/NVRAM battery replacement procedures
+          url: /nvmem-battery-fru-links.html
+        - title: RTC battery replacement procedures
+          url: /rtc-battery-fru-links.html
+        - title: LED module replacement procedures
+          url: /led-module-fru-links.html

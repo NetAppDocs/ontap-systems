@@ -2,63 +2,63 @@
 sidebar: sidebar
 permalink: fru-reference/chassis-fru-links.html
 keywords: chassis, field replaceable units, FRU, chassis replacement
-summary: This page provides links to chassis replacement procedures by system.
+summary: "Find chassis replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step chassis replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model."
 ---
-= Chassis FRU Links
+= Chassis replacement procedures by platform family
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This page provides links to chassis replacement procedures organized by platform model.
+Find chassis replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step chassis replacement workflows for AFF and FAS systems to help you quickly locate the correct procedure for your specific model.
 
 [role="tabbed-block"]
 ====
 .AFF systems
 --
-* link:../a150/chassis-replace-overview.html[AFF A150^]
-* link:../a20-30-50/chassis-replace-workflow.html[AFF A20/30/50^]
-* link:../a200/chassis-replace-overview.html[AFF A200^]
-* link:../a220/chassis-replace-overview.html[AFF A220^]
-* link:../a250/chassis-replace-overview.html[AFF A250^]
-* link:../a300/chassis-replace-overview.html[AFF A300^]
-* link:../a320/chassis-replace-overview.html[AFF A320^]
-* link:../a400/chassis-replace-overview.html[AFF A400^]
-* link:../a700/chassis-replace-overview.html[AFF A700^]
-* link:../a700s/chassis-replace-overview.html[AFF A700s^]
-* link:../a800/chassis-replace-overview.html[AFF A800^]
-* link:../a900/chassis_replace_overview.html[AFF A900^]
-* link:../c190/chassis-replace-overview.html[AFF C190^]
-* link:../c250/chassis-replace-overview.html[AFF C250^]
-* link:../c30-60/chassis-replace-workflow.html[AFF C30/60^]
-* link:../c400/chassis-replace-overview.html[AFF C400^]
-* link:../c80/chassis-replace-workflow.html[AFF C80^]
-* link:../c800/chassis-replace-overview.html[AFF C800^]
+* link:../a150/chassis-replace-overview.html[AFF A150]
+* link:../a20-30-50/chassis-replace-workflow.html[AFF A20/30/50]
+* link:../a200/chassis-replace-overview.html[AFF A200]
+* link:../a220/chassis-replace-overview.html[AFF A220]
+* link:../a250/chassis-replace-overview.html[AFF A250]
+* link:../a300/chassis-replace-overview.html[AFF A300]
+* link:../a320/chassis-replace-overview.html[AFF A320]
+* link:../a400/chassis-replace-overview.html[AFF A400]
+* link:../a700/chassis-replace-overview.html[AFF A700]
+* link:../a700s/chassis-replace-overview.html[AFF A700s]
+* link:../a800/chassis-replace-overview.html[AFF A800]
+* link:../a900/chassis_replace_overview.html[AFF A900]
+* link:../c190/chassis-replace-overview.html[AFF C190]
+* link:../c250/chassis-replace-overview.html[AFF C250]
+* link:../c30-60/chassis-replace-workflow.html[AFF C30/60]
+* link:../c400/chassis-replace-overview.html[AFF C400]
+* link:../c80/chassis-replace-workflow.html[AFF C80]
+* link:../c800/chassis-replace-overview.html[AFF C800]
 --
 
 .ASA systems
 --
-* link:../asa150/chassis-replace-overview.html[ASA A150^]
-* link:../asa250/chassis-replace-overview.html[ASA A250^]
-* link:../asa800/chassis-replace-overview.html[ASA A800^]
-* link:../asa-c250/chassis-replace-overview.html[ASA C250^]
-* link:../asa-c400/chassis-replace-overview.html[ASA C400^]
-* link:../asa-c800/chassis-replace-overview.html[ASA C800^]
-* link:../asa-r2-a20-30-50/chassis-replace-workflow.html[ASA A20/30/50^]
-* link:../asa-r2-70-90/chassis-replace-workflow.html[ASA 70/90^]
-* link:../asa-r2-c30/chassis-replace-workflow.html[ASA C30^]
+* link:../asa150/chassis-replace-overview.html[ASA A150]
+* link:../asa250/chassis-replace-overview.html[ASA A250]
+* link:../asa800/chassis-replace-overview.html[ASA A800]
+* link:../asa-c250/chassis-replace-overview.html[ASA C250]
+* link:../asa-c400/chassis-replace-overview.html[ASA C400]
+* link:../asa-c800/chassis-replace-overview.html[ASA C800]
+* link:../asa-r2-a20-30-50/chassis-replace-workflow.html[ASA A20/30/50]
+* link:../asa-r2-70-90/chassis-replace-workflow.html[ASA 70/90]
+* link:../asa-r2-c30/chassis-replace-workflow.html[ASA C30]
 --
 
 .FAS systems
 --
-* link:../fas50/chassis-replace-workflow.html[FAS50^]
-* link:../fas500f/chassis-replace-overview.html[FAS500f^]
-* link:../fas2600/chassis-replace-overview.html[FAS2600^]
-* link:../fas2700/chassis-replace-overview.html[FAS2700^]
-* link:../fas2800/chassis-replace-overview.html[FAS2800^]
-* link:../fas8200/chassis-replace-overview.html[FAS8200^]
-* link:../fas8300/chassis-replace-overview.html[FAS8300^]
-* link:../fas9000/chassis-replace-overview.html[FAS9000^]
-* link:../fas9500/chassis_replace_overview.html[FAS9500^]
+* link:../fas50/chassis-replace-workflow.html[FAS50]
+* link:../fas500f/chassis-replace-overview.html[FAS500f]
+* link:../fas2600/chassis-replace-overview.html[FAS2600]
+* link:../fas2700/chassis-replace-overview.html[FAS2700]
+* link:../fas2800/chassis-replace-overview.html[FAS2800]
+* link:../fas8200/chassis-replace-overview.html[FAS8200]
+* link:../fas8300/chassis-replace-overview.html[FAS8300]
+* link:../fas9000/chassis-replace-overview.html[FAS9000]
+* link:../fas9500/chassis_replace_overview.html[FAS9500]
 --
 ====
 
