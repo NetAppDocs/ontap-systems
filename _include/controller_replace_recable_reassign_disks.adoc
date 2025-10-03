@@ -103,7 +103,6 @@ NOTE: Contact https://support.netapp.com[NetApp Support] if you have issues.
 
 . Check the takeover status: `storage failover show`
 
-. Ensure any core dumps on the repaired node are saved by going to advanced mode `set -privilege advanced` and then `run local partner nosavecore`.
 . Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback _true_`
@@ -116,3 +115,5 @@ NOTE: Contact https://support.netapp.com[NetApp Support] if you have issues.
 // end tabbed block area
 
 // Created this generic include to address GH issue 1184.
+
+// Oct 3 2025: GH issue 382: All shipping platforms are nosavecore platforms, so (the old) step 6 is not needed: "Ensure any core dumps on the repaired node are saved by going to advanced mode `set -privilege advanced` and then `run local partner nosavecore`."
