@@ -2,71 +2,67 @@
 sidebar: sidebar
 permalink: fru-reference/rtc-battery-fru-links.html
 keywords: RTC battery, field replaceable units, FRU, RTC battery replacement
-summary: This page provides links to RTC battery replacement procedures by system.
+summary: "Find RTC battery replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step RTC battery replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model."
 ---
-= RTC Battery FRU Links
+= RTC battery replacement procedures by platform family
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This page provides links to RTC battery replacement procedures organized by platform model.
+Find RTC battery replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step RTC battery replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model.
 
 [role="tabbed-block"]
 ====
 .AFF systems
 --
-* link:../a150/rtc-battery-replace.html[AFF A150^]
-* link:../a1k/rtc-battery-replace.html[AFF A1K^]
-* link:../a20-30-50/rtc-battery-replace.html[AFF A20/30/50^]
-* link:../a200/rtc-battery-replace.html[AFF A200^]
-* link:../a220/rtc-battery-replace.html[AFF A220^]
-* link:../a250/rtc-battery-replace.html[AFF A250^]
-* link:../a300/rtc-battery-replace.html[AFF A300^]
-* link:../a320/rtc-battery-replace.html[AFF A320^]
-* link:../a400/rtc-battery-replace.html[AFF A400^]
-* link:../a70-90/rtc-battery-replace.html[AFF A70/90^]
-* link:../a700/rtc-battery-replace.html[AFF A700^]
-* link:../a700s/rtc-battery-replace.html[AFF A700s^]
-* link:../a800/rtc-battery-replace.html[AFF A800^]
-* link:../c190/rtc-battery-replace.html[AFF C190^]
-* link:../c250/rtc-battery-replace.html[AFF C250^]
-* link:../c30-60/rtc-battery-replace.html[AFF C30/60^]
-* link:../c400/rtc-battery-replace.html[AFF C400^]
-* link:../c80/rtc-battery-replace.html[AFF C80^]
-* link:../c800/rtc-battery-replace.html[AFF C800^]
+* link:../a150/rtc-battery-replace.html[AFF A150]
+* link:../a1k/rtc-battery-replace.html[AFF A1K]
+* link:../a20-30-50/rtc-battery-replace.html[AFF A20/30/50]
+* link:../a200/rtc-battery-replace.html[AFF A200]
+* link:../a220/rtc-battery-replace.html[AFF A220]
+* link:../a250/rtc-battery-replace.html[AFF A250]
+* link:../a300/rtc-battery-replace.html[AFF A300]
+* link:../a320/rtc-battery-replace.html[AFF A320]
+* link:../a400/rtc-battery-replace.html[AFF A400]
+* link:../a70-90/rtc-battery-replace.html[AFF A70/90]
+* link:../a700/rtc-battery-replace.html[AFF A700]
+* link:../a700s/rtc-battery-replace.html[AFF A700s]
+* link:../a800/rtc-battery-replace.html[AFF A800]
+* link:../c190/rtc-battery-replace.html[AFF C190]
+* link:../c250/rtc-battery-replace.html[AFF C250]
+* link:../c30-60/rtc-battery-replace.html[AFF C30/60]
+* link:../c400/rtc-battery-replace.html[AFF C400]
+* link:../c80/rtc-battery-replace.html[AFF C80]
+* link:../c800/rtc-battery-replace.html[AFF C800]
 --
 
 .ASA systems
 --
-* link:../asa150/rtc-battery-replace.html[ASA A150^]
-* link:../asa250/rtc-battery-replace.html[ASA A250^]
-* link:../asa400/rtc-battery-replace.html[ASA A400^]
-* link:../asa800/rtc-battery-replace.html[ASA A800^]
-* link:../asa-c250/rtc-battery-replace.html[ASA C250^]
-* link:../asa-c400/rtc-battery-replace.html[ASA C400^]
-* link:../asa-c800/rtc-battery-replace.html[ASA C800^]
---
-
-.ASA systems
---
-* link:../asa-r2-a1k/rtc-battery-replace.html[ASA A1K^]
-* link:../asa-r2-a20-30-50/rtc-battery-replace.html[ASA A20/30/50^]
-* link:../asa-r2-70-90/rtc-battery-replace.html[ASA 70/90^]
-* link:../asa-r2-c30/rtc-battery-replace.html[ASA C30^]
+* link:../asa150/rtc-battery-replace.html[ASA A150]
+* link:../asa250/rtc-battery-replace.html[ASA A250]
+* link:../asa400/rtc-battery-replace.html[ASA A400]
+* link:../asa800/rtc-battery-replace.html[ASA A800]
+* link:../asa-c250/rtc-battery-replace.html[ASA C250]
+* link:../asa-c400/rtc-battery-replace.html[ASA C400]
+* link:../asa-c800/rtc-battery-replace.html[ASA C800]
+* link:../asa-r2-a1k/rtc-battery-replace.html[ASA A1K]
+* link:../asa-r2-a20-30-50/rtc-battery-replace.html[ASA A20/30/50]
+* link:../asa-r2-70-90/rtc-battery-replace.html[ASA 70/90]
+* link:../asa-r2-c30/rtc-battery-replace.html[ASA C30]
 --
 
 .FAS systems
 --
-* link:../fas50/rtc-battery-replace.html[FAS50^]
-* link:../fas-70-90/rtc-battery-replace.html[FAS70/90^]
-* link:../fas500f/rtc-battery-replace.html[FAS500f^]
-* link:../fas2600/rtc-battery-replace.html[FAS2600^]
-* link:../fas2700/rtc-battery-replace.html[FAS2700^]
-* link:../fas2800/rtc-battery-replace.html[FAS2800^]
-* link:../fas8200/rtc-battery-replace.html[FAS8200^]
-* link:../fas8300/rtc-battery-replace.html[FAS8300^]
-* link:../fas9000/rtc-battery-replace.html[FAS9000^]
-* link:../fas9500/rtc_battery_replace.html[FAS9500^]
+* link:../fas50/rtc-battery-replace.html[FAS50]
+* link:../fas-70-90/rtc-battery-replace.html[FAS70/90]
+* link:../fas500f/rtc-battery-replace.html[FAS500f]
+* link:../fas2600/rtc-battery-replace.html[FAS2600]
+* link:../fas2700/rtc-battery-replace.html[FAS2700]
+* link:../fas2800/rtc-battery-replace.html[FAS2800]
+* link:../fas8200/rtc-battery-replace.html[FAS8200]
+* link:../fas8300/rtc-battery-replace.html[FAS8300]
+* link:../fas9000/rtc-battery-replace.html[FAS9000]
+* link:../fas9500/rtc_battery_replace.html[FAS9500]
 --
 ====
 
