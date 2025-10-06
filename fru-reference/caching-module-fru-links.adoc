@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: fru-reference/caching-module-fru-links.html
+keywords: caching module, field replaceable units, FRU, caching module replacement
+summary: "Find caching module replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step caching module replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model."
+---
+= Caching module replacement procedures by platform family
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Find caching module replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step caching module replacement workflows for FAS systems to help you quickly locate the correct procedure for your specific model.
+
+* link:../fas50/caching-module-hot-swap.html[FAS50]
+* link:../fas-70-90/caching-module-hot-swap.html[FAS70/90]
+* link:../fas2600/caching-module-replace.html[FAS2600]
+* link:../fas2700/caching-module-replace.html[FAS2700]
+* link:../fas2800/caching-module-replace.html[FAS2800]
+* link:../fas8200/caching-module-replace.html[FAS8200]
+* link:../fas8300/caching-module-replace.html[FAS8300]
+* link:../fas9000/caching-module-hot-swap.html[FAS9000]
+
+
+// 2025-09-18: ontap-systems-internal/issues/769

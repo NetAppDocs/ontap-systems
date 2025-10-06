@@ -3,6 +3,7 @@
 
 You need to remove all four power supply units (PSUs), two per controller, before removing the controller.  Removing them lightens the overall weight of each controller.
 
+.Steps
 . Remove the four PSUs:
 
 .. If you are not already grounded, properly ground yourself.
@@ -44,7 +45,7 @@ NOTE: Cables should have been labeled at the beginning of this procedure.
 
 Remove the controllers from the chassis and then remove the drives from the chassis.
 
-
+.Steps
 . Check the that amber NVRAM status LED located in slot 4/5 on the back of each controller module is off. Look for the NV icon.
 +
 image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
@@ -112,6 +113,7 @@ NOTE: Drives are fragile. Always use two hands to support the drive weight when 
 
 Remove the impaired chassis and install the replacement chassis.
 
+.Steps
 . Remove the impaired chassis:
 .. Remove the screws from the chassis mount points.
 .. Using two people or a lift, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
@@ -126,6 +128,7 @@ Remove the impaired chassis and install the replacement chassis.
 
 After the replacement chassis is installed, you need to install the controller modules, recable them, and then reinstall the drives and PSUs.
 
+.Steps
 . Beginning with the bottom controller module, install the controller modules in the replacement chassis:
 
 .. Align the end of the controller module with the opening in the chassis, and then gently push the controller all the way into the chassis.

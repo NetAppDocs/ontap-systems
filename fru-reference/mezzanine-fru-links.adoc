@@ -1,0 +1,34 @@
+---
+sidebar: sidebar
+permalink: fru-reference/mezzanine-fru-links.html
+keywords: mezzanine, field replaceable units, FRU, mezzanine replacement
+summary: "Find mezzanine replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step mezzanine replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model."
+---
+= Mezzanine replacement procedures by platform family
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Find mezzanine replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step mezzanine replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model.
+
+[role="tabbed-block"]
+====
+.AFF systems
+--
+* link:../a250/mezzanine-replace.html[AFF A250]
+* link:../c250/mezzanine-replace.html[AFF C250]
+--
+
+.ASA systems
+--
+* link:../asa250/mezzanine-replace.html[ASA A250]
+* link:../asa-c250/mezzanine-replace.html[ASA C250]
+--
+
+.FAS systems
+--
+* link:../fas500f/mezzanine-replace.html[FAS500f]
+--
+====
+
+// 2025-09-18: ontap-systems-internal/issues/769

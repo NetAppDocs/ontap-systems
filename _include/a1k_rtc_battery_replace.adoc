@@ -2,6 +2,8 @@
 * Understand that you can use this procedure with all versions of ONTAP supported by your system.
 * Make sure all other components in the system are functioning properly; if not, you must contact technical support.
 
+You must use an approved RTC battery.
+
 == Step 1: Shut down the impaired controller
 
 Shut down or take over the impaired controller using one of the following options.
@@ -27,6 +29,8 @@ include::../_include/a1k_controller_remove_physical.adoc[]
 == Step 3: Replace the RTC battery
 
 Remove failed RTC battery and install the replacement RTC battery.
+
+.Steps
 
 . Open the controller air duct on the top of the controller.
 .. Insert your fingers in the recesses at the far ends of the air duct.
@@ -62,6 +66,8 @@ NOTE: After replacing the RTC battery, inserting controller and powering on firs
 `RTC date/time error. Reset date/time to default`
 `RTC power failure error`
 These messages are excpected and you can continue with this procedure.
+
+.Steps
 
  . Check the date and time on the healthy controller with the _cluster date show_ command.
 

@@ -1,0 +1,54 @@
+---
+sidebar: sidebar
+permalink: fru-reference/drive-fru-links.html
+keywords: drive, field replaceable units, FRU, drive replacement
+summary: "Find drive replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step drive replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model."
+---
+= Drive replacement procedures by platform family
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Find drive replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step drive replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model.
+
+[role="tabbed-block"]
+====
+.AFF systems
+--
+* link:../a20-30-50/drive-replace.html[AFF A20/30/50]
+* link:../a150/drive-replace.html[AFF A150]
+* link:../a200/drive-replace.html[AFF A200]
+* link:../a220/drive-replace.html[AFF A220]
+* link:../a250/drive-replace.html[AFF A250]
+* link:../a70-90/drive-replace.html[AFF A70/90]
+* link:../a700s/drive-replace.html[AFF A700s]
+* link:../a800/drive-replace.html[AFF A800]
+* link:../c30-60/drive-replace.html[AFF C30/60]
+* link:../c80/drive-replace.html[AFF C80]
+* link:../c190/drive-replace.html[AFF C190]
+* link:../c250/drive-replace.html[AFF C250]
+* link:../c800/drive-replace.html[AFF C800]
+--
+
+.ASA systems
+--
+* link:../asa150/drive-replace.html[ASA A150]
+* link:../asa250/drive-replace.html[ASA A250]
+* link:../asa800/drive-replace.html[ASA A800]
+* link:../asa-c250/drive-replace.html[ASA C250]
+* link:../asa-c800/drive-replace.html[ASA C800]
+* link:../asa-r2-a20-30-50/drive-replace.html[ASA A20/30/50]
+* link:../asa-r2-70-90/drive-replace.html[ASA A70/90]
+* link:../asa-r2-c30/drive-replace.html[ASA C30]
+--
+
+.FAS systems
+--
+* link:../fas500f/drive-replace.html[FAS500f]
+* link:../fas2600/drive-replace.html[FAS2600]
+* link:../fas2700/drive-replace.html[FAS2700]
+* link:../fas2800/drive-replace.html[FAS2800]
+--
+====
+
+// 2025-09-18: ontap-systems-internal/issues/769

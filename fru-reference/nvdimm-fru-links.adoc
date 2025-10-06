@@ -1,0 +1,39 @@
+---
+sidebar: sidebar
+permalink: fru-reference/nvdimm-fru-links.html
+keywords: NVDIMM, field replaceable units, FRU, NVDIMM replacement
+summary: "Find NVDIMM replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step NVDIMM replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model."
+---
+= NVDIMM replacement procedures by platform family
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Find NVDIMM replacement procedures for your NetApp storage system organized by platform family. This reference provides direct links to step-by-step NVDIMM replacement workflows for AFF, ASA, and FAS systems to help you quickly locate the correct procedure for your specific model.
+
+[role="tabbed-block"]
+====
+.AFF systems
+--
+* link:../a320/nvdimm-replace.html[AFF A320]
+* link:../a400/nvdimm-replace.html[AFF A400]
+* link:../a800/nvdimm-replace.html[AFF A800]
+* link:../c400/nvdimm-replace.html[AFF C400]
+* link:../c800/nvdimm-replace.html[AFF C800]
+--
+
+.ASA systems
+--
+* link:../asa400/nvdimm-replace.html[ASA A400]
+* link:../asa800/nvdimm-replace.html[ASA A800]
+* link:../asa-c400/nvdimm-replace.html[ASA C400]
+* link:../asa-c800/nvdimm-replace.html[ASA C800]
+--
+
+.FAS systems
+--
+* link:../fas8300/nvdimm-replace.html[FAS8300]
+--
+====
+
+// 2025-09-18: ontap-systems-internal/issues/769

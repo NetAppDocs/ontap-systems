@@ -16,8 +16,6 @@ entries:
        url: /c80/install-cable.html
      - title: Power on system
        url: /c80/install-power-hardware.html
-     - title: Complete system setup
-       url: /c80/install-complete.html
  - title: Maintain
    pdf-filename: C80 Maintain
    entries:
@@ -114,3 +112,5 @@ entries:
      url: /c80/rtc-battery-replace.html
    - title: System Management module 
      url: /c80/system-management-replace.html
+ - title: Key specifications
+   url: c80-key-specifications.html

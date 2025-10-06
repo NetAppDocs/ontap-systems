@@ -16,8 +16,6 @@ entries:
        url: /fas50/install-cable.html
      - title: Power on system
        url: /fas50/install-power-hardware.html
-     - title: Complete system setup
-       url: /fas50/install-complete.html
  - title: Maintain
    pdf-filename: FAS50 Maintain
    entries:
@@ -93,6 +91,8 @@ entries:
           url: /fas50/controller-replace-restore-system-rma.html
    - title: DIMM
      url: /fas50/dimm-replace.html
+   - title: Drive
+     url: /fas50/drive-replace.html
    - title: Fan
      url: /fas50/fan-replace.html
    - title: I/O module
@@ -112,3 +112,5 @@ entries:
      url: /fas50/power-supply-replace.html
    - title: Real-time clock battery
      url: /fas50/rtc-battery-replace.html
+ - title: Key specifications
+   url: /fas50/overview.html

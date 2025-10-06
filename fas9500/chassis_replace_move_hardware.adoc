@@ -4,7 +4,6 @@ sidebar: sidebar
 keywords:
 summary: 'All other components in the system must be functioning properly; if not, you must contact technical support.'
 ---
-
 = Move and replace hardware - FAS9500
 :icons: font
 :imagesdir: ../media/
@@ -16,6 +15,7 @@ To replace the chassis, you must remove the components from the impaired chassis
 
 Removing the power supplies when replacing a chassis involves turning off, disconnecting, and then removing the four power supplies from the rear of the impaired chassis.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Turn off the power supply and disconnect the power cables:
 .. Turn off the power switch on the power supply.
@@ -44,6 +44,7 @@ Terra cotta locking button
 
 You must remove the six fan modules, located on in the front of the chassis, when replacing the chassis.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
 . Press the terra cotta locking button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
@@ -73,6 +74,7 @@ Slide fan in/out of chassis
 
 To replace the chassis, you must remove the controller module or modules from the impaired chassis.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta locking button on the cam handle downward until it unlocks.
@@ -103,6 +105,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 To remove I/O modules from the impaired chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the Flash Cache module, if present, from the NVRAM module when moving it to a replacement chassis.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Unplug any cabling associated with the target I/O module.
 +
@@ -141,6 +144,7 @@ I/O cam latch completely unlocked
 
 Remove the two de-stage controller power modules from the front of the impaired chassis.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Press the terra cotta locking button on the module handle, and then slide the DCPM out of the chassis.
 +
@@ -178,6 +182,7 @@ a|
 Slide out of chassis.
 |===
 
+.Steps
 . Locate the USB LED module on the front of the impaired chassis, directly under the power supply bays.
 . Press the black locking button on the right side of the module to release the module from the chassis, and then slide it out of the impaired chassis.
 . Set the module aside in a safe place.
@@ -186,6 +191,7 @@ Slide out of chassis.
 
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
+.Steps
 . Remove the screws from the chassis mount points.
 +
 NOTE: If the system is in a system cabinet, you might need to remove the rear tie-down bracket.
@@ -202,6 +208,7 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 
 Once the replacement chassis is installed into the rack or system cabinet, you must reinstall the de-stage controller power modules into it.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Align the end of the DCPM with the chassis opening, and then gently slide it into the chassis until it clicks into place.
 +
@@ -213,6 +220,7 @@ NOTE: The module and slot are keyed. Do not force the module into the opening. I
 
 To install the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Align the edges of the replacement fan module with the opening in the chassis, and then slide it into the chassis until it snaps into place.
 +
@@ -226,6 +234,7 @@ To install I/O modules, including the NVRAM/Flash Cache modules from the impaire
 
 You must have the chassis installed so that you can install the I/O modules into the corresponding slots in the replacement chassis.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . After the replacement chassis is installed in the rack or cabinet, install the I/O modules into their corresponding slots in the replacement chassis by gently sliding the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage, and then push the I/O cam latch all the way up to lock the module in place.
 . Recable the I/O module, as needed.
@@ -237,6 +246,7 @@ NOTE: If the impaired chassis has blank I/O panels, move them to the replacement
 
 Installing the power supplies when replacing a chassis involves installing the power supplies into the replacement chassis, and connecting to the power source.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Make sure the power supplies rockers are in the off position.
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis until it locks into place.
@@ -255,6 +265,7 @@ IMPORTANT: Only connect the power cable to the power supply. Do not connect the 
 
 Install the USB LED modules in the replacement chassis.
 
+.Steps
 . Locate the USB LED module slot on the front of the replacement chassis, directly under the DCPM bays.
 . Align the edges of the module with the USB LED bay, and gently push the module all the way into the chassis until it clicks into place.
 
@@ -262,6 +273,7 @@ Install the USB LED modules in the replacement chassis.
 
 After you install the controller module and any other components into the replacement chassis, boot the system.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Connect the power supplies to different power sources, and then turn them on.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

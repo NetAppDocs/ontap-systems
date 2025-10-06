@@ -1,0 +1,20 @@
+---
+permalink: c400/bootmedia-replace-requirements.html
+sidebar: sidebar
+keywords: c400, replace the boot media
+summary: Before replacing the boot media in your AFF C400 system, ensure you meet the necessary requirements for a successful replacement. This includes making sure you have a USB flash drive with the appropriate amount of storage and verifying that you have the correct replacement boot device.
+---
+= Requirements for manual boot media recovery - AFF C400 
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before replacing the boot media in your AFF C400 system, ensure you meet the necessary requirements for a successful replacement. This includes making sure you have a USB flash drive with the appropriate amount of storage and verifying that you have the correct replacement boot device.
+
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure]
+
+include::../_include/bootmedia_replace_requirements.adoc[]
+
+.What's next?
+
+After you've reviewed the requirements to replace the boot media, you need to link:bootmedia-encryption-preshutdown-checks.html[check encryption key support and status on the boot media].

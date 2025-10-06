@@ -34,9 +34,6 @@ entries:
             url: /a150/bootmedia-encryption-restore.html
           - title: Return failed part to NetApp
             url: /a150/bootmedia-complete-rma.html
-      - title: Caching module
-        pdf-filename: AFF A150 Caching Module
-        url: /a150/caching-module-replace.html
       - title: Chassis
         pdf-filename: AFF A150 Chassis
         entries:
@@ -78,3 +75,5 @@ entries:
       - title: Real-time clock battery
         pdf-filename: AFF A150 Real-Time Clock Battery
         url: /a150/rtc-battery-replace.html
+    - title: Key specifications
+      url: /a150/overview.html

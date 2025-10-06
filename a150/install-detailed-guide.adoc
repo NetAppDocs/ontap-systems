@@ -195,7 +195,6 @@ image:../media/drw_c190_u_tnsc_clust_cbling.png[Cluster interconnect cabling]
 +
 
 . Cable the controllers to either a UTA2 data network or an Ethernet network:
-[horizontal]
 UTA2 data network configurations:: 
 Use one of the following cable types to cable the UTA2 data ports to your host network. 
 +
@@ -238,7 +237,6 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 image:../media/drw_c190_u_switched_clust_cbling.png[Clusterinterconnect cabling]
 +
 . You can use either the UTA2 data network ports or the ethernet data network ports to connect the controllers to your host network:
-[horizontal]
 UTA2 data network configurations::
 Use one of the following cable types to cable the UTA2 data ports to your host network.
 +

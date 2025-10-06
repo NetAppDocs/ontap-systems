@@ -16,8 +16,6 @@ entries:
        url: /fas-70-90/install-cable.html
      - title: Power on system
        url: /fas-70-90/install-power-hardware.html
-     - title: Complete system setup
-       url: /fas-70-90/install-complete.html
  - title: Maintain
    pdf-filename: FAS70 and FAS90 Maintain
    entries:
@@ -59,6 +57,21 @@ entries:
         - title: Return failed part to NetApp
           url: /fas-70-90/bootmedia-complete-rma.html
           # END boot media
+   - title: Chassis
+     pdf-filename: FAS70 and FAS90 Chassis
+     entries:
+        - title: Chassis replacement workflow
+          url: /fas-70-90/chassis-replace-workflow.html
+        - title: Review requirements
+          url: /fas-70-90/chassis-replace-requirements.html
+        - title: Prepare to replace
+          url: /fas-70-90/chassis-replace-prepare.html
+        - title: Shut down controller
+          url: /fas-70-90/chassis-replace-shutdown.html
+        - title: Replace chassis
+          url: /fas-70-90/chassis-replace-move-hardware.html
+        - title: Complete chassis replacement
+          url: /fas-70-90/chassis-replace-complete-system-restore-rma.html
    - title: Controller
      pdf-filename: FAS70 and FAS90 Controller Module
      entries:
@@ -100,3 +113,9 @@ entries:
      url: /fas-70-90/rtc-battery-replace.html
    - title: System Management module
      url: /fas-70-90/system-management-replace.html
+ - title: Key specifications
+   entries:
+     - title: FAS70
+       url: fas70-key-specifications.html
+     - title: FAS90
+       url: fas90-key-specifications.html

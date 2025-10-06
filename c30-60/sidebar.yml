@@ -16,8 +16,6 @@ entries:
        url: /c30-60/install-cable.html
      - title: Power on system
        url: /c30-60/install-power-hardware.html
-     - title: Complete system setup
-       url: /c30-60/install-complete.html
  - title: Maintain
    pdf-filename: AFF C30 and AFF C60 Maintain
    entries:
@@ -112,3 +110,9 @@ entries:
      url: /c30-60/power-supply-replace.html
    - title: Real-time clock battery
      url: /c30-60/rtc-battery-replace.html
+ - title: Key specifications
+   entries:
+    - title: AFF C30
+      url: c30-key-specifications.html
+    - title: AFF C60
+      url: c60-key-specifications.html

@@ -1,9 +1,9 @@
 section: asa900
 title: ASA A900 systems
 entries:
-  - title: Install and setup
-    pdf-filename: ASA A900 Install and Setup
-    entries:
+ - title: Install and setup
+   pdf-filename: ASA A900 Install and Setup
+   entries:
     - title: Choose install and setup experience
       url: /asa900/install_setup.html
     - title: Quick steps
@@ -12,33 +12,48 @@ entries:
       url: /asa900/install_videos.html
     - title: Detailed steps
       url: /asa900/install_detailed_guide.html
-  - title: Maintain
-    pdf-filename: ASA A900 Maintain
-    entries:
-    - title: Overview
-      url: /asa900/index.html
+ - title: Maintain
+   pdf-filename: ASA A900 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /asa900/maintain-overview.html
       # START boot media
-    - title: Boot media
-      pdf-filename: ASA A900 Boot Media
-      entries:
+   - title: Boot media - automated recovery
+     pdf-filename: AFF ASA 900 Boot Media Automated
+     entries:
+      - title: Boot media replacement workflow
+        url: /asa900/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /asa900/bootmedia-replace-requirements-bmr.html
+      - title: Shut down controller
+        url: /asa900/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /asa900/bootmedia-replace-bmr.html
+      - title: Restore image on boot media
+        url: /asa900/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /asa900/bootmedia-complete-rma-bmr.html
+   - title: Boot media - manual recovery
+     pdf-filename: AFF ASA 900 Boot Media manual
+     entries:
       - title: Overview
         url: /asa900/bootmedia_replace_overview.html
       - title: Check encryption keys
         url: /asa900/bootmedia_encryption_preshutdown_checks.html
       - title: Shut down impaired controller
-        url: /asa900/bootmedia_impaired_controller_shutdown.html
-      - title: Replace failed boot media
+        url: /asa900/bootmedia-shutdown.html
+      - title: Replace boot media
         url: /asa900/bootmedia_replace.html
       - title: Boot recovery image
         url: /asa900/bootmedia_recovery_image.html
       - title: Restore encryption
-        url: /asa900/bootmedia_encryption_restore.html
+        url: /asa900/bootmedia-encryption-restore.html
       - title: Return failed part to NetApp
         url: /asa900/bootmedia_complete_rma.html
-        # END boot media
-    - title: Chassis
-      pdf-filename: ASA A900 Chassis
-      entries:
+          # END boot media
+   - title: Chassis
+     pdf-filename: ASA A900 Chassis
+     entries:
       - title: Overview
         url: /asa900/chassis_replace_overview.html
       - title: Shut down impaired controller
@@ -48,9 +63,9 @@ entries:
       - title: Restore and verify configuration
         url: /asa900/chassis_replace_complete_system_restore_rma.html
       # START controller module replacement
-    - title: Controller
-      pdf-filename: ASA A900 Controller Module
-      entries:
+   - title: Controller
+     pdf-filename: ASA A900 Controller Module
+     entries:
       - title: Overview
         url: /asa900/controller_replace_overview.html
       - title: Shut down impaired controller
@@ -65,37 +80,39 @@ entries:
         url: /asa900/controller_replace_complete_system_restoration_rma.html
       # END controller module replacement
       # START DIMM replace
-    - title: DIMM
-      url: /asa900/dimm_replace.html
+   - title: DIMM
+     url: /asa900/dimm_replace.html
       # END DIMM replace
       # START DCPM battery replacement
-    - title: DCPM
-      url: /asa900/dcpm-nvram11-battery-replace.html
+   - title: DCPM
+     url: /asa900/dcpm-nvram11-battery-replace.html
       # END DCPM battery replacement
       # START Fan
-    - title: Fan
-      url: /asa900/fan_swap_out.html
+   - title: Fan
+     url: /asa900/fan_swap_out.html
       # END fan
       # START I/O module
-    - title: I/O module
-      pdf-filename: ASA A900 I/O module
-      entries:
-        - title: Replace I/O module
-          url: /asa900/pci_cards_and_risers_replace.html
-        - title: Add I/O module
-          url: /asa900/add_io_module.html
+   - title: I/O module
+     pdf-filename: ASA A900 I/O module
+     entries:
+     - title: Replace I/O module
+       url: /asa900/pci_cards_and_risers_replace.html
+     - title: Add I/O module
+       url: /asa900/add_io_module.html
       # END I/O module
   # START LED USB
-    - title: LED USB
-      url: /asa900/led_module_replace.html
+   - title: LED USB
+     url: /asa900/led_module_replace.html
   # END LED USB
       # START NVRAM module and/or NVRAM DIMMs replace
-    - title: NVRAM
-      url: /asa900/nvram_module_or_nvram_dimm_replacement.html
+   - title: NVRAM
+     url: /asa900/nvram_module_or_nvram_dimm_replacement.html
       # END NVRAM module and/or NVRAM DIMMs replace
       # START Power supply replacement
-    - title: Power supply
-      url: /asa900/power_supply_swap_out.html
+   - title: Power supply
+     url: /asa900/power_supply_swap_out.html
       # END Power supply replace
-    - title: Real-time clock battery
-      url: /asa900/rtc_battery_replace.html
+   - title: Real-time clock battery
+     url: /asa900/rtc_battery_replace.html
+ - title: Key specifications
+   url: /asa900/overview.html

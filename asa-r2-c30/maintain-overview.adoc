@@ -20,9 +20,9 @@ For the ASA C30 storage system, you can perform maintenance procedures on the fo
 
 |===
 
-a| link:bootmedia-replace-workflow-bmr.html[Boot media]
+a| link:bootmedia-replace-workflow-bmr.html[Boot media - automated recovery]
 
-a| The boot media stores a primary and secondary set of ONTAP image files as well as system configuration information that the system uses when it boots.
+a|The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot. During automated recovery, the system retrieves the boot image from the partner node and automatically runs the appropriate boot menu option to install the image on your replacement boot media. 
 
 a| link:chassis-replace-workflow.html[Chassis]
 
