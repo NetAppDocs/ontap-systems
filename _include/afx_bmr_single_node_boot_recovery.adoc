@@ -1,6 +1,6 @@
 .Before you begin
 
-* For OKM, you need the cluster-wide passphrase and also the backup data.
+* For OKM, you need the cluster-wide passphrase and the backup data.
 * For EKM, you need copies of the following files from the partner node:
 ** /cfcard/kmip/servers.cfg file.
 ** /cfcard/kmip/certs/client.crt file. 
@@ -75,7 +75,7 @@ The node accesses the boot menu and runs:
 +
 `storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
 +
-NOTE: The following command is only available in the Diagnostic mode privilege level. For more information on privilege levels, see link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html[Understand the privilege levels for ONTAP CLI commands^]. 
+NOTE: This command is available only in Diagnostic mode. For details, see link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html[Privilege levels for ONTAP CLI commands^]. 
 +
 If you encounter errors, contact https://support.netapp.com[NetApp Support].
 +

@@ -7,7 +7,7 @@ Until you install license keys, features requiring standard licenses continue to
 
 A NetApp License File (NLF) for the new system serial number is required. For more information on NetApp License Files, see link:https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/ONTAP_9.10.1_and_later_licensing_overview[ONTAP 9.10.1 and later licensing overview^].
 
-You have a 90-day grace period in which to install the license keys. After the grace period, all old licenses are invalidated. After a valid license key is installed, you have 24 hours to install all of the keys before the grace period ends.
+You have 90 days to install the license keys, after which all old licenses become invalid. After you install a valid license key, you have 24 hours to install all of the keys before the grace period ends.
 
 NOTE: If your system was initially running ONTAP 9.15.1 or later, use the procedure documented in  link:https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system[Post Motherboard Replacement Process to update Licensing on a AFF/FAS system^]. If you are unsure of the initial ONTAP release for your system, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for more information. 
 

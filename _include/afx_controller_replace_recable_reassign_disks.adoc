@@ -22,7 +22,7 @@ Return the impaired controller to normal operation by giving back its storage.
 NOTE: The following command is only available in the Diagnostic mode privilege level. For more information on privilege levels, see link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html[Understand the privilege levels for ONTAP CLI commands^]. 
 +
 If you encounter errors, contact https://support.netapp.com[NetApp Support].
-. Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
+. Wait 5 minutes after the giveback report completes, then check failover and giveback status:
 +
 `storage failover show` and `storage failover show-giveback`
 +
@@ -72,7 +72,7 @@ NOTE: You will be prompted twice for the passphrase.
 NOTE: The following command is only available in the Diagnostic mode privilege level. For more information on privilege levels, see link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html[Understand the privilege levels for ONTAP CLI commands^]. 
 +
 If you encounter errors, contact https://support.netapp.com[NetApp Support].
-. Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
+. Wait 5 minutes after the giveback report completes, then check failover and giveback status:
 + 
 `storage failover show` and `storage failover show-giveback`
 +

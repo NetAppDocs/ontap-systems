@@ -19,7 +19,7 @@ The controller module begins to boot as soon as it is fully seated in the enclos
 
 . Press <enter> when console messages stop.
 * If you see the login prompt, go to the next step.
-* If you do not see login prompt, log into the partner node.
+* If you do not see a login prompt, log into the partner node.
 . Give back only the root with override-destination-checks option:
 +
 `storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
@@ -27,7 +27,7 @@ The controller module begins to boot as soon as it is fully seated in the enclos
 NOTE: The following command is only available in the Diagnostic mode privilege level. For more information on privilege levels, see link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html[Understand the privilege levels for ONTAP CLI commands^]. 
 +
 If you encounter errors, contact https://support.netapp.com[NetApp Support].      
-. Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
+. Wait 5 minutes after the giveback report completes, then check failover and giveback status:
 +
 `storage failover show` and `storage failover show-giveback`
 +

@@ -14,4 +14,4 @@ The boot media in your AFX 1K storage system stores essential firmware and confi
 include::../_include/afx_bootmedia_replace_bmr.adoc[]
 
 .What's next?
-After physically replacing the impaired boot media, you need to link:bootmedia-recovery-image-boot.html[restore the ONTAP image from the partner node].
+After replacing the boot media, link:bootmedia-recovery-image-boot.html[restore the ONTAP image from the partner node].

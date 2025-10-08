@@ -51,7 +51,7 @@ System Management module cam latch
 .. If you are not already grounded, properly ground yourself.
 .. Unplug the power supply cables from the PSUs. 
 
-.. Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
+.. Remove any cables connected to the System Management module. Label the cables where they were connected, so you can reconnect them to the correct ports when reinstalling the module.
 
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 
@@ -59,7 +59,7 @@ System Management module cam latch
 
 .. Rotate the cam lever down as far as it will go.
  .. Loop your finger into the hole on the cam lever and pull the module straight out of the system.
-.. Place the System Management module on an anti-static mat, so that the boot media is accessible.
+.. Place the System Management module on an anti-static mat to access the boot media.
 . Move the boot media to the replacement System Management module:
 +
 image::../media/drw_a1k_boot_media_remove_replace_ieops-1377.svg[Boot media replace]
@@ -101,7 +101,7 @@ Reboot the controller module.
 
 . Plug the power cables back into the PSU. 
 +
-The system will begin to reboot, typically to the LOADER prompt.
+The system reboots, typically to the LOADER prompt.
 +
 . Enter _bye_ at the LOADER prompt.
 . Press <enter> when console messages stop.
@@ -114,7 +114,7 @@ The system will begin to reboot, typically to the LOADER prompt.
 NOTE: The following command is only available in the Diagnostic mode privilege level. For more information on privilege levels, see link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html[Understand the privilege levels for ONTAP CLI commands^].
 + 
 If you encounter errors, contact https://support.netapp.com[NetApp Support].
-. Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
+. Wait 5 minutes after the giveback report completes, then check the failover and giveback statuses:
 +
 `storage failover show` and `storage failover show-giveback`
 +

@@ -20,7 +20,7 @@ The following AutoSupport message suppresses automatic case creation for two hou
 +
 NOTE: When you see _Do you want to disable auto-giveback?_, enter `y`.
 
-.. If you are running ONTAP version 9.17.1 and the impaired controller cannot be brought up or is already taken over, you must take the HA interconnect link down from the healthy controller before booting up the impaired controller. This will prevent the impaired controller from performing automatic giveback.
+.. If you are running ONTAP version 9.17.1 and the impaired controller cannot be brought up or is already taken over, you must take the HA interconnect link down from the healthy controller before booting up the impaired controller. This prevents the impaired controller from performing automatic giveback.
 +
 `system ha interconnect link off -node healthy-node -link 0`
 +

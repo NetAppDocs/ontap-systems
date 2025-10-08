@@ -2,7 +2,7 @@ If the storage system has available slots, install the new I/O module into one o
 
 .Before you begin
 
-* Check the https://hwu.netapp.com/[NetApp Hardware Universe^] to make sure that the new I/O module is compatible with your storage system and version of ONTAP you're running.
+* Check the https://hwu.netapp.com/[NetApp Hardware Universe^] to ensure the new I/O module is compatible with your storage system and ONTAP version.
 
 * If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^]  and use the best one available for your I/O module.
 
@@ -46,7 +46,7 @@ NOTE: This reinitializes the I/O module and other components and reboots the nod
 
 . Press <enter> when console messages stop.
 * If you see the _login_ prompt, go to the next step.
-* If you do not see login prompt, log into the partner node.
+* If you do not see the login prompt, log in to the partner node.
 . Give back only the root with override-destination-checks option:
 +
 `storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
@@ -136,7 +136,7 @@ This reinitializes the PCIe cards and other components and reboots the node.
 
 . Press <enter> when console messages stop.
 * If you see the _login_ prompt, go to the next step.
-* If you do not see login prompt, log into the partner node.
+* If you do not see the login prompt, log in to the partner node.
 . Give back only the root with override-destination-checks option:
 +
 `storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`

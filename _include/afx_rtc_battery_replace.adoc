@@ -14,7 +14,7 @@ include::../_include/afx_controller_remove_physical.adoc[]
  
 == Step 3: Replace the RTC battery
 
-Remove failed RTC battery and install the replacement RTC battery.
+Remove the failed RTC battery and install the replacement.
 
 . Open the controller air duct on the top of the controller.
 .. Insert your fingers in the recesses at the far ends of the air duct.
@@ -86,7 +86,7 @@ NOTE: If your system stops at the boot menu, select the option for  `Reboot node
 NOTE: The following command is only available in the Diagnostic mode privilege level. For more information on privilege levels, see link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html[Understand the privilege levels for ONTAP CLI commands^]. 
 +
 If you encounter errors, contact https://support.netapp.com[NetApp Support].
-. Wait 5 minutes after the giveback report completes, and check failover status and giveback status:
+. Wait five minutes after the giveback report completes, then check the failover and giveback statuses:
 +
 `storage failover show` and `storage failover show-giveback`
 +

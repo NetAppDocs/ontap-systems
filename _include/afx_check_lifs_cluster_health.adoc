@@ -1,4 +1,4 @@
-Before returning the replacement node to service, verify that the logical interfaces are on their home ports, check the cluster health, and reset automatic giveback.
+Before returning the replacement node to service, ensure the logical interfaces are on their home ports, check cluster health, and reset automatic giveback.
 
 .Steps
  
@@ -6,7 +6,7 @@ Before returning the replacement node to service, verify that the logical interf
 +
 `network interface show -is-home false`
 +
-If any logical interfaces are listed as false, revert them to their home ports: 
+If any logical interfaces are listed as false, return them to their home ports: 
 +
 `network interface revert -vserver * -lif *`
 
