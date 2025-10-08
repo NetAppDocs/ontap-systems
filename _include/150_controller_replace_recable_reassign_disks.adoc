@@ -21,10 +21,6 @@ a|
 Stand-alone
 a|
 <<Option 2: Manually reassign the system ID on a stand-alone system in ONTAP>>
-a|
-Two-node MetroCluster configuration
-a|
-<<Option 3: Manually reassign the system ID on systems in a two-node MetroCluster configuration>>
 |===
 
 === Option 1: Verify the system ID change on an HA system
@@ -98,6 +94,4 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 include::../_include/standalone_reassign_sysid.adoc[]
 
-=== Option 3: Manually reassign the system ID on systems in a two-node MetroCluster configuration
-
-include::../_include/2n_mcc_reassign_sysid.adoc[]
+// 2025-10-08 ontap-systems-internal/issues/981
