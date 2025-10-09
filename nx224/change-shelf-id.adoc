@@ -24,7 +24,7 @@ You use the paper clip or ballpoint pen to access the shelf ID button through th
 .About this task
 
 * A valid shelf ID is 00 through 99.
-* Shelf IDs must be unique within an ONTAP AFX cluster.
+* Shelf IDs must be unique within an AFX cluster.
 * You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) in order for the shelf ID to take effect.
 +
 The amount of time you wait before plugging the power cords back in depends on the state of ONTAP, as described later in this procedure.
