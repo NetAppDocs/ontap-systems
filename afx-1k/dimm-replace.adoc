@@ -2,13 +2,13 @@
 permalink: afx-1k/dimm-replace.html
 sidebar: sidebar
 keywords: afx 1k, replace a dimm
-summary: Replace a DIMM in your AFX 1K system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+summary: Replace a DIMM in your AFX 1K storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
 = Replace a DIMM - AFX 1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a DIMM in your AFX 1K system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+Replace a DIMM in your AFX 1K storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 
-include::../_include/a1k_dimm_replace.adoc[]
+include::../_include/afx_dimm_replace.adoc[]

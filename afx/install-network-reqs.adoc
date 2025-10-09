@@ -4,7 +4,7 @@ permalink: /afx/install-network-reqs.html
 keywords: shared storage cluster switch
 summary: From ONTAP 9.9.1, you can use Cisco Nexus 9364d-gx2a switches to combine storage and cluster functionality into a shared switch scenario.
 ---
-= Network requirements for your AFX A1K system
+= Network requirements for your AFX 1K system
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: From ONTAP 9.9.1, you can use Cisco Nexus 9364d-gx2a switches to combin
 :imagesdir: ./media/
 
 [.lead]
-Record the required information for each network you connect to your AFX A1K storage system. 
+Record the required information for each network you connect to your AFX 1K storage system. 
 
 == Gather network information
 Before you begin the installation of your AFX storage system, gather the required network information
@@ -25,7 +25,7 @@ Refer to the https://hwu.netapp.com[Hardware Universe^] for the latest informati
 
 * Cluster management IP address
 +
-The cluster management IP address is a unique IPv4 address for the cluster management interface used by the cluster administrator to access the admin storage VM and manage the cluster. You can obtain this IP address from the administrator responsible for assigning IP addresses in your organization.
+The cluster management IP address is a unique IP address for the cluster management interface used by the cluster administrator to access the admin storage VM and manage the cluster. You can obtain this IP address from the administrator responsible for assigning IP addresses in your organization.
 
 * Network subnet mask
 +
@@ -33,7 +33,7 @@ During cluster setup, ONTAP recommends a set of network interfaces appropriate f
 
 * Network gateway IP address
 
-* Partner node IP address
+* Node management IP addresses (one per node)
 
 * DNS domain names
 
@@ -45,4 +45,22 @@ During cluster setup, ONTAP recommends a set of network interfaces appropriate f
 
 * IP subnet for management network traffic.
 
+== Network requirements for Cisco switches
+For Cisco Nexus 9332D-GX2B and and 9364D-GX2A switch installation and maintenance, be sure to review cabling and network requirements.
 
+=== Network requirements
+
+You need the following network information for all switch configurations.
+
+* IP subnet for management network traffic
+* Host names and IP addresses for each of the storage system controllers and all applicable switches
+* Refer to the https://hwu.netapp.com[Hardware Universe^] for the latest information.
+
+=== Cabling requirements
+
+* You have the appropriate number and type of cables and cable connectors for your switches. See the https://hwu.netapp.com[Hardware Universe^].
+
+* Depending on the type of switch you are initially configuring, you need to connect to the switch console port with the included console cable.
+
+.What's next?
+After reviewing the network requirements, you link:cable-hardware.html[cable the controllers and storage shelves for your AFX 1K system].

@@ -11,9 +11,9 @@ summary: Verify that the logical interfaces (LIFs) are reporting to their home p
 [.lead]
 Verify that the logical interfaces (LIFs) are reporting to their home port, perform a cluster health check, and then return the failed part to NetApp to complete the final step in the AFX 1K controller replacement procedure.
 
-== Step 1: Verify LIFs and and check cluster health
+== Step 1: Verify LIFs and check cluster health
 
-include::../_include/check_lifs_cluster_health.adoc[]
+include::../_include/afx_check_lifs_cluster_health.adoc[]
 
 == Step 2: Return the failed part to NetApp
 

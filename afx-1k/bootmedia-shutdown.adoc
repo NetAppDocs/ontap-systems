@@ -12,7 +12,7 @@ summary: Shut down the impaired controller in your AFX 1K storage system to prev
 Shut down the impaired controller in your AFX 1K storage system to prevent data loss and ensure system stability when replacing the boot media.
 
 
-include::../_include/shutdown_most_frus.adoc[]
+include::../_include/shutdown_most_frus_afx.adoc[]
 
 .What's next?
-After shutting down the controller, you need to link:bootmedia-replace.html[replace the boot media].
+After shutting down the controller, link:bootmedia-replace.html[change the boot media].

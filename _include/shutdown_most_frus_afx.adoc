@@ -1,7 +1,9 @@
-To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.
+To shut down the impaired controller, you must determine the status of the controller and, if necessary, perform a storage failover takeover of the controller so that the healthy controller continues to serve data from the impaired controller storage.
 
 .About this task
-* If you have a cluster with more than four nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum[Synchronize a node with the cluster^].
+* If you have a cluster with more than four nodes, it must be in quorum. To view cluster information about your nodes, use the `cluster show` command. For more information about the `cluster show` command, see link:https://docs.netapp.com/us-en/ontap/system-admin/display-nodes-cluster-task.html[View node-level details in an ONTAP cluster^]. 
+* If the cluster is not in quorum or if the health or eligibility of any controller (other than the impaired controller) shows as false, you must correct the issue before shutting down the impaired controller. 
+See link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum[Synchronize a node with the cluster^].
 
 .Steps
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
@@ -12,13 +14,20 @@ The following AutoSupport message suppresses automatic case creation for two hou
 +
 `cluster1:> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. Disable automatic giveback from the console of the healthy controller: 
+. Disable automatic giveback from the console of the impaired controller: 
 +
-`storage failover modify -node local -auto-giveback false`
+`storage failover modify -node impaired-node -auto-giveback-of false`
 +
 NOTE: When you see _Do you want to disable auto-giveback?_, enter `y`.
 
+.. If you are running ONTAP version 9.17.1 and the impaired controller cannot be brought up or is already taken over, you must take the HA interconnect link down from the healthy controller before booting up the impaired controller. This prevents the impaired controller from performing automatic giveback.
 +
+`system ha interconnect link off -node healthy-node -link 0`
++
+`system ha interconnect link off -node healthy-node -link 1`
++
+NOTE: If you are not running ONTAP version 9.17.1, skip the above step and go to step 3.
+
 . Take the impaired controller to the LOADER prompt:
 +
 [options="header" cols="1,2"]
@@ -29,17 +38,12 @@ The LOADER prompt
 a|
 Go to the next step.
 a|
-Waiting for giveback...
-a|
-Press Ctrl-C, and then respond `y` when prompted.
-a|
 System prompt or password prompt
 a|
 Take over or halt the impaired controller from the healthy controller: 
-
 `storage failover takeover -ofnode _impaired_node_name_ -halt _true_`
 
-The _-halt true_ parameter brings you to the LOADER prompt.
+The _-halt true_ parameter brings the impaired node to the LOADER prompt.
 
 // 3 Apr 2025, replaced by -halt true parameter.
 //When the impaired controller shows Waiting for giveback..., press Ctrl-C, and then respond `y`.

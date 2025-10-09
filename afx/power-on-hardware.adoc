@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: afx/power-on-hardware.html
 keywords: afx, afx 1k, power on
-summary: Power on each shelf to assign a unique shelf ID, power on the AFX nodes, and secure the power cables. 
+summary: Power on each shelf to assign a unique shelf ID, power on the AFX controller nodes, and secure the power cables. 
 ---
-= Power on your AFX storage system
+= Power on your AFX 1K storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After you install the rack hardware for your AFX storage system and install the cables for the nodes and storage shelves, you should power on your storage shelves and nodes.
+After you install the rack hardware for your AFX 1K storage system and install the cables for the controller nodes and storage shelves, you should power on your storage shelves and controller nodes.
 
 == Step 1: Power on the shelf and assign shelf ID
 Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf is distinct within your storage system setup.
@@ -17,7 +17,7 @@ Each shelf is distinguished by a unique shelf ID. This ID ensures that the shelf
 .About this task
 * A valid shelf ID is 01 through 99. 
 
-* You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) for the shelf ID to take effect.
+* You must power cycle a shelf (unplug both power cords, wait a minimum of 10 seconds, and then plug them back in) for the shelf ID to take effect.
 
 .Steps
 . Power on the shelf by connecting the power cords first to the shelf, securing them in place with the power cord retainer, and then connecting the power cords to power sources on different circuits.
@@ -26,7 +26,7 @@ The shelf powers on and boots automatically when plugged into the power source.
 
 . Remove the left end cap to access the shelf ID button behind the faceplate.
 +
-image::../media/drw_a900_oie_change_ns224_shelf_ID_ieops-836.svg[Change NX224 shelf ID]
+image::../media/drw_tp_change_shelf_id_ieops-2381.svg[Change NX224 shelf ID]
 +
 
 [cols="20%,80%"]
@@ -94,8 +94,8 @@ A power supply is powered on as soon as the power cord is plugged in. Its bicolo
 . Replace the left end cap.
 
 
-== Step 2: Power on the nodes
-After you've turned on your storage shelves and assigned them unique IDs, turn on the power to the storage nodes.
+== Step 2: Power on the controller nodes
+After you've turned on your storage shelves and assigned them unique IDs, turn on the power to the storage controller nodes.
 
 .Steps
 
@@ -130,6 +130,6 @@ image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[A1K storage system a
 . Secure the power cords using the securing device on each power supply.
 
 .What's next?
-After you've turned on your AFX storage system, you link:install-complete.html[complete system setup].
+After you've turned on your AFX 1K storage system, you link:/install-setup/cluster-setup.html[set up an AFX cluster].
 
 // 2024 Sept 23, ONTAPDOC 1922

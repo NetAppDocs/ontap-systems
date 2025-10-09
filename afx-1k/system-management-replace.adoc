@@ -2,13 +2,13 @@
 permalink: afx-1k/system-management-replace.html
 sidebar: sidebar
 keywords: afx 1k, replace the system manager module
-summary: Replace the System Management module in your AFX 1K system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
+summary: Replace the System Management module in your AFX 1K storage system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
 ---
 = Replace system management module - AFX 1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the System Management module in your AFX 1K system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
+Replace the System Management module in your AFX 1K storage system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
 
-include::../_include/a1k_system_mgmt_replace.adoc[]
+include::../_include/afx_system_mgmt_replace.adoc[]

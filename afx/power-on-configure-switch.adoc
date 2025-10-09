@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: afx/power-on-configure-switch.html
+keywords: afx, afx 1k, cable controllers, Cisco Nexus 9332D-GX2B, Cisco Nexus 9364D-GX2A, switches, switch, power on, configure switches,
+summary: Learn how to power on and configure the switches for your AFX 1K storage system. 
+---
+= Power on and configure the switches for your AFX 1K storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After you cable your AFX 1K storage system, you need to power on and configure the switches. 
+
+.Steps
+. Plug the power cords for the switches into the power sources. 
+. Power on each switch. 
+. Configure the switches to support the AFX 1K storage system.
+* For Cisco Nexus 9332D-GX2B switches, see link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9332d-gx2b/configure-software-overview-9332d-cluster.html[Configure Cisco Nexus 9332D-GX2B switch^].
+* For Cisco Nexus 9364D-GX2A switches, see link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9364d-gx2a/configure-software-overview-9364d-cluster.html[Configure Cisco Nexus 9364D-GX2A switch^].
+
+.What's next?
+
+After you’ve configured the switches for your AFX 1K storage system, you link:power-on-hardware.html[power on the AFX 1K storage system].
+
