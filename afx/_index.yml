@@ -14,23 +14,23 @@ indexpage:
     - title: Install and maintain AFX systems
       links:
         - title: Install AFX systems
-          url: https://docs.netapp.com/us-en/asa-r2/install-setup/install-setup-workflow.html
+          url: https://docs.netapp.com/us-en/afx/install-setup/install-setup-workflow.html
         - title: Maintain AFX systems
           url: ../afx-landing-maintain/index.html
     - title: Manage data on AFX systems
       links:
         - title: Provision SAN storage
-          url: https://docs.netapp.com/us-en/asa-r2/manage-data/provision-san-storage.html
+          url: https://docs.netapp.com/us-en/afx/manage-data/provision-san-storage.html
         - title: Clone data
-          url: https://docs.netapp.com/us-en/asa-r2/manage-data/data-cloning.html
+          url: https://docs.netapp.com/us-en/afx/manage-data/data-cloning.html
         - title: Modify storage units
-          url: https://docs.netapp.com/us-en/asa-r2/manage-data/modify-storage-units.html
+          url: https://docs.netapp.com/us-en/afx/manage-data/modify-storage-units.html
     - title: Protect and secure data on AFX systems 
       links: 
         - title: Create snapshots
-          url: https://docs.netapp.com/us-en/asa-r2/data-protection/create-snapshots.html         
+          url: https://docs.netapp.com/us-en/afx/data-protection/create-snapshots.html         
         - title: Set up snapshot replication
-          url: https://docs.netapp.com/us-en/asa-r2/data-protection/snapshot-replication.html  
+          url: https://docs.netapp.com/us-en/afx/data-protection/snapshot-replication.html  
         - title: Encrypt data at rest
-          url: https://docs.netapp.com/us-en/asa-r2/secure-data/encrypt-data-at-rest.html
+          url: https://docs.netapp.com/us-en/afx/secure-data/encrypt-data-at-rest.html
     
