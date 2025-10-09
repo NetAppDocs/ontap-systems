@@ -2,31 +2,9 @@ section: nx224
 title: NX224 shelves
 entries:
   - title: Hot-add shelf
-    entries:
-      - title: Hot-add workflow
-        url: /nx224/hot-add-shelf-overview.html
-      - title: Requirements and best practices
-        url: /nx224/requirements-hot-add-shelf.html
-      - title: Prepare for hot-add
-        url: /nx224/prepare-hot-add-shelf.html
-      - title: Install shelf for hot add
-        url: /nx224/install-hot-add-shelf.html
-      - title: Cable shelf for hot-add
-        entries:
-          - title: Cabling overview
-            url: /nx224/cable-overview-hot-add-shelf.html
-          - title: AFF systems 
-            url: /nx224/cable-aff-systems-hot-add-shelf.html
-          - title: ASA systems 
-            url: /nx224/cable-asa-systems-hot-add-shelf.html
-          - title: End-of-availability systems 
-            url: /nx224/cable-eoa-systems-hot-add-shelf.html
-      - title: Complete hot-add
-        url: /nx224/complete-hot-add-shelf.html
+    url: /nx224/hot-add-shelf.html
   - title: Change shelf ID
     url: /nx224/change-shelf-id.html
-  - title: Cable shelves as switch-attached storage
-    url: /nx224/cable-as-switch-attached.html
   - title: Maintain
     pdf-filename: NX224 shelf maintain
     entries:
@@ -41,12 +19,8 @@ entries:
       entries:
         - title: Shelf maintenance overview
           url: /nx224/nx224-shelf-overview.html
-        - title: Cold-replace shelf
-          url: /nx224/cold-replace-shelf.html
         - title: Hot-add drive
           url: /nx224/hot-add-drive.html
-        - title: Hot-remove shelf
-          url: /nx224/hot-remove-shelf.html
         - title: Monitor shelf LEDs
           url: /nx224/service-monitor-leds.html
     - title: Fan
@@ -54,7 +28,7 @@ entries:
     - title: I/O module
       url: /nx224/service-replace-io-module.html
     - title: NSM
-      url: /nx224/service-replace-nsm100.html
+      url: /nx224/service-replace-nsm140.html
     - title: Power supply
       url: /nx224/service-replace-power-supply.html
     - title: Real-time clock battery
