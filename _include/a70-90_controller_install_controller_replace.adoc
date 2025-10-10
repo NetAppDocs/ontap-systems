@@ -25,7 +25,7 @@ The locking latches rise when the controller module is fully seated.
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 
 .. Rotate the locking latches upward into the locked position.
-
+    
 .. Plug in the power supplies. The controller boots to the LOADER prompt as soon as power is restored.
 
 . From the LOADER prompt, enter `show date` to display the date and time on the replacement controller.  Date and time are in GMT.

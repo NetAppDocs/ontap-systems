@@ -35,7 +35,7 @@ NVRAM attention LED
 +
 NOTE: If your system has DC power, disconnect the power block from the PSUs. 
 +
-
+. Press down on both of the locking latches on the controller, rotate both latches downward at the same time and pull the controller out about 3 or 4 inches.
 . Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 
 . Remove any cables connected to the System Management module. Make sure that label where the cables were connected, so that you can connect them to the correct ports when you reinstall the module. 
@@ -98,7 +98,16 @@ The boot media rotates slightly upward.
 
 . Recable the System Management module.
 
-. Plug the power cords into the power supplies. The controller reboots as soon as power is restored.
+. Reinstall the controller module. The controller reboots as soon as it is fully inserted.
+.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
++
+The locking latches rise when the controller module is fully seated.
++
+NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+
+.. Rotate the locking latches upward into the locked position.
+
+. Plug the power cords into the power supplies. 
 
 +
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies.
