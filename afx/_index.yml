@@ -1,36 +1,37 @@
 indexpage:
-  title: AFX systems
-  lead: The new NetApp AFX systems (AFX 1K) deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers.
-  summary: The new NetApp AFX systems (AFX 1K) deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers.
+  title: AFX
+  lead: The NetApp AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads.
+  summary: The NetApp AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads.
   keywords: afx, afx 1k, install, setup, maintain
   tiles:
     - title: Get started
       links:
-        - title: Learn about AFX storage systems
-          url: TBD
-        - title: AFX datasheet 
-          url: TBD
-
-    - title: Install and maintain AFX systems
+        - title: Learn about the AFX storage system
+          url: https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html
+        - title: AFX system characteristics 
+          url: https://docs.netapp.com/us-en/ontap-afx/get-started/system-design.html
+        - title: AFX architecture 
+          url: https://docs.netapp.com/us-en/ontap-afx/get-started/software-architecture.html
+    - title: Install and maintain AFX
       links:
-        - title: Install AFX systems
-          url: https://docs.netapp.com/us-en/afx/install-setup/install-setup.html
-        - title: Maintain AFX systems
+        - title: Install AFX hardware
+          url: https://docs.netapp.com/us-en/ontap-afx/install-setup/install-setup-workflow.html
+        - title: Maintain AFX hardware
           url: ../afx-landing-maintain/index.html
-    - title: Manage data on AFX systems
+    - title: Manage data on AFX
       links:
-        - title: Provision SAN storage
-          url: https://docs.netapp.com/us-en/afx/manage-data/provision-san-storage.html
-        - title: Clone data
-          url: https://docs.netapp.com/us-en/afx/manage-data/data-cloning.html
-        - title: Modify storage units
-          url: https://docs.netapp.com/us-en/afx/manage-data/modify-storage-units.html
-    - title: Protect and secure data on AFX systems 
+        - title: Create an AFX volume
+          url: https://docs.netapp.com/us-en/ontap-afx/manage-data/create-configure-volume.html
+        - title: Manage AFX volumes
+          url: https://docs.netapp.com/us-en/ontap-afx/manage-data/manage-volumes.html
+        - title: Create an AFX bucket
+          url: https://docs.netapp.com/us-en/ontap-afx/manage-data/create-configure-bucket.html
+    - title: Protect and secure data on AFX 
       links: 
         - title: Create snapshots
-          url: https://docs.netapp.com/us-en/afx/data-protection/create-snapshots.html         
+          url: https://docs.netapp.com/us-en/ontap-afx/protect-data/create-snapshot.html         
         - title: Set up snapshot replication
-          url: https://docs.netapp.com/us-en/afx/data-protection/snapshot-replication.html  
+          url: https://docs.netapp.com/us-en/ontap-afx/protect-data/snapshot-replication.html  
         - title: Encrypt data at rest
-          url: https://docs.netapp.com/us-en/afx/secure-data/encrypt-data-at-rest.html
+          url: https://docs.netapp.com/us-en/ontap-afx/secure-data/encrypt-data-at-rest.html
     
