@@ -1,15 +1,17 @@
 ---
-permalink: fas9500/install_detailed_guide.html
+permalink: a900/install-detailed-guide.html
 sidebar: sidebar
-keywords: FAS9500
+keywords: AFF A900
 summary: 'This a gives detailed step-by-step instructions for installing a typical NetApp system.'
 ---
-= Detailed steps - FAS9500
+= Detailed steps - AFF A900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 This article gives detailed step-by-step instructions for installing a typical NetApp system. Use this article if you want more detailed installation instructions.
+
+
 
 == Step 1: Prepare for installation
 
@@ -30,7 +32,7 @@ You need to provide the following at your site:
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
-image::../media/drw_ssn_label.svg[Example of system serial number]
+image::../media/drw_ssn_label.svg[Example of the system serial number showing location of the number]
 
 . Inventory and make a note of the number and types of cables you received.
 +
@@ -38,7 +40,7 @@ The following table identifies the types of cables you might receive. If you rec
 +
 https://hwu.netapp.com[NetApp Hardware Universe^]
 +
-[options="header" cols="1,2,1,2"]
+[options="header" cols="1,2,2,2"]
 
 |===
 | Type of cable...| Part number and length| Connector type| For...
@@ -51,7 +53,7 @@ X66240A-2 (112-00598), 2m
 
 X66240A-5 (112-00600), 5m
 a|
-image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
+image::../media/oie_cable_sfp_gbe_copper.png[Gbe copper SFP]
 a|
 Network cable
 a|
@@ -63,7 +65,7 @@ X66250-5 (112-00344), 5m
 
 X66250-15 (112-00346), 15m
 a|
-image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
+image::../media/oie_cable_sfp_gbe_copper.png[Gbe copper SFP]
 a|
 FC optical network cable
 a|
@@ -75,7 +77,7 @@ X66100-3 (112-00543), 3m
 
 X66100-5 (112-00544), 5m
 a|
-image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
+image::../media/oie_cable100_gbe_qsfp28.png[Gbe copper SFP]
 a|
 Ethernet data, cluster
 network
@@ -88,9 +90,11 @@ X66211B-2 (112-00574), 2m
 
 X66211B-5 (112-00576), 5m
 a|
-image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
+image::../media/oie_cable100_gbe_qsfp28.png[Gbe copper SFP]
 a|
 Network,
+
+NVME storage,
 
 Ethernet data,
 
@@ -104,7 +108,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-image::../media/oie_cable_fiber_lc_connector.png[LC optical connector]
+image::../media/oie_cable_fiber_lc_connector.png[LC fiber connector]
 a|
 FC optical network
 a|
@@ -114,21 +118,9 @@ Part numbers X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-image::../media/oie_cable_rj45.png[RJ-45 connector]
+image::../media/oie_cable_rj45.png[RJ-45 cable connector]
 a|
 Management network and Ethernet data
-a|
-Storage
-a|
-X66031A (112-00436), 1m
-
-X66032A (112-00437), 2m
-
-X66033A (112-00438), 3m
-a|
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini SAS connector]
-a|
-Storage
 a|
 Micro-USB console cable
 a|
@@ -142,7 +134,7 @@ Power cables
 a|
 Not applicable
 a|
-image::../media/oie_cable_power.png[Power cables]
+image::../media/oie_cable_power.png[Power cable connector]
 a|
 Powering up the system
 |===
@@ -153,21 +145,22 @@ Powering up the system
 
 You need to install your system in a 4-post rack or NetApp system cabinet, as applicable.
 
-.Steps
 . Install the rail kits, as needed.
 . Install and secure your system using the instructions included with the rail kit.
 +
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
-The label on the left indicates an empty chassis, while the label on the right indicates a fully-populated system.
-+
 image::../media/drw_9500_lifting_icon.svg[Weight lifting caution label]
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_9500_cable_management_arms.svg[Lifting handles and cable management device]
+image::../media/drw_9500_cable_management_arms.svg[Install cable management arm]
 
 . Place the bezel on the front of the system.
+
+The following diagram shows a representation of what a typical system looks like and where the major components are located at the rear of the system:
+
+image::../media/drw_a900_controller_in_chassis_ID_IEOPS-856.svg[Typical cluster configuration]
 
 == Step 3: Cable controllers to your network
 
@@ -189,49 +182,45 @@ Be sure to check the direction of the cable pull-tabs when inserting the cables 
 
 image::../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 
-NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
+NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-.Steps
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
-
 +
-video::da08295f-ba8c-4de7-88c3-ae7c0170408d[panopto, title="Animation Two-node switchless cluster cabling"]
+video::37419c37-f56f-48e5-8e6c-afa600095444[panopto, title="Animation - Cable a two-node switchless cluster"]
 +
-
-image::../media/drw_9500_tnsc_network_cabling.svg[TNSC network cabling diagram]
+image::../media/drw_a900_tnsc_network_cabling_IEOPS-933.svg[Two-node switchless network cabling]
 +
 
-[options="header" cols="20%,80%"]
+[options="header", cols="1,4"]
 
 |===
-| Step| Perform on each controller
+|Step|Perform on each controller
 a|
-image::../media/icon_square_1_green.png[Callout icon 1]
+image::../media/icon_square_1_green.png[Callout number 1]
 a|
 Cable cluster interconnect ports:
 
 ** Slot A4 and B4 (e4a)
 ** Slot A8 and B8 (e8a)
 
-image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gb connector]
 a|
-image::../media/icon_square_2_purple.png[Callout icon 2]
+image::../media/icon_square_2_purple.png[Callout number 2]
 a|
 Cable controller management (wrench) ports.
 
-image::../media/oie_cable_rj45.png[RJ-45 connector]
+image::../media/oie_cable_rj45.png[RJ-45 cable connector]
 
 a|
-image::../media/icon_square_3_orange.png[Callout icon 3]
+image::../media/icon_square_3_orange.png[Callout number 3]
 a|
-Cable 32 Gb FC network switches:
+Cable 25 GbE network switches:
 
 Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
-32 Gb FC network switches.
+25 GbE network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
-
+image::../media/oie_cable_sfp_gbe_copper.png[GBe copper SFP]
 
 40GbE host network switches:
 
@@ -239,30 +228,26 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
+image::../media/oie_cable100_gbe_qsfp28.png[100 GBe cable connector]
 a|
-image::../media/icon_square_4_red.png[Callout icon 4]
+image:../media/icon_square_4_red.png[Callout number 4]
 a|
-Cable 25 GbE connections:
+Cable 32 Gb FC connections:xxx
 
 Cable ports in slot A5 and B5 (5a,
 5b, 5c, and 5d) and slot A7 and B7
 (7a, 7b, 7c, and 7d) to the
-25 GbE network switches.
+32 Gb FC network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
+image:../media/oie_cable_sfp_gbe_copper.png[Gbe copper SFP]
 a|
-image::../media/icon_square_5_grey.png[Callout icon 4]
+image::../media/icon_square_5_grey.png[Callout icon five]
 a|
-* Strap the cables to the cable
-management arms (not shown).
+* Strap the cables to the cable management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
 
-image::../media/oie_cable_power.png[Power cables]
-
-image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power sources]
-
+image:../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power connections]
 |===
 
 --
@@ -278,18 +263,15 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
+image:../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
-.Steps
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
-
 +
-video::3ad3f118-8339-4683-865f-ae7c0170400c[panopto, title="Animation Switched cluster cabling"]
+video::61ec11ec-aa30-474a-87a5-afa60008b52b[panopto, title="Animation - Cable a switched cluster"]
 +
-
-image::../media/drw_9500_switched_network_cabling.svg[Switched cluster network cabling]
+image:../media/drw_a900_switched_network_cabling_IEOPS-934.svg[Switched network cabling]
 
 +
 
@@ -297,9 +279,9 @@ image::../media/drw_9500_switched_network_cabling.svg[Switched cluster network c
 
 |===
 
-| Step|Perform on each controller
+|Step|Perform on each controller
 a|
-image::../media/icon_square_1_green.png[Callout number 1]
+image:../media/icon_square_1_green.png[Callout number 1]
 a|
 Cable cluster
 interconnect a ports:
@@ -308,24 +290,23 @@ interconnect a ports:
 ** Slot A8 and B8 (e8a) to the
 cluster network switch.
 
-image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
+image:../media/oie_cable100_gbe_qsfp28.png[100 Gbe cable]
 a|
-image::../media/icon_square_2_purple.png[Callout icon 2]
+image:../media/icon_square_2_purple.png[Callout number 2]
 a|
 Cable controller management (wrench) ports.
 
-image::../media/oie_cable_rj45.png[RJ-45 connector]
+image::../media/oie_cable_rj45.png[RJ45 cables]
 a|
-image::../media/icon_square_3_orange.png[Callout icon 3]
+image::../media/icon_square_3_orange.png[Callout number 3]
 a|
-Cable 32 Gb FC network switches:
+Cable 25GbE network switches:
 
 Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
-32 Gb FC network switches.
+25 GbE network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
-
+image::../media/oie_cable_sfp_gbe_copper.png[Gbe copper SFP]
 
 40GbE host network switches:
 
@@ -333,29 +314,28 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe cable]
 a|
-image::../media/icon_square_4_red.png[Callout icon 4]
+image::../media/icon_square_4_red.png[Callout number 4]
 a|
-Cable 25 GbE connections:
+Cable 32 Gb FC connections:
 
 Cable ports in slot A5 and B5 (5a,
 5b, 5c, and 5d) and slot A7 and B7
 (7a, 7b, 7c, and 7d) to the
-25 GbE network switches.
+32 Gb FC network switches.
 
-image::../media/oie_cable_sfp_gbe_copper.png[100 Gbe copper connector]
+image::../media/oie_cable_sfp_gbe_copper.png[Gbe copper SFP]
 a|
-image::../media/icon_square_4_red.png[Callout icon 4]
+image::../media/icon_square_5_grey.png[Callout icon five]
 a|
-* Strap the cables to the cable
-management arms (not shown).
+* Strap the cables to the cable management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
 PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
 
-image::../media/oie_cable_power.png[Power cables]
+image::../media/oie_cable_power.png[Power cable]
 
-image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power sources]
+image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power connections]
 
 |===
 
@@ -363,14 +343,17 @@ image::../media/drw_a900fas9500_power_icon_IEOPS-1142.svg[Power sources]
 ====
 
 == Step 4: Cable controllers to drive shelves
+Cable either a single NS224 drive shelf or two NS224 drive shelves to your controllers.
 
-Cable either DS212C or DS224C drive shelves to your controllers.
+[role="tabbed-block"]
+====
 
-NOTE: For more SAS cabling information and worksheets, see link:../sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules]
+.Option 1: Cable the controllers to a single NS224 drive shelf
+--
+
+You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A900 system.
 
 .Before you begin
-
-* Complete the SAS cabling worksheet for your system.  See link:../sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules].
 
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
@@ -378,16 +361,13 @@ image::../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 
 image::../media/oie_cable_pull_tab_down.png[Cable pull tab direction]
 
-NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
+NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-.Steps
-. Use the following animation or drawings to cable your controllers to three (1 stack of one drive shelf and one stack of two drive shelves) DS224C drive shelves.
-
+. Use the following animation or drawings to cable your controllers to a single NS224 drive shelf.
 +
-video::c958aae6-9d08-4d3d-a213-ae7c017040cd[panopto, title="Animation Cable your drive shelves"]
+video::8d8b45cd-bd8f-4fab-a4fa-afa5017e7b72[panopto, title="Animation - Cable a single NS224 shelf"]
 +
-
-image::../media/drw_9500_sas_shelf_cabling.svg[SAS shelf cabling]
+image::../media/drw_a900_NS224_one shelf_cabling_IEOPS-937.svg[Single shelf cabling]
 +
 
 [options="header" cols="20%,80%"]
@@ -395,34 +375,85 @@ image::../media/drw_9500_sas_shelf_cabling.svg[SAS shelf cabling]
 |===
 |Step|Perform on each controller
 a|
-image::../media/icon_square_1_blue.png[Callout icon 1]
+image::../media/icon_square_1_blue.png[Callout number one]
 a|
-Connect drive shelf stack one to the controllers, using the graphic for reference.
+** Connect controller A port e2a to port e0a on NSM A on the shelf.
+** Connect controller A port e10b to port e0b on NSM B on the shelf.
 
-*Mini-SAS cable*
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS HD cable]
-
+100 GbE cable
 a|
-image::../media/icon_square_2_yellow.png[Callout icon 2]
+image::../media/icon_square_2_yellow.png[Callout number two]
 a|
-Connect the drive shelves within stack two to each other, using the graphic for reference.
+** Connect controller B port e2a to port e0a on NSM B on the shelf.
+** Connect controller B port e10b to port e0b on NSM A on the shelf.
 
-*Mini-SAS cable*
+image::../media/oie_cable100_gbe_qsfp28.png[100 Gbe QSFP connector]
 
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS HD cable]
-
-a|
-image::../media/icon_square_3_tourquoise.png[Callout icon 3]
-a|
-Connect drive shelf stack two to the controllers, using the graphic for reference.
-
-*Mini-SAS cable*
-
-image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[Mini-SAS HD cable]
-
+100 GbE cable
 
 |===
+
+--
+.Option 2: Cable the controllers to two NS224 drive shelves
+--
+
+You must cable each controller to the NSM modules on the NS224 drive shelves.
+
+.Before you begin
+
+* Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
+
+image::../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
+
+image::../media/oie_cable_pull_tab_down.png[Cable pull tab direction]
+
+NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
+
+. Use the following animation or diagram to cable your controllers to two NS224 drive shelves.
+
++
+video::ec143c32-9e4b-47e5-893e-afa5017da6b4[panopto, title="Animation - Cable two NS224 shelves"]
++
+image::../media/drw_a900_NS224_line_art_two shelf_cabling_IEOPS-1147.svg[Two shelf cabling]
++
+image::../media/drw_a900_NS224_two_shelf_cabling_IEOPS-938.svg[Cabling two NS224 shelves]
++
+
+[options="header" cols="10%,90%"]
+
+|===
+|Step|Perform on each controller
+a|
+
+image::../media/icon_square_1_blue.png[Callout number 1]
+a|
+** Connect controller A port e2a to NSM A e0a on shelf 1.
+** Connect controller A port e10b to NSM B e0b on shelf 1.
+** Connect controller A port e2b to NSM B e0b on shelf 2.
+** Connect controller A port e10a to NSM A e0a on shelf 2.
+
+image::../media/oie_cable100_gbe_qsfp28.png[Gbe copper SFP]
+
+100 GbE cable
+a|
+image::../media/icon_square_2_yellow.png[Callout number 2]
+a|
+** Connect controller B port e2a to NSM B e0a on shelf 1.
+** Connect controller B port e10b to NSM A e0b on shelf 1.
+** Connect controller B port e2b to NSM A e0b on shelf 2.
+** Connect controller B port e10a to NSM B e0a on shelf 2.
+
+image:../media/oie_cable100_gbe_qsfp28.png[Gbe copper SFP]
+
+100 GbE cable
+
+|===
+
+--
+
+====
 
 == Step 5: Complete system setup and configuration
 
@@ -436,14 +467,16 @@ You can complete the system setup and configuration using cluster discovery with
 
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
-.Steps
 . Use the following animation or drawing  to set one or more drive shelf IDs:
++
+The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see link:../ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves] for detailed instructions.
++
+video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set NVMe drive shelf IDs"]
 
 +
-video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation Set your shelf ID's"]
-+
 
-image::../media/drw_power-on_set_shelf_ID_set.svg[Power on and set shelf ID]
+image::../media/drw_a900_oie_change_ns224_shelf_ID_ieops-836.svg[Changing shelf ID]
+
 +
 
 [cols="20%,80%"]
@@ -451,42 +484,27 @@ image::../media/drw_power-on_set_shelf_ID_set.svg[Power on and set shelf ID]
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-Remove the end cap.
+Shelf end cap
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-Press and hold shelf ID button until first digit blinks, then push to advance to 0-9.
-
-NOTE: The first digit continues to blink
-
+Shelf faceplate 
 a|
-image::../media/icon_round_2.png[Callout number 2]
+image::../media/icon_round_3.png[Callout number 3]
 a|
-Press and hold shelf ID button until second digit blinks, then push to advance to 0-9.
-
-
-NOTE: The first digit stops blinking, and the second digit continues to blink.
-
+Shelf ID LED
 a|
 image::../media/icon_round_4.png[Callout number 4]
 a|
-Replace the end cap.
-a|
-image::../media/icon_round_5.png[Callout number 5]
-a|
-Wait 10 seconds for the Amber LED (!) to appear, then power-cycle the drive
-shelf to set shelf ID.
+Shelf ID setting button
 
 |===
 
-
 . Turn on the power switches on the power supplies to both nodes.
-
 +
-video::a905e56e-c995-4704-9673-adfa0005a891[panopto, title="Animation Turn on the power to the controllers"]
+video::a905e56e-c995-4704-9673-adfa0005a891[panopto, title="Animation - Turn on the power to the controllers"]
 +
-
-image::../media/drw_9500_power-on.svg[Power on system]
+image::../media/drw_a900_power-on_IEOPS-941.svg[Power switch]
 +
 
 NOTE: Initial booting may take up to eight minutes.
@@ -496,19 +514,18 @@ NOTE: Initial booting may take up to eight minutes.
 See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
++
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect your laptop to the Management switch"]
 
 +
-video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation Connect your laptop to the Management switch"]
+image::../media/dwr_laptop_to_switch_only.svg[Laptop to switch connection]
 +
 
-image::../media/dwr_laptop_to_switch_only.svg[Laptop to switch cabling]
-
-+
 . Select an ONTAP icon listed to discover:
 +
-image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[How to discover your controllers with Windows File Explorer]
+image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Select an ONTAP icon]
 
-.. Open File Explorer.
+ .. Open File Explorer.
 .. Click *Network* in the left pane and right-click and select *refresh*.
 ..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
@@ -541,24 +558,26 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 
 If you are not using a Windows or Mac-based laptop or console or if auto discovery is not enabled, you must complete the configuration and setup using this task.
 
-.Steps
 . Cable and configure your laptop or console:
  .. Set the console port on the laptop or console to 115,200 baud with N-8-1.
 +
 NOTE: See your laptop or console's online help for how to configure the console port.
 
- .. Connect the console cable to the laptop or console using the console cable that came with your system, and then connect the laptop to the switch on the management subnet.
+ .. Connect the console cable to the laptop or console using the console cable that came with your system, and then connect the laptop to the management switch on the management subnet.
 +
-image::../media/drw_9500_cable_console_switch_controller.svg[Console to switch connection]
+image::../media/drw_a900_cable_console_switch_controller_IEOPS-953.svg[Console cable connection]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:
-
-+
-video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation Set your shelf ID's"]
 +
 
-image::../media/drw_power-on_set_shelf_ID_set.svg[Power-on and set shelf ID]
+The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see link:../ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves]  for detailed instructions.
++
+video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set NVMe drive shelf IDs"]
+
++
+
+image::../media/drw_a900_oie_change_ns224_shelf_ID_ieops-836.svg[Change shelf ID]
 +
 
 [cols="20%,80%"]
@@ -566,46 +585,34 @@ image::../media/drw_power-on_set_shelf_ID_set.svg[Power-on and set shelf ID]
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-Remove the end cap.
+Shelf end cap
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
-Press and hold shelf ID button until first digit blinks, then push to advance to 0-9.
-
-NOTE: The first digit continues to blink
-
+Shelf faceplate 
 a|
-image::../media/icon_round_2.png[Callout number 2]
+image::../media/icon_round_3.png[Callout number 3]
 a|
-Press and hold shelf ID button until second digit blinks, then push to advance to 0-9.
-
-NOTE: The first digit stops blinking, and the second digit continues to blink.
-
+Shelf ID LED
 a|
 image::../media/icon_round_4.png[Callout number 4]
 a|
-Replace the end cap.
-a|
-image::../media/icon_round_5.png[Callout number 5]
-a|
-Wait 10 seconds for the Amber LED (!) to appear, then power-cycle the drive
-shelf to set shelf ID.
+Shelf ID setting button
 
 |===
 
 . Turn on the power switches on the power supplies to both nodes.
++
+video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto, title="Animation - Turn on the power to the controllers"]
++
+image::../media/drw_a900_power-on_IEOPS-941.svg[Power switch]
++
 
-+
-video::a905e56e-c995-4704-9673-adfa0005a891[panopto, title="Animation Turn on the power to the controllers"]
-+
-
-image::../media/drw_9500_power-on.svg[Power on system]
-+
 NOTE: Initial booting may take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
 +
-[options="header" cols="1,2"]
+[options="header" cols="20%,80%"]
 |===
 
 | If the management network has DHCP...| Then...
@@ -632,18 +639,17 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 NOTE: The format for the address is
 +https://x.x.x.x+.
 
- .. Configure the system using the data you collected in the https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^] .
-
+ .. Configure the system using the data you collected in the https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^]
 . Set up your account and download Active IQ Config Advisor:
 .. Log in to your existing account or create an account.
 +
 https://mysupport.netapp.com/eservice/public/now.do[NetApp Support Registration^]
 
-.. Register your system.
+ .. Register your system.
 +
 https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration^]
 
-.. Download Active IQ Config Advisor.
+ .. Download Active IQ Config Advisor.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 . Verify the health of your system by running Config Advisor.
@@ -652,3 +658,4 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 --
 
 ====
+// 2024-09-30 ontap-systems-internal/issues/902

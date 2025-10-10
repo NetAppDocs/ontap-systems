@@ -9,8 +9,7 @@ summary: Replace the NVRAM in your AFF A70 or AFF A90 system when the non-volati
 :imagesdir: ../media/
 
 [.lead]
-Replace the NVRAM in your AFF A70 or AFF A90 system when the non-volatile memory becomes faulty or requires an upgrade. The replacement process involves
-shutting down the impaired controller, replacing the NVRAM module or the NVRAM DIMM, reassigning the disks, and returning the failed part to NetApp.
+Replace the NVRAM in your AFF A70 or AFF A90 system when the non-volatile memory becomes faulty or requires an upgrade. The replacement process involves shutting down the impaired controller, completely removing power by pulling the controller out a few inches, replacing the NVRAM module or the NVRAM DIMM, reassigning the disks, and returning the failed part to NetApp.
 
 The NVRAM module consists of the NVRAM12 hardware and field-replaceable DIMMs. 
 You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. 
