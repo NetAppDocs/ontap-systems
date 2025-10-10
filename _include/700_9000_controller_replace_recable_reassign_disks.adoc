@@ -6,6 +6,17 @@ include::../_include/recable_system_after_controller_rep.adoc[]
 
 == Step 2: Reassign disks
 
+The procedure you use depends on your controller redundancy configuration.
+
+[role="tabbed-block"]
+====
+
+.Option 1: HA pair
+
+--
+
+=== Verify the system ID change on an HA system
+
 If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. You must confirm the system ID change when you boot the _replacement_ node and then verify that the change was implemented.
 
 This procedure applies only to systems running ONTAP in an HA pair.
@@ -100,3 +111,17 @@ dr-group-id            cluster node           configuration-state
 
 . Verify that the expected volumes are present for each node: `vol show -node node-name`
 . If you disabled automatic takeover on reboot, enable it from the healthy node: `storage failover modify -node replacement-node-name -onreboot true`
+
+--
+
+.Option 2: Two-node MetroCluster
+
+--
+
+=== Manually reassign the system ID on systems in a two-node MetroCluster configuration
+
+include::../_include/2n_mcc_reassign_sysid.adoc[]
+
+--
+====
+// 2025-10-08 ontap-systems-internal/issues/981
