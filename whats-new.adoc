@@ -20,7 +20,7 @@ The new NetApp AFX storage system is a disaggregated hardware and software solut
 link:https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html[Learn more about the AFX system].
 
 === New drive shelves for AFX
-The AFX system uses NXS224 storage shelves use Non-volatile Memory Express over Fabrics (NVMe-oF) to connect high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed technology is used to administer and control all aspects of the RAID configuration and disk layout.
+The new NXS224 storage shelves for AFX uses Non-volatile Memory Express over Fabrics (NVMe-oF) to connect high-density SSDs. The disks communicate over an ultra-low latency fabric using RDMA over Converged Ethernet (RoCE). The storage shelves, including the I/O modules, NICs, fans, and power supplies, are fully redundant with no single point of failure. Self-managed technology is used to administer and control all aspects of the RAID configuration and disk layout.
 
 === New switches for AFX
 The Cisco 9364D-GX2A switch and the Cisco 9332D-GX2B switches connect the AFX controller nodes with the storage shelves. These new  switches allow you to build ONTAP clusters with more than two nodes. Advanced protocols are used to optimize performance. The design is based on VLAN tagging with multiple network paths, as well as tech‑refresh configurations, to ensure continuous operation and ease of upgrade.
