@@ -169,7 +169,7 @@ NOTE: The following command is only available in the Diagnostic mode privilege l
 +
 `storage port modify -node <node name>__ -port <port name>__ -mode network`
 
-* If you removed a NIC I/O module and installed a storage I/O module, install and cable your NX224 shelves, as described in link:../nx224/hot-add-shelf-overview.html[Hot-add workflow].
+* If you removed a NIC I/O module and installed a storage I/O module, install and cable your NX224 shelves, as described in link:../nx224/hot-add-shelf.html[Hot-add NX224 shelf].
 
 . Repeat these steps for controller B.
 --
