@@ -49,7 +49,8 @@ sidebar:
         url: /afx/afx-install-setup.html
       - title: Maintain
         url: /afx-landing-maintain/index.html
-      - section: afx-1k-maintain
+        entries:
+        - include: afx-1k
     - title: ASA systems
       url: /allsan-landing/index.html
       entries:  
