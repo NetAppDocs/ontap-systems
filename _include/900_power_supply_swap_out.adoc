@@ -57,3 +57,5 @@ Once power is restored to the power supply, the status LED should be green.
 The green power LED lights when the PSU is fully inserted into the chassis and the amber attention LED flashes initially, but turns off after a few moments.
 
 include::../_include/complete_rma_step.adoc[]
+
+// 2025-10-13 ontap-systems-internal/issues/1278

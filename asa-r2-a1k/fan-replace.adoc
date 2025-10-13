@@ -12,3 +12,5 @@ summary: Replace a fan module in your ASA A1K system when a fan fails or is not 
 Replace a fan module in your ASA A1K system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The fans are hot-swappable and can be replaced without shutting down the system.
 
 include::../_include/a1k_fan_replace.adoc[]
+
+// 2025-10-13 ontap-systems-internal/issues/1283
