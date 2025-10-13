@@ -1,12 +1,12 @@
 indexpage:
-  title: AFX
+  title: AFX system
   lead: The NetApp AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads.
   summary: The NetApp AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads.
   keywords: afx, afx 1k, install, setup, maintain
   tiles:
     - title: Get started
       links:
-        - title: Learn about the AFX storage system
+        - title: Learn about AFX storage
           url: https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html
         - title: AFX system characteristics 
           url: https://docs.netapp.com/us-en/ontap-afx/get-started/system-design.html
