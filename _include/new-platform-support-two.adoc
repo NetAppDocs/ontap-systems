@@ -39,7 +39,7 @@ ONTAP 9.7::
 
 .AFX systems
 --
-AFX systems provide a disaggregated solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. link:https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html[Learn more about the AFX system].
+AFX systems provide a disaggregated solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. link:https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html[Learn more about the AFX system^].
 
 
 AFX systems are supported beginning in the following ONTAP release.
@@ -51,7 +51,7 @@ ONTAP 9.17.1::
 
 .ASA r2 systems
 --
-ASA r2 systems deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers. link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about the ASA r2 systems].
+ASA r2 systems deliver a unified hardware and software solution that creates a simplified experience specific to the needs of SAN-only customers. link:https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html[Learn more about the ASA r2 systems^].
 
 ASA r2 systems are supported beginning in the following ONTAP releases.
 
@@ -126,10 +126,13 @@ ONTAP 9.7::
 
 .Drive shelves
 --
-Drive shelves are specifically designed for NetApp AFF, ASA, and FAS systems and help deliver the performance, resiliency, and flexibility your digital transformation needs. 
+Drive shelves are specifically designed for NetApp AFF, AFX, ASA, and FAS systems and help deliver the performance, resiliency, and flexibility your digital transformation needs. 
 
 Drive shelves are available beginning with the following ONTAP releases.
 
+
+ONTAP 9.17.1:: 
+* NSX224 shelf for AFX systems
 
 ONTAP 9.16.1:: 
 * DCM3 for SAS-3 shelves
