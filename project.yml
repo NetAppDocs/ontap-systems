@@ -48,8 +48,33 @@ sidebar:
       - title: Install and setup
         url: /afx/afx-install-setup.html
       - title: Maintain
+        pdf-filename: AFX Maintain
         url: /afx-landing-maintain/index.html
-        section: afx-1k-maintain
+        entries:
+        - title: Maintenance overview
+          url: /afx-1k/maintain-overview.html
+        - title: Boot media
+          url: /afx-1k/bootmedia-replace-workflow.html
+        - title: Chassis
+          url: /afx-1k/chassis-replace-workflow.html
+        - title: Controller
+          url: /afx-1k/controller-replace-workflow.html
+        - title: DIMM
+          url: /afx-1k/dimm-replace.html
+        - title: Fan
+          url: /afx-1k/fan-replace.html
+        - title: NVRAM
+          url: /afx-1k/nvram-replace.html
+        - title: NV battery
+          url: /afx-1k/nvdimm-battery-replace.html
+        - title: I/O module
+          url: /afx-1k/io-module-overview.html
+        - title: Power supply
+          url: /afx-1k/power-supply-replace.html
+        - title: Real-time clock battery
+          url: /afx-1k/rtc-battery-replace.html
+        - title: System Management module
+          url: /afx-1k/system-management-replace.html
     - title: ASA systems
       url: /allsan-landing/index.html
       entries:  
