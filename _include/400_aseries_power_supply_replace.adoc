@@ -1,6 +1,6 @@
 Replacing a power supply (PSU) involves disconnecting the target PSU from the power source, unplugging the power cable, removing the old PSU and installing the replacement PSU, and then reconnecting the replacement PSU to the power source.
 
-* The power supplies are redundant and hot-swappable.
+* The power supplies are redundant and hot-swappable. You do not have to shut down the controller to replace a PSU.
 * This procedure is written for replacing one power supply at a time.
 +
 NOTE: It is a best practice to replace the power supply within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.

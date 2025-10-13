@@ -1,5 +1,5 @@
 
-The power supplies are redundant and hot-swappable.
+The power supplies are redundant and hot-swappable. You do not have to shut down the controller to replace a PSU.
 
 .About this task
 This procedure is written for replacing one PSU at a time.
@@ -11,7 +11,7 @@ Use the appropriate procedure for your type of PSU: AC or DC.
 [role="tabbed-block"]
 ====
 
-.Option 1: Replace an AC PSU
+.Option 1: Hot-swap an AC PSU
 --
 To replace an AC PSU, complete the following steps.
 
@@ -54,7 +54,7 @@ include::../_include/complete_rma_step.adoc[]
 
 --
 
-.Option 2: Replace a DC PSU
+.Option 2: Hot-swap a DC PSU
 
 --
 To replace a DC PSU, complete the following steps.

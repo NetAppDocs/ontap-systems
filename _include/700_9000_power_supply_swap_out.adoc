@@ -2,7 +2,7 @@ Swapping out a power supply involves turning off, disconnecting, and removing th
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
-* The power supplies are redundant and hot-swappable.
+* The power supplies are redundant and hot-swappable. You do not have to shut down the controller to replace a PSU.
 * This procedure is written for replacing one power supply at a time.
 +
 NOTE: It is a best practice to replace the power supply within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.
