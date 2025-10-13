@@ -20,27 +20,12 @@ Use the following workflow to deploy your storage system when it is not set up i
 [role="quick-margin-para"]
 Install your switches in the rack or cabinet. Access the following instructions for your switch model.
 
-[role="quick-margin-para"]
-**Cluster switches**
-
 [role="quick-margin-list"]
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/install-hardware-bes53248.html[Install BES-53248 switch^]
+* link:https://docs.netapp.com/us-en/ontap-systems-switches/afx/index.html[AFX switches^]
 
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2/install-switch-9336c-cluster.html[Install Cisco Nexus 9336C-FX2 switch^]
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/install-hardware-sn2100-cluster.html[Install NVIDIA SN2100 switch^]
-
-[role="quick-margin-para"]
-**Storage switches**
-
-[role="quick-margin-list"]
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-storage/install-9336c-storage.html[Install Cisco Nexus 9336C-FX2 switch^]
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100-storage/configure-overview-sn2100-storage.html[Install NVIDIA SN2100 switch^]
-
-[role="quick-margin-para"]
-**Shared switches**
-
-[role="quick-margin-list"]
-* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/install-9336c-shared.html[Install Cisco Nexus 9336C-FX2 switch^]^
+* link:https://review.docs.netapp.com/us-en/ontap-systems-switches/cluster/index.html[Cluster switches^]
+* link:https://review.docs.netapp.com/us-en/ontap-systems-switches/storage/index.html[Storage switches^]
+* link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/install-9336c-shared.html[Shared switches^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Install the storage system and storage shelves
 
@@ -50,7 +35,8 @@ Install your storage system and storage shelves in the cabinet or rack. Access t
 [role="quick-margin-list"]
 * link:aff-landing/index.html[AFF systems]
 * link:allsan-landing/index.html[ASA systems]
-* https://docs.netapp.com/us-en/asa-r2/index.html[ASA r2 systems]
+* link:https://docs.netapp.com/us-en/ontap-afx/install-setup/install-setup-workflow.html[AFX systems]
+* https://docs.netapp.com/us-en/asa-r2/install-setup/install-setup-workflow.html[ASA r2 systems]
 * link:fas/index.html[FAS systems]
 
 
