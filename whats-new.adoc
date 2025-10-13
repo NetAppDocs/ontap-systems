@@ -25,6 +25,8 @@ The new NXS224 storage shelves for AFX uses Non-volatile Memory Express over Fab
 === New switches for AFX
 The Cisco 9364D-GX2A switch and the Cisco 9332D-GX2B switches connect the AFX controller nodes with the storage shelves. These new  switches allow you to build ONTAP clusters with more than two nodes. Advanced protocols are used to optimize performance. The design is based on VLAN tagging with multiple network paths, as well as tech‑refresh configurations, to ensure continuous operation and ease of upgrade.
 
+// 2025-10-13 AFFFASDOC-350
+
 == September 2025
 
 === Platform specifications
