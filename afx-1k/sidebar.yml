@@ -1,9 +1,7 @@
 section: afx-1k-maintain
-pdf-filename: AFX 1K Maintain
 entries:
   - title: Maintenance overview
     url: /afx-1k/maintain-overview.html
-  # START boot media
   - title: Boot media
     pdf-filename: AFX 1K Boot Media
     entries:
@@ -19,7 +17,6 @@ entries:
         url: /afx-1k/bootmedia-recovery-image-boot.html
       - title: Return failed part to NetApp
         url: /afx-1k/bootmedia-complete-rma.html
-    # END boot media
   - title: Chassis
     pdf-filename: AFX A1K Chassis
     entries:
