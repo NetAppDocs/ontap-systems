@@ -5,10 +5,6 @@ IMPORTANT: Do not mix PSUs with different efficiency ratings. Always replace lik
 
 * The power supplies are redundant and hot-swappable; you do not have to takeover the controller to perform this task. 
 
-.Replace an AC PSU
---
-To replace an AC PSU, complete the following steps.
-
 .Steps
 
 . If you are not already grounded, properly ground yourself.
@@ -18,9 +14,8 @@ To replace an AC PSU, complete the following steps.
 . Remove the PSU by rotating the handle up, press the locking tab, and then pull PSU out of the controller module.
 +
 CAUTION: The PSU is compact. Use both hands to support it during removal to prevent it from swinging free from the controller module and causing injury.
-
++
 image::../media/drw_a1k_psu_remove_replace_ieops-1378.svg[Replace PSU]
-
 +
 [cols="1,4"]
 |===
