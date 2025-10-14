@@ -1,0 +1,22 @@
+---
+permalink: afx-1k/io-module-add.html
+sidebar: sidebar
+keywords: afx 1k, add I/O module
+summary: Add an I/O module to your AFX 1K storage system to enhance network connectivity and expand your system's ability to handle data traffic. 
+---
+= Add I/O module - AFX 1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Add an I/O module to your AFX 1K storage system to enhance network connectivity and expand your system's ability to handle data traffic. 
+
+You can add an I/O module to your AFX 1K storage system when there are empty slots available or when all slots are fully populated.
+
+== Step 1: Shut down the impaired controller module
+
+include::../_include/shutdown_afx_frus_no_PCM_remove.adoc[]
+
+== Step 2: Add the new I/O module
+
+include::../_include/afx_add_io_module_cam.adoc[]

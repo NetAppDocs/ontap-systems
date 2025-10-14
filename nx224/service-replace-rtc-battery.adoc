@@ -1,0 +1,110 @@
+---
+permalink: nx224/service-replace-rtc-battery.html
+sidebar: sidebar
+keywords: nx224, shelves, shelf, nx224 shelves, replace, fail, real-time, clock, rtc, battery, nondisruptive, power, i/o, replace the real-time clock battery
+summary: You can replace a failed real-time clock \(RTC\) battery nondisruptively in an NX224 shelf that is powered on, and while I/O is in progress.
+---
+= Replace the real-time clock battery - NX224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can replace a failed real-time clock (RTC) battery nondisruptively in an NX224 shelf that is powered on, and while I/O is in progress.
+
+.Before you begin
+
+* The shelf's partner NSM must be up and running and cabled correctly so that your shelf maintains connectivity when you remove the NSM with the failed FRU (target NSM). You can verify the partner NSM's status by https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[downloading and running Config Advisor^].
+
+* All other components in the system must be functioning properly.
+
+.About this task
+
+* Allow at least 70 seconds between removal and installation of the NVMe shelf module (NSM).
++
+This allows enough time for ONTAP to process the NSM removal event.
+
+* After you replace the RTC battery, reinstall the NSM, and the module boots, the real-time clock time is updated by ONTAP.
+//05oct2022, Racer5/supercap: added bullet per Andris. No additional steps to set the clock since the ONTAP SES layer will sync its RTC with the shelf module/expander
+
+* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components. You can visit the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download disk shelf firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[download disk drive firmware^].
++
+[NOTE]
+====
+Do not revert firmware to a version that does not support your shelf and its components.
+====
+
+* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
++
+If you do not know the `shelf_name` of the affected shelf, run the `storage shelf show` command.
++
+A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
+
+* When you unpack the replacement RTC battery, save all packing materials for use when you return the failed RTC battery.
++
+If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
+
+.Steps
+
+. Properly ground yourself.
+. Disconnect the cabling from the NSM that contains the FRU that you are replacing:
+ .. Disconnect the power cord from the power supply by opening the power cord retainer and then unplugging the power cord from the power supply.
++
+Power supplies do not have a power switch.
+
+ .. Disconnect the storage cabling from the NSM ports.
++
+Make a note of the NSM ports that each cable is connected to. You reconnect the cables to the same ports when you reinsert the NSM, later in this procedure.
+
+include::../_include/t_module_remove.adoc[]
+
+. Open the module cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+
+. Locate the RTC battery and replace it.
+.. Remove the failed battery:
++
+image::../media/drw_tp_rtc_battery_replace_ieops-2205.svg[Replace the RTC battery, width=452px]
++
+[cols="1,4"]
+
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1]
+a|
+Gently rotate the RTC battery at an angle away from its holder.
+a|
+image::../media/icon_round_2.png[Callout number 2]
+a|
+Lift the RTC battery out of its holder.
+
+|===
+
+.. Remove the replacement battery from the antistatic shipping bag.
+.. Note the polarity of the RTC battery, and then insert it into the holder by tilting the battery at an angle and pushing down.
++
+NOTE: You must ensure that the plus sign on the battery corresponds to the plus sign on the motherboard.
+.. Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
+
+. Close the NSM cover and turn the thumbscrew clockwise until tightened.
+
+include::../_include/t_module_reinstall.adoc[]
+
+. Recable the NSM.
+.. Reconnect the storage cabling to the same eight NSM ports.
++
+Cables are inserted with the connector pull-tab facing up. When a cable is inserted correctly, it clicks into place.
+
+.. Reconnect the power cord to the power supply, and then secure the power cord with the power cord retainer.
++
+When functioning correctly, a power supply's bicolored LED illuminates green.
++
+Additionally, both NSM port LNK (green) LEDs illuminate. If a LNK LED does not illuminate, reseat the cable.
+
+. Verify that the attention (amber) LEDs on the NSM containing the failed RTC battery and the shelf operator display panel are no longer illuminated
++
+The NSM attention LEDs turn off after the NSM reboots and no longer detects an RTC battery issue. This can take three to five minutes.
+
+. Verify that the NSM is cabled correctly, by https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[running Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.
+
+

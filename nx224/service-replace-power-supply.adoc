@@ -1,0 +1,77 @@
+---
+permalink: nx224/service-replace-power-supply.html
+sidebar: sidebar
+keywords: nx224, shelves, shelf, nx224 shelves, replace, fail, power, supply, nondisruptive, drive, i/o, progress, hot-swap, hot-swap a power supply
+summary: You can replace a failed power supply nondisruptively in an NX224 shelf that is powered on, and while I/O is in progress.
+---
+= Hot-swap a power supply - NX224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can replace a failed power supply nondisruptively in an NX224 shelf that is powered on, and while I/O is in progress.
+
+.About this task
+
+* Do not mix power supplies with different efficiency ratings or with different input types. 
++
+Always replace like for like.
+
+* If you are replacing more than one power supply, you must do so one at a time so that the shelf maintains power.
+* *Best practice:* The best practice is to replace the power supply within two minutes of removal from the NSM.
++
+If you exceed the two minutes, the shelf continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.
+* Do not revert firmware to a version that does not support your shelf and its components.
+
+* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
++
+If you do not know the `shelf_name` of the affected shelf, run the `storage shelf show` command.
++
+A shelf has three location LEDs: one on the operator display panel and one on each NSM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+
+* When you unpack the replacement power supply, save all packing materials for use when you return the failed power supply.
++
+If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
+
+
+.Steps
+
+. Properly ground yourself.
+. Physically identify the failed power supply.
++
+The system logs a warning message to the system console indicating which power supply failed. Additionally, the attention (amber) LED on the shelf operator display panel illuminates and the bicolored LED on the failed power supply illuminates red.
+
+. Disconnect the power cord from the power supply by opening the power cord retainer, and then unplug the power cord from the power supply.
++
+Power supplies do not have a power switch.
+
+. Remove the power supply:
++
+image::../media/drw_tp_psu_ac_replace_ieops-2343.svg[Remove a AC PSU]
++
+[cols="1,3"]
+|===
+a| 
+image:../media/icon_round_1.png[Callout number 1]
+a| 
+Rotate the handle up, to its horizontal position, and then grasp it.
+a| 
+image:../media/icon_round_2.png[Callout number 2] 
+a| 
+With your thumb, press the terra-cotta tab to release the locking mechanism.
+a| 
+image:../media/icon_round_3.png[Callout number 3] 
+a| 
+Pull the power supply out of the NSM while using your other hand to support its weight.
+|===
+
+. Insert the replacement power supply:
+ .. Using both hands, support and align the edges of the power supply with the opening in the NSM.
+ .. Gently push the power supply into the NSM until the locking mechanism clicks into place.
++
+NOTE: Do not use excessive force or you might damage the internal connector.
+
+ .. Rotate the handle down, so it is out of the way of normal operations.
+. Connect the power cord to the power supply and secure the power cord with the power cord retainer.
++
+When functioning correctly, a power supply's bicolored LED illuminates green.
