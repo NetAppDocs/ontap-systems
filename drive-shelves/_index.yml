@@ -4,6 +4,12 @@ indexpage:
   summary: The NS224 and SAS shelves are specifically designed for NetApp AFF and FAS systems to support your diverse business and application demands.
   keywords: install ns224, hot-add, shelves, cable, drive-shelves
   tiles:
+    - title: Install NX224 shelves
+      links:
+        - title: Hot-add shelf
+          url: ../nx224/hot-add-shelf.html
+        - title: Change shelf ID
+          url: ../nx224/change-shelf-id.html
     - title: Install NS224 shelves
       links:
         - title: Hot-add shelf
@@ -22,6 +28,26 @@ indexpage:
           url: ../sas3/install-change-shelf-id.html
         - title: SAS cabling rules, worksheets, and examples
           url: ../sas3/overview-cabling-rules-examples.html
+    - title: Maintain NX224 shelves
+      links:
+        - title: Boot media
+          url: ../nx224/service-replace-boot-media.html
+        - title: DIMM
+          url: ../nx224/service-replace-dimm.html
+        - title: Drive
+          url: ../nx224/service-replace-drive.html
+        - title: Drive shelf
+          url: ../nx224/nx224-shelf-overview.html
+        - title: Fan
+          url: ../nx224/service-replace-fan.html
+        - title: I/O module
+          url: ../nx224/service-replace-io-module.html
+        - title: NSM
+          url: ../nx224/service-replace-nsm140.html
+        - title: Power supply
+          url: ../nx224/service-replace-power-supply.html
+        - title: RTC battery
+          url: ../nx224/service-replace-rtc-battery.html
     - title: Maintain NS224 shelves
       links:
         - title: Boot media

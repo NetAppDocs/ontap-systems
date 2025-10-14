@@ -1,0 +1,357 @@
+---
+permalink: nx224/service-monitor-leds.html
+sidebar: sidebar
+keywords: monitor, health, drive, shelf, location, status, condition, led, component, operator, display, panel, nsm, power, supply, drive, monitor drive shelf leds, operator display panel leds, nsm leds, power supply leds, drive leds
+summary: You can monitor the health of your drive shelf by understanding the location and status conditions of the LEDs on your drive shelf components.
+---
+= Monitor drive shelf LEDs - NX224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can monitor the health of your shelf by understanding the location and status conditions of the LEDs on your drive shelf components.
+
+* The location (blue) LEDs, on a shelf's operator display panel (ODP) and both NVMe shelf modules (NSMs), can be activated to aid in physically locating the shelf that needs servicing: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
++
+If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
++
+Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
+
+* An LED state can be:
+** "On": The LED illumination is solid/steady
+** "Off": The LED is not illuminated
+** "Blink": The LED turns on and off at varying intervals depending on the FRU status
+** "Any state": The LED can be "On", "Off", or "Blink"
+
+== Operator display panel LEDs
+
+The LEDs on the drive shelf front operator display panel (ODP) indicate whether your drive shelf is functioning normally or there are problems with the hardware.
+
+The following illustration and table describes the three LEDs on the ODP:
+
+image::../media/drw_ns224_odp_leds_IEOPS-1262.svg[Operator display panel LEDs, width=100px]
+
+[cols="1,2,1,5" options="header"]
+|===
+| LED icon| LED name & color| State| Description
+a|
+image::../media/drw_sas_power_icon.svg[Operator display panel power LED, width=20px]
+a|
+Power (Green)
+a|
+On 
+a|
+One or more power supplies are supplying power to the drive shelf.
+a|
+image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
+a|
+Attention (Amber)
+a|
+On
+a|
+* An error occurred with the function of one of more shelf FRUs.
++
+Check event messages to determine corrective action to take.
+* If the two-digit shelf ID is also blinking, the shelf ID is in a pending state.
++
+Power cycle the drive shelf for the shelf ID to take affect.
+a|
+image::../media/drw_sas3_location_icon.svg[Operator display panel location LED, width=20px]
+a|
+Location (Blue)
+a|
+On
+a|
+The system administrator activated this LED function.
+|===
+
+== NSM LEDs
+
+The LEDs on an NSM indicate whether the module is functioning normally, whether it is ready for I/O traffic, and whether there are any problems with the hardware.
+
+The following illustration and tables describe NSM LEDs associated with the function of a module and the function of each NVMe port on a module.
+
+
+
+image::../media/drw_tp_nsmb_leds_ieops-2206.svg[NX224 NSM140 module LEDs, width=550px]
+
+[cols="1,1,2,4" options="header"]
+|===
+| Call out| LED icon| Color| Description
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+LNK
+a|
+Green
+a|
+NVMe port/link: status
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
+a|
+Amber
+a|
+NVMe port/link: attention
+
+a|
+image:../media/icon_round_3.png[Callout number 3] 
+a|
+image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
+a|
+Amber
+a|
+I/O module: attention
+a|
+image:../media/icon_round_4.png[Callout number 4] 
+a|
+image::../media/drw_sas3_location_icon.svg[Operator display panel location LED, width=20px]
+a|
+Blue
+a|
+NSM: Location
+
+a|
+image:../media/icon_round_5.png[Callout number 5] 
+a|
+image::../media/drw_sas_fault_icon.svg[Operator display panel attention LED, width=5px]
+a|
+Amber
+a|
+NSM: Attention
+
+|===
+
+
+[cols="2,1,1,1,1" options="header"]
+|===
+| Status| NSM Attention (Amber)| Port LNK (Green)| Port Attention (Amber)| I/O Module Attention
+a|
+NSM normal
+a|
+Off
+a|
+Any state
+a|
+Off
+a|
+Off
+
+a|
+NSM fault
+a|
+On
+a|
+Any state
+a|
+Any state
+a|
+Off
+
+a|
+NSM VPD Error
+a|
+On
+a|
+Any state
+a|
+Any state
+a|
+Off
+
+a|
+No host port connection
+a|
+Any state
+a|
+Off
+a|
+Off
+a|
+Off
+
+a|
+Host port connection link active
+a|
+Any state
+a|
+On/Blinks with activity
+a|
+Any state
+a|
+Off
+
+a|
+Host port connection w/ fault
+a|
+On
+a|
+On/Off if all lanes are faulted
+a|
+On
+a|
+Off
+
+a|
+BIOS boot from BIOS image after power up
+a|
+Blink
+a|
+Any state
+a|
+Any state
+a|
+Off
+
+a|
+I/O Module is missing
+a|
+On
+a|
+N/A
+a|
+N/A
+a|
+On
+
+|===
+
+
+
+== Power supply LEDs
+
+The LEDs on an AC power supply (PSU) indicate whether the PSU is functioning normally or there are hardware problems.
+
+The following illustration and tables describe the LED on a PSU.
+
+image::../media/drw_generic_psu_ac_terra_cotta_ieops-2370.svg[Power supply power activity LED, width=400px]
+
+[cols="1,4" options="header"]
+|===
+| Call out| Description
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+The bi-color LED indicates power/activity when green and a fault when red.
+|===
+
+[cols="2,1,1" options="header"]
+|===
+| Status| Power/activity (Green)| Attention (Red)
+a|
+No AC power to the enclosure
+a|
+Off
+a|
+Off
+a|
+No AC power to the PSU
+a|
+Off
+a|
+On
+
+a|
+AC power on, but PSU not in enclosure
+a|
+Blink
+a|
+Off
+a|
+PSU operating correctly
+a|
+On
+a|
+Off
+a|
+PSU failure
+a|
+Off
+a|
+On
+a|
+Fan failure
+a|
+Off
+a|
+On
+a|
+Firmware update mode
+a|
+Blink
+a|
+Off
+|===
+
+== Drive LEDs
+
+The LEDs on an NVMe drive indicates whether it is functioning normally or there are problems with the hardware.
+
+The following illustration and tables describe the two LEDs on an NVMe drive:
+
+image::../media/drw_ns224_drive_leds_IEOPS-1263.svg[NVMe drive attention and power LEDs, width=120px]
+
+[cols="1,2,2" options="header"]
+|===
+| Call out| LED name| Color
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+Attention
+a|
+Amber
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Power/activity
+a|
+Green
+
+|===
+
+[cols="2,1,1,1" options="header"]
+|===
+| Status| Power/Activity (Green)| Attention (Amber)| Associated ODP LED
+a|
+Drive installed and operational
+a|
+On/Blinks with activity
+a|
+Any state
+a|
+N/A
+a|
+Drive failure
+a|
+On/Blinks with activity
+a|
+On
+a|
+Attention (Amber)
+a|
+SES device identify set
+a|
+On/Blinks with activity
+a|
+Blinks
+a|
+Attention (Amber) is off
+a|
+SES device fault bit set
+a|
+On/Blinks with activity
+a|
+On
+a|
+Attention (Amber)
+a|
+Power control circuit failure
+a|
+Off
+a|
+Any state
+a|
+Attention (Amber)
+
+|===

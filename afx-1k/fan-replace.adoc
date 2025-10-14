@@ -1,0 +1,14 @@
+---
+permalink: afx-1k/fan-replace.html
+sidebar: sidebar
+keywords: afx 1k, replace a fan
+summary: Replace a failed or faulty fan module in your AFX 1K system to maintain proper cooling and prevent system performance issues. The fans are hot-swappable and can be replaced without shutting down the system.
+---
+= Replace a fan - AFX 1K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace a failed or faulty fan module in your AFX 1K system to maintain proper cooling and prevent system performance issues. The fans are hot-swappable and can be replaced without shutting down the system. This procedure includes identifying the faulty fan using console error messages and LED indicators, removing the bezel, swapping the fan module, and returning the failed part to NetApp.
+
+include::../_include/a1k_fan_replace.adoc[]
