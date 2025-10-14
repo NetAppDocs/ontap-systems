@@ -8,7 +8,17 @@ If you have a cluster with more than two nodes, it must be in quorum. If the clu
 +
 The following AutoSupport command suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. Disable automatic giveback from the console of the healthy controller: `storage failover modify –node local -auto-giveback false`
+. Disable automatic giveback from the console of the impaired controller: 
++
+`storage failover modify -node impaired-node -auto-giveback-of false`
++
+NOTE: When you see _Do you want to disable auto-giveback?_, enter `y`.
+
+.. If the impaired controller cannot be brought up or is already taken over, you must take the HA interconnect link down from the healthy controller before booting up the impaired controller. This will prevent the impaired controller from performing automatic giveback.
++
+`system ha interconnect link off -node healthy-node -link 0`
++
+`system ha interconnect link off -node healthy-node -link 1`
 . Take the impaired controller to the LOADER prompt:
 +
 [options="header" cols="1,2"]
@@ -18,10 +28,6 @@ a|
 The LOADER prompt
 a|
 Go to the next step.
-a|
-`Waiting for giveback...`
-a|
-Press Ctrl-C, and then respond `y` when prompted.
 a|
 System prompt or password prompt (enter system password)
 a|

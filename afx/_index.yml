@@ -1,0 +1,37 @@
+indexpage:
+  title: AFX system
+  lead: The NetApp AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads.
+  summary: The NetApp AFX storage system is a disaggregated hardware and software solution focused on the unique needs of high-performance NAS and S3 customers. The performance and scalability are specifically designed to meet the requirements of AI and ML workloads.
+  keywords: afx, afx 1k, install, setup, maintain
+  tiles:
+    - title: Get started
+      links:
+        - title: Learn about AFX storage
+          url: https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html
+        - title: AFX system characteristics 
+          url: https://docs.netapp.com/us-en/ontap-afx/get-started/system-design.html
+        - title: AFX architecture 
+          url: https://docs.netapp.com/us-en/ontap-afx/get-started/software-architecture.html
+    - title: Install and maintain AFX
+      links:
+        - title: Install AFX hardware
+          url: https://docs.netapp.com/us-en/ontap-afx/install-setup/install-setup-workflow.html
+        - title: Maintain AFX hardware
+          url: ../afx-landing-maintain/index.html
+    - title: Manage data on AFX
+      links:
+        - title: Create an AFX volume
+          url: https://docs.netapp.com/us-en/ontap-afx/manage-data/create-configure-volume.html
+        - title: Manage AFX volumes
+          url: https://docs.netapp.com/us-en/ontap-afx/manage-data/manage-volumes.html
+        - title: Create an AFX bucket
+          url: https://docs.netapp.com/us-en/ontap-afx/manage-data/create-configure-bucket.html
+    - title: Protect and secure data on AFX 
+      links: 
+        - title: Create snapshots
+          url: https://docs.netapp.com/us-en/ontap-afx/protect-data/create-snapshot.html         
+        - title: Set up snapshot replication
+          url: https://docs.netapp.com/us-en/ontap-afx/protect-data/snapshot-replication.html  
+        - title: Encrypt data at rest
+          url: https://docs.netapp.com/us-en/ontap-afx/secure-data/encrypt-data-at-rest.html
+    

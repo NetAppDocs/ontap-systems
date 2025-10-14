@@ -1,0 +1,29 @@
+When you replace the system management module, the controller's system serial number (SSN) changes. You must install new licenses for the node if the impaired node was using ONTAP features that require a standard (node-locked) license. For features with standard licenses, each node in the cluster should have its own key for the feature.
+
+.About this task
+Until you install license keys, features requiring standard licenses continue to be available to the node. However, if the node was the only node in the cluster with a license for the feature, no configuration changes to the feature are allowed. Also, using unlicensed features on the node might put you out of compliance with your license agreement, so you should install the replacement license key or keys on the for the node as soon as possible.
+
+.Before you begin
+
+A NetApp License File (NLF) for the new system serial number is required. For more information on NetApp License Files, see link:https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/ONTAP_9.10.1_and_later_licensing_overview[ONTAP 9.10.1 and later licensing overview^].
+
+You have 90 days to install the license keys, after which all old licenses become invalid. After you install a valid license key, you have 24 hours to install all of the keys before the grace period ends.
+
+NOTE: If your system was initially running ONTAP 9.15.1 or later, use the procedure documented in  link:https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/Post_Motherboard_Replacement_Process_to_update_Licensing_on_a_AFF_FAS_system[Post Motherboard Replacement Process to update Licensing on a AFF/FAS system^]. If you are unsure of the initial ONTAP release for your system, see link:https://hwu.netapp.com[NetApp Hardware Universe^] for more information. 
+
+.Steps
+
+. If you need new license keys, obtain replacement license keys on the https://mysupport.netapp.com/site/global/dashboard[NetApp Support Site] in the My Support section under Software licenses.
++
+NOTE: The new license keys that you require are automatically generated and sent to the email address on file. If you fail to receive the email with the license keys within 30 days, you should contact technical support.
+
+. Install each license key through ONTAP System Manager.
++
+For more information, see link:https://docs.netapp.com/us-en/ontap/task_admin_enable_new_features.html[Enable new features by adding license keys with ONTAP System Manager^].
+. Remove the old licenses, if desired:
+ .. Check for unused licenses: `license clean-up -unused -simulate`
+ .. If the list looks correct, remove the unused licenses: `license clean-up -unused`
+
+. Register the system serial number with NetApp Support.
+** If AutoSupport is enabled, send an AutoSupport message to register the serial number.
+** If AutoSupport is not enabled, call https://mysupport.netapp.com[NetApp Support] to register the serial number.
