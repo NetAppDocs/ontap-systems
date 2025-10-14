@@ -1,0 +1,107 @@
+---
+permalink: nx224/change-shelf-id.html
+sidebar: sidebar
+keywords: nx224, shelves, shelf, nx224 shelves, change, shelf, id, system, ontap, unown, spare, offline, aggregate, change an nx224 drive shelf id
+summary: You can change a shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running \(controller modules are available to serve data\) and all drives in the shelf are unowned, spares, or part of offline aggregate\(s\).
+---
+= Change a shelf ID - NX224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can change an NX224 shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned or spares.
+
+.Before you begin
+
+* If ONTAP is up and running (controller modules are available to serve data), you must have verified that all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
++
+You can verify the state of the drives by using the `storage disk show -shelf _shelf_number_` command. Output in the `Container Type` column should display `spare` or `broken` if it is a failed drive. Additionally, the `Container Name` and `Owner` columns should have a dash.
+
+* You need a paper clip with one side straightened or a narrow-tipped ballpoint pen.
++
+You use the paper clip or ballpoint pen to access the shelf ID button through the small hole, to the right of the LEDs, in the Operator Display Panel (ODP).
+
+.About this task
+
+* A valid shelf ID is 00 through 99.
+* Shelf IDs must be unique within an AFX cluster.
+* You must power cycle a shelf (unplug both power cords, wait the appropriate amount of time, and then plug them back in) in order for the shelf ID to take effect.
++
+The amount of time you wait before plugging the power cords back in depends on the state of ONTAP, as described later in this procedure.
++
+NOTE: NX224 shelves do not have power switches on the power supplies.
+
+.Steps
+
+. Power on the shelf, if it's not already on.
++
+You connect the power cords first to the shelf, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.
++
+A power supply is powered on as soon as the power cord is plugged in. Its bicolored LED should illuminate green. Wait for the shelf ID to display before continuing to the next step. 
+
+. Remove the left end cap to locate the small hole to the right of the LEDs.
++
+image::../media/drw_tp_change_shelf_id_ieops-2381.svg[Change NX224 shelf ID]
++
+
+[cols="20%,80%"]
+|===
+a|
+image::../media/icon_round_1.png[Callout number 1] 
+a|
+Shelf end cap
+a|
+image::../media/icon_round_2.png[[Callout number 2]
+a|
+Shelf faceplate 
+a|
+image::../media/icon_round_3.png[[Callout number 3]
+a|
+Shelf ID number
+a|
+image::../media/icon_round_4.png[[Callout number 4]
+a|
+Shelf ID button access
+
+|===
+. Change the first number of the shelf ID:
+ .. Insert the paper clip or ballpoint pen into the small hole.
+ .. Press and hold the button until the first number on the digital display blinks, and then release the button.
++
+It can take up to 15 seconds for the number to blink. This activates the shelf ID programming mode.
++
+NOTE: If the ID takes longer than 15 seconds to blink, press and hold the button again, making sure to press it in all the way.
+
+ .. Press and release the button to advance the number until you reach the desired number from 0 to 9.
++
+Each press and release duration can be as short as one second.
++
+The first number continues to blink.
+. Change the second number of the shelf ID:
+ .. Press and hold the button until the second number on the digital display blinks.
++
+It can take up to three seconds for the number to blink.
++
+The first number on the digital display stops blinking.
+
+ .. Press and release the button to advance the number until you reach the desired number from 0 to 9.
++
+The second number continues to blink.
+. Lock in the desired number and exit the programming mode by pressing and holding the button until the second number stops blinking.
++
+It can take up to three seconds for the number to stop blinking.
++
+Both numbers on the digital display start blinking and the amber LED on the ODP illuminates after about five seconds, alerting you that the pending shelf ID has not yet taken effect.
+
+. Power-cycle the shelf to make the shelf ID take effect.
++
+You must unplug the power cord from both power supplies on the shelf, wait the appropriate amount of time, and then plug them back into the shelf power supplies to complete the power cycle.
++
+A power supply is powered on as soon as the power cord is plugged in. Its bicolored LED should illuminate green.
+
+ ** If ONTAP is not yet running or you are hot-adding a shelf (that has not yet been cabled to the system), wait at least 10 seconds.
+ ** If ONTAP is running (controllers are available to serve data), and all drives in the shelf are unowned, spares, wait at least 180 seconds.
++
+This time allows ONTAP to properly delete the old shelf address and update the copy of the new shelf address.
+
+. Replace the left end cap.

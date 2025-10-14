@@ -96,5 +96,3 @@ The system will begin to reboot, typically to the LOADER prompt.
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
 
 // 4 AUG 2025, Issue # 1293 - Removed pull out controller from Unplug power supply step.  Not necessary if PSUs are unplugged.
-
-

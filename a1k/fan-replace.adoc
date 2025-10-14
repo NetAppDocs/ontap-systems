@@ -2,13 +2,14 @@
 permalink: a1k/fan-replace.html
 sidebar: sidebar
 keywords: aff a1k, replace a fan
-summary: Replace a fan module in your AFF A1K system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
+summary: Replace a failed or faulty fan module in your AFF A1K system to maintain proper cooling and prevent system performance issues. The fans are hot-swappable and can be replaced without shutting down the system.
 ---
 = Replace a fan - AFF A1K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a fan module in your AFF A1K system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
+Replace a failed or faulty fan module in your AFF A1K system to maintain proper cooling and prevent system performance issues. The fans are hot-swappable and can be replaced without shutting down the system. This procedure includes identifying the faulty fan using console error messages and LED indicators, removing the bezel, swapping the fan module, and returning the failed part to NetApp.
+
 
 include::../_include/a1k_fan_replace.adoc[]
