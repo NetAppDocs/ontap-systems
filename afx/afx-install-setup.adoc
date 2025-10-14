@@ -1,0 +1,27 @@
+---
+permalink: afx/afx-install-setup.html
+sidebar: sidebar
+keywords: afx, afx 1k, install, setup, initial configuration
+summary: 'Install and set up your system.'
+---
+= Install and setup your AFX storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Go to the https://docs.netapp.com/us-en/ontap-afx/index.html[AFX documentation^] to learn how to install, use, and manage your AFX system.
+
+The https://docs.netapp.com/us-en/ontap-afx/index.html[AFX documentation^] includes information such as:
+
+* Installation and setup instructions
+
+* Administration instructions for configuring your system, such as provisioning NAS storage, cloning data, and re-sizing local storage.
+
+* Instructions for managing your system, including managing client access, securing your data, and protecting your data. 
+
+* Monitoring and troubleshooting instructions, including information about alerts, cluster events, and system logs.
+
+Specific maintenance procedures for each type of AFX system are in the link:../afx-landing-maintain/index.html[AFX system maintenance section].
+
+
+

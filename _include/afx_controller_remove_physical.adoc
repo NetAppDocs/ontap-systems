@@ -1,0 +1,44 @@
+// Remove the controller module - A1K (modular)
+
+You must remove the controller module from the enclosure when you replace the controller module or replace a component inside the controller module.
+
+. Check the NVRAM status LED located in slot 4/5 of the system. There is also an NVRAM LED on the front panel of the controller module. Look for the NV icon:
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
++
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM attention LED
+|===
+
+* If the NV LED is off, go to the next step.
+* If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
+
+. If you are not already grounded, properly ground yourself.
+
+. Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel and pulling towards you until the bezel releases from the ball studs on the chassis frame. 
+
+. On the front of the unit, hook your fingers into the holes in the locking cams, squeeze the tabs on the cam levers, and gently, but firmly rotate both latches toward you at the same time.
++
+The controller module moves slightly out of the enclosure.
++
+image::../media/drw_a1k_pcm_remove_replace_ieops-1375.svg[Controller remove graphic]
++
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+|
+Locking cam latches
+|===
+
+. Slide the controller module out of the enclosure and place it on a flat, stable surface.
++
+Make sure that you support the bottom of the controller module as you slide it out of the enclosure.

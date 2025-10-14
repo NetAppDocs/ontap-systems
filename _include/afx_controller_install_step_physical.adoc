@@ -1,0 +1,51 @@
+// Install the controller module - A1K (modular)
+
+Reinstall the controller module and boot it.
+
+. Ensure the air duct is completely closed by rotating it down as far as it will go.
++
+It must lie flush against the controller module sheet metal.
+
+. Align the end of the controller module with the opening in the enclosure, and slide the controller module into the chassis with the levers rotated away from the front of the system.
+
+. Once the controller module stops you from sliding it farther, rotate the cam handles inward until they latch back under the fans
+
++
+NOTE: Do not use excessive force when sliding the controller module into the enclosure to avoid damaging the connectors.
++
+The controller module begins to boot as soon as it is fully seated in the enclosure.
+
+. Align the bezel with the ball studs and then gently push the bezel into place.
+
+. Press <enter> when console messages stop.
+* If you see the login prompt, go to the next step.
+* If you do not see a login prompt, log into the partner node.
+. Give back only the root with override-destination-checks option:
++
+`storage failover giveback -ofnode impaired-node -only-root true -override -destination-checks true`
++
+NOTE: The following command is only available in the Diagnostic mode privilege level. For more information on privilege levels, see link:https://docs.netapp.com/us-en/ontap/system-admin/administrative-privilege-levels-concept.html[Understand the privilege levels for ONTAP CLI commands^]. 
++
+If you encounter errors, contact https://support.netapp.com[NetApp Support].      
+. Wait 5 minutes after the giveback report completes, then check failover and giveback status:
++
+`storage failover show` and `storage failover show-giveback`
++
+NOTE: The following command is only available in the Diagnostic mode privilege level.
+. If the HA internconnect links were taken down, bring them back up:
++
+`system ha interconnect link on -node healthy-node -link 0`
++
+`system ha interconnect link on -node healthy-node -link 1` 
+. If automatic giveback was disabled, reenable it:
++
+`storage failover modify -node local -auto-giveback-of true`
+
+. Return the impaired controller to normal operation by giving back its storage: 
++
+`storage failover giveback -ofnode _impaired_node_name_`
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation:
++ 
+`system node autosupport invoke -node * -type all -message MAINT=END`
+

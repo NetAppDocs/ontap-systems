@@ -42,6 +42,39 @@ sidebar:
         - section: c250
         - section: c400
         - section: c800
+    - title: AFX systems
+      url: /afx/index.html
+      entries:  
+      - title: Install and setup
+        url: /afx/afx-install-setup.html
+      - title: Maintain
+        pdf-filename: AFX Maintain
+        url: /afx-landing-maintain/index.html
+        entries:
+        - title: Maintenance overview
+          url: /afx-1k/maintain-overview.html
+        - title: Boot media
+          url: /afx-1k/bootmedia-replace-workflow.html
+        - title: Chassis
+          url: /afx-1k/chassis-replace-workflow.html
+        - title: Controller
+          url: /afx-1k/controller-replace-workflow.html
+        - title: DIMM
+          url: /afx-1k/dimm-replace.html
+        - title: Fan
+          url: /afx-1k/fan-replace.html
+        - title: NVRAM
+          url: /afx-1k/nvram-replace.html
+        - title: NV battery
+          url: /afx-1k/nvdimm-battery-replace.html
+        - title: I/O module
+          url: /afx-1k/io-module-overview.html
+        - title: Power supply
+          url: /afx-1k/power-supply-replace.html
+        - title: Real-time clock battery
+          url: /afx-1k/rtc-battery-replace.html
+        - title: System Management module
+          url: /afx-1k/system-management-replace.html
     - title: ASA systems
       url: /allsan-landing/index.html
       entries:  
@@ -75,12 +108,12 @@ sidebar:
     - title: FAS systems
       url: /fas/index.html
       entries:
-      - section: fas50
-      - section: fas-70-90
-      - section: fas2700
-      - section: fas2800
-      - section: fas8300
-      - section: fas9500
+        - section: fas50
+        - section: fas-70-90
+        - section: fas2700
+        - section: fas2800
+        - section: fas8300
+        - section: fas9500
     - title: End-of-availability systems
       url: /endofavail/index.html
       entries:
@@ -101,6 +134,7 @@ sidebar:
       url: /drive-shelves/index.html
       entries:
         - section: ns224
+        - section: nx224
         - section: sas3
     - title: Cabinet and rail kits
       entries:

@@ -1,0 +1,36 @@
+section: nx224
+title: NX224 shelves
+entries:
+  - title: Hot-add shelf
+    url: /nx224/hot-add-shelf.html
+  - title: Change shelf ID
+    url: /nx224/change-shelf-id.html
+  - title: Maintain
+    pdf-filename: NX224 shelf maintain
+    entries:
+    - title: Boot media
+      url: /nx224/service-replace-boot-media.html
+    - title: DIMM
+      url: /nx224/service-replace-dimm.html
+    - title: Drive
+      url: /nx224/service-replace-drive.html
+    - title: Drive shelf
+      pdf-filename: Replace NX224 drive shelf
+      entries:
+        - title: Shelf maintenance overview
+          url: /nx224/nx224-shelf-overview.html
+        - title: Hot-add drive
+          url: /nx224/hot-add-drive.html
+        - title: Monitor shelf LEDs
+          url: /nx224/service-monitor-leds.html
+    - title: Fan
+      url: /nx224/service-replace-fan.html
+    - title: I/O module
+      url: /nx224/service-replace-io-module.html
+    - title: NSM
+      url: /nx224/service-replace-nsm140.html
+    - title: Power supply
+      url: /nx224/service-replace-power-supply.html
+    - title: Real-time clock battery
+      url: /nx224/service-replace-rtc-battery.html
+
