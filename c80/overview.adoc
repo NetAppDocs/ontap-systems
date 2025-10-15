@@ -1,72 +1,90 @@
 ---
 permalink: c80/overview.html
 sidebar: sidebar
-summary: Key specifications for the C80 platform group
+keywords: AFF C80 specifications, AFF C80 specs, NetApp AFF C80, AFF C80 hardware
+summary: Key specifications for the AFF C80 storage system
 ---
 = Key specifications for AFF C80
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the AFF C80 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+The following are select specifications for the AFF C80. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF C80 specifications. This page is reflective of a single high availability pair. 
 
-== Key specifications for AFF C80
+=== Key specifications for AFF C80
 
-* Platform Configuration: AFF C80 Single Chassis HA Pair
-* Max Raw Capacity: 14.7360 PB
-* Memory: 512.0000 GB
-* Form Factor: 4U chassis with 2 HA controllers and 48 drive slots
-* ONTAP Version: ONTAP: 9.16.1P2
-* PCIe Expansion Slots: 18
-* Minimum ONTAP Version: ONTAP 9.16.1RC1
-== Scaleout maximums
-* Type: NAS; HA Pairs: 12; Raw Capacity: 176.8 PB / 157.0 PiB; Max Memory: 6144 GB
-* Type: SAN; HA Pairs: 6; Raw Capacity: 88.4 PB / 78.5 PiB; Max Memory: 3072 GB
-* Type: HA Pair; Raw Capacity: 14.7 PB / 13.1 PiB; Max Memory: 512.0000
+Platform Configuration: AFF C80 Single Chassis HA Pair
 
-== I/O
+Max Raw Capacity: 14.7360 PB
 
-=== Onboard I/O
-No onboard I/O data.
+Memory: 512.0000 GB
 
-=== Total I/O
-* Protocol: Ethernet 200 Gbps; Ports: 24
-* Protocol: Ethernet 100 Gbps; Ports: 36
-* Protocol: Ethernet 25 Gbps; Ports: 56
-* Protocol: Ethernet 10 Gbps; Ports: 56
-* Protocol: FC 64 Gbps; Ports: 56
-* Protocol: NVMe/FC  64 Gbps; Ports: 56
-* Ports: 0
+Form Factor: 4U chassis with 2 HA controllers and 48 drive slots
 
-=== Management ports
-* Protocol: Ethernet 1 Gbps; Ports: 2
-* Protocol: RS-232 115 Kbps; Ports: 4
-* Protocol: USB 600 Mbps; Ports: 2
+ONTAP Version: b_startONTAP: 9.16.1P2b_end
 
-== Storage networking supported
-* CIFS
-* FC
-* iSCSI
-* NFS v3
-* NFS v4.0
-* NFS v4.1
-* NFS v4.2
-* NFSv3/RDMA
-* NFSv4/RDMA
-* NVMe/FC 
-* NVMe/TCP
-* S3
-* S3 with NAS
-* SMB 2.0
-* SMB 2.1
-* SMB 2.x
-* SMB 3.0
-* SMB 3.1
-* SMB 3.1.1
-== System environment specifications
+PCIe Expansion Slots: 18
+
+Minimum ONTAP Version: ONTAP 9.16.1RC1
+
+=== Scaleout Maximums
+|===
+| Type | HA Pairs | Raw Capacity | Max Memory
+| NAS | 12 | 176.8 PB / 157.0 PiB | 6144 GB
+| SAN | 6 | 88.4 PB / 78.5 PiB | 3072 GB
+| HA Pair |  | 14.7 PB / 13.1 PiB | 512.0000
+|===
+
+=== IO
+
+==== Onboard IO
+No onboard IO data.
+
+==== Total IO
+|===
+| Protocol | Ports
+| Ethernet 200 Gbps | 24
+| Ethernet 100 Gbps | 36
+| Ethernet 25 Gbps | 56
+| Ethernet 10 Gbps | 56
+| FC 64 Gbps | 56
+| NVMe/FC  64 Gbps | 56
+|  | 0
+|===
+
+==== Management Ports
+|===
+| Protocol | Ports
+| Ethernet 1 Gbps | 2
+| RS-232 115 Kbps | 4
+| USB 600 Mbps | 2
+|===
+
+=== Storage Networking Supported
+CIFS;
+FC;
+iSCSI;
+NFS v3;
+NFS v4.0;
+NFS v4.1;
+NFS v4.2;
+NFSv3/RDMA;
+NFSv4/RDMA;
+NVMe/FC ;
+NVMe/TCP;
+S3;
+S3 with NAS;
+SMB 2.0;
+SMB 2.1;
+SMB 2.x;
+SMB 3.0;
+SMB 3.1;
+SMB 3.1.1;
+
+=== System Environment Specifications
 No environment data available.
 
-== Compliance
+=== Compliance
 * Certifications EMC/EMI: AMCA,
 FCC,
 ICES,
@@ -112,7 +130,7 @@ IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
 
-== High availability
-* Ethernet based baseboard management controller (BMC) and ONTAP management interface
-* Redundant hot-swappable controllers
-* Redundant hot-swappable power supplies
+=== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface;
+Redundant hot-swappable controllers;
+Redundant hot-swappable power supplies;

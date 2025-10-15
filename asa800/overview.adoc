@@ -1,58 +1,79 @@
 ---
 permalink: asa800/overview.html
 sidebar: sidebar
-summary: Key specifications for the ASA800 platform group
+keywords: ASA A800 specifications, ASA A800 specs, NetApp ASA A800, ASA A800 hardware
+summary: Key specifications for the ASA A800 storage system
 ---
 = Key specifications for ASA A800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the ASA A800 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+The following are select specifications for the ASA A800. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of ASA A800 specifications. This page is reflective of a single high availability pair. 
 
-== Key specifications for ASA A800
+=== Key specifications for ASA A800
 
-* Platform Configuration: ASA A800 Single Chassis HA Pair
-* Max Raw Capacity: 6.6096 PB
-* Memory: 1280.0000 GB
-* Form Factor: 4U chassis with 2 HA controllers and 48 drive slots
-* ONTAP Version: ONTAP: 9.16.1P2
-* PCIe Expansion Slots: 10
-* Minimum ONTAP Version: ONTAP 9.13.1
-== Scaleout maximums
-* Type: NAS
-* Type: SAN; HA Pairs: 6; Raw Capacity: 39.7 PB / 35.2 PiB; Max Memory: 7680 GB
-* Type: HA Pair; Raw Capacity: 6.6 PB / 5.9 PiB; Max Memory: 1280.0000
+Platform Configuration: ASA A800 Single Chassis HA Pair
 
-== I/O
+Max Raw Capacity: 6.6096 PB
 
-=== Onboard I/O
-* Protocol: Ethernet 100 Gbps; Ports: 4
+Memory: 1280.0000 GB
 
-=== Total I/O
-* Protocol: Ethernet 100 Gbps; Ports: 20
-* Protocol: Ethernet 25 Gbps; Ports: 16
-* Protocol: Ethernet 10 Gbps; Ports: 32
-* Protocol: FC 32 Gbps; Ports: 32
-* Protocol: NVMe/FC  32 Gbps; Ports: 32
-* Ports: 0
-* Ports: 0
-* Protocol: SAS 12 Gbps; Ports: 32
+Form Factor: 4U chassis with 2 HA controllers and 48 drive slots
 
-=== Management ports
-* Protocol: Ethernet 1 Gbps; Ports: 4
-* Protocol: RS-232 115 Kbps; Ports: 4
-* Protocol: USB 12 Mbps; Ports: 4
+ONTAP Version: b_startONTAP: 9.16.1P2b_end
 
-== Storage networking supported
-* FC
-* iSCSI
-* NVMe/FC 
-* NVMe/TCP
-== System environment specifications
+PCIe Expansion Slots: 10
+
+Minimum ONTAP Version: ONTAP 9.13.1
+
+=== Scaleout Maximums
+|===
+| Type | HA Pairs | Raw Capacity | Max Memory
+| NAS |  |  | 
+| SAN | 6 | 39.7 PB / 35.2 PiB | 7680 GB
+| HA Pair |  | 6.6 PB / 5.9 PiB | 1280.0000
+|===
+
+=== IO
+
+==== Onboard IO
+|===
+| Protocol | Ports
+| Ethernet 100 Gbps | 4
+|===
+
+==== Total IO
+|===
+| Protocol | Ports
+| Ethernet 100 Gbps | 20
+| Ethernet 25 Gbps | 16
+| Ethernet 10 Gbps | 32
+| FC 32 Gbps | 32
+| NVMe/FC  32 Gbps | 32
+|  | 0
+|  | 0
+| SAS 12 Gbps | 32
+|===
+
+==== Management Ports
+|===
+| Protocol | Ports
+| Ethernet 1 Gbps | 4
+| RS-232 115 Kbps | 4
+| USB 12 Mbps | 4
+|===
+
+=== Storage Networking Supported
+FC;
+iSCSI;
+NVMe/FC ;
+NVMe/TCP;
+
+=== System Environment Specifications
 No environment data available.
 
-== Compliance
+=== Compliance
 * Certifications EMC/EMI: AMCA,
 FCC,
 ICES,
@@ -98,8 +119,8 @@ IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
 
-== High availability
-* Ethernet based baseboard management controller (BMC) and ONTAP management interface
-* Redundant hot-swappable controllers
-* Redundant hot-swappable power supplies
-* SAS in-band management over SAS connections for external shelves
+=== High Availability
+Ethernet based baseboard management controller (BMC) and ONTAP management interface;
+Redundant hot-swappable controllers;
+Redundant hot-swappable power supplies;
+SAS in-band management over SAS connections for external shelves;
