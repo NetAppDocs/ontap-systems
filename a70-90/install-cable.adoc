@@ -57,7 +57,7 @@ image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[Two-node switchles
 --
 .Switched cluster cabling
 --
-Use the 100 GbE cable to connect ports e1a to e1a and ports e7a to e7a.
+Use the 100 GbE cable to connect Controllers A and B ports e1a, and  e7a to cluster network switches A and B.
 
 .Steps
 
