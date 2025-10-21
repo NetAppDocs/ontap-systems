@@ -36,6 +36,11 @@ Find power supply replacement procedures for your NetApp storage system organize
 * link:../c800/power-supply-replace.html[AFF C800]
 --
 
+.AFX systems
+--
+* link:../afx-1k/power-supply-replace.html[AFX A1K]
+--
+
 .ASA systems
 --
 * link:../asa150/power-supply-swap-out.html[ASA A150]
@@ -64,11 +69,13 @@ Find power supply replacement procedures for your NetApp storage system organize
 * link:../fas9000/power-supply-swap-out.html[FAS9000]
 --
 
-.AFX systems
+.Shelf systems
 --
-* link:../afx-1k/power-supply-replace.html[AFX A1K]
+* link:../ns224/service-replace-power-supply.html[NS224]
+* link:../nx224/service-replace-power-supply.html[NX224]
 --
 ====
 
 // 2025-09-18: ontap-systems-internal/issues/769
 // 2025-10-21: ontap-systems-internal/issues/1370
+// 2025-10-21: ontap-systems-internal/issues/1373

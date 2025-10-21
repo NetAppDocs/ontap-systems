@@ -1,0 +1,17 @@
+---
+sidebar: sidebar
+permalink: fru-reference/nsm-fru-links.html
+keywords: NSM, NVMe shelf module, field replaceable units, FRU, NSM replacement
+summary: "Find NVMe shelf module (NSM) replacement procedures for your NetApp storage shelf organized by shelf model. This reference provides direct links to step-by-step NSM replacement workflows for NS224 and NX224 shelves to help you quickly locate the correct procedure for your specific shelf model."
+---
+= NSM replacement procedures by shelf model
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Find NVMe shelf module (NSM) replacement procedures for your NetApp storage shelf organized by shelf model. This reference provides direct links to step-by-step NSM replacement workflows for NS224 and NX224 shelves to help you quickly locate the correct procedure for your specific shelf model.
+
+* link:../ns224/service-replace-nsm100.html[NS224]
+* link:../nx224/service-replace-nsm140.html[NX224]
+
+// 2025-10-21: ontap-systems-internal/issues/1373
