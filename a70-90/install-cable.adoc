@@ -83,7 +83,9 @@ The following are some typical host network cabling examples. See  link:https://
 .Steps
 . Connect ports e9a and e9b to your Ethernet data network switch.
 +
-NOTE: For maximum system performance for cluster and HA traffic, do not use ports e1b and e7b ports for host network connections.  Use a separate host card to maximize performance.
+// Issue ontap-systems/395 - Simplify statement previously here
+
+NOTE: Do not use ports e1b and e7b ports for host network connections. Use a separate host card.
 
 +
 *100 GbE cable*
