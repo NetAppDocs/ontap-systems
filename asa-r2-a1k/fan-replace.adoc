@@ -12,3 +12,5 @@ summary: Replace a failed or faulty fan module in your ASA A1K system to maintai
 Replace a failed or faulty fan module in your ASA A1K system to maintain proper cooling and prevent system performance issues. The fans are hot-swappable and can be replaced without shutting down the system. This procedure includes identifying the faulty fan using console error messages and LED indicators, removing the bezel, swapping the fan module, and returning the failed part to NetApp.
 
 include::../_include/a1k_fan_replace.adoc[]
+
+// 2025-10-13 ontap-systems-internal/issues/1283

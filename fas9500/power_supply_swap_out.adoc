@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.'
 ---
-= Swap out a power supply - FAS9500
+= Hot-swap a power supply - FAS9500
 :icons: font
 :imagesdir: ../media/
 
@@ -68,3 +68,5 @@ Once power is restored to the power supply, the status LED should be green.
 The green power LED lights when the PSU is fully inserted into the chassis and the amber attention LED flashes initially, but turns off after a few moments.
 
 include::../_include/complete_rma_step.adoc[]
+
+// 2025-10-13 ontap-systems-internal/issues/1278

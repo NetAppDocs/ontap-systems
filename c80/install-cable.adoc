@@ -60,8 +60,7 @@ image::../media/drw_a1k_tnsc_cluster_cabling_ieops-1648.svg[Two-node switchless 
 --
 .Switched cluster cabling
 --
-Use the 100 GbE cable to connect ports e1a to e1a and ports e7a to e7a.
-
+Use the 100 GbE cable to connect Controllers A and B ports e1a, and  e7a to cluster network switches A and B.
 .Steps
 . Connect port e1a on Controller A and port e1a on Controller B to cluster network switch A. 
 . Connect port e7a on Controller A and port e7a on Controller B to cluster network switch B.
@@ -83,8 +82,9 @@ The following are some typical host network cabling examples. See  link:https://
 
 .Steps
 . Connect ports e9a and e9b to your Ethernet data network switch.
+// Issue ontap-systems/395 - Simplify statement previously here
 +
-NOTE: For maximum system performance for cluster and HA traffic, do not use ports e1b and e7b ports for host network connections.  Use a separate host card to maximize performance.
+NOTE: Do not use ports e1b and e7b ports for host network connections. Use a separate host card.
 +
 *100 GbE cable*
 +

@@ -45,6 +45,11 @@ Find boot media replacement procedures for your NetApp storage system organized 
 * link:../c800/bootmedia-replace-workflow.html[AFF C800 (Manual recovery)]
 --
 
+.AFX systems
+--
+* link:../afx-1k/bootmedia-replace-workflow.html[AFX A1K]
+--
+
 .ASA systems
 --
 * link:../asa150/bootmedia-replace-overview.html[ASA A150 (Manual recovery)]
@@ -83,6 +88,14 @@ Find boot media replacement procedures for your NetApp storage system organized 
 * link:../fas9500/bootmedia-replace-workflow-bmr.html[FAS9500 (Automated recovery)]
 * link:../fas9500/bootmedia-replace-workflow.html[FAS9500 (Manual recovery)]
 --
+
+.Shelf systems
+--
+* link:../ns224/service-replace-boot-media.html[NS224]
+* link:../nx224/service-replace-boot-media.html[NX224]
+--
 ====
 
 // 2025-09-18: ontap-systems-internal/issues/769
+// 2025-10-21: ontap-systems-internal/issues/1370
+// 2025-10-21: ontap-systems-internal/issues/1373

@@ -1,6 +1,7 @@
 ---
 permalink: fas2700/overview.html
 sidebar: sidebar
+keywords: FAS2700 specifications, FAS2700 specs, NetApp FAS2700, FAS2700 hardware
 summary: Key specifications for the FAS2700 platform group
 ---
 = Key specifications for FAS2750
@@ -129,3 +130,4 @@ IS 13252(part 1)
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
 * SAS in-band management over SAS connections for external shelves
+[//] 2025-10-15 ontap-systems-internal/issues/1357
