@@ -1,6 +1,8 @@
 section: a20-30-50
 title: AFF A20, AFF A30, and AFF A50 systems
 entries:
+ - title: Overview
+   url: /a20-30-50/overview.html
  - title: Install and setup
    pdf-filename: AFF A20, AFF A30, and AFF A50 Install and Setup
    entries:
@@ -113,8 +115,8 @@ entries:
  - title: Key specifications
    entries:
     - title: AFF A20
-      url: a20-key-specifications.html
+      url: /a20-30-50/a20-key-specifications.html
     - title: AFF A30
-      url: a30-key-specifications.html
+      url: /a20-30-50/a30-key-specifications.html
     - title: AFF A50
-      url: a50-key-specifications.html
+      url: /a20-30-50/a50-key-specifications.html

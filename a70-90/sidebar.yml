@@ -1,6 +1,12 @@
 section: a70-90
 title: AFF A70 and AFF A90 systems
 entries:
+ - title: Overview
+   entries:
+     - title: AFF A70 overview
+       url: /a70-90/aff-a-series-affa70-overview.html
+     - title: AFF A90 overview
+       url: /a70-90/aff-a-series-affa90-overview.html
  - title: Install and setup
    pdf-filename: AFF A70, AFF A90 Install and Setup
    entries:
@@ -117,6 +123,6 @@ entries:
  - title: Key specifications
    entries:
      - title: AFF A70
-       url: a70-key-specifications.html
+       url: /a70-90/a70-key-specifications.html
      - title: AFF A90
-       url: a90-key-specifications.html
+       url: /a70-90/a90-key-specifications.html

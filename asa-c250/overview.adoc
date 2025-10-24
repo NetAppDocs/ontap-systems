@@ -1,6 +1,7 @@
 ---
 permalink: asa-c250/overview.html
 sidebar: sidebar
+keywords: ASA C250 specifications, ASA C250 specs, NetApp ASA C250, ASA C250 hardware
 summary: Key specifications for the ASA-C250 platform group
 ---
 = Key specifications for ASA C250
@@ -116,3 +117,4 @@ IS 13252(part 1)
 * Ethernet based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
+[//] 2025-10-15 ontap-systems-internal/issues/1357

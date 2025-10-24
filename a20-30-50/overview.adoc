@@ -1,6 +1,7 @@
 ---
 permalink: a20-30-50/overview.html
 sidebar: sidebar
+keywords: AFF A20 A30 A50 specifications, AFF A20 A30 A50 specs, AFF A20 A30 A50 capacity, AFF A20 A30 A50 memory, AFF A20 A30 A50 I/O, AFF A20 A30 A50 compliance
 summary: Key specifications for the A20-30-50 platform group
 ---
 = Key specifications for A20-30-50 platform group
@@ -275,6 +276,8 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 SAS in-band management over SAS connections for external shelves;
+ 
+ [//] 2025-10-15 ontap-systems-internal/issues/1357
 
 == AFF A30
 
