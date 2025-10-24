@@ -1,12 +1,14 @@
 ---
 permalink: a400/power-supply-replace.html
 sidebar: sidebar
-keywords: aff a400, aff, a400, replace, replacing, power, supply, psu, disconnect, target, psu, unplug, power, cable, removing, remove, replacement, source, replace a power supply
-summary: Replacing a power supply \(PSU\) involves disconnecting the target PSU from the power source, unplugging the power cable, removing the old PSU and installing the replacement PSU, and then reconnecting the replacement PSU to the power source.
+keywords: aff a400, replace a power supply
+summary: Replacing a power supply involves disconnecting the target power supply (PSU) from the power source, unplugging the power cable, removing the old PSU and installing the replacement PSU, and then reconnecting it to the power source.
 ---
-= Replacing a power supply - AFF A400
+= Hot-swap a power supply - AFF A400
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 include::../_include/400_aseries_power_supply_replace.adoc[]
+
+// 2025-10-13 ontap-systems-internal/issues/1278

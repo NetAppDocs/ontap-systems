@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a700, fas9000, swap, power, supply, turn, off, disconnect, remove, install, connect, turn, on, return, failed, part
 summary: 'Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.'
 ---
-= Swap out a power supply - AFF A700
+= Hot-swap a power supply - AFF A700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
 include::../_include/700_9000_power_supply_swap_out.adoc[]
+// 2025-10-13 ontap-systems-internal/issues/1278

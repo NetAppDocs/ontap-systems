@@ -37,6 +37,11 @@ Find controller replacement procedures for your NetApp storage system organized 
 * link:../c800/controller-replace-overview.html[AFF C800]
 --
 
+.AFX systems
+--
+* link:../afx-1k/controller-replace-workflow.html[AFX A1K]
+--
+
 .ASA systems
 --
 * link:../asa150/controller-replace-overview.html[ASA A150]
@@ -69,3 +74,4 @@ Find controller replacement procedures for your NetApp storage system organized 
 ====
 
 // 2025-09-18: ontap-systems-internal/issues/769
+// 2025-10-21: ontap-systems-internal/issues/1370
