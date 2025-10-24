@@ -1,18 +1,16 @@
-
+The power supplies are redundant and hot-swappable. You do not have to shut down the controller to replace a PSU.
 
 .About this task
 * This procedure is written for replacing one PSU at a time.
 +
 IMPORTANT: Do not mix PSUs with different efficiency ratings. Always replace like for like.
 
-* Use the appropriate procedure for your type of PSU: AC or DC.
-
-* The power supplies are redundant and hot-swappable; you do not have to takeover the controller to perform this task. 
+* Use the appropriate procedure for your type of PSU: AC or DC. 
 
 [role="tabbed-block"]
 ====
 
-.Option 1: Replace an AC PSU
+.Option 1: Hot-swap an AC PSU
 --
 To replace an AC PSU, complete the following steps.
 
@@ -55,7 +53,7 @@ include::../_include/complete_rma_step.adoc[]
 
 --
 
-.Option 2: Replace a DC PSU
+.Option 2: Hot-swap a DC PSU
 
 --
 To replace a DC PSU, complete the following steps.
@@ -113,3 +111,5 @@ Once power is restored to the PSU, the status LED should be green.
 include::../_include/complete_rma_step.adoc[]
 --
 ====
+
+// 2025-10-13 ontap-systems-internal/issues/1278

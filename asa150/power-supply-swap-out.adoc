@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: asa a150, a150, asa, swap, power, supply, turn off, disconnect, remove, old, install, connect, turn on, replacement
 summary: 'Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.'
 ---
-= Swap out a power supply - ASA A150
+= Hot-swap a power supply - ASA A150
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 include::../_include/150_power_supply_swap_out.adoc[]
+
+// 2025-10-13 ontap-systems-internal/issues/1278

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, replace, replacing, power, supply, psu, involve, disconnect, target, source, unplug, cable, replacement, replace a power supply
 summary: Replacing a power supply \(PSU\) involves disconnecting the target PSU from the power source, unplugging the power cable, removing the old PSU and installing the replacement PSU, and then reconnecting the replacement PSU to the power source.
 ---
-= Replace a power supply - AFF A320
+= Hot-swap a power supply - AFF A320
 :icons: font
 :imagesdir: ../media/
 
@@ -46,3 +46,5 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 Once power is restored to the power supply, the status LED should be green.
 
 include::../_include/complete_rma_step.adoc[]
+
+// 2025-10-13 ontap-systems-internal/issues/1278

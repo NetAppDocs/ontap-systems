@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace power supply
 summary: "Replacing a power supply involves disconnecting the target power supply from the power source, unplugging the power cable, removing the old PSU and installing the replacement PSU, and then reconnecting it to the power source."
 ---
-= Replace a power supply - FAS500f
+= Hot-swap a power supply - FAS500f
 :icons: font
 :imagesdir: ../media/
 
@@ -58,3 +58,5 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 Once power is restored to the power supply, the status LED should be green.
 
 include::../_include/complete_rma_step.adoc[]
+
+// 2025-10-13 ontap-systems-internal/issues/1278
