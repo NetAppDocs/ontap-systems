@@ -22,6 +22,11 @@ Find I/O module replacement procedures for your NetApp storage system organized 
 * link:../c80/io-module-replace.html[AFF C80]
 --
 
+.AFX systems
+--
+* link:../afx-1k/io-module-replace.html[AFX A1K]
+--
+
 .ASA systems
 --
 * link:../asa-r2-a1k/io-module-replace.html[ASA A1K]
@@ -35,6 +40,14 @@ Find I/O module replacement procedures for your NetApp storage system organized 
 * link:../fas50/io-module-replace.html[FAS50]
 * link:../fas-70-90/io-module-replace.html[FAS70/90]
 --
+
+.Shelf systems
+--
+* link:../ns224/service-replace-io-module.html[NS224]
+* link:../nx224/service-replace-io-module.html[NX224]
+--
 ====
 
 // 2025-09-18: ontap-systems-internal/issues/769
+// 2025-10-21: ontap-systems-internal/issues/1370
+// 2025-10-21: ontap-systems-internal/issues/1373

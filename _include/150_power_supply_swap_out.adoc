@@ -2,7 +2,7 @@ Swapping out a power supply involves turning off, disconnecting, and removing th
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
-* The power supplies are redundant and hot-swappable.
+* The power supplies are redundant and hot-swappable. You do not have to shut down the controller to replace a PSU.
 * This procedure is written for replacing one power supply at a time.
 +
 NOTE: Cooling is integrated with the power supply, so you must replace the power supply within two minutes of removal to prevent overheating due to reduced airflow. Because the chassis provides a shared cooling configuration for the two HA nodes, a delay longer than two minutes will shut down all controller modules in the chassis. If both controller modules do shut down, make sure that both power supplies are inserted, turn both off for 30 seconds, and then turn both on.
@@ -45,3 +45,5 @@ Once power is restored to the power supply, the status LED should be green.
 The power supply LEDs are lit when the power supply comes online.
 
 include::../_include/complete_rma_step.adoc[]
+
+// 2025-10-13 ontap-systems-internal/issues/1278
