@@ -23,6 +23,11 @@ Find NVRAM module replacement procedures for your NetApp storage system organize
 * link:../c80/nvram-replace.html[AFF C80]
 --
 
+.AFX systems
+--
+* link:../afx-1k/nvram-replace.html[AFX A1K]
+--
+
 .ASA systems
 --
 * link:../asa900/nvram_module_or_nvram_dimm_replacement.html[ASA A900]
@@ -39,3 +44,4 @@ Find NVRAM module replacement procedures for your NetApp storage system organize
 ====
 
 // 2025-09-18: ontap-systems-internal/issues/769
+// 2025-10-21: ontap-systems-internal/issues/1370

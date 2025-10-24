@@ -36,6 +36,11 @@ Find RTC battery replacement procedures for your NetApp storage system organized
 * link:../c800/rtc-battery-replace.html[AFF C800]
 --
 
+.AFX systems
+--
+* link:../afx-1k/rtc-battery-replace.html[AFX A1K]
+--
+
 .ASA systems
 --
 * link:../asa150/rtc-battery-replace.html[ASA A150]
@@ -64,6 +69,14 @@ Find RTC battery replacement procedures for your NetApp storage system organized
 * link:../fas9000/rtc-battery-replace.html[FAS9000]
 * link:../fas9500/rtc_battery_replace.html[FAS9500]
 --
+
+.Shelf systems
+--
+* link:../ns224/service-replace-rtc-battery.html[NS224]
+* link:../nx224/service-replace-rtc-battery.html[NX224]
+--
 ====
 
 // 2025-09-18: ontap-systems-internal/issues/769
+// 2025-10-21: ontap-systems-internal/issues/1370
+// 2025-10-21: ontap-systems-internal/issues/1373
