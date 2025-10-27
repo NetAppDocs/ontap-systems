@@ -1,6 +1,7 @@
 ---
 permalink: fas2800/overview.html
 sidebar: sidebar
+keywords: FAS2800 specifications, FAS2800 specs, NetApp FAS2800, FAS2800 hardware
 summary: Key specifications for the FAS2800 platform group
 ---
 = Key specifications for FAS2820
@@ -131,3 +132,4 @@ IS 13252(part 1)
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
 * SAS in-band management over SAS connections for external shelves
+[//] 2025-10-15 ontap-systems-internal/issues/1357

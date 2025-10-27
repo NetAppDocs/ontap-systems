@@ -4,9 +4,10 @@ sidebar: sidebar
 keywords: aff c800, replace a power supply
 summary: "Replacing a power supply involves disconnecting the target power supply from the power source, unplugging the power cable, removing the old PSU and installing the replacement PSU, and then reconnecting it to the power source."
 ---
-= Replace a power supply - AFF C800
+= Hot-swap a power supply - AFF C800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 include::../_include/800_power_supply_replace.adoc[]
+// 2025-10-13 ontap-systems-internal/issues/1278

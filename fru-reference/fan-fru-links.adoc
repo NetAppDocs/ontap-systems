@@ -32,6 +32,11 @@ Find fan replacement procedures for your NetApp storage system organized by plat
 * link:../c800/fan-replace.html[AFF C800]
 --
 
+.AFX systems
+--
+* link:../afx-1k/fan-replace.html[AFX A1K]
+--
+
 .ASA systems
 --
 * link:../asa250/fan-replace.html[ASA A250]
@@ -55,6 +60,14 @@ Find fan replacement procedures for your NetApp storage system organized by plat
 * link:../fas8300/fan-swap-out.html[FAS8300]
 * link:../fas9000/fan-swap-out.html[FAS9000]
 --
+
+.Shelf systems
+--
+* link:../ns224/service-replace-fan.html[NS224]
+* link:../nx224/service-replace-fan.html[NX224]
+--
 ====
 
 // 2025-09-18: ontap-systems-internal/issues/769
+// 2025-10-21: ontap-systems-internal/issues/1370
+// 2025-10-21: ontap-systems-internal/issues/1373
