@@ -4,13 +4,16 @@ You must remove the controller module from the chassis when you replace the cont
 
 .Steps
 
+<<<<<<< HEAD
 . Before removing the controller module, verify that all drives on the front of the chassis are fully seated against the midplane. Gently press each drive with your thumbs until you feel it securely in place. Refer to the following illustration or video for guidance.
+=======
+. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
+>>>>>>> parent of b66ed32c (Revised text for seating the drives and added video for process in A70-90 issue #1315)
 // ontap-systems-internal/issues/1151 
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
 +
-video::bc172527-34bb-4fb7-9c58-b3800114821b[panopto, title="Video - Seating the drives before removing the controller module", width=640, height=360]
-+
+
 . Check the amber NVRAM that status LED located in slot 4/5 on the back of the impaired controller module is off. Look for the NV icon.
 +
 image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
