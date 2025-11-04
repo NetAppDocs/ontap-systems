@@ -4,10 +4,11 @@ You must remove the controller module from the chassis when you replace the cont
 
 .Steps
 
+. If you are not already grounded, properly ground yourself.
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 // ontap-systems-internal/issues/1151 
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
 +
 
 . Check the amber NVRAM that status LED located in slot 4/5 on the back of the impaired controller module is off. Look for the NV icon.
