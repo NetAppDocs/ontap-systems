@@ -11,12 +11,13 @@ You must remove the controller module from the chassis when you replace the cont
 // ontap-systems/issues/343
 
 +
+video::92b80138-5cd6-4117-ad61-b38b003d0f08[panopto, title="Video - Seating the drives before removing the controller module"]
+
++
+
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
-
 +
-video::11202c9a-3d09-460a-a7e9-b38001148280[panopto, title="Video - Seating the drives before removing the controller module"]
 
-+
 . Unplug the controller module power supplies from the source.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected.
