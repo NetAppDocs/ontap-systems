@@ -9,10 +9,13 @@ You must remove the controller module from the chassis when you replace the cont
 . If you are not already grounded, properly ground yourself.
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 // ontap-systems/issues/343
+
 +
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
+
 +
-video::11202c9a-3d09-460a-a7e9-b38001148280[panopto, title="Video - Seating the drives before removing the controller module", width=640, height=360]
+video::11202c9a-3d09-460a-a7e9-b38001148280[panopto, title="Video - Seating the drives before removing the controller module"]
+
 +
 . Unplug the controller module power supplies from the source.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
