@@ -9,4 +9,28 @@ summary: "You must remove the controller module from the chassis when you replac
 :imagesdir: ../media/
 
 [.lead]
+
+== Step 1: Shut down the impaired controller
+Shut down the impaired controller
+
+include::../_include/shutdown_most_frus.adoc[]
+
+== Step 2: Remove the controller module
+
+include::../_include/800_controller_remove_physical.adoc[]
+
+== Step 3: Replace a fan
+
+Locate the failed fan module and replace it with a new fan module.
+
 include::../_include/800_fan_replace.adoc[]
+
+== Step 4: Reinstall the controller module
+
+After you replace a FRU in the controller module, you must reinstall the controller module and reboot it.
+
+include::../_include/800_controller_install_step_physical.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
