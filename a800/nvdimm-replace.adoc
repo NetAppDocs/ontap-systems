@@ -13,8 +13,8 @@ Replace the NVDIMM in your AFF A800 system when your system registers that the f
 
 .Before you begin
 
-- Make sure you have the replacement NVDIMM that you received from NetApp and is compatible with your AFF A800 system.
-- Make sure all other components in the storage system are functioning properly; if not, contact NetApp Support.
+* Make sure you have the replacement NVDIMM that you received from NetApp and is compatible with your AFF A800 system.
+* Make sure all other components in the storage system are functioning properly; if not, contact NetApp Support.
 
 == Step 1: Shut down the impaired controller
 

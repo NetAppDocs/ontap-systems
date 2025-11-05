@@ -23,3 +23,16 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 The controller module begins to boot as soon as power is restored. Be prepared to interrupt the boot process.
 
  .. If you have not already done so, reinstall the cable management device.
+
+ . Return the impaired controller to normal operation by giving back its storage: 
++
+`storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: 
++
+`storage failover modify -node local -auto-giveback true`.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: 
++
+`system node autosupport invoke -node * -type all -message MAINT=END`.
+
