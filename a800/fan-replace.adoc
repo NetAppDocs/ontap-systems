@@ -11,6 +11,7 @@ summary: "You must remove the controller module from the chassis when you replac
 [.lead]
 
 == Step 1: Shut down the impaired controller
+
 Shut down the impaired controller
 
 include::../_include/shutdown_most_frus.adoc[]
