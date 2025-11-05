@@ -10,6 +10,8 @@ summary: "You must remove the controller module from the chassis when you replac
 
 [.lead]
 
+To replace a fan in the AFF A800, remove the failed fan module and replace it with a new fan module. The replacement process involves shutting down the impaired controller, removing it, replacing the fan module, reinstalling the controller, and then returning the failed part to NetApp.
+
 == Step 1: Shut down the impaired controller
 
 Shut down the impaired controller
