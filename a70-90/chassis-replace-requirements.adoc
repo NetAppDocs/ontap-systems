@@ -11,8 +11,12 @@ summary: Before replacing the chassis in your AFF A70 or AFF A90 system, ensure 
 [.lead]
 Before replacing the chassis in your AFF A70 or AFF A90 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have local administrator credentials for ONTAP, the correct replacement chassis, and the necessary tools.
 
+The chassis is the physical enclosure that houses all system components, including the controller/CPU unit, power supply units (PSUs), and I/O components.
+
+Review the following requirements before starting the chassis replacement procedure:
+
 include::../_include/a70-90_chassis_replace_requirements.adoc[]
 
 .What's next?
 
-After you've reviewed the requirements to replace the chassis, you need to link:chassis-replace-prepare.html[prepare to replace the chassis].
+After reviewing the requirements, link:chassis-replace-prepare.html[prepare to replace the chassis].
