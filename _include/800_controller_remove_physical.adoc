@@ -5,22 +5,16 @@ You must remove the controller module from the chassis when you replace the cont
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-Check that all the disks are online:
++
 
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-
 +
-
 video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto, title="Video - Reseat the drives"]
-
-
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
-
-
-. Check the controller drives based on the system status:
-
 +
-
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
++
+. Check the controller drives based on the system status:
++
 [role="tabbed-block"]
 
 ====
@@ -89,7 +83,6 @@ disk show -w
 .Option 3: Both controllers of the HA pair are offline
 
 --
---
 
 .. Boot both controllers into maintenance mode.
 +
@@ -139,12 +132,12 @@ run -node <node_name> - command sysconfig -r
 NOTE: If the disk or any of its partitions are part of an aggregate, do not proceed. Contact NetApp Support for further assistance.
 
 ... Remove the drive and reinsert it after 70 seconds, following the instructions in the link:https://docs.netapp.com/us-en/ontap-systems/fru-reference/drive-fru-links.html[Drive replacement procedures by platform family].
- 
+
+--
+
 ====
-
++
 // end tabbed block
-
-
 . Unplug the controller module power supplies from the source.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected.
