@@ -4,17 +4,145 @@ You must remove the controller module from the chassis when you replace the cont
 
 .Steps
 
-You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
-
 . If you are not already grounded, properly ground yourself.
+Check that all the disks are online:
+
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-// ontap-systems/issues/343
 
 +
+
 video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto, title="Video - Reseat the drives"]
 
-+
+
 image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
+
+
+. Check the controller drives based on the system status:
+
++
+
+[role="tabbed-block"]
+
+====
+--
+.Option 1: Both controllers in the HA pair are online
+
+.. Check that any active RAID group is in a degraded state:
+
++
+----
+storage aggregate show -raidstatus !*normal*
+----
+
+.. Check for missing drive issues for both the file system or spare drives:
+
++
+----
+event log show -severity -node -message-name *disk.missing*
+----
+If any drives are missing, reseat the drives before proceeding.
+
+--
+.Option 2: One controller in the HA pair is offline
+
+--
+.. On the healthy controller, check that any active RAID group is in a degraded state:
+
++
+----
+storage aggregate show -raidstatus !*normal*
+----
+
+.. Check for missing drive issues for both the file system or spare drives:
+
++
+----
+event log show -severity -node -message-name *disk.missing*
+----
+
++
+If any drives are missing, reseat the drives, otherwise proceed to the next step.
+
+.. Collect the output of the system node run local disk show command:
+
++
+----
+system node run -node local -c disk show -w 
+----
+
+.. Boot the offline controller into maintenance mode:
+
++
+----
+boot_ontap maint
+----
+
+.. Collect the output from the disk show command:
++
+----
+disk show -w
+----
+
+.. Compare the output with the healthy controller and recover any impacted drives.
+
+--
+.Option 3: Both controllers of the HA pair are offline
+
+--
+--
+
+.. Boot both controllers into maintenance mode.
++
+----
+LOADER> boot_ontap maint
+----
+
+.. Determine the status of the drives of the RAID groups.
++
+----
+aggr status -r 
+----
+
+.. Identify the impacted drives:
+
++
+----
+aggr status -f
+----
+
+.. Compare the disk show output of both controllers.
+
++
+----
+disk show -w
+----
+
+If there are any failed drives or discrepancies, complete the following substeps.
+
+... Collect the AutoSupport data from both controllers.
+
++
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
++
+NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the <message_name>.
+
+... Verify that the target disk is not part of an active file system.
+
++
+----
+run -node <node_name> - command sysconfig -r
+----
++
+NOTE: If the disk or any of its partitions are part of an aggregate, do not proceed. Contact NetApp Support for further assistance.
+
+... Remove the drive and reinsert it after 70 seconds, following the instructions in the link:https://docs.netapp.com/us-en/ontap-systems/fru-reference/drive-fru-links.html[Drive replacement procedures by platform family].
+ 
+====
+
+// end tabbed block
 
 
 . Unplug the controller module power supplies from the source.
