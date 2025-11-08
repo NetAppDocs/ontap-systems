@@ -10,7 +10,7 @@ Review the following requirements.
 ** /cfcard/kmip/certs/client.key
 ** /cfcard/kmip/certs/CA.pem
 
-* It is critical to apply the commands to the correct controller when you are replacing the impaired boot media:
+* Understand the controller terminology used in this procedure:
 
 ** The _impaired controller_ is the controller on which you are performing maintenance.
 ** The _healthy controller_ is the HA partner of the impaired controller.
