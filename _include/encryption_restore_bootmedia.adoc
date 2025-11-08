@@ -1,31 +1,28 @@
 
-You must complete steps specific to systems that have Onboard Key Manager (OKM), NetApp Storage Encryption (NSE) or NetApp Volume Encryption (NVE) enabled using the settings that you captured at the beginning of the boot media replace procedure.
+Complete the appropriate steps to restore encryption on your system based on your key manager type. If you are unsure which key manager your system uses, check the settings you captured at the beginning of the boot media replacement procedure.
 
+[role="tabbed-block"]
+====
 
-Depending on which a key manger is configured on your system, select one of the following options to restore it from the boot menu.
-
-* link:[Option 1: Restore the Onboard Key Manager configuration]
-* link:[Option 2: Restore the External Key Manager configuration]
-
-
-== Option 1: Restore the Onboard Key Manager configuration
+.Onboard Key Manager (OKM)
+--
 Restore the Onboard Key Manager (OKM) configuration from the ONTAP boot menu.
 
 .Before you begin
 
-* Make sure you have following information while restoring the OKM configuration:
+Ensure you have the following information available:
 
-** Cluster-wide passphrase entered https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html[while enabling onboard key management].
-
-** https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html[Backup information for the Onboard Key Manager].
-
-* Perform the https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_verify_onboard_key_management_backup_and_cluster-wide_passphrase[How to verify onboard key management backup and cluster-wide passphrase] procedure before proceeding.
+* Cluster-wide passphrase to https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html[enable onboard key management]
+* https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html[Backup information for the Onboard Key Manager]
+* Verification that you have the correct passphrase and backup data using the https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_verify_onboard_key_management_backup_and_cluster-wide_passphrase[How to verify onboard key management backup and cluster-wide passphrase] procedure
 
 .Steps
 
-. Connect the console cable to the target controller.
+*On the impaired controller:*
 
-. From the ONTAP boot menu select the appropriate option from the boot menu.
+. Connect the console cable to the impaired controller.
+
+. From the ONTAP boot menu, select the appropriate option:
 +
 [cols="1a,2a" options="header"]
 |===
@@ -38,7 +35,7 @@ Select option 10.
 // Start snippet: collapsible block
 .Show example boot menu
 [%collapsible]
-====
+=====
 ....
 
 Please choose one of the following:
@@ -57,7 +54,7 @@ Please choose one of the following:
 Selection (1-11)? 10
 
 ....
-====
+=====
 // End snippet
 
 
@@ -69,7 +66,7 @@ Select the hidden option `recover_onboard_keymanager`
 // Start snippet: collapsible block
 .Show example boot menu
 [%collapsible]
-====
+=====
 ....
 
 Please choose one of the following:
@@ -86,43 +83,39 @@ Please choose one of the following:
 Selection (1-19)? recover_onboard_keymanager
 
 ....
-====
+=====
 // End snippet
 
 |===
 
 +
-. Confirm that you want to continue the recovery process.
+. Confirm that you want to continue the recovery process when prompted:
 +
-
 .Show example prompt
 [%collapsible]
-====
+=====
 `This option must be used only in disaster recovery procedures. Are you sure? (y or n):`
-====
+=====
 
-
-. Enter the cluster-wide passphrase twice. 
+. Enter the cluster-wide passphrase twice.
 +
-While entering the passphrase the console will not show any input. 
+While entering the passphrase, the console does not show any input.
 +
 .Show example prompt
 [%collapsible]
-====
+=====
 `Enter the passphrase for onboard key management:`
 
 `Enter the passphrase again to confirm:`
-====
-// End snippet
+=====
 +
 
-. Enter the backup information.  
-.. Paste the entire content from the BEGIN BACKUP line through the END BACKUP line.
+. Enter the backup information:
+.. Paste the entire content from the BEGIN BACKUP line through the END BACKUP line, including the dashes.
 +
-
 .Show example prompt
 [%collapsible]
-====
+=====
 ....
 Enter the backup data:
 
@@ -160,16 +153,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 ---------------------------END BACKUP---------------------------
 
 ....
-====
-// End snippet
-.. Press the enter key twice at the end of the input.
+=====
 +
-The recovery process completes.
-
+.. Press Enter twice at the end of the input.
++
+The recovery process completes and displays the following message:
++
+`Successfully recovered keymanager secrets.`
 +
 .Show example prompt
 [%collapsible]
-====
+=====
 ....
 
 Trying to recover keymanager secrets....
@@ -186,19 +180,15 @@ Successfully recovered keymanager secrets.
 ***********************************************************************************
 
 ....
-====
-// End snippet
-
+=====
 +
-WARNING: Do not proceed if the displayed output is anything other than `Successfully recovered keymanager secrets`. 
-Perform troubleshooting to correct the error.
+WARNING: Do not proceed if the displayed output is anything other than `Successfully recovered keymanager secrets`. Perform troubleshooting to correct the error.
 
-. Select option 1 from the boot menu to continue booting into ONTAP.
-
+. Select option `1` from the boot menu to continue booting into ONTAP.
 +
 .Show example prompt
 [%collapsible]
-====
+=====
 ....
 
 ***********************************************************************************
@@ -221,27 +211,29 @@ Perform troubleshooting to correct the error.
 Selection (1-11)? 1
 
 ....
-====
+=====
 
-. Confirm that the controller's console displays the following message.
+. Confirm that the controller's console displays the following message:
 +
 `Waiting for giveback...(Press Ctrl-C to abort wait)`
-
-. From the partner node, giveback the partner controller by entering the following command.
 +
-`storage failover giveback -fromnode local -only-cfo-aggregates true`.
+*On the partner controller:*
 
-. After booting with only the CFO aggregate, run the following command.
+. Giveback the impaired controller:
 +
-`security key-manager onboard sync` 
+`storage failover giveback -fromnode local -only-cfo-aggregates true`
++
+*On the impaired controller:*
 
+. After booting with only the CFO aggregate, synchronize the key manager:
++
+`security key-manager onboard sync`
 
-. Enter the cluster-wide passphrase for the Onboard Key Manager.
-
+. Enter the cluster-wide passphrase for the Onboard Key Manager when prompted.
 +
 .Show example prompt
 [%collapsible]
-====
+=====
 ....
 
 Enter the cluster-wide passphrase for the Onboard Key Manager:
@@ -249,64 +241,56 @@ Enter the cluster-wide passphrase for the Onboard Key Manager:
 All offline encrypted volumes will be brought online and the corresponding volume encryption keys (VEKs) will be restored automatically within 10 minutes. If any offline encrypted volumes are not brought online automatically, they can be brought online manually using the "volume online -vserver <vserver> -volume <volume_name>" command.
 
 ....
-====
+=====
 +
-NOTE: If the sync is successful the cluster prompt is returned with no additional messages.  If the sync fails an error message appears before returning to the cluster prompt.  Do not continue until the the error is corrected and the sync runs successfully.
+NOTE: If the sync is successful, the cluster prompt is returned with no additional messages. If the sync fails, an error message appears before returning to the cluster prompt. Do not continue until the error is corrected and the sync runs successfully.
 
-. Ensure that all keys are synced by entering the following command.  
+. Verify that all keys are synced:
 +
-`security key-manager key query -restored false`.
-
+`security key-manager key query -restored false`
 +
-
-`There are no entries matching your query.`
-
+The command should return no results. If any results appear, repeat the sync command until no results are returned.
 +
+*On the partner controller:*
 
-NOTE: No results should appear when filtering for false in the restored parameter.
-
-+
-
-. Giveback the node from the partner by entering the following command. 
+. Giveback the impaired controller:
 +
 `storage failover giveback -fromnode local`
 
-. Restore automatic giveback, if you disabled it, by entering the following command.
+. Restore automatic giveback if you disabled it:
 +
 `storage failover modify -node local -auto-giveback true`
 
-. If AutoSupport is enabled, restore automatic case creation by entering  the following command.
+. If AutoSupport is enabled, restore automatic case creation:
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
+--
 
-
-== Option 2: Restore the External Key Manager configuration
-
+.External Key Manager (EKM)
+--
 Restore the External Key Manager configuration from the ONTAP boot menu.
 
 .Before you begin
 
-You need the following information for restoring the External Key Manager (EKM) configuration.
+Gather the following files from another cluster node or from your backup:
 
-** A copy of the /cfcard/kmip/servers.cfg file from another cluster node or the following information:
-*** The KMIP server address.
-*** The KMIP port.
-** A copy of the `/cfcard/kmip/certs/client.crt` file from another cluster node or the client certificate.
-** A copy of the `/cfcard/kmip/certs/client.key` file from another cluster node or the client key.
-** A copy of the `/cfcard/kmip/certs/CA.pem` file from another cluster node or the KMIP server CA(s).
+* `/cfcard/kmip/servers.cfg` file or the KMIP server address and port
+* `/cfcard/kmip/certs/client.crt` file (client certificate)
+* `/cfcard/kmip/certs/client.key` file (client key)
+* `/cfcard/kmip/certs/CA.pem` file (KMIP server CA certificates)
 
 .Steps
 
-. Connect the console cable to the target controller.
+*On the impaired controller:*
 
-. Select option 11 from the ONTAP boot menu.
+. Connect the console cable to the impaired controller.
 
+. Select option `11` from the ONTAP boot menu.
 +
-
 .Show example boot menu
 [%collapsible]
-====
+=====
 ....
 
 (1)  Normal Boot.
@@ -323,46 +307,31 @@ You need the following information for restoring the External Key Manager (EKM) 
 Selection (1-11)? 11
 ....
 
-====
+=====
 
+. Confirm you have gathered the required information when prompted:
 +
-
-. When prompted, confirm you have gathered the required information.
-
-+
-
 .Show example prompt
 [%collapsible]
-====
+=====
 ....
 Do you have a copy of the /cfcard/kmip/certs/client.crt file? {y/n} 
 Do you have a copy of the /cfcard/kmip/certs/client.key file? {y/n}
 Do you have a copy of the /cfcard/kmip/certs/CA.pem file? {y/n}
 Do you have a copy of the /cfcard/kmip/servers.cfg file? {y/n}
 ....
-====
+=====
 
-+
-
-. When prompted, enter the client and server information.
-
-+
-
-.Show prompt
-[%collapsible]
-====
-....
-Enter the client certificate (client.crt) file contents:
-Enter the client key (client.key) file contents:
-Enter the KMIP server CA(s) (CA.pem) file contents:
-Enter the server configuration (servers.cfg) file contents:
-....
-====
-
+. Enter the client and server information when prompted:
+.. Enter the client certificate (client.crt) file contents, including the BEGIN and END lines.
+.. Enter the client key (client.key) file contents, including the BEGIN and END lines.
+.. Enter the KMIP server CA(s) (CA.pem) file contents, including the BEGIN and END lines.
+.. Enter the KMIP server IP address.
+.. Enter the KMIP server port (press Enter to use the default port 5696).
 +
 .Show example
 [%collapsible]
-====
+=====
 
 ....
 Enter the client certificate (client.crt) file contents:
@@ -391,31 +360,28 @@ Running command '/sbin/ifconfig e0M'
 ..
 kmip_init: cmd: ReleaseExtraBSDPort e0M
 ....
-====
-
+=====
 +
-After you enter the client and server information, the recovery process completes.
-
+The recovery process completes and displays the following message:
++
+`Successfully recovered keymanager secrets.`
 +
 .Show example
 [%collapsible]
-====
+=====
 ....
 System is ready to utilize external key manager(s).
 Trying to recover keys from key servers....
 Performing initialization of OpenSSL
 Successfully recovered keymanager secrets.
 ....
-====
+=====
 
-+
-
-. Select option 1 from the boot menu to continue booting into ONTAP.
-
+. Select option `1` from the boot menu to continue booting into ONTAP.
 +
 .Show example prompt
 [%collapsible]
-====
+=====
 ....
 
 ***************************************************************************
@@ -437,17 +403,46 @@ Successfully recovered keymanager secrets.
 Selection (1-11)? 1
 
 ....
-====
+=====
+
+. Confirm that the controller's console displays the following message:
 +
+`Waiting for giveback...(Press Ctrl-C to abort wait)`
++
+*On the partner controller:*
 
+. Giveback the impaired controller:
++
+`storage failover giveback -fromnode local -only-cfo-aggregates true`
++
+*On the impaired controller:*
 
-. Restore automatic giveback if you disabled it.
+. Verify that the external key manager is configured:
++
+`security key-manager external show -instance`
++
+Review the output to confirm that the KMIP servers are configured correctly.
+
+. Verify that all keys are accessible:
++
+`security key-manager key query -restored false`
++
+The command should return no results. If any results appear, contact NetApp Support.
++
+*On the partner controller:*
+
+. Giveback the impaired controller:
++
+`storage failover giveback -fromnode local`
+
+. Restore automatic giveback if you disabled it:
 +
 `storage failover modify -node local -auto-giveback true`
 
-. If AutoSupport is enabled, restore automatic case creation by entering  the following command.
+. If AutoSupport is enabled, restore automatic case creation:
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
+--
 
-
+====
