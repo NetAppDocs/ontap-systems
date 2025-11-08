@@ -1,22 +1,26 @@
  
-== Step 1: Check if your version of ONTAP supports NetApp Volume Encryption
+== Step 1: Check NVE support and download the correct ONTAP image
 
-Check whether your ONTAP version supports NetApp Volume Encryption (NVE). This information is crucial for downloading the correct ONTAP image.
+Determine whether your ONTAP version supports NetApp Volume Encryption (NVE) so you can download the correct ONTAP image for the boot media replacement.
 
 .Steps
 
-. Determine if your ONTAP version supports encryption by running the following command:
+. Check if your ONTAP version supports encryption:
 +
 `version -v`
 +
 If the output includes `1Ono-DARE`, NVE is not supported on your cluster version.
 
-. Depending on whether NVE is supported on your system, take one of the following actions:
-* If NVE is supported, download the ONTAP image with NetApp Volume Encryption.
-* If NVE is not supported, download the ONTAP image *without* NetApp Volume Encryption.
+. Download the appropriate ONTAP image based on NVE support:
++
+* If NVE is supported: Download the ONTAP image with NetApp Volume Encryption
+* If NVE is not supported: Download the ONTAP image without NetApp Volume Encryption
++
+NOTE: Download the ONTAP image from the NetApp Support Site to your HTTP or FTP server or a local folder. You will need this image file during the boot media replacement procedure.
 
-== Step 2: Determine if it is safe to shut down the controller
-To safely shut down a controller, first identify whether the External Key Manager (EKM) or the Onboard Key Manager (OKM) is active. Then, verify the key manager in use, display the appropriate key information, and take action based on the status of the authentication keys.
+== Step 2: Check encryption configuration and back up key manager information
+
+Before shutting down the impaired controller, verify the key manager configuration and back up the necessary information.
 
 .Steps
 
@@ -47,134 +51,116 @@ a|
 * If no key manager is enabled, `No key managers configured` is listed in the command output.
 |===
 
+. Depending on whether a key manager is configured on your system, do one of the following:
 +
-
-[start=2]
-
-. Depending on whether a key manger is configured on your system, select one of the following options.
-+
-
-// start tabbed area
-+
-[role="tabbed-block"]
-====
-
-.No key manager configured
 --
-You can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
---
+*If no key manager is configured:*
 
-.External or Onboard key manager configured
---
-.. Enter the following query command to display the status of the authentication keys in your key manager.
-+
+You can safely shut down the impaired controller and proceed to the shutdown procedure.
+
+*If a key manager is configured (EKM or OKM):*
+
+Display the status of the authentication keys and complete the appropriate procedure based on your key manager type:
 
 `security key-manager key query`
 
-.. Check the output for the value in the `Restored` column for your key manager. 
-+
-
-This column indicates whether the authentication keys for your key manager (either EKM or OKM) have been successfully restored.
-
+Review the output and check the value in the `Restored` column. Complete the steps in the appropriate tab below.
 --
-
-====
-
-// end tabbed area
-
-[start=3]
-
-. Depending on whether your system is using the External Key Manager or Onboard Key Manager, select one of the following options.
+. Complete the appropriate procedure based on your key manager type:
 +
-
 // start tabbed area
-+
 [role="tabbed-block"]
 ====
 
-.External Key Manager
+.External Key Manager (EKM)
 --
-Depending on the output value displayed in the `Restored` column, follow the appropriate steps.
+Complete these steps based on the value in the `Restored` column.
 
-[cols="1a,2a" options="header"]
-|===
-| Output value in `Restored` column | Follow these steps...
-a|
-`true`
-a|
-You can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
-a|
-Anything other than `true`
-a|
-.. Restore the external key management authentication keys to all nodes in the cluster using the following command:
+*If all keys show `true` in the Restored column:*
+
+You can safely shut down the impaired controller and proceed to the shutdown procedure.
+
+*If any keys show a value other than `true` in the Restored column:*
+
+. Restore the external key management authentication keys to all nodes in the cluster:
 +
 `security key-manager external restore`
 +
-If the command fails, contact http://mysupport.netapp.com/[NetApp Support^].
-+
-.. Verify that the `Restored` column displays `true` for all authentication keys by entering the  `security key-manager key query` command.
-+
-If all the authentication keys are `true`, you can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
-|===
+If the command fails, contact NetApp Support.
 
+. Verify that all authentication keys are restored:
++
+`security key-manager key query`
++
+Confirm that the `Restored` column displays `true` for all authentication keys.
+
+. If all keys are restored, you can safely shut down the impaired controller and proceed to the shutdown procedure.
 
 --
 
-
-.Onboard Key Manager
+.Onboard Key Manager (OKM)
 --
+Complete these steps based on the value in the `Restored` column.
 
-Depending on the output value displayed in the `Restored` column, follow the appropriate steps.
+*If all keys show `true` in the Restored column:*
 
-[cols="1a,2a" options="header"]
-|===
-| Output value in `Restored` column | Follow these steps...
-a|
-`true`
-a|
-Manually back up the OKM information.
+. Back up the OKM information:
+.. Switch to advanced privilege mode:
++
+`set -priv advanced`
++
+Enter `y` when prompted to continue.
 
-.. Go to the advanced mode by entering `set -priv advanced` and then enter `Y` when prompted.
-.. Enter the following command to display the key management information: 
+.. Display the key management backup information:
 +
 `security key-manager onboard show-backup`
 
- .. Copy the contents of the backup information to a separate file or your log file. 
-
+.. Copy the backup information to a separate file or your log file.
 +
-You'll need it in disaster scenarios where you might need to manually recover OKM.
+You will need this backup information if you need to manually recover OKM during the replacement procedure.
 
- .. You can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
+.. Return to admin mode:
++
+`set -priv admin`
 
+. You can safely shut down the impaired controller and proceed to the shutdown procedure.
 
-a|
-Anything other than `true`
-a|
+*If any keys show a value other than `true` in the Restored column:*
 
-.. Enter the onboard security key-manager sync command:
+. Synchronize the onboard key manager:
 +
 `security key-manager onboard sync`
 +
-.. Enter the 32 character, alphanumeric onboard key management passphrase when prompted. 
+Enter the 32-character alphanumeric onboard key management passphrase when prompted.
 +
-If the passphrase cannot be provided, contact http://mysupport.netapp.com/[NetApp Support^].
+NOTE: This is the cluster-wide passphrase you created when you initially configured the Onboard Key Manager. If you do not have this passphrase, contact NetApp Support.
 
-.. Verify the `Restored` column displays `true` for all authentication keys: 
+. Verify all authentication keys are restored:
 +
 `security key-manager key query`
++
+Confirm that the `Restored` column displays `true` for all authentication keys and the `Key Manager` type shows `onboard`.
 
-.. Verify that the `Key Manager` type displays `onboard`, and then manually back up the OKM information.
+. Back up the OKM information:
+.. Switch to advanced privilege mode:
++
+`set -priv advanced`
++
+Enter `y` when prompted to continue.
 
-.. Enter the command to display the key management backup information:
+.. Display the key management backup information:
 +
 `security key-manager onboard show-backup`
 
-.. Copy the contents of the backup information to a separate file or your log file. 
+.. Copy the backup information to a separate file or your log file.
 +
-You'll need it in disaster scenarios where you might need to manually recover OKM.
+You will need this backup information if you need to manually recover OKM during the replacement procedure.
 
-.. You can safely shut down the impaired controller. Go to link:bootmedia-shutdown.html[shutdown the impaired controller].
-|===
+.. Return to admin mode:
++
+`set -priv admin`
+
+. You can safely shut down the impaired controller and proceed to the shutdown procedure.
 
 --
 ====
