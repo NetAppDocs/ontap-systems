@@ -405,36 +405,6 @@ Selection (1-11)? 1
 ....
 =====
 
-. Confirm that the controller's console displays the following message:
-+
-`Waiting for giveback...(Press Ctrl-C to abort wait)`
-+
-*On the partner controller:*
-
-. Giveback the impaired controller:
-+
-`storage failover giveback -fromnode local -only-cfo-aggregates true`
-+
-*On the impaired controller:*
-
-. Verify that the external key manager is configured:
-+
-`security key-manager external show -instance`
-+
-Review the output to confirm that the KMIP servers are configured correctly.
-
-. Verify that all keys are accessible:
-+
-`security key-manager key query -restored false`
-+
-The command should return no results. If any results appear, contact NetApp Support.
-+
-*On the partner controller:*
-
-. Giveback the impaired controller:
-+
-`storage failover giveback -fromnode local`
-
 . Restore automatic giveback if you disabled it:
 +
 `storage failover modify -node local -auto-giveback true`
