@@ -53,19 +53,18 @@ a|
 
 . Depending on whether a key manager is configured on your system, do one of the following:
 +
---
 *If no key manager is configured:*
-
++
 You can safely shut down the impaired controller and proceed to the shutdown procedure.
-
++
 *If a key manager is configured (EKM or OKM):*
-
-Display the status of the authentication keys and complete the appropriate procedure based on your key manager type:
-
++
+.. Enter the following query command to display the status of the authentication keys in your key manager:
++
 `security key-manager key query`
 
-Review the output and check the value in the `Restored` column. Complete the steps in the appropriate tab below.
---
+.. Review the output and check the value in the `Restored` column. This column indicates whether the authentication keys for your key manager (either EKM or OKM) have been successfully restored.
+
 . Complete the appropriate procedure based on your key manager type:
 +
 // start tabbed area
@@ -82,19 +81,19 @@ You can safely shut down the impaired controller and proceed to the shutdown pro
 
 *If any keys show a value other than `true` in the Restored column:*
 
-. Restore the external key management authentication keys to all nodes in the cluster:
+.. Restore the external key management authentication keys to all nodes in the cluster:
 +
 `security key-manager external restore`
 +
 If the command fails, contact NetApp Support.
 
-. Verify that all authentication keys are restored:
+.. Verify that all authentication keys are restored:
 +
 `security key-manager key query`
 +
 Confirm that the `Restored` column displays `true` for all authentication keys.
 
-. If all keys are restored, you can safely shut down the impaired controller and proceed to the shutdown procedure.
+.. If all keys are restored, you can safely shut down the impaired controller and proceed to the shutdown procedure.
 
 --
 
@@ -104,30 +103,30 @@ Complete these steps based on the value in the `Restored` column.
 
 *If all keys show `true` in the Restored column:*
 
-. Back up the OKM information:
-.. Switch to advanced privilege mode:
+.. Back up the OKM information:
+... Switch to advanced privilege mode:
 +
 `set -priv advanced`
 +
 Enter `y` when prompted to continue.
 
-.. Display the key management backup information:
+... Display the key management backup information:
 +
 `security key-manager onboard show-backup`
 
-.. Copy the backup information to a separate file or your log file.
+... Copy the backup information to a separate file or your log file.
 +
 You will need this backup information if you need to manually recover OKM during the replacement procedure.
 
-.. Return to admin mode:
+... Return to admin mode:
 +
 `set -priv admin`
 
-. You can safely shut down the impaired controller and proceed to the shutdown procedure.
+.. You can safely shut down the impaired controller and proceed to the shutdown procedure.
 
 *If any keys show a value other than `true` in the Restored column:*
 
-. Synchronize the onboard key manager:
+.. Synchronize the onboard key manager:
 +
 `security key-manager onboard sync`
 +
@@ -135,32 +134,32 @@ Enter the 32-character alphanumeric onboard key management passphrase when promp
 +
 NOTE: This is the cluster-wide passphrase you created when you initially configured the Onboard Key Manager. If you do not have this passphrase, contact NetApp Support.
 
-. Verify all authentication keys are restored:
+.. Verify all authentication keys are restored:
 +
 `security key-manager key query`
 +
 Confirm that the `Restored` column displays `true` for all authentication keys and the `Key Manager` type shows `onboard`.
 
-. Back up the OKM information:
-.. Switch to advanced privilege mode:
+.. Back up the OKM information:
+... Switch to advanced privilege mode:
 +
 `set -priv advanced`
 +
 Enter `y` when prompted to continue.
 
-.. Display the key management backup information:
+... Display the key management backup information:
 +
 `security key-manager onboard show-backup`
 
-.. Copy the backup information to a separate file or your log file.
+... Copy the backup information to a separate file or your log file.
 +
 You will need this backup information if you need to manually recover OKM during the replacement procedure.
 
-.. Return to admin mode:
+... Return to admin mode:
 +
 `set -priv admin`
 
-. You can safely shut down the impaired controller and proceed to the shutdown procedure.
+.. You can safely shut down the impaired controller and proceed to the shutdown procedure.
 
 --
 ====

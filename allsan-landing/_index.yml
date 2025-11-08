@@ -14,7 +14,7 @@ indexpage:
           url: https://www.netapp.com/pdf.html?item=/media/19466-SB-4081.pdf
         - title: ASA technical report
           url: https://www.netapp.com/pdf.html?item=/media/85671-tr-4968.pdf
-    - title: Install and setup A-Series systems
+    - title: Install and setup ASA systems
       links:
         - title: ASA A150
           url: ../asa150/install-setup.html
@@ -26,15 +26,7 @@ indexpage:
           url: ../asa800/install-setup.html
         - title: ASA A900
           url: ../asa900/install_setup.html
-    - title: Install and setup C-Series systems
-      links:
-        - title: ASA C250
-          url: ../asa-c250/install-setup.html
-        - title: ASA C400
-          url: ../asa-c400/install-setup.html
-        - title: ASA C800
-          url: ../asa-c800/install-setup.html
-    - title: Maintain A-Series systems
+    - title: Maintain ASA systems
       links:
         - title: ASA A150
           url: ../asa150/maintain-overview.html
@@ -46,14 +38,6 @@ indexpage:
           url: ../asa800/maintain-overview.html
         - title: ASA A900
           url: ../asa900/maintain-overview.html
-    - title: Maintain C-Series systems
-      links:
-        - title: ASA C250
-          url: ../asa-c250/maintain-overview.html
-        - title: ASA C400
-          url: ../asa-c400/maintain-overview.html
-        - title: ASA C800
-          url: ../asa-c800/maintain-overview.html
     - title: Supported switches
       links:
         - title: Broadcom-supported BES-53248

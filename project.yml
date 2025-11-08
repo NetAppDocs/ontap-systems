@@ -134,12 +134,6 @@ sidebar:
         - section: asa400
         - section: asa800
         - section: asa900
-      - title: C-Series systems
-        url: /allsan-c-series/index.html
-        entries:    
-        - section: asa-c250
-        - section: asa-c400
-        - section: asa-c800
     - title: ASA r2 systems
       url: /asa-r2/index.html
       entries:  
@@ -170,7 +164,10 @@ sidebar:
         - section: a300
         - section: a320
         - section: a700
-        - section: a700s
+        - section: a700s    
+        - section: asa-c250
+        - section: asa-c400
+        - section: asa-c800
         - section: c190
         - section: fas2600
         - section: fas500f
