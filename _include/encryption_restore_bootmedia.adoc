@@ -12,7 +12,7 @@ Restore the Onboard Key Manager (OKM) configuration from the ONTAP boot menu.
 
 Ensure you have the following information available:
 
-* Cluster-wide passphrase to https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html[enable onboard key management]
+* Cluster-wide passphrase entered while https://docs.netapp.com/us-en/ontap/encryption-at-rest/enable-onboard-key-management-96-later-nse-task.html[enabling onboard key management]
 * https://docs.netapp.com/us-en/ontap/encryption-at-rest/backup-key-management-information-manual-task.html[Backup information for the Onboard Key Manager]
 * Verification that you have the correct passphrase and backup data using the https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_verify_onboard_key_management_backup_and_cluster-wide_passphrase[How to verify onboard key management backup and cluster-wide passphrase] procedure
 
