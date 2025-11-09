@@ -22,19 +22,46 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
 .Option 1: Both controllers in the HA pair are online
 
 .. Check that any active RAID group is in a degraded state:
++
+`storage aggregate show -raidstatus !*normal*`
 
 +
-----
-storage aggregate show -raidstatus !*normal*
-----
-
 .. Check for missing drive issues for both the file system or spare drives:
 
 +
-----
-event log show -severity -node -message-name *disk.missing*
-----
-If any drives are missing, reseat the drives before proceeding.
+`event log show -severity -node -message-name *disk.missing*`
++
+
+
+.. Proceed based on whether any events happened:
+
+[options="header" cols="1,2"]
+|===
+a|If... | Then...
+a| 
+Any events happened...
+a|
+. Collect the AutoSupport data from both controllers.
+
++
+`system node autosupport invoke -node * -type all -message '<message_name>`
++
+
++
+NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the <message_name>.
+
+. Verify that the target disk is not part of an active file system.
+
++
+
+`run -node <node_name> - command sysconfig -r`
++
+NOTE: If the disk or any of its partitions are part of an aggregate, do not proceed. Contact NetApp Support for further assistance.
+
+. Remove the drive and reinsert it after 70 seconds, following the instructions in the link:https://docs.netapp.com/us-en/ontap-systems/fru-reference/drive-fru-links.html[Drive replacement procedures by platform family].
+a|No events happened...
+a| Go to the next step.
+|===
 
 --
 .Option 2: One controller in the HA pair is offline
@@ -43,39 +70,59 @@ If any drives are missing, reseat the drives before proceeding.
 .. On the healthy controller, check that any active RAID group is in a degraded state:
 
 +
-----
-storage aggregate show -raidstatus !*normal*
-----
+`storage aggregate show -raidstatus !*normal*`
 
 .. Check for missing drive issues for both the file system or spare drives:
 
 +
-----
 event log show -severity -node -message-name *disk.missing*
-----
++
+.. Proceed based on whether any events happened:
+
+[options="header" cols="1,2"]
+|===
+a|If... | Then...
+a| 
+Any events happened...
+a|
+. Collect the AutoSupport data from both controllers.
 
 +
-If any drives are missing, reseat the drives, otherwise proceed to the next step.
+
+`system node autosupport invoke -node * -type all -message '<message_name>'`
+
++
+NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the <message_name>.
+
+. Verify that the target disk is not part of an active file system.
+
++
+
+`run -node <node_name> - command sysconfig -r`
++
+NOTE: If the disk or any of its partitions are part of an aggregate, do not proceed. Contact NetApp Support for further assistance.
+
+. Remove the drive and reinsert it after 70 seconds, following the instructions in the link:https://docs.netapp.com/us-en/ontap-systems/fru-reference/drive-fru-links.html[Drive replacement procedures by platform family].
+a|No events happened...
+a| Go to the next step.
+|===
+
 
 .. Collect the output of the system node run local disk show command:
 
 +
-----
-system node run -node local -c disk show -w 
-----
+`system node run -node local -c disk show -w`
 
-.. Boot the offline controller into maintenance mode:
+
+.. Boot the offline controller into maintenance mode from the LOADER prompt.
 
 +
-----
-boot_ontap maint
-----
+`boot_ontap maint`
 
 .. Collect the output from the disk show command:
 +
-----
-disk show -w
-----
+
+`disk show -w`
 
 .. Compare the output with the healthy controller and recover any impacted drives.
 
@@ -84,40 +131,35 @@ disk show -w
 
 --
 
-.. Boot both controllers into maintenance mode.
+.. Boot both controllers into maintenance mode from the LOADER prompt.
 +
-----
-LOADER> boot_ontap maint
-----
+
+`boot_ontap maint`
 
 .. Determine the status of the drives of the RAID groups.
 +
-----
-aggr status -r 
-----
+
+ `aggr status -r`
+
 
 .. Identify the impacted drives:
 
 +
-----
-aggr status -f
-----
+
+`aggr status -f`
+
 
 .. Compare the disk show output of both controllers.
 
 +
-----
 disk show -w
-----
 
 If there are any failed drives or discrepancies, complete the following substeps.
 
 ... Collect the AutoSupport data from both controllers.
 
 +
-----
-system node autosupport invoke -node * -type all -message '<message_name>'
-----
+`system node autosupport invoke -node * -type all -message '<message_name>'`
 
 +
 NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the <message_name>.
@@ -125,9 +167,9 @@ NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) 
 ... Verify that the target disk is not part of an active file system.
 
 +
-----
-run -node <node_name> - command sysconfig -r
-----
+
+`run -node <node_name> - command sysconfig -r`
+
 +
 NOTE: If the disk or any of its partitions are part of an aggregate, do not proceed. Contact NetApp Support for further assistance.
 
