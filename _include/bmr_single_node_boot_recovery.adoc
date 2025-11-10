@@ -7,7 +7,6 @@
 *** `/cfcard/kmip/certs/client.crt`
 *** `/cfcard/kmip/certs/client.key`
 *** `/cfcard/kmip/certs/CA.pem`
-* If using EKM, verify your ONTAP version (9.16.0 requires different steps than 9.16.1 and later)
 
 
 .Steps
@@ -129,19 +128,6 @@ The system displays the following message and begins running BootMenu Option 11:
 key manager is configured.
 Entering Bootmenu Option 11...
 ....
-
-.. If your system is running ONTAP 9.16.0, complete the following steps to exit and reboot:
-+
-... Press `Ctrl-C` to exit BootMenu Option 11.
-... Press `Ctrl-C` to exit the EKM configuration process and return to the boot menu.
-... Select BootMenu Option 8.
-... Reboot the node.
-+ 
-If `AUTOBOOT` is set, the node reboots and uses the configuration files from the partner node. If `AUTOBOOT` is not set, enter the appropriate boot command.
-+
-... Reboot the node again so that EKM protects the boot media partition.
-+
-If your system is running ONTAP 9.16.1 or later, proceed to the next step.
 
 .. Enter the EKM configuration settings when prompted:
 +
