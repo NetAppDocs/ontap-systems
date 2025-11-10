@@ -23,15 +23,19 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
 
 .. Check that any active RAID group is in a degraded state:
 +
-`storage aggregate show -raidstatus !*normal*`
-
+[source,cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
 +
 .. Check for missing drive issues for both the file system or spare drives:
 
 +
-`event log show -severity -node -message-name *disk.missing*`
+[source,cli]
+----
+event log show -severity -node -message-name *disk.missing*
+----
 +
-
 
 .. Proceed based on whether any events happened:
 
@@ -44,11 +48,14 @@ a|
 . Collect the AutoSupport data from both controllers.
 
 +
-`system node autosupport invoke -node * -type all -message '<message_name>`
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
 +
 
 +
-NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the <message_name>.
+NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the message.
 
 . Verify that the target disk is not part of an active file system.
 
@@ -75,7 +82,7 @@ a| Go to the next step.
 .. Check for missing drive issues for both the file system or spare drives:
 
 +
-event log show -severity -node -message-name *disk.missing*
+`event log show -severity -node -message-name *disk.missing*`
 +
 .. Proceed based on whether any events happened:
 
@@ -92,7 +99,7 @@ a|
 `system node autosupport invoke -node * -type all -message '<message_name>'`
 
 +
-NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the <message_name>.
+NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the message.
 
 . Verify that the target disk is not part of an active file system.
 
@@ -130,7 +137,6 @@ a| Go to the next step.
 .Option 3: Both controllers of the HA pair are offline
 
 --
-
 .. Boot both controllers into maintenance mode from the LOADER prompt.
 +
 
@@ -139,8 +145,7 @@ a| Go to the next step.
 .. Determine the status of the drives of the RAID groups.
 +
 
- `aggr status -r`
-
+`aggr status -r`
 
 .. Identify the impacted drives:
 
@@ -162,7 +167,7 @@ If there are any failed drives or discrepancies, complete the following substeps
 `system node autosupport invoke -node * -type all -message '<message_name>'`
 
 +
-NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the <message_name>.
+NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the message.
 
 ... Verify that the target disk is not part of an active file system.
 
