@@ -52,6 +52,7 @@ NOTE: If the system cannot identify the key manager configuration, it displays a
 . Restore the key manager using the appropriate procedure for your configuration:
 +
 // start tabbed area
++
 [role="tabbed-block"]
 ====
 
@@ -117,11 +118,9 @@ Successfully recovered keymanager secrets.
 `security key-manager onboard sync`
 +
 Go to step 5 to reenable automatic giveback if it was disabled.
- 
 --
 
 .External Key Manager (EKM)
-
 --
 The system displays the following message and begins running BootMenu Option 11:
 ....
@@ -275,6 +274,7 @@ Go to step 5 to reenable automatic giveback if it was disabled.
 ====
 
 // end tabbed area
+
 [start=5]
 
 . If automatic giveback was disabled, reenable it: 
