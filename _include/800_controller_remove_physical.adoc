@@ -60,8 +60,10 @@ NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) 
 . Verify that the target disk is not part of an active file system.
 
 +
-
-`run -node <node_name> - command sysconfig -r`
+[source,cli]
+----
+run -node <node_name> - command sysconfig -r
+----
 +
 NOTE: If the disk or any of its partitions are part of an aggregate, do not proceed. Contact NetApp Support for further assistance.
 
@@ -77,13 +79,19 @@ a| Go to the next step.
 .. On the healthy controller, check that any active RAID group is in a degraded state:
 
 +
-`storage aggregate show -raidstatus !*normal*`
+[source,cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
 
 .. Check for missing drive issues for both the file system or spare drives:
 
 +
-`event log show -severity -node -message-name *disk.missing*`
-+
+[source,cli]
+----
+event log show -severity -node -message-name *disk.missing*
+----
+
 .. Proceed based on whether any events happened:
 
 [options="header" cols="1,2"]
@@ -95,17 +103,21 @@ a|
 . Collect the AutoSupport data from both controllers.
 
 +
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
 
-`system node autosupport invoke -node * -type all -message '<message_name>'`
 
-+
 NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the message.
 
 . Verify that the target disk is not part of an active file system.
 
 +
-
-`run -node <node_name> - command sysconfig -r`
+[source,cli]
+----
+run -node <node_name> - command sysconfig -r
+----
 +
 NOTE: If the disk or any of its partitions are part of an aggregate, do not proceed. Contact NetApp Support for further assistance.
 
@@ -118,18 +130,25 @@ a| Go to the next step.
 .. Collect the output of the system node run local disk show command:
 
 +
-`system node run -node local -c disk show -w`
-
+[source,cli]
+----
+system node run -node local -c disk show -w
+----
 
 .. Boot the offline controller into maintenance mode from the LOADER prompt.
 
 +
-`boot_ontap maint`
+[source,cli]
+----
+boot_ontap maint
+----
 
 .. Collect the output from the disk show command:
 +
-
-`disk show -w`
+[source,cli]
+----
+disk show -w
+----
 
 .. Compare the output with the healthy controller and recover any impacted drives.
 
@@ -139,41 +158,55 @@ a| Go to the next step.
 --
 .. Boot both controllers into maintenance mode from the LOADER prompt.
 +
-
-`boot_ontap maint`
+[source,cli]
+----
+boot_ontap maint
+----
 
 .. Determine the status of the drives of the RAID groups.
 +
 
-`aggr status -r`
+[source,cli]
+----
+aggr status -r
+----
 
 .. Identify the impacted drives:
 
 +
-
-`aggr status -f`
-
+[source,cli]
+----
+aggr status -f
+----
++
 
 .. Compare the disk show output of both controllers.
 
 +
+[source,cli]
+----
 disk show -w
-
+----
++
 If there are any failed drives or discrepancies, complete the following substeps.
 
 ... Collect the AutoSupport data from both controllers.
 
 +
-`system node autosupport invoke -node * -type all -message '<message_name>'`
-
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
 +
 NOTE: If you're working with NetApp Support, use your Field Support Order (FSO) number as the message.
 
 ... Verify that the target disk is not part of an active file system.
 
 +
-
-`run -node <node_name> - command sysconfig -r`
+[source,cli]
+----
+run -node <node_name> - command sysconfig -r
+----
 
 +
 NOTE: If the disk or any of its partitions are part of an aggregate, do not proceed. Contact NetApp Support for further assistance.
