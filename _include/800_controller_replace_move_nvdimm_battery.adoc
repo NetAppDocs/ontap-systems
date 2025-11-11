@@ -1,0 +1,31 @@
+
+.Steps
+
+
+. Open the air duct cover and locate the NVDIMM battery in the riser.
++
+image::../media/drw_a800_nvdimm_battery_replace.png[Replace the NVDIMM battery]
++
+
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+Air duct riser
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+NVDIMM battery plug
+a|
+image:../media/icon_round_3.png[Callout number 3]
+a|
+NVDIMM battery pack
+|===
+*Attention:* The NVDIMM battery control board LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
+
+. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
+. Grasp the battery and lift the battery out of the air duct and controller module.
+. Move the battery pack to the replacement controller module and then install it in the NVDIMM air duct:
+ .. Insert the battery pack into the slot and press firmly down on the battery pack to make sure that it is locked into place.
+ .. Plug the battery plug into the riser socket and make sure that the plug locks into place.
