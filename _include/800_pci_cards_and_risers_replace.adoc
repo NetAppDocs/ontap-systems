@@ -1,6 +1,4 @@
 
-Replace a PCIe card by removing the cabling and any QSFPs and SFPs from the ports on the PCIe cards in the target riser, removing the riser from the controller module, removing and replacing the PCIe card, reinstalling the riser and any QSFPs and SFPs onto the ports, and recable the ports.
-
 .Steps
 
 . Determine if the card you are replacing is from Riser 1 or if it is from Riser 2 or 3.
