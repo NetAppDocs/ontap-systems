@@ -29,13 +29,13 @@ NVRAM attention LED
 
 . Disconnect power from the controller:
 +
-* For AC power supplies, unplug the power cords from the power supplies.
+* For AC power supplies, disconnect the power cords from the power supplies.
 * For DC power supplies, disconnect the power block from the power supplies.
 
 . Remove the System Management module:
 +
 .. Remove any cables connected to the System Management module. Label the cables to identify their correct ports for reinstallation.
-.. Rotate the cable management tray down by pulling the buttons on both sides of the cable management tray.
+.. Rotate the cable management arm down by pulling the buttons on both sides of the cable management arm.
 .. Depress the system management cam button.
 +
 The cam lever moves away from the chassis.
@@ -78,7 +78,7 @@ Boot media
 .. Gently slide the module into the chassis until the cam latch begins to engage.
 .. Rotate the cam latch all the way up to lock the module in place.
 .. Reconnect the cables to the System Management module using the labels you created during removal.
-.. Rotate the cable management tray up to the closed position.
+.. Rotate the cable management arm up to the closed position.
 
 . Reconnect power to the controller:
 +
