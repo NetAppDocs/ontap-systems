@@ -3,7 +3,7 @@
 
 * Ensure your console is connected to the impaired controller.
 * Verify you have a USB flash drive with the recovery image.
-* Determine if your system uses encryption (you will need to know this in step 3).
+* Determine if your system uses encryption. You will need to select the appropriate option in step 3 based on whether encryption is enabled.
 
 .Steps
 
@@ -11,9 +11,9 @@
 +
 `boot_recovery`
 +
-The image is downloaded from the USB flash drive.
+The recovery image is downloaded from the USB flash drive.
 
-. When prompted, either enter the name of the image or accept the default image displayed inside the brackets on your screen.
+. When prompted, enter the name of the image or press *Enter* to accept the default image displayed in brackets.
 
 . Restore the var file system using the procedure for your ONTAP version:
 +
@@ -22,37 +22,33 @@ The image is downloaded from the USB flash drive.
 
 .ONTAP 9.16.0 or earlier
 --
-*On the impaired controller:*
+Complete the following steps on the impaired controller and partner controller:
 
-.. Press `Y` when you see `Do you want to restore the backup configuration now?`
-+
-.. If prompted, press `Y` to overwrite _/etc/ssh/ssh_host_ecdsa_key_.
+.. *On the impaired controller:* Press `Y` when you see `Do you want to restore the backup configuration now?`
 
-+
-*On the partner controller:*
-.. Set the impaired controller to advanced privilege level:
+.. *On the impaired controller:* If prompted, press `Y` to overwrite _/etc/ssh/ssh_host_ecdsa_key_.
+
+.. *On the partner controller:* Set the impaired controller to advanced privilege level:
 +
 `set -privilege advanced`
 
-.. Run the restore backup command:
+.. *On the partner controller:* Run the restore backup command:
 +
 `system node restore-backup -node local -target-address _impaired_node_IP_address_`
 +
 NOTE: If you see any message other than a successful restore, contact NetApp Support.
 
-.. Return the partner controller to admin level:
+.. *On the partner controller:* Return to admin level:
 +
 `set -privilege admin`
-+
-*On the impaired controller:*
 
-.. Press `Y` when you see `Was the restore backup procedure successful?`
+.. *On the impaired controller:* Press `Y` when you see `Was the restore backup procedure successful?`
 
-.. Press `Y` when you see `...would you like to use this restored copy now?`
+.. *On the impaired controller:* Press `Y` when you see `...would you like to use this restored copy now?`
 
-.. Press `Y` when prompted to reboot the impaired controller, then press `Ctrl-C` when you see the Boot Menu.
+.. *On the impaired controller:* Press `Y` when prompted to reboot, then press `Ctrl-C` when you see the Boot Menu.
 
-.. Do one of the following:
+.. *On the impaired controller:* Do one of the following:
 +
 * If the system does not use encryption, select _Option 1 Normal Boot_ from the Boot Menu.
 +
@@ -62,7 +58,7 @@ NOTE: If you see any message other than a successful restore, contact NetApp Sup
 .ONTAP 9.16.1 or later
 
 --
-*On the impaired controller:*
+Complete the following steps on the impaired controller:
 
 .. Press `Y` when prompted to restore the backup configuration. 
 +
@@ -76,9 +72,11 @@ After the restore procedure is successful, this message displays: `syncflash_par
 
 .. Press `Y` when prompted to reboot again, then press `Ctrl-C` when you see the Boot Menu.
 
-.. If the system does not use encryption, select _Option 1 Normal Boot_ from the Boot Menu.
+.. Do one of the following:
 +
-If the system uses encryption, go to link:bootmedia-encryption-restore.html[Restore encryption].
+* If the system does not use encryption, select _Option 1 Normal Boot_ from the Boot Menu.
++
+* If the system uses encryption, go to link:bootmedia-encryption-restore.html[Restore encryption].
 
 --
 
@@ -86,7 +84,7 @@ If the system uses encryption, go to link:bootmedia-encryption-restore.html[Rest
 
 . Connect the console cable to the partner controller.
 
-. Give back the controller:
+. Return the controller to normal operation by giving back its storage:
 +
 `storage failover giveback -fromnode local`
 

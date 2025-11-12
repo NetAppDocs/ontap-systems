@@ -11,6 +11,8 @@ summary: To ensure data security on your AFF A70 or AFF A90 storage system, you 
 [.lead]
 To ensure data security on your AFF A70 or AFF A90 storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption (NVE), and before you shut down the controller check if the key manager is active. 
 
+If your system is running in ONTAP 9.17.1 and later, use the link:bootmedia-replace-workflow-bmr.html[automatic boot recovery procedure].
+
 == Step 1: Check NVE support and download the correct ONTAP image
 
 Determine whether your ONTAP version supports NetApp Volume Encryption (NVE) so you can download the correct ONTAP image for the boot media replacement.
