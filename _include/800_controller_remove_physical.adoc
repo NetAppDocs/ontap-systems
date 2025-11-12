@@ -31,7 +31,7 @@ storage aggregate show -raidstatus !*normal*
 +
 [source,cli]
 ----
-event log show -severity -node -message-name *disk.missing*
+event log show -severity *-node * -message-name *disk.missing*
 ----
 +
 
@@ -87,7 +87,7 @@ storage aggregate show -raidstatus !*normal*
 +
 [source,cli]
 ----
-event log show -severity -node -message-name *disk.missing*
+event log show -severity *-node * -message-name *disk.missing*
 ----
 
 .. Proceed based on whether any events happened:
