@@ -4,9 +4,42 @@ sidebar: sidebar
 keywords: aff c800, move hardware components, replace the chassis
 summary: "Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
 ---
-= Move and replace hardware - AFF C800
+= Replace the chassis - AFF C800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/800_chassis_replace_move_hardware.adoc[]
+
+Replace the chassis in your AFF C800 system when a hardware failure requires it. The replacement process involves removing the controllers, moving the drives to the replacement chassis, removing the impaired chassis, installing the replacement chassis, and reinstalling the chassis components. 
+
+== Step 1: Remove the controller modules from the old chassis
+
+Remove the controller modules from the old chassis.
+
+include::../_include/800_chassis_replace_remove_controllers.adoc[]
+
+== Step 2: Move drives to the new chassis
+
+Move the drives from the old chassis to the new chassis.
+
+include::../_include/800_chassis_replace_move_drives.adoc[]
+
+== Step 3: Replace a chassis from within the equipment rack or system cabinet
+
+Replace the impaired chassis in the equipment rack or system cabinet with the new chassis.
+
+include::../_include/800_chassis_replace_install_new_chassis.adoc[]
+
+== Step 4: Install the controller modules into the new chassis
+
+After you install the controller modules into the new chassis, you need to boot it.
+
+For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
+
+include::../_include/800_chassis_replace_install_controllers.adoc[]
+
+
+
+== What's next?
+
+After you have replaced the impaired chassis and reinstalled the components, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]
