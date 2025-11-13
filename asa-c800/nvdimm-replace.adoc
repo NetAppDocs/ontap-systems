@@ -9,4 +9,37 @@ summary: "You must replace the NVDIMM in the controller module when your system 
 :imagesdir: ../media/
 
 [.lead]
+Replace the NVDIMM in your ASA C800 system when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic.
+
+.Before you begin
+
+* Make sure you have the replacement NVDIMM that you received from NetApp and is compatible with your ASA C800 system.
+* Make sure all other components in the storage system are functioning properly; if not, contact NetApp Support.
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller.
+
+include::../_include/shutdown_most_frus.adoc[]
+
+== Step 2: Remove the controller module
+
+You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
+
+include::../_include/800_controller_remove_physical.adoc[]
+
+== Step 3: Replace the NVDIMM
+
+Locate the NVDIMM in the controller module using the NVDIMM map label on top of the air duct, and then replace it.
+
 include::../_include/800_nvdimm_replace.adoc[]
+
+== Step 4: Reinstall the controller module and booting the system
+
+Reinstall the controller module and reboot it.
+
+include::../_include/800_controller_install_step_physical.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

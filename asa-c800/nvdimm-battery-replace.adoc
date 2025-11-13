@@ -3,11 +3,39 @@ permalink: asa-c800/nvdimm-battery-replace.html
 sidebar: sidebar
 keywords: asa c800, replace the nvdimm battery
 summary: "To replace the NVDIMM battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module."
-
 ---
 = Replace the NVDIMM battery - ASA C800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+
+Replace the NV battery in your ASA C800 system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
+
+== Step 1: Shutdown the impaired controller
+
+Shut down or take over the impaired controller.
+
+include::../_include/shutdown_most_frus.adoc[]
+
+== Step 2: Remove the controller module
+
+You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
+
+include::../_include/800_controller_remove_physical.adoc[]
+
+== Step 3: Replace the NVDIMM battery
+
+Replace the NVDIMM battery by removing the failed battery from the controller module and installing the replacement battery into the controller module.
+
 include::../_include/800_nvdimm_battery_replace.adoc[]
+
+== Step 4: Reinstall the controller module
+
+Reinstall the controller module and reboot it.
+
+include::../_include/800_controller_install_step_physical.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
