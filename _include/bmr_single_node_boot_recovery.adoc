@@ -56,13 +56,13 @@ Encryption is not installed on the system. Complete the following steps:
 +
 `storage failover giveback -ofnode _impaired_node_name_`
 
-.. Go to step 5 to enable automatic giveback if it was disabled.
+.. Go to <<reenable-auto-giveback,re-enabling automatic giveback>> if it was disabled.
 
 a|
 
 `key manager is configured.` 
 a|
-Go to step 4 to restore the appropriate key manager.
+Go to <<select-key-manager,selecting the appropriate key manager restoration process>>.
 
 The node accesses the boot menu and runs:
 
@@ -71,6 +71,7 @@ The node accesses the boot menu and runs:
 
 |===
 
+[[select-key-manager]]
 . Select the appropriate key manager restoration process.
 
 +
@@ -359,6 +360,7 @@ LOADER-B>
 
 [start=5]
 
+[[reenable-auto-giveback]]
 . If automatic giveback was disabled, reenable it: 
 +
 `storage failover modify -node local -auto-giveback true`
@@ -366,3 +368,5 @@ LOADER-B>
 . If AutoSupport is enabled, restore automatic case creation: 
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+//2025-11-17 ontap-systems-internal/issues/1391
