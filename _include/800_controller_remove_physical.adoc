@@ -98,6 +98,13 @@ disk show -w
 +
 NOTE: If the drives are file system drives, do not proceed. Contact NetApp Support for further assistance.
 
+.. Halt the impaired controller to the LOADER prompt.
+
++
+[source,cli]
+----
+halt
+----
 
 . Remove the power cable retainers, then unplug the cables from the power supplies.
 
