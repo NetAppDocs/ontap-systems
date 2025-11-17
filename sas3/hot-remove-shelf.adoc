@@ -113,7 +113,7 @@ NOTE: A disk shelf has three location LEDs: one on the operator display panel an
 +
 This includes controller-to-shelf cables and shelf-to-shelf cables for all disk shelves in the stack you are removing.
 
- .. Go to step 9.
+ .. Skip ahead to reenabling automatic assignment if needed (several steps below).
 . If you are removing one or more disk shelves from a stack (but keeping the stack), recable the path A (IOM A) stack connections to bypass the disk shelves you are removing by completing the applicable set of substeps:
 +
 If you are removing more than one disk shelf in the stack, complete the applicable set of substeps one disk shelf at a time.
