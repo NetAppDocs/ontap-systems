@@ -26,7 +26,7 @@ NOTE: When you see _Do you want to disable auto-giveback?_, enter `y`.
 +
 `system ha interconnect link off -node healthy-node -link 1`
 +
-NOTE: If you are not running ONTAP version 9.17.1, skip the above step and go to step 3.
+NOTE: If you are not running ONTAP version 9.17.1, skip the above step and continue to the next step.
 
 . Take the impaired controller to the LOADER prompt:
 +

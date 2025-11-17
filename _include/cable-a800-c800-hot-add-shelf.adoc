@@ -39,7 +39,7 @@ NOTE: These substeps assume you are beginning the cabling by cabling shelf port 
  .. Cable NSM A port e0b to controller B slot 3 port b (e3b).
  .. Cable NSM B port e0a to controller B slot 5 port a (e5a).
  .. Cable NSM B port e0b to controller A slot 3 port b (e3b).
- .. If you are hot-adding a second shelf, complete the "`Shelf 2`" substeps; otherwise, go to step 3.
+ .. If you are hot-adding a second shelf, complete the "`Shelf 2`" substeps; otherwise, go to the next step.
 
 a|
 Shelf 2
@@ -50,7 +50,7 @@ NOTE: These substeps assume you are beginning the cabling by cabling shelf port 
  .. Cable NSM A port e0b to controller B slot 5 port b (e5b).
  .. Cable NSM B port e0a to controller B slot 3 port a (e3a).
  .. Cable NSM B port e0b to controller A slot 5 port b (e5b).
- .. Go to step 3.
+ .. Go to the next step.
 
 +
 |===

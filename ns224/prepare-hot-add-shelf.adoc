@@ -65,7 +65,7 @@ When non-dedicated ports are not configured for storage use, the command output 
 
 . If the non-dedicated ports are configured for storage use, you are done with this procedure.
 +
-Otherwise, you need to configure the ports by completing steps 4 through 7.
+Otherwise, you need to configure the ports by completing the following steps.
 +
 . Configure the non-dedicated ports for storage use, on one of the controllers:
 +
@@ -85,7 +85,7 @@ a|
 |===
 
 
-. Repeat step 4 for the second controller.
+. Repeat the previous step for the second controller.
 
 . Verify that the non-dedicated ports on both controllers are configured for storage use: `storage port show`
 +
