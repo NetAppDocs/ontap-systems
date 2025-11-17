@@ -153,3 +153,4 @@ You can enter the command on either controller module.
 If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `network` in the `Mode` column.
 +
 If your HA pair is running ONTAP 9.7, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `disabled` in the `State` column.
+//2025-11-17 ontap-systems-internal/issues/1391
