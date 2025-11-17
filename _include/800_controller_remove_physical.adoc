@@ -13,7 +13,7 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
 +
 . Check the controller drives based on the system status:
 
-.. On the healthy controller, check that any active RAID group is in a degraded state:
+.. On the healthy controller, check that any active RAID group is in a degraded state and/or failed state:
 
 +
 [source,cli]
@@ -26,18 +26,18 @@ storage aggregate show -raidstatus !*normal*
 +
 [source,cli]
 ----
-event log show -severity *-node * -message-name *disk.missing*
+event log show -severity * -node * -message-name *disk.missing*
 ----
 
 +
-.. Proceed based on whether any events happened:
+.. Continue if any disk failures or missing drive events happened:
 
 +
 [options="header" cols="1,2"]
 |===
 a|If... | Then...
 a| 
-Any events happened...
+Any events related to a drive or drives gone missing happened...
 a|
 . Collect the AutoSupport data from both controllers.
 
@@ -53,12 +53,20 @@ system node autosupport invoke -node * -type all -message '<message_name>'
 +
 NOTE: If the disk or any of its partitions are part of an aggregate and not a spare, do not proceed. Contact NetApp Support for further assistance.
 
+. Halt the impaired controller to the LOADER prompt.
+
++
+[source,cli]
+----
+halt
+----
+
 a|No events happened...
 a| Go to the next step.
 |===
 
 +
-.. Collect the output of the system node run local disk show command:
+.. Run the `system node run local disk show`  command and save the output:
 
 +
 [source,cli]
@@ -76,7 +84,7 @@ boot_ontap maint
 ----
 
 +
-.. Collect the output from the disk show command:
+.. Get the output from the `disk show`  command:
 
 +
 [source,cli]
@@ -88,10 +96,12 @@ disk show -w
 .. Compare the output with the healthy controller and recover any impacted drives.
 
 +
-NOTE: If the drives are file system drives, do not proceed. Contact NetApp Support for further assistance.+
+NOTE: If the drives are file system drives, do not proceed. Contact NetApp Support for further assistance.
 
-. Release the power cable retainers, and then unplug the cables from the power supplies.
-. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected.
+
+. Remove the power cable retainers, then unplug the cables from the power supplies.
+
+. Loosen the hook and loop strap on the cable management device. Unplug the system cables and SFP/QSFP modules (if needed) from the controller module. Note each cable's location.
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
 
@@ -100,7 +110,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a800_pcm_remove.png[Releasing the controller module]
+image::../media/drw_a800_pcm_remove.png[Removing the controller module]
 +
 
 [cols="1,4"]
@@ -117,4 +127,4 @@ Locking pin
 
 . Slide the controller module out of the chassis and place it on a stable, flat surface.
 +
-Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+Support the bottom of the controller module while sliding it out of the chassis.
