@@ -1,70 +1,97 @@
 
+.Before you begin
+
+* Ensure your console is connected to the impaired controller.
+* Verify you have a USB flash drive with the recovery image.
+* Determine if your system uses encryption. You will need to select the appropriate option in step 3 based on whether encryption is enabled.
+
 .Steps
 
-. From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
+. From the LOADER prompt on the impaired controller, boot the recovery image from the USB flash drive:
 +
-The image is downloaded from the USB flash drive.
-
-. When prompted, either enter the name of the image or accept the default image displayed inside the brackets on your screen.
-. Restore the var file system:
-
+`boot_recovery`
 +
+The recovery image is downloaded from the USB flash drive.
 
+. When prompted, enter the name of the image or press *Enter* to accept the default image displayed in brackets.
+
+. Restore the var file system using the procedure for your ONTAP version:
++
 [role="tabbed-block"]
 ====
 
-.Option 1: ONTAP 9.16.0 or earlier
+.ONTAP 9.16.0 or earlier
 --
+Complete the following steps on the impaired controller and partner controller:
 
-.. On the impaired controller, press `Y` when you see `Do you want to restore the backup configuration now?` 
+.. *On the impaired controller:* Press `Y` when you see `Do you want to restore the backup configuration now?`
 
-.. If prompted on the impaired controller, press `Y` to overwrite _/etc/ssh/ssh_host_ecdsa_key_. 
+.. *On the impaired controller:* If prompted, press `Y` to overwrite _/etc/ssh/ssh_host_ecdsa_key_.
 
-.. On the healthy partner controller, set the impaired controller to advanced privilege level: `set -privilege advanced`.
-
-.. On the healthy partner controller, run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address`.
-
+.. *On the partner controller:* Set the impaired controller to advanced privilege level:
 +
-*NOTE:*  If you see any message other than a successful restore, contact https://support.netapp.com[NetApp Support].
+`set -privilege advanced`
 
-.. On the healthy partner controller, return the impaired controller to admin level: `set -privilege admin`.
-
-.. On the impaired controller, press `Y` when you see `Was the restore backup procedure successful?`.
-
-.. On the impaired controller, press `Y` when you see `...would you like to use this restored copy now?`. 
-
-.. On the impaired controller, press `Y` when prompted to reboot the impaired controller and press `ctrl-c` for the Boot Menu.
-
-.. If the system does not use encryption, select _Option 1 Normal Boot._, otherwise go to link:bootmedia-encryption-restore.html[Restore encryption].
---
-
-.Option 2: ONTAP 9.16.1 or later
-
---
-
-.. On the impaired controller, press `Y` when prompted to restore the backup configuration. 
+.. *On the partner controller:* Run the restore backup command:
 +
-After restore procedure is successful, this message will be seen on the console - `syncflash_partner: Restore from partner complete`.
+`system node restore-backup -node local -target-address _impaired_node_IP_address_`
++
+NOTE: If you see any message other than a successful restore, contact NetApp Support.
 
-.. On the impaired controller, press `Y` when prompted to confirm if the restore backup was successful.
-.. On the impaired controller, press `Y` when prompted to use the restored configuration.
-.. On the impaired controller, press `Y` when prompted to reboot the node.
+.. *On the partner controller:* Return to admin level:
++
+`set -privilege admin`
 
-.. On the impaired controller, press `Y` when prompted to reboot the impaired controller and press `ctrl-c` for the Boot Menu.
+.. *On the impaired controller:* Press `Y` when you see `Was the restore backup procedure successful?`
 
-.. If the system does not use encryption, select _Option 1 Normal Boot._, otherwise go to link:bootmedia-encryption-restore.html[Restore encryption].
+.. *On the impaired controller:* Press `Y` when you see `...would you like to use this restored copy now?`
+
+.. *On the impaired controller:* Press `Y` when prompted to reboot, then press `Ctrl-C` when you see the Boot Menu.
+
+.. *On the impaired controller:* Do one of the following:
++
+* If the system does not use encryption, select _Option 1 Normal Boot_ from the Boot Menu.
++
+* If the system uses encryption, go to link:bootmedia-encryption-restore.html[Restore encryption].
+--
+
+.ONTAP 9.16.1 or later
+
+--
+Complete the following steps on the impaired controller:
+
+.. Press `Y` when prompted to restore the backup configuration. 
++
+After the restore procedure is successful, this message displays: `syncflash_partner: Restore from partner complete`
+
+.. Press `Y` when prompted to confirm that the restore backup was successful.
+
+.. Press `Y` when prompted to use the restored configuration.
+
+.. Press `Y` when prompted to reboot the node.
+
+.. Press `Y` when prompted to reboot again, then press `Ctrl-C` when you see the Boot Menu.
+
+.. Do one of the following:
++
+* If the system does not use encryption, select _Option 1 Normal Boot_ from the Boot Menu.
++
+* If the system uses encryption, go to link:bootmedia-encryption-restore.html[Restore encryption].
 
 --
 
 ====
 
-[start=4]
-.  Connect the console cable to the partner controller.
+. Connect the console cable to the partner controller.
 
-.  Give back the controller using the `storage failover giveback -fromnode local` command.
-
-.  Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
-
-. If AutoSupport is enabled, restore/unsuppress automatic case creation by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
+. Return the controller to normal operation by giving back its storage:
 +
-*NOTE:* If the process fails, contact https://support.netapp.com[NetApp Support].
+`storage failover giveback -fromnode local`
+
+. If you disabled automatic giveback, reenable it:
++
+`storage failover modify -node local -auto-giveback true`
+
+. If AutoSupport is enabled, restore automatic case creation:
++
+`system node autosupport invoke -node * -type all -message MAINT=END`

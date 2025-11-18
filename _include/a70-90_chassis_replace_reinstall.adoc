@@ -1,0 +1,41 @@
+
+.Steps
+. Remove the impaired chassis:
+.. Remove the screws from the chassis mount points.
+.. Using two people or a lift, slide the impaired chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
+
+. Install the replacement chassis:
+
+.. Using two people or a lift, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
+.. Slide the chassis all the way into the equipment rack or system cabinet.
+.. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
+
+. Beginning with the bottom controller module, install the controller modules in the replacement chassis:
+
+.. Align the end of the controller module with the opening in the chassis, and then gently push the controller all the way into the chassis.
+.. Rotate the locking latches upward into the locked position.
+.. If you have not already done so, reinstall the cable management device and recable the controller.
++
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them.
++
+Make sure that the cables are connected referencing the cable labels.  
+
+. Reinstall the drives into their corresponding drive bays in the front of the chassis.
+
+
+. Install all four of the PSUs:
+
+.. Using both hands, support and align the edges of the PSU with the opening in the controller module.
+.. Gently push the PSU into the controller module until the locking tab clicks into place.
++
+The power supplies will only properly engage with the internal connector and lock in place one way.
++
+NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the PSU into the system.
+
+. Reconnect the PSU power cables to all four of the PSUs.
+ .. Secure the power cable to the PSU using the power cable retainer.
++
+If you have DC power supplies, reconnect the power block to the power supplies after the controller module is fully seated in the chassis and secure the power cable to the PSU with the thumbscrews.
+
++
+The controller modules begin to boot as soon as PSUs are installed and power is restored.
