@@ -9,11 +9,11 @@ summary: Prepare to replace the impaired chassis in your ASA A70 or ASA A90 syst
 :imagesdir: ../media/
 
 [.lead]
-Prepare to replace the impaired chassis in your  ASA A70 or  ASA A90 system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller modules.
+Prepare to replace the impaired chassis in your ASA A70 or  ASA A90 system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller modules.
 
 
 include::../_include/a70-90_chassis_replace_prepare.adoc[]
 
 .What's next?
 
-After you’ve prepared to replace your ASA A70 or ASA A90 chassis hardware, you need to link:chassis-replace-shutdown.html[shut down the controllers].
+After preparing to replace the ASA A70 or ASA A90 chassis, link:chassis-replace-shutdown.html[shut down the controllers].

@@ -1,0 +1,64 @@
+
+.Steps
+. Check the that amber NVRAM status LED located in slot 4/5 on the back of each controller module is off. Look for the NV icon.
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
++
+
+[cols="1,4"]
+
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM attention LED
+|===
+
+* If the NVRAM LED is off, go to the next step.
+* If the NVRAM LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact http://mysupport.netapp.com/[NetApp Support Site^] for assistance.
+
+. Remove the controller modules:
+
+.. Press down on both of the locking latches on the controller, and then rotate both latches downward at the same time.
++
+The controller module moves slightly out of the chassis.
++
+image::../media/drw_a70-90_pcm_remove_replace_ieops-1365.svg[Controller remove graphic]
++
+
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+Locking latch
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+Locking pin
+|===
+
+.. Slide the controller module out of the chassis by the locking latches, and place it on a flat, stable surface.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+.. Repeat these steps for the second controller module.
+
+. Remove the drives:
+.. Gently remove the bezel from the front of the system.
+.. Press the release button at the top of the drive carrier face below the LEDs.
+
+ .. Pull the cam handle to its fully open position to unseat the drive from the midplane, and then gently slide the drive out of the chassis.
++
+The drive should disengage from the chassis, allowing it to slide free of the chassis.
++
+NOTE: Drives are fragile. Always use two hands to support the drive weight when removing a drive to prevent damage to them.
+
+
+.. Keep track of which drive bay each drive was in and set the drive aside on a static-free cart or table.
+
+.. Repeat this step for the remaining drives in the chassis.
