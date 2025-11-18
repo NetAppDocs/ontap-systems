@@ -53,7 +53,7 @@ system node autosupport invoke -node * -type all -message '<message_name>'
 +
 NOTE: If the disk or any of its partitions are part of an aggregate and not a spare, do not proceed. Contact NetApp Support for further assistance.
 
-. Halt the impaired controller to the LOADER prompt.
+.. Halt the impaired controller to the LOADER prompt.
 
 +
 [source,cli]
