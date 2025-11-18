@@ -11,6 +11,8 @@ summary: After installing the new boot media device in your AFF C80 system, you 
 [.lead]
 After installing the new boot media device in your AFF C80 system, you can boot the recovery image manually from a USB drive to restore the configuration from the partner node. 
 
+If your system is running in ONTAP 9.17.1 and later, use the link:bootmedia-replace-workflow-bmr.html[automatic boot recovery procedure].
+
 include::../_include/bootmedia_recovery_image_boot.adoc[]
 
 .What's next?

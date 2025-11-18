@@ -13,4 +13,14 @@ To ensure data security on your storage system, you need to verify the encryptio
 
 If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 
+== Step 1: Check NVE support and download the correct ONTAP image
+
+Determine whether your ONTAP version supports NetApp Volume Encryption (NVE) so you can download the correct ONTAP image for the boot media replacement.
+
 include::../_include/encryption_check_bootmedia.adoc[] 
+
+== Step 2: Verify key manager status and back up configuration
+
+Before shutting down the impaired controller, verify the key manager configuration and back up the necessary information.
+
+include::../_include/encryption_key_mgr_bootmedia.adoc[] 

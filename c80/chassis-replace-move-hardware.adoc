@@ -9,10 +9,26 @@ summary: Replace the chassis of your AFF C80 system when a hardware failure requ
 :imagesdir: ../media/
 
 [.lead]
-Replace the chassis of your AFF C80 system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components. 
+Replace the chassis in your AFF C80 system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components. 
 
-include::../_include/a70-90_chassis_replace_move_hardware.adoc[]
+
+== Step 1: Remove the PSUs and cables
+
+You need to remove all four power supply units (PSUs), two per controller, before removing the controller.  Removing them lightens the overall weight of each controller.
+include::../_include/a70-90_chassis_replace_move_psu.adoc[]
+
+== Step 2:  Remove the controller modules and drives
+
+Remove the controllers from the chassis and then remove the drives from the chassis.
+include::../_include/a70-90_chassis_replace_move_controllers.adoc[]
+
+== Step 3: Replace the chassis and install components
+
+Remove the impaired chassis, install the replacement chassis, and reinstall all components.
+
+include::../_include/a70-90_chassis_replace_reinstall.adoc[]
+
 
 .What's next?
 
-After you’ve replaced the impaired AFF C80 chassis and reinstalled the components into it, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]. 
+After replacing the impaired chassis and reinstalling the components, link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement].

@@ -11,4 +11,16 @@ summary: Reboot the controllers, verify system health, and return the failed par
 [.lead]
 Reboot the controllers, verify system health, and return the failed part to NetApp to complete the final step in the AFF C80 chassis replacement procedure.
 
+== Step 1: Boot the controllers and perform giveback
+Boot ONTAP on the controllers and perform controller giveback to return storage ownership.
+
 include::../_include/a70-90_chassis_replace_complete_system_restore_rma.adoc[]
+
+== Step 2: Verify storage system health
+
+After the controller giveback completes, verify system health using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor]. Address any issues found.
+
+
+== Step 3: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
