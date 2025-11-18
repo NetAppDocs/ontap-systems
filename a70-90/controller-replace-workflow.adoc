@@ -9,11 +9,11 @@ summary: Get started with replacing the controller in your AFF A70 or AFF A90 st
 :imagesdir: ../media/
 
 [.lead]
-Get started with replacing the controller in your AFF A70 or AFF A90 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller. 
+Replace the controller in your AFF A70 or AFF A90 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller. 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-replace-requirements.html[Review the requirements to replace the controller]
 [role="quick-margin-para"]
-To replace the controller module, you must meet certain requirements. 
+Review the controller replacement requirements, including system compatibility, required tools, ONTAP credentials, and component functionality verification.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:controller-replace-shutdown.html[Shut down the impaired controller]
 [role="quick-margin-para"]
@@ -21,9 +21,9 @@ Shut down or take over the impaired controller so that the healthy controller co
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-move-hardware.html[Replace the controller]
 [role="quick-margin-para"]
-Replacing the controller includes removing the impaired controller, moving the FRU components to the replacement controller module, and then installing the replacement controller module in the enclosure.
+Remove the impaired controller, move the FRU components to the replacement controller module, and install the replacement controller module in the enclosure.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration ]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration]
 [role="quick-margin-para"]
 Verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
 
@@ -33,4 +33,4 @@ Recable the controller and transfer the ownership of storage resources back to t
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:controller-replace-restore-system-rma.html[Complete controller replacement]
 [role="quick-margin-para"]
-Verify the LIfs, check cluster health, and return the failed part to NetApp.
+Verify the LIFs, check cluster health, and return the failed part to NetApp.
