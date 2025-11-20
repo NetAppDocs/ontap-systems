@@ -29,7 +29,7 @@ system node autosupport invoke -node * -type all -message '<message_name>'
 ----
 
 +
-.. [[check-missing-drives]]Check for missing drive issues for both the file system or spare drives:
+.. [[Check-missing-drives]]Check for missing drive issues for both the file system or spare drives:
 
 +
 [source,cli]
