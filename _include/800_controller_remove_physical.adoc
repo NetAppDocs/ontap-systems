@@ -18,8 +18,6 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
 [source,cli]
 ----
 cluster1::> storage aggregate show -raidstatus!*normal*
-
-There are no entries matching your query.
 ----
 
 +
@@ -29,12 +27,10 @@ There are no entries matching your query.
 [source,cli]
 ----
 cluster1::> event log show -severity*-node*-message-name*disk.missing*
-
-There are no entries matching your query.
 ----
 
 +
-.. If there are any error messages, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance, otherwise go to the next step.
+.. If either of the previous two commands returned results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance, otherwise go to the next step.
 +
 [source,cli]
 ----
