@@ -3,7 +3,6 @@
 .Steps
 
 . If you are not already grounded, properly ground yourself.
-+
 
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 +
@@ -13,12 +12,17 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
 +
 . Check the controller drives based on the system status:
 
-.. On the healthy controller, check that any active RAID group is in a degraded state and/or failed state:
+.. On the healthy controller, check that any active RAID group is in a degraded state, failed state, or both:
 
 +
 [source,cli]
 ----
-storage aggregate show -raidstatus !*normal*
+storage aggregate show -raidstatus!*normal*
+----
+
++
+----
+There are no entries matching your query.
 ----
 
 .. Check for missing drive issues for both the file system or spare drives:
@@ -26,84 +30,20 @@ storage aggregate show -raidstatus !*normal*
 +
 [source,cli]
 ----
-event log show -severity * -node * -message-name *disk.missing*
+event log show -severity*-node*-message-name*disk.missing*
 ----
 
 +
-.. Continue if any disk failures or missing drive events happened:
+----
+There are no entries matching your query.
+----
 
 +
-[options="header" cols="1,2"]
-|===
-a|If... | Then...
-a| 
-Any events related to a drive or drives gone missing happened...
-a|
-. Collect the AutoSupport data from both controllers.
-
+. If there are any error messages, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance, otherwise go to the next step.
 +
 [source,cli]
 ----
 system node autosupport invoke -node * -type all -message '<message_name>'
-----
-
-
-. Remove the drive and reinsert it after 70 seconds, following the instructions in the link:https://docs.netapp.com/us-en/ontap-systems/fru-reference/drive-fru-links.html[Drive replacement procedures by platform family].
-
-+
-NOTE: If the disk or any of its partitions are part of an aggregate and not a spare, do not proceed. Contact NetApp Support for further assistance.
-
-.. Halt the impaired controller to the LOADER prompt.
-
-+
-[source,cli]
-----
-halt
-----
-
-a|No events happened...
-a| Go to the next step.
-|===
-
-+
-.. Run the `system node run local disk show`  command and save the output:
-
-+
-[source,cli]
-----
-system node run -node local -c disk show -w
-----
-
-+
-.. Boot the offline controller into maintenance mode from the LOADER prompt.
-
-+
-[source,cli]
-----
-boot_ontap maint
-----
-
-+
-.. Get the output from the `disk show`  command:
-
-+
-[source,cli]
-----
-disk show -w
-----
-
-+
-.. Compare the output with the healthy controller and recover any impacted drives.
-
-+
-NOTE: If the drives are file system drives, do not proceed. Contact NetApp Support for further assistance.
-
-.. Halt the impaired controller to the LOADER prompt.
-
-+
-[source,cli]
-----
-halt
 ----
 
 . Remove the power cable retainers, then unplug the cables from the power supplies.
