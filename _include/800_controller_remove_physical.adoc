@@ -12,7 +12,7 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
 +
 . Check the controller drives based on the system status:
 
-.. On the healthy controller, check that any active RAID group is in a degraded state, failed state, or both:
+.. On the healthy controller, check if any active RAID group is in a degraded state, failed state, or both:
 
 +
 [source,cli]
