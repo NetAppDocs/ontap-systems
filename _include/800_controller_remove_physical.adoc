@@ -38,7 +38,7 @@ event log show -severity * -node * -message-name *disk.missing*
 ----
 
 + 
-- If the command returns `There are no entries matching your query.` continue to the next step. 
+- If the command returns `There are no entries matching your query.` continue to <<remove-power-cables,step 4>>. 
 - If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
 +
 [source,cli]
@@ -46,7 +46,7 @@ event log show -severity * -node * -message-name *disk.missing*
 system node autosupport invoke -node * -type all -message '<message_name>'
 ----
 
-. Remove the power cable retainers, then unplug the cables from the power supplies.
+. [[remove-power-cables]]Remove the power cable retainers, then unplug the cables from the power supplies.
 
 . Loosen the hook and loop strap on the cable management device. Unplug the system cables and SFP/QSFP modules (if needed) from the controller module. Note each cable's location.
 +
