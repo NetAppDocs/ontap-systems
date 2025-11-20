@@ -17,7 +17,7 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
 +
 [source,cli]
 ----
-cluster1::> storage aggregate show -raidstatus!*normal*
+storage aggregate show -raidstatus!*normal*
 ----
 
 +
@@ -26,7 +26,7 @@ cluster1::> storage aggregate show -raidstatus!*normal*
 +
 [source,cli]
 ----
-cluster1::> event log show -severity*-node*-message-name*disk.missing*
+event log show -severity*-node*-message-name*disk.missing*
 ----
 
 +
