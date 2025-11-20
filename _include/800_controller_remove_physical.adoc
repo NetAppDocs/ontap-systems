@@ -17,24 +17,19 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
 +
 [source,cli]
 ----
-storage aggregate show -raidstatus!*normal*
-----
+cluster1::> storage aggregate show -raidstatus!*normal*
 
-+
-----
 There are no entries matching your query.
 ----
 
++
 .. Check for missing drive issues for both the file system or spare drives:
 
 +
 [source,cli]
 ----
-event log show -severity*-node*-message-name*disk.missing*
-----
+cluster1::> event log show -severity*-node*-message-name*disk.missing*
 
-+
-----
 There are no entries matching your query.
 ----
 
