@@ -38,17 +38,18 @@ Encryption is not installed on the system.
 +
 `storage failover giveback -ofnode _impaired_node_name_`
 
-.. Go to step 6 to reenable automatic giveback if it was disabled.
+.. Go to <<reenable-auto-giveback,re-enabling automatic giveback>> if it was disabled.
 
 a|
 `key manager is configured.` 
 a|
-Encryption is installed. Go to step 4 to restore the key manager.
+Encryption is installed. Go to <<restore-key-manager,restoring the key manager>>.
 
 |===
 +
 NOTE: If the system cannot identify the key manager configuration, it displays an error message and prompts you to confirm whether key manager is configured and which type (onboard or external). Answer the prompts to proceed.
 
+[[restore-key-manager]]
 . Restore the key manager using the appropriate procedure for your configuration:
 +
 // start tabbed area
@@ -117,7 +118,7 @@ Successfully recovered keymanager secrets.
 +
 `security key-manager onboard sync`
 +
-Go to step 5 to reenable automatic giveback if it was disabled.
+Go to <<reenable-auto-giveback,re-enabling automatic giveback>> if it was disabled.
 --
 
 .External Key Manager (EKM)
@@ -268,7 +269,7 @@ LOADER-B>
 +
 `storage failover giveback -ofnode _impaired_node_name_`
 +
-Go to step 5 to reenable automatic giveback if it was disabled.
+Go to <<reenable-auto-giveback,re-enabling automatic giveback>> if it was disabled.
 
 --
 ====
@@ -277,6 +278,7 @@ Go to step 5 to reenable automatic giveback if it was disabled.
 
 [start=5]
 
+[[reenable-auto-giveback]]
 . If automatic giveback was disabled, reenable it: 
 +
 `storage failover modify -node local -auto-giveback true`
@@ -284,3 +286,5 @@ Go to step 5 to reenable automatic giveback if it was disabled.
 . If AutoSupport is enabled, restore automatic case creation: 
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+//2025-11-17 ontap-systems-internal/issues/1391
