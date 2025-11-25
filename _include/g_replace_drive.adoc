@@ -117,9 +117,9 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 +
 When the drive's activity LED is solid, it means that the drive has power. When the drive's activity LED is blinking, it means that the drive has power and I/O is in progress. If the drive firmware is automatically updating, the LED blinks.
 
-. If you are replacing another drive, repeat steps 4 through step 8.
+. If you are replacing another drive, repeat the preceding steps.
 . Reinstall the bezel on the front of the storage system.
-. If you disabled automatic drive assignment in step 1, manually assign drive ownership, and then reenable automatic drive assignment if needed:
+. If you disabled automatic drive assignment earlier in this procedure, manually assign drive ownership, and then reenable automatic drive assignment if needed:
 .. Display all unowned drives: 
 +
 `storage disk show -container-type unassigned`
@@ -142,4 +142,4 @@ You must reenable automatic drive assignment on both controllers.
 
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 +
-Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number or additional help with the replacement procedure.
+Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number or additional help with the replacement procedure.//2025-11-17 ontap-systems-internal/issues/1391

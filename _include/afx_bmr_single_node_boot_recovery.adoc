@@ -190,7 +190,7 @@ Entering Bootmenu Option 11...
 
 * If you see `kmip2_client: Successfully imported the keys from external key server: xxx.xxx.xxx.xxx:5696` in the output, the EKM configuration has been successfully restored. 
 +
-The process attempts to restore the appropriate files from the partner node and reboots the node. Go to step d.
+The process attempts to restore the appropriate files from the partner node and reboots the node. Continue to the next step.
 
 * If the key is not successfully restored, the system will halt and indicate that it could not restore the key. The error and warning messages are displayed. You must rerun the recovery process: 
 +
@@ -250,3 +250,4 @@ LOADER-B>
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
 
+//2025-11-17 ontap-systems-internal/issues/1391
