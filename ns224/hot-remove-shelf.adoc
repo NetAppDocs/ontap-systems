@@ -98,7 +98,7 @@ NOTE: A fully loaded NS224 shelf can weigh up to 66.78 lbs (30.29 kg) with NSM10
 +
 NOTE: If your system was shipped in a cabinet, you must first unscrew the two Phillips screws securing the shelf to the rack rails. The screws are located on the inside shelf walls of the bottom NSM. You should remove both NSMs to access the screws.
 
-. If you are removing more than one shelf, repeat steps 2 through 5.
+. If you are removing more than one shelf, repeat the preceding steps.
 +
 Otherwise, go to the next step.
 
@@ -153,3 +153,4 @@ You can enter the command on either controller module.
 If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `network` in the `Mode` column.
 +
 If your HA pair is running ONTAP 9.7, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `disabled` in the `State` column.
+//2025-11-17 ontap-systems-internal/issues/1391
