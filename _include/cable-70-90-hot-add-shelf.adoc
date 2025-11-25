@@ -47,7 +47,7 @@ a|
 .. Cable NSM A port e0b to controller B slot 8 port b (e8b).
 .. Cable NSM B port e0a to controller B slot 11 port a (e11a).
 .. Cable NSM B port e0b to controller A slot 8 port b (e8b).
-.. If you are hot-adding a second shelf, complete the "`Shelf 2`" substeps; otherwise, go to step 3.
+.. If you are hot-adding a second shelf, complete the "`Shelf 2`" substeps; otherwise, go to the next step.
 
 The following illustration shows cabling for one hot-added shelf
 using two RoCE-capable I/O modules in each controller module: 
@@ -61,7 +61,7 @@ a|
 .. Cable NSM A port e0b to controller B slot 11 port b (e11b).
 .. Cable NSM B port e0a to controller B slot 8 port a (e8a).
 .. Cable NSM B port e0b to controller A slot 11 port b (e11b).
-.. Go to step 3.
+.. Go to the next step.
 
 The following illustration shows cabling for two hot-added shelf 
 using two RoCE-capable I/O modules in each controller module: 
@@ -78,3 +78,4 @@ If any cabling errors are generated, follow the corrective actions provided.
 If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:complete-hot-add-shelf.html[Complete the hot-add].
 
 Otherwise, you are done with the hot-add shelf procedure.
+//2025-11-17 ontap-systems-internal/issues/1391

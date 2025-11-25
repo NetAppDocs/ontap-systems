@@ -113,7 +113,7 @@ NOTE: A disk shelf has three location LEDs: one on the operator display panel an
 +
 This includes controller-to-shelf cables and shelf-to-shelf cables for all disk shelves in the stack you are removing.
 
- .. Go to step 9.
+ .. Skip ahead to reenabling automatic assignment if needed (several steps below).
 . If you are removing one or more disk shelves from a stack (but keeping the stack), recable the path A (IOM A) stack connections to bypass the disk shelves you are removing by completing the applicable set of substeps:
 +
 If you are removing more than one disk shelf in the stack, complete the applicable set of substeps one disk shelf at a time.
@@ -246,3 +246,4 @@ CAUTION: Do not place hands on the drive boards exposed on the underside of the 
 ** Drives should be kept away from magnetic devices.
 +
 CAUTION: Magnetic fields can destroy all data on a drive and cause irreparable damage to the drive circuitry.
+//2025-11-17 ontap-systems-internal/issues/1391
