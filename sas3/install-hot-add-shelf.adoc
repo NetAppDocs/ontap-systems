@@ -214,7 +214,7 @@ NOTE: Firmware updates can take up to 30 minutes.
 +
 You need to manually assign disk ownership if disks in the stack are owned by both controllers in an HA pair.
 +
-You disable disk ownership automatic assignment before cabling the hot-added disk shelves and then later, in step 7, you reenable it after cabling the hot-added disk shelves.
+You disable disk ownership automatic assignment before cabling the hot-added disk shelves and then reenable it later in this procedure after cabling the hot-added disk shelves.
 
  .. Verify if disk ownership automatic assignment is enabled:``storage disk option show``
 +
@@ -226,7 +226,7 @@ If disk ownership automatic assignment is enabled, the output shows "`on`" (for 
 +
 You need to disable disk ownership automatic assignment on both controllers in an HA pair.
 
-. If you are hot-adding a stack of disk shelves directly to a controller, complete the following substeps; otherwise, go to step 3.
+. If you are hot-adding a stack of disk shelves directly to a controller, complete the following substeps; otherwise, go to the next step.
  .. If the stack you are hot-adding has more than one disk shelf, cable the shelf-to-shelf connections; otherwise, go to substep b.
 +
 [cols="2*",options="header"]
@@ -383,3 +383,4 @@ CAUTION: Do not place hands on the drive boards exposed on the underside of the 
 ** Drives should be kept away from magnetic devices.
 +
 CAUTION: Magnetic fields can destroy all data on a drive and cause irreparable damage to the drive circuitry.
+//2025-11-17 ontap-systems-internal/issues/1391

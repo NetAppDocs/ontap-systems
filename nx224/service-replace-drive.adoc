@@ -99,4 +99,5 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 +
 When the drive's activity LED is solid, it means that the drive has power. When the drive's activity LED is blinking, it means that the drive has power and I/O is in progress. If the drive firmware is automatically updating, the LED blinks.
 
-. If you are replacing another drive, repeat steps 3 through step 7.
+. If you are replacing another drive, repeat the preceding steps.
+//2025-11-17 ontap-systems-internal/issues/1391
