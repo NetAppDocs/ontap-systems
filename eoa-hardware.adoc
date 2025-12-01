@@ -19,12 +19,6 @@ For current unsupported hardware, see link:https://hwu.netapp.com[NetApp Hardwar
 |===
 | System| Support discontinued from...
 a|
-* ASA C250
-* ASA C400
-* ASA C800
-a|
-ONTAP 9.17.1
-a|
 * AFF A300
 * FAS8200
 a|
@@ -82,3 +76,5 @@ ONTAP 9.11.1
 * https://mysupport.netapp.com/site/info/cisco-ethernet-switch[Supported Cisco Ethernet Switches]
 * https://mysupport.netapp.com/site/info/netapp-cluster-switch[Supported NetApp Ethernet Switches]
 * https://mysupport.netapp.com/info/eoa/df_eoa_category_page.html?category=Platforms[End of Availability Platforms]
+
+// 2025-11-25 ontap-systems-internal/issues/1404
