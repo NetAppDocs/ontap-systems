@@ -47,7 +47,7 @@ event log show -severity * -node * -message-name *disk.missing*
 ----
 
 + 
-- If the command returns `There are no entries matching your query.` continue to <<remove-power-cables,go to the next step>>. 
+- If the command returns `There are no entries matching your query.` continue to <<Go-to-the-rear,go to the next step>>. 
 - If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
 +
 [source,cli]
@@ -55,7 +55,7 @@ event log show -severity * -node * -message-name *disk.missing*
 system node autosupport invoke -node * -type all -message '<message_name>'
 ----
 
-. Go to the rear of the chassis. 
+. [[Go-to-the-rear]]Go to the rear of the chassis. 
 
 
 . Unplug the controller's PSUs.

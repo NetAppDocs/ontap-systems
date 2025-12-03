@@ -38,7 +38,7 @@ event log show -severity * -node * -message-name *disk.missing*
 ----
 
 + 
-- If the command returns `There are no entries matching your query.` continue to <<remove-power-cables,go to the next step>>. 
+- If the command returns `There are no entries matching your query.` continue to <<Check-the-amber-NVRAM,go to the next step>>. 
 - If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
 +
 [source,cli]
@@ -47,7 +47,7 @@ system node autosupport invoke -node * -type all -message '<message_name>'
 ----
 
 
-. Check the amber NVRAM that status LED located in slot 4/5 on the back of the impaired controller module is off. Look for the NV icon.
+. [[Check-the-amber-NVRAM]]Check the amber NVRAM that status LED located in slot 4/5 on the back of the impaired controller module is off. Look for the NV icon.
 +
 image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
 +
