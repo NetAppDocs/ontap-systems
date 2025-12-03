@@ -9,7 +9,7 @@ summary: "To replace the chassis, you must shutdown the controllers."
 :imagesdir: ../media/
 
 [.lead]
-Shut down the controllers in your AFF A70 or AFF A90 storage system to prevent data loss and ensure system stability when replacing the chassis.
+Shut down the controllers in your AFF A800 storage system to prevent data loss and ensure system stability when replacing the chassis.
 
 include::../_include/shutdown_chassis.adoc[]
 .What's next?
