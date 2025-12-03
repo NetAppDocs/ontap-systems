@@ -71,6 +71,10 @@ entries:
    - title: Controller
      pdf-filename: AFF A800 Controller Module
      entries:
+        - title: Controller replacement workflow
+          url: /a800/controller-replace-workflow.html
+        - title: Review requirements
+          url: /a800/controller-replace-requirements.html
         - title: Overview
           url: /a800/controller-replace-overview.html
         - title: Shut down impaired controller
