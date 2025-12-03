@@ -56,14 +56,14 @@ entries:
    - title: Chassis
      pdf-filename: AFF A800 Chassis
      entries:
-        - title: Overview
+        - title: Chassis replacement workflow
           url: /a800/chassis-replace-workflow.html
-        - title: Shut down impaired controller
         - title: Review requirements
-          url: /a70-90/chassis-replace-requirements.html
+          url: /a800/chassis-replace-requirements.html
         - title: Prepare to replace
-          url: /a70-90/chassis-replace-prepare.html
-        - title: Shut down impaired controller
+          url: /a800/chassis-replace-prepare.html
+        - title: Shut down controllers controllers
+          url: /a800/controller-replace-shutdown.html
         - title: Replace chassis
           url: /a800/chassis-replace-move-hardware.html
         - title: Complete chassis replacement
