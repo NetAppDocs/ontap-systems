@@ -20,7 +20,7 @@ image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
 storage aggregate show -raidstatus !*normal*
 ----
 + 
-- If the command returns `There are no entries matching your query.` continue to <<Check-missing-drives, go to the next sub-step to check for missing drives>>. 
+- If the command returns `There are no entries matching your query.` continue to <<Check-missing-drives,go to the next sub-step to check for missing drives>>. 
 - If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
 +
 [source,cli]
@@ -38,7 +38,7 @@ event log show -severity * -node * -message-name *disk.missing*
 ----
 
 + 
-- If the command returns `There are no entries matching your query.` continue to <<remove-power-cables, go to the next step>>. 
+- If the command returns `There are no entries matching your query.` continue to <<remove-power-cables,go to the next step>>. 
 - If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
 +
 [source,cli]
