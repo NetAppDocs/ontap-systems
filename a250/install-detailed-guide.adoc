@@ -290,6 +290,8 @@ image:../media/drw_affa250_1shelf_cabling_b.png[Controller 2 cabling]
 
 Complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
 
+NOTE: For information about how to establish continuous connectivity of a controller console port for remote management, see Knowledge Base article, https://kb.netapp.com/on-prem/ontap/OHW/OHW-KBs/How_to_connect_an_ONTAP_controller_console_port_for_remote_management[How to connect an ONTAP controller console port for remote management].
+
 // start tabbed area
 
 [role="tabbed-block"]
@@ -387,3 +389,5 @@ NOTE: The format for the address is +https://x.x.x.x+.
 ====
 
 // end tabbed area
+
+// Dec 3, 2025: ontap-systems 405 https://github.com/NetAppDocs/ontap-systems/issues/405#issuecomment-3605370099
