@@ -9,4 +9,16 @@ summary: You must recable the storage and confirm disk reassignment.
 :imagesdir: ../media/
 
 [.lead]
+
+
+== Step 1: Recable the system
+
+include::../_include/recable_system_after_controller_rep.adoc[]
+
+== Step 2: Reassign disks
+
+If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. You must confirm the system ID change when you boot the _replacement_ controller and then verify that the change was implemented.
+
+This step only applies only to systems running ONTAP in an HA pair.
+
 include::../_include/800_controller_replace_recable_reassign_disks.adoc[]

@@ -1,8 +1,8 @@
-Verify the controller module's storage and network connections.
+Verify that the cabling is correct by using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor].
 
 .Steps
-. Verify that the cabling is correct by using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor].
-.. Download and install Config Advisor.
-.. Enter the information for the target system, and then click Collect Data.
-.. Click the Cabling tab, and then examine the output. Make sure that all disk shelves are displayed and all disks appear in the output, correcting any cabling issues you find.
-.. Check other cabling by clicking the appropriate tab, and then examining the output from Config Advisor.
+
+. Download and install Config Advisor.
+. Enter the information for the target system, and then click Collect Data.
+. Click the Cabling tab, and then examine the output. Make sure that all disk shelves are displayed and all disks appear in the output, correcting any cabling issues you find.
+. Check other cabling by clicking the appropriate tab, and then examining the output from Config Advisor.

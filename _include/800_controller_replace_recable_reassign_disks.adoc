@@ -1,14 +1,4 @@
-Continue the replacement procedure by recabling the storage and confirming disk reassignment.
-
-== Step 1: Recable the system
-
-include::../_include/recable_system_after_controller_rep.adoc[]
-
-== Step 2: Reassign disks
-
-If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. You must confirm the system ID change when you boot the _replacement_ controller and then verify that the change was implemented.
-
-This procedure applies only to systems running ONTAP in an HA pair.
+.Steps
 
 . If the _replacement_ controller is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
 . From the LOADER prompt on the _replacement_ controller, boot the controller, entering `y` if you are prompted to override the system ID due to a system ID mismatch:``boot_ontap``

@@ -9,7 +9,6 @@ summary: "Move the power supplies, hard drives, and controller module or modules
 :imagesdir: ../media/
 
 [.lead]
-
 Replace the chassis in your AFF A800 system when a hardware failure requires it. The replacement process involves removing the controllers, moving the drives to the replacement chassis, removing the impaired chassis, installing the replacement chassis, and reinstalling the chassis components. 
 
 == Step 1: Remove the controller modules from the old chassis
@@ -40,8 +39,8 @@ include::../_include/800_chassis_replace_install_controllers.adoc[]
 
 
 
-== What's next?
+.What's next?
 
-After you have replaced the impaired chassis and reinstalled the components, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]
+After you have replaced the impaired AFF A800 chassis and reinstalled the components, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]
 
 //2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
