@@ -70,10 +70,11 @@ You must turn off both power switches, wait the appropriate amount of time, and 
 This time allows ONTAP to properly delete the old shelf address and update the copy of the new shelf address.
 
 . Replace the left end cap.
-. Repeat steps 1 through 9 for each additional disk shelf.
+. Repeat the preceding steps for each additional disk shelf.
 . Verify that your system does not have duplicate shelf IDs.
 +
 When two or more disk shelves have the same ID, the system assigns the duplicate disk shelf a soft ID number equal to or greater than 100. You must change the soft ID (duplicate) number.
 
  .. Run Active IQ Config Advisor to check for duplicate shelf ID alerts or run the `storage shelf show -fields shelf-id` command to see a list of shelf IDs already in use including any duplicate IDs.
  .. If your system has any duplicate shelf IDs, change the duplicate shelf IDs by repeating this procedure.
+//2025-11-17 ontap-systems-internal/issues/1391
