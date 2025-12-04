@@ -9,7 +9,7 @@ summary: "Prior to shutting down the impaired controller and checking the status
 :imagesdir: ../media/
 
 [.lead]
-To ensure data security on your storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption (NVE), and before you shut down the controller check if the key manager is active. 
+To ensure data security on your ASA A800 storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption (NVE), and before you shut down the controller check if the key manager is active. 
 
 If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 
@@ -25,4 +25,6 @@ Before shutting down the impaired controller, verify the key manager configurati
 
 include::../_include/encryption_key_mgr_bootmedia.adoc[]
 
+.What's next?
+After checking the encryption key support and status on the boot media, you need to link:bootmedia-shutdown.html[shut down the controller].
 //2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
