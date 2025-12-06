@@ -1,6 +1,8 @@
 
 
-// New include specific to g-platform family because the slot 4 location for the cluster/HA I/O module is unique to g-platforms.
+// Dec 2025: 9.18.1: hot-swap support changes.
+
+// July 2025: New include specific to g-platform family because the slot 4 location for the cluster/HA I/O module is unique to g-platforms.
 
 
 Prepare the storage system and I/O module slot 4 so that it is safe to remove the failed cluster and HA I/O module:
@@ -12,6 +14,8 @@ Prepare the storage system and I/O module slot 4 so that it is safe to remove th
 . Unplug cabling from the failed cluster and HA I/O module.
 +
 Make sure to label the cables so that later in this procedure you can reconnect them to the same ports.
++
+NOTE: Wait three to five minutes after unplugging the cables to ensure any takeovers or failovers complete before continuing with this procedure.
 
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
 +
