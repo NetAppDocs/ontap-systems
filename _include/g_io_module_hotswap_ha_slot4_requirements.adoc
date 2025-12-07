@@ -2,9 +2,9 @@
 
 // New include specific to g-platform family because the requirements reference 9.17.1 and slot 4, which are unique to g-platforms.
 
-To use this procedure, make sure your storage system is running a version of ONTAP that supports I/O module hot swap and that your storage system meets all requirements for the version of ONTAP your storage system is running.
+To use this procedure, your storage system must be running a version of ONTAP that supports I/O module hot swap and your storage system must meet all requirements for the version of ONTAP your storage system is running.
 
-NOTE: If your storage system is not running one of the supported versions of ONTAP or does not meet all requirements for the version of ONTAP your storage system is running, you must use the link:io-module-replace.html[replace an I/O module procedure].
+NOTE: If your storage system is not running a supported version of ONTAP or does not meet all requirements for the version of ONTAP your storage system is running, you must use the link:io-module-replace.html[replace an I/O module procedure].
 
 Your storage system must be running a supported version of ONTAP: 9.17.1 or 9.18.1 and later and must meet all of the requirements for the version of ONTAP your storage system is running:
 
