@@ -16,6 +16,11 @@ All other components in the storage system must be functioning properly; if not,
 
 .About this task
 
+// * It is important to apply the commands to the correct controller when you are replacing a failed I/O module:
+
+// ** The _impaired controller_ is the controller on which you are replacing the I/O module and it is the controller that was taken over by the healthy controller.
+// ** The _healthy controller_ is the HA partner of the impaired controller and it is the controller that took over the impaired controller.
+
 If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 
 A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
