@@ -1,10 +1,10 @@
-// Jan 2026: updated for 9.18.1 support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
+// Jan 2026: updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 
 // New include specific to g-platform family because the requirements reference 9.17.1 and slot 4, which are unique to g-platforms.
 
-To use this procedure, your storage system must be running ONTAP 9.17.1 or 9.18.1 or later, and your storage system must meet all requirements for the version of ONTAP your storage system is running.
+To use this procedure, your storage system must be running ONTAP 9.17.1 or 9.18.1GA or later, and your storage system must meet all requirements for the version of ONTAP your storage system is running.
 
-NOTE: If your storage system is not running ONTAP 9.17.1 or 9.18.1 or later, or does not meet all requirements for the version of ONTAP your storage system is running, you must use the link:io-module-replace.html[replace an I/O module procedure].
+NOTE: If your storage system is not running ONTAP 9.17.1 or 9.18.1GA or later, or does not meet all requirements for the version of ONTAP your storage system is running, you must use the link:io-module-replace.html[replace an I/O module procedure].
 
 [role="tabbed-block"]
 ====
@@ -29,7 +29,7 @@ If you are not sure which controller has the failed I/O module, contact https://
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 --
-.ONTAP 9.18.1 or later
+.ONTAP 9.18.1GA or later
 --
 * You can hot-swap an Ethernet client I/O module but only if it does not have ports used for storage or used for MetroCluster, or DR? 
 +
