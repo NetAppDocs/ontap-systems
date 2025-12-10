@@ -19,7 +19,7 @@ To hot-swap an I/O module, ensure your storage system meets the ONTAP version re
 
 .About this task
 
-* Hot-swapping an I/O module means that you do not have to perform a manual takeover and giveback of the controller with the failed I/O module.
+* Hot-swapping an I/O module means that you do not have to perform a manual takeover and giveback of the target controller.
 
 * It is critical to apply the commands to the correct controller when you are hot-swapping a failed I/O module:
 
