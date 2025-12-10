@@ -19,9 +19,7 @@ To hot-swap an I/O module, ensure your storage system meets the ONTAP version re
 
 .About this task
 
-* Hot-swapping an I/O module means that you do not have to perform a manual takeover; the impaired controller (the controller with the failed I/O module) has automatically taken over the healthy controller.
-+
-When the impaired controller has taken over the healthy controller, the only way to recover without an outage is to hot-swap the module.
+* Hot-swapping an I/O module means that you do not have to perform a manual takeover and giveback of the controller with the failed I/O module.
 
 * It is critical to apply the commands to the correct controller when you are hot-swapping the cluster and HA I/O module:
 
@@ -43,7 +41,7 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 include::../_include/g_io_module_hotswap_requirements.adoc[]
 
 
-== Step 2: Prepare the storage system and I/O module slot 4
+== Step 2: Prepare the storage system and I/O module slot
 
 // Jan 2026: updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 
@@ -52,7 +50,7 @@ include::../_include/g_io_module_hotswap_requirements.adoc[]
 include::../_include/g_io_module_hotswap_prepare_slot.adoc[]
 
 
-== Step 3: Replace the failed cluster and HA I/O module
+== Step 3: Replace the failed I/O module
 
 // Jan 2026: updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 
@@ -61,7 +59,7 @@ include::../_include/g_io_module_hotswap_prepare_slot.adoc[]
 include::../_include/g_io_module_hotswap_swap_hardware.adoc[]
 
 
-== Step 4: Bring the replacement cluster and HA I/O module online
+== Step 4: Bring the replacement I/O module online
 
 // Jan 2026: updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 
