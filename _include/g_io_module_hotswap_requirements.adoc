@@ -21,7 +21,7 @@ Additionally, the cluster and HA I/O module must be replaced with an equivalent 
 
 * The controller with the failed cluster and HA I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occurred automatically if the I/O module is failed.
 +
-For two-node clusters, the storage system cannot discern which controller has the failed I/O module, so either controller might initiate the takeover. The cluster and HA I/O module hot-swap procedure is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller. Hot-swapping the module is the only way to recover without an outage.
+For two-node clusters, the storage system cannot discern which controller has the failed I/O module, so either controller might initiate the takeover. Hot swapping is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller. Hot-swapping the I/O module is the only way to recover without an outage.
 +
 You can verify that the impaired controller successfully took over the healthy controller by entering the `storage failover show` command.
 +
@@ -31,19 +31,17 @@ If you are not sure which controller has the failed I/O module, contact https://
 --
 .ONTAP 9.18.1GA or later
 --
-* You are hot-swapping a failed Ethernet client I/O module but only if it does not have ports used for storage or used for MetroCluster.
-+
-Additionally, the Ethernet client I/O module must be replaced with an equivalent I/O module. You cannot change the I/O module type.
+* You are hot-swapping one of the following types of I/O modules with an equivalent I/O module. You cannot change the I/O module type:
 
-* You are hot-swapping a failed cluster and HA I/O module in any supported slot.
-+
-Additionally, the cluster and HA I/O module must be replaced with an equivalent I/O module. You cannot change the I/O module type.
+** A failed Ethernet client I/O module but only if it does not have ports used for storage or used for MetroCluster.
+
+** A failed cluster and HA I/O module.
 
 * Your storage system (switchless or switched cluster configuration) can have any number of nodes supported for your storage system. (You are not required to have a two-node cluster.)
 +
-However, if your storage system is a two-node cluster, the controller with the failed cluster and HA I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occurred automatically if the I/O module is failed.
+However, if your storage system is a two-node cluster, the controller with the failed I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occurred automatically if the I/O module is failed.
 +
-For two-node clusters, the storage system cannot discern which controller has the failed I/O module, so either controller might initiate the takeover. The I/O module hot-swap procedure is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller.
+For a two-node cluster, the storage system cannot discern which controller has the failed I/O module, so either controller might initiate the takeover. Hot swapping in a two-node cluster is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller. Hot-swapping the I/O module is the only way to recover without an outage.
 +
 You can verify that the impaired controller successfully took over the healthy controller by entering the `storage failover show` command.
 +

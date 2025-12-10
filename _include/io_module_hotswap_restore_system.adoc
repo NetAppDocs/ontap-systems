@@ -3,6 +3,8 @@
 
 Restore your storage system to normal operation by giving back storage to the healthy controller, restoring automatic giveback, and reenabling AutoSupport automatic case creation.
 
+Even in 9.18.1GA and later, the automatic take over only happens in a two-mode cluster? Or is the 2-node cluster limitation and being in an automatic takeover state only applicable to 9.17.1 and 9.18.1RC; therefore, this section needs a tabbed option?
+
 
 .Steps
 
