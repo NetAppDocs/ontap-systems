@@ -21,10 +21,11 @@ To hot-swap an I/O module, ensure your storage system meets the ONTAP version re
 
 * Hot-swapping an I/O module means that you do not have to perform a manual takeover and giveback of the controller with the failed I/O module.
 
-* It is critical to apply the commands to the correct controller when you are hot-swapping the cluster and HA I/O module:
+* It is critical to apply the commands to the correct controller when you are hot-swapping a failed I/O module:
 
-** The _impaired controller_ is the controller on which you are hot-swapping the cluster and HA I/O module and it is the controller that has taken over the healthy controller.
-** The _healthy controller_ is the HA partner of the impaired controller and it is the controller that was taken over by the impaired controller.
+** The _impaired controller_ is the controller on which you are hot-swapping the failed I/O module and if your storage system is running ONTAP 9.17.1 or 9.18.1RC, it is the controller that has taken over the healthy controller.
+
+** The _healthy controller_ is the HA partner of the impaired controller and if your storage system is running ONTAP 9.17.1 or 9.18.1RC, it is the controller that was taken over by the impaired controller.
 
 * If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
