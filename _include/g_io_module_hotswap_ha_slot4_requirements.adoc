@@ -2,16 +2,16 @@
 
 // New include specific to g-platform family because the requirements reference 9.17.1 and slot 4, which are unique to g-platforms.
 
-To use this procedure, your storage system must be running ONTAP 9.17.1 or 9.18.1GA or later, and your storage system must meet all requirements for the version of ONTAP your storage system is running.
+To use this procedure, your storage system must be running ONTAP 9.17.1 or later, and your storage system must meet all requirements for the version of ONTAP your storage system is running.
 
-NOTE: If your storage system is not running ONTAP 9.17.1 or 9.18.1GA or later, or does not meet all requirements for the version of ONTAP your storage system is running, you must use the link:io-module-replace.html[replace an I/O module procedure].
+NOTE: If your storage system is not running ONTAP 9.17.1 or later, or does not meet all requirements for the version of ONTAP your storage system is running, you must use the link:io-module-replace.html[replace an I/O module procedure].
 
 [role="tabbed-block"]
 ====
 
-.ONTAP 9.17.1
+.ONTAP 9.17.1 or 9.18.1RC
 --
-* You can hot-swap a cluster and HA I/O module in slot 4. 
+* You can hot-swap a failed cluster and HA I/O module in slot 4. 
 +
 Additionally, the cluster and HA I/O module must be replaced with an equivalent I/O module. You cannot change the I/O module type.
 
@@ -31,11 +31,11 @@ If you are not sure which controller has the failed I/O module, contact https://
 --
 .ONTAP 9.18.1GA or later
 --
-* You can hot-swap an Ethernet client I/O module but only if it does not have ports used for storage or used for MetroCluster, or DR? 
+* You can hot-swap a failed Ethernet client I/O module but only if it does not have ports used for storage or used for MetroCluster.
 +
 Additionally, the Ethernet client I/O module must be replaced with an equivalent I/O module. You cannot change the I/O module type.
 
-* You can hot-swap a cluster and HA I/O module in slot 4. 
+* You can hot-swap a failed cluster and HA I/O module in slot 4.
 +
 Additionally, the cluster and HA I/O module must be replaced with an equivalent I/O module. You cannot change the I/O module type.
 

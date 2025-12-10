@@ -14,7 +14,14 @@ Prepare the storage system and I/O module slot so that it is safe to remove the 
 +
 Make sure to label the cables so that later in this procedure you can reconnect them to the same ports.
 +
-NOTE: Wait three to five minutes after unplugging the cables to ensure any takeovers or failovers complete before continuing with this procedure.
+[NOTE]
+====
+Wait three to five minutes after unplugging the cables to ensure any takeovers or failovers complete before continuing with this procedure.
+
+In certain instances, if the links of the I/O module being replaced are still up and they contain the last functioning cluster port, then unplugging the cables triggers a takeover.  
+
+// We expect this procedure to be used when the card is failed, but we need a note just in case.
+====
 
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
 +
