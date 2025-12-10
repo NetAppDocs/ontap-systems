@@ -2,34 +2,18 @@
 
 // New include specific to g-platform family because the requirements reference 9.17.1 and slot 4, which are unique to g-platforms.
 
-To use this procedure, your storage system must be running ONTAP 9.17.1 or 9.18.1 and later, and your storage system must meet all requirements for the version of ONTAP your storage system is running.
+To use this procedure, your storage system must be running ONTAP 9.17.1 or 9.18.1 or later, and your storage system must meet all requirements for the version of ONTAP your storage system is running.
 
-NOTE: If your storage system is not running ONTAP 9.17.1 or 9.18.1 and later, or does not meet all requirements for the version of ONTAP your storage system is running, you must use the link:io-module-replace.html[replace an I/O module procedure].
+NOTE: If your storage system is not running ONTAP 9.17.1 or 9.18.1 or later, or does not meet all requirements for the version of ONTAP your storage system is running, you must use the link:io-module-replace.html[replace an I/O module procedure].
 
 [role="tabbed-block"]
 ====
 
-.ONTAP 9.18.1 or later
---
-* You can hot-swap an Ethernet I/O module but only if it does not have ports used for storage or used for MetroCluster, or DR? 
-+
-Additionally, the Ethernet I/O module must be replaced with an equivalent I/O module. You cannot change the I/O module type.
-
-* You can hot-swap a cluster and HA I/O module in slot 4. 
-+
-Additionally, the cluster and HA I/O module must be replaced with an equivalent cluster and HA I/O module. You cannot change the I/O module type.
-
-* Your storage system (switchless or switched cluster configuration) can have any number of nodes supported for your storage system. (You are not required to have a two-node cluster.)
-+
-If your storage system is a two-node cluster (I assume the issue about if it is a 2-mode cluster and system not knowing which controller has the failed io is no longer an issue??? Read the Confluence page.)
-
-* All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
---
 .ONTAP 9.17.1
 --
 * You can hot-swap a cluster and HA I/O module in slot 4. 
 +
-Additionally, the cluster and HA I/O module must be replaced with an equivalent cluster and HA I/O module. You cannot change the I/O module type.
+Additionally, the cluster and HA I/O module must be replaced with an equivalent I/O module. You cannot change the I/O module type.
 
 * Your storage system configuration must have only one cluster and HA I/O module located in slot 4, not two cluster and HA I/O modules.
 
@@ -45,6 +29,29 @@ If you are not sure which controller has the failed I/O module, contact https://
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 --
+.ONTAP 9.18.1 or later
+--
+* You can hot-swap an Ethernet client I/O module but only if it does not have ports used for storage or used for MetroCluster, or DR? 
++
+Additionally, the Ethernet client I/O module must be replaced with an equivalent I/O module. You cannot change the I/O module type.
+
+* You can hot-swap a cluster and HA I/O module in slot 4. 
++
+Additionally, the cluster and HA I/O module must be replaced with an equivalent I/O module. You cannot change the I/O module type.
+
+* Your storage system (switchless or switched cluster configuration) can have any number of nodes supported for your storage system. (You are not required to have a two-node cluster.)
++
+However, if your storage system is a two-node cluster, the controller with the failed cluster and HA I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occurred automatically if the I/O module is failed.
++
+For two-node clusters, the storage system cannot discern which controller has the failed I/O module, so either controller might initiate the takeover. The I/O module hot-swap procedure is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller.
++
+You can verify that the impaired controller successfully took over the healthy controller by entering the `storage failover show` command.
++
+If you are not sure which controller has the failed I/O module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].
+
+* All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+--
+
 
 ====
 

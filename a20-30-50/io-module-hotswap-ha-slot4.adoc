@@ -8,7 +8,7 @@ summary: You can hot-swap an I/O module used for cluster and HA traffic or an I/
 :icons: font
 :imagesdir: ../media/
 
-// Jan 2026: updated for 9.18.1 support changes.
+// Jan 2026: updated for 9.18.1 support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 
 // Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family on 9.17.1 and later.
 
