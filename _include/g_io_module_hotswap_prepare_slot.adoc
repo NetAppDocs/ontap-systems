@@ -18,7 +18,9 @@ Make sure to label the cables so that later in this procedure you can reconnect 
 ====
 Wait three to five minutes after unplugging the cables to ensure any takeovers or failovers complete before continuing with this procedure.
 
-The I/O module should be failed; however, if the links of the I/O module being replaced are still up and they contain the last functioning cluster port, unplugging the cables triggers a takeover.  
+The I/O module should be failed; however, if the links are still up and they contain the last functioning cluster port, unplugging the cables triggers a takeover.  
+
+Do we want the customer to do anything to verify a takeover is not in progress/completed?
 
 //We expect this procedure to be used when the card is failed, but we need a note just in case. A failover in ONTAP refers to the process of transferring the storage of a node to another node, typically due to a failure or to prepare for a takeover. A takeover is the process of a node taking over the storage of its partner node. While a failover can be a precursor to a takeover, they are not the same. A failover is a temporary measure to ensure data availability, whereas a takeover is a permanent transfer of storage management responsibilities.
 ====

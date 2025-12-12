@@ -42,14 +42,15 @@ Do we want customers to do something to verify the card they are replacing does 
 ** A failed cluster and HA I/O module. Your storage system can have any number of cluster and HA I/O modules supported for your configuration. 
 
 * Your storage system can be in any takeover state.
-
-Does this mean that the impaired controller has taken over the healthy controller, or the healthy controller has taken over the impaired controller?
-
++
+Does this mean that either of the following states is valid: the impaired controller has taken over the healthy controller or the healthy controller has taken over the impaired controller?
++
 Does this mean that a takeover state is still necessary and if yes, would it be automatic or does the customer need to manually initiate a takeover of the impaired controller?
-
++
 // In 9.18.1, (these check will be removed and) hot plug will be supported regardless of the cluster size or takeover state.  Nodes losing RDB Quorum during the hot plug operation will be handled by the feature.
 
-* Your storage system (switchless or switched cluster configuration) can have any number of nodes supported for your storage system. (You are not required to have a two-node cluster.)
+* Your storage system (switchless or switched cluster configuration) can have any number of nodes supported for your storage system. 
+// (You are not required to have a two-node cluster.)
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 --
