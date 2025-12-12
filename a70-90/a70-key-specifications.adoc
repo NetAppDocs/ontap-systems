@@ -1,7 +1,7 @@
 ---
 permalink: a70-90/a70-key-specifications.html
 sidebar: sidebar
-keywords: AFF A70 specifications, AFF A70 specs, AFF A70 capacity, AFF A70 memory, AFF A70 I/O, AFF A70 compliance
+keywords: AFF A70 specifications, AFF A70 specs, AFF A70 capacity, AFF A70 memory, AFF A70 I/O, AFF A70 compliance  
 summary: Key specifications for AFF A70
 ---
 = Key specifications for AFF A70
@@ -20,7 +20,9 @@ The following are select specifications for the AFF A70 storage system in a sing
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 18
 * Minimum ONTAP Version: ONTAP 9.15.1RC2
+
 == Scaleout maximums
+
 * Type: NAS; HA Pairs: 12; Raw Capacity: 79.3 PB / 70.4 PiB; Max Memory: 3072 GB
 * Type: SAN; HA Pairs: 6; Raw Capacity: 39.7 PB / 35.2 PiB; Max Memory: 1536 GB
 * Type: HA Pair; Raw Capacity: 6.6 PB / 5.9 PiB; Max Memory: 256.0000
@@ -46,6 +48,7 @@ No onboard I/O data.
 * Protocol: USB 600 Mbps; Ports: 2
 
 == Storage networking supported
+
 * CIFS
 * FC
 * iSCSI
@@ -55,7 +58,7 @@ No onboard I/O data.
 * NFS v4.2
 * NFSv3/RDMA
 * NFSv4/RDMA
-* NVMe/FC 
+* NVMe/FC
 * NVMe/TCP
 * S3
 * S3 with NAS
@@ -67,26 +70,19 @@ No onboard I/O data.
 * SMB 3.1.1
 
 == System environment specifications
+
 * Typical Power: 6938 BTU/hr
 * Worst-case Power: 9089 BTU/hr
-* Weight: 118.0 lb
-53.5 kg
+* Weight: 118.0 lb<br/>53.5 kg
 * Height: 4U
-* Width: 19” IEC rack-compliant (17.6” 44.7 cm)
-* Depth: 34.5”
-(36.6” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C
-50°F to 
-95°F) at
-<= 3048m
-<= 10000 ft) elevation;8% to 80%
-relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
-10% to 95%  relative humidity, noncondensing, in original container
-* Acoustic Noise: Declared sound power (LwAd): 8.6
-Sound pressure (LpAm) (bystander positions): 71.6 dB
+* Width: 19" IEC rack-compliant (17.6" 44.7 cm)
+* Depth: 34.5"<br/>(36.6" with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation;8% to 80% relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.6;<br/>Sound pressure (LpAm) (bystander positions): 71.6 dB
 
 == Compliance
+
 * Certifications EMC/EMI: AMCA,
 FCC,
 ICES,
@@ -133,8 +129,10 @@ IEC60950-1,
 IS 13252(part 1)
 
 == High availability
+
 * Ethernet based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
 * SAS in-band management over SAS connections for external shelves
-[//] 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-12-12 ontap-systems-internal/issues/1421
