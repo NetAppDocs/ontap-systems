@@ -73,7 +73,7 @@ NVMe/TCP;
 * Height: 8U
 * Width: 19” IEC rack-compliant (17.7” 45.0 cm)
 * Depth: 28.8”<br/>(36.8” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
+* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation;8% to 80% relative humidity, noncondensing
 * Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 7.4;<br/>Sound pressure (LpAm) (bystander positions): 65.0 dB
 
@@ -128,4 +128,5 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 SAS in-band management over SAS connections;
-[//] 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-12-12 ontap-systems-internal/issues/1421

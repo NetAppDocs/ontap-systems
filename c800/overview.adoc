@@ -91,7 +91,7 @@ SMB 3.1.1;
 * Height: 4U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
 * Depth: 34.5”<br/>(36.6” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 5°C to 40°C<br/>41°F to <br/>104°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 90%<br/>relative humidity, noncondensing
+* Operating Temp/Altitude/Humidity: 5°C to 40°C (41°F to 104°F) at up to 3048m (10000 ft) elevation;8% to 90% relative humidity, noncondensing
 * Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 8.0;<br/>Sound pressure (LpAm) (bystander positions): 62.8 dB
 
@@ -146,4 +146,5 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
  
- [//] 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-12-12 ontap-systems-internal/issues/1421

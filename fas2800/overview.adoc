@@ -9,7 +9,7 @@ summary: Key specifications for the FAS2800 platform group
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the FAS2820 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+The following are select specifications for the FAS2820 storage system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] for the complete specifications for this storage system.
 
 == Key specifications for FAS2820
 
@@ -20,6 +20,7 @@ The following are select specifications for the FAS2820 storage system in a sing
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 4
 * Minimum ONTAP Version: ONTAP 9.13.1RC1
+
 == Scaleout maximums
 * Type: NAS; HA Pairs: 12; Raw Capacity: 38.0 PB / 33.8 PiB; Max Memory: 1536 GB
 * Type: SAN; HA Pairs: 6; Raw Capacity: 19.0 PB / 16.9 PiB; Max Memory: 768 GB
@@ -70,12 +71,7 @@ The following are select specifications for the FAS2820 storage system in a sing
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
 * Depth: 20.0”
 (25.1” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C
-50°F to 
-95°F) at
-<= 3048m
-<= 10000 ft) elevation;8% to 80%
-relative humidity, noncondensing
+* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation;8% to 80% relative humidity, noncondensing
 * Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
 10% to 95%  relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 7.8
@@ -132,4 +128,5 @@ IS 13252(part 1)
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
 * SAS in-band management over SAS connections for external shelves
-[//] 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-12-12 ontap-systems-internal/issues/1421
