@@ -5,6 +5,16 @@
 
 Bring the replacement I/O module online, verify the module ports initialized successfully, verify the slot is powered on, and then verify the module is online and recognized.
 
+.About this task
+After the I/O module is replaced and the ports  are returned to a healthy state, LIFs are reverted to the replaced I/O module.
+
+Does the customer have to do anything to revert the LIFs or is this automatic?
+
+//Once the card is replaced, the ports should return to a healthy state and LIFs can be reverted to the replaced I/O card.
+
+//* If you are replacing an additional I/O module, you must confirm the I/O module you just replaced was successful. You must wait for an EMS message indicating the ports were initialized successfully before removing an I/O module from a different I/O slot. Otherwise, the CLI will return an error indicating there is already an I/O module replacement in progress.  
+
+
 .Steps
 
 . Bring the replacement I/O module online:
@@ -31,6 +41,7 @@ The module has been successfully powered on, initialized and placed into service
 
 . Verify that each port on the I/O module successfully initialized:
 +
+.. Enter the following command from the console of the impaired controller:
 `event log show -event \*hotplug.init*`
 +
 NOTE: It might take several minutes to allow for any required firmware updates and port initialization.
@@ -52,6 +63,8 @@ Time                Node             Severity      Event
 
 2 entries were displayed.
 ----
++
+.. If the port initialization fails, reseat the replacement I/O module.
 
 . Verify the I/O module slot is powered on and ready for operation:
 +
@@ -93,3 +106,4 @@ Slot slot Information
                   Serial Number:      032403001370
 ----
 
+//Note that I/O cards must be replaced serially when replacing an I/O card.  You must wait for an EMS message indicating the ports were initialized successfully before removing the I/O module in a different I/O slot.  Otherwise the CLI will return an error indicating there is already a replacement in progress.  If the port initialization failed, you will be able to remove the same I/O slot to retry, but you will not be able to remove a different I/O slot until the insert is successful. 

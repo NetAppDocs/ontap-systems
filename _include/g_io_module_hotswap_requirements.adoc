@@ -33,23 +33,23 @@ If you are not sure which controller has the failed I/O module, contact https://
 --
 .ONTAP 9.18.1GA or later
 --
-* You are hot-swapping one of the following types of I/O modules with an equivalent I/O module. You cannot change the I/O module type:
+* You are hot-swapping any of the following types of I/O modules with an equivalent I/O module. You cannot change the I/O module type:
 +
-** A failed Ethernet client I/O module but only if it does not have ports used for storage connections or used for MetroCluster connections.
+** A failed Ethernet client I/O module but only if it does not have ports used for storage or MetroCluster.
 +
-** A failed cluster and HA I/O module.
+Do we want customers to do something to verify the card they are replacing does not have storage or MetroCluster ports?
 +
-Hot-swapping an I/O module means that you do not have to perform a manual takeover; the impaired controller (the controller with the failed I/O module) has been automatically taken over by the healthy controller.
+** A failed cluster and HA I/O module. Your storage system can have any number of cluster and HA I/O modules supported for your configuration. 
+
+* Your storage system can be in any takeover state.
+
+Does this mean that the impaired controller has taken over the healthy controller, or the healthy controller has taken over the impaired controller?
+
+Does this mean that a takeover state is still necessary and if yes, would it be automatic or does the customer need to manually initiate a takeover of the impaired controller?
+
+// In 9.18.1, (these check will be removed and) hot plug will be supported regardless of the cluster size or takeover state.  Nodes losing RDB Quorum during the hot plug operation will be handled by the feature.
 
 * Your storage system (switchless or switched cluster configuration) can have any number of nodes supported for your storage system. (You are not required to have a two-node cluster.)
-+
-However, if your storage system is a two-node cluster, the controller with the failed I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occurred automatically if the I/O module is failed.
-+
-For a two-node cluster, the storage system cannot discern which controller has the failed I/O module, so either controller might initiate the takeover. Hot swapping in a two-node cluster is only supported when the controller with the failed I/O module (the impaired controller) has taken over the healthy controller. Hot-swapping the I/O module is the only way to recover without an outage.
-+
-You can verify that the impaired controller successfully took over the healthy controller by entering the `storage failover show` command.
-+
-If you are not sure which controller has the failed I/O module, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 --
