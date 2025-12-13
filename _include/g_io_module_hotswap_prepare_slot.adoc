@@ -33,13 +33,31 @@ For example, the following AutoSupport message suppresses automatic case creatio
 +
 `node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. Disable automatic giveback:
+. Disable automatic giveback as needed for the version of ONTAP your storage system is running and the state of your controllers:
++
+[options="header" cols="1,2,3"]
 
-.. Enter the following command from the console of the impaired controller: 
+|===
+|ONTAP version| If...| Then...
+a|
+9.17.1, 9.18.1RC or 9.18.1GA or later
+a|
+If the impaired controller took over the healthy controller automatically
+a|
+Disable automatic giveback:
+
+. Enter the following command from the console of the impaired controller: 
 +
 `storage failover modify -node local -auto-giveback false`
 
-.. Enter `y` when you see the prompt _Do you want to disable auto-giveback?_
+. Enter `y` when you see the prompt _Do you want to disable auto-giveback?_
+a|
+9.18.1GA or later
+a|
+Both controllers are up and running I/O (serving data)
+a|
+Go to the next step.
+|===
 
 . Prepare the failed I/O module for removal by removing it from service and powering it off:
 

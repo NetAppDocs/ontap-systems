@@ -33,7 +33,7 @@ If you are not sure which controller has the failed I/O module, contact https://
 --
 .ONTAP 9.18.1GA or later
 --
-* You are hot swapping any Ethernet I/O module in any slot having any combination of ports used for cluster, HA, and client with an equivalent I/O module. You cannot change the I/O module type. 
+* You are hot swapping an Ethernet I/O module in any slot having any combination of ports used for cluster, HA, and client with an equivalent I/O module. You cannot change the I/O module type. 
 +
 Ethernet I/O modules with ports used for storage or MetroCluster are not hot-swappable.
 // Dec 12 T said: Cluster and HA are not required to be shared on the same ports for 9.18.1 GA and beyond, so we probably want to list them separately. You could have a card with cluster and client, storage and client, cluster and HA and DR (disaster recovery, aka MetroCluster), or each of these individually.  
@@ -51,11 +51,11 @@ Ethernet I/O modules with ports used for storage or MetroCluster are not hot-swa
 
 * The controllers in your storage system can be in either of the following states:
 
-** Both controllers can be up and running I/O.
+** Both controllers can be up and running I/O (serving data).
 //Then you do NOT need to disable and re-enable automatic giveback in this procedure.
 
 ** Either controller can be in a takeover state.
-//Then you need to disable and re-enable automatic giveback...on the impaired controller (one that took over the health partner).
+//Then you need to disable and re-enable automatic giveback on the impaired controller (the one that took over the health partner).
 +
 In certain situations, ONTAP can automatically perform a takeover of either controller due to the failed I/O module. For example, if the failed I/O module contained all of the cluster ports (all of the cluster links on that controller go down) ONTAP automatically performs a takeover.
 +
