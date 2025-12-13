@@ -79,7 +79,7 @@ Enter the command from the console of the impaired controller:
 `system controller config show -node local -slot _slot_name_`
 // was: `sysconfig -av _slot_number_`
 +
-If the I/O module was successfully brought online and is recognize, the output shows I/O module information, including port information for the slot.
+If the I/O module was successfully brought online and is recognized, the output shows I/O module information, including port information for the slot.
 +
 For example, you should see output similar to the following for a I/O module in slot 4:
 +

@@ -37,7 +37,14 @@ To hot swap an I/O module, ensure your storage system meets the ONTAP version re
 //+
 //The _healthy controller_ is the HA partner of the impaired controller and it is the controller that has taken over the impaired controller.
 
-If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+* Hot-swapping the I/O module means that you do not have to perform a manual takeover before replacing the failed I/O module.
+
+* It is critical to apply the commands to the correct controller and I/O slot when you are hot-swapping the I/O module:
+
+** The impaired controller is the controller on which you are hot-swapping the I/O module.
+** The healthy controller is the HA partner of the impaired controller.
+
+* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 
 A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 

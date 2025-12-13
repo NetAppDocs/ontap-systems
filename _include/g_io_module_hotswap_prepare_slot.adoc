@@ -12,15 +12,20 @@ Prepare the storage system and I/O module slot so that it is safe to remove the 
 
 . Unplug cabling from the failed I/O module.
 +
+Question to team from Tish: Do we want to reverse steps 2 and 3 so we disable autosupport before unplugging the cables?
++
 Make sure to label the cables so that later in this procedure you can reconnect them to the same ports.
+
 +
 [NOTE]
 ====
-Wait three to five minutes after unplugging the cables to ensure any takeovers or failovers complete before continuing with this procedure.
+The I/O module should be failed (ports should be in the link down state); however, if the links are still up and they contain the last functioning cluster port, unplugging the cables triggers an automatic takeover. 
 
-The I/O module should be failed; however, if the links are still up and they contain the last functioning cluster port, unplugging the cables triggers a takeover.  
+// If the ports are not already in the link down state, taking ports down can cause a node takeover if all cluster ports are taken down. Please wait for several minutes after taking ports down to ensure automatic node takeovers or LIF failovers complete before continuing.
 
-Do we want the customer to do anything to verify a takeover is not in progress/completed?
+Wait five minutes after unplugging the cables to ensure any takeovers or LIF failovers complete before continuing with this procedure.
+
+Do we want the customer to do anything to verify a takeover or LIF failover is not in progress/has completed?
 
 //We expect this procedure to be used when the card is failed, but we need a note just in case. A failover in ONTAP refers to the process of transferring the storage of a node to another node, typically due to a failure or to prepare for a takeover. A takeover is the process of a node taking over the storage of its partner node. While a failover can be a precursor to a takeover, they are not the same. A failover is a temporary measure to ensure data availability, whereas a takeover is a permanent transfer of storage management responsibilities.
 ====
@@ -34,6 +39,7 @@ For example, the following AutoSupport message suppresses automatic case creatio
 `node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
 
 . Disable automatic giveback as needed for the version of ONTAP your storage system is running and the state of your controllers:
+//"If the partner node has been taken over, disable automatic giveback:" What's T mean by "partner"? I understand it as the healthy controller.
 +
 [options="header" cols="1,2,3"]
 

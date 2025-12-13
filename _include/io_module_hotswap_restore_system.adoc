@@ -21,13 +21,13 @@ a|
 a|
 If the impaired controller took over the healthy controller automatically
 a|
-. Return the healthy controller (the controller that was taken over) to normal operation by giving back its storage: 
+. Return the healthy controller to normal operation by giving back its storage: 
 +
 `storage failover giveback -ofnode _healthy_node_name_`
 +
 // The healthy controller should be in the "waiting for giveback" state.
 +
-. Restore automatic giveback from the console of the impaired controller (the controller that took over the healthy controller): 
+. Restore automatic giveback from the console of the impaired controller: 
 +
 `storage failover modify -node local -auto-giveback _true_`
 a|
