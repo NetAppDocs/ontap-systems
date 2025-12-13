@@ -33,24 +33,37 @@ If you are not sure which controller has the failed I/O module, contact https://
 --
 .ONTAP 9.18.1GA or later
 --
-* You are hot-swapping any of the following types of I/O modules with an equivalent I/O module. You cannot change the I/O module type:
+* You are hot swapping any Ethernet I/O module in any slot having any combination of ports used for cluster, HA, and client with an equivalent I/O module. You cannot change the I/O module type. 
 +
-** A failed Ethernet client I/O module but only if it does not have ports used for storage or MetroCluster.
-+
-Do we want customers to do something to verify the card they are replacing does not have storage or MetroCluster ports?
-+
-** A failed cluster and HA I/O module. Your storage system can have any number of cluster and HA I/O modules supported for your configuration. 
+Ethernet I/O modules with ports used for storage or MetroCluster are not hot-swappable.
+// Dec 12 T said: Cluster and HA are not required to be shared on the same ports for 9.18.1 GA and beyond, so we probably want to list them separately. You could have a card with cluster and client, storage and client, cluster and HA and DR (disaster recovery, aka MetroCluster), or each of these individually.  
 
-* Your storage system can be in any takeover state.
-+
-Does this mean that either of the following states is valid: the impaired controller has taken over the healthy controller or the healthy controller has taken over the impaired controller?
-+
-Does this mean that a takeover state is still necessary and if yes, would it be automatic or does the customer need to manually initiate a takeover of the impaired controller?
-+
-// In 9.18.1, (these check will be removed and) hot plug will be supported regardless of the cluster size or takeover state.  Nodes losing RDB Quorum during the hot plug operation will be handled by the feature.
+//ports used for client are host connections, right?
+
+// Target cards/ports not supported, only client-side cards/ports. Storage ports are considered target ports?
 
 * Your storage system (switchless or switched cluster configuration) can have any number of nodes supported for your storage system. 
-// (You are not required to have a two-node cluster.)
+// You are not required to have a two-node cluster like for 9.17.1 and 9.18.1RC.
+ 
+
+//3.	If a node has been taken over by its partner, I don’t think you can perform any CLI commands so it would not be able to hot swap (you would just power off and replace the card using the old method).
+//[Lisa] Per #2 and #3: It sounds like I need to add a requirement for using the 9.18.1GA and beyond hot-swap procedure, “Your storage system cannot be in a takeover state.  If either controller automatically took over its partner, you cannot hot-swap the failed I/O module, you must use the Replace an I/O module procedure.” Correct?
+
+* The controllers in your storage system can be in either of the following states:
+
+** Both controllers can be up and running I/O.
+//Then you do NOT need to disable and re-enable automatic giveback in this procedure.
+
+** Either controller can be in a takeover state.
+//Then you need to disable and re-enable automatic giveback...on the impaired controller (one that took over the health partner).
++
+In certain situations, ONTAP can automatically perform a takeover of either controller due to the failed I/O module. For example, if the failed I/O module contained all of the cluster ports (all of the cluster links on that controller go down) ONTAP automatically performs a takeover.
++
+If the controller with the failed I/O module (the impaired controller) took over the healthy partner controller, you need to disable automatic giveback on the impaired controller before hot-swapping the failed I/O module. After hot-swapping the failed I/O module, you need to re-enable automatic giveback on the impaired controller.
+
+//The above paragraphs are a rewrite of this: For example, if all the Cluster links on a node go down, ONTAP automatically performs a takeover. It is possible the failed I/O module contained all the cluster ports and this occurred. The surviving node could have the bad card, and you would want to disable and re-enable automatic giveback like you did in 9.17.1. If both nodes are up, you don’t need to execute those steps. 
+
+// In 9.18.1, (these checks will be removed and) hot plug is supported regardless of the cluster size or takeover state.  Nodes losing RDB Quorum during the hot plug operation will be handled by the feature.
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 --
