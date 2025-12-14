@@ -3,10 +3,10 @@
 // New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specify/reference slot 4, which is unique to g-platforms.
 
 
-Bring the replacement I/O module online, verify the module ports initialized successfully, verify the slot is powered on, and then verify the module is online and recognized.
+Bring the replacement I/O module online, verify the I/O module ports initialized successfully, verify the slot is powered on, and then verify the I/O module is online and recognized.
 
 .About this task
-After the I/O module is replaced and the ports  are returned to a healthy state, LIFs are reverted to the replaced I/O module.
+After the I/O module is replaced and the ports are returned to a healthy state, LIFs are reverted to the replaced I/O module.
 
 Does the customer have to do anything to revert the LIFs or is this automatic?
 

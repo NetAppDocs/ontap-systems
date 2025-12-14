@@ -8,9 +8,9 @@ Restore your storage system to normal operation by giving back storage to the he
 
 .Steps
 
-//This step depends on the version of ONTAP your system is running and the state of your controllers:
+//This step depends on the version of ONTAP your system is running and the state of the controllers:
 
-. For the healthy controller, give back its storage and restore automatic giveback as needed for the version of ONTAP your storage system is running and the state of your controllers:
+. As needed for the version of ONTAP your storage system is running and the state of the controllers, give back storage and restore automatic giveback on the healthy controller:
 +
 [options="header" cols="1,2,3"]
 
