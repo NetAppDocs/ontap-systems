@@ -61,6 +61,8 @@ a|
 9.18.1GA or later
 a|
 Both controllers are up and running I/O (serving data)
+
+Is there a use case where the healthy controller took over the impaired controller? If so, we need to add that to the table.
 a|
 Go to the next step.
 |===
