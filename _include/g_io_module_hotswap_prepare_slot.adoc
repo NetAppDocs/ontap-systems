@@ -46,15 +46,25 @@ For example, the following AutoSupport message suppresses automatic case creatio
 |===
 |ONTAP version| If...| Then...
 a|
-9.17.1, 9.18.1RC or 9.18.1GA or later
+9.17.1 or 9.18.1RC
 a|
 If the impaired controller took over the healthy controller automatically
-
-For 9.18.1GA and later, is there a use case where the healthy controller took over the impaired controller? If so, we need to add that to both tables.
 a|
 Disable automatic giveback:
 
-. Enter the following command from the console of the impaired controller: 
+. Enter the following command from the console of the impaired controller 
++
+`storage failover modify -node local -auto-giveback false`
+
+. Enter `y` when you see the prompt _Do you want to disable auto-giveback?_
+a|
+9.18.1GA or later
+a|
+If either controller took over its partner automatically
+a|
+Disable automatic giveback:
+
+. Enter the following command from the console of the controller that took over its partner: 
 +
 `storage failover modify -node local -auto-giveback false`
 
@@ -76,7 +86,7 @@ Go to the next step.
 
 .. Enter `y` when you see the prompt _Do you want to continue?_ 
 +
-For example, the following command prepares the module in slot 4 on node 2 (the impaired controller) for removal, and displays a message that it is safe to remove:
+For example, the following command prepares the failed module in slot 4 on node 2 (the impaired controller) for removal, and displays a message that it is safe to remove:
 +
 ----
 node2::> system controller slot module remove -node node2 -slot 4
