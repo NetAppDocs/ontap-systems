@@ -49,6 +49,8 @@ a|
 9.17.1, 9.18.1RC or 9.18.1GA or later
 a|
 If the impaired controller took over the healthy controller automatically
+
+For 9.18.1GA and later, is there a use case where the healthy controller took over the impaired controller? If so, we need to add that to both tables.
 a|
 Disable automatic giveback:
 
@@ -61,8 +63,6 @@ a|
 9.18.1GA or later
 a|
 Both controllers are up and running I/O (serving data)
-
-Is there a use case where the healthy controller took over the impaired controller? If so, we need to add that to the table.
 a|
 Go to the next step.
 |===
