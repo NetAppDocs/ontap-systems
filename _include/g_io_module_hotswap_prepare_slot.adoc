@@ -39,7 +39,7 @@ For example, the following AutoSupport message suppresses automatic case creatio
 `node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
 
 . As needed for the version of ONTAP your storage system is running and the state of the controllers, disable automatic giveback:
-//"If the partner node has been taken over, disable automatic giveback:" What's T mean by "partner"? I understand it as the healthy controller.
+//"If the partner node has been taken over, disable automatic giveback:" What's T mean by "partner"? I understand it as the healthy controller....maybe could be either controller.
 +
 [options="header" cols="1,2,3"]
 
