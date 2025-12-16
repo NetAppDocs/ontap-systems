@@ -49,9 +49,18 @@ Ethernet I/O modules with ports used for storage or MetroCluster are not hot-swa
 //3.	If a node has been taken over by its partner, I don’t think you can perform any CLI commands so it would not be able to hot swap (you would just power off and replace the card using the old method).
 //[Lisa] Per #2 and #3: It sounds like I need to add a requirement for using the 9.18.1GA and beyond hot-swap procedure, “Your storage system cannot be in a takeover state.  If either controller automatically took over its partner, you cannot hot-swap the failed I/O module, you must use the Replace an I/O module procedure.” Correct?
 
-* All nodes in the cluster must be running a version of ONTAP 9.18.1GA or later. However, it does not need to be the same version. For example, one node can be running 9.18.1GA and another node can be running a patch release.
+//My rework of Tish's text:
+* All nodes in the cluster must be running a version of ONTAP 9.18.1GA or later, and all nodes must be running the same major ONTAP version or all running different patch levels of the same major ONTAP version. 
 +
-You cannot hot-swap an I/O module if any node in the cluster is running a version of ONTAP earlier than 9.18.1GA. Mixed-version ONTAP clusters are not supported.
+Hot-swapping an I/O module is not supported in mixed version clusters.
+
+//Tish's rework of my proposal:
+* All nodes in the cluster must be running a version of ONTAP 9.18.1GA or later, and all nodes must be running the same major ONTAP version. Hot-swapping an I/O module is not supported in mixed version clusters; however, hot swapping is permitted if the cluster nodes are all running different patch levels of the same major ONTAP version.
+
+//My original proposal:
+//* All nodes in the cluster must be running a version of ONTAP 9.18.1GA or later. However, it does not need to be the same version. For example, one node can be running 9.18.1GA and another node can be running a patch release.
+//+
+//You cannot hot-swap an I/O module if any node in the cluster is running a version of ONTAP earlier than 9.18.1GA. Mixed-version ONTAP clusters are not supported.
 //For 9.18.1GA or later, all nodes in the cluster must also be running 9.18.1GA or later and be on the same ONTAP version (9.18.1).  For example, if a node is running 9.18.1GA, but another node in the cluster is running 9.17.1, then hot plug is not supported. If a node is running 9.18.1 GA and another node in the cluster is running 9.18.1 P3, hot plug is still supported.  
 
 * The controllers in your storage system can be in either of the following states:
