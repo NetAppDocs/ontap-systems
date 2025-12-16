@@ -1,14 +1,14 @@
 ---
 permalink: a700/bootmedia-encryption-restore.html
 sidebar: sidebar
-keywords: aff a700, fas9000, post, boot, media, replacement, steps, okm, nse, nve, manual, manual boot recovery
-summary: "Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager (OKM), NetApp Storage Encryption (NSE) or NetApp Volume Encryption (NVE) enabled. The AFF A700 system and the FAS9000 system supports only manual boot media recovery procedures."
+keywords: aff a700, post, boot, media, replacement, steps, okm, nse, nve, manual, manual boot recovery
+summary: "Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager (OKM), NetApp Storage Encryption (NSE) or NetApp Volume Encryption (NVE) enabled. The AFF A700 system supports only manual boot media recovery procedures."
 ---
 = Restore encryption - AFF A700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media. The AFF A700 system and the FAS9000 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+Restore encryption on the replacement boot media. The AFF A700 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 include::../_include/encryption_restore_bootmedia.adoc[]
