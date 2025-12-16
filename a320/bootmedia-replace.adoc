@@ -1,21 +1,22 @@
 ---
 permalink: a320/bootmedia-replace.html
 sidebar: sidebar
-keywords: aff, a320, aff a320, boot, media, store, primary, secondary, set, system, boot, image, file, replace, replace the boot media
-summary: The boot media stores a primary and secondary set of system \(boot image\) files that the system uses when it boots.
+keywords: aff, a320, aff a320, boot, media, store, primary, secondary, set, system, boot, image, file, replace, replace the boot media, manual, manual boot recovery
+summary: The boot media stores a primary and secondary set of boot image files that the system uses when it boots. The AFF A320 system supports only manual boot media recovery procedures.
 ---
 = Replace the boot media - AFF A320
 :icons: font
 :imagesdir: ../media/
 
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+[.lead]
+To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive. The AFF A320 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 == Step 1: Remove the controller module
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To access components inside the controller module, you must remove the controller module from the chassis.
+To access components inside the controller module, you must remove the controller module from the chassis. The AFF A320 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the controller module power supply from the power source.
