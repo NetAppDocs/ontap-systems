@@ -13,7 +13,7 @@ summary: Hot swap an Ethernet I/O module in your AFF A20, AFF A30, or AFF A50 st
 // Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family on 9.17.1 and later.
 
 [.lead]
-Hot swap an Ethernet I/O module in your AFF A20, AFF A30, or AFF A50 storage system when an I/O module had failed and if your storage system meets all requirements for the ONTAP version your storage system is running.
+Hot swap an Ethernet I/O module in your AFF A20, AFF A30, or AFF A50 storage system when an I/O module has failed and if your storage system meets all requirements for the ONTAP version your storage system is running.
 
 //Hot swap an I/O module used for cluster and HA traffic or an I/O module used for Ethernet client traffic in your AFF A20, AFF A30, or AFF A50 storage system when an I/O module had failed and if your storage system meets all requirements for the ONTAP version your storage system is running.
 

@@ -1,7 +1,7 @@
 
 // New include that's generic - can be used for the g-platform family and v-platform family.
 
-Restore your storage system to normal operation by giving back storage to the controller that was taken over (as needed), restoring automatic giveback (as needed), and reenabling AutoSupport automatic case creation.
+Restore your storage system to normal operation by giving back storage to the controller that was taken over (as needed), restoring automatic giveback (as needed), verifying LIFs are on their home ports, and reenabling AutoSupport automatic case creation.
 
 //Even in 9.18.1GA and later, for any number of nodes in a cluster, the automatic take over happens? Or only does the customer have to manually do it? If yes, I need to add steps to manually do it...like for rest of FRUs! I beleive this section stays as is for 9.18.1GA and later unless we want to add a tabbed option for 9.17.1/9.18.1RC vs 9.18.1GA and later.
 
@@ -51,6 +51,10 @@ Both controllers are up and running I/O (serving data)
 a|
 Go to the next step.
 |===
+
+. Verify that the logical interfaces are reporting to their home server and ports: `network interface show -is-home false`
++
+If any LIFs are listed as false, revert them to their home ports: `network interface revert -vserver * -lif *`
 
 . If AutoSupport is enabled, restore automatic case creation:
 +
