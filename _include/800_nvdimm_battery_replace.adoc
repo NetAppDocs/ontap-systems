@@ -1,56 +1,5 @@
-To replace the NVDIMM battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
-
-== Step 1: Shut down the impaired controller
-
-include::../_include/shutdown_most_frus.adoc[]
-
-== Step 2: Remove the controller module
-
-You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
-
-. If you are not already grounded, properly ground yourself.
-. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-// ontap-systems/issues/343
-+
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
-+
-. Unplug the controller module power supplies from the source.
-. Release the power cable retainers, and then unplug the cables from the power supplies.
-. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFP and QSFP modules (if needed) from the controller module, keeping track of where the cables were connected. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables from the controller module, keeping track of where the cables were connected.
-+
-Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
-
-. Remove the cable management device from the controller module and set it aside.
-. Press down on both of the locking latches, and then rotate both latches downward at the same time.
-+
-The controller module moves slightly out of the chassis.
-+
-image::../media/drw_a800_pcm_remove.png[Release the controller module]
-+
-
-[cols="1,4"]
-|===
-a|
-image:../media/icon_round_1.png[Callout number 1]
-a|
-Locking latch
-a|
-image:../media/icon_round_2.png[Callout number 2]
-a|
-Locking pin
-|===
-
-. Slide the controller module out of the chassis.
-+
-Make sure that you support the bottom of the controller module as you slide it out of the chassis.
-
-. Set the controller module aside in a safe place.
-
-== Step 3: Replace the NVDIMM battery
-
-To replace the NVDIMM battery, you must remove the failed battery from the controller module and install the replacement battery into the controller module.
+.Steps
 
 . Open the air duct cover and locate the NVDIMM battery in the riser.
 +
@@ -85,34 +34,4 @@ NVDIMM battery pack
 +
 Make sure that the plug locks into the socket.
 
-== Step 4: Reinstall the controller module and booting the system
-
-After you replace a FRU in the controller module, you must reinstall the controller module and reboot it.
-
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
-+
-NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
-
-. Recable the system, as needed.
-+
-If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
-
-. Complete the reinstallation of the controller module:
- .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
-+
-The locking latches rise when the controller module is fully seated.
-+
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
-
-
- .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. Plug the power cords into the power supplies, reinstall the power cable locking collar, and then connect the power supplies to the power source.
-+
-The controller module begins to boot as soon as power is restored. Be prepared to interrupt the boot process.
-
- .. If you have not already done so, reinstall the cable management device.
-
-
-== Step 5: Return the failed part to NetApp
-
-include::../_include/complete_rma.adoc[]
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380

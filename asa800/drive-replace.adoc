@@ -9,6 +9,7 @@ summary: You must replace a drive when the platform logs a warning message to th
 :imagesdir: ../media/
 
 [.lead]
+Replace a drive in your ASA A800 system when a drive fails or requires an upgrade. The replacement process involves identifying the faulty drive, safely removing it, and installing a new drive to ensure continued data access and system performance. 
 
 include::../_include/drive_hotswap_intro.adoc[]
 

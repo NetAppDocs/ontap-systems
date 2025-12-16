@@ -17,7 +17,7 @@ entries:
    entries:
    - title: Maintenance overview
      url: /c800/maintain-overview.html
-      # START boot media
+    # START boot media
    - title: Boot media - automated recovery
      pdf-filename: AFF C800 Boot Media Automated
      entries:
@@ -56,28 +56,34 @@ entries:
    - title: Chassis
      pdf-filename: AFF C800 Chassis
      entries:
-        - title: Overview
-          url: /c800/chassis-replace-overview.html
-        - title: Shut down impaired controller
+        - title: Chassis replacement workflow
+          url: /c800/chassis-replace-workflow.html
+        - title: Review requirements
+          url: /c800/chassis-replace-requirements.html
+        - title: Prepare to replace
+          url: /c800/chassis-replace-prepare.html
+        - title: Shut down controllers
           url: /c800/chassis-replace-shutdown.html
-        - title: Replace hardware
+        - title: Replace chassis
           url: /c800/chassis-replace-move-hardware.html
-        - title: Complete replacement
+        - title: Complete chassis replacement
           url: /c800/chassis-replace-complete-system-restore-rma.html
    - title: Controller
      pdf-filename: AFF C800 Controller Module
      entries:
-        - title: Overview
-          url: /c800/controller-replace-overview.html
+        - title: Controller replacement workflow
+          url: /c800/controller-replace-workflow.html
+        - title: Review requirements
+          url: /c800/controller-replace-requirements.html
         - title: Shut down impaired controller
           url: /c800/controller-replace-shutdown.html
-        - title: Replace controller module
+        - title: Replace controller
           url: /c800/controller-replace-move-hardware.html
         - title: Restore system configuration
           url: /c800/controller-replace-system-config-restore-and-verify.html
         - title: Recable system
           url: /c800/controller-replace-recable-reassign-disks.html
-        - title: Complete replacement
+        - title: Complete controller replacement
           url: /c800/controller-replace-restore-system-rma.html
    - title: DIMM
      url: /c800/dimm-replace.html

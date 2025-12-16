@@ -1,0 +1,19 @@
+---
+permalink: asa-c800/chassis-replace-prepare.html
+sidebar: sidebar
+keywords: asa c800, replace the chassis
+summary: Prepare to replace the impaired chassis in your ASA C800 system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller modules.
+---
+= Prepare to replace the chassis - ASA C800
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare to replace the impaired chassis in your ASA C800 system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller modules.
+
+
+include::../_include/800_chassis_replace_prepare.adoc[]
+
+.What's next?
+
+After you've prepared to replace your ASA C800 chassis hardware, you need to link:chassis-replace-shutdown.html[shut down the controllers].

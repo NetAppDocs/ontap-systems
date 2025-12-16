@@ -9,8 +9,13 @@ summary: Once environment variables are checked, you must complete steps specifi
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media.
+Restore encryption on the replacement boot media in your AFF C800 system to ensure continued data protection. The replacement process involves verifying key availability, reapplying encryption settings, and confirming secure access to your data.
 
 If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 
 include::../_include/encryption_restore_bootmedia.adoc[]
+
+.What's next?
+After restoring encryption on the boot media, you need to link:bootmedia-complete-rma.html[return the failed part to NetApp].
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
