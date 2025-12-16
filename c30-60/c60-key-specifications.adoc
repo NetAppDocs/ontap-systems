@@ -20,6 +20,7 @@ The following are select specifications for the AFF C60 storage system in a sing
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 8
 * Minimum ONTAP Version: ONTAP 9.16.1RC1
+
 == Scaleout maximums
 * Type: NAS; HA Pairs: 4; Raw Capacity: 29.5 PB / 26.2 PiB; Max Memory: 512 GB
 * Type: SAN; HA Pairs: 4; Raw Capacity: 29.5 PB / 26.2 PiB; Max Memory: 512 GB
@@ -35,7 +36,7 @@ No onboard I/O data.
 * Protocol: Ethernet 25 Gbps; Ports: 24
 * Protocol: Ethernet 10 Gbps; Ports: 24
 * Protocol: FC 64 Gbps; Ports: 24
-* Protocol: NVMe/FC  64 Gbps; Ports: 24
+* Protocol: NVMe/FC 64 Gbps; Ports: 24
 * Ports: 0
 
 === Management ports
@@ -44,6 +45,7 @@ No onboard I/O data.
 * Protocol: USB 600 Mbps; Ports: 2
 
 == Storage networking supported
+
 * CIFS
 * FC
 * iSCSI
@@ -62,6 +64,7 @@ No onboard I/O data.
 * SMB 3.1
 * SMB 3.1.1
 == System environment specifications
+
 * Typical Power: 2892 BTU/hr
 * Worst-case Power: 4445 BTU/hr
 * Weight: 60.7 lb
@@ -73,7 +76,7 @@ No onboard I/O data.
 50°F to 
 95°F) at
 <= 3048m
-<= 10000 ft) elevation;8% to 80%
+<= 10000 ft) elevation; 8% to 80%
 relative humidity, noncondensing
 * Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft)
 10% to 95%  relative humidity, noncondensing, in original container
@@ -127,6 +130,7 @@ IEC60950-1,
 IS 13252(part 1)
 
 == High availability
+
 * Ethernet based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies

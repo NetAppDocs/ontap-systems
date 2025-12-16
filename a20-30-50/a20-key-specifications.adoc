@@ -12,7 +12,6 @@ summary: Key specifications for AFF A20
 The following are select specifications for the AFF A20 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
 
 == AFF A20 specifications at a glance
-
 * Platform Configuration: AFF A20 Single Chassis HA Pair
 * Max Raw Capacity: 4.0392 PB
 * Memory: 128.0000 GB
@@ -23,13 +22,11 @@ The following are select specifications for the AFF A20 storage system in a sing
 
 
 == Scaleout maximums
-
 * Type: NAS; HA Pairs: 3; Raw Capacity: 12.1 PB / 10.8 PiB; Max Memory: 384 GB
 * Type: SAN; HA Pairs: 3; Raw Capacity: 12.1 PB / 10.8 PiB; Max Memory: 384 GB
 * Type: HA Pair; Raw Capacity: 4.0 PB / 3.6 PiB; Max Memory: 128.0000
 
 == I/O
-
 === Onboard I/O
 No onboard I/O data.
 
@@ -38,7 +35,7 @@ No onboard I/O data.
 * Protocol: Ethernet 25 Gbps; Ports: 32
 * Protocol: Ethernet 10 Gbps; Ports: 24
 * Protocol: FC 64 Gbps; Ports: 24
-* Protocol: NVMe/FC  64 Gbps; Ports: 24
+* Protocol: NVMe/FC 64 Gbps; Ports: 24
 * Ports: 0
 * Protocol: SAS 12 Gbps; Ports: 16
 
@@ -49,7 +46,6 @@ No onboard I/O data.
 * Protocol: USB 600 Mbps; Ports: 2
 
 == Storage networking supported
-
 * CIFS
 * FC
 * iSCSI
@@ -70,15 +66,14 @@ No onboard I/O data.
 * SMB 3.1.1
 
 == System environment specifications
-
 * Typical Power: 2489 BTU/hr
 * Worst-case Power: 3890 BTU/hr
-* Weight: 60.7 lb 27.5 kg
+* Weight: 60.7 lb, 27.5 kg
 * Height: 2U
 * Width: 19" IEC rack-compliant (17.6" 44.7 cm)
 * Depth:
-* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation;8% to 80% relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft) 10% to 95%  relative humidity, noncondensing, in original container
+* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation; 8% to 80% relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft); 10% to 95% relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 8.0; Sound pressure (LpAm) (bystander positions): 70.5 dB
 
 == Compliance
