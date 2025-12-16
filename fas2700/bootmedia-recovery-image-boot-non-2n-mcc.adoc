@@ -1,14 +1,15 @@
 ---
 permalink: fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html
 sidebar: sidebar
-keywords: fas2700, aff 220, boot, recovery, image, restore, file, system, environmental, varible
-summary: "You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables."
+keywords: fas2700, aff 220, boot, recovery, image, restore, file, system, environmental, varible, manual, manual boot recovery
+summary: "You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables. The FAS2700 system supports only manual boot media recovery procedures."
 ---
 = Boot the recovery image - FAS2700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Boot the impaired controller from the recovery image to restore the system. The FAS2700 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 include::../_include/220_2700_bootmedia_recovery_image_boot_non_2n_mcc.adoc[]
 
