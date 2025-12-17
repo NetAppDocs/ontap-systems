@@ -30,3 +30,5 @@ Move the components from the impaired chassis to the replacement chassis.
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:chassis-replace-complete-system-restore-rma.html[Complete the chassis replacement]
 [role="quick-margin-para"]
 Complete the replacement by booting the controllers, performing giveback, and returning the failed chassis to NetApp.
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380

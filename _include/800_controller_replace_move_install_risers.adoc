@@ -1,0 +1,15 @@
+
+.Steps
+
+
+. Install the riser into the replacement controller module:
+ .. Align the lip of the riser with the underside of the controller module sheet metal.
+ .. Guide the riser along the pins in the controller module, and then lower the riser into the controller module.
+ .. Swing the locking latch down and click it into the locked position.
++
+When locked, the locking latch is flush with the top of the riser and the riser sits squarely in the controller module.
+
+ .. Reinsert any SFP or QSFP modules that were removed from the PCIe cards.
+. Repeat the preceding step for the remaining PCIe risers.
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380

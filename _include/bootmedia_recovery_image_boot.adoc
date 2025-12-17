@@ -95,3 +95,5 @@ After the restore procedure is successful, this message displays: `syncflash_par
 . If AutoSupport is enabled, restore automatic case creation:
 +
 `system node autosupport invoke -node * -type all -message MAINT=END`
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380

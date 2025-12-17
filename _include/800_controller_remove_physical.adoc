@@ -1,0 +1,79 @@
+// Remove the controller module - AFF A800
+
+.Steps
+
+. If you are not already grounded, properly ground yourself.
+
+. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
++
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto, title="Video - Confirm drive seating"]
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
++
+. Check the controller drives based on the system status:
+
+.. On the healthy controller, check if any active RAID group is in a degraded state, failed state, or both:
+
++
+[source,cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++ 
+- If the command returns `There are no entries matching your query.` continue to <<Check-missing-drives,go to the next sub-step to check for missing drives>>. 
+- If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
++
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
++
+.. [[Check-missing-drives]]Check for missing drive issues for both the file system or spare drives:
+
++
+[source,cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
+
++ 
+- If the command returns `There are no entries matching your query.` continue to <<remove-power-cables,go to the next step>>. 
+- If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
++
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+. [[remove-power-cables]]Remove the power cable retainers, then unplug the cables from the power supplies.
+
+. Loosen the hook and loop strap on the cable management device. Unplug the system cables and SFP/QSFP modules (if needed) from the controller module. Note each cable's location.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Remove the cable management device from the controller module and set it aside.
+. Press down on both of the locking latches, and then rotate both latches downward at the same time.
++
+The controller module moves slightly out of the chassis.
++
+image::../media/drw_a800_pcm_remove.png[Removing the controller module]
++
+
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+Locking latch
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Locking pin
+|===
+
+. Slide the controller module out of the chassis and place it on a stable, flat surface.
++
+Support the bottom of the controller module while sliding it out of the chassis.
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
