@@ -12,10 +12,6 @@ NOTE: If your storage system is not running ONTAP 9.17.1 or later, or does not m
 .ONTAP 9.17.1 or 9.18.1RC
 --
 * You are hot-swapping a failed cluster and HA I/O module in slot 4 with an equivalent I/O module. You cannot change the I/O module type.
-//+
-//Hot-swapping the cluster and HA I/O module means that you do not have to perform a manual takeover; the impaired controller (the controller with the failed cluster and HA I/O module) has automatically taken over the healthy controller.
-//+
-//When the impaired controller has taken over the healthy controller, the only way to recover without an outage is to hot-swap the I/O module.
 
 * The controller with the failed cluster and HA I/O module (the impaired controller) must have already taken over the healthy partner controller. The takeover should have occurred automatically if the I/O module has failed.
 +
@@ -43,11 +39,6 @@ Ethernet I/O modules with ports used for storage or MetroCluster are not hot-swa
 // Target cards/ports not supported, only client-side cards/ports. Storage ports are considered target ports?
 
 * Your storage system (switchless or switched cluster configuration) can have any number of nodes supported for your storage system. 
-// You are not required to have a two-node cluster like for 9.17.1 and 9.18.1RC.
- 
-
-//3.	If a node has been taken over by its partner, I don’t think you can perform any CLI commands so it would not be able to hot swap (you would just power off and replace the card using the old method).
-//[Lisa] Per #2 and #3: It sounds like I need to add a requirement for using the 9.18.1GA and beyond hot-swap procedure, “Your storage system cannot be in a takeover state.  If either controller automatically took over its partner, you cannot hot-swap the failed I/O module, you must use the Replace an I/O module procedure.” Correct?
 
 //My rework of Tish's text version 3:
 * All nodes in the cluster must be running the same ONTAP version (ONTAP 9.18.1GA or later) or running different patch levels of the same ONTAP version.
@@ -81,7 +72,7 @@ If nodes in your cluster are running different ONTAP versions, this is considere
 //Then you do NOT need to disable and re-enable automatic giveback in this procedure.
 
 ** Either controller can be in a takeover state.
-//Then you need to disable and re-enable automatic giveback on the impaired controller (the one that took over the health partner).
+//Then you need to disable and re-enable automatic giveback on the controller that took over its partner.
 +
 In certain situations, ONTAP can automatically perform a takeover of either controller due to the failed I/O module. For example, if the failed I/O module contained all of the cluster ports (all of the cluster links on that controller go down) ONTAP automatically performs a takeover.
 

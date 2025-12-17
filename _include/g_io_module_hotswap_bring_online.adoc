@@ -8,8 +8,6 @@ Bring the replacement I/O module online, verify the I/O module ports initialized
 .About this task
 After the I/O module is replaced and the ports are returned to a healthy state, LIFs are reverted to the replaced I/O module.
 
-Does the customer have to do anything to revert the LIFs or is this automatic?
-
 //Once the card is replaced, the ports should return to a healthy state and LIFs can be reverted to the replaced I/O card.
 
 //* If you are replacing an additional I/O module, you must confirm the I/O module you just replaced was successful. You must wait for an EMS message indicating the ports were initialized successfully before removing an I/O module from a different I/O slot. Otherwise, the CLI will return an error indicating there is already an I/O module replacement in progress.  
@@ -44,7 +42,7 @@ The module has been successfully powered on, initialized and placed into service
 .. Enter the following command from the console of the impaired controller:
 `event log show -event \*hotplug.init*`
 +
-NOTE: It might take several minutes to allow for any required firmware updates and port initialization.
+NOTE: It might take several minutes for any required firmware updates and port initialization.
 +
 The output should show a hotplug.init.success EMS event logged for each port on the I/O module with `_hotplug.init.success:_` in the `_Event_` column.
 +
