@@ -17,7 +17,7 @@ Hot swap an Ethernet I/O module in your AFF A20, AFF A30, or AFF A50 storage sys
 
 //Hot swap an I/O module used for cluster and HA traffic or an I/O module used for Ethernet client traffic in your AFF A20, AFF A30, or AFF A50 storage system when an I/O module had failed and if your storage system meets all requirements for the ONTAP version your storage system is running.
 
-To hot swap an I/O module, ensure your storage system meets the ONTAP version requirements, prepare your storage system and I/O module, hot-swap the failed module for an equivalent one, bring the replacement module online, restore the storage system to normal operation, and return the failed module to NetApp.
+To hot swap an I/O module, ensure your storage system meets the ONTAP version requirements, prepare your storage system and I/O module, hot-swap the failed module, bring the replacement module online, restore the storage system to normal operation, and return the failed module to NetApp.
 
 .About this task
 
