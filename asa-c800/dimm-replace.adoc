@@ -9,4 +9,44 @@ summary: "You must replace a DIMM in the controller module when your system regi
 :imagesdir: ../media/
 
 [.lead]
+
+Replace a DIMM in your ASA C800 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+
+.Before you begin
+
+* Make sure all other components in the system are functioning properly; if not, you must contact technical support.
+
+* Make sure you replace the failed component with a replacement component you received from NetApp.
+
+== Step 1: Shut down the impaired controller
+
+Shut down or take over the impaired controller
+
+include::../_include/shutdown_most_frus.adoc[]
+
+//AFFFASDOC-267 wrong include corrected
+
+== Step 2: Remove the controller module
+
+You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
+
+include::../_include/800_controller_remove_physical.adoc[]
+
+== Step 3: Replace the DIMM
+
+Replace the DIMM in the controller.
+
 include::../_include/800_dimm_replace.adoc[]
+
+== Step 4: Reinstall the controller module
+
+Reinstall the controller module and reboot it.
+
+include::../_include/800_controller_install_step_physical.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
