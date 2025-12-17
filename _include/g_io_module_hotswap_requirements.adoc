@@ -49,10 +49,16 @@ Ethernet I/O modules with ports used for storage or MetroCluster are not hot-swa
 //3.	If a node has been taken over by its partner, I don’t think you can perform any CLI commands so it would not be able to hot swap (you would just power off and replace the card using the old method).
 //[Lisa] Per #2 and #3: It sounds like I need to add a requirement for using the 9.18.1GA and beyond hot-swap procedure, “Your storage system cannot be in a takeover state.  If either controller automatically took over its partner, you cannot hot-swap the failed I/O module, you must use the Replace an I/O module procedure.” Correct?
 
-//My rework of Tish's text version 2:
-* All nodes in the cluster must be running a version of ONTAP 9.18.1GA or later, and all nodes must be running the same ONTAP version or running different patch levels of the same ONTAP version.
+//My rework of Tish's text version 3:
+* All nodes in the cluster must be running the same ONTAP version (ONTAP 9.18.1GA or later) or running different patch levels of the same ONTAP version.
 +
-Hot-swapping an I/O module is not supported in mixed version clusters.
+If nodes in your cluster are running different ONTAP versions, this is considered a mixed-version cluster and hot-swapping an I/O module is not supported.
+
+//My rework of Tish's text version 2:
+//* All nodes in the cluster must be running a version of ONTAP 9.18.1GA or later, and all nodes must be running the same ONTAP version or running different patch levels of the same ONTAP version.
+//+
+//Hot-swapping an I/O module is not supported in mixed version clusters.
+// FYI: some of this content pulled frm ONTAP topic: https://docs.netapp.com/us-en/ontap/upgrade/concept_mixed_version_requirements.html
 
 
 //My rework of Tish's text version 1:
