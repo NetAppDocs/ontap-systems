@@ -1,0 +1,30 @@
+
+.Steps
+
+. Remove the PCIe riser from the controller module:
+ .. Remove any SFP or QSFP modules that might be in the PCIe cards.
+ .. Rotate the riser locking latch on the left side of the riser up and toward the fan modules.
++
+The riser raises up slightly from the controller module.
+
+ .. Lift the riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
++
+image::../media/drw_a800_riser_2_3_remove.png[Remove risers 2 and 3]
++
+
+[cols="1,4"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+Air duct
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Riser 1 (left riser), Riser 2 (middle riser), and 3 (right riser) locking latches
+|===
+
+. Repeat the preceding step for the remaining risers in the impaired controller module.
+. Repeat the above steps with the empty risers in the replacement controller and put them away.
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380

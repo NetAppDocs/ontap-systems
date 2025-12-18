@@ -17,7 +17,7 @@ entries:
    entries:
    - title: Maintenance overview
      url: /asa-c800/maintain-overview.html
-      # START boot media
+    # START boot media
    - title: Boot media - automated recovery
      pdf-filename: ASA C800 Boot Media Automated
      entries:
@@ -56,9 +56,13 @@ entries:
    - title: Chassis
      pdf-filename: ASA C800 Chassis
      entries:
-        - title: Overview
-          url: /asa-c800/chassis-replace-overview.html
-        - title: Shut down impaired controller
+        - title: Chassis replacement workflow
+          url: /asa-c800/chassis-replace-workflow.html
+        - title: Review requirements
+          url: /asa-c800/chassis-replace-requirements.html
+        - title: Prepare to replace
+          url: /asa-c800/chassis-replace-prepare.html
+        - title: Shut down controllers
           url: /asa-c800/chassis-replace-shutdown.html
         - title: Replace chassis
           url: /asa-c800/chassis-replace-move-hardware.html
@@ -67,8 +71,10 @@ entries:
    - title: Controller
      pdf-filename: ASA C800 Controller Module
      entries:
-        - title: Overview
-          url: /asa-c800/controller-replace-overview.html
+        - title: Controller replacement workflow
+          url: /asa-c800/controller-replace-workflow.html
+        - title: Review requirements
+          url: /asa-c800/controller-replace-requirements.html
         - title: Shut down impaired controller
           url: /asa-c800/controller-replace-shutdown.html
         - title: Replace controller

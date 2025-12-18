@@ -1,0 +1,38 @@
+---
+permalink: c800/controller-replace-workflow.html
+sidebar: sidebar
+keywords: aff c800, replace the controller workflow
+summary: Get started with replacing the controller in your AFF C800 storage system by shutting down the impaired controller, removing and replacing the controller, reconfiguring the system settings, and verifying system operations.
+---
+= Controller replacement workflow - AFF C800
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace the controller in your AFF C800 storage system by shutting down the impaired controller, removing and replacing the controller, restoring the system configuration, and returning control of storage resources to the replacement controller. 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:controller-replace-requirements.html[Review the requirements to replace the controller]
+[role="quick-margin-para"]
+Review the controller replacement requirements, including system compatibility, required tools, ONTAP credentials, and component functionality verification.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:controller-replace-shutdown.html[Shut down the impaired controller]
+[role="quick-margin-para"]
+Shut down or take over the impaired controller so that the healthy controller continues to serve data from the impaired controller storage. 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-move-hardware.html[Replace the controller]
+[role="quick-margin-para"]
+Remove the impaired controller, move the FRU components to the replacement controller module, and install the replacement controller module in the enclosure.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration]
+[role="quick-margin-para"]
+Verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:controller-replace-recable-reassign-disks.html[Recable and give back the controller]
+[role="quick-margin-para"]
+Recable the controller and transfer the ownership of storage resources back to the replacement controller. 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:controller-replace-restore-system-rma.html[Complete controller replacement]
+[role="quick-margin-para"]
+Verify the LIFs, check cluster health, and return the failed part to NetApp.
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
