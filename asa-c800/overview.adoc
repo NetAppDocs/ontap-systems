@@ -9,7 +9,7 @@ summary: Key specifications for the ASA-C800 platform group
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the ASA C800 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+The following are select specifications for the ASA C800 storage system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] for the complete specifications for this storage system.
 
 == Key specifications for ASA C800
 
@@ -20,6 +20,7 @@ The following are select specifications for the ASA C800 storage system in a sin
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 10
 * Minimum ONTAP Version: ONTAP 9.13.1P1
+
 == Scaleout maximums
 * Type: NAS
 * Type: SAN; HA Pairs: 6; Raw Capacity: 44.2 PB / 39.3 PiB; Max Memory: 7680 GB
@@ -47,7 +48,8 @@ The following are select specifications for the ASA C800 storage system in a sin
 == Storage networking supported
 * FC
 * iSCSI
-* NVMe/FC 
+* NVMe/FC
+
 == System environment specifications
 * Typical Power: 6626 BTU/hr
 * Worst-case Power: 8417 BTU/hr
@@ -57,13 +59,8 @@ The following are select specifications for the ASA C800 storage system in a sin
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
 * Depth: 34.5”
 (36.6” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 5°C to 40°C
-41°F to 
-104°F) at
-<= 3048m
-<= 10000 ft) elevation;8% to 90%
-relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+* Operating Temp/Altitude/Humidity: 5°C to 40°C (41°F to 104°F) at up to 3048m (10000 ft) elevation;8% to 90% relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft)
 10% to 95%  relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 8.0
 Sound pressure (LpAm) (bystander positions): 62.8 dB
@@ -118,4 +115,5 @@ IS 13252(part 1)
 * Ethernet based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
-[//] 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-12-12 ontap-systems-internal/issues/1421
