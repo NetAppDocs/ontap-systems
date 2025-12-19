@@ -20,6 +20,7 @@ The following are select specifications for the FAS8700 storage system in a sing
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 14
 * Minimum ONTAP Version: ONTAP 9.7RC1
+
 == Scaleout maximums
 * Type: NAS; HA Pairs: 12; Raw Capacity: 180.0 PB / 159.9 PiB; Max Memory: 6144 GB
 * Type: SAN; HA Pairs: 6; Raw Capacity: 90.0 PB / 79.9 PiB; Max Memory: 3072 GB
@@ -37,7 +38,7 @@ The following are select specifications for the FAS8700 storage system in a sing
 * Protocol: Ethernet 25 Gbps; Ports: 28
 * Protocol: Ethernet 10 Gbps; Ports: 32
 * Protocol: FC 32 Gbps; Ports: 32
-* Protocol: NVMe/FC  32 Gbps; Ports: 32
+* Protocol: NVMe/FC 32 Gbps; Ports: 32
 * Ports: 0
 * Protocol: SAS 12 Gbps; Ports: 40
 
@@ -47,6 +48,7 @@ The following are select specifications for the FAS8700 storage system in a sing
 * Protocol: USB 12 Mbps; Ports: 4
 
 == Storage networking supported
+
 * CIFS
 * FC
 * iSCSI
@@ -64,6 +66,7 @@ The following are select specifications for the FAS8700 storage system in a sing
 * SMB 3.0
 * SMB 3.1
 * SMB 3.1.1
+
 == System environment specifications
 * Typical Power: 5430 BTU/hr
 * Worst-case Power: 5796 BTU/hr
@@ -73,13 +76,8 @@ The following are select specifications for the FAS8700 storage system in a sing
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
 * Depth: 32.6”
 (34.7” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C
-50°F to 
-95°F) at
-<= 3048m
-<= 10000 ft) elevation;8% to 80%
-relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation; 8% to 80% relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft)
 10% to 95%  relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 8.5
 Sound pressure (LpAm) (bystander positions): 67.2 dB
@@ -131,6 +129,7 @@ IEC60950-1,
 IS 13252(part 1)
 
 == High availability
+
 * Ethernet based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
