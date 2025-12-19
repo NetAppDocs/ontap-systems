@@ -9,7 +9,7 @@ summary: Key specifications for the A900 platform group
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the AFF A900 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+The following are select specifications for the AFF A900 storage system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] for the complete specifications for this storage system.
 
 == Key specifications for AFF A900
 
@@ -20,6 +20,7 @@ The following are select specifications for the AFF A900 storage system in a sin
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 20
 * Minimum ONTAP Version: ONTAP 9.10.1RC2
+
 == Scaleout maximums
 * Type: NAS; HA Pairs: 12; Raw Capacity: 176.3 PB / 156.5 PiB; Max Memory: 24576 GB
 * Type: SAN; HA Pairs: 6; Raw Capacity: 88.1 PB / 78.3 PiB; Max Memory: 12288 GB
@@ -62,6 +63,7 @@ No onboard I/O data.
 * SMB 3.0
 * SMB 3.1
 * SMB 3.1.1
+
 == System environment specifications
 * Typical Power: 8004 BTU/hr
 * Worst-case Power: 9937 BTU/hr
@@ -71,13 +73,8 @@ No onboard I/O data.
 * Width: 19” IEC rack-compliant (17.7” 45.0 cm)
 * Depth: 28.8”
 (36.8” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C
-50°F to 
-95°F) at
-<= 3048m
-<= 10000 ft) elevation;8% to 80%
-relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation;8% to 80% relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft)
 10% to 95%  relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 7.4
 Sound pressure (LpAm) (bystander positions): 65.0 dB
@@ -133,4 +130,5 @@ IS 13252(part 1)
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
 * SAS in-band management over SAS connections
-[//] 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-12-12 ontap-systems-internal/issues/1421
