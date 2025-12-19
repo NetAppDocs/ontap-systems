@@ -136,7 +136,6 @@ Otherwise, you are done with the hot-add shelf procedure.
 .Cable shelf to FAS500f
 [%collapsible]
 
-
 ====
 
 When additional storage is needed, you can hot-add one NS224 shelf to a FAS500f HA pair.
@@ -173,5 +172,8 @@ If any cabling errors are generated, follow the corrective actions provided.
 If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:complete-hot-add-shelf.html[Complete the hot-add].
 
 Otherwise, you are done with the hot-add shelf procedure.
+
 ====
+
+
 //2025-11-17 ontap-systems-internal/issues/1391
