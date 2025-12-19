@@ -9,7 +9,7 @@ summary: Key specifications for the FAS2700 platform group
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the FAS2750 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+The following are select specifications for the FAS2750 storage system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] for the complete specifications for this storage system.
 
 == Key specifications for FAS2750
 
@@ -20,6 +20,7 @@ The following are select specifications for the FAS2750 storage system in a sing
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 2
 * Minimum ONTAP Version: ONTAP 9.4RC1
+
 == Scaleout maximums
 * Type: NAS; HA Pairs: 12; Raw Capacity: 32.2 PB / 28.6 PiB; Max Memory: 768 GB
 * Type: SAN; HA Pairs: 6; Raw Capacity: 16.1 PB / 14.3 PiB; Max Memory: 384 GB
@@ -59,6 +60,7 @@ The following are select specifications for the FAS2750 storage system in a sing
 * SMB 3.0
 * SMB 3.1
 * SMB 3.1.1
+
 == System environment specifications
 * Typical Power: 1209 BTU/hr
 * Worst-case Power: 1676 BTU/hr
@@ -68,13 +70,8 @@ The following are select specifications for the FAS2750 storage system in a sing
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
 * Depth: 19.0”
 (24.1” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 5°C to 45°C
-41°F to 
-113°F) at
-<= 3048m
-<= 10000 ft) elevation;8% to 90%
-relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+* Operating Temp/Altitude/Humidity: 5°C to 45°C (41°F to 113°F) at up to 3048m (10000 ft) elevation;8% to 90% relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft)
 10% to 95%  relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 6.9
 Sound pressure (LpAm) (bystander positions): 51.0 dB
@@ -130,4 +127,5 @@ IS 13252(part 1)
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
 * SAS in-band management over SAS connections for external shelves
-[//] 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-12-12 ontap-systems-internal/issues/1421

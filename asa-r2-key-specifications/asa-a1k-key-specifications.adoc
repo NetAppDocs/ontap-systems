@@ -20,6 +20,7 @@ The following are select specifications for the ASA A1K storage system in a sing
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 18
 * Minimum ONTAP Version: ONTAP 9.16.0
+
 == Scaleout maximums
 * Type: NAS
 * Type: SAN; HA Pairs: 6; Raw Capacity: 16.0 PB / 14.2 PiB; Max Memory: 12288 GB
@@ -36,7 +37,7 @@ No onboard I/O data.
 * Protocol: Ethernet 25 Gbps; Ports: 56
 * Protocol: Ethernet 10 Gbps; Ports: 56
 * Protocol: FC 64 Gbps; Ports: 56
-* Protocol: NVMe/FC  64 Gbps; Ports: 56
+* Protocol: NVMe/FC 64 Gbps; Ports: 56
 * Ports: 0
 
 === Management ports
@@ -45,10 +46,12 @@ No onboard I/O data.
 * Protocol: USB 600 Mbps; Ports: 2
 
 == Storage networking supported
+
 * FC
 * iSCSI
 * NVMe/FC 
 * NVMe/TCP
+
 == System environment specifications
 * Typical Power: 4402 BTU/hr
 * Worst-case Power: 6174 BTU/hr
@@ -58,13 +61,8 @@ No onboard I/O data.
 * Width: 19” IEC rack-compliant (17.7” 44.9 cm)
 * Depth: 30.0”
 (35.2” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C
-50°F to 
-95°F) at
-<= 3048m
-<= 10000 ft) elevation;8% to 80%
-relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation; 8% to 80% relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft)
 10% to 95%  relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 8.5
 Sound pressure (LpAm) (bystander positions): 67.7 dB

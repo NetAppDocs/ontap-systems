@@ -74,13 +74,13 @@ NVMe/TCP;
 === System Environment Specifications
 * Typical Power: 4209 BTU/hr
 * Worst-case Power: 5212 BTU/hr
-* Weight: 110.0 lb<br/>49.9 kg
+* Weight: 110.0 lb 49.9 kg
 * Height: 4U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
-* Depth: 32.6”<br/>(34.7” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C<br/>50°F to <br/>95°F) at<br/><= 3048m<br/><= 10000 ft) elevation;8% to 80%<br/>relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)<br/>10% to 95%  relative humidity, noncondensing, in original container
-* Acoustic Noise: Declared sound power (LwAd): 8.5;<br/>Sound pressure (LpAm) (bystander positions): 67.2 dB
+* Depth: 32.6” (34.7” with cable management bracket)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation;8% to 80% relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft) 10% to 95%  relative humidity, noncondensing, in original container
+* Acoustic Noise: Declared sound power (LwAd): 8.5; Sound pressure (LpAm) (bystander positions): 67.2 dB
 
 === Compliance
 * Certifications EMC/EMI: AMCA,
@@ -133,4 +133,5 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 SAS in-band management over SAS connections;
-[//] 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-10-15 ontap-systems-internal/issues/1357
+// 2025-12-12 ontap-systems-internal/issues/1421
