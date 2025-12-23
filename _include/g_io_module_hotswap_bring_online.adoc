@@ -19,7 +19,7 @@ After the I/O module is replaced and the ports are returned to a healthy state, 
 +
 .. Enter the following command:
 +
-`system controller slot module insert -node _impaired_node_name_ -slot _slot_name_`
+`system controller slot module insert -node _impaired_node_name_ -slot _slot_number_`
 
 .. Enter `y` when you see the prompt, _Do you want to continue?_ 
 +
@@ -44,9 +44,11 @@ The module has been successfully powered on, initialized and placed into service
 +
 NOTE: It might take several minutes for any required firmware updates and port initialization.
 +
-The output should show a hotplug.init.success EMS event logged for each port on the I/O module with `_hotplug.init.success:_` in the `_Event_` column.
+The output should show one or more hotplug.init.success EMS events indicating each port on the I/O module initiated successfully. 
+
+//The output should show one or more hotplug.init.success EMS events and `_hotplug.init.success:_` in the `_Event_` column, indicating each port on the I/O module initiated successfully.
 +
-For example, the following output shows initialization succeeded for I/O module ports e4b and e4a:
+For example, the following output shows initialization succeeded for I/O module cluster ports e4b and e4a:
 +
 ----
 node2::> event log show -event *hotplug.init*                        
@@ -74,7 +76,7 @@ The output should show the slot status as `_powered-on_` and therefore ready for
 +
 Enter the command from the console of the impaired controller:
 +
-`system controller config show -node local -slot _slot_name_`
+`system controller config show -node local -slot _slot_number_`
 // was: `sysconfig -av _slot_number_`
 +
 If the I/O module was successfully brought online and is recognized, the output shows I/O module information, including port information for the slot.

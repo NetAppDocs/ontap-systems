@@ -21,22 +21,6 @@ To hot swap an I/O module, ensure your storage system meets the ONTAP version re
 
 .About this task
 
-//* It is critical to apply the commands to the correct controller when you are hot-swapping a failed I/O module:
-
-//** If your storage system is running ONTAP 9.17.1 or 9.18.1RC: 
-//+
-//The _impaired controller_ is the controller on which you are hot-swapping the failed I/O module and it is the controller that has taken over the healthy controller.
-//+
-//The _healthy controller_ is the HA partner of the impaired controller and it is the controller that was taken over by the impaired controller.
-//+
-//When the impaired controller has taken over the healthy controller, the only way to recover without an outage is to hot-swap the module.
-
-//** If your storage system is running ONTAP 9.18.1GA or later:
-//+
-//The _impaired controller_ is the controller on which you are hot-swapping the failed I/O module and it is the controller that was taken over by the healthy controller.
-//+
-//The _healthy controller_ is the HA partner of the impaired controller and it is the controller that has taken over the impaired controller.
-
 * Hot-swapping the I/O module means that you do not have to perform a manual takeover before replacing the failed I/O module.
 
 * It is critical to apply the commands to the correct controller and I/O slot when you are hot-swapping the I/O module:

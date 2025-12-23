@@ -20,7 +20,7 @@ You can add I/O modules to improve redundancy, helping to ensure that the storag
 // Jan 2026: updated for 9.18.1 support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 +
 You can hot-swap certain I/O modules for an equivalent I/O module to restore the storage system to its optimal operating state. Hot-swapping is done without having to perform a manual takeover. 
-
++
 //manually take over the controller with the failed I/O module.
 +
 To use this procedure, your storage system must be running ONTAP 9.17.1 or later and meet specific requirements for the version of ONTAP your system is running.
