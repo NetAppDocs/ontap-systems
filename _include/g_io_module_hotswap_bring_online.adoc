@@ -45,7 +45,7 @@ The module has been successfully powered on, initialized and placed into service
 NOTE: It might take several minutes for any required firmware updates and port initialization.
 +
 The output should show one or more hotplug.init.success EMS events indicating each port on the I/O module initiated successfully. 
-
++
 //The output should show one or more hotplug.init.success EMS events and `_hotplug.init.success:_` in the `_Event_` column, indicating each port on the I/O module initiated successfully.
 +
 For example, the following output shows initialization succeeded for I/O ports e4b and e4a:
