@@ -40,6 +40,7 @@ The module has been successfully powered on, initialized and placed into service
 . Verify that each port on the I/O module successfully initialized:
 +
 .. Enter the following command from the console of the impaired controller:
++
 `event log show -event \*hotplug.init*`
 +
 NOTE: It might take several minutes for any required firmware updates and port initialization.
