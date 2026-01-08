@@ -2,7 +2,7 @@
 permalink: c190/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
 keywords: aff c190, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback, manual, manual boot recovery
-summary: "Verify encryption key support and status before shutting down the impaired controller on an AFF C190 system. This procedure includes checking ONTAP version compatibility with NetApp Volume Encryption (NVE), verifying the key manager configuration, and backing up encryption information to ensure data security during boot media recovery."
+summary: "Verify encryption key support and status before shutting down the impaired controller on an AFF C190 system. The AFF C190 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Check encryption key support and status - AFF C190
 :icons: font
@@ -11,7 +11,7 @@ summary: "Verify encryption key support and status before shutting down the impa
 [.lead]
 Verify encryption key support and status before shutting down the impaired controller on an AFF C190 system. This procedure includes checking ONTAP version compatibility with NetApp Volume Encryption (NVE), verifying the key manager configuration, and backing up encryption information to ensure data security during boot media recovery.
 
-he AFF C190 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+The AFF C190 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 == Step 1: Check NVE support and download the correct ONTAP image
 
