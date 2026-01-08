@@ -2,12 +2,15 @@
 permalink: fas2700/bootmedia-replace.html
 sidebar: sidebar
 keywords: fas2700, aff a220, replace, boot, media, controller, module, fru map, manual, manual boot recovery
-summary: 'You must locate the boot media in the controller and follow the directions to replace it. The FAS2700 system supports only manual boot media recovery procedures.'
+summary: "Replace the failed boot media on a FAS2700 controller module. The FAS2700 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Replace the boot media - FAS2700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the failed boot media on a FAS2700 controller module. This procedure includes removing the controller module from the chassis, physically replacing the boot media component, transferring the boot image to the replacement media using a USB flash drive, and restoring the system to normal operation.
+
+The FAS2700 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 include::../_include/220_2700_bootmedia_replace.adoc[]

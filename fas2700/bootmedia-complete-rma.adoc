@@ -9,4 +9,6 @@ summary: 'After you replace the part, you can return the failed part to NetApp, 
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/complete_rma.adoc[]
+Return the failed part to NetApp, as described in the RMA instructions shipped with the kit. See the https://mysupport.netapp.com/site/info/rma[Part Return and Replacements] page for further information.
+
+The FAS2700 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.

@@ -1,15 +1,17 @@
 ---
 permalink: fas8200/bootmedia-replace.html
 sidebar: sidebar
-keywords: fas8200, replace the boot media
-summary: 'You must locate the boot media in the controller and follow the directions to replace it.'
+keywords: fas8200, replace the boot media, manual, manual boot recovery
+summary: "Replace the failed boot media on a FAS8200 controller module. The FAS8200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Replace the boot media - FAS8200
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+Replace the failed boot media on a FAS8200 controller module. This procedure includes removing the controller module from the chassis, physically replacing the boot media component, transferring the boot image to the replacement media using a USB flash drive, and restoring the system to normal operation.
+
+The FAS8200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 == Step 1: Remove the controller
 
