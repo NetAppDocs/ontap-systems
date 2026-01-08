@@ -1,15 +1,17 @@
 ---
 permalink: fas2600/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
-keywords: fas2600, pre-shutdown checks for onboard encryption keys
-summary: "Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check what version of ONTAP the system is running."
+keywords: fas2600, pre-shutdown checks for onboard encryption keys, manual, manual boot recovery
+summary: "Verify encryption key support and status before shutting down the impaired controller on a FAS2600 system. This procedure includes checking ONTAP version compatibility The FAS2600 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Check encryption key support and status - FAS2600
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To ensure data security on your storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption (NVE), and before you shut down the controller check if the key manager is active.
+Verify encryption key support and status before shutting down the impaired controller on a FAS2600 system. This procedure includes checking ONTAP version compatibility with NetApp Volume Encryption (NVE), verifying the key manager configuration, and backing up encryption information to ensure data security during boot media recovery.
+
+The FAS2600 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 == Step 1: Check NVE support and download the correct ONTAP image
 
