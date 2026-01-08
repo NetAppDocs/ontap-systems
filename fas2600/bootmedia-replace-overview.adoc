@@ -9,7 +9,7 @@ summary: "Learn about boot media replacement on a FAS2600 system and understand 
 :imagesdir: ../media/
 
 [.lead]
-Learn about boot media replacement on a FAS2600 system and understand the different replacement methods.The FAS2600 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+Learn about boot media replacement on a FAS2600 system and understand the different replacement methods. The FAS2600 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 The boot media stores primary and secondary boot image files that the system uses during startup. Depending on your network configuration, you can perform either a nondisruptive replacement (HA pair connected to network) or a disruptive replacement (requires two reboots).
 
