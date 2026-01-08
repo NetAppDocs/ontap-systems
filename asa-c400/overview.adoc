@@ -9,7 +9,7 @@ summary: Key specifications for the ASA-C400 platform group
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the ASA C400 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+The following are select specifications for the ASA C400 storage system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] for the complete specifications for this storage system.
 
 == Key specifications for ASA C400
 
@@ -20,6 +20,7 @@ The following are select specifications for the ASA C400 storage system in a sin
 * ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 10
 * Minimum ONTAP Version: ONTAP 9.13.1P1
+
 == Scaleout maximums
 * Type: NAS
 * Type: SAN; HA Pairs: 6; Raw Capacity: 17.7 PB / 15.7 PiB; Max Memory: 1536 GB
@@ -47,7 +48,8 @@ The following are select specifications for the ASA C400 storage system in a sin
 == Storage networking supported
 * FC
 * iSCSI
-* NVMe/FC 
+* NVMe/FC
+
 == System environment specifications
 * Typical Power: 4209 BTU/hr
 * Worst-case Power: 5215 BTU/hr
@@ -57,13 +59,8 @@ The following are select specifications for the ASA C400 storage system in a sin
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
 * Depth: 32.6”
 (34.7” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C
-50°F to 
-95°F) at
-<= 3048m
-<= 10000 ft) elevation;8% to 80%
-relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) upto 12192m (40000 ft)
+* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation;8% to 80% relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft)
 10% to 95%  relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 8.5
 Sound pressure (LpAm) (bystander positions): 67.2 dB

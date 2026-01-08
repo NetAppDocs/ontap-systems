@@ -1,0 +1,40 @@
+
+
+.Steps
+
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
++
+NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
+
+. Recable the system, as needed.
++
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+
+. Complete the reinstallation of the controller module:
+ .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
++
+The locking latches rise when the controller module is fully seated.
++
+NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+
+ .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
+ .. Plug the power cords into the power supplies, reinstall the power cable locking collar, and then connect the power supplies to the power source.
++
+The controller module begins to boot as soon as power is restored. Be prepared to interrupt the boot process.
+
+ .. If you have not already done so, reinstall the cable management device.
+
+ . Return the impaired controller to normal operation by giving back its storage: 
++
+`storage failover giveback -ofnode _impaired_node_name_`.
+
+. If automatic giveback was disabled, reenable it: 
++
+`storage failover modify -node local -auto-giveback true`.
+
+. If AutoSupport is enabled, restore/unsuppress automatic case creation: 
++
+`system node autosupport invoke -node * -type all -message MAINT=END`.
+
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380

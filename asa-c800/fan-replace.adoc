@@ -9,4 +9,35 @@ summary: "You must remove the controller module from the chassis when you replac
 :imagesdir: ../media/
 
 [.lead]
+
+Replace a fan module in your ASA C800 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the impaired controller, removing it, replacing the fan module, reinstalling the controller, and then returning the failed part to NetApp.
+
+== Step 1: Shut down the impaired controller
+
+Shut down the impaired controller
+
+include::../_include/shutdown_most_frus.adoc[]
+
+== Step 2: Remove the controller module
+
+You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
+
+include::../_include/800_controller_remove_physical.adoc[]
+
+== Step 3: Replace a fan
+
+Locate the failed fan module and replace it with a new fan module.
+
 include::../_include/800_fan_replace.adoc[]
+
+== Step 4: Reinstall the controller module
+
+Reinstall the controller module and reboot it.
+
+include::../_include/800_controller_install_step_physical.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
