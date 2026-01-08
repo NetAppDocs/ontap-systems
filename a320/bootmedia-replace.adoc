@@ -12,7 +12,7 @@ summary: The boot media stores a primary and secondary set of boot image files t
 To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive. The AFF A320 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 == Step 1: Remove the controller module
-To access components inside the controller module, you must remove the controller module from the chassis. The AFF A320 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+To access components inside the controller module, you must remove the controller module from the chassis.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
