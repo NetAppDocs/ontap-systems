@@ -9,6 +9,8 @@ summary: "Learn about boot media replacement on a FAS2700 system and understand 
 :imagesdir: ../media/
 
 [.lead]
-Learn about boot media replacement on a FAS2700 system and understand the different replacement methods. The boot media stores primary and secondary boot image files that the system uses during startup. Depending on your network configuration, you can perform either a nondisruptive replacement (HA pair connected to network) or a disruptive replacement (requires two reboots).
+Learn about boot media replacement on a FAS2700 system and understand the different replacement methods. 
+
+The boot media stores primary and secondary boot image files that the system uses during startup. Depending on your network configuration, you can perform either a nondisruptive replacement (HA pair connected to network) or a disruptive replacement (requires two reboots).
 
 include::../_include/bootmedia_replace_overview.adoc[]
