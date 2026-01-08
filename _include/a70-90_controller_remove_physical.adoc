@@ -2,13 +2,52 @@
 
 .Steps
 
-. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-// ontap-systems-internal/issues/1151 
-+
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
-+
+. If you are not already grounded, properly ground yourself.
 
-. Check the amber NVRAM that status LED located in slot 4/5 on the back of the impaired controller module is off. Look for the NV icon.
+. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
++
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto, title="Video - Confirm drive seating"]
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
++
+. Check the controller drives based on the system status:
+
+.. On the healthy controller, check if any active RAID group is in a degraded state, failed state, or both:
+
++
+[source,cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++ 
+- If the command returns `There are no entries matching your query.` continue to <<Check-missing-drives,go to the next sub-step to check for missing drives>>. 
+- If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
++
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
++
+.. [[Check-missing-drives]]Check for missing drive issues for both the file system or spare drives:
+
++
+[source,cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
+
++ 
+- If the command returns `There are no entries matching your query.` continue to <<Check-the-amber-NVRAM,go to the next step>>. 
+- If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
++
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+. [[Check-the-amber-NVRAM]]Check the amber NVRAM that status LED located in slot 4/5 on the back of the impaired controller module is off. Look for the NV icon.
 +
 image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
 +
@@ -62,3 +101,5 @@ Locking pin
 . Slide the controller module out of the chassis and place it on a flat, stable surface.
 +
 Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380

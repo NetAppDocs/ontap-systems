@@ -4,10 +4,21 @@ sidebar: sidebar
 keywords: asa a800, verify and set HA state, complete the replacement process
 summary: "You must verify the HA state of the chassis, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit."
 ---
-= Complete chassis replacement - ASA A800
+= Complete the restoration and replacement process - ASA A800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Reboot the controllers, verify system health, and return the failed part to NetApp to complete the final step in the ASA A800 chassis replacement procedure.
+
+== Step 1: Verify and set the HA state of the chassis
 
 include::../_include/800_chassis_replace_complete_system_restore_rma.adoc[]
+
+== Step 2: Verify storage system health
+
+After the controller giveback completes, verify system health using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor]. Address any issues found.
+
+== Step 3: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

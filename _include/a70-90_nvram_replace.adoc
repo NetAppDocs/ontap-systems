@@ -11,14 +11,53 @@ Replace the NVRAM module or NVRAM DIMMs using the appropriate following option.
 
 To replace the NVRAM module, locate it in slot 4/5 in the chassis and follow the specific sequence of steps.
 
-. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-// ontap-systems-internal/issues/1151
-+
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
-+
-. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
-
 . If you are not already grounded, properly ground yourself.
+
+. Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
++
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto, title="Video - Confirm drive seating"]
++
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
++
+. Check the controller drives based on the system status:
+
+.. On the healthy controller, check if any active RAID group is in a degraded state, failed state, or both:
+
++
+[source,cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++ 
+- If the command returns `There are no entries matching your query.` continue to <<Check-missing-drives,go to the next sub-step to check for missing drives>>. 
+- If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
++
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
++
+.. [[Check-missing-drives]]Check for missing drive issues for both the file system or spare drives:
+
++
+[source,cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
+
++ 
+- If the command returns `There are no entries matching your query.` continue to <<Go-to-the-rear,go to the next step>>. 
+- If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
++
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+. [[Go-to-the-rear]]Go to the rear of the chassis. 
+
+
 . Unplug the controller's PSUs.
 
 +
@@ -87,12 +126,52 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 
 To replace NVRAM DIMMs in the NVRAM module, first must remove the NVRAM module and then replace the target DIMM.
 
+. If you are not already grounded, properly ground yourself.
+
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
-// ontap-systems-internal/issues/1151
 +
-image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat disk drives]
+video::2c46e4af-2c21-4f12-b065-b38b003d0ea2[panopto, title="Video - Confirm drive seating"]
 +
-. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+image::../media/drw_a800_drive_seated_IEOPS-960.svg[Seat the drives]
++
+. Check the controller drives based on the system status:
+
+.. On the healthy controller, check if any active RAID group is in a degraded state, failed state, or both:
+
++
+[source,cli]
+----
+storage aggregate show -raidstatus !*normal*
+----
++ 
+- If the command returns `There are no entries matching your query.` continue to <<Check-missing-drives, go to the next sub-step to check for missing drives>>. 
+- If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
++
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
++
+.. [[Check-missing-drives]]Check for missing drive issues for both the file system or spare drives:
+
++
+[source,cli]
+----
+event log show -severity * -node * -message-name *disk.missing*
+----
+
++ 
+- If the command returns `There are no entries matching your query.` continue to <<Go-to-the-rear, go to the next step>>. 
+- If the command returns any other results, collect the AutoSupport data from both controllers and contact NetApp Support for further assistance.
++
+[source,cli]
+----
+system node autosupport invoke -node * -type all -message '<message_name>'
+----
+
+
+. [[Go-to-the-rear]]Go to the rear of the chassis.  
 
 . Unplug the controller's PSUs.
 

@@ -24,3 +24,4 @@ include::../_include/encryption_check_bootmedia.adoc[]
 Before shutting down the impaired controller, verify the key manager configuration and back up the necessary information.
 
 include::../_include/encryption_key_mgr_bootmedia.adoc[]
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
