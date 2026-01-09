@@ -1,13 +1,14 @@
 ---
 permalink: a220/bootmedia-replace-overview.html
 sidebar: sidebar
-keywords: fas2700, aff a220, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb
-summary: 'The boot media stores a primary and secondary set of system \(boot image\) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement.'
+keywords: fas2700, aff a220, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb, manual, manual boot recovery
+summary: 'The boot media stores a primary and secondary set of system \(boot image\) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement. The AFF A220 system supports only manual boot media recovery procedures.'
 ---
 = Overview of boot media replacement - AFF A220
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+The AFF A220 system supports only manual boot media recovery procedures.
 
 include::../_include/bootmedia_replace_overview.adoc[]
