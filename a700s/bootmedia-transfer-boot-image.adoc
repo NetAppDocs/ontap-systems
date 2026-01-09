@@ -1,17 +1,19 @@
 ---
 permalink: a700s/bootmedia-transfer-boot-image.html
 sidebar: sidebar
-keywords: aff a700s, aff, a700s, procedure, secondary, boot, media, restore, fail, image, tgz, file, trasnfer, usb, flash, drive, transfer the boot image to the boot medai using a usb flash drive
-summary: This procedure should only be used if the secondary boot media restore failed or if the image.tgz file is not found on the secondary boot media.
+keywords: aff a700s, aff, a700s, procedure, secondary, boot, media, restore, fail, image, tgz, file, trasnfer, usb, flash, drive, transfer the boot image to the boot medai using a usb flash drive, manual, manual boot recovery
+summary: "Transfer the boot image to the replacement boot media on an AFF A700s system using either the secondary boot media or a USB flash drive. The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Transfer the boot image to the boot media - AFF A700s
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can install the system image to the replacement boot media using by using either the image on second boot media installed in the controller module, the primary method to restore the system image, or by transferring the boot image to the boot media using a USB flash drive when the secondary boot media restore failed or if the image.tgz file is not found on the secondary boot media.
+Transfer the boot image to the replacement boot media on an AFF A700s system using either the secondary boot media or a USB flash drive. This procedure includes restoring from the image on the secondary boot media as the primary method, or using a USB flash drive if the secondary boot media restoration fails or the image.tgz file is missing.
 
-== Option 1: Transfer files to the boot media using backup recovery from the second boot media
+The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+
+== Option 1: Transfer files using backup recovery from the second boot media
 
 You can install the system image to the replacement boot media using the image on second boot media installed in the controller module. This is the primary method for transferring the boot media files to the replacement boot media in systems with two boot media in the controller module.
 
@@ -66,7 +68,7 @@ The image is downloaded from the secondary boot media.
 . Press `y` when prompted whether to use the restored copy, and then press `y` when prompted to reboot the controller.
 . Exit advanced privilege level on the healthy controller.
 
-== Option 2: Transfer the boot image to the boot media using a USB flash drive
+== Option 2: Transfer the boot image using a USB flash drive
 
 This procedure should only be used if the secondary boot media restore failed or if the image.tgz file is not found on the secondary boot media.
 

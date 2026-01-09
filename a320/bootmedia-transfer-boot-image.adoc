@@ -1,15 +1,15 @@
 ---
 permalink: a320/bootmedia-transfer-boot-image.html
 sidebar: sidebar
-keywords: aff, a320, aff a320, replacement, boot, media, install, image, transfer, usb, flash, drive, transfer the boot image to the boot media using a usb flash drive
-summary: The replacement boot media that you installed does not have a boot image, so you need to transfer a boot image using a USB flash drive.
+keywords: aff, a320, aff a320, replacement, boot, media, install, image, transfer, usb, flash, drive, transfer the boot image to the boot media using a usb flash drive, manual, manual boot recovery
+summary: The replacement boot media that you installed does not have a boot image, so you need to transfer a boot image using a USB flash drive. The AFF A320 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 ---
 = Transfer the boot image to the boot media using a USB flash drive - AFF A320
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The replacement boot media that you installed does not have a boot image, so you need to transfer a boot image using a USB flash drive.
+The replacement boot media that you installed does not have a boot image, so you need to transfer a boot image using a USB flash drive. The AFF A320 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 * You must have a USB flash drive, formatted to MBR/FAT32, with at least 4GB capacity
 * A copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the Downloads section on the NetApp Support Site

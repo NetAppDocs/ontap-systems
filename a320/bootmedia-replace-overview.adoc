@@ -1,12 +1,14 @@
 ---
 permalink: a320/bootmedia-replace-overview.html
 sidebar: sidebar
-keywords: aff, a320, locate, boot, media, controller, module, direction, replace, replace the boot media
-summary: You must locate the boot media in the controller module, and then follow the directions to replace it.
+keywords: aff, a320, locate, boot, media, controller, module, direction, replace, replace the boot media, manual, manual boot recovery
+summary: You must locate the boot media in the controller module, and then follow the directions to replace it. The AFF A320 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 ---
 = Overview of boot media replacement - AFF A320
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+The AFF A320 system supports only manual boot media recovery procedures.
+
 include::../_include/bootmedia_replace_overview.adoc[]

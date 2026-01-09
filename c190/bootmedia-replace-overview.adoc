@@ -1,15 +1,18 @@
 ---
 permalink: c190/bootmedia-replace-overview.html
 sidebar: sidebar
-keywords: AFF c190, nondisruptive, disruptive, replace the boot media
-summary: 'The boot media stores a primary and secondary set of system \(boot image\) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement.'
+keywords: AFF c190, nondisruptive, disruptive, replace the boot media, manual, manual boot recovery
+summary: "Learn about boot media replacement on an AFF C190 system and understand the different replacement methods. The AFF C190 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Overview of boot media replacement - AFF C190
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The boot media stores a primary and secondary set of system (boot image) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement.
+Learn about boot media replacement on an AFF C190 system and understand the different replacement methods. The boot media stores primary and secondary boot image files that the system uses during startup. Depending on your network configuration, you can perform either a nondisruptive replacement (HA pair connected to network) or a disruptive replacement (requires two reboots).
+
+The AFF C190 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+
 
 You must have a USB flash drive, formatted to FAT32, with the appropriate amount of storage to hold the `image_xxx.tgz` file.
 
