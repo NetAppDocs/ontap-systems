@@ -1,15 +1,17 @@
 ---
 permalink: a700s/bootmedia-replace.html
 sidebar: sidebar
-keywords: aff a700s, aff, a700s, locate, fail, boot, media, controller, module, pcie, led, replace, replace the boot media
-summary: You must locate the failed boot media in the controller module by removing the middle PCIe module on the controller module, locate the failed boot media by the lit LED near the boot media, and then replace the boot media.
+keywords: aff a700s, aff, a700s, locate, fail, boot, media, controller, module, pcie, led, replace, replace the boot media, manual, manual boot recovery
+summary: "Replace the failed boot media on an AFF A700s controller module. The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Replace the boot media - AFF A700s
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must remove the controller module from the chassis, open it, and then replace the failed boot media.
+Replace the failed boot media on an AFF A700s controller module. This procedure includes removing the controller module from the chassis, locating the failed boot media using the lit LED indicator, physically replacing the boot media component, and restoring the system to normal operation.
+
+The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 == Step 1: Remove the controller module
 

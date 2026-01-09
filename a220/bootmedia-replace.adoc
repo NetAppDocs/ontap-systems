@@ -1,13 +1,14 @@
 ---
 permalink: a220/bootmedia-replace.html
 sidebar: sidebar
-keywords: aff a220, replace, boot, media, controller, module, fru map
-summary: 'You must locate the boot media in the controller and follow the directions to replace it.'
+keywords: aff a220, replace, boot, media, controller, module, fru map, manual, manual boot recovery
+summary: 'You must locate the boot media in the controller and follow the directions to replace it. The AFF A220 system supports only manual boot media recovery procedures.'
 ---
 = Replace the boot media - AFF A220
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+The AFF A220 system supports only manual boot media recovery procedures.
 
 include::../_include/220_2700_bootmedia_replace.adoc[]

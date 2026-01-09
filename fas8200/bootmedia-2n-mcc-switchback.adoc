@@ -1,12 +1,16 @@
 ---
 permalink: fas8200/bootmedia-2n-mcc-switchback.html
 sidebar: sidebar
-keywords: fas8200, switch back aggregate in a two-node metrocluster configuration
-summary: "After you have completed the FRU replacement in a two-node MetroCluster configuration, you can perform the MetroCluster switchback operation. This returns the configuration to its normal operating state, with the sync-source storage virtual machines (SVMs) on the formerly impaired site now active and serving data from the local disk pools."
+keywords: fas8200, switch back aggregate in a two-node metrocluster configuration, manual, manual boot recovery
+summary: "Perform the MetroCluster switchback operation on a FAS8200 system after completing boot media replacement in a two-node MetroCluster configuration. The FAS8200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Switch back aggregates in a two-node MetroCluster configuration - FAS8200
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Perform the MetroCluster switchback operation on a FAS8200 system after completing boot media replacement in a two-node MetroCluster configuration. This procedure includes verifying node and storage virtual machine (SVM) states, executing the switchback command, and confirming that the configuration returns to normal operating state with sync-source SVMs serving data from local disk pools.
+
+The FAS8200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+
 include::../_include/2n_mcc_switchback.adoc[]

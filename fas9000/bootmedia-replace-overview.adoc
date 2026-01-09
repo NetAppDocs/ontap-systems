@@ -1,13 +1,14 @@
 ---
 permalink: fas9000/bootmedia-replace-overview.html
 sidebar: sidebar
-keywords: aff a700, fas9000, replace, boot, media, primary, secondary, image, disruptive, nondisruptive
-summary: "The boot media stores a primary and secondary set of system (boot image) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement."
+keywords: aff a700, fas9000, replace, boot, media, primary, secondary, image, disruptive, nondisruptive, manual, manual boot recovery
+summary: "The boot media stores a primary and secondary set of system (boot image) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement. The FAS9000 system supports only manual boot media recovery procedures."
 ---
 = Overview of boot media replacement - FAS9000
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+The boot media stores a primary and secondary set of system (boot image) files that the system uses when it boots. The FAS9000 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 include::../_include/700_9000_bootmedia_replace_overview.adoc[]
