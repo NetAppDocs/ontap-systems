@@ -1,14 +1,14 @@
 ---
 permalink: a220/bootmedia-encryption-restore.html
 sidebar: sidebar
-keywords: aff a220, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption
-summary: 'Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager \(OKM\), NetApp Storage Encryption \(NSE\) or NetApp Volume Encryption \(NVE\) enabled.'
+keywords: aff a220, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption, manual, manual boot recovery
+summary: 'Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager \(OKM\), NetApp Storage Encryption \(NSE\) or NetApp Volume Encryption \(NVE\) enabled. The AFF A220 system supports only manual boot media recovery procedures.'
 ---
 = Restore encryption - AFF A220
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media.
+Restore encryption on the replacement boot media. The AFF A220 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 include::../_include/encryption_restore_bootmedia.adoc[]

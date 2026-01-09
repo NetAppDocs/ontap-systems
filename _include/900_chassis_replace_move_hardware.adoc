@@ -17,7 +17,7 @@ NOTE: When removing a power supply, always use two hands to support its weight.
 video::6d0eee92-72e2-4da4-a4fa-adf9016b57ff[panopto, title="Animation - Remove/install PSU"]
 
 +
-image::../media/drw_a900_remove_install_PSU_module.png[Remove or install a PSU module]
+image::../media/drw_a900_remove_install_PSU_module.svg[Remove or install a PSU module]
 +
 
 [cols="1,4"]
@@ -45,7 +45,7 @@ NOTE: The fan modules are short. Always support the bottom of the fan module wit
 video::3c3c8d93-b48e-4554-87c8-adf9016af819[panopto, title="Animation - Remove/install fan"]
 
 +
-image::../media/drw_a900_remove_install_fan.png[Remove or installing the fan]
+image::../media/drw_a900_remove_install_fan.svg[Remove or installing the fan]
 +
 [cols="1,4"]
 |===
@@ -74,7 +74,7 @@ To replace the chassis, you must remove the controller module or modules from th
 video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto, title="Animation - Remove the controller"]
 
 +
-image::../media/drw_a900_remove_PCM.png[Remove the controller]
+image::../media/drw_a900_remove_PCM.svg[Remove the controller]
 +
 
 [cols="1,4"]
@@ -121,7 +121,7 @@ Make sure that you keep track of which slot the I/O module was in.
 video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto, title="Animation - Remove/install I/O module"]
 
 +
-image:../media/drw_a900_remove_PCIe_module.png[Remove a PCIe module]
+image:../media/drw_a900_remove_PCIe_module.svg[Remove a PCIe module]
 
 +
 
@@ -151,7 +151,7 @@ Remove the two de-stage controller power modules from the front of the impaired 
 video::ade18276-5dbc-4b91-9a0e-adf9016b4e55[panopto, title="Animation - Remove/install DCPM"]
 
 +
-image::../media/drw_a900_remove_NV_battery.png[Remove an NV battery]
+image::../media/drw_a900_remove_NV_battery.svg[Remove an NV battery]
 +
 
 [cols="1,4"]
@@ -170,7 +170,7 @@ Remove the USB LED modules.
 
 video::eb715462-cc20-454f-bcf9-adf9016af84e[panopto, title="Animation - Remove/install USB"]
 
-image::../media/drw_a900_remove_replace_LED_mod.png[Remove or replace a USB LED module]
+image::../media/drw_a900_remove_replace_LED_mod.svg[Remove or replace a USB LED module]
 
 [cols="1,4"]
 |===

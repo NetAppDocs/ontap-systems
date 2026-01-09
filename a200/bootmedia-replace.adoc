@@ -1,7 +1,7 @@
 ---
 permalink: a200/bootmedia-replace.html
 sidebar: sidebar
-keywords: aff a200, locate, boot, media, controller, direction, replace
+keywords: aff a200, locate, boot, media, controller, direction, replace, manual, manual boot recovery
 summary: You must locate the boot media in the controller and follow the directions to replace it.
 ---
 = Replace the boot media - AFF A200
@@ -9,7 +9,7 @@ summary: You must locate the boot media in the controller and follow the directi
 :imagesdir: ../media/
 
 [.lead]
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive. The AFF A200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 == Step 1: Remove the controller
 
