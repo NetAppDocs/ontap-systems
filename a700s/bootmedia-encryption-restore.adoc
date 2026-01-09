@@ -1,14 +1,16 @@
 ---
 permalink: a700s/bootmedia-encryption-restore.html
 sidebar: sidebar
-keywords: aff a700s, aff, a700s, environment, variable, check, complete, onboard, key, manager, okm, netapp, storage, encryption, nse, volume, nve, enable, post, boot, replacement, post boot media replacement steps for okm nse and nve
-summary: Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager \(OKM\), NetApp Storage Encryption \(NSE\) or NetApp Volume Encryption \(NVE\) enabled.
+keywords: aff a700s, aff, a700s, environment, variable, check, complete, onboard, key, manager, okm, netapp, storage, encryption, nse, volume, nve, enable, post, boot, replacement, post boot media replacement steps for okm nse and nve, manual, manual boot recovery
+summary: "Restore encryption configuration on the replacement boot media for an AFF A700s system. The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Restore encryption - AFF A700s
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media.
+Restore encryption configuration on the replacement boot media for an AFF A700s system. This procedure includes completing post-replacement steps for systems with Onboard Key Manager (OKM), NetApp Storage Encryption (NSE), or NetApp Volume Encryption (NVE) enabled to ensure secure data access and proper system operation.
+
+The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 include::../_include/encryption_restore_bootmedia.adoc[]

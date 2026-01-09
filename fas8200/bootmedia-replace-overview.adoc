@@ -1,12 +1,16 @@
 ---
 permalink: fas8200/bootmedia-replace-overview.html
 sidebar: sidebar
-keywords: fas8200, replace the boot media
-summary: 'The boot media stores a primary and secondary set of system \(boot image\) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement.'
+keywords: fas8200, replace the boot media, manual, manual boot recovery
+summary: "Learn about boot media replacement on a FAS8200 system and understand the different replacement methods. The FAS8200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Overview of boot media replacement - FAS8200
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Learn about boot media replacement on a FAS8200 system and understand the different replacement methods. The boot media stores primary and secondary boot image files that the system uses during startup. Depending on your network configuration, you can perform either a nondisruptive replacement (HA pair connected to network) or a disruptive replacement (requires two reboots).
+
+The FAS8200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+
 include::../_include/bootmedia_replace_overview.adoc[]
