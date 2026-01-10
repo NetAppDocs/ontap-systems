@@ -41,7 +41,7 @@ Ethernet I/O modules with ports used for storage or MetroCluster are not hot-swa
 +
 If nodes in your cluster are running different ONTAP versions, this is considered a mixed-version cluster and hot-swapping an I/O module is not supported.
 
-// FYI: some of this mixed-version content was pulled frm ONTAP topic: https://docs.netapp.com/us-en/ontap/upgrade/concept_mixed_version_requirements.html
+// FYI: some of this mixed-version content was pulled from ONTAP topic: https://docs.netapp.com/us-en/ontap/upgrade/concept_mixed_version_requirements.html
 
 * The controllers in your storage system can be in either of the following states:
 

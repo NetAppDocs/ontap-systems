@@ -1,14 +1,9 @@
 
-// New include that's generic - can be used for the g-platform family and v-platform family.
+// July 2025: New include that's generic - can be used for the g-platform family and v-platform family.
 
 Restore your storage system to normal operation by giving back storage to the controller that was taken over (as needed), restoring automatic giveback (as needed), verifying LIFs are on their home ports, and reenabling AutoSupport automatic case creation.
 
-//Even in 9.18.1GA and later, for any number of nodes in a cluster, the automatic take over happens? Or only does the customer have to manually do it? If yes, I need to add steps to manually do it...like for rest of FRUs! I beleive this section stays as is for 9.18.1GA and later unless we want to add a tabbed option for 9.17.1/9.18.1RC vs 9.18.1GA and later.
-
-
 .Steps
-
-//This step depends on the version of ONTAP your system is running and the state of the controllers:
 
 . As needed for the version of ONTAP your storage system is running and the state of the controllers, give back storage and restore automatic giveback on the controller that was taken over:
 +
@@ -25,8 +20,6 @@ a|
 +
 `storage failover giveback -ofnode _healthy_node_name_`
 +
-// The healthy controller should be in the "waiting for giveback" state.
-+
 . Restore automatic giveback from the console of the impaired controller: 
 +
 `storage failover modify -node local -auto-giveback _true_`
@@ -38,8 +31,6 @@ a|
 . Return the controller that was taken over to normal operation by giving back its storage: 
 +
 `storage failover giveback -ofnode _controller that was taken over_name_`
-+
-// The healthy controller should be in the "waiting for giveback" state.
 +
 . Restore automatic giveback from the console of the controller that was taken over: 
 +
