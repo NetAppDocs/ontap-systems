@@ -1,15 +1,15 @@
 ---
 permalink: a300/bootmedia-recovery-image-boot-options.html
 sidebar: sidebar
-keywords: aff a300, boot the recovery image
-summary: "The procedure for booting the impaired controller from the recovery image depends on whether the system is in a two-node MetroCluster configuration."
+keywords: aff a300, boot the recovery image, manual, manual boot recovery
+summary: "The procedure for booting the impaired controller from the recovery image depends on whether the system is in a two-node MetroCluster configuration. The AFF A300 system supports only manual boot media recovery procedures."
 ---
 = Boot the recovery image - AFF A300
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The procedure for booting the impaired controller from the recovery image depends on whether the system is in a two-controller MetroCluster configuration.
+The procedure for booting the impaired controller from the recovery image depends on whether the system is in a two-controller MetroCluster configuration. The AFF A300 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 == Option 1: Most systems
 

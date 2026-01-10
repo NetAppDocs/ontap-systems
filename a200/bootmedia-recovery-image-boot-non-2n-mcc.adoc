@@ -1,7 +1,7 @@
 ---
 permalink: a200/bootmedia-recovery-image-boot-non-2n-mcc.html
 sidebar: sidebar
-keywords: aff a200, verify environment variables, image, boot the recovery image
+keywords: aff a200, verify environment variables, image, boot the recovery image, manual, manual boot recovery
 summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 ---
 = Boot the recovery image - AFF A200
@@ -9,7 +9,7 @@ summary: You must boot the ONTAP image from the USB drive, restore the file syst
 :imagesdir: ../media/
 
 [.lead]
-You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables. The AFF A200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 .Steps
 . From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`

@@ -1,15 +1,17 @@
 ---
 permalink: a700s/bootmedia-replace-overview.html
 sidebar: sidebar
-keywords: aff a700s, aff, a700s, primary, boot, media, store, ontap, image, system, restore, primary, media, secondary, usb, flash, drive, replace, replace the boot media
-summary: The primary boot media stores the ONTAP boot image that the system uses when it boots. You can restore the primary boot media image by using the ONTAP image on the secondary boot media, or if necessary, by using a USB flash drive.
+keywords: aff a700s, aff, a700s, primary, boot, media, store, ontap, image, system, restore, primary, media, secondary, usb, flash, drive, replace, replace the boot media, manual, manual boot recovery
+summary: "Learn about boot media replacement on an AFF A700s system and understand the recovery methods. The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Overview of boot media replacement - AFF A700s
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The primary boot media stores the ONTAP boot image that the system uses when it boots. You can restore the primary boot media image by using the ONTAP image on the secondary boot media, or if necessary, by using a USB flash drive.
+Learn about boot media replacement on an AFF A700s system and understand the recovery methods. The primary boot media stores the ONTAP boot image that the system uses during startup. You can restore the primary boot media image using the ONTAP image from the secondary boot media or, if necessary, from a USB flash drive formatted to FAT32.
+
+The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 If your secondary boot media has failed or is missing the image.tgz file, you must restore the primary boot media using a USB flash drive. The drive must be formatted to FAT32 and must have the appropriate amount of storage to hold the image_xxx.tgz file.
 

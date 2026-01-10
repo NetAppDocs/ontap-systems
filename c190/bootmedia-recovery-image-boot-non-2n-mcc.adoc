@@ -1,15 +1,17 @@
 ---
 permalink: c190/bootmedia-recovery-image-boot-non-2n-mcc.html
 sidebar: sidebar
-keywords: aff c190, verify environment variables, image, boot the recovery image
-summary: "You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables."
+keywords: aff c190, verify environment variables, image, boot the recovery image, manual, manual boot recovery
+summary: "Boot the ONTAP recovery image from the USB drive on an AFF C190 system to restore the boot media. The AFF C190 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
 = Boot the recovery image - AFF C190
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+Boot the ONTAP recovery image from the USB drive on an AFF C190 system to restore the boot media. This procedure includes booting from the USB flash drive, restoring the file system, verifying environmental variables, and returning the controller to normal operation after boot media replacement.
+
+The AFF C190 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 .Steps
 
