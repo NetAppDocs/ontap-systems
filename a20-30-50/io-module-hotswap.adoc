@@ -13,7 +13,7 @@ summary: You can hot swap an Ethernet I/O module in your AFF A20, AFF A30, or AF
 // Jul 25, 2025: GH issue #1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family on 9.17.1 and later.
 
 [.lead]
-You can hot swap an Ethernet I/O module in your AFF A20, AFF A30, or AFF A50 storage system when an I/O module has failed and if your storage system meets all ONTAP version requirements.
+You can hot swap an Ethernet I/O module in your AFF A20, AFF A30, or AFF A50 storage system if a module fails and your storage system meets all ONTAP version requirements.
 
 To hot swap an I/O module, ensure your storage system meets the ONTAP version requirements, prepare your storage system and I/O module, hot-swap the failed module, bring the replacement module online, restore the storage system to normal operation, and return the failed module to NetApp.
 
@@ -21,12 +21,12 @@ To hot swap an I/O module, ensure your storage system meets the ONTAP version re
 
 * Hot-swapping the I/O module means that you do not have to perform a manual takeover before replacing the failed I/O module.
 
-* It is critical to apply the commands to the correct controller and I/O slot when you are hot-swapping the I/O module:
+* Apply commands to the correct controller and I/O slot when you are hot-swapping the I/O module:
 
 ** The _impaired controller_ is the controller on which you are hot-swapping the I/O module.
 ** The _healthy controller_ is the HA partner of the impaired controller.
 
-* If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
+* You can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 +
 A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
