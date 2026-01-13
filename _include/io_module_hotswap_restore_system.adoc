@@ -1,20 +1,51 @@
 
-// New include that's generic - can be used for the g-platform family and v-platform family.
+// July 2025: New include that's generic - can be used for the g-platform family and v-platform family.
 
-Restore your storage system to normal operation by giving back storage to the healthy controller, restoring automatic giveback, and reenabling AutoSupport automatic case creation.
-
+Restore your storage system to normal operation by giving back storage to the controller that was taken over (as needed), restoring automatic giveback (as needed), verifying LIFs are on their home ports, and reenabling AutoSupport automatic case creation.
 
 .Steps
 
-. Return the healthy controller (the controller that was taken over) to normal operation by giving back its storage: 
+. As needed for the version of ONTAP your storage system is running and the state of the controllers, give back storage and restore automatic giveback on the controller that was taken over:
++
+[options="header" cols="1,2,3"]
+
+|===
+|ONTAP version| If...| Then...
+a|
+9.17.1 or 9.18.1RC
+a|
+If the impaired controller took over the healthy controller automatically
+a|
+. Return the healthy controller to normal operation by giving back its storage: 
 +
 `storage failover giveback -ofnode _healthy_node_name_`
 +
-// The healthy controller should be in the "waiting for giveback" state.
-+
-. Restore automatic giveback from the console of the impaired controller (the controller that took over the healthy controller): 
+. Restore automatic giveback from the console of the impaired controller: 
 +
 `storage failover modify -node local -auto-giveback _true_`
+a|
+9.18.1GA or later
+a|
+If either controller took over its partner automatically
+a|
+. Return the controller that was taken over to normal operation by giving back its storage: 
++
+`storage failover giveback -ofnode _controller that was taken over_name_`
++
+. Restore automatic giveback from the console of the controller that was taken over: 
++
+`storage failover modify -node local -auto-giveback _true_`
+a|
+9.18.1GA or later
+a|
+Both controllers are up and running I/O (serving data)
+a|
+Go to the next step.
+|===
+
+. Verify that the logical interfaces are reporting to their home server and ports: `network interface show -is-home false`
++
+If any LIFs are listed as false, revert them to their home ports: `network interface revert -vserver * -lif *`
 
 . If AutoSupport is enabled, restore automatic case creation:
 +
