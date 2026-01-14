@@ -13,7 +13,7 @@ The boot media in your AFF A250 system stores essential firmware and configurati
 
 The automated boot media recovery process is supported only in ONTAP 9.18.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
-include::../_include/250_bootmedia_replace_bmr.adoc[]
+include::../_include/250_bootmedia-replace-bmr.adoc[]
 
 .What's next
 After physically replacing the impaired boot media, link:bootmedia-recovery-image-boot-bmr.html[restore the ONTAP image from the partner node].
