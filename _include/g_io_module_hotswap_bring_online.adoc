@@ -1,3 +1,5 @@
+// This is a generic topic that can be used in other platforms, like Vino.
+
 // Jan 2026: updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 
 // July 2025: New include specific to g-platform family because the steps for bringing the replacement cluster/HA I/O module online specify/reference slot 4, which is unique to g-platforms.
