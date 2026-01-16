@@ -62,7 +62,9 @@ include::../_include/a70-90_io_module_replace.adoc[]
 
 // July 2025: New include specific to g-platform family because the steps for bringing the replacement cluster and HA I/O module online specify/reference slot 4, which is unique to g-platforms.
 
-include::../_include/g_io_module_hotswap_bring_online.adoc[]
+// Jan 2026: Changed slot number from 4 to 7 in examples. Slot4/5 in Vino is NVRAM module.
+
+include::../_include/vino_io_module_hotswap_bring_online.adoc[]
 
 
 == Step 5: Restore the storage system to normal operation
