@@ -73,7 +73,7 @@ include::../_include/vino_io_module_hotswap_bring_online.adoc[]
 
 // July 2025: New include that's generic - can be used for the g-platform family and v-platform family.
 
-include::../vino_include/io_module_hotswap_restore_system.adoc[]
+include::../_include/vino_io_module_hotswap_restore_system.adoc[]
 
 == Step 6: Return the failed part to NetApp
 
