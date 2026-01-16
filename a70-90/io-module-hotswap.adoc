@@ -15,7 +15,7 @@ summary: You can hot swap an Ethernet I/O module in your AFF A70 or AFF A90 stor
 [.lead]
 You can hot swap an Ethernet I/O module in your AFF A70 or AFF A90 storage system when a module fails and your storage system meets all ONTAP version requirements.
 
-To hot swap an I/O module, make sure your storage system meets the ONTAP version requirements, prepare your storage system and I/O module, hot-swap the failed module, bring the replacement module online, restore the storage system to normal operation, and return the failed module to NetApp.
+To hot swap an I/O module, make sure your storage system is running ONTAP 9.18.1 GA or later, prepare your storage system and I/O module, hot-swap the failed module, bring the replacement module online, restore the storage system to normal operation, and return the failed module to NetApp.
 
 .About this task
 
