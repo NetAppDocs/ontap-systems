@@ -43,9 +43,7 @@ The module has been successfully powered on, initialized and placed into service
 +
 NOTE: It might take several minutes for any required firmware updates and port initialization.
 +
-The output should show one or more hotplug.init.success EMS events indicating each port on the I/O module initiated successfully. 
-+
-//The output should show one or more hotplug.init.success EMS events and `_hotplug.init.success:_` in the `_Event_` column, indicating each port on the I/O module initiated successfully.
+The output should show one or more hotplug.init.success EMS events and `_hotplug.init.success:_` in the `_Event_` column, indicating each port on the I/O module initialized successfully.
 +
 For example, the following output shows initialization succeeded for I/O ports e7b and e7a:
 +
@@ -79,7 +77,7 @@ Enter the command from the console of the impaired controller:
 +
 If the I/O module was successfully brought online and is recognized, the output shows I/O module information, including port information for the slot.
 +
-For example, you should see output similar to the following for a I/O module in slot 7:
+For example, you should see output similar to the following for an I/O module in slot 7:
 +
 ----
 node2::> system controller config show -node local -slot 7

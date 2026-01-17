@@ -30,7 +30,7 @@ a|
 Go to the next step.
 |===
 
-. Verify that the logical interfaces are reporting to their home server and ports: `network interface show -is-home false`
+. Verify that the logical interfaces are reporting to their home node and ports: `network interface show -is-home false`
 +
 If any LIFs are listed as false, revert them to their home ports: `network interface revert -vserver * -lif *`
 
