@@ -24,7 +24,7 @@ If nodes in your cluster are running different ONTAP versions, this is considere
 
 ** Both controllers can be up and running I/O (serving data).
 
-** Either controller can be in a takeover state.
+** Either controller can be in a takeover state if the takeover was caused by the failed I/O module and the nodes are otherwise functioning properly.
 +
 In certain situations, ONTAP can automatically perform a takeover of either controller due to the failed I/O module. For example, if the failed I/O module contained all of the cluster ports (all of the cluster links on that controller go down) ONTAP automatically performs a takeover.
 
