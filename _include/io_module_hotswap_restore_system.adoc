@@ -1,7 +1,7 @@
 
 // July 2025: New include that's generic - can be used for the g-platform family and v-platform family.
 
-// Jan 2026: New version of includeupdated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
+// Jan 2026: New version of include updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 
 Restore your storage system to normal operation by giving back storage to the controller that was taken over (as needed), restoring automatic giveback (as needed), verifying LIFs are on their home ports, and reenabling AutoSupport automatic case creation.
 
