@@ -67,8 +67,10 @@ entries:
     - title: Controller
       pdf-filename: AFF A250 Controller Module
       entries:
-      - title: Overview
-        url: /a250/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /a250/controller-replace-workflow.html
+      - title: Review requirements
+        url: /a250/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /a250/controller-replace-shutdown.html
       - title: Replace controller
