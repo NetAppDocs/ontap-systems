@@ -23,18 +23,34 @@ entries:
       entries:
       - title: Overview
         url: /asa250/bootmedia-replace-overview.html
-      - title: Check encryption keys
-        url: /asa250/bootmedia-encryption-preshutdown-checks.html
-      - title: Shut down impaired controller
-        url: /asa250/bootmedia-shutdown.html
-      - title: Replace boot media
-        url: /asa250/bootmedia-replace.html
-      - title: Boot recovery image
-        url: /asa250/bootmedia-recovery-image-boot.html
-      - title: Restore encryption
-        url: /asa250/bootmedia-encryption-restore.html
-      - title: Return failed part to NetApp
-        url: /asa250/bootmedia-complete-rma.html
+      - title: Automated boot recovery workflow
+        entries:
+        - title: Requirements
+          url: /asa250/bootmedia-replace-requirements-bmr.html
+        - title: Shut down impaired controller
+          url: /asa250/bootmedia-shutdown-bmr.html
+        - title: Replace boot media
+          url: /asa250/bootmedia-replace-bmr.html
+        - title: Restore image
+          url: /asa250/bootmedia-recovery-image-boot-bmr.html
+        - title: Return failed part to NetApp
+          url: /asa250/bootmedia-complete-rma-bmr.html
+      - title: Manual boot recovery workflow
+        entries:
+        - title: Requirements
+          url: /asa250/bootmedia-replace-requirements.html
+        - title: Check encryption keys
+          url: /asa250/bootmedia-encryption-preshutdown-checks.html
+        - title: Shut down impaired controller
+          url: /asa250/bootmedia-shutdown.html
+        - title: Replace boot media
+          url: /asa250/bootmedia-replace.html
+        - title: Boot recovery image
+          url: /asa250/bootmedia-recovery-image-boot.html
+        - title: Restore encryption
+          url: /asa250/bootmedia-encryption-restore.html
+        - title: Return failed part to NetApp
+          url: /asa250/bootmedia-complete-rma.html
       # END boot media replacement
     - title: Chassis
       pdf-filename: ASA A250 Chassis
