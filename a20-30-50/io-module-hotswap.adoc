@@ -50,7 +50,7 @@ include::../_include/g_io_module_hotswap_requirements.adoc[]
 include::../_include/g_io_module_hotswap_prepare_slot.adoc[]
 
 
-== Step 3: Replace the failed I/O module
+== Step 3: Hot swap the failed I/O module
 
 // Jan 2026: updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 
