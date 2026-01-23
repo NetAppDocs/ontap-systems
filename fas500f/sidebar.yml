@@ -23,18 +23,34 @@ entries:
       entries:
       - title: Overview
         url: /fas500f/bootmedia-replace-overview.html
-      - title: Check encryption keys
-        url: /fas500f/bootmedia-encryption-preshutdown-checks.html
-      - title: Shut down node
-        url: /fas500f/bootmedia-shutdown.html
-      - title: Replace boot image
-        url: /fas500f/bootmedia-replace.html
-      - title: Boot recovery image
-        url: /fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html
-      - title: Restore encryption
-        url: /fas500f/bootmedia-encryption-restore.html
-      - title: Return failed part to NetApp
-        url: /fas500f/bootmedia-complete-rma.html
+      - title: Automated boot recovery workflow
+        entries:
+        - title: Requirements
+          url: /fas500f/bootmedia-replace-requirements-bmr.html
+        - title: Shut down impaired controller
+          url: /fas500f/bootmedia-shutdown-bmr.html
+        - title: Replace boot media
+          url: /fas500f/bootmedia-replace-bmr.html
+        - title: Restore image
+          url: /fas500f/bootmedia-recovery-image-boot-bmr.html
+        - title: Return failed part to NetApp
+          url: /fas500f/bootmedia-complete-rma-bmr.html
+      - title: Manual boot recovery workflow
+        entries:
+        - title: Requirements
+          url: /fas500f/bootmedia-replace-requirements.html
+        - title: Check encryption keys
+          url: /fas500f/bootmedia-encryption-preshutdown-checks.html
+        - title: Shut down node
+          url: /fas500f/bootmedia-shutdown.html
+        - title: Replace boot image
+          url: /fas500f/bootmedia-replace.html
+        - title: Boot recovery image
+          url: /fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html
+        - title: Restore encryption
+          url: /fas500f/bootmedia-encryption-restore.html
+        - title: Return failed part to NetApp
+          url: /fas500f/bootmedia-complete-rma.html
 # Boot media end
     - title: Chassis
       pdf-filename: FAS500f Chassis
