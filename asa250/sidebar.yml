@@ -35,7 +35,7 @@ entries:
           url: /asa250/bootmedia-recovery-image-boot-bmr.html
         - title: Return failed part to NetApp
           url: /asa250/bootmedia-complete-rma-bmr.html
-      - title: Manual boot recovery workflow
+      - title: Manual boot recovery
         entries:
         - title: Requirements
           url: /asa250/bootmedia-replace-requirements.html
@@ -55,8 +55,12 @@ entries:
     - title: Chassis
       pdf-filename: ASA A250 Chassis
       entries:
-      - title: Overview
-        url: /asa250/chassis-replace-overview.html
+      - title: Chassis replacement workflow
+        url: /asa250/chassis-replace-workflow.html
+      - title: Review chassis replacement requirements
+        url: /asa250/chassis-replace-requirements.html
+      - title: Prepare for chassis replacement
+        url: /asa250/chassis-replace-prepare.html
       - title: Shut down impaired controller
         url: /asa250/chassis-replace-shutdown.html
       - title: Replace chassis
