@@ -56,8 +56,12 @@ entries:
     - title: Chassis
       pdf-filename: AFF C250 Chassis
       entries:
-      - title: Overview
-        url: /c250/chassis-replace-overview.html
+      - title: Chassis replacement workflow
+        url: /c250/chassis-replace-workflow.html
+      - title: Review chassis replacement requirements
+        url: /c250/chassis-replace-requirements.html
+      - title: Prepare for chassis replacement
+        url: /c250/chassis-replace-prepare.html
       - title: Shut down impaired controller
         url: /c250/chassis-replace-shutdown.html
       - title: Replace hardware
