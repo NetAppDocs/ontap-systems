@@ -74,8 +74,10 @@ entries:
     - title: Controller
       pdf-filename: ASA C250 Controller Module
       entries:
-      - title: Overview
-        url: /asa-c250/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /asa-c250/controller-replace-workflow.html
+      - title: Review controller replacement requirements
+        url: /asa-c250/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /asa-c250/controller-replace-shutdown.html
       - title: Replace controller

@@ -71,8 +71,10 @@ entries:
     - title: Controller
       pdf-filename: AFF C250 Controller Module
       entries:
-      - title: Overview
-        url: /c250/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /c250/controller-replace-workflow.html
+      - title: Review controller replacement requirements
+        url: /c250/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /c250/controller-replace-shutdown.html
       - title: Replace controller module
