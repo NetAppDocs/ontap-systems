@@ -38,7 +38,7 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 // July 2025: New include specific to g-platform family because the requirements reference 9.17.1 and slot 4, which are unique to g-platforms.
 
-include::../_include/vino_io_module_hotswap_requirements.adoc[]
+include::../_include/v_io_module_hotswap_requirements.adoc[]
 
 
 == Step 2: Prepare the storage system and I/O module slot
@@ -47,7 +47,7 @@ include::../_include/vino_io_module_hotswap_requirements.adoc[]
 
 // July 2025: New include specific to g-platform family because the slot 4 location for the cluster and HA I/O module is unique to g-platforms.
 
-include::../_include/vino_io_module_hotswap_prepare_slot.adoc[]
+include::../_include/v_io_module_hotswap_prepare_slot.adoc[]
 
 
 == Step 3: Replace the failed I/O module
@@ -64,7 +64,7 @@ include::../_include/a70-90_io_module_hotswap_replace.adoc[]
 
 // Jan 2026: Changed slot number from 4 to 7 in examples. Slot4/5 in Vino is NVRAM module.
 
-include::../_include/vino_io_module_hotswap_bring_online.adoc[]
+include::../_include/v_io_module_hotswap_online.adoc[]
 
 
 == Step 5: Restore the storage system to normal operation
@@ -73,7 +73,7 @@ include::../_include/vino_io_module_hotswap_bring_online.adoc[]
 
 // July 2025: New include that's generic - can be used for the g-platform family and v-platform family.
 
-include::../_include/vino_io_module_hotswap_restore_system.adoc[]
+include::../_include/v_io_module_hotswap_restore_system.adoc[]
 
 == Step 6: Return the failed part to NetApp
 
