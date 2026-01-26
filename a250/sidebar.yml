@@ -56,8 +56,10 @@ entries:
     - title: Chassis
       pdf-filename: AFF A250 Chassis
       entries:
-      - title: Overview
-        url: /a250/chassis-replace-overview.html
+      - title: Chassis replacement workflow
+        url: /a250/chassis-replace-workflow.html
+      - title: Review requirements
+        url: /a250/chassis-replace-requirements.html
       - title: Shut down impaired controller
         url: /a250/chassis-replace-shutdown.html
       - title: Replace chassis
