@@ -1,0 +1,38 @@
+// Jan 2026: updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
+
+// 15-Jan-26: Modified and renamed for all Vino systems.
+
+To use this procedure, your storage system must be running ONTAP 9.18.1 GA or later, and your storage system must meet all requirements for the version of ONTAP your storage system is running.
+
+NOTE: If your storage system is not running ONTAP 9.18.1 GA or later, or does not meet all requirements for the version of ONTAP your storage system is running, you cannot use this procedure, you must use the link:io-module-replace.html[replace an I/O module procedure].
+
+
+* You are hot swapping an Ethernet I/O module in any slot having any combination of ports used for cluster, HA, and client with an equivalent I/O module. You cannot change the I/O module type. 
++
+Ethernet I/O modules with ports used for storage or MetroCluster are not hot-swappable.
+// Dec 12 T said: Cluster and HA are not required to be shared on the same ports for 9.18.1 GA and beyond, so we probably want to list them separately. You could have a card with cluster and client, storage and client, cluster and HA and DR (disaster recovery, aka MetroCluster), or each of these individually.  
+
+* Your storage system (switchless or switched cluster configuration) can have any number of nodes supported for your storage system. 
+
+* All nodes in the cluster must be running the same ONTAP version (ONTAP 9.18.1GA or later) or running different patch levels of the same ONTAP version.
++
+If nodes in your cluster are running different ONTAP versions, this is considered a mixed-version cluster and hot-swapping an I/O module is not supported.
+
+// FYI: some of this mixed-version content was pulled from ONTAP topic: https://docs.netapp.com/us-en/ontap/upgrade/concept_mixed_version_requirements.html
+
+* The controllers in your storage system can be in either of the following states:
+
+** Both controllers can be up and running I/O (serving data).
+
+** Either controller can be in a takeover state if the takeover was caused by the failed I/O module and the nodes are otherwise functioning properly.
++
+In certain situations, ONTAP can automatically perform a takeover of either controller due to the failed I/O module. For example, if the failed I/O module contained all of the cluster ports (all of the cluster links on that controller go down) ONTAP automatically performs a takeover.
+
+// In 9.18.1, (these checks will be removed and) hot plug is supported regardless of the cluster size or takeover state.  Nodes losing RDB Quorum during the hot plug operation will be handled by the feature.
+
+* All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+
+
+
+
