@@ -15,14 +15,39 @@ Learn what's new for ONTAP hardware systems. For additional support information,
 == January 2026
 
 === I/O module hot-swap procedures
-I/O module hot-swap procedures are now available for multiple platform families, allowing you to replace I/O modules without shutting down the system in certain configurations. The hot-swap capability is supported for HA pairs running ONTAP 9.17.1 or later, and for systems running ONTAP 9.18.1 GA or later with specific requirements.
+I/O module hot-swap procedures are now available for multiple platform families, allowing you to replace I/O modules without shutting down the system.
 
-Hot-swap procedures have been added for the following systems:
+*Supported with ONTAP 9.17.1 or later:*
+
+Hot-swap is supported for two-node HA pairs with the following requirements:
+
+* The cluster and HA I/O module must be in slot 4
+* The impaired controller must be in a takeover state
+* Only two-node (switchless or switched) cluster configurations are supported
+
+The following platforms support hot-swap with ONTAP 9.17.1 or later:
+
+* AFF A-Series: A20, A30, and A50
+* ASA r2: A20, A30, and A50  
+* AFF C-Series: C80
+
+*Supported with ONTAP 9.18.1 GA or later:*
+
+Hot-swap is supported with greater flexibility:
+
+* Ethernet I/O modules can be hot-swapped in any slot
+* Supported for clusters of any size (switchless or switched)
+* Controllers can be up and running I/O or in a takeover state
+* All nodes in the cluster must be running the same ONTAP version or different patch levels of the same version
+
+The following platforms support hot-swap with ONTAP 9.18.1 GA or later:
 
 * AFF A-Series: A1K, A20, A30, A50, A70, and A90
-* ASA r2 systems: A1K, A20, A30, A50, A70, and A90  
+* ASA r2: A1K, A20, A30, A50, A70, and A90  
 * AFF C-Series: C80
 * FAS: FAS70 and FAS90
+
+NOTE: I/O modules with ports used for storage or MetroCluster are not hot-swappable on any platform or ONTAP version.
 
 === AFF C800 end of availability
 The AFF C800 system has been moved to the end-of-availability list and is no longer available for new orders.
