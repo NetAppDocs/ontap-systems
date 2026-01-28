@@ -2,9 +2,9 @@
 
 // 15-Jan-26: Modified and renamed for all Vino systems.
 
-To use this procedure, your storage system must be running ONTAP 9.18.1 GA or later, and your storage system must meet all requirements for the version of ONTAP your storage system is running.
+To use this procedure, your storage system must be running ONTAP 9.18.1 GA or later, and your storage system must meet all requirements.
 
-NOTE: If your storage system is not running ONTAP 9.18.1 GA or later, or does not meet all requirements for the version of ONTAP your storage system is running, you cannot use this procedure, you must use the link:io-module-replace.html[replace an I/O module procedure].
+NOTE: If your storage system is not running ONTAP 9.18.1 GA or later, you cannot use this procedure, you must use the link:io-module-replace.html[replace an I/O module procedure].
 
 
 * You are hot swapping an Ethernet I/O module in any slot having any combination of ports used for cluster, HA, and client with an equivalent I/O module. You cannot change the I/O module type. 
