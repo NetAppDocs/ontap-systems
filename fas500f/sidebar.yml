@@ -15,7 +15,7 @@ entries:
   - title: Maintain
     pdf-filename: FAS500f Maintain
     entries:
-    - title: Overview
+    - title: Maintenance overview
       url: /fas500f/maintain-overview.html
 # Boot media start
     - title: Boot media - automated recovery
@@ -60,6 +60,8 @@ entries:
         url: /fas500f/chassis-replace-workflow.html
       - title: Review requirements
         url: /fas500f/chassis-replace-requirements.html
+      - title: Prepare for chassis replacement
+        url: /fas500f/chassis-replace-prepare.html
       - title: Shut down impaired controller
         url: /fas500f/chassis-replace-shutdown.html
       - title: Replace chassis
@@ -81,7 +83,7 @@ entries:
         url: /fas500f/controller-replace-system-config-restore-and-verify.html
       - title: Recable system
         url: /fas500f/controller-replace-recable-reassign-disks.html
-      - title: Complete system restoration
+      - title: Complete controller replacement
         url: /fas500f/controller-replace-restore-system-rma.html
     - title: DIMM
       url: /fas500f/dimm-replace.html
@@ -92,8 +94,10 @@ entries:
     - title: Mezzanine card
       url: /fas500f/mezzanine-replace.html
     - title: NVMEM battery
-      url: /fas500f/nvmem-battery-replace.html
+      url: /fas500f/nvmem-nvram-battery-replace.html
     - title: Power supply
       url: /fas500f/power-supply-replace.html
     - title: Real-time clock battery
       url: /fas500f/rtc-battery-replace.html
+  - title: Key specifications
+    url: /fas500f/overview.html

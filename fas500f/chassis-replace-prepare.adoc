@@ -1,0 +1,20 @@
+---
+permalink: fas500f/chassis-replace-prepare.html
+sidebar: sidebar
+keywords: fas500f, replace the chassis
+summary: Prepare to replace the impaired chassis in your FAS500f system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller modules.
+---
+= Prepare to replace the chassis - FAS500f
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare to replace the impaired chassis in your FAS500f system by identifying the impaired chassis, verifying the replacement components, and labeling the cables and controller modules.
+
+
+
+include::../_include/250_chassis_replace_prepare.adoc[]
+
+.What's next?
+
+After you've prepared to replace your FAS500f chassis hardware, you need to link:chassis-replace-shutdown.html[shut down the controllers].
