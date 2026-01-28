@@ -18,59 +18,64 @@ entries:
     - title: Overview
       url: /fas500f/maintain-overview.html
 # Boot media start
-    - title: Boot media
-      pdf-filename: FAS500f Boot Media
+    - title: Boot media - automated recovery
+      pdf-filename: FAS500f Boot Media Automated
       entries:
-      - title: Overview
-        url: /fas500f/bootmedia-replace-overview.html
-      - title: Automated boot recovery workflow
-        entries:
-        - title: Requirements
-          url: /fas500f/bootmedia-replace-requirements-bmr.html
-        - title: Shut down impaired controller
-          url: /fas500f/bootmedia-shutdown-bmr.html
-        - title: Replace boot media
-          url: /fas500f/bootmedia-replace-bmr.html
-        - title: Restore image
-          url: /fas500f/bootmedia-recovery-image-boot-bmr.html
-        - title: Return failed part to NetApp
-          url: /fas500f/bootmedia-complete-rma-bmr.html
-      - title: Manual boot recovery workflow
-        entries:
-        - title: Requirements
-          url: /fas500f/bootmedia-replace-requirements.html
-        - title: Check encryption keys
-          url: /fas500f/bootmedia-encryption-preshutdown-checks.html
-        - title: Shut down node
-          url: /fas500f/bootmedia-shutdown.html
-        - title: Replace boot image
-          url: /fas500f/bootmedia-replace.html
-        - title: Boot recovery image
-          url: /fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html
-        - title: Restore encryption
-          url: /fas500f/bootmedia-encryption-restore.html
-        - title: Return failed part to NetApp
-          url: /fas500f/bootmedia-complete-rma.html
+      - title: Boot media replacement workflow
+        url: /fas500f/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /fas500f/bootmedia-replace-requirements-bmr.html
+      - title: Shut down impaired controller
+        url: /fas500f/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /fas500f/bootmedia-replace-bmr.html
+      - title: Boot recovery image
+        url: /fas500f/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /fas500f/bootmedia-complete-rma-bmr.html
+    - title: Boot media - manual recovery
+      pdf-filename: FAS500f Boot Media Manual
+      entries:
+      - title: Boot media replacement workflow
+        url: /fas500f/bootmedia-replace-workflow.html
+      - title: Review requirements
+        url: /fas500f/bootmedia-replace-requirements.html
+      - title: Check encryption keys
+        url: /fas500f/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
+        url: /fas500f/bootmedia-shutdown.html
+      - title: Replace boot media
+        url: /fas500f/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html
+      - title: Restore encryption
+        url: /fas500f/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /fas500f/bootmedia-complete-rma.html
 # Boot media end
     - title: Chassis
       pdf-filename: FAS500f Chassis
       entries:
-      - title: Overview
-        url: /fas500f/chassis-replace-overview.html
+      - title: Chassis replacement workflow
+        url: /fas500f/chassis-replace-workflow.html
+      - title: Review requirements
+        url: /fas500f/chassis-replace-requirements.html
       - title: Shut down impaired controller
         url: /fas500f/chassis-replace-shutdown.html
-      - title: Replace hardware
+      - title: Replace chassis
         url: /fas500f/chassis-replace-move-hardware.html
-      - title: Complete replacement
+      - title: Complete chassis replacement
         url: /fas500f/chassis-replace-complete-system-restore-rma.html
     - title: Controller
       pdf-filename: FAS500f Controller Module
       entries:
-      - title: Overview
-        url: /fas500f/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /fas500f/controller-replace-workflow.html
+      - title: Review requirements
+        url: /fas500f/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /fas500f/controller-replace-shutdown.html
-      - title: Replace controller module
+      - title: Replace controller
         url: /fas500f/controller-replace-move-hardware.html
       - title: Restore system configuration
         url: /fas500f/controller-replace-system-config-restore-and-verify.html
