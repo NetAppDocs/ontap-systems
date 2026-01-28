@@ -11,7 +11,7 @@ summary: Shut down the impaired controller in your ASA A250 storage system to pr
 [.lead]
 Shut down the impaired controller in your ASA A250 storage system to prevent data loss and maintain system stability during the automated boot media recovery process.
 
-The automated boot media recovery process is supported only in ONTAP 9.18.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-overview.html[manual boot recovery procedure].
+The automated boot media recovery process is supported only in ONTAP 9.18.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 include::../_include/shutdown_most_frus.adoc[]
 

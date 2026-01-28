@@ -11,7 +11,7 @@ summary: The boot media in your ASA A250 system stores essential firmware and co
 [.lead]
 The boot media in your ASA A250 system stores essential firmware and configuration data. The replacement process involves removing and opening the controller module, removing the impaired boot media, installing the replacement boot media in the controller module, and then reinstalling the controller module.
 
-The automated boot media recovery process is supported only in ONTAP 9.18.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-overview.html[manual boot recovery procedure].
+The automated boot media recovery process is supported only in ONTAP 9.18.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
 include::../_include/250_bootmedia-replace-bmr.adoc[]
 
