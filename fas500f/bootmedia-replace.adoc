@@ -2,14 +2,21 @@
 permalink: fas500f/bootmedia-replace.html
 sidebar: sidebar
 keywords: fas500f, replace the boot media
-summary: "You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media."
+summary: You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media.
 ---
-= Replace the boot media - FAS500f
+= Replace the boot media and prepare for manual boot recovery - FAS500f
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+The boot media in your FAS500f system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive.
+
+If your storage system is running ONTAP 9.18.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
+
+include::../_include/250_bootmedia-replace.adoc[]
+
+.What's next?
+After replacing the boot media, you need to link:bootmedia-recovery-image-boot.html[boot the recovery image].
 
 == Step 1: Remove the controller module
 
