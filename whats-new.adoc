@@ -20,9 +20,9 @@ Hot-swap procedures are now available for select I/O modules across multiple ONT
 
 *Supported with ONTAP 9.18.1 GA or later:*
 
-You can hot swap a failed Ethernet I/O module in any slot, provided its ports are used for cluster, HA, or client connections. This procedure is supported on systems with any number of nodes.
+You can hot-swap a failed Ethernet I/O module in any slot, provided its ports are used for cluster, HA, or client connections. This procedure is supported on systems with any number of nodes.
 
-NOTE: Ethernet I/O modules that have ports assigned to storage or MetroCluster connections cannot be hot-swapped.
+NOTE: You cannot hot-swap Ethernet I/O modules that have ports assigned to storage or MetroCluster connections.
 
 The following platforms are supported:
 
@@ -35,7 +35,7 @@ The following platforms are supported:
 
 *Supported with ONTAP 9.17.1 or 9.18.1RC:*
 
-To avoid an outage in a two-node cluster, you can hot swap a failed cluster and HA I/O module in slot 4 only if the impaired controller (the one with the failed module) has already taken over the healthy partner. This is the only supported recovery method that does not require downtime.
+To avoid an outage in a two-node cluster, you can hot-swap a failed cluster and HA I/O module in slot 4 only if the impaired controller (the one with the failed module) has already taken over the healthy partner. This is the only supported recovery method that does not require downtime.
 
 The following platforms are supported:
 
