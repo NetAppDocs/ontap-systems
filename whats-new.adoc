@@ -15,39 +15,33 @@ Learn what's new for ONTAP hardware systems. For additional support information,
 == January 2026
 
 === I/O module hot-swap procedures
-I/O module hot-swap procedures are now available for multiple platform families, allowing you to replace I/O modules without shutting down the system.
-
-*Supported with ONTAP 9.17.1 or later:*
-
-Hot-swap is supported for two-node HA pairs with the following requirements:
-
-* The cluster and HA I/O module must be in slot 4
-* The impaired controller must be in a takeover state
-* Only two-node (switchless or switched) cluster configurations are supported
-
-The following platforms support hot-swap with ONTAP 9.17.1 or later:
-
-* AFF A-Series: A20, A30, and A50
-* ASA r2: A20, A30, and A50  
-* AFF C-Series: C80
+I/O module hot-swap procedures are available for certain types of I/O modules across multiple platform families running certain versions of ONTAP.
 
 *Supported with ONTAP 9.18.1 GA or later:*
 
-Hot-swap is supported with greater flexibility:
+You can hot swap a failed Ethernet I/O module in any slot having any combination of ports used for cluster, HA, and client in a system with any number of nodes. 
 
-* Ethernet I/O modules can be hot-swapped in any slot
-* Supported for clusters of any size (switchless or switched)
-* Controllers can be up and running I/O or in a takeover state
-* All nodes in the cluster must be running the same ONTAP version or different patch levels of the same version
+NOTE: Ethernet I/O modules with ports used for storage or MetroCluster are not hot-swappable.
 
-The following platforms support hot-swap with ONTAP 9.18.1 GA or later:
+The following platforms are supported:
 
 * AFF A-Series: A1K, A20, A30, A50, A70, and A90
-* ASA r2: A1K, A20, A30, A50, A70, and A90  
-* AFF C-Series: C80
-* FAS: FAS70 and FAS90
+* ASA r2: A1K, A20, A30, A50, A70, A90, and C30 
+* AFF C-Series: C30, C60, and C80
+* FAS: FAS50, FAS70 and FAS90
+* AFX: AFX 1K
 
-NOTE: I/O modules with ports used for storage or MetroCluster are not hot-swappable on any platform or ONTAP version.
+
+*Supported with ONTAP 9.17.1 or 9.18.1RC:*
+
+You can hot swap a failed cluster and HA I/O module in slot 4 in a two-node cluster when the controller with the failed I/O module (the impaired controller) has automatically taken over the healthy partner controller. Hot swapping the failed cluster and HA I/O module is the only way to recover without an outage.
+
+The following platforms are supported:
+
+* AFF A-Series: A20, A30, and A50
+* ASA r2: A20, A30, A50, and C30 
+* AFF C-Series: C30 and C60
+* FAS: FS50
 
 === AFF C800 end of availability
 The AFF C800 system has been moved to the end-of-availability list and is no longer available for new orders.
