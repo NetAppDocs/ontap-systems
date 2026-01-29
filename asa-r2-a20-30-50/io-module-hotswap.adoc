@@ -1,10 +1,10 @@
 ---
-permalink: a20-30-50/io-module-hotswap.html
+permalink: asa-r2-a20-30-50/io-module-hotswap.html
 sidebar: sidebar
-keywords: aff a20, aff a30, aff a50, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module
-summary: You can hot swap an Ethernet I/O module in your AFF A20, AFF A30, or AFF A50 storage system if a module fails and your storage system meets all ONTAP version requirements.
+keywords: asa a20, asa a30, asa a50, hot swap a cluster ha card, hot swap ethernet client io module, hotswap io module, hot swap io module
+summary: You can hot swap an Ethernet I/O module in your ASA A20, ASA A30, or ASA A50 storage system if a module fails and your storage system meets all ONTAP version requirements.
 ---
-= Hot swap an I/O module - AFF A20, AFF A30, and AFF A50
+= Hot swap an I/O module - ASA A20, ASA A30, and ASA A50
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,7 @@ summary: You can hot swap an Ethernet I/O module in your AFF A20, AFF A30, or AF
 // Jul 25, 2025: GH issue 1185 to support hot-swap of cluster/HA I/O module in slot 4 for g-platform family on 9.17.1 and later.
 
 [.lead]
-You can hot swap an Ethernet I/O module in your AFF A20, AFF A30, or AFF A50 storage system if a module fails and your storage system meets all ONTAP version requirements.
+You can hot swap an Ethernet I/O module in your ASA A20, ASA A30, or ASA A50 storage system if a module fails and your storage system meets all ONTAP version requirements.
 
 To hot swap an I/O module, ensure your storage system meets the ONTAP version requirements, prepare your storage system and I/O module, hot-swap the failed module, bring the replacement module online, restore the storage system to normal operation, and return the failed module to NetApp.
 
