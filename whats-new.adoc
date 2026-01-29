@@ -15,26 +15,27 @@ Learn what's new for ONTAP hardware systems. For additional support information,
 == January 2026
 
 === I/O module hot-swap procedures
-I/O module hot-swap procedures are available for certain types of I/O modules across multiple platform families running certain versions of ONTAP.
+
+Hot-swap procedures are now available for select I/O modules across multiple ONTAP hardware platforms and ONTAP versions.
 
 *Supported with ONTAP 9.18.1 GA or later:*
 
-You can hot swap a failed Ethernet I/O module in any slot having any combination of ports used for cluster, HA, and client in a system with any number of nodes. 
+You can hot swap a failed Ethernet I/O module in any slot, provided its ports are used for cluster, HA, or client connections. This procedure is supported on systems with any number of nodes.
 
-NOTE: Ethernet I/O modules with ports used for storage or MetroCluster are not hot-swappable.
+NOTE: Ethernet I/O modules that have ports assigned to storage or MetroCluster connections cannot be hot-swapped.
 
 The following platforms are supported:
 
 * AFF A-Series: A1K, A20, A30, A50, A70, and A90
-* ASA r2: A1K, A20, A30, A50, A70, A90, and C30 
+* ASA r2: A1K, A20, A30, A50, A70, A90, and C30
 * AFF C-Series: C30, C60, and C80
-* FAS: FAS50, FAS70 and FAS90
+* FAS: FAS50, FAS70, and FAS90
 * AFX: AFX 1K
 
 
 *Supported with ONTAP 9.17.1 or 9.18.1RC:*
 
-You can hot swap a failed cluster and HA I/O module in slot 4 in a two-node cluster when the controller with the failed I/O module (the impaired controller) has automatically taken over the healthy partner controller. Hot swapping the failed cluster and HA I/O module is the only way to recover without an outage.
+To avoid an outage in a two-node cluster, you can hot swap a failed cluster and HA I/O module in slot 4 only if the impaired controller (the one with the failed module) has already taken over the healthy partner. This is the only supported recovery method that does not require downtime.
 
 The following platforms are supported:
 
