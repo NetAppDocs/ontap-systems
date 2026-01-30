@@ -1,5 +1,7 @@
 The boot media is located inside the controller module under the air duct, and is accessed by removing the controller module from the system.
 
+== Step 1: Remove the controller module
+
 . If you are not already grounded, properly ground yourself.
 . Unplug the controller module power supplies from the source.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
@@ -46,12 +48,14 @@ Controller module cover.
 +
 image::../media/drw_a250_remove_airduct_cover.png[Lifting out the air duct cover]
 
+== Step 2:  Replace the boot media
 
 You can use the following video or the tabulated steps to replace the boot media:
 
 video::7c2cad51-dd95-4b07-a903-ac5b015c1a6d[panopto, title="Animation - Replace the boot media"]
 
 . Locate and replace the impaired boot media from the controller module and replace it:
+
 +
 NOTE: You need a #1 magnetic Phillips head screwdriver to remove the screw that holds the boot media in place. Due to the space constraints within the controller module, you should also have a magnet to transfer the screw on to so that you do not lose it.
 +
