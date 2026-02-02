@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, move hardware components, replace the chassis
 summary: "Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
 ---
-= Move and replace hardware - FAS500f
+= Replace the chassis - FAS500f
 :icons: font
 :imagesdir: ../media/
 
@@ -102,3 +102,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 +
 The controller module should be fully inserted and flush with the edges of the chassis.
 . Repeat the preceding steps to install the second controller into the new chassis.
+
+.What's next?
+
+After you have replaced the impaired FAS500f chassis and reinstalled the components, you need to link:chassis-replace-complete-system-restore-rma.html[complete the chassis replacement]
