@@ -41,7 +41,6 @@ sidebar:
         - section: c80
         - section: c250
         - section: c400
-        - section: c800
     - title: AFX systems
       url: /afx/index.html
       entries:  
@@ -115,6 +114,8 @@ sidebar:
               url: /afx-1k/io-module-overview.html
             - title: Add I/O module
               url: /afx-1k/io-module-add.html
+            - title: Hot swap I/O module
+              url: /afx-1k/io-module-hotswap.html
             - title: Replace I/O module
               url: /afx-1k/io-module-replace.html
         - title: Power supply
@@ -166,6 +167,7 @@ sidebar:
         - section: asa-c400
         - section: asa-c800
         - section: c190
+        - section: c800
         - section: fas2600
         - section: fas500f
         - section: fas8200

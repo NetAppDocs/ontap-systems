@@ -1,0 +1,85 @@
+
+// Jan 2026: updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358 
+
+// July 2025: New include specific to g-platform family because the slot 4 location for the cluster/HA I/O module is unique to g-platforms.
+
+//Jan 2026: For Vino, slot 4 cannot be used in examples because slots 4 and 5 hold the NVRAM modules.
+
+Prepare the storage system and I/O module slot so that it is safe to remove the failed I/O module:
+
+.Steps
+
+. Properly ground yourself.
+
+. Label the cables to identify where they came from, and then unplug all cables from the target I/O module.
+
++
+[NOTE]
+====
+The I/O module should be failed (ports should be in the link down state); however, if the links are still up and they contain the last functioning cluster port, unplugging the cables triggers an automatic takeover. 
+
+Wait five minutes after unplugging the cables to ensure any takeovers or LIF failovers complete before continuing with this procedure.
+
+====
+
+. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
++
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
++
+For example, the following AutoSupport message suppresses automatic case creation for two hours:
++
+`node2::> system node autosupport invoke -node * -type all -message MAINT=2h`
+
+. Disable automatic giveback if the partner node has been taken over:
++
+[options="header" cols="1,2"]
+
+|===
+| If...| Then...
+
+a|
+If either controller took over its partner automatically
+a|
+Disable automatic giveback:
+
+. Enter the following command from the console of the controller that took over its partner: 
++
+`storage failover modify -node local -auto-giveback false`
+
+. Enter `y` when you see the prompt _Do you want to disable auto-giveback?_
+a|
+
+Both controllers are up and running I/O (serving data)
+a|
+Go to the next step.
+|===
+
+. Prepare the failed I/O module for removal by removing it from service and powering it off:
+
+
+.. Enter the following command:
++
+`system controller slot module remove -node _impaired_node_name_ -slot _slot_number_`
+
+.. Enter `y` when you see the prompt _Do you want to continue?_ 
++
+For example, the following command prepares the failed module in slot 7 on node 2 (the impaired controller) for removal, and displays a message that it is safe to remove:
++
+----
+node2::> system controller slot module remove -node node2 -slot 7
+
+Warning: IO_2X_100GBE_NVDA_NIC module in slot 7 of node node2 will be powered off for removal.
+
+Do you want to continue? {y|n}: y
+
+The module has been successfully removed from service and powered off. It can now be safely removed.
+----
+
+. Verify the failed I/O module is powered off:
++
+`system controller slot module show`
++
+The output should show `_powered-off_` in the `_status_` column for the failed module and its slot number.
+
+
+
