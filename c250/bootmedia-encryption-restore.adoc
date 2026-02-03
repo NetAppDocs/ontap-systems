@@ -14,4 +14,4 @@ Restore encryption on the replacement boot media.
 include::../_include/encryption_restore_bootmedia.adoc[]
 
 .What's next?
-After shutting down the controller, you need to link:bootmedia-replace.html[replace the boot media].
+After restoring encryption on the boot media, you need to link:bootmedia-complete-rma.html[return the failed part to NetApp].
