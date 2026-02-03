@@ -278,8 +278,7 @@ Go to <<reenable-auto-giveback,re-enabling automatic giveback>> if it was disabl
 
 [start=5]
 
-[[reenable-auto-giveback]]
-. If automatic giveback was disabled, reenable it: 
+. [[reenable-auto-giveback]]If automatic giveback was disabled, reenable it: 
 +
 `storage failover modify -node local -auto-giveback true`
 
