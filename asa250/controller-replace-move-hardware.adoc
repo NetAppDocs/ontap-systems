@@ -9,4 +9,9 @@ summary: "To replace the controller module hardware, you must remove the impaire
 :imagesdir: ../media/
 
 [.lead]
+Replace the controller in your ASA A250 system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+
 include::../_include/250_controller-replace-move-hardware.adoc[]
+
+.What's next?
+After you've replaced the impaired ASA A250 controller, you need to link:controller-replace-system-config-restore-and-verify.html[restore and verify the system configuration].

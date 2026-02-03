@@ -4,9 +4,15 @@ sidebar: sidebar
 keywords: asa a250, restore and verify the system configuration, verify and set the ha state of the controller module
 summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
 ---
-= Complete controller replacement - ASA A250
+= Restore and verify the system configuration - ASA A250
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+
+After completing the hardware replacement and booting to your ASA A250 system to Maintenance mode, you need to verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+
 include::../_include/250_controller-replace-system-config-restore-and-verify.adoc[]
+
+.What's next?
+After you've restored and verified the system configuration, you need to link:controller-replace-recable-reassign-disks.html[recable the system and reassign disks].
