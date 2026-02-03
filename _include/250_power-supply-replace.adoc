@@ -16,9 +16,10 @@ Use the appropriate procedure for your type of PSU; AC or DC.
 
 .Option 1: Hot-swap an AC PSU
 --
-Use the following video or the tabulated steps to replace the PSU:
+To hot-swap an AC PSU, complete the following steps.
 
-video::86487f5e-20ff-43e6-99ae-ac5b015c1aa5[panopto, title="Animation - Replace the AC PSU"]
+// Commenting out video temporarily as it is not rendering correctly in the build
+//video::86487f5e-20ff-43e6-99ae-ac5b015c1aa5[panopto, title="Animation - Replace the AC PSU"]
 
 . If you are not already grounded, properly ground yourself.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
