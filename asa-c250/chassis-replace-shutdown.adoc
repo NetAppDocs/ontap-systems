@@ -9,9 +9,9 @@ summary: "To replace the chassis, you must shutdown the controllers."
 :imagesdir: ../media/
 
 [.lead]
-Shut down the controller in your AFF ASA C250 storage system to prevent data loss and ensure system stability when replacing the controller. 
+Shut down the controllers in your AFF ASA C250 storage system to prevent data loss and ensure system stability when replacing the chassis. 
 
-include::../_include/shutdown_most_frus.adoc[]
+include::../_include/shutdown_chassis.adoc[]
 
 .What's next?
 
