@@ -62,11 +62,23 @@ ONTAP 9.16.1
 |===
 | Switch| Support discontinued from...
 a|
-NetApp CN1610 switch|
+Cisco Nexus 3232C
+a|
+ONTAP 9.18.1
+a|
+Cisco Nexus 3132Q-V
+a|
+ONTAP 9.17.1
+a|
+Cisco Nexus 92300YC
+a|
+ONTAP 9.16.1
+a|
+NetApp CN1610|
 ONTAP 9.13.1
 a|
-* Cisco 5596UP
-* Cisco 5596T
+* Cisco Nexus 5596UP
+* Cisco Nexus 5596T
 a|
 ONTAP 9.11.1
 |===
@@ -78,3 +90,4 @@ ONTAP 9.11.1
 * https://mysupport.netapp.com/info/eoa/df_eoa_category_page.html?category=Platforms[End of Availability Platforms]
 
 // 2025-11-25 ontap-systems-internal/issues/1404
+// GH ISSUE #421, 2026-FEB-04
