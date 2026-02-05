@@ -17,6 +17,10 @@ You can replace a failed I/O module in your AFF A1K storage system with the same
 +
 Adding additional modules can improve redundancy, helping to ensure that the system remains operational even if one module fails.
 
+* link:io-module-hotswap.html[Hot swap an I/O module]
++
+Hot swapping an I/O module allows you to replace a failed module without shutting down the system, minimizing downtime and maintaining system availability.
+
 * link:io-module-replace.html[Replace an I/O module]
 +
 Replacing a failing I/O module can restore the system to its optimal operating state. 
