@@ -18,3 +18,6 @@ include::../_include/shutdown_bootmedia.adoc[]
 == Option 2: Controller is in a MetroCluster
 
 include::../_include/shutdown_any_mcc_supported.adoc[]
+
+.What's next?
+After shutting down the controller, you need to link:bootmedia-replace.html[replace the boot media].

@@ -11,4 +11,10 @@ summary: You must boot the ONTAP image from the USB drive, restore the file syst
 [.lead]
 After installing the new boot media device in your system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
 
+If your storage system is running ONTAP 9.18.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
+
 include::../_include/bootmedia_recovery_image_boot.adoc[]
+
+.What's next?
+After booting the recovery image, you need to link:bootmedia-encryption-restore.html[restore encryption on the boot media].
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380

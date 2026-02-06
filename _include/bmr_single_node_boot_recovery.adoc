@@ -48,9 +48,9 @@ Encryption is installed. Go to <<restore-key-manager,restoring the key manager>>
 |===
 +
 NOTE: If the system cannot identify the key manager configuration, it displays an error message and prompts you to confirm whether key manager is configured and which type (onboard or external). Answer the prompts to proceed.
++
 
-[[restore-key-manager]]
-. Restore the key manager using the appropriate procedure for your configuration:
+. [[restore-key-manager]]  Restore the key manager using the appropriate procedure for your configuration:
 +
 // start tabbed area
 +
@@ -278,8 +278,7 @@ Go to <<reenable-auto-giveback,re-enabling automatic giveback>> if it was disabl
 
 [start=5]
 
-[[reenable-auto-giveback]]
-. If automatic giveback was disabled, reenable it: 
+. [[reenable-auto-giveback]]If automatic giveback was disabled, reenable it: 
 +
 `storage failover modify -node local -auto-giveback true`
 
