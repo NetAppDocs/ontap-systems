@@ -4,9 +4,17 @@ sidebar: sidebar
 keywords: aff a250, replace the boot media
 summary: You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media.
 ---
-= Replace the boot media - AFF A250
+= Replace the boot media and prepare for manual boot recovery - AFF A250
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+The boot media in your AFF A250 system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive.
+
+If your storage system is running ONTAP 9.18.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
+
 include::../_include/250_bootmedia-replace.adoc[]
+
+.What's next?
+After replacing the boot media, you need to link:bootmedia-recovery-image-boot.html[boot the recovery image].
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
