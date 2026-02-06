@@ -1,0 +1,32 @@
+---
+permalink: fas500f/chassis-replace-workflow.html
+sidebar: sidebar
+keywords: fas500f, replace the chassis workflow
+summary: Get started with replacing the chassis of your FAS500f storage system by reviewing the replacement requirements, shutting down the controllers, replacing the chassis, and verifying system operations.
+---
+= Chassis replacement workflow - FAS500f
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Get started with replacing the chassis of your FAS500f storage system by reviewing the replacement requirements, shutting down the controllers, replacing the chassis, and verifying system operations. 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:chassis-replace-requirements.html[Review the chassis replacement requirements]
+[role="quick-margin-para"]
+Review the chassis replacement requirements, including system compatibility, required tools, ONTAP credentials, and component functionality verification.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[two]link:chassis-replace-prepare.html[Prepare for the chassis replacement]
+[role="quick-margin-para"]
+Prepare for the chassis replacement by locating the system, gathering credentials and tools, verifying the replacement chassis, and labeling cables.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[three]link:chassis-replace-shutdown.html[Shut down the controllers]
+[role="quick-margin-para"]
+Shut down the controllers to perform chassis maintenance safely.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:chassis-replace-move-hardware.html[Replace the chassis]
+[role="quick-margin-para"]
+Move the components from the impaired chassis to the replacement chassis.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:chassis-replace-complete-system-restore-rma.html[Complete the chassis replacement]
+[role="quick-margin-para"]
+Complete the replacement by booting the controllers, performing giveback, and returning the failed chassis to NetApp.

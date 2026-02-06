@@ -2,150 +2,19 @@
 permalink: fas500f/bootmedia-replace.html
 sidebar: sidebar
 keywords: fas500f, replace the boot media
-summary: "You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media."
+summary: You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media.
 ---
-= Replace the boot media - FAS500f
+= Replace the boot media and prepare for manual boot recovery - FAS500f
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+The boot media in your FAS500f system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media, and then manually transferring the ONTAP image to the replacement boot media using a USB flash drive.
 
-== Step 1: Remove the controller module
+If your storage system is running ONTAP 9.18.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 
-You must remove the controller module from the chassis when you replace a component inside the controller module.
+include::../_include/250_bootmedia-replace.adoc[]
 
-Make sure that you label the cables so that you know where they came from.
+.What's next?
+After replacing the boot media, you need to link:bootmedia-recovery-image-boot.html[boot the recovery image].
 
-. If you are not already grounded, properly ground yourself.
-. Unplug the controller module power supplies from the source.
-. Release the power cable retainers, and then unplug the cables from the power supplies.
-. Insert your forefinger into the latching mechanism on either side of the controller module, press the lever with your thumb, and gently pull the controller a few inches out of the chassis.
-+
-NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms).
-+
-image::../media/drw_a250_pcm_remove_install.png[Opening the latching mechanism]
-+
-|===
-a|
-image:../media/icon_round_1.png[Callout number 1] a|
-Lever
-a|
-image:../media/icon_round_2.png[Callout number 2]
-a|
-Latching mechanism
-|===
-
-. Using both hands, grasp the controller module sides and gently pull it out of the chassis and set it on a flat, stable surface.
-. Turn the thumbscrew on the front of the controller module anti-clockwise and open the controller module cover.
-+
-image::../media/drw_a250_open_controller_module_cover.png[Opening the controller module cover]
-+
-|===
-a|
-image:../media/icon_round_1.png[Callout number 1] a|
-Thumbscrew
-a|
-image:../media/icon_round_2.png[Callout number 2]
-a|
-Controller module cover.
-|===
-
-. Lift out the air duct cover.
-+
-image::../media/drw_a250_remove_airduct_cover.png[Lifting out the air duct cover]
-
-
-== Step 2: Replace the boot media
-
-You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media.
-
-You need a #1 magnetic Phillips head screwdriver to remove the screw that holds the boot media in place. Due to the space constraints within the controller module, you should also have a magnet to transfer the screw on to so that you do not loose it.
-
-You can use the following video or the tabulated steps to replace the boot media:
-
-video::7c2cad51-dd95-4b07-a903-ac5b015c1a6d[panopto, title="Animation - Replace the boot media"]
-
-. Locate and replace the impaired boot media from the controller module.
-+
-image::../media/drw_a250_replace_boot_media.png[Replacing the boot media]
-+
-|===
-a|
-image:../media/icon_round_1.png[Callout number 1] a|
-Remove the screw securing the boot media to the motherboard in the controller module.
-a|
-image:../media/icon_round_2.png[Callout number 2]
-a|
-Lift the boot media out of the controller module.
-|===
-
- .. Using the #1 magnetic screwdriver, remove the screw from the impaired boot media, and set it aside safely on the magnet.
- .. Gently lift the impaired boot media directly out of the socket and set it aside.
- .. Remove the replacement boot media from the antistatic shipping bag and align it into place on the controller module.
- .. Using the #1 magnetic screwdriver, insert and tighten the screw on the boot media.
-+
-NOTE: Do not apply force when tightening the screw on the boot media; you might crack it.
-
-== Step 3: Transfer the boot image to the boot media
-
-The replacement boot media that you installed is without a boot image so you need to transfer a boot image using a USB flash drive.
-
-* You must have a USB flash drive, formatted to MBR/FAT32, with at least 4GB capacity
-* A copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the *Downloads* section on the NetApp Support Site
- ** If NVE is enabled, download the image with NetApp Volume Encryption, as indicated in the download button.
- ** If NVE is not enabled, download the image without NetApp Volume Encryption, as indicated in the download button.
-* If your system is an HA pair, you must have a network connection.
-* If your system is a stand-alone system you do not need a network connection, but you must perform an additional reboot when restoring the var file system.
-
-.Steps
-
-. Download and copy the appropriate service image from the NetApp Support Site to the USB flash drive.
-. Download the service image to your work space on your laptop.
-. Unzip the service image.
-+
-NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
-+
-There are two folders in the unzipped service image file:
-
-  *** `boot`
-  *** `efi`
-
-. Copy the `efi` folder to the top directory on the USB flash drive.
-+
-The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
-
-. Remove the USB flash drive from your laptop.
-. If you have not already done so, install the air duct.
-+
-image::../media/drw_a250_install_airduct_cover.png[Installing the air duct]
-
-. Close the controller module cover and tighten the thumbscrew.
-+
-image::../media/drw_a250_close_controller_module_cover.png[Closing the controller module cover]
-+
-|===
-a|
-image:../media/icon_round_1.png[Callout number 1] a|
-Controller module cover
-a|
-image:../media/icon_round_2.png[Callout number 2]
-a|
-Thumbscrew
-|===
-
-. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
-. Plug the power cable into the power supply and reinstall the power cable retainer.
-. Insert the USB flash drive into the USB slot on the controller module.
-+
-Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
-
-. Push the controller module all the way into the chassis:
-. Place your index fingers through the finger holes from the inside of the latching mechanism.
-. Press your thumbs down on the orange tabs on top of the latching mechanism and gently push the controller module over the stop.
-. Release your thumbs from the top of the latching mechanisms and continue pushing until the latching mechanisms snap into place.
-+
-The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
-
-+
-The controller module should be fully inserted and flush with the edges of the chassis.
