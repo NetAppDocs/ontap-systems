@@ -9,4 +9,9 @@ summary: You must recable the storage and confirm disk reassignment.
 :imagesdir: ../media/
 
 [.lead]
+After completing restore and verify the system configuration ASA C250 system you need to recable the system and reassign disks.
+
 include::../_include/250_controller-replace-recable-reassign-disks.adoc[]
+
+.What's next?
+After you've recabled the system and reassigned disks, you need to link:controller-replace-restore-system-rma.html[complete the controller replacement].

@@ -1,0 +1,25 @@
+.Steps
+
+. Connect to the serial console port to interface with and monitor the system.
+
+. Turn on the controller's Location LED:
+
+.. Use the `system controller location-led show` command to display the current state of the Location LED.
+
+.. Turn on the Location LED:
++
+`system controller location-led modify -node _node1_ -state on` 
++
+The Location LED remains lit for 30 minutes.
+
+. Before opening the packaging, examine the packaging label and verify the following:
+* Component part number
+* Part description
+* Quantity in the box
+
+. Remove the contents from the packaging and save the packaging for returning the failed component to NetApp.
+
+. Label all cables connected to the storage system. This ensures proper recabling later in this procedure.
+
+. Ground yourself if not already grounded.
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380

@@ -15,22 +15,39 @@ entries:
   - title: Maintain
     pdf-filename: FAS500f Maintain
     entries:
-    - title: Overview
+    - title: Maintenance overview
       url: /fas500f/maintain-overview.html
 # Boot media start
-    - title: Boot media
-      pdf-filename: FAS500f Boot Media
+    - title: Boot media - automated recovery
+      pdf-filename: FAS500f Boot Media Automated
       entries:
-      - title: Overview
-        url: /fas500f/bootmedia-replace-overview.html
+      - title: Boot media replacement workflow
+        url: /fas500f/bootmedia-replace-workflow-bmr.html
+      - title: Review requirements
+        url: /fas500f/bootmedia-replace-requirements-bmr.html
+      - title: Shut down impaired controller
+        url: /fas500f/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /fas500f/bootmedia-replace-bmr.html
+      - title: Boot recovery image
+        url: /fas500f/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /fas500f/bootmedia-complete-rma-bmr.html
+    - title: Boot media - manual recovery
+      pdf-filename: FAS500f Boot Media Manual
+      entries:
+      - title: Boot media replacement workflow
+        url: /fas500f/bootmedia-replace-workflow.html
+      - title: Review requirements
+        url: /fas500f/bootmedia-replace-requirements.html
       - title: Check encryption keys
         url: /fas500f/bootmedia-encryption-preshutdown-checks.html
-      - title: Shut down node
+      - title: Shut down impaired controller
         url: /fas500f/bootmedia-shutdown.html
-      - title: Replace boot image
+      - title: Replace boot media
         url: /fas500f/bootmedia-replace.html
       - title: Boot recovery image
-        url: /fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html
+        url: /fas500f/bootmedia-recovery-image-boot.html
       - title: Restore encryption
         url: /fas500f/bootmedia-encryption-restore.html
       - title: Return failed part to NetApp
@@ -39,28 +56,34 @@ entries:
     - title: Chassis
       pdf-filename: FAS500f Chassis
       entries:
-      - title: Overview
-        url: /fas500f/chassis-replace-overview.html
-      - title: Shut down impaired controller
+      - title: Chassis replacement workflow
+        url: /fas500f/chassis-replace-workflow.html
+      - title: Review requirements
+        url: /fas500f/chassis-replace-requirements.html
+      - title: Prepare to replace
+        url: /fas500f/chassis-replace-prepare.html
+      - title: Shut down controllers
         url: /fas500f/chassis-replace-shutdown.html
-      - title: Replace hardware
+      - title: Replace chassis
         url: /fas500f/chassis-replace-move-hardware.html
-      - title: Complete replacement
+      - title: Complete chassis replacement
         url: /fas500f/chassis-replace-complete-system-restore-rma.html
     - title: Controller
       pdf-filename: FAS500f Controller Module
       entries:
-      - title: Overview
-        url: /fas500f/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /fas500f/controller-replace-workflow.html
+      - title: Review requirements
+        url: /fas500f/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /fas500f/controller-replace-shutdown.html
-      - title: Replace controller module
+      - title: Replace controller
         url: /fas500f/controller-replace-move-hardware.html
       - title: Restore system configuration
         url: /fas500f/controller-replace-system-config-restore-and-verify.html
       - title: Recable system
         url: /fas500f/controller-replace-recable-reassign-disks.html
-      - title: Complete system restoration
+      - title: Complete controller replacement
         url: /fas500f/controller-replace-restore-system-rma.html
     - title: DIMM
       url: /fas500f/dimm-replace.html
@@ -71,8 +94,10 @@ entries:
     - title: Mezzanine card
       url: /fas500f/mezzanine-replace.html
     - title: NVMEM battery
-      url: /fas500f/nvmem-battery-replace.html
+      url: /fas500f/nvmem-nvram-battery-replace.html
     - title: Power supply
       url: /fas500f/power-supply-replace.html
     - title: Real-time clock battery
       url: /fas500f/rtc-battery-replace.html
+  - title: Key specifications
+    url: /fas500f/overview.html

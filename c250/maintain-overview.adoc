@@ -1,48 +1,68 @@
 ---
 permalink: c250/maintain-overview.html
 sidebar: sidebar
-keywords: aff C250 maintenance, maintenance, repairing C250, repairing aff C250, replace aff C250 components, replace aff C250 components
-summary: Maintain the ASA C250 hardware
+keywords: aff c250 maintenance, maintenance, repairing c250, repairing aff c250, replace aff c250 components, replace aff c250 components
+summary: Maintain the AFF C250 hardware
 ---
 = Maintain AFF C250 hardware
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Maintain the hardware of your AFF C250 storage system to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss. 
+
+The maintenance procedures assume that the AFF C250 storage system has already been deployed as a storage node in the ONTAP environment.
+
+== System components
 For the AFF C250 storage system, you can perform maintenance procedures on the following components.
 
-== Boot media
+[%rotate, grid="none", frame="none", cols="25,65"]
 
-The boot media stores a primary and secondary set of boot image files that the system uses when it boots. 
+|===
 
-== Chassis
-The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
+a| link:bootmedia-replace-workflow-bmr.html[Boot media - automated recovery]
 
-== Controller
+a| The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot. During automated recovery, the system retrieves the boot image from the partner node and automatically runs the appropriate boot menu option to install the image on your replacement boot media. The automated boot media recovery process is supported only in ONTAP 9.18.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 
-A controller consists of a board, firmware, and software. It controls the drives and implements the ONTAP functions.
+a| link:bootmedia-replace-workflow.html[Boot media - manual recovery]
 
-== DIMM
+a| The boot media stores a primary and secondary set of ONTAP image files that the storage system uses to boot. During manual recovery, you boot the storage system from a USB drive and manually restore the file system image and configuration. If your storage system is running ONTAP 9.18.1 and later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure].
 
-You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
+a| link:chassis-replace-workflow.html[Chassis]
 
-== Drive
 
-A drive is a device that provides the physical storage media for data.
+a| The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
 
-== Fan
-The fan cools the controller.
+a| link:controller-replace-workflow.html[Controller]
 
-== Mezzanine card
-A Mezzanine card is a printed circuit board that plugs directly into another plug-in card. 
+a| A controller consists of a board, firmware, and software. It controls the drives and implements the ONTAP functions.
 
-== NVMEM battery
+a| link:dimm-replace.html[DIMM]
 
-A battery is included with the controller and preserves cached data if the AC power fails.
+a| You must replace a DIMM (dual in-line memory module) when a memory mismatch is present, or you have a failed DIMM.
 
-== Power supply
+a| link:drive-replace.html[Drive]
 
-A power supply provides a redundant power source in a controller shelf.
+a| A drive is a device that provides the physical storage media for data.
 
-== Real time clock battery
-A real time clock battery preserves system date and time information if the power is off. 
+a| link:fan-replace.html[Fan]
+
+a| The fan cools the controller.
+
+a| link:mezzanine-replace.html[Mezzanine card]
+
+a| The Mezzanine card is a printed circuit board that plugs directly into another plug-in card. 
+
+a| link:nvmem-nvram-battery-replace.html[NVMEM battery]
+
+a| The NVMEM battery is responsible for preserving cached data if the AC power fails.
+
+a| link:power-supply-replace.html[Power supply]
+
+a| A power supply provides a redundant power source in a controller shelf.
+
+a| link:rtc-battery-replace.html[Real-time clock battery]
+
+a| A real time clock battery preserves system date and time information if the power is off. 
+
+|=== 

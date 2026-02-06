@@ -1,0 +1,20 @@
+---
+permalink: fas500f/bootmedia-recovery-image-boot.html
+sidebar: sidebar
+keywords: fas500f, boot the recovery image
+summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
+---
+= Manual boot media recovery from a USB drive - FAS500f
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After installing the new boot media device in your FAS500f system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
+
+If your storage system is running ONTAP 9.18.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
+
+include::../_include/bootmedia_recovery_image_boot.adoc[]
+
+.What's next?
+After booting the recovery image, you need to link:bootmedia-encryption-restore.html[restore encryption on the boot media].
+

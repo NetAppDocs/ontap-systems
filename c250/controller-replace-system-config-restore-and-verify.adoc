@@ -9,4 +9,10 @@ summary: "After completing the hardware replacement and booting to Maintenance m
 :imagesdir: ../media/
 
 [.lead]
+
+After completing the hardware replacement and booting to your AFF C250 system to Maintenance mode, you need to verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+
 include::../_include/250_controller-replace-system-config-restore-and-verify.adoc[]
+
+.What's next?
+After you've restored and verified the system configuration, you need to link:controller-replace-recable-reassign-disks.html[recable the system and reassign disks].
