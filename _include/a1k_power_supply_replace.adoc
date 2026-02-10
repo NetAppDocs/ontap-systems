@@ -1,11 +1,11 @@
 The power supplies are redundant and hot-swappable. You do not have to shut down the controller to replace a PSU.
 
 .About this task
-* This procedure is written for replacing one PSU at a time.
-+
+This procedure is written for replacing one PSU at a time.Use the appropriate procedure for your type of PSU: AC or DC. 
+
 IMPORTANT: Do not mix PSUs with different efficiency ratings. Always replace like for like.
 
-* Use the appropriate procedure for your type of PSU: AC or DC. 
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
 
 [role="tabbed-block"]
 ====
@@ -16,7 +16,6 @@ To replace an AC PSU, complete the following steps.
 
 .Steps
 
-. If you are not already grounded, properly ground yourself.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
 . Disconnect the PSU:
  .. Open the power cable retainer, and then unplug the power cable from the PSU.

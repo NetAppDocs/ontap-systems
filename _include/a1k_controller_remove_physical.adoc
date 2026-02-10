@@ -2,6 +2,8 @@
 
 You must remove the controller module from the enclosure when you replace the controller module or replace a component inside the controller module.
 
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
+
 .Steps
 
 . Check the NVRAM status LED located in slot 4/5 of the system. There is also an NVRAM LED on the front panel of the controller module. Look for the NV icon:
@@ -23,7 +25,6 @@ NVRAM attention LED
 * If the NV LED is off, go to the next step.
 * If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 
-. If you are not already grounded, properly ground yourself.
 
 . On the front of the unit, hook your fingers into the holes in the locking cams, squeeze the tabs on the cam levers, and gently, but firmly rotate both latches toward you at the same time.
 +

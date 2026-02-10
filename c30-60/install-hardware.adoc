@@ -13,6 +13,8 @@ After you prepare to install your AFF C30 or AFF C60 storage system, install the
 
 Skip this step if your storage system came in a cabinet.
 
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
+
 :a20-30-50:
  
 include::../_include/install_hardware_fragment_conditional.adoc[]

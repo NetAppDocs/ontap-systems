@@ -3,8 +3,10 @@
 
 The boot media is located inside the System Management module and is accessed by removing the module from the system.
 
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
+
 .Steps
-. Go to the rear of the chassis. If you are not already grounded, properly ground yourself. 
+. Go to the rear of the chassis. 
 
 . Unplug the controller's PSUs.
 

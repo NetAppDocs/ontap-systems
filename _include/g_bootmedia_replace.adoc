@@ -20,7 +20,7 @@ include::../_include/g_controller_remove.adoc[]
 
 To replace the boot media, locate it inside the controller and follow the specific sequence of steps.
 
-. If you are not already grounded, properly ground yourself. 
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
 
 . Remove the boot media:
 +
