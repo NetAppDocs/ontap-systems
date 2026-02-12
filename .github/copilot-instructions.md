@@ -44,8 +44,7 @@ Documentation for installing and maintaining ONTAP storage systems and drive she
 
 ### Common Terminology
 - Boot media recovery
-- Impaired controller
-- Healthy controller
+- Impaired controller/Healthy controller
 - HA partner
 - Giveback
 - Field Replaceable Unit
