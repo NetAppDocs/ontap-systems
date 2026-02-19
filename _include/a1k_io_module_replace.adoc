@@ -4,6 +4,8 @@ You can use this procedure with all versions of ONTAP supported by your storage 
 * You must have the replacement part available.
 * Make sure all other components in the storage system are functioning properly; if not, contact technical support.
 
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
+
 
 == Step 1: Shut down the impaired node
 
@@ -28,7 +30,6 @@ include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 To replace an I/O module, locate it within the enclosure and follow the specific sequence of steps.
 
 .Steps
-. If you are not already grounded, properly ground yourself.
 
 . Unplug any cabling on the target I/O module.
 +
