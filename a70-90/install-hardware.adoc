@@ -13,6 +13,8 @@ After you prepare to install your AFF A70 or AFF A90 storage system, install the
 
 Skip this step if your cabinet is pre-populated.
 
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
+
 :a1k-a70-90:
 
 include::../_include/install_hardware_fragment_conditional.adoc[]
