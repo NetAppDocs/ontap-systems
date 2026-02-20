@@ -15,6 +15,8 @@ A storage system has three location LEDs: one on the operator display panel and 
 +
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
+
 [role="tabbed-block"]
 ====
 
@@ -24,7 +26,6 @@ To replace an AC PSU, complete the following steps.
 
 .Steps
 
-. If you are not already grounded, properly ground yourself.
 . Identify the faulty PSU based on console error messages or through the red Attention LED on the PSU.
 
 .  Disconnect the power cord from the PSU by opening the power cord retainer, and then unplug the power cord from the PSU.
