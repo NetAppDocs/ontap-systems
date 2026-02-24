@@ -38,7 +38,6 @@ This repository contains installation and maintenance documentation for NetApp O
 - **NVDIMM / NVRAM:** Non-volatile memory used for write caching; replacing these components requires specific shutdown and recovery steps to avoid data loss.
 - **Shared includes pattern:** Content in `_include/` is included by platform files using AsciiDoc `include::` directives. Generic fragments prefixed `g_` are reused by multiple modern platforms; platform-prefixed fragments (e.g., `a1k_`, `a70-90_`) are platform-specific.
 - **File-naming convention:** Within a platform directory, files follow the pattern `{component}-{action}.adoc` (e.g., `bootmedia-replace.adoc`, `controller-replace-workflow.adoc`). Workflow (overview) files end in `-workflow.adoc`.
-- **AsciiDoc front matter:** Every content file begins with a YAML front matter block containing `permalink`, `sidebar`, `keywords`, and `summary` fields, followed by the level-1 heading (`= Title`) and `[.lead]` paragraph.
 - **Platform families share hardware:** The a70 and a90 share the same include fragments (prefixed `a70-90_`); similarly, a20, a30, and a50 share `a20-30-50` content.
 
 ## Typical user workflows
