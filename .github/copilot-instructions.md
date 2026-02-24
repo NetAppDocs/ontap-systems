@@ -10,11 +10,11 @@ This repository contains installation and maintenance documentation for NetApp O
 
 - `_include/` – Reusable AsciiDoc content fragments shared across platform directories; files are prefixed with the platform model (e.g., `a1k_`, `a70-90_`, `800_`) or are generic (e.g., `g_`, `afx_`)
 - `a1k/`, `a20-30-50/`, `a70-90/`, `a200/`–`a900/` – AFF A-Series platform-specific content (install and maintain)
-- `c250/`, `c400/`, `c800/`, `c80/`, `c30-60/` – AFF C-Series platform-specific content
-- `asa150/`–`asa900/`, `asa-c250/`–`asa-c800/` – ASA (All SAN Array) platform content
-- `asa-r2/`, `asa-r2-a1k/`, `asa-r2-a20-30-50/`, `asa-r2-70-90/`, `asa-r2-c30/` – ASA r2 generation content; some procedures differ from earlier ASA and AFF
-- `fas2600/`–`fas9500/`, `fas50/`, `fas70-90/` – FAS hybrid storage platform content
-- `afx/`, `afx-1k/` – AFX all-flash platform content
+- `c250/`, `c400/`, `c800/`, `c80/`, `c30-60/` – AFF C-Series platform-specific content (install and maintain)
+- `asa150/`–`asa900/`, `asa-c250/`–`asa-c800/` – ASA (All SAN Array) platform content (install and maintain)
+- `asa-r2/`, `asa-r2-a1k/`, `asa-r2-a20-30-50/`, `asa-r2-70-90/`, `asa-r2-c30/` – ASA r2 generation content (install and maintain); some procedures differ from earlier ASA and AFF
+- `fas2600/`–`fas9500/`, `fas50/`, `fas70-90/` – FAS hybrid storage platform content (install and maintain)
+- `afx/`, `afx-1k/` – AFX all-flash platform content (install and maintain)
 - `aff-landing/`, `aff-aseries/`, `aff-cseries/` – AFF product family index and landing pages
 - `allsan-landing/`, `allsan-a-series/`, `allsan-c-series/` – ASA product family landing pages
 - `asa-r2-landing-maintain/`, `afx-landing-maintain/` – r2 and AFX maintenance landing pages
