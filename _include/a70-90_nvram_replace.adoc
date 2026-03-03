@@ -1,5 +1,8 @@
 
-Replace the NVRAM module or NVRAM DIMMs using the appropriate following option.
+Replace the NVRAM module or NVRAM DIMMs using the appropriate option.
+
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
+
 
 // start tabbed area
 
@@ -10,8 +13,6 @@ Replace the NVRAM module or NVRAM DIMMs using the appropriate following option.
 --
 
 To replace the NVRAM module, locate it in slot 4/5 in the chassis and follow the specific sequence of steps.
-
-. If you are not already grounded, properly ground yourself.
 
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 +

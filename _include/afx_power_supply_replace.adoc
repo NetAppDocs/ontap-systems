@@ -5,9 +5,10 @@ IMPORTANT: Do not mix PSUs with different efficiency ratings. Always replace lik
 
 * The power supplies are redundant and hot-swappable; you do not have to takeover the controller to perform this task. 
 
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
+
 .Steps
 
-. If you are not already grounded, properly ground yourself.
 . Identify the PSU you want to replace, based on console error messages or through the red Fault LED on the PSU.
 . Disconnect the PSU:
  .. Open the power cable retainer, and then unplug the power cable from the PSU.
