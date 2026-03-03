@@ -34,7 +34,7 @@ This repository contains installation and maintenance documentation for NetApp O
 - **FRU (field-replaceable unit):** Any hardware component that a customer can replace on-site (boot media, controller, DIMM, fan, NVDIMM, NVRAM, power supply, RTC battery, I/O module, system management module).
 - **HA pair:** Two controllers operating in a high-availability configuration; most maintenance procedures require gracefully failing over to the partner before starting.
 - **BMR (boot media recovery):** Automated boot recovery introduced in ONTAP 9.17.1; platforms running earlier versions must use the manual USB-based recovery procedure. Both workflows exist for most modern platforms.
-- **MetroCluster (MCC):** Two-site disaster recovery configuration; shutdown and recovery procedures differ from standard HA pair procedures and often use separate include files (e.g., `shutdown_2n_mcc.adoc`).
+- **MetroCluster (MCC):** Two-site disaster recovery configuration; shutdown and recovery procedures differ from standard HA pair procedures and often use separate include files with the `_mcc` suffix (e.g., `shutdown_2n_mcc.adoc`).
 - **NVDIMM / NVRAM:** Non-volatile memory used for write caching; replacing these components requires specific shutdown and recovery steps to avoid data loss.
 - **Shared includes pattern:** Content in `_include/` is included by platform files using AsciiDoc `include::` directives. Generic fragments prefixed `g_` are reused by multiple modern platforms; platform-prefixed fragments (e.g., `a1k_`, `a70-90_`) are platform-specific.
 - **Platform families share hardware:** The a70 and a90 share the same include fragments (prefixed `a70-90_`); similarly, a20, a30, and a50 share `a20-30-50` content.
