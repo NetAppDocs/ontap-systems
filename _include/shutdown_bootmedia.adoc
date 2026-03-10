@@ -1,4 +1,4 @@
-Take over and halt the impaired controller so that the healthy controller continues to serve data from the impaired controller's storage. To do this, you suppress automatic case creation in AutoSupport, disable automatic giveback, and bring the impaired controller to the LOADER prompt. The LOADER prompt is the safe halted state from which you can replace the FRU.
+Complete the shutdown of the impaired controller by halting it to the LOADER prompt and capturing the boot environment variables. The LOADER prompt is the safe halted state from which you can replace the boot media.
 
 .Steps
 .. Take the impaired controller to the LOADER prompt:
