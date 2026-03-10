@@ -1,4 +1,4 @@
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller.
+Take over and halt the impaired controller so that the healthy controller continues to serve data from the impaired controller's storage. To do this, you suppress automatic case creation in AutoSupport, disable automatic giveback, and bring the impaired controller to the LOADER prompt. The LOADER prompt is the safe halted state from which you can replace the FRU.
 
 .Steps
 .. Take the impaired controller to the LOADER prompt:
