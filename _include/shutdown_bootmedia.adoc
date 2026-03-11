@@ -1,4 +1,4 @@
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller.
+Complete the shutdown of the impaired controller by halting it to the LOADER prompt and capturing the boot environment variables. The LOADER prompt is the safe halted state from which you can replace the boot media.
 
 .Steps
 .. Take the impaired controller to the LOADER prompt:
