@@ -7,12 +7,7 @@ This procedure is for systems with two node configurations. For more information
 ** BMC accessability for each controller.
 
 * Make sure you have the necessary tools and equipment for the replacement.
-* As a best practice before shutdown, you should:
 
-** Perform additional https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP[system health checks].
-** Upgrade ONTAP to a recommended release for the system.
-** Resolve any https://activeiq.netapp.com/[Active IQ Wellness Alerts and Risks].
-Make note of any faults presently on the system, such as LEDs on the system components.
 
 .Steps
 
@@ -32,9 +27,11 @@ Make note of any faults presently on the system, such as LEDs on the system comp
 +
 `exit`
 
-. Log into SP/BMC over SSH using the IP address of any of the nodes listed in the output from the previous step to monitor progress. 
+. Log into the the controller:
+
+* If you login from BMC you have to enter the command `system console` and then authenticate. 
 +
-If you are using a console/laptop, log into the controller using the same cluster administrator credentials.
+* If you are using a console/laptop, log into the controller using the same cluster administrator credentials.
 +
 
 . Halt the two nodes located in the impaired chassis: 
