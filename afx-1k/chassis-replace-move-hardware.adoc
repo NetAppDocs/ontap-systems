@@ -11,8 +11,8 @@ summary: Replace the chassis of your AFX 1K storage system when a hardware failu
 [.lead]
 Replace the chassis of your AFX 1K storage system when a hardware failure requires it. The replacement process involves removing the controller, I/O cards, NVRAM12 module, system management module, and power supply units (PSUs), installing the replacement chassis, and reinstalling the chassis components.
 
-include::../_include/a1k_chassis_replace_move_hardware.adoc[]
+include::../_include/afx_chassis_replace_move_hardware.adoc[]
 
 .What's next?
 
-After replacing the impaired AFF A1K chassis and reinstalling its components, complete the link:chassis-replace-complete-system-restore-rma.html[chassis replacement].
+After replacing the impaired AFX 1K chassis and reinstalling its components, complete the link:chassis-replace-complete-system-restore-rma.html[chassis replacement].
