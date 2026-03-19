@@ -27,12 +27,12 @@ This procedure is for systems with two node configurations. For more information
 +
 `exit`
 
-. Log into the the controller:
+. Log in to the SP/BMC of each controller using the IP address identified in the previous step:
++
+* If you log in from the BMC over SSH, connect using the SP/BMC address (for example, `ssh admin@<SP/BMC_address>`), then enter the command `system console` and authenticate.
+* If you are using a local console or laptop connected directly to the controller, log in using the same cluster administrator credentials.
 
-* If you login from BMC you have to enter the command `system console` and then authenticate. 
-+
-* If you are using a console/laptop, log into the controller using the same cluster administrator credentials.
-+
+
 
 . Halt the two nodes located in the impaired chassis: 
 +
