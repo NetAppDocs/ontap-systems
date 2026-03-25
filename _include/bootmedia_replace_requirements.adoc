@@ -6,6 +6,8 @@
 .File preparation
 Copy the `image_xxx.tgz` file to the USB flash drive. This file will be used when you transfer the ONTAP image using the USB flash drive.
 
+From the extracted ONTAP image, copy the `EFI` folder to the root directory of the USB flash drive.
+
 .Component replacement
 Replace the failed component with the replacement component provided by NetApp.
 
