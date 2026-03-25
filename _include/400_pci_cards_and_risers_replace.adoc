@@ -154,6 +154,8 @@ The riser raises up slightly from the controller module.
  .. Loosen the thumbscrews on the mezzanine card, and gently lift the card directly out of the socket and set it aside.
  .. Align the replacement mezzanine card over the socket and the guide pins and gently push the card into the socket.
  .. Tighten the thumbscrews on the mezzanine card.
++
+NOTE: Fully tighten the mezzanine card thumbscrews. If they are loose, ports e0e through e0h may not be detected, the LED may flash continuously, and the logs may show an "unsupported cable" error.
 . Reinstall the riser:
  .. Align the riser with the pins to the side of the riser socket, lower the riser down on the pins.
  .. Push the riser squarely into the socket on the motherboard.
