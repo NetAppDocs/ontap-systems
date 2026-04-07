@@ -1,5 +1,7 @@
 Review the requirements.
 
+include::console-logging-note.adoc[]
+
 * All drive shelves must be working properly.
 * The healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
 * You must replace the failed component with a replacement component you received from NetApp.

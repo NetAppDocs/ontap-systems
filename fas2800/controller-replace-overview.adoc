@@ -11,6 +11,8 @@ summary: "You must review the prerequisites for the replacement procedure and se
 [.lead]
 You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
 
+include::../_include/console-logging-note.adoc[]
+
 * All drive shelves must be working properly.
 * If your system is in an HA pair, the healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
 * This procedure includes steps for automatically or manually reassigning drives to the _replacement_ controller, depending on your system's configuration.

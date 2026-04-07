@@ -14,6 +14,8 @@ To replace the impaired controller module, you must shut down the impaired contr
 .Before you begin
 You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
 
+include::../_include/console-logging-note.adoc[]
+
 * All drive shelves must be working properly.
 * If your system has a V_StorageAttach license, you must refer to the additional required steps before performing this procedure.
 * If your system is in an HA pair, the healthy node must be able to take over the node that is being replaced (referred to in this procedure as the "`impaired node`").

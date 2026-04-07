@@ -1,5 +1,7 @@
 Review the requirements for replacing the controller.
 
+include::console-logging-note.adoc[]
+
 * All drive shelves must be working properly.
 * The healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
 * Do not use this procedure for controller upgrades; instead, refer to the https://docs.netapp.com/us-en/ontap-systems-upgrade/choose_controller_upgrade_procedure.html[Choose your controller hardware upgrade procedure] for guidance.

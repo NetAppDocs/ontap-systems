@@ -11,6 +11,8 @@ summary: You must review the prerequisites for the replacement procedure and sel
 [.lead]
 You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
 
+include::../_include/console-logging-note.adoc[]
+
 * All drive shelves must be working properly.
 * The healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
 * If your system is in a MetroCluster configuration, you must review the section https://docs.netapp.com/us-en/ontap-metrocluster/disaster-recovery/concept_choosing_the_correct_recovery_procedure_parent_concept.html[Choosing the correct recovery procedure] to determine whether you should use this procedure.
