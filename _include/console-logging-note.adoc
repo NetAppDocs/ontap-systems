@@ -3,6 +3,6 @@
 NetApp strongly recommends that you enable console logging on the devices you are working with and take the following actions when performing this procedure:
 
 * Leave AutoSupport enabled during your maintenance.
-* Trigger a maintenance AutoSupport before and after your maintenance to disable case creation for the duration of the maintenance activity. See https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92[How to suppress automatic case creation during scheduled maintenance windows^].
+* Trigger a maintenance AutoSupport before and after your maintenance to suppress automatic case creation during the maintenance activity. See https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92[How to suppress automatic case creation during scheduled maintenance windows^].
 * Enable session logging for any CLI sessions. For guidance on how to enable session logging, see https://kb.netapp.com/on-prem/ontap/Ontap_OS/OS-KBs/How_to_configure_PuTTY_for_optimal_connectivity_to_ONTAP_systems[How to configure PuTTY for optimal connectivity to ONTAP systems^].
 ====

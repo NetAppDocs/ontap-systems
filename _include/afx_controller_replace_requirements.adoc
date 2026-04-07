@@ -1,6 +1,6 @@
 Review the requirements for replacing the controller.
 
-include::console-logging-note.adoc[]
+include::../_include/console-logging-note.adoc[]
 
 * It is important that you apply the commands in these steps on the correct systems:
  ** The _impaired_ controller is the controller that is being replaced.
@@ -11,9 +11,6 @@ include::console-logging-note.adoc[]
 * You must replace the failed component with the field-replaceable unit (FRU) you received from NetApp.
 * You must replace a controller module with a controller module of the same model type. You cannot upgrade your system by just replacing the controller module.
 * You cannot change any drives or drive shelves as part of this procedure.
-* You must always capture the controller's console output to a text log file.
-+
-This provides you a record of the procedure so that you can troubleshoot any issues that you might encounter during the replacement process.
 
 
 

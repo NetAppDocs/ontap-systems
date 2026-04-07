@@ -1,4 +1,4 @@
-include::console-logging-note.adoc[]
+include::../_include/console-logging-note.adoc[]
 
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * It is important that you apply the commands in these steps on the correct controller:
