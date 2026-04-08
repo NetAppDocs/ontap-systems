@@ -9,12 +9,14 @@ summary: To replace a PCIe or mezzanine card, you must disconnect the cables and
 :imagesdir: ../media/
 
 [.lead]
-Replace the mezzanine card by disconnecting the cables and any SFP and QSFP modules from the card, replace the failed mezzanine card, and then recable the cards.
+Replace the mezzanine card in your FAS2820 system when it has failed or you want to upgrade it to a different protocol.
 
-* You can use this procedure with all versions of ONTAP supported by your system
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* You can use this procedure with all versions of ONTAP supported by your system.
+* You can replace the mezzanine card with the same or a different type. If you use a different type, update LIF and port settings after you restart the controller.
+* Record ifgrps and VLANs before shutdown.
+* Ensure all other system components work. If not, contact technical support.
 
-video::a8ec891d-f6f6-4479-9ca2-af47017254ff[panopto, title="Animation - Replace the  mezzanine card"]
+video::a8ec891d-f6f6-4479-9ca2-af47017254ff[panopto, title="Animation - Replace the mezzanine card"]
 
 == Step 1: Shut down the impaired controller
 
@@ -32,7 +34,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-. Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
+. Squeeze the cam handle latch to release it, open the handle fully, and pull the controller module out of the chassis.
 +
 image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
 
@@ -40,7 +42,7 @@ image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
 . Open the cover by pressing the blue buttons on the sides of the controller module to release the cover, and then rotate the cover up and off of the controller module.
 +
 
-image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Open th controller]
+image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Open the controller]
 
 [cols="1,3"]
 |===
@@ -68,7 +70,7 @@ image::../media/drw_2850_replace_HIC_IEOPS-700.svg[Replace a mezzanine card]
 a|
 image::../media/icon_round_1.png[Callout number 1]
 a|
-IO Plate
+I/O Plate
 a|
 image::../media/icon_round_2.png[Callout number 2]
 a|
@@ -76,26 +78,26 @@ PCIe mezzanine card
 
 |===
 
-.. Remove the IO Plate by sliding it straight out from thr controller module.
+.. Remove the I/O Plate by sliding it straight out from the controller module.
 .. Loosen the thumbscrews on the mezzanine card and lift the mezzanine card straight up.  
 +
 NOTE: You can loosen the thumbscrews with your fingers or a screwdriver. If you use your fingers, you might need to rotate the NV battery up for better finger purchase on the thumbscrew next to it.
 +
 . Reinstall the mezzanine card:
-.. Align the socket on the replacement mezzanine card plug with the socket on the motherboard, and then gently seat the card squarely into the socket.
+.. Align the connector on the replacement mezzanine card with the socket on the motherboard, and then gently seat the card squarely in the socket.
 .. Tighten the three thumbscrews on the mezzanine card.
-.. Reinstall the IO Plate.
+.. Reinstall the I/O Plate.
 . Reinstall the controller module cover and lock it into place.
 
-== Step 4: Install the controller module
+== Step 4: Install and reboot the controller module
 
-Reinstall the controller module.
+Reinstall and reboot the controller module.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. If you have not already done so, replace the cover on the controller module.
+. If needed, replace the cover on the controller module.
 . Turn the controller module over and align the end with the opening in the chassis.
-. Gently push the controller module halfway into the system.Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
+. Gently push the controller module halfway into the chassis.
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 
@@ -104,17 +106,70 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
 . Complete the reinstallation of the controller module:
- .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
+.. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
 The controller begins to boot as soon as it is seated in the chassis.
- .. If you have not already done so, reinstall the cable management device.
- .. Bind the cables to the cable management device with the hook and loop strap.
- . Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+
+.. If you have not already done so, reinstall the cable management device.
+.. Bind the cables to the cable management device with the hook and loop strap.
+ 
+== Step 5: Reconfigure the mezzanine card (if type changed)
+
+After the FAS2820 system restarts, update the mezzanine card settings to match the new card if you replaced it with a different type.
+
+[role="tabbed-block"]
+====
+
+
+.Option 1: Fibre Channel to Ethernet mezzanine card
+--
+
+Configure the Ethernet replacement mezzanine card by reconfiguring the LIFs and port settings as needed.
+
+.Steps
+
+. Confirm the new physical port names and link states of the new mezzanine card by using the `network port show` command.
+
+. Rebuild any ifgrps and VLANs that were tied to the old mezz ports.
+. Put the new ports (or ifgrp/VLAN ports) into the correct broadcast domains / IPspaces (and MTU).
+
+. Update affected LIF home port and failover settings.
+
+. Move the LIFs back to their home ports and check the configuration.
+--
+
+.Option 2: Ethernet to Fibre Channel mezzanine card
+--
+Configure the FC replacement mezzanine card by reconfiguring the LIFs and port settings as needed.
+
+.Steps
+
+. Build FC connectivity:
+.. Enable FCP on relevant SVMs.
+.. Create FC data LIF on new mezz ports.
+.. Capture FC LIF WWPNs and update fabric zoning as required.
+.. Check for unexpected host paths and update port set/igroups/LUN mappings as needed.
+.. Verify host multipath with no stale paths and balance optimized/non-optimized paths.
+
+. Verify no LIFs are homed on non-existent Ethernet ports, all FC LIFs are up and serving I/O, and ASUP monitoring reflects the new configuration.
+
+--
+
+====
+
+
+== Step 6: Return the controller to normal operation
+
+Return the impaired controller to normal operation by giving back storage and restoring automatic giveback and AutoSupport settings.
+
+. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+
 . Restore automatic giveback by using the `storage failover modify -node local -auto-giveback true` command.
+
 . If an AutoSupport maintenance window was triggered, end it by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 
-== Step 5: Return the failed part to NetApp
+== Step 7: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
