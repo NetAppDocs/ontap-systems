@@ -11,7 +11,9 @@ Each SCSI-blade process should be in quorum with the other nodes in the cluster.
 .Steps
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
 +
-`system node autosupport invoke -node * -type all -message MAINT=<# of hours>h`
+`system node autosupport invoke -node * -type all -message MAINT=_# of hours_h`
++
+This prevents automatic support cases from being opened during your planned maintenance window. The maximum suppression duration is 72 hours. If your maintenance completes early, you can re-enable case creation by invoking an AutoSupport message with `MAINT=END`. For more information, see https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92[How to suppress automatic case creation during scheduled maintenance windows^].
 +
 The following AutoSupport message suppresses automatic case creation for two hours:
 +
