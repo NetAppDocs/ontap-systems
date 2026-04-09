@@ -106,9 +106,21 @@ For each field present, check for disallowed characters and AsciiDoc notation us
 
 ### Step 3: Generate the corrected field values
 
-For each field with issues, generate a corrected version:
+For each field with issues, generate a corrected version using the following approach:
+
+**For the `summary` field**, prefer rewriting from the lead paragraph rather than just stripping characters from the original summary:
+
+1. Read the lead paragraph of the file. The lead is the paragraph immediately following the `[.lead]` role annotation. If the lead uses an `include::` directive, read the first sentence or two of the included file.
+2. Use the lead text as the basis for the corrected summary, adapting it to plain text (no AsciiDoc notation, no disallowed characters).
+3. If the lead text itself contains disallowed characters (such as parenthesized acronyms like `(RTC)` or `(ECC)`), remove the parentheses and retain the acronym inline, or drop the acronym if the full term is already present.
+4. If the file has no lead paragraph, fall back to stripping/replacing disallowed characters in the original summary.
+5. Keep the summary concise — typically one to two sentences.
+
+**For `title` and `keywords` fields**, apply character-level fixes directly:
 - Remove or replace each disallowed character
 - Strip AsciiDoc markup while preserving the plain text content
+
+**General rules:**
 - Do not change field values that have no issues
 - Set `fixedTitle`, `fixedKeywords`, and `fixedSummary` to `null` if those fields have no issues or are absent
 
