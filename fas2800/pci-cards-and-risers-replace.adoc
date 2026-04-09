@@ -9,7 +9,7 @@ summary: To replace a PCIe or mezzanine card, you must disconnect the cables and
 :imagesdir: ../media/
 
 [.lead]
-Replace the mezzanine card in your FAS2820 system if the card fails or if you want to change the card protocol.
+Replace the mezzanine card in your FAS2820 system if the card fails or upgrade it to a different protocol by installing a new card.
 
 * Use this procedure with any ONTAP version supported by your system.
 * Replace the mezzanine card with the same type or a different type.
@@ -46,7 +46,7 @@ Leave the cables in the cable management device to keep them organized.
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-. Squeeze the cam handle latch to release it, open the handle fully, and pull the controller module out of the chassis.
+. Release the cam handle latch, open it fully, and pull the controller module out of the chassis.
 +
 image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
 
