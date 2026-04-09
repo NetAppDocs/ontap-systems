@@ -9,13 +9,13 @@ summary: To replace a PCIe or mezzanine card, you must disconnect the cables and
 :imagesdir: ../media/
 
 [.lead]
-Replace the mezzanine card in your FAS2820 system if it fails or if you want to change the card protocol.
+Replace the mezzanine card in your FAS2820 system if the card fails or if you want to change the card protocol.
 
-* You can use this procedure with all versions of ONTAP supported by your system.
-* You can replace the mezzanine card with the same or a different type.
-* Capture the ifgrp and VLAN information before shutdown.
-* If you are changing mezzanine card types, update LIF and port settings after the controller restarts.
-* Check that all other system components work. If they do not, contact technical support.
+* Use this procedure with any ONTAP version supported by your system.
+* Replace the mezzanine card with the same type or a different type.
+* Write down the ifgrp and VLAN information before the shutdown.
+* If changing mezzanine card types, change LIF and port settings after the controller restarts.
+* Verify all other system components work. If the issue persists, call technical support.
 
 video::a8ec891d-f6f6-4479-9ca2-af47017254ff[panopto, title="Animation - Replace the mezzanine card"]
 
@@ -35,10 +35,11 @@ include::../_include/shutdown_no_mcc.adoc[]
 
 == Step 2: Remove the controller module
 
-Remove the controller module, then remove its cover.
+Remove the controller module and its cover.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
+
 . Loosen the hook and loop strap, note where the cables are connected, and then unplug the system cables and SFPs (if needed).
 +
 Leave the cables in the cable management device to keep them organized.
@@ -50,7 +51,7 @@ Leave the cables in the cable management device to keep them organized.
 image::../media/drw_2850_pcm_remove_install_IEOPS-694.svg[Remove the controller]
 
 . Turn the controller over and place it on a flat, stable surface.
-. Open the cover by pressing the blue buttons on the sides of the controller module to release the cover, and then rotate the cover up and off of the controller module.
+. Press the blue buttons on the sides of the controller module to release the cover. Rotate the cover up and off the controller module.
 +
 
 image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Open the controller]
@@ -98,7 +99,7 @@ NOTE: You can loosen the thumbscrews with your fingers or a screwdriver. If you 
 .. Align the connector on the replacement mezzanine card with the socket on the motherboard, and then gently seat the card squarely in the socket.
 .. Tighten the three thumbscrews on the mezzanine card.
 .. Reinstall the I/O Plate.
-. Reinstall the controller module cover and lock it into place.
+. Put the controller module cover back on and lock it.
 
 == Step 4: Install and reboot the controller module
 
@@ -112,7 +113,7 @@ Reinstall and reboot the controller module.
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 
-. Recable the system, as needed.
+. Reconnect the system cables as needed.
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
@@ -121,14 +122,14 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
-The controller begins to boot as soon as it is seated in the chassis.
+The system boots the controller as soon as you seat it in the chassis.
 
 .. If you have not already done so, reinstall the cable management device.
 .. Bind the cables to the cable management device with the hook and loop strap.
  
 == Step 5: Reconfigure the mezzanine card (if type changed)
 
-After the FAS2820 system restarts, update the mezzanine card settings to match the new card if you replaced it with a different type.
+After the FAS2820 system restarts, change the mezzanine card settings to match the new card if you replaced it with a different type.
 
 [role="tabbed-block"]
 ====
@@ -137,34 +138,32 @@ After the FAS2820 system restarts, update the mezzanine card settings to match t
 .Option 1: Fibre Channel to Ethernet mezzanine card
 --
 
-Configure the Ethernet replacement mezzanine card by reconfiguring the LIFs and port settings as needed.
+Configure the Ethernet replacement mezzanine card by updating LIFs and port settings as needed.
 
 .Steps
 
-. Confirm the new physical port names and link states of the new mezzanine card by using the `network port show` command.
-
-. Rebuild any ifgrps and VLANs that were tied to the old mezz ports.
-. Put the new ports (or ifgrp/VLAN ports) into the correct broadcast domains/IPspaces (and MTU).
-
+. Use the `network port show` command to confirm new port names and link states.
+. Rebuild any ifgrps and VLANs tied to the old mezz ports.
+. Put the new ports, or ifgrp/VLAN ports, in the correct broadcast domains and IPspaces, and set MTU values.
 . Update affected LIF home port and failover settings.
-
-. Move the LIFs back to their home ports and check the configuration.
+. Move the LIFs back to their home ports and verify the configuration.
+. Delete LIFs that are no longer needed.
 --
+
+See link:https://docs.netapp.com/us-en/ontap/san-admin/index.html[SAN management overview] for more detailed information about configuring Ethernet in ONTAP.
 
 .Option 2: Ethernet to Fibre Channel mezzanine card
 --
-Configure the FC replacement mezzanine card by reconfiguring the LIFs and port settings as needed.
+Configure the replacement FC mezzanine card by updating LIFs and port settings as needed.
 
 .Steps
 
-. Build FC connectivity:
-.. Enable FCP on relevant SVMs.
-.. Create FC data LIF on new mezz ports.
-.. Capture FC LIF WWPNs and update fabric zoning as required.
-.. Check for unexpected host paths and update port set/igroups/LUN mappings as needed.
-.. Verify host multipath with no stale paths and balance optimized/non-optimized paths.
+. Enable FCP on relevant SVMs. Create new data and WWPN LIFs.
+. Update fabric zoning and host paths. Update port set, igroup, and LUN mappings as needed.
+. Verify host multipath. Confirm there are no stale paths and that paths are balanced between optimized and non-optimized paths.
+. Verify no LIFs are homed on removed Ethernet ports, all FC LIFs are up and serving I/O, and ASUP monitoring reflects the new configuration.
 
-. Verify no LIFs are homed on non-existent Ethernet ports, all FC LIFs are up and serving I/O, and ASUP monitoring reflects the new configuration.
+See link:https://docs.netapp.com/us-en/ontap/san-admin/index.html[SAN management overview] for more detailed information about configuring Fibre Channel in ONTAP.
 
 --
 
@@ -175,7 +174,7 @@ Configure the FC replacement mezzanine card by reconfiguring the LIFs and port s
 
 Give back storage to the impaired controller, restore automatic giveback, and end the AutoSupport maintenance window.
 
-. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. Bring the controller back to normal operation by restoring its storage: `storage failover giveback -ofnode _impaired_node_name_`
 
 . Restore automatic giveback by using the `storage failover modify -node local -auto-giveback true` command.
 
