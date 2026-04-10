@@ -2,7 +2,7 @@
 permalink: a700/bootmedia-2n-mcc-switchback.html
 sidebar: sidebar
 keywords: aff a700, metrocluster, switchback, manual, manual boot recovery
-summary: After you have completed the FRU replacement in a two-node MetroCluster configuration, you can perform the MetroCluster switchback operation. This returns the configuration to its normal operating state, with the sync-source storage virtual machines \(SVMs\) on the formerly impaired site now active and serving data from the local disk pools. The AFF A700 system supports only manual boot media recovery procedures.
+summary: "After completing the boot media replacement, perform the MetroCluster switchback operation to return the configuration to its normal operating state. The AFF A700 system supports only manual boot media recovery procedures."
 ---
 = Switch back aggregates in a two-node MetroCluster configuration - AFF A700
 :icons: font
