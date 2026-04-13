@@ -143,7 +143,7 @@ Configure the Ethernet replacement mezzanine card by updating LIFs and port sett
 .Steps
 
 . Use the `network port show` command to confirm new port names and link states.
-. Rebuild any ifgrps and VLANs the new Ethernet mezzanine ports.
+. Rebuild any ifgrps and VLANs on the new Ethernet mezzanine ports.
 . Put the new ports, or ifgrp/VLAN ports, in the correct broadcast domains and IPspaces, and set MTU values.
 . Update affected LIF home port and failover settings.
 . Delete LIFs that are no longer needed.
