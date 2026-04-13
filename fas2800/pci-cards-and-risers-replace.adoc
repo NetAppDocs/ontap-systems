@@ -147,10 +147,10 @@ Configure the Ethernet replacement mezzanine card by updating LIFs and port sett
 . Put the new ports, or ifgrp/VLAN ports, in the correct broadcast domains and IPspaces, and set MTU values.
 . Update affected LIF home port and failover settings.
 . Delete LIFs that are no longer needed.
---
 
 See link:https://docs.netapp.com/us-en/ontap/networking/configure_network_ports_cluster_administrators_only_overview.html[Learn about ONTAP network port configuration] for more detailed information about configuring Ethernet in ONTAP.
 
+--
 .Option 2: Ethernet to Fibre Channel mezzanine card
 --
 Configure the replacement FC mezzanine card by updating LIFs and port settings as needed.
