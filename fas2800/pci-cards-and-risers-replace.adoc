@@ -160,7 +160,7 @@ Configure the replacement FC mezzanine card by updating LIFs and port settings a
 . Enable FCP on relevant SVMs. Create new data LIFs.
 . Update fabric zoning and host paths. Update portset, igroup, and LUN mappings as needed.
 . Verify host multipath. Confirm there are no stale paths and that paths are balanced between optimized and non-optimized paths.
-. Verify no LIFs are homed on removed Ethernet ports, all FC LIFs are up and serving I/O, and ASUP monitoring reflects the new configuration.
+. Verify no LIFs are homed on removed Ethernet ports, all FC LIFs are up and serving I/O, and AutoSupport monitoring reflects the new configuration.
 
 See link:https://docs.netapp.com/us-en/ontap/san-admin/index.html[SAN management overview] for more detailed information about configuring Fibre Channel in ONTAP.
 
