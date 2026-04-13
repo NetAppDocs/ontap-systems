@@ -129,7 +129,7 @@ The system boots the controller as soon as you seat it in the chassis.
  
 == Step 5: Reconfigure the mezzanine card (if type changed)
 
-After the FAS2820 system restarts, change the mezzanine card settings to match the new card if you replaced it with a different type.
+After the controller restarts, change the mezzanine card settings to match the new card if you replaced it with a different type.
 
 [role="tabbed-block"]
 ====
