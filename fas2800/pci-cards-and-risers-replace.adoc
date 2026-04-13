@@ -13,9 +13,9 @@ Replace the mezzanine card in your FAS2820 system if the card fails or upgrade i
 
 * Use this procedure with any ONTAP version supported by your system.
 * Replace the mezzanine card with the same type or a different type.
-* Write down the ifgrp and VLAN information before the shutdown.
+* Write down the ifgrp and VLAN information before shutting down the controller.
 * If changing mezzanine card types, change LIF and port settings after the controller restarts.
-* Verify all other system components work. If the issue persists, call technical support.
+* Verify that all other system components are working. If the issue persists, call technical support.
 
 video::a8ec891d-f6f6-4479-9ca2-af47017254ff[panopto, title="Animation - Replace the mezzanine card"]
 
