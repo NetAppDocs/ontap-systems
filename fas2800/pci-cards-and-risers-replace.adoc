@@ -143,14 +143,13 @@ Configure the Ethernet replacement mezzanine card by updating LIFs and port sett
 .Steps
 
 . Use the `network port show` command to confirm new port names and link states.
-. Rebuild any ifgrps and VLANs tied to the old mezz ports.
+. Rebuild any ifgrps and VLANs the new Ethernet mezzanine ports.
 . Put the new ports, or ifgrp/VLAN ports, in the correct broadcast domains and IPspaces, and set MTU values.
 . Update affected LIF home port and failover settings.
-. Move the LIFs back to their home ports and verify the configuration.
 . Delete LIFs that are no longer needed.
 --
 
-See link:https://docs.netapp.com/us-en/ontap/san-admin/index.html[SAN management overview] for more detailed information about configuring Ethernet in ONTAP.
+See link:https://docs.netapp.com/us-en/ontap/networking/configure_network_ports_cluster_administrators_only_overview.html[Learn about ONTAP network port configuration] for more detailed information about configuring Ethernet in ONTAP.
 
 .Option 2: Ethernet to Fibre Channel mezzanine card
 --
@@ -158,8 +157,8 @@ Configure the replacement FC mezzanine card by updating LIFs and port settings a
 
 .Steps
 
-. Enable FCP on relevant SVMs. Create new data and WWPN LIFs.
-. Update fabric zoning and host paths. Update port set, igroup, and LUN mappings as needed.
+. Enable FCP on relevant SVMs. Create new data LIFs.
+. Update fabric zoning and host paths. Update portset, igroup, and LUN mappings as needed.
 . Verify host multipath. Confirm there are no stale paths and that paths are balanced between optimized and non-optimized paths.
 . Verify no LIFs are homed on removed Ethernet ports, all FC LIFs are up and serving I/O, and ASUP monitoring reflects the new configuration.
 
