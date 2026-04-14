@@ -16,6 +16,10 @@ When invoked with a folder path, execute the 7-step workflow to scan, identify, 
 ## Input
 
 - `folderPath`: The target folder (e.g., `asa150`, `a900`, `fas9500`)
+- `knownIssues` (optional): Array of known issues from CQP report
+  - Format: `[{"file": "filename.adoc", "issue": "description"}, ...]`
+  - Example: `[{"file": "install-videos.adoc", "issue": "contains unsupported characters (;) in the summary"}]`
+  - When provided, the subagent prioritizes validation of these specific files and uses the issue descriptions to focus validation
 
 ## Output
 
@@ -73,7 +77,16 @@ Identify all `.adoc` files. Exclude `sidebar.yml`, `_index.yml`, and files in `_
 
 ### Step 2: Pre-screen for likely issues (OPTIMIZATION)
 
-Use `grep_search` to identify candidate files with likely Jekyll front matter issues before reading them all:
+**If knownIssues parameter is provided:**
+- Start with the files listed in knownIssues as priority candidates
+- The issue descriptions indicate which field and characters to focus on:
+  - "(;) in the summary" → semicolon in summary field
+  - "(/) in the keywords" → slash in keywords field (forbidden)
+  - "(\) in the summary" → backslash-escaped characters
+  - "(:, [, ], +) in the summary" → multiple special characters
+- Add these files to the candidate list for validation
+
+**Standard grep_search (always run):**
 
 ```
 grep_search(
@@ -93,11 +106,11 @@ This regex finds files containing common problem characters in front matter:
 - `/` — slashes in keywords (e.g., `time/date`)
 - `+` — plus signs in phone numbers
 
-**Why this works:** Clean files rarely have these characters in their front matter. This typically reduces the candidate set from ~30 files to ~5-10 files with actual issues.
+**Why this works:** Clean files rarely have these characters in their front matter. Combined with knownIssues from CQP reports, this ensures all problem files are identified.
 
-**Output**: List of ~5-10 candidate files to inspect (instead of all files)
+**Output**: List of candidate files to inspect (union of knownIssues files and grep results)
 
-**Fallback:** If grep returns no matches, still read all files to check for less common violations.
+**Fallback:** If grep returns no matches and no knownIssues provided, still read all files to check for less common violations.
 
 ---
 
@@ -311,7 +324,8 @@ Files that consistently have issues across folders:
 
 ## Critical Rules
 
-- **Grep pre-screening**: Always use `grep_search` first to identify candidate files before reading them all. This provides 2-3x speed improvement.
+- **Use knownIssues when provided**: If the orchestrator passes knownIssues from a CQP report, prioritize validation of those specific files and use the issue descriptions to focus on the problematic fields
+- **Grep pre-screening**: Always use `grep_search` to identify candidate files, even when knownIssues is provided (to catch any issues not in the CQP report)
 - **Two-stage validation**: Use regex pre-validation (fast) before character-by-character validation (thorough). Only do detailed validation if regex finds potential issues.
 - **Character-by-character validation**: When regex finds issues, scan every character in each field value against the complete disallowed character set for that field type. This catches edge cases like standalone colons, semicolons, ampersands.
 - **Field-specific validation**: Keywords forbids `/` but summary allows it — validate each field separately using the correct disallowed character set

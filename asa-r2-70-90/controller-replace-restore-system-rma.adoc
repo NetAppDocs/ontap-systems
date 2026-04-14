@@ -2,7 +2,7 @@
 permalink: asa-r2-70-90/controller-replace-restore-system-rma.html
 sidebar: sidebar
 keywords: asa r2 a70, asa r2 a90, how to restore NetApp Storage Encryption, how to complete the replacement process
-summary: To complete the controller replacement for your ASA A70 or ASA A90 system, first restore the NetApp Storage Encryption configuration if necessary. Next, confirm that the logical interfaces are reporting to their home ports and perform a cluster health check. Finally, return the failed part to NetApp.
+summary: To complete the controller replacement for your ASA A70 or ASA A90 system, first restore the NetApp Storage Encryption configuration as needed. Next, confirm that the logical interfaces are reporting to their home ports and perform a cluster health check. Finally, return the failed part to NetApp.
 ---
 = Complete controller replacement - ASA A70 and ASA A90
 :icons: font
