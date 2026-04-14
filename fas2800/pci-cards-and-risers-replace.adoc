@@ -22,7 +22,7 @@ video::a8ec891d-f6f6-4479-9ca2-af47017254ff[panopto, title="Animation - Replace 
 == Step 1: Shut down the impaired controller
 
 .Before you begin
-* If you are changing mezzanine card types, capture the target node’s ifgrp and VLAN information.
+* If you are changing mezzanine card types, capture the impaired node’s ifgrp and VLAN information.
 
 +
 [source,cli]
