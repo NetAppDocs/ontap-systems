@@ -1,30 +1,30 @@
 [
   {
-    "fileName": "rtc_battery_replace.adoc",
+    "fileName": "chassis_replace_move_hardware.adoc",
     "hasIssues": "Yes",
     "titleIssues": [],
     "keywordsIssues": [],
-    "summaryIssues": ["Empty summary field"],
+    "summaryIssues": ["Semicolon (;)"],
     "originalTitle": null,
     "originalKeywords": null,
-    "originalSummary": "",
+    "originalSummary": "All other components in the system must be functioning properly; if not, you must contact technical support.",
     "fixedTitle": null,
     "fixedKeywords": null,
-    "fixedSummary": "You replace the real-time clock battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.",
+    "fixedSummary": "All other components in the system must be functioning properly. If not, contact technical support.",
     "fixApplied": "Yes"
   },
   {
-    "fileName": "controller_replace_recable_reassign_disks.adoc",
+    "fileName": "chassis_replace_overview.adoc",
     "hasIssues": "Yes",
     "titleIssues": [],
     "keywordsIssues": [],
-    "summaryIssues": ["Empty summary field"],
+    "summaryIssues": ["Semicolon (;)"],
     "originalTitle": null,
     "originalKeywords": null,
-    "originalSummary": "",
+    "originalSummary": "All other components in the system must be functioning properly; if not, you must contact technical support.",
     "fixedTitle": null,
     "fixedKeywords": null,
-    "fixedSummary": "Continue the replacement procedure by recabling the storage and network configurations.",
+    "fixedSummary": "All other components in the system must be functioning properly. If not, contact technical support.",
     "fixApplied": "Yes"
   }
 ]

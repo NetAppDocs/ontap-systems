@@ -56,6 +56,20 @@
     "fixApplied": "Yes"
   },
   {
+    "fileName": "install-videos.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Semicolon (;) in summary"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "There are two videos; one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "Use the following videos to learn how to rack and cable your system and perform initial system configuration.",
+    "fixApplied": "Yes"
+  },
+  {
     "fileName": "rtc-battery-replace.adoc",
     "hasIssues": "Yes",
     "titleIssues": [],

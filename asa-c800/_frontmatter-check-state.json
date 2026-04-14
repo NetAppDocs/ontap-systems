@@ -1,30 +1,16 @@
 [
   {
-    "fileName": "nvdimm-replace.adoc",
+    "fileName": "install-videos.adoc",
     "hasIssues": "Yes",
     "titleIssues": [],
     "keywordsIssues": [],
-    "summaryIssues": ["Semicolon in summary"],
+    "summaryIssues": ["Semicolon (;) - forbidden in summary field"],
     "originalTitle": null,
     "originalKeywords": null,
-    "originalSummary": "You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic.",
+    "originalSummary": "'There are two videos; one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.'",
     "fixedTitle": null,
     "fixedKeywords": null,
-    "fixedSummary": "You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy. Failure to do so causes a system panic.",
-    "fixApplied": "Yes"
-  },
-  {
-    "fileName": "install-setup.adoc",
-    "hasIssues": "Yes",
-    "titleIssues": ["Colon in title"],
-    "keywordsIssues": [],
-    "summaryIssues": [],
-    "originalTitle": "Start here: Choose your installation and setup experience",
-    "originalKeywords": null,
-    "originalSummary": null,
-    "fixedTitle": "Choose your installation and setup experience",
-    "fixedKeywords": null,
-    "fixedSummary": null,
+    "fixedSummary": "'There are two videos - one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.'",
     "fixApplied": "Yes"
   }
 ]
