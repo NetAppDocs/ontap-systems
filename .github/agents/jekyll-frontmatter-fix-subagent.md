@@ -77,7 +77,7 @@ Use `grep_search` to identify candidate files with likely Jekyll front matter is
 
 ```
 grep_search(
-  query: "[(\\):;&@]",
+  query: "[(\\\\):;&@/+]",
   isRegexp: true,
   includePattern: "[folderPath]/**/*.adoc"
 )
@@ -90,12 +90,14 @@ This regex finds files containing common problem characters in front matter:
 - `;` — semicolons (forbidden in all fields)
 - `&` — ampersands (should be "and")
 - `@` — at signs (rare but forbidden)
+- `/` — slashes in keywords (e.g., `time/date`)
+- `+` — plus signs in phone numbers
 
 **Why this works:** Clean files rarely have these characters in their front matter. This typically reduces the candidate set from ~30 files to ~5-10 files with actual issues.
 
 **Output**: List of ~5-10 candidate files to inspect (instead of all files)
 
-**Fallback:** If grep returns no matches, proceed to read all files (they're all likely clean).
+**Fallback:** If grep returns no matches, still read all files to check for less common violations.
 
 ---
 
@@ -131,7 +133,7 @@ Use regex patterns to quickly check if a field has any disallowed characters:
 ```javascript
 // Quick checks per field type
 titleHasIssues = /[!@#$%&*()+=\[\]{}|\\:;,<>?\/]/.test(titleValue)
-keywordsHasIssues = /[!@#$%&*()+=\[\]{}|\\:;\/\<>?]/.test(keywordsValue)
+keywordsHasIssues = /[!@#$%&*()+=\[\]{}|\\:;/<>?]/.test(keywordsValue)
 summaryHasIssues = /[!@#$%&*()+=\[\]{}|\\:;<>?]/.test(summaryValue)
 ```
 
@@ -328,7 +330,7 @@ After applying fixes, you can optionally re-read front matter (lines 1-15) and v
 **Stage 1: Quick regex check**
 ```javascript
 titleHasIssues = /[!@#$%&*()+=\[\]{}|\\:;,<>?\/]/.test(titleValue)
-keywordsHasIssues = /[!@#$%&*()+=\[\]{}|\\:;\/\<>?]/.test(keywordsValue)
+keywordsHasIssues = /[!@#$%&*()+=\[\]{}|\\:;/<>?]/.test(keywordsValue)
 summaryHasIssues = /[!@#$%&*()+=\[\]{}|\\:;<>?]/.test(summaryValue)
 ```
 
