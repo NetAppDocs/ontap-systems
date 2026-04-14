@@ -1,0 +1,30 @@
+[
+  {
+    "fileName": "power-supply-replace.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Parentheses (PSU) - 3 occurrences"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "Replace an AC or DC power supply unit (PSU) in your AFF C30 or AFF C60 storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cord, replacing the faulty PSU, and then reconnecting it to the power source.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "Replace an AC or DC power supply unit in your AFF C30 or AFF C60 storage system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty power supply from the power source, unplugging the power cord, replacing the faulty power supply, and then reconnecting it to the power source.",
+    "fixApplied": "Yes"
+  },
+  {
+    "fileName": "rtc-battery-replace.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Parentheses (RTC)"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "Replace the real-time clock (RTC) battery, commonly known as a coin cell battery, in your AFF C30 or AFF C60 storage system to ensure that services and applications relying on accurate time synchronization remain operational.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "Replace the real-time clock battery, commonly known as a coin cell battery, in your AFF C30 or AFF C60 storage system to ensure that services and applications relying on accurate time synchronization remain operational.",
+    "fixApplied": "Yes"
+  }
+]
