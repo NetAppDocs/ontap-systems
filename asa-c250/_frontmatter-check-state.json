@@ -1,58 +1,16 @@
 [
   {
-    "fileName": "bootmedia-replace-requirements-bmr.adoc",
-    "hasIssues": "Yes",
-    "titleIssues": [],
-    "keywordsIssues": ["Limited keywords, should include OKM and EKM terms"],
-    "summaryIssues": ["Missing key implementation details"],
-    "originalTitle": null,
-    "originalKeywords": "asa c250, replace the boot media",
-    "originalSummary": "Before replacing the boot media in your ASA C250 system, ensure you meet the necessary requirements for a successful replacement.",
-    "fixedTitle": null,
-    "fixedKeywords": "asa c250, replace the boot media, onboard key manager, OKM, external key manager, EKM",
-    "fixedSummary": "Before replacing the boot media in your ASA C250 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S port on the impaired controller is not faulty, and determining whether Onboard Key Manager or External Key Manager is enabled.",
-    "fixApplied": "Yes"
-  },
-  {
-    "fileName": "chassis-replace-move-hardware.adoc",
+    "fileName": "install-videos.adoc",
     "hasIssues": "Yes",
     "titleIssues": [],
     "keywordsIssues": [],
-    "summaryIssues": ["Summary was too procedural, rewrote from lead paragraph"],
+    "summaryIssues": ["Semicolon (;)"],
     "originalTitle": null,
     "originalKeywords": null,
-    "originalSummary": "Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis.",
+    "originalSummary": "There are two videos; one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.",
     "fixedTitle": null,
     "fixedKeywords": null,
-    "fixedSummary": "Replace the chassis in your ASA C250 system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units, removing the drives, installing the replacement chassis, and reinstalling the chassis components.",
-    "fixApplied": "Yes"
-  },
-  {
-    "fileName": "controller-replace-restore-system-rma.adoc",
-    "hasIssues": "Yes",
-    "titleIssues": [],
-    "keywordsIssues": [],
-    "summaryIssues": ["Parentheses around 'if necessary' removed, clarified wording"],
-    "originalTitle": null,
-    "originalKeywords": null,
-    "originalSummary": "To restore your ASA C250 system to full operation, restore the NetApp Storage Encryption configuration if necessary, install licenses for the new controller, and return the failed part to NetApp.",
-    "fixedTitle": null,
-    "fixedKeywords": null,
-    "fixedSummary": "To complete the controller replacement for your ASA C250 system to full operation, you must restore the NetApp Storage Encryption configuration as needed, and install licenses for the new controller, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.",
-    "fixApplied": "Yes"
-  },
-  {
-    "fileName": "power-supply-replace.adoc",
-    "hasIssues": "Yes",
-    "titleIssues": [],
-    "keywordsIssues": ["Limited keywords, added PSU and power supply unit terms"],
-    "summaryIssues": ["Multiple instances of PSU, replaced with full term or 'unit'"],
-    "originalTitle": null,
-    "originalKeywords": "asa c250, replace a power supply",
-    "originalSummary": "Replace a power supply in your ASA C250 system by disconnecting the target PSU from the power source, unplugging the power cable, removing the old PSU, installing the replacement PSU, and then reconnecting it to the power source.",
-    "fixedTitle": null,
-    "fixedKeywords": "asa c250, replace a power supply, PSU, power supply unit",
-    "fixedSummary": "Replace a power supply in your ASA C250 system by disconnecting the target power supply from the power source, unplugging the power cable, removing the old unit, installing the replacement unit, and then reconnecting it to the power source.",
+    "fixedSummary": "There are two videos, one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.",
     "fixApplied": "Yes"
   }
 ]
