@@ -1,0 +1,72 @@
+[
+  {
+    "fileName": "bootmedia-encryption-restore.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Backslash-escaped parentheses: \\(OKM\\), \\(NSE\\), \\(NVE\\)"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager \\(OKM\\), NetApp Storage Encryption \\(NSE\\) or NetApp Volume Encryption \\(NVE\\) enabled.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "Restore encryption on the replacement boot media.",
+    "fixApplied": "Yes"
+  },
+  {
+    "fileName": "bootmedia-replace-overview.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Backslash-escaped parentheses: \\(boot image\\)"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "The boot media stores a primary and secondary set of system \\(boot image\\) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "The boot media stores a primary and secondary set of system boot image files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement.",
+    "fixApplied": "Yes"
+  },
+  {
+    "fileName": "controller-replace-restore-system-rma.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Parentheses: (if necessary)"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "To restore your system to full operation, you must restore the NetApp Storage Encryption configuration (if necessary), and install licenses for the new controller, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "To restore your system to full operation, you must restore the NetApp Storage Encryption configuration, install licenses for the new controller, and return the failed part to NetApp.",
+    "fixApplied": "Yes"
+  },
+  {
+    "fileName": "dimm-replace.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Parentheses: (ECC)", "Semicolon: ;"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes. Failure to do so causes a system panic.",
+    "fixApplied": "Yes"
+  },
+  {
+    "fileName": "rtc-battery-replace.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Parentheses: (RTC)"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "You replace the real-time clock battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.",
+    "fixApplied": "Yes"
+  }
+]
