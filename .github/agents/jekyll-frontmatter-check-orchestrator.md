@@ -3,7 +3,18 @@ name: Jekyll Front Matter Check Agent
 description: Scans NetApp AsciiDoc documentation for unsupported characters in Jekyll front matter and fixes them using a subagent
 tools: ['execute', 'read', 'edit', 'search', 'agent']
 agents: ['Jekyll Front Matter Fix Subagent']
-user-invocable: true
+user-invocable: false
+status: archived
+---
+
+**ARCHIVED FOR HISTORICAL REFERENCE**
+
+This agent architecture was designed but not used in production. The actual working pattern is documented in:
+
+**→ `.github/workflows/jekyll-frontmatter-fix-workflow.md`**
+
+The workflow document captures the proven pattern that successfully processed 16+ folders (90+ files) with 100% success rate using direct parallel batch processing instead of agent delegation.
+
 ---
 
 ## Your Role

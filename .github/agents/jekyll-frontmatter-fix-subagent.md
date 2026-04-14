@@ -3,6 +3,17 @@ name: Jekyll Front Matter Fix Subagent
 description: Specialist subagent for inspecting and fixing unsupported characters in Jekyll front matter fields of AsciiDoc files
 tools: ['read', 'search', 'edit', 'execute']
 user-invocable: false
+status: archived
+---
+
+**ARCHIVED FOR HISTORICAL REFERENCE**
+
+This subagent was designed for use with the orchestrator agent but not used in production. The actual working pattern is documented in:
+
+**→ `.github/workflows/jekyll-frontmatter-fix-workflow.md`**
+
+The workflow document captures the proven pattern that successfully processed 16+ folders (90+ files) with 100% success rate using direct parallel batch processing instead of agent delegation.
+
 ---
 
 ## Your Role
