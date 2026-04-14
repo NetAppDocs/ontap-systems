@@ -1,0 +1,72 @@
+[
+  {
+    "fileName": "chassis-replace-move-hardware.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Parentheses (PSUs)"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "Replace the chassis of your ASA A1K system when a hardware failure requires it. The replacement process involves removing the controller from the front of the chassis, and removing the power supply units (PSUs), NVRAM12, I/O modules and blanks, and system management module and then installing the replacement chassis, and reinstalling the chassis components.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "Replace the chassis of your ASA A1K system when a hardware failure requires it. The replacement process involves removing the controller, I/O cards, NVRAM12 module, system management module, and power supply units, installing the replacement chassis, and reinstalling the chassis components.",
+    "fixApplied": "Yes"
+  },
+  {
+    "fileName": "controller-replace-restore-system-rma.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Parentheses (LIFs)"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "Verify that the logical interfaces (LIFs) are reporting to their home port, perform a cluster health check, and then return the failed part to NetApp to complete the final step in the ASA A1K controller replacement procedure.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "To complete the controller replacement for your ASA A1K system, first restore the NetApp Storage Encryption configuration if necessary. Next, confirm that the logical interfaces are reporting to their home ports and perform a cluster health check. Finally, return the failed part to NetApp.",
+    "fixApplied": "Yes"
+  },
+  {
+    "fileName": "io-module-add.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": ["Forward slash in I/O"],
+    "summaryIssues": [],
+    "originalTitle": null,
+    "originalKeywords": "asa r2 a1k, add I/O module",
+    "originalSummary": null,
+    "fixedTitle": null,
+    "fixedKeywords": "asa r2 a1k, add io module",
+    "fixedSummary": null,
+    "fixApplied": "Yes"
+  },
+  {
+    "fileName": "power-supply-replace.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Parentheses (PSU)"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "Replace an AC or DC power supply unit (PSU) in your ASA A1K system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cable, replacing the faulty PSU, and then reconnecting it to the power source.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "Replace an AC or DC power supply unit in your ASA A1K system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty power supply from the power source, unplugging the power cable, replacing the faulty power supply, and then reconnecting it to the power source.",
+    "fixApplied": "Yes"
+  },
+  {
+    "fileName": "rtc-battery-replace.adoc",
+    "hasIssues": "Yes",
+    "titleIssues": [],
+    "keywordsIssues": [],
+    "summaryIssues": ["Parentheses (RTC)"],
+    "originalTitle": null,
+    "originalKeywords": null,
+    "originalSummary": "Replace the real-time clock (RTC) battery, commonly known as a coin cell battery, in your ASA A1K system to ensure that services and applications relying on accurate time synchronization remain operational.",
+    "fixedTitle": null,
+    "fixedKeywords": null,
+    "fixedSummary": "Replace the real-time clock battery, commonly known as a coin cell battery, in your ASA A1K system to ensure that services and applications relying on accurate time synchronization remain operational.",
+    "fixApplied": "Yes"
+  }
+]
