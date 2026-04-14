@@ -13,9 +13,9 @@ Replace the mezzanine card in your FAS2820 system if the card fails or upgrade i
 
 * Use this procedure with any ONTAP version supported by your system.
 * Replace the mezzanine card with the same type or a different type.
-* Write down the ifgrp and VLAN information before the shutdown.
+* Write down the ifgrp and VLAN information before shutting down the controller.
 * If changing mezzanine card types, change LIF and port settings after the controller restarts.
-* Verify all other system components work. If the issue persists, call technical support.
+* Verify that all other system components are working. If the issue persists, call technical support.
 
 video::a8ec891d-f6f6-4479-9ca2-af47017254ff[panopto, title="Animation - Replace the mezzanine card"]
 
@@ -107,7 +107,6 @@ Reinstall and reboot the controller module.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. If needed, replace the cover on the controller module.
 . Turn the controller module over and align the end with the opening in the chassis.
 . Gently push the controller module halfway into the chassis.
 +
@@ -126,10 +125,9 @@ The system boots the controller as soon as you seat it in the chassis.
 
 .. If you have not already done so, reinstall the cable management device.
 .. Bind the cables to the cable management device with the hook and loop strap.
- 
 == Step 5: Reconfigure the mezzanine card (if type changed)
 
-After the FAS2820 system restarts, change the mezzanine card settings to match the new card if you replaced it with a different type.
+After the controller restarts, change the mezzanine card settings to match the new card if you replaced it with a different type.
 
 [role="tabbed-block"]
 ====
@@ -143,14 +141,14 @@ Configure the Ethernet replacement mezzanine card by updating LIFs and port sett
 .Steps
 
 . Use the `network port show` command to confirm new port names and link states.
-. Rebuild any ifgrps and VLANs the new Ethernet mezzanine ports.
+. Rebuild any ifgrps and VLANs on the new Ethernet mezzanine ports.
 . Put the new ports, or ifgrp/VLAN ports, in the correct broadcast domains and IPspaces, and set MTU values.
 . Update affected LIF home port and failover settings.
 . Delete LIFs that are no longer needed.
---
 
 See link:https://docs.netapp.com/us-en/ontap/networking/configure_network_ports_cluster_administrators_only_overview.html[Learn about ONTAP network port configuration] for more detailed information about configuring Ethernet in ONTAP.
 
+--
 .Option 2: Ethernet to Fibre Channel mezzanine card
 --
 Configure the replacement FC mezzanine card by updating LIFs and port settings as needed.
@@ -160,7 +158,7 @@ Configure the replacement FC mezzanine card by updating LIFs and port settings a
 . Enable FCP on relevant SVMs. Create new data LIFs.
 . Update fabric zoning and host paths. Update portset, igroup, and LUN mappings as needed.
 . Verify host multipath. Confirm there are no stale paths and that paths are balanced between optimized and non-optimized paths.
-. Verify no LIFs are homed on removed Ethernet ports, all FC LIFs are up and serving I/O, and ASUP monitoring reflects the new configuration.
+. Verify no LIFs are homed on removed Ethernet ports, all FC LIFs are up and serving I/O, and AutoSupport monitoring reflects the new configuration.
 
 See link:https://docs.netapp.com/us-en/ontap/san-admin/index.html[SAN management overview] for more detailed information about configuring Fibre Channel in ONTAP.
 
@@ -173,7 +171,7 @@ See link:https://docs.netapp.com/us-en/ontap/san-admin/index.html[SAN management
 
 Give back storage to the impaired controller, restore automatic giveback, and end the AutoSupport maintenance window.
 
-. Bring the controller back to normal operation by restoring its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. From the healthy controller or a cluster admin prompt, bring the controller back to normal operation by restoring its storage: `storage failover giveback -ofnode _impaired_node_name_`
 
 . Restore automatic giveback by using the `storage failover modify -node local -auto-giveback true` command.
 
