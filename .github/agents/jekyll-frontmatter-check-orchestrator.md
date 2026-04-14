@@ -1,7 +1,7 @@
 ---
 name: Jekyll Front Matter Check
 description: Fix unsupported characters in Jekyll front matter for one or more folders
-tools: ['agent']
+tools: ['execute', 'read', 'edit', 'search', 'agent']
 agents: ['Jekyll Front Matter Fix Subagent']
 user-invocable: true
 ---
