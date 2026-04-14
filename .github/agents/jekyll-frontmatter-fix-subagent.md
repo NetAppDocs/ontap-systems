@@ -52,15 +52,51 @@ Return a JSON array with one object per file:
 
 ## Inspection Rules
 
-### Disallowed characters (all three fields)
+### Field-specific validation rules
 
-The following characters are disallowed in the `title`, `keywords`, and `summary` fields:
+**CRITICAL: Each field has different validation rules. You must validate each field separately.**
 
+#### Title field (`title:`)
+
+**Disallowed characters in title:**
 `! @ # $ % & * ( ) + = [ ] { } | \ : ; , < > ? /`
 
-**Field-specific exceptions:**
-- `summary`: double quotes (`"`), single quotes (`'`), commas (`,`), and forward slashes (`/`) are **allowed**
-- `keywords`: commas (`,`) are **allowed** (they delimit keywords)
+All characters in the above list are forbidden. No exceptions.
+
+#### Keywords field (`keywords:`)
+
+**Disallowed characters in keywords:**
+`! @ # $ % & * ( ) + = [ ] { } | \ : ; / < > ?`
+
+Notice that:
+- Commas (`,`) are **allowed** — they delimit keywords
+- Forward slashes (`/`) are **forbidden** in keywords (common mistake in phrases like `time/date`)
+
+#### Summary field (`summary:`)
+
+**Disallowed characters in summary:**
+`! @ # $ % & * ( ) + = [ ] { } | \ : ; < > ?`
+
+Notice that:
+- Double quotes (`"`), single quotes (`'`), commas (`,`), and forward slashes (`/`) are **allowed**
+- Summary values are typically enclosed in double quotes (`summary: "text here"`)
+
+### Common character violations by field
+
+This table shows which characters cause violations in which fields:
+
+| Character | Title | Keywords | Summary | Notes |
+|-----------|-------|----------|---------|-------|
+| `,` comma | ❌ | ✅ | ✅ | Allowed in keywords (delimiter) and summary |
+| `/` slash | ❌ | ❌ | ✅ | **Forbidden in keywords** (e.g., `time/date` → `time and date`) |
+| `"` quote | ❌ | ❌ | ✅ | Used to wrap summary values |
+| `'` apostrophe | ❌ | ❌ | ✅ | Allowed in summary text |
+| `( )` parens | ❌ | ❌ | ❌ | Common with acronyms like `(RTC)` |
+| `\` backslash | ❌ | ❌ | ❌ | Often escaping parens: `\(OKM\)` |
+| `:` colon | ❌ | ❌ | ❌ | |
+| `;` semicolon | ❌ | ❌ | ❌ | |
+| `&` ampersand | ❌ | ❌ | ❌ | Replace with `and` |
+| `@#$%*+=[]{}|<>?!` | ❌ | ❌ | ❌ | All forbidden |
 
 ### AsciiDoc notation to detect and remove
 
@@ -72,17 +108,27 @@ In the `summary` field, look for and remove all AsciiDoc inline formatting:
 
 ### How to fix issues
 
-| Field | Fix approach |
-|-------|-------------|
-| `title` | Remove all disallowed characters. Use only plain text. |
-| `keywords` | Remove all disallowed characters except commas. |
-| `summary` | Remove AsciiDoc notation (strip markup, keep plain text). Replace `&` with `and`. Remove all other disallowed characters. Preserve double quotes, single quotes, commas, and forward slashes. |
+**Fix approach by field:**
 
-**Common substitutions:**
+| Field | Fix rules |
+|-------|-------------|
+| `title` | Remove all disallowed characters. Use only plain text. No AsciiDoc notation. |
+| `keywords` | Remove all disallowed characters **except commas**. Replace `/` with `and` or remove the phrase. Remove parentheses around acronyms. |
+| `summary` | Remove AsciiDoc notation (strip markup, keep plain text). Replace `&` with `and`. Remove parentheses and backslashes. Preserve double quotes, single quotes, commas, and forward slashes. |
+
+**Common substitutions across all fields:**
 - `&` → `and`
 - `*bold text*` or `**bold text**` → `bold text`
 - `_italic text_` or `__italic text__` → `italic text`
 - `` `code` `` → `code`
+- `(RTC)` → `RTC` (remove parens from acronyms)
+- `\(OKM\)` → `OKM` (remove backslash-escaped parens)
+- `;` → rewrite sentence to avoid or replace with comma
+
+**Keywords-specific fixes:**
+- `time/date` → `time and date` or just `time` (slash is forbidden in keywords)
+- `boot/recovery` → `boot recovery` or `boot and recovery`
+- Any phrase with `/` → rewrite without the slash
 
 ## Step-by-step process for each file
 
@@ -96,13 +142,29 @@ Note: The `summary` value is typically enclosed in double quotes. When extractin
 
 ### Step 2: Inspect each field for issues
 
-For each field present, check for disallowed characters and AsciiDoc notation using the rules above. Build a list of specific issues found for each field.
+**IMPORTANT: Validate each field separately using its field-specific rules.**
+
+Do not use the same validation logic for all three fields. Each field has different allowed/disallowed characters:
+- `title`: strictest — no commas, no slashes, no quotes
+- `keywords`: allows commas only — **no slashes**, no quotes
+- `summary`: most permissive — allows commas, slashes, quotes
+
+For each field present, check for disallowed characters and AsciiDoc notation using the field-specific rules documented above. Build a list of specific issues found for each field.
 
 **Examples of issues to report:**
+- `title`: Contains disallowed character `:` in "Install: Prerequisites"
+- `keywords`: Contains disallowed character `/` in "time/date"
+- `keywords`: Contains bare parentheses `(RTC)`
 - `summary`: Contains AsciiDoc bold notation (`**install**`)
-- `summary`: Contains disallowed character `&`
-- `title`: Contains disallowed character `:`
-- `keywords`: Contains disallowed character `*`
+- `summary`: Contains disallowed character `&` (should be `and`)
+- `summary`: Contains backslash-escaped parentheses `\(OKM\)`
+- `summary`: Contains URL with disallowed characters
+
+**Common mistakes to avoid:**
+- ❌ Flagging `/` in summary (it's allowed there)
+- ❌ Flagging `,` in keywords (it's the delimiter)
+- ✅ Flagging `/` in keywords (it's forbidden: `time/date` → `time and date`)
+- ✅ Flagging `( )` in any field (always forbidden)
 
 ### Step 3: Generate the corrected field values
 

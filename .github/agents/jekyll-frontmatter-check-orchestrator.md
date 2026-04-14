@@ -18,12 +18,32 @@ Scan the `.adoc` files in the specified directory, identify files with unsupport
 
 Jekyll front matter fields (`title`, `keywords`, `summary`) must contain only plain text. Unsupported special characters and AsciiDoc notation can cause publishing errors, including missing HTML files, failed PDFs, rendering errors, and search indexing failures.
 
-**Disallowed characters** (in all three fields):
-`! @ # $ % & * ( ) + = [ ] { } | \ : ; , < > ? /`
+**Field-specific validation rules:**
 
-**Field-specific exceptions:**
-- `summary`: double quotes, single quotes, commas, and forward slashes are allowed
-- `keywords`: commas are allowed (they delimit keywords)
+Each field has different restrictions. You must validate each field separately:
+
+- **Title field**: Strictest rules — no commas, no slashes, no special characters
+  - Disallowed: `! @ # $ % & * ( ) + = [ ] { } | \ : ; , < > ? /`
+  - No exceptions
+
+- **Keywords field**: Allows commas only (keyword delimiter)
+  - Disallowed: `! @ # $ % & * ( ) + = [ ] { } | \ : ; / < > ?`
+  - **Note**: Forward slash (`/`) is **forbidden** in keywords (e.g., `time/date` must be `time and date`)
+  - Commas (`,`) are allowed
+
+- **Summary field**: Most permissive — allows quotes, commas, slashes
+  - Disallowed: `! @ # $ % & * ( ) + = [ ] { } | \ : ; < > ?`
+  - Allowed: `"` `'` `,` `/`
+  - Summary values are typically wrapped in double quotes
+
+**Common violations by character:**
+
+| Character | In title? | In keywords? | In summary? |
+|-----------|-----------|--------------|-------------|
+| `/` slash | ❌ | ❌ | ✅ |
+| `,` comma | ❌ | ✅ | ✅ |
+| `"` `'` quotes | ❌ | ❌ | ✅ |
+| All others listed | ❌ | ❌ | ❌ |
 
 ## Your Workflow
 
@@ -95,6 +115,7 @@ To prevent data loss and enable recovery from errors, persist the JSON array to 
       "fixedKeywords": { "type": ["string", "null"] },
       "fixedSummary": { "type": ["string", "null"] },
       "fixApplied": { "type": "string", "enum": ["Yes", "No"] },
+      "validationWarning": { "type": "string" },
       "error": { "type": "string" }
     },
     "required": ["fileName", "hasIssues", "titleIssues", "keywordsIssues", "summaryIssues", "fixApplied"]
@@ -118,7 +139,15 @@ Process files in **batches of 10**. For each batch, invoke the **Jekyll Front Ma
 
 The subagent will inspect each file's `title`, `keywords`, and `summary` front matter fields, generate corrected values, apply fixes directly to the files, and return structured results.
 
-After receiving results from the subagent, merge the returned objects into the checkpoint array and write the checkpoint.
+After receiving results from the subagent:
+1. Merge the returned objects into the checkpoint array
+2. **Validation step**: For each file where `fixApplied: "Yes"`, re-read just the front matter (lines 1-15) and verify:
+   - No disallowed characters remain in `title` (check against: `! @ # $ % & * ( ) + = [ ] { } | \ : ; , < > ? /`)
+   - No disallowed characters remain in `keywords` (check against: `! @ # $ % & * ( ) + = [ ] { } | \ : ; / < > ?`)
+   - No disallowed characters remain in `summary` (check against: `! @ # $ % & * ( ) + = [ ] { } | \ : ; < > ?`)
+3. If validation fails for any file, add a warning to the file's record: `"validationWarning": "Remaining issues detected: [list]"`
+4. Write the checkpoint file
+5. Continue to next batch
 
 ## 3. Validate and display results
 
@@ -131,10 +160,14 @@ Directory: [path]
 Total files scanned: X
 Files with issues fixed: Y
 Files with no issues: Z
-Files with errors: W
+Files with validation warnings: W
+Files with errors: E
 
 Files fixed:
 - [fileName]: [summary of fields changed]
+
+Files with validation warnings (needs manual review):
+- [fileName]: [warning message]
 
 Files with errors:
 - [fileName]: [error reason]
@@ -142,8 +175,8 @@ Files with errors:
 
 Then display a table of all files with `hasIssues: Yes`:
 
-| File | Title issues | Keywords issues | Summary issues | Fix applied |
-|------|-------------|-----------------|----------------|-------------|
+| File | Title issues | Keywords issues | Summary issues | Fix applied | Warnings |
+|------|-------------|-----------------|----------------|-------------|----------|
 
 ## 4. Optionally create a pull request
 
