@@ -2,7 +2,7 @@
 permalink: a320/dimm-replace.html
 sidebar: sidebar
 keywords: aff, a320, aff a320, replace, dimm, controller, module, system, register, increase, increasing, number, correctable, error, correction, code, ecc, failure, system, panic, shut, down, impair, system, install,  complete, process, replace a dimm, shut down the impaired controller, remove the controller module, replace system dimms, install the controller module, complete the replacement process
-summary: You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
+summary: Replace a DIMM in your AFF A320 controller module when the system registers an increasing number of correctable error correction codes or uncorrectable ECC errors. Failure to replace a faulty DIMM can cause a system panic.
 ---
 = Replace a DIMM - AFF A320
 :icons: font
