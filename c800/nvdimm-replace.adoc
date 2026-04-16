@@ -2,7 +2,7 @@
 permalink: c800/nvdimm-replace.html
 sidebar: sidebar
 keywords: aff c800, replace an nvdimm
-summary: "You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic."
+summary: "Replace the NVDIMM in your AFF C800 system when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general."
 ---
 = Replace an NVDIMM - AFF C800
 :icons: font

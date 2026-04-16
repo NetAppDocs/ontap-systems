@@ -2,7 +2,7 @@
 permalink: fas2600/dimm-replace.html
 sidebar: sidebar
 keywords: fas2600, replace dimm
-summary: "You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic."
+summary: "You must replace a DIMM in the controller when your storage system encounters errors such as excessive Correctable Error Correction Codes errors that are based on Health Monitor alerts or uncorrectable ECC errors, typically caused by a single DIMM failure preventing the storage system from booting ONTAP."
 ---
 = Replace a DIMM - FAS2600
 :icons: font
