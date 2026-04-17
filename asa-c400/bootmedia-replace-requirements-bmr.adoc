@@ -2,7 +2,7 @@
 permalink: asa-c400/bootmedia-replace-requirements-bmr.html
 sidebar: sidebar
 keywords: asa-c400, replace the boot media
-summary: Before replacing the boot media in your ASA C400 system, ensure you meet the necessary requirements for a successful replacement.
+summary: Before replacing the boot media in your ASA C400, ensure you meet the necessary requirements for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0S or e0M wrench port on the impaired controller is not faulty, and determining whether Onboard Key Manager or External Key Manager is enabled.
 ---
 = Requirements for automated boot media recovery - ASA C400
 :icons: font

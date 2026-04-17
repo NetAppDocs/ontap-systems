@@ -1,8 +1,8 @@
 ---
 permalink: ns224/service-replace-boot-media.html
 sidebar: sidebar
-keywords: ns224, shelves, shelf, ns224 shelves, boot, media, run, ontap, nvme, module, nsm, firmware, version, nondisruptive, i/o
-summary: When the boot media fails on an NS224 drive shelf in an HA pair that is running ONTAP 9.7 or later, or the shelf is running NVMe shelf module \(NSM\) firmware version 1.1x or later, you can replace the boot media. Replacing the boot media can be done nondisruptively, while the drive shelf is powered on, and I/O is in progress.
+keywords: ns224, shelves, shelf, ns224 shelves, boot, media, run, ontap, nvme, module, nsm, firmware, version, nondisruptive, io
+summary: You can replace a failed boot media in an NS224 shelf. Replacing the boot media can be done nondisruptively, while the drive shelf is powered on, and I/O is in progress.
 ---
 = Replace the boot media - NS224 shelves
 :icons: font
