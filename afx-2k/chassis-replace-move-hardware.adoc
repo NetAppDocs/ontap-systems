@@ -1,0 +1,18 @@
+---
+permalink: afx-2k/chassis-replace-move-hardware.html
+sidebar: sidebar
+keywords: afx 2k, move hardware components, replace the chassis
+summary: "Replace the chassis of your afx 2k storage system when a hardware failure requires it. The replacement process involves removing the controller from the front of the chassis, removing the power supply units, NVRAM12, I/O modules and blanks, and system management module and then installing the replacement chassis, and reinstalling the chassis components."
+---
+= Replace the chassis - afx 2k
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace the chassis of your afx 2k storage system when a hardware failure requires it. The replacement process involves removing the controller, I/O cards, NVRAM12 module, system management module, and power supply units (PSUs), installing the replacement chassis, and reinstalling the chassis components.
+
+include::../_include/afx_chassis_replace_move_hardware.adoc[]
+
+.What's next?
+
+After replacing the impaired afx 2k chassis and reinstalling its components, complete the link:chassis-replace-complete-system-restore-rma.html[chassis replacement].

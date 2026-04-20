@@ -1,0 +1,20 @@
+---
+permalink: afx-2k/controller-replace-restore-system-rma.html
+sidebar: sidebar
+keywords: afx 2k, how to restore NetApp Storage Encryption, how to complete the replacement process
+summary: Verify that the logical interfaces are reporting to their home port, perform a cluster health check, and then return the failed part to NetApp to complete the final step in the afx 2k controller replacement procedure.
+---
+= Complete controller replacement - afx 2k
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Verify that the logical interfaces (LIFs) are reporting to their home port, perform a cluster health check, and then return the failed part to NetApp to complete the final step in the afx 2k controller replacement procedure.
+
+== Step 1: Verify LIFs and check cluster health
+
+include::../_include/afx_check_lifs_cluster_health.adoc[]
+
+== Step 2: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]

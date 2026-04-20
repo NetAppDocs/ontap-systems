@@ -1,0 +1,16 @@
+---
+permalink: afx-2k/dimm-replace.html
+sidebar: sidebar
+keywords: afx 2k, replace a dimm
+summary: Replace a DIMM in your afx 2k storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+---
+= Replace a DIMM - afx 2k
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace a DIMM in your afx 2k storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+
+CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
+
+include::../_include/afx_dimm_replace.adoc[]

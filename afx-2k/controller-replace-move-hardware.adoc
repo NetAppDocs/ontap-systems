@@ -1,0 +1,18 @@
+---
+permalink: afx-2k/controller-replace-move-hardware.html
+sidebar: sidebar
+keywords: afx 2k, move the controller module hardware
+summary: Replace the controller in your afx 2k storage system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+---
+= Replace the controller - afx 2k
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace the controller in your afx 2k storage system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+
+include::../_include/afx_controller_replace_move_hardware.adoc[]
+
+.What's next?
+
+After replacing the impaired afx 2k controller, link:controller-replace-system-config-restore-and-verify.html[restore the system settings].
