@@ -8,7 +8,7 @@ See link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-clust
 .Steps
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
 +
-`system node autosupport invoke -node * -type all -message MAINT=_# of hours_h`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
 +
 This prevents automatic support cases from being opened during your planned maintenance window. The maximum suppression duration is 72 hours. If your maintenance completes early, you can re-enable case creation by invoking an AutoSupport message with `MAINT=END`. For more information, see https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92[How to suppress automatic case creation during scheduled maintenance windows^].
 +
