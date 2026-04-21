@@ -1,0 +1,83 @@
+section: afx-2k
+title: AFX 2K systems
+entries:
+ - title: Install and setup
+   url: /afx/afx-install-setup.html
+ - title: Maintain
+   pdf-filename: AFX Maintain
+   url: /afx-landing-maintain/index.html
+   entries:
+   - title: Maintenance overview
+     url: /afx-2k/maintain-overview.html
+   - title: Boot media
+     pdf-filename: AFX 2K Boot Media
+     entries:
+       - title: Boot media replacement workflow
+         url: /afx-2k/bootmedia-replace-workflow.html
+       - title: Review requirements
+         url: /afx-2k/bootmedia-replace-requirements.html
+       - title: Shut down controller
+         url: /afx-2k/bootmedia-shutdown.html
+       - title: Replace boot media
+         url: /afx-2k/bootmedia-replace.html
+       - title: Restore boot media
+         url: /afx-2k/bootmedia-recovery-image-boot.html
+       - title: Return failed part to NetApp
+         url: /afx-2k/bootmedia-complete-rma.html
+   - title: Chassis
+     pdf-filename: AFX 2K Chassis
+     entries:
+       - title: Chassis replacement workflow
+         url: /afx-2k/chassis-replace-workflow.html
+       - title: Review requirements
+         url: /afx-2k/chassis-replace-requirements.html
+       - title: Prepare to replace
+         url: /afx-2k/chassis-replace-prepare.html
+       - title: Shut down controller
+         url: /afx-2k/chassis-replace-shutdown.html
+       - title: Replace chassis
+         url: /afx-2k/chassis-replace-move-hardware.html
+       - title: Complete chassis replacement
+         url: /afx-2k/chassis-replace-complete-system-restore-rma.html
+   - title: Controller
+     pdf-filename: AFX 2K Controller
+     entries:
+       - title: Controller replacement workflow
+         url: /afx-2k/controller-replace-workflow.html
+       - title: Review requirements
+         url: /afx-2k/controller-replace-requirements.html
+       - title: Shut down impaired controller
+         url: /afx-2k/controller-replace-shutdown.html
+       - title: Replace controller
+         url: /afx-2k/controller-replace-move-hardware.html
+       - title: Restore system configuration
+         url: /afx-2k/controller-replace-system-config-restore-and-verify.html
+       - title: Give back controller
+         url: /afx-2k/controller-replace-recable-reassign-disks.html
+       - title: Complete controller replacement
+         url: /afx-2k/controller-replace-restore-system-rma.html
+   - title: DIMM
+     url: /afx-2k/dimm-replace.html
+   - title: Fan
+     url: /afx-2k/fan-replace.html
+   - title: NVRAM
+     url: /afx-2k/nvram-replace.html
+   - title: NV battery
+     url: /afx-2k/nvdimm-battery-replace.html
+   - title: I/O module
+     pdf-filename: AFX 1K IO Module
+     entries:
+       - title: I/O module overview
+         url: /afx-2k/io-module-overview.html
+       - title: Add I/O module
+         url: /afx-2k/io-module-add.html
+       - title: Hot swap I/O module
+         url: /afx-2k/io-module-hotswap.html
+       - title: Replace I/O module
+         url: /afx-2k/io-module-replace.html
+   - title: Power supply
+     url: /afx-2k/power-supply-replace.html
+   - title: Real-time clock battery
+     url: /afx-2k/rtc-battery-replace.html
+   - title: System Management module
+     url: /afx-2k/system-management-replace.html
