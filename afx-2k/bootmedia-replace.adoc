@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: afx 2k, replace the boot media
 summary: The boot media in your afx 2k storage system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media in the System Management module, and then reinstalling the System Management module.
 ---
-= Replace the boot media - afx 2k
+= Replace the boot media - AFX 2K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The boot media in your afx 2k storage system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media in the System Management module, and then reinstalling the System Management module.
+The boot media in your AFX 2K storage system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media in the System Management module, and then reinstalling the System Management module.
 
 include::../_include/afx_bootmedia_replace_bmr.adoc[]
 

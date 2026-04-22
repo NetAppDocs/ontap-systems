@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: afx 2k, replace io module
 summary: The afx 2k storage system offers flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
 ---
-= Overview of add and replace I/O module - afx 2k
+= Overview of add and replace I/O module - AFX 2K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The afx 2k storage system offers flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
+The AFX 2K storage system offers flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
 
-You can replace a failed I/O module in your afx 2k storage system with the same type of I/O module, or with a different kind of I/O module. You can also add an I/O module into a system with empty slots.
+You can replace a failed I/O module in your AFX 2K storage system with the same type of I/O module, or with a different kind of I/O module. You can also add an I/O module into a system with empty slots.
 
 * link:io-module-add.html[Add an I/O module]
 +
@@ -23,6 +23,6 @@ Replacing a failing I/O module can restore the system to its optimal operating s
 
 .I/O slot numbering
 
-The I/O slots on the afx 2k controller are numbered 1 through 11, as shown in the following illustration.
+The I/O slots on the AFX 2K controller are numbered 1 through 11, as shown in the following illustration.
 
-image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on an afx 2k controller]
+image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on an AFX 2K controller]

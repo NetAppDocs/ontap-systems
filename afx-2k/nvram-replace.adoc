@@ -4,11 +4,11 @@ sidebar: sidebar
 keywords: afx 2k, replace nvram
 summary: Replace the NVRAM in your afx 2k storage system when the non-volatile memory becomes faulty or requires an upgrade.
 ---
-= Replace NVRAM - afx 2k
+= Replace NVRAM - AFX 2K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the NVRAM in your afx 2k storage system when the non-volatile memory becomes faulty or requires an upgrade. The replacement process involves shutting down the impaired controller, replacing the NVRAM module or the NVRAM DIMM, and returning the failed part to NetApp.
+Replace the NVRAM in your AFX 2K storage system when the non-volatile memory becomes faulty or requires an upgrade. The replacement process involves shutting down the impaired controller, replacing the NVRAM module or the NVRAM DIMM, and returning the failed part to NetApp.
 
 include::../_include/afx_nvram_replace.adoc[]

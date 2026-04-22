@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: afx 2k, boot the recovery image
 summary: After installing the new boot media device in your afx 2k storage system, you can start the automated boot media recovery process to restore the configuration from the partner node.
 ---
-= Boot the recovery image - afx 2k
+= Boot the recovery image - AFX 2K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After installing the new boot media device in your afx 2k storage system, you can start the automated boot media recovery process to restore the configuration from the partner node.
+After installing the new boot media device in your AFX 2K storage system, you can start the automated boot media recovery process to restore the configuration from the partner node.
 
 .About this task
 During the recovery process, the system checks whether encryption is enabled and identifies the type of key encryption being used. If key encryption is enabled, the system guides you through the appropriate steps to restore it. 

@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: afx 2k, prerequisite, replace the controller module
 summary: Before replacing the controller in your afx 2k storage system, ensure you meet the necessary requirements for a successful replacement. This includes having the correct replacement controller, a backup of your system configuration, and access to any required tools and firmware.
 ---
-= Requirements to replace the controller - afx 2k
+= Requirements to replace the controller - AFX 2K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before replacing the controller in your afx 2k storage system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
+Before replacing the controller in your AFX 2K storage system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
 
 include::../_include/afx_controller_replace_requirements.adoc[]
 
 .What's next?
 
-After reviewing the requirements to replace your afx 2k controller, link:controller-replace-shutdown.html[turn off the controllers].
+After reviewing the requirements to replace your AFX 2K controller, link:controller-replace-shutdown.html[turn off the controllers].
 

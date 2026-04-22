@@ -4,15 +4,15 @@ sidebar: sidebar
 keywords: afx 2k, restore and verify the system configuration, verify and set the ha state of the controller module
 summary: Verify that the controller's HA configuration is active and functioning correctly in your afx 2k storage system, and confirm that the system's adapters list all the paths to the disks.
 ---
-= Restore and verify the system configuration - afx 2k
+= Restore and verify the system configuration - AFX 2K
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Verify that the controller's HA configuration is active and functioning correctly in your afx 2k storage system, and confirm that the system's adapters list all the paths to the disks.
+Verify that the controller's HA configuration is active and functioning correctly in your AFX 2K storage system, and confirm that the system's adapters list all the paths to the disks.
 
 include::../_include/afx_controller_replace_system_config_restore_and_verify.adoc[]
 
 .What's next?
 
-After restoring and verifying the afx 2k storage system configuration, link:controller-replace-recable-reassign-disks.html[give back the controller].
+After restoring and verifying the AFX 2K storage system configuration, link:controller-replace-recable-reassign-disks.html[give back the controller].
