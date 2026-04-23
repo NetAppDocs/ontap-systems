@@ -27,9 +27,6 @@ You can respond `Y` when prompted to continue into advanced mode. The advanced m
 You can enter the following command to monitor the progress of the savecore command: `system node run -node _local-node-name_ partner savecore -s`
 
  .. Return to the admin privilege level: `set -privilege admin`
-. If your storage system has Storage or Volume Encryption configured, you must restore Storage or Volume Encryption functionality by using one of the following procedures, depending on whether you are using onboard or external key management:
- ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html[Restore onboard key management encryption keys^]
- ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html[Restore external key management encryption keys^] 
 . Give back the controller:
  .. From the healthy controller, give back the replaced controller's storage: `storage failover giveback -ofnode _replacement_node_name_`
 +
@@ -44,6 +41,12 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
 +
 The output from the `storage failover show` command should not include the System ID changed on partner message.
+
+. If your storage system has Storage or Volume Encryption configured, you must restore Storage or Volume Encryption functionality by using one of the following procedures, depending on whether you are using onboard or external key management:
+ ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html[Restore onboard key management encryption keys^]
+ ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html[Restore external key management encryption keys^] 
+
+
 . Verify that the disks were assigned correctly: `storage disk show -ownership`
 +
 The disks belonging to the _replacement_ controller should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:
