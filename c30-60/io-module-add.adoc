@@ -1,19 +1,24 @@
 ---
 permalink: c30-60/io-module-add.html
 sidebar: sidebar
-keywords: aff c30, aff c60, add IO module
-summary: Add an I/O module to your AFF C30 or AFF C60 storage system to enhance network connectivity and expand your system's ability to handle data traffic.
+keywords: "aff c30, aff c60, add input and output module"
+summary: "Add an I/O module to an operational or impaired controller in your AFF C30 or AFF C60 storage system to enhance network connectivity and expand your system's ability to handle data traffic."
 ---
-= Add an IO module - AFF C30 and AFF C60
+= Add an I/O module - AFF C30 and AFF C60
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Add an I/O module to your AFF C30 or AFF C60 storage system to enhance network connectivity and expand your system’s ability to handle data traffic.
+Add an I/O module to your AFF C30 or AFF C60 storage system to enhance network connectivity and expand your system's ability to handle data traffic. You can use this procedure to add an I/O module to either an operational controller as a planned upgrade or to an impaired controller during maintenance.
 
 You can add an I/O module to your AFF C30 and AFF C60 storage systems when there are slots available or when all slots are fully populated.
 
 .About this task
+
+You can perform this procedure on either controller in the HA pair, regardless of whether the controller is currently operational or impaired. Because an I/O module cannot be added to a running controller, the target controller must be shut down before the module is installed. The HA partner takes over storage operations during the procedure so that data remains available to clients.
+
+* If the target controller is *operational* (planned addition), use the storage failover takeover command from the partner to take it over, then follow the shutdown steps to bring it to the LOADER prompt. In the linked shutdown steps, treat the target controller as the "impaired" controller.
+* If the target controller is *impaired*, follow the shutdown steps as written.
 
 If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 
@@ -21,7 +26,9 @@ A storage system has three location LEDs: one on the operator display panel and 
 
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
-== Step 1: Shut down the impaired controller module
+== Step 1: Shut down the target controller module
+
+Take over and shut down the target controller module so that its HA partner continues to serve data while you add the I/O module. The linked steps refer to the controller being shut down as the "impaired" controller; the same steps apply whether you are taking over an operational controller for a planned addition or shutting down a controller that is already impaired.
 
 [role="tabbed-block"]
 ====
