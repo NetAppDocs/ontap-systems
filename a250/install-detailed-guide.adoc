@@ -40,20 +40,16 @@ image::../media/drw_ssn_label.png[Example of system serial number]
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the link:https://hwu.netapp.com[NetApp Hardware Universe^] to locate the cable and identify its use.
 +
-
-+
 [options="header" cols="1,2,1,2"]
 |===
 | Type of cable...| Part number and length| Connector type| For...
 .2+a|
-a|
 25 GbE cable
 a|
 X66240A-05 (112-00595), 0.5m;
 
 X66240-2 (112-00573), 2m
-.3+
-a|
+.3+a|
 image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 Cluster interconnect network
