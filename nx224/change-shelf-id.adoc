@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: nx224, shelves, shelf, nx224 shelves, change, shelf, id, system, ontap, unown, spare, offline, aggregate, change an nx224 drive shelf id
 summary: "You can change an NX224 shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned or spares."
 ---
-= Change a shelf ID - NX224 shelves
+= Change an NX224 drive shelf ID
 :icons: font
 :imagesdir: ../media/
 
