@@ -3,7 +3,7 @@
 
 * Verify that the e0S interface (e0M wrench port) on the impaired controller is not faulty.
 +
-The e0M port is used to communicate between the two controllers during the automated boot recovery process.
+The e0S interface (e0M wrench port) is used to communicate between the two controllers during the automated boot recovery process.
   
 * For OKM, you need the cluster-wide passphrase and also the backup data.
 * For EKM, you need copies of the following files from the partner node:
