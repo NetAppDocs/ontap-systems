@@ -1,4 +1,6 @@
 
+include::../_include/console-logging-note.adoc[]
+
 * You must replace the failed component with a replacement FRU component of the same capacity that you received from NetApp.
 
 * Verify that the e0M (wrench) port on the impaired controller is connected and not faulty.

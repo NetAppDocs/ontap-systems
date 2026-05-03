@@ -11,6 +11,8 @@ summary: "Learn about boot media replacement on an AFF A700s system and understa
 [.lead]
 Learn about boot media replacement on an AFF A700s system and understand the recovery methods. The primary boot media stores the ONTAP boot image that the system uses during startup. You can restore the primary boot media image using the ONTAP image from the secondary boot media or, if necessary, from a USB flash drive formatted to FAT32.
 
+include::../_include/console-logging-note.adoc[]
+
 The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
 If your secondary boot media has failed or is missing the image.tgz file, you must restore the primary boot media using a USB flash drive. The drive must be formatted to FAT32 and must have the appropriate amount of storage to hold the image_xxx.tgz file.
