@@ -2,6 +2,7 @@
 .Before you begin
 
 * Ensure your console is connected to the impaired controller.
+* Verify the e0S interface (e0M wrench port) on the impaired controller is not faulty.
 * Verify you have a USB flash drive with the recovery image.
 * Determine if your system uses encryption. You will need to select the appropriate option in step 3 based on whether encryption is enabled.
 

@@ -1,4 +1,6 @@
 
+include::../_include/console-logging-note.adoc[]
+
 .USB flash drive
 * Ensure you have a USB flash drive formatted to FAT32. 
 * The USB must have sufficient storage capacity to hold the `image_xxx.tgz` file.

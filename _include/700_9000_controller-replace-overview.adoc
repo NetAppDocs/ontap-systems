@@ -1,5 +1,7 @@
 You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
 
+include::../_include/console-logging-note.adoc[]
+
 * All drive shelves must be working properly.
 * If your system has a V_StorageAttach license, you must refer to the additional required steps before performing this procedure.
 * If your system is in an HA pair, the healthy node must be able to take over the node that is being replaced (referred to in this procedure as the "`impaired node`").
@@ -15,6 +17,3 @@ If this is the procedure you should use, note that the controller replacement pr
  ** The _impaired_ node is the node that is being replaced.
  ** The _replacement_ node is the new node that is replacing the impaired node.
  ** The _healthy_ node is the surviving node.
-* You must always capture the node's console output to a text file.
-+
-This provides you a record of the procedure so that you can troubleshoot any issues that you might encounter during the replacement process.

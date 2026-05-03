@@ -1,5 +1,7 @@
 Review the requirements for replacing the controller module.
 
+include::../_include/console-logging-note.adoc[]
+
 * All drive shelves must be working properly.
 * The healthy controller must be able to take over the controller being replaced (referred to in this procedure as the impaired controller).
 * Do not use this procedure for controller upgrades. Refer to https://docs.netapp.com/us-en/ontap-systems-upgrade/choose_controller_upgrade_procedure.html[Choose your controller hardware upgrade procedure] for guidance.
@@ -12,9 +14,6 @@ Review the requirements for replacing the controller module.
  ** The _impaired_ controller is the controller being replaced.
  ** The _replacement_ controller is the new controller replacing the impaired controller.
  ** The _healthy_ controller is the surviving controller.
-* Capture the controller's console output to a text log file.
-+
-This provides a record of the procedure to troubleshoot any issues during the replacement process.
 
 
 //2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
