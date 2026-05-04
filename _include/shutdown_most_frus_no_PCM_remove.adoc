@@ -4,9 +4,15 @@ Take over and halt the impaired controller so that the healthy controller contin
 If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum[Synchronize a node with the cluster^].
 
 .Steps
-. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message command: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
+. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
 +
-The following AutoSupport command suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
++
+This prevents automatic support cases from being opened during your planned maintenance window. The maximum suppression duration is 72 hours. If your maintenance completes early, you can re-enable case creation by invoking an AutoSupport message with `MAINT=END`. For more information, see https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92[How to suppress automatic case creation during scheduled maintenance windows^].
++
+The following AutoSupport message suppresses automatic case creation for two hours: 
++
+`cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
 . Disable automatic giveback from the console of the impaired controller: 
 +
