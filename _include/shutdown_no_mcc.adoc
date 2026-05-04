@@ -4,9 +4,15 @@ If you have a cluster with more than two nodes, it must be in quorum. If the clu
 
 .Steps
 
-. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=_number_of_hours_down_h`
+. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: 
 +
-The following AutoSupport message suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
+`system node autosupport invoke -node * -type all -message MAINT=<number of hours down>h`
++
+This prevents automatic support cases from being opened during your planned maintenance window. The maximum suppression duration is 72 hours. If your maintenance completes early, you can re-enable case creation by invoking an AutoSupport message with `MAINT=END`. For more information, see https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU92[How to suppress automatic case creation during scheduled maintenance windows^].
++
+The following AutoSupport message suppresses automatic case creation for two hours: 
++
+`cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
 . If the impaired controller is part of an HA pair, disable automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback false`
 . Take the impaired controller to the LOADER prompt:
