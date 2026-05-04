@@ -40,20 +40,16 @@ image::../media/drw_ssn_label.png[Example of system serial number]
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the link:https://hwu.netapp.com[NetApp Hardware Universe^] to locate the cable and identify its use.
 +
-
-+
 [options="header" cols="1,2,1,2"]
 |===
 | Type of cable...| Part number and length| Connector type| For...
-.2+
-a|
+.2+a|
 25 GbE cable
 a|
 X66240A-05 (112-00595), 0.5m;
 
 X66240-2 (112-00573), 2m
-.3+
-a|
+.3+a|
 image:../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 connector]
 a|
 Cluster interconnect network
@@ -155,9 +151,9 @@ Use the animation or the tabulated steps to complete the cabling between the con
 video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Animation - Cable two-node switchless cluster"]
 
 .Steps
-. Use the the 25GbE cluster interconnect cable to connect the cluster interconnect ports e0c to e0c and e0d to e0d.  
+. Use the the 25 GbE cluster interconnect cable to connect the cluster interconnect ports e0c to e0c and e0d to e0d.  
 +
-image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]:
+image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
 image:../media/drw_affa250_tnsc_cabling.png[Cluster interconnect cabling in a two-node switchless cluster]
 
@@ -205,7 +201,7 @@ image::../media/drw_affa250_mgmt_cabling.png[Management port cabling]
 == Step 4: Cable to host network or storage (Optional)
 You have configuration-dependent optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cabling to a host network and storage.
 
-NOTE: link:https://hwu.netapp.com[NetApp Hardware Universe^] slot priority for host network cards (Fibre Channel or 25GbE) is slot 2. However, if you have both cards, the Fibre Channel card goes in slot 2 and the 25GbE card goes in slot 1 (as shown in the options below). If you have an external shelf, the storage card goes in slot 1, the only supported slot for shelves.
+NOTE: link:https://hwu.netapp.com[NetApp Hardware Universe^] slot priority for host network cards (Fibre Channel or 25 GbE) is slot 2. However, if you have both cards, the Fibre Channel card goes in slot 2 and the 25 GbE card goes in slot 1 (as shown in the options below). If you have an external shelf, the storage card goes in slot 1, the only supported slot for shelves.
 
 // start tabbed area
 
@@ -234,9 +230,9 @@ Perform the following step on each controller module.
 image:../media/drw_affa250_fc_host_cabling.png[Fibre Channel host cabling]
 
 --
-.Option 2: Cable to 25GbE data or host network
+.Option 2: Cable to 25 GbE data or host network
 --
-25GbE ports on the controllers are connected to 25GbE data or host network switches.
+25 GbE ports on the controllers are connected to 25 GbE data or host network switches.
 
 .Before you begin
 * Contact your network administrator for information about connecting the system to the switches.

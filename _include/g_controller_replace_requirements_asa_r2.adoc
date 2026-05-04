@@ -1,14 +1,13 @@
 You must review the requirements and considerations for the controller replacement procedure.
 
+include::../_include/console-logging-note.adoc[]
+
 == Requirements
 
 * All shelves must be working properly.
 * The healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
 * You must replace a controller with a controller of the same model type. You cannot upgrade your system by just replacing the controller.
 * You cannot change any drives or shelves as part of this procedure.
-* You must always capture the controller's console output to a text log file.
-+
-The console output provides you with a record of the procedure you can use to troubleshoot issues you might encounter during the replacement process.
 
 == Considerations
 * It is important that you apply the commands in this procedure to the correct controller:

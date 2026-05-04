@@ -1,5 +1,7 @@
 Review the requirements.
 
+include::../_include/console-logging-note.adoc[]
+
 * All drive shelves must be working properly.
 * The healthy controller must be able to take over the controller that is being replaced (referred to in this procedure as the "`impaired controller`").
 * You must replace the failed component with a replacement component you received from NetApp.
@@ -11,8 +13,4 @@ Review the requirements.
  ** The _impaired_ controller is the controller that is being replaced.
  ** The _replacement_ controller is the new controller that is replacing the impaired controller.
  ** The _healthy_ controller is the surviving controller.
-* You must always capture the controller's console output to a text log file.
-+
-This provides you a record of the procedure so that you can troubleshoot any issues that you might encounter during the replacement process.
-
 
