@@ -59,7 +59,7 @@ NOTE: I/O module ports e2b and e4b are unused and available for host network con
 +
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable]
 +
-image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[a30 and a60 switchless cluster cabling diagram using two 100gbe io modules]
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[c30 and c60 switchless cluster cabling diagram using two 100gbe io modules]
 
 ==== AFF C30 or AFF C60 with one 2-port 40/100 GbE I/O module
 
@@ -78,7 +78,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 +
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable]
 +
-image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[a30 and a60 switchless cluster cabling diagram using one 100gbe io module]
+image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[c30 and c60 switchless cluster cabling diagram using one 100gbe io module]
 
 === Switched cluster cabling
 
@@ -105,7 +105,7 @@ NOTE: I/O module ports e2b and e4b are unused and available for host network con
 +
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable]
 +
-image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a60 switched cluster cabling diagram using two 100gbe io modules]
+image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[c30 and c60 switched cluster cabling diagram using two 100gbe io modules]
 
 ==== AFF C30 or AFF C60 with one 2-port 40/100 GbE I/O module
 
