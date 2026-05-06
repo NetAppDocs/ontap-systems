@@ -36,12 +36,13 @@ The cluster/HA cabling examples show common configurations.
 If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
 ====
 
-=== Switchless cluster cabling
-
+[role="tabbed-block"]
+====
+.Switchless cluster cabling
+--
 Use this cabling option when the two controllers are directly connected to each other without using cluster network switches.
 
-==== AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
-
+.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
 Cable the cluster/HA interconnect ports on the I/O modules in slots 2 and 4.
 
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE. 
@@ -58,8 +59,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable]
 +
 image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg[a30 and a50 switchless cluster cabling diagram using two 100gbe io modules]
 
-==== AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
-
+.AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
 Cable the cluster/HA interconnect ports on the I/O module in slot 4.
 
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
@@ -74,15 +74,12 @@ image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable]
 +
 image::../media/drw_isi_a30-50_switchless_2p_100gbe_1card_cabling_ieops-1925.svg[a30 and a50 switchless cluster cabling diagram using one 100gbe io module]
 
-==== AFF A20 with one 2-port 10/25 GbE I/O module
-
+.AFF A20 with one 2-port 10/25 GbE I/O module
 Cable the cluster/HA interconnect ports on the I/O module in slot 4.
 
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 10/25 GbE.
 
-
 .Steps
-
 . Cable controller A port e4a to controller B port e4a.
 . Cable controller A port e4b to controller B port e4b.
 +
@@ -91,19 +88,18 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
 image::../media/drw_isi_a20_switchless_2p_25gbe_cabling_ieops-2018.svg[a20 switchless cluster cabling diagram using one 25 gbe io module]
+--
 
-=== Switched cluster cabling
-
+.Switched cluster cabling
+--
 Use this cabling option when the controllers connect to cluster network switches instead of being directly connected to each other.
 
-==== AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
-
+.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
 Cable the cluster/HA interconnect ports on the I/O modules in slots 2 and 4 to the cluster network switches.
 
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE.
 
 .Steps
-
 . Cable controller A port e4a to cluster network switch A.
 . Cable controller A port e2a to cluster network switch B.
 . Cable controller B port e4a to cluster network switch A.
@@ -117,8 +113,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable]
 +
 image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[a30 and a50 switched cluster cabling diagram using two 100gbe io modules]
 
-==== AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
-
+.AFF A30 or AFF A50 with one 2-port 40/100 GbE I/O module
 Cable the cluster/HA interconnect ports on the I/O module in slot 4 to the cluster network switches.
 
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
@@ -135,8 +130,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable]
 +
 image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network]
 
-==== AFF A20 with one 2-port 10/25 GbE I/O module
-
+.AFF A20 with one 2-port 10/25 GbE I/O module
 Cable the cluster/HA interconnect ports on the I/O module in slot 4 to the cluster network switches.
 
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 10/25 GbE.
@@ -152,6 +146,8 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
 image:../media/drw_isi_a20_switched_2p_25gbe_cabling_ieops-2019.svg[a20 switched cluster cabling diagram using one 25 GbE io module]
+--
+====
 
 
 == Step 2: Cable the host network connections
@@ -164,12 +160,13 @@ The host network cabling examples show common configurations.
 If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
 ====
 
-=== Ethernet host cabling
-
+[role="tabbed-block"]
+====
+.Ethernet host cabling
+--
 Connect the controllers to your Ethernet host network using the appropriate ports based on your I/O module configuration.
 
-==== AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
-
+.AFF A30 or AFF A50 with two 2-port 40/100 GbE I/O modules
 On each controller, cable ports e2b and e4b to the Ethernet host network switches.
 
 NOTE: The ports on I/O modules in slot 2 and 4 are 40/100 GbE (host connectivity is 40/100 GbE).
@@ -180,8 +177,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable]
 
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Cable to 40/100gbe ethernet host network switches]
 
-==== AFF A20, AFF A30, or AFF A50 with one 4-port 10/25 GbE I/O module
-
+.AFF A20, AFF A30, or AFF A50 with one 4-port 10/25 GbE I/O module
 On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host network switches.
 
 *10/25 GbE cables*
@@ -189,13 +185,13 @@ On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host netwo
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
+--
 
-=== FC host cabling
-
+.FC host cabling
+--
 Connect the controllers to your Fibre Channel host network using the FC I/O module in your system.
 
-==== AFF A20, AFF A30, or AFF A50 with one 4-port 64 Gb/s FC I/O module
-
+.AFF A20, AFF A30, or AFF A50 with one 4-port 64 Gb/s FC I/O module
 On each controller, cable ports 2a, 2b, 2c and 2d to the FC host network switches.
 
 *64 Gb/s FC cables*
@@ -203,6 +199,8 @@ On each controller, cable ports 2a, 2b, 2c and 2d to the FC host network switche
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
 
 image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
+--
+====
 
 
 == Step 3: Cable the management network connections

@@ -36,52 +36,51 @@ The cluster/HA cabling examples show common configurations.
 If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
 ====
 
-=== Switchless cluster cabling
-
+[role="tabbed-block"]
+====
+.Switchless cluster cabling
+--
 Use this cabling option when the two controllers are directly connected to each other without using cluster network switches.
 
-==== FAS50 with one 2-port 40/100 GbE I/O module
-
+.FAS50 with one 2-port 40/100 GbE I/O module
 Cable the cluster/HA interconnect ports on the I/O module in slot 4.
 
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
+
 .Steps
 
-. Cable the Cluster/HA interconnect connections: 
-+
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
-+
-.. Cable controller A port e4a to controller B port e4a.
-.. Cable controller A port e4b to controller B port e4b.
-+
+. Cable controller A port e4a to controller B port e4a.
+. Cable controller A port e4b to controller B port e4b.
+
 *100 GbE Cluster/HA interconnect cables*
-+
+
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 100 GbE cable, width=100px]
-+
+
 image::../media/drw_isi_fas50_switchless_2p_100gbe_cabling_ieops-1937.svg[fas50 switchless cluster cabling diagram using one 100gbe io module]
+--
 
-=== Switched cluster cabling
-
+.Switched cluster cabling
+--
 Use this cabling option when the controllers connect to cluster network switches instead of being directly connected to each other.
 
-==== FAS50 with one 2-port 40/100 GbE I/O module
-
+.FAS50 with one 2-port 40/100 GbE I/O module
 Cable the cluster/HA interconnect ports on the I/O module in slot 4 to the cluster network switches.
 
-.Steps
-. Cable the controllers to the cluster network switches:
-+
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
-+
-.. Cable controller A port e4a to cluster network switch A. 
-.. Cable controller A port e4b to cluster network switch B.
-.. Cable controller B port e4a to cluster network switch A. 
-.. Cable controller B port e4b to cluster network switch B.
+
+.Steps
+. Cable controller A port e4a to cluster network switch A. 
+. Cable controller A port e4b to cluster network switch B.
+. Cable controller B port e4a to cluster network switch A. 
+. Cable controller B port e4b to cluster network switch B.
 +
 *40/100 GbE Cluster/HA interconnect cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable, width=100px]
 +
 image:../media/drw_isi_fas50_2p_100gbe_switched_cluster_cabling_ieops-1936.svg[fas50 switched cluster cabling diagram using one 100gbe io module]
+--
+====
 
 
 == Step 2: Cable the host network connections
@@ -94,12 +93,13 @@ The host network cabling examples show common configurations.
 If you do not see your configuration here, go to link:https://hwu.netapp.com[NetApp Hardware Universe^] for comprehensive configuration and slot priority information to cable your storage system.
 ====
 
-=== Ethernet host cabling
-
+[role="tabbed-block"]
+====
+.Ethernet host cabling
+--
 Connect the controllers to your Ethernet host network using the appropriate ports based on your I/O module configuration.
 
-==== FAS50 with one 4-port 10/25 GbE I/O module
-
+.FAS50 with one 4-port 10/25 GbE I/O module
 On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host network switches.
 
 *10/25 GbE cables*
@@ -107,13 +107,13 @@ On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host netwo
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
 
 image::../media/drw_isi_fas50_4p_25gbe_optional_cabling_ieops-1934.svg[cable fas50 to 10/25 GbE ethernet host network switches]
+--
 
-=== FC host cabling
-
+.FC host cabling
+--
 Connect the controllers to your Fibre Channel host network using the FC I/O module in your system.
 
-==== FAS50 with one 4-port 64 Gb/s FC I/O module
-
+.FAS50 with one 4-port 64 Gb/s FC I/O module
 On each controller, cable ports 2a, 2b, 2c and 2d to the FC host network switches.
 
 *64 Gb/s FC cables*
@@ -121,6 +121,8 @@ On each controller, cable ports 2a, 2b, 2c and 2d to the FC host network switche
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
 
 image::../media/drw_isi_fas50_4p_64gb_fc_optional_cabling_ieops-1935.svg[Cable to 64gb fc host network switches]
+--
+====
 
 
 == Step 3: Cable the management network connections
