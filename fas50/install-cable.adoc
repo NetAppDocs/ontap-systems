@@ -100,15 +100,12 @@ Connect the controllers to your Ethernet host network using the appropriate port
 
 ==== FAS50 with one 4-port 10/25 GbE I/O module
 
-Use all four ports on the I/O module in slot 2 to connect to the Ethernet host network switches.
+On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host network switches.
 
-.Steps
-. On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host network switches.
-+
 *10/25 GbE cables*
-+
+
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector, width=100px]
-+
+
 image::../media/drw_isi_fas50_4p_25gbe_optional_cabling_ieops-1934.svg[cable fas50 to 10/25 GbE ethernet host network switches]
 
 === FC host cabling
@@ -117,27 +114,22 @@ Connect the controllers to your Fibre Channel host network using the FC I/O modu
 
 ==== FAS50 with one 4-port 64 Gb/s FC I/O module
 
-Use all four ports on the FC I/O module in slot 2 to connect to the FC host network switches.
+On each controller, cable ports 2a, 2b, 2c and 2d to the FC host network switches.
 
-.Steps
-. On each controller, cable ports 2a, 2b, 2c and 2d to the FC host network switches.
-+
 *64 Gb/s FC cables*
-+
+
 image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
-+
+
 image::../media/drw_isi_fas50_4p_64gb_fc_optional_cabling_ieops-1935.svg[Cable to 64gb fc host network switches]
 
 
 == Step 3: Cable the management network connections
-Cable the controllers to your management network.
+Cable the management (wrench) ports on each controller to the management network switches.
 
-. Cable the management (wrench) ports on each controller to the management network switches.
-+
 *1000BASE-T RJ-45 cables*
-+
+
 image::../media/oie_cable_rj45.png[RJ-45 cables]
-+
+
 image::../media/drw_isi_fas50_wrench_cabling_ieops-1938.svg[Connect to your management network]
 
 IMPORTANT: Do not plug in the power cords yet. 
@@ -168,15 +160,13 @@ Cable each controller to each IOM12 module on the DS460C shelf.
 
 .Steps
 
-. Cable controller A to the shelf:
-.. Cable controller A port 3a to IOMA port 1.
-.. Cable controller A port 3d to IOMB port 3.
+. Cable controller A port 3a to IOMA port 1.
+. Cable controller A port 3d to IOMB port 3.
 +
 image:../media/drw_isi_fas50_1_ds460c_controller_a_cabling_ieops-2167.svg[Controller A ports 3a and 3d cabled to one DS460C shelf]
 
-. Cable controller B to the shelf:
-.. Cable controller B port 3a to IOMB port 1.
-.. Cable controller B port 3d to IOMA port 3.
+. Cable controller B port 3a to IOMB port 1.
+. Cable controller B port 3d to IOMA port 3.
 +
 image:../media/drw_isi_fas50_1_ds460c_controller_b_cabling_ieops-2169.svg[Controller B ports 3a and 3d cabled to one DS460C shelf]
 
@@ -184,21 +174,18 @@ image:../media/drw_isi_fas50_1_ds460c_controller_b_cabling_ieops-2169.svg[Contro
 
 Connect each controller to the IOM12 modules on both DS460C shelves.
 
-. Cable the shelf-to-shelf connections:
-.. Cable Shelf 1 IOMA port 3 to Shelf 2 IOMA port 1.
-.. Cable Shelf 1 IOMB port 3 to Shelf 2 IOMB port 1.
+. Cable Shelf 1 IOMA port 3 to Shelf 2 IOMA port 1.
+. Cable Shelf 1 IOMB port 3 to Shelf 2 IOMB port 1.
 +
 image:../media/drw_isi_fas50_2_ds460c_shelf_to_shelf_ieops-2172.svg[cable shelf to shelf connections]
 
-. Cable controller A to the shelves:
-.. Cable controller A port 3a to shelf 1 IOMA port 1.
-.. Cable controller A port 3d to shelf 2 IOMB port 3.
+. Cable controller A port 3a to shelf 1 IOMA port 1.
+. Cable controller A port 3d to shelf 2 IOMB port 3.
 +
 image:../media/drw_isi_fas50_2_ds460c_controller_a_cabling_ieops-2170.svg[Controller A ports 3a and 3d cabled to two DS460C shelves]
 
-. Cable controller B to the shelves:
-.. Cable controller B port 3a to shelf 1 IOMB port 1.
-.. Cable controller B port 3d to shelf 2 IOMA port 3.
+. Cable controller B port 3a to shelf 1 IOMB port 1.
+. Cable controller B port 3d to shelf 2 IOMA port 3.
 +
 image:../media/drw_isi_fas50_2_ds460c_controller_b_cabling_ieops-2171.svg[Controller B ports 3a and 3d cabled to two DS460C shelves] 
 

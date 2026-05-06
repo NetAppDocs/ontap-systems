@@ -44,14 +44,11 @@ Use this cabling option when the two controllers are directly connected to each 
 
 Cable the cluster/HA interconnect ports on the I/O modules in slots 2 and 4.
 
-.Steps
-
-. Cable the Cluster/HA interconnect connections: 
-+
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE. 
-+
-.. Cable controller A port e2a to controller B port e2a.
-.. Cable controller A port e4a to controller B port e4a.
+
+.Steps
+. Cable controller A port e2a to controller B port e2a.
+. Cable controller A port e4a to controller B port e4a.
 +
 NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
 +
@@ -65,14 +62,11 @@ image::../media/drw_isi_a30-50_switchless_2p_100gbe_2card_cabling_ieops-2011.svg
 
 Cable the cluster/HA interconnect ports on the I/O module in slot 4.
 
-.Steps
-
-. Cable the Cluster/HA interconnect connections: 
-+
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
-+
-.. Cable controller A port e4a to controller B port e4a.
-.. Cable controller A port e4b to controller B port e4b.
+
+.Steps
+. Cable controller A port e4a to controller B port e4a.
+. Cable controller A port e4b to controller B port e4b.
 +
 *100 GbE Cluster/HA interconnect cables*
 +
@@ -88,16 +82,14 @@ Use this cabling option when the controllers connect to cluster network switches
 
 Cable the cluster/HA interconnect ports on the I/O modules in slots 2 and 4 to the cluster network switches.
 
+NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE.
+
 .Steps
 
-. Cable the Cluster/HA interconnect connections: 
-+
-NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O modules in slots 2 and 4). The ports are 40/100 GbE.
-+
-.. Cable controller A port e4a to cluster network switch A.
-.. Cable controller A port e2a to cluster network switch B.
-.. Cable controller B port e4a to cluster network switch A.
-.. Cable controller B port e2a to cluster network switch B.
+. Cable controller A port e4a to cluster network switch A.
+. Cable controller A port e2a to cluster network switch B.
+. Cable controller B port e4a to cluster network switch A.
+. Cable controller B port e2a to cluster network switch B.
 +
 NOTE: I/O module ports e2b and e4b are unused and available for host network connectivity.
 +
@@ -111,22 +103,19 @@ image::../media/drw_isi_a30-50_switched_2p_100gbe_2card_cabling_ieops-2013.svg[c
 
 Cable the cluster/HA interconnect ports on the I/O module in slot 4 to the cluster network switches.
 
-.Steps
-
-. Cable the controllers to the cluster network switches:
-+
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports (on the I/O module in slot 4). The ports are 40/100 GbE.
-+
-.. Cable controller A port e4a to cluster network switch A. 
-.. Cable controller A port e4b to cluster network switch B.
-.. Cable controller B port e4a to cluster network switch A. 
-.. Cable controller B port e4b to cluster network switch B.
+
+.Steps
+. Cable controller A port e4a to cluster network switch A. 
+. Cable controller A port e4b to cluster network switch B.
+. Cable controller B port e4a to cluster network switch A. 
+. Cable controller B port e4b to cluster network switch B.
 +
 *40/100 GbE Cluster/HA interconnect cables*
 +
 image::../media/oie_cable100_gbe_qsfp28.png[Cluster HA 40/100 GbE cable]
 +
-image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network,width=500px]
+image::../media/drw_isi_a30-50_2p_100gbe_1card_switched_cabling_ieops-1926.svg[Cable cluster connections to cluster network]
 
 
 == Step 2: Cable the host network connections
@@ -145,31 +134,24 @@ Connect the controllers to your Ethernet host network using the appropriate port
 
 ==== AFF C30 or AFF C60 with two 2-port 40/100 GbE I/O modules
 
-Use ports e2b and e4b on each controller to connect to the Ethernet host network switches.
+On each controller, cable ports e2b and e4b to the Ethernet host network switches.
 
-.Steps
-
-. On each controller, cable ports e2b and e4b to the Ethernet host network switches.
-+
 NOTE: The ports on I/O modules in slot 2 and 4 are 40/100 GbE (host connectivity is 40/100 GbE).
-+
+
 *40/100 GbE cables*
-+
+
 image::../media/oie_cable_sfp_gbe_copper.png[40/100 Gb cable]
-+
+
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_2card_cabling_ieops-2014.svg[Cable to 40/100gbe ethernet host network switches]
 
 ==== AFF C30 or AFF C60 with one 4-port 10/25 GbE I/O module
 
-Use all four ports on the I/O module in slot 2 to connect to the Ethernet host network switches.
+On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host network switches.
 
-.Steps
-. On each controller, cable ports e2a, e2b, e2c and e2d to the Ethernet host network switches.
-+
 *10/25 GbE cables*
-+
+
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
-+
+
 image::../media/drw_isi_a30-50_host_2p_40-100gbe_1card_cabling_ieops-1923.svg[Cable to 40/100gbe ethernet host network switches]
 
 === FC host cabling
@@ -178,29 +160,22 @@ Connect the controllers to your Fibre Channel host network using the FC I/O modu
 
 ==== AFF C30 or AFF C60 with one 4-port 64 Gb/s FC I/O module
 
-Use all four ports on the FC I/O module in slot 2 to connect to the FC host network switches.
+On each controller, cable ports 2a, 2b, 2c and 2d to the FC host network switches.
 
-.Steps
-. On each controller, cable ports 2a, 2b, 2c and 2d to the FC host network switches.
-+
 *64 Gb/s FC cables*
-+
-image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable,width=100px]
-+
+
+image:../media/oie_cable_sfp_gbe_copper.png[64 Gb fc cable]
+
 image::../media/drw_isi_a30-50_4p_64gb_fc_1card_cabling_ieops-1924.svg[Cable to 64gb fc host network switches]
 
 
 == Step 3: Cable the management network connections
-Cable the controllers to your management network.
-
-. Cable the management (wrench) ports on each controller to the management network switches.
-+
+Cable the management (wrench) ports on each controller to the management network switches.
 
 *1000BASE-T RJ-45 cables*
 
-+
 image::../media/oie_cable_rj45.png[RJ-45 cables]
-+
+
 image::../media/drw_isi_g_wrench_cabling_ieops-1928.svg[Connect to your management network]
 
 // [Connect to your management network] or xx
@@ -223,20 +198,18 @@ This procedure shows you how to cable the controllers to one NS224 shelf.
 +
 *100 GbE QSFP28 copper cables*
 +
-image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable,width=100px]
+image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable]
 * The graphics show controller A cabling in blue and controller B cabling in yellow. 
 
 .Steps
 
-. Cable controller A to the shelf:
-.. Cable controller A port e3a to NSM A port e1a.
-.. Cable controller A port e3b to NSM B port e1b.
+. Cable controller A port e3a to NSM A port e1a.
+. Cable controller A port e3b to NSM B port e1b.
 +
 image:../media/drw_isi_g_1_ns224_controller_a_cabling_ieops-1945.svg[Controller A ports e3a and e3b cabled to one NS224 shelf]
 
-. Cable controller B to the shelf:
-.. Cable controller B port e3a to NSM B port e1a.
-.. Cable controller B port e3b to NSM A port e1b.
+. Cable controller B port e3a to NSM B port e1a.
+. Cable controller B port e3b to NSM A port e1b.
 +
 image:../media/drw_isi_g_1_ns224_controller_b_cabling_ieops-1946.svg[Controller B ports e3a and e3b cabled to one NS224 shelf]
 
