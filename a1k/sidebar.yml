@@ -94,12 +94,12 @@ entries:
         url: /a1k/nvram-replace.html
  - title: Maintain power and cooling
    entries:
-      - title: NV battery
-        url: /a1k/nvdimm-battery-replace.html
       - title: Power supply
         url: /a1k/power-supply-replace.html
       - title: Fan
         url: /a1k/fan-replace.html
+      - title: NV battery
+        url: /a1k/nvdimm-battery-replace.html
       - title: Real-time clock battery
         url: /a1k/rtc-battery-replace.html
       - title: System Management module
