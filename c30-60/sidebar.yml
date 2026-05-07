@@ -18,99 +18,100 @@ entries:
        url: /c30-60/install-cable.html
      - title: Power on system
        url: /c30-60/install-power-hardware.html
- - title: Maintenance overview
-   url: /c30-60/maintain-overview.html
+ - title: Maintain
+   pdf-filename: AFF C30 and AFF C60 Maintain
+   entries:
+   - title: Maintenance overview
+     url: /c30-60/maintain-overview.html
 # START boot media
- - title: Maintain boot media - automated recovery
-   pdf-filename: AFF C30 and AFF C60 Boot Media
-   entries:
-    - title: Boot media replacement workflow
-      url: /c30-60/bootmedia-replace-workflow-bmr.html
-    - title: Review requirements
-      url: /c30-60/bootmedia-replace-requirements-bmr.html
-    - title: Shut down impaired controller
-      url: /c30-60/bootmedia-shutdown-bmr.html
-    - title: Replace boot media
-      url: /c30-60/bootmedia-replace-bmr.html
-    - title: Boot recovery image
-      url: /c30-60/bootmedia-recovery-image-boot-bmr.html
-    - title: Return failed part to NetApp
-      url: /c30-60/bootmedia-complete-rma-bmr.html
- - title: Maintain boot media - manual recovery
-   pdf-filename: AFF C30 and AFF C60 Boot Media
-   entries:
-    - title: Boot media replacement workflow
-      url: /c30-60/bootmedia-replace-workflow.html
-    - title: Review requirements
-      url: /c30-60/bootmedia-replace-requirements.html
-    - title: Check encryption keys
-      url: /c30-60/bootmedia-encryption-preshutdown-checks.html
-    - title: Shut down controller
-      url: /c30-60/bootmedia-shutdown.html
-    - title: Replace boot media
-      url: /c30-60/bootmedia-replace.html
-    - title: Boot recovery image
-      url: /c30-60/bootmedia-recovery-image-boot.html
-    - title: Restore encryption
-      url: /c30-60/bootmedia-encryption-restore.html
-    - title: Return failed part to NetApp
-      url: /c30-60/bootmedia-complete-rma.html
-  # END boot media
- - title: Maintain chassis
-   pdf-filename: AFF C30 and AFF C60 Chassis
-   entries:
-      - title: Chassis replace workflow
-        url: /c30-60/chassis-replace-workflow.html
+   - title: Boot media - automated recovery
+     pdf-filename: AFF C30 and AFF C60 Boot Media
+     entries:
+      - title: Boot media replacement workflow
+        url: /c30-60/bootmedia-replace-workflow-bmr.html
       - title: Review requirements
-        url: /c30-60/chassis-replace-requirements.html
-      - title: Shut down controllers
-        url: /c30-60/chassis-replace-shutdown.html
-      - title: Replace chassis
-        url: /c30-60/chassis-replace-move-hardware.html
-      - title: Complete chassis replacement
-        url: /c30-60/chassis-replace-complete-system-restore-rma.html
- - title: Maintain controller
-   pdf-filename: AFF C30 and AFF C60 Controller Module
-   entries:
-      - title: Controller replace workflow
-        url: /c30-60/controller-replace-workflow.html
-      - title: Review requirements
-        url: /c30-60/controller-replace-requirements.html
+        url: /c30-60/bootmedia-replace-requirements-bmr.html
       - title: Shut down impaired controller
-        url: /c30-60/controller-replace-shutdown.html
-      - title: Replace controller
-        url: /c30-60/controller-replace-move-hardware.html
-      - title: Restore system configuration
-        url: /c30-60/controller-replace-system-config-restore-and-verify.html
-      - title: Give back controller
-        url: /c30-60/controller-replace-recable-reassign-disks.html
-      - title: Complete controller replacement
-        url: /c30-60/controller-replace-restore-system-rma.html
- - title: Maintain DIMM
-   url: /c30-60/dimm-replace.html
- - title: Maintain drive
-   url: /c30-60/drive-replace.html
- - title: Maintain power and cooling
-   entries:
-      - title: NV battery
-        url: /c30-60/nvdimm-battery-replace.html
-      - title: Power supply
-        url: /c30-60/power-supply-replace.html
-      - title: Fan
-        url: /c30-60/fan-replace.html
-      - title: Real-time clock battery
-        url: /c30-60/rtc-battery-replace.html
- - title: Maintain I/O module
-   pdf-filename: AFF C30 and AFF C60 I/O Module
-   entries:
-      - title: I/O module overview
-        url: /c30-60/io-module-overview.html
-      - title: Add I/O module
-        url: /c30-60/io-module-add.html
-      - title: Hot-swap I/O module
-        url: /c30-60/io-module-hotswap.html
-      - title: Replace I/O module
-        url: /c30-60/io-module-replace.html
+        url: /c30-60/bootmedia-shutdown-bmr.html
+      - title: Replace boot media
+        url: /c30-60/bootmedia-replace-bmr.html
+      - title: Boot recovery image
+        url: /c30-60/bootmedia-recovery-image-boot-bmr.html
+      - title: Return failed part to NetApp
+        url: /c30-60/bootmedia-complete-rma-bmr.html
+   - title: Boot media - manual recovery
+     pdf-filename: AFF C30 and AFF C60 Boot Media
+     entries:
+      - title: Boot media replacement workflow
+        url: /c30-60/bootmedia-replace-workflow.html
+      - title: Review requirements
+        url: /c30-60/bootmedia-replace-requirements.html
+      - title: Check encryption keys
+        url: /c30-60/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down controller
+        url: /c30-60/bootmedia-shutdown.html
+      - title: Replace boot media
+        url: /c30-60/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /c30-60/bootmedia-recovery-image-boot.html
+      - title: Restore encryption
+        url: /c30-60/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /c30-60/bootmedia-complete-rma.html
+    # END boot media
+   - title: Chassis
+     pdf-filename: AFF C30 and AFF C60 Chassis
+     entries:
+        - title: Chassis replace workflow
+          url: /c30-60/chassis-replace-workflow.html
+        - title: Review requirements
+          url: /c30-60/chassis-replace-requirements.html
+        - title: Shut down controllers
+          url: /c30-60/chassis-replace-shutdown.html
+        - title: Replace chassis
+          url: /c30-60/chassis-replace-move-hardware.html
+        - title: Complete chassis replacement
+          url: /c30-60/chassis-replace-complete-system-restore-rma.html
+   - title: Controller
+     pdf-filename: AFF C30 and AFF C60 Controller Module
+     entries:
+        - title: Controller replace workflow
+          url: /c30-60/controller-replace-workflow.html
+        - title: Review requirements
+          url: /c30-60/controller-replace-requirements.html
+        - title: Shut down impaired controller
+          url: /c30-60/controller-replace-shutdown.html
+        - title: Replace controller
+          url: /c30-60/controller-replace-move-hardware.html
+        - title: Restore system configuration
+          url: /c30-60/controller-replace-system-config-restore-and-verify.html
+        - title: Give back controller
+          url: /c30-60/controller-replace-recable-reassign-disks.html
+        - title: Complete controller replacement
+          url: /c30-60/controller-replace-restore-system-rma.html
+   - title: DIMM
+     url: /c30-60/dimm-replace.html
+   - title: Drive
+     url: /c30-60/drive-replace.html
+   - title: Fan
+     url: /c30-60/fan-replace.html
+   - title: I/O module
+     pdf-filename: AFF C30 and AFF C60 I/O Module
+     entries:
+        - title: I/O module overview
+          url: /c30-60/io-module-overview.html
+        - title: Add I/O module
+          url: /c30-60/io-module-add.html
+        - title: Hot-swap I/O module
+          url: /c30-60/io-module-hotswap.html
+        - title: Replace I/O module
+          url: /c30-60/io-module-replace.html
+   - title: NV battery
+     url: /c30-60/nvdimm-battery-replace.html
+   - title: Power supply
+     url: /c30-60/power-supply-replace.html
+   - title: Real-time clock battery
+     url: /c30-60/rtc-battery-replace.html
  - title: Key specifications
    entries:
     - title: AFF C30
