@@ -1,7 +1,7 @@
 ---
 permalink: c80/bootmedia-replace-workflow-bmr.html
 sidebar: sidebar
-keywords: c80, replace the boot media
+keywords: aff c80, replace the boot media
 summary: The automated recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on partner node to reinstall ONTAP on the replacement boot media in your AFF C80 storage system.
 ---
 = Boot media automated recovery workflow - AFF C80
