@@ -25,4 +25,58 @@ Replacing a failing I/O module can restore the system to its optimal operating s
 
 The I/O slots on the AFX 2K controller are numbered 1 through 11, as shown in the following illustration.
 
-image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on an AFX 2K controller]
+image::../media/drw_afx_emr_rear_slots_ieops-2862.svg[Slot numbering on an AFX controller]
+
+[cols="20%,80%"]
+|===
+
+a|
+image::../media/icon_round_1.svg[Callout number 1] 
+a|
+HA
+
+a|
+image::../media/icon_round_2.svg[[Callout number 2]
+a|
+Cluster
+
+a|
+image::../media/icon_round_3.svg[[Callout number 3]
+a|
+Network
+
+a|
+image::../media/icon_round_4.svg[[Callout number 4]
+
+image::../media/icon_round_5.svg[[Callout number 5]
+a|
+NVRAM
+
+a|
+image::../media/icon_round_6.svg[[Callout number 6]
+
+image::../media/icon_round_7.svg[[Callout number 7]
+a|
+NV12L
+
+a|
+image::../media/icon_round_8.svg[[Callout number 8]
+a|
+Storage
+
+a|
+image::../media/icon_round_9.svg[[Callout number 9]
+a|
+Network
+
+a|
+image::../media/icon_round_10.svg[[Callout number 10]
+a|
+Storage
+
+a|
+image::../media/icon_round_11.svg[[Callout number 11]
+a|
+Empty
+
+|===

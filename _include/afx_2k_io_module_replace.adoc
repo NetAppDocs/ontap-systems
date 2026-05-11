@@ -9,7 +9,7 @@ You can use this procedure with all versions of ONTAP supported by your storage 
 
 Shut down or take over the impaired controller.
 
-include::../_include/shutdown_most_frus_afx.adoc[]
+include::../_include/shutdown_most_frus_afx_2k.adoc[]
 
 == Step 2: Replace a failed I/O module
 
@@ -78,11 +78,7 @@ If you encounter errors, contact https://support.netapp.com[NetApp Support].
 `storage failover show` and `storage failover show-giveback`
 +
 NOTE: The following command is only available in the Diagnostic mode privilege level.
-. If the HA interconnect links were taken down, bring them back up:
-+
-`system ha interconnect link on -node healthy-node -link 0`
-+
-`system ha interconnect link on -node healthy-node -link 1`
+
 . If automatic giveback was disabled, reenable it:
 + 
 `storage failover modify -ofnode impaired-node -automatic-giveback true`    
