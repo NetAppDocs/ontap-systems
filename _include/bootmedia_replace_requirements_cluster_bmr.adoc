@@ -1,5 +1,6 @@
 Review the following requirements.
 
+include::../_include/console-logging-note.adoc[]
 
 * You must replace the failed boot media with a replacement boot media you received from NetApp.
 * The cluster ports are used to communicate between the two controllers during the automated boot recovery process. Make sure that the cluster ports on the impaired controller are working properly.
