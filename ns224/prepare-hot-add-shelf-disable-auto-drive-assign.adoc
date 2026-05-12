@@ -1,0 +1,32 @@
+---
+permalink: ns224/prepare-hot-add-shelf-disable-auto-drive-assign.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, preparation, drive assignment
+summary: Disable automatic drive assignment before hot-adding an NS224 shelf when you plan to manually assign drive ownership.
+---
+= Disable automatic drive assignment for a hot-add - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Disable automatic drive assignment before hot-adding an NS224 shelf when you plan to manually assign drive ownership.
+
+If you are manually assigning drive ownership for the NS224 shelf you are hot-adding, then you need to disable automatic drive assignment if it is enabled.
+
+If you are unsure whether you should manually assign drive ownership, or want to understand the automatic assignment of drive ownership policies for your storage system, go to https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html[About automatic assignment of disk ownership^].
+
+.Steps
+
+. Verify whether automatic drive assignment is enabled: `storage disk option show`
++
+You can enter the command on either node.
++
+If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column for each node.
+
+. If automatic drive assignment is enabled, disable it: `storage disk option modify -node _node_name_ -autoassign off`
++
+You must disable automatic drive assignment on both nodes.
+
+.What's next
+
+After completing the preparation tasks, link:install-hot-add-shelf.html[install a shelf for a hot-add].

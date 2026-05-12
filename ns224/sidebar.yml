@@ -91,6 +91,18 @@ entries:
     url: /ns224/change-shelf-id.html
   - title: Cable shelves as switch-attached storage
     url: /ns224/cable-as-switch-attached.html
+  - title: Prepare for a hot-add
+    entries:
+      - title: Overview
+        url: /ns224/prepare-hot-add-shelf.html
+      - title: Install RoCE-capable PCIe cards or I/O modules
+        url: /ns224/prepare-hot-add-shelf-install-roce.html
+      - title: Configure RoCE-capable ports for storage use
+        url: /ns224/prepare-hot-add-shelf-configure-roce-ports.html
+      - title: Recable existing shelves
+        url: /ns224/prepare-hot-add-shelf-recable-shelves.html
+      - title: Disable automatic drive assignment
+        url: /ns224/prepare-hot-add-shelf-disable-auto-drive-assign.html
   - title: Maintain
     pdf-filename: NS224 shelf maintain
     entries:
