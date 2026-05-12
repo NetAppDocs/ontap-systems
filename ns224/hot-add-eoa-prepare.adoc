@@ -11,7 +11,7 @@ summary: Prepare to hot-add an NS224 shelf to your end-of-availability system by
 [.lead]
 Prepare to hot-add NS224 shelves to your end-of-availability system by ensuring sufficient RoCE-capable storage ports, configuring them for storage use, and optimizing your existing configuration for the new shelf.
 
-== Preparation overview for end-of-availability systems
+== What to prepare
 
 Preparing to hot-add NS224 shelves to your end-of-availability system involves verifying and configuring the storage connectivity infrastructure before physically installing new shelves. These tasks ensure your HA pair has the necessary RoCE-capable Ethernet ports and that your system is configured to support additional storage capacity.
 
