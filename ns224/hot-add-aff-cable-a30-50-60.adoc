@@ -15,6 +15,10 @@ You can hot-add up to two NS224 shelves to an AFF A30, AFF C30, AFF A50, or AFF 
 
 include::../_include/cable-30-50-60-hot-add-shelf.adoc[]
 
+
+
 .What's next
 
-After cabling your shelf, link:hot-add-aff-complete.html[complete the hot-add procedure].
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:hot-add-aff-complete.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.

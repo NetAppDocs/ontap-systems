@@ -13,6 +13,10 @@ Cable your NS224 shelf to your AFF A70, AFF A90, or AFF C80 system so that each 
 
 include::../_include/cable-70-90-hot-add-shelf.adoc[]
 
+
+
 .What's next
 
-After cabling your shelf, link:hot-add-aff-complete.html[complete the hot-add procedure].
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:hot-add-aff-complete.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.

@@ -14,3 +14,10 @@ Cable your NS224 shelf to your FAS500f system so that each shelf has two connect
 When additional storage is needed, you can hot-add one NS224 shelf to a FAS500f HA pair.
 
 include::../_include/cable-fas500f-hot-add-shelf.adoc[]
+
+
+.What's next
+
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:hot-add-eoa-complete.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.
