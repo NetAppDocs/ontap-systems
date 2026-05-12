@@ -2,27 +2,26 @@
 permalink: ns224/hot-add-eoa-cable-overview.html
 sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, eoa systems, end-of-availability, cable
-summary: Cable your NS224 shelf to your end-of-availability system so that each shelf has two connections to each controller in the HA pair.
+summary: Cable your NS224 shelf to your end-of-availability system to provide dual-path connectivity that ensures storage redundancy and high availability for the HA pair.
 ---
 = Cable shelf for hot-add - End-of-availability systems
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
+Cable your NS224 shelf to your end-of-availability system to provide dual-path connectivity that ensures storage redundancy and high availability for the HA pair.
 
-.About this task
+== Cabling overview for end-of-availability systems
 
-Your hardware system may be compatible with both NS224 shelves with NSM100 modules and NS224 shelves with NSM100B modules. To check the compatibility and port names for your hardware and shelves, consult the https://hwu.netapp.com[NetApp Hardware Universe^].
+Cabling differs by platform model because each system has unique port assignments and I/O module configurations.
 
-.End-of-availability platform cabling procedures
+During the hot-add cabling procedure, you connect each NS224 shelf to both controllers in the HA pair:
 
-Select your end-of-availability platform to view platform-specific cabling instructions:
+* Each shelf NSM module connects to a dedicated storage port on each controller, creating two paths per shelf (one through NSM A, one through NSM B).
+* This dual-path configuration provides storage redundancy and ensures continued data access if a single path fails.
+* Cables connect from the shelf NSM e0a/e0b ports (NSM100) or e1a/e1b ports (NSM100B) to RoCE-capable storage ports on the controllers.
 
-* link:hot-add-eoa-cable-a320.html[Cable shelf - AFF A320]
-* link:hot-add-eoa-cable-a700.html[Cable shelf - AFF A700]
-* link:hot-add-eoa-cable-fas500f.html[Cable shelf - FAS500f]
+== Additional resources
 
-.What's next
+Your hardware system may be compatible with both NS224 shelves with NSM100 modules and NS224 shelves with NSM100B modules. For comprehensive port names and configuration details, see https://hwu.netapp.com[NetApp Hardware Universe^].
 
-After cabling your shelf, link:hot-add-eoa-complete.html[complete the hot-add procedure].
