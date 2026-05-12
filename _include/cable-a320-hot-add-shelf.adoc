@@ -1,0 +1,29 @@
+.Before you begin
+
+* You must have reviewed the link:hot-add-eoa-requirements.html[hot-add requirements and best practices]. 
+
+* You must have completed the applicable procedures in link:hot-add-eoa-prepare.html[Prepare to hot-add a shelf]. 
+
+* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:hot-add-eoa-install.html[Install a shelf for a hot-add].
+
+.Steps
+
+. Cable the shelf to the controllers.
+ .. Cable NSM A port e0a to controller A port e0e.
+ .. Cable NSM A port e0b to controller B port e0b.
+ .. Cable NSM B port e0a to controller B port e0e.
+ .. Cable NSM B port e0b to controller A port e0b.
+ +
+The following illustration shows cabling for the hot-added shelf (shelf 2):
++
+image::../media/drw_ns224_a320_2shelves_direct_attached.png[Cabling for an AFF A320 with two NS224 shelves and three sets of onboard ports]
+
+. Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.
+
+.What's next
+
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:hot-add-eoa-complete.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.

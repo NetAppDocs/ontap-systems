@@ -1,0 +1,34 @@
+---
+permalink: ns224/hot-add-aff-cable-overview.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff systems, cable
+summary: Cable your NS224 shelf to your AFF system so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable shelf for hot-add - AFF systems overview
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
+
+.About this task
+
+Your hardware system may be compatible with both NS224 shelves with NSM100 modules and NS224 shelves with NSM100B modules. To check the compatibility and port names for your hardware and shelves, consult the https://hwu.netapp.com[NetApp Hardware Universe^].
+
+.AFF platform cabling procedures
+
+Select your AFF platform to view platform-specific cabling instructions:
+
+* link:hot-add-aff-cable-a1k.html[Cable shelf - AFF A1K]
+* link:hot-add-aff-cable-a20.html[Cable shelf - AFF A20]
+* link:hot-add-aff-cable-a30-50-60.html[Cable shelf - AFF A30, AFF A50, AFF C30, and AFF C60]
+* link:hot-add-aff-cable-a70-90-c80.html[Cable shelf - AFF A70, AFF A90, and AFF C80]
+* link:hot-add-aff-cable-a250-c250.html[Cable shelf - AFF A250 and AFF C250]
+* link:hot-add-aff-cable-a400-c400.html[Cable shelf - AFF A400 and AFF C400]
+* link:hot-add-aff-cable-a700.html[Cable shelf - AFF A700]
+* link:hot-add-aff-cable-a800-c800.html[Cable shelf - AFF A800 and AFF C800]
+* link:hot-add-aff-cable-a900.html[Cable shelf - AFF A900]
+
+.What's next
+
+After cabling your shelf, link:hot-add-aff-complete.html[complete the hot-add procedure].

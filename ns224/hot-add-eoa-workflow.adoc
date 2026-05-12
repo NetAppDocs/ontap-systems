@@ -1,0 +1,36 @@
+---
+permalink: ns224/hot-add-eoa-workflow.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, eoa systems, end-of-availability, workflow
+summary: Follow these workflow steps to hot-add an NS224 shelf to your end-of-availability system.
+---
+= Hot-add workflow for end-of-availability systems - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Follow these workflow steps to hot-add an NS224 shelf to your end-of-availability system.
+
+.Before you begin
+* This procedure applies to direct-attached storage only. To view instructions for switch-attached storage, view link:cable-as-switch-attached.html[switch-attached cabling guide].
+* To hot-add an NS224 shelf, your HA pair must meet certain requirements. Review the link:hot-add-eoa-requirements.html[hot-add requirements and best practices].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:hot-add-eoa-requirements.html[Review hot-add requirements]
+[role="quick-margin-para"]
+Verify that your end-of-availability system meets the requirements for hot-adding an NS224 shelf, including ONTAP version support, number of shelves, and cabling requirements.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:hot-add-eoa-prepare.html[Prepare to hot-add your shelf]
+[role="quick-margin-para"]
+Depending on your platform model, you might need to install additional RoCE-capable PCIe cards or I/O modules, configure the non-dedicated RoCE-capable Ethernet ports for storage use, and disable automatic drive assignment if you are manually assigning drive ownership.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:hot-add-eoa-install.html[Install your shelf]
+[role="quick-margin-para"]
+Install the rail kit for the shelf, install and secure your shelf in the telco rack or cabinet, connect the power cords to power on the shelf, and assign a unique shelf ID to ensure the shelf is distinct within the HA pair.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:hot-add-eoa-cable-overview.html[Cable your shelf]
+[role="quick-margin-para"]
+Cable the shelf you are hot-adding so that it has two connections to each controller in the HA pair.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:hot-add-eoa-complete.html[Complete your hot-add]
+[role="quick-margin-para"]
+If you disabled automatic drive assignment as part of the preparation for the hot-add, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.

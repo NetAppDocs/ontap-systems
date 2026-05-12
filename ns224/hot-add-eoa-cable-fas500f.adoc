@@ -1,0 +1,16 @@
+---
+permalink: ns224/hot-add-eoa-cable-fas500f.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, fas500f, cable, end-of-availability
+summary: Cable your NS224 shelf to your FAS500f system so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable shelf to FAS500f - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable your NS224 shelf to your FAS500f system so that each shelf has two connections to each controller in the HA pair.
+
+When additional storage is needed, you can hot-add one NS224 shelf to a FAS500f HA pair.
+
+include::../_include/cable-fas500f-hot-add-shelf.adoc[]

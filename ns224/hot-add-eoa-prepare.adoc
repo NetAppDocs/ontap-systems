@@ -1,0 +1,18 @@
+---
+permalink: ns224/hot-add-eoa-prepare.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, eoa systems, end-of-availability, preparation
+summary: Prepare to hot-add an NS224 shelf to your end-of-availability system by installing RoCE-capable PCIe cards or I/O modules, configuring ports, and disabling automatic drive assignment if needed.
+---
+= Prepare to hot-add a shelf - End-of-availability systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Complete the preparation tasks applicable to your end-of-availability system before hot-adding an NS224 shelf.
+
+include::../_include/ns224_hot_add_eoa_prepare.adoc[]
+
+.What's next
+
+After completing the applicable preparation tasks, link:hot-add-eoa-install.html[install your shelf].

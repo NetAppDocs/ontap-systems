@@ -1,0 +1,18 @@
+---
+permalink: ns224/hot-add-aff-cable-a800-c800.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff a800, aff c800, cable
+summary: Cable your NS224 shelf to your AFF A800 or AFF C800 system so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable shelf to AFF A800 or AFF C800 - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable your NS224 shelf to your AFF A800 or AFF C800 system so that each shelf has two connections to each controller in the HA pair.
+
+include::../_include/cable-a800-c800-hot-add-shelf.adoc[]
+
+.What's next
+
+After cabling your shelf, link:hot-add-aff-complete.html[complete the hot-add procedure].

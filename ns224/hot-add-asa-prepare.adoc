@@ -1,0 +1,18 @@
+---
+permalink: ns224/hot-add-asa-prepare.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, preparation
+summary: Prepare to hot-add an NS224 shelf to your ASA system by installing RoCE-capable PCIe cards or I/O modules, configuring ports, recabling existing shelves, and disabling automatic drive assignment if needed.
+---
+= Prepare to hot-add a shelf - ASA systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Complete the preparation tasks applicable to your ASA system before hot-adding an NS224 shelf.
+
+include::../_include/ns224_hot_add_asa_prepare.adoc[]
+
+.What's next
+
+After completing the applicable preparation tasks, link:hot-add-asa-install.html[install your shelf].

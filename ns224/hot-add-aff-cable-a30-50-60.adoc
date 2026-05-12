@@ -1,0 +1,20 @@
+---
+permalink: ns224/hot-add-aff-cable-a30-50-60.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff a30, aff a50, aff c30, aff c60, cable
+summary: Cable your NS224 shelf to your AFF A30, AFF A50, AFF C30, or AFF C60 system so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable shelf to AFF A30, AFF A50, AFF C30, or AFF C60 - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable your NS224 shelf to your AFF A30, AFF A50, AFF C30, or AFF C60 system so that each shelf has two connections to each controller in the HA pair.
+
+You can hot-add up to two NS224 shelves to an AFF A30, AFF C30, AFF A50, or AFF C60 HA pair when additional storage (to the internal shelf) is needed.
+
+include::../_include/cable-30-50-60-hot-add-shelf.adoc[]
+
+.What's next
+
+After cabling your shelf, link:hot-add-aff-complete.html[complete the hot-add procedure].

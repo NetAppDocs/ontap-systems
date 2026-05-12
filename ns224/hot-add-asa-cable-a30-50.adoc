@@ -1,0 +1,20 @@
+---
+permalink: ns224/hot-add-asa-cable-a30-50.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa a30, asa a50, cable
+summary: Cable your NS224 shelf to your ASA A30 or ASA A50 system so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable shelf to ASA A30 or ASA A50 - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable your NS224 shelf to your ASA A30 or ASA A50 system so that each shelf has two connections to each controller in the HA pair.
+
+You can hot-add up to two NS224 shelves to an ASA A30 or ASA A50 HA pair when additional storage (to the internal shelf) is needed.
+
+include::../_include/cable-30-50-60-hot-add-shelf.adoc[]
+
+.What's next
+
+After cabling your shelf, link:hot-add-asa-complete.html[complete the hot-add procedure].

@@ -1,0 +1,18 @@
+---
+permalink: ns224/hot-add-asa-install.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, install
+summary: Install the NS224 shelf in a cabinet or telco rack, connect the power cords, and set the shelf ID for your ASA system.
+---
+= Install a shelf for a hot-add - ASA systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Install the NS224 shelf in a cabinet or telco rack, connect the power cords, and set the shelf ID for your ASA system.
+
+include::../_include/ns224_hot_add_shelf_install.adoc[]
+
+.What's next?
+
+After installing your shelf, link:hot-add-asa-cable-overview.html[cable your shelf].

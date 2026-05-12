@@ -1,0 +1,18 @@
+---
+permalink: ns224/hot-add-asa-cable-a800-c800.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa a800, asa c800, cable
+summary: Cable your NS224 shelf to your ASA A800 or ASA C800 system so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable shelf to ASA A800 or ASA C800 - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable your NS224 shelf to your ASA A800 or ASA C800 system so that each shelf has two connections to each controller in the HA pair.
+
+include::../_include/cable-a800-c800-hot-add-shelf.adoc[]
+
+.What's next
+
+After cabling your shelf, link:hot-add-asa-complete.html[complete the hot-add procedure].

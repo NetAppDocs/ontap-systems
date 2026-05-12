@@ -1,0 +1,18 @@
+---
+permalink: ns224/hot-add-asa-requirements.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, requirement
+summary: Before hot-adding an NS224 shelf to your ASA system, review the requirements and best practices.
+---
+= Requirements and best practices to hot-add NS224 shelves - ASA systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before hot-adding an NS224 shelf to your ASA system, review the requirements and best practices.
+
+include::../_include/ns224_hot_add_shelf_requirements.adoc[]
+
+.What's next
+
+After reviewing the requirements, link:hot-add-asa-prepare.html[prepare to hot-add your shelf].

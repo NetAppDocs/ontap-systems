@@ -1,0 +1,32 @@
+---
+permalink: ns224/hot-add-asa-cable-overview.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, cable
+summary: Cable your NS224 shelf to your ASA system so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable shelf for hot-add - ASA systems overview
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable each NS224 shelf you are hot-adding so that each shelf has two connections to each controller in the HA pair.
+
+.About this task
+
+Your hardware system may be compatible with both NS224 shelves with NSM100 modules and NS224 shelves with NSM100B modules. To check the compatibility and port names for your hardware and shelves, consult the https://hwu.netapp.com[NetApp Hardware Universe^].
+
+.ASA platform cabling procedures
+
+Select your ASA platform to view platform-specific cabling instructions:
+
+* link:hot-add-asa-cable-a1k.html[Cable shelf - ASA A1K]
+* link:hot-add-asa-cable-a30-50.html[Cable shelf - ASA A30 or ASA A50]
+* link:hot-add-asa-cable-a70-90.html[Cable shelf - ASA A70 or ASA A90]
+* link:hot-add-asa-cable-a250.html[Cable shelf - ASA A250]
+* link:hot-add-asa-cable-a400-c400.html[Cable shelf - ASA A400 or ASA C400]
+* link:hot-add-asa-cable-a800-c800.html[Cable shelf - ASA A800 or ASA C800]
+* link:hot-add-asa-cable-a900.html[Cable shelf - ASA A900]
+
+.What's next
+
+After cabling your shelf, link:hot-add-asa-complete.html[complete the hot-add procedure].
