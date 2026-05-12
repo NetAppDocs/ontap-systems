@@ -11,7 +11,7 @@ summary: Cable your NS224 shelf to your ASA A250 system so that each shelf has t
 [.lead]
 Cable your NS224 shelf to your ASA A250 system so that each shelf has two connections to each controller in the HA pair.
 
-include::../_include/cable-a250-c250-hot-add-shelf.adoc[]
+include::../_include/cable-a250-c250-hot-add-shelf-asa.adoc[]
 
 
 

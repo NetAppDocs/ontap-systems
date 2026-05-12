@@ -11,7 +11,7 @@ summary: Cable your NS224 shelf to your ASA A400 or ASA C400 system so that each
 [.lead]
 Cable your NS224 shelf to your ASA A400 or ASA C400 system so that each shelf has two connections to each controller in the HA pair.
 
-include::../_include/cable-a400-c400-hot-add-shelf.adoc[]
+include::../_include/cable-a400-c400-hot-add-shelf-asa.adoc[]
 
 
 
