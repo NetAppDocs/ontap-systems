@@ -1,0 +1,6 @@
+If you are hot-adding a second shelf, recable the first shelf across the two sets of RoCE-capable ports in slot 5 and slot 3 on each controller.
+
+The substeps assume the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
+
+.. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
+.. Repeat the same cable move on controller B.
