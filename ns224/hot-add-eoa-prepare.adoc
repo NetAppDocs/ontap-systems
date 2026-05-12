@@ -9,10 +9,22 @@ summary: Prepare to hot-add an NS224 shelf to your end-of-availability system by
 :imagesdir: ../media/
 
 [.lead]
-Complete the preparation tasks applicable to your end-of-availability system before hot-adding an NS224 shelf.
+Prepare to hot-add NS224 shelves to your end-of-availability system by ensuring sufficient RoCE-capable storage ports, configuring them for storage use, and optimizing your existing configuration for the new shelf.
 
-include::../_include/ns224_hot_add_eoa_prepare.adoc[]
+== Preparation overview for end-of-availability systems
 
-.What's next
+Preparing to hot-add NS224 shelves to your end-of-availability system involves verifying and configuring the storage connectivity infrastructure before physically installing new shelves. These tasks ensure your HA pair has the necessary RoCE-capable Ethernet ports and that your system is configured to support additional storage capacity.
 
-After completing the applicable preparation tasks, link:hot-add-eoa-install.html[install your shelf].
+The specific preparation tasks you need to complete depend on your platform model, current configuration, and the number of shelves you are adding:
+
+* *Install RoCE-capable PCIe cards or I/O modules* – Verify your system has enough available RoCE-capable Ethernet ports (two per shelf on each controller). If additional ports are needed, install RoCE-capable PCIe cards or I/O modules in the correct controller slots.
+
+* *Configure RoCE-capable ports for storage use* – If you are using non-dedicated RoCE-capable ports to connect the NS224 shelf, configure those ports for storage use instead of networking use. This is a nondisruptive procedure.
+
+* *Recable existing shelves* – For some platform models, you might need to recable an existing shelf across two sets of ports in different slots to provide resiliency against slot failure after installing additional RoCE-capable PCIe cards or I/O modules.
+
+* *Disable automatic drive assignment* – If your HA pair is running ONTAP 9.10.1 or later, NetApp recommends disabling automatic drive assignment before hot-adding shelves, allowing you to manually assign drive ownership based on your storage requirements.
+
+.What's next?
+
+Begin preparation by link:hot-add-eoa-prepare-install-roce.html[verifying or installing RoCE-capable PCIe cards or I/O modules].

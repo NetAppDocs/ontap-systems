@@ -1,25 +1,10 @@
----
-permalink: ns224/prepare-hot-add-shelf-configure-roce-ports.html
-sidebar: sidebar
-keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, preparation, roce, storage ports
-summary: Configure non-dedicated RoCE-capable Ethernet ports for storage use before hot-adding an NS224 shelf.
----
-= Configure RoCE-capable ports for storage use for a hot-add - NS224 shelves
-:icons: font
-:imagesdir: ../media/
-
-[.lead]
-Configure non-dedicated RoCE-capable Ethernet ports for storage use before hot-adding an NS224 shelf.
-
-If your HA pair has non-dedicated RoCE-capable Ethernet ports that you are using to hot-add an NS224 shelf, you must configure the ports for storage use and not networking use.
-
 .Before you begin
 
 * Make sure you installed any additional RoCE-capable PCIe cards or I/O modules in each controller.
 
 .About this task
 
-* For some platform models, when a RoCE-capable PCIe card or I/O module is installed in a supported slot on a controller, the ports automatically default to storage use instead of networking. However, it is recommended that you complete the following procedure to verify the RoCE-capable ports are configured for storage use.
+* For some systems, when a RoCE-capable PCIe card or I/O module is installed in a supported slot on a controller, the ports automatically default to storage use instead of networking. However, it is recommended that you complete the following procedure to verify the RoCE-capable ports are configured for storage use.
 
 * If you determine that the non-dedicated RoCE-capable ports in your HA pair are not configured for storage use, it is a nondisruptive procedure to configure them. You do not need to reboot the controllers, unless one or both controllers are in maintenance mode. This procedure assumes that neither controller is in maintenance mode.
 
@@ -73,7 +58,3 @@ a|
 * If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `storage` in the `Mode` column.
 +
 * If your HA pair is running ONTAP 9.7, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
-
-.What's next
-
-If you need to recable existing shelves for your platform model, link:prepare-hot-add-shelf-recable-shelves.html[recable existing shelves]. Otherwise, link:prepare-hot-add-shelf-disable-auto-drive-assign.html[disable automatic drive assignment if needed].

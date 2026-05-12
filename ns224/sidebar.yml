@@ -8,7 +8,17 @@ entries:
       - title: Requirements and best practices
         url: /ns224/hot-add-aff-requirements.html
       - title: Prepare for hot-add
-        url: /ns224/hot-add-aff-prepare.html
+        entries:
+          - title: Overview
+            url: /ns224/hot-add-aff-prepare.html
+          - title: Install RoCE-capable PCIe cards or I/O modules
+            url: /ns224/hot-add-aff-prepare-install-roce.html
+          - title: Configure RoCE-capable ports for storage use
+            url: /ns224/hot-add-aff-prepare-configure-roce-ports.html
+          - title: Recable existing shelves
+            url: /ns224/hot-add-aff-prepare-recable-shelves.html
+          - title: Disable automatic drive assignment
+            url: /ns224/hot-add-aff-prepare-disable-auto-drive-assign.html
       - title: Install shelf
         url: /ns224/hot-add-aff-install.html
       - title: Cable AFF systems
@@ -42,7 +52,17 @@ entries:
       - title: Requirements and best practices
         url: /ns224/hot-add-asa-requirements.html
       - title: Prepare for hot-add
-        url: /ns224/hot-add-asa-prepare.html
+        entries:
+          - title: Overview
+            url: /ns224/hot-add-asa-prepare.html
+          - title: Install RoCE-capable PCIe cards or I/O modules
+            url: /ns224/hot-add-asa-prepare-install-roce.html
+          - title: Configure RoCE-capable ports for storage use
+            url: /ns224/hot-add-asa-prepare-configure-roce-ports.html
+          - title: Recable existing shelves
+            url: /ns224/hot-add-asa-prepare-recable-shelves.html
+          - title: Disable automatic drive assignment
+            url: /ns224/hot-add-asa-prepare-disable-auto-drive-assign.html
       - title: Install shelf
         url: /ns224/hot-add-asa-install.html
       - title: Cable ASA systems
@@ -65,14 +85,24 @@ entries:
             url: /ns224/hot-add-asa-cable-a900.html
       - title: Complete hot-add
         url: /ns224/hot-add-asa-complete.html
-  - title: Hot-add shelf for end-of-availability systems
+  - title: Hot-add shelf for EOA systems
     entries:
       - title: Hot-add workflow
         url: /ns224/hot-add-eoa-workflow.html
       - title: Requirements and best practices
         url: /ns224/hot-add-eoa-requirements.html
       - title: Prepare for hot-add
-        url: /ns224/hot-add-eoa-prepare.html
+        entries:
+          - title: Overview
+            url: /ns224/hot-add-eoa-prepare.html
+          - title: Install RoCE-capable PCIe cards or I/O modules
+            url: /ns224/hot-add-eoa-prepare-install-roce.html
+          - title: Configure RoCE-capable ports for storage use
+            url: /ns224/hot-add-eoa-prepare-configure-roce-ports.html
+          - title: Recable existing shelves
+            url: /ns224/hot-add-eoa-prepare-recable-shelves.html
+          - title: Disable automatic drive assignment
+            url: /ns224/hot-add-eoa-prepare-disable-auto-drive-assign.html
       - title: Install shelf
         url: /ns224/hot-add-eoa-install.html
       - title: Cable end-of-availability systems
@@ -91,18 +121,6 @@ entries:
     url: /ns224/change-shelf-id.html
   - title: Cable shelves as switch-attached storage
     url: /ns224/cable-as-switch-attached.html
-  - title: Prepare for a hot-add
-    entries:
-      - title: Overview
-        url: /ns224/prepare-hot-add-shelf.html
-      - title: Install RoCE-capable PCIe cards or I/O modules
-        url: /ns224/prepare-hot-add-shelf-install-roce.html
-      - title: Configure RoCE-capable ports for storage use
-        url: /ns224/prepare-hot-add-shelf-configure-roce-ports.html
-      - title: Recable existing shelves
-        url: /ns224/prepare-hot-add-shelf-recable-shelves.html
-      - title: Disable automatic drive assignment
-        url: /ns224/prepare-hot-add-shelf-disable-auto-drive-assign.html
   - title: Maintain
     pdf-filename: NS224 shelf maintain
     entries:

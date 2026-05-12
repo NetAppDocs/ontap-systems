@@ -1,0 +1,18 @@
+---
+permalink: ns224/hot-add-aff-prepare-recable-shelves.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff systems, preparation, recable
+summary: Depending on your AFF system, you might need to recable an existing shelf across two sets of ports in different slots for resiliency against slot failure.
+---
+= Recable existing shelves for a hot-add - AFF systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Depending on your system, you might need to recable an existing shelf (after installing additional RoCE-capable PCIe cards or I/O modules) across two sets of ports in different slots for resiliency against slot failure.
+
+include::../_include/prepare-recable-shelves-hot-add-shelf.adoc[]
+
+.What's next
+
+If you plan to manually assign drive ownership, go to link:hot-add-aff-prepare-disable-auto-drive-assign.html[disable automatic drive assignment]. Otherwise, go to link:hot-add-aff-install.html[install the shelf].

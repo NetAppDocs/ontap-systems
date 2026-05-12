@@ -1,0 +1,18 @@
+---
+permalink: ns224/hot-add-aff-prepare-disable-auto-drive-assign.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff systems, preparation, drive assignment
+summary: If you plan to manually assign drive ownership, disable automatic drive assignment if it is currently enabled.
+---
+= Disable automatic drive assignment for a hot-add - AFF systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you plan to manually assign drive ownership, disable automatic drive assignment if it is currently enabled.
+
+include::../_include/prepare-disable-auto-drive-assign-hot-add-shelf.adoc[]
+
+.What's next
+
+After completing the preparation tasks, go to link:hot-add-aff-install.html[install the shelf].
