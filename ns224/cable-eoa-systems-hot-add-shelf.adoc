@@ -23,9 +23,9 @@ You can hot-add a second shelf to an existing HA pair when additional storage is
 
 * You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
 
-* You must have completed the applicable procedures in link:prepare-hot-add-shelf.html[Prepare-to hot-add a shelf]. 
+* You must have completed the applicable procedures in link:hot-add-eoa-prepare.html[Prepare to hot-add a shelf]. 
 
-* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
+* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:hot-add-eoa-install.html[Install a shelf for a hot-add].
 
 .Steps
 
@@ -62,9 +62,9 @@ How you cable an NS224 shelf to an AFF A700 HA pair depends on the number of she
 
 * You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
 
-* You must have completed the applicable procedures in link:prepare-hot-add-shelf.html[Prepare-to hot-add a shelf]. 
+* You must have completed the applicable procedures in link:hot-add-eoa-prepare.html[Prepare to hot-add a shelf]. 
 
-* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
+* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:hot-add-eoa-install.html[Install a shelf for a hot-add].
 
 * If you are hot-adding the initial NS224 shelf (no NS224 shelf exists in your HA pair), you must install a core dump module (X9170A, NVMe 1TB SSD) in each controller to support core dumps (store core files). 
 +
@@ -144,9 +144,9 @@ When additional storage is needed, you can hot-add one NS224 shelf to a FAS500f 
 
 * You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
 
-* You must have completed the applicable procedures in link:prepare-hot-add-shelf.html[Prepare-to hot-add a shelf]. 
+* You must have completed the applicable procedures in link:hot-add-eoa-prepare.html[Prepare to hot-add a shelf]. 
 
-* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
+* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:hot-add-eoa-install.html[Install a shelf for a hot-add].
 
 .About this task
 
