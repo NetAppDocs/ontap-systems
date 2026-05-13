@@ -17,13 +17,12 @@ NOTE: Moving a cable does not require any wait time between unplugging the cable
 * Recabling existing shelves applies only to AFF A700 systems in the end-of-availability workflow.
 
 .Steps
+This procedure assumes the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
 
-. If your system is an AFF A700 and you are hot-adding a second shelf, recable the first shelf across the two sets of RoCE-capable ports in slot 3 and slot 7 on each controller.
-+
-The substeps assume the existing shelf is cabled to RoCE-capable I/O modules in slot 3 on each controller.
-+
-.. On controller A, move the cable from slot 3 port b (e3b) to slot 7 port b (e7b).
-.. Repeat the same cable move on controller B.
+If your system is an AFF A700 and you are hot-adding a second shelf, recable the first shelf across the two sets of RoCE-capable ports in slot 3 and slot 7 on each controller.
+
+. On controller A, move the cable from slot 3 port b (e3b) to slot 7 port b (e7b).
+. Repeat the same cable move on controller B.
 
 . Verify that the recabled shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 +
