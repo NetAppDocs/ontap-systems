@@ -11,7 +11,7 @@ summary: Depending on your end-of-availability system, you might need to recable
 [.lead]
 Depending on your system, you might need to recable an existing shelf (after installing additional RoCE-capable PCIe cards or I/O modules) across two sets of ports in different slots for resiliency against slot failure.
 
-include::../_include/prepare-recable-shelves-hot-add-shelf.adoc[]
+include::../_include/prepare-recable-shelves-hot-add-shelf-eoa.adoc[]
 
 .What's next
 
