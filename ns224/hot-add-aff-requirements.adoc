@@ -9,7 +9,7 @@ summary: Before hot-adding an NS224 shelf to your AFF system, review the require
 :imagesdir: ../media/
 
 [.lead]
-Before hot-adding an NS224 shelf to your AFF system, review the requirements and best practices.
+Verify that your AFF system meets ONTAP version, shelf capacity, and cabling requirements before hot-adding an NS224 shelf. Review firmware and configuration best practices to ensure the hot-add procedure completes successfully without errors.
 
 include::../_include/ns224_hot_add_shelf_requirements.adoc[]
 
