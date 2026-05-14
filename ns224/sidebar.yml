@@ -11,14 +11,18 @@ entries:
         entries:
           - title: What to prepare
             url: /ns224/hot-add-aff-prepare.html
-          - title: Install RoCE-capable PCIe cards or I/O modules
-            url: /ns224/hot-add-aff-prepare-install-roce.html
-          - title: Configure RoCE-capable ports for storage use
-            url: /ns224/hot-add-aff-prepare-configure-roce-ports.html
-          - title: Recable existing shelves
-            url: /ns224/hot-add-aff-prepare-recable-shelves.html
-          - title: Disable automatic drive assignment
-            url: /ns224/hot-add-aff-prepare-disable-auto-drive-assign.html
+          - title: AFF A1K
+            url: /ns224/hot-add-aff-prepare-a1k.html
+          - title: AFF A70, A90, and C80
+            url: /ns224/hot-add-aff-prepare-a70-90-c80.html
+          - title: AFF A800 and C800
+            url: /ns224/hot-add-aff-prepare-a800-c800.html
+          - title: AFF A400 and C400
+            url: /ns224/hot-add-aff-prepare-a400-c400.html
+          - title: AFF A900
+            url: /ns224/hot-add-aff-prepare-a900.html
+          - title: AFF A30, A50, C30, and C60
+            url: /ns224/hot-add-aff-prepare-a30-50-60.html
       - title: Install shelf
         url: /ns224/hot-add-aff-install.html
       - title: Cable AFF systems
@@ -37,8 +41,6 @@ entries:
             url: /ns224/hot-add-aff-cable-a250-c250.html
           - title: AFF A400 and C400
             url: /ns224/hot-add-aff-cable-a400-c400.html
-          - title: AFF A700
-            url: /ns224/hot-add-aff-cable-a700.html
           - title: AFF A800 and C800
             url: /ns224/hot-add-aff-cable-a800-c800.html
           - title: AFF A900
@@ -55,14 +57,18 @@ entries:
         entries:
           - title: What to prepare
             url: /ns224/hot-add-asa-prepare.html
-          - title: Install RoCE-capable PCIe cards or I/O modules
-            url: /ns224/hot-add-asa-prepare-install-roce.html
-          - title: Configure RoCE-capable ports for storage use
-            url: /ns224/hot-add-asa-prepare-configure-roce-ports.html
-          - title: Recable existing shelves
-            url: /ns224/hot-add-asa-prepare-recable-shelves.html
-          - title: Disable automatic drive assignment
-            url: /ns224/hot-add-asa-prepare-disable-auto-drive-assign.html
+          - title: ASA A1K
+            url: /ns224/hot-add-asa-prepare-a1k.html
+          - title: ASA A70 or A90
+            url: /ns224/hot-add-asa-prepare-a70-90.html
+          - title: ASA A800 or C800
+            url: /ns224/hot-add-asa-prepare-a800-c800.html
+          - title: ASA A400 or C400
+            url: /ns224/hot-add-asa-prepare-a400-c400.html
+          - title: ASA A900
+            url: /ns224/hot-add-asa-prepare-a900.html
+          - title: ASA A30 or A50
+            url: /ns224/hot-add-asa-prepare-a30-50.html
       - title: Install shelf
         url: /ns224/hot-add-asa-install.html
       - title: Cable ASA systems
@@ -97,14 +103,8 @@ entries:
         entries:
           - title: What to prepare
             url: /ns224/hot-add-eoa-prepare.html
-          - title: Install RoCE-capable PCIe cards or I/O modules
-            url: /ns224/hot-add-eoa-prepare-install-roce.html
-          - title: Configure RoCE-capable ports for storage use
-            url: /ns224/hot-add-eoa-prepare-configure-roce-ports.html
-          - title: Recable existing shelves
-            url: /ns224/hot-add-eoa-prepare-recable-shelves.html
-          - title: Disable automatic drive assignment
-            url: /ns224/hot-add-eoa-prepare-disable-auto-drive-assign.html
+          - title: EOA systems
+            url: /ns224/hot-add-eoa-prepare-systems.html
       - title: Install shelf
         url: /ns224/hot-add-eoa-install.html
       - title: Cable end-of-availability systems
