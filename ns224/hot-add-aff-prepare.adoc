@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff systems, preparation
 summary: Prepare to hot-add an NS224 shelf to your AFF system by installing RoCE-capable PCIe cards or I/O modules, configuring ports, recabling existing shelves, and disabling automatic drive assignment if needed.
 ---
-= Prepare your AFF system to hot-add an NS224 shelf
+= Overview of preparing to hot-add an NS224 shelf to your AFF system
 :icons: font
 :imagesdir: ../media/
 
@@ -17,13 +17,17 @@ Preparing to hot-add NS224 shelves to your AFF system involves verifying and con
 
 The specific preparation tasks you need to complete depend on your platform model, current configuration, and the number of shelves you are adding:
 
-* *Install RoCE-capable PCIe cards or I/O modules* – Verify your system has enough available RoCE-capable Ethernet ports (two per shelf on each controller). If additional ports are needed, install RoCE-capable PCIe cards or I/O modules in the correct controller slots.
+Install RoCE-capable PCIe cards or I/O modules::
+Verify your system has enough available RoCE-capable Ethernet ports (two per shelf on each controller). If additional ports are needed, install RoCE-capable PCIe cards or I/O modules in the correct controller slots.
 
-* *Configure RoCE-capable ports for storage use* – If you are using non-dedicated RoCE-capable ports to connect the NS224 shelf, configure those ports for storage use instead of networking use. This is a nondisruptive procedure.
+Configure RoCE-capable ports for storage use::
+If you are using non-dedicated RoCE-capable ports to connect the NS224 shelf, configure those ports for storage use instead of networking use. This is a nondisruptive procedure.
 
-* *Recable existing shelves* – For some platform models, you might need to recable an existing shelf across two sets of ports in different slots to provide resiliency against slot failure after installing additional RoCE-capable PCIe cards or I/O modules.
+Recable existing shelves::
+For some platform models, you might need to recable an existing shelf across two sets of ports in different slots to provide resiliency against slot failure after installing additional RoCE-capable PCIe cards or I/O modules.
 
-* *Disable automatic drive assignment* – If your HA pair is running ONTAP 9.10.1 or later, NetApp recommends disabling automatic drive assignment before hot-adding shelves, allowing you to manually assign drive ownership based on your storage requirements.
+Disable automatic drive assignment::
+If your HA pair is running ONTAP 9.10.1 or later, NetApp recommends disabling automatic drive assignment before hot-adding shelves, allowing you to manually assign drive ownership based on your storage requirements.
 
 .What's next?
 
