@@ -28,14 +28,3 @@ For some platform models, you might need to recable an existing shelf across two
 
 Disable automatic drive assignment::
 If your HA pair is running ONTAP 9.10.1 or later, NetApp recommends disabling automatic drive assignment before hot-adding shelves, allowing you to manually assign drive ownership based on your storage requirements.
-
-.What's next?
-
-Select your platform to begin preparation:
-
-* link:hot-add-asa-prepare-a1k.html[ASA A1K]
-* link:hot-add-asa-prepare-a70-90.html[ASA A70 or A90]
-* link:hot-add-asa-prepare-a800-c800.html[ASA A800 or C800]
-* link:hot-add-asa-prepare-a400-c400.html[ASA A400 or C400]
-* link:hot-add-asa-prepare-a900.html[ASA A900]
-* link:hot-add-asa-prepare-a30-50.html[ASA A30 or A50]
