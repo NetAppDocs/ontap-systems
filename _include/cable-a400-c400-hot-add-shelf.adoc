@@ -52,11 +52,6 @@ image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[Cabling for an /ASA A400 w
 +
 If any cabling errors are generated, follow the corrective actions provided.
 
-
-. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then re enable automatic drive assignment, if needed. See link:complete-hot-add-shelf.html[Complete the hot-add].
-+
-Otherwise, you are done with this procedure.
-
 == Cable shelf to a C400 HA pair
 
 For a C400 HA pair, you can hot-add up to two shelves and use ports in slot 4 and 5 as needed.
