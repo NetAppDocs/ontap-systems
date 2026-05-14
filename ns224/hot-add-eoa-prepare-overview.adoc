@@ -27,4 +27,4 @@ Recable existing shelves::
 For some platform models, you might need to recable an existing shelf across two sets of ports in different slots to provide resiliency against slot failure after installing additional RoCE-capable PCIe cards or I/O modules.
 
 Disable automatic drive assignment::
-If your HA pair is running ONTAP 9.10.1 or later, NetApp recommends disabling automatic drive assignment before hot-adding shelves, allowing you to manually assign drive ownership based on your storage requirements.
+If you plan to manually assign drive ownership, disable automatic drive assignment before hot-adding shelves.
