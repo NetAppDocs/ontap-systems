@@ -19,9 +19,31 @@ video::ae59d53d-7746-402c-bd6b-aad9012efa89[panopto, title="Animation - Replace 
 
 image::../media/drw_A400_Replace_fan.png[Removing a fan]
 
+
+[cols="10,90"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+Fan handle
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Locking tab
+a|
+image:../media/icon_round_3.png[Callout number 3]
+a|
+Fan 
+a|
+image:../media/icon_round_4.png[Callout number 4]
+a|
+Status LED
+|===
+
 .Steps
 . If you are not already grounded, properly ground yourself.
 . Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
+
 . Identify the fan module that you must replace by checking the console error messages and looking at the Attention LED on each fan module.
 +
 Use the BMC message or the fan LED to identify the fan module to replace. BMC maps fan modules as Fan#_# where the first number is the slot and the second is the row (1=top, 2=bottom); for example, slot 1, second row = Fan1_2.
