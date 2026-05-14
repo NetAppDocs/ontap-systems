@@ -13,9 +13,9 @@ Transfer the boot image to the replacement boot media on an AFF A700s system usi
 
 The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
-== Option 1: Transfer files using backup recovery from the second boot media
+== Option 1: Transfer the system image using backup recovery from the second boot media
 
-You can install the system image to the replacement boot media using the image on second boot media installed in the controller module. This is the primary method for transferring the boot media files to the replacement boot media in systems with two boot media in the controller module.
+You can install the system image to the replacement boot media using the image on the second boot media in the controller module. This is the primary method for systems with two boot media in the controller module.
 
 The image on the secondary boot media must contain an `image.tgz` file and must not be reporting failures. If image.tgz file is missing or the boot media reports failures, you cannot use this procedure. You must transfer the boot image to the replacement boot media using the USB flash drive replacement procedure.
 
