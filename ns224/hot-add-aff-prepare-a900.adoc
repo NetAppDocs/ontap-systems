@@ -1,0 +1,32 @@
+---
+permalink: ns224/hot-add-aff-prepare-a900.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff systems, preparation, roce, aff a900
+summary: Prepare your AFF A900 system to hot-add an NS224 shelf by installing RoCE-capable I/O modules, configuring ports, recabling existing shelves, and disabling automatic drive assignment.
+---
+= Prepare your AFF A900 system to hot-add an NS224 shelf
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare your AFF A900 system to hot-add an NS224 shelf by ensuring sufficient RoCE-capable storage ports, configuring them for storage use, recabling existing shelves for optimal connectivity, and disabling automatic drive assignment.
+
+== Install RoCE-capable I/O modules
+
+include::../_include/prepare-install-roce-hot-add-shelf.adoc[]
+
+== Configure RoCE-capable ports for storage use
+
+include::../_include/prepare-configure-roce-ports-hot-add-shelf.adoc[]
+
+== Recable existing shelves
+
+include::../_include/hot-add-recable-a900.adoc[]
+
+== Disable automatic drive assignment
+
+include::../_include/prepare-disable-auto-drive-assign-hot-add-shelf.adoc[]
+
+.What's next
+
+Go to link:hot-add-aff-install.html[install the shelf].

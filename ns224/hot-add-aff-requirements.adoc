@@ -1,0 +1,18 @@
+---
+permalink: ns224/hot-add-aff-requirements.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff systems, requirement
+summary: Before hot-adding an NS224 shelf to your AFF system, review the requirements and best practices.
+---
+= Requirements and best practices to hot-add an NS224 shelf to your AFF system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Verify that your AFF system meets ONTAP version, shelf capacity, and cabling requirements before hot-adding an NS224 shelf. Review firmware and configuration best practices to ensure the hot-add procedure completes successfully without errors.
+
+include::../_include/ns224_hot_add_shelf_requirements.adoc[]
+
+.What's next
+
+After reviewing the requirements, link:hot-add-aff-prepare.html[prepare to hot-add your shelf].

@@ -1,0 +1,30 @@
+---
+permalink: ns224/hot-add-aff-prepare.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff systems, preparation
+summary: Prepare to hot-add an NS224 shelf to your AFF system by installing RoCE-capable PCIe cards or I/O modules, configuring ports, recabling existing shelves, and disabling automatic drive assignment if needed.
+---
+= Overview of preparing to hot-add an NS224 shelf to your AFF system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare to hot-add NS224 shelves to your AFF system by ensuring sufficient RoCE-capable storage ports, configuring them for storage use, and optimizing your existing configuration for the new shelf.
+
+== What to prepare
+
+Preparing to hot-add NS224 shelves to your AFF system involves verifying and configuring the storage connectivity infrastructure before physically installing new shelves. These tasks ensure your HA pair has the necessary RoCE-capable Ethernet ports and that your system is configured to support additional storage capacity.
+
+The specific preparation tasks you need to complete depend on your platform model, current configuration, and the number of shelves you are adding:
+
+Install RoCE-capable PCIe cards or I/O modules::
+Verify your system has enough available RoCE-capable Ethernet ports (two per shelf on each controller). If additional ports are needed, install RoCE-capable PCIe cards or I/O modules in the correct controller slots.
+
+Configure RoCE-capable ports for storage use::
+If you are using non-dedicated RoCE-capable ports to connect the NS224 shelf, configure those ports for storage use instead of networking use. This is a nondisruptive procedure.
+
+Recable existing shelves::
+For some platform models, you might need to recable an existing shelf across two sets of ports in different slots to provide resiliency against slot failure after installing additional RoCE-capable PCIe cards or I/O modules.
+
+Disable automatic drive assignment::
+If you plan to manually assign drive ownership, disable automatic drive assignment before hot-adding shelves.

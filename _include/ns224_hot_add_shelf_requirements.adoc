@@ -1,0 +1,27 @@
+== Requirements
+
+Your HA pair must meet the following requirements to hot-add an NS224 shelf.
+
+Supported ONTAP version::
+Your platform model and version of ONTAP must support the NS224 shelf and drives you are hot-adding. See https://hwu.netapp.com[NetApp Hardware Universe^].
+
+Number of shelves::
+Your HA pair must support at least one additional shelf beyond the number currently installed. After hot-adding shelves, you cannot exceed the maximum number of shelves supported by your HA pair. See https://hwu.netapp.com[NetApp Hardware Universe^].
+
+Cabling::
+You must have the correct number and type of cables to connect the shelf. If you are hot-adding a shelf to an HA pair that already has an NS224 shelf, your HA pair must be cabled as multipath HA with no storage cabling errors.
++
+Run https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^] to view any storage cabling error messages and corrective actions. See https://hwu.netapp.com[NetApp Hardware Universe^] for cable requirements. 
+
+== Best practices
+
+Familiarize yourself with the following best practices before hot-adding an NS224 shelf.
+
+Disk Qualification Package::
+Install the current version of the https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[Disk Qualification Package^] before hot-adding a shelf. Having the current DQP installed allows your system to recognize and use newly qualified drives, prevents system event messages about noncurrent drive information, and avoids drive partitioning failures caused by unrecognized drives. The DQP also notifies you of noncurrent drive firmware.
+
+Active IQ Config Advisor::
+Run https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^] before and after hot-adding a shelf. Running it before hot-adding provides a snapshot of existing shelf Ethernet connectivity, verifies NSM firmware versions, and identifies any shelf IDs already in use. Running it after hot-adding verifies that shelves are cabled correctly and that shelf IDs are unique within the HA pair.
+
+NSM and drive firmware::
+Install current versions of https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NVMe shelf module (NSM) firmware^] and https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[drive firmware^] on your storage system before adding a new shelf. Do not revert firmware to a version that does not support your shelf and its components.

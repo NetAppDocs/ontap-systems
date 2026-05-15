@@ -1,0 +1,21 @@
+
+.About this task
+
+When viewed from the rear of the platform chassis, the RoCE-capable card port on the left is port "a" (e1a) and the port on the right is port "b" (e1b).
+
+.Steps
+
+. Cable the shelf connections:
+ .. Cable shelf NSM A port e0a to controller A slot 1 port a (e1a).
+ .. Cable shelf NSM A port e0b to controller B slot 1 port b (e1b).
+ .. Cable shelf NSM B port e0a to controller B slot 1 port a (e1a).
+ .. Cable shelf NSM B port e0b to controller A slot 1 port b (e1b).
+ +
+The following illustration shows the shelf cabling when completed.
++
+image::../media/drw_ns224_a250_c250_f500f_1shelf_ieops-1824.svg[Cabling for a FAS500f AFF A250 or AFF C250 with one NS224 shelf and one set of ports]
+
+. Verify that the hot-added shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.
+
