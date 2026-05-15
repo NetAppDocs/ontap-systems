@@ -1,0 +1,13 @@
+If you are unsure whether you should manually assign drive ownership, or want to understand the automatic assignment of drive ownership policies for your storage system, go to https://docs.netapp.com/us-en/ontap/disks-aggregates/disk-autoassignment-policy-concept.html[About automatic assignment of disk ownership^].
+
+.Steps
+
+. Verify whether automatic drive assignment is enabled: `storage disk option show`
++
+You can enter the command on either node.
++
+If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column for each node.
+
+. If automatic drive assignment is enabled, disable it: `storage disk option modify -node _node_name_ -autoassign off`
++
+You must disable automatic drive assignment on both nodes.
