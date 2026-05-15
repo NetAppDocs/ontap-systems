@@ -1,0 +1,32 @@
+---
+permalink: ns224/hot-add-asa-prepare-a70-90.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa systems, preparation, roce, asa a70, asa a90
+summary: Prepare your ASA A70 or A90 system to hot-add an NS224 shelf by installing RoCE-capable I/O modules, configuring ports, recabling existing shelves, and disabling automatic drive assignment.
+---
+= Prepare your ASA A70 or A90 system to hot-add an NS224 shelf
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Prepare your ASA A70 or A90 system to hot-add an NS224 shelf by ensuring sufficient RoCE-capable storage ports, configuring them for storage use, recabling existing shelves for slot resiliency, and disabling automatic drive assignment.
+
+== Install RoCE-capable I/O modules
+
+include::../_include/prepare-install-roce-hot-add-shelf.adoc[]
+
+== Configure RoCE-capable ports for storage use
+
+include::../_include/prepare-configure-roce-ports-hot-add-shelf.adoc[]
+
+== Recable existing shelves
+
+include::../_include/hot-add-recable-a70-90.adoc[]
+
+== Disable automatic drive assignment
+
+include::../_include/prepare-disable-auto-drive-assign-hot-add-shelf.adoc[]
+
+.What's next
+
+Go to link:hot-add-asa-install.html[install the shelf].

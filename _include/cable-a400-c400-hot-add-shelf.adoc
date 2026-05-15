@@ -1,14 +1,6 @@
-.Before you begin
+== Cable shelf to an A400 HA pair
 
-* You must have reviewed the link:requirements-hot-add-shelf.html[hot-add requirements and best practices]. 
-
-* You must have completed the applicable procedures in link:prepare-hot-add-shelf.html[Prepare-to hot-add a shelf]. 
-
-* You must have installed the shelves, powered them on, and set the shelf IDs as described in link:prepare-hot-add-shelf.html[Install a shelf for a hot-add].
-
-*Cable shelf to an AFF A400 HA pair*
-
-For an AFF A400 HA pair, you can hot-add up to two shelves and use onboard ports e0c/e0d and ports in slot 5 as needed. 
+For an A400 HA pair, you can hot-add up to two shelves and use onboard ports e0c/e0d and ports in slot 5 as needed. 
 
 .Steps
 
@@ -60,14 +52,9 @@ image::../media/drw_ns224_a400_2shelves_IEOPS-983.svg[Cabling for an /ASA A400 w
 +
 If any cabling errors are generated, follow the corrective actions provided.
 
+== Cable shelf to a C400 HA pair
 
-. If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then re enable automatic drive assignment, if needed. See link:complete-hot-add-shelf.html[Complete the hot-add].
-+
-Otherwise, you are done with this procedure.
-
-*Cable shelf to an AFF C400 HA pair*
-
-For an AFF C400 HA pair, you can hot-add up to two shelves and use ports in slot 4 and 5 as needed.
+For a C400 HA pair, you can hot-add up to two shelves and use ports in slot 4 and 5 as needed.
 
 .Steps
 
@@ -120,8 +107,3 @@ image::../media/drw_ns224_c400_2shelves_IEOPS-984.svg[Cabling for an AFF/ASA C40
 +
 If any cabling errors are generated, follow the corrective actions provided.
 
-.What's next?
-If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:complete-hot-add-shelf.html[Complete the hot-add].
-
-Otherwise, you are done with the hot-add shelf procedure.
-//2025-11-17 ontap-systems-internal/issues/1391

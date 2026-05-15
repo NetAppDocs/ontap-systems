@@ -1,0 +1,27 @@
+When you hot-add a second shelf to an A400 or C400 HA pair, you need to recable the first shelf across two sets of RoCE-capable ports on each controller. 
+
+* For the A400, the procedure assumes the existing shelf is cabled to RoCE-capable onboard ports e0c/e0d on each controller, and you recable across onboard e0c/e0d and slot 5. 
+
+* For the C400, the procedure assumes the existing shelf is cabled to RoCE-capable ports in slot 4 on each controller, and you recable across slot 4 and slot 5.
+
+.Steps
+
+. Depending on your system, do one of the following:
++
+* On the A400:
++
+Recable the first shelf across the two sets of RoCE-capable ports, onboard e0c/e0d and in slot 5, on each controller.
++
+.. On controller A, move the cable from port e0d to slot 5 Port b (e5b).
+.. Repeat the same cable move on controller B.
++
+* On the C400:
++
+Recable the first shelf across the two sets of RoCE-capable ports in slot 4 and slot 5, on each controller.
++
+.. On controller A, move the cable from slot 4 port a (e4a) to slot 5 port b (e5b).
+.. Repeat the same cable move on controller B.
+
+. Verify that the recabled shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.
