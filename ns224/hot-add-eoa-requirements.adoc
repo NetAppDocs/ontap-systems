@@ -1,0 +1,18 @@
+---
+permalink: ns224/hot-add-eoa-requirements.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, eoa systems, end-of-availability, requirement
+summary: Before hot-adding an NS224 shelf to your end-of-availability system, review the requirements and best practices.
+---
+= Requirements and best practices to hot-add an NS224 shelf to your end-of-availability system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Verify that your end-of-availability system meets ONTAP version, shelf capacity, and cabling requirements before hot-adding an NS224 shelf. Review firmware and configuration best practices to ensure the hot-add procedure completes successfully without errors.
+
+include::../_include/ns224_hot_add_shelf_requirements.adoc[]
+
+.What's next
+
+After reviewing the requirements, link:hot-add-eoa-prepare-overview.html[prepare to hot-add your shelf].

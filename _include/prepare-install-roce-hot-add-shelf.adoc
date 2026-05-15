@@ -1,0 +1,12 @@
+If your system supports the use of RoCE-capable PCIe cards or I/O modules, your HA pair must have enough available RoCE-capable Ethernet ports to support the number of shelves you are hot-adding.
+
+.Steps
+. For each shelf you are hot-adding, verify that there are two RoCE-capable ports on each controller.
++
+These ports can be on board the controllers, on RoCE-capable PCIe cards, a combination of both, or on RoCE-capable I/O modules, as supported by your system.
++
+. If your HA pair does not have enough available RoCE-capable ports, install the additional PCIe cards or I/O modules into the correct controller slots, as supported by your system.
++
+.. Identify the correct controller slots for your system. See https://hwu.netapp.com[NetApp Hardware Universe^].
++
+.. See your system's documentation for PCIe card or I/O module installation instructions.

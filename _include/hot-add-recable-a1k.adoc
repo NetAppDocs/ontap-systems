@@ -1,0 +1,25 @@
+When you hot-add shelves to an A1K HA pair, you need to recable existing shelves to balance connectivity across multiple RoCE-capable I/O modules. 
+
+* If you are hot-adding a second shelf, the first shelf must be recabled across slots 11 and 10. For a second shelf, the procedure assumes the existing shelf is cabled to a RoCE-capable I/O module in slot 11 on each controller. 
+
+* If you are hot-adding a fourth shelf, the third shelf must be recabled across slots 9 and 8. For a fourth shelf, the procedure assumes the third shelf is cabled to slot 9 on each controller.
+
+* If you are hot-adding a third shelf and installing a third or fourth RoCE-capable I/O module in each controller, the third shelf is cabled to only the third or third and fourth I/O modules. You do not need to recable any existing shelves, so you can skip this procedure.
+
+.Steps
+
+. Do one of the following if you are hot-adding a second shelf or a fourth shelf.
++
+* If you are hot-adding a second shelf, recable the first shelf across the RoCE-capable I/O modules in slot 11 and slot 10 on each controller.
++
+.. On controller A, move the cable from slot 11 port b (e11b) to slot 10 port b (e10b).
+.. Repeat the same cable move on controller B.
++
+* If you are hot-adding a fourth shelf, recable the third shelf across the RoCE-capable I/O modules in slot 9 and slot 8 on each controller.
++
+.. On controller A, move the cable from slot 9 port b (e9b) to slot 8 port b (e8b).
+.. Repeat the same cable move on controller B.
+
+. Verify that the recabled shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.
