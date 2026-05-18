@@ -40,6 +40,10 @@ a| link:nvram-replace.html[NVRAM module]
 
 a| The NVRAM (Non-Volatile Random Access Memory) module lets the controller protect and save in-flight data if the system loses power. The system ID is stored in the NVRAM module. When replaced, the controller uses the new system ID from the replacement NVRAM module.
 
+a| link:nv12l-replace.html[NV12L module]
+
+a| The NV12L is the second NVRAM (Non-Volatile Random Access Memory) module for the AFX 2K controller. The NV12L module lets the controller protect and save in-flight data if the system loses power. The system ID is stored in the NV12L module. When replaced, the controller uses the new system ID from the replacement NV12L module.
+
 a| link:nvdimm-battery-replace.html[NV battery]
 
 a| The NV battery is responsible for providing power to the NVRAM module while data in-flight is being destaged to flash memory after a power loss.
