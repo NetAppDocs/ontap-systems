@@ -1,0 +1,23 @@
+---
+permalink: ns224/hot-add-eoa-cable-a700.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, aff a700, cable, end-of-availability
+summary: Cable your NS224 shelf to your AFF A700 system so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable an NS224 shelf to your AFF A700 system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable your NS224 shelf to your AFF A700 system so that each shelf has two connections to each controller in the HA pair.
+
+How you cable an NS224 shelf to an AFF A700 HA pair depends on the number of shelves you are hot-adding and the number of RoCE-capable port sets (one or two) you are using on the controllers.
+
+include::../_include/cable-a700-hot-add-shelf.adoc[]
+
+
+.What's next
+
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:hot-add-eoa-complete.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.

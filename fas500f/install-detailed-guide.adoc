@@ -153,7 +153,7 @@ video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Animation - Cable a 
 a|
 image:../media/icon_square_1_green.png[Step 1]
 a|
-Cable the cluster interconnect ports to each other with the 25GbE cluster interconnect cable
+Cable the cluster interconnect ports to each other with the 25 GbE cluster interconnect cable
 
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]:
 
@@ -251,7 +251,7 @@ a|
 a|
 To perform other optional cabling, choose from:
 
-* <<Option 2: Cable to a 25GbE data or host network>>
+* <<Option 2: Cable to a 25 GbE data or host network>>
 * <<Option 3: Cable the controllers to a single drive shelf>>
 
 a|
@@ -261,9 +261,9 @@ To complete setting up your system, see link:install-detailed-guide.html#step-4-
 
 |===
 
-==== Option 2: Cable to a 25GbE data or host network
+==== Option 2: Cable to a 25 GbE data or host network
 
-25GbE ports on the controllers are connected to 25GbE data or host network switches.
+25 GbE ports on the controllers are connected to 25 GbE data or host network switches.
 
 .Before you begin
 Contact your network administrator for information about connecting the system to the switches.

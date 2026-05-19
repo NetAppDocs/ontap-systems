@@ -1,0 +1,14 @@
+When you hot-add a second shelf to an A800 or C800 HA pair, you need to recable the first shelf across the two sets of RoCE-capable ports in slot 5 and slot 3 on each controller. 
+
+The procedure assumes the existing shelf is cabled to RoCE-capable PCIe cards in slot 5 on each controller.
+
+.Steps
+
+. Recable the first shelf across the two sets of RoCE-capable ports in slot 5 and slot 3 on each controller.
++
+.. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
+.. Repeat the same cable move on controller B.
+
+. Verify that the recabled shelf is cabled correctly using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
++
+If any cabling errors are generated, follow the corrective actions provided.

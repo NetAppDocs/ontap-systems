@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, replace, impair, nvme, module, nsm, nondisruptive, drive, io, nsm, replace an NSM
 summary: You can replace an impaired NVMe shelf module (NSM) nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
 ---
-= Replace an NSM - NS224 shelves
+= Replace an NS224 NSM module
 :icons: font
 :imagesdir: ../media/
 
@@ -116,6 +116,9 @@ When inserted correctly, the DIMM should go in easily but fit tightly in the slo
 
  .. Push down carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at both ends of the DIMM.
  .. Repeat substeps 7a through 7d for the remaining DIMMs.
++
+CAUTION: Before you close the impaired NSM cover, make sure the ejector tabs on all empty DIMM slots are fully returned to the locked position.
+
 . Move the fans from the impaired NSM to the replacement NSM:
  .. Firmly grasp a fan from the sides, where the blue touch points are located, and then lift it vertically to disconnect it from the socket.
 +
@@ -236,6 +239,8 @@ When inserted correctly, the DIMM should go in easily but fit tightly in the slo
 
  ... Push down carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at both ends of the DIMM.
  ... Repeat for the other DIMM.
++
+CAUTION: Before you close the impaired NSM cover, make sure the ejector tabs on all empty DIMM slots are fully returned to the locked position.
 
 
 
