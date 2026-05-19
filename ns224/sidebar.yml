@@ -1,28 +1,124 @@
 section: ns224
 title: NS224 shelves
 entries:
-  - title: Hot-add shelf
+  - title: Hot-add shelf for AFF systems
     entries:
       - title: Hot-add workflow
-        url: /ns224/hot-add-shelf-overview.html
+        url: /ns224/hot-add-aff-workflow.html
       - title: Requirements and best practices
-        url: /ns224/requirements-hot-add-shelf.html
+        url: /ns224/hot-add-aff-requirements.html
       - title: Prepare for hot-add
-        url: /ns224/prepare-hot-add-shelf.html
-      - title: Install shelf for hot add
-        url: /ns224/install-hot-add-shelf.html
-      - title: Cable shelf for hot-add
+        entries:
+          - title: Hot-add prepare overview
+            url: /ns224/hot-add-aff-prepare.html
+          - title: AFF A1K
+            url: /ns224/hot-add-aff-prepare-a1k.html
+          - title: AFF A70, A90, and C80
+            url: /ns224/hot-add-aff-prepare-a70-90-c80.html
+          - title: AFF A800 and C800
+            url: /ns224/hot-add-aff-prepare-a800-c800.html
+          - title: AFF A400 and C400
+            url: /ns224/hot-add-aff-prepare-a400-c400.html
+          - title: AFF A900
+            url: /ns224/hot-add-aff-prepare-a900.html
+          - title: AFF A30, A50, C30, and C60
+            url: /ns224/hot-add-aff-prepare-a30-50-60.html
+      - title: Install shelf
+        url: /ns224/hot-add-aff-install.html
+      - title: Cable AFF systems
         entries:
           - title: Cabling overview
-            url: /ns224/cable-overview-hot-add-shelf.html
-          - title: AFF systems 
-            url: /ns224/cable-aff-systems-hot-add-shelf.html
-          - title: ASA systems 
-            url: /ns224/cable-asa-systems-hot-add-shelf.html
-          - title: End-of-availability systems 
-            url: /ns224/cable-eoa-systems-hot-add-shelf.html
+            url: /ns224/hot-add-aff-cable-overview.html
+          - title: AFF A1K
+            url: /ns224/hot-add-aff-cable-a1k.html
+          - title: AFF A20
+            url: /ns224/hot-add-aff-cable-a20.html
+          - title: AFF A30, A50, C30, and C60
+            url: /ns224/hot-add-aff-cable-a30-50-60.html
+          - title: AFF A70, A90, and C80
+            url: /ns224/hot-add-aff-cable-a70-90-c80.html
+          - title: AFF A250 and C250
+            url: /ns224/hot-add-aff-cable-a250-c250.html
+          - title: AFF A400 and C400
+            url: /ns224/hot-add-aff-cable-a400-c400.html
+          - title: AFF A800 and C800
+            url: /ns224/hot-add-aff-cable-a800-c800.html
+          - title: AFF A900
+            url: /ns224/hot-add-aff-cable-a900.html
       - title: Complete hot-add
-        url: /ns224/complete-hot-add-shelf.html
+        url: /ns224/hot-add-aff-complete.html
+  - title: Hot-add shelf for ASA systems
+    entries:
+      - title: Hot-add workflow
+        url: /ns224/hot-add-asa-workflow.html
+      - title: Requirements and best practices
+        url: /ns224/hot-add-asa-requirements.html
+      - title: Prepare for hot-add
+        entries:
+          - title: Hot-add prepare overview
+            url: /ns224/hot-add-asa-prepare.html
+          - title: ASA A1K
+            url: /ns224/hot-add-asa-prepare-a1k.html
+          - title: ASA A70 or A90
+            url: /ns224/hot-add-asa-prepare-a70-90.html
+          - title: ASA A800 or C800
+            url: /ns224/hot-add-asa-prepare-a800-c800.html
+          - title: ASA A400 or C400
+            url: /ns224/hot-add-asa-prepare-a400-c400.html
+          - title: ASA A900
+            url: /ns224/hot-add-asa-prepare-a900.html
+          - title: ASA A30 or A50
+            url: /ns224/hot-add-asa-prepare-a30-50.html
+      - title: Install shelf
+        url: /ns224/hot-add-asa-install.html
+      - title: Cable ASA systems
+        entries:
+          - title: Cabling overview
+            url: /ns224/hot-add-asa-cable-overview.html
+          - title: ASA A1K
+            url: /ns224/hot-add-asa-cable-a1k.html
+          - title: ASA A20
+            url: /ns224/hot-add-asa-cable-a20.html
+          - title: ASA A30 or A50
+            url: /ns224/hot-add-asa-cable-a30-50.html
+          - title: ASA A70 or A90
+            url: /ns224/hot-add-asa-cable-a70-90.html
+          - title: ASA A250
+            url: /ns224/hot-add-asa-cable-a250.html
+          - title: ASA A400 or C400
+            url: /ns224/hot-add-asa-cable-a400-c400.html
+          - title: ASA A800 or C800
+            url: /ns224/hot-add-asa-cable-a800-c800.html
+          - title: ASA A900
+            url: /ns224/hot-add-asa-cable-a900.html
+      - title: Complete hot-add
+        url: /ns224/hot-add-asa-complete.html
+  - title: Hot-add shelf for EOA systems
+    entries:
+      - title: Hot-add workflow
+        url: /ns224/hot-add-eoa-workflow.html
+      - title: Requirements and best practices
+        url: /ns224/hot-add-eoa-requirements.html
+      - title: Prepare for hot-add
+        entries:
+          - title: Hot-add prepare overview
+            url: /ns224/hot-add-eoa-prepare-overview.html
+          - title: EOA systems
+            url: /ns224/hot-add-eoa-prepare-systems.html
+      - title: Install shelf
+        url: /ns224/hot-add-eoa-install.html
+      - title: Cable end-of-availability systems
+        entries:
+          - title: Cabling overview
+            url: /ns224/hot-add-eoa-cable-overview.html
+          - title: AFF A320
+            url: /ns224/hot-add-eoa-cable-a320.html
+          - title: AFF A700
+            url: /ns224/hot-add-eoa-cable-a700.html
+          - title: FAS500f
+            url: /ns224/hot-add-eoa-cable-fas500f.html
+      - title: Complete hot-add
+        url: /ns224/hot-add-eoa-complete.html
   - title: Change shelf ID
     url: /ns224/change-shelf-id.html
   - title: Cable shelves as switch-attached storage

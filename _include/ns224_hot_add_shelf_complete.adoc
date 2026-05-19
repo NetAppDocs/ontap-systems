@@ -1,0 +1,19 @@
+.Before you begin
+
+You must have already cabled your shelf as instructed for your HA pair.
+
+.Steps
+
+. Display all unowned drives: `storage disk show -container-type unassigned`
++
+You can enter the command on either controller.
+
+. Assign each drive: `storage disk assign -disk _disk_name_ -owner _owner_name_`
++
+You can enter the command on either controller.
++
+You can use the wildcard character to assign more than one drive at once.
+
+. Reenable automatic drive assignment if needed: `storage disk option modify -node _node_name_ -autoassign on`
++
+You must reenable automatic drive assignment on both controllers.

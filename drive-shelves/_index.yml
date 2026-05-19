@@ -12,8 +12,12 @@ indexpage:
           url: ../nx224/change-shelf-id.html
     - title: Install NS224 shelves
       links:
-        - title: Hot-add shelf
-          url: ../ns224/hot-add-shelf-overview.html
+        - title: Hot-add shelf for AFF systems
+          url: ../ns224/hot-add-aff-workflow.html
+        - title: Hot-add shelf for ASA systems
+          url: ../ns224/hot-add-asa-workflow.html
+        - title: Hot-add shelf for EOA systems
+          url: ../ns224/hot-add-eoa-workflow.html
         - title: Change shelf ID
           url: ../ns224/change-shelf-id.html
         - title: Cable shelves as switch-attached storage
