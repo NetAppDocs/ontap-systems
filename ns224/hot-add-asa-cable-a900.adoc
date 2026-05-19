@@ -1,0 +1,22 @@
+---
+permalink: ns224/hot-add-asa-cable-a900.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, asa a900, cable
+summary: Cable your NS224 shelf to your ASA A900 system so that each shelf has two connections to each controller in the HA pair.
+---
+= Cable an NS224 shelf to your ASA A900 system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Cable your NS224 shelf to your ASA A900 system so that each shelf has two connections to each controller in the HA pair.
+
+include::../_include/cable-a900-hot-add-shelf.adoc[]
+
+
+
+.What's next
+
+If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed. Go to link:hot-add-asa-complete.html[Complete the hot-add].
+
+Otherwise, you are done with the hot-add shelf procedure.
