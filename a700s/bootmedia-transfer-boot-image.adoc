@@ -151,7 +151,7 @@ The image is downloaded from the USB flash drive.
 . Press `y` when prompted whether to use the restored copy, and then press `y` when prompted to reboot the controller.
 . From the partner controller in advanced privilege level, start the configuration synchronization using the IP address recorded in the previous step: `system node restore-backup -node local -target-address _impaired_node_IP_address_`
 . After the configuration synchronization is complete without errors, press `y` when prompted to confirm that the backup procedure was successful.
-. Press `y` when prompted whether to use the restored copy, and then press `y` when prompted to reboot the controller.
+
 . Verify that the environment variables are set as expected.
  .. Take the controller to the LOADER prompt.
 +
