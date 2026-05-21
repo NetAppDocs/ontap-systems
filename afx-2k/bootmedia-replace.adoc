@@ -11,7 +11,7 @@ summary: The boot media in your afx 2k storage system stores essential firmware 
 [.lead]
 The boot media in your AFX 2K storage system stores essential firmware and configuration data. The replacement process involves removing the System Management module, removing the impaired boot media, installing the replacement boot media in the System Management module, and then reinstalling the System Management module.
 
-include::../_include/afx_bootmedia_replace_bmr.adoc[]
+include::../_include/afx_2k_bootmedia_replace_bmr.adoc[]
 
 .What's next?
 After replacing the boot media, link:bootmedia-recovery-image-boot.html[restore the ONTAP image from the partner node].
