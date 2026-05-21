@@ -19,13 +19,37 @@ video::ae59d53d-7746-402c-bd6b-aad9012efa89[panopto, title="Animation - Replace 
 
 image::../media/drw_A400_Replace_fan.png[Removing a fan]
 
+
+[cols="10,90"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1]
+a|
+Fan handle
+a|
+image:../media/icon_round_2.png[Callout number 2]
+a|
+Locking tab
+a|
+image:../media/icon_round_3.png[Callout number 3]
+a|
+Fan
+a|
+image:../media/icon_round_4.png[Callout number 4]
+a|
+Status LED
+|===
+
 .Steps
 . If you are not already grounded, properly ground yourself.
 . Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
+
 . Identify the fan module that you must replace by checking the console error messages and looking at the Attention LED on each fan module.
++
+Use the BMC message or the Attention LED to identify the fan module to replace. BMC maps fan modules as Fan#_# where the first number is the slot and the second is the row (1=top, 2=bottom); for example, slot 1, second row = Fan1_2.
 . Press down the release latch on the fan module cam handle, and then rotate the cam handle downward.
 +
-The fan module moves a little bit away from the chassis.
+The fan module moves slightly away from the chassis.
 
 . Pull the fan module straight out from the chassis, making sure that you support it with your free hand so that it does not swing out of the chassis.
 +
@@ -39,7 +63,7 @@ The cam handle raises slightly when the fan module is completely seated.
 
 . Swing the cam handle up to its closed position, making sure that the cam handle release latch clicks into the locked position.
 +
-The Attention LED should not be lit after the fan is seated and has spun up to operational speed.
+The Attention LED turns off after the fan is seated and spins up to operational speed.
 
 . Align the bezel with the ball studs, and then gently push the bezel onto the ball studs.
 
