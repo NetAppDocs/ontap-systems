@@ -67,17 +67,19 @@ entries:
    - title: Controller
      pdf-filename: AFF A400 Controller Module
      entries:
-      - title: Overview
-        url: /a400/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /a400/controller-replace-workflow.html
+      - title: Review requirements
+        url: /a400/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /a400/controller-replace-shutdown.html
       - title: Replace controller
         url: /a400/controller-replace-move-hardware.html
       - title: Restore system configuration
         url: /a400/controller-replace-system-config-restore-and-verify.html
-      - title: Recable system
+      - title: Recable and reassign disks
         url: /a400/controller-replace-recable-reassign-disks.html
-      - title: Complete system restoration
+      - title: Complete controller replacement
         url: /a400/controller-replace-restore-system-rma.html
    - title: DIMM
      pdf-filename: AFF A400 DIMM

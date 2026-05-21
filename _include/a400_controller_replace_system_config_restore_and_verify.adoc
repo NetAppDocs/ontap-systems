@@ -1,0 +1,49 @@
+
+
+Verify the HA configuration settings and disk list before returning the system to service.
+
+.Steps
+. Boot to maintenance mode: 
++
+`boot_ontap maint` 
+
+. Enter `y` when you see _Continue with boot?_.
++
+If you see the _System ID mismatch_ warning message, enter `y`.
+
+. Enter `sysconfig -v` and capture the display contents.
++
+NOTE: If you see _PERSONALITY MISMATCH_ contact customer support.
+
+. From the `sysconfig -v` output, compare the adapter card information with the cards and locations in the replacement controller.
+
+. Verify that all components display the same `HA` state: 
++
+`ha-config show`
++
+The HA state should be the same for all components.
+
+. If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: 
++
+`ha-config modify controller ha`
++
+The value for the HA state can be one of the following:
+
+** `ha`
+** `mcc`
+** `mcc-2n`
+** `mccip` (9.7 only)
+** `non-ha`
+
+. Confirm that the setting has changed: 
++
+`ha-config show`
++
+. Verify that the adapter lists the paths to all disks: `storage show disk -p`
++
+If you see any issues, check cabling and reseat cables.
+
+. Exit Maintenance mode: `halt`
+
+
+//2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
