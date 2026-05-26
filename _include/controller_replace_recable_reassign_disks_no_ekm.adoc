@@ -26,7 +26,6 @@ Return the impaired controller to normal operation by giving back its storage.
 Reset onboard encryption and return the controller to normal operation.
 
 .Steps
-. From the LOADER prompt, enter `boot_ontap maint`.
 . Boot to the ONTAP menu from the LOADER prompt `boot_ontap menu` and select option 10.
 
 . Retrieve and verify the clusterwide passphrase from the healthy controller.
