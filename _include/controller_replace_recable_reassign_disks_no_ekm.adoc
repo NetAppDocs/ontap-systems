@@ -75,7 +75,7 @@ If the output shows results (the key IDs of keys that are not present in the sys
 . Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback _true_`
-
++
 NOTE: Do not override veto on giveback for missing keys. Contact NetApp Support.
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
