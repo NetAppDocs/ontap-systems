@@ -36,7 +36,8 @@ Reset onboard encryption and return the controller to normal operation.
 .. Verify the clusterwide passphrase using the following command:
 +
 `security key-manager onboard verify-backup`
-+. Enter the OKM passphrase.
++
+. Enter the OKM passphrase.
 +
 NOTE: You are prompted twice for the passphrase.
 
@@ -60,11 +61,14 @@ NOTE: You are prompted twice for the passphrase.
 . Synchronize and verify status of the keys:
 .. Move the console cable back to the replacement controller.
 .. Synchronize missing keys: `security key-manager onboard sync`
+
 +
 NOTE: You are prompted for the cluster-wide passphrase of OKM for the cluster.
+
++
 .. Verify status of the keys: `security key-manager key query -restored _false_`
 +
-The output should show no results when when properly synchronized.
+The output should show no results when properly synchronized.
 +
 If the output shows results (the key IDs of keys that are not present in the system's internal key table), contact https://support.netapp.com[NetApp Support]. 
 
@@ -77,7 +81,7 @@ NOTE: Do not override veto on giveback for missing keys. Contact NetApp Support.
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 
 --
-// EKM not affected - With a controller replacement on these systems, the entire EKM configuration is untouched because nothing changes with SSN, system ID or contents of the boor device (/var). Only OKM requires restoration because of the new TPM chip on the new motherboard.
+// EKM not affected - With a controller replacement on these systems, the entire EKM configuration is untouched because nothing changes with SSN, system ID or contents of the boot device (/var). Only OKM requires restoration because of the new TPM chip on the new motherboard.
 
 ====
 

@@ -39,7 +39,7 @@ entries:
         - title: Boot media replacement workflow
           url: /a400/bootmedia-replace-workflow.html
         - title: Review requirements
-          url:  /a400/bootmedia-replace-requirements.html
+          url: /a400/bootmedia-replace-requirements.html
         - title: Check encryption keys
           url: /a400/bootmedia-encryption-preshutdown-checks.html
         - title: Shut down controller
@@ -88,10 +88,10 @@ entries:
      pdf-filename: AFF A400 Fan Module
      url: /a400/fan-swap-out.html
    - title: NVDIMM battery
-     pdf-filename: AFF A400 NVDIMM Battery Battery
+     pdf-filename: AFF A400 NVDIMM Battery
      url: /a400/nvdimm-battery-replace.html
    - title: NVDIMM
-     pdf-filename: AFF A320 NVDIMM
+     pdf-filename: AFF A400 NVDIMM
      url: /a400/nvdimm-replace.html
    - title: PCIe or mezzanine card
      pdf-filename: AFF A400 PCIe or Mezzanine Card
