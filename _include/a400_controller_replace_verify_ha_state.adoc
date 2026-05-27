@@ -1,17 +1,7 @@
-You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
-
-. In Maintenance mode from the new controller module, verify that all components display the same `HA` state: `ha-config show`
-+
-The HA state should be the same for all components.
-
-. If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
-+
-The value for HA-state can be one of the following:
-
-*** `ha`
-*** `mcc`
-*** `mcc-2n`
-*** `mccip`
-*** `non-ha`
-
-. Confirm that the setting has changed: `ha-config show`
+// This include is intentionally left without procedural content.
+// The HA verification steps that were previously duplicated here
+// are maintained in the canonical include:
+// _include/a400_controller_replace_system_config_restore_and_verify.adoc
+//
+// If this file is no longer needed for any external build process,
+// it should be removed from the repository.
