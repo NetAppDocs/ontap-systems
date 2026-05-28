@@ -36,7 +36,6 @@ Reset onboard encryption and return the controller to normal operation.
 .. Verify the clusterwide passphrase using the following command:
 +
 `security key-manager onboard verify-backup`
-+
 . Enter the OKM passphrase.
 +
 NOTE: You are prompted twice for the passphrase.
