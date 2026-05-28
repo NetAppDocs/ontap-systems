@@ -37,7 +37,7 @@ NOTE: Cables should have been labeled at the beginning of this procedure.
 +
 .. Remove the cable management device from the chassis and set it aside. 
 
-== Step 2: Remove the I/O cards, NVRAM12, NV12L, and system management module
+== Step 2: Remove the I/O cards, NVRAM12, NVRAM12-EX, and system management module
 
 . Remove the target I/O module from the chassis:
 
@@ -81,22 +81,22 @@ NVRAM12 cam latch
 
 .. Set the NVRAM module on a stable surface.
 
-. Remove the NV12L module:
+. Remove the NVRAM12-EX module:
  .. Grab the handle on the module and depress the locking cam button.
 
- .. Pull the NV12L module from the chassis while supporting the bottom of the module with your other hand.
+ .. Pull the NVRAM12-EX module from the chassis while supporting the bottom of the module with your other hand.
 +
-image::../media/drw_afx_2k_nv12l_remove_replace_ieops-2879.svg[Remove the NV12L module]
+image::../media/drw_afx_2k_NVRAM12-EX_remove_replace_ieops-2879.svg[Remove the NVRAM12-EX module]
 +
 [cols="1,4"]
 |===
 a|
 image:../media/icon_round_1.png[Callout number 1] |
-NV12L handle and cam button
+NVRAM12-EX handle and cam button
 
 |===
 
-.. Set the NV12L module on a stable surface.
+.. Set the NVRAM12-EX module on a stable surface.
 
 . Remove the system management module:
 .. Depress the cam button on the System Management module.
