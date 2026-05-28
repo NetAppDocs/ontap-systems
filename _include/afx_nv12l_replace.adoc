@@ -1,4 +1,4 @@
-The NVRAM12-EX module consists of the NVRAM12 hardware and field-replaceable DIMMs. You can replace a failed NVRAM12-EX module or the DIMMs inside the NVRAM12-EX module. 
+The NVRAM12-EX module consists of the NVRAM12 hardware and field-replaceable DIMMs. You can replace a failed NVRAM12-EX module, the DIMMs, or the NVRAM battery inside the NVRAM12-EX module. 
 
 .Before you begin
 * Make sure you have the replacement part available. You must replace the failed component with a replacement component you received from NetApp.
@@ -14,7 +14,7 @@ include::../_include/shutdown_most_frus_afx_2k.adoc[]
 
 == Step 2: Replace the NVRAM12-EX module, NVRAM DIMM, or NVRAM battery
 
-Replace the NVRAM12-EX module, NVRAM DIMMs, or NVRAM battery using the appropriate following options.
+Replace the NVRAM12-EX module, NVRAM DIMMs, or NVRAM battery using the following options.
 
 // start tabbed area
 
@@ -166,7 +166,6 @@ Thumbscrew for NVRAM12-EX cover
  .. Squeeze the clip on the face of the battery plug to release the plug from the socket. 
  .. Unplug the battery cable from the socket. 
 . Remove the disconnected battery by lifting up on the battery to remove it from the module.
-. Set the removed battery aside. 
 +
 image::../media/drw_afx_emr_nv12l_remove_battery_ieops-2919.svg[Remove the NVRAM12-EX battery]
 +
