@@ -23,17 +23,17 @@ Return the impaired controller to normal operation by giving back its storage.
 
 .Onboard encryption (OKM)
 --
-Reset onboard encryption and return the controller to normal operation.
+Restore and reseal onboard encryption keys for OKM and return the controller to normal operation.
 
 .Steps
 . Boot to the ONTAP menu from the LOADER prompt `boot_ontap menu` and select option 10.
 
-. Retrieve and verify the clusterwide passphrase from the healthy controller.
-.. Run the following command to retrieve the clusterwide passphrase:
+. Retrieve and verify the cluster-wide passphrase from the healthy controller.
+.. Run the following command to retrieve the cluster-wide passphrase:
 +
 `security key-manager onboard show-backup`
 +
-.. Verify the clusterwide passphrase using the following command:
+.. Verify the cluster-wide passphrase using the following command:
 +
 `security key-manager onboard verify-backup`
 . Enter the OKM passphrase.
