@@ -32,7 +32,7 @@ The value for the HA state can be one of the following:
 ** `ha`
 ** `mcc`
 ** `mcc-2n`
-** `mccip` (ONTAP 9.7 and later)
+** `mccip`
 ** `non-ha`
 
 . Confirm that the setting has changed: 

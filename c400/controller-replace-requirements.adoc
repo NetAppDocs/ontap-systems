@@ -1,0 +1,18 @@
+---
+permalink: c400/controller-replace-requirements.html
+sidebar: sidebar
+keywords: aff c400, prerequisite, replace the controller module
+summary: Before replacing the controller of your AFF C400 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have the correct replacement controller, and saving the controller's console output to a text log file.
+---
+= Requirements to replace the controller - AFF C400
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before replacing the controller of your AFF C400 system, confirm all system components work, you have the correct replacement controller, and you save the controller's console output to a text log file.
+
+include::../_include/a400_controller_replace_requirements.adoc[]
+
+.What's next?
+
+After you've reviewed the requirements to replace your AFF C400 controller, you need to link:controller-replace-shutdown.html[shut down the impaired controller].

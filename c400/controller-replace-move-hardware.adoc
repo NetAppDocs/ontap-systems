@@ -2,11 +2,56 @@
 permalink: c400/controller-replace-move-hardware.html
 sidebar: sidebar
 keywords: aff c400, move the controller module hardware
-summary: "To replace the controller module hardware, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
+summary: Replace the controller in your AFF C400 system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
 ---
-= Replace the controller module hardware - AFF C400
+= Replace the controller - AFF C400
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/400_controller_replace_move_hardware.adoc[]
+Replace the controller in your AFF C400 system after a hardware failure. Remove the failed controller. Move its components to the replacement. Install the new controller and reboot.
+
+== Step 1: Remove the controller module
+
+You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
+
+include::../_include/a400_controller_remove.adoc[]
+
+== Step 2: Move the power supplies
+
+Move the power supplies to the replacement controller module.
+
+include::../_include/a400_controller_replace_move_psu.adoc[]
+
+== Step 3: Move the NVDIMM battery
+
+Move the NVDIMM battery to the replacement controller module.
+
+include::../_include/a400_controller_replace_move_nvdimm_battery.adoc[]
+
+== Step 4: Move the boot media
+
+Move the boot media to the replacement controller module.
+
+include::../_include/a400_controller_replace_move_bootmedia.adoc[]
+
+== Step 5: Move the PCIe risers and mezzanine card
+
+Move the PCIe risers and mezzanine card to the replacement controller module.
+
+include::../_include/a400_controller_replace_move_pcie_risers.adoc[]
+
+== Step 6: Move the DIMMs
+
+Move the DIMMs to the replacement controller module.
+
+include::../_include/a400_controller_replace_move_dimms.adoc[]
+
+== Step 7: Install the controller module
+
+Reinstall the controller module and reboot it.
+
+include::../_include/a400_controller_install_controller_replace.adoc[]
+
+.What's next?
+After you've replaced the impaired AFF C400 controller, you need to link:controller-replace-system-config-restore-and-verify.html[restore the system configuration].
