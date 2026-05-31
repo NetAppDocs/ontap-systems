@@ -70,8 +70,10 @@ entries:
    - title: Controller
      pdf-filename: FAS8300 and FAS8700 Controller
      entries:
-      - title: Overview
-        url: /fas8300/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /fas8300/controller-replace-workflow.html
+      - title: Review requirements
+        url: /fas8300/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /fas8300/controller-replace-shutdown.html
       - title: Replace controller module

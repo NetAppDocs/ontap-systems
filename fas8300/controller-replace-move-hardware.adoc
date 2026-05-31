@@ -43,13 +43,19 @@ Move the PCIe risers and mezzanine card to the replacement controller module.
 
 include::../_include/a400_controller_replace_move_pcie_risers.adoc[]
 
-== Step 6: Move the DIMMs
+== Step 6: Move the cache module
+Move the cache module to the replacement controller module.
+
+include::../_include/fas8300_controller_replace_move_cache_module.adoc[]
+
+
+== Step 7: Move the DIMMs
 
 Move the DIMMs to the replacement controller module.
 
 include::../_include/a400_controller_replace_move_dimms.adoc[]
 
-== Step 7: Install the controller module
+== Step 8: Install the controller module
 
 Reinstall the controller module and reboot it.
 

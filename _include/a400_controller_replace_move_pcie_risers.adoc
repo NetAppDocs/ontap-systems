@@ -32,6 +32,7 @@ a|
 PCI card
 |===
 
+.Steps
 . Move PCIe risers one and two from the impaired controller module to the replacement controller module:
  .. Remove any SFP or QSFP modules that might be in the PCIe cards.
  .. Rotate the riser locking latch on the left side of the riser up and toward air duct.
