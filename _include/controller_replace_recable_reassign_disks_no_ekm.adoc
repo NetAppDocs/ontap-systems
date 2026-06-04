@@ -1,13 +1,11 @@
 
-//Created generic lead to topic for both no encryption and OKM procedures. 6/4/2024 - DougT
-Select the tab that matches your encryption configuration. Systems using External Key Manager (EKM) follow the same steps as no encryption. For Onboard Key Manager (OKM), review https://docs.netapp.com/us-en/ontap-cli/security-key-manager-onboard-show-backup.html[security key-manager onboard show-backup] or contact NetApp Support before starting.
 
 // start tabbed block area
 
 [role="tabbed-block"]
 ====
 
-.No encryption
+.No encryption or External Key Manager (EKM)
 --
 Return the impaired controller to normal operation by giving back its storage.
 
@@ -27,6 +25,11 @@ Return the impaired controller to normal operation by giving back its storage.
 .Onboard encryption (OKM)
 --
 Restore and reseal onboard encryption keys for OKM and return the controller to normal operation.
+
+.Before you begin
+
+For information about onboard encryption keys backups, review https://docs.netapp.com/us-en/ontap-cli/security-key-manager-onboard-show-backup.html[security key-manager onboard show-backup] or contact NetApp Support before starting.
+
 
 .Steps
 . Boot to the ONTAP menu from the LOADER prompt `boot_ontap menu` and select option 10.
