@@ -12,7 +12,7 @@ summary: Replacing a drive drawer in a shelf requires you to either halt the ent
 To replace a drive drawer in a shelf, you can halt the entire storage system (HA pair), which allows you to keep the data aggregates on the shelf. Alternatively, you can keep the HA pair up and running, which requires you to move all data from the data aggregates on the shelf’s disk drives and then offline and delete those data aggregates. If the shelf contains a root aggregate, you must halt the HA pair.
 
 
-This procedure applies to shelves with IOM12 or IOM12B modules.
+This procedure applies to shelves with IOM12, IOM12B, or IOM12C modules.
 
 .Before you begin
 
@@ -28,15 +28,15 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 
 .About this task
 
-* This procedure applies to shelves having DCM drive drawers and/or DCM2 or DCM3 drive drawers. (Shelves will also have two IOM12 modules or two IOM12B modules.)
+* This procedure applies to shelves having DCM drive drawers and/or DCM2 or DCM3 drive drawers. (Shelves will also have two IOM12 modules, two IOM12B modules, or two IOM12C modules.)
 +
 When a DCM, DCM2, or DCM3 drive drawer fails, you receive a DCM, DCM2, or DCM3 drive drawer to replace it.
 
 [NOTE]
 ====
-When you replace a failed drive drawer with a newer DCM2 or DCM3 drive drawer, ensure that ONTAP software and the IOM12 or IOM12B module firmware are running the minimum versions required to support DCM2 or DCM3 drawers.
+When you replace a failed drive drawer with a newer DCM2 or DCM3 drive drawer, ensure that ONTAP software and the IOM12, IOM12B, or IOM12C module firmware are running the minimum versions required to support DCM2 or DCM3 drawers.
 
-The IOM12 FW upgrade can be done before or after replacing a drive drawer. This procedure has you upgrade the FW as part of the preparation for the drawer replacement procedure.
+The IOM12, IOM12B, or IOM12C FW upgrade can be done before or after replacing a drive drawer. This procedure has you upgrade the FW as part of the preparation for the drawer replacement procedure.
 ====
 
 * The DCM, DCM2, and DCM3 drive drawers can be distinguished by their appearance:

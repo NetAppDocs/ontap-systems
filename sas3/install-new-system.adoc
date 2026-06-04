@@ -14,7 +14,7 @@ If your new system--HA pair or single-controller configuration--did not come ins
 
 .About this task
 
-* Disk shelves with IOM12/IOM12B modules are shipped with shelf IDs preset to 00.
+* Disk shelves with IOM12, IOM12B, or IOM12C modules are shipped with shelf IDs preset to 00.
 +
 NOTE: If you have an HA pair with at least two stacks, the disk shelf containing the root aggregates for the second stack has the shelf ID preset to 10.
 +
