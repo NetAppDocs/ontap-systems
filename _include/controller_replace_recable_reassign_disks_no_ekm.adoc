@@ -1,4 +1,7 @@
 
+//Created generic lead to topic for both no encryption and OKM procedures. 6/4/2024 - DougT
+Select the tab that matches your encryption configuration. Systems using External Key Manager (EKM) follow the same steps as no encryption. For Onboard Key Manager (OKM), review https://docs.netapp.com/us-en/ontap-cli/security-key-manager-onboard-show-backup.html[security key-manager onboard show-backup] or contact NetApp Support before starting.
+
 // start tabbed block area
 
 [role="tabbed-block"]
