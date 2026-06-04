@@ -2,14 +2,14 @@
 permalink: fas8300/controller-replace-move-hardware.html
 sidebar: sidebar
 keywords: fas8300, fas8700, move the controller module hardware
-summary: Replace the controller in your FAS8300 or FAS8700 system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+summary: Replace the controller in your FAS8300 or FAS8700 system when a hardware failure requires it. Remove the failed controller, move its components to the replacement controller, install the new controller, and reboot it.
 ---
 = Replace the controller - FAS8300 and FAS8700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the controller in your FAS8300 or FAS8700 system after a hardware failure. Remove the failed controller. Move its components to the replacement. Install the new controller and reboot.
+Replace the controller in your FAS8300 or FAS8700 system when a hardware failure requires it. Remove the failed controller, move its components to the replacement controller, install the new controller, and reboot it.
 
 NOTE: The Ver2 controller module has only one caching module socket (Slot 6) in the FAS8300. FAS8700 does not have a VER2 controller module. The caching module functionality is not impacted by the socket removal.  
 

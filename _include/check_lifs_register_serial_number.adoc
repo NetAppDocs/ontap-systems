@@ -1,4 +1,4 @@
-Before returning the _replacement_ node to service, you should verify that the LIFs are on their home ports, and register the serial number of the _replacement_ node if AutoSupport is enabled, and reset automatic giveback.
+Before returning the _replacement_ node to service, you should verify that the LIFs are on their home ports, and register the serial number of the _replacement_ node if AutoSupport is enabled, check the health of your cluster, close any maintenance windows, and reset automatic giveback.
 
 .Steps 
 . Verify that the logical interfaces are reporting to their home server and ports: `network interface show -is-home false`

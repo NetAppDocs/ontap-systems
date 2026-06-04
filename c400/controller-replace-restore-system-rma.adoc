@@ -2,7 +2,7 @@
 permalink: c400/controller-replace-restore-system-rma.html
 sidebar: sidebar
 keywords: aff c400, how to restore NetApp Storage Encryption, how to complete the replacement process
-summary: Verify that the logical interfaces are reporting to their home port, perform a cluster health check, and then return the failed part to NetApp to complete the final step in the AFF C400 controller replacement procedure.
+summary: Complete the controller replacement for your AFF C400 system. Install licenses for the replacement controller, confirm that the logical interfaces (LIFs) are reporting to their home ports, and perform a cluster health check. Finally, return the failed part to NetApp.
 ---
 = Complete controller replacement - AFF C400
 :icons: font

@@ -2,14 +2,14 @@
 permalink: asa400/controller-replace-move-hardware.html
 sidebar: sidebar
 keywords: asa a400, move the controller module hardware
-summary: Replace the controller in your ASA A400 system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+summary: Replace the controller in your ASA A400 system when a hardware failure requires it. Remove the failed controller, move its components to the replacement controller, install the new controller, and reboot it.
 ---
 = Replace the controller - ASA A400
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the controller in your ASA A400 system after a hardware failure. Remove the failed controller. Move its components to the replacement. Install the new controller and reboot.
+Replace the controller in your ASA A400 system when a hardware failure requires it. Remove the failed controller, move its components to the replacement controller, install the new controller, and reboot it.
 
 == Step 1: Remove the controller module
 
