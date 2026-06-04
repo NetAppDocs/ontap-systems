@@ -28,7 +28,7 @@ Restore and reseal onboard encryption keys for OKM and return the controller to 
 
 .Before you begin
 
-For information about onboard encryption keys backups, review https://docs.netapp.com/us-en/ontap-cli/security-key-manager-onboard-show-backup.html[security key-manager onboard show-backup] or contact NetApp Support before starting.
+Before starting, review https://docs.netapp.com/us-en/ontap-cli/security-key-manager-onboard-show-backup.html[security key-manager onboard show-backup] or contact NetApp Support.
 
 
 .Steps
