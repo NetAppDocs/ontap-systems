@@ -126,6 +126,9 @@ WARNING: System ID mismatch. This usually occurs when replacing a boot device or
 Override system ID? {y|n}
 ----
 
++
+NOTE: The Override system ID is only required for the NVRAM module replacement and not for the NVRAM DIMM replacement.
+
 . From the healthy controller, verify that the new partner system ID has been automatically assigned: 
 `_storage failover show_`
 +
