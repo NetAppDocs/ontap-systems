@@ -23,9 +23,9 @@ NOTE: If you see _PERSONALITY MISMATCH_ contact customer support.
 +
 The HA state should be the same for all components.
 
-. If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: 
+. If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module:
 +
-`ha-config modify controller ha`
+`ha-config modify controller _ha-state_`
 +
 The value for the HA state can be one of the following:
 

@@ -71,7 +71,7 @@ NOTE: You are prompted twice for the passphrase.
 NOTE: You are prompted for the cluster-wide passphrase of OKM for the cluster.
 
 +
-.. Verify status of the keys: `security key-manager key query -restored _false_`
+.. Verify status of the keys: `security key-manager key query -restored false`
 +
 The output should show no results when properly synchronized.
 +
