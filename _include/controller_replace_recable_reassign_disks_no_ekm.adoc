@@ -1,10 +1,11 @@
 
+
 // start tabbed block area
 
 [role="tabbed-block"]
 ====
 
-.No encryption
+.No encryption or External Key Manager (EKM)
 --
 Return the impaired controller to normal operation by giving back its storage.
 
@@ -23,11 +24,24 @@ Return the impaired controller to normal operation by giving back its storage.
 
 .Onboard encryption (OKM)
 --
-Reset onboard encryption and return the controller to normal operation.
+Restore and reseal onboard encryption keys for OKM and return the controller to normal operation.
+
+.Before you begin
+
+Before starting, review https://docs.netapp.com/us-en/ontap-cli/security-key-manager-onboard-show-backup.html[security key-manager onboard show-backup] or contact NetApp Support.
+
 
 .Steps
-. From the LOADER prompt, enter `boot_ontap maint`.
 . Boot to the ONTAP menu from the LOADER prompt `boot_ontap menu` and select option 10.
+
+. Retrieve and verify the cluster-wide passphrase from the healthy controller.
+.. Run the following command to retrieve the cluster-wide passphrase:
++
+`security key-manager onboard show-backup`
++
+.. Verify the cluster-wide passphrase using the following command:
++
+`security key-manager onboard verify-backup`
 . Enter the OKM passphrase.
 +
 NOTE: You are prompted twice for the passphrase.
@@ -52,22 +66,27 @@ NOTE: You are prompted twice for the passphrase.
 . Synchronize and verify status of the keys:
 .. Move the console cable back to the replacement controller.
 .. Synchronize missing keys: `security key-manager onboard sync`
+
 +
 NOTE: You are prompted for the cluster-wide passphrase of OKM for the cluster.
-.. Verify status of the keys: `security key-manager key query -restored _false_`
+
 +
-The output should show no results when when properly synchronized.
+.. Verify status of the keys: `security key-manager key query -restored false`
++
+The output should show no results when properly synchronized.
 +
 If the output shows results (the key IDs of keys that are not present in the system's internal key table), contact https://support.netapp.com[NetApp Support]. 
 
 . Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback _true_`
++
+NOTE: Do not override veto on giveback for missing keys. Contact NetApp Support.
 
 . If AutoSupport is enabled, restore/unsuppress automatic case creation: `system node autosupport invoke -node * -type all -message MAINT=END`
 
 --
-// EKM not affected - With a controller replacement on these systems, the entire EKM configuration is untouched because nothing changes with SSN, system ID or contents of the boor device (/var). Only OKM requires restoration because of the new TPM chip on the new motherboard.
+// EKM not affected - With a controller replacement on these systems, the entire EKM configuration is untouched because nothing changes with SSN, system ID or contents of the boot device (/var). Only OKM requires restoration because of the new TPM chip on the new motherboard.
 
 ====
 
