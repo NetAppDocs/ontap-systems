@@ -1,10 +1,10 @@
 ---
 permalink: sas3/install-cabling-rules.html
 sidebar: sidebar
-keywords: disk, shelf, iom12, module, iom12b, iom12c, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, controller-to-stack, mini-sas optical
+keywords: disk, shelf, iom12, module, iom12b, iom12c, configuration, support, platform, sas, cabling, cable, rule, controller, connection, mini-sas optical, ds212c, ds224c, ds460c
 summary: "Disk shelves with IOM12, IOM12B, or IOM12C modules can be cabled in HA pair and single-controller configurations (for supported platforms)."
 ---
-= SAS cabling rules and concepts - DS212C, DS224C, or DS460C
+= SAS cabling rules and concepts for DS212C, DS224C, or DS460C shelves
 :icons: font
 :imagesdir: ../media/
 

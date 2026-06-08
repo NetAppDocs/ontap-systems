@@ -1,15 +1,17 @@
 ---
 permalink: sas3/hot-remove-shelf.html
 sidebar: sidebar
-keywords: hot-remove, remove, disk, shelf, iom12, module, nondisruptive, power, stack, shelves,  DS460C, transport, move, iom12b, iom12c
+keywords: hot-remove, remove, disk, shelf, sas3, iom12, iom12b, iom12c, stack, DS460C, transport, move, ds212c, ds224c
 summary: You can hot-remove a disk shelf with IOM12, IOM12B, or IOM12C modules when you need to move or replace the disk shelf.
 ---
-= Hot-remove a shelf - DS212C, DS224C, and DS460C
+= Hot-remove a DS212C, DS224C, or DS460C shelf
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-remove a disk shelf with IOM12, IOM12B, or IOM12C modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace a disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
+You can hot-remove a disk shelf when it needs to be removed or replaced from a system that is powered on and I/O is in progress. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
+
+This procedure applies to shelves with IOM12, IOM12B, or IOM12C modules.
 
 .About this task
 

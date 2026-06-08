@@ -1,15 +1,17 @@
 ---
 permalink: sas3/install-cabling-worksheets-examples-multipath.html
 sidebar: sidebar
-keywords: controller-to-stack, cabling, worksheet, cable, ha, pair, multipath, ha, configuration, controller-to-stack, cabling, controller-to-stack cabling worksheets and cabling examples for multipath ha configuration
+keywords: controller, stack, cable, ha, pair, multipath, configuration, ds212c, ds224c, ds460c
 summary: You can use the controller-to-stack cabling worksheets and cabling examples to cable your HA pair as a multipath HA configuration.
 ---
-= Cabling worksheets for multipath HA configurations - DS212C, DS224C, or DS460C
+= Cabling worksheets for DS212C, DS224C, or DS460C multipath HA configurations
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the controller-to-stack cabling worksheets and cabling examples to cable your HA pair as a multipath HA configuration. This applies to shelves with IOM12, IOM12B, or IOM12C modules.
+You can use the controller-to-stack cabling worksheets and cabling examples to cable your HA pair as a multipath HA configuration. 
+
+This applies to shelves with IOM12, IOM12B, or IOM12C modules.
 
 NOTE: This information applies to platforms without internal storage.
 
