@@ -9,7 +9,9 @@ summary: You can hot-add one or more disk shelves with IOM12, IOM12B, or IOM12C 
 :imagesdir: ../media/
 
 [.lead]
-You can hot-add one or more disk shelves with IOM12, IOM12B, or IOM12C modules to an existing stack of disk shelves with IOM12, IOM12B, or IOM12C modules or hot-add a stack of one or more disk shelves with IOM12, IOM12B, or IOM12C modules directly to a SAS HBA or an onboard SAS port on the controller.
+You can hot-add one or more disk shelves to an existing stack of disk shelves or hot-add a stack of one or more disk shelves directly to a SAS HBA or an onboard SAS port on the controller.
+
+This procedure applies to shelves with IOM12, IOM12B, or IOM12C modules.
 
 .Before you begin
 
