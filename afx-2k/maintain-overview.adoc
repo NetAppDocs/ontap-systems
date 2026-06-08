@@ -40,7 +40,7 @@ a| link:nvram-replace.html[NVRAM module]
 
 a| The NVRAM (Non-Volatile Random Access Memory) module lets the controller protect and save in-flight data if the system loses power. The system ID is stored in the NVRAM module. When replaced, the controller uses the new system ID from the replacement NVRAM module.
 
-a| link:NVRAM12-EX-replace.html[NVRAM12-EX module]
+a| link:nv12l-replace.html[NVRAM12-EX module]
 
 a| The NVRAM12-EX is the second NVRAM (Non-Volatile Random Access Memory) module for the AFX 2K controller. The NVRAM12-EX module lets the controller protect and save in-flight data if the system loses power. The system ID is stored in the NVRAM12-EX module. When replaced, the controller uses the new system ID from the replacement NVRAM12-EX module.
 
