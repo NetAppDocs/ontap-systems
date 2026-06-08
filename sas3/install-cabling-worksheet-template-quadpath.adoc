@@ -2,14 +2,14 @@
 permalink: sas3/install-cabling-worksheet-template-quadpath.html
 sidebar: sidebar
 keywords:  controller, sas, port, pair, cable, disk, shelf, iom12, quad-pathed, connectivity, ha, stack, iom12b, iom12c, ds212c, ds224c, ds460c
-summary: By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12, IOM12B, or IOM12C modules to achieve quad-pathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the quad-pathed connections for your configuration.
+summary: "Define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves for quad-pathed connectivity in an HA pair or single-controller configuration."
 ---
 = Cabling worksheet for DS212C, DS224C, or DS460C quad-pathed connectivity
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12, IOM12B, or IOM12C modules to achieve quad-pathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the quad-pathed connections for your configuration.
+You can use a cabling worksheet to define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12, IOM12B, or IOM12C modules to achieve quad-pathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the quad-pathed connections for your configuration.
 
 .About this task
 

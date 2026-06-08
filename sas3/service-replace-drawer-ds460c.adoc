@@ -2,7 +2,7 @@
 permalink: sas3/service-replace-drawer-ds460c.html
 sidebar: sidebar
 keywords: shelf, sas, replace, drive, drawer, disk, dcm2, dcm, ds460c
-summary: Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.
+summary: "When replacing a drive drawer in a shelf, you can either halt the entire storage system (HA pair) or keep the HA pair up and running."
 ---
 = Replace a DS460C drive drawer
 :icons: font
@@ -69,7 +69,7 @@ Before you replace a drive drawer, you must make sure to update IOM FW and ONTAP
 +
 If needed, you can go to the NetApp Support Site to https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[download current versions of disk shelf firmware]. Otherwise, go to the next step.
 
-. If your shelf will have a combination of IOM12 or IOM12B modules with any number of DCM3 drive drawers, your system must be running the following minimum versions of ONTAP:
+. If your shelf will have a combination of IOM12, IOM12B, or IOM12C modules with any number of DCM3 drive drawers, your system must be running the following minimum versions of ONTAP:
 
 ** ONTAP 9.17.1RC1
 ** ONTAP 9.16.1P3
