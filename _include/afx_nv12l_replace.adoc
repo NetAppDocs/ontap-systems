@@ -226,7 +226,7 @@ Perform the following steps to complete the NVRAM12-EX replacement.
 . From the healthy controller, verify that the new partner system ID has been automatically assigned: 
 `_storage failover show_`
 +
-In the command output, you should see a message displaying the current state of the storage replacement. In the following example, node2 has undergone replacement and displays the current state as "In takeover".
+In the command output, you should see a message displaying the current state of the storage replacement. In the following example, `node2` has undergone replacement and displays the current state as `In takeover`.
 +
 ----
 node1:> storage failover show
@@ -238,7 +238,7 @@ node2             node1             -            Waiting for giveback
 ----
 
 . Give back the controller:
- .. From the healthy controller, give back the replaced controller's storage:`_storage failover giveback -ofnode replacement_node_name_`
+ .. From the healthy controller, give back the replaced controller's storage: `_storage failover giveback -ofnode replacement_node_name_`
 +
 The controller takes back its storage and completes booting.
 +
