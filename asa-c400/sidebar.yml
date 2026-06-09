@@ -67,17 +67,19 @@ entries:
    - title: Controller
      pdf-filename: ASA C400 Controller Module
      entries:
-      - title: Overview
-        url: /asa-c400/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /asa-c400/controller-replace-workflow.html
+      - title: Review requirements
+        url: /asa-c400/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /asa-c400/controller-replace-shutdown.html
       - title: Replace controller
         url: /asa-c400/controller-replace-move-hardware.html
       - title: Restore system configuration
         url: /asa-c400/controller-replace-system-config-restore-and-verify.html
-      - title: Recable system
+      - title: Give back controller
         url: /asa-c400/controller-replace-recable-reassign-disks.html
-      - title: Complete system restoration
+      - title: Complete controller replacement
         url: /asa-c400/controller-replace-restore-system-rma.html
    - title: DIMM
      pdf-filename: ASA C400 DIMM

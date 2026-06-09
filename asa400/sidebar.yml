@@ -67,17 +67,19 @@ entries:
    - title: Controller
      pdf-filename: ASA A400 Controller Module
      entries:
-      - title: Overview
-        url: /asa400/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /asa400/controller-replace-workflow.html
+      - title: Review requirements
+        url: /asa400/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /asa400/controller-replace-shutdown.html
       - title: Replace controller
         url: /asa400/controller-replace-move-hardware.html
       - title: Restore system configuration
         url: /asa400/controller-replace-system-config-restore-and-verify.html
-      - title: Recable system
+      - title: Give back controller
         url: /asa400/controller-replace-recable-reassign-disks.html
-      - title: Complete system restoration
+      - title: Complete controller replacement
         url: /asa400/controller-replace-restore-system-rma.html
    - title: DIMM
      pdf-filename: ASA A400 DIMM

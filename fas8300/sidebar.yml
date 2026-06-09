@@ -70,17 +70,19 @@ entries:
    - title: Controller
      pdf-filename: FAS8300 and FAS8700 Controller
      entries:
-      - title: Overview
-        url: /fas8300/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /fas8300/controller-replace-workflow.html
+      - title: Review requirements
+        url: /fas8300/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /fas8300/controller-replace-shutdown.html
-      - title: Replace controller module
+      - title: Replace controller
         url: /fas8300/controller-replace-move-hardware.html
       - title: Restore system configuration
         url: /fas8300/controller-replace-system-config-restore-and-verify.html
-      - title: Recable system
+      - title: Give back controller
         url: /fas8300/controller-replace-recable-reassign-disks.html
-      - title: Complete replacement
+      - title: Complete controller replacement
         url: /fas8300/controller-replace-restore-system-rma.html
    - title: DIMM
      pdf-filename: FAS8300 and FAS8700 DIMM

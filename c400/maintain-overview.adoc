@@ -2,7 +2,7 @@
 permalink: c400/maintain-overview.html
 sidebar: sidebar
 keywords: aff C400 maintenance, maintenance, repairing C400, repairing aff C400, replace aff C400 components, replace aff C400 components
-summary: Maintain the AFF C400 hardware
+summary: Maintain the hardware of your AFF C400 storage system to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 ---
 = Maintain AFF C400 hardware
 :icons: font
@@ -33,7 +33,7 @@ a| link:chassis-replace-overview.html[Chassis]
 
 a| The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
 
-a| link:controller-replace-overview.html[Controller]
+a| link:controller-replace-workflow.html[Controller]
 
 a| A controller consists of a board, firmware, and software. It controls the drives and implements the ONTAP functions.
 
