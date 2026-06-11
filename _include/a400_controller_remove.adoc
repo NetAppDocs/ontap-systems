@@ -1,0 +1,52 @@
+To access components inside the controller module, you must remove the controller module from the chassis.
+
+You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
+
+video::ca74d345-e213-4390-a599-aae10019ec82[panopto, title="Animation - Remove the controller module"]
+
+.Steps
+. If you are not already grounded, properly ground yourself.
+. Release the power cable retainers, and then unplug the cables from the power supplies.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
++
+. Remove the cable management device from the controller module and set it aside.
+. Press down on both of the locking latches, and then rotate both latches downward at the same time.
++
+The controller module moves slightly out of the chassis.
++
+image::../media/drw_A400_Remove_controller.png[Release the controller module]
++
+[cols="10a,90a"]
+|===
+| image:../media/icon_round_1.png[Callout number 1]
+| Locking latches
+
+| image:../media/icon_round_2.png[Callout number 2]
+| Controller moves slightly out of chassis
+|===
+
+. Slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+. Place the controller module on a stable, flat surface.
+. On the replacement controller module, open the air duct and remove the empty risers from the controller module using the animation, illustration, or the written steps:
++
+video::49053752-e813-4c15-a917-ab190147fa6e[panopto, title="Animation - Remove the empty risers from the replacement controller module"]
+
+image::../media/drw_a400_empty_riser_remove.png[Remove empty riser]
+
+[cols="10,90"]
+|===
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+Riser release latches
+|===
+
+ .. Press the locking tabs on the sides of the air duct in toward the middle of the controller module.
+ .. Slide the air duct toward the back of the controller module, and then rotate it upward to its completely open position.
+ .. Rotate the riser locking latch on the left side of riser 1 up and toward air duct, lift the riser up, and then set it aside.
+ .. Repeat the previous step for the remaining risers.

@@ -39,7 +39,7 @@ entries:
         - title: Boot media replacement workflow
           url: /a400/bootmedia-replace-workflow.html
         - title: Review requirements
-          url:  /a400/bootmedia-replace-requirements.html
+          url: /a400/bootmedia-replace-requirements.html
         - title: Check encryption keys
           url: /a400/bootmedia-encryption-preshutdown-checks.html
         - title: Shut down controller
@@ -67,17 +67,19 @@ entries:
    - title: Controller
      pdf-filename: AFF A400 Controller Module
      entries:
-      - title: Overview
-        url: /a400/controller-replace-overview.html
+      - title: Controller replacement workflow
+        url: /a400/controller-replace-workflow.html
+      - title: Review requirements
+        url: /a400/controller-replace-requirements.html
       - title: Shut down impaired controller
         url: /a400/controller-replace-shutdown.html
       - title: Replace controller
         url: /a400/controller-replace-move-hardware.html
       - title: Restore system configuration
         url: /a400/controller-replace-system-config-restore-and-verify.html
-      - title: Recable system
+      - title: Give back controller
         url: /a400/controller-replace-recable-reassign-disks.html
-      - title: Complete system restoration
+      - title: Complete controller replacement
         url: /a400/controller-replace-restore-system-rma.html
    - title: DIMM
      pdf-filename: AFF A400 DIMM
@@ -86,10 +88,10 @@ entries:
      pdf-filename: AFF A400 Fan Module
      url: /a400/fan-swap-out.html
    - title: NVDIMM battery
-     pdf-filename: AFF A400 NVDIMM Battery Battery
+     pdf-filename: AFF A400 NVDIMM Battery
      url: /a400/nvdimm-battery-replace.html
    - title: NVDIMM
-     pdf-filename: AFF A320 NVDIMM
+     pdf-filename: AFF A400 NVDIMM
      url: /a400/nvdimm-replace.html
    - title: PCIe or mezzanine card
      pdf-filename: AFF A400 PCIe or Mezzanine Card
