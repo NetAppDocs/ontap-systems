@@ -238,7 +238,7 @@ node2             node1             -            Waiting for giveback
 ----
 
 . Give back the controller:
- .. From the healthy controller, give back the replaced controller's storage: `_storage failover giveback -ofnode replacement_node_name_`
+ .. From the healthy controller, give back the replaced controller's storage: `_storage failover giveback -ofnode impaired_node_name_`
 +
 The controller takes back its storage and completes booting.
 +
@@ -262,10 +262,6 @@ The output from the `storage failover show` command should not include the Syste
 `storage failover show` and `storage failover show-giveback`
 +
 NOTE: The following command is only available in the Diagnostic mode privilege level.
-
-. Return the impaired controller to normal operation by giving back its storage:
-+
-`storage failover giveback -ofnode _impaired_node_name_`
 
 . If automatic giveback was disabled, reenable it:
 + 
