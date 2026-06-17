@@ -4,11 +4,10 @@ sidebar: sidebar
 keywords: sas3, shelves, shelf, sas3 shelves, hot-add, drive, ds212c, ds224c, ds460c
 summary: "You can add new drives to a powered-on shelf non-disruptively, even during I/O operations."
 ---
-= Hot-add a DS212C, DS224C, or DS460C drive
+= Hot-add a drive to a DS212C, DS224C, or DS460C shelf
 
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 include::../_include/drive_hot_add.adoc[]
-
