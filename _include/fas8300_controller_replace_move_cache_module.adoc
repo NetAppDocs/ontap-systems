@@ -1,0 +1,20 @@
+
+You must move the caching module from the impaired controller module to the replacement controller module when replacing a controller module.
+
+NOTE: The Ver2 controller module has only one caching module socket in the FAS8300. FAS8700 does not have a VER2 controller module. The caching module functionality is not impacted by the socket removal.  
+
+You can use the following animation, illustration, or the written steps to move caching modules to the new controller module.
+
+video::d6a43902-0e78-40c3-a2bd-aad9012f5b94[panopto, title="Animation - Move the caching modules"]
+
+image::../media/drw_8300_Replace-flashcache.png[Remove and replace the caching module]
+
+.Steps
+. If you are not already grounded, properly ground yourself.
+. Move the caching modules from the impaired controller module to the replacement controller module:
+ .. Press the blue release tab at the end of the caching module, rotate the module up, and then remove the module from the socket.
+ .. Move the caching module to the same socket on the replacement controller module.
+ .. Align the edges of the caching module with the socket and gently insert the module as far into the socket as it will go.
+ .. Rotate the caching module downward toward the motherboard.
+ .. Placing your finger at the end of the caching module by the blue button, firmly push down on the caching module end, and then lift the locking button to lock the caching module in place.
+

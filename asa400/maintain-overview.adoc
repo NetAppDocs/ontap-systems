@@ -2,7 +2,7 @@
 permalink: asa400/maintain-overview.html
 sidebar: sidebar
 keywords: asa A400 maintenance, maintenance, repairing A400, repairing asa A400, replace asa A400 components, replace asa A400 components
-summary: Maintain the ASA A400 hardware
+summary: Maintain the hardware of your ASA A400 storage system to ensure long-term reliability and optimal performance. Perform regular maintenance tasks such as replacing faulty components, as this helps prevent downtime and data loss.
 ---
 = Maintain ASA A400 hardware
 :icons: font
@@ -33,7 +33,7 @@ a| link:chassis-replace-overview.html[Chassis]
 
 a| The chassis is the physical enclosure housing all the controller components such as the controller/CPU unit, power supply, and I/O.
 
-a| link:controller-replace-overview.html[Controller]
+a| link:controller-replace-workflow.html[Controller]
 
 a| A controller consists of a board, firmware, and software. It controls the drives and implements the ONTAP functions.
 

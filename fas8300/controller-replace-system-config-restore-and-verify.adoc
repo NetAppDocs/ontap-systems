@@ -2,38 +2,17 @@
 permalink: fas8300/controller-replace-system-config-restore-and-verify.html
 sidebar: sidebar
 keywords: fas8300, fas8700, restore and verify the system configuration, verify and set the ha state of the controller module
-summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
+summary: Verify that the controller's HA configuration is active and functioning correctly in your FAS8300 and FAS8700 storage system, and confirm that the system's storage ports list all the paths to the disks.
 ---
 = Restore and verify the system configuration - FAS8300 and FAS8700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+Verify that the controller's HA configuration is active and functioning correctly in your FAS8300 and FAS8700 storage system, and confirm that the system's storage ports list all the paths to the disks.
 
-== Step 1: Set and verify system time after replacing the controller
+include::../_include/a400_controller_replace_system_config_restore_and_verify.adoc[]
 
-include::../_include/set_time_after_controller_rep.adoc[]
+.What's next?
 
-== Step 2:  Verify and set the HA state of the controller module
-
-You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
-
-. In Maintenance mode from the new controller module, verify that all components display the same `HA` state: `ha-config show`
-+
-The HA state should be the same for all components.
-
-. If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
-
-+
-The value for `HA-state` can be one of the following:
-
-*** `ha`
-*** `mcc`
-*** `mcc-2n`
-*** `mccip`
-*** `non-ha`
-
-  . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
-  . Confirm that the setting has changed: `ha-config show`
-
+After you've restored and verified the system configuration for your FAS8300 and FAS8700 system, you need to link:controller-replace-recable-reassign-disks.html[give back the controller].
