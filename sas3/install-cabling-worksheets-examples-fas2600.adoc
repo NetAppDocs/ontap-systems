@@ -51,19 +51,3 @@ NOTE: This section does not apply to FAS2820 or FAS25XX systems.
 image::../media/drw_fas2600_mpha_worksheet_IEOPS-1255.svg[Multipath HA cabling worksheet for platforms with internal storage and one stack, width=500px]
 
 image::../media/drw_fas2600_mpha_IEOPS-1256.svg[Multipath HA cabling example for platforms with internal storage, width=500]
-
-== FAS2600 series multipath configuration with one multi-shelf stack
-
-The following worksheets and cabling examples use port pair 0a/0b.
-
-In this example, the controller is installed in slot A of the chassis. When a controller is located in slot A of the chassis, its internal storage port (0b) is in domain A (IOM A); therefore, port 0b must connect to domain A (IOM A) in the stack.
-
-image::../media/drw_fas2600_mp_slot_a_worksheet.png[FAS2600 cabling worksheet showing the port pair for a multipath configuration]
-
-image::../media/drw_fas2600_mp_slot_a.png[FAS2600 multipath cabling example with controller in chassis slot 1]
-
-In this example, the controller is installed in slot B of the chassis. When a controller is located in slot B of the chassis, its internal storage port (0b) is in domain B (IOM B); therefore, port 0b must connect to domain B (IOM B) in the stack.
-
-image::../media/drw_fas2600_mp_slot_b_worksheet.png[FAS2600 cabling worksheet showing the port pair for a multipath configuration]
-
-image::../media/drw_fas2600_mp_slot_b.png[FAS2600 multipath cabling example with controller in chassis slot 2]
