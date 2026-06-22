@@ -11,8 +11,6 @@ summary: "You can use the completed controller-to-stack cabling worksheets and c
 [.lead]
 You can use the completed controller-to-stack cabling worksheets and cabling examples to cable platforms with internal storage. This applies to shelves with IOM12, IOM12B, or IOM12C modules.
 
-NOTE: This information does not apply to FAS25XX platforms.
-
 * If needed, you can refer to link:install-cabling-rules.html[SAS cabling rules and concepts] for information about supported configurations, shelf-to-shelf connectivity, and controller-to-shelf connectivity.
 * Cabling examples show controller-to-stack cables as solid or dashed to distinguish controller 0b/0b1 port connections from controller 0a port connections.
 +
@@ -46,7 +44,7 @@ image::../media/drw_fas2800_withshelves_tpha_IEOPS-949.svg[FAS2820 tri path HA c
 
 The following worksheet and cabling example uses port pair 0a/0b:
 
-NOTE: This section does not apply to FAS2820 or FAS25XX systems.
+NOTE: This section does not apply to FAS2820 systems.
 
 image::../media/drw_fas2600_mpha_worksheet_IEOPS-1255.svg[Multipath HA cabling worksheet for platforms with internal storage and one stack, width=500px]
 
