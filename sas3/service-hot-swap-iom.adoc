@@ -33,8 +33,7 @@ image::../media/drw_iom12c_ieops-2175.svg[Front of IOM12C]
 
 
 * For multipathed (multipath HA or multipath), tri-path HA, and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap a shelf IOM (nondisruptively replace a shelf IOM in a system that is powered on and serving data--I/O is in progress).
-* For FAS2600 series and FAS2700 series single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.
-* For FAS2600 series single-path configurations, you must halt your system to replace a shelf IOM.
+* For FAS2700 series single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.
 +
 CAUTION: If you attempt to hot-swap a shelf IOM on a disk shelf with a single-path connection, you will lose all access to the disk drives in the disk shelf as well as any disk shelves beneath. You could also bring down your entire system.
 
@@ -72,7 +71,7 @@ Multipath HA, tri-path HA, multipath, quad-path HA, or quad-path configuration
 a|
 Go to the next step.
 a|
-FAS2600 series and FAS2700 series single-path HA configuration
+FAS2700 series single-path HA configuration
 a|
 
  .. Determine the target node (the node the failed shelf IOM belongs to).
@@ -81,14 +80,6 @@ IOM A belongs to Controller 1. IOM B belongs to Controller 2.
 
  .. Take over the target node: `storage failover takeover -bynode _partner HA node_`
 
-a|
-FAS2600 series single-path configuration
-a|
-
- .. Shut down the system from the system console: `halt`
- .. Verify that your system halted by checking the storage system console.
-
-+
 |===
 
 . Disconnect the cabling from the shelf IOM that you are removing.
@@ -128,13 +119,9 @@ Multipath HA, tri-path HA, multipath, quad-path HA, or quad-path configuration
 a|
 Go to the next step.
 a|
-FAS2600 series and FAS2700 series single-path HA configuration
+FAS2700 series single-path HA configuration
 a|
 Give back the target node: `storage failover giveback -fromnode partner_HA_node`
-a|
-FAS2600 series single-path configuration
-a|
-Reboot your system.
 |===
 
 . Verify that the shelf IOM port links have been established.
