@@ -34,7 +34,8 @@ Status LED
 +
 Use the BMC message or the Attention LED to identify the fan module to replace. In BMC messages, fan modules use the format Fan#_#: the first number is the fan slot (1 is far left, 4 is far right), and the second number is the row (1=top, 2=bottom).
 +
-For example, Fan1_2 indicates fan slot 1 and row 2.
+For example, Fan1_2 indicates fan slot 1 and row 2.
+
 
 . Press down the release latch on the fan module cam handle, and then rotate the cam handle downward.
 +
