@@ -1,10 +1,10 @@
 ---
 permalink: sas3/install-new-system.html
 sidebar: sidebar
-keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b
-summary: If your new system--HA pair or single-controller configuration--did not come installed in a cabinet, you must install and cable the disk shelves in a rack.
+keywords: install, cable, disk, shelf, iom12, module, system, ha, pair, single-controller, configuration, iom12b, iom12c, ds212c, ds224c, ds460c
+summary: "If your new system did not come installed in a cabinet, you must install and cable the disk shelves in a rack."
 ---
-= Install and cable shelves - DS212C, DS224C, or DS460C
+= Install and cable a DS212C, DS224C, or DS460C shelf
 :icons: font
 :imagesdir: ../media/
 
@@ -14,7 +14,7 @@ If your new system--HA pair or single-controller configuration--did not come ins
 
 .About this task
 
-* Disk shelves with IOM12/IOM12B modules are shipped with shelf IDs preset to 00.
+* Disk shelves with IOM12, IOM12B, or IOM12C modules are shipped with shelf IDs preset to 00.
 +
 NOTE: If you have an HA pair with at least two stacks, the disk shelf containing the root aggregates for the second stack has the shelf ID preset to 10.
 +
@@ -22,7 +22,7 @@ You must set shelf IDs so they are unique within the HA pair or single-controlle
 * You can identify the disk shelves containing the root aggregates by the labels on the disk shelf box and disk shelf chassis.
 +
 The labels show the stack number; for example, *Loop or Stack #: 1* and *Loop or Stack #: 2*. Disk shelves that do not contain the root aggregates only show the disk shelf serial number on the labels.
-* If at system setup and configuration, you do not configure the system to use automatic disk ownership assignment. You need to manually assign disk ownership.
+* If you do not configure the system to use automatic disk ownership assignment at system setup and configuration, you will need to manually assign disk ownership.
 * In-band Alternate Control Path (IBACP) is automatically enabled.
 +
 IBACP is not supported on single-path HA or single-path configurations.
