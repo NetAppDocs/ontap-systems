@@ -1,15 +1,15 @@
 ---
 permalink: sas3/service-hot-swap-drive-ds460c.html
 sidebar: sidebar
-keywords: hot-swap, fail, disk, drive, ds460c, nondisruptive, replace, system, power, serving, data, I O, hot-swap a disk drive in a ds460c disk shelf
-summary: You can hot-swap a failed disk drive in a DS460C disk shelf.
+keywords: hot-swap, replace, disk, drive, ds460c, sas, shelf
+summary: "You can hot-swap a failed disk drive in a DS460C disk shelf."
 ---
-= Hot-swap a disk drive - DS460C
+= Hot-swap a disk drive in a DS460C shelf
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-swap a failed disk drive in a DS460C disk shelf with IOM12 or IOM12B modules.
+You can hot-swap a failed disk drive in a DS460C disk shelf with IOM12, IOM12B, or IOM12C modules.
 
 
 .Before you begin
