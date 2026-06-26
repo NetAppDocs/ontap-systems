@@ -1,5 +1,7 @@
 Replace the NVRAM module or NVRAM DIMMs using the appropriate option.
 
+WARNING: The NVRAM module is not hot-swappable. Before replacing it, reseat the drives, shut down the node, unplug controller power, and pull the controller a few inches out of the chassis.
+
 // start tabbed area
 
 [role="tabbed-block"]
