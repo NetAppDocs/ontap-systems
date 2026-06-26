@@ -1,7 +1,7 @@
 
 Replace the impaired system management module.
 
-NOTE: The system management module is not a hot-swappable component. You must reseat drives, shut down the node, remove power from the controller, and pull the controller out of the chassis a few inches before replacing the System Management module.
+NOTE: The system management module is not hot-swappable. Before replacing it, reseat the drives, shut down the node, unplug controller power, and pull the controller a few inches out of the chassis.
 
 .Steps
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
