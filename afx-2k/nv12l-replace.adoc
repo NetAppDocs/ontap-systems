@@ -1,0 +1,14 @@
+---
+permalink: afx-2k/nv12l-replace.html
+sidebar: sidebar
+keywords: afx 2k, replace NVRAM12-EX, dimm, battery
+summary: Replace the NVRAM12-EX in your AFX 2K storage system when the non-volatile memory becomes faulty or requires an upgrade.
+---
+= Replace NVRAM12-EX - AFX 2K
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Replace the NVRAM12-EX in your AFX 2K storage system when the non-volatile memory becomes faulty or requires an upgrade. The replacement process involves shutting down the impaired controller, replacing the NVRAM12-EX module, the NVRAM DIMM, or the NVRAM battery, and returning the failed part to NetApp.
+
+include::../_include/afx_nv12l_replace.adoc[]
