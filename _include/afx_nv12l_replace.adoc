@@ -17,6 +17,8 @@ include::../_include/shutdown_most_frus_afx_2k.adoc[]
 
 Replace the NVRAM12-EX module, NVRAM DIMMs, or NVRAM battery using the following options.
 
+You must remove the controller module from the enclosure when you replace the controller module or replace a component inside the controller module.
+
 // start tabbed area
 
 [role="tabbed-block"]
@@ -27,6 +29,40 @@ Replace the NVRAM12-EX module, NVRAM DIMMs, or NVRAM battery using the following
 
 To replace the NVRAM12-EX module, locate it in slot 6/7 in the enclosure and follow the specific sequence of steps.
 
+. Check the NVRAM status LED located in slot 4/5 and the NVRAM12-EX status slot 6/7 of the system. There is also an NVRAM LED on the front panel of the controller module. Look for the NV icon:
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
++
+[cols="1,4"]
+|===
+2+h| *NVRAM*
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM attention LED
+|===
++
+image::../media/drw_afx_emr_nvram-led_ieops-2962.svg[NVRAM12-EX attention and status LED location graphic]
++
+[cols="1,4"]
+|===
+2+h| *NVRAM12-EX*
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM12-EX status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM12-EX attention LED
+|===
+
+* If the NV LED is off, go to the next step.
+* If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 . If you are not already grounded, properly ground yourself.
 . Unplug the power supply cables from the PSUs from the controller.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
@@ -95,6 +131,40 @@ NVRAM12-EX battery connection clip
 
 To replace NVRAM DIMMs in the NVRAM12-EX module, you must remove the NVRAM12-EX module, and then replace the target DIMM.
 
+. Check the NVRAM status LED located in slot 4/5 and the NVRAM12-EX status slot 6/7 of the system. There is also an NVRAM LED on the front panel of the controller module. Look for the NV icon:
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
++
+[cols="1,4"]
+|===
+2+h| *NVRAM*
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM attention LED
+|===
++
+image::../media/drw_afx_emr_nvram-led_ieops-2962.svg[NVRAM12-EX attention and status LED location graphic]
++
+[cols="1,4"]
+|===
+2+h| *NVRAM12-EX*
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM12-EX status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM12-EX attention LED
+|===
+
+* If the NV LED is off, go to the next step.
+* If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 . If you are not already grounded, properly ground yourself.
 . Unplug the power supply cables from the PSUs.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
@@ -152,6 +222,40 @@ DIMM locking tabs
 
 To replace NVRAM DIMMs in the NVRAM12-EX module, you must remove the NVRAM12-EX module, and then replace the battery.
 
+. Check the NVRAM status LED located in slot 4/5 and the NVRAM12-EX status slot 6/7 of the system. There is also an NVRAM LED on the front panel of the controller module. Look for the NV icon:
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
++
+[cols="1,4"]
+|===
+2+h| *NVRAM*
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM attention LED
+|===
++
+image::../media/drw_afx_emr_nvram-led_ieops-2962.svg[NVRAM12-EX attention and status LED location graphic]
++
+[cols="1,4"]
+|===
+2+h| *NVRAM12-EX*
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM12-EX status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM12-EX attention LED
+|===
+
+* If the NV LED is off, go to the next step.
+* If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 . If you are not already grounded, properly ground yourself.
 . Unplug the power supply cables from the PSUs.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
@@ -238,7 +342,7 @@ node2             node1             -            Waiting for giveback
 ----
 
 . Give back the controller:
- .. From the healthy controller, give back the replaced controller's storage: `_storage failover giveback -ofnode replacement_node_name_`
+ .. From the healthy controller, give back the replaced controller's storage: `_storage failover giveback -ofnode impaired_node_name_`
 +
 The controller takes back its storage and completes booting.
 +
@@ -262,10 +366,6 @@ The output from the `storage failover show` command should not include the Syste
 `storage failover show` and `storage failover show-giveback`
 +
 NOTE: The following command is only available in the Diagnostic mode privilege level.
-
-. Return the impaired controller to normal operation by giving back its storage:
-+
-`storage failover giveback -ofnode _impaired_node_name_`
 
 . If automatic giveback was disabled, reenable it:
 + 

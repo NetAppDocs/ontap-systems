@@ -244,7 +244,7 @@ LOADER-B>
 
 . If automatic giveback was disabled, reenable it: 
 +
-`storage failover modify -node local auto-giveback-of true`
+`storage failover modify -node local -auto-giveback-of true`
 
 . If AutoSupport is enabled, restore automatic case creation: 
 +
