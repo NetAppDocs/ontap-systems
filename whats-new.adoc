@@ -12,6 +12,15 @@ summary: 'Learn about the new platforms for ONTAP hardware systems.'
 [.lead]
 Learn what's new for ONTAP hardware systems. For additional support information, see link:supported-platforms.html[ONTAP hardware and software compatibility] and link:eoa-hardware.html[hardware no longer supported].
 
+== July 2026
+.AFX 2K storage system
+The new NetApp AFX 2K storage system extends the disaggregated solution engineered to meet the rigorous requirements of high-performance NAS and S3 workloads, including AI/ML applications. AFX 2K systems deliver specialized capabilities for customers requiring scalable, high-throughput file and object storage. 
+
+link:https://docs.netapp.com/us-en/ontap-afx/get-started/ontap-afx-storage.html[Learn more about the AFX system].
+
+.New Cisco 9808 switch support for AFX 2K
+The new Cisco 9808 switches connect to the AFX 2K controller nodes with the storage shelves. This new switch, along with the Cisco 9364D-GX2A and the Cisco 9332D-GX2B switches, allow you to build ONTAP clusters with more than two nodes. Advanced protocols are used to optimize performance. The design is based on VLAN tagging with multiple network paths, as well as tech‑refresh configurations, to ensure continuous operation and ease of upgrade.
+
 == January 2026
 
 === I/O module hot-swap procedures
