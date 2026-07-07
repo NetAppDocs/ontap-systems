@@ -39,7 +39,7 @@ Before starting, review https://docs.netapp.com/us-en/ontap-cli/security-key-man
 +
 `security key-manager onboard show-backup`
 +
-.. Verify the onboard key manager backup:
+.. Run the following command to verify the onboard key manager backup:
 +
 `security key-manager onboard verify-backup`
 . Enter the OKM passphrase and confirm successful verification.
