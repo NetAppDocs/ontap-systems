@@ -35,7 +35,7 @@ Before starting, review https://docs.netapp.com/us-en/ontap-cli/security-key-man
 . Boot to the ONTAP menu from the LOADER prompt `boot_ontap menu` and select option 10.
 
 . Display the key management backup information for the cluster.
-.. Display the key management backup information for the cluster:
+.. Run the following command to display the key management backup information for the cluster:
 +
 `security key-manager onboard show-backup`
 +
