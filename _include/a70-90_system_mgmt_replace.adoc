@@ -1,6 +1,8 @@
 
 Replace the impaired system management module.
 
+WARNING: The system management module is not hot-swappable. Before replacing it, reseat the drives, shut down the node, unplug controller power, and pull the controller a few inches out of the chassis.
+
 .Steps
 . Ensure that all drives in the chassis are firmly seated against the midplane by using your thumbs to push each drive until you feel a positive stop.
 // ontap-systems-internal/issues/1151
