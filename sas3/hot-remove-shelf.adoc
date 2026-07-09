@@ -227,7 +227,7 @@ If you are moving the DS460C shelf to a different part of the data center or tra
 
 .Move or transport DS460C shelves
 
-If you move a DS460C shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
+If you move a DS460C shelf to a different part of the data center or transport the shelf to a different location, you must remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
 
 * If when you installed DS460C shelves as part of your new system installation or shelf hot-add, you saved the drive packaging materials, use these to repackage the drives before moving them.
 +
@@ -249,3 +249,4 @@ CAUTION: Do not place hands on the drive boards exposed on the underside of the 
 +
 CAUTION: Magnetic fields can destroy all data on a drive and cause irreparable damage to the drive circuitry.
 //2025-11-17 ontap-systems-internal/issues/1391
+//2026-07-09 ontap-systems-internal/issues/1617
