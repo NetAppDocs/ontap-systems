@@ -39,11 +39,15 @@ This procedure uses the following terminology:
 
 == Step 1: Shut down the impaired controller
  
-Shut down or take over the impaired controller.
- 
 include::../_include/shutdown_most_frus_afx_2k.adoc[]
 
+== Step 2: Replace the impaired System Management module
+
 include::../_include/afx_2k_system_mgmt_replace.adoc[]
+
+== Step 3: Reboot the controller module
+
+include::../_include/afx_2k_system_mgmt_reboot.adoc[]
 
 == Step 4: Install licenses and register serial number
  
