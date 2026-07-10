@@ -1,6 +1,7 @@
 
 After replacing the system management module, reboot the controller to restore normal HA pair operation. You must power on the controller, perform a partial giveback to bring up the root aggregate, and then complete the full giveback to return the impaired controller to service.
 
+.Steps
 . Plug the power cables back into the PSU. 
 +
 The system reboots, typically to the LOADER prompt.

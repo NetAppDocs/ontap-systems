@@ -1,6 +1,7 @@
 
 The system management module contains the boot media and provides system management functions. You must remove the impaired system management module, transfer the boot media to the replacement module, and reinstall the replacement module in the enclosure.
 
+.Steps
 . Remove the System Management module:
 +
 NOTE:  Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.  
