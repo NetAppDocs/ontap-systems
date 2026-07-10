@@ -86,7 +86,7 @@ Cables have a minimum bend radius. Cable manufacturer specifications define the 
 You should take inventory of the drives.
 ** After you unpack the drives, you should save the packaging materials for future use.
 +
-CAUTION: *Possible loss of data access:* If in the future, you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
+CAUTION: *Possible loss of data access:* If in the future, you move the shelf to a different part of the data center or transport the shelf to a different location, you must remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
 +
 NOTE: Keep disk drives in their ESD bag until you are ready to install them.
 ** When handling the drives, always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis to prevent static discharges.
@@ -364,7 +364,7 @@ In the output, "`in-band`" is listed as "`active`" for each node.
 
 == (Optional) Step 3: Move or transport DS460C shelves
 
-If in the future you move DS460C shelves to a different part of the data center or transport the shelves to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
+If in the future you move DS460C shelves to a different part of the data center or transport the shelves to a different location, you must remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
 
 * If you saved the drive packaging materials when you installed DS460C shelves as part of your shelf hot-add, use these to repackage the drives before moving them.
 +
@@ -386,3 +386,4 @@ CAUTION: Do not place hands on the drive boards exposed on the underside of the 
 +
 CAUTION: Magnetic fields can destroy all data on a drive and cause irreparable damage to the drive circuitry.
 //2025-11-17 ontap-systems-internal/issues/1391
+//2026-07-09 ontap-systems-internal/issues/1617
