@@ -11,7 +11,7 @@ summary: Replace the System Management module in your AFX 1K storage system when
 [.lead]
 Replace the System Management module in your AFX 1K storage system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
 
-The System Management module, located at the back of the controller to the left of slot 8,  contains onboard components for system management, as well as ports for external management. The target controller must be shut down and powered off to replace an impaired System Management module or replace the boot media.
+The System Management module, located at the back of the controller to the left of slot 8, contains onboard components for system management, as well as ports for external management. The target controller must be shut down and powered off to replace an impaired System Management module or replace the boot media.
 
 The System Management module has the following onboard components:
 
