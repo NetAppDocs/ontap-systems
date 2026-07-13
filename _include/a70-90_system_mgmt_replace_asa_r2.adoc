@@ -1,6 +1,8 @@
 
 Replace the impaired system management module.
 
+WARNING: The system management module is not hot-swappable. Before replacing it, reseat the drives, shut down the node, unplug controller power, and pull the controller a few inches out of the chassis.
+
 .Steps
 
 . Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
