@@ -4,7 +4,7 @@ The system management module contains the boot media and provides system managem
 .Steps
 . Remove the System Management module:
 +
-NOTE:  Make sure NVRAM destage has completed before proceeding.  When the LED on the NV  module is off, NVRAM is destaged.  If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.  
+NOTE: Make sure NVRAM destage has completed before proceeding. When the LED on the NV module is off, NVRAM is destaged. If the LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
 +
 image::../media/drw_a1k_sys-mgmt_remove_ieops-1384.svg[Replace the System Management module]
 +
