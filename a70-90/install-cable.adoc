@@ -30,7 +30,7 @@ image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab orien
 
 * If cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
 
-== Step 1: Connect the storage controllers to your network
+== Step 1: Cable the cluster/HA connections
 Cable the controllers to your ONTAP cluster. This procedure differs depending on your storage system model and I/O module configuration.
 
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
@@ -90,7 +90,7 @@ NOTE: Do not use ports e1b and e7b for host network connections. Use a separate 
 +
 image::../media/oie_cable_sfp_gbe_copper.png[100Gb Ethernet cable]
 +
-image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100 Gb Ethernet network]
+image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100Gb Ethernet network]
 
 +
 . Connect your 10/25 GbE host network switches.
@@ -99,7 +99,7 @@ image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100 Gb Ethern
 +
 image::../media/oie_cable_sfp_gbe_copper.png[10/25 Gb cable]
 +
-image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 100Gb Ethernet network]
+image::../media/drw_70-90_network_cabling2_ieops-1655.svg[Cable to 10/25Gb Ethernet network]
 
 == Step 3: Cable the management network connections
 Use the 1000BASE-T RJ-45 cables to connect the management (wrench) ports on each controller to the management network switches.
