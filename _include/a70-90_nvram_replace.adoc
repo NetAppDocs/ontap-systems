@@ -3,6 +3,9 @@ Replace the NVRAM module or NVRAM DIMMs using the appropriate option.
 
 CAUTION: Always wear a grounded wrist strap connected to a verified ground point during installation and maintenance procedures. Failure to follow proper ESD precautions can cause permanent damage to controller nodes, storage shelves, and network switches.
 
+WARNING: The NVRAM module is not hot-swappable. Before replacing it, reseat the drives, shut down the node, unplug controller power, and pull the controller a few inches out of the chassis.
+
+
 
 // start tabbed area
 
@@ -67,11 +70,11 @@ NOTE: If your system has DC power, disconnect the power block from the PSUs.
 . Press down on both of the locking latches on the controller, rotate both latches downward at the same time and pull the controller out about 3 or 4 inches.
 . Rotate the cable management tray down by pulling the buttons on the inside of the cable management tray and rotating it down.
 . Remove the target NVRAM module from the chassis:
- .. Depress the cam latch button.
+.. Depress the cam latch button.
 +
 The cam button moves away from the chassis.
 
- .. Rotate the cam latch as far as it will go.
+.. Rotate the cam latch as far as it will go.
 +
 .. Remove the impaired NVRAM module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
 +
@@ -93,8 +96,8 @@ DIMM locking tabs
 . Set the NVRAM module on a stable surface.
 . Remove the DIMMs, one at a time, from the impaired NVRAM module and install them in the replacement NVRAM module.
 . Install the replacement NVRAM module into the chassis:
- .. Align the module with the edges of the chassis opening in slot 4/5.
- .. Gently slide the module into the slot all the way, and then push the cam latch all the way up to lock the module in place.
+.. Align the module with the edges of the chassis opening in slot 4/5.
+.. Gently slide the module into the slot all the way, and then push the cam latch all the way up to lock the module in place.
 
 . Reinstall the controller module. The controller reboots as soon as it is fully inserted. 
 .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
@@ -113,9 +116,9 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 
 + 
 
- . Rotate the cable management tray up to the closed position.
+. Rotate the cable management tray up to the closed position.
 
- . Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
+. Return the impaired controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`.
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true` .
 
@@ -125,7 +128,7 @@ NOTE: If you have DC power supplies, reconnect the power block to the power supp
 .Option 2: Replace the NVRAM DIMM
 --
 
-To replace NVRAM DIMMs in the NVRAM module, first must remove the NVRAM module and then replace the target DIMM.
+To replace NVRAM DIMMs in the NVRAM module, first you must remove the NVRAM module and then replace the target DIMM.
 
 . If you are not already grounded, properly ground yourself.
 
@@ -183,7 +186,7 @@ NOTE: If your system has DC power, disconnect the power block from the PSUs.
 . Press down on both of the locking latches on the controller, rotate both latches downward at the same time and pull the controller out about 3 or 4 inches.
 . Rotate the cable management tray down by gently pulling the pins on the ends of the tray and rotating the tray down.
 . Remove the target NVRAM module from the chassis:
- .. Depress the cam button.
+.. Depress the cam button.
 +
 The cam button moves away from the chassis.
 
@@ -198,7 +201,8 @@ image::../media/drw_a70-90_nvram12_remove_replace_ieops-1370.svg[Remove the NVRA
 
 |===
 a|
-image:../media/icon_round_1.png[Callout number 1] |
+image:../media/icon_round_1.png[Callout number 1] 
+a|
 Cam locking button
 a|
 image:../media/icon_round_2.png[Callout number 2] 
@@ -213,13 +217,13 @@ DIMM locking tabs
 NOTE: Consult the FRU map label on the side of the NVRAM module to determine the locations of DIMM slots 1 and 2.
 +
 
- . Remove the DIMM by pressing down on the DIMM locking tabs and lifting the DIMM out of the socket.
+. Remove the DIMM by pressing down on the DIMM locking tabs and lifting the DIMM out of the socket.
 
 . Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
 . Install the NVRAM module into the chassis:
- .. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
+.. Gently slide the module into the slot until the cam latch begins to engage with the I/O cam pin, and then rotate the cam latch all the way up to lock the module in place.
 
- . Reinstall the controller module. The controller reboots as soon as it is fully inserted.
+. Reinstall the controller module. The controller reboots as soon as it is fully inserted.
 .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
 The locking latches rise when the controller module is fully seated.
@@ -233,7 +237,6 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 +
 NOTE: If you have DC power supplies, reconnect the power block to the power supplies.
 + 
-
 
 . Rotate the cable management tray up to the closed position.
 
@@ -277,8 +280,8 @@ node2             node1             -            Waiting for giveback (HA mailbo
 ----
 
 . Give back the controller:
- .. From the healthy controller, give back the replaced controller's storage: 
- +
+.. From the healthy controller, give back the replaced controller's storage: 
++
 `storage failover giveback -ofnode replacement_node_name`
 +
 The controller takes back its storage and completes booting.
@@ -289,7 +292,7 @@ If the giveback is vetoed, you can consider overriding the vetoes.
 +
 For more information, see https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted[manual giveback commands^] to override the veto.
 
- .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: _storage failover show_
+.. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: _storage failover show_
 +
 The output from the `storage failover show` command should not include the System ID changed on partner message.
 . Verify that the disks were assigned correctly: 
@@ -318,8 +321,8 @@ The MetroCluster configuration takes a few minutes after the replacement to retu
 +
 This is required if both of the following are true:
 
- ** The MetroCluster configuration is in a switchover state.
- ** The controller is the current owner of the disks on the disaster site.
+** The MetroCluster configuration is in a switchover state.
+** The controller is the current owner of the disks on the disaster site.
 +
 See https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration] for more information.
 
