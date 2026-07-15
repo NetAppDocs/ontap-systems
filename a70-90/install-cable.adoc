@@ -1,7 +1,7 @@
 ---
 permalink: a70-90/install-cable.html
 sidebar: sidebar
-keywords: aff a70, aff a90, prepare installation
+keywords: aff a70, aff a90, prepare installation, cable the hardware
 summary: After you install the rack hardware for your AFF A70 or AFF A90 storage system, install the network cables for the controllers, and connect the cables between the controllers and storage shelves.
 ---
 = Cable the hardware - AFF A70 and AFF A90
@@ -57,7 +57,7 @@ image::../media/drw_70-90_tnsc_cluster_cabling_ieops-1653.svg[Two-node switchles
 --
 .Switched cluster cabling
 --
-Use the 100 GbE cable to connect Controllers A and B ports e1a and e7a to cluster network switches A and B. 
+Use the 100 GbE cable to connect Controllers A and B ports e1a and e7a to cluster network switches A and B.
 
 .Steps
 
@@ -76,7 +76,7 @@ image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[Cable cluster 
 ====
 
 == Step 2: Cable the host network connections
-Connect the Ethernet module ports to your host network. 
+Connect the Ethernet module ports to your host network.
 
 The following are some typical host network cabling examples. See link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
 
@@ -93,7 +93,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[100Gb Ethernet cable]
 image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100Gb Ethernet network]
 
 +
-. Connect your 10/25 GbE host network switches.
+. Connect your 10/25 GbE cards to your host network switches.
 +
 *4-ports, 10/25 GbE Host*
 +

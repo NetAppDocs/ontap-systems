@@ -1,7 +1,7 @@
 ---
 permalink: c80/install-cable.html
 sidebar: sidebar
-keywords: aff c80, prepare installation
+keywords: aff c80, prepare installation, cable the hardware
 summary: Management network ports on the controllers are connected to switches. The HA interconnect and cluster interconnect ports are cabled on both controllers. The controller modules are connected to external storage, if ordered.
 ---
 = Cable the hardware - AFF C80
@@ -41,7 +41,7 @@ NOTE: The cluster interconnect traffic and the HA traffic share the same physica
 
 .Switchless cluster cabling
 --
-Use the Cluster/HA interconnect cable to connect ports e1a to e1a and ports e7a to e7a. 
+Use the Cluster/HA interconnect cable to connect ports e1a to e1a and ports e7a to e7a.
 
 .Steps
 
@@ -62,7 +62,7 @@ Use the 100 GbE cable to connect Controllers A and B ports e1a and e7a to cluste
 
 .Steps
 
-. Connect port e1a on Controller A and port e1a on Controller B to cluster network switch A. 
+. Connect port e1a on Controller A and port e1a on Controller B to cluster network switch A.
 . Connect port e7a on Controller A and port e7a on Controller B to cluster network switch B.
 +
 *100 GbE cable*
@@ -76,7 +76,7 @@ image::../media/drw_70-90_switched_cluster_cabling_ieops-1657.svg[Cable cluster 
 ====
 
 == Step 2: Cable the host network connections
-Connect the Ethernet module ports to your host network. 
+Connect the Ethernet module ports to your host network.
 
 The following are some typical host network cabling examples. See link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
 
@@ -93,7 +93,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[100Gb Ethernet cable]
 image::../media/drw_70-90_network_cabling1_ieops-1654.svg[Cable to 100Gb Ethernet network]
 
 +
-. Connect your 10/25 GbE host network switches.
+. Connect your 10/25 GbE cards to your host network switches.
 +
 *4-ports, 10/25 GbE Host*
 +
@@ -113,7 +113,7 @@ image::../media/oie_cable_rj45.png[RJ45 cables]
 
 image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your management network]
 
-IMPORTANT: Do not plug in the power cords yet. 
+IMPORTANT: Do not plug in the power cords yet.
 
 == Step 4: Cable the shelf connections
 The following cabling procedures show how to connect your controllers to a storage shelf. Choose one of the following cabling options that matches your setup.
@@ -124,7 +124,7 @@ For the maximum number of shelves supported for your storage system and for all 
 
 // Issue ontap-systems/350 - cover NSM100B
 
-The AFF A70 and AFF A90 storage systems support NS224 shelves with either the NSM100 or NSM100B module. The major differences between the modules are:
+The AFF C80 storage systems support NS224 shelves with either the NSM100 or NSM100B module. The major differences between the modules are:
 
 ** NSM100 shelf modules use built-in ports e0a and e0b.
 
