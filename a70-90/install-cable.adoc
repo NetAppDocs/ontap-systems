@@ -170,11 +170,11 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable]
 . On controller A, connect the following ports:
 .. Connect port e11a to shelf 1, NSM A port e0a.
 
-.. Connect port e8b to shelf 2, NSM A port e0b.
+.. Connect port e8b to shelf 1, NSM B port e0b.
 
 .. Connect port e8a to shelf 2, NSM A port e0a.
 
-.. Connect port e11b to shelf 1, NSM B port e0b.
+.. Connect port e11b to shelf 2, NSM B port e0b.
 +
 image:../media/drw_a70-90_2shelf_cabling_a_ieops-1733.svg[Controller-to-shelf connections for controller A]
 +
