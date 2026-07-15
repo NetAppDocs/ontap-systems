@@ -31,7 +31,7 @@ image::../media/drw_cable_pull_tab_direction_ieops-1699.svg[Cable pull tab orien
 * If cabling to an optical switch, insert the optical transceiver into the controller port before cabling to the switch port.
 
 
-== Step 1: Connect the storage controllers to your network 
+== Step 1: Connect the storage controllers to your network
 Cable the controllers to your ONTAP cluster. This procedure differs depending on your storage system model and I/O module configuration.
 
 NOTE: The cluster interconnect traffic and the HA traffic share the same physical ports.
@@ -61,7 +61,7 @@ Use the 100 GbE cable to connect ports e1a to e1a and ports e7a to e7a.
 
 .Steps
 
-. Connect port e1a on Controller A and port e1a on Controller B to cluster network switch A. 
+. Connect port e1a on Controller A and port e1a on Controller B to cluster network switch A.
 . Connect port e7a on Controller A and port e7a on Controller B to cluster network switch B.
 +
 *100 GbE cable*
@@ -78,13 +78,13 @@ image::../media/drw_a1k_switched_cluster_cabling_ieops-1652.svg[Cable cluster co
 == Step 2: Cable the host network connections
 Connect the Ethernet module ports to your host network.
 
-The following are some typical host network cabling examples. See  link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
+The following are some typical host network cabling examples. See link:https://hwu.netapp.com[NetApp Hardware Universe^] for your specific system configuration.
 
 .Steps
 . Connect ports e9a and e9b to your Ethernet data network switch.
 // Issue ontap-systems/395 - Simplify statement previously here
 +
-NOTE: Do not use ports e1b and e7b ports for host network connections. Use a separate host card.
+NOTE: Do not use ports e1b and e7b for host network connections. Use a separate host card.
 +
 *100 GbE cable*
 +
@@ -109,12 +109,12 @@ image::../media/oie_cable_rj45.png[RJ-45 cables]
 
 image::../media/drw_a1k_management_connection_ieops-1651.svg[Connect to your management network,width=500px]
 
-IMPORTANT: Do not plug in the power cords yet. 
+IMPORTANT: Do not plug in the power cords yet.
 
 == Step 4: Cable the shelf connections
 The following cabling procedures show how to connect your controllers to a storage shelf. Choose one of the following cabling options that matches your setup.
 
-For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^]. 
+For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 
 For additional SAS shelf cabling guidance, see link:https://docs.netapp.com/us-en/ontap-systems/sas3/install-cabling-rules.html[SAS cabling rules and concepts - shelves with IOM12/IOM12B modules].
 
@@ -124,9 +124,9 @@ For additional SAS shelf cabling guidance, see link:https://docs.netapp.com/us-e
 
 // Issue ontap-systems/350 - cover NSM100B
 
-The FAS70 and FAS90 storage systems supports DS212C, DS224C, DS460C, and NS224 shelves with either the NSM100 or NSM100B module. 
+The FAS70 and FAS90 storage systems supports DS212C, DS224C, DS460C, and NS224 shelves with either the NSM100 or NSM100B module.
 
-The major differences between the NS224 modules are:  
+The major differences between the NS224 modules are:
 
 ** NSM100 shelf modules use built-in ports e0a and e0b.
 
@@ -151,7 +151,7 @@ image::../media/oie_cable100_gbe_qsfp28.png[100 GbE QSFP28 copper cable,width=10
 
 . On controller A, connect the following ports:
 .. Connect port e11a to NSM A port e0a.
-.. Connect port e11b to port NSM B port e0b.
+.. Connect port e11b to NSM B port e0b.
 +
 
 image:../media/drw_a1k_1shelf_cabling_a_ieops-1703.svg[Controller A e11a and e11b to a single NS224 shelf]
