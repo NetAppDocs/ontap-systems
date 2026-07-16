@@ -11,4 +11,48 @@ summary: Replace the System Management module in your AFX 1K storage system when
 [.lead]
 Replace the System Management module in your AFX 1K storage system when it becomes defective or its firmware is corrupted. The replacement process involves shutting down the controller, replacing the failed System Management module, rebooting the controller, updating the license keys, and returning the failed part to NetApp.
 
+The System Management module, located at the back of the controller to the left of slot 8, contains onboard components for system management, as well as ports for external management. The target controller must be shut down and powered off to replace an impaired System Management module or replace the boot media.
+
+The System Management module has the following onboard components:
+
+** Boot media, allowing boot media replacement without removing the controller module.
+** BMC
+** Management switch
+
+The System Management module also contains the following ports for external management:
+
+** RJ45 Serial
+** USB Serial (Type-C)
+** USB Type-A (Boot recovery)
+** RJ45 Ethernet service port for e0M and BMC network access
+
+.Before you begin
+* Make sure all other system components are working properly.
+* Make sure that the partner controller is able to take over the impaired controller.
+* Make sure you replace the failed component with a replacement component you received from NetApp.
+
+.About this task
+This procedure uses the following terminology:
+
+ * The impaired controller is the controller on which you are performing maintenance.
+ * The healthy controller is the HA partner of the impaired controller.
+
+== Step 1: Shut down the impaired controller
+
+include::../_include/shutdown_most_frus_afx.adoc[]
+
+== Step 2: Replace the impaired System Management module
+
 include::../_include/afx_system_mgmt_replace.adoc[]
+
+== Step 3: Reboot the controller module
+
+include::../_include/afx_system_mgmt_reboot.adoc[]
+
+== Step 4: Install licenses and register serial number
+
+include::../_include/afx_install_licenses_sn_system_mgmt.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+include::../_include/complete_rma.adoc[]
