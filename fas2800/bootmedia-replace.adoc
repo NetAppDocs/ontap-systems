@@ -98,7 +98,7 @@ Install the system image on the replacement boot media using a USB flash drive w
 
 .Steps
 . Download the appropriate image version of ONTAP to the formatted USB flash drive:
-.. Use https://kb.netapp.com/onprem/ontap/dm/Encryption/How_to_determine_if_the_running_ONTAP_version_supports_NetApp_Volume_Encryption_(NVE)[How to determine if the running ONTAP version supports NetApp Volume Encryption (NVE)^] to determine if volume encryption is currently supported.
+.. Use https://kb.netapp.com/on-prem/ontap/DM/Encryption/Encryption-KBs/How_to_determine_if_the_running_ONTAP_version_supports_Data_At_Rest_Encryption[How to determine if your ONTAP version supports NetApp Volume Encryption (NVE)^] to determine if volume encryption is currently supported.
 ** If NVE is supported on the cluster, download the image with NetApp Volume Encryption.
 ** If NVE is not supported on the cluster, download the image without NetApp Volume Encryption.
 See https://kb.netapp.com/onprem/ontap/os/Which_ONTAP_image_should_I_download%3F_With_or_without_Volume_Encryption%3F[Which ONTAP image should I download? With or without Volume Encryption?^] for more details.
