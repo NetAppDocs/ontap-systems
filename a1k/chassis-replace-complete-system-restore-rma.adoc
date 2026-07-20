@@ -13,7 +13,7 @@ Reboot the controller, verify system health, and return the failed part to NetAp
 
 == Step 1: Boot the controllers and verify system health
 
-After the controllers reboot, boot ONTAP, give back the controllers, and verify the health of your AFF A1K system.
+After the controllers reboot, boot ONTAP, give back the controllers, and verify the system health.
 
 include::../_include/a1k_chassis_replace_complete_system_restore_rma.adoc[]
 
