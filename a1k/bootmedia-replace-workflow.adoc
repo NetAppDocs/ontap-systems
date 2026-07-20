@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, replace the boot media
 summary: The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the AFF A1K system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
 ---
-= Boot media manual recovery workflow - AFF A1K
+= AFF A1K boot media replacement workflow using the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
