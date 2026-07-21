@@ -4,7 +4,7 @@
 
 Product: NetApp ONTAP hardware systems (AFF, ASA, FAS, and AFX storage platforms)
 
-This repository contains installation and maintenance documentation for NetApp ONTAP storage hardware, including step-by-step procedures for hardware installation, FRU replacement, and system recovery across all supported platform families. 
+This repository contains installation and maintenance documentation for NetApp ONTAP storage hardware, including step-by-step procedures for hardware installation, FRU replacement, and system recovery across all supported platform families.
 
 ## Repository structure
 
