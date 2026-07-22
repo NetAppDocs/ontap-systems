@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a900, replace a dimm
 summary: "Replace a DIMM in your AFF A900 controller module when the system registers an increasing number of correctable error correction codes or uncorrectable ECC errors. Failure to replace a faulty DIMM can cause a system panic."
 ---
-= Replace a DIMM - AFF A900
+= Replace a DIMM in your AFF A900 system to fix memory errors
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a DIMM in your AFF A900 system when the storage system encounters excessive correctable (CECC) or uncorrectable memory errors. Such errors can prevent the storage system from booting ONTAP.
 
 include::../_include/900_dimm_replace.adoc[]

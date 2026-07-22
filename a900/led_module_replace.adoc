@@ -4,10 +4,12 @@ sidebar: sidebar
 keywords: LED USB module,replacing,hot-swapping,LED USB module,non-disruptive replacement,LED USB module
 summary: 'You can replace an LED USB module without interrupting service.'
 ---
-= Replace an LED USB module - AFF A900
+= Replace the LED USB module in your AFF A900 system
 :icons: font
 :imagesdir: ../media/
 
 
 [.lead]
+Replace the LED USB module in your AFF A900 system to restore connectivity to console ports and system status. The replacement does not require tools and does not interrupt service.
+
 include::../_include/900_led_module_replace.adoc[]
