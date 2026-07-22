@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, how to recable the system, how to reassign disks
 summary: "You must recable the storage and confirm disk reassignment."
 ---
-= Recable the system and reassign disks - AFF A150
+= Recable the system and reassign disks in your AFF A150 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Recable the storage, confirm disk reassignment, and restore NetApp Storage Encryption to return your AFF A150 system to full operation.
+
 include::../_include/150_controller_replace_recable_reassign_disks.adoc[]

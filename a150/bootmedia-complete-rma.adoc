@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, complete, replacement, process, replace, return, failed, rma, instructions
 summary: 'After you replace the part, you can return the failed part to NetApp, as described in the RMA instructions shipped with the kit.'
 ---
-= Return the failed part to NetApp - AFF A150
+= Return the failed AFF A150 boot media to NetApp
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+If a component in your AFF A150 system fails, return the failed part to NetApp. See the https://mysupport.netapp.com/site/info/rma[Part Return and Replacements] page for further information.
+
 include::../_include/complete_rma.adoc[]

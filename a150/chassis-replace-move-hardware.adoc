@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap
 summary: "Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
 ---
-= Move and replace hardware - AFF A150
+= Replace the chassis in your AFF A150 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the chassis of your AFF A150 system when a hardware failure requires it. The replacement process involves moving the power supplies, drives, and controller modules from the impaired chassis to the replacement chassis.
+
 include::../_include/150_chassis_replace_move_hardware.adoc[]

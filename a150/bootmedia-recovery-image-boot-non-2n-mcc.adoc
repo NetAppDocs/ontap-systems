@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, boot, recovery, image, restore, file, system, environmental, varible
 summary: "You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables."
 ---
-= Boot the recovery image - AFF A150
+= Restore the recovery image on your AFF A150 system using the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+After installing the new boot media in your AFF A150 system, boot the ONTAP recovery image from a USB drive to restore the file system and verify the environmental variables.
+
 include::../_include/150_bootmedia_recovery_image_boot_non_2n_mcc.adoc[]
