@@ -62,6 +62,10 @@ ONTAP 9.16.1
 |===
 | Switch| Support discontinued from...
 a|
+Cisco Nexus 3232C
+a|
+ONTAP 9.19.1
+a|
 Cisco Nexus 3132Q-V
 a|
 ONTAP 9.18.1
@@ -86,4 +90,4 @@ ONTAP 9.11.1
 * https://mysupport.netapp.com/info/eoa/df_eoa_category_page.html?category=Platforms[End of Availability Platforms]
 
 // 2025-11-25 ontap-systems-internal/issues/1404
-// GH ISSUE #412, 2026-FEB-04, reopened by yvonneo 2026-FEB-10
+// GH ISSUE #412, 2026-FEB-04, reopened by yvonneo 2026-FEB-10, ontap-systems-internal#1633, 2026-JUL-17

@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a250, replace a dimm
 summary: "Replace a DIMM in your AFF A250 controller when the system encounters excessive CECC errors based on Health Monitor alerts, or uncorrectable ECC errors that prevent the storage system from booting ONTAP."
 ---
-= Replace a DIMM - AFF A250
+= Replace a DIMM in your AFF A250 system to fix memory errors
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a DIMM in your AFF A250 system when the storage system encounters excessive correctable (CECC) or uncorrectable memory errors. Such errors can prevent the storage system from booting ONTAP.
+
 include::../_include/250_dimm-replace.adoc[]

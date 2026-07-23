@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a800, shutdown the controllers
 summary: "To replace the chassis, you must shutdown the controllers."
 ---
-= Shut down the controllers - AFF A800
+= Shut down your AFF A800 controllers to replace the chassis
 :icons: font
 :imagesdir: ../media/
 
@@ -12,8 +12,8 @@ summary: "To replace the chassis, you must shutdown the controllers."
 Shut down the controllers in your AFF A800 storage system to prevent data loss and ensure system stability when replacing the chassis.
 
 include::../_include/shutdown_chassis.adoc[]
-.What's next?
 
+.What's next?
 After shutting down the controllers, link:chassis-replace-move-hardware.html[replace the chassis].
 
 //2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380

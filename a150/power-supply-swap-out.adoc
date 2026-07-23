@@ -4,11 +4,13 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, swap, power, supply, turn off, disconnect, remove, old, install, connect, turn on, replacement
 summary: 'Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.'
 ---
-= Hot-swap a power supply - AFF A150
+= Hot-swap a power supply unit in your AFF A150 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a power supply in your AFF A150 system when it fails or becomes faulty. Power supplies are redundant and hot-swappable, so you do not have to shut down the controller to perform this replacement.
+
 include::../_include/150_power_supply_swap_out.adoc[]
 
 // 2025-10-13 ontap-systems-internal/issues/1278
