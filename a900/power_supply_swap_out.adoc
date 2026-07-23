@@ -4,11 +4,13 @@ sidebar: sidebar
 keywords: aff a900, replace a power supply
 summary: 'Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.'
 ---
-= Hot-swap a power supply - AFF A900
+= Hot-swap a power supply unit in your AFF A900 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a power supply in your AFF A900 system when it fails or becomes faulty. Power supplies are redundant and hot-swappable, so you do not have to shut down the controller to perform this replacement.
+
 include::../_include/900_power_supply_swap_out.adoc[]
 
 // 2025-10-13 ontap-systems-internal/issues/1278

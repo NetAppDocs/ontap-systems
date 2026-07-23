@@ -4,11 +4,13 @@ sidebar: sidebar
 keywords: aff a400, replace a power supply
 summary: Replace a power supply in your AFF A400 system by disconnecting the target PSU from the power source, unplugging the power cable, removing the old PSU, installing the replacement PSU, and then reconnecting it to the power source.
 ---
-= Hot-swap a power supply - AFF A400
+= Hot-swap a power supply unit in your AFF A400 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a power supply in your AFF A400 system when it fails or becomes faulty. Power supplies are redundant and hot-swappable, so you do not have to shut down the controller to perform this replacement.
+
 include::../_include/400_aseries_power_supply_replace.adoc[]
 
 // 2025-10-13 ontap-systems-internal/issues/1278

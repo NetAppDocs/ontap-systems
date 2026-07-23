@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a250, how to recable the system, how to reassign disks
 summary: You must recable the storage and confirm disk reassignment.
 ---
-= Recable the system and reassign disks - AFF A250
+= Recable the system and reassign disks in your AFF A250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After completing restore and verify the system configuration A250 system you need to recable the system and reassign disks.
+Recable the storage, confirm disk reassignment, and restore NetApp Storage Encryption to return your AFF A250 system to full operation.
 
 include::../_include/250_controller-replace-recable-reassign-disks.adoc[]
 

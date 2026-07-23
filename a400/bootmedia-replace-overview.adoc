@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, boot, media, store, primary, secondary, set, system, boot, image, file, replace, replace the boot media
 summary: The boot media stores a primary and secondary set of system files that the system uses when it boots.
 ---
-= Overview of boot media replacement - AFF A400
+= Review requirements for replacing the boot media in your AFF A400 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Before replacing the boot media in your AFF A400 system, ensure you meet the necessary requirements for a successful replacement. This includes having a USB flash drive formatted to FAT32 with sufficient storage for the ONTAP recovery image and understanding whether you will perform a nondisruptive or disruptive replacement.
+
 include::../_include/bootmedia_replace_overview.adoc[]

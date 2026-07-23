@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, replace the boot media
 summary: The automated recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on partner node to reinstall ONTAP on the replacement boot media in your AFF A1K system.
 ---
-= Boot media automated recovery workflow - AFF A1K
+= AFF A1K boot media replacement workflow using the automated boot recovery process
 :icons: font
 :imagesdir: ../media/
 

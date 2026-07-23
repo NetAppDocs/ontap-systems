@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a400, replace the boot media
 summary: Get started with replacing the boot media in your AFF A400 storage system by reviewing the replacement requirements, checking encryption status, shutting down the controller, replacing the boot media, booting the recovery image, restoring encryption, and verifying the system functionality.
 ---
-= Boot media manual recovery workflow - AFF A400
+= AFF A400 boot media replacement workflow using the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The automated recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on the partner node to reinstall ONTAP on the replacement boot media in your AFF A400 storage system.
+Get started with replacing the boot media in your AFF A400 system using the manual boot recovery process. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive to perform the recovery and restore the system to operational status.
 
 The automated boot media recovery process is supported only in ONTAP 9.17.1 and later. If your storage system is running an earlier version of ONTAP, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure].
 

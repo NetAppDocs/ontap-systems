@@ -4,10 +4,12 @@ sidebar: sidebar
 keywords: aff a900, replace the chassis
 summary: 'All other components in the system must be functioning properly. If not, contact technical support.'
 ---
-= Replace the chassis - AFF A900
+= AFF A900 chassis replacement workflow
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Get started with replacing the chassis of your AFF A900 system. The procedure requires removing and reinstalling the power supplies, fans, controller modules, I/O modules, DCPM modules, and USB LED module. All other components in the system must be functioning properly.
+
 include::../_include/900_chassis_replace_overview.adoc[]
 
