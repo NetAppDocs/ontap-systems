@@ -2,9 +2,11 @@
 
 ## Repository overview
 
-Product: NetApp ONTAP hardware systems (AFF, ASA, FAS, and AFX storage platforms)
-
 This repository contains installation and maintenance documentation for NetApp ONTAP storage hardware, including step-by-step procedures for hardware installation, FRU replacement, and system recovery across all supported platform families.
+
+Products: Multiple NetApp ONTAP hardware platforms across the AFF, ASA, FAS, and AFX storage families.
+
+Title naming pattern: `[Family] [Model]` — for example, AFF A150, AFF A1K, AFF C80, ASA A250, ASA r2 A1K, FAS 9500, AFX 1K. See the Repository structure and Product-specific context sections for the full platform list.
 
 ## Repository structure
 
