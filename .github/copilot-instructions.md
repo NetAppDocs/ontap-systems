@@ -8,6 +8,14 @@ Products: Multiple NetApp ONTAP hardware platforms across the AFF, ASA, FAS, and
 
 Title naming pattern: `[Family] [Model]` — for example, AFF A150, AFF A1K, AFF C80, ASA A250, ASA r2 A1K, FAS 9500, AFX 1K. See the Repository structure and Product-specific context sections for the full platform list.
 
+Title style: Page titles embed the product name in a descriptive sentence rather than appending it after a dash. Use the `a1k/` folder as the model. Common patterns include:
+- Task pages: `[Verb] the [component] in your [Product] system` — for example, "Replace the boot media in your AFF A1K system"
+- Shutdown pages: `Shut down the [impaired] controller in your [Product] system [context]` — for example, "Shut down the controller in your AFF A1K system during the manual boot recovery process"
+- Requirements pages: `Review requirements [for/before] [procedure] in your [Product] system` — for example, "Review requirements for manual boot media recovery in your AFF A1K system"
+- Workflow pages: `[Product] [procedure] workflow` — for example, "AFF A1K controller replacement workflow"
+- Completion pages: `Complete the [procedure] for your [Product] system`
+- Maintain overview: `Learn about maintaining your [Product] storage system`
+
 ## Repository structure
 
 - `_include/` – Reusable AsciiDoc content fragments shared across platform directories; files are prefixed with the platform model (e.g., `a1k_`, `a70-90_`, `800_`) or are generic (e.g., `g_`, `afx_`)
