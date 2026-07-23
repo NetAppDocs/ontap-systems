@@ -4,13 +4,12 @@ sidebar: sidebar
 keywords: aff a800, replace the nvdimm battery
 summary: "To replace the NVDIMM battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module."
 ---
-= Replace the NVDIMM battery - AFF A800
+= Replace the NVDIMM battery in your AFF A800 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-Replace the NV battery in your AFF A800 system when the battery begins to lose charge or fails, as it is responsible for preserving critical system data during power outages. The replacement process involves shutting down the impaired controller, removing the controller module, replacing the NV battery, reinstalling the controller module, and returning the failed part to NetApp.
+Replace the NV battery in your AFF A800 system when it begins to lose charge or fails, as it preserves critical system data during power outages. The replacement process involves removing the controller module, replacing the battery, and reinstalling the controller module.
 
 == Step 1: Shutdown the impaired controller
 

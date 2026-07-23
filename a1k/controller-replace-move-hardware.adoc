@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a1k, move the controller module hardware
 summary: "Replace the controller of your AFF A1K system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it."
 ---
-= Replace the controller - AFF A1K
+= Replace the controller in your AFF A1K system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the controller of your AFF A1K system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
+Replace the controller in your AFF A1K system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
 
 include::../_include/a1k_controller_replace_move_hardware.adoc[]
 

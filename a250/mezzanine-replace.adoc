@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a250, replace or install a mezzanine card
 summary: "To replace a failed mezzanine card, you must remove the cables and any SFP or QSFP modules, replace the card, reinstall the SFP or QSFP modules and recable the cards. To install a new mezzanine card, you must have the appropriate cables and SFP or QSFP modules."
 ---
-= Replace or install a mezzanine card - AFF A250
+= Replace or install a mezzanine card in your AFF A250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a failed mezzanine card in your AFF A250 system or install a new one to expand connectivity options. The replacement process involves removing the cables and SFP or QSFP modules, replacing the card, and recabling.
+
 include::../_include/250_mezzanine-replace.adoc[]

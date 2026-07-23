@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open
 summary: "You replace the real-time clock battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function."
 ---
-= Replace the real-time clock battery - AFF A150
+= Replace the real-time clock battery in your AFF A150 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the real-time clock (RTC) battery in your AFF A150 system to ensure that services and applications relying on accurate time synchronization continue to function.
+
 include::../_include/150_rtc_battery_replace.adoc[]

@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: AFF A900
 summary: 'You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.'
 ---
-= Replace the controller module - AFF A900
+= AFF A900 controller replacement workflow
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Get started with replacing the controller in your AFF A900 system by reviewing the prerequisites, shutting down the impaired controller, moving the hardware to the replacement controller, and restoring the system configuration.
+
 include::../_include/900_controller_replace_overview.adoc[]

@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a250, replace a fan
 summary: To replace a fan, remove the failed fan module and replace it with a new fan module.
 ---
-
-= Replace a fan - AFF A250
+= Hot-swap a fan in your AFF A250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a failed fan module in your AFF A250 system to maintain proper cooling and prevent performance issues. Fan modules are hot-swappable and can be replaced without shutting down the system.
+
 include::../_include/250_fan-replace.adoc[]
