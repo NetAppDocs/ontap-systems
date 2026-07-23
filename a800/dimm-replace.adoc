@@ -4,13 +4,12 @@ sidebar: sidebar
 keywords: aff a800, replace a dimm
 summary: "Replace a DIMM in your AFF A800 controller module when the system registers an increasing number of correctable error correction codes or uncorrectable ECC errors. Failure to replace a faulty DIMM can cause a system panic."
 ---
-= Replace a DIMM - AFF A800
+= Replace a DIMM in your AFF A800 system to fix memory errors
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-Replace a DIMM in your AFF A800 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+Replace a DIMM in your AFF A800 system when the storage system encounters excessive correctable (CECC) or uncorrectable memory errors. Such errors can prevent the storage system from booting ONTAP.
 
 .Before you begin
 

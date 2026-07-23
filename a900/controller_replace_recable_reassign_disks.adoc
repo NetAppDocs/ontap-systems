@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a900, recable the system, reassign disks
 summary: "Continue the replacement procedure by recabling the storage and network configurations."
 ---
-= Recable the system - AFF A900
+= Recable the system and reassign disks in your AFF A900 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Recable the storage and network configurations and restore NetApp Storage Encryption to return your AFF A900 system to full operation.
+
 include::../_include/900_controller_replace_recable_reassign_disks.adoc[]

@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, replace, boot, media, controller, module, fru map
 summary: 'You must locate the boot media in the controller and follow the directions to replace it.'
 ---
-= Replace the boot media - AFF A150
+= Replace the boot media in your AFF A150 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+The boot media in your AFF A150 system stores essential firmware and configuration data. The replacement process involves removing the controller module, removing the impaired boot media, installing the replacement boot media, and then transferring the ONTAP image to the replacement boot media using a USB flash drive.
+
 include::../_include/150_bootmedia_replace.adoc[]

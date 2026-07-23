@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a900, replace the real-time clock battery
 summary: "You replace the real-time clock battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function."
 ---
-= Replacing the real-time clock battery - AFF A900
+= Replace the real-time clock battery in your AFF A900 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the real-time clock (RTC) battery in your AFF A900 system to ensure that services and applications relying on accurate time synchronization continue to function.
+
 include::../_include/900_rtc_battery_replace.adoc[]

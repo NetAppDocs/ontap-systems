@@ -4,13 +4,12 @@ sidebar: sidebar
 keywords: aff a800, restore and verify the system configuration, verify and set the ha state of the controller module
 summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
 ---
-= Restore and verify the system configuration - AFF A800
+= Restore and verify the controller configuration in your AFF A800 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-Return control of storage resources to the replacement controller so your AFF A800 system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption or Onboard Key Manager (OKM) encryption.
+After completing the hardware replacement and booting to Maintenance mode, verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
 
 include::../_include/800_controller_replace_system_config_restore_and_verify.adoc[]
 

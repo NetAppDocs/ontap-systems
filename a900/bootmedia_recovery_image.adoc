@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a900, boot the recovery image
 summary: 'The procedure for booting the impaired controller from the recovery image depends on whether the system is in a two-node MetroCluster configuration.'
 ---
-= Manual boot media recovery from a USB drive - AFF A900
+= Boot the recovery image on your AFF A900 system using the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After installing the new boot media device in your system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
+After installing the new boot media in your AFF A900 system, boot the ONTAP recovery image from a USB drive to restore the configuration from the partner node.
 
 If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure. 
 
