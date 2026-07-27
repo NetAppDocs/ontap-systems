@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, replace, nvdimm, controller, module, system, register, flash, lifetime, identified, idenify, nvdimm, healthy, general, failure, system, panic, replace an nvdimm, shut down the impaired controller, remove the controller module, replace the nvdimm, install the controller module, restore the controller module to operation,complete the replacement process
 summary: Replace the NVDIMM in your AFF A320 controller module when the system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy. Failure to replace a faulty NVDIMM can cause a system panic.
 ---
-= Replace an NVDIMM - AFF A320
+= Replace an NVDIMM in your AFF A320 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic.
+Replace an NVDIMM in your AFF A320 system when the system registers excessive correctable ECC errors or an uncorrectable ECC error, which is typically caused by a single NVDIMM failure.
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 

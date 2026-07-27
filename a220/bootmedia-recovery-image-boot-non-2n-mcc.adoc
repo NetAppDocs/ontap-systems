@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff 220, boot, recovery, image, restore, file, system, environmental, varible, manual, manual boot recovery
 summary: "You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables. The AFF A220 system supports only manual boot media recovery procedures."
 ---
-= Boot the recovery image - AFF A220
+= Boot the recovery image on your AFF A220 system
+:icons: font
 :imagesdir: ../media/
 
 [.lead]
-The AFF A220 system supports only manual boot media recovery procedures.
+Boot the ONTAP recovery image from the USB drive on your AFF A220 system to restore the boot media using the manual boot recovery process.
 
 include::../_include/220_2700_bootmedia_recovery_image_boot_non_2n_mcc.adoc[]

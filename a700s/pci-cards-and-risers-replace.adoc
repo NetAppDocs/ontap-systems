@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, replace, pcie, card, disconnect, cable, riser, shut, down, reinstall, complete, replacement, process, replace a pcie card, shut down the impaired controller, remove the controller module, replace a pcie card, reinstall the controller module, complete the replacement process
 summary: To replace a PCIe card, you must disconnect the cables from the cards in the riser, remove the riser, replace the riser, and then recable the cards in that riser.
 ---
-= Replace a PCIe card - AFF A700s
+= Replace a PCIe card in your AFF A700s system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace a PCIe card, you must disconnect the cables from the cards in the riser, remove the riser, replace the riser, and then recable the cards in that riser.
+Replace a PCIe card in your AFF A700s system by disconnecting cables, removing the riser, replacing the card, and recabling.
 
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.

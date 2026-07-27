@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a200, shutdown the controllers
 summary: "To replace the chassis, you must shutdown the controllers."
 ---
-= Shut down the controllers - AFF A200
+= Shut down your AFF A200 controllers to replace the chassis
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Shut down both controllers in your AFF A200 system before replacing the chassis.
 
 include::../_include/shutdown_chassis.adoc[]
