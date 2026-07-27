@@ -4,13 +4,12 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, procedure, boot, impair, controller, recovery, image, system, two-node, metrocluster, configuration, boot the recovery image
 summary: The procedure for booting the impaired controller from the recovery image depends on whether the system is in a two-node MetroCluster configuration.
 ---
-= Manual boot media recovery from a USB drive - AFF C400
+= Boot the recovery image on your AFF C400 storage system using the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-After installing the new boot media device in your system, you can boot the recovery image from a USB drive and restore the configuration from the partner node.
+Boot the recovery image on your AFF C400 storage system from a USB drive to restore the configuration from the partner node.
 
 If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure]
 
