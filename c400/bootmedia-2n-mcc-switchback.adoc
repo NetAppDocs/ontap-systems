@@ -11,6 +11,6 @@ summary: After you have completed the FRU replacement in a two-node MetroCluster
 [.lead]
 After completing the boot media replacement in your AFF C400 storage system in a two-node MetroCluster configuration, perform the MetroCluster switchback operation to restore the configuration to its normal operating state.
 
-If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure]
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure].
 
 include::../_include/2n_mcc_switchback.adoc[]

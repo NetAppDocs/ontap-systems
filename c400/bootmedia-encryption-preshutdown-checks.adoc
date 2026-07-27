@@ -11,7 +11,7 @@ summary: Prior to shutting down the impaired controller and checking the status 
 [.lead]
 Check encryption support on your boot media in your AFF C400 storage system before shutting down the impaired controller. This includes verifying ONTAP version compatibility with NetApp Volume Encryption (NVE) and confirming the key manager configuration. 
 
-If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure]
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure].
 
 == Step 1: Check NVE support and download the correct ONTAP image
 
