@@ -4,17 +4,44 @@
 
 This repository contains installation and maintenance documentation for NetApp ONTAP storage hardware, including step-by-step procedures for hardware installation, FRU replacement, and system recovery across all supported platform families.
 
-Products: Multiple NetApp ONTAP hardware platforms across the AFF, ASA, FAS, and AFX storage families.
+Products: Multiple NetApp ONTAP hardware platforms across the AFF, ASA, FAS, and AFX storage families. Note that ONTAP systems is the category, not the product name; use the exact storage family and model to specify the product.
 
-Title naming pattern: `[Family] [Model]` — for example, AFF A150, AFF A1K, AFF C80, ASA A250, ASA r2 A1K, FAS 9500, AFX 1K. See the Repository structure and Product-specific context sections for the full platform list.
+Title naming pattern: [Family] [Model] — for example, AFF A150, AFF A1K, AFF C80, ASA A250, ASA r2 A1K, FAS 9500, AFX 1K. See the Repository structure and Product-specific context sections for the full platform list.
 
-Title style: Page titles embed the product name in a descriptive sentence rather than appending it after a dash. Use the platform folder naming pattern to identify the model (for example, `a1k/` for A1K). Common patterns include:
-- Task pages: `[Verb] the [component] in your [Product] system` — for example, "Replace the boot media in your AFF A1K system"
-- Shutdown pages: `Shut down the [impaired] controller in your [Product] system [context]` — for example, "Shut down the controller in your AFF A1K system during the manual boot recovery process"
-- Requirements pages: `Review requirements [for/before] [procedure] in your [Product] system` — for example, "Review requirements for manual boot media recovery in your AFF A1K system"
-- Workflow pages: `[Product] [procedure] workflow` — for example, "AFF A1K controller replacement workflow"
-- Completion pages: `Complete the [procedure] for your [Product] system`
+Title style: Page titles embed the product name in a descriptive sentence rather than appending it after a dash. Use the `a1k/` folder as the model. Only the first word and proper nouns (including product names and acronyms) are capitalized.
+
+**FRU replacement and maintenance pages:**
+- Replace/add: `[Verb] the [component] in your [Product] system [optional purpose]` — for example, "Replace the boot media in your AFF A1K system", "Replace a DIMM in your AFF A1K system to fix memory errors"
+- Hot-swap: `Hot-swap a [component] in your [Product] system` — for example, "Hot-swap a fan in your AFF A1K system"
+- Requirements (before): `Review requirements before [action] your [Product] [component]` — for example, "Review requirements before replacing the controller in your AFF A1K system"
+- Requirements (for): `Review requirements for [procedure] in your [Product] system` — for example, "Review requirements for manual boot media recovery in your AFF A1K system"
+- Shutdown (controller/FRU replacement): `Shut down the impaired controller in your [Product] system before [procedure]` — for example, "Shut down the impaired controller in your AFF A1K system before replacement"
+- Shutdown (boot media recovery): `Shut down the impaired controller in your [Product] system during the [manual/automated] boot recovery process`
+- Shutdown (chassis replacement): `Shut down your [Product] controller to replace the chassis`
+- Pre-shutdown check: `Check [topic] on the [component] in your [Product] system` — for example, "Check encryption support on your boot media in your AFF A1K system"
+- Boot image: `Boot the recovery image on your [Product] system [using the manual/automated boot recovery process]`
+- Restore encryption: `Restore encryption on the [component] in your [Product] system [context]`
+- Restore and verify: `Restore and verify the [component] configuration in your [Product] system`
+- Completion: `Complete the [procedure] for your [Product] system` — for example, "Complete the controller replacement for your AFF A1K system"
+- RMA return: `Return the failed [Product] [component] to NetApp [after the manual/automated boot recovery process]`
+
+**Workflow pages:**
+- `[Product] [procedure] workflow [using the manual/automated boot recovery process]` — for example, "AFF A1K controller replacement workflow"
+
+**Installation pages:**
+- Overview: `[Product] installation and configuration workflow`
+- Prepare: `Prepare to install your [Product] storage system`
+- Requirements: `Review requirements for installing your [Product] storage system`
+- Install hardware: `Install your [Product] hardware in [location]` — for example, "Install your AFF A1K hardware in a cabinet or rack"
+- Cable: `Cable your [Product] hardware for [purpose]` — for example, "Cable your AFF A1K hardware for network and storage connectivity"
+- Power on: `Power on your [Product] storage system`
+
+**Concept pages:**
+- General concept: `Learn about [topic] in your [Product] system` — for example, "Learn about adding and replacing I/O modules in your AFF A1K system"
 - Maintain overview: `Learn about maintaining your [Product] storage system`
+- Key specifications: `Key specifications for [Product]`
+
+**BMR context suffix:** On platforms that support both manual and automated (ONTAP 9.17.1+) boot media recovery, append "using the manual boot recovery process" or "using the automated boot recovery process" to all boot media page titles to disambiguate them. Pages for platforms that support only manual recovery (older platforms) do not need this suffix.
 
 ## Repository structure
 
