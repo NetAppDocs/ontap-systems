@@ -9,7 +9,7 @@ summary: Replace the NVDIMM in your AFF A320 controller module when the system r
 :imagesdir: ../media/
 
 [.lead]
-Replace an NVDIMM in your AFF A320 system when the system registers excessive correctable ECC errors or an uncorrectable ECC error, which is typically caused by a single NVDIMM failure.
+Replace an NVDIMM in your AFF A320 system when the system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy. Failure to replace a faulty NVDIMM can cause a system panic.
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
