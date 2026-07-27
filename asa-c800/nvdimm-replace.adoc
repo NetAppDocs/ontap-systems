@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c800, replace an nvdimm
 summary: "You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy. Failure to do so causes a system panic."
 ---
-= Replace an NVDIMM - ASA C800
+= Replace an NVDIMM in your ASA C800 system
 :icons: font
 :imagesdir: ../media/
 
