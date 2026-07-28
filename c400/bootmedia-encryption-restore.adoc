@@ -1,16 +1,16 @@
 ---
 permalink: c400/bootmedia-encryption-restore.html
 sidebar: sidebar
-keywords: aff c400, aff, c400, environment, variable, complete, system, onboard, key, manager, okm, storage, volume, netapp, encryption, post, boot, media, replacement, post boot media replacement stpes for okm nse and nve
+keywords: aff c400, aff, c400, environment, variable, complete, system, onboard, key, manager, okm, storage, volume, netapp, encryption, post, boot, media, replacement, post boot media replacement steps for okm nse and nve
 summary: "Restore encryption on the replacement boot media."
 ---
-= Restore encryption - AFF C400
+= Restore encryption on the boot media in your AFF C400 storage system after the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media.
+Restore encryption on the replacement boot media in your AFF C400 storage system to ensure secure data access and proper system operation.
 
-If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow.html[manual boot recovery procedure]
+If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure].
 
 include::../_include/encryption_restore_bootmedia.adoc[]
