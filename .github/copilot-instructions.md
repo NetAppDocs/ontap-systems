@@ -6,7 +6,7 @@ This repository contains installation and maintenance documentation for NetApp O
 
 Products: Multiple NetApp ONTAP hardware platforms across the AFF, ASA, FAS, and AFX storage families. Note that ONTAP systems is the category, not the product name; use the exact storage family and model to specify the product.
 
-Title naming pattern: [Family] [Model] — for example, AFF A150, AFF A1K, AFF C80, ASA A250, ASA r2 A1K, FAS 9500, AFX 1K. See the Repository structure and Product-specific context sections for the full platform list.
+Title naming pattern: [Family] [Model] — for example, AFF A150, AFF A1K, AFF C80, ASA A400, ASA r2 A1K, FAS 9500, AFX 1K. See the Repository structure and Product-specific context sections for the full platform list.
 
 Title style: Page titles embed the product name in a descriptive sentence rather than appending it after a dash. Use the `a1k/` folder as the model. Only the first word and proper nouns (including product names and acronyms) are capitalized.
 
