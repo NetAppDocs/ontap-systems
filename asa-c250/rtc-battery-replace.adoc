@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: asa c250, real-time battery replacement
 summary: "Replace the real-time clock battery in your ASA C250 controller module to ensure that services and applications that depend on accurate time synchronization continue to function."
 ---
-= Replace the real-time clock battery - ASA C250
+= Replace the real-time clock battery in your ASA C250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the real-time clock (RTC) battery in your ASA C250 system to ensure that services and applications that depend on accurate time synchronization continue to function.
 
 include::../_include/250_rtc-battery-replace.adoc[]
