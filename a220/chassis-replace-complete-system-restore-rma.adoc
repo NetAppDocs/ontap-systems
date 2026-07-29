@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a220, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap
 summary: "You must verify the HA state of the chassis, switch back aggregates, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit."
 ---
-= Restore and verify the configuration - AFF A220
+= Complete the chassis replacement for your AFF A220 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Complete the chassis replacement for your AFF A220 system by verifying the HA state of the chassis and returning the failed component to NetApp.
 
 include::../_include/220_2700_chassis_replace_complete_system_restore_rma.adoc[]

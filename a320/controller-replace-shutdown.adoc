@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a320, shut down the node
 summary: You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 ---
-= Shut down the impaired controller - AFF A320
+= Shut down the impaired controller in your AFF A320 system before replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Shut down the impaired controller in your AFF A320 system before replacement by taking it over and halting it to the LOADER prompt.
 
 include::../_include/shutdown_most_frus.adoc[]

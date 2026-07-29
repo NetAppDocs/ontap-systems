@@ -5,12 +5,12 @@ keywords: aff a300, replace a dimm
 summary: "Replace a DIMM in your AFF A300 controller module when the system registers an increasing number of correctable error correction codes or uncorrectable ECC errors. Failure to replace a faulty DIMM can cause a system panic."
 
 ---
-= Replace a DIMM - AFF A300
+= Replace a DIMM in your AFF A300 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must replace a DIMM in the controller when your storage system encounters errors such as, excessive CECC (Correctable Error Correction Codes) errors that are based on Health Monitor alerts or uncorrectable ECC errors, typically caused by a single DIMM failure preventing the storage system from booting ONTAP.
+Replace a DIMM in your AFF A300 system when the storage system encounters excessive correctable ECC errors or an uncorrectable ECC error, which is typically caused by a single DIMM failure.
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 

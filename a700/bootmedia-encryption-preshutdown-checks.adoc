@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, shutdown, check, onboard, encryption, key, manual, manual boot recovery
 summary: "Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running. The AFF A700 system supports only manual boot media recovery procedures."
 ---
-= Check encryption key support and status - AFF A700
+= Check encryption support on your boot media in your AFF A700 system
 :icons: font
 :imagesdir: ../media/
 
