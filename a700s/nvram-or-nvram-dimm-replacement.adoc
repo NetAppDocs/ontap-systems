@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, replace, fail, nvram, card, remove, riser, controller, module, system, id, nvram, dimm, shut, down, reassign, disk, restore, encryption, functionality, complete, replacement
 summary: To replace a failed NVRAM card, you must remove the NVRAM riser, Riser 1, from the controller module, remove the failed card from the riser, install the new NVRAM card in the riser, and then reinstall the riser in the controller module. Because the system ID is derived from the NVRAM card, if replacing the module, disks belonging to the system are reassigned to the new system ID.
 ---
-= Replace the NVRAM module and NVRAM DIMMs - AFF A700s
+= Replace the NVRAM module and NVRAM DIMMs in your AFF A700s system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace a failed NVRAM card, you must remove the NVRAM riser, Riser 1, from the controller module, remove the failed card from the riser, install the new NVRAM card in the riser, and then reinstall the riser in the controller module. Because the system ID is derived from the NVRAM card, if replacing the module, disks belonging to the system are reassigned to the new system ID.
+Replace the NVRAM module and NVRAM DIMMs in your AFF A700s system by removing the NVRAM riser, replacing the failed card, and reinstalling the riser.
 
 .Before you begin
 
