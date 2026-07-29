@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a700, fas9000, shut, down, impaired, node, controller, two, node, metrocluster
 summary: "To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage."
 ---
-= Shut down the impaired controller - AFF 700
+= Shut down the impaired controller in your AFF A700 system before replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+Shut down the impaired controller in your AFF A700 system before replacement using the appropriate procedure for your configuration.
 
 [role="tabbed-block"]
 ====

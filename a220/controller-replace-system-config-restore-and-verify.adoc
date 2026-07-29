@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: fas2700, aff a220, restore and verify the system configuration, verify and set the ha state of the controller module
 summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
 ---
-= Restore and verify the system configuration - AFF A220
+= Restore and verify the controller configuration in your AFF A220 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Restore and verify the controller configuration in your AFF A220 system after completing the hardware replacement and booting to Maintenance mode.
 
 include::../_include/220_2700_controller_replace_system_config_restore_and_verify.adoc[]
