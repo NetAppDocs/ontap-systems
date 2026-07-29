@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, io, module, shut, down, impaired, controller, node, metrocluster, pcie, replacement, switch, back, aggregates, return, failed, part
 summary: "To replace an I/O module, you must perform a specific sequence of tasks."
 ---
-= Replace an I/O module - AFF A700 and FAS9000
+= Replace an I/O module in your AFF A700 or FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace an I/O module in your AFF A700 or FAS9000 system by disconnecting cables, removing the riser, replacing the module, and recabling.
 
 include::../_include/700_9000_pci_cards_and_risers_replace.adoc[]

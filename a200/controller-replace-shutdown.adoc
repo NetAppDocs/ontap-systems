@@ -4,11 +4,13 @@ sidebar: sidebar
 keywords: aff a200, shut down the controller
 summary: You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 ---
-= Shut down the impaired controller - AFF A200
+= Shut down the impaired controller in your AFF A200 system before replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Shut down the impaired controller in your AFF A200 system before replacement by taking it over and halting it to the LOADER prompt.
+
 include::../_include/shutdown_no_mcc.adoc[]
 
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired controller's power cords from the power source.
