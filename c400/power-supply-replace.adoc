@@ -4,10 +4,12 @@ sidebar: sidebar
 keywords: aff c400, replace a power supply
 summary: Replacing a power supply involves disconnecting the target power supply (PSU) from the power source, unplugging the power cable, removing the old PSU and installing the replacement PSU, and then reconnecting it to the power source.
 ---
-= Hot-swap a power supply - AFF C400
+= Hot-swap a power supply unit in your AFF C400 storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Hot-swap a power supply unit in your AFF C400 storage system to maintain continuous power delivery without interrupting service.
+
 include::../_include/400_power_supply_replace.adoc[]
 // 2025-10-13 ontap-systems-internal/issues/1278

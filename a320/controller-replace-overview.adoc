@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, review, prerequisite, replacement, procedure, version, ontap, operating, system, replace, controller, module, replace the controller module
 summary: You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
 ---
-= Overview of controller module replacement - AFF A320
+= Review requirements before replacing the controller in your AFF A320 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
+Before replacing the controller in your AFF A320 system, review the prerequisites for the replacement procedure and select the correct one for your version of ONTAP.
 
 include::../_include/console-logging-note.adoc[]
 

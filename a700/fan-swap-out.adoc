@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a700, swap, fan, service, task, return, failed, part
 summary: 'To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.'
 ---
-= Swap out a fan - AFF A700
+= Hot-swap a fan in your AFF A700 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Hot-swap a fan in your AFF A700 system without interrupting service to maintain proper airflow and system cooling.
 
 include::../_include/700_9000_fan_swap_out.adoc[]
