@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, replace, nvmem, battery, shut, down, impaired, controller, controller, aggregates, metrocluster, configuration, reinstall
 summary: "To replace an NVMEM battery in the system, you must remove the controller module from the system, open it, replace the battery, and close and replace the controller module."
 ---
-= Replace the NVMEM battery - AFF A150
+= Replace the NV battery in your AFF A150 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the NVMEM battery in your AFF A150 system when it begins to lose charge or fails, as it preserves critical system data during power outages. The replacement process involves removing the controller module, replacing the battery, and reinstalling the controller module.
+
 include::../_include/150_nvmem_nvram_battery_replace.adoc[]

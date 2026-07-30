@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a900, swap out a fan
 summary: 'To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.'
 ---
-= Swap out a fan - AFF A900
+= Hot-swap a fan module in your AFF A900 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Hot-swap a fan module in your AFF A900 system to maintain proper cooling. Fan modules must be replaced without interrupting service by performing a specific sequence of tasks.
+
 include::../_include/900_fan_swap_out.adoc[]

@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a900, shutdown the controllers
 summary: "To replace the chassis, you must shutdown the controllers."
 ---
-
-== Shutdown the controllers - AFF A900
+= Shut down your AFF A900 controllers to replace the chassis
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Shut down the controllers in your AFF A900 storage system to prevent data loss and ensure system stability when replacing the chassis.
+
 include::../_include/shutdown_chassis.adoc[]

@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a900, move hardware components, replace the chassis
 summary: 'All other components in the system must be functioning properly. If not, contact technical support.'
 ---
-
-== Move and replace hardware - AFF A900
+= Replace the chassis in your AFF A900 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the chassis of your AFF A900 system when a hardware failure requires it. The replacement process involves removing the power supplies, fans, controller modules, and I/O modules from the impaired chassis and installing them in the replacement chassis.
+
 include::../_include/900_chassis_replace_move_hardware.adoc[]

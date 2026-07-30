@@ -4,14 +4,12 @@ All other components in the system must be functioning properly; if not, you mus
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired controller's power cords from the power source.
 
 == Step 2: Remove controller module
 
-[.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
 .Steps
@@ -33,7 +31,6 @@ image::../media/drw_2240_x_opening_cam_latch.png[Opening the cam handle latch]
 
 == Step 3: Replace the NVMEM battery
 
-[.lead]
 To replace the NVMEM battery in your system, you must remove the failed NVMEM battery from the system and replace it with a new NVMEM battery.
 
 .Steps
@@ -63,8 +60,6 @@ image::../media/drw_2600_nvmem_batt_repl_animated_gif.png[Replacing the NVMEM ba
 . Plug the battery plug back into the controller module.
 
 == Step 4: Reinstall the controller module
-
-[.lead]
 After you replace components in the controller module, reinstall it into the chassis.
 
 .Steps
@@ -113,13 +108,10 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 |===
 
 
-
 == Step 5: Switch back aggregates in a two-node MetroCluster configuration
 
-[.lead]
 include::../_include/2n_mcc_switchback.adoc[]
 
 == Step 6: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

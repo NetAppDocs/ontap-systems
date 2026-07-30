@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
 summary: To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
 ---
-= Hot-swap a fan module - AFF A400
+= Hot-swap a fan module in your AFF A400 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Hot-swap a fan module in your AFF A400 system to maintain proper cooling. The fan module must be replaced within two minutes of removal to prevent overheating.
 
 include::../_include/400_aseries_fan_swap_out.adoc[]
