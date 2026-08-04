@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, destage, controller, power, module, nvram10, battery, dcpm, dispose, return, failed, part
 summary: "To hot-swap a de-stage controller power module, which contains the NVRAM10 battery, locate the failed DCPM module, remove it from the chassis, and install the replacement DCPM module."
 ---
-= Hot-swap a de-stage controller power module (DCPM) - AFF A700 
+= Hot-swap a de-stage controller power module (DCPM) in your AFF A700 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Hot-swap a de-stage controller power module (DCPM) in your AFF A700 system to replace the failed module without interrupting service.
 
 include::../_include/700_9000_dcpm_nvram10_battery_replace.adoc[]

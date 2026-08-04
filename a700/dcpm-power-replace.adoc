@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, dcpm, module, fail
 summary: 'To replace the DCPM module in your system, you must remove the failed DCPM module from the system and then replace it with a new DCPM module.'
 ---
-= Replace the DCPM module - AFF A700
+= Replace the DCPM module in your AFF A700 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the DCPM module in your AFF A700 system to restore proper power management for the NVRAM10.
 
 include::../_include/700_9000_dcpm_power_replace.adoc[]

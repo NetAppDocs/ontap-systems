@@ -4,8 +4,6 @@ To replace a PCIe or mezzanine card, you must disconnect the cables and any SFP 
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
 == Step 1: Shut down the impaired controller
-
-[.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
 [role="tabbed-block"]
@@ -15,7 +13,6 @@ You can shut down or take over the impaired controller using different procedure
 
 --
 
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
 --
@@ -24,17 +21,15 @@ include::../_include/shutdown_most_frus.adoc[]
 
 --
 
-[.lead]
 include::../_include/shutdown_2n_mcc.adoc[]
 
 --
 ====
 
 == Step 2: Remove the controller module
-
-[.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
@@ -64,8 +59,6 @@ Make sure that you support the bottom of the controller module as you slide it o
 . Place the controller module on a stable, flat surface.
 
 == Step 3: Replace a PCIe card
-
-[.lead]
 To replace a PCIe card, you must locate the failed PCIe card, remove the riser that contains the card from the controller module, replace the card, and then reinstall the PCIe riser in the controller module.
 
 You can use the following animation, illustration, or the written steps to replace a PCIe card.
@@ -94,6 +87,7 @@ a|
 PCI card
 |===
 
+.Steps
 . Remove the riser containing the card to be replaced:
  .. Open the air duct by pressing the locking tabs on the sides of the air duct, slide it toward the back of the controller module, and then rotate it to its completely open position.
  .. Remove any SFP or QSFP modules that might be in the PCIe cards.
@@ -119,8 +113,6 @@ NOTE: If you are installing a card in the bottom slot and cannot see the card so
  .. Rotate the latch down flush with the sheet metal on the riser.
 
 == Step 4: Replace the mezzanine card
-
-[.lead]
 The mezzanine card is located under riser number 3 (slots 4 and 5). You must remove that riser to access the mezzanine card, replace the mezzanine card, and then reinstall riser number 3. See the FRU map on the controller module for more information.
 
 You can use the following animation, illustration, or the written steps to replace the mezzanine card.
@@ -141,6 +133,7 @@ image::../media/drw_c400_replace-mezz-card_IEOPS-1236.svg[width=550px]
 | Riser card
 |===
 
+.Steps
 . Remove riser number 3 (slots 4 and 5):
  .. Open the air duct by pressing the locking tabs on the sides of the air duct, slide it toward the back of the controller module, and then rotate it to its completely open position.
  .. Remove any SFP or QSFP modules that might be in the PCIe cards.
@@ -165,6 +158,7 @@ NOTE: Fully tighten the mezzanine card thumbscrews. If they are loose, ports e0e
 
 After you have replaced the component in the controller module, you must reinstall the controller module into the chassis, and then boot it to Maintenance mode.
 
+.Steps
 . If you have not already done so, close the air duct.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
@@ -198,6 +192,7 @@ NOTE: If your system stops at the boot menu, select the option to boot to LOADER
 
 To restore the controller, you must recable the system, give back the controller module, and then reenable automatic giveback.
 
+.Steps
 . Recable the system, as needed.
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
