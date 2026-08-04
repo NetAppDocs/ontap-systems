@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a700s, shut down the impaired controller
 summary: "To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage."
 ---
-= Shut down the impaired controller - AFF A700s
+= Shut down the impaired controller in your AFF A700s system before replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Shut down the impaired controller in your AFF A700s system before replacement by taking it over and halting it to the LOADER prompt.
 
 include::../_include/shutdown_no_mcc.adoc[]

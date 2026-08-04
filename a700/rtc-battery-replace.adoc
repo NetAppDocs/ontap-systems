@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace, real, time, battery, shut, down, impaired, node, controller, metrocluster, module, rtc, battery, reinstall, date, time, complete, process
 summary: "Replace the real-time clock battery in your AFF A700 controller module to ensure that services and applications that depend on accurate time synchronization continue to function."
 ---
-= Replace the real-time clock battery - AFF 700
+= Replace the real-time clock battery in your AFF A700 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the real-time clock (RTC) battery in your AFF A700 system to ensure that services and applications that depend on accurate time synchronization continue to function.
 
 include::../_include/700_9000_rtc_battery_replace.adoc[]

@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a300, replace a pcie card
 summary: "To replace a PCIe card, you must perform a specific sequence of tasks."
 ---
-= Replace a PCIe card - AFF A300
+= Replace a PCIe card in your AFF A300 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace a PCIe card, you must perform a specific sequence of tasks.
+Replace a PCIe card in your AFF A300 system by disconnecting cables, removing the card, installing the replacement, and recabling.
 
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.

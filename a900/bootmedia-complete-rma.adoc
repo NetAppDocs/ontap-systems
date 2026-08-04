@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff a900, complete the replacement process
 summary: "After you replace the boot media, return the failed part to NetApp."
 ---
-= Return the failed boot media to NetApp - AFF A900
+= Return the failed AFF A900 boot media to NetApp after the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+If a component in your AFF A900 system fails, return the failed part to NetApp. See the https://mysupport.netapp.com/site/info/rma[Part Return and Replacements] page for further information.
+
 include::../_include/complete_rma.adoc[]

@@ -4,13 +4,12 @@ sidebar: sidebar
 keywords: aff a800, replace a power supply
 summary: "Replacing a power supply involves disconnecting the target power supply from the power source, unplugging the power cable, removing the old PSU and installing the replacement PSU, and then reconnecting it to the power source."
 ---
-= Hot-swap a power supply - AFF A800
+= Hot-swap a power supply unit in your AFF A800 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-Replace an AC or DC power supply unit (PSU) in your AFF A800 system when it fails or becomes faulty, ensuring that your system continues to receive the required power for stable operation. The replacement process involves disconnecting the faulty PSU from the power source, unplugging the power cable, replacing the faulty PSU, and then reconnecting it to the power source.
+Replace a power supply in your AFF A800 system when it fails or becomes faulty. Power supplies are redundant and hot-swappable, so you do not have to shut down the controller to perform this replacement.
 
 include::../_include/800_power_supply_replace.adoc[]
 

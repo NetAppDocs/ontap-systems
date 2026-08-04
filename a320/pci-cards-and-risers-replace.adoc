@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, replace, pcie, card, disconnect, cable, card, sfp, qsfp, module, riser, reinstall, shut, down, controller, operation, complete, process, replace a pcie card, shut down the impaired controller, remove the controller module, replace a pcie card, install the controller module, restore the controller module to operation, complete the replacement process
 summary: To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards.
 ---
-= Replace a PCIe card - AFF A320
+= Replace a PCIe card in your AFF A320 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards.
+Replace a PCIe card in your AFF A320 system by disconnecting cables and SFP/QSFP modules, removing the riser, replacing the card, and recabling.
 
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.
