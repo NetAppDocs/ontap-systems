@@ -17,7 +17,6 @@ The following are select specifications for the FAS70 storage system in a single
 * Max Raw Capacity: 15.0000 PB
 * Memory: 256.0000 GB
 * Form Factor: 2U chassis with 1 HA controllers 
-* ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 18
 * Minimum ONTAP Version: ONTAP 9.15.1
 
@@ -128,3 +127,5 @@ IS 13252(part 1)
 
 // 2025-10-15 ontap-systems-internal/issues/1357
 // 2025-12-12 ontap-systems-internal/issues/1421
+
+//2026-07-24 ontap-systems-internal/issues/1645
