@@ -23,8 +23,6 @@ Memory: 128.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
 
-ONTAP Version: b_startONTAP: 9.16.1P2b_end
-
 PCIe Expansion Slots: 8
 
 Minimum ONTAP Version: ONTAP 9.16.1RC1
@@ -154,8 +152,6 @@ Memory: 128.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
 
-ONTAP Version: b_startONTAP: 9.16.1P2b_end
-
 PCIe Expansion Slots: 8
 
 Minimum ONTAP Version: ONTAP 9.16.1RC1
@@ -273,3 +269,5 @@ Ethernet based baseboard management controller (BMC) and ONTAP management interf
 Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 
+
+//2026-07-24 ontap-systems-internal/issues/1645
