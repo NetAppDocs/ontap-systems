@@ -23,8 +23,6 @@ Memory: 256.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
 
-ONTAP Version: b_startONTAP: 9.16.1P2b_end
-
 PCIe Expansion Slots: 8
 
 Minimum ONTAP Version: ONTAP 9.16.1RC1
@@ -155,8 +153,6 @@ Max Raw Capacity: 4.0392 PB
 Memory: 128.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
-
-ONTAP Version: b_startONTAP: 9.16.1P2b_end
 
 PCIe Expansion Slots: 8
 
@@ -290,8 +286,6 @@ Memory: 128.0000 GB
 
 Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
 
-ONTAP Version: b_startONTAP: 9.16.1P2b_end
-
 PCIe Expansion Slots: 8
 
 Minimum ONTAP Version: ONTAP 9.16.1RC1
@@ -411,3 +405,5 @@ Redundant hot-swappable controllers;
 Redundant hot-swappable power supplies;
 SAS in-band management over SAS connections for external shelves;
 
+
+//2026-07-24 ontap-systems-internal/issues/1645

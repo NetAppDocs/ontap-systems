@@ -17,7 +17,6 @@ The following are select specifications for the AFF C60 storage system in a sing
 * Max Raw Capacity: 7.3680 PB
 * Memory: 128.0000 GB
 * Form Factor: 2U chassis with 2 HA controllers and 24 drive slots
-* ONTAP Version: ONTAP: 9.16.1P2
 * PCIe Expansion Slots: 8
 * Minimum ONTAP Version: ONTAP 9.16.1RC1
 
@@ -129,3 +128,5 @@ IS 13252(part 1)
 * Ethernet based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
+
+//2026-07-24 ontap-systems-internal/issues/1645
