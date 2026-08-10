@@ -2,13 +2,15 @@
 permalink: fas2800/drive-replace.html
 sidebar: sidebar
 keywords: fas2820, replace the drives
-summary: You must replace a drive when the platform logs a warning message to the system console indicating that a drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
+summary: You must replace a drive in your FAS2820 system when the platform logs a warning message to the system console indicating that a drive has failed. Both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
 ---
 = Replace a drive in your FAS2820 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+You must replace a drive in your FAS2820 system when the platform logs a warning message to the system console indicating that a drive has failed. Both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
+
 include::../_include/drive_hotswap_intro.adoc[]
 
 

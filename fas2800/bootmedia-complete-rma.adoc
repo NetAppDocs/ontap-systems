@@ -2,11 +2,13 @@
 permalink: fas2800/bootmedia-complete-rma.html
 sidebar: sidebar
 keywords: fas2820, complete, replacement, process, replace, return, failed, rma, instructions
-summary: 'After you replace the part, you can return the failed part to NetApp, as described in the RMA instructions shipped with the kit.'
+summary: 'After you replace the boot media in your FAS2820 system, return the failed part to NetApp, as described in the RMA instructions shipped with the kit.'
 ---
 = Return the failed FAS2820 boot media to NetApp after the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+After you replace the boot media in your FAS2820 system, return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+
 include::../_include/complete_rma.adoc[]
