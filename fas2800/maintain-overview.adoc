@@ -1,10 +1,10 @@
 ---
 permalink: fas2800/maintain-overview.html
 sidebar: sidebar
-keywords: fas2800 maintenance, maintenance, repairing, repairing fas2800, replace fas2800 components, replace fas2800 components
-summary: Maintain the FAS2820 hardware
+keywords: fas2820 maintenance, maintenance, repairing, repairing fas2820, replace fas2820 components, replace fas2820 components
+summary: "Maintain the hardware of your FAS2820 storage system to ensure long-term reliability and optimal performance."
 ---
-= Maintain FAS2820 hardware
+= Learn about maintaining your FAS2820 storage system
 :icons: font
 :imagesdir: ../media/
 
@@ -14,7 +14,7 @@ Maintain the hardware of your FAS2820 storage system to ensure long-term reliabi
 The maintenance procedures assume that the FAS2820 storage system has already been deployed as a storage node in the ONTAP environment.
 
 == System components
-For the FAS2820 storage system, you can perform maintenance procedures on the following components.
+You can perform maintenance procedures on these components of your FAS2820 storage system.
 
 [%rotate, grid="none", frame="none", cols="25,65"]
 

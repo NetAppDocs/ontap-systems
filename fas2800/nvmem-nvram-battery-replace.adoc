@@ -1,17 +1,17 @@
 ---
 permalink: fas2800/nvmem-nvram-battery-replace.html
 sidebar: sidebar
-keywords: fas2800, replace, nvmem, battery, shut, down, impaired, controller, controller, system, aggregates, metrocluster, configuration, reinstall
-summary: "To replace an NVMEM battery in the system, you must remove the controller module from the system, open it, replace the battery, and close and replace the controller module."
+keywords: fas2820, replace, nvmem, battery, shut, down, impaired, controller, controller, system, aggregates, metrocluster, configuration, reinstall
+summary: "To replace an NVMEM battery in your FAS2820 system, you must remove the controller module, open it, replace the battery, and then close and reinstall the controller module."
 ---
-= Replace the NVMEM battery - FAS2820
+= Replace the NVMEM battery in your FAS2820 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace an NVMEM battery in the system, you must remove the controller module from the system, open it, replace the battery, and close and replace the controller module.
+To replace an NVMEM battery in your FAS2820 system, you must remove the controller module, open it, replace the battery, and then close and reinstall the controller module.
 
-All other components in the system must be functioning properly; if not, you must contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].
+If any other components in the system aren't functioning properly, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support].
 
 == Step 1: Shut down the impaired controller
 

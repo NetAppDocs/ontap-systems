@@ -1,15 +1,15 @@
 ---
 permalink: fas2800/controller-replace-overview.html
 sidebar: sidebar
-keywords: fas2800, prerequisite, replace the controller module
-summary: "You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system."
+keywords: fas2820, prerequisite, replace the controller module
+summary: "Before replacing the controller in your FAS2820 system, you must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system."
 ---
-= Overview of controller module replacement - FAS2820
+= Review requirements before replacing the controller in your FAS2820 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
+Before replacing the controller in your FAS2820 system, you must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
 
 include::../_include/console-logging-note.adoc[]
 

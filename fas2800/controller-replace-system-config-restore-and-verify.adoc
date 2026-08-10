@@ -1,15 +1,15 @@
 ---
 permalink: fas2800/controller-replace-system-config-restore-and-verify.html
 sidebar: sidebar
-keywords: fas2800, restore and verify the system configuration, verify and set the ha state of the controller module
-summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
+keywords: fas2820, restore and verify the system configuration, verify and set the ha state of the controller module
+summary: "After completing the hardware replacement and booting the replacement controller in your FAS2820 system, verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
 ---
-= Restore and verify the system configuration - FAS2820
+= Restore and verify the controller configuration in your FAS2820 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After completing the hardware replacement and booting the replacement controller, verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+After completing the hardware replacement and booting the replacement controller in your FAS2820 system, verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
 
 == Step 1: Set and verify system time after replacing the controller
 
