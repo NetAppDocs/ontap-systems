@@ -11,10 +11,10 @@ summary: "Before replacing the chassis in your FAS2600 system, review the requir
 [.lead]
 Before replacing the chassis in your FAS2600 system, review the requirements for moving the power supplies, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swapping the impaired chassis in the equipment rack or system cabinet for the new one of the same model.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+All other components in the system must be functioning properly. If they aren't, contact technical support.
 
 * You can use this procedure with all versions of ONTAP supported by your system.
 * This procedure is written with the assumption that you are moving all drives and controller module or modules to the new chassis, and that the chassis is a new component from NetApp.
-* This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+* This procedure is disruptive. For a two-node cluster, you have a complete service outage, and for a multi-node cluster, you have a partial outage.
 
 video::FcitUi3YEyI[youtube]

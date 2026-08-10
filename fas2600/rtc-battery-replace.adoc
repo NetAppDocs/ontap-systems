@@ -12,7 +12,7 @@ summary: "Replace the real-time clock battery in your FAS2600 system to ensure t
 Replace the real-time clock (RTC) battery in your FAS2600 system to ensure that services and applications that depend on accurate time synchronization continue to function.
 
 * You can use this procedure with all versions of ONTAP supported by your system
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* If any other components in the system aren't functioning properly, contact technical support.
 
 video::RwX3ecbSYc0[youtube]
 

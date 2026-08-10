@@ -97,7 +97,7 @@ Remove the existing chassis from the equipment rack or system cabinet before you
 
 After you install the controller module and any other components into the new chassis, boot it.
 
-For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
+For HA pairs with two controller modules in the same chassis, install order matters because each controller reboots as soon as it's fully seated in the chassis.
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +

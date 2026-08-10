@@ -11,12 +11,12 @@ summary: "Hot-swap a power supply in your FAS2600 system by turning off, disconn
 [.lead]
 Hot-swap a power supply in your FAS2600 system by turning off, disconnecting, and removing the old power supply, then installing, connecting, and turning on the replacement power supply.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+If any other components in the system aren't functioning properly, contact technical support.
 
 * The power supplies are redundant and hot-swappable.
 * This procedure is written for replacing one power supply at a time.
 +
-NOTE: Cooling is integrated with the power supply, so you must replace the power supply within two minutes of removal to prevent overheating due to reduced airflow. Because the chassis provides a shared cooling configuration for the two HA nodes, a delay longer than two minutes will shut down all controller modules in the chassis. If both controller modules do shut down, make sure that both power supplies are inserted, turn both off for 30 seconds, and then turn both on.
+NOTE: Cooling is integrated with the power supply, so you must replace the power supply within two minutes of removal to prevent overheating due to reduced airflow. Because the chassis provides a shared cooling configuration for the two HA nodes, a delay longer than two minutes shuts down all controller modules in the chassis. If both controller modules do shut down, make sure that both power supplies are inserted, turn both off for 30 seconds, and then turn both on.
 
 * The number of power supplies in the system depends on the model.
 * Power supplies are auto-ranging.
@@ -51,7 +51,7 @@ NOTE: Do not use excessive force when sliding the power supply into the system. 
  .. Secure the power cable to the power supply using the power cable retainer.
 
 +
-Once power is restored to the power supply, the status LED should be green.
+After power is restored to the power supply, the status LED should be green.
 . Turn on the power to the new power supply, and then verify the operation of the power supply activity LEDs.
 +
 The power supply LEDs are lit when the power supply comes online.
