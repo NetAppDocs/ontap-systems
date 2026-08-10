@@ -9,7 +9,7 @@ summary: You must recable the storage and confirm disk reassignment.
 :imagesdir: ../media/
 
 [.lead]
-After completing restore and verify the system configuration FAS500f system you need to recable the system and reassign disks.
+Return control of storage resources to the replacement controller so your FAS500f system can resume normal operation. After you've restored and verified the system configuration, recable the system and reassign disks.
 
 include::../_include/250_controller-replace-recable-reassign-disks.adoc[]
 

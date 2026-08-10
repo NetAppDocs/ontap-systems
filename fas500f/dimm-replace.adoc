@@ -9,9 +9,9 @@ summary: "You must replace a DIMM in the controller module when your system regi
 :imagesdir: ../media/
 
 [.lead]
-You must replace a DIMM in the controller when your storage system encounters errors such as, excessive CECC (Correctable Error Correction Codes) errors that are based on Health Monitor alerts or uncorrectable ECC errors, typically caused by a single DIMM failure preventing the storage system from booting ONTAP.
+You must replace a DIMM in the controller when your storage system encounters errors such as excessive CECC (Correctable Error Correction Codes) errors based on Health Monitor alerts, or uncorrectable ECC errors. These errors are typically caused by a single DIMM failure that prevents the storage system from booting ONTAP.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+If any other components in the system are not functioning properly, contact technical support.
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
@@ -44,7 +44,7 @@ a|
 Latching mechanism
 |===
 
-. Using both hands, grasp the controller module sides and gently pull it out of the chassis and set it on a flat, stable surface.
+. Grasp the controller module with both hands and gently pull it out of the chassis, then set it on a flat, stable surface.
 . Turn the thumbscrew on the front of the controller module anti-clockwise and open the controller module cover.
 +
 image::../media/drw_a250_open_controller_module_cover.png[Opening the controller module cover]
@@ -86,7 +86,7 @@ NOTE: Hold the DIMM by the edges to avoid pressure on the components on the DIMM
 
 . Insert the replacement DIMM squarely into the slot.
 +
-The DIMMs fit tightly in the socket. If not, reinsert the DIMM to realign it with the socket.
+The DIMMs should fit tightly in the socket. If a DIMM doesn't fit tightly, reinsert it to realign it with the socket.
 
 . Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the socket.
 
@@ -115,8 +115,8 @@ Thumbscrew
 |===
 
 . Insert the controller module into the chassis:
- .. Ensure the latching mechanism arms are locked in the fully extended position.
- .. Using both hands, align and gently slide the controller module into the latching mechanism arms until it stops.
+ .. Verify that the latching mechanism arms are locked in the fully extended position.
+ .. With both hands, align and gently slide the controller module into the latching mechanism arms until it stops.
  .. Place your index fingers through the finger holes from the inside of the latching mechanism.
  .. Press your thumbs down on the orange tabs on top of the latching mechanism and gently push the controller module over the stop.
  .. Release your thumbs from the top of the latching mechanisms and continue pushing until the latching mechanisms snap into place.
@@ -127,7 +127,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 The controller module should be fully inserted and flush with the edges of the chassis.
 . Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
 +
-NOTE: You will connect the rest of the cables to the controller module later in this procedure.
+NOTE: You connect the rest of the cables to the controller module later in this procedure.
 
 
 == Step 5: Return the failed part to NetApp
