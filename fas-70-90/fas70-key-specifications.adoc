@@ -9,14 +9,14 @@ summary: Key specifications for FAS70
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the FAS70 storage system in a single high availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
+These are select specifications for the FAS70 storage system in a single high-availability pair. Visit NetApp Hardware Universe (HWU) for the complete specifications for this storage system.
 
 == FAS70 specifications at a glance
 
 * Platform Configuration: FAS70 Dual Chassis HA Pair
 * Max Raw Capacity: 15.0000 PB
 * Memory: 256.0000 GB
-* Form Factor: 2U chassis with 1 HA controllers 
+* Form Factor: 2U chassis with one HA controller 
 * PCIe Expansion Slots: 18
 * Minimum ONTAP Version: ONTAP 9.15.1
 

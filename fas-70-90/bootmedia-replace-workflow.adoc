@@ -2,14 +2,14 @@
 permalink: fas-70-90/bootmedia-replace-workflow.html
 sidebar: sidebar
 keywords: fas70, fas90, replace the boot media
-summary: The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the FAS70 or FAS90 system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
+summary: This workflow uses a USB drive to reinstall ONTAP onto the replacement boot media in your FAS70 or FAS90 system. Download the appropriate ONTAP recovery image from the NetApp Support Site, copy it to the USB drive, and use it to restore the system to operational status.
 ---
 = FAS70 and FAS90 boot media replacement workflow using the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The manual recovery of the boot image involves using a USB drive to reinstall ONTAP onto the FAS70 or FAS90 system's replacement boot media. You must download the appropriate ONTAP recovery image from the NetApp Support Site and copy it to a USB drive. This prepared USB drive is then used to perform the recovery and restore the system to operational status.
+This workflow uses a USB drive to reinstall ONTAP onto the replacement boot media in your FAS70 or FAS90 system. Download the appropriate ONTAP recovery image from the NetApp Support Site, copy it to the USB drive, and use it to restore the system to operational status.
 
 If your system is running in ONTAP 9.17.1 and later, use the link:bootmedia-replace-workflow-bmr.html[automatic boot recovery procedure].
 
@@ -25,7 +25,7 @@ Determine whether the system has security key manager enabled or encrypted disks
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:bootmedia-shutdown.html[Shut down the impaired controller]
 [role="quick-margin-para"]
-Shut down the controller when when you need to replace the boot media.
+Shut down the controller when you need to replace the boot media.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia-replace.html[Replace the boot media]
 [role="quick-margin-para"]
