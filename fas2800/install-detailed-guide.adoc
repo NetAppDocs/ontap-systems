@@ -415,7 +415,7 @@ See your laptop's online help for more information.
 image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Auto discover system]
 
  .. Open File Explorer.
-.. Select *Network* in the left pane and right-click and select *refresh*.
+.. Right-click *Network* in the left pane and select *refresh*.
 ..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the storage system serial number for the target node.
