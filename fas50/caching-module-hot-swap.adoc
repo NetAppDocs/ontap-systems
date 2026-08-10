@@ -18,7 +18,7 @@ Your storage system must meet certain criteria depending on your situation:
 
 * Your storage system must have the appropriate operating system for the caching module you are installing.
 * The replacement caching module must have the same capacity as the failed caching module, but can be from a different supported vendor.
-* All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing.
+* All other components in the storage system must be functioning properly. If they aren't, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing.
 
 .Steps
 . Properly ground yourself.

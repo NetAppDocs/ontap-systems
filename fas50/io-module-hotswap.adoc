@@ -15,7 +15,7 @@ summary: You can hot swap an Ethernet I/O module in your FAS50 storage system if
 [.lead]
 You can hot swap an Ethernet I/O module in your FAS50 storage system if a module fails and your storage system meets all ONTAP version requirements.
 
-To hot swap an I/O module, ensure your storage system meets the ONTAP version requirements, prepare your storage system and I/O module, hot-swap the failed module, bring the replacement module online, restore the storage system to normal operation, and return the failed module to NetApp.
+To hot swap an I/O module, verify your storage system meets the ONTAP version requirements, prepare your storage system and I/O module, hot-swap the failed module, bring the replacement module online, restore the storage system to normal operation, and return the failed module to NetApp.
 
 .About this task
 
@@ -32,7 +32,7 @@ A storage system has three location LEDs: one on the operator display panel and 
 +
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
-== Step 1: Ensure the storage system meets the procedure requirements
+== Step 1: Verify the storage system meets the procedure requirements
 
 // Jan 2026: updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 
