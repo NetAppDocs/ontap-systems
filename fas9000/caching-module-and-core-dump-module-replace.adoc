@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, replace caching module
 summary: 'You must replace the caching module in the controller module when your system registers a single AutoSupport ASUP message that the module has gone offline. Failure to do so results in performance degradation.'
 ---
-= Replace the caching module or add/replace a core dump module - FAS9000
+= Replace the caching module or core dump module in your FAS9000 system
 :icons: font
 :imagesdir: ../media/
 

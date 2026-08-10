@@ -4,11 +4,11 @@ sidebar: sidebar
 keywords: aff a700, fas9000, boot, recovery, image, two, node, metrocluster, configuration, manual, manual boot recovery
 summary: "The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration. The FAS9000 system supports only manual boot media recovery procedures."
 ---
-= Boot the recovery image - FAS9000
+= Boot the recovery image on your FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration. The FAS9000 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+After you install the replacement boot media in your FAS9000 system, boot the recovery image from a USB drive. The procedure for booting the impaired controller depends on whether the system is in a two-node MetroCluster configuration. The FAS9000 system supports only manual boot media recovery procedures.
 
 include::../_include/700_9000_bootmedia_recovery_image_boot_options.adoc[]

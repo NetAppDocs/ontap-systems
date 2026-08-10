@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a700, fas9000, detailed, guide, prepare, install, hardware, two, node, switchless, cluster, cable, controller, ds212c, ds224c, ns224, drive, shelf, complete, system, setup, configuration, network, discovery
 summary: 'This guide gives detailed step-by-step instructions for installing a typical NetApp system.'
 ---
-= Detailed guide - FAS9000
+= Install your FAS9000 system using detailed instructions
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This guide gives detailed step-by-step instructions for installing a typical NetApp system. Use this guide if you want more detailed installation instructions.
+These detailed, step-by-step instructions guide you through installing your FAS9000 system, from racking and cabling to initial setup. Use these steps if you want more in-depth installation guidance than the quick steps provide.
 
 == Step 1: Prepare for installation
 
@@ -141,7 +141,7 @@ a|
 Powering up the system
 |===
 
-. Review the _NetApp ONTAP Confiuration Guide_ and collect the required information listed in that guide.
+. Review the _NetApp ONTAP Configuration Guide_ and collect the required information listed in that guide.
 +
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
 
@@ -173,7 +173,7 @@ You can cable the controllers to your network by using the two-node switchless c
 
 Management network, data network, and management ports on the controllers are connected to switches. The cluster interconnect ports are cabled on both controllers.
 
-You must have contacted your network administrator for information about connecting the system to the switches.
+Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
@@ -194,7 +194,7 @@ image::../media/drw_9000_TNSC_composite_cabling.png[Two-node switchless cluster 
 
 Management network, data network, and management ports on the controllers are connected to switches. The cluster interconnect and HA ports are cabled on to the cluster/HA switch.
 
-You must have contacted your network administrator for information about connecting the system to the switches.
+Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
@@ -212,7 +212,7 @@ image:../media/drw_9000_switched_cluster_cabling.png[Switched cluster composite 
 . Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
 == Step 4: Cable controllers to drive shelves
-You can cable your new system to DS212C, DS224C, or NS224 shelves, depending on if it is an AFF or FAS system.
+You can cable your new system to DS212C, DS224C, or NS224 shelves, depending on whether it is an AFF or FAS system.
 
 === Option 1: Cable the controllers to DS212C or DS224C drive shelves
 
@@ -252,10 +252,10 @@ image:../media/Cable_shelves_new_system_IOM12_shelves.png[Storage system cabling
 
 === Option 2: Cable the controllers to a single NS224 drive shelf in ASA AFF A700 systems running ONTAP 9.8 and later only
 
-You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A700 or ASA AFF A700 running system ONTAP 9.8 or later.
+You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A700 or ASA AFF A700 system running ONTAP 9.8 or later.
 
 * This task applies to ASA AFF A700 running ONTAP 9.8 or later only.
-* The systems must have at least one X91148A module installed in slots 3 and/or 7 for each controller. The animation or illustrations show this module installed in both slots 3 and 7.
+* The systems must have at least one X91148A module installed in slot 3 or 7 for each controller. The animation or illustrations show this module installed in both slots 3 and 7.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
 image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
@@ -277,7 +277,7 @@ image::../media/single_NS224_shelf.png[Single shelf cabling]
 
 === Option 3: Cable the controllers to two NS224 drive shelves in ASA AFF A700 systems running ONTAP 9.8 and later only
 
-You must cable each controller to the NSM modules on the NS224 drive shelves on an AFF A700 or ASA AFF A700 running system ONTAP 9.8 or later.
+You must cable each controller to the NSM modules on the NS224 drive shelves on an AFF A700 or ASA AFF A700 system running ONTAP 9.8 or later.
 
 * This task applies to ASA AFF A700 running ONTAP 9.8 or later only.
 * The systems must have two X91148A modules, per controller, installed in slots 3 and 7.
@@ -312,7 +312,7 @@ If you have network discovery enabled on your laptop, you can complete system se
 .Steps
 . Use the following animation to set one or more drive shelf IDs:
 +
-If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
+If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where the button is located.
 +
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set SAS or NVMe drive shelf IDs"]
 
@@ -323,7 +323,7 @@ video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set SAS 
 video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto, title="Animation - Turn on the power to the controllers"]
 
 +
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting might take up to eight minutes.
 
 . Make sure that your laptop has network discovery enabled.
 +
@@ -339,10 +339,10 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
-.. Click *Network* in the left pane and right-click and select *refresh*.
+.. Select *Network* in the left pane and right-click and select *refresh*.
 ..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
-NOTE: XXXXX is the system serial number for the target node.
+NOTE: The value shown is the system serial number for the target node.
 +
 System Manager opens.
 
@@ -383,7 +383,7 @@ image::../media/drw_9000_cable_console_switch_controller.png[Console cabling]
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:
 +
-If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
+If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where the button is located.
 +
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set SAS or NVMe drive shelf IDs"]
 
@@ -393,7 +393,7 @@ video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set SAS 
 video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto, title="Animation - Turn on the power to the controllers"]
 
 +
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting might take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
 +

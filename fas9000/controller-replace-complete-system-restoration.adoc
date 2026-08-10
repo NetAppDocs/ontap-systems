@@ -4,22 +4,22 @@ sidebar: sidebar
 keywords: aff a700, fas9000, storage encryption, licenses, storage encryption, volume encryption, serial number, metrocluster, switchback
 summary: "To complete the replacement procedure and restore your system to full operation, you must recable the storage, restore the NetApp Storage Encryption configuration if necessary, and install licenses for the new controller."
 ---
-= Complete system restoration - FAS9000
+= Complete the controller replacement for your FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To complete the replacement procedure and restore your system to full operation, you must recable the storage, restore the NetApp Storage Encryption configuration (if necessary), and install licenses for the new controller. You must complete a series of tasks before restoring your system to full operation.
+To complete the controller replacement for your FAS9000 system, recable the storage, restore the NetApp Storage Encryption configuration if necessary, and install licenses for the new controller.
 
 == Step 1: Install licenses for the replacement node in ONTAP
 
 include::../_include/install_licenses_mcc.adoc[]
 
-== Step 2: Verifying LIFs and registering the serial number
+== Step 2: Verify LIFs and register the serial number
 
 include::../_include/check_lifs_register_serial_number.adoc[]
 
-== Step 3: (MetroCluster only): Switching back aggregates in a two-node MetroCluster configuration
+== Step 3 (MetroCluster only): Switch back aggregates in a two-node MetroCluster configuration
 
 include::../_include/2n_mcc_switchback.adoc[]
 
