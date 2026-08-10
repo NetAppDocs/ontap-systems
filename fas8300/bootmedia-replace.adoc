@@ -62,7 +62,7 @@ You must locate the boot media in the controller module (see the FRU map on the 
 
 .Before you begin
 
-Although the contents of the boot media is encrypted, it is a best practice to erase the contents of the boot media before replacing it. For more information, see the https://mysupport.netapp.com/info/web/ECMP1132988.html[Statement of Volatility] for your system on the NetApp Support Site.
+Although the contents of the boot media are encrypted, it is a best practice to erase the contents of the boot media before replacing it. For more information, see the https://mysupport.netapp.com/info/web/ECMP1132988.html[Statement of Volatility] for your system on the NetApp Support Site.
 
 NOTE: You must log into the NetApp Support Site to display the _Statement of Volatility_ for your system.
 

@@ -11,7 +11,7 @@ summary: "You must replace the NVDIMM in the controller module when your system 
 [.lead]
 You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+All other components in the system must be functioning properly. If they are not, you must contact technical support.
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
@@ -38,7 +38,7 @@ include::../_include/shutdown_2n_mcc.adoc[]
 
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following , illustration, or the written steps to remove the controller module from the chassis.
+You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
 
 video::75b6fa91-96b9-4323-b156-aae10007c9a5[panopto, title="Animation - Remove the controller module"]
 
@@ -64,10 +64,10 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 == Step 3: Replace the NVDIMM
 
-To replace the NVDIMM, you must locate it in the controller module using the FRU map on top of the air duct the FRU Map on the top of the slot 1 riser.
+To replace the NVDIMM, you must locate it in the controller module using the FRU map on the top of the slot 1 riser.
 
 * The NVDIMM LED blinks while destaging contents when you halt the system. After the destage is complete, the LED turns off.
-* Although the contents of the NVDIMM is encrypted, it is a best practice to erase the contents of the NVDIMM before replacing it. For more information, see the https://mysupport.netapp.com/info/web/ECMP1132988.html[Statement of Volatility] on the NetApp Support Site.
+* Although the contents of the NVDIMM are encrypted, it is a best practice to erase the contents of the NVDIMM before replacing it. For more information, see the https://mysupport.netapp.com/info/web/ECMP1132988.html[Statement of Volatility] on the NetApp Support Site.
 +
 NOTE: You must log into the NetApp Support Site to display the _Statement of Volatility_ for your system.
 
@@ -95,7 +95,7 @@ The notch among the pins on the NVDIMM should line up with the tab in the socket
 . Locate the slot where you are installing the NVDIMM.
 . Insert the NVDIMM squarely into the slot.
 +
-The NVDIMM fits tightly in the slot, but should go in easily. If not, realign the NVDIMM with the slot and reinsert it.
+The NVDIMM fits tightly in the slot, but should go in easily. If it doesn't, realign the NVDIMM with the slot and reinsert it.
 +
 NOTE: Visually inspect the NVDIMM to verify that it is evenly aligned and fully inserted into the slot.
 

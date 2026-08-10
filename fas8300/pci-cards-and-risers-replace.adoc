@@ -12,7 +12,7 @@ summary: "To replace a PCIe or mezzanine card, you must disconnect the cables an
 To replace a PCIe or mezzanine card, you must disconnect the cables and any SFP and QSFP modules from the cards, replace the failed PCIe or mezzanine card, and then recable the cards.
 
 * You can use this procedure with all versions of ONTAP supported by your system
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* All other components in the system must be functioning properly. If they are not, you must contact technical support.
 
 == Step 1: Shut down the impaired controller
 
@@ -79,13 +79,13 @@ image:../media/drw_A400_Replace-PCIe-cards.png[Removing the PCIe cards]
 +
 The riser raises up slightly from the controller module.
 
- .. Lift the riser up straight up and set it aside on a stable flat surface,
+ .. Lift the riser straight up and set it aside on a stable, flat surface.
 . Remove the PCIe card from the riser:
  .. Turn the riser so that you can access the PCIe card.
  .. Press the locking bracket on the side of the PCIe riser, and then rotate it to the open position.
  .. For risers 2 and 3 only, swing the side panel up.
  .. Remove the PCIe card from the riser by gently pushing up on the bracket and lift the card straight out of the socket.
-. Install the replacement PCIe card in the riser by aligning the card with the socket, press the card into the socket and then close the side panel on the riser, if present.
+. Install the replacement PCIe card in the riser by aligning the card with the socket, pressing the card into the socket, and then closing the side panel on the riser, if present.
 +
 Be sure that you properly align the card in the slot and exert even pressure on the card when seating it in the socket. The PCIe card must be fully and evenly seated in the slot.
 +

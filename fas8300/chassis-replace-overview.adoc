@@ -9,7 +9,7 @@ summary: "You replace an impaired chassis the new chassis of the same model as t
 :imagesdir: ../media/
 
 [.lead]
-All other components in the system must be functioning properly; if not, you must contact technical support.
+Before replacing the chassis in your FAS8300 or FAS8700 system, confirm that all other components are functioning properly. This procedure is supported on all ONTAP versions but causes a complete service outage in a two-controller cluster and a partial outage in a multi-node cluster.
 
 * You can use this procedure with all versions of ONTAP supported by your system.
-* This procedure is disruptive. For a two-controller cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+* This procedure is disruptive: a two-controller cluster experiences a complete service outage, and a multi-node cluster experiences a partial outage.

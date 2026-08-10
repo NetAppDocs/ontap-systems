@@ -9,7 +9,7 @@ summary: 'Restore encryption on the replacement boot media.'
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media.
+After you replace the boot media in your FAS8300 or FAS8700 system, restore encryption by completing the steps for your key manager type, such as the Onboard Key Manager (OKM).
 
 If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 

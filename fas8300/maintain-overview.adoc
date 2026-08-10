@@ -55,7 +55,7 @@ a| The NVDIMM (non-volatile dual in-line memory module) manages the data transfe
 
 a| link:nvdimm-battery-replace.html[NVDIMM battery]
 
-a| A NVDIMM battery is responsible for maintaining power to the NVDIMM module.
+a| An NVDIMM battery is responsible for maintaining power to the NVDIMM module.
 
 a| link:pci-cards-and-risers-replace.html[PCIe card and risers]
 
@@ -67,6 +67,6 @@ a| A power supply provides a redundant power source in a controller shelf.
 
 a| link:rtc-battery-replace.html[Real-time clock battery]
 
-a| A real time clock battery preserves system date and time information if the power is off. 
+a| A real-time clock battery preserves system date and time information if the power is off. 
 
 |===

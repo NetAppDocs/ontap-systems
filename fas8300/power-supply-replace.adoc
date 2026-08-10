@@ -36,7 +36,7 @@ image::../media/drw_A400_psu.png[Replacing the power supply]
  .. Using both hands, pull the power supply out of the chassis, and then set it aside.
 . Using both hands, support and align the edges of the power supply with the opening in the controller module, and then gently push the power supply into the controller module until the locking tab clicks into place.
 +
-The power supplies will only properly engage with the internal connector and lock in place one way.
+The power supply engages with the internal connector and locks in place only one way.
 +
 NOTE: To avoid damaging the internal connector, do not use excessive force when sliding the power supply into the system.
 
@@ -46,7 +46,7 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
  .. Secure the power cable to the power supply using the power cable retainer.
 
 +
-Once power is restored to the power supply, the status LED should be green.
+After power is restored to the power supply, the status LED should be green.
 
 include::../_include/complete_rma_step.adoc[]
 
