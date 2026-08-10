@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, replace, nvmem, battery, remove, controller, module, controller, metrocluster, configuration, aggregate, configuration, reinstall, run, system, switch, shut, down
 summary: "You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general."
 ---
-= Replace an NVDIMM - FAS8300 and FAS8700
+= Replace the NVDIMM in your FAS8300 or FAS8700 system
 :icons: font
 :imagesdir: ../media/
 
