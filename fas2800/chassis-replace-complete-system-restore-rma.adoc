@@ -34,9 +34,9 @@ The value for HA-state can be one of the following:
 == Step 2: Bring up the system
 
 . If you have not done so, plug the power cables back into the PSUs.
-. Turn on the PSUs by toggling the rocker switched to *ON*, and wait for the controllers to power up completely.
+. Turn on the PSUs by toggling the rocker switch to *ON*, and wait for the controllers to power up completely.
 . Check the front and the back of the chassis and controllers for any fault lights after power up. 
-. Connect to the SP or BMC IP address of the nodes via SSH. This will be the same address used to shut down the nodes.
+. Connect to the SP or BMC IP address of the nodes via SSH. This is the same address used to shut down the nodes.
 . Perform additional health checks as described in https://kb.netapp.com/onprem/ontap/os/How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP[How_to_perform_a_cluster_health_check_with_a_script_in_ONTAP^]
 . If an AutoSupport maintenance window was triggered, end it by using the `system node autosupport invoke -node * -type all -message MAINT=END` command.
 

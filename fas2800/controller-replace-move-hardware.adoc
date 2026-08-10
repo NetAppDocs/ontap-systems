@@ -73,10 +73,10 @@ NVMEM battery plug
 .. Slide the battery up until it clears the holding brackets, and then lift the battery out of the controller module.
 .. Unplug the battery plug by squeezing the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Move the battery to the replacement controller module and install it:
-.. Aligning the battery with the holding brackets on the sheet metal side wall.
+.. Align the battery with the holding brackets on the sheet metal side wall.
 .. Slide the battery pack down until the battery latch engages and clicks into the opening on the side wall.
 +
-NOTE: Do not plug the battery in yet.  You will plug it in once the rest of the components are moved to the replacement controller module.
+NOTE: Do not plug the battery in yet. You plug it in after the rest of the components are moved to the replacement controller module.
 
 == Step 3:  Remove the mezzanine card 
 
@@ -130,7 +130,7 @@ Boot media release button
 +
 NOTE: Do not twist or pull the boot media straight up, because this could damage the socket or the boot media.
 
-. Install the the boot media to the replacement controller module:
+. Install the boot media to the replacement controller module:
 .. Align the edges of the replacement boot media with the boot media socket, and then gently push it into the socket.
 .. Check the boot media to make sure that it is seated squarely and completely in the socket.
 +
@@ -184,7 +184,7 @@ NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components o
 . Install the DIMMs in the replacement controller in the same place they were in the impaired controller:
 .. Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
 +
-The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
+The DIMM fits tightly in the slot, but should go in easily. If it doesn't, realign the DIMM with the slot and reinsert it.
 +
 NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
 
@@ -192,7 +192,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 == Step 7: Move a caching module
 
-Remove the caching module from the impaired controller module install it into replacement controller module.
+Remove the caching module from the impaired controller module and install it into the replacement controller module.
 
 image::../media/drw_2850_replace_caching module_IEOPS-697.svg[Move the caching module]
 
@@ -231,7 +231,7 @@ Install the NV battery into the replacement controller module.
 +
 Make sure that the plug locks down into the battery socket on the motherboard.  
 +
-. Aligning the battery with the holding brackets on the sheet metal side wall.
+. Align the battery with the holding brackets on the sheet metal side wall.
 . Slide the battery pack down until the battery latch engages and clicks into the opening on the side wall.
 . Reinstall the controller module cover and lock it into place. 
 
@@ -243,7 +243,7 @@ NOTE: The system might update system firmware when it boots. Do not abort this p
 
 . If you are not already grounded, properly ground yourself.
 . If you have not already done so, replace the cover on the controller module.
-. Turn the controller module. 
+. Turn the controller module over.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.

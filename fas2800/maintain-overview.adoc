@@ -55,7 +55,7 @@ a| A battery is included with the controller and preserves cached data if the AC
 
 a| link:pci-cards-and-risers-replace.html[Mezzanine card]
 
-a| A Mezzanine card is an expansion card that is designed to be inserted into a specialized slot on the motherboard and holds the card I/O cards.
+a| A Mezzanine card is an expansion card that inserts into a specialized slot on the motherboard and holds the card I/O cards.
 
 a| link:power-supply-swap-out.html[Power supply] 
 
@@ -63,6 +63,6 @@ a| A power supply provides a redundant power source in a controller.
 
 a| link:rtc-battery-replace.html[Real-time clock battery]
 
-a| A real time clock battery preserves system date and time information if the power is off. 
+a| A real-time clock battery preserves system date and time information if the power is off. 
 
 |===

@@ -9,14 +9,14 @@ summary: "Hot-swapping a power supply in your FAS2820 system involves turning of
 :imagesdir: ../media/
 
 [.lead]
-Hot-swapping a power supply in your FAS2820 system involves turning off, disconnecting, and removing the impaired power supply, and installing, connecting, and turning on the replacement power supply.
+Hot-swap a power supply in your FAS2820 system if it fails or degrades, without interrupting system operation. This procedure involves turning off and removing the impaired power supply, then installing and powering on the replacement.
 
 If any other components in the system aren't functioning properly, contact technical support.
 
 * The power supplies are redundant and hot-swappable.
 * This procedure is written for replacing one power supply at a time.
 +
-NOTE: It is a best practice to replace the power supply within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.  
+NOTE: Replace the power supply within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.  
 
 * Power supplies are auto-ranging.
 
@@ -41,7 +41,7 @@ CAUTION: When removing a power supply, always use two hands to support its weigh
 +
 
 . Make sure that the on/off switch of the new power supply is in the Off position.
-. Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.
+. Support and align the edges of the power supply with the opening in the system chassis using both hands, and then gently push the power supply into the chassis using the cam handle.
 +
 The power supplies are keyed and can only be installed one way.
 +
@@ -53,7 +53,7 @@ NOTE: Do not use excessive force when sliding the power supply into the system. 
  .. Secure the power cable to the power supply using the power cable retainer.
 
 +
-Once power is restored to the power supply, the status LED should be green.
+After power is restored to the power supply, the status LED should be green.
 . Turn on the power to the new power supply, and then verify the operation of the power supply activity LEDs.
 +
 The power supply LEDs are lit when the power supply comes online.

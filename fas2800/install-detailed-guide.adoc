@@ -9,7 +9,7 @@ summary: "This procedure gives detailed, step-by-step instructions for installin
 :imagesdir: ../media/
 
 [.lead]
-This procedure gives detailed, step-by-step instructions for installing your FAS2820 storage system. Use this procedure if you want more detailed installation instructions.
+This procedure provides detailed, step-by-step instructions for preparing, installing, cabling, and powering on your FAS2820 storage system. Use these steps if you prefer thorough explanations rather than the abbreviated quick guide.
 
 == Step 1: Prepare for installation
 
@@ -32,8 +32,8 @@ You need to provide the following at your site:
 IMPORTANT: Customers with specific power requirements must check https://hwu.netapp.com[NetApp Hardware Universe] for their configuration options.
 +
 . Access the https://docs.netapp.com/us-en/ontap/task_configure_ontap.html#assign-a-node-management-ip-address[Configure ONTAP on a new cluster with System Manager^]
-.. Review the requirements amd procedure steps.
-.. Gather information about your storage system by completing the https://docs.netapp.com/us-en/ontap/task_configure_ontap.html[setup worksheet^ (need the URL to the worksheet)].
+.. Review the requirements and procedure steps.
+.. Gather information about your storage system by completing the setup worksheet.
 .. Record the storage system serial number from the controllers.
 +
 image::../media/drw_ssn_label.svg[Example of system serial number]
@@ -378,7 +378,7 @@ image::../media/dwr-2800_controller2-to shelves_IEOPS-897.svg[Controller B to sh
 
 == Step 5: Complete storage system setup and configuration
 
-Complete your storage system setup and configuration using either Option 1: if network  discovery enabled or Option 2: if network discovery is not enabled.
+Complete your storage system setup and configuration using either Option 1: if network discovery is enabled, or Option 2: if network discovery is not enabled.
 
 Use the following animation in either option where setting shelf ID is required:
 
@@ -390,16 +390,16 @@ video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto, title="Animation - Set driv
 .Option 1: If network discovery is enabled
 --
 
-If network discovery enabled on your laptop, complete storage system setup and configuration using automatic cluster discovery.
+If network discovery is enabled on your laptop, complete storage system setup and configuration using automatic cluster discovery.
 
 .Steps
-. Turn on shelf power and set shelf IDsusing the animation at the beginning of this Step.
+. Turn on shelf power and set shelf IDs using the animation at the beginning of this step.
 
 . Power on the controllers 
 .. Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 .. Turn on the power switches to both nodes.
 +
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting might take up to eight minutes.
 +
 
 image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[Turn on power]
@@ -410,12 +410,12 @@ See your laptop's online help for more information.
 
 . Connect your laptop to the Management switch.
 
-.  Use  the graphic or steps to discover the storage system node to configure::
+. Use the graphic or steps to discover the storage system node to configure:
 +
 image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Auto discover system]
 
  .. Open File Explorer.
-.. Click *Network* in the left pane and right-click and select *refresh*.
+.. Select *Network* in the left pane and right-click and select *refresh*.
 ..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the storage system serial number for the target node.
@@ -424,8 +424,8 @@ System Manager opens.
 
 . Use System Manager guided setup to configure your storage system using the data you collected in <<Step 1: Prepare for installation>>.
 . Create an account or log into your account.
-.. Click https://mysupport.netapp.com[mysupport.netapp.com]
-.. Click _Create Account_ if you need to create an account or log into your account.
+.. Select https://mysupport.netapp.com[mysupport.netapp.com]
+.. Select _Create Account_ if you need to create an account or log into your account.
 . Download and install https://mysupport.netapp.com/site/tools[Active IQ Config advisor]
 .. Verify the health of your storage system by running Active IQ Config Advisor.
 . Register your system at https://mysupport.netapp.com/site/systems/register.
@@ -455,7 +455,7 @@ image::../media/drw_2800_laptop_to_switch_to_controller_IEOPS-1084.svg[Laptop to
 +
 image::../media/dwr_2800_turn_on_power_IEOPS-898.svg[Turn on power]
 +
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting might take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
 +
@@ -484,10 +484,10 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 +
 NOTE: The format for the address is +https://x.x.x.x.+
 
- .. Configure the storage system using the data you collected in <<Step 1: Prepare for installation>>..
+ .. Configure the storage system using the data you collected in <<Step 1: Prepare for installation>>.
 . Create an account or log into your account.
-.. Click https://mysupport.netapp.com[mysupport.netapp.com]
-.. Click _Create Account_ if you need to create an account or log into your account.
+.. Select https://mysupport.netapp.com[mysupport.netapp.com]
+.. Select _Create Account_ if you need to create an account or log into your account.
 . Download and install https://mysupport.netapp.com/site/tools[Active IQ Config advisor]
 .. Verify the health of your storage system by running Active IQ Config Advisor.
 . Register your system at https://mysupport.netapp.com/site/systems/register.
