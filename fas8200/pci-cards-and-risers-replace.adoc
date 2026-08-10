@@ -2,17 +2,17 @@
 permalink: fas8200/pci-cards-and-risers-replace.html
 sidebar: sidebar
 keywords: fas8200, replace a pcie card
-summary: "To replace a PCIe card, you must perform a specific sequence of tasks."
+summary: "To replace a PCIe card, you must remove the controller module from the system, open the side panel, remove the failed card, install the replacement card, and then reinstall the controller module."
 ---
 = Replace a PCIe card in your FAS8200 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace a PCIe card, you must perform a specific sequence of tasks.
+To replace a PCIe card, you must remove the controller module from the system, open the side panel, remove the failed card, install the replacement card, and then reinstall the controller module.
 
 * You can use this procedure with all versions of ONTAP supported by your system
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* All other components in the system must be functioning properly; if they aren't, you must contact technical support.
 
 == Step 1: Shut down the impaired controller
 

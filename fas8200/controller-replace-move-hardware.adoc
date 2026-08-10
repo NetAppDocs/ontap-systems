@@ -52,7 +52,7 @@ You must locate the boot media and follow the directions to remove it from the o
 
 . Locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_rxl_boot_media.png[Removing hte boot media]
+image::../media/drw_rxl_boot_media.png[Removing the boot media]
 
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +
@@ -174,7 +174,7 @@ You must move the caching modules from the impaired controller modules to the re
 +
 The storage system comes with two slots available for the caching module and only one slot is occupied, by default.
 +
-image::../media/drw_rxl_fcache.png[Remove and replac the caching module]
+image::../media/drw_rxl_fcache.png[Remove and replace the caching module]
 +
 
 . Move the caching module to the new controller module, and then align the edges of the caching module with the socket housing and gently push it into the socket.
@@ -198,7 +198,7 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 
 . Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
 +
-NOTE: You will connect the rest of the cables to the controller module later in this procedure.
+NOTE: You connect the rest of the cables to the controller module later in this procedure.
 
 . Complete the reinstallation of the controller module:
 +

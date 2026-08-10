@@ -12,7 +12,7 @@ summary: "You replace the real-time clock battery in the controller module so th
 You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.
 
 * You can use this procedure with all versions of ONTAP supported by your system
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* All other components in the system must be functioning properly; if they aren't, you must contact technical support.
 
 == Step 1: Shut down the impaired controller
 
@@ -85,7 +85,7 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 . Note the polarity of the RTC battery, and then insert it into the holder by tilting the battery at an angle and pushing down.
 . Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
 
-== Step 4: Reinstall the controller module and setting time/date after RTC battery replacement
+== Step 4: Reinstall the controller module and reset the time and date after RTC battery replacement
 
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
 

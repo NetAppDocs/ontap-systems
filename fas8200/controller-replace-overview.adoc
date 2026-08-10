@@ -25,9 +25,9 @@ If this is the procedure you should use, note that the controller replacement pr
 You should perform the drive reassignment as directed in the procedure.
 
 * You must replace the failed component with a replacement FRU component you received from your provider.
-* You must be replacing a controller module with a controller module of the same model type. You cannot upgrade your system by just replacing the controller module.
+* You must replace a controller module with a controller module of the same model type. You cannot upgrade your system by just replacing the controller module.
 * You cannot change any drives or drive shelves as part of this procedure.
-* In this procedure, the boot device is moved from the impaired controller to the _replacement_ controller so that the _replacement_ controller will boot up in the same version of ONTAP as the old controller module.
+* In this procedure, the boot device is moved from the impaired controller to the _replacement_ controller so that the _replacement_ controller boots up in the same version of ONTAP as the old controller module.
 * Any PCIe cards moved from the old controller module to the new controller module or added from existing customer site inventory must be supported by the replacement controller module.
 +
 https://hwu.netapp.com[NetApp Hardware Universe]

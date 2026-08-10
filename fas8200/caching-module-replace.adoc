@@ -85,7 +85,7 @@ Your storage system must meet certain criteria depending on your situation:
 
 * It must have the appropriate operating system for the caching module you are installing.
 * It must support the caching capacity.
-* All other components in the storage system must be functioning properly; if not, you must contact technical support.
+* All other components in the storage system must be functioning properly; if they are not, contact technical support.
 
 . Locate the caching module at the rear of the controller module and remove it.
  .. Press the release tab.
@@ -117,7 +117,7 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 
 . Complete the reinstallation of the controller module:
 +
-The controller module begins to boot as soon as it is fully seated in the chassis
+The controller module begins to boot as soon as it is fully seated in the chassis.
 
  .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +

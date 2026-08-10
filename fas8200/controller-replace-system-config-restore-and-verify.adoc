@@ -15,7 +15,7 @@ After completing the hardware replacement and booting to Maintenance mode, you v
 
 include::../_include/set_time_after_controller_rep.adoc[]
 
-== Step 2:  Verify and set the HA state of the controller module
+== Step 2: Verify and set the HA state of the controller module
 
 You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
 
