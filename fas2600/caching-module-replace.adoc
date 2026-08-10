@@ -2,14 +2,14 @@
 permalink: fas2600/caching-module-replace.html
 sidebar: sidebar
 keywords: fas2600, replace the caching module
-summary: "You must replace the caching module in the controller module when your system registers a single AutoSupport message that the module has gone offline. Failure to do so results in performance degradation."
+summary: "Replace the caching module in your FAS2600 system when your system registers a single AutoSupport message that the module has gone offline. Failure to do so results in performance degradation."
 ---
 = Replace the caching module in your FAS2600 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must replace the caching module in the controller module when your system registers a single AutoSupport (ASUP) message that the module has gone offline; failure to do so results in performance degradation.
+Replace the caching module in your FAS2600 system when your system registers a single AutoSupport (ASUP) message that the module has gone offline. Failure to do so results in performance degradation.
 
 * You must replace the failed component with a replacement FRU component you received from your provider.
 
