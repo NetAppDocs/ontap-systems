@@ -2,14 +2,14 @@
 permalink: fas8300/controller-replace-system-config-restore-and-verify.html
 sidebar: sidebar
 keywords: fas8300, fas8700, restore and verify the system configuration, verify and set the ha state of the controller module
-summary: Verify that the controller's HA configuration is active and functioning correctly in your FAS8300 and FAS8700 storage system, and confirm that the system's storage ports list all the paths to the disks.
+summary: Verify that the controller's HA configuration is active and functioning correctly in your FAS8300 or FAS8700 storage system, and confirm that the system's storage ports list all the paths to the disks.
 ---
 = Restore and verify the controller configuration in your FAS8300 or FAS8700 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Verify that the controller's HA configuration is active and functioning correctly in your FAS8300 and FAS8700 storage system, and confirm that the system's storage ports list all the paths to the disks.
+Verify that the controller's HA configuration is active and functioning correctly in your FAS8300 or FAS8700 storage system, and confirm that the system's storage ports list all the paths to the disks.
 
 include::../_include/a400_controller_replace_system_config_restore_and_verify.adoc[]
 
