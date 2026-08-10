@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace the boot media
 summary: The automated recovery of the boot image involves the system automatically identifying and selecting the appropriate boot menu option. It uses the boot image on partner node to reinstall ONTAP on the replacement boot media in your FAS50 storage system.
 ---
-= Boot media automatic recovery workflow - FAS50
+= FAS50 boot media replacement workflow using the automated boot recovery process
 :icons: font
 :imagesdir: ../media/
 

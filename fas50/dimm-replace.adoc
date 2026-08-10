@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace a dimm
 summary: Replace a DIMM in your FAS50 storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
-= Replace a DIMM - FAS50
+= Replace a DIMM in your FAS50 system to fix memory errors
 :icons: font
 :imagesdir: ../media/
 
