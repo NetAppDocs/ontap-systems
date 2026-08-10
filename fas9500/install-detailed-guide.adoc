@@ -2,14 +2,14 @@
 permalink: fas9500/install-detailed-guide.html
 sidebar: sidebar
 keywords: FAS9500
-summary: 'This a gives detailed step-by-step instructions for installing a typical NetApp system.'
+summary: 'This page gives detailed step-by-step instructions for installing your FAS9500 system.'
 ---
-= Detailed steps - FAS9500
+= Install your FAS9500 system using detailed instructions
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This article gives detailed step-by-step instructions for installing a typical NetApp system. Use this article if you want more detailed installation instructions.
+This page gives detailed step-by-step instructions for installing your FAS9500 system. Use these instructions if you want more detailed installation instructions.
 
 == Step 1: Prepare for installation
 
@@ -235,7 +235,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
 
 40GbE host network switches:
 
-Cable host‐side b ports in slot A4 and
+Cable host-side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
@@ -257,7 +257,7 @@ a|
 * Strap the cables to the cable
 management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
-PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
+PSU1 and PSU3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
 
 image::../media/oie_cable_power.png[Power cables]
 
@@ -329,7 +329,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
 
 40GbE host network switches:
 
-Cable host‐side b ports in slot A4 and
+Cable host-side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
@@ -351,7 +351,7 @@ a|
 * Strap the cables to the cable
 management arms (not shown).
 * Connect the power cables to the PSUs and connect them to different power sources (not shown).
-PSU 1 and 3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
+PSU1 and PSU3 provide power to all side A components, while PSU2 and PSU4 provide power to all side B components.
 
 image::../media/oie_cable_power.png[Power cables]
 
@@ -372,7 +372,7 @@ NOTE: For more SAS cabling information and worksheets, see link:../sas3/overview
 
 * Complete the SAS cabling worksheet for your system.  See link:../sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules].
 
-* Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
+* Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules is up, while the pull tabs on the shelves are down.
 
 image::../media/oie_cable_pull_tab_up.png[Cable pull tab direction]
 
@@ -381,7 +381,7 @@ image::../media/oie_cable_pull_tab_down.png[Cable pull tab direction]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
 .Steps
-. Use the following animation or drawings to cable your controllers to three (1 stack of one drive shelf and one stack of two drive shelves) DS224C drive shelves.
+. Use the following animation or drawings to cable your controllers to three (one stack of one drive shelf and one stack of two drive shelves) DS224C drive shelves.
 
 +
 video::c958aae6-9d08-4d3d-a213-ae7c017040cd[panopto, title="Animation Cable your drive shelves"]

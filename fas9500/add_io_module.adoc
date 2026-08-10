@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: fas9500, add io module
 summary: 'You can add an I/O module to your system, by either replacing an existing I/O module with a new I/O module in a fully populated system, or by adding a new I/O module into an empty slot in the chassis.'
 ---
-= Add an I/O module - FAS9500
+= Add an I/O module to your FAS9500 system to enhance network connectivity
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can add an I/O module to your system by either replacing a NIC or storage adapter with a new one in a fully-populated system, or by adding a new NIC or storage adapter into an empty chassis slot in your system.
+You can add an I/O module to your FAS9500 system by either replacing a NIC or storage adapter with a new one in a fully-populated system, or by adding a new NIC or storage adapter into an empty chassis slot.
 
 .Before you begin
 * Check the https://hwu.netapp.com/[NetApp Hardware Universe] to make sure that the new I/O module is compatible with your system and version of ONTAP you're running.
-* If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe]  and use the best one available for your I/O module.
+* If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe] and use the best one available for your I/O module.
 * To non-disruptively add an I/O module, you must take over the target controller, remove the slot blanking cover in the target slot or remove an existing I/O module, add the new or replacement I/O module, and then giveback the target controller.
 * Make sure that all other components are functioning properly.
 
@@ -61,7 +61,7 @@ You can add a new I/O module into a storage system with available empty slots.
 .. Push the I/O cam latch all the way up to lock the module in place.
 . If the replacement I/O module is a NIC, cable the module to the data switches.
 +
-NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
+NOTE: Make sure that you install blanks in any unused I/O slots to prevent possible thermal issues.
 
 . Reboot the controller from the LOADER prompt: _bye_
 +
@@ -69,7 +69,7 @@ NOTE: This reinitializes the PCIe cards and other components and reboots the nod
 
 . Give back the node from the partner node. `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
-. If you are using slots 3 and/or 7 for networking, use the `storage port modify -node __<node name>__ -port __<port name>__ -mode network` command to convert the slot for networking use.
+. If you are using slot 3 or 7 for networking, use the `storage port modify -node __<node name>__ -port __<port name>__ -mode network` command to convert the slot for networking use.
 . Repeat these steps for controller B.
 . If you installed a storage I/O module, install and cable your SAS shelves, as described in link:../sas3/install-hot-add-shelf.html[Hot-adding a SAS shelf].
 --
@@ -87,7 +87,7 @@ Make sure you understand the following scenarios for adding a new I/O module to 
 a|
 NIC to NIC (same number of ports)
 a|
-The LIFs will automatically migrate when its controller module is shut down.
+The LIFs automatically migrate when the controller module is shut down.
 a|
 NIC to NIC (different number of ports)	
 a|

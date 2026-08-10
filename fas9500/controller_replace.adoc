@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FAS9500, open controller, download service image to USB drive, transfer boot image, USB drive, service image
 summary: 'To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.'
 ---
-= Replace the controller module hardware - FAS9500
+= Replace the controller in your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
@@ -134,13 +134,7 @@ DIMM
 . Locate the slot where you are installing the DIMM.
 . Make sure that the DIMM ejector tabs on the connector are in the open position, and then insert the DIMM squarely into the slot.
 +
-The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
-+
-IMPORTANT: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
-
-. Insert the DIMM squarely into the slot.
-+
-The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
+The DIMM fits tightly in the slot, but should go in easily. If it doesn't, realign the DIMM with the slot and reinsert it.
 +
 IMPORTANT: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
 
@@ -182,7 +176,7 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 
 . Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
 +
-NOTE: You will connect the rest of the cables to the controller module later in this procedure.
+NOTE: You connect the rest of the cables to the controller module later in this procedure.
 
 . Complete the reinstallation of the controller module:
  .. If you have not already done so, reinstall the cable management device.
