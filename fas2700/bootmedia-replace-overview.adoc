@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, aff a220, replace, boot, media, image, nondisruptive, disruptive, replacement, fat32, usb, manual, manual boot recovery
 summary: "Learn about boot media replacement on a FAS2700 system and understand the different replacement methods. The boot media stores primary and secondary boot image files that the system uses during startup. Depending on your network configuration, you can perform either a nondisruptive replacement (HA pair connected to network) or a disruptive replacement (requires two reboots)."
 ---
-= Overview of boot media replacement - FAS2700
+= Learn about boot media replacement in your FAS2700 system
 :icons: font
 :imagesdir: ../media/
 
