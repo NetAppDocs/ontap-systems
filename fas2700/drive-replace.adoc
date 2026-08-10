@@ -2,7 +2,7 @@
 permalink: fas2700/drive-replace.html
 sidebar: sidebar
 keywords: fas2700, aff, a220, replace the drives
-summary: "Replace a drive when the platform logs a warning message to the system console indicating that a drive has failed. Both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated."
+summary: "Replace a drive in your FAS2700 system when the platform logs a warning message to the system console indicating that a drive has failed. Both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated."
 
 ---
 = Replace a drive in your FAS2700 system
@@ -10,7 +10,7 @@ summary: "Replace a drive when the platform logs a warning message to the system
 :imagesdir: ../media/
 
 [.lead]
-Replace a drive when the platform logs a warning message to the system console indicating that a drive has failed. Both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
+Replace a drive in your FAS2700 system when the platform logs a warning message to the system console indicating that a drive has failed. Both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
 
 include::../_include/drive_hotswap_intro.adoc[]
 
