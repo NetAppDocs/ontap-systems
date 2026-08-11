@@ -9,7 +9,7 @@ summary: Key specifications for the A900 platform group
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the AFF A900 storage system in a single high availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] for the complete specifications for this storage system.
+AFF A900 storage systems in a single high-availability pair offer these key specifications. Visit https://hwu.netapp.com[NetApp Hardware Universe^] for the complete specifications for this storage system.
 
 == Key specifications for AFF A900
 
@@ -125,7 +125,7 @@ IEC60950-1,
 IS 13252(part 1)
 
 == High availability
-* Ethernet based baseboard management controller (BMC) and ONTAP management interface
+* Ethernet-based baseboard management controller (BMC) and ONTAP management interface
 * Redundant hot-swappable controllers
 * Redundant hot-swappable power supplies
 * SAS in-band management over SAS connections
