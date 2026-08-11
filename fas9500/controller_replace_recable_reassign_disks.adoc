@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: fas9500, recable the system, reassign disks
 summary: Recable the system and reassign disks.
 ---
-= Recable the system - FAS9500
+= Give back the controller in your FAS9500 system to resume normal operations
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Continue the replacement procedure by recabling the storage and network conigurations.
+Return control of storage resources to the replacement controller so your FAS9500 system can resume normal operation.
 
 == Step 1: Recable the system
 
@@ -19,20 +19,20 @@ You must recable the controller module's storage and network connections.
 . Recable the system.
 . Verify that the cabling is correct by using https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[Active IQ Config Advisor^].
 .. Download and install Config Advisor.
-.. Enter the information for the target system, and then click Collect Data.
-.. Click the Cabling tab, and then examine the output. Make sure that all disk shelves are displayed and all disks appear in the output, correcting any cabling issues you find.
-.. Check other cabling by clicking the appropriate tab, and then examining the output from Config Advisor.
+.. Enter the information for the target system, and then select Collect Data.
+.. Select the Cabling tab, and then examine the output. Make sure that all disk shelves are displayed and all disks appear in the output, correcting any cabling issues you find.
+.. Check other cabling by selecting the appropriate tab, and then examining the output from Config Advisor.
 
-NOTE: The system ID and  disk assignment information reside in the NVRAM module, which is in a module separate from the controller module and not impacted by the controller module replacement.
+NOTE: The system ID and disk assignment information reside in the NVRAM module, which is in a module separate from the controller module and not impacted by the controller module replacement.
 
 == Step 2: Reassign disks
 
-If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. You must confirm the system ID change when you boot the _replacement_ node and then verify that the change was implemented.
+If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. You must confirm the system ID change when you boot the _replacement_ node and then verify that the change is correct.
 
 This procedure applies only to systems running ONTAP in an HA pair.
 
 . If the _replacement_ node is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch.``boot_ontap``
+. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch: `boot_ontap`
 . Wait until the `Waiting for giveback...` message is displayed on the _replacement_ node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: storage failover show
 +
 In the command output, you should see a message that the system ID has changed on the impaired node, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.

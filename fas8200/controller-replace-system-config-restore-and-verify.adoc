@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, restore and verify the system configuration, verify and set the ha state of the controller module
 summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
 ---
-= Restore and verify the system configuration - FAS8200
+= Restore and verify the controller configuration in your FAS8200 system
 :icons: font
 :imagesdir: ../media/
 
@@ -15,7 +15,7 @@ After completing the hardware replacement and booting to Maintenance mode, you v
 
 include::../_include/set_time_after_controller_rep.adoc[]
 
-== Step 2:  Verify and set the HA state of the controller module
+== Step 2: Verify and set the HA state of the controller module
 
 You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
 

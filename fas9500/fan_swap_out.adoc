@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas9500, swap out a fan
 summary: 'To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.'
 ---
-= Swap out a fan - FAS9500
+= Hot-swap a fan in your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
+To hot-swap a fan module in your FAS9500 system without interrupting service, you must perform a specific sequence of tasks.
 
-IMPORTANT: It is a best practice to replace the power supply within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.
+IMPORTANT: It is a best practice to replace the fan module within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded fan module until the fan module is replaced.
 
 .Steps
 

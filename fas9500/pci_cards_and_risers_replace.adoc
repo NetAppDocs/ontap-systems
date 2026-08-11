@@ -4,15 +4,15 @@ sidebar: sidebar
 keywords: fas9500, replace an io module
 summary: 'To replace an I/O module, you must perform a specific sequence of tasks.'
 ---
-= Replace an I/O module - FAS9500
+= Replace an I/O module in your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace an I/O module, you must perform a specific sequence of tasks.
+To replace an I/O module in your FAS9500 system, you must shut down the impaired node, remove and install the I/O module, and then reboot the node.
 
 * You can use this procedure with all versions of ONTAP supported by your system.
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* All other components in the system must be functioning properly; if they aren't, you must contact technical support.
 
 == Step 1: Shut down the impaired node
 

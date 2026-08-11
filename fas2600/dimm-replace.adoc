@@ -2,16 +2,16 @@
 permalink: fas2600/dimm-replace.html
 sidebar: sidebar
 keywords: fas2600, replace dimm
-summary: "You must replace a DIMM in the controller when your storage system encounters errors such as excessive Correctable Error Correction Codes errors that are based on Health Monitor alerts or uncorrectable ECC errors, typically caused by a single DIMM failure preventing the storage system from booting ONTAP."
+summary: "Replace a DIMM in your FAS2600 system when the storage system encounters excessive correctable ECC errors based on Health Monitor alerts, or uncorrectable ECC errors caused by a single DIMM failure preventing the system from booting ONTAP."
 ---
-= Replace a DIMM - FAS2600
+= Replace a DIMM in your FAS2600 system to fix memory errors
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must replace a DIMM in the controller when your storage system encounters errors such as, excessive CECC (Correctable Error Correction Codes) errors that are based on Health Monitor alerts or uncorrectable ECC errors, typically caused by a single DIMM failure preventing the storage system from booting ONTAP.
+Replace a DIMM in your FAS2600 system when the storage system encounters excessive CECC (Correctable Error Correction Codes) errors based on Health Monitor alerts, or uncorrectable ECC errors, typically caused by a single DIMM failure preventing the storage system from booting ONTAP.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+If any other component isn't functioning properly, contact technical support.
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
@@ -86,7 +86,7 @@ The notch among the pins on the DIMM should line up with the tab in the socket.
 
 . Make sure that the DIMM ejector tabs on the connector are in the open position, and then insert the DIMM squarely into the slot.
 +
-The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
+The DIMM fits tightly in the slot, but should go in easily. If it doesn't, realign the DIMM with the slot and reinsert it.
 +
 NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
 

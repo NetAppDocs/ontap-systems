@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: fas2600 maintenance, maintenance, repairing fas2600, repairing fas2600, replace aff fas2600 components, replace aff fas2600 components
 summary: Maintain the fas2600 hardware
 ---
-= Maintain FAS2600 hardware
+= Learn about maintaining your FAS2600 storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-For the FAS2600 storage system, you can perform maintenance procedures on the following components.
+You can perform maintenance procedures on these components of your FAS2600 storage system.
 
 == Boot media
 
@@ -34,7 +34,7 @@ You must replace a DIMM (dual in-line memory module) when a memory mismatch is p
 
 A drive is a device that provides the physical storage media for data.
 
-== NVEM battery
+== NVMEM battery
 
 A battery is included with a controller and preserves cached data if the AC power fails.
 

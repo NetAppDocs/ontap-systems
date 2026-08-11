@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: fas9500, restore and verify the system configuration
 summary: 'After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller, reconfigure system settings as necessary.'
 ---
-= Restore and verify the system configuration - FAS9500
+= Restore and verify the controller configuration in your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After completing the hardware replacement, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary..
+After completing the hardware replacement, you verify the low-level system configuration of the replacement controller, including the system time and HA state, and reconfigure system settings as necessary.
 
 == Step 1: Set and verify the system time after replacing the controller module
 

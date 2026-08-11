@@ -1,18 +1,18 @@
 ---
 permalink: fas2800/rtc-battery-replace.html
 sidebar: sidebar
-keywords: fas2800, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open
-summary: "You replace the real-time clock RTC battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function."
+keywords: fas2820, replace, real, time, clock, battery, impaired, controller, shut, down, controller, system, rtc, date, time, controller, module, reinstall, replace, open
+summary: "You replace the real-time clock battery in the controller module of your FAS2820 system so that services and applications that depend on accurate time synchronization continue to function."
 ---
-= Replace the real-time clock battery - FAS2820
+= Replace the real-time clock battery in your FAS2820 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.
+You replace the real-time clock (RTC) battery in the controller module of your FAS2820 system so that services and applications that depend on accurate time synchronization continue to function.
 
 * You can use this procedure with all versions of ONTAP supported by your system
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* All other components in the system must be functioning properly. If they aren't, contact technical support.
 
 == Step 1: Shut down the impaired controller
 
@@ -40,7 +40,7 @@ image::../media/drw_2850_open_controller_module_cover_IEOPS-695.svg[Remove the c
 
 == Step 3: Replace the RTC battery
 
-Replace the RTC battery by locating it inside the controller and follow the specific sequence of steps.
+Replace the RTC battery by locating it inside the controller and following the specific sequence of steps.
 
 video::7420d100-23b1-4213-a8da-af4701725622[panopto, title="Animation - Replace the RTC battery"]
 
@@ -60,10 +60,10 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 
 == Step 4: Reinstall the controller module
 
-Reinstall the controller module and boot it to the LOADER prompt..
+Reinstall the controller module and boot it to the LOADER prompt.
 
 . Turn the controller module over and align the end with the opening in the chassis.
-. Gently push the controller module halfway into the system.Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
 Do not completely insert the controller module in the chassis until instructed to do so.
 

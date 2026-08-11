@@ -81,6 +81,10 @@ entries:
       - title: Complete system restoration
         url: /fas9500/controller_replace_complete_system_restoration_rma.html
       # END controller module replacement
+      # START Caching module
+   - title: Caching module
+     url: /fas9500/caching_module_hot_swap.html
+      # END Caching module
       # START DIMM replace
    - title: DIMM
      url: /fas9500/dimm_replace.html

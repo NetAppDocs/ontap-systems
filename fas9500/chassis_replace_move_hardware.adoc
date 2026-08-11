@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, move hardware components, replace the chassis
 summary: 'To replace the chassis, you must remove the components from the impaired chassis and install them in the replacement chassis.'
 ---
-= Move and replace hardware - FAS9500
+= Replace the chassis in your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
@@ -42,7 +42,7 @@ Terra cotta locking button
 
 == Step 2: Remove the fans
 
-You must remove the six fan modules, located on in the front of the chassis, when replacing the chassis.
+You must remove the six fan modules, located in the front of the chassis, when replacing the chassis.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -98,7 +98,7 @@ Cam handle
 . Rotate the cam handle so that it completely disengages the controller module from the chassis, and then slide the controller module out of the chassis.
 +
 Make sure that you support the bottom of the controller module as you slide it out of the chassis.
-. Set the controller module aside in a safe place and keep track of which chassis slot it came from, so that it can be installed into the same slot in the replacement chassis..
+. Set the controller module aside in a safe place and keep track of which chassis slot it came from, so that it can be installed into the same slot in the replacement chassis.
 . Repeat these steps if you have another controller module in the chassis.
 
 == Step 4: Remove the I/O modules
@@ -140,7 +140,7 @@ I/O cam latch completely unlocked
 . Set the I/O module aside.
 . Repeat the preceding step for the remaining I/O modules in the impaired chassis.
 
-== Step 5: Remove the De-stage Controller Power Module
+== Step 5: Remove the de-stage controller power module
 
 Remove the two de-stage controller power modules from the front of the impaired chassis.
 
@@ -206,7 +206,7 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 
 == Step 8: Install the de-stage controller power module when replacing the chassis
 
-Once the replacement chassis is installed into the rack or system cabinet, you must reinstall the de-stage controller power modules into it.
+After the replacement chassis is installed into the rack or system cabinet, you must reinstall the de-stage controller power modules into it.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -261,7 +261,7 @@ IMPORTANT: Only connect the power cable to the power supply. Do not connect the 
 
 . Repeat the preceding steps for any remaining power supplies.
 
-== Step 12 Install the USB LED modules
+== Step 12: Install the USB LED modules
 
 Install the USB LED modules in the replacement chassis.
 

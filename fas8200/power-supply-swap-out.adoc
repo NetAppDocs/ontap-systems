@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas8200, swap out a power supply
 summary: "Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply."
 ---
-= Swap out a power supply - FAS8200
+= Hot-swap a power supply in your FAS8200 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+All other components in the system must be functioning properly; if they aren't, you must contact technical support.
 
 * The power supplies are redundant and hot-swappable.
 * This procedure is written for replacing one power supply at a time.
@@ -71,7 +71,7 @@ NOTE: Do not use excessive force when sliding the power supply into the system. 
  .. Secure the power cable to the power supply using the power cable retainer.
 
 +
-Once power is restored to the power supply, the status LED should be green.
+After power is restored to the power supply, the status LED should be green.
 . Turn on the power to the new power supply, and then verify the operation of the power supply activity LEDs.
 +
 The power supply LEDs are lit when the power supply comes online.

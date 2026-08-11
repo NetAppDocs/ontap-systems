@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace or install a mezzanine card
 summary: "To replace a failed mezzanine card, you must remove the cables and any SFP or QSFP modules, replace the card, reinstall the SFP or QSFP modules and recable the cards. To install a new mezzanine card, you must have the appropriate cables and SFP or QSFP modules."
 ---
-= Replace or install a mezzanine card - FAS500f
+= Replace or install a mezzanine card in your FAS500f system
 :icons: font
 :imagesdir: ../media/
 
@@ -12,7 +12,7 @@ summary: "To replace a failed mezzanine card, you must remove the cables and any
 To replace a failed mezzanine card, you must remove the cables and any SFP or QSFP modules, replace the card, reinstall the SFP or QSFP modules and recable the cards. To install a new mezzanine card, you must have the appropriate cables and SFP or QSFP modules.
 
 * You can use this procedure with all versions of ONTAP supported by your system
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* All other components in the system must be functioning properly. If they aren't, contact technical support.
 
 == Step 1: Shut down the impaired controller
 
@@ -130,7 +130,7 @@ Thumbscrew
 |===
 
 . Insert the controller module into the chassis
- .. Ensure the latching mechanism arms are locked in the fully extended position.
+ .. Verify that the latching mechanism arms are locked in the fully extended position.
  .. Using both hands, align and gently slide the controller module into the latching mechanism arms until it stops.
  .. Place your index fingers through the finger holes from the inside of the latching mechanism.
  .. Press your thumbs down on the orange tabs on top of the latching mechanism and gently push the controller module over the stop.

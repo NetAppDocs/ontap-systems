@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, detailed installation
 summary: "This section gives detailed step-by-step instructions for installing a FAS500f system."
 ---
-= Detailed steps - FAS500f
+= Install your FAS500f storage system using detailed steps
 :icons: font
 :imagesdir: ../media/
 
@@ -352,7 +352,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 image::../media/drw_autodiscovery_controler_select.png[Select an ONTAP icon]
 
  .. Open File Explorer.
- .. Click *Network* in the left pane.
+ .. Select *Network* in the left pane.
  .. Right-click and select *refresh*.
  .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +

@@ -4,14 +4,16 @@ sidebar: sidebar
 keywords: fas9500, replace nvram
 summary: 'The NVRAM module consists of the NVRAM11 and DIMMs and up to two NVMe SSD Flash Cache modules (Flash Cache or caching modules) per NVRAM module.'
 ---
-= Replace the NVRAM module and/or NVRAM DIMMs - FAS9500
+= Replace the NVRAM module or NVRAM DIMM in your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The NVRAM module consists of the NVRAM11 and DIMMs. You can replace a failed NVRAM module or the DIMMs inside the NVRAM module. To replace a failed NVRAM module, you must remove it from the chassis, move the DIMMs to the replacement module, and install the replacement NVRAM module into the chassis.
+The NVRAM module in your FAS9500 system consists of the NVRAM11 and DIMMs. You can replace a failed NVRAM module or an NVRAM DIMM to keep your system operating normally.
 
-To replace and NVRAM DIMM, you must remove the NVRAM module from the chassis, replace the failed DIMM in the module, and then reinstall the NVRAM module.
+To replace a failed NVRAM module, you must remove it from the chassis, move the DIMMs to the replacement module, and install the replacement NVRAM module into the chassis.
+
+To replace an NVRAM DIMM, you must remove the NVRAM module from the chassis, replace the failed DIMM in the module, and then reinstall the NVRAM module.
 
 .About this task
 Because the system ID is derived from the NVRAM module, if replacing the module, disks belonging to the system are reassigned to a new system ID.
@@ -32,7 +34,7 @@ include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
 == Step 2: Replace the NVRAM module
 
-To replace the NVRAM module, located it in slot 6 in the chassis and follow the specific sequence of steps.
+To replace the NVRAM module, locate it in slot 6 in the chassis and follow the specific sequence of steps.
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -154,9 +156,9 @@ After you replace the FRU, you must reboot the controller module.
 
 To boot ONTAP from the LOADER prompt, enter `bye`.
 
-== Step 5: Reassigning disks
+== Step 5: Reassign disks
 
-You must confirm the system ID change when you boot the replacement controller and then verify that the change was implemented.
+You must confirm the system ID change when you boot the replacement controller and then verify that the change is correct.
 
 CAUTION: Disk reassignment is only needed when replacing the NVRAM module and does not apply to NVRAM DIMM replacement. 
 
@@ -209,7 +211,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 . If the system is in a MetroCluster configuration, monitor the status of the controller: `metrocluster node show`
 +
-The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each controller will show a configured state, with DR Mirroring enabled and a mode of normal. The `metrocluster node show -fields node-systemid` command output displays the old system ID until the MetroCluster configuration returns to a normal state.
+The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each controller shows a configured state, with DR Mirroring enabled and a mode of normal. The `metrocluster node show -fields node-systemid` command output displays the old system ID until the MetroCluster configuration returns to a normal state.
 
 . If the controller is in a MetroCluster configuration, depending on the MetroCluster state, verify that the DR home ID field shows the original owner of the disk if the original owner is a controller on the disaster site.
 +

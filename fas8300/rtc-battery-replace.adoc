@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, replace, real, time, clock, battery, shut, down, impaired, controller, controller, metrocluster, module, rtc, battery, date, time, aggregates, replace, reinstall, open, switch
 summary: "You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function."
 ---
-= Replace the real-time clock battery - FAS8300 and FAS8700
+= Replace the real-time clock battery in your FAS8300 or FAS8700 system
 :icons: font
 :imagesdir: ../media/
 
@@ -12,7 +12,7 @@ summary: "You replace the real-time clock (RTC) battery in the controller module
 You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.
 
 * You can use this procedure with all versions of ONTAP supported by your system
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* All other components in the system must be functioning properly. If they aren't, contact technical support.
 
 == Step 1: Shut down the impaired controller
 
@@ -87,7 +87,7 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 . Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
 . Close the air duct.
 
-== Step 4: Reinstall the controller module and sett time/date after RTC battery replacement
+== Step 4: Reinstall the controller module and set time/date after RTC battery replacement
 
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
 

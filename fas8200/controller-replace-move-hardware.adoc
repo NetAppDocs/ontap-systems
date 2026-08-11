@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, move the controller module hardware
 summary: "To replace the controller module hardware, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
 ---
-= Replace the controller module hardware - FAS8200
+= Replace the controller in your FAS8200 system
 :icons: font
 :imagesdir: ../media/
 
@@ -52,7 +52,7 @@ You must locate the boot media and follow the directions to remove it from the o
 
 . Locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_rxl_boot_media.png[Removing hte boot media]
+image::../media/drw_rxl_boot_media.png[Removing the boot media]
 
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +
@@ -120,7 +120,7 @@ image::../media/drw_rxl_dimms.png[Replacing DIMMs]
 . Locate the slot where you are installing the DIMM.
 . Make sure that the DIMM ejector tabs on the connector are in the open position, and then insert the DIMM squarely into the slot.
 +
-The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
+The DIMM fits tightly in the slot, but it should go in easily. If it doesn't, realign the DIMM with the slot and reinsert it.
 +
 NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
 
@@ -174,7 +174,7 @@ You must move the caching modules from the impaired controller modules to the re
 +
 The storage system comes with two slots available for the caching module and only one slot is occupied, by default.
 +
-image::../media/drw_rxl_fcache.png[Remove and replac the caching module]
+image::../media/drw_rxl_fcache.png[Remove and replace the caching module]
 +
 
 . Move the caching module to the new controller module, and then align the edges of the caching module with the socket housing and gently push it into the socket.
@@ -198,7 +198,7 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 
 . Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
 +
-NOTE: You will connect the rest of the cables to the controller module later in this procedure.
+NOTE: You connect the rest of the cables to the controller module later in this procedure.
 
 . Complete the reinstallation of the controller module:
 +
@@ -211,7 +211,7 @@ An HA pair
 a|
     The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
- .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position. Tighten the thumbscrew on the cam handle on back of the controller module.
+ .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position. Tighten the thumbscrew on the cam handle on the back of the controller module.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
@@ -229,7 +229,7 @@ a|
 A stand-alone configuration
 a|
 
- .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position. Tighten the thumbscrew on the cam handle on back of the controller module.
+ .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position. Tighten the thumbscrew on the cam handle on the back of the controller module.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 

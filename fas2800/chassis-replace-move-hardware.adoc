@@ -1,15 +1,15 @@
 ---
 permalink: fas2800/chassis-replace-move-hardware.html
 sidebar: sidebar
-keywords: fas2800, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap
-summary: "Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the replacement chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the replacement chassis of the same model as the impaired chassis."
+keywords: fas2820, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap
+summary: "In your FAS2820 system, move the power supplies, hard drives, and controller module or modules from the impaired chassis to the replacement chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the replacement chassis of the same model as the impaired chassis."
 ---
-= Move and replace hardware - FAS2820
+= Replace the chassis in your FAS2820 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the replacement chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the replacement chassis of the same model as the impaired chassis.
+In your FAS2820 system, move the power supplies, hard drives, and controller module or modules from the impaired chassis to the replacement chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the replacement chassis of the same model as the impaired chassis.
 
 == Step 1: Move a power supply
 
@@ -27,7 +27,7 @@ CAUTION: When removing a power supply, always use two hands to support its weigh
 +
 
 . Repeat the preceding steps for any remaining power supplies.
-. Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.
+. Support and align the edges of the power supply with the opening in the system chassis using both hands, and then gently push the power supply into the chassis using the cam handle.
 +
 The power supplies are keyed and can only be installed one way.
 +
@@ -76,7 +76,7 @@ The cam handle engages and begins to rotate to the closed position.
 
 . Firmly push the drive the rest of the way into the chassis, and then lock the cam handle by pushing it against the drive holder.
 +
-Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It click when it is secure.
+Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It clicks when it is secure.
 
 . Repeat the process for the remaining drives in the system.
 
@@ -85,16 +85,16 @@ Be sure to close the cam handle slowly so that it aligns correctly with the fron
 Remove the existing chassis from the equipment rack or system cabinet and install the replacement chassis in the equipment rack or system cabinet.
 
 . Remove the screws from the chassis mount points.
-. With the help of two or three people, slide the impaired chassis off the rack rails in a system cabinet or _L_ brackets in an equipment rack, and then set it aside.
+. Slide the impaired chassis off the rack rails in a system cabinet or _L_ brackets in an equipment rack with the help of two or three people, and then set it aside.
 . If you are not already grounded, properly ground yourself.
-. Using two or three people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or _L_ brackets in an equipment rack.
+. Install the replacement chassis into the equipment rack or system cabinet with the help of two or three people, guiding the chassis onto the rack rails in a system cabinet or _L_ brackets in an equipment rack.
 . Slide the chassis all the way into the equipment rack or system cabinet.
 . Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the impaired chassis.
 . If you have not already done so, install the bezel.
 
 == Step 5: Install the controller
 
-Install the controller module and any other components into the replacement chassis, boot it tto Maintenance mode.
+Install the controller module and any other components into the replacement chassis, and then boot it to Maintenance mode.
 
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
 
@@ -115,7 +115,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 
 . Connect the power supplies to different power sources, and then turn them on.
 . Boot each controller to Maintenance mode:
- .. As each controller starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message `Press Ctrl-C for Boot Menu`.
+ .. As each controller starts booting, press `Ctrl-C` to interrupt the boot process when you see the message `Press Ctrl-C for Boot Menu`.
 +
 NOTE: If you miss the prompt and the controller modules boot to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then repeat this step.
 

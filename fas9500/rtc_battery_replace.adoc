@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, replace the real-time clock battery
 summary: Replace the real-time clock battery in the controller module.
 ---
-= Replace the real-time clock battery - FAS9500
+= Replace the real-time clock battery in your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
@@ -12,7 +12,7 @@ summary: Replace the real-time clock battery in the controller module.
 You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.
 
 * You can use this procedure with all versions of ONTAP supported by your system
-* All other components in the system must be functioning properly; if not, you must contact technical support.
+* All other components in the system must be functioning properly; if they aren't, you must contact technical support.
 
 == Step 1: Shut down the impaired node
 
@@ -98,7 +98,7 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 
 == Step 4: Reinstall the controller module and set time/date
 
-After you replace the RTC battery, you must reinstall the controller module. If the RTC battery has been left out of the controller module for more than 10 minutes, you may have to reset the time and date.
+After you replace the RTC battery, you must reinstall the controller module. If the RTC battery has been left out of the controller module for more than 10 minutes, you might have to reset the time and date.
 
 .Steps
 . If you have not already done so, close the air duct or controller module cover.

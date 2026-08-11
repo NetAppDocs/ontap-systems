@@ -1,15 +1,15 @@
 ---
 permalink: fas2800/controller-replace-overview.html
 sidebar: sidebar
-keywords: fas2800, prerequisite, replace the controller module
-summary: "You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system."
+keywords: fas2820, prerequisite, replace the controller module
+summary: "Before replacing the controller in your FAS2820 system, you must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system."
 ---
-= Overview of controller module replacement - FAS2820
+= Review requirements before replacing the controller in your FAS2820 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
+Before replacing the controller in your FAS2820 system, you must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
 
 include::../_include/console-logging-note.adoc[]
 
@@ -20,9 +20,9 @@ include::../_include/console-logging-note.adoc[]
 You should perform the drive reassignment as directed in the procedure.
 
 * You must replace the failed component with a replacement FRU component you received from your provider.
-* You must be replacing a controller module with a controller module of the same model type. You cannot upgrade your system by just replacing the controller module.
+* You must replace the controller module with a controller module of the same model type. You cannot upgrade your system by just replacing the controller module.
 * You cannot change any drives or drive shelves as part of this procedure.
-* In this procedure, the boot device is moved from the impaired controller to the _replacement_ controller so that the _replacement_ controller will boot up in the same version of ONTAP as the old controller module.
+* In this procedure, the boot device is moved from the impaired controller to the _replacement_ controller so that the _replacement_ controller boots up in the same version of ONTAP as the old controller module.
 * It is important that you apply the commands in these steps on the correct systems:
  ** The _impaired_ controller is the controller that is being replaced.
  ** The _replacement_ controller is the new controller that is replacing the impaired controller.
