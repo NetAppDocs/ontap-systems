@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, boot the recovery image, manual, manual boot recovery
 summary: "Boot the ONTAP recovery image from the USB drive on a FAS8200 system to restore the boot media.The FAS8200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
-= Boot the recovery image - FAS8200
+= Boot the recovery image on your FAS8200 system
 :icons: font
 :imagesdir: ../media/
 
@@ -53,12 +53,12 @@ If you are prompted to continue with the update, press `y`.
 
 |===
 
-. Ensure that the environmental variables are set as expected:
+. Verify that the environmental variables are set as expected:
  .. Take the controller to the LOADER prompt.
  .. Check the environment variable settings with the `printenv` command.
  .. If an environment variable is not set as expected, modify it with the `setenv __environment-variable-name__ __changed-value__` command.
  .. Save your changes using the `savenv` command.
-. The next depends on your system configuration:
+. The next step depends on your system configuration:
  ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia-encryption-restore.adoc[Restore OKM, NSE, and NVE as needed]
  ** If your system does not have onboard keymanager, NSE or NVE configured, complete the steps in this section.
 . From the LOADER prompt, enter the `boot_ontap` command.
@@ -69,7 +69,7 @@ If you are prompted to continue with the update, press `y`.
 a|
 The login prompt
 a|
-Go to the next Step.
+Go to the next step.
 a|
 Waiting for giveback...
 a|

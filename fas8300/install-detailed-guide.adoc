@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: fas8300, fas8700, install, detailed, guide, prepare, hardware, cable, controller, switchless, cluster, sas, drive, two, node, configuration
 summary: "This guide gives detailed step-by-step instructions for installing a typical NetApp system. Use this guide if you want more detailed installation instructions."
 ---
-= Detailed guide - FAS8300 and FAS8700
+= Install your FAS8300 or FAS8700 system using detailed instructions
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This guide gives detailed step-by-step instructions for installing a typical NetApp system. Use this guide if you want more detailed installation instructions.
+These detailed, step-by-step instructions guide you through installing your FAS8300 or FAS8700 system, from racking and cabling to initial setup. Use these steps if you want more in-depth installation guidance than the quick steps provide.
 
 == Step 1: Prepare for installation
 
@@ -126,7 +126,7 @@ a|
 Powering up the system
 |===
 
-. Review the _NetApp ONTAP Confiuration Guide_ and collect the required information listed in that guide.
+. Review the _NetApp ONTAP Configuration Guide_ and collect the required information listed in that guide.
 +
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
 
@@ -152,7 +152,7 @@ image::../media/drw_a320_cable_management_arms.png[Removing or installing the ca
 
 You can cable the controllers to your network by using the two-node switchless cluster method or by using the cluster interconnect network.
 
-NOTE: If the port labels on the card are not visible, check the card installation orientation (the PCIe connector socket is on the left side of the card slot in the A400 and FAS8300/8700), and then look for the card,then look for the card, by part number, in the https://hwu.netapp.com[NetApp Hardware Universe^] for a graphic of the bezel which will show the port labels. The card part number can be found using the `sysconfig -a` command or on the system packing list.
+NOTE: If the port labels on the card are not visible, check the card installation orientation (the PCIe connector socket is on the left side of the card slot in the A400 and FAS8300/8700), and then look for the card, by part number, in the https://hwu.netapp.com[NetApp Hardware Universe^] for a graphic of the bezel that shows the port labels. The card part number can be found using the `sysconfig -a` command or on the system packing list.
 
 === Option 1: Cable a two-node switchless cluster
 
@@ -247,10 +247,10 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Select an ONTAP icon]
 
  .. Open File Explorer.
-.. Click *Network* in the left pane and right-click and select *refresh*.
+.. Select *Network* in the left pane, right-click *Network*, and then select *Refresh*.
 ..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
-NOTE: XXXXX is the system serial number for the target node.
+NOTE: In this example, XXXXX represents the system serial number for the target node.
 +
 System Manager opens.
 
@@ -295,7 +295,7 @@ FAS8300 and FAS8700 shown.
 +
 video::50cdf200-ede1-45a9-b4b5-ab1b006698d7[panopto, title="Animation - Power on the controllers"]
 +
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting might take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
 +

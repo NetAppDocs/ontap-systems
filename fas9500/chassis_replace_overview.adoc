@@ -4,16 +4,16 @@ sidebar: sidebar
 keywords: fas9500, replace the chassis
 summary: 'To replace the chassis, you must remove the power supplies, fans, controller modules, I/O modules, DCPM modules, and USB LED module from the impaired chassis and install them in the replacement chassis.'
 ---
-= Replace the chassis - FAS9500
+= Review requirements before replacing your FAS9500 chassis
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-.Before you begin
 To replace the chassis, you must remove the power supplies, fans, controller modules, I/O modules, DCPM modules, and USB LED module from the impaired chassis, remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis in its place, and then install the components into the replacement chassis.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+.Before you begin
+All other components in the system must be functioning properly; if they aren't, contact technical support.
 
 .About this task
 * You can use this procedure with all versions of ONTAP supported by your system.
-* This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+* This procedure is disruptive. For a two-node cluster, you have a complete service outage and a partial outage in a multi-node cluster.

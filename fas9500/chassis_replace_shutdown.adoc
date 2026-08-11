@@ -2,12 +2,14 @@
 permalink: fas9500/chassis_replace_shutdown.html
 sidebar: sidebar
 keywords: aff fas9500, shutdown the controllers
-summary: "To replace the chassis, you must shutdown the controllers."
+summary: "Before you can replace the chassis, you must shut down the impaired controller in your FAS9500 system."
 ---
 
-== Shutdown the impaired controller - FAS9500
+= Shut down your FAS9500 controller to replace the chassis
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Before you can replace the chassis, you must shut down the impaired controller in your FAS9500 system.
+
 include::../_include/shutdown_chassis.adoc[]

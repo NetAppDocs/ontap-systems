@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas8300, fas8700, replace, dimm, shut, down, impaired, controller, module, reinstall,  system, controller, aggregates, metrocluster, replacement
 summary: "You must replace a DIMM in the controller when your storage system encounters errors such as excessive correctable error correction codes or uncorrectable errors, typically caused by a single DIMM failure preventing the storage system from booting ONTAP."
 ---
-= Replace a DIMM - FAS8300 and FAS8700
+= Replace a DIMM in your FAS8300 or FAS8700 system to fix memory errors
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must replace a DIMM in the controller when your storage system encounters errors such as, excessive CECC (Correctable Error Correction Codes) errors that are based on Health Monitor alerts or uncorrectable ECC errors, typically caused by a single DIMM failure preventing the storage system from booting ONTAP.
+You must replace a DIMM in the controller when your storage system encounters errors such as excessive CECC (Correctable Error Correction Code) errors based on Health Monitor alerts, or uncorrectable ECC errors. These errors are typically caused by a single DIMM failure that prevents the storage system from booting ONTAP.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+All other components in the system must be functioning properly. If a component is not functioning properly, you must contact technical support.
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
@@ -74,7 +74,7 @@ video::175c6597-449e-4dc8-8c02-aad9012f08b5[panopto, title="Animation - Replace 
 
 image::../media/drw_A400_Replace-NVDIMM-DIMM.png[Moving the DIMMs]
 
-The number and location of DIMMS in your system depends on the model of your system. Refer to FRU map on the air duct for more information.
+The number and location of DIMMs in your system depend on the model of your system. Refer to FRU map on the air duct for more information.
 
 * If you have a FAS8300 system, the system DIMMs are located in sockets 2, 4, 13, and 15.
 * If you have a FAS8700 system, the system DIMMs are located in slots 2, 4, 7, 9, 13, 15, 18, and 20.
@@ -96,7 +96,7 @@ The notch among the pins on the DIMM should line up with the tab in the socket.
 
 . Make sure that the DIMM ejector tabs on the connector are in the open position, and then insert the DIMM squarely into the slot.
 +
-The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
+The DIMM fits tightly in the slot, but should go in easily. If it doesn't, realign the DIMM with the slot and reinsert it.
 +
 NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
 
@@ -121,10 +121,10 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 
 . Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
 +
-NOTE: You will connect the rest of the cables to the controller module later in this procedure.
+NOTE: You connect the rest of the cables to the controller module later in this procedure.
 
 . Complete the installation of the controller module:
-.. Using the locking latches, firmly push the controller module into the chassis until the locking latches begin to rise.
+.. Firmly push the controller module into the chassis using the locking latches until the locking latches begin to rise.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 

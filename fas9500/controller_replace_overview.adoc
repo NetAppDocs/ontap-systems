@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FAS9500
 summary: 'You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.'
 ---
-= Replace the controller module - FAS9500
+= Review requirements before replacing the controller in your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
@@ -26,7 +26,7 @@ If this is the procedure you should use, note that the controller replacement pr
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * You must be replacing a controller module with a controller module of the same model type. You cannot upgrade your system by just replacing the controller module.
 * You cannot change any drives or drive shelves as part of this procedure.
-* In this procedure, the boot device is moved from the impaired node to the replacement node so that the replacement node will boot up in the same version of ONTAP as the old controller module.
+* In this procedure, the boot device is moved from the impaired node to the replacement node so that the replacement node boots up in the same version of ONTAP as the old controller module.
 * It is important that you apply the commands in these steps on the correct systems:
  ** The impaired node is the node that is being replaced.
  ** The replacement node is the new node that is replacing the impaired node.
