@@ -86,7 +86,7 @@ The following are some typical host network cabling examples. See  link:https://
 . Connect ports e9a and e9b to your Ethernet data network switch.
 // Issue ontap-systems/394 - Simplify statement previously here
 +
-NOTE: Do no use ports e1b and e7b ports for host network connections. Use a separate host card.
+NOTE: Do not use ports e1b and e7b for host network connections. Use a separate host card.
 +
 *100 GbE cable*
 +
