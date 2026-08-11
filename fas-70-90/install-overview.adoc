@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, Installation, deployment, Install, deploy, Installing, deploying
 summary: 'Follow these high-level steps to install and set up your FAS70 and FAS90 storage system and deploy it as a node in your ONTAP system.'
 ---
-= Installation and configuration workflow - FAS70 and FAS90
+= FAS70 and FAS90 installation and configuration workflow
 :icons: font
 :imagesdir: ../media/
 
@@ -13,11 +13,11 @@ To install and configure your FAS70 or FAS90 system, you review the hardware req
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One]link:install-requirements.html[Review installation requirements]
 [role="quick-margin-para"]
-Review the equipment and tools needed to install your storage system and storage shelves and review the lifting and safety precautions.
+Review the equipment and tools needed to install your storage system and storage shelves. Also review the lifting and safety precautions.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:install-prepare.html[Prepare to install the FAS70 or FAS90 storage system]
 [role="quick-margin-para"]
-To prepare to install your system, you need to get the site ready, check the environmental and electrical requirements, and ensure there's enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
+To prepare to install your system, you need to get the site ready, check the environmental and electrical requirements, and verify there's enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:install-hardware.html[Install the hardware for the FAS70 or FAS90 storage system]
 [role="quick-margin-para"]
@@ -29,7 +29,7 @@ To cable the hardware, first connect the storage controllers to your network and
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:install-power-hardware.html[Power on the FAS70 or FAS90 storage system]
 [role="quick-margin-para"]
-Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup, connect the laptop or console to the controller, and then connect the controllers to the power sources.
+Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID so each shelf is uniquely identified. Then connect the laptop or console to the controller, and connect the controllers to the power sources.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html[Set up your cluster]
 [role="quick-margin-para"]

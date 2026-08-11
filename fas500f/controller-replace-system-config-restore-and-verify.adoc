@@ -4,13 +4,12 @@ sidebar: sidebar
 keywords: fas500f, restore and verify the system configuration, verify and set the ha state of the controller module
 summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
 ---
-= Restore and verify the system configuration - FAS500f
+= Restore and verify the controller configuration in your FAS500f system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-After completing the hardware replacement and booting to your FAS500f system to Maintenance mode, you need to verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+After completing the hardware replacement and booting your FAS500f system to Maintenance mode, you need to verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
 
 include::../_include/250_controller-replace-system-config-restore-and-verify.adoc[]
 

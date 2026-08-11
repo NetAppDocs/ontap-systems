@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace the real-time clock battery
 summary: Replace the real-time clock battery, commonly known as a coin cell battery, in your FAS50 storage system to ensure that services and applications relying on accurate time synchronization remain operational.
 ---
-= Replace the real-time clock battery - FAS50
+= Replace the real-time clock battery in your FAS50 system
 :icons: font
 :imagesdir: ../media/
 
@@ -43,8 +43,8 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 include::../_include/g_controller_remove.adoc[]
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
- 
+. Turn the thumbscrew counterclockwise to loosen it, and then open the controller cover.
+
 == Step 3: Replace the RTC battery
 
 include::../_include/g_rtc_battery_replace.adoc[]
@@ -58,7 +58,7 @@ include::../_include/g_controller_reinstall.adoc[]
 
 == Step 5: Reset the time and date on the controller
 
-NOTE: After replacing the RTC battery, inserting the controller and powering on first BIOS reset, you will see the following error messages: 
+NOTE: After you replace the RTC battery, insert the controller, and power it on for the first BIOS reset, you see the following error messages:
 `RTC date/time error. Reset date/time to default`
 `RTC power failure error`
 These messages are expected and you can continue with this procedure.
@@ -67,7 +67,7 @@ These messages are expected and you can continue with this procedure.
 +
 `cluster date show`
 +
-NOTE: If your storage system stops at the boot menu, select the option for  `Reboot node` and respond _y_ when prompted, then boot to LOADER by pressing _Ctrl-C_.
+NOTE: If your storage system stops at the boot menu, select the option for `Reboot node` and respond _y_ when prompted, then boot to LOADER by pressing _Ctrl-C_.
 +
 . On the impaired controller, at the LOADER prompt, check the time and date: 
 +
