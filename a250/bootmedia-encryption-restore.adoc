@@ -16,6 +16,6 @@ If your storage system is running ONTAP 9.18.1 or later, use the link:bootmedia-
 include::../_include/encryption_restore_bootmedia.adoc[]
 
 .What's next?
-After restoring encryption on the boot media, you need to link:bootmedia-complete-rma.html[return the failed part to NetApp].
+After restoring encryption on the boot media, link:bootmedia-complete-rma.html[return the failed part to NetApp].
 
 //2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
