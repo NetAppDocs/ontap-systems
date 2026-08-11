@@ -1,13 +1,14 @@
 ---
 permalink: fas2700/chassis-replace-move-hardware.html
 sidebar: sidebar
-keywords: fas2700, aff a220, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap
-summary: "Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
+keywords: fas2700, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap
+summary: "Move the power supplies, drives, and controller modules from the impaired chassis to the replacement chassis, and swap the old chassis in the equipment rack or system cabinet for the new one of the same model."
 ---
-= Move and replace hardware - AFF A220 and FAS2700
+= Replace the chassis in your FAS2700 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Move the power supplies, drives, and controller modules from the impaired chassis to the replacement chassis in your FAS2700 system, and then swap the old chassis in the equipment rack or system cabinet for the new one of the same model.
 
 include::../_include/220_2700_chassis_replace_move_hardware.adoc[]

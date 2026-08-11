@@ -2,13 +2,11 @@
 permalink: fas2600/install-worksheet-linkout.html
 sidebar: sidebar
 keywords: fas2600, install, worksheet
-summary: You can use the worksheet to gather and record your site-specific IP addresses and other information required when configuring an ONTAP cluster.
+summary: You can use the worksheet to gather and record site-specific IP addresses and other information required when configuring an ONTAP cluster for your FAS2600 system.
 ---
-= Cluster configuration worksheet - FAS2600
+= Use the cluster configuration worksheet for your FAS2600 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the worksheet to gather and record your site-specific IP addresses and other information required when configuring an ONTAP cluster.
-
-link:https://docs.netapp.com/us-en/ontap/software_setup/gather_cluster_setup_information.html[Cluster Configuration Worksheet]
+Use the link:https://docs.netapp.com/us-en/ontap/software_setup/gather_cluster_setup_information.html[Cluster Configuration Worksheet^] to gather and record site-specific IP addresses and other information required when configuring an ONTAP cluster for your FAS2600 system.

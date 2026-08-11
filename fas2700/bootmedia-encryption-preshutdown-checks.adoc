@@ -1,10 +1,10 @@
 ---
 permalink: fas2700/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
-keywords: fas2700, aff a220, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback, manual, manual boot recovery
+keywords: fas2700, shutdown, checks, onboard, encryption, keys, impaired controller, disable, automatic, feedback, manual, manual boot recovery
 summary: "Verify encryption key support and status before shutting down the impaired controller on a FAS2700 system. The FAS2700 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
-= Check encryption key support and status - FAS2700
+= Check encryption support on your boot media in your FAS2700 system
 :icons: font
 :imagesdir: ../media/
 

@@ -1,12 +1,14 @@
 ---
 permalink: fas2800/controller-replace-shutdown.html
 sidebar: sidebar
-keywords: fas2800, shut down the impaired controller
-summary: "You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration."
+keywords: fas2820, shut down the impaired controller
+summary: "Shut down the impaired controller in your FAS2820 system before replacing it. The procedure you use depends on your storage system's hardware configuration."
 ---
-= Shut down the impaired controller - FAS2820
+= Shut down the impaired controller in your FAS2820 system before replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Shut down the impaired controller in your FAS2820 system before replacing it. The procedure you use depends on your storage system's hardware configuration.
+
 include::../_include/shutdown_no_mcc.adoc[]

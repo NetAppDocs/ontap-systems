@@ -1,12 +1,14 @@
 ---
 permalink: fas2700/controller-replace-overview.html
 sidebar: sidebar
-keywords: fas2700, aff a220, prerequisite, replace the controller module
-summary: "You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system."
+keywords: fas2700, prerequisite, replace the controller module
+summary: "Before replacing the controller in your FAS2700 system, review the prerequisites for the replacement procedure and select the correct one for your version of ONTAP."
 ---
-= Overview of controller module replacement - FAS2700
+= Review requirements before replacing the controller in your FAS2700 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Before replacing the controller in your FAS2700 system, review the prerequisites for the replacement procedure and select the correct one for your version of ONTAP.
+
 include::../_include/220_2700_controller_replace_overview.adoc[]
