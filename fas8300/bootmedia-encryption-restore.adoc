@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: fas8300, fas8700, environment, variable, complete, system, onboard, key, manager, okm, storage, volume, netapp, encryption, post, boot, media, replacement, post boot media replacement stpes for okm nse and nve
 summary: 'Restore encryption on the replacement boot media.'
 ---
-= Restore encryption - FAS8300 and FAS8700
+= Restore encryption on the boot media in your FAS8300 or FAS8700 system after the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore encryption on the replacement boot media.
+After you replace the boot media in your FAS8300 or FAS8700 system, restore encryption by completing the steps for your key manager type, such as the Onboard Key Manager (OKM).
 
 If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 

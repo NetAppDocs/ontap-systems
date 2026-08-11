@@ -2,13 +2,14 @@
 permalink: fas2600/controller-replace-shutdown.html
 sidebar: sidebar
 keywords: fas2600, shut down, impaired controller, take over
-summary: "To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage."
+summary: "Shut down the impaired controller in your FAS2600 system before replacement by determining its status and, if necessary, taking it over so the healthy controller continues to serve data."
 ---
-= Shut down the controller - FAS2600
+= Shut down the impaired controller in your FAS2600 system before replacement
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Shut down the impaired controller in your FAS2600 system before replacement by determining its status and, if necessary, taking it over so the healthy controller continues to serve data from the impaired controller storage.
 
 include::../_include/shutdown_no_mcc.adoc[]
 

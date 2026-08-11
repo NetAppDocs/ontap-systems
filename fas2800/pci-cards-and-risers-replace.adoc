@@ -1,15 +1,15 @@
 ---
 permalink: fas2800/pci-cards-and-risers-replace.html
 sidebar: sidebar
-keywords: fas2800, fas2800, replace, pcie, mezzanine, card, disconnect, cable, sfp, qsfp, module, fail, mezzanine, shut, down, impair, controller, pcie, switch, aggregate, two-node, metrocluster, complete, replacement, process, replace a pcie or mezzanine card, shut down the impaired controller, remove the controller module, replace a pcie card, replace the mezzanine card, install the controller module, switch back aggregates in a two-node metrocluster configuration, restore the controller module to operation, complete the replacement process
-summary: To replace a PCIe or mezzanine card, you must disconnect the cables and any SFP and QSFP modules from the cards, replace the failed PCIe or mezzanine card, and then recable the cards.
+keywords: fas2820, fas2820, replace, pcie, mezzanine, card, disconnect, cable, sfp, qsfp, module, fail, mezzanine, shut, down, impair, controller, pcie, switch, aggregate, two-node, metrocluster, complete, replacement, process, replace a pcie or mezzanine card, shut down the impaired controller, remove the controller module, replace a pcie card, replace the mezzanine card, install the controller module, switch back aggregates in a two-node metrocluster configuration, restore the controller module to operation, complete the replacement process
+summary: "Replace the mezzanine card in your FAS2820 system if the card fails, or upgrade it to a different protocol by installing a new card."
 ---
-= Replace a mezzanine card - FAS2820
+= Replace a mezzanine card in your FAS2820 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace the mezzanine card in your FAS2820 system if the card fails or upgrade it to a different protocol by installing a new card.
+Replace the mezzanine card in your FAS2820 system if the card fails, or upgrade it to a different protocol by installing a new card.
 
 * Use this procedure with any ONTAP version supported by your system.
 * Replace the mezzanine card with the same type or a different type.

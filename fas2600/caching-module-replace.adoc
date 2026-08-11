@@ -2,14 +2,14 @@
 permalink: fas2600/caching-module-replace.html
 sidebar: sidebar
 keywords: fas2600, replace the caching module
-summary: "You must replace the caching module in the controller module when your system registers a single AutoSupport message that the module has gone offline. Failure to do so results in performance degradation."
+summary: "Replace the caching module in your FAS2600 system when your system registers a single AutoSupport message that the module has gone offline. Failure to do so results in performance degradation."
 ---
-= Replace the caching module - FAS2600
+= Replace the caching module in your FAS2600 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must replace the caching module in the controller module when your system registers a single AutoSupport (ASUP) message that the module has gone offline; failure to do so results in performance degradation.
+Replace the caching module in your FAS2600 system when your system registers a single AutoSupport (ASUP) message that the module has gone offline. Failure to do so results in performance degradation.
 
 * You must replace the failed component with a replacement FRU component you received from your provider.
 
@@ -24,8 +24,6 @@ If you have a cluster with more than two nodes, it must be in quorum. If the clu
 
 link:https://docs.netapp.com/us-en/ontap/system-admin/synchronize-node-cluster-task.html?q=Quorum[Synchronize a node with the cluster^]
 
-
-You might want to erase the contents of your caching module before replacing it.
 
 . Although data on the caching module is encrypted, you might want to erase any data from the impaired caching module and verify that the caching module has no data:
 .. Erase the data on the caching module: `system controller flash-cache secure-erase run -node _node name_ localhost -device-id _device_number_`
@@ -87,7 +85,7 @@ image::../media/drw_2600_opening_pcm_cover.png[Opening or closing the controller
 
 == Step 3: Replace a caching module
 
-To replace a caching module referred to as the M.2 PCIe card on the label on your controller, locate the slot inside the controller and follow the specific sequence of steps.
+The caching module is referred to as the M.2 PCIe card on the controller label. Locate the slot inside the controller and follow this sequence of steps.
 
 Your storage system must meet certain criteria depending on your situation:
 

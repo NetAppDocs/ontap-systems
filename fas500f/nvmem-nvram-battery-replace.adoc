@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas500f, replace nvmem battery, replace nvmem nvram battery
 summary: "To replace an NVMEM battery in the system, you must remove the controller module from the system, open it, replace the battery, and close and replace the controller module."
 ---
-= Replace the NVMEM battery - FAS500f
+= Replace the NVMEM battery in your FAS500f system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 To replace an NVMEM battery in the system, you must remove the controller module from the system, open it, replace the battery, and close and replace the controller module.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+All other components in the system must be functioning properly. If they aren't, contact technical support.
 
 == Step 1: Shut down the impaired controller
 
@@ -98,7 +98,7 @@ Lift the battery out of the holder and controller module.
 
 == Step 4: Install the controller module
 
-After you have replaced the component in the controller module, you must reinstall the controller module into the chassis, and then boot it.
+After you replace the component in the controller module, you must reinstall the controller module into the chassis, and then boot it.
 
 You can use the following illustration or the written steps to install the replacement controller module in the chassis.
 
@@ -117,7 +117,7 @@ Thumbscrew
 |===
 
 . Insert the controller module into the chassis:
- .. Ensure the latching mechanism arms are locked in the fully extended position.
+ .. Verify that the latching mechanism arms are locked in the fully extended position.
  .. Using both hands, align and gently slide the controller module into the latching mechanism arms until it stops.
  .. Place your index fingers through the finger holes from the inside of the latching mechanism.
  .. Press your thumbs down on the orange tabs on top of the latching mechanism and gently push the controller module over the stop.
@@ -129,7 +129,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 The controller module should be fully inserted and flush with the edges of the chassis.
 . Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
 +
-NOTE: You will connect the rest of the cables to the controller module later in this procedure.
+NOTE: You connect the rest of the cables to the controller module later in this procedure.
 
 
 == Step 5: Return the failed part to NetApp

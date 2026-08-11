@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: FAS9500
 summary: 'To hot-swap a destage controller power module DCPM, which contains the NVRAM11 battery, you must locate the failed DCPM module, remove it from the chassis, and install the replacement DCPM module.'
 ---
-= Replace the Destage Control Power Module containing the NVRAM11 battery - FAS9500
+= Replace the DCPM module and NVRAM11 battery in your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 To hot-swap a destage controller power module (DCPM), which contains the NVRAM11 battery, you must locate the failed DCPM module, remove it from the chassis, and install the replacement DCPM module.
 
-You must have a replacement DCPM module in-hand before removing the failed module from the chassis and it must be replaced within five minutes of removal. Once the DCPM module is removed from the chassis, there is no shutdown protection for the controller module that owns the DCPM module, other than failover to the other controller module.
+You must have a replacement DCPM module in-hand before removing the failed module from the chassis. You must replace it within five minutes of removal. After the DCPM module is removed from the chassis, there is no shutdown protection for the controller module that owns the DCPM module, other than failover to the other controller module.
 
 == Step 1: Replace the DCPM module
 
@@ -21,7 +21,7 @@ To replace the DCPM module in your system, you must remove the failed DCPM modul
 . Remove the bezel on the front of the system and set it aside.
 . Locate the failed DCPM module in the front of the system by looking for the Attention LED on the module.
 +
-The LED will be steady amber if the module is faulty.
+The LED is steady amber if the module is faulty.
 +
 IMPORTANT: The DCPM module must be replaced in the chassis within five minutes of removal or the associated controller will shut down.
 

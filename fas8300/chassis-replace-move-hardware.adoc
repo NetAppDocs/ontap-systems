@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, shut, chassis, controller, replace, remove, swap, verify, install, power, supply, metrocluster, aggregates, replacement, process, equipment, rack, ha, state, system
 summary: "Move the fans, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
 ---
-= Move and replace hardware - FAS8300 and FAS8700
+= Replace the chassis in your FAS8300 or FAS8700 system
 :icons: font
 :imagesdir: ../media/
 
@@ -67,7 +67,7 @@ You must remove the existing chassis from the equipment rack or system cabinet b
 . Remove the screws from the chassis mount points.
 . With two people, slide the old chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
 . If you are not already grounded, properly ground yourself.
-. Using two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
+. With two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
 . Slide the chassis all the way into the equipment rack or system cabinet.
 . Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
 . If you have not already done so, install the bezel.
@@ -76,7 +76,7 @@ You must remove the existing chassis from the equipment rack or system cabinet b
 
 After you install the controller modules into the new chassis, you need to boot it.
 
-For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
+For HA pairs with two controller modules in the same chassis, install the controller modules in the correct sequence. Each controller attempts to reboot as soon as it is fully seated in the chassis.
 
 .Steps
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

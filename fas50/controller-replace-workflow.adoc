@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas50, replace the controller workflow
 summary: Follow these workflow steps to replace your controller in your FAS50 storage system.
 ---
-= Controller replacement workflow - FAS50
+= FAS50 controller replacement workflow
 :icons: font
 :imagesdir: ../media/
 
@@ -21,9 +21,9 @@ Shut down or take over the impaired controller so that the healthy controller co
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:controller-replace-move-hardware.html[Replace the controller]
 [role="quick-margin-para"]
-Replacing the controller includes removing the impaired controller, moving FRU components to the replacement controller, installing the replacement controller in the chassis, setting the time and date, and then recabling.
+Replacing the controller involves removing the impaired controller, moving FRU components to the replacement controller, installing the replacement controller, setting the time and date, and recabling it.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration ]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:controller-replace-system-config-restore-and-verify.html[Restore and verify the system configuration]
 [role="quick-margin-para"]
 Verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
 

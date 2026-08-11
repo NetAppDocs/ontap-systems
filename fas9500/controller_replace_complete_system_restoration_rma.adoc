@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, complete the replacement process
 summary: 'To complete the replacement procedure and restore your system to full operation, you must recable the storage, restore the NetApp Storage Encryption configuration (if necessary), and install licenses for the new controller.'
 ---
-= Complete system restoration - FAS9500
+= Complete the controller replacement for your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
@@ -15,7 +15,7 @@ To complete the replacement procedure and restore your system to full operation,
 
 include::../_include/install_licenses_mcc.adoc[]
 
-== Step 2: Verify LIFs and registering the serial number
+== Step 2: Verify LIFs and register the serial number
 
 include::../_include/check_lifs_register_serial_number.adoc[]
 

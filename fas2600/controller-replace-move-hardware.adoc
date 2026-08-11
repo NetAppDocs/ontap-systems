@@ -2,14 +2,14 @@
 permalink: fas2600/controller-replace-move-hardware.html
 sidebar: sidebar
 keywords: fas2600, move the components
-summary: "To replace the controller module hardware, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
+summary: "Replace the controller in your FAS2600 system by removing the impaired controller, moving FRU components to the replacement controller module, installing it in the chassis, and booting the system to Maintenance mode."
 ---
-= Replace the controller module hardware - FAS2600
+= Replace the controller in your FAS2600 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace the controller module, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
+Replace the controller in your FAS2600 system by removing the impaired controller, moving FRU components to the replacement controller module, installing the replacement controller module in the chassis, and then booting the system to Maintenance mode.
 
 link:https://youtu.be/2_uWRt_iJqk[AFF FAS2600 controller replacement video]
 
@@ -109,7 +109,7 @@ image::../media/drw_2600_dimms.png[Location of system DIMMs]
 . Locate the slot where you are installing the DIMM.
 . Make sure that the DIMM ejector tabs on the connector are in the open position, and then insert the DIMM squarely into the slot.
 +
-The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
+The DIMM fits tightly in the slot, but should go in easily. If it doesn't, realign the DIMM with the slot and reinsert it.
 +
 NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
 
@@ -120,9 +120,9 @@ Make sure that the plug locks down onto the controller module.
 
 == Step 5: Move the caching module
 
-To move a caching module referred to as the M.2 PCIe card on the label on your controller, locate and move it from the old controller into the replacement controller and follow the specific sequence of steps.
+To move the caching module, referred to as the M.2 PCIe card on the controller label, from the old controller module to the replacement controller module, follow this sequence of steps.
 
-You must have the new controller module ready so that you can move the caching module directly from the old controller module to the corresponding slot in the new one. All other components in the storage system must be functioning properly; if not, you must contact technical support.
+You must have the new controller module ready so that you can move the caching module directly from the old controller module to the corresponding slot in the new one. All other components in the storage system must be functioning properly. If they aren't, contact technical support.
 
 .Steps
 . Locate the caching module at the rear of the controller module and remove it.
@@ -144,7 +144,7 @@ If necessary, remove the caching module and reseat it into the socket.
 
 After you install the components from the old controller module into the new controller module, you must install the new controller module into the system chassis and boot the operating system.
 
-For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
+For HA pairs with two controller modules in the same chassis, the order in which you install the controller modules is especially important because a controller module attempts to reboot as soon as it is fully seated in the chassis.
 
 NOTE: The system might update system firmware when it boots. Do not abort this process. The procedure requires you to interrupt the boot process, which you can typically do at any time after prompted to do so. However, if the system updates the system firmware when it boots, you must wait until after the update is complete before interrupting the boot process.
 
@@ -157,7 +157,7 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 
 . Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
 +
-NOTE: You will connect the rest of the cables to the controller module later in this procedure.
+NOTE: You connect the rest of the cables to the controller module later in this procedure.
 
 . Complete the reinstallation of the controller module:
 +

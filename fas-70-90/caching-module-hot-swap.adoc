@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, hot swap, replace, Flash Cache module carrier, caching module, Flash Cache
 summary: The NVMe SSD Flash Cache module carrier in your FAS70 or FAS90 system contains one or two Flash Cache modules (caching modules) with a single SSD Flash Cache drive integrated into each caching module.
 ---
-= Replace the Flash Cache module carrier or a caching module - FAS70 and FAS90
+= Replace the Flash Cache module carrier or caching module in your FAS70 or FAS90 system
 :icons: font
 :imagesdir: ../media/
 
@@ -23,8 +23,8 @@ The Flash Cache module carrier is located in slot 6 and houses up to two Flash C
 
 .Before you begin
 
-* Ensure your storage system has the appropriate operating system for the replacement Flash Cache module carrier.
-* Confirm all other components are functioning properly; if not, you must contact technical support.
+* Verify that your storage system has the appropriate operating system for the replacement Flash Cache module carrier.
+* Confirm all other components are functioning properly. If they aren't, contact technical support.
 
 === Step 1: Shut down the impaired node
 
@@ -123,8 +123,8 @@ The Flash Cache modules (caching modules) are located in slot 6-1 or in slot 6-2
 You can hot-swap the individual caching modules with caching modules of the same capacity from the same vendor or from a different supported vendor.
 
 .Before you begin
-* Ensure the replacement caching module has the same capacity as the failed one, from the same vendor or from a different supported vendor.
-* Confirm all other components are functioning properly; if not, you must contact technical support.
+* Verify that the replacement caching module has the same capacity as the failed one, from the same vendor or from a different supported vendor.
+* Confirm all other components are functioning properly. If they aren't, contact technical support.
 * The drives in the caching modules are not field replaceable units (FRU). You must replace the entire caching module. 
 
 .Steps
@@ -174,7 +174,7 @@ Caching module fault LED
 .. Rotate the cable management tray down by pulling the buttons on both sides on the inside of the cable management tray and then rotate the tray down.
 .. Press the terra cotta release button on the front of the caching module.
 .. Rotate the cam handle as far as it will go.
-.. Remove the caching module module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the Flash Cache module carrier.
+.. Remove the caching module from the enclosure by hooking your finger into the cam lever opening and pulling the module out of the Flash Cache module carrier.
 +
 Be sure to support the caching module as you remove it from the Flash Cache module carrier.
 
@@ -199,7 +199,7 @@ The module has been successfully powered on, initialized and placed into service
 
 . Verify the slot status using the `system controller slot module show` command.
 +
-Make sure that command output reports status for the as `powered-on` and ready for operation.
+Make sure that the command output reports the status as `powered-on` and ready for operation.
 
 . Verify that the replacement caching module is online and recognized, and then visually confirm that the amber attention LED is not lit: `sysconfig -av slot_number`
 +

@@ -2,14 +2,14 @@
 permalink: fas2600/controller-replace-system-config-restore-and-verify.html
 sidebar: sidebar
 keywords: fas2600, restore and verify the system configuration, verify and set the ha state of the controller module
-summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
+summary: "Restore and verify the controller configuration in your FAS2600 system after completing the hardware replacement and booting to Maintenance mode."
 ---
-= Restore and verify the system configuration - FAS2600
+= Restore and verify the controller configuration in your FAS2600 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+Restore and verify the controller configuration in your FAS2600 system after completing the hardware replacement and booting to Maintenance mode, verifying the low-level system configuration of the replacement controller and reconfiguring system settings as necessary.
 
 == Step 1: Set and verify system time after replacing the controller
 
@@ -30,5 +30,4 @@ The value for HA-state can be one of the following:
   *** `ha`
   *** `non-ha`
 
-  . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
   . Confirm that the setting has changed: `ha-config show`

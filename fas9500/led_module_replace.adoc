@@ -4,13 +4,13 @@ sidebar: sidebar
 keywords: LED USB module,replacing,hot-swapping,LED USB module,non-disruptive replacement,LED USB module
 summary: 'You can replace an LED USB module without interrupting service.'
 ---
-= Replace an LED USB module - FAS9500
+= Replace the LED USB module in your FAS9500 system
 :icons: font
 :imagesdir: ../media/
 
 
 [.lead]
-The LED USB module provides connectivity to console ports and system status. Replacement of this module does not require tools and does not interrupt service.
+The LED USB module in your FAS9500 system provides connectivity to console ports and system status. Replacing it does not require tools and does not interrupt service.
 
 == Step 1: Replace the LED USB module
 
@@ -40,10 +40,10 @@ USB LED module
 .. Pull the module out of the bay to disconnect it from the midplane. Do not leave the slot empty.
 
 . Install the new LED USB module:
-.. Align the module to the bay with the notch in the corner of the module positioned near the slider latch on the chassis. The bay will prevent you from installing the module upside down.
+.. Align the module to the bay with the notch in the corner of the module positioned near the slider latch on the chassis. The bay prevents you from installing the module upside down.
 .. Push the module into the bay until it is fully seated flush with the chassis.
 +
-There is an audible click when the module is secure and connected to the midplane.
+The module clicks audibly when it is secure and connected to the midplane.
 
 == Step 2: Return the failed component
 

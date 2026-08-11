@@ -1,15 +1,15 @@
 ---
 permalink: fas2800/controller-replace-restore-system-rma.html
 sidebar: sidebar
-keywords: fas2800, how to restore NetApp Storage Encryption, how to complete the replacement process
-summary: "Restore your system to full operation by restoring the NetApp Storage Encryption or Volume Encryption configurations, and installing licenses for the replacement controller, and returning the failed part to NetApp, as described in the RMA instructions shipped with the kit."
+keywords: fas2820, how to restore NetApp Storage Encryption, how to complete the replacement process
+summary: "Restore your FAS2820 system to full operation by restoring the NetApp Storage Encryption or Volume Encryption configurations (if necessary), installing licenses for the replacement controller, and returning the failed part to NetApp, as described in the RMA instructions shipped with the kit."
 ---
-= Complete system restoration - FAS2820
+= Complete the controller replacement for your FAS2820 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Restore your system to full operation by restoring the NetApp Storage Encryption or Volume Encryption configurations (if necessary), and installing licenses for the replacement controller, and returning the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+Restore your FAS2820 system to full operation by restoring the NetApp Storage Encryption or Volume Encryption configurations (if necessary), installing licenses for the replacement controller, and returning the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
 == Step 1: Install licenses for the replacement controller in ONTAP
 
