@@ -16,5 +16,5 @@ The automated boot media recovery process is supported only in ONTAP 9.18.1 and 
 include::../_include/shutdown_most_frus.adoc[]
 
 .What's next
-After you shut down the impaired controller, you link:bootmedia-replace-bmr.html[replace the boot media].
+After you shut down the controller, you link:bootmedia-replace-bmr.html[replace the boot media].
 

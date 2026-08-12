@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: a800, shut down the controller
 summary: Shut down the controller in your AFF A800 storage system to prevent data loss and ensure system stability when replacing the boot media.
 ---
-= Shut down the impaired controller in your AFF A800 system during the automated boot recovery process
+= Shut down the controller in your AFF A800 system during the automated boot recovery process
 :icons: font
 :imagesdir: ../media/
 
@@ -16,4 +16,4 @@ The automated boot media recovery process is supported only in ONTAP 9.17.1 and 
 include::../_include/shutdown_most_frus.adoc[]
 
 .What's next
-After you shut down the impaired controller, you link:bootmedia-replace-bmr.html[replace the boot media].
+After you shut down the controller, you link:bootmedia-replace-bmr.html[replace the boot media].

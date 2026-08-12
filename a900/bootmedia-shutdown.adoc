@@ -18,7 +18,7 @@ If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-
 
 .Most configurations
 --
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller.
+After completing the NVE or NSE tasks, you need to complete the shutdown of the controller.
 
 If your storage system is running ONTAP 9.17.1 or later, use the automated boot recovery procedure. If your system is running an earlier version of ONTAP, you must use the manual boot recovery process.
 
@@ -27,7 +27,7 @@ include::../_include/shutdown_most_frus.adoc[]
 .Controller is in a MetroCluster
 --
 
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller.
+After completing the NVE or NSE tasks, you need to complete the shutdown of the controller.
 
 include::../_include/shutdown_any_mcc_supported.adoc[]
 --

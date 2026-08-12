@@ -15,4 +15,4 @@ Shut down the controller in your ASA A70 or ASA A90 storage system to prevent da
 include::../_include/shutdown_most_frus.adoc[]
 
 .What's next
-After you shut down the impaired controller, you link:bootmedia-replace-bmr.html[replace the boot media].
+After you shut down the controller, you link:bootmedia-replace-bmr.html[replace the boot media].
