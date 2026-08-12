@@ -2,14 +2,14 @@
 permalink: a800/chassis-replace-requirements.html
 sidebar: sidebar
 keywords: aff a800, replace the chassis
-summary: Before replacing the chassis in your AFF A800 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have local administrator credentials for ONTAP, the correct replacement chassis, and the necessary tools.
+summary: Before replacing the chassis in your AFF A800 system, verify you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have local administrator credentials for ONTAP, the correct replacement chassis, and the necessary tools.
 ---
 = Review requirements before replacing your AFF A800 chassis
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before replacing the chassis in your AFF A800 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have local administrator credentials for ONTAP, the correct replacement chassis, and the necessary tools.
+Before replacing the chassis in your AFF A800 system, verify you meet the necessary requirements for a successful replacement. This includes verifying all other components in the system are functioning properly, verifying that you have local administrator credentials for ONTAP, the correct replacement chassis, and the necessary tools.
 
 include::../_include/800_chassis_replace_requirements.adoc[]
 

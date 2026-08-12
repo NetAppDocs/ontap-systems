@@ -469,7 +469,7 @@ If you have network discovery enabled on your laptop, you can complete system se
 
 . Use the following animation or drawing  to set one or more drive shelf IDs:
 +
-The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see link:../ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves] for detailed instructions.
+The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where the button is located. See link:../ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves] for detailed instructions.
 +
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set NVMe drive shelf IDs"]
 
@@ -507,7 +507,7 @@ video::a905e56e-c995-4704-9673-adfa0005a891[panopto, title="Animation - Turn on 
 image::../media/drw_a900_power-on_IEOPS-941.svg[Power switch]
 +
 
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting might take up to eight minutes.
 
 . Make sure that your laptop has network discovery enabled.
 +
@@ -526,7 +526,7 @@ image::../media/dwr_laptop_to_switch_only.svg[Laptop to switch connection]
 image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Select an ONTAP icon]
 
  .. Open File Explorer.
-.. Click *Network* in the left pane and right-click and select *refresh*.
+.. Select *Network* in the left pane and right-click, then select *refresh*.
 ..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
@@ -571,7 +571,7 @@ image::../media/drw_a900_cable_console_switch_controller_IEOPS-953.svg[Console c
 . Use the following animation to set one or more drive shelf IDs:
 +
 
-The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located. see link:../ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves]  for detailed instructions.
+The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where the button is located. See link:../ns224/change-shelf-id.html[Change a shelf ID - NS224 shelves] for detailed instructions.
 +
 video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set NVMe drive shelf IDs"]
 
@@ -608,7 +608,7 @@ video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto, title="Animation - Turn on 
 image::../media/drw_a900_power-on_IEOPS-941.svg[Power switch]
 +
 
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting might take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
 +

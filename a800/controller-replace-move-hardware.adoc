@@ -47,13 +47,13 @@ include::../_include/800_controller_replace_move_remove_risers.adoc[]
 
 == Step 6: Move system DIMMs
 
-Move the system DIMMS to the replacement controller module.
+Move the system DIMMs to the replacement controller module.
 
 include::../_include/800_controller_replace_move_dimms.adoc[]
 
 == Step 7: Move the NVDIMMs
 
-Move the NVDIMMS to the replacement controller module.
+Move the NVDIMMs to the replacement controller module.
 
 include::../_include/800_controller_replace_move_nvdimms.adoc[]
 

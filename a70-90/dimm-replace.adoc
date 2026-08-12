@@ -13,7 +13,7 @@ Replace a DIMM in your AFF A70 or AFF A90 system if excessive correctable or unc
 
 .Before you begin
 
-* Make sure all other components in the system are functioning properly; if not, you must contact technical support.
+* Make sure all other components in the system are functioning properly. If they are not, contact technical support.
 
 * Make sure you replace the failed component with a replacement component you received from NetApp.
 
@@ -41,7 +41,7 @@ include::../_include/a70-90_controller_remove_physical.adoc[]
 
 == Step 3: Replace the DIMM
 
-To replace the DIMM, locate them inside the controller and follow the specific sequence of steps.
+To replace the DIMM, locate it inside the controller and follow the specific sequence of steps.
 
 include::../_include/a70-90_dimm_replace.adoc[]
 

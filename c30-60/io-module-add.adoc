@@ -4,21 +4,21 @@ sidebar: sidebar
 keywords: aff c30, aff c60, add IO module
 summary: Add an I/O module to your AFF C30 or AFF C60 storage system to enhance network connectivity and expand your system's ability to handle data traffic.
 ---
-= Add an I/O module to your AFF C30 or AFF C60 storage system to enhance network connectivity
+= Add an I/O module to your AFF C30 or AFF C60 storage system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Add an I/O module to your AFF C30 or AFF C60 storage system to enhance network connectivity and expand your system's ability to handle data traffic. You can use this procedure to add an I/O module to either an operational controller as a planned upgrade or to an impaired controller during maintenance.
+Add an I/O module to your AFF C30 or AFF C60 storage system to enhance network connectivity and expand your system's ability to handle data traffic. You can use this procedure to add an I/O module to either an operational controller as a planned upgrade or to a controller with an impaired I/O module during maintenance.
 
 You can add an I/O module to your AFF C30 and AFF C60 storage systems when there are slots available or when all slots are fully populated.
 
 .About this task
 
-You can perform this procedure on either controller in the HA pair, regardless of whether the controller is currently operational or impaired. Because an I/O module cannot be added to a running controller, the target controller must be shut down before the module is installed. The HA partner takes over storage operations during the procedure so that data remains available to clients.
+You can perform this procedure on either controller in the HA pair, regardless of whether the controller's I/O module is currently operational or impaired. Because an I/O module cannot be added to a running controller, the target controller must be shut down before the module is installed. The HA partner takes over storage operations during the procedure so that data remains available to clients.
 
-* If the target controller is *operational* (planned addition), follow the shutdown steps as written, treating the target controller as the "impaired" controller in that content.
-* If the target controller is *impaired*, follow the shutdown steps as written.
+* If the target controller is *operational* (planned addition), follow the shutdown steps as written, treating the target controller as having an impaired I/O module in that procedure.
+* If the target controller has an impaired I/O module, follow the shutdown steps as written.
 
 If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.
 
@@ -28,7 +28,7 @@ You can turn them off by entering the `system location-led _off_` command. If yo
 
 == Step 1: Shut down the target controller module
 
-Take over and shut down the target controller module so that its HA partner continues to serve data while you add the I/O module. The linked steps refer to the controller being shut down as the "impaired" controller; the same steps apply whether you are taking over an operational controller for a planned addition or shutting down a controller that is already impaired.
+Take over and shut down the target controller so that its HA partner continues to serve data while you add the I/O module. The linked steps refer to the controller being shut down as hosting the impaired I/O module. These steps apply whether you are taking over a controller for a planned addition or shutting down a controller that already has an impaired I/O module.
 
 [role="tabbed-block"]
 ====

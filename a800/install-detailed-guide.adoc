@@ -145,7 +145,7 @@ image::../media/drw_affa800_install_cable_mgmt.png[Attaching the cable managemen
 
 == Step 3: Cable controllers
 
-There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cable to a host network and storage.
+There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cabling to a host network and storage.
 
 === Required cabling: Cable controllers to a cluster
 
@@ -421,7 +421,7 @@ If you have network discovery enabled on your laptop, you can complete system se
 .Steps
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
-The system begins to boot. Initial booting may take up to eight minutes.
+The system begins to boot. Initial booting might take up to eight minutes.
 
 . Make sure that your laptop has network discovery enabled.
 +
@@ -436,7 +436,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Select an ONTAP icon]
 
  .. Open File Explorer.
-.. Click *Network* in the left pane and right-click and select *refresh*.
+.. Select *Network* in the left pane and right-click and select *refresh*.
 ..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
@@ -468,7 +468,7 @@ image::../media/drw_client_mgmt_subnet_affa800.png[Connecting laptop or console 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
-The system begins to boot. Initial booting may take up to eight minutes.
+The system begins to boot. Initial booting might take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
 +

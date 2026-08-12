@@ -9,9 +9,9 @@ summary: "To replace the NVDIMM battery, you must remove the controller module, 
 :imagesdir: ../media/
 
 [.lead]
-Replace the NV battery in your AFF A800 system when it begins to lose charge or fails, as it preserves critical system data during power outages. The replacement process involves removing the controller module, replacing the battery, and reinstalling the controller module.
+Replace the NVDIMM battery in your AFF A800 system when it begins to lose charge or fails, because it preserves critical system data during power outages. The replacement process involves removing the controller module, replacing the battery, and reinstalling the controller module.
 
-== Step 1: Shutdown the impaired controller
+== Step 1: Shut down the impaired controller
 
 Shut down or take over the impaired controller.
 
