@@ -13,7 +13,6 @@ Shut down the controller in your ASA C250 storage system to prevent data loss an
 
 == Option 1: Most systems
 
-[.lead]
 include::../_include/shutdown_bootmedia.adoc[]
 
 == Option 2: Systems in a MetroCluster
