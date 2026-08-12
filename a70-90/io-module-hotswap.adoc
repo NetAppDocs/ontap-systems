@@ -32,7 +32,7 @@ The storage system includes three location LEDs: one on the operator display pan
 +
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
-== Step 1: Ensure the storage system meets the procedure requirements
+== Step 1: Confirm the storage system meets the procedure requirements
 
 // Jan 2026: updated for 9.18.1GA support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 

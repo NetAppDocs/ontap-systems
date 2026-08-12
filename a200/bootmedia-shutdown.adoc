@@ -2,13 +2,13 @@
 permalink: a200/bootmedia-shutdown.html
 sidebar: sidebar
 keywords: aff a200, shut down the controller, manual, manual boot recovery
-summary: After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller. The AFF A200 system supports only manual boot media recovery procedures.
+summary: Shut down the controller in your AFF A200 storage system to prevent data loss and maintain system stability during the manual boot media recovery process.
 ---
-= Shut down the impaired controller in your AFF A200 system during the manual boot recovery process
+= Shut down the controller in your AFF A200 system during the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the impaired controller using the appropriate procedure for your configuration. The AFF A200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+Shut down the controller in your AFF A200 storage system to prevent data loss and maintain system stability during the manual boot media recovery process.
 
 include::../_include/shutdown_bootmedia.adoc[]

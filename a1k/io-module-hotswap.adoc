@@ -15,7 +15,7 @@ summary: You can hot swap an Ethernet I/O module in your AFF A1K storage system 
 [.lead]
 You can hot swap an Ethernet I/O module in your AFF A1K storage system if a module fails and your storage system meets all ONTAP version requirements.
 
-To hot swap an I/O module, make sure your storage system is running ONTAP 9.18.1 GA or later, prepare your storage system and I/O module, hot-swap the failed module, bring the replacement module online, restore the storage system to normal operation, and return the failed module to NetApp.
+To hot swap an I/O module, verify that your storage system is running ONTAP 9.18.1 GA or later. Then prepare the storage system and I/O module, hot-swap the failed module, bring the replacement module online, restore normal operation, and return the failed module to NetApp.
 
 .About this task
 

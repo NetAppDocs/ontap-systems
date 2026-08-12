@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c30, aff c60, boot the recovery image
 summary: After installing the new boot media device in your AFF C30 or AFF C60 storage system, you can start the automated boot media recovery process to restore the configuration from the partner node. During the recovery process, the system checks whether encryption is enabled and determines the type of key encryption in use. If key encryption is enabled, the system guides you through the appropriate steps to restore it.
 ---
-= Restore the boot image on your AFF C30 or AFF C60 storage system using the automated boot recovery process
+= Boot the recovery image on your AFF C30 or AFF C60 storage system using the automated boot recovery process
 :icons: font
 :imagesdir: ../media/
 

@@ -2,14 +2,14 @@
 permalink: a700/bootmedia-shutdown.html
 sidebar: sidebar
 keywords: aff a700, shut, down, impaired, controller, take, over, manual, manual boot recovery
-summary: "Shut down the impaired controller on an AFF A700 system after completing encryption checks. The AFF A700 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
+summary: "Shut down the controller in your AFF A700 storage system to prevent data loss and maintain system stability during the manual boot media recovery process."
 ---
-= Shut down the impaired controller in your AFF A700 system during the manual boot recovery process
+= Shut down the controller in your AFF A700 system during the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the impaired controller on an AFF A700 system after completing encryption checks. This procedure includes taking the controller to the LOADER prompt, capturing boot environmental variables for reference, and preparing the controller for boot media replacement, with specific steps that vary depending on your system configuration.
+Shut down the controller in your AFF A700 storage system to prevent data loss and maintain system stability during the manual boot media recovery process.
 
 The AFF A700 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
@@ -19,10 +19,10 @@ The AFF A700 system supports only manual boot media recovery procedures. Automat
 include::../_include/shutdown_bootmedia.adoc[]
 
 === Option 2: Controller is in a MetroCluster
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
+After completing the NVE or NSE tasks, you need to complete the shutdown of the node.
 include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Option 3: Controller is in a two-node MetroCluster
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
+After completing the NVE or NSE tasks, you need to complete the shutdown of the node.
 
 include::../_include/shutdown_any_mcc_supported.adoc[]
