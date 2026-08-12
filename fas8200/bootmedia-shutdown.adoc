@@ -2,14 +2,14 @@
 permalink: fas8200/bootmedia-shutdown.html
 sidebar: sidebar
 keywords: fas8200, shut down the impaired controller, manual, manual boot recovery
-summary: "Shut down the controller on a FAS8200 system after completing encryption checks. The FAS8200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
+summary: "Shut down the controller in your FAS8200 storage system to prevent data loss and maintain system stability during the manual boot media recovery process."
 ---
 = Shut down the controller in your FAS8200 system during the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the controller on a FAS8200 system after completing encryption checks. This procedure includes taking the controller to the LOADER prompt, capturing boot environmental variables for reference, and preparing the controller for boot media replacement, with specific steps that vary depending on your system configuration.
+Shut down the controller in your FAS8200 storage system to prevent data loss and maintain system stability during the manual boot media recovery process.
 
 The FAS8200 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
