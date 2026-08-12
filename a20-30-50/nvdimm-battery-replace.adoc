@@ -13,7 +13,7 @@ Replace the NV battery in your AFF A20, AFF A30, or AFF A50 storage system when 
 
 
 .Before you begin
-All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+All other components in the storage system must be functioning properly. If they aren't, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
 If needed, you can turn on the storage system location (blue) LEDs to aid in physically locating the affected storage system. Log into the BMC using SSH and enter the `system location-led _on_` command.

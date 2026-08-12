@@ -4,11 +4,11 @@ sidebar: sidebar
 keywords: aff a150, a150, aff, prerequisite, replace the controller module
 summary: "You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system."
 ---
-= Review the requirements for replacing the controller in your AFF A150 system
+= Review requirements before replacing the controller in your AFF A150 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Before replacing the controller in your AFF A150 system, ensure you meet the necessary requirements for a successful replacement. This includes verifying that all drive shelves are working properly, that the healthy controller can take over the impaired controller, and that you select the correct replacement procedure for your version of ONTAP.
+Before replacing the controller in your AFF A150 system, confirm that you meet the necessary requirements for a successful replacement. Verify that all drive shelves are working properly, that the healthy controller can take over the impaired controller, and that you select the correct replacement procedure for your version of ONTAP.
 
 include::../_include/150_controller_replace_overview.adoc[]

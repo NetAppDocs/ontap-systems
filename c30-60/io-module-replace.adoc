@@ -12,7 +12,7 @@ summary: Replace an I/O module in your AFF C30 or AFF C60 storage system when th
 Replace an I/O module in your AFF C30 or AFF C60 storage system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
 
 .Before you begin
-All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+All other components in the storage system must be functioning properly. If they are not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
 
@@ -23,9 +23,9 @@ A storage system has three location LEDs: one on the operator display panel and 
 You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
 
 
-== Step 1: Shut down the impaired controller
+== Step 1: Shut down the controller with the impaired I/O module
 
-Shut down or take over the impaired controller using one of the following options.
+Shut down or take over the controller with the impaired I/O module using one of the following options.
  
 [role="tabbed-block"]
 ====

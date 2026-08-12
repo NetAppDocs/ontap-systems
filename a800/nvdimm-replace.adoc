@@ -9,12 +9,12 @@ summary: "Replace the NVDIMM in your AFF A800 controller module when the system 
 :imagesdir: ../media/
 
 [.lead]
-Replace the NVDIMM in your AFF A800 system when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic.
+Replace the NVDIMM in your AFF A800 system when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy. Failing to replace a faulty NVDIMM causes a system panic.
 
 .Before you begin
 
-* Make sure you have the replacement NVDIMM that you received from NetApp and is compatible with your AFF A800 system.
-* Make sure all other components in the storage system are functioning properly; if not, contact NetApp Support.
+* Make sure you have the replacement NVDIMM that you received from NetApp and that it is compatible with your AFF A800 system.
+* Make sure all other components in the storage system are functioning properly. If they aren't, contact NetApp Support.
 
 == Step 1: Shut down the impaired controller
 
@@ -34,7 +34,7 @@ Locate the NVDIMM in the controller module using the NVDIMM map label on top of 
 
 include::../_include/800_nvdimm_replace.adoc[]
 
-== Step 4: Reinstall the controller module and booting the system
+== Step 4: Reinstall the controller module and boot the system
 
 Reinstall the controller module and reboot it.
 

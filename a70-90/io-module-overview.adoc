@@ -21,7 +21,7 @@ Adding additional modules can improve redundancy, helping to ensure that the sys
 +
 // Jan 2026: updated for 9.18.1 support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 +
-You can hot-swap certain I/O modules for an equivalent I/O module to restore the storage system to its optimal operating state. Hot-swapping is done without having to perform a manual takeover.
+You can hot-swap certain I/O modules for an equivalent I/O module to restore the storage system to its optimal operating state. You can hot-swap the module without performing a manual takeover.
 
 To use this procedure, your storage system must be running ONTAP 9.18.1 or later.
 

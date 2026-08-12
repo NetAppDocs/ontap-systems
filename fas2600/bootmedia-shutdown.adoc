@@ -2,14 +2,14 @@
 permalink: fas2600/bootmedia-shutdown.html
 sidebar: sidebar
 keywords: fas2600, shut down the controller, manual, manual boot recovery
-summary: "Shut down the impaired controller on a FAS2600 system after completing encryption checks. The FAS2600 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
+summary: "Shut down the controller in your FAS2600 storage system to prevent data loss and maintain system stability during the manual boot media recovery process."
 ---
-= Shut down the impaired controller in your FAS2600 system during boot media recovery
+= Shut down the controller in your FAS2600 system during boot media recovery
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the impaired controller on a FAS2600 system after completing encryption checks. This procedure includes taking the controller to the LOADER prompt, capturing boot environmental variables for reference, and preparing the controller for boot media replacement.
+Shut down the controller in your FAS2600 storage system to prevent data loss and maintain system stability during the manual boot media recovery process.
 
 The FAS2600 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 

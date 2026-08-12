@@ -9,7 +9,7 @@ summary: Key specifications for the AFF A70 storage system
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the AFF A70. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A70 specifications. This page is reflective of a single high availability pair. 
+Review select specifications for the AFF A70 storage system in a single high availability pair configuration. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A70 specifications. 
 
 === Key specifications for AFF A70
 
@@ -73,12 +73,12 @@ SMB 3.1.1;
 === System Environment Specifications
 * Typical Power: 6938 BTU/hr
 * Worst-case Power: 9089 BTU/hr
-* Weight: 118.0 lb 53.5 kg
+* Weight: 118.0 lb, 53.5 kg
 * Height: 4U
 * Width: 19” IEC rack-compliant (17.6” 44.7 cm)
 * Depth: 34.5” (36.6” with cable management bracket)
-* Operating Temp/Altitude/Humidity: 10°C to 35°C 50°F to  95°F) at <= 3048m <= 10000 ft) elevation;8% to 80% relative humidity, noncondensing
-* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft) 10% to 95%  relative humidity, noncondensing, in original container
+* Operating Temp/Altitude/Humidity: 10°C to 35°C (50°F to 95°F) at up to 3048m (10000 ft) elevation; 8% to 80% relative humidity, noncondensing
+* Non-operating Temp/Humidity: -40°C to 70°C (-40°F to 158°F) up to 12192m (40000 ft); 10% to 95% relative humidity, noncondensing, in original container
 * Acoustic Noise: Declared sound power (LwAd): 8.6; Sound pressure (LpAm) (bystander positions): 71.6 dB
 
 === Compliance

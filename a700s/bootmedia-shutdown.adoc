@@ -2,14 +2,14 @@
 permalink: a700s/bootmedia-shutdown.html
 sidebar: sidebar
 keywords: aff a700s, aff, a700s, completing, complete, nve, nse, shutdown, impair, controller, shut down the controller, manual, manual boot recovery
-summary: "Shut down the impaired controller on an AFF A700s system after completing encryption checks. The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
+summary: "Shut down the controller in your AFF A700s storage system to prevent data loss and maintain system stability during the manual boot media recovery process."
 ---
-= Shut down the impaired controller in your AFF A700s system during the manual boot recovery process
+= Shut down the controller in your AFF A700s system during the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the impaired controller on an AFF A700s system after completing encryption checks. This procedure includes taking the controller to the LOADER prompt, capturing boot environmental variables for reference, and preparing the controller for boot media replacement.
+Shut down the controller in your AFF A700s storage system to prevent data loss and maintain system stability during the manual boot media recovery process.
 
 The AFF A700s system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
 
