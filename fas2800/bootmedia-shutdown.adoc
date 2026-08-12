@@ -2,14 +2,14 @@
 permalink: fas2800/bootmedia-shutdown.html
 sidebar: sidebar
 keywords: fas2820, shut, down, impaired, controller, take, over
-summary: "Shut down the impaired controller in your FAS2820 storage system to prevent data loss and maintain system stability during the manual boot recovery process."
+summary: "Shut down the controller in your FAS2820 storage system to prevent data loss and maintain system stability during the manual boot recovery process."
 ---
 = Shut down the impaired controller in your FAS2820 system during the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Shut down the impaired controller in your FAS2820 storage system to prevent data loss and maintain system stability during the manual boot recovery process.
+Shut down the controller in your FAS2820 storage system to prevent data loss and maintain system stability during the manual boot recovery process.
 
 If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 

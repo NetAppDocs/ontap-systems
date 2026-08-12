@@ -2,7 +2,7 @@
 permalink: asa900/bootmedia-shutdown.html
 sidebar: sidebar
 keywords: asa a900, shut down the controller
-summary: 'You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.'
+summary: 'You can shut down or take over the controller using different procedures, depending on the storage system hardware configuration.'
 ---
 = Shut down the controller in your ASA A900 system during the manual boot recovery process
 :icons: font
@@ -10,7 +10,7 @@ summary: 'You can shut down or take over the impaired controller using different
 
 [.lead]
 
-Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+Shut down or take over the controller using the appropriate procedure for your configuration.
 
 If your storage system is running ONTAP 9.17.1 or later, use the link:bootmedia-replace-workflow-bmr.html[automated boot recovery procedure]. If your system is running an earlier version of ONTAP, you must use the manual boot recovery procedure.
 
