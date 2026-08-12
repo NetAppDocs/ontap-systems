@@ -151,7 +151,7 @@ Use the animation or the tabulated steps to complete the cabling between the con
 video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Animation - Cable two-node switchless cluster"]
 
 .Steps
-. Use the the 25 GbE cluster interconnect cable to connect the cluster interconnect ports e0c to e0c and e0d to e0d.  
+. Use the 25 GbE cluster interconnect cable to connect the cluster interconnect ports e0c to e0c and e0d to e0d.  
 +
 image:../media/oie_cable_sfp_gbe_copper.png[GbE SFP copper connector]
 +
@@ -161,7 +161,7 @@ image:../media/drw_affa250_tnsc_cabling.png[Cluster interconnect cabling in a tw
 +
 image::../media/drw_affa250_mgmt_cabling.png[Management port cabling]
 
-IMPORTANT:  DO NOT plug in the power cords at this point.
+IMPORTANT: DO NOT plug in the power cords at this point.
 --
 
 .Option 2: Switched cluster
@@ -219,7 +219,7 @@ Fibre Channel ports on the controllers are connected to Fibre Channel host netwo
 +
 image::../media/oie_cable_pull_tab_up.png[Cable connector with pull-tab on top]
 +
-NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again..
+NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .About this task
 Perform the following step on each controller module.
@@ -300,7 +300,7 @@ If you have network discovery enabled on your laptop, you can complete system se
 .Steps
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
-The system begins to boot. Initial booting may take up to eight minutes.
+The system begins to boot. Initial booting might take up to eight minutes.
 
 . Make sure that your laptop has network discovery enabled.
 +
@@ -345,7 +345,7 @@ image::../media/drw_console_client_mgmt_subnet_affa250.png[Connecting to the man
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
-The system begins to boot. Initial booting may take up to eight minutes.
+The system begins to boot. Initial booting might take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
 +

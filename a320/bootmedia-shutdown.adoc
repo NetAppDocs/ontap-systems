@@ -2,14 +2,14 @@
 permalink: a320/bootmedia-shutdown.html
 sidebar: sidebar
 keywords: aff, a320, aff a320, complete, completing, nve, nse, task, shutdown, impair, node, shut, down, shut down the node, manual, manual boot recovery
-summary: After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node. The AFF A320 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+summary: Shut down the controller in your AFF A320 storage system to prevent data loss and maintain system stability during the manual boot media recovery process.
 ---
-= Shut down the impaired controller in your AFF A320 system during the manual boot recovery process
+= Shut down the controller in your AFF A320 system during the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.  Shut down or take over the impaired controller using the appropriate procedure for your configuration. The AFF A320 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+Shut down the controller in your AFF A320 storage system to prevent data loss and maintain system stability during the manual boot media recovery process.
 
 == Option 1: Most systems
 

@@ -21,11 +21,11 @@ Review the requirements for boot media replacement.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-shutdown-bmr.html[Shut down the controller]
 [role="quick-margin-para"]
-Shut down the controller in your storage system when when you need to replace the boot media.
+Shut down the controller in your storage system when you need to replace the boot media.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:bootmedia-replace-bmr.html[Replace the boot media]
 [role="quick-margin-para"]
-Remove the failed boot media from the impaired controller and install the replacement boot media.
+Remove the impaired boot media from the controller module and install the replacement boot media.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia-recovery-image-boot-bmr.html[Restore the image on the boot media]
 [role="quick-margin-para"]

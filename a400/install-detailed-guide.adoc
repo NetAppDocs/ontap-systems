@@ -155,7 +155,7 @@ image::../media/drw_a320_cable_management_arms.png[Removing or installing the ca
 
 You can cable the controllers to your network by using the two-node switchless cluster method or by using the cluster interconnect network.
 
-NOTE: If the port labels on the card are not visible, check the card installation orientation (the PCIe connector socket is on the left side of the card slot in the A400 and FAS8300/8700), and then look for the card, by part number, in the https://hwu.netapp.com[NetApp Hardware Universe^] for a graphic of the bezel which will show the port labels. The card part number can be found using the `sysconfig -a` command or on the system packing list.
+NOTE: If the port labels on the card are not visible, check the card installation orientation. The PCIe connector socket is on the left side of the card slot in the A400 and FAS8300/8700. Then look up the card by part number in the https://hwu.netapp.com[NetApp Hardware Universe^] for a graphic of the bezel that shows the port labels. You can find the card part number using the `sysconfig -a` command or on the system packing list.
 
 NOTE: If you are cabling an MetroCluster IP configuration, ports e0a/e0b are available for hosting data LIFs (usually in Default IPSpace). 
 
@@ -207,7 +207,7 @@ image::../media/drw_a400_switched_network_cabling.png[Switched cluster network c
 
 == Step 4: Cable controllers to drive shelves
 
-You can cable either NSS224 or SAS shelves to you system.
+You can cable either NS224 or SAS shelves to your system.
 
 === Option 1: Cable the controllers to a single drive shelf
 
@@ -294,7 +294,7 @@ video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect 
 image::../media/drw_autodiscovery_controler_select_ieops-1849.svg[Select an ONTAP icon]
 
  .. Open File Explorer.
-.. Click *Network* in the left pane and right-click and select *refresh*.
+ .. Select *Network* in the left pane and right-click and select *refresh*.
 ..  Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
@@ -350,7 +350,7 @@ NOTE: FAS8300 and FAS8700 shown.
 +
 video::50cdf200-ede1-45a9-b4b5-ab1b006698d7[panopto, title="Animation - Power on the controllers"]
 +
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting might take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
 +

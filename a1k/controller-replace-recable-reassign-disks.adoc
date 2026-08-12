@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff a1k, how to recable the system, how to reassign disks
 summary: Return control of storage resources to the replacement controller so your AFF A1K system can resume normal operation.
 ---
-= Give back the controller in your AFF A1K system to resume normal operations
+= Give back the controller in your AFF A1K system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Return control of storage resources to the replacement controller so your AFF A1K system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption or  Onboard Key Manager (OKM) encryption.
+Return control of storage resources to the replacement controller so your AFF A1K system can resume normal operation. The give back procedure varies based on the encryption type used by your system: no encryption or Onboard Key Manager (OKM) encryption.
 
 include::../_include/controller_replace_recable_reassign_disks_no_ekm.adoc[]
 

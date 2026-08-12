@@ -31,9 +31,9 @@ include::../_include/800_chassis_replace_install_new_chassis.adoc[]
 
 == Step 4: Install the controller modules into the new chassis
 
-After you install the controller modules into the new chassis, you need to boot it.
+After you install the controller modules into the new chassis, boot the chassis.
 
-For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
+For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller modules is especially important because each module attempts to reboot as soon as you completely seat it in the chassis.
 
 include::../_include/800_chassis_replace_install_controllers.adoc[]
 

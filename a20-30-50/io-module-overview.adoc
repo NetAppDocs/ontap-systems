@@ -19,7 +19,7 @@ You can add I/O modules to improve redundancy, helping to ensure that the storag
 +
 // Jan 2026: updated for 9.18.1 support changes. https://jira.ngage.netapp.com/browse/AFFFASDOC-358
 +
-You can hot-swap certain I/O modules for an equivalent I/O module to restore the storage system to its optimal operating state. Hot-swapping is done without having to perform a manual takeover. 
+You can hot-swap certain I/O modules for an equivalent I/O module to restore the storage system to its optimal operating state. You don't need to perform a manual takeover to hot-swap the module.
 +
 //manually take over the controller with the failed I/O module.
 +

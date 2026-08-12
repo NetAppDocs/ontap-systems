@@ -12,7 +12,7 @@ summary: Replace the real-time clock battery, commonly known as a coin cell batt
 Replace the real-time clock (RTC) battery, commonly known as a coin cell battery, in your AFF C30 or AFF C60 storage system to ensure that services and applications relying on accurate time synchronization remain operational.
 
 .Before you begin
-All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+All other components in the storage system must be functioning properly. If they are not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
 .About this task
 * You can use this procedure with all versions of ONTAP supported by your storage system.
@@ -20,7 +20,7 @@ All other components in the storage system must be functioning properly; if not,
 +
 A storage system has three location LEDs: one on the operator display panel and one on each controller. Location LEDs remain illuminated for 30 minutes. 
 +
-You can turn them off by entering the `system location-led _off_` command. If you are unsure if the LEDs are on or off, you can check their state by entering the `system location-led show` command.
+You can turn them off by entering the `system location-led _off_` command. If you're unsure whether the LEDs are on or off, check their state by entering the `system location-led show` command.
 
 == Step 1: Shut down the impaired controller
 
@@ -43,7 +43,7 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 include::../_include/g_controller_remove.adoc[]
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover.
+. Open the controller cover by turning the thumbscrew counterclockwise.
  
 == Step 3: Replace the RTC battery
 
@@ -58,7 +58,7 @@ include::../_include/g_controller_reinstall.adoc[]
 
 == Step 5: Reset the time and date on the controller
 
-NOTE: After replacing the RTC battery, inserting the controller and powering on first BIOS reset, you will see the following error messages: 
+NOTE: After replacing the RTC battery, inserting the controller, and powering on, during the first BIOS reset you might see the following error messages:
 `RTC date/time error. Reset date/time to default`
 `RTC power failure error`
 These messages are expected and you can continue with this procedure.

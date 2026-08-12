@@ -9,6 +9,6 @@ summary: The boot media stores a primary and secondary set of system files that 
 :imagesdir: ../media/
 
 [.lead]
-Before replacing the boot media in your AFF A400 system, ensure you meet the necessary requirements for a successful replacement. This includes having a USB flash drive formatted to FAT32 with sufficient storage for the ONTAP recovery image and understanding whether you will perform a nondisruptive or disruptive replacement.
+Before replacing the boot media in your AFF A400 system, verify that you meet the necessary requirements for a successful replacement. This includes having a USB flash drive formatted to FAT32 with sufficient storage for the ONTAP recovery image and determining whether your replacement is nondisruptive or disruptive.
 
 include::../_include/bootmedia_replace_overview.adoc[]

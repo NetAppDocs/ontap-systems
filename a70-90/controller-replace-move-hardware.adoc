@@ -12,7 +12,7 @@ summary: Replace the controller in your AFF A70 or AFF A90 system when a hardwar
 Replace the controller in your AFF A70 or AFF A90 system when a hardware failure requires it. The replacement process involves removing the impaired controller, moving the components to the replacement controller, installing the replacement controller, and rebooting it.
 
 == Step 1: Remove the controller module
-You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
+Remove the controller module from the chassis before replacing it or an internal component.
 
 
 include::../_include/a70-90_controller_remove_physical.adoc[]
