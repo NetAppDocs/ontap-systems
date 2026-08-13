@@ -10,19 +10,21 @@ Title naming pattern: [Family] [Model] — for example, AFF A150, AFF A1K, AFF C
 
 Title style: Page titles embed the product name in a descriptive sentence rather than appending it after a dash. Use the `a1k/` folder as the model. Only the first word and proper nouns (including product names and acronyms) are capitalized.
 
+Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a" before product names starting with a consonant sound (FAS). Use "the" instead of an indefinite article when the noun is uncountable (for example, "hardware").
+
 **FRU replacement and maintenance pages:**
-- Replace/add: `[Verb] the [component] in your [Product] system [optional purpose]` — for example, "Replace the boot media in your AFF A1K system", "Replace a DIMM in your AFF A1K system to fix memory errors"
-- Hot-swap: `Hot-swap a [component] in your [Product] system` — for example, "Hot-swap a fan in your AFF A1K system"
-- Requirements (before): `Review requirements before [action] your [Product] [component]` — for example, "Review requirements before replacing the controller in your AFF A1K system"
-- Requirements (for): `Review requirements for [procedure] in your [Product] system` — for example, "Review requirements for manual boot media recovery in your AFF A1K system"
-- Shutdown (controller/FRU replacement): `Shut down the impaired controller in your [Product] system before [procedure]` — for example, "Shut down the impaired controller in your AFF A1K system before replacement"
-- Shutdown (boot media recovery): `Shut down the impaired controller in your [Product] system during the [manual/automated] boot recovery process`
-- Shutdown (chassis replacement): `Shut down your [Product] controller to replace the chassis`
-- Pre-shutdown check: `Check [topic] on the [component] in your [Product] system` — for example, "Check encryption support on your boot media in your AFF A1K system"
-- Boot image: `Boot the recovery image on your [Product] system [using the manual/automated boot recovery process]`
-- Restore encryption: `Restore encryption on the [component] in your [Product] system [context]`
-- Restore and verify: `Restore and verify the [component] configuration in your [Product] system`
-- Completion: `Complete the [procedure] for your [Product] system` — for example, "Complete the controller replacement for your AFF A1K system"
+- Replace/add: `[Verb] the [component] in an [Product] system [optional purpose]` — for example, "Replace the boot media in an AFF A1K system", "Replace a DIMM in an AFF A1K system to fix memory errors"
+- Hot-swap: `Hot-swap a [component] in an [Product] system` — for example, "Hot-swap a fan in an AFF A1K system"
+- Requirements (before): `Review requirements before [action] an [Product] [component/system]` — for example, "Review requirements before replacing the controller in an AFF A1K system"
+- Requirements (for): `Review requirements for [procedure] in an [Product] system` — for example, "Review requirements for manual boot media recovery in an AFF A1K system"
+- Shutdown (controller/FRU replacement): `Shut down the impaired controller in an [Product] system before [procedure]` — for example, "Shut down the impaired controller in an AFF A1K system before replacement"
+- Shutdown (boot media recovery): `Shut down the impaired controller in an [Product] system during the [manual/automated] boot recovery process`
+- Shutdown (chassis replacement): `Shut down an [Product] controller to replace the chassis`
+- Pre-shutdown check: `Check [topic] on the [component] in an [Product] system` — for example, "Check encryption support on the boot media in an AFF A1K system"
+- Boot image: `Boot the recovery image on an [Product] system [using the manual/automated boot recovery process]`
+- Restore encryption: `Restore encryption on the [component] in an [Product] system [context]`
+- Restore and verify: `Restore and verify the [component] configuration in an [Product] system`
+- Completion: `Complete the [procedure] for an [Product] system` — for example, "Complete the controller replacement for an AFF A1K system"
 - RMA return: `Return the failed [Product] [component] to NetApp [after the manual/automated boot recovery process]`
 
 **Workflow pages:**
@@ -30,15 +32,15 @@ Title style: Page titles embed the product name in a descriptive sentence rather
 
 **Installation pages:**
 - Overview: `[Product] installation and configuration workflow`
-- Prepare: `Prepare to install your [Product] storage system`
-- Requirements: `Review requirements for installing your [Product] storage system`
-- Install hardware: `Install your [Product] hardware in [location]` — for example, "Install your AFF A1K hardware in a cabinet or rack"
-- Cable: `Cable your [Product] hardware for [purpose]` — for example, "Cable your AFF A1K hardware for network and storage connectivity"
-- Power on: `Power on your [Product] storage system`
+- Prepare: `Prepare to install an [Product] storage system`
+- Requirements: `Review requirements for installing an [Product] storage system`
+- Install hardware: `Install the [Product] hardware in [location]` — for example, "Install the AFF A1K hardware in a cabinet or rack"
+- Cable: `Cable the [Product] hardware for [purpose]` — for example, "Cable the AFF A1K hardware for network and storage connectivity"
+- Power on: `Power on an [Product] storage system`
 
 **Concept pages:**
-- General concept: `Learn about [topic] in your [Product] system` — for example, "Learn about adding and replacing I/O modules in your AFF A1K system"
-- Maintain overview: `Learn about maintaining your [Product] storage system`
+- General concept: `Learn about [topic] in an [Product] system` — for example, "Learn about adding and replacing I/O modules in an AFF A1K system"
+- Maintain overview: `Learn about maintaining an [Product] storage system`
 - Key specifications: `Key specifications for [Product]`
 
 **BMR context suffix:** On platforms that support both manual and automated (ONTAP 9.17.1+) boot media recovery, append "using the manual boot recovery process" or "using the automated boot recovery process" to all boot media page titles to disambiguate them. Pages for platforms that support only manual recovery (older platforms) do not need this suffix.
