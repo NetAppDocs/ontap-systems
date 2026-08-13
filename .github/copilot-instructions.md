@@ -15,8 +15,9 @@ Title style: Page titles embed the product name in a descriptive sentence rather
 - Hot-swap: `Hot-swap a [component] in your [Product] system` — for example, "Hot-swap a fan in your AFF A1K system"
 - Requirements (before): `Review requirements before [action] your [Product] [component]` — for example, "Review requirements before replacing the controller in your AFF A1K system"
 - Requirements (for): `Review requirements for [procedure] in your [Product] system` — for example, "Review requirements for manual boot media recovery in your AFF A1K system"
-- Shutdown (controller/FRU replacement): `Shut down the impaired controller in your [Product] system before [procedure]` — for example, "Shut down the impaired controller in your AFF A1K system before replacement"
-- Shutdown (boot media recovery): `Shut down the impaired controller in your [Product] system during the [manual/automated] boot recovery process`
+- Shutdown (controller-integral component replacement, including the controller itself — DIMM, RTC battery, NVDIMM/NVRAM battery, controller): `Shut down the impaired controller in your [Product] system before [procedure]` — for example, "Shut down the impaired controller in your AFF A1K system before replacement"
+- Shutdown (removable/modular FRU replacement — e.g., NVRAM module, I/O module, other non-integral FRUs): `Shut down the controller in your [Product] system before [procedure]` — no "impaired"; the component itself is impaired, not the controller
+- Shutdown (boot media recovery): `Shut down the controller in your [Product] system during the [manual/automated] boot recovery process` — no "impaired"; boot media is a removable component, not part of the controller itself
 - Shutdown (chassis replacement): `Shut down your [Product] controller to replace the chassis`
 - Pre-shutdown check: `Check [topic] on the [component] in your [Product] system` — for example, "Check encryption support on your boot media in your AFF A1K system"
 - Boot image: `Boot the recovery image on your [Product] system [using the manual/automated boot recovery process]`
@@ -70,6 +71,7 @@ Title style: Page titles embed the product name in a descriptive sentence rather
 - **AFX / AFX 1K:** Newer all-flash platforms; use `afx_` prefixed include fragments.
 - **FRU (field-replaceable unit):** Any hardware component that a customer can replace on-site (boot media, controller, DIMM, fan, NVDIMM, NVRAM, power supply, RTC battery, I/O module, system management module).
 - **HA pair:** Two controllers operating in a high-availability configuration; most maintenance procedures require gracefully failing over to the partner before starting.
+- **Impaired component terminology:** Reserve "impaired controller" for failures of components integral to the controller itself (DIMM, RTC battery, NVDIMM/NVRAM battery). For removable/modular FRUs (boot media, NVRAM module, I/O card), describe the component itself as impaired, not the controller.
 - **BMR (boot media recovery):** Automated boot recovery introduced in ONTAP 9.17.1; platforms running earlier versions must use the manual USB-based recovery procedure. Both workflows exist for most modern platforms.
 - **MetroCluster (MCC):** Two-site disaster recovery configuration; shutdown and recovery procedures differ from standard HA pair procedures and often use separate include files with the `_mcc` suffix (e.g., `shutdown_2n_mcc.adoc`).
 - **NVDIMM / NVRAM:** Non-volatile memory used for write caching; replacing these components requires specific shutdown and recovery steps to avoid data loss.
@@ -85,7 +87,8 @@ Title style: Page titles embed the product name in a descriptive sentence rather
 ## Typical user workflows
 
 - **Hardware installation:** review requirements → prepare site → install hardware → cable controllers and shelves → power on → set up ONTAP cluster
-- **FRU replacement (most components):** review requirements → check encryption status → shut down impaired controller → replace FRU → restore system configuration → complete RMA
+- **FRU replacement (controller-integral components — DIMM, RTC battery, NVDIMM/NVRAM battery):** review requirements → shut down impaired controller → replace FRU → restore system configuration → complete RMA
+- **FRU replacement (removable/modular components — e.g., NVRAM module, I/O module):** review requirements → shut down controller → replace FRU → restore system configuration → complete RMA
 - **Boot media replacement (manual):** check encryption → shut down controller → replace boot media → boot from USB recovery image → restore encryption → complete RMA
 - **Boot media replacement (automated, ONTAP 9.17.1+):** check encryption → shut down controller → replace boot media → run automated boot recovery → restore encryption → complete RMA
 - **Controller replacement:** review requirements → shut down impaired controller → move hardware to replacement controller → recable and reassign disks → restore system config → complete RMA
