@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff c250, restore and verify the system configuration, verify and set the ha state of the controller module
 summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
 ---
-= Restore and verify the controller configuration in your AFF C250 storage system
+= Restore and verify the controller configuration in an AFF C250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After completing the hardware replacement and booting to your AFF C250 system to Maintenance mode, you need to verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+After completing the hardware replacement and booting the AFF C250 system to Maintenance mode, you need to verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
 
 include::../_include/250_controller-replace-system-config-restore-and-verify.adoc[]
 
