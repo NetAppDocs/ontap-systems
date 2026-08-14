@@ -9,4 +9,6 @@ summary: Replace the real-time clock battery in your ASA C400 controller module 
 :imagesdir: ../media/
 
 [.lead]
+Restore accurate time synchronization on an ASA C400 system by replacing the RTC battery in the controller module.
+
 include::../_include/400_rtc_battery_replace.adoc[]

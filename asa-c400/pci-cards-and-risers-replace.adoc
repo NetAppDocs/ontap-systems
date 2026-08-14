@@ -9,4 +9,6 @@ summary: To replace a PCIe or mezzanine card, you must disconnect the cables and
 :imagesdir: ../media/
 
 [.lead]
+Remove and swap out a failed PCIe or mezzanine card in the controller module of an ASA C400 system.
+
 include::../_include/400_pci_cards_and_risers_replace.adoc[]

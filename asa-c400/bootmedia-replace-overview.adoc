@@ -9,4 +9,6 @@ summary: The boot media stores a primary and secondary set of boot image files t
 :imagesdir: ../media/
 
 [.lead]
+Learn what the boot media does and what to expect before replacing it in an ASA C400 system, including USB flash drive and network requirements.
+
 include::../_include/bootmedia_replace_overview.adoc[]

@@ -9,6 +9,8 @@ summary: Replace a power supply in your ASA C400 system by disconnecting the tar
 :imagesdir: ../media/
 
 [.lead]
+Swap out a failed power supply in an ASA C400 system without powering down the controller.
+
 include::../_include/400_power_supply_replace.adoc[]
 
 // 2025-10-13 ontap-systems-internal/issues/1278
