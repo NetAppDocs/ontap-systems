@@ -9,7 +9,7 @@ summary: "To replace a PCIe card, you must disconnect the cables from the cards,
 :imagesdir: ../media/
 
 [.lead]
-Replace a PCIe card in your AFF C800 system when the card fails, requires an upgrade to support higher performance, or additional features. The replacement process involves shutting down the controller, replacing the failed PCIe card, rebooting the controller, and returning the failed part to NetApp.
+ Replace a PCIe card in your AFF C800 system when the card fails or when an upgrade is required to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed PCIe card, rebooting the controller, and returning the failed part to NetApp.
 
 .Before you begin
 
