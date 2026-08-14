@@ -4,13 +4,12 @@ sidebar: sidebar
 keywords: asa c800, replace a pcie card
 summary: "To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards."
 ---
-= Replace a PCIe card in your ASA C800 system
+= Replace or add a PCIe card in an ASA C800 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
-Replace or add an I/O module in your ASA C800 system when the module fails,  requires an upgrade to support higher performance, or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
+Replace or add a PCIe card in your ASA C800 system when the card fails, requires an upgrade to support higher performance, or additional features. The replacement process involves shutting down the controller, replacing the failed PCIe card, rebooting the controller, and returning the failed part to NetApp.
 
 .Before you begin
 
