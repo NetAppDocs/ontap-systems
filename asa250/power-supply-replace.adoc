@@ -9,6 +9,8 @@ summary: Replacing a power supply involves disconnecting the target power supply
 :imagesdir: ../media/
 
 [.lead]
+Hot-swap a failed power supply unit (PSU) in an ASA A250 system without shutting down the controller. The PSUs are redundant and auto-ranging, so replacing a failed PSU with a matching type keeps the system running without interruption.
+
 include::../_include/250_power-supply-replace.adoc[]
 
 // 2025-10-13 ontap-systems-internal/issues/1278

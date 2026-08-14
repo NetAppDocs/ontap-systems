@@ -9,4 +9,6 @@ summary: "You must replace a DIMM in the controller module when your system regi
 :imagesdir: ../media/
 
 [.lead]
+Replace a DIMM in an ASA A250 system when the system reports an increasing number of correctable ECC errors. This procedure includes shutting down the impaired controller, opening the controller module, and installing the replacement DIMM to prevent a system panic.
+
 include::../_include/250_dimm-replace.adoc[]
