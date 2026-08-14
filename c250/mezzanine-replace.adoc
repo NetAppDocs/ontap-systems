@@ -9,5 +9,6 @@ summary: "To replace a failed mezzanine card, you must remove the cables and any
 :imagesdir: ../media/
 
 [.lead]
+Replace a failed mezzanine card, or install a new one, in an AFF C250 system by removing the cables and any SFP or QSFP modules, replacing the card, and recabling.
 
 include::../_include/250_mezzanine-replace.adoc[]

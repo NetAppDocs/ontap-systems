@@ -9,6 +9,7 @@ summary: You must replace a drive when the platform logs a warning message to th
 :imagesdir: ../media/
 
 [.lead]
+Replace a failed SSD drive in an AFF C250 system nondisruptively while I/O is in progress.
 
 include::../_include/drive_hotswap_ssd_intro.adoc[]
 

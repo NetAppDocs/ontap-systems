@@ -9,5 +9,6 @@ summary: "You must replace a DIMM in the controller module when your system regi
 :imagesdir: ../media/
 
 [.lead]
+Replace a DIMM in an AFF C250 system when the system registers an increasing number of correctable error correction codes, to prevent a system panic.
 
 include::../_include/250_dimm-replace.adoc[]
