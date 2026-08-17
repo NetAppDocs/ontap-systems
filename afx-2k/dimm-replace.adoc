@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: afx 2k, replace a dimm
 summary: Replace a DIMM in your AFX 2K storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
-= Replace a DIMM in your AFX 2K storage system to fix memory errors
+= Replace a DIMM in an AFX 2K system to fix memory errors
 :icons: font
 :imagesdir: ../media/
 
