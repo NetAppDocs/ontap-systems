@@ -4,12 +4,11 @@ sidebar: sidebar
 keywords: aff c250, move hardware components, replace the chassis
 summary: "Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
 ---
-= Replace the chassis in your AFF C250 storage system
+= Replace the chassis in an AFF C250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-
 Replace the chassis in your AFF C250 system when a hardware failure requires it. The replacement process involves removing the controllers and power supply units (PSUs), removing the drives, installing the replacement chassis, and reinstalling the chassis components.
 
 include::../_include/250_chassis-replace-move-hardware.adoc[]
