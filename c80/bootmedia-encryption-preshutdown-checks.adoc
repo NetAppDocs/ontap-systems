@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c80, pre-shutdown checks for onboard encryption keys
 summary: To ensure data security on your AFF C80 storage system, you need to verify the encryption key support and status on your boot media. Check if your ONTAP version supports NetApp Volume Encryption, and before you shut down the controller check if the key manager is active. 
 ---
-= Check encryption support on your boot media in your AFF C80 storage system
+= Check encryption support on the boot media in an AFF C80 system
 :icons: font
 :imagesdir: ../media/
 
