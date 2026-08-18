@@ -9,5 +9,6 @@ summary: "You must verify the HA state of the chassis, and return the failed par
 :imagesdir: ../media/
 
 [.lead]
+Complete the chassis replacement for an ASA A400 system by checking the HA state, switching back aggregates if the system is in a two-node MetroCluster configuration, and shipping the failed chassis back to NetApp.
 
 include::../_include/400_chassis_replace_complete_system_restore_rma.adoc[]

@@ -9,5 +9,6 @@ summary: "Move the fans, hard drives, and controller module or modules from the 
 :imagesdir: ../media/
 
 [.lead]
+Transfer hardware components from the impaired chassis to the new chassis and reinstall the controller modules in an ASA A400 system.
 
 include::../_include/400_chassis_replace_move_hardware.adoc[]

@@ -1,10 +1,10 @@
 ---
 permalink: a400/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
-keywords: aff a400, aff, a400, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys
+keywords: aff a400, aff, a400, shut, down, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys
 summary: Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check what version of ONTAP the system is running.
 ---
-= Check encryption support on your boot media in your AFF A400 system
+= Check encryption support on the boot media in an AFF A400 system
 :icons: font
 :imagesdir: ../media/
 
