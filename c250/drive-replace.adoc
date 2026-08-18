@@ -4,11 +4,13 @@ sidebar: sidebar
 keywords: aff c250, replace the drives
 summary: You must replace a drive when the platform logs a warning message to the system console indicating that a drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
 ---
-= Replace an SSD drive in your AFF C250 storage system
+= Replace an SSD drive in an AFF C250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a failed SSD drive in an AFF C250 system nondisruptively while I/O is in progress.
+
 include::../_include/drive_hotswap_ssd_intro.adoc[]
 
 .Steps

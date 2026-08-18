@@ -2,12 +2,13 @@
 permalink: asa-c250/fan-replace.html
 sidebar: sidebar
 keywords: asa c250, replace a fan
-summary: To replace a fan, remove the failed fan module and replace it with a new fan module.
+summary: "Replace a fan in an ASA C250 system by removing the failed fan module and replacing it with a new fan module."
 ---
-
-= Replace a fan in your ASA C250 system
+= Replace a fan in an ASA C250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a fan in an ASA C250 system by removing the failed fan module and replacing it with a new fan module.
+
 include::../_include/250_fan-replace.adoc[]
