@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a800, replace a pcie card
 summary: "To replace a PCIe card, you must disconnect the cables from the cards, remove the SFP and QSFP modules from the cards before removing the riser, reinstall the riser, and then reinstall the SFP and QSFP modules before cabling the cards."
 ---
-= Replace a PCIe card in your ASA A800 system
+= Replace a PCIe card in an ASA A800 system
 :icons: font
 :imagesdir: ../media/
 

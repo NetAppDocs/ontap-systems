@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: asa a250, nvmem battery replacement
 summary: "To replace an NVMEM battery in the system, you must remove the controller module from the system, open it, replace the battery, and close and replace the controller module."
 ---
-= Replace the NVMEM battery in your ASA A250 system
+= Replace the NVMEM battery in an ASA A250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a failed NVMEM battery in an ASA A250 system by shutting down the impaired controller, opening the controller module, and installing the replacement battery. This procedure protects cached write data from loss due to a degraded battery.
+
 include::../_include/250_nvmem-nvram-battery-replace.adoc[]

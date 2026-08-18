@@ -4,10 +4,11 @@ sidebar: sidebar
 keywords: asa a400, verify and set HA state, complete the replacement process
 summary: "You must verify the HA state of the chassis, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit."
 ---
-= Complete the chassis replacement for your ASA A400 system
+= Complete the chassis replacement for an ASA A400 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Complete the chassis replacement for an ASA A400 system by checking the HA state, switching back aggregates if the system is in a two-node MetroCluster configuration, and shipping the failed chassis back to NetApp.
 
 include::../_include/400_chassis_replace_complete_system_restore_rma.adoc[]
