@@ -2,13 +2,13 @@
 permalink: fas9000/bootmedia-replace.html
 sidebar: sidebar
 keywords: aff a700, fas9000, open, controller, module, system, access, component, manual, manual boot recovery
-summary: "To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module. The FAS9000 system supports only manual boot media recovery procedures."
+summary: "Replace the boot media in a FAS9000 system by removing the impaired controller module, installing the replacement boot media, and transferring the boot image to a USB flash drive. The FAS9000 system supports only manual boot media recovery; automated boot media recovery is not supported."
 ---
-= Replace the boot media in your FAS9000 system
+= Replace the boot media in a FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive. The FAS9000 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported.
+Replace the boot media in a FAS9000 system by removing the impaired controller module, installing the replacement boot media, and transferring the boot image to a USB flash drive. The FAS9000 system supports only manual boot media recovery; automated boot media recovery is not supported.
 
 include::../_include/700_9000_bootmedia_replace.adoc[]

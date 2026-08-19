@@ -2,12 +2,13 @@
 permalink: fas9000/x91148a-modules-with-no-open-slots-add.html
 sidebar: sidebar
 keywords: aff a700, fas9000, add, x91148a, storage, module, no, open, slots, system, nic
-summary: "You must remove one more or more existing NIC or storage modules in your system in order to install one or more X91148A storage modules into your fully-populated system."
+summary: "Remove one or more existing NIC or storage modules from a fully-populated FAS9000 system in order to install one or more X91148A storage modules."
 ---
-= Add an X91148A module in your FAS9000 system with no open slots
+= Add an X91148A storage module to a FAS9000 system when all slots are occupied
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Remove one or more existing NIC or storage modules from a fully-populated FAS9000 system in order to install one or more X91148A storage modules.
 
 include::../_include/700_9000_x91148a_modules_with_no_open_slots_add.adoc[]

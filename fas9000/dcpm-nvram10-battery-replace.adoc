@@ -2,12 +2,13 @@
 permalink: fas9000/dcpm-nvram10-battery-replace.html
 sidebar: sidebar
 keywords: fas9000, replace, destage, controller, power, module, nvram10, battery, dcpm, dispose, return, failed, part
-summary: "To hot-swap a de-stage controller power module DCPM, which contains the NVRAM10 battery, you must locate the failed DCPM module, remove it from the chassis, and install the replacement DCPM module."
+summary: "Hot-swap the de-stage controller power module (DCPM), which contains the NVRAM10 battery, in a FAS9000 system without interrupting service."
 ---
-= Hot-swap a DCPM module in your FAS9000 system
+= Hot-swap the DCPM module in a FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Hot-swap the de-stage controller power module (DCPM), which contains the NVRAM10 battery, in a FAS9000 system without interrupting service.
 
 include::../_include/700_9000_dcpm_nvram10_battery_replace.adoc[]
