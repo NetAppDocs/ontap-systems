@@ -2,14 +2,14 @@
 permalink: fas500f/controller-replace-recable-reassign-disks.html
 sidebar: sidebar
 keywords: fas500f, how to recable the system, how to reassign disks
-summary: You must recable the storage and confirm disk reassignment.
+summary: Return control of storage resources to the replacement controller so your FAS500f system can resume normal operations.
 ---
-= Give back the controller in your FAS500f system to resume normal operations
+= Give back the controller in a FAS500f system to resume normal operations
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Return control of storage resources to the replacement controller so your FAS500f system can resume normal operation. After you've restored and verified the system configuration, recable the system and reassign disks.
+Return control of storage resources to the replacement controller so your FAS500f system can resume normal operations. After you've restored and verified the system configuration, recable the system and reassign disks.
 
 include::../_include/250_controller-replace-recable-reassign-disks.adoc[]
 
