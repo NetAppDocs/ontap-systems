@@ -2,9 +2,9 @@ If the storage system has available slots, install the new I/O module into one o
 
 .Before you begin
 
-* Check the https://hwu.netapp.com/[NetApp Hardware Universe^] to ensure the new I/O module is compatible with your storage system and ONTAP version.
+* Check the https://hwu.netapp.com[NetApp Hardware Universe^] to ensure the new I/O module is compatible with your storage system and ONTAP version.
 
-* If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe^]  and use the best one available for your I/O module.
+* If multiple slots are available, check the slot priorities in https://hwu.netapp.com[NetApp Hardware Universe^]  and use the best one available for your I/O module.
 
 * Make sure that all other components are functioning properly.
 
