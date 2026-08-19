@@ -9,7 +9,7 @@ summary: 'Swapping out a power supply involves turning off, disconnecting, and r
 :imagesdir: ../media/
 
 [.lead]
-Replace a power supply in your AFF A900 system when it fails or becomes faulty. Power supplies are redundant and hot-swappable, so you do not have to shut down the controller to perform this replacement.
+Hot-swap a power supply in your AFF A900 system when it fails or becomes faulty. Power supplies are redundant and hot-swappable, so you do not have to shut down the controller to perform this replacement.
 
 include::../_include/900_power_supply_swap_out.adoc[]
 
