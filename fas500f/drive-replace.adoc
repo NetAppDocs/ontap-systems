@@ -2,15 +2,15 @@
 permalink: fas500f/drive-replace.html
 sidebar: sidebar
 keywords: fas500f, replace the drives
-summary: Replace a failed drive in your FAS500f storage system nondisruptively while I/O is in progress. The platform logs a warning message and illuminates the fault LEDs when a drive fails, and the replacement procedure differs slightly depending on whether the drive is an SSD or an HDD.
+summary: Hot-swap a failed drive in your FAS500f storage system nondisruptively while I/O is in progress. The platform logs a warning message and illuminates the fault LEDs when a drive fails, and the replacement procedure differs slightly depending on whether the drive is an SSD or an HDD.
 
 ---
-= Hot-swap a drive in your FAS500f system
+= Hot-swap a drive in a FAS500f system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a failed drive in your FAS500f storage system nondisruptively while I/O is in progress. The platform logs a warning message and illuminates the fault LEDs when a drive fails, and the replacement procedure differs slightly depending on whether the drive is an SSD or an HDD.
+Hot-swap a failed drive in your FAS500f storage system nondisruptively while I/O is in progress. The platform logs a warning message and illuminates the fault LEDs when a drive fails, and the replacement procedure differs slightly depending on whether the drive is an SSD or an HDD.
 
 include::../_include/drive_hotswap_intro.adoc[]
 
