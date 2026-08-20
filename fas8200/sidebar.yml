@@ -39,7 +39,7 @@ entries:
     - title: Chassis
       pdf-filename: FAS8200 Chassis
       entries:
-      - title: Overview
+      - title: Review requirements
         url: /fas8200/chassis-replace-overview.html
       - title: Shut down impaired controller
         url: /fas8200/chassis-replace-shutdown.html
@@ -50,7 +50,7 @@ entries:
     - title: Controller
       pdf-filename: FAS8200 Controller Module
       entries:
-      - title: Overview
+      - title: Review requirements
         url: /fas8200/controller-replace-overview.html
       - title: Shut down impaired controller
         url: /fas8200/controller-replace-shutdown.html

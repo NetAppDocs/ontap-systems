@@ -45,7 +45,7 @@ entries:
       - title: Chassis
         pdf-filename: FAS9000 Chassis
         entries:
-        - title: Overview
+        - title: Review requirements
           url: /fas9000/chassis-replace-overview.html
         - title: Shut down impaired controller
           url: /fas9000/chassis-replace-shutdown.html
@@ -57,7 +57,7 @@ entries:
       - title: Controller
         pdf-filename: FAS9000 Controller
         entries:
-        - title: Overview
+        - title: Review requirements
           url: /fas9000/controller-replace-overview.html
         - title: Shut down impaired controller
           url: /fas9000/controller-replace-shutdown.html

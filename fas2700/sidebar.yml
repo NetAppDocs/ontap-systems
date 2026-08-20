@@ -40,7 +40,7 @@ entries:
       - title: Chassis
         pdf-filename: FAS2700 Chassis
         entries:
-          - title: Overview
+          - title: Review requirements
             url: /fas2700/chassis-replace-overview.html
           - title: Shut down impaired controller
             url: /fas2700/chassis-replace-shutdown.html
@@ -51,7 +51,7 @@ entries:
       - title: Controller
         pdf-filename: FAS2700 Controller
         entries:
-          - title: Overview
+          - title: Review requirements
             url: /fas2700/controller-replace-overview.html
           - title: Shut down impaired controller
             url: /fas2700/controller-replace-shutdown.html

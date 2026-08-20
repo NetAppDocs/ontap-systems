@@ -20,7 +20,7 @@ entries:
       - title: Boot media
         pdf-filename: ASA A150 Boot Media
         entries:
-          - title: Overview
+          - title: Review requirements
             url: /asa150/bootmedia-replace-overview.html
           - title: Check encryption keys
             url: /asa150/bootmedia-encryption-preshutdown-checks.html
@@ -37,7 +37,7 @@ entries:
       - title: Chassis
         pdf-filename: ASA A150 Chassis
         entries:
-          - title: Overview
+          - title: Review requirements
             url: /asa150/chassis-replace-overview.html
           - title: Shut down impaired controller
             url: /asa150/chassis-replace-shutdown.html
@@ -48,7 +48,7 @@ entries:
       - title: Controller
         pdf-filename: ASA A150 Controller
         entries:
-          - title: Overview
+          - title: Review requirements
             url: /asa150/controller-replace-overview.html
           - title: Shut down impaired controller
             url: /asa150/controller-replace-shutdown.html

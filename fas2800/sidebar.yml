@@ -59,7 +59,7 @@ entries:
     - title: Chassis
       pdf-filename: FAS2820 Chassis
       entries:
-        - title: Overview
+        - title: Review requirements
           url: /fas2800/chassis-replace-overview.html
         - title: Shut down impaired controller
           url: /fas2800/chassis-replace-shutdown.html
@@ -70,7 +70,7 @@ entries:
     - title: Controller
       pdf-filename: FAS2820 Controller
       entries:
-        - title: Overview
+        - title: Review requirements
           url: /fas2800/controller-replace-overview.html
         - title: Shut down impaired controller
           url: /fas2800/controller-replace-shutdown.html

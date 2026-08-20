@@ -56,7 +56,7 @@ entries:
    - title: Chassis
      pdf-filename: FAS9500 Chassis
      entries:
-      - title: Overview
+      - title: Review requirements
         url: /fas9500/chassis_replace_overview.html
       - title: Shut down impaired controller
         url: /fas9500/chassis_replace_shutdown.html
@@ -68,7 +68,7 @@ entries:
    - title: Controller
      pdf-filename: FAS9500 Controller Module
      entries:
-      - title: Overview
+      - title: Review requirements
         url: /fas9500/controller_replace_overview.html
       - title: Shut down impaired controller
         url: /fas9500/controller_replace_shutdown.html

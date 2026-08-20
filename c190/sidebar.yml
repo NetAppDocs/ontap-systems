@@ -22,7 +22,7 @@ entries:
     - title: Boot media
       pdf-filename: AFF C190 Boot Media
       entries:
-        - title: Overview
+        - title: Review requirements
           url: /c190/bootmedia-replace-overview.html
         - title: Check encryption keys
           url: /c190/bootmedia-encryption-preshutdown-checks.html
@@ -40,7 +40,7 @@ entries:
     - title: Chassis
       pdf-filename: AFF C190 Chassis
       entries:
-      - title: Overview
+      - title: Review requirements
         url: /c190/chassis-replace-overview.html
       - title: Shut down impaired controller
         url: /c190/chassis-replace-shutdown.html
@@ -51,7 +51,7 @@ entries:
     - title: Controller
       pdf-filename: AFF C190 Controller Module
       entries:
-      - title: Overview
+      - title: Review requirements
         url: /c190/controller-replace-overview.html
       - title: Shut down impaired controller
         url: /c190/controller-replace-shutdown.html

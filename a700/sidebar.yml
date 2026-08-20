@@ -41,7 +41,7 @@ entries:
       - title: Chassis
         pdf-filename: AFF A700 Chassis
         entries:
-        - title: Overview
+        - title: Review requirements
           url: /a700/chassis-replace-overview.html
         - title: Shut down impaired controller
           url: /a700/chassis-replace-shutdown.html
@@ -53,7 +53,7 @@ entries:
       - title: Controller module
         pdf-filename: AFF A700 Controller
         entries:
-        - title: Overview
+        - title: Review requirements
           url: /a700/controller-replace-overview.html
         - title: Shut down impaired controller
           url: /a700/controller-replace-shutdown.html
