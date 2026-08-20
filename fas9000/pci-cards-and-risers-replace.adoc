@@ -2,12 +2,13 @@
 permalink: fas9000/pci-cards-and-risers-replace.html
 sidebar: sidebar
 keywords: aff a700, fas9000, replace, io, module, shut, down, impaired, controller, node, metrocluster, pcie, replacement, switch, back, aggregates, return, failed, part
-summary: "To replace an I/O module, you must perform a specific sequence of tasks."
+summary: "Replace an I/O module in a FAS9000 system using a specific sequence of tasks that is supported with all versions of ONTAP that your system runs."
 ---
-= Replace an I/O module in your FAS9000 system
+= Replace an I/O module in a FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace an I/O module in a FAS9000 system using a specific sequence of tasks that is supported with all versions of ONTAP that your system runs.
 
 include::../_include/700_9000_pci_cards_and_risers_replace.adoc[]

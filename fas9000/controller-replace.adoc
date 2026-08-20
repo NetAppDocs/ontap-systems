@@ -2,12 +2,13 @@
 permalink: fas9000/controller-replace.html
 sidebar: sidebar
 keywords: aff a700, fas9000, replace, controller, module, hardware, install, controller, system, dimms, move, boot, media
-summary: "To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
+summary: "Replace the controller module hardware in a FAS9000 system. This procedure includes removing the impaired node, moving FRU components to the replacement controller module, installing the replacement controller module in the chassis, and booting the system to Maintenance mode."
 ---
-= Replace the controller in your FAS9000 system
+= Replace the controller in a FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the controller module hardware in a FAS9000 system. This procedure includes removing the impaired node, moving FRU components to the replacement controller module, installing the replacement controller module in the chassis, and booting the system to Maintenance mode.
 
 include::../_include/700_9000_controller-replace.adoc[]

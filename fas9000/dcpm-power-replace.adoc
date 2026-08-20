@@ -2,12 +2,13 @@
 permalink: fas9000/dcpm-power-replace.html
 sidebar: sidebar
 keywords: aff a700, fas9000, replace, dcpm, module, fail
-summary: 'To replace the DCPM module in your system, you must remove the failed DCPM module from the system and then replace it with a new DCPM module.'
+summary: "Replace a failed DCPM module in a FAS9000 system. The module must be replaced in the chassis within five minutes of removal or the associated controller shuts down."
 ---
-= Replace the DCPM module in your FAS9000 system
+= Replace the DCPM module in a FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a failed DCPM module in a FAS9000 system. The module must be replaced in the chassis within five minutes of removal or the associated controller shuts down.
 
 include::../_include/700_9000_dcpm_power_replace.adoc[]
