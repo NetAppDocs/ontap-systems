@@ -2,12 +2,13 @@
 permalink: fas9000/nvram-module-or-nvram-dimm-replacement.html
 sidebar: sidebar
 keywords: aff a700, fas9000, replace, nvram, module, dimm, manually, reassign, system, id, ha, system, disk, two, node, restore, storage, volume, encryption, functionality
-summary: "The NVRAM module consists of the NVRAM10 and DIMMs and up to two NVMe SSD Flash Cache modules, Flash Cache or caching modules, per NVRAM module."
+summary: "Replace a failed NVRAM module or the DIMMs inside the NVRAM module in a FAS9000 system. Because the system ID is derived from the NVRAM module, replacing the module reassigns the disks belonging to the system to the new system ID."
 ---
-= Replace the NVRAM module or NVRAM DIMMs in your FAS9000 system
+= Replace the NVRAM module or NVRAM DIMMs in a FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a failed NVRAM module or the DIMMs inside the NVRAM module in a FAS9000 system. Because the system ID is derived from the NVRAM module, replacing the module reassigns the disks belonging to the system to the new system ID.
 
 include::../_include/700_9000_nvram_module_or_nvram_dimm_replacement.adoc[]

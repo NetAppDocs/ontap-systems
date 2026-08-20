@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, replace, boot, media, controller, module, fru map
 summary: "The boot media in your FAS2820 system stores essential firmware and configuration data. To replace it, you remove and open the impaired controller module, locate and replace the boot media, transfer the boot image to a USB drive, and then boot the controller."
 ---
-= Replace the boot media in your FAS2820 system using the manual boot recovery process
+= Replace the boot media in a FAS2820 system using the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 

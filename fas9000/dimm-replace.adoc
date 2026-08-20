@@ -2,12 +2,13 @@
 permalink: fas9000/dimm-replace.html
 sidebar: sidebar
 keywords: aff a700, fas9000, replace, dimm, shut, down, impaired, controller, module, reinstall, system, node, aggregates, metrocluster, replacement
-summary: "You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes ECC. Failure to do so causes a system panic."
+summary: "Replace a DIMM in a FAS9000 system when the system reports excessive correctable ECC memory errors through Health Monitor alerts, or uncorrectable ECC errors. A failing DIMM can prevent the storage system from booting ONTAP, so replacing it restores stable operation."
 ---
-= Replace a DIMM in your FAS9000 system to fix memory errors
+= Replace a DIMM in a FAS9000 system to fix memory errors
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a DIMM in a FAS9000 system when the system reports excessive correctable ECC memory errors through Health Monitor alerts, or uncorrectable ECC errors. A failing DIMM can prevent the storage system from booting ONTAP, so replacing it restores stable operation.
 
 include::../_include/700_9000_dimm_replace.adoc[]

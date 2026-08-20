@@ -2,12 +2,13 @@
 permalink: fas9000/fan-swap-out.html
 sidebar: sidebar
 keywords: fas9000, swap, fan, service, task, return, failed, part
-summary: 'To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.'
+summary: "Hot-swap the fan module in a FAS9000 system without interrupting service. You must replace the fan module within two minutes of removing it to avoid disrupting system airflow."
 ---
-= Hot-swap a fan in your FAS9000 system
+= Hot-swap a fan module in a FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Hot-swap the fan module in a FAS9000 system without interrupting service. You must replace the fan module within two minutes of removing it to avoid disrupting system airflow.
 
 include::../_include/700_9000_fan_swap_out.adoc[]
