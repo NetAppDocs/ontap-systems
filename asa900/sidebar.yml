@@ -36,8 +36,10 @@ entries:
    - title: Boot media - manual recovery
      pdf-filename: AFF ASA 900 Boot Media manual
      entries:
+      - title: Boot media replacement workflow
+        url: /asa900/bootmedia-replace-workflow.html
       - title: Review requirements
-        url: /asa900/bootmedia_replace_overview.html
+        url: /asa900/bootmedia-replace-requirements.html
       - title: Check encryption keys
         url: /asa900/bootmedia_encryption_preshutdown_checks.html
       - title: Shut down impaired controller
