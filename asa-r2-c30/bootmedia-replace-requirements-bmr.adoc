@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa c30, replace the boot media
 summary: Before replacing the boot media in your ASA C30 storage system, ensure you meet the necessary requirements and considerations for a successful replacement. This includes verifying that you have the correct replacement boot media, confirming that the e0M wrench port on the impaired controller is working properly, and determining whether Onboard Key Manager or External Key Manager is enabled.
 ---
-= Review requirements for automated boot media recovery in your ASA C30 system
+= Review requirements for automated boot media recovery in an ASA C30 system
 :icons: font
 :imagesdir: ../media/
 
