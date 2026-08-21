@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas9500, pre-shutdown checks for onboard encryption keys
 summary: 'Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running.'
 ---
-= Check encryption support on your boot media in your FAS9500 system
+= Check encryption support on the boot media in a FAS9500 system
 :icons: font
 :imagesdir: ../media/
 

@@ -2,14 +2,14 @@
 permalink: fas8200/chassis-replace-overview.html
 sidebar: sidebar
 keywords: fas8200, replace the chassis
-summary: "You replace an impaired chassis the new chassis of the same model as the impaired chassis."
+summary: "Before replacing the chassis in a FAS8200 system, verify that all other components are functioning properly and that the replacement chassis is a new component from NetApp of the same model. The procedure requires moving the power supplies, fans, and controller modules to the new chassis and is disruptive, causing a complete service outage in a two-controller cluster or a partial outage in a multi-node cluster."
 ---
-= Review requirements before replacing your FAS8200 chassis
+= Review requirements before replacing the chassis in a FAS8200 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace the chassis, you must move the power supplies, fans, and controller modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis.
+Before replacing the chassis in a FAS8200 system, verify that all other components are functioning properly and that the replacement chassis is a new component from NetApp of the same model. The procedure requires moving the power supplies, fans, and controller modules to the new chassis and is disruptive, causing a complete service outage in a two-controller cluster or a partial outage in a multi-node cluster.
 
 All other components in the system must be functioning properly. If they aren't, contact technical support.
 
