@@ -30,13 +30,13 @@ Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a
 - RMA return: `Return the failed [Product] [component] to NetApp [after the manual/automated boot recovery process]`
 
 **Workflow pages:**
-- `[Product] [procedure] workflow [using the manual/automated boot recovery process]` — for example, "AFF A1K controller replacement workflow"
+- `[Product] [procedure] workflow` — for example, "AFF A1K controller replacement workflow", "AFF A1K chassis replacement workflow"
 - Boot media workflow: `[Procedure] workflow for [a/an] [Product] system using the [manual/automated] boot recovery process` — for example, "Boot media replacement workflow for an AFF C30 or AFF C60 system using the automated boot recovery process"
 
 **Installation pages:**
 - Overview: `[Product] installation and configuration workflow`
 - Prepare: `Prepare to install [a/an] [Product] storage system`
-- Requirements: `Review requirements for installing [a/an] [Product] storage system`
+- Requirements: `Review the requirements for installing [a/an] [Product] storage system`
 - Install hardware: `Install the [Product] hardware in [location]` — for example, "Install the AFF A1K hardware in a cabinet or rack"
 - Cable: `Cable the [Product] hardware for [purpose]` — for example, "Cable the AFF A1K hardware for network and storage connectivity"
 - Power on: `Power on [a/an] [Product] storage system`
