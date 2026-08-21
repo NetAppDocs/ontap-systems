@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, power supply replacement
 summary: "Hot-swap a power supply in your FAS2600 system by turning off, disconnecting, and removing the failed unit, then installing and reconnecting the replacement."
 ---
-= Hot-swap a power supply in your FAS2600 system
+= Hot-swap a power supply unit in a FAS2600 system
 :icons: font
 :imagesdir: ../media/
 
@@ -23,6 +23,7 @@ NOTE: Cooling is integrated with the power supply, so you must replace the power
 
 link:https://youtu.be/1xWZfXpXMNE[AFF FAS2600 power supply replacement video^]
 
+.Steps
 . Identify the power supply you want to replace, based on console error messages or through the LEDs on the power supplies.
 . If you are not already grounded, properly ground yourself.
 . Turn off the power supply and disconnect the power cables:

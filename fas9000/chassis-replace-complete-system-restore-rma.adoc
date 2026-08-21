@@ -2,12 +2,13 @@
 permalink: fas9000/chassis-replace-complete-system-restore-rma.html
 sidebar: sidebar
 keywords: aff a700, fas9000, ha-config, switchback, chassis
-summary: "You must verify the HA state of the chassis and return the failed part to NetApp, as described in the RMA instructions shipped with the kit."
+summary: "Complete the chassis replacement in a FAS9000 system by verifying the HA state of the chassis and returning the failed part to NetApp, as described in the RMA instructions shipped with the kit."
 ---
-= Complete the chassis replacement for your FAS9000 system
+= Complete the chassis replacement for a FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Complete the chassis replacement in a FAS9000 system by verifying the HA state of the chassis and returning the failed part to NetApp, as described in the RMA instructions shipped with the kit.
 
 include::../_include/700_9000_chassis_replace_complete_system_restore_rma.adoc[]

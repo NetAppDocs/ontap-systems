@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2820, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap
 summary: "Before replacing the chassis in your FAS2820 system, you must gracefully shut down the controllers to prevent data loss and ensure system stability."
 ---
-= Shut down your FAS2820 controller to replace the chassis
+= Shut down the FAS2820 controllers to replace the chassis
 :icons: font
 :imagesdir: ../media/
 

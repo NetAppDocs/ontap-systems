@@ -2,13 +2,13 @@
 permalink: fas-70-90/dimm-replace.html
 sidebar: sidebar
 keywords: fas70, fas90, replace a dimm
-summary: Replace a DIMM in your FAS70 or FAS90 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+summary: Replace the DIMM in your FAS70 or FAS90 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
-= Replace a DIMM in your FAS70 or FAS90 system to fix memory errors
+= Replace a DIMM in a FAS70 or FAS90 system to fix memory errors
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a DIMM in your FAS70 or FAS90 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+Replace the DIMM in your FAS70 or FAS90 system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 
 include::../_include/fas70-90_dimm_replace.adoc[]
