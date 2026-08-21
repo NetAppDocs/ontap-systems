@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace a dimm
 summary: Replace a DIMM in your ASA A20, ASA A30, or ASA A50 storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
-= Replace a DIMM in an ASA A20, ASA A30, or ASA A50 system to fix memory errors
+= Replace a DIMM in an ASA A20, ASA A30, or ASA A50 system
 :icons: font
 :imagesdir: ../media/
 
