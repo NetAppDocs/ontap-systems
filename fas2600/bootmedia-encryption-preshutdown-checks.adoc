@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, pre-shutdown checks for onboard encryption keys, manual, manual boot recovery
 summary: "Verify encryption key support and status before shutting down the impaired controller on a FAS2600 system. This procedure includes checking ONTAP version compatibility The FAS2600 system supports only manual boot media recovery procedures. Automated boot media recovery is not supported."
 ---
-= Check encryption support on your boot media in your FAS2600 system
+= Check encryption support on the boot media in a FAS2600 system
 :icons: font
 :imagesdir: ../media/
 

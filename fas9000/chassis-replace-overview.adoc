@@ -2,12 +2,13 @@
 permalink: fas9000/chassis-replace-overview.html
 sidebar: sidebar
 keywords: aff a700, fas9000, chassis replacement
-summary: "You replace an impaired chassis the new chassis of the same model as the impaired chassis."
+summary: "Before replacing the chassis in a FAS9000 system, verify that all other components are functioning properly and that the replacement chassis is the same model as the impaired chassis."
 ---
-= Review requirements before replacing your FAS9000 chassis
+= Review requirements before replacing the chassis in a FAS9000 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Before replacing the chassis in a FAS9000 system, verify that all other components are functioning properly and that the replacement chassis is the same model as the impaired chassis. The procedure is disruptive, causing a complete service outage in a two-node cluster or a partial outage in a multi-node cluster.
 
 include::../_include/700_9000_chassis_replace_overview.adoc[]
