@@ -12,6 +12,7 @@ Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a
 
 **FRU replacement and maintenance pages:**
 - Replace/add: `[Verb] the [component] in [a/an] [Product] system [optional purpose]` — the purpose clause is optional and should generally be omitted; for example, "Replace the boot media in an AFF A1K system", "Replace a DIMM in an AFF C30 or AFF C60 system"
+- Add an I/O module (exception — uses "to" instead of "in"): `Add an I/O module to [a/an] [Product] system` — for example, "Add an I/O module to an AFF A1K system"
 - Replace/add (boot media, BMR-capable platforms): `Replace the boot media in [a/an] [Product] system during the [manual/automated] boot recovery process` — for example, "Replace the boot media in an AFF C30 or AFF C60 system during the automated boot recovery process"
 - Hot-swap: `Hot-swap a [component] in [a/an] [Product] system` — for example, "Hot-swap a fan in an AFF A1K system"
 - Requirements (before): `Review the requirements for [action] [a/an] [component/system] in [a/an] [Product] system` — for example, "Review the requirements for replacing a controller in an AFF A1K system", "Review the requirements for replacing a controller in an AFF C30 or AFF C60 system"
