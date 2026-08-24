@@ -11,11 +11,13 @@ Title style: The product name should include the [Family] [Model] — for exampl
 Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a" before product names starting with a consonant sound (FAS). Use "the" instead of an indefinite article when the noun following the product name is plural (e.g., "controllers") or uncountable (e.g., "hardware").
 
 **FRU replacement and maintenance pages:**
-- Replace/add: `[Verb] the [component] in [a/an] [Product] system [optional purpose]` — for example, "Replace the boot media in an AFF A1K system", "Replace a DIMM in an AFF A1K system to fix memory errors"
+- Replace/add: `[Verb] the [component] in [a/an] [Product] system [optional purpose]` — the purpose clause is optional and should generally be omitted; for example, "Replace the boot media in an AFF A1K system", "Replace a DIMM in an AFF C30 or AFF C60 system"
+- Add an I/O module (exception — uses "to" instead of "in"): `Add an I/O module to [a/an] [Product] system` — for example, "Add an I/O module to an AFF A1K system"
+- Replace/add (boot media, BMR-capable platforms): `Replace the boot media in [a/an] [Product] system during the [manual/automated] boot recovery process` — for example, "Replace the boot media in an AFF C30 or AFF C60 system during the automated boot recovery process"
 - Hot-swap: `Hot-swap a [component] in [a/an] [Product] system` — for example, "Hot-swap a fan in an AFF A1K system"
-- Requirements (before): `Review requirements before [action] [a/an] [Product] [component/system]` — for example, "Review requirements before replacing the controller in an AFF A1K system"
-- Requirements (for): `Review requirements for [procedure] in [a/an] [Product] system` — for example, "Review requirements for manual boot media recovery in an AFF A1K system"
-- Shutdown (controller-integral component replacement, including the controller itself — DIMM, RTC battery, NVDIMM/NVRAM battery, controller): `Shut down the impaired controller in [a/an] [Product] system before [procedure]` — for example, "Shut down the impaired controller in an AFF A1K system before replacement"
+- Requirements (before): `Review the requirements for [action] [a/an] [component/system] in [a/an] [Product] system` — for example, "Review the requirements for replacing a controller in an AFF A1K system", "Review the requirements for replacing a controller in an AFF C30 or AFF C60 system"
+- Requirements (for): `Review the requirements for [procedure] in [a/an] [Product] system` — for example, "Review the requirements for manual boot media recovery in an AFF A1K system"
+- Shutdown (controller-integral component replacement, including the controller itself — DIMM, RTC battery, NVDIMM/NVRAM battery, controller): `Shut down the impaired controller in [a/an] [Product] system [optional procedure]` — the procedure clause is optional and should generally be omitted; for example, "Shut down the impaired controller in an AFF A1K system", "Shut down the impaired controller in an AFF C30 or AFF C60 system"
 - Shutdown (removable/modular FRU replacement — e.g., NVRAM module, I/O module, other non-integral FRUs): `Shut down the controller in [a/an] [Product] system before [procedure]` — no "impaired"; the component itself is impaired, not the controller
 - Shutdown (boot media recovery): `Shut down the controller in [a/an] [Product] system during the [manual/automated] boot recovery process` — no "impaired"; boot media is a removable component, not part of the controller itself
 - Shutdown (chassis replacement, single-controller models): `Shut down [a/an] [Product] controller to replace the chassis` — for example, "Shut down an AFF A1K controller to replace the chassis"
@@ -28,12 +30,13 @@ Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a
 - RMA return: `Return the failed [Product] [component] to NetApp [after the manual/automated boot recovery process]`
 
 **Workflow pages:**
-- `[Product] [procedure] workflow [using the manual/automated boot recovery process]` — for example, "AFF A1K controller replacement workflow"
+- `[Product] [procedure] workflow` — for example, "AFF A1K controller replacement workflow", "AFF A1K chassis replacement workflow"
+- Boot media workflow: `[Procedure] workflow for [a/an] [Product] system using the [manual/automated] boot recovery process` — for example, "Boot media replacement workflow for an AFF C30 or AFF C60 system using the automated boot recovery process"
 
 **Installation pages:**
 - Overview: `[Product] installation and configuration workflow`
 - Prepare: `Prepare to install [a/an] [Product] storage system`
-- Requirements: `Review requirements for installing [a/an] [Product] storage system`
+- Requirements: `Review the requirements for installing [a/an] [Product] storage system`
 - Install hardware: `Install the [Product] hardware in [location]` — for example, "Install the AFF A1K hardware in a cabinet or rack"
 - Cable: `Cable the [Product] hardware for [purpose]` — for example, "Cable the AFF A1K hardware for network and storage connectivity"
 - Power on: `Power on [a/an] [Product] storage system`
@@ -41,9 +44,9 @@ Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a
 **Concept pages:**
 - General concept: `Learn about [topic] in [a/an] [Product] system` — for example, "Learn about adding and replacing I/O modules in an AFF A1K system"
 - Maintain overview: `Learn about maintaining [a/an] [Product] storage system`
-- Key specifications: `Key specifications for [Product]`
+- Key specifications: `Key specifications for [a/an] [Product] system` — for example, "Key specifications for an AFF C30 system"
 
-**BMR context suffix:** On platforms that support both manual and automated (ONTAP 9.17.1+) boot media recovery, append "using the manual boot recovery process" or "using the automated boot recovery process" to all boot media page titles to disambiguate them. Pages for platforms that support only manual recovery (older platforms) do not need this suffix.
+**BMR context suffix:** On platforms that support both manual and automated (ONTAP 9.17.1+) boot media recovery, append "during the manual boot recovery process" or "during the automated boot recovery process" to boot media replace/shutdown page titles, and "using the manual boot recovery process" to other boot media page titles (boot image, workflow, RMA return), to disambiguate them. Pages for platforms that support only manual recovery (older platforms) do not need this suffix.
 
 ## Repository structure
 
