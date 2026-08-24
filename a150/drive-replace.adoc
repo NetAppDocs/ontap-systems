@@ -2,15 +2,15 @@
 permalink: a150/drive-replace.html
 sidebar: sidebar
 keywords: aff a150, a150, aff, replace the drives
-summary: You must replace a drive when the platform logs a warning message to the system console indicating that a drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
+summary: You must hot-swap a drive when the platform logs a warning message to the system console indicating that a drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
 
 ---
-= Replace a drive in an AFF A150 system
+= Hot-swap a drive in an AFF A150 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a failed drive in your AFF A150 system nondisruptively while I/O is in progress to restore storage capacity and performance.
+Hot-swap a failed drive in your AFF A150 system nondisruptively while I/O is in progress to restore storage capacity and performance.
 
 include::../_include/drive_hotswap_intro.adoc[]
 

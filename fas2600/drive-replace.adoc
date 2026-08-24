@@ -9,7 +9,7 @@ summary: "Hot-swap a drive in your FAS2600 system when the platform logs a warni
 :imagesdir: ../media/
 
 [.lead]
-Hot-swap a drive in your FAS2600 system when the platform logs a warning message to the system console indicating that a drive has failed. Both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
+Hot-swap a failed drive in your FAS2600 system nondisruptively while I/O is in progress to restore storage capacity and performance.
 
 include::../_include/drive_hotswap_intro.adoc[]
 
