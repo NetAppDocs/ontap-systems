@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace dimms
 summary: "Replace the DIMM in a FAS500f system when the system reports excessive correctable or uncorrectable ECC memory errors through Health Monitor alerts. A failing DIMM can prevent the storage system from booting ONTAP, so replacing it restores stable operation. This procedure includes shutting down the impaired controller, replacing the DIMM, and returning the failed part to NetApp."
 ---
-= Replace a DIMM in a FAS500f system to fix memory errors
+= Replace a DIMM in a FAS500f system
 :icons: font
 :imagesdir: ../media/
 

@@ -5,7 +5,7 @@ keywords: fas8200, replace a dimm
 summary: "Replace the DIMM in a FAS8200 system when the system reports excessive correctable ECC memory errors through Health Monitor alerts, or uncorrectable ECC errors. A failing DIMM can prevent the storage system from booting ONTAP, so replacing it restores stable operation."
 
 ---
-= Replace a DIMM in a FAS8200 system to fix memory errors
+= Replace a DIMM in a FAS8200 system
 :icons: font
 :imagesdir: ../media/
 

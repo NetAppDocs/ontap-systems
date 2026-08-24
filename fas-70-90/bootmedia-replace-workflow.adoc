@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas70, fas90, replace the boot media
 summary: This workflow uses a USB drive to reinstall ONTAP onto the replacement boot media in your FAS70 or FAS90 system. Download the appropriate ONTAP recovery image from the NetApp Support Site, copy it to the USB drive, and use it to restore the system to operational status.
 ---
-= FAS70 and FAS90 boot media replacement workflow using the manual boot recovery process
+= Boot media replacement workflow for a FAS70 or FAS90 system using the manual boot recovery process
 :icons: font
 :imagesdir: ../media/
 
