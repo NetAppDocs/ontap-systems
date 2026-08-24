@@ -13,13 +13,13 @@ entries:
  - title: Maintain
    pdf-filename: AFF A200 Maintain
    entries:
-    - title: Overview
+    - title: Maintenance overview
       url: /a200/maintain-overview.html
     # START boot media replacement
     - title: Boot media
       pdf-filename: AFF A200 Boot Media
       entries:
-        - title: Overview
+        - title: Boot media overview
           url: /a200/bootmedia-replace-overview.html
         - title: Check encryption keys
           url: /a200/bootmedia-encryption-preshutdown-checks.html
@@ -37,7 +37,7 @@ entries:
     - title: Chassis
       pdf-filename: AFF A200 Chassis
       entries:
-      - title: Overview
+      - title: Review requirements
         url: /a200/chassis-replace-overview.html
       - title: Shut down impaired controller
         url: /a200/chassis-replace-shutdown.html
@@ -48,7 +48,7 @@ entries:
     - title: Controller module
       pdf-filename: AFF A200 Controller Module
       entries:
-      - title: Overview
+      - title: Review requirements
         url: /a200/controller-replace-overview.html
       - title: Shut down impaired controller
         url: /a200/controller-replace-shutdown.html
