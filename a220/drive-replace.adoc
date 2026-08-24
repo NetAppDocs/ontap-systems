@@ -2,14 +2,14 @@
 permalink: a220/drive-replace.html
 sidebar: sidebar
 keywords: aff, a220, replace the drives
-summary: You must replace a drive when the platform logs a warning message to the system console indicating that a drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
+summary: You must hot-swap a drive when the platform logs a warning message to the system console indicating that a drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
 ---
-= Replace a drive in an AFF A220 system
+= Hot-swap a drive in an AFF A220 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a failed drive in your AFF A220 system without disrupting I/O. The AFF A220 supports both SSDs and HDDs, each with a dedicated replacement procedure.
+Hot-swap a failed drive in your AFF A220 system without disrupting I/O. The AFF A220 supports both SSDs and HDDs, each with a dedicated replacement procedure.
 
 include::../_include/drive_hotswap_intro.adoc[]
 
