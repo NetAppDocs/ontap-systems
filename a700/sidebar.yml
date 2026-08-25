@@ -15,13 +15,13 @@ entries:
     - title: Maintain
       pdf-filename: AFF A700 Maintain
       entries:
-      - title: Overview
+      - title: Maintenance overview
         url: /a700/maintain-overview.html
         # START boot media
       - title: Boot media
         pdf-filename: AFF A700 Boot Media
         entries:
-        - title: Overview
+        - title: Boot media overview
           url: /a700/bootmedia-replace-overview.html
         - title: Check encryption keys
           url: /a700/bootmedia-encryption-preshutdown-checks.html
@@ -41,7 +41,7 @@ entries:
       - title: Chassis
         pdf-filename: AFF A700 Chassis
         entries:
-        - title: Overview
+        - title: Review requirements
           url: /a700/chassis-replace-overview.html
         - title: Shut down impaired controller
           url: /a700/chassis-replace-shutdown.html
@@ -53,7 +53,7 @@ entries:
       - title: Controller module
         pdf-filename: AFF A700 Controller
         entries:
-        - title: Overview
+        - title: Review requirements
           url: /a700/controller-replace-overview.html
         - title: Shut down impaired controller
           url: /a700/controller-replace-shutdown.html
@@ -87,9 +87,9 @@ entries:
       - title: X91148A module
         pdf-filename: AFF A700 X91148A Module
         entries:
-        - title: Overview
+        - title: X91148A module overview
           url: /a700/x91148a-module-install-overview.html
         - title: AFF A700 system with open slots
           url: /a700/x91148a-modules-with-open-slots-add.html
-        - title: AFF A700 system no open slots
+        - title: AFF A700 system with no open slots
           url: /a700/x91148a-modules-with-no-open-slots-add.html

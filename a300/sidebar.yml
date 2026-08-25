@@ -13,12 +13,12 @@ entries:
  - title: Maintain
    pdf-filename: AFF A300 Maintain
    entries:
-   - title: Overview
+   - title: Maintenance overview
      url: /a300/maintain-overview.html
    - title: Boot media
      pdf-filename: AFF A300 Boot Media
      entries:
-     - title: Overview
+     - title: Boot media overview
        url: /a300/bootmedia-replace-overview.html
      - title: Check encryption keys
        url: /a300/bootmedia-encryption-preshutdown-checks.html
@@ -38,7 +38,7 @@ entries:
    - title: Chassis
      pdf-filename: AFF A300 Chassis
      entries:
-      - title: Overview
+      - title: Review requirements
         url: /a300/chassis-replace-overview.html
       - title: Shut down impaired controller
         url: /a300/chassis-replace-shutdown.html
@@ -49,7 +49,7 @@ entries:
    - title: Controller module
      pdf-filename: AFF A300 Controller Module
      entries:
-     - title: Overview
+     - title: Review requirements
        url: /a300/controller-replace-overview.html
      - title: Shut down impaired controller
        url: /a300/controller-replace-shutdown.html

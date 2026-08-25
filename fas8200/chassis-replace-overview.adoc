@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8200, replace the chassis
 summary: "Before replacing the chassis in a FAS8200 system, verify that all other components are functioning properly and that the replacement chassis is a new component from NetApp of the same model. The procedure requires moving the power supplies, fans, and controller modules to the new chassis and is disruptive, causing a complete service outage in a two-controller cluster or a partial outage in a multi-node cluster."
 ---
-= Review requirements before replacing the chassis in a FAS8200 system
+= Review the requirements for replacing a chassis in a FAS8200 system
 :icons: font
 :imagesdir: ../media/
 
