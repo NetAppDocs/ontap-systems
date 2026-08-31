@@ -8,6 +8,8 @@ Products: Multiple NetApp ONTAP hardware platforms across the AFF, ASA, FAS, and
 
 Title style: The product name should include the [Family] [Model] — for example, AFF A150, AFF A1K, AFF C80, ASA A400, ASA r2 A1K, FAS9500, AFX 1K. See the Repository structure and Product-specific context sections for the full platform list. Don't refer to related pages for title or style guidance; use the custom repository instructions and/or custom agent instructions only.
 
+**Exception for `asa-r2-*` folders:** Files in `asa-r2-*` directories (`asa-r2-70-90/`, `asa-r2-a1k/`, `asa-r2-a20-30-50/`, `asa-r2-c30/`, `asa-r2-key-specifications/`, `asa-r2-landing-maintain/`) must NOT include "r2" in the page title itself — use just `ASA [Model]` (e.g., "Replace a fan module in an ASA C30 system", not "...in an ASA r2 C30 system"). The "r2" designation is reflected in the folder/permalink structure only, not the visible title text.
+
 Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a" before product names starting with a consonant sound (FAS). Use "the" instead of an indefinite article when the noun following the product name is plural (e.g., "controllers") or uncountable (e.g., "hardware").
 
 **FRU replacement and maintenance pages:**
