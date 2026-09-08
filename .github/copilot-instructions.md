@@ -53,11 +53,11 @@ Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a
 ## Repository structure
 
 - `_include/` – Reusable AsciiDoc content fragments shared across platform directories; files are prefixed with the platform model (e.g., `a1k_`, `a70-90_`, `800_`) or are generic (e.g., `g_`, `afx_`)
-- `a1k/`, `a20-30-50/`, `a70-90/`, `a150/`–`a900/` – AFF A-Series platform-specific content (install and maintain); a150, a250, a400, a800, a900 are end-of-availability and listed under End-of-availability systems in `project.yml`, though their content still lives in these original folders
-- `c250/`, `c400/`, `c800/`, `c80/`, `c30-60/` – AFF C-Series platform-specific content (install and maintain); c250, c400, and c800 are end-of-availability and listed under End-of-availability systems in `project.yml`
+- `a1k/`, `a20-30-50/`, `a70-90/`, `a150/`–`a900/` – AFF A-Series platform-specific content (install and maintain); a150, a200, a220, a250, a300, a320, a400, a700, a700s, a800, and a900 are end-of-availability and listed under End-of-availability systems in `project.yml`, though their content still lives in these original folders
+- `c190/`, `c250/`, `c400/`, `c800/`, `c80/`, `c30-60/` – AFF C-Series platform-specific content (install and maintain); c190, c250, c400, and c800 are end-of-availability and listed under End-of-availability systems in `project.yml`
 - `asa150/`–`asa900/`, `asa-c250/`–`asa-c800/` – Classic ASA (All SAN Array) platform content (install and maintain); all of these models are now end-of-availability and listed under End-of-availability systems in `project.yml`; the `allsan-landing/` family index page was removed since no active ASA models remain
 - `asa-r2/`, `asa-r2-a1k/`, `asa-r2-a20-30-50/`, `asa-r2-70-90/`, `asa-r2-c30/` – ASA r2 generation content (install and maintain); some procedures differ from earlier ASA and AFF; this is now the only active ASA line
-- `fas2600/`–`fas9500/`, `fas50/`, `fas70-90/` – FAS hybrid storage platform content (install and maintain); fas2700, fas8300, and fas9500 are end-of-availability and listed under End-of-availability systems in `project.yml`
+- `fas2600/`–`fas9500/`, `fas50/`, `fas-70-90/` – FAS hybrid storage platform content (install and maintain); FAS2600, FAS2700, FAS500f, FAS8200, FAS8300, FAS8700, FAS9000, and FAS9500 are end-of-availability and listed under End-of-availability systems in `project.yml`
 - `afx/`, `afx-1k/` – AFX all-flash platform content (install and maintain)
 - `aff-landing/`, `aff-aseries/`, `aff-cseries/` – AFF product family index and landing pages
 - `allsan-a-series/`, `allsan-c-series/` – Orphaned ASA product family landing pages; not referenced in `project.yml` navigation
