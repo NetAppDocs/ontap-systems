@@ -4,7 +4,7 @@ indexpage:
   summary: The storage system documentation lets you install, setup, and maintain your ONTAP hardware systems.
   keywords: storage, system, end of availability, supported switches, maintain, a150, a200, a220, a250, a300, a320, a400, a700, a700s, a800, a900, asa150, asa250, asa400, asa800, asa900, c190, c250, c400, fas2700, fas8300, fas9500
   tiles:
-    - title: Install and setup
+    - title: AFF A-Series systems - Install and setup
       links:
         - title: AFF A150
           url: ../a150/install-setup.html
@@ -28,6 +28,8 @@ indexpage:
           url: ../a800/install-setup.html
         - title: AFF A900
           url: ../a900/install-setup.html
+    - title: AFF C-Series systems - Install and setup
+      links:
         - title: AFF C190
           url: ../c190/install-setup.html
         - title: AFF C250
@@ -35,7 +37,9 @@ indexpage:
         - title: AFF C400
           url: ../c400/install-setup.html
         - title: AFF C800
-          url: ../c800/install-setup.html  
+          url: ../c800/install-setup.html
+    - title: ASA systems - Install and setup
+      links:
         - title: ASA A150
           url: ../asa150/install-setup.html
         - title: ASA A250
@@ -52,21 +56,23 @@ indexpage:
           url: ../asa-c400/install-setup.html
         - title: ASA C800
           url: ../asa-c800/install-setup.html
-        - title: FAS2700
-          url: ../fas2700/install-setup.html
+    - title: FAS systems - Install and setup
+      links:
+        - title: FAS500f
+          url: ../fas500f/install-setup.html
         - title: FAS2600
           url: ../fas2600/install-setup.html
+        - title: FAS2700
+          url: ../fas2700/install-setup.html
         - title: FAS8200
           url: ../fas8200/install-setup.html
         - title: FAS8300 and FAS8700
           url: ../fas8300/install-setup.html
-        - title: FAS500f
-          url: ../fas500f/install-setup.html
         - title: FAS9000
           url: ../fas9000/install-setup.html
         - title: FAS9500
           url: ../fas9500/install-setup.html
-    - title: Maintain your system
+    - title: AFF A-Series systems - Maintain your system
       links:
         - title: AFF A150
           url: ../a150/maintain-overview.html
@@ -90,6 +96,8 @@ indexpage:
           url: ../a800/maintain-overview.html
         - title: AFF A900
           url: ../a900/maintain-overview.html
+    - title: AFF C-Series systems - Maintain your system
+      links:
         - title: AFF C190
           url: ../c190/maintain-overview.html
         - title: AFF C250
@@ -98,6 +106,8 @@ indexpage:
           url: ../c400/maintain-overview.html
         - title: AFF C800
           url: ../c800/maintain-overview.html
+    - title: ASA systems - Maintain your system
+      links:
         - title: ASA A150
           url: ../asa150/maintain-overview.html
         - title: ASA A250
@@ -114,12 +124,14 @@ indexpage:
           url: ../asa-c400/maintain-overview.html
         - title: ASA C800
           url: ../asa-c800/maintain-overview.html
-        - title: FAS2700
-          url: ../fas2700/maintain-overview.html
-        - title: FAS2600
-          url: ../fas2600/maintain-overview.html
+    - title: FAS systems - Maintain your system
+      links:
         - title: FAS500f
           url: ../fas500f/maintain-overview.html
+        - title: FAS2600
+          url: ../fas2600/maintain-overview.html
+        - title: FAS2700
+          url: ../fas2700/maintain-overview.html
         - title: FAS8200
           url: ../fas8200/maintain-overview.html
         - title: FAS8300 and FAS8700
