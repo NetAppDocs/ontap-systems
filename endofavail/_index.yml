@@ -4,7 +4,7 @@ indexpage:
   summary: The storage system documentation lets you install, setup, and maintain your ONTAP hardware systems.
   keywords: storage, system, end of availability, supported switches, maintain, a150, a200, a220, a250, a300, a320, a400, a700, a700s, a800, a900, asa150, asa250, asa400, asa800, asa900, c190, c250, c400, fas2700, fas8300, fas9500
   tiles:
-    - title: AFF A-Series systems - Install and setup
+    - title: AFF systems - Install and setup
       links:
         - title: AFF A150
           url: ../a150/install-setup.html
@@ -28,8 +28,6 @@ indexpage:
           url: ../a800/install-setup.html
         - title: AFF A900
           url: ../a900/install-setup.html
-    - title: AFF C-Series systems - Install and setup
-      links:
         - title: AFF C190
           url: ../c190/install-setup.html
         - title: AFF C250
@@ -49,7 +47,7 @@ indexpage:
         - title: ASA A800
           url: ../asa800/install-setup.html
         - title: ASA A900
-          url: ../asa900/install-setup.html
+          url: ../asa900/install_setup.html
         - title: ASA C250
           url: ../asa-c250/install-setup.html
         - title: ASA C400
@@ -72,7 +70,7 @@ indexpage:
           url: ../fas9000/install-setup.html
         - title: FAS9500
           url: ../fas9500/install-setup.html
-    - title: AFF A-Series systems - Maintain your system
+    - title: AFF systems - Maintain your system
       links:
         - title: AFF A150
           url: ../a150/maintain-overview.html
@@ -96,8 +94,6 @@ indexpage:
           url: ../a800/maintain-overview.html
         - title: AFF A900
           url: ../a900/maintain-overview.html
-    - title: AFF C-Series systems - Maintain your system
-      links:
         - title: AFF C190
           url: ../c190/maintain-overview.html
         - title: AFF C250
@@ -140,7 +136,7 @@ indexpage:
           url: ../fas9000/maintain-overview.html
         - title: FAS9500
           url: ../fas9500/maintain-overview.html
-    - title: Supported switches
+    - title: More resources
       links:
         - title: Broadcom-supported BES-53248
           url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/configure-new-switch-overview.html
@@ -150,8 +146,6 @@ indexpage:
           url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336c-fx2-shared/configure-switch-overview-9336c-shared.html
         - title: NVIDIA SN2100
           url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/configure-overview-sn2100-cluster.html
-    - title: More doc resources
-      links:
         - title: System hardware upgrade
           url: https://docs.netapp.com/us-en/ontap-systems-upgrade/
         - title: ONTAP software upgrade
