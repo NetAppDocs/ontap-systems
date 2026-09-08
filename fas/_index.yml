@@ -2,7 +2,7 @@ indexpage:
   title: ONTAP FAS systems
   lead: ONTAP FAS storage systems help you build a storage infrastructure that is simple, smart, and trusted.
   summary: The storage system documentation lets you install, setup, and maintain your system.
-  keywords: fas2700, fas9500, fas2800, fas8300, fas8700, storage, systems, datasheet
+  keywords: fas50, fas70, fas90, fas2800, storage, systems, datasheet
   tiles:
     - title: Get started
       links:
@@ -16,28 +16,16 @@ indexpage:
           url: ../fas50/install-overview.html
         - title: FAS70 and FAS90
           url: ../fas-70-90/install-overview.html
-        - title: FAS2700
-          url: ../fas2700/install-setup.html
         - title: FAS2820
           url: ../fas2800/install-setup.html
-        - title: FAS8300 and FAS8700
-          url: ../fas8300/install-setup.html
-        - title: FAS9500
-          url: ../fas9500/install-setup.html
     - title: Maintain your system
       links:
         - title: FAS50
           url: ../fas50/maintain-overview.html
         - title: FAS70 and FAS90
           url: ../fas-70-90/maintain-overview.html
-        - title: FAS2700
-          url: ../fas2700/maintain-overview.html
         - title: FAS2820
           url: ../fas2800/maintain-overview.html
-        - title: FAS8300 and FAS8700
-          url: ../fas8300/maintain-overview.html
-        - title: FAS9500
-          url: ../fas9500/maintain-overview.html
     - title: Supported switches
       links:
         - title: Broadcom-supported BES-53248

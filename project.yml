@@ -26,31 +26,16 @@ sidebar:
       - section: a1k
       - section: a70-90
       - section: a20-30-50
-      - section: a150
-      - section: a250
-      - section: a400
-      - section: a800
-      - section: a900
     - title: AFF C-Series systems
       url: /aff-cseries/index.html
       entries:
       - section: c30-60
       - section: c80
-      - section: c250
-      - section: c400
     - title: AFX systems
       url: /afx/index.html
       entries:
       - section: afx-1k
       - section: afx-2k
-    - title: ASA systems
-      url: /allsan-landing/index.html
-      entries:  
-      - section: asa150
-      - section: asa250
-      - section: asa400
-      - section: asa800
-      - section: asa900
     - title: ASA r2 systems
       url: /asa-r2/index.html
       entries:  
@@ -69,28 +54,40 @@ sidebar:
       entries:
         - section: fas50
         - section: fas-70-90
-        - section: fas2700
         - section: fas2800
-        - section: fas8300
-        - section: fas9500
     - title: End-of-availability systems
       url: /endofavail/index.html
       entries:
+        - section: a150
         - section: a200
         - section: a220
+        - section: a250
         - section: a300
         - section: a320
+        - section: a400
         - section: a700
-        - section: a700s    
+        - section: a700s
+        - section: a800
+        - section: a900
+        - section: asa150
+        - section: asa250
+        - section: asa400
+        - section: asa800
+        - section: asa900
         - section: asa-c250
         - section: asa-c400
         - section: asa-c800
         - section: c190
+        - section: c250
+        - section: c400
         - section: c800
         - section: fas2600
+        - section: fas2700
         - section: fas500f
         - section: fas8200
+        - section: fas8300
         - section: fas9000
+        - section: fas9500
         - title: Other models
           url: /other/other-models.html
     - title: Drive shelves

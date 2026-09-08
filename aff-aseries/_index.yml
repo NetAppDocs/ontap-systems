@@ -2,7 +2,7 @@ indexpage:
   title: ONTAP AFF A-Series systems
   lead: ONTAP AFF A-Series systems are designed to help organizations transform their infrastructure more quickly and fuel data-driven strategies.
   summary: The storage system documentation lets you install, setup, and maintain your AFF A-Series system.
-  keywords: aff a-series, a150, a250, a800, a900, a400, datasheet, install, setup
+  keywords: aff a-series, a1k, a70-90, a20-30-50, datasheet, install, setup
   tiles:
     - title: Get started
       links:
@@ -18,16 +18,6 @@ indexpage:
           url: ../a70-90/install-overview.html
         - title: AFF A20, A30, and A50
           url: ../a20-30-50/install-overview.html
-        - title: AFF A150
-          url: ../a150/install-setup.html
-        - title: AFF A250
-          url: ../a250/install-setup.html
-        - title: AFF A400
-          url: ../a400/install-setup.html
-        - title: AFF A800
-          url: ../a800/install-setup.html
-        - title: AFF A900
-          url: ../a900/install-setup.html
     - title: Maintain your system
       links:
         - title: AFF A1K
@@ -36,16 +26,6 @@ indexpage:
           url: ../a70-90/maintain-overview.html
         - title: AFF A20, A30 and A50
           url: ../a20-30-50/maintain-overview.html
-        - title: AFF A150
-          url: ../a150/maintain-overview.html
-        - title: AFF A250
-          url: ../a250/maintain-overview.html
-        - title: AFF A400
-          url: ../a400/maintain-overview.html
-        - title: AFF A800
-          url: ../a800/maintain-overview.html
-        - title: AFF A900
-          url: ../a900/maintain-overview.html
     - title: Supported switches
       links:
         - title: Broadcom-supported BES-53248
