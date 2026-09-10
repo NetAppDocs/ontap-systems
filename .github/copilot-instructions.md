@@ -69,6 +69,10 @@ Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a
 - `endofavail/` – Hardware end-of-availability and end-of-support content
 - `store-redirects/` – Stub files that redirect legacy URLs
 
+## End-of-availability (EOA) policy
+
+Six months after a platform model reaches EOA, move its entry from the platform's active section into the End-of-availability systems section in `project.yml`, and update `endofavail/_index.yml` to add the corresponding install-setup and maintain-overview links under the appropriate AFF/ASA/FAS tile. The platform's content stays in its original folder; only the navigation entries move.
+
 ## Product-specific context
 
 - **AFF (All Flash FAS):** NetApp's all-flash NAS/unified storage arrays; A-Series and C-Series variants; always referred to as "AFF A-Series" or "AFF C-Series", not just "AFF".
