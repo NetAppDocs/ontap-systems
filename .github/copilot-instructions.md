@@ -73,6 +73,10 @@ Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a
 
 Six months after a platform model reaches EOA, move its entry from the platform's active section into the End-of-availability systems section in `project.yml`, and update `endofavail/_index.yml` to add the corresponding install-setup and maintain-overview links under the appropriate AFF/ASA/FAS tile. The platform's content stays in its original folder; only the navigation entries move.
 
+## End-of-support (EOS) policy
+
+One year after a shelf, drive, or platform model reaches EOS, remove its entries from `endofavail/_index.yml` and `project.yml`, then work with Chanda to archive the content on the [Archived Documentation A-Z page](https://mysupport.netapp.com/documentation/productsatoz/index.html?archive=true).
+
 ## Product-specific context
 
 - **AFF (All Flash FAS):** NetApp's all-flash NAS/unified storage arrays; A-Series and C-Series variants; always referred to as "AFF A-Series" or "AFF C-Series", not just "AFF".
