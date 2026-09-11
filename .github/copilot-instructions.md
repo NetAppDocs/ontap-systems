@@ -8,6 +8,8 @@ Products: Multiple NetApp ONTAP hardware platforms across the AFF, ASA, FAS, and
 
 Title style: The product name should include the [Family] [Model] — for example, AFF A150, AFF A1K, AFF C80, ASA A400, ASA r2 A1K, FAS9500, AFX 1K. See the Repository structure and Product-specific context sections for the full platform list. Don't refer to related pages for title or style guidance; use the custom repository instructions and/or custom agent instructions only.
 
+**Exception for `asa-r2-*` folders:** Files in `asa-r2-*` directories (`asa-r2-70-90/`, `asa-r2-a1k/`, `asa-r2-a20-30-50/`, `asa-r2-c30/`, `asa-r2-key-specifications/`, `asa-r2-landing-maintain/`) must NOT include "r2" in the page title itself — use just `ASA [Model]` (e.g., "Replace a fan module in an ASA C30 system", not "...in an ASA r2 C30 system"). The "r2" designation is reflected in the folder/permalink structure only, not the visible title text.
+
 Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a" before product names starting with a consonant sound (FAS). Use "the" instead of an indefinite article when the noun following the product name is plural (e.g., "controllers") or uncountable (e.g., "hardware").
 
 **FRU replacement and maintenance pages:**
@@ -51,14 +53,14 @@ Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a
 ## Repository structure
 
 - `_include/` – Reusable AsciiDoc content fragments shared across platform directories; files are prefixed with the platform model (e.g., `a1k_`, `a70-90_`, `800_`) or are generic (e.g., `g_`, `afx_`)
-- `a1k/`, `a20-30-50/`, `a70-90/`, `a200/`–`a900/` – AFF A-Series platform-specific content (install and maintain)
-- `c250/`, `c400/`, `c800/`, `c80/`, `c30-60/` – AFF C-Series platform-specific content (install and maintain)
-- `asa150/`–`asa900/`, `asa-c250/`–`asa-c800/` – ASA (All SAN Array) platform content (install and maintain)
-- `asa-r2/`, `asa-r2-a1k/`, `asa-r2-a20-30-50/`, `asa-r2-70-90/`, `asa-r2-c30/` – ASA r2 generation content (install and maintain); some procedures differ from earlier ASA and AFF
-- `fas2600/`–`fas9500/`, `fas50/`, `fas70-90/` – FAS hybrid storage platform content (install and maintain)
+- `a1k/`, `a20-30-50/`, `a70-90/`, `a150/`–`a900/` – AFF A-Series platform-specific content (install and maintain); a150, a200, a220, a250, a300, a320, a400, a700, a700s, a800, and a900 are end-of-availability and listed under End-of-availability systems in `project.yml`, though their content still lives in these original folders
+- `c190/`, `c250/`, `c400/`, `c800/`, `c80/`, `c30-60/` – AFF C-Series platform-specific content (install and maintain); c190, c250, c400, and c800 are end-of-availability and listed under End-of-availability systems in `project.yml`
+- `asa150/`–`asa900/`, `asa-c250/`–`asa-c800/` – Classic ASA (All SAN Array) platform content (install and maintain); all of these models are now end-of-availability and listed under End-of-availability systems in `project.yml`; the `allsan-landing/` family index page was removed since no active ASA models remain
+- `asa-r2/`, `asa-r2-a1k/`, `asa-r2-a20-30-50/`, `asa-r2-70-90/`, `asa-r2-c30/` – ASA r2 generation content (install and maintain); some procedures differ from earlier ASA and AFF; this is now the only active ASA line
+- `fas2600/`–`fas9500/`, `fas50/`, `fas-70-90/` – FAS hybrid storage platform content (install and maintain); FAS2600, FAS2700, FAS500f, FAS8200, FAS8300, FAS8700, FAS9000, and FAS9500 are end-of-availability and listed under End-of-availability systems in `project.yml`
 - `afx/`, `afx-1k/` – AFX all-flash platform content (install and maintain)
 - `aff-landing/`, `aff-aseries/`, `aff-cseries/` – AFF product family index and landing pages
-- `allsan-landing/`, `allsan-a-series/`, `allsan-c-series/` – ASA product family landing pages
+- `allsan-a-series/`, `allsan-c-series/` – Orphaned ASA product family landing pages; not referenced in `project.yml` navigation
 - `asa-r2-landing-maintain/`, `afx-landing-maintain/` – r2 and AFX maintenance landing pages
 - `drive-shelves/` – NS224, NX224, and SAS shelf documentation
 - `ns224/`, `nx224/`, `sas3/` – Shelf-specific installation and maintenance content
@@ -67,10 +69,18 @@ Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a
 - `endofavail/` – Hardware end-of-availability and end-of-support content
 - `store-redirects/` – Stub files that redirect legacy URLs
 
+## End-of-availability (EOA) policy
+
+Six months after a platform model reaches EOA, move its entry from the platform's active section into the End-of-availability systems section in `project.yml`, and update `endofavail/_index.yml` to add the corresponding install-setup and maintain-overview links under the appropriate AFF/ASA/FAS tile. The platform's content stays in its original folder; only the navigation entries move.
+
+## End-of-support (EOS) policy
+
+One year after a shelf, drive, or platform model reaches EOS, remove its entries from `endofavail/_index.yml` and `project.yml`, then work with Chanda to archive the content on the [Archived Documentation A-Z page](https://mysupport.netapp.com/documentation/productsatoz/index.html?archive=true).
+
 ## Product-specific context
 
 - **AFF (All Flash FAS):** NetApp's all-flash NAS/unified storage arrays; A-Series and C-Series variants; always referred to as "AFF A-Series" or "AFF C-Series", not just "AFF".
-- **ASA (All SAN Array):** SAN-optimized all-flash storage; "ASA r2" is the current generation with distinct procedures from earlier ASA models.
+- **ASA (All SAN Array):** SAN-optimized all-flash storage; "ASA r2" is the current generation with distinct procedures from earlier ASA models. All classic ASA models (A150–A900, C250–C800) are now end-of-availability; ASA r2 is the only active ASA line.
 - **FAS:** Hybrid flash/disk storage arrays; procedures are often similar to AFF but must be kept separate.
 - **AFX / AFX 1K:** Newer all-flash platforms; use `afx_` prefixed include fragments.
 - **FRU (field-replaceable unit):** Any hardware component that a customer can replace on-site (boot media, controller, DIMM, fan, NVDIMM, NVRAM, power supply, RTC battery, I/O module, system management module).
