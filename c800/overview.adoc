@@ -138,6 +138,9 @@ EN62368-1,
 IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
+* This product is ENERGY STAR Certified. For more information, visit link:++https://www.energystar.gov/productfinder/product/certified-data-center-storage/results?sort_direction=ASC&sort_by=brand_name&page_number=0&lastpage=0&search_text=&snia_online_taxonomy_category_filter=&brand_name_filter=NetApp&brand_name_filter=NetApp+Inc&brand_name_filter=NetApp%2C+Inc&markets_filter=United+States++[_ENERGY STAR certified data center storage products_^].
++
+image::../media/energy-star-certified-logo.png[ENERGY STAR certified logo,width=100]
 
 === High Availability
 Ethernet based baseboard management controller (BMC) and ONTAP management interface;
@@ -148,3 +151,4 @@ Redundant hot-swappable power supplies;
 // 2025-12-12 ontap-systems-internal/issues/1421
 
 //2026-07-24 ontap-systems-internal/issues/1645
+//2026-10-06 ontap-systems-internal/issues/1881
