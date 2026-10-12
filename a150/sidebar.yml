@@ -15,12 +15,12 @@ entries:
     - title: Maintain
       pdf-filename: AFF A150 Maintain
       entries:
-      - title: Overview
+      - title: Maintenance overview
         url: /a150/maintain-overview.html
       - title: Boot media
         pdf-filename: AFF A150 Boot Media
         entries:
-          - title: Overview
+          - title: Review requirements
             url: /a150/bootmedia-replace-overview.html
           - title: Check encryption keys
             url: /a150/bootmedia-encryption-preshutdown-checks.html
@@ -37,7 +37,7 @@ entries:
       - title: Chassis
         pdf-filename: AFF A150 Chassis
         entries:
-          - title: Overview
+          - title: Review requirements
             url: /a150/chassis-replace-overview.html
           - title: Shut down impaired controller
             url: /a150/chassis-replace-shutdown.html
@@ -48,7 +48,7 @@ entries:
       - title: Controller
         pdf-filename: AFF A150 Controller
         entries:
-          - title: Overview
+          - title: Review requirements
             url: /a150/controller-replace-overview.html
           - title: Shut down impaired controller
             url: /a150/controller-replace-shutdown.html

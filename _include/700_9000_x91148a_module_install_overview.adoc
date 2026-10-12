@@ -2,9 +2,9 @@ You can add an I/O module to your system by either replacing a NIC or storage ad
 
 .Before you begin
 
-* Check the https://hwu.netapp.com/[NetApp Hardware Universe] to make sure that the new I/O module is compatible with your system and version of ONTAP you're running.
+* Check the https://hwu.netapp.com[NetApp Hardware Universe] to make sure that the new I/O module is compatible with your system and version of ONTAP you're running.
 
-* If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe]  and use the best one available for your I/O module.
+* If multiple slots are available, check the slot priorities in https://hwu.netapp.com[NetApp Hardware Universe]  and use the best one available for your I/O module.
 
 * To non-disruptively add an I/O module, you must takeover the target controller, remove the slot blanking cover in the target slot or remove an existing I/O module, add the new or replacement I/O module, and then giveback the target controller.
 

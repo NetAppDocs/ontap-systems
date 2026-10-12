@@ -6,54 +6,61 @@ This repository contains installation and maintenance documentation for NetApp O
 
 Products: Multiple NetApp ONTAP hardware platforms across the AFF, ASA, FAS, and AFX storage families. Note that ONTAP systems is the category, not the product name; use the exact storage family and model to specify the product.
 
-Title naming pattern: [Family] [Model] — for example, AFF A150, AFF A1K, AFF C80, ASA A400, ASA r2 A1K, FAS9500, AFX 1K. See the Repository structure and Product-specific context sections for the full platform list.
+Title style: The product name should include the [Family] [Model] — for example, AFF A150, AFF A1K, AFF C80, ASA A400, ASA r2 A1K, FAS9500, AFX 1K. See the Repository structure and Product-specific context sections for the full platform list. Don't refer to related pages for title or style guidance; use the custom repository instructions and/or custom agent instructions only.
 
-Title style: Page titles embed the product name in a descriptive sentence rather than appending it after a dash. Use the `a1k/` folder as the model. Only the first word and proper nouns (including product names and acronyms) are capitalized.
+**Exception for `asa-r2-*` folders:** Files in `asa-r2-*` directories (`asa-r2-70-90/`, `asa-r2-a1k/`, `asa-r2-a20-30-50/`, `asa-r2-c30/`, `asa-r2-key-specifications/`, `asa-r2-landing-maintain/`) must NOT include "r2" in the page title itself — use just `ASA [Model]` (e.g., "Replace a fan module in an ASA C30 system", not "...in an ASA r2 C30 system"). The "r2" designation is reflected in the folder/permalink structure only, not the visible title text.
+
+Use "an" before product names starting with a vowel sound (AFF, ASA, AFX) and "a" before product names starting with a consonant sound (FAS). Use "the" instead of an indefinite article when the noun following the product name is plural (e.g., "controllers") or uncountable (e.g., "hardware").
 
 **FRU replacement and maintenance pages:**
-- Replace/add: `[Verb] the [component] in your [Product] system [optional purpose]` — for example, "Replace the boot media in your AFF A1K system", "Replace a DIMM in your AFF A1K system to fix memory errors"
-- Hot-swap: `Hot-swap a [component] in your [Product] system` — for example, "Hot-swap a fan in your AFF A1K system"
-- Requirements (before): `Review requirements before [action] your [Product] [component]` — for example, "Review requirements before replacing the controller in your AFF A1K system"
-- Requirements (for): `Review requirements for [procedure] in your [Product] system` — for example, "Review requirements for manual boot media recovery in your AFF A1K system"
-- Shutdown (controller/FRU replacement): `Shut down the impaired controller in your [Product] system before [procedure]` — for example, "Shut down the impaired controller in your AFF A1K system before replacement"
-- Shutdown (boot media recovery): `Shut down the impaired controller in your [Product] system during the [manual/automated] boot recovery process`
-- Shutdown (chassis replacement): `Shut down your [Product] controller to replace the chassis`
-- Pre-shutdown check: `Check [topic] on the [component] in your [Product] system` — for example, "Check encryption support on your boot media in your AFF A1K system"
-- Boot image: `Boot the recovery image on your [Product] system [using the manual/automated boot recovery process]`
-- Restore encryption: `Restore encryption on the [component] in your [Product] system [context]`
-- Restore and verify: `Restore and verify the [component] configuration in your [Product] system`
-- Completion: `Complete the [procedure] for your [Product] system` — for example, "Complete the controller replacement for your AFF A1K system"
+- Replace/add: `[Verb] the [component] in [a/an] [Product] system [optional purpose]` — the purpose clause is optional and should generally be omitted; for example, "Replace the boot media in an AFF A1K system", "Replace a DIMM in an AFF C30 or AFF C60 system"
+- Add an I/O module (exception — uses "to" instead of "in"): `Add an I/O module to [a/an] [Product] system` — for example, "Add an I/O module to an AFF A1K system"
+- Replace/add (boot media, BMR-capable platforms): `Replace the boot media in [a/an] [Product] system during the [manual/automated] boot recovery process` — for example, "Replace the boot media in an AFF C30 or AFF C60 system during the automated boot recovery process"
+- Hot-swap: `Hot-swap a [component] in [a/an] [Product] system` — for example, "Hot-swap a fan in an AFF A1K system"
+- Requirements (before): `Review the requirements for [action] [a/an] [component/system] in [a/an] [Product] system` — for example, "Review the requirements for replacing a controller in an AFF A1K system", "Review the requirements for replacing a controller in an AFF C30 or AFF C60 system"
+- Requirements (for): `Review the requirements for [procedure] in [a/an] [Product] system` — for example, "Review the requirements for manual boot media recovery in an AFF A1K system"
+- Shutdown (controller-integral component replacement, including the controller itself — DIMM, RTC battery, NVDIMM/NVRAM battery, controller): `Shut down the impaired controller in [a/an] [Product] system [optional procedure]` — the procedure clause is optional and should generally be omitted; for example, "Shut down the impaired controller in an AFF A1K system", "Shut down the impaired controller in an AFF C30 or AFF C60 system"
+- Shutdown (removable/modular FRU replacement — e.g., NVRAM module, I/O module, other non-integral FRUs): `Shut down the controller in [a/an] [Product] system before [procedure]` — no "impaired"; the component itself is impaired, not the controller
+- Shutdown (boot media recovery): `Shut down the controller in [a/an] [Product] system during the [manual/automated] boot recovery process` — no "impaired"; boot media is a removable component, not part of the controller itself
+- Shutdown (chassis replacement, single-controller models): `Shut down [a/an] [Product] controller to replace the chassis` — for example, "Shut down an AFF A1K controller to replace the chassis"
+- Shutdown (chassis replacement, HA-pair models): `Shut down the [Product] controllers to replace the chassis` — plural "controllers" takes "the"; for example, "Shut down the AFF A700 controllers to replace the chassis"
+- Pre-shutdown check: `Check [topic] on the [component] in [a/an] [Product] system` — for example, "Check encryption support on the boot media in an AFF A1K system"
+- Boot image: `Boot the recovery image on [a/an] [Product] system [using the manual/automated boot recovery process]`
+- Restore encryption: `Restore encryption on the [component] in [a/an] [Product] system [context]`
+- Restore and verify: `Restore and verify the [component] configuration in [a/an] [Product] system`
+- Completion: `Complete the [procedure] for [a/an] [Product] system` — for example, "Complete the controller replacement for an AFF A1K system"
 - RMA return: `Return the failed [Product] [component] to NetApp [after the manual/automated boot recovery process]`
 
 **Workflow pages:**
-- `[Product] [procedure] workflow [using the manual/automated boot recovery process]` — for example, "AFF A1K controller replacement workflow"
+- `[Product] [procedure] workflow` — for example, "AFF A1K controller replacement workflow", "AFF A1K chassis replacement workflow"
+- Boot media workflow: `[Procedure] workflow for [a/an] [Product] system using the [manual/automated] boot recovery process` — for example, "Boot media replacement workflow for an AFF C30 or AFF C60 system using the automated boot recovery process"
 
 **Installation pages:**
 - Overview: `[Product] installation and configuration workflow`
-- Prepare: `Prepare to install your [Product] storage system`
-- Requirements: `Review requirements for installing your [Product] storage system`
-- Install hardware: `Install your [Product] hardware in [location]` — for example, "Install your AFF A1K hardware in a cabinet or rack"
-- Cable: `Cable your [Product] hardware for [purpose]` — for example, "Cable your AFF A1K hardware for network and storage connectivity"
-- Power on: `Power on your [Product] storage system`
+- Prepare: `Prepare to install [a/an] [Product] storage system`
+- Requirements: `Review the requirements for installing [a/an] [Product] storage system`
+- Install hardware: `Install the [Product] hardware in [location]` — for example, "Install the AFF A1K hardware in a cabinet or rack"
+- Cable: `Cable the [Product] hardware for [purpose]` — for example, "Cable the AFF A1K hardware for network and storage connectivity"
+- Power on: `Power on [a/an] [Product] storage system`
 
 **Concept pages:**
-- General concept: `Learn about [topic] in your [Product] system` — for example, "Learn about adding and replacing I/O modules in your AFF A1K system"
-- Maintain overview: `Learn about maintaining your [Product] storage system`
-- Key specifications: `Key specifications for [Product]`
+- General concept: `Learn about [topic] in [a/an] [Product] system` — for example, "Learn about adding and replacing I/O modules in an AFF A1K system"
+- Maintain overview: `Learn about maintaining [a/an] [Product] storage system`
+- Key specifications: `Key specifications for [a/an] [Product] system` — for example, "Key specifications for an AFF C30 system"
 
-**BMR context suffix:** On platforms that support both manual and automated (ONTAP 9.17.1+) boot media recovery, append "using the manual boot recovery process" or "using the automated boot recovery process" to all boot media page titles to disambiguate them. Pages for platforms that support only manual recovery (older platforms) do not need this suffix.
+**BMR context suffix:** On platforms that support both manual and automated (ONTAP 9.17.1+) boot media recovery, append "during the manual boot recovery process" or "during the automated boot recovery process" to boot media replace/shutdown page titles, and "using the manual boot recovery process" to other boot media page titles (boot image, workflow, RMA return), to disambiguate them. Pages for platforms that support only manual recovery (older platforms) do not need this suffix.
 
 ## Repository structure
 
 - `_include/` – Reusable AsciiDoc content fragments shared across platform directories; files are prefixed with the platform model (e.g., `a1k_`, `a70-90_`, `800_`) or are generic (e.g., `g_`, `afx_`)
-- `a1k/`, `a20-30-50/`, `a70-90/`, `a200/`–`a900/` – AFF A-Series platform-specific content (install and maintain)
-- `c250/`, `c400/`, `c800/`, `c80/`, `c30-60/` – AFF C-Series platform-specific content (install and maintain)
-- `asa150/`–`asa900/`, `asa-c250/`–`asa-c800/` – ASA (All SAN Array) platform content (install and maintain)
-- `asa-r2/`, `asa-r2-a1k/`, `asa-r2-a20-30-50/`, `asa-r2-70-90/`, `asa-r2-c30/` – ASA r2 generation content (install and maintain); some procedures differ from earlier ASA and AFF
-- `fas2600/`–`fas9500/`, `fas50/`, `fas70-90/` – FAS hybrid storage platform content (install and maintain)
+- `a1k/`, `a20-30-50/`, `a70-90/`, `a150/`–`a900/` – AFF A-Series platform-specific content (install and maintain); a150, a200, a220, a250, a300, a320, a400, a700, a700s, a800, and a900 are end-of-availability and listed under End-of-availability systems in `project.yml`, though their content still lives in these original folders
+- `c190/`, `c250/`, `c400/`, `c800/`, `c80/`, `c30-60/` – AFF C-Series platform-specific content (install and maintain); c190, c250, c400, and c800 are end-of-availability and listed under End-of-availability systems in `project.yml`
+- `asa150/`–`asa900/`, `asa-c250/`–`asa-c800/` – Classic ASA (All SAN Array) platform content (install and maintain); all of these models are now end-of-availability and listed under End-of-availability systems in `project.yml`; the `allsan-landing/` family index page was removed since no active ASA models remain
+- `asa-r2/`, `asa-r2-a1k/`, `asa-r2-a20-30-50/`, `asa-r2-70-90/`, `asa-r2-c30/` – ASA r2 generation content (install and maintain); some procedures differ from earlier ASA and AFF; this is now the only active ASA line
+- `fas2600/`–`fas9500/`, `fas50/`, `fas-70-90/` – FAS hybrid storage platform content (install and maintain); FAS2600, FAS2700, FAS500f, FAS8200, FAS8300, FAS8700, FAS9000, and FAS9500 are end-of-availability and listed under End-of-availability systems in `project.yml`
 - `afx/`, `afx-1k/` – AFX all-flash platform content (install and maintain)
 - `aff-landing/`, `aff-aseries/`, `aff-cseries/` – AFF product family index and landing pages
-- `allsan-landing/`, `allsan-a-series/`, `allsan-c-series/` – ASA product family landing pages
+- `allsan-a-series/`, `allsan-c-series/` – Orphaned ASA product family landing pages; not referenced in `project.yml` navigation
 - `asa-r2-landing-maintain/`, `afx-landing-maintain/` – r2 and AFX maintenance landing pages
 - `drive-shelves/` – NS224, NX224, and SAS shelf documentation
 - `ns224/`, `nx224/`, `sas3/` – Shelf-specific installation and maintenance content
@@ -62,14 +69,23 @@ Title style: Page titles embed the product name in a descriptive sentence rather
 - `endofavail/` – Hardware end-of-availability and end-of-support content
 - `store-redirects/` – Stub files that redirect legacy URLs
 
+## End-of-availability (EOA) policy
+
+Six months after a platform model reaches EOA, move its entry from the platform's active section into the End-of-availability systems section in `project.yml`, and update `endofavail/_index.yml` to add the corresponding install-setup and maintain-overview links under the appropriate AFF/ASA/FAS tile. The platform's content stays in its original folder; only the navigation entries move.
+
+## End-of-support (EOS) policy
+
+One year after a shelf, drive, or platform model reaches EOS, remove its entries from `endofavail/_index.yml` and `project.yml`, then work with Chanda to archive the content on the [Archived Documentation A-Z page](https://mysupport.netapp.com/documentation/productsatoz/index.html?archive=true).
+
 ## Product-specific context
 
 - **AFF (All Flash FAS):** NetApp's all-flash NAS/unified storage arrays; A-Series and C-Series variants; always referred to as "AFF A-Series" or "AFF C-Series", not just "AFF".
-- **ASA (All SAN Array):** SAN-optimized all-flash storage; "ASA r2" is the current generation with distinct procedures from earlier ASA models.
+- **ASA (All SAN Array):** SAN-optimized all-flash storage; "ASA r2" is the current generation with distinct procedures from earlier ASA models. All classic ASA models (A150–A900, C250–C800) are now end-of-availability; ASA r2 is the only active ASA line.
 - **FAS:** Hybrid flash/disk storage arrays; procedures are often similar to AFF but must be kept separate.
 - **AFX / AFX 1K:** Newer all-flash platforms; use `afx_` prefixed include fragments.
 - **FRU (field-replaceable unit):** Any hardware component that a customer can replace on-site (boot media, controller, DIMM, fan, NVDIMM, NVRAM, power supply, RTC battery, I/O module, system management module).
 - **HA pair:** Two controllers operating in a high-availability configuration; most maintenance procedures require gracefully failing over to the partner before starting.
+- **Impaired component terminology:** Reserve "impaired controller" for failures of components integral to the controller itself (DIMM, RTC battery, NVDIMM/NVRAM battery). For removable/modular FRUs (boot media, NVRAM module, I/O card), describe the component itself as impaired, not the controller.
 - **BMR (boot media recovery):** Automated boot recovery introduced in ONTAP 9.17.1; platforms running earlier versions must use the manual USB-based recovery procedure. Both workflows exist for most modern platforms.
 - **MetroCluster (MCC):** Two-site disaster recovery configuration; shutdown and recovery procedures differ from standard HA pair procedures and often use separate include files with the `_mcc` suffix (e.g., `shutdown_2n_mcc.adoc`).
 - **NVDIMM / NVRAM:** Non-volatile memory used for write caching; replacing these components requires specific shutdown and recovery steps to avoid data loss.
@@ -85,7 +101,8 @@ Title style: Page titles embed the product name in a descriptive sentence rather
 ## Typical user workflows
 
 - **Hardware installation:** review requirements → prepare site → install hardware → cable controllers and shelves → power on → set up ONTAP cluster
-- **FRU replacement (most components):** review requirements → check encryption status → shut down impaired controller → replace FRU → restore system configuration → complete RMA
+- **FRU replacement (controller-integral components — DIMM, RTC battery, NVDIMM/NVRAM battery):** review requirements → shut down impaired controller → replace FRU → restore system configuration → complete RMA
+- **FRU replacement (removable/modular components — e.g., NVRAM module, I/O module):** review requirements → shut down controller → replace FRU → restore system configuration → complete RMA
 - **Boot media replacement (manual):** check encryption → shut down controller → replace boot media → boot from USB recovery image → restore encryption → complete RMA
 - **Boot media replacement (automated, ONTAP 9.17.1+):** check encryption → shut down controller → replace boot media → run automated boot recovery → restore encryption → complete RMA
 - **Controller replacement:** review requirements → shut down impaired controller → move hardware to replacement controller → recable and reassign disks → restore system config → complete RMA

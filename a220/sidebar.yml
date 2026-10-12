@@ -15,12 +15,12 @@ entries:
     - title: Maintain
       pdf-filename: AFF A220 Maintain
       entries:
-      - title: Overview
+      - title: Maintenance overview
         url: /a220/maintain-overview.html
       - title: Boot media
         pdf-filename: AFF A220 Boot Media
         entries:
-          - title: Overview
+          - title: Boot media overview
             url: /a220/bootmedia-replace-overview.html
           - title: Check encryption keys
             url: /a220/bootmedia-encryption-preshutdown-checks.html
@@ -37,7 +37,7 @@ entries:
       - title: Chassis
         pdf-filename: AFF A220 and a220 Chassis
         entries:
-          - title: Overview
+          - title: Review requirements
             url: /a220/chassis-replace-overview.html
           - title: Shut down impaired controller
             url: /a220/chassis-replace-shutdown.html
@@ -48,7 +48,7 @@ entries:
       - title: Controller
         pdf-filename: AFF A220 Controller
         entries:
-          - title: Overview
+          - title: Review requirements
             url: /a220/controller-replace-overview.html
           - title: Shut down impaired controller
             url: /a220/controller-replace-shutdown.html

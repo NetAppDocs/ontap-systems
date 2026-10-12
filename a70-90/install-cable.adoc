@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a70, aff a90, prepare installation, cable the hardware
 summary: After you install the rack hardware for your AFF A70 or AFF A90 storage system, install the network cables for the controllers, and connect the cables between the controllers and storage shelves.
 ---
-= Cable your AFF A70 or AFF A90 hardware for network and storage connectivity
+= Cable the AFF A70 or AFF A90 hardware for network and storage connectivity
 :icons: font
 :imagesdir: ../media/
 
@@ -114,7 +114,7 @@ image::../media/drw_70-90_management_connection_ieops-1656.svg[Connect to your m
 IMPORTANT: Do not plug in the power cords yet.
 
 == Step 4: Cable the shelf connections
-The following cabling procedures show how to connect your controllers to a storage shelf. Choose one of the following cabling options that matches your setup.
+The following cabling procedures show how to connect your controllers to a storage shelf. Choose one of the following cabling options that match your setup.
 
 For the maximum number of shelves supported for your storage system and for all of your cabling options, see link:https://hwu.netapp.com[NetApp Hardware Universe^].
 

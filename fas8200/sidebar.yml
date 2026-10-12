@@ -13,12 +13,12 @@ entries:
  - title: Maintain
    pdf-filename: FAS8200 Maintain
    entries:
-    - title: Overview
+    - title: Maintenance overview
       url: /fas8200/maintain-overview.html
     - title: Boot media
       pdf-filename: FAS8200 Boot Media
       entries:
-      - title: Overview
+      - title: Boot media overview
         url: /fas8200/bootmedia-replace-overview.html
       - title: Check encryption keys
         url: /fas8200/bootmedia-encryption-preshutdown-checks.html
@@ -39,7 +39,7 @@ entries:
     - title: Chassis
       pdf-filename: FAS8200 Chassis
       entries:
-      - title: Overview
+      - title: Review requirements
         url: /fas8200/chassis-replace-overview.html
       - title: Shut down impaired controller
         url: /fas8200/chassis-replace-shutdown.html
@@ -50,7 +50,7 @@ entries:
     - title: Controller
       pdf-filename: FAS8200 Controller Module
       entries:
-      - title: Overview
+      - title: Review requirements
         url: /fas8200/controller-replace-overview.html
       - title: Shut down impaired controller
         url: /fas8200/controller-replace-shutdown.html

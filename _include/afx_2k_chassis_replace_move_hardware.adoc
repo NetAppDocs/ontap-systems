@@ -39,6 +39,41 @@ NOTE: Cables should have been labeled at the beginning of this procedure.
 
 == Step 2: Remove the I/O cards, NVRAM12, NVRAM12-EX, and system management module
 
+. Check the NVRAM status LED located in slot 4/5 and the NVRAM12-EX status slot 6/7 of the system. There is also an NVRAM LED on the front panel of the controller module. Look for the NV icon:
++
+image::../media/drw_a1K-70-90_nvram-led_ieops-1463.svg[NVRAM attention and status LED location graphic]
++
+[cols="1,4"]
+|===
+2+h| *NVRAM*
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM attention LED
+|===
++
+image::../media/drw_afx_emr_nvram-led_ieops-2962.svg[NVRAM12-EX attention and status LED location graphic]
++
+[cols="1,4"]
+|===
+2+h| *NVRAM12-EX*
+a|
+image:../media/icon_round_1.png[Callout number 1] 
+a|
+NVRAM12-EX status LED
+a|
+image:../media/icon_round_2.png[Callout number 2] 
+a|
+NVRAM12-EX attention LED
+|===
+
+* If the NV LED is off, go to the next step.
+* If the NV LED is flashing, wait for the flashing to stop. If flashing continues for longer than 5 minutes, contact Technical Support for assistance.
+
 . Remove the target I/O module from the chassis:
 
 +
@@ -56,7 +91,7 @@ I/O cam latch
 .. Rotate the cam latch away from the module as far as it will go.
 .. Remove the module from the chassis by hooking your finger into the cam lever opening and pulling the module out of the chassis.
 +
-Make sure that you keep track of which slot the I/O module was in.
+NOTE: Make sure that you keep track of which slot the I/O module was in.
 
 .. Set the I/O module aside and repeat these steps for any other I/O modules.
 
@@ -161,6 +196,8 @@ After the replacement chassis is installed, you need to install the controller m
 .. Rotate the locking latches into the locked position.
 . Install the I/O cards at the rear of the chassis:
 .. Align the end of the I/O module with the same slot in the replacement chassis as in the impaired chassis, and then gently push the module all the way into the chassis.
++ 
+NOTE: Make sure to install the I/O modules in the same slots as they were in the impaired chassis.
 .. Rotate the cam latch upward into the locked position.
 .. Repeat these steps for any other I/O modules.
 . Install the system management module at the rear of the chassis:
@@ -172,10 +209,14 @@ After the replacement chassis is installed, you need to install the controller m
 NOTE: If you removed the media converters (QSFPs or SFPs), remember to reinstall them.
 +
 Make sure that the cables are connected according to the cable labels.
+
 . Install the NVRAM12 module in the back of the chassis at the rear of the chassis:
 .. Align the end of the NVRAM12 module with the opening in the chassis, and then gently push the module all the way into the chassis.
 .. Rotate the cam latch upward into the locked position.
 
+. Install the NVRAM12-EX in the back of the chassis at the rear of the chassis:  
+.. Align the end of the NVRAM12-EX module with the opening in the chassis, and then gently push the module all the way into the chassis.
+.. Rotate the cam latch upward into the locked position.
 
 . Install the PSUs:
 

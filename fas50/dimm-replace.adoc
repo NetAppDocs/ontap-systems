@@ -2,14 +2,14 @@
 permalink: fas50/dimm-replace.html
 sidebar: sidebar
 keywords: fas50, replace a dimm
-summary: Replace a DIMM in your FAS50 storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+summary: Replace the DIMM in your FAS50 storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 ---
-= Replace a DIMM - FAS50
+= Replace a DIMM in a FAS50 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a DIMM in your FAS50 storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
+Replace the DIMM in your FAS50 storage system if excessive correctable or uncorrectable memory errors are detected. Such errors can prevent the storage system from booting ONTAP. The replacement process involves shutting down the impaired controller, removing it, replacing the DIMM, reinstalling the controller, and then returning the failed part to NetApp.
 
 .Before you begin
 
@@ -46,7 +46,7 @@ include::../_include/shutdown_any_mcc_no_2-node_mcc.adoc[]
 
 include::../_include/g_controller_remove.adoc[]
 
-. Open the controller cover by turning the thumbscrew counterclockwise to loosen, and then open the cover. 
+. Turn the thumbscrew counterclockwise to loosen it, and then open the controller cover.
 
 
 == Step 3: Replace a DIMM

@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: aff c250, real-time battery replacement
 summary: "You replace the real-time clock battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function."
 ---
-= Replace the real-time clock battery in your AFF C250 storage system
+= Replace the RTC battery in an AFF C250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace the RTC battery in an AFF C250 system so that services and applications that depend on accurate time synchronization continue to function.
+
 include::../_include/250_rtc-battery-replace.adoc[]

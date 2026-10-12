@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords: asa a250, replace a fan
 summary: To replace a fan, remove the failed fan module and replace it with a new fan module.
 ---
-= Replace a fan in your ASA A250 system
+= Replace a fan in an ASA A250 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+Replace a failed fan module in an ASA A250 system by shutting down the impaired controller, opening the controller module, and installing the replacement fan. This procedure keeps controller components cooled and prevents thermal-related system faults.
+
 include::../_include/250_fan-replace.adoc[]

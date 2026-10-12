@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a1k, prepare installation
 summary: Management network ports on the controllers are connected to switches. The HA interconnect and cluster interconnect ports are cabled on both controllers. The controller modules are connected to external storage, if ordered.
 ---
-= Cable your AFF A1K hardware for network and storage connectivity
+= Cable the AFF A1K hardware for network and storage connectivity
 :icons: font
 :imagesdir: ../media/
 
@@ -86,7 +86,7 @@ The following are some typical host network cabling examples. See  link:https://
 . Connect ports e9a and e9b to your Ethernet data network switch.
 // Issue ontap-systems/394 - Simplify statement previously here
 +
-NOTE: Do no use ports e1b and e7b ports for host network connections. Use a separate host card.
+NOTE: Do not use ports e1b and e7b for host network connections. Use a separate host card.
 +
 *100 GbE cable*
 +

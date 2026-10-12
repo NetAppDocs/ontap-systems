@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff A150 maintenance, maintenance, repairing a150, repairing aff a150, replace aff a150 components, replace aff a150 components
 summary: Maintain the AFF A150 hardware
 ---
-= Learn about maintaining your AFF A150 storage system
+= Learn about maintaining an AFF A150 storage system
 :icons: font
 :imagesdir: ../media/
 
@@ -31,7 +31,7 @@ You must replace a DIMM (dual in-line memory module) when a memory mismatch is p
 
 A drive is a device that provides the physical storage media for data.
 
-== NVEM Battery
+== NVRAM battery
 
 A battery is included with a controller and preserves cached data if the AC power fails.
 

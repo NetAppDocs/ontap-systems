@@ -17,7 +17,7 @@ Review the equipment and tools needed to install your storage system and storage
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:install-prepare.html[Prepare to install the AFF A1K storage system]
 [role="quick-margin-para"]
-To prepare to install your system, you need to get the site ready, check the environmental and electrical requirements, and ensure there's enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
+To prepare to install your system, you need to get the site ready, check the environmental and electrical requirements, and verify there's enough rack space. Then, unpack the equipment, compare its contents to the packing slip, and register the hardware to access support benefits.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:install-hardware.html[Install the hardware for the AFF A1K storage system]
 [role="quick-margin-para"]
@@ -29,7 +29,7 @@ To cable the hardware, first connect the storage controllers to your network and
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:install-power-hardware.html[Power on the AFF A1K storage system]
 [role="quick-margin-para"]
-Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID to ensure each shelf is uniquely identified within the setup, connect the laptop or console to the controller, and then connect the controllers to the power sources.
+Before you power on the controllers, power on each NS224 shelf and assign a unique shelf ID so each shelf is uniquely identified within the setup. Then connect the laptop or console to the controller, and connect the controllers to the power sources.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]https://docs.netapp.com/us-en/ontap/software_setup/workflow-summary.html[Set up your cluster]
 [role="quick-margin-para"]

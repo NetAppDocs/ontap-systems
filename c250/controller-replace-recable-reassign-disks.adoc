@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: aff c250, how to recable the system, how to reassign disks
 summary: You must recable the storage and confirm disk reassignment.
 ---
-= Recable your AFF C250 storage system and reassign disks
+= Recable an AFF C250 system and reassign disks
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After completing restore and verify the system configuration AFF C250 system you need to recable the system and reassign disks.
+After completing the restore and verify steps for the AFF C250 system configuration, you need to recable the system and reassign disks.
 
 include::../_include/250_controller-replace-recable-reassign-disks.adoc[]
 

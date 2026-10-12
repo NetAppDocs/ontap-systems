@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: AFF A150 specifications, AFF A150 specs, NetApp AFF A150, AFF A150 hardware
 summary: Key specifications for the AFF A150 storage system
 ---
-= Key specifications for AFF A150
+= Key specifications for an AFF A150 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following are select specifications for the AFF A150. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A150 specifications. This page is reflective of a single high availability pair. 
+Review select specifications for the AFF A150 storage system, which reflect a single high-availability pair. Visit https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for a complete list of AFF A150 specifications. 
 
 === Key specifications for AFF A150
 
@@ -134,6 +134,9 @@ EN62368-1,
 IEC 62368-1,
 IEC60950-1,
 IS 13252(part 1)
+* This product is ENERGY STAR Certified. For more information, visit link:++https://www.energystar.gov/productfinder/product/certified-data-center-storage/results?sort_direction=ASC&sort_by=brand_name&page_number=0&lastpage=0&search_text=&snia_online_taxonomy_category_filter=&brand_name_filter=NetApp&brand_name_filter=NetApp+Inc&brand_name_filter=NetApp%2C+Inc&markets_filter=United+States++[_ENERGY STAR certified data center storage products_^].
++
+image::../media/energy-star-certified-logo.png[ENERGY STAR certified logo,width=100]
 
 === High Availability
 Ethernet based baseboard management controller (BMC) and ONTAP management interface;
@@ -144,3 +147,4 @@ SAS in-band management over SAS connections;
 // 2025-12-12 ontap-systems-internal/issues/1421
 
 //2026-07-24 ontap-systems-internal/issues/1645
+//2026-10-06 ontap-systems-internal/issues/1881

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c400, aff, c400, shut, down, impair, controller, check, status, onboard, encryption, keys, status, disable, automatic, giveback, version, ontap, system, run, pre-shutdown, check, pre-shutdown checks for onboard encryption keys
 summary: Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check what version of ONTAP the system is running.
 ---
-= Check encryption support on your boot media in your AFF C400 storage system
+= Check encryption support on the boot media in an AFF C400 system
 :icons: font
 :imagesdir: ../media/
 
