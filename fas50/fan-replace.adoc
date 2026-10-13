@@ -1,7 +1,7 @@
 ---
 permalink: fas50/fan-replace.html
 sidebar: sidebar
-keywords: fas50, aff, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
+keywords: fas50, aff, swap, out, fan, module, interrupt, service, sequence, task
 summary: Replace the fan module in your FAS50 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 ---
 = Replace the fan module in a FAS50 system
@@ -58,3 +58,5 @@ include::../_include/g_controller_reinstall.adoc[]
 == Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
+
+//2026-OCT-13 AFFFASDOC-XXX

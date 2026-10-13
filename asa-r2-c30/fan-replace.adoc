@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-c30/fan-replace.html
 sidebar: sidebar
-keywords: asa c30, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
+keywords: asa c30, swap, out, fan, module, interrupt, service, sequence, task
 summary: Replace a fan module in your ASA C30 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 ---
 = Replace a fan module in an ASA C30 system
@@ -43,3 +43,5 @@ include::../_include/g_controller_reinstall.adoc[]
 == Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
+
+//2026-OCT-13 AFFFASDOC-XXX
