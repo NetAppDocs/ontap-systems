@@ -22,7 +22,7 @@ The following AutoSupport message suppresses automatic case creation for two hou
 . Disable automatic giveback:
 .. Enter the following command from the console of the healthy controller: 
 +
-`storage failover modify -node _impaired_node_name_ -auto-giveback false`
+`storage failover modify -node local -auto-giveback false`
 
 .. Enter `y` when you see the prompt _Do you want to disable auto-giveback?_
 
@@ -53,3 +53,5 @@ The _-halt true_ parameter brings you to the LOADER prompt.
 //When the impaired controller shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 
 |===
+
+//2026-OCT-13 ontap-systems-internal/issues/1888
