@@ -1,7 +1,7 @@
 ---
 permalink: asa-r2-a20-30-50/fan-replace.html
 sidebar: sidebar
-keywords: asa a20, asa a30, asa a50, asa, swap, out, fan, module, interrupt, service, sequence, task, hot-swap, hot-swap a fan module
+keywords: asa a20, asa a30, asa a50, asa, swap, out, fan, module, interrupt, service, sequence, task
 summary: Replace a fan module in your ASA A20, ASA A30, or ASA A50 storage system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
 ---
 = Replace a fan module in an ASA A20, ASA A30, or ASA A50 system
@@ -44,3 +44,5 @@ include::../_include/g_controller_reinstall.adoc[]
 == Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
+
+//2026-OCT-13 AFFFASDOC-553
