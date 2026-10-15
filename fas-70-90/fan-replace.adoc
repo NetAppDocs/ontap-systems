@@ -2,13 +2,15 @@
 permalink: fas-70-90/fan-replace.html
 sidebar: sidebar
 keywords: fas70, fas90, replace a fan
-summary: Replace a fan module in your FAS70 or FAS90 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
+summary: Replace a fan module in your FAS70 or FAS90 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. Fan modules in FAS70 and FAS90 systems are hot-swappable. The replacement process involves identifying the failed fan module, removing it, installing the replacement fan module, and returning the failed part to NetApp.
 ---
 = Replace a fan module in a FAS70 or FAS90 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace a fan module in your FAS70 or FAS90 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. The replacement process involves shutting down the controller, removing the controller, replacing the fan, reinstalling the controller, and returning the failed part to NetApp.
+Replace a fan module in your FAS70 or FAS90 system when a fan fails or is not operating efficiently, as this can affect system cooling and overall performance. Fan modules in FAS70 and FAS90 systems are hot-swappable. The replacement process involves identifying the failed fan module, removing it, installing the replacement fan module, and returning the failed part to NetApp.
 
 include::../_include/a1k_fan_replace.adoc[]
+
+//2026-OCT-13 AFFFASDOC-553
