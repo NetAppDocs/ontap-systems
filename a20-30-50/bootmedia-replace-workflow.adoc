@@ -19,26 +19,28 @@ To get started, review the recovery requirements, shut down the controller, repl
 [role="quick-margin-para"]
 Review the requirements for replacing the boot media.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[One]link:bootmedia-encryption-preshutdown-checks.html[Check onboard encryption keys]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two]link:bootmedia-encryption-preshutdown-checks.html[Check onboard encryption keys]
 [role="quick-margin-para"]
 Determine whether the system has security key manager enabled or encrypted disks.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Two]link:bootmedia-shutdown.html[Shut down the controller]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three]link:bootmedia-shutdown.html[Shut down the controller]
 [role="quick-margin-para"]
 Shut down the controller when you need to replace the boot media.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Three]link:bootmedia-replace.html[Replace the boot media]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four]link:bootmedia-replace.html[Replace the boot media]
 [role="quick-margin-para"]
 Remove the failed boot media from the impaired controller and install the replacement boot media, and then transfer an ONTAP image using a USB flash drive.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Four]link:bootmedia-recovery-image-boot.html[Boot the recovery image]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five]link:bootmedia-recovery-image-boot.html[Boot the recovery image]
 [role="quick-margin-para"]
 Boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Five]link:bootmedia-encryption-restore.html[Restore encryption]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six]link:bootmedia-encryption-restore.html[Restore encryption]
 [role="quick-margin-para"]
 Restore the onboard key manager configuration or the external key manager from the ONTAP boot menu.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Six]link:bootmedia-complete-rma.html[Return the failed part to NetApp]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png[Seven]link:bootmedia-complete-rma.html[Return the failed part to NetApp]
 [role="quick-margin-para"]
 Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+
+//2026-OCT-16 ontap-systems-internal/issues/1897
