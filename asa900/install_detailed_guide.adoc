@@ -388,7 +388,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[width=50px]
 
 100 GbE cable
 a|
-image:../media/icon_square_2_yellow.png[Callout number 1]
+image:../media/icon_square_2_yellow.png[Callout number 2]
 a|
 ** Connect controller B port e2a to port e0a on NSM B on the shelf.
 ** Connect controller B port e10b to port e0b on NSM A on the shelf.
@@ -661,3 +661,5 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 --
 
 ====
+
+//2026-OCT-16 ontap-systems-internal/issues/1897

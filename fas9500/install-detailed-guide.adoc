@@ -252,7 +252,7 @@ Cable ports in slot A5 and B5 (5a,
 
 image::../media/oie_cable_sfp_gbe_copper.png[Gbe SFP copper connector]
 a|
-image::../media/icon_square_5_grey.png[Callout icon 4]
+image::../media/icon_square_5_grey.png[Callout icon 5]
 a|
 * Strap the cables to the cable
 management arms (not shown).
@@ -652,3 +652,5 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 --
 
 ====
+
+//2026-OCT-16 ontap-systems-internal/issues/1897

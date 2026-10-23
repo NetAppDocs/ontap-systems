@@ -201,7 +201,7 @@ DIMM slot numbering and positions.
 
 NOTE: Depending on your storage system model, you will have two or four DIMMs.
 a|
-image::../media/icon_round_2.png[Callout number 1]
+image::../media/icon_round_2.png[Callout number 2]
 a|
 * Note the orientation of the DIMM in the socket so that you can insert the DIMM in the replacement controller in the proper orientation.
 * Eject the DIMM by slowly pushing apart the two DIMM ejector tabs on both ends of the DIMM slot.
@@ -315,3 +315,4 @@ Reinstall the controller into the chassis and reboot it.
 include::../_include/g_controller_replace_controller_reinstall.adoc[]
  
 
+//2026-OCT-16 ontap-systems-internal/issues/1897
