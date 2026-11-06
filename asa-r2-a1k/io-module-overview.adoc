@@ -2,14 +2,14 @@
 permalink: asa-r2-a1k/io-module-overview.html
 sidebar: sidebar
 keywords: asa r2 a1k, replace io module
-summary: The ASA A1K system offers flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module
+summary: The ASA A1K system offers flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding an I/O module is essential when upgrading network capabilities. Replacing an I/O module is essential when addressing a failed module.
 ---
 = Learn about adding and replacing I/O modules in an ASA A1K system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The ASA A1K system offers flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding or replacing an I/O module is essential when upgrading network capabilities or addressing a failed module.
+The ASA A1K system offers flexibility in expanding or replacing I/O modules to enhance network connectivity and performance. Adding an I/O module is essential when upgrading network capabilities. Replacing an I/O module is essential when addressing a failed module.
 
 You can replace a failed I/O module in your ASA A1K storage system with the same type of I/O module, or with a different kind of I/O module. You can also add an I/O module into a system with empty slots.
 
@@ -31,3 +31,4 @@ Replacing a failing I/O module can restore the system to its optimal operating s
 The I/O slots on ASA A1K controllers are numbered 1 through 11, as shown in the following illustration.
 
 image::../media/drw_a1K_back_slots_labeled_ieops-2162.svg[Slot numbering on an ASA A1K controller] 
+//2026-nov-05 issue #1413 

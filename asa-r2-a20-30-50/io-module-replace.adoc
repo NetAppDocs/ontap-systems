@@ -2,14 +2,14 @@
 permalink: asa-r2-a20-30-50/io-module-replace.html
 sidebar: sidebar
 keywords: asa a20, asa a30, asa a50, replace a pcie card
-summary: Replace an I/O module in your ASA A20, ASA A30, or ASA A50 storage system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
+summary: Replace an I/O module in your ASA A20, ASA A30, or ASA A50 storage system when the module fails. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
 ---
 = Replace an I/O module in an ASA A20, ASA A30, or ASA A50 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace an I/O module in your ASA A20, ASA A30, or ASA A50 storage system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
+Replace an I/O module in your ASA A20, ASA A30, or ASA A50 storage system when the module fails. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
 
 
 Use this procedure to replace a failed I/O module. 
@@ -55,3 +55,4 @@ Rebooting the impaired controller also reinitializes the I/O modules and other c
 
 include::../_include/complete_rma.adoc[]
 
+//2026-nov-05 issue #1413 
