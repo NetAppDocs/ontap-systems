@@ -2,14 +2,14 @@
 permalink: c80/io-module-replace.html
 sidebar: sidebar
 keywords: aff c80, replace a pcie card
-summary: Replace an IO module in your AFF C80 system when the module fails or requires an upgrade to support higher performance or additional features.
+summary: Replace an IO module in your AFF C80 system when the module fails.
 ---
 = Replace an I/O module in an AFF C80 system
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replace an I/O module in your AFF C80 system when the module fails or requires an upgrade to support higher performance or additional features. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
+Replace an I/O module in your AFF C80 system when the module fails. The replacement process involves shutting down the controller, replacing the failed I/O module, rebooting the controller, and returning the failed part to NetApp.
 You can use this procedure with all versions of ONTAP supported by your storage system.
 
 .Before you begin
@@ -47,3 +47,4 @@ include::../_include/io_module_replace_reboot.adoc[]
 include::../_include/complete_rma.adoc[]
 
 //2025-11-25 ontap-systems-internal/1315 and ontap-systems-internal/1380
+//2026-nov-05 issue #1413 
