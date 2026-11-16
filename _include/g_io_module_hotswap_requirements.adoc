@@ -27,6 +27,14 @@ If you are not sure which controller has the failed I/O module, contact https://
 * Your storage system must be a two-node (switchless or switched) cluster configuration.
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+* The cluster must either have IPsec offload disabled or the Ethernet I/O card being replaced must not support IPsec offload.
++
+If IPsec offload is enabled and the I/O card supports IPsec offload, hot-swapping the I/O module is not supported.
++
+You can verify this by entering the `security ipsec config show` command and verifying the result includes `Offload Enabled: false`.
++
+If IPsec offload is enabled, confirm whether the Ethernet I/O module supports IPsec offload at link:https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html#requirements-and-recommendations[Learn about IP security on the ONTAP network^].
 --
 .ONTAP 9.18.1GA or later
 --
@@ -54,6 +62,14 @@ In certain situations, ONTAP can automatically perform a takeover of either cont
 // In 9.18.1, (these checks will be removed and) hot plug is supported regardless of the cluster size or takeover state.  Nodes losing RDB Quorum during the hot plug operation will be handled by the feature.
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
+
+* The cluster must either have IPsec offload disabled or the Ethernet I/O card being replaced must not support IPsec offload.
++
+If IPsec offload is enabled and the I/O card supports IPsec offload, hot-swapping the I/O module is not supported.
++
+You can verify this by entering the `security ipsec config show` command and verifying the result includes `Offload Enabled: false`.
++
+If IPsec offload is enabled, confirm whether the Ethernet I/O module supports IPsec offload at link:https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html#requirements-and-recommendations[Learn about IP security on the ONTAP network^].
 --
 
 

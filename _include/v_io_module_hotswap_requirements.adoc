@@ -32,6 +32,14 @@ In certain situations, ONTAP can automatically perform a takeover of either cont
 
 * All other components in the storage system must be functioning properly; if not, contact https://mysupport.netapp.com/site/global/dashboard[NetApp Support] before continuing with this procedure.
 
+* The cluster must either have IPsec offload disabled or the Ethernet I/O card being replaced must not support IPsec offload.
++
+If IPsec offload is enabled and the I/O card supports IPsec offload, hot-swapping the I/O module is not supported.
++
+You can verify this by entering the `security ipsec config show` command and verifying the result includes `Offload Enabled: false`.
++
+If IPsec offload is enabled, confirm whether the Ethernet I/O module supports IPsec offload at link:https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html#requirements-and-recommendations[Learn about IP security on the ONTAP network^].
+
 
 
 
